@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "id": "rsssf-worldcup",
+      "name": "RSSSF — World Cup 1930-2026 (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tablesw/worldcup.html",
+      "publisher": "Rec.Sport.Soccer Statistics Foundation",
+      "author": "Karel Stokkermans",
+      "license": "Free to copy with proper acknowledgement to the author",
+      "retrieved": "2026-10-06",
+      "usedBy": ["_index.json", "1930.json", "1934.json"]
+    },
+    {
+      "id": "rsssf-1930-scorers",
+      "name": "RSSSF — World Cup 1930 goal scorers (Jaroslaw Owsianski)",
+      "url": "https://www.rsssf.org/tables/30f-scor.html",
+      "publisher": "Rec.Sport.Soccer Statistics Foundation",
+      "author": "Jaroslaw Owsianski",
+      "license": "Free to copy with proper acknowledgement to the author",
+      "retrieved": "2026-10-06",
+      "usedBy": ["1930.json"]
+    },
+    {
+      "id": "rsssf-1934-scorers",
+      "name": "RSSSF — World Cup 1934 goal scorers (Jaroslaw Owsianski)",
+      "url": "https://www.rsssf.org/tables/34qf-scor.html",
+      "publisher": "Rec.Sport.Soccer Statistics Foundation",
+      "author": "Jaroslaw Owsianski",
+      "license": "Free to copy with proper acknowledgement to the author",
+      "retrieved": "2026-10-06",
+      "usedBy": ["1934.json"]
+    }
+  ]
+}
