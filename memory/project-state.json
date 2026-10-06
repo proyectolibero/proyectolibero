@@ -2,7 +2,13 @@
   "project": "Deporte Mundial",
   "description": "Portal estático multilingüe de estadísticas deportivas (HTML+CSS+JS puro, hash routing, GitHub Pages)",
   "updatedAt": "2026-10-06",
-  "languages": ["es", "en", "pt", "zh", "hi"],
+  "languages": [
+    "es",
+    "en",
+    "pt",
+    "zh",
+    "hi"
+  ],
   "areas": {
     "frontend": {
       "status": "done",
@@ -13,14 +19,14 @@
       "notes": "5 idiomas en i18n/*.json + diccionario de países i18n/countries.json (códigos FIFA + históricos)"
     },
     "data.worldcup": {
-      "status": "in-progress",
+      "status": "done",
       "editions": {
         "1930": "done",
         "1934": "done",
-        "1938": "pending",
+        "1938": "done",
         "1950": "pending"
       },
-      "notes": "Migrados 1930 y 1934 desde .md + RSSSF. Faltan 1938-2026 (22 ediciones en _index.json con data:null)"
+      "notes": "1938.json: 47 partidos (28 clasificación + 19 fase final), 90 goleadores (180 goles), 5 fuentes RSSSF. validate.js 0 errores; verificación de totales por equipo OK; render #/mundial/1938 OK."
     },
     "validation": {
       "status": "done",
@@ -44,16 +50,14 @@
     },
     "ci": {
       "status": "done",
-      "notes": "GitHub Action validate.yml + git init + .gitignore (sin commit aún)"
-    }
+      "notes": "GitHub Action validate.yml + .gitignore; primer commit ccf376c"
+    },
     "verification": {
       "status": "done",
       "notes": "validate.js 0 errores; servidor local + Playwright: 6 vistas, 5 idiomas, móvil 375px (hamburguesa on/off-canvas) y escritorio, buscador multi-idioma, consola sin errores (solo favicon 404 corregido con SVG inline)"
     }
   },
   "nextSteps": [
-    "Primer commit cuando el usuario lo pida",
-    "Reiniciar opencode para cargar el MCP deporte-memoria (opencode.json nuevo)",
     "Migrar ediciones siguientes (1938, 1950, ...)",
     "Configurar DONATE_URL cuando haya cuenta de donaciones",
     "Publicar en GitHub Pages cuando exista remoto"

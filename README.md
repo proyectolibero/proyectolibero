@@ -46,7 +46,7 @@ En `.opencode/skills/`:
 
 ## Datos actuales
 
-Fútbol — Copa del Mundo: índice completo 1930–2026 (palmarés), ediciones migradas: **1930** y **1934**. Fuentes: RSSSF (Karel Stokkermans; J. Owsianski), consultadas el 2026-10-06.
+Fútbol — Copa del Mundo: índice completo 1930–2026 (palmarés), ediciones migradas: **1930**, **1934** y **1938**. Fuentes: RSSSF (Karel Stokkermans, Barrie Courtney; J. Owsianski), consultadas el 2026-10-06.
 
 ## Publicación
 

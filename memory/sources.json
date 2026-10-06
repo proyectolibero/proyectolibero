@@ -8,7 +8,11 @@
       "author": "Karel Stokkermans",
       "license": "Free to copy with proper acknowledgement to the author",
       "retrieved": "2026-10-06",
-      "usedBy": ["_index.json", "1930.json", "1934.json"]
+      "usedBy": [
+        "_index.json",
+        "1930.json",
+        "1934.json"
+      ]
     },
     {
       "id": "rsssf-1930-scorers",
@@ -18,7 +22,9 @@
       "author": "Jaroslaw Owsianski",
       "license": "Free to copy with proper acknowledgement to the author",
       "retrieved": "2026-10-06",
-      "usedBy": ["1930.json"]
+      "usedBy": [
+        "1930.json"
+      ]
     },
     {
       "id": "rsssf-1934-scorers",
@@ -28,7 +34,68 @@
       "author": "Jaroslaw Owsianski",
       "license": "Free to copy with proper acknowledgement to the author",
       "retrieved": "2026-10-06",
-      "usedBy": ["1934.json"]
+      "usedBy": [
+        "1934.json"
+      ]
+    },
+    {
+      "id": "src-4",
+      "name": "RSSSF — World Cup 1938 full details (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tables/38full.html",
+      "retrieved": "2026-10-06",
+      "publisher": "Rec.Sport.Soccer Statistics Foundation",
+      "author": "Karel Stokkermans",
+      "license": "Free to copy with proper acknowledgement to the author",
+      "usedBy": [
+        "1938.json"
+      ]
+    },
+    {
+      "id": "src-5",
+      "name": "RSSSF — World Cup 1938 goal scorers (Jaroslaw Owsianski)",
+      "url": "https://www.rsssf.org/tables/38qf-scor.html",
+      "retrieved": "2026-10-06",
+      "publisher": "Rec.Sport.Soccer Statistics Foundation",
+      "author": "Jaroslaw Owsianski",
+      "license": "Free to copy with proper acknowledgement to the author",
+      "usedBy": [
+        "1938.json"
+      ]
+    },
+    {
+      "id": "src-6",
+      "name": "RSSSF — World Cup 1938 qualifying (Karel Stokkermans, Sergio Henrique Jarreta)",
+      "url": "https://www.rsssf.org/tables/38q.html",
+      "retrieved": "2026-10-06",
+      "publisher": "Rec.Sport.Soccer Statistics Foundation",
+      "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "license": "Free to copy with proper acknowledgement to the author",
+      "usedBy": [
+        "1938.json"
+      ]
+    },
+    {
+      "id": "src-7",
+      "name": "RSSSF — World Cup 1938 qualifying full data (Barrie Courtney)",
+      "url": "https://www.rsssf.org/tables/38qual.html",
+      "retrieved": "2026-10-06",
+      "publisher": "Rec.Sport.Soccer Statistics Foundation",
+      "author": "Barrie Courtney",
+      "license": "Free to copy with proper acknowledgement to the author",
+      "usedBy": [
+        "1938.json"
+      ]
+    },
+    {
+      "id": "src-8",
+      "name": "RSSSF — World Cup 1938 final tournament details",
+      "url": "https://www.rsssf.org/tables/38f.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans",
+      "license": "Reproduced with attribution to RSSSF (www.rsssf.org)",
+      "usedBy": [
+        "1938.json"
+      ]
     }
   ]
 }

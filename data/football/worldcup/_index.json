@@ -13,7 +13,7 @@
   "editions": [
     { "year": 1930, "held": true, "hosts": ["URU"], "champion": "URU", "runnerUp": "ARG", "final": { "score": [4, 2] }, "data": "1930.json" },
     { "year": 1934, "held": true, "hosts": ["ITA"], "champion": "ITA", "runnerUp": "TCH", "final": { "score": [2, 1], "notes": ["aet"] }, "data": "1934.json" },
-    { "year": 1938, "held": true, "hosts": ["FRA"], "champion": "ITA", "runnerUp": "HUN", "final": { "score": [4, 2] }, "data": null },
+    { "year": 1938, "held": true, "hosts": ["FRA"], "champion": "ITA", "runnerUp": "HUN", "final": { "score": [4, 2] }, "data": "1938.json" },
     { "year": 1942, "held": false },
     { "year": 1946, "held": false },
     { "year": 1950, "held": true, "hosts": ["BRA"], "champion": "URU", "runnerUp": "BRA", "final": { "score": [2, 1] }, "data": null },
