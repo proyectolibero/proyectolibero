@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="admin-token" content="__ADMIN_TOKEN__">
+  <meta name="color-scheme" content="light dark">
+  <title>Panel de administración · Libero</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">◧</span>
+      <span class="brand-name">Libero · Panel</span>
+    </div>
+    <p class="topbar-status" id="conn-status" role="status" aria-live="polite"></p>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Secciones del panel">
+      <ul class="menu">
+        <li><a href="#/status" data-nav="status">Estado</a></li>
+        <li><a href="#/catalog" data-nav="catalog">Catálogo</a></li>
+        <li><a href="#/edition" data-nav="edition">Edición</a></li>
+        <li><a href="#/releases" data-nav="releases">Releases</a></li>
+        <li><a href="#/audit" data-nav="audit">Auditoría</a></li>
+      </ul>
+      <p class="sidebar-note">
+        Herramienta interna. Las llamadas a <code>/api/*</code> envían el token del
+        servidor en la cabecera <code>x-admin-token</code>.
+      </p>
+    </nav>
+
+    <main id="main" class="main" tabindex="-1">
+      <div id="view" class="view"></div>
+    </main>
+  </div>
+
+  <div id="announcer" class="visually-hidden" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <p class="noscript">Este panel necesita JavaScript activado para consultar la API.</p>
+  </noscript>
+
+  <script src="app.js"></script>
+</body>
+</html>
