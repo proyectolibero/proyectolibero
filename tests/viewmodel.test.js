@@ -36,6 +36,6 @@ test("toEditionViewModel: fase normal conserva phase y no inventa extra", () => 
 });
 
 test("toIndexViewModel normaliza el índice derivado sin cambios", () => {
-  const index = core.buildIndex(ROOT);
+  const index = core.buildIndex(ROOT, "football/worldcup");
   assert.deepEqual(core.toIndexViewModel(index), index);
 });

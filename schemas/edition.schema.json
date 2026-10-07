@@ -21,10 +21,12 @@
       "type": "object",
       "required": ["champion", "runnerUp"],
       "properties": {
-        "champion": { "type": ["string", "object"] },
-        "runnerUp": { "type": ["string", "object"] },
+        "champion": { "type": ["string", "object", "null"] },
+        "runnerUp": { "type": ["string", "object", "null"] },
         "third": { "type": ["string", "object", "null"] },
-        "finalMatchId": { "type": ["string", "null"] }
+        "finalMatchId": { "type": ["string", "null"] },
+        "decidedBy": { "type": "string", "enum": ["final", "standings"] },
+        "coChampions": { "type": "array", "items": { "type": "string" }, "minItems": 2 }
       }
     },
     "coverage": {

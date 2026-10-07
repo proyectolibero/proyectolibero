@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "balkancup",
+  "edition": 1931,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "BUL",
+    "runnerUp": "TUR",
+    "decidedBy": "standings"
+  },
+  "coverage": {
+    "matches": 3,
+    "goals": 13,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Balkan Cup (for Nations) (Guy De Dekker, Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tablesb/balkancup.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-07",
+  "provenance": {
+    "primary": "rsssf"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "BUL",
+          "p": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 8,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "TUR",
+          "p": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 3,
+          "ga": 5,
+          "pts": 2
+        },
+        {
+          "team": "YUG",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
+          "pts": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1931-09-30",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "TUR",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1931-10-02",
+      "city": "Sofia",
+      "home": "TUR",
+      "away": "YUG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1931-10-04",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "YUG",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 3
+}

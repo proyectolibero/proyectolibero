@@ -15,7 +15,7 @@ const USAGE = [
   "Opciones:",
   "  --root=<ruta>                Raíz del proyecto (por defecto, la del repo)",
   "  --id=<YYYY.MM>               Identificador de release (obligatorio en release)",
-  "  --competition=<id>           Competición (por defecto, la única del catálogo)",
+  "  --competition=<id>           Competición concreta (por defecto, todas las publicadas)",
   "  --asOf=<YYYY-MM-DD>          Fecha del release",
   "  --created=<ISO>             Momento de creación (idempotencia byte a byte)"
 ].join("\n");
@@ -44,8 +44,16 @@ function commandValidate(root) {
 }
 
 function commandReindex(root, flags) {
-  const { file, index } = core.writeIndex(root, flags.competition);
-  console.log(`Índice regenerado: ${path.relative(root, file).split(path.sep).join("/")} (${index.editions.length} ediciones)`);
+  const competitionId = typeof flags.competition === "string" ? flags.competition : undefined;
+  const result = core.writeIndex(root, competitionId);
+  const relative = (file) => path.relative(root, file).split(path.sep).join("/");
+  if (result.competitions) {
+    for (const competition of result.competitions) {
+      console.log(`Índice regenerado: ${relative(competition.file)} (${competition.id}, ${competition.editions} ediciones)`);
+    }
+    return 0;
+  }
+  console.log(`Índice regenerado: ${relative(result.file)} (${result.index.editions.length} ediciones)`);
   return 0;
 }
 

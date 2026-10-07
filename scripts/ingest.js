@@ -4,9 +4,11 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const io = require("../core/io.js");
+const { loadCatalog } = require("../core/catalog.js");
 const { makeContext, validateEditionObject, validateProject } = require("../core/validate.js");
 const { fetchMany } = require("../ingest/fetch.js");
 const { buildDraft } = require("../ingest/build.js");
+const { buildCompetitionDrafts } = require("../ingest/page.js");
 const { reconcile } = require("../ingest/reconcile.js");
 
 const ROOT = path.resolve(__dirname, "..");
@@ -20,6 +22,7 @@ const USAGE = [
   "Comandos:",
   "  fetch       Descarga fuentes a inbox/<sourceId>/ (HTML, texto UTF-8 y meta.json).",
   "  build       Fusiona las fuentes de inbox/ en un borrador v2 (drafts/…).",
+  "  build-page  Fragmenta una página con resultados inline en un borrador por edición.",
   "  reconcile   Compara el borrador con la edición publicada (no escribe nada).",
   "  promote     Publica un borrador validado en data/ (por defecto, dry-run).",
   "",
@@ -35,10 +38,13 @@ const USAGE = [
   "Opciones de build/reconcile:",
   "  --year=<año>                        Año de la edición (obligatorio)",
   "",
+  "Opciones de build-page:",
+  "  --competition=<sport>/<competicion> Competición del catálogo (obligatorio)",
+  "",
   "Opciones de promote:",
   "  --sport=<id>                        Deporte (obligatorio; ^[a-z][a-z0-9-]*$)",
   "  --competition=<id>                  Competición (obligatorio; ^[a-z][a-z0-9-]*$)",
-  "  --year=<año>                        Edición (obligatorio; entero positivo)",
+  "  --year=<año>                        Edición (obligatorio; entero o rango: 1954, 1929-31, 1929/31)",
   "  --confirm                           Publica de verdad (sin él: dry-run)",
   "  --dry-run                           Fuerza la previsualización (comportamiento por defecto)"
 ].join("\n");
@@ -234,6 +240,109 @@ function commandBuild(flags) {
   return 0;
 }
 
+/** `--competition=<sport>/<competicion>` → `{ sport, competition }` validados. */
+function parseCompetitionFlag(value) {
+  if (typeof value !== "string") return null;
+  const parts = value.split("/");
+  if (parts.length !== 2) return null;
+  const [sport, competition] = parts;
+  if (!SAFE_ID.test(sport) || !SAFE_ID.test(competition)) return null;
+  return { sport, competition };
+}
+
+/** Localiza en `inbox/` la descarga cuya URL coincide con la fuente declarada. */
+function locateInboxSource(root, sourceUrl) {
+  const inboxDir = path.join(root, "inbox");
+  if (!fs.existsSync(inboxDir)) return null;
+  for (const entry of fs.readdirSync(inboxDir, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const dir = path.join(inboxDir, entry.name);
+    const metaPath = path.join(dir, "meta.json");
+    if (!fs.existsSync(metaPath)) continue;
+    let meta;
+    try {
+      meta = io.readJSON(metaPath);
+    } catch {
+      continue;
+    }
+    if (meta.url !== sourceUrl) continue;
+    const txtName = fs.readdirSync(dir).find((name) => name.toLowerCase().endsWith(".txt"));
+    if (!txtName) continue;
+    return { meta, text: fs.readFileSync(path.join(dir, txtName), "utf8") };
+  }
+  return null;
+}
+
+function pageDraftPath(root, sport, competition, year) {
+  const name = String(year).replace(/[^A-Za-z0-9._-]+/g, "-");
+  return io.resolveWithin(root, "drafts", sport, competition, `${name}.json`);
+}
+
+function commandBuildPage(flags) {
+  const target = parseCompetitionFlag(flags.competition);
+  if (!target) {
+    console.error("build-page: --competition=<sport>/<competicion> es obligatorio (p. ej. football/balkancup).");
+    return 1;
+  }
+  const catalog = loadCatalog(ROOT);
+  const competition = catalog.competitions[`${target.sport}/${target.competition}`];
+  if (!competition) {
+    console.error(`build-page: la competición '${target.sport}/${target.competition}' no existe en el catálogo.`);
+    return 1;
+  }
+  const source = (competition.sources || [])[0];
+  if (!source || !source.url) {
+    console.error("build-page: la competición no declara una fuente con URL.");
+    return 1;
+  }
+  const local = locateInboxSource(ROOT, source.url);
+  if (!local) {
+    console.error(`build-page: no hay fuente en inbox/ para ${source.url}. Ejecuta antes 'fetch --url=${source.url}'.`);
+    return 1;
+  }
+
+  let built;
+  try {
+    built = buildCompetitionDrafts({
+      text: local.text,
+      competition,
+      source: {
+        id: source.id,
+        name: source.name,
+        url: source.url,
+        retrieved: local.meta.retrieved,
+        license: source.license
+      }
+    });
+  } catch (err) {
+    console.error(`build-page: ${err.message}`);
+    return 1;
+  }
+
+  const ctx = makeContext(ROOT);
+  for (const warning of built.warnings) console.log(`[warn] edición ${warning.year}: ${warning.reason}`);
+
+  let withErrors = 0;
+  for (const { year, draft } of built.drafts) {
+    const file = pageDraftPath(ROOT, target.sport, target.competition, year);
+    io.writeJSON(file, draft);
+    const rel = path.relative(ROOT, file).split(path.sep).join("/");
+    const entry = (competition.editions || []).find((edition) => edition.year === year) || null;
+    const validation = validateEditionObject(ctx, rel, draft, competition, entry);
+    if (validation.errors.length > 0) withErrors += 1;
+    const groups = (draft.groups || []).map((group) => `${group.letter}:${group.standings.length}`).join(",") || "—";
+    console.log(
+      `build-page ${year}: ${rel}  partidos=${draft.matches.length} goles=${draft.coverage.goals} ` +
+      `grupos=${groups} decidedBy=${draft.results.decidedBy || "?"} complete=${draft.coverage.complete} ` +
+      `avisos=${draft.warnings.length}`
+    );
+    console.log(`  validación: ${validation.errors.length} error(es), ${validation.warnings.length} aviso(s)`);
+    for (const issue of validation.errors) console.log(`    E ${issue.code} ${issue.file}: ${issue.message}`);
+  }
+  console.log(`build-page: ${built.drafts.length} borrador(es) escritos, ${withErrors} con errores.`);
+  return built.drafts.length === 0 ? 1 : 0;
+}
+
 function commandReconcile(flags) {
   const year = requireYear(flags);
   if (year === null) {
@@ -271,10 +380,38 @@ function toRepoPath(root, file) {
   return path.relative(root, file).split(path.sep).join("/");
 }
 
+const YEAR_INT = /^\d{4}$/;
+const YEAR_RANGE = /^\d{4}[-/]\d{2,4}$/;
+
+/**
+ * Normaliza `--year` a una clave canónica y segura para nombres de fichero.
+ * Acepta un año entero (4 dígitos) o un rango (`1929-31`, `1929/31`); las
+ * barras se normalizan a guion. Devuelve `null` si el formato no es válido.
+ */
+function normalizeYear(raw) {
+  let value;
+  if (typeof raw === "number" && Number.isInteger(raw) && raw > 0) value = String(raw);
+  else if (typeof raw === "string") value = raw.trim();
+  else return null;
+  if (YEAR_INT.test(value) || YEAR_RANGE.test(value)) return value.replace(/\//g, "-");
+  return null;
+}
+
+/**
+ * Compara el `year` de una edición del catálogo con la clave sin coercionar
+ * tipos: enteros por su forma decimal y cadenas por igualdad (con `/`→`-`).
+ */
+function sameYear(entryYear, key) {
+  if (typeof entryYear === "string") return entryYear.replace(/\//g, "-") === key;
+  if (Number.isInteger(entryYear)) return String(entryYear) === key;
+  return false;
+}
+
 /**
  * Normaliza y valida `--sport`, `--competition` y `--year`, y resuelve las
- * rutas de origen y destino *contenidas* en el repo (defensa en profundidad
- * frente a `..` o rutas absolutas; `resolveWithin` rechaza lo que escape).
+ * rutas de origen, destino y ficha de catálogo *contenidas* en el repo (defensa
+ * en profundidad frente a `..` o rutas absolutas; `resolveWithin` rechaza lo que
+ * escape).
  */
 function resolvePromoteTargets(root, flags) {
   if (typeof flags.sport !== "string" || !SAFE_ID.test(flags.sport)) {
@@ -283,22 +420,25 @@ function resolvePromoteTargets(root, flags) {
   if (typeof flags.competition !== "string" || !SAFE_ID.test(flags.competition)) {
     return { error: `--competition inválida: ${JSON.stringify(flags.competition)} (se espera ^[a-z][a-z0-9-]*$)` };
   }
-  const year = Number(flags.year);
-  if (!Number.isInteger(year) || year <= 0) {
-    return { error: "--year debe ser un entero positivo." };
+  const year = normalizeYear(flags.year);
+  if (year === null) {
+    return { error: "--year debe ser un año (p. ej. 1954) o un rango (p. ej. 1929-31 o 1929/31)." };
   }
   const { sport, competition } = flags;
   try {
     const draftFile = io.resolveWithin(root, "drafts", sport, competition, `${year}.json`);
     const destFile = io.resolveWithin(root, "data", sport, competition, `${year}.json`);
+    const catalogFile = io.resolveWithin(root, "catalog", "competitions", `${sport}.${competition}.json`);
     return {
       sport,
       competition,
       year,
       draftFile,
       destFile,
+      catalogFile,
       relDraft: toRepoPath(root, draftFile),
-      relDest: toRepoPath(root, destFile)
+      relDest: toRepoPath(root, destFile),
+      relCatalog: toRepoPath(root, catalogFile)
     };
   } catch (err) {
     return { error: `ruta no permitida: ${err.message}` };
@@ -317,7 +457,7 @@ function printIssues(list, prefix) {
 function findCatalogTarget(ctx, sport, competition, year) {
   const entry = ctx.catalog.competitions[`${sport}/${competition}`];
   if (!entry) return null;
-  return { competition: entry, edition: (entry.editions || []).find((e) => e.year === year) || null };
+  return { competition: entry, edition: (entry.editions || []).find((e) => sameYear(e.year, year)) || null };
 }
 
 /** Compara el borrador con el destino ya publicado (no escribe nada). */
@@ -348,11 +488,15 @@ function summariseResults(draft) {
   return { unit: isEncounter ? "partidos" : "eventos", count: results.length, goals };
 }
 
-function runDryRun(targets, draft, validation, destExists) {
-  const { sport, competition, year, relDraft, relDest } = targets;
+function runDryRun(targets, loaded) {
+  const { sport, competition, year, relDraft, relDest, relCatalog } = targets;
+  const { draft, validation, edition } = loaded;
+  const destExists = fs.existsSync(targets.destFile);
   console.log(`promote ${sport}/${competition}/${year} [dry-run]`);
   console.log(`  origen:  ${relDraft}`);
   console.log(`  destino: ${relDest}`);
+  console.log(`  catálogo: ${relCatalog} (edición ${year})`);
+  console.log(`  edición ya publicada en catálogo: ${edition && edition.data ? "sí" : "no"}`);
   console.log(`  destino existe: ${destExists ? "sí" : "no"}`);
   if (destExists) reportReconcile(draft, targets.destFile);
   console.log(`  validación del borrador: ${validation.errors.length} error(es), ${validation.warnings.length} aviso(s)`);
@@ -363,39 +507,92 @@ function runDryRun(targets, draft, validation, destExists) {
 }
 
 /** Restaura el contenido previo (o borra el fichero si no existía). */
-function rollback(destFile, previous) {
-  if (previous === null) fs.rmSync(destFile, { force: true });
-  else fs.writeFileSync(destFile, previous);
+function rollbackFile(file, previous) {
+  if (previous === null) fs.rmSync(file, { force: true });
+  else fs.writeFileSync(file, previous);
 }
 
-function promoteConfirmed(targets, draft, validation, destExists) {
-  const { sport, competition, year, relDest, destFile } = targets;
+/** Recalcula `coverage.published`/`missing` (y `missingYears` si existe). */
+function recalcPublishedCoverage(catalog) {
+  const coverage = catalog.coverage;
+  if (!coverage || typeof coverage !== "object") return;
+  const editions = (catalog.editions || []).filter((e) => e && e.held !== false);
+  const published = editions.filter((e) => Boolean(e.data)).length;
+  const held = Number.isInteger(coverage.held) ? coverage.held : editions.length;
+  coverage.held = held;
+  coverage.published = published;
+  coverage.missing = Math.max(held - published, 0);
+  if (Array.isArray(coverage.missingYears)) {
+    coverage.missingYears = editions.filter((e) => !e.data && Number.isInteger(e.year)).map((e) => e.year);
+  }
+}
+
+/*
+ * Publicación vigilada: escribe la edición en `data/` y, en la MISMA
+ * transacción, actualiza la ficha del catálogo (`editions[].data` + cobertura).
+ * Guarda el contenido previo de AMBOS ficheros; si la validación del proyecto
+ * falla tras escribir, restaura los dos byte a byte (ADR-020).
+ */
+function promoteConfirmed(targets, loaded) {
+  const { sport, competition, year, relDest, relCatalog, destFile, catalogFile, root } = targets;
+  const { draft, validation } = loaded;
   if (validation.errors.length > 0) {
     console.error(`promote: el borrador no es válido (${validation.errors.length} error(es)); no se escribe nada.`);
     printIssues(validation.errors, "E ");
     return 1;
   }
 
-  const previous = destExists ? fs.readFileSync(destFile) : null;
+  if (!fs.existsSync(catalogFile)) {
+    console.error(`promote: no existe la ficha de catálogo ${relCatalog}; no se publica nada.`);
+    return 1;
+  }
+  let catalogDoc;
+  try {
+    catalogDoc = io.readJSON(catalogFile);
+  } catch (err) {
+    console.error(`promote: ficha de catálogo ilegible (${err.message}); no se publica nada.`);
+    return 1;
+  }
+  const edition = (catalogDoc.editions || []).find((e) => sameYear(e.year, year));
+  if (!edition) {
+    console.error(`promote: el catálogo ${relCatalog} no contiene la edición ${year}; añádela explícitamente antes de publicar (no se crea a ciegas).`);
+    return 1;
+  }
+
+  const destExists = fs.existsSync(destFile);
+  const previousDest = destExists ? fs.readFileSync(destFile) : null;
+  const previousCatalog = fs.readFileSync(catalogFile);
+
+  edition.data = `${year}.json`;
+  recalcPublishedCoverage(catalogDoc);
+
   io.writeJSON(destFile, draft);
+  io.writeJSON(catalogFile, catalogDoc);
 
   let project;
   try {
-    project = validateProject(targets.root);
+    project = validateProject(root);
   } catch (err) {
     project = { errors: [{ code: "PROMOTE001", file: relDest, message: `la validación del proyecto lanzó: ${err.message}` }] };
   }
   if (project.errors.length > 0) {
-    rollback(destFile, previous);
-    console.error(`promote: la validación del proyecto falló tras escribir (${project.errors.length} error(es)); se revirtió ${relDest}.`);
+    rollbackFile(destFile, previousDest);
+    rollbackFile(catalogFile, previousCatalog);
+    console.error(
+      `promote: la validación del proyecto falló tras escribir (${project.errors.length} error(es)); ` +
+      `se revirtieron ${relDest} y ${relCatalog}.`
+    );
     printIssues(project.errors, "E ");
     return 1;
   }
 
   const summary = summariseResults(draft);
   const date = new Date().toISOString().slice(0, 10);
+  const coverage = catalogDoc.coverage || {};
+  const publishedText = Number.isInteger(coverage.published) ? `${coverage.published}/${coverage.held}` : "n/d";
   console.log(`promote ${sport}/${competition}/${year}`);
   console.log(`  fichero: ${relDest}`);
+  console.log(`  catálogo: ${relCatalog} → editions[].data = ${year}.json (publicadas ${publishedText})`);
   console.log(`  bytes: ${fs.statSync(destFile).size}  ${summary.unit}: ${summary.count} goles: ${summary.goals}`);
   console.log(`  validación del proyecto: 0 errores`);
   console.log(`  auditoría: promote ${sport}/${competition}/${year} ${date}`);
@@ -422,9 +619,12 @@ function loadDraftForPromotion(root, resolved) {
   if (!target) {
     return { error: `la competición '${resolved.sport}/${resolved.competition}' no existe en el catálogo.` };
   }
+  if (!target.edition) {
+    return { error: `el catálogo ${resolved.relCatalog} no contiene la edición ${resolved.year}; añádela explícitamente antes de publicar (no se crea a ciegas).` };
+  }
   try {
     const validation = validateEditionObject(ctx, resolved.relDest, draft, target.competition, target.edition);
-    return { draft, validation };
+    return { draft, validation, edition: target.edition };
   } catch (err) {
     return { error: `no se pudo validar el borrador: ${err.message}` };
   }
@@ -451,11 +651,8 @@ function commandPromote(flags, root = ROOT) {
     return 1;
   }
 
-  const destExists = fs.existsSync(resolved.destFile);
   const confirm = options.confirm === true && options["dry-run"] !== true;
-  return confirm
-    ? promoteConfirmed(resolved, loaded.draft, loaded.validation, destExists)
-    : runDryRun(resolved, loaded.draft, loaded.validation, destExists);
+  return confirm ? promoteConfirmed(resolved, loaded) : runDryRun(resolved, loaded);
 }
 
 async function main() {
@@ -469,6 +666,8 @@ async function main() {
       return commandFetch(parseFlags(rest));
     case "build":
       return commandBuild(parseFlags(rest));
+    case "build-page":
+      return commandBuildPage(parseFlags(rest));
     case "reconcile":
       return commandReconcile(parseFlags(rest));
     case "promote":

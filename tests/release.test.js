@@ -16,14 +16,27 @@ function build() {
   });
 }
 
+/** Nº de ediciones publicadas (con `data`) según el catálogo del proyecto. */
+function publishedEditionCount(root) {
+  const catalog = core.loadCatalog(root);
+  let count = 0;
+  for (const competition of Object.values(catalog.competitions)) {
+    for (const entry of competition.editions || []) {
+      if (entry.held && entry.data) count += 1;
+    }
+  }
+  return count;
+}
+
 test("buildRelease: checksums reales, checksum estable y recuentos", () => {
+  const expected = publishedEditionCount(ROOT);
   const manifest = build();
-  assert.equal(manifest.contents.length, 23);
+  assert.equal(manifest.contents.length, expected);
   for (const content of manifest.contents) {
     assert.equal(content.sha256, core.sha256File(path.join(ROOT, content.path)));
   }
   assert.equal(manifest.checksum, checksumOfContents(manifest.contents));
-  assert.equal(manifest.dataset.editions, 23);
+  assert.equal(manifest.dataset.editions, expected);
   assert.ok(manifest.license.attribution.length > 0);
   assert.equal(manifest.license.commercialResale, false);
 });

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "football/intconcup",
+  "sport": "football",
+  "competition": "intconcup",
+  "name": "Intercontinental Championship / FIFA Confederations Cup",
+  "i18nKey": "comp.intconcup.name",
+  "organizer": "FIFA",
+  "scope": "international",
+  "teamMode": "country",
+  "resultArchetype": "encounter",
+  "gender": "men",
+  "cadence": { "type": "interval", "years": 2 },
+  "status": "discontinued",
+  "firstEdition": 1992,
+  "lastEditionHeld": 2017,
+  "nextEditionExpected": null,
+  "coverage": {
+    "held": 10,
+    "published": 0,
+    "missing": 10,
+    "missingYears": [1992, 1995, 1997, 1999, 2001, 2003, 2005, 2009, 2013, 2017]
+  },
+  "editions": [
+    { "year": 1992, "held": true, "hosts": ["KSA"], "champion": "ARG", "runnerUp": "KSA", "final": { "score": [3, 1] }, "note": "Disputada como 'King Fahd Cup'; no oficial en su momento, reconocida después por FIFA.", "data": null },
+    { "year": 1995, "held": true, "hosts": ["KSA"], "champion": "DEN", "runnerUp": "ARG", "final": { "score": [2, 0] }, "note": "Disputada como 'King Fahd Cup'; no oficial en su momento, reconocida después por FIFA.", "data": null },
+    { "year": 1997, "held": true, "hosts": ["KSA"], "champion": "BRA", "runnerUp": "AUS", "final": { "score": [6, 0] }, "data": null },
+    { "year": 1999, "held": true, "hosts": ["MEX"], "champion": "MEX", "runnerUp": "BRA", "final": { "score": [4, 3] }, "data": null },
+    { "year": 2001, "held": true, "hosts": ["JPN", "KOR"], "champion": "FRA", "runnerUp": "JPN", "final": { "score": [1, 0] }, "data": null },
+    { "year": 2003, "held": true, "hosts": ["FRA"], "champion": "FRA", "runnerUp": "CMR", "final": { "score": [1, 0], "notes": ["aet"] }, "data": null },
+    { "year": 2005, "held": true, "hosts": ["GER"], "champion": "BRA", "runnerUp": "ARG", "final": { "score": [4, 1] }, "data": null },
+    { "year": 2009, "held": true, "hosts": ["RSA"], "champion": "BRA", "runnerUp": "USA", "final": { "score": [3, 2] }, "data": null },
+    { "year": 2013, "held": true, "hosts": ["BRA"], "champion": "BRA", "runnerUp": "ESP", "final": { "score": [3, 0] }, "data": null },
+    { "year": 2017, "held": true, "hosts": ["RUS"], "champion": "GER", "runnerUp": "CHI", "final": { "score": [1, 0] }, "data": null }
+  ],
+  "stages": [
+    { "id": "group", "key": "phase.group", "kind": "group", "order": 20 },
+    { "id": "sf", "key": "phase.sf", "kind": "knockout", "order": 50 },
+    { "id": "third", "key": "phase.third", "kind": "knockout", "order": 60 },
+    { "id": "final", "key": "phase.final", "kind": "knockout", "order": 70 }
+  ],
+  "updatePolicy": {
+    "mode": "manual",
+    "trigger": "administration",
+    "checkEveryDays": 30,
+    "liveSource": "https://www.rsssf.org/tablesi/intconcup.html",
+    "note": "Cadencia nominal bienal pero irregular (no se celebró en 2007, 2011, 2015 ni 2019). Competición discontinuada en 2017. Las ediciones de 1992 y 1995 fueron la 'King Fahd Cup', no oficiales en su momento y reconocidas después por FIFA. Solo ediciones cerradas; las actualizaciones siempre las inicia la administración."
+  },
+  "license": {
+    "layers": "CC-BY-4.0",
+    "attributionRequired": true,
+    "commercialResale": false,
+    "note": "Los hechos no son propiedad de nadie; las capas propias (normalización, esquema, procedencia) se publican con atribución. Se preserva siempre la atribución a las fuentes."
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Intercontinental Championship and FIFA Confederations Cup (Marcelo Leme de Arruda, Atsushi Fujioka, Takashi Koyama)",
+      "url": "https://www.rsssf.org/tablesi/intconcup.html",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true,
+      "note": "Copia libre con reconocimiento adecuado a los autores."
+    }
+  ],
+  "updatedAt": "2026-10-07"
+}

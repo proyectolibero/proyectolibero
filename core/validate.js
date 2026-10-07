@@ -278,7 +278,9 @@ function checkArchetypeFields(list, file, edition) {
 }
 
 function checkFinalMatchId(list, file, edition) {
-  const id = edition.results && edition.results.finalMatchId;
+  const results = edition.results || {};
+  if (results.decidedBy === "standings") return;
+  const id = results.finalMatchId;
   if (!id) return;
   const match = (edition.matches || []).find((m) => m.id === id);
   if (!match) {
@@ -286,8 +288,53 @@ function checkFinalMatchId(list, file, edition) {
     return;
   }
   const winner = matchWinner(match);
-  if (winner && edition.results.champion && winner !== edition.results.champion) {
+  if (winner && results.champion && winner !== results.champion) {
     push(list, "EDI005", file, `el ganador de ${id} no coincide con results.champion`);
+  }
+}
+
+/*
+ * ADR-019: títulos compartidos. `champion` es el primero listado por la fuente;
+ * `coChampions` recoge los demás, sin repetir ni incluir al campeón. Todos los
+ * códigos se validan como cualquier otro país (`EDI010`); los duplicados o la
+ * inclusión del campeón son inconsistencias semánticas (`EDI014`).
+ */
+function checkCoChampions(list, file, coChampions, champion, countries) {
+  if (!Array.isArray(coChampions)) return;
+  const seen = new Set();
+  for (const code of coChampions) {
+    checkCountry(list, file, countries, code, "results.coChampions");
+    if (code === champion) push(list, "EDI014", file, `coChampions incluye al campeón ${code}`);
+    if (seen.has(code)) push(list, "EDI014", file, `coChampions repite ${code}`);
+    seen.add(code);
+  }
+}
+
+/*
+ * ADR-020: una edición abandonada/parcial puede no tener campeón. En ese caso
+ * `results.champion` es `null` y la edición debe declarar cobertura incompleta
+ * (`coverage.complete:false`) y documentar el motivo (nota de `coverage` o un
+ * rechazo en `provenance`). Un `champion` nulo con `complete:true` es una
+ * contradicción (`EDI015`); sin motivo documentado es `EDI016`.
+ */
+function hasAbandonedReason(edition) {
+  const coverage = edition.coverage || {};
+  if (typeof coverage.note === "string" && coverage.note.trim()) return true;
+  if (Array.isArray(coverage.notes) && coverage.notes.length > 0) return true;
+  const rejected = (edition.provenance && edition.provenance.rejected) || [];
+  return rejected.some((entry) => entry && /champion|results/i.test(String(entry.field)));
+}
+
+function checkChampionCoverage(list, file, edition) {
+  const champion = (edition.results || {}).champion;
+  if (champion !== null) return;
+  const coverage = edition.coverage || {};
+  if (coverage.complete === true) {
+    push(list, "EDI015", file, "results.champion null con coverage.complete true: una edición sin campeón debe declarar cobertura incompleta (ADR-020)");
+    return;
+  }
+  if (!hasAbandonedReason(edition)) {
+    push(list, "EDI016", file, "results.champion null sin motivo: añade coverage.note (o provenance.rejected) que explique la ausencia de campeón (ADR-020)");
   }
 }
 
@@ -384,10 +431,12 @@ function validateEditionV2(ctx, file, edition, competition, entry) {
   checkStages(errors, file, edition, competition);
   checkArchetypeFields(errors, file, edition);
   checkFinalMatchId(errors, file, edition);
+  checkChampionCoverage(errors, file, edition);
   validateScorers(errors, file, edition.scorers || [], ctx.countries);
   if (Array.isArray(edition.groups) && edition.groups.length) validateGroups(errors, file, edition.groups, edition.matches || [], ctx.countries);
   checkCoverage(errors, warnings, file, edition);
   checkCountriesV2(errors, file, edition, ctx.countries);
+  checkCoChampions(errors, file, (edition.results || {}).coChampions, (edition.results || {}).champion, ctx.countries);
   validateProvenance(errors, file, edition.provenance, sourceIds, "edición");
   validateResultProvenance(errors, file, edition, sourceIds);
   validateUsedKeys(errors, ctx, edition, competition);

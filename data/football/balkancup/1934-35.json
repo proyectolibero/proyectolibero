@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "balkancup",
+  "edition": "1934-35",
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "YUG",
+    "runnerUp": "GRE",
+    "decidedBy": "standings"
+  },
+  "coverage": {
+    "matches": 6,
+    "goals": 26,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Balkan Cup (for Nations) (Guy De Dekker, Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tablesb/balkancup.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-07",
+  "provenance": {
+    "primary": "rsssf"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "YUG",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 9,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "GRE",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 5,
+          "pts": 3
+        },
+        {
+          "team": "ROU",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 8,
+          "pts": 3
+        },
+        {
+          "team": "BUL",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 7,
+          "ga": 8,
+          "pts": 2
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1934-12-23",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "YUG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1934-12-25",
+      "city": "Athinai",
+      "home": "YUG",
+      "away": "BUL",
+      "score": [
+        4,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1934-12-26",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "ROU",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1934-12-30",
+      "city": "Athinai",
+      "home": "ROU",
+      "away": "BUL",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1935-01-01",
+      "city": "Athinai",
+      "home": "YUG",
+      "away": "ROU",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1935-01-01",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "BUL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

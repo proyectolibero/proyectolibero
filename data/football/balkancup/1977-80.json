@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "balkancup",
+  "edition": "1977-80",
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "ROU",
+    "runnerUp": "YUG",
+    "decidedBy": "final",
+    "finalMatchId": "m010"
+  },
+  "coverage": {
+    "matches": 10,
+    "goals": 28,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Balkan Cup (for Nations) (Guy De Dekker, Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tablesb/balkancup.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-07",
+  "provenance": {
+    "primary": "rsssf"
+  },
+  "groups": [
+    {
+      "letter": "1",
+      "standings": [
+        {
+          "team": "ROU",
+          "p": 4,
+          "w": 2,
+          "d": 2,
+          "l": 0,
+          "gf": 8,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "BUL",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 6,
+          "pts": 3
+        },
+        {
+          "team": "TUR",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 8,
+          "pts": 3
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "1",
+      "matchday": null,
+      "date": "1977-02-16",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "BUL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "1",
+      "matchday": null,
+      "date": "1977-03-23",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "TUR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "1",
+      "matchday": null,
+      "date": "1977-09-21",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "TUR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "1",
+      "matchday": null,
+      "date": "1978-03-22",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "1",
+      "matchday": null,
+      "date": "1978-05-03",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "BUL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "1",
+      "matchday": null,
+      "date": "1978-05-31",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "2",
+      "matchday": null,
+      "date": "1977-11-16",
+      "city": "Thessaloniki",
+      "home": "GRE",
+      "away": "YUG",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "2",
+      "matchday": null,
+      "date": "1978-11-15",
+      "city": "Skopje",
+      "home": "YUG",
+      "away": "GRE",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1980-03-30",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "ROU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1980-08-27",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "YUG",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 5
+}

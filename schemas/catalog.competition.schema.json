@@ -54,11 +54,13 @@
         "required": ["year", "held"],
         "additionalProperties": false,
         "properties": {
-          "year": { "type": "integer" },
+          "year": { "type": ["integer", "string"] },
           "held": { "type": "boolean" },
           "hosts": { "type": "array", "items": { "type": "string" } },
           "champion": { "type": "string" },
+          "coChampions": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
           "runnerUp": { "type": "string" },
+          "note": { "type": "string" },
           "final": {
             "type": "object",
             "required": ["score"],

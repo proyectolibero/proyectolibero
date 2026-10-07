@@ -4,7 +4,7 @@ const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
-const { detectKind, parse } = require("../ingest/rsssf.js");
+const { detectKind, parse, parseDate } = require("../ingest/rsssf.js");
 
 const CTX = { sourceId: "rsssf:50f", retrieved: "2026-10-07", year: 1950 };
 const FIXTURES = path.join(__dirname, "fixtures", "rsssf");
@@ -335,4 +335,62 @@ test("parse('qf-scor') expande el bloque 'own goals' plural en varias líneas", 
       ["James William DICKINSON", "ENG", "BEL"]
     ]
   );
+});
+
+test("parseDate acepta los ocho formatos de fecha de RSSSF", () => {
+  const cases = [
+    ["24.06.50", { year: 1950 }, "1950-06-24"],
+    ["24.06.1950", {}, "1950-06-24"],
+    ["24-06-1950", {}, "1950-06-24"],
+    ["26-Jan-84", { year: 1984 }, "1984-01-26"],
+    ["26 Jan 1984", {}, "1984-01-26"],
+    ["1984.01.26", {}, "1984-01-26"],
+    ["26/01/84", { year: 1984 }, "1984-01-26"],
+    ["6- 1-84", { year: 1884 }, "1884-01-06"],
+    ["1984-01-26", {}, "1984-01-26"]
+  ];
+  for (const [raw, ctx, iso] of cases) {
+    const parsed = parseDate(raw, ctx);
+    assert.equal(parsed.warning, null, `warning inesperado en ${raw}`);
+    assert.equal(parsed.iso, iso, `fecha incorrecta en ${raw}`);
+  }
+});
+
+test("parseDate infiere el siglo de dos cifras a partir de ctx.year en ambos sentidos", () => {
+  assert.equal(parseDate("26-Jan-84", { year: 1884 }).iso, "1884-01-26");
+  assert.equal(parseDate("26-Jan-84", { year: 1984 }).iso, "1984-01-26");
+  assert.equal(parseDate("24.06.50", { year: 1950 }).iso, "1950-06-24");
+});
+
+test("parseDate acepta años de dos cifras dentro de un rango de edición", () => {
+  assert.equal(parseDate("6-10-29", { year: "1929-31" }).iso, "1929-10-06");
+  assert.equal(parseDate("29-11-31", { year: "1929-31" }).iso, "1931-11-29");
+
+  const inRange = parseDate("1-1-76", { year: "1973-76" });
+  assert.equal(inRange.iso, "1976-01-01");
+  assert.equal(inRange.warning, null);
+
+  const outside = parseDate("6-10-84", { year: "1929-31" });
+  assert.equal(outside.iso, null);
+  assert.match(outside.warning, /fuera del año esperado 1929-1931/);
+
+  assert.equal(parseDate("6-10-1930", { year: "1929-31" }).iso, "1930-10-06");
+});
+
+test("parseDate avisa y no inventa ante una fecha dudosa", () => {
+  const outside = parseDate("26.01.99", { year: 1884 });
+  assert.equal(outside.iso, null);
+  assert.match(outside.warning, /fuera del año esperado 1884/);
+
+  const unknown = parseDate("no es una fecha", {});
+  assert.equal(unknown.iso, null);
+  assert.match(unknown.warning, /no reconocida/);
+
+  const invalid = parseDate("32.13.1984", {});
+  assert.equal(invalid.iso, null);
+  assert.match(invalid.warning, /inválida/);
+
+  const heuristic = parseDate("26-Jan-84", {});
+  assert.equal(heuristic.iso, "1984-01-26");
+  assert.match(heuristic.warning, /sin ctx.year/);
 });

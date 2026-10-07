@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "balkancup",
+  "edition": "1973-76",
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "BUL",
+    "runnerUp": "ROU",
+    "decidedBy": "final",
+    "finalMatchId": "m005"
+  },
+  "coverage": {
+    "matches": 6,
+    "goals": 25,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Balkan Cup (for Nations) (Guy De Dekker, Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tablesb/balkancup.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-07",
+  "provenance": {
+    "primary": "rsssf"
+  },
+  "groups": [],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1973-04-18",
+      "city": "Izmir",
+      "home": "TUR",
+      "away": "BUL",
+      "score": [
+        5,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1974-05-08",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "TUR",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1974-05-29",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "GRE",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1975-09-24",
+      "city": "Thessaloniki",
+      "home": "GRE",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1976-05-12",
+      "city": "Veliko Tarnovo",
+      "home": "BUL",
+      "away": "ROU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1976-11-28",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "BUL",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

@@ -605,4 +605,4 @@ function buildDraft(input) {
   return draft;
 }
 
-module.exports = { buildDraft, normalizeTeam, stageFromSection, groupLetter };
+module.exports = { buildDraft, normalizeTeam, stageFromSection, groupLetter, groupIssue };

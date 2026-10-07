@@ -93,3 +93,63 @@ test("edición v2 con stage desconocido: EDI003", () => {
   const { ctx, competition, entry } = context();
   assert.ok(codes(validateEditionObject(ctx, FILE, edition, competition, entry)).includes("EDI003"));
 });
+
+test("ADR-019: decidedBy standings sin partido final es válido", () => {
+  const edition = clone();
+  edition.results.decidedBy = "standings";
+  edition.results.finalMatchId = null;
+  assert.deepEqual(validate(edition).errors, []);
+});
+
+test("ADR-019: coChampions válido no genera errores", () => {
+  const edition = clone();
+  edition.results.coChampions = ["HUN", "BRA"];
+  assert.deepEqual(validate(edition).errors, []);
+});
+
+test("ADR-019: coChampions con código inexistente: EDI010", () => {
+  const edition = clone();
+  edition.results.coChampions = ["HUN", "ZZZ"];
+  assert.ok(codes(validate(edition)).includes("EDI010"));
+});
+
+test("ADR-019: coChampions que incluye al campeón: EDI014", () => {
+  const edition = clone();
+  edition.results.coChampions = ["ITA", "HUN"];
+  assert.ok(codes(validate(edition)).includes("EDI014"));
+});
+
+test("ADR-019: coChampions duplicado: EDI014", () => {
+  const edition = clone();
+  edition.results.coChampions = ["HUN", "HUN"];
+  assert.ok(codes(validate(edition)).includes("EDI014"));
+});
+
+test("ADR-020: champion null con complete:false y nota es válido", () => {
+  const edition = clone();
+  edition.results.champion = null;
+  edition.results.runnerUp = null;
+  edition.results.finalMatchId = null;
+  edition.coverage.complete = false;
+  edition.coverage.note = "Edición abandonada sin campeón (ADR-020).";
+  assert.deepEqual(validate(edition).errors, []);
+});
+
+test("ADR-020: champion null con complete:true: EDI015", () => {
+  const edition = clone();
+  edition.results.champion = null;
+  edition.results.runnerUp = null;
+  edition.results.finalMatchId = null;
+  edition.coverage.complete = true;
+  edition.coverage.note = "Edición abandonada sin campeón (ADR-020).";
+  assert.ok(codes(validate(edition)).includes("EDI015"));
+});
+
+test("ADR-020: champion null sin motivo documentado: EDI016", () => {
+  const edition = clone();
+  edition.results.champion = null;
+  edition.results.runnerUp = null;
+  edition.results.finalMatchId = null;
+  edition.coverage.complete = false;
+  assert.ok(codes(validate(edition)).includes("EDI016"));
+});

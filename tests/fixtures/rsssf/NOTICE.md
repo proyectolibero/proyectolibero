@@ -1,14 +1,20 @@
 # Aviso de fuentes y licencia
 
-Los ficheros `50f.html.txt` y `50full.html.txt` son **recortes** (< 8 KB) del
-Mundial de 1950 publicados por la **Rec.Sport.Soccer Statistics Foundation
-(RSSSF)**:
+Todos los ficheros `.txt` de este directorio son **recortes** (< 8 KB) de
+documentos publicados por la **Rec.Sport.Soccer Statistics Foundation (RSSSF)**:
 
-- <https://www.rsssf.org/tablesw/50f.html>
-- <https://www.rsssf.org/tablesw/50full.html>
+- `50f.html.txt` — <https://www.rsssf.org/tablesw/50f.html>
+- `50full.html.txt` — <https://www.rsssf.org/tablesw/50full.html>
+- `eurochamp.html.txt` — <https://www.rsssf.org/tablese/eurochamp.html>
+- `balkancup.html.txt` — <https://www.rsssf.org/tablesb/balkancup.html>
 
-Autoría: Karel Stokkermans y Sergio Henrique Jarreta (RSSSF), última
-actualización 5 de julio de 2017.
+Autoría:
+
+- Mundial de 1950: Karel Stokkermans y Sergio Henrique Jarreta, última
+  actualización 5 de julio de 2017.
+- Europeo (`eurochamp`): Karel Stokkermans, última actualización 28 Oct 2024.
+- Balkan Cup (`balkancup`): Guy De Dekker y Karel Stokkermans, última
+  actualización 12 Oct 2025.
 
 ## Licencia
 
@@ -23,5 +29,7 @@ true` en el bloque `sources[]` de cada edición, siguiendo [`docs/FUENTES.md`](.
 ## Uso
 
 Estos recortes se usan **exclusivamente** como fixtures de los tests unitarios
-del parser (`ingest/rsssf.js`, `tests/parse.test.js`), sin red. Se conservan la
-cabecera, varios partidos completos y un bloque de clasificación de cada página.
+de los parsers (`ingest/rsssf.js` y `ingest/overview.js`; `tests/parse.test.js`
+y `tests/overview.test.js`), sin red. Se conservan la cabecera, varios partidos
+completos, un bloque de clasificación de cada edición y las listas/encabezados
+de las páginas índice necesarios para probar la detección de ediciones.

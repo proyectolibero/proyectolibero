@@ -73,6 +73,7 @@ Ejemplo:
 | `firstEdition`, `lastEditionHeld`, `nextEditionExpected` | Cobertura temporal |
 | `editionsNotHeld[]` | Años previstos y no celebrados (1942, 1946) |
 | `coverage` | `held`, `published`, `missing`, `missingYears[]` |
+| `editions[]` | `{ year, held, hosts?, champion?, coChampions?, runnerUp?, note?, final?, data? }`; `year` admite `integer` o rango como `"1929-31"` (ADR-019) |
 | `stages[]` | **Vocabulario de fases**: `{ id, key, kind, order }` |
 | `updatePolicy` | `{ mode, trigger, checkEveryDays, liveSource, note }` |
 | `license` | `{ layers, attributionRequired, commercialResale, note }` |
@@ -96,7 +97,7 @@ Ruta: `data/<sport>/<competition>/<edition>.json`. Campos comunes:
 | `status` | sí | `closed` (solo ediciones cerradas) |
 | `teamMode` | sí | Del catálogo |
 | `hosts[]`, `teamsCount` | sí | Igual que v1 |
-| `results` | sí | Resumen: `champion`, `runnerUp`, `third?`, **`finalMatchId`** |
+| `results` | sí | Resumen: `champion`, `runnerUp`, `third?`, **`finalMatchId`**, `decidedBy?`, `coChampions?` (`champion`/`runnerUp` admiten `null` en ediciones abandonadas, ADR-020) |
 | `sources[]` | sí | Con `id`, `license`, `redistribute` |
 | `asOf` | sí | Fecha del último dato incorporado |
 | `matches[]` / `events[]` | según arquetipo | Resultados |
@@ -131,6 +132,54 @@ con `scorersComplete:false`. Si no está documentada, el validador emite un
 fases. En 1950 el partido decisivo (URU 2-1 BRA) pertenece al **grupo final**, no
 a una fase `final`; con `finalMatchId` se marca sin forzar el esquema. El
 problema que en v1 obligaba a un apaño **desaparece en v2**.
+
+### 3.0.1 Competiciones sin final, títulos compartidos y fase de liga (ADR-019)
+
+Extensiones **retrocompatibles** (todos los campos nuevos son opcionales; las
+ediciones ya publicadas no cambian):
+
+- **`results.decidedBy`** (`"final"` \| `"standings"`). Por defecto se asume
+  `"final"`. Con `"standings"` el título se decide por clasificación: **no se
+  exige partido final** y `finalMatchId` puede ser `null` (el validador omite la
+  comprobación ganador = campeón). Con cualquier otro valor se mantiene la regla
+  actual (`EDI005` si el ganador de `finalMatchId` no coincide con `champion`).
+- **`results.coChampions`** (`string[]`, mínimo 2, opcional): títulos
+  compartidos. `champion` es **el primero listado por la fuente**; `coChampions`
+  recoge los demás. El validador comprueba que cada código es un país conocido
+  (`EDI010`), que no se repite y que no incluye al `champion` (`EDI014`). La
+  misma regla aplica a `coChampions` dentro de `editions[]` del catálogo.
+- **Fase `league`**: nueva fase genérica de vocabulario (`kind: "group"`) para
+  las competiciones que la necesiten, con su clave i18n `phase.league` en los 5
+  idiomas. El vocabulario es **por competición**, así que el Mundial no cambia.
+- **Ediciones con rango**: en `editions[]` del catálogo, `year` admite `integer`
+  o `string` (p. ej. `"1929-31"`), para series disputadas a lo largo de varios
+  años.
+
+**Entidades no FIFA (diferido).** Los participantes que no sean selecciones
+FIFA se modelarán con un registro de entidades propio
+(`catalog/entities.json`) y `teamMode: "entity"`, **sin inventar códigos FIFA**.
+Este registro queda **diferido** (ADR-019) y se implementará al ingerir la
+primera competición que lo necesite (ConIFA, Four Nations, FIFPro, Baltic B,
+Trans-Caucásica).
+
+### 3.0.2 Ediciones abandonadas sin campeón y finales a doble vuelta (ADR-020)
+
+- **`results.champion` y `results.runnerUp` admiten `null`.** Una edición
+  abandonada o inacabada (p. ej. la Balkan Cup 1948) se archiva con lo
+  documentado, **sin inventar campeón**. La coherencia la impone el validador:
+  - `champion: null` exige `coverage.complete: false`; si `complete` es `true`
+    es una contradicción y se emite **`EDI015`**.
+  - `champion: null` debe además estar justificado con un `coverage.note`
+    (o `coverage.notes`/`provenance.rejected[]` sobre `champion`); sin motivo
+    documentado se emite **`EDI016`**.
+  - El resto de reglas (`decidedBy`, `finalMatchId`, `coChampions`) no cambian:
+    con `champion` nulo no se comprueba ganador = campeón.
+- **Finales a doble vuelta.** Cuando el título se decide por el agregado de dos
+  partidos (Balkan Cup 1973-76 y 1977-80) y ningún partido lo decide por sí
+  solo, `results.finalMatchId` apunta al **partido decisivo** (el ganado por el
+  campeón, o el que desempata). El agregado y la regla de desempate se registran
+  en `coverage.note` y en la procedencia; **no se inventa** una semántica de
+  agregado en el esquema.
 
 ### 3.1 Arquetipo `encounter` (fútbol, balonmano, tenis…)
 
@@ -235,7 +284,10 @@ salvo como referencia interna marcada. El validador lo comprueba.
 2. `sport`/`competition`/`edition` existen en el catálogo y casan con la ruta.
 3. `stage` de cada resultado pertenece al vocabulario de `stages[]` del catálogo.
 4. Campos obligatorios por arquetipo (p. ej. `encounter` exige `home`, `away`…).
-5. Coherencia de `results` con `finalMatchId` (ganador = campeón).
+5. Coherencia de `results` con `finalMatchId` (ganador = campeón); si
+   `decidedBy: "standings"` se omite. `coChampions` sin repeticiones, sin el
+   campeón y con países conocidos (ADR-019). `champion: null` exige
+   `coverage.complete:false` y un motivo documentado (`EDI015`/`EDI016`, ADR-020).
 6. Sumas de GF/GA y `coverage` coincide con lo contado. El desajuste entre la
    suma de `scorers[].goals` y `coverage.goals` es **aviso** (`EDI013`), nunca
    error, y solo si no está documentado (ADR-015).
@@ -272,6 +324,8 @@ re-transcriben**: se transforman con el script de migración de la fase 1.
 ```
 catalog/sports.json
 catalog/competitions/football.worldcup.json
+catalog/competitions/football.intconcup.json
+catalog/competitions/football.balkancup.json
 data/football/worldcup/1938.json
 schemas/catalog.sport.schema.json
 schemas/catalog.competition.schema.json

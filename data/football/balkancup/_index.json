@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "sport": "football",
+  "competition": "balkancup",
+  "teamMode": "country",
+  "sources": [
+    {
+      "name": "RSSSF — Balkan Cup (for Nations) (Guy De Dekker, Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tablesb/balkancup.html",
+      "retrieved": "2026-10-07"
+    }
+  ],
+  "editions": [
+    {
+      "year": "1929-31",
+      "held": true,
+      "champion": "ROU",
+      "runnerUp": "YUG",
+      "data": "1929-31.json"
+    },
+    {
+      "year": 1931,
+      "held": true,
+      "champion": "BUL",
+      "runnerUp": "TUR",
+      "data": "1931.json"
+    },
+    {
+      "year": 1932,
+      "held": true,
+      "champion": "BUL",
+      "runnerUp": "YUG",
+      "data": "1932.json"
+    },
+    {
+      "year": 1933,
+      "held": true,
+      "champion": "ROU",
+      "runnerUp": "YUG",
+      "data": "1933.json"
+    },
+    {
+      "year": "1934-35",
+      "held": true,
+      "champion": "YUG",
+      "runnerUp": "GRE",
+      "data": "1934-35.json"
+    },
+    {
+      "year": 1935,
+      "held": true,
+      "champion": "BUL",
+      "runnerUp": "YUG",
+      "data": "1935.json"
+    },
+    {
+      "year": 1936,
+      "held": true,
+      "champion": "ROU",
+      "runnerUp": "BUL",
+      "data": "1936.json"
+    },
+    {
+      "year": 1946,
+      "held": true,
+      "champion": "ALB",
+      "runnerUp": "YUG",
+      "data": "1946.json"
+    },
+    {
+      "year": 1947,
+      "held": true,
+      "champion": "HUN",
+      "runnerUp": "YUG",
+      "data": "1947.json"
+    },
+    {
+      "year": 1948,
+      "held": true,
+      "data": "1948.json"
+    },
+    {
+      "year": "1973-76",
+      "held": true,
+      "champion": "BUL",
+      "runnerUp": "ROU",
+      "data": "1973-76.json"
+    },
+    {
+      "year": "1977-80",
+      "held": true,
+      "champion": "ROU",
+      "runnerUp": "YUG",
+      "data": "1977-80.json"
+    }
+  ]
+}

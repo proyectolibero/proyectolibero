@@ -47,6 +47,26 @@ const GROUP_HEADERS = /^(Group\s+[A-Z0-9]+|FINAL GROUP)$/i;
 const KNOCKOUT_HEADERS =
   /^(QUARTER-?FINALS?|SEMI-?FINALS?|MATCH FOR (?:THE )?THIRD PLACE|THIRD[- ]PLACE(?: MATCH)?|FINAL|ROUND OF 16|ROUND OF 32|EIGHTH-?FINALS?|SECOND (?:GROUP )?(?:ROUND|PHASE)|GROUP STAGE|FIRST PHASE|PLAYOFFS?|DECIDING MATCH)\s*:?\s*$/i;
 
+/**
+ * Token de fecha que puede abrir una línea de partido. Cubre los formatos
+ * `DD.MM.YY`, `DD.MM.YYYY`, `DD-MM-YYYY`, `DD/MM/YY`, `YYYY.MM.DD`, ISO
+ * `YYYY-MM-DD`, `D- M-YY` (con espacios) y los que usan mes de 3 letras
+ * (`DD-Mon-YY`, `DD Mon YYYY`). Se define como cadena para poder componer
+ * expresiones ancladas sin duplicar el patrón.
+ */
+const DATE_TOKEN =
+  "(?:\\d{4}[-./]\\d{1,2}[-./]\\d{1,2}"
+  + "|\\d{1,2}\\s*[-./]\\s*\\d{1,2}\\s*[-./]\\s*\\d{2,4}"
+  + "|\\d{1,2}[\\s-][A-Za-z]{3,}[\\s-]\\d{2,4})";
+
+/** Prefijo `<fecha> <resto>` de una línea de partido del formato `f`. */
+const DATE_PREFIX = new RegExp(`^(${DATE_TOKEN})\\s+(.+)$`);
+
+const MONTH_NUMBERS = {
+  jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6,
+  jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12
+};
+
 function decodeHtml(text) {
   return String(text).replace(/&(#x?[0-9A-Fa-f]+|[A-Za-z][A-Za-z0-9]*);/g, (raw, body) => {
     if (body[0] === "#") {
@@ -134,33 +154,95 @@ function detectKind(url) {
 }
 
 /**
- * Normaliza una fecha RSSSF (`DD.MM.YY`, `DD.MM.YYYY` o ISO) a `YYYY-MM-DD`.
- * En el formato de dos cifras usa el siglo de `ctx.year`; si el año resultante
- * se aleja más de 1 de `ctx.year`, lo trata como errata: avisa y devuelve null.
+ * Interpreta `ctx.year` como el año esperado de una edición: un entero, un año
+ * de cuatro cifras o un rango `"1929-31"`/`"1929/31"` (fin de dos o cuatro
+ * cifras). Devuelve `{ start, end }` normalizado u `null` si no es usable.
  */
-function parseDate(token, ctx, result, line) {
-  const text = String(token || "").trim();
-  let day; let month; let year; let m;
-  if ((m = /^(\d{1,2})\.(\d{1,2})\.(\d{2})$/.exec(text))) {
-    day = +m[1]; month = +m[2];
-    year = Math.floor((Number(ctx.year) || 0) / 100) * 100 + +m[3];
-    if (ctx.year != null && Math.abs(year - ctx.year) > 1) {
-      warn(result, line, `fecha "${text}" fuera del año esperado ${ctx.year}`);
-      return null;
+function expectedYearRange(value) {
+  if (typeof value === "number" && Number.isFinite(value) && value > 0) {
+    return { start: value, end: value };
+  }
+  if (typeof value === "string") {
+    const text = value.trim();
+    const range = /^(\d{4})\s*[/–—-]\s*(\d{2}|\d{4})$/.exec(text);
+    if (range) {
+      const start = Number(range[1]);
+      const end = range[2].length === 2
+        ? Math.floor(start / 100) * 100 + Number(range[2])
+        : Number(range[2]);
+      return { start: Math.min(start, end), end: Math.max(start, end) };
     }
-  } else if ((m = /^(\d{1,2})\.(\d{1,2})\.(\d{4})$/.exec(text))) {
-    day = +m[1]; month = +m[2]; year = +m[3];
-  } else if ((m = /^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(text))) {
-    year = +m[1]; month = +m[2]; day = +m[3];
+    const single = /^(\d{4})$/.exec(text);
+    if (single) return { start: Number(single[1]), end: Number(single[1]) };
+  }
+  return null;
+}
+
+/**
+ * Deduce el año completo de un año de dos cifras. Con `ctx.year` usa su siglo
+ * (o su rango); si el resultado queda fuera del esperado (con ±1 año de margen)
+ * lo considera errata y avisa. Sin `ctx.year` aplica una heurística (siglo
+ * actual hacia atrás: se toma el año menor o igual al actual) y siempre avisa
+ * para no inventar.
+ */
+function inferYear(twoDigits, ctx, text) {
+  const range = expectedYearRange(ctx && ctx.year);
+  if (range) {
+    const base = Math.floor(range.start / 100) * 100;
+    const candidates = [base + twoDigits, base + twoDigits + 100, base + twoDigits - 100];
+    const hit = candidates.find((year) => year >= range.start - 1 && year <= range.end + 1);
+    if (hit === undefined) {
+      const expected = range.start === range.end ? `${range.start}` : `${range.start}-${range.end}`;
+      return { year: null, warning: `fecha "${text}" fuera del año esperado ${expected}`, fatal: true };
+    }
+    return { year: hit, warning: null, fatal: false };
+  }
+  const currentYear = new Date().getFullYear();
+  let candidate = Math.floor(currentYear / 100) * 100 + twoDigits;
+  if (candidate > currentYear) candidate -= 100;
+  return { year: candidate, warning: `año "${text}" sin ctx.year; deducido ${candidate}`, fatal: false };
+}
+
+/**
+ * Normaliza una fecha RSSSF a `YYYY-MM-DD`. Acepta `DD.MM.YY`, `DD.MM.YYYY`,
+ * `DD-MM-YYYY`, `D- M-YY` (con espacios), `DD/MM/YY`, `YYYY.MM.DD`, ISO
+ * `YYYY-MM-DD` y los formatos con mes de 3 letras `DD-Mon-YY` (`26-Jan-84`) y
+ * `DD Mon YYYY`. Devuelve `{ iso, warning }`: nunca lanza y, ante una fecha
+ * dudosa, `iso` es `null` con un `warning` que explica el motivo.
+ */
+function parseDate(raw, ctx) {
+  const text = String(raw == null ? "" : raw).trim();
+  if (text === "") return { iso: null, warning: "fecha vacía" };
+  let day; let month; let yearText; let m;
+  if ((m = /^(\d{4})[-./](\d{1,2})[-./](\d{1,2})$/.exec(text))) {
+    yearText = m[1]; month = +m[2]; day = +m[3];
+  } else if ((m = /^(\d{1,2})[\s-]([A-Za-z]{3,})[\s-](\d{2,4})$/.exec(text))) {
+    const named = MONTH_NUMBERS[m[2].slice(0, 3).toLowerCase()];
+    if (!named) return { iso: null, warning: `mes no reconocido en "${text}"` };
+    day = +m[1]; month = named; yearText = m[3];
+  } else if ((m = /^(\d{1,2})\s*[-./]\s*(\d{1,2})\s*[-./]\s*(\d{2,4})$/.exec(text))) {
+    day = +m[1]; month = +m[2]; yearText = m[3];
   } else {
-    warn(result, line, `fecha no reconocida "${text}"`);
-    return null;
+    return { iso: null, warning: `fecha no reconocida "${text}"` };
+  }
+  let year; let warning = null;
+  if (yearText.length === 4) {
+    year = +yearText;
+  } else if (yearText.length === 2) {
+    const inferred = inferYear(+yearText, ctx, text);
+    if (inferred.fatal) return { iso: null, warning: inferred.warning };
+    year = inferred.year;
+    warning = inferred.warning;
+  } else {
+    return { iso: null, warning: `año no reconocido en "${text}"` };
   }
   if (month < 1 || month > 12 || day < 1 || day > 31) {
-    warn(result, line, `fecha inválida "${text}"`);
-    return null;
+    return { iso: null, warning: `fecha inválida "${text}"` };
   }
-  return `${String(year).padStart(4, "0")}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+  return {
+    iso: `${String(year).padStart(4, "0")}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`,
+    warning
+  };
 }
 
 /** Parsea un bloque de tabla `<place>.<equipo>[^*] <números> <gf-ga> [números]`. */
@@ -309,11 +391,13 @@ function parseSummary(text, ctx, result) {
 }
 
 function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
-  const dateMatch = /^(\d{1,2}\.\d{1,2}\.\d{2,4})\s+(.+)$/.exec(text);
+  const dateMatch = DATE_PREFIX.exec(text);
   if (!dateMatch) {
     warn(result, lineNo, `partido no reconocido: ${text}`);
     return null;
   }
+  const parsedDate = parseDate(dateMatch[1], ctx);
+  if (parsedDate.warning) warn(result, lineNo, parsedDate.warning);
   const rest = dateMatch[2];
   const scoreMatch = /(\bn\/p\b|\d+\s*[-:]\s*\d+)/.exec(rest);
   if (!scoreMatch) {
@@ -349,7 +433,7 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
   }
   result.matches.push({
     raw: text,
-    date: parseDate(dateMatch[1], ctx, result, lineNo),
+    date: parsedDate.iso,
     city,
     home,
     away,
@@ -365,7 +449,7 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
   return true;
 }
 
-const FULL_DATE_HEADER = /^(\d{1,2}\.\d{1,2}\.\d{2,4})\s+\((\d{1,2}\.\d{2})\)\s*(.+)$/;
+const FULL_DATE_HEADER = new RegExp(`^(${DATE_TOKEN})\\s+\\((\\d{1,2}\\.\\d{2})\\)\\s*(.+)$`);
 const FULL_SCORE = /^([A-Za-z][A-Za-z0-9.]*)\s*[-–:]\s*([A-Za-z][A-Za-z0-9.]*)\s+(\d+)\s*[-:]\s*(\d+)(?:\s*\(([^)]*)\))?$/;
 const FULL_LINEUP = /^([A-Za-z]{2,4})\s*:\s*(.+)$/;
 const FULL_EVENTS = /^\d+\s*:\s*\d+\s+/;
@@ -410,9 +494,11 @@ function parseFull(text, ctx, result) {
       inData = true;
       const tail = dateHeader[3];
       const comma = tail.indexOf(",");
+      const parsedDate = parseDate(dateHeader[1], ctx);
+      if (parsedDate.warning) warn(result, lineNo, parsedDate.warning);
       current = {
         raw,
-        date: parseDate(dateHeader[1], ctx, result, lineNo),
+        date: parsedDate.iso,
         time: dateHeader[2],
         city: comma >= 0 ? tail.slice(0, comma).trim() : tail.trim(),
         home: null,
@@ -650,4 +736,14 @@ function parse(kind, text, ctx) {
   return result;
 }
 
-module.exports = { detectKind, parse };
+module.exports = {
+  detectKind,
+  parse,
+  parseDate,
+  parseStanding,
+  resolveCountry,
+  decodeHtml,
+  cleanLine,
+  decodeEntities: decodeHtml,
+  stripHtml: cleanLine
+};

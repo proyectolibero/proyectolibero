@@ -7,15 +7,35 @@ function today() {
   return new Date().toISOString().slice(0, 10);
 }
 
+/** ¿La competición tiene al menos una edición publicada (`held` + `data`)? */
+function isPublished(competition) {
+  return (competition.editions || []).some((entry) => entry.held && entry.data);
+}
+
+/** Competiciones del catálogo con al menos una edición publicada. */
+function publishedCompetitions(catalog) {
+  return Object.values(catalog.competitions).filter(isPublished);
+}
+
+/**
+ * Resuelve la competición objetivo. Con `competitionId` exige que exista. Sin
+ * él devuelve la única publicada o `null` si hay ambigüedad (ninguna o varias):
+ * el reindex por defecto recorre todas las publicadas en vez de elegir una.
+ */
 function pickCompetition(catalog, competitionId) {
   if (competitionId) {
     const competition = catalog.competitions[competitionId];
     if (!competition) throw new Error(`competición no encontrada en el catálogo: ${competitionId}`);
     return competition;
   }
-  const all = Object.values(catalog.competitions);
-  if (all.length === 1) return all[0];
-  throw new Error("hay varias competiciones en el catálogo: indica competitionId");
+  const published = publishedCompetitions(catalog);
+  return published.length === 1 ? published[0] : null;
+}
+
+/** Competiciones a reindexar: la indicada, o todas las publicadas si no hay id. */
+function reindexTargets(catalog, competitionId) {
+  const single = pickCompetition(catalog, competitionId);
+  return single ? [single] : publishedCompetitions(catalog);
 }
 
 function indexSources(competition) {
@@ -57,20 +77,58 @@ function loadValidCatalog(root) {
   return catalog;
 }
 
-/** Regenera el índice v1 (`_index.json`) a partir del catálogo. */
-function buildIndex(root, competitionId) {
-  const catalog = loadValidCatalog(root);
-  return indexFromCompetition(pickCompetition(catalog, competitionId));
+function indexFile(root, competition) {
+  return resolveWithin(root, "data", competition.sport, competition.competition, "_index.json");
 }
 
-/** Escribe `data/<sport>/<competition>/_index.json` derivado del catálogo. */
+function indexEntry(root, competition) {
+  return {
+    id: competition.id,
+    file: indexFile(root, competition),
+    index: indexFromCompetition(competition)
+  };
+}
+
+function summarize(entry) {
+  return { id: entry.id, file: entry.file, editions: entry.index.editions.length };
+}
+
+/**
+ * Construye el índice v1 (`_index.json`) a partir del catálogo. Con
+ * `competitionId` devuelve el índice de esa competición; sin él, un resumen
+ * (`{ competitions: [{ id, file, editions }] }`) de todas las publicadas.
+ */
+function buildIndex(root, competitionId) {
+  const catalog = loadValidCatalog(root);
+  if (competitionId) {
+    return indexFromCompetition(reindexTargets(catalog, competitionId)[0]);
+  }
+  const competitions = reindexTargets(catalog).map((competition) =>
+    summarize(indexEntry(root, competition))
+  );
+  return { competitions };
+}
+
+/**
+ * Escribe `data/<sport>/<competition>/_index.json`. Con `competitionId`,
+ * escribe solo esa competición y devuelve `{ file, index }`; sin él, escribe
+ * todas las publicadas y devuelve `{ competitions: [{ id, file, editions }] }`.
+ */
 function writeIndex(root, competitionId) {
   const catalog = loadValidCatalog(root);
-  const competition = pickCompetition(catalog, competitionId);
-  const index = indexFromCompetition(competition);
-  const file = resolveWithin(root, "data", competition.sport, competition.competition, "_index.json");
-  writeJSON(file, index);
-  return { file, index };
+  if (competitionId) {
+    const competition = reindexTargets(catalog, competitionId)[0];
+    const index = indexFromCompetition(competition);
+    const file = indexFile(root, competition);
+    writeJSON(file, index);
+    return { file, index };
+  }
+  const competitions = reindexTargets(catalog).map((competition) => {
+    const entry = indexEntry(root, competition);
+    writeJSON(entry.file, entry.index);
+    return summarize(entry);
+  });
+  return { competitions };
 }
 
 module.exports = { buildIndex, writeIndex };

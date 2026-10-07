@@ -45,6 +45,6 @@ test("1938 adaptada: la final conserva phase, referee, attendance y events en el
 test("paridad core/navegador de toIndexViewModel", async () => {
   const { toIndexViewModel } = await import(BROWSER);
   assert.equal(typeof toIndexViewModel, "function");
-  const index = core.buildIndex(ROOT);
+  const index = core.buildIndex(ROOT, "football/worldcup");
   assert.deepEqual(toIndexViewModel(index), core.toIndexViewModel(index));
 });

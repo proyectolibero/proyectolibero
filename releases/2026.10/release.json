@@ -6,6 +6,90 @@
   "generatedBy": "core/release.js",
   "contents": [
     {
+      "path": "data/football/balkancup/1929-31.json",
+      "sha256": "6a1ab55064527500c3c5b5d8fa9b02ef1bfb73d98258881680ef2c09218c62aa",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1929-31"
+    },
+    {
+      "path": "data/football/balkancup/1931.json",
+      "sha256": "2fb2192f84cd7d32a12d9d56b8c205bae7059a28bd6af00332dd5b29f0aa43ff",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1931
+    },
+    {
+      "path": "data/football/balkancup/1932.json",
+      "sha256": "0d43d6b94dbd922bec5e5f2d1111720062494186a9d65b82452940a497a1de12",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1932
+    },
+    {
+      "path": "data/football/balkancup/1933.json",
+      "sha256": "0ebc1f5152f8f0960b77ce5de8034bb25298ca87895a983c4afbe0bd3abba603",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1933
+    },
+    {
+      "path": "data/football/balkancup/1934-35.json",
+      "sha256": "be2f6fa7071b42db38273064906fe64795d5f13254f58241536c7d8e2c1c4b68",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1934-35"
+    },
+    {
+      "path": "data/football/balkancup/1935.json",
+      "sha256": "b085a23820686460e71ceb713db00b8f1bc82344027a6944779e2b31b737b74d",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1935
+    },
+    {
+      "path": "data/football/balkancup/1936.json",
+      "sha256": "2931de8ec6b60e18a0fa9aace0e89c0e0b63f306b8c9eaa30fd1bcb673a54632",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1936
+    },
+    {
+      "path": "data/football/balkancup/1946.json",
+      "sha256": "5c3dca97ab0e4f7419c4bc7114aeb8a807089d826dae5f7cccbf53703518cfbb",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1946
+    },
+    {
+      "path": "data/football/balkancup/1947.json",
+      "sha256": "792dd5da0d7b2fb595a60c21cd6b63be7bae1974d735b16d428ce2be6a731df5",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1947
+    },
+    {
+      "path": "data/football/balkancup/1948.json",
+      "sha256": "f4446af7c6e7f0a7753451052e81e6edd7cbbdaa3376dae22cf1806e22b9457a",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1948
+    },
+    {
+      "path": "data/football/balkancup/1973-76.json",
+      "sha256": "5c8899fa68b8559444828c6211cb915546ed0b30f66888813a4cec8b8c0291c1",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1973-76"
+    },
+    {
+      "path": "data/football/balkancup/1977-80.json",
+      "sha256": "4dd6507e468dfe9ce7d62f7504d44d45032d950945b11739997bb2e18cc82f44",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1977-80"
+    },
+    {
       "path": "data/football/worldcup/1930.json",
       "sha256": "32d7f79b35346397a87ffe3900f26ca988526a2f84c9cfc9f1539ca240d8e7de",
       "schemaVersion": 2,
@@ -167,12 +251,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "49a8440099a3473d171bc6ce4a30c9623dca5e6ea47107d6ddd81c5c88983ba2",
+  "checksum": "03f08dab7bb263c7ac61cb40b29e4181fb2ad820dc489d20150f01674cb20a43",
   "dataset": {
     "sports": 4,
-    "competitions": 1,
-    "editions": 23,
-    "matches": 1162,
+    "competitions": 3,
+    "editions": 35,
+    "matches": 1252,
     "results": 0
   },
   "license": {
@@ -540,6 +624,12 @@
         "url": "https://www.rsssf.org/tables/98full.html",
         "retrieved": "2026-10-06",
         "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf",
+        "name": "RSSSF — Balkan Cup (for Nations) (Guy De Dekker, Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tablesb/balkancup.html",
+        "retrieved": "2026-10-07"
       },
       {
         "source": "rsssf:worldcup",

@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "balkancup",
+  "edition": 1946,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "ALB",
+    "runnerUp": "YUG",
+    "decidedBy": "standings"
+  },
+  "coverage": {
+    "matches": 6,
+    "goals": 20,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Balkan Cup (for Nations) (Guy De Dekker, Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tablesb/balkancup.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-07",
+  "provenance": {
+    "primary": "rsssf"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "ALB",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "YUG",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "ROU",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "BUL",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 7,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1946-10-07",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "YUG",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1946-10-08",
+      "city": "Tiranë",
+      "home": "BUL",
+      "away": "ROU",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1946-10-09",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "BUL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1946-10-11",
+      "city": "Tiranë",
+      "home": "ROU",
+      "away": "YUG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1946-10-12",
+      "city": "Tiranë",
+      "home": "YUG",
+      "away": "BUL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1946-10-13",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "ROU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

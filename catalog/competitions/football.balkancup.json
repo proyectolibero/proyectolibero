@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 2,
+  "id": "football/balkancup",
+  "sport": "football",
+  "competition": "balkancup",
+  "name": "Balkan Cup",
+  "i18nKey": "comp.balkancup.name",
+  "organizer": "—",
+  "scope": "continental",
+  "teamMode": "country",
+  "resultArchetype": "encounter",
+  "gender": "men",
+  "cadence": {
+    "type": "interval",
+    "years": 1
+  },
+  "status": "discontinued",
+  "firstEdition": 1929,
+  "lastEditionHeld": 1980,
+  "nextEditionExpected": null,
+  "coverage": {
+    "held": 12,
+    "published": 12,
+    "missing": 0
+  },
+  "editions": [
+    {
+      "year": "1929-31",
+      "held": true,
+      "champion": "ROU",
+      "runnerUp": "YUG",
+      "data": "1929-31.json"
+    },
+    {
+      "year": 1931,
+      "held": true,
+      "champion": "BUL",
+      "runnerUp": "TUR",
+      "note": "No considerada oficial por todas las fuentes.",
+      "data": "1931.json"
+    },
+    {
+      "year": 1932,
+      "held": true,
+      "champion": "BUL",
+      "runnerUp": "YUG",
+      "data": "1932.json"
+    },
+    {
+      "year": 1933,
+      "held": true,
+      "champion": "ROU",
+      "runnerUp": "YUG",
+      "data": "1933.json"
+    },
+    {
+      "year": "1934-35",
+      "held": true,
+      "champion": "YUG",
+      "runnerUp": "GRE",
+      "data": "1934-35.json"
+    },
+    {
+      "year": 1935,
+      "held": true,
+      "champion": "BUL",
+      "runnerUp": "YUG",
+      "note": "Bulgaria fue declarada campeona en abril de 1936; al término del torneo Yugoslavia había recibido el trofeo (controversia documentada por la fuente).",
+      "data": "1935.json"
+    },
+    {
+      "year": 1936,
+      "held": true,
+      "champion": "ROU",
+      "runnerUp": "BUL",
+      "data": "1936.json"
+    },
+    {
+      "year": 1946,
+      "held": true,
+      "champion": "ALB",
+      "runnerUp": "YUG",
+      "data": "1946.json"
+    },
+    {
+      "year": 1947,
+      "held": true,
+      "champion": "HUN",
+      "runnerUp": "YUG",
+      "note": "Disputada como Campeonato de los Balcanes y Centroeuropa.",
+      "data": "1947.json"
+    },
+    {
+      "year": 1948,
+      "held": true,
+      "note": "No finalizada: la competición fue abandonada.",
+      "data": "1948.json"
+    },
+    {
+      "year": "1973-76",
+      "held": true,
+      "champion": "BUL",
+      "runnerUp": "ROU",
+      "data": "1973-76.json"
+    },
+    {
+      "year": "1977-80",
+      "held": true,
+      "champion": "ROU",
+      "runnerUp": "YUG",
+      "data": "1977-80.json"
+    }
+  ],
+  "stages": [
+    {
+      "id": "group",
+      "key": "phase.group",
+      "kind": "group",
+      "order": 20
+    },
+    {
+      "id": "sf",
+      "key": "phase.sf",
+      "kind": "knockout",
+      "order": 30
+    },
+    {
+      "id": "final",
+      "key": "phase.final",
+      "kind": "knockout",
+      "order": 40
+    },
+    {
+      "id": "playoff",
+      "key": "phase.playoff",
+      "kind": "knockout",
+      "order": 50
+    }
+  ],
+  "updatePolicy": {
+    "mode": "manual",
+    "trigger": "administration",
+    "checkEveryDays": 30,
+    "liveSource": "https://www.rsssf.org/tablesb/balkancup.html",
+    "note": "La fuente RSSSF no declara un organizador institucional; solo menciona anecdóticamente un 'Balkan Cup committee' en el relato de 1935, por lo que organizer se deja como '—'. Cadencia irregular (series de ida y vuelta en 1929-31, 1934-35, 1973-76 y 1977-80). La edición de 1948 no se completó. Solo ediciones cerradas; las actualizaciones siempre las inicia la administración."
+  },
+  "license": {
+    "layers": "CC-BY-4.0",
+    "attributionRequired": true,
+    "commercialResale": false,
+    "note": "Los hechos no son propiedad de nadie; las capas propias (normalización, esquema, procedencia) se publican con atribución. Se preserva siempre la atribución a las fuentes."
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Balkan Cup (for Nations) (Guy De Dekker, Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tablesb/balkancup.html",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true,
+      "note": "Copia libre con reconocimiento adecuado a los autores."
+    }
+  ],
+  "updatedAt": "2026-10-07"
+}

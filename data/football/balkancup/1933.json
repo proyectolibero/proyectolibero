@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "balkancup",
+  "edition": 1933,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "ROU",
+    "runnerUp": "YUG",
+    "decidedBy": "standings"
+  },
+  "coverage": {
+    "matches": 6,
+    "goals": 27,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Balkan Cup (for Nations) (Guy De Dekker, Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tablesb/balkancup.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-07",
+  "provenance": {
+    "primary": "rsssf"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "ROU",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 13,
+          "ga": 0,
+          "pts": 6
+        },
+        {
+          "team": "YUG",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 9,
+          "ga": 8,
+          "pts": 4
+        },
+        {
+          "team": "BUL",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 11,
+          "pts": 2
+        },
+        {
+          "team": "GRE",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 3,
+          "ga": 8,
+          "pts": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1933-06-03",
+      "city": "Bucuresti",
+      "home": "YUG",
+      "away": "GRE",
+      "score": [
+        5,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1933-06-04",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "BUL",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1933-06-06",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "GRE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1933-06-07",
+      "city": "Bucuresti",
+      "home": "YUG",
+      "away": "BUL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1933-06-10",
+      "city": "Bucuresti",
+      "home": "BUL",
+      "away": "GRE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1933-06-11",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "YUG",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

@@ -207,3 +207,179 @@ test("promote rechaza sport y competition con path traversal", () => {
   assert.equal(badCompetition, 1);
   assert.ok(!fs.existsSync(destPath(root)));
 });
+
+/* -------------------------------------------------------------------------- */
+/* ADR-020: años de rango y actualización transaccional del catálogo           */
+/* -------------------------------------------------------------------------- */
+
+const RANGE_YEAR = "1929-31";
+const RANGE_DEST_REL = path.join("data", "football", "balkancup", `${RANGE_YEAR}.json`);
+const RANGE_DRAFT_REL = path.join("drafts", "football", "balkancup", `${RANGE_YEAR}.json`);
+const RANGE_CATALOG_REL = path.join("catalog", "competitions", "football.balkancup.json");
+
+/** Ficha de competición con una única edición de año-rango. */
+function balkanCatalog({ published = false } = {}) {
+  return {
+    schemaVersion: 2,
+    id: "football/balkancup",
+    sport: "football",
+    competition: "balkancup",
+    name: "Balkan Cup",
+    i18nKey: "comp.worldcup.name",
+    organizer: "Balkan Cup",
+    scope: "regional",
+    teamMode: "country",
+    resultArchetype: "encounter",
+    gender: "men",
+    cadence: { type: "interval", years: 4 },
+    status: "historical",
+    firstEdition: 1929,
+    lastEditionHeld: 1980,
+    coverage: { held: 1, published: 0, missing: 1 },
+    editions: [
+      { year: RANGE_YEAR, held: true, champion: "ROU", runnerUp: "YUG", data: published ? `${RANGE_YEAR}.json` : null }
+    ],
+    stages: [
+      { id: "group", key: "phase.group", kind: "group", order: 20 },
+      { id: "final", key: "phase.final", kind: "knockout", order: 70 }
+    ],
+    updatePolicy: { mode: "manual", trigger: "administration" },
+    license: { layers: "CC-BY-4.0", attributionRequired: true, commercialResale: false },
+    sources: [
+      {
+        id: "rsssf",
+        name: "RSSSF",
+        url: "https://www.rsssf.org/tables/balkan.html",
+        license: "rsssf-attribution",
+        redistribute: true
+      }
+    ]
+  };
+}
+
+/** Borrador válido con `edition` de rango. */
+function rangeDraft() {
+  return {
+    schemaVersion: 2,
+    archetype: "encounter",
+    sport: "football",
+    competition: "balkancup",
+    edition: RANGE_YEAR,
+    status: "closed",
+    teamMode: "country",
+    hosts: ["ROU"],
+    teamsCount: 2,
+    results: { champion: "ROU", runnerUp: "YUG", finalMatchId: "m001" },
+    coverage: { matches: 1, goals: 3, complete: true, scope: "final" },
+    sources: [
+      {
+        id: "rsssf:balkan",
+        name: "RSSSF — Balkan Cup",
+        url: "https://www.rsssf.org/tables/balkan.html",
+        retrieved: "2026-10-07",
+        license: "rsssf-attribution",
+        redistribute: true
+      }
+    ],
+    asOf: "2026-10-07",
+    provenance: { primary: "rsssf:balkan" },
+    groups: [],
+    matches: [
+      {
+        id: "m001",
+        stage: "final",
+        date: "1929-10-06",
+        city: "Bucharest",
+        home: "ROU",
+        away: "YUG",
+        score: [2, 1],
+        status: "played",
+        notes: []
+      }
+    ],
+    scorers: []
+  };
+}
+
+/** Copia temporal mínima con la competición de año-rango. */
+function makeRangeRepo({ published = false } = {}) {
+  const root = tmpRoot();
+  fs.cpSync(path.join(ROOT, "schemas"), path.join(root, "schemas"), { recursive: true });
+  fs.cpSync(path.join(ROOT, "core"), path.join(root, "core"), { recursive: true });
+  fs.cpSync(path.join(ROOT, "i18n"), path.join(root, "i18n"), { recursive: true });
+  fs.mkdirSync(path.join(root, "catalog", "competitions"), { recursive: true });
+  fs.copyFileSync(path.join(ROOT, "catalog", "sports.json"), path.join(root, "catalog", "sports.json"));
+  writeJSON(path.join(root, RANGE_CATALOG_REL), balkanCatalog({ published }));
+  fs.mkdirSync(path.join(root, "data", "football", "balkancup"), { recursive: true });
+  fs.mkdirSync(path.join(root, "drafts", "football", "balkancup"), { recursive: true });
+  return root;
+}
+
+test("promote --confirm con año de rango escribe y actualiza el catálogo", () => {
+  const root = makeRangeRepo();
+  writeJSON(path.join(root, RANGE_DRAFT_REL), rangeDraft());
+  const code = commandPromote({ sport: "football", competition: "balkancup", year: RANGE_YEAR, confirm: true }, root);
+  assert.equal(code, 0);
+  assert.ok(fs.existsSync(path.join(root, RANGE_DEST_REL)), "debe escribir la edición");
+
+  const catalog = JSON.parse(fs.readFileSync(path.join(root, RANGE_CATALOG_REL), "utf8"));
+  const entry = catalog.editions.find((e) => e.year === RANGE_YEAR);
+  assert.equal(entry.data, `${RANGE_YEAR}.json`);
+  assert.equal(catalog.coverage.published, 1);
+  assert.equal(catalog.coverage.missing, 0);
+
+  const { errors, warnings } = validateProject(root);
+  assert.equal(errors.length, 0, JSON.stringify(errors));
+  assert.equal(warnings.length, 0, JSON.stringify(warnings));
+});
+
+test("promote con año de rango y borrador inválido no escribe nada (ni catálogo)", () => {
+  const root = makeRangeRepo();
+  const draft = rangeDraft();
+  draft.matches[0].stage = "bananas";
+  writeJSON(path.join(root, RANGE_DRAFT_REL), draft);
+  const catalogBefore = fs.readFileSync(path.join(root, RANGE_CATALOG_REL));
+
+  const code = commandPromote({ sport: "football", competition: "balkancup", year: RANGE_YEAR, confirm: true }, root);
+  assert.equal(code, 1);
+  assert.ok(!fs.existsSync(path.join(root, RANGE_DEST_REL)), "un borrador inválido no debe escribir");
+  assert.deepEqual(fs.readFileSync(path.join(root, RANGE_CATALOG_REL)), catalogBefore);
+});
+
+test("promote aborta si el catálogo no contiene la edición (no la crea a ciegas)", () => {
+  const root = makeRangeRepo();
+  const catalog = balkanCatalog();
+  catalog.editions[0].year = "1930-32";
+  writeJSON(path.join(root, RANGE_CATALOG_REL), catalog);
+  writeJSON(path.join(root, RANGE_DRAFT_REL), rangeDraft());
+
+  const code = commandPromote({ sport: "football", competition: "balkancup", year: RANGE_YEAR, confirm: true }, root);
+  assert.equal(code, 1);
+  assert.ok(!fs.existsSync(path.join(root, RANGE_DEST_REL)));
+});
+
+test("promote --confirm revierte edición y catálogo byte a byte si el proyecto deja de validar", () => {
+  const root = makeRangeRepo({ published: true });
+  const catalogPath = path.join(root, RANGE_CATALOG_REL);
+  const destFile = path.join(root, RANGE_DEST_REL);
+
+  writeJSON(destFile, rangeDraft());
+  const manifest = buildRelease(root, { releaseId: "2026.10", asOf: "2026-10-07", created: "2026-10-07T00:00:00Z" });
+  writeRelease(root, manifest);
+
+  const catalogBefore = fs.readFileSync(catalogPath);
+  const destBefore = fs.readFileSync(destFile);
+
+  const changed = rangeDraft();
+  changed.matches[0].score = [3, 1];
+  changed.coverage.goals = 4;
+  writeJSON(path.join(root, RANGE_DRAFT_REL), changed);
+
+  const code = commandPromote({ sport: "football", competition: "balkancup", year: RANGE_YEAR, confirm: true }, root);
+  assert.equal(code, 1);
+  assert.deepEqual(fs.readFileSync(destFile), destBefore, "la edición debe quedar byte a byte como estaba");
+  assert.deepEqual(fs.readFileSync(catalogPath), catalogBefore, "el catálogo debe quedar byte a byte como estaba");
+
+  const { errors } = validateProject(root);
+  assert.equal(errors.length, 0, JSON.stringify(errors));
+});

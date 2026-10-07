@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "balkancup",
+  "edition": 1935,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "BUL",
+    "runnerUp": "YUG",
+    "decidedBy": "standings"
+  },
+  "coverage": {
+    "matches": 6,
+    "goals": 30,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Balkan Cup (for Nations) (Guy De Dekker, Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tablesb/balkancup.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-07",
+  "provenance": {
+    "primary": "rsssf"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "YUG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 11,
+          "ga": 4,
+          "pts": 5
+        },
+        {
+          "team": "BUL",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 12,
+          "ga": 5,
+          "pts": 5
+        },
+        {
+          "team": "ROU",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 8,
+          "pts": 1
+        },
+        {
+          "team": "GRE",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 5,
+          "ga": 13,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1935-06-16",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "GRE",
+      "score": [
+        5,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1935-06-17",
+      "city": "Sofia",
+      "home": "YUG",
+      "away": "ROU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1935-06-19",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "ROU",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1935-06-21",
+      "city": "Sofia",
+      "home": "YUG",
+      "away": "GRE",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1935-06-24",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "YUG",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1935-06-24",
+      "city": "Sofia",
+      "home": "ROU",
+      "away": "GRE",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [
+    {
+      "reason": "líder de la tabla (YUG) != campeón del catálogo (BUL); se conserva el catálogo"
+    }
+  ],
+  "teamsCount": 4
+}
