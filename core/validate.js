@@ -391,6 +391,21 @@ function checkCoverage(errors, warnings, file, edition) {
   checkScorersCoverage(warnings, file, edition, coverage);
 }
 
+/*
+ * Coherencia de penaltis: una tanda (`pens[]`) solo se da tras un partido
+ * empatado. Un `pens[]` con marcador nulo o no igualado es una incoherencia
+ * (EDI017); el alcance no incluye exigir la nota `pen`, porque hay ediciones
+ * publicadas que registran la tanda sin ella.
+ */
+function checkPensCoherence(list, file, edition) {
+  for (const match of edition.matches || []) {
+    if (!Array.isArray(match.pens)) continue;
+    if (!Array.isArray(match.score) || match.score[0] !== match.score[1]) {
+      push(list, "EDI017", file, `partido ${match.id} con pens[] pero marcador no empatado`);
+    }
+  }
+}
+
 function checkCountriesV2(list, file, edition, countries) {
   for (const match of edition.matches || []) {
     const where = `partido ${match.id}`;
@@ -432,6 +447,7 @@ function validateEditionV2(ctx, file, edition, competition, entry) {
   checkArchetypeFields(errors, file, edition);
   checkFinalMatchId(errors, file, edition);
   checkChampionCoverage(errors, file, edition);
+  checkPensCoherence(errors, file, edition);
   validateScorers(errors, file, edition.scorers || [], ctx.countries);
   if (Array.isArray(edition.groups) && edition.groups.length) validateGroups(errors, file, edition.groups, edition.matches || [], ctx.countries);
   checkCoverage(errors, warnings, file, edition);

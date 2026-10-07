@@ -3,15 +3,17 @@
 /**
  * Parsers de las fuentes RSSSF del torneo final del Mundial (esquema v2).
  *
- * Alcance actual: `f` (listado resumido), `full` (detallado) y `qf-scor`
- * (goleadores y totales por equipo). Los formatos de clasificación (`q`,
- * `q-det`) todavía no se implementan: `parse` devuelve arrays vacíos y un aviso.
+ * Alcance actual: `f` (listado resumido), `full` (detallado del Mundial),
+ * `ed` (detalle por edición de otras competiciones: fecha en línea propia y,
+ * si la hay, tanda de penaltis) y `qf-scor` (goleadores y totales por equipo).
+ * Los formatos de clasificación (`q`, `q-det`) todavía no se implementan:
+ * `parse` devuelve arrays vacíos y un aviso.
  *
  * El texto de entrada es el HTML ya decodificado a UTF-8 (salida de
  * `ingest/fetch.js`); aquí se limpian las etiquetas y se decodifican entidades.
  */
 
-const KINDS = ["full", "qf-scor", "q-det", "f", "q"];
+const KINDS = ["full", "qf-scor", "q-det", "f", "q", "ed"];
 
 /** Entidades HTML nombradas frecuentes en RSSSF (Latin-1, tipográficas y símbolos). */
 const ENTITIES = {
@@ -108,7 +110,8 @@ const COUNTRY_ALIASES = {
   "korea": "KOR",
   "czech republic": "CZE",
   "czech rep.": "CZE",
-  "czech rep": "CZE"
+  "czech rep": "CZE",
+  "united states": "USA"
 };
 
 /** Índice inverso nombre en inglés (minúsculas) → código FIFA de 3 letras. */
@@ -150,6 +153,34 @@ function resolveCountry(name) {
   const upper = text.toUpperCase();
   if (/^[A-Za-z]{2,4}$/.test(upper) && COUNTRY_CODES.has(upper)) return upper;
   return null;
+}
+
+/**
+ * Último sufijo de `text` que es un nombre de país: el equipo local (y el resto,
+ * la ciudad). Itera de sufijos cortos a largos y se queda con el más largo que
+ * resuelve, para admitir selecciones de varias palabras.
+ */
+function trailingCountry(text) {
+  const tokens = String(text).trim().split(/\s+/).filter(Boolean);
+  let found = null;
+  for (let size = 1; size <= tokens.length; size += 1) {
+    const suffix = tokens.slice(tokens.length - size).join(" ");
+    if (resolveCountry(suffix)) {
+      found = { name: suffix, before: tokens.slice(0, tokens.length - size).join(" ") };
+    }
+  }
+  return found;
+}
+
+/** Primer prefijo de `text` que es un nombre de país: el equipo visitante. */
+function leadingCountry(text) {
+  const tokens = String(text).trim().split(/\s+/).filter(Boolean);
+  let found = null;
+  for (let size = 1; size <= tokens.length; size += 1) {
+    const prefix = tokens.slice(0, size).join(" ");
+    if (resolveCountry(prefix)) found = { name: prefix, rest: tokens.slice(size).join(" ") };
+  }
+  return found;
 }
 
 function emptyResult() {
@@ -592,6 +623,141 @@ function parseFull(text, ctx, result) {
   }
 }
 
+/* -------------------------------------------------------------------------- */
+/* Formato `ed`: detalle por edición de competiciones no-Mundial               */
+/* -------------------------------------------------------------------------- */
+
+/** Fecha con mes con nombre al inicio: `October, 15 1992 …`. */
+const ED_NAMED_DATE = /^([A-Za-z]{3,9})\.?,?\s+(\d{1,2}),?\s+(\d{4})\b(.*)$/;
+/** Fecha numérica al inicio: `06/01/1995, Riyadh, …`. */
+const ED_NUMERIC_DATE = new RegExp(`^(${DATE_TOKEN})(.*)$`);
+
+/** Encabezados de fase/bloque de un detalle por edición. */
+const ED_SECTION =
+  /^(?:group\s+[A-Z0-9]+|quarter-?finals?|semi-?finals?|third(?:\s+place)?(?:\s+match)?|3\/4(?:\s+place)?(?:\s+match)?|match\s+for\s+(?:the\s+)?third\s+place|final|first\s+round|second\s+round|play-?offs?)\b/i;
+
+/** Anotación entre corchetes al final de una línea (`[aet, 5-6 pen]`). */
+const ED_TRAILING_BRACKET = /\[([^\]]*)\]\s*$/;
+
+/**
+ * Reconoce una línea de fecha y devuelve `{ iso, rest }` (o `null`). Reutiliza
+ * `parseDate`: el mes con nombre se normaliza a `DD Mon YYYY` y es `parseDate`
+ * quien valida mes y año, de modo que una línea de partido no se confunde con
+ * una fecha.
+ */
+function editionDate(line, ctx) {
+  const named = ED_NAMED_DATE.exec(line);
+  if (named) {
+    const parsed = parseDate(`${named[2]} ${named[1]} ${named[3]}`, ctx);
+    if (parsed.iso) return { iso: parsed.iso, rest: named[4] };
+  }
+  const numeric = ED_NUMERIC_DATE.exec(line);
+  if (numeric) {
+    const parsed = parseDate(numeric[1], ctx);
+    if (parsed.iso) return { iso: parsed.iso, rest: numeric[2] };
+  }
+  return null;
+}
+
+/** Ciudad de la línea de fecha numérica `, Ciudad, Estadio, …`; `null` si no hay. */
+function editionCity(rest) {
+  const match = /^\s*,\s*([^,]+?)\s*(?:,|$)/.exec(rest);
+  return match ? match[1].trim() : null;
+}
+
+/** Añade `pen` (y `aet`) y la tanda a un partido desde `[aet, 5-6 pen]`. */
+function applyPenaltyBracket(match, content) {
+  const tokens = String(content).split(",").map((token) => token.trim().toLowerCase()).filter(Boolean);
+  const pen = tokens.find((token) => /^\d+\s*[-:]\s*\d+\s+pen$/.test(token));
+  if (!pen) return false;
+  const digits = /(\d+)\s*[-:]\s*(\d+)/.exec(pen);
+  const notes = new Set([...(match.notes || []), "pen"]);
+  if (tokens.includes("aet")) notes.add("aet");
+  match.pens = [Number(digits[1]), Number(digits[2])];
+  match.notes = [...notes];
+  return true;
+}
+
+/**
+ * Parsea el formato `ed`: páginas de detalle por edición (p. ej.
+ * `intconcup92.html`/`intconcup95.html`). La fecha va en su propia línea y el
+ * partido (local, marcador y visitante) en la siguiente; las líneas de
+ * goleadores y alineaciones se ignoran. Si aparece `PENALTY SHOOTOUT:`, se lee
+ * la tanda y se registra `pens[]` en el partido anterior: la última cifra
+ * acumulada `a-b` es el resultado del tandeo, en orden local-visitante.
+ */
+function parseEditionDetail(text, ctx, result) {
+  const lines = text.split("\n");
+  let section = null;
+  let pending = null;
+  let last = null;
+  let inShootout = false;
+
+  for (let i = 0; i < lines.length; i += 1) {
+    const line = cleanLine(lines[i]);
+    if (line === "") continue;
+
+    if (/^PENALTY SHOOTOUT\b/i.test(line)) {
+      inShootout = true;
+      continue;
+    }
+    if (inShootout) {
+      const cumulative = /(\d+)\s*[-:]\s*(\d+)\s*$/.exec(line);
+      if (cumulative && /\[(SCORED|MISSED)\]/i.test(line)) {
+        if (last) {
+          last.pens = [Number(cumulative[1]), Number(cumulative[2])];
+          last.notes = [...new Set([...(last.notes || []), "pen"])];
+        }
+        continue;
+      }
+      inShootout = false;
+    }
+
+    const date = editionDate(line, ctx);
+    if (date) {
+      pending = { date: date.iso, city: editionCity(date.rest) };
+      last = null;
+      continue;
+    }
+
+    const header = ED_SECTION.exec(line);
+    if (header) {
+      section = header[0].trim();
+      pending = null;
+      continue;
+    }
+
+    if (!pending) continue;
+    const score = /(\d+)\s*[-:]\s*(\d+)/.exec(line);
+    if (!score) continue;
+    const before = line.slice(0, score.index).trim();
+    const awayRaw = line.slice(score.index + score[0].length).trim().replace(/^\s*\([^)]*\)\s*/, "");
+    const home = trailingCountry(before);
+    const away = leadingCountry(awayRaw);
+    if (!home || !away) continue;
+
+    last = {
+      raw: line,
+      date: pending.date,
+      city: pending.city,
+      home: home.name,
+      away: away.name,
+      score: `${score[1]}-${score[2]}`,
+      homeScore: Number(score[1]),
+      awayScore: Number(score[2]),
+      status: "played",
+      group: null,
+      section,
+      notes: [],
+      extra: null
+    };
+    const bracket = ED_TRAILING_BRACKET.exec(awayRaw);
+    if (bracket) applyPenaltyBracket(last, bracket[1]);
+    result.matches.push(last);
+    pending = null;
+  }
+}
+
 const SCORER_NUMBER = /^(\d+)\s*[-–—]\s*(.*)$/;
 const SCORER_ITEM = /^(.*?)\s*\(([^()]*)\)\s*$/;
 const OWN_GOAL = /^own goals?\s*[-–—]\s*(.*)$/i;
@@ -742,7 +908,7 @@ function parse(kind, text, ctx) {
   const result = emptyResult();
   const context = ctx || {};
   const normalized = String(kind || "").toLowerCase();
-  if (normalized !== "f" && normalized !== "full" && normalized !== "qf-scor") {
+  if (normalized !== "f" && normalized !== "full" && normalized !== "ed" && normalized !== "qf-scor") {
     warn(result, null, `kind '${kind}' no implementado todavía`);
     return result;
   }
@@ -752,6 +918,7 @@ function parse(kind, text, ctx) {
   const normalizedText = text.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
   if (normalized === "f") parseSummary(normalizedText, context, result);
   else if (normalized === "full") parseFull(normalizedText, context, result);
+  else if (normalized === "ed") parseEditionDetail(normalizedText, context, result);
   else parseScorers(normalizedText, result);
   return result;
 }
@@ -763,6 +930,8 @@ module.exports = {
   parseStanding,
   resolveCountry,
   resolveCountryName,
+  trailingCountry,
+  leadingCountry,
   decodeHtml,
   cleanLine,
   decodeEntities: decodeHtml,

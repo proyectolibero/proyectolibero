@@ -27,6 +27,15 @@
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
+    },
+    {
+      "id": "rsssf:intconcup95",
+      "name": "RSSSF — intconcup95",
+      "url": "https://www.rsssf.org/tablesi/intconcup95.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
     }
   ],
   "asOf": "2026-10-07",
@@ -111,7 +120,7 @@
       "stage": "group",
       "group": "A",
       "matchday": null,
-      "date": null,
+      "date": "1995-01-06",
       "city": null,
       "home": "KSA",
       "away": "MEX",
@@ -128,7 +137,7 @@
       "stage": "group",
       "group": "A",
       "matchday": null,
-      "date": null,
+      "date": "1995-01-08",
       "city": null,
       "home": "KSA",
       "away": "DEN",
@@ -145,7 +154,7 @@
       "stage": "group",
       "group": "A",
       "matchday": null,
-      "date": null,
+      "date": "1995-01-10",
       "city": null,
       "home": "MEX",
       "away": "DEN",
@@ -154,15 +163,20 @@
         1
       ],
       "status": "played",
-      "notes": [],
-      "pens": null
+      "notes": [
+        "pen"
+      ],
+      "pens": [
+        2,
+        4
+      ]
     },
     {
       "id": "m004",
       "stage": "group",
       "group": "B",
       "matchday": null,
-      "date": null,
+      "date": "1995-01-06",
       "city": null,
       "home": "JPN",
       "away": "NGA",
@@ -179,7 +193,7 @@
       "stage": "group",
       "group": "B",
       "matchday": null,
-      "date": null,
+      "date": "1995-01-08",
       "city": null,
       "home": "JPN",
       "away": "ARG",
@@ -196,7 +210,7 @@
       "stage": "group",
       "group": "B",
       "matchday": null,
-      "date": null,
+      "date": "1995-01-10",
       "city": null,
       "home": "ARG",
       "away": "NGA",
@@ -213,7 +227,7 @@
       "stage": "third",
       "group": null,
       "matchday": null,
-      "date": null,
+      "date": "1995-01-13",
       "city": null,
       "home": "MEX",
       "away": "NGA",
@@ -222,15 +236,20 @@
         1
       ],
       "status": "played",
-      "notes": [],
-      "pens": null
+      "notes": [
+        "pen"
+      ],
+      "pens": [
+        5,
+        4
+      ]
     },
     {
       "id": "m008",
       "stage": "final",
       "group": null,
       "matchday": null,
-      "date": null,
+      "date": "1995-01-13",
       "city": null,
       "home": "DEN",
       "away": "ARG",

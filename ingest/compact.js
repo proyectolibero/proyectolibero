@@ -15,7 +15,14 @@
  * país (`resolveCountry`) para no partir mal los nombres compuestos.
  */
 
-const { parseDate, cleanLine, parseStanding, resolveCountry } = require("./rsssf.js");
+const {
+  parseDate,
+  cleanLine,
+  parseStanding,
+  resolveCountry,
+  trailingCountry,
+  leadingCountry
+} = require("./rsssf.js");
 
 /** Fecha al inicio de línea, en cualquiera de los formatos de `parseDate`. */
 const DATE_RE =
@@ -51,7 +58,7 @@ function stripTrailingParen(text) {
 /** Rótulos de tabla que no son datos pero sí se documentan. */
 const CAPTION_RE = /^(?:final\s+)?ranking(?:\s+at\s+end\s+of\s+tournament)?\s*:?\s*$/i;
 const NOTE_PREFIX_RE = /^(?:NB:|Topscorers?:)/i;
-const PENALTIES_RE = /\bwin(?:s)?\s+\d+\s*[-:]\s*\d+\s+on penalties/i;
+const PENALTIES_RE = /^(.+?)\s+wins?\s+(\d+)\s*[-:]\s*(\d+)\s+on penalties\s*$/i;
 const AGGREGATE_RE = /\b(?:qualified|win|wins|winners?)\b[^.]*\b(?:aggregate|on away goals)\b/i;
 const FULL_DETAILS_RE = /^full details$/i;
 
@@ -64,34 +71,6 @@ function emptyResult() {
 
 function warn(result, line, reason) {
   result.warnings.push({ line, reason });
-}
-
-/**
- * Último sufijo de `text` que es un nombre de país: el equipo local (y el resto,
- * la ciudad). Itera de sufijos cortos a largos y se queda con el más largo que
- * resuelve, para admitir selecciones de varias palabras.
- */
-function trailingCountry(text) {
-  const tokens = String(text).trim().split(/\s+/).filter(Boolean);
-  let found = null;
-  for (let size = 1; size <= tokens.length; size += 1) {
-    const suffix = tokens.slice(tokens.length - size).join(" ");
-    if (resolveCountry(suffix)) {
-      found = { name: suffix, before: tokens.slice(0, tokens.length - size).join(" ") };
-    }
-  }
-  return found;
-}
-
-/** Primer prefijo de `text` que es un nombre de país: el equipo visitante. */
-function leadingCountry(text) {
-  const tokens = String(text).trim().split(/\s+/).filter(Boolean);
-  let found = null;
-  for (let size = 1; size <= tokens.length; size += 1) {
-    const prefix = tokens.slice(0, size).join(" ");
-    if (resolveCountry(prefix)) found = { name: prefix, rest: tokens.slice(size).join(" ") };
-  }
-  return found;
 }
 
 /** Limpia de anotaciones `[…]` (p. ej. `[goal average 2.75]`) antes de parsear. */
@@ -130,12 +109,26 @@ function parseMatchLine(dateText, rest, group, section, ctx, result, lineNo, ful
     return;
   }
   const before = rest.slice(0, scoreMatch.index).trim();
-  const after = rest.slice(scoreMatch.index + scoreMatch[0].length).trim();
+  let after = rest.slice(scoreMatch.index + scoreMatch[0].length).trim();
+  const bracket = /\[([^\]]*)\]\s*$/.exec(after);
+  if (bracket) after = after.slice(0, bracket.index).trim();
   const home = trailingCountry(before);
   const away = leadingCountry(after);
   if (!home || !away) {
     warn(result, lineNo, `equipos no reconocidos: ${fullLine.trim()}`);
     return;
+  }
+  const notes = [];
+  let pens = null;
+  if (bracket) {
+    const tokens = bracket[1].split(",").map((token) => token.trim().toLowerCase()).filter(Boolean);
+    const pen = tokens.find((token) => /^\d+\s*[-:]\s*\d+\s+pen$/.test(token));
+    if (pen) {
+      const digits = /(\d+)\s*[-:]\s*(\d+)/.exec(pen);
+      pens = [Number(digits[1]), Number(digits[2])];
+      notes.push("pen");
+      if (tokens.includes("aet")) notes.push("aet");
+    }
   }
   const trailing = stripBrackets(away.rest).replace(/[.;,\s]+$/, "").trim();
   if (trailing !== "") result.notes.push({ line: lineNo, text: trailing });
@@ -152,9 +145,29 @@ function parseMatchLine(dateText, rest, group, section, ctx, result, lineNo, ful
     status: "played",
     group,
     section,
-    notes: [],
+    notes,
+    pens,
     extra: null
   });
+}
+
+/**
+ * Ata una línea `X win A-B on penalties` al último partido empatado: el ganador
+ * determina la orientación local-visitante de `pens[]`. Devuelve `false` si no
+ * hay un partido empatado al que atribuirla (la línea se guarda como nota).
+ */
+function attachShootout(result, match) {
+  const last = result.matches[result.matches.length - 1];
+  if (!last || last.homeScore !== last.awayScore) return false;
+  const winner = match[1].trim().toLowerCase();
+  const home = String(last.home).toLowerCase();
+  const away = String(last.away).toLowerCase();
+  const scored = [Number(match[2]), Number(match[3])];
+  if (winner === home) last.pens = scored;
+  else if (winner === away) last.pens = [scored[1], scored[0]];
+  else return false;
+  if (!last.notes.includes("pen")) last.notes = [...last.notes, "pen"];
+  return true;
 }
 
 /**
@@ -212,8 +225,9 @@ function parseCompact(text, ctx) {
       continue;
     }
     if (CAPTION_RE.test(line) || FULL_DETAILS_RE.test(line)) continue;
-    if (PENALTIES_RE.test(line)) {
-      result.notes.push({ line: lineNo, text: line });
+    const shootout = PENALTIES_RE.exec(line);
+    if (shootout) {
+      if (!attachShootout(result, shootout)) result.notes.push({ line: lineNo, text: line });
       continue;
     }
     if (/^(?:competition\s+)?abandoned\b/i.test(line)) {

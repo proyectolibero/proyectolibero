@@ -394,3 +394,72 @@ test("parseDate avisa y no inventa ante una fecha dudosa", () => {
   assert.equal(heuristic.iso, "1984-01-26");
   assert.match(heuristic.warning, /sin ctx.year/);
 });
+
+test("parse('ed') lee la fecha en línea propia y equipos de varias palabras (formato 1992)", () => {
+  const text = [
+    "Intercontinental Cup for Nations 1992",
+    "",
+    "Semifinals",
+    "",
+    "October, 15 1992 Att: 70,000 Ref: Ulisses da Silva (BRA)",
+    "Saudi Arabia 3-0 (0-0) United States",
+    "1-0 48' Al-Bishi",
+    "Saudi Arabia: Al-Otaibi - A. Al-Dosari, Al-Roomi",
+    "",
+    "October, 20 1992 Att: 75,000 Ref: Lim Kee Chong (Mauritius)",
+    "Argentina 3-1 (2-0) Saudi Arabia",
+    "1-0 18' Rodriguez"
+  ].join("\n");
+  const { matches, warnings } = parse("ed", text, { year: 1992 });
+  assert.equal(warnings.length, 0);
+  assert.equal(matches.length, 2);
+  assert.equal(matches[0].date, "1992-10-15");
+  assert.equal(matches[0].section, "Semifinals");
+  assert.equal(matches[0].home, "Saudi Arabia");
+  assert.equal(matches[0].away, "United States");
+  assert.equal(matches[0].score, "3-0");
+  assert.equal(matches[1].date, "1992-10-20");
+  assert.equal(matches[1].home, "Argentina");
+  assert.equal(matches[1].away, "Saudi Arabia");
+});
+
+test("parse('ed') lee la fecha numérica y la tanda PENALTY SHOOTOUT (formato 1995)", () => {
+  const text = [
+    "GROUP A [DENMARK, MEXICO, SAUDI ARABIA]",
+    "",
+    "10/01/1995, Riyadh, King Fahd Stadium, 20.000 [18.15]",
+    "DENMARK                1-1           MEXICO [HT 0-1]",
+    "Scorers:",
+    "Peter RASMUSSEN 48'                  Luis GARCÍA 25'",
+    "PENALTY SHOOTOUT:",
+    "                                     Claudio SUÁREZ          [SCORED] 0-1",
+    "Michael SCHJONBERG      [SCORED] 1-1 Joaquín DEL OLMO        [SCORED] 1-2",
+    "Michael LAUDRUP         [SCORED] 2-2 Luis GARCÍA             [MISSED] 2-2",
+    "Jes HOGH                [SCORED] 3-2 Marcelino BERNAL        [MISSED] 3-2",
+    "Marc RIEPER             [SCORED] 4-2",
+    "",
+    "3/4 PLACE MATCH",
+    "",
+    "13/01/1995, Riyadh, King Fahd Stadium, 20.000 [18.00]",
+    "MEXICO                 1-1           NIGERIA [HT 1-1][FT 1-1]",
+    "PENALTY SHOOTOUT:",
+    "                                     Augustine OKOCHA        [SCORED] 0-1",
+    "Alberto GARCÍA ASPÉ     [SCORED] 1-1 Mutiu ADEPOJU           [SCORED] 1-2",
+    "Luis GARCÍA             [SCORED] 2-2 Augustine EGUAVOEN      [SCORED] 2-3",
+    "Benjamin GALINDO        [SCORED] 3-3 Ben IROHA               [SCORED] 3-4",
+    "Carlos HERMOSILLO       [SCORED] 4-4 Emmanuel AMUNIKE        [MISSED] 4-4",
+    "Claudio SUÁREZ          [SCORED] 5-4"
+  ].join("\n");
+  const { matches, warnings } = parse("ed", text, { year: 1995 });
+  assert.equal(warnings.length, 0);
+  assert.equal(matches.length, 2);
+  assert.equal(matches[0].date, "1995-01-10");
+  assert.equal(matches[0].home, "DENMARK");
+  assert.equal(matches[0].away, "MEXICO");
+  assert.deepEqual(matches[0].pens, [4, 2]);
+  assert.deepEqual(matches[0].notes, ["pen"]);
+  assert.equal(matches[1].date, "1995-01-13");
+  assert.equal(matches[1].section, "3/4 PLACE MATCH");
+  assert.deepEqual(matches[1].pens, [5, 4]);
+  assert.deepEqual(matches[1].notes, ["pen"]);
+});

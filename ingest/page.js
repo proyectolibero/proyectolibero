@@ -88,9 +88,44 @@ function toEncounterMatch(match, index, hasFinal) {
     away: normalizeTeam(match.away),
     score: typeof match.homeScore === "number" ? [match.homeScore, match.awayScore] : null,
     status: match.status,
-    notes: [],
-    pens: null
+    notes: Array.isArray(match.notes) ? [...match.notes] : [],
+    pens: Array.isArray(match.pens) ? [...match.pens] : null
   };
+}
+
+/**
+ * Fusiona el detalle de una edición (formato `ed`) en su borrador: copia la
+ * fecha a los partidos que el índice compacto deja sin ella y completa `pens[]`
+ * y las notas (`pen`/`aet`) de las tandas. El emparejamiento es por pareja de
+ * equipos, admitiendo local/visitante invertidos: la orientación publicada (la
+ * del índice) se conserva. Devuelve cuántos partidos se enriquecieron.
+ */
+function mergeEditionDetail(draft, detail, warnings) {
+  let merged = 0;
+  for (const source of detail.matches || []) {
+    const home = normalizeTeam(source.home);
+    const away = normalizeTeam(source.away);
+    if (!home || !away) continue;
+    const target = (draft.matches || []).find(
+      (match) =>
+        (match.home === home && match.away === away) ||
+        (match.home === away && match.away === home)
+    );
+    if (!target) {
+      warnings.push({ reason: `detalle sin partido en el borrador: ${home}-${away} (${source.date || "sin fecha"})` });
+      continue;
+    }
+    const reversed = target.home === away && target.away === home;
+    if (!target.date && source.date) target.date = source.date;
+    for (const note of source.notes || []) {
+      if (!target.notes.includes(note)) target.notes.push(note);
+    }
+    if (!target.pens && Array.isArray(source.pens)) {
+      target.pens = reversed ? [source.pens[1], source.pens[0]] : source.pens;
+    }
+    merged += 1;
+  }
+  return merged;
 }
 
 /** Agrupa las filas de clasificación y descarta tablas que no cuadran. */
@@ -234,16 +269,17 @@ function buildDraft(edition, parsed, competition, source, warnings) {
  * Fragmenta una página de RSSSF por edición y devuelve un borrador por cada
  * edición del catálogo que tenga sección en la fuente.
  *
- * @param {{text:string, competition:object, source:{id:string,name:string,url:string,retrieved?:string,license?:string}}} input
+ * @param {{text:string, competition:object, source:object, details?:Array<{year:(number|string), result:object, source:object}>}} input
  * @returns {{drafts: Array<{year:(number|string), draft:object}>, warnings: Array<object>}}
  */
 function buildCompetitionDrafts(input) {
-  const { text, competition, source } = input || {};
+  const { text, competition, source, details } = input || {};
   if (typeof text !== "string" || text === "") throw new Error("buildCompetitionDrafts: falta 'text'");
   if (!competition || !Array.isArray(competition.editions)) throw new Error("buildCompetitionDrafts: falta 'competition.editions'");
   if (!source || !source.id) throw new Error("buildCompetitionDrafts: falta 'source'");
 
   const overview = parseOverview(text);
+  const detailList = Array.isArray(details) ? details : [];
   const drafts = [];
   const warnings = [];
   for (const edition of competition.editions) {
@@ -268,9 +304,24 @@ function buildCompetitionDrafts(input) {
       editionWarnings.push({ line: warning.line, reason: warning.reason });
     }
     const draft = buildDraft(edition, parsed, competition, source, editionWarnings);
+    const detail = detailList.find((item) => canonicalYear(item.year) === target);
+    if (detail && detail.result) {
+      const merged = mergeEditionDetail(draft, detail.result, editionWarnings);
+      if (merged > 0 && detail.source) {
+        draft.sources.push({
+          id: detail.source.id,
+          name: detail.source.name,
+          url: detail.source.url,
+          retrieved: toIsoDate(detail.source.retrieved),
+          publisher: detail.source.publisher || "RSSSF",
+          license: detail.source.license || DEFAULT_LICENSE,
+          redistribute: true
+        });
+      }
+    }
     drafts.push({ year: edition.year, draft });
   }
   return { drafts, warnings };
 }
 
-module.exports = { buildCompetitionDrafts, canonicalYear };
+module.exports = { buildCompetitionDrafts, mergeEditionDetail, canonicalYear };

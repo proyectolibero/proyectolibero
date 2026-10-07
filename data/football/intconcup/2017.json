@@ -344,8 +344,14 @@
         0
       ],
       "status": "played",
-      "notes": [],
-      "pens": null
+      "notes": [
+        "pen",
+        "aet"
+      ],
+      "pens": [
+        0,
+        3
+      ]
     },
     {
       "id": "m014",

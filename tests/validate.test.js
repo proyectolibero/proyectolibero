@@ -153,3 +153,18 @@ test("ADR-020: champion null sin motivo documentado: EDI016", () => {
   edition.coverage.complete = false;
   assert.ok(codes(validate(edition)).includes("EDI016"));
 });
+
+test("EDI017: pens[] con marcador no empatado es incoherente", () => {
+  const edition = clone();
+  edition.matches[1].pens = [4, 3];
+  assert.ok(codes(validate(edition)).includes("EDI017"));
+});
+
+test("pens[] con marcador empatado y nota pen es coherente", () => {
+  const edition = clone();
+  edition.matches[1].score = [2, 2];
+  edition.matches[1].notes = ["pen"];
+  edition.matches[1].pens = [3, 2];
+  edition.coverage.goals = 10;
+  assert.deepEqual(validate(edition).errors, []);
+});

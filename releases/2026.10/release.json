@@ -91,14 +91,14 @@
     },
     {
       "path": "data/football/intconcup/1992.json",
-      "sha256": "37c09894836ffda317a1e3b93c25cbd9a8ad60d24ec686b240bac8e38326a483",
+      "sha256": "1d83a9c9fedca718041c36bb60b469bb6f17ae73f857a2be232b875d2193185b",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1992
     },
     {
       "path": "data/football/intconcup/1995.json",
-      "sha256": "99b2b44f744dd849f99a295ba49cdafcdc8dc0e0f19dc0e7c90358d925955185",
+      "sha256": "3597bff9025efadc639a9a67c75938eaa078c5d0579ccdd266a1e05ed746f988",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1995
@@ -133,7 +133,7 @@
     },
     {
       "path": "data/football/intconcup/2005.json",
-      "sha256": "9c5ccb3d6f889977b8e765b83c50f8aa500d7c5d4c5df11d811ef89dbf3f3815",
+      "sha256": "d593e086398ced2c7aef6cb9102b8f674527d08b8e35c0b54420ac9afe80e9c1",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2005
@@ -147,14 +147,14 @@
     },
     {
       "path": "data/football/intconcup/2013.json",
-      "sha256": "0674e12dc6ab977af013f813ae8bc557493c2dde4f79ca826c76b0a3677777d4",
+      "sha256": "ea16df421651d866dfd86b349abcaacda79f4f6f031c4d28f0dd31c5a6579ac6",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2013
     },
     {
       "path": "data/football/intconcup/2017.json",
-      "sha256": "abf857b40ff15db99a8c7577dab9109b0431ee18ced01e52a62b29e143835386",
+      "sha256": "5df62fe65a0b789162535a0ae14f2d3e5b1b3cbb28e83f93caa397d56a5b685e",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2017
@@ -321,7 +321,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "42ec5d0b9f17812cd1367b9256bcf18d2cfaddf51d168d087bc86516e8c0a31e",
+  "checksum": "6cb528707ca4483040e8992924f9d7632c78f80a89997c034a8b17b9a503492d",
   "dataset": {
     "sports": 4,
     "competitions": 3,
@@ -699,6 +699,18 @@
         "source": "rsssf",
         "name": "RSSSF — Balkan Cup (for Nations) (Guy De Dekker, Karel Stokkermans)",
         "url": "https://www.rsssf.org/tablesb/balkancup.html",
+        "retrieved": "2026-10-07"
+      },
+      {
+        "source": "rsssf:intconcup92",
+        "name": "RSSSF — intconcup92",
+        "url": "https://www.rsssf.org/tablesi/intconcup92.html",
+        "retrieved": "2026-10-07"
+      },
+      {
+        "source": "rsssf:intconcup95",
+        "name": "RSSSF — intconcup95",
+        "url": "https://www.rsssf.org/tablesi/intconcup95.html",
         "retrieved": "2026-10-07"
       },
       {

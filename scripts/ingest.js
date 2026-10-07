@@ -8,6 +8,7 @@ const { loadCatalog } = require("../core/catalog.js");
 const { makeContext, validateEditionObject, validateProject } = require("../core/validate.js");
 const { fetchMany } = require("../ingest/fetch.js");
 const { buildDraft } = require("../ingest/build.js");
+const { parse } = require("../ingest/rsssf.js");
 const { buildCompetitionDrafts } = require("../ingest/page.js");
 const { reconcile } = require("../ingest/reconcile.js");
 
@@ -40,6 +41,7 @@ const USAGE = [
   "",
   "Opciones de build-page:",
   "  --competition=<sport>/<competicion> Competición del catálogo (obligatorio)",
+  "  --details=<año>:<dirInbox>,…       Detalles por edición (formato `ed`) a fusionar",
   "",
   "Opciones de promote:",
   "  --sport=<id>                        Deporte (obligatorio; ^[a-z][a-z0-9-]*$)",
@@ -278,6 +280,57 @@ function pageDraftPath(root, sport, competition, year) {
   return io.resolveWithin(root, "drafts", sport, competition, `${name}.json`);
 }
 
+/** Nombre de directorio de `inbox/` seguro (sin rutas ni travesía). */
+const INBOX_DIR = /^[a-z0-9._-]+$/i;
+
+/** `--details=<año>:<dirInbox>,…` → `[{ year, dir }]` validados. */
+function parseDetailSpecs(value) {
+  if (typeof value !== "string" || value.trim() === "") return { specs: [] };
+  const specs = [];
+  for (const item of value.split(",").map((entry) => entry.trim()).filter(Boolean)) {
+    const [yearText, dir] = item.split(":");
+    const year = Number(yearText);
+    if (!Number.isInteger(year) || year <= 0 || !dir || !INBOX_DIR.test(dir)) {
+      return { error: `--details inválido: "${item}" (se espera <año>:<dirInbox>)` };
+    }
+    specs.push({ year, dir });
+  }
+  return { specs };
+}
+
+/** Nombre legible de una fuente de detalle a partir de la URL. */
+function detailSourceName(part) {
+  const base = String(part.url || part.sourceId || "").split("/").pop().replace(/\.x?html?$/i, "");
+  return `RSSSF — ${base}`;
+}
+
+/** Lee y parsea (kind `ed`) las fuentes de detalle indicadas en `--details`. */
+function loadDetails(specs) {
+  const details = [];
+  for (const spec of specs) {
+    const part = readInboxPart(spec.dir);
+    if (!part) return { error: `--details: no se pudo leer inbox/${spec.dir}` };
+    const result = parse("ed", part.text, {
+      sourceId: part.sourceId,
+      retrieved: part.retrieved,
+      url: part.url,
+      year: spec.year
+    });
+    details.push({
+      year: spec.year,
+      result,
+      source: {
+        id: part.sourceId,
+        name: detailSourceName(part),
+        url: part.url,
+        retrieved: part.retrieved,
+        license: "rsssf-attribution"
+      }
+    });
+  }
+  return { details };
+}
+
 function commandBuildPage(flags) {
   const target = parseCompetitionFlag(flags.competition);
   if (!target) {
@@ -301,6 +354,17 @@ function commandBuildPage(flags) {
     return 1;
   }
 
+  const parsedSpecs = parseDetailSpecs(flags.details);
+  if (parsedSpecs.error) {
+    console.error(`build-page: ${parsedSpecs.error}`);
+    return 1;
+  }
+  const loadedDetails = loadDetails(parsedSpecs.specs);
+  if (loadedDetails.error) {
+    console.error(`build-page: ${loadedDetails.error}`);
+    return 1;
+  }
+
   let built;
   try {
     built = buildCompetitionDrafts({
@@ -312,7 +376,8 @@ function commandBuildPage(flags) {
         url: source.url,
         retrieved: local.meta.retrieved,
         license: source.license
-      }
+      },
+      details: loadedDetails.details
     });
   } catch (err) {
     console.error(`build-page: ${err.message}`);

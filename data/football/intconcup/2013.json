@@ -361,8 +361,14 @@
         0
       ],
       "status": "played",
-      "notes": [],
-      "pens": null
+      "notes": [
+        "pen",
+        "aet"
+      ],
+      "pens": [
+        7,
+        6
+      ]
     },
     {
       "id": "m015",
@@ -378,8 +384,14 @@
         2
       ],
       "status": "played",
-      "notes": [],
-      "pens": null
+      "notes": [
+        "pen",
+        "aet"
+      ],
+      "pens": [
+        3,
+        2
+      ]
     },
     {
       "id": "m016",

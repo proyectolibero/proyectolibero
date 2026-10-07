@@ -107,6 +107,24 @@ test("parseCompact admite grupos con paréntesis y fase de tercer puesto", () =>
   assert.equal(parsed.warnings.length, 0, JSON.stringify(parsed.warnings));
 });
 
+test("parseCompact registra la tanda desde [aet, 5-6 pen] y desde 'win N-M on penalties'", () => {
+  const bracket = parseCompact(
+    "Semifinals\n26/ 6/05 Hannover   Mexico       1-1 Argentina      [aet, 5-6 pen]",
+    { ...CTX, year: 2005 }
+  );
+  assert.deepEqual(bracket.matches[0].pens, [5, 6]);
+  assert.deepEqual(bracket.matches[0].notes, ["pen", "aet"]);
+  assert.equal(bracket.warnings.length, 0, JSON.stringify(bracket.warnings));
+
+  const shootout = parseCompact(
+    "Group A\nMexico       1-1 Denmark\nDenmark win 4-2 on penalties",
+    { ...CTX, year: 1995 }
+  );
+  assert.deepEqual(shootout.matches[0].pens, [2, 4]);
+  assert.deepEqual(shootout.matches[0].notes, ["pen"]);
+  assert.equal(shootout.warnings.length, 0, JSON.stringify(shootout.warnings));
+});
+
 test("parseCompact lee una lista sin fechas y deja la fecha en null", () => {
   const text = [
     "Semifinals",
