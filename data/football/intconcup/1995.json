@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "intconcup",
+  "edition": 1995,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "DEN",
+    "runnerUp": "ARG",
+    "decidedBy": "final",
+    "finalMatchId": "m008"
+  },
+  "coverage": {
+    "matches": 8,
+    "goals": 19,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Intercontinental Championship and FIFA Confederations Cup (Marcelo Leme de Arruda, Atsushi Fujioka, Takashi Koyama)",
+      "url": "https://www.rsssf.org/tablesi/intconcup.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-07",
+  "provenance": {
+    "primary": "rsssf"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "DEN",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 3,
+          "ga": 1,
+          "pts": 4
+        },
+        {
+          "team": "MEX",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 3,
+          "ga": 1,
+          "pts": 4
+        },
+        {
+          "team": "KSA",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 0,
+          "ga": 4,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 1,
+          "pts": 4
+        },
+        {
+          "team": "NGA",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 3,
+          "ga": 0,
+          "pts": 4
+        },
+        {
+          "team": "JPN",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 1,
+          "ga": 8,
+          "pts": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": null,
+      "city": null,
+      "home": "KSA",
+      "away": "MEX",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": null,
+      "city": null,
+      "home": "KSA",
+      "away": "DEN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": null,
+      "city": null,
+      "home": "MEX",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": null,
+      "city": null,
+      "home": "JPN",
+      "away": "NGA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": null,
+      "city": null,
+      "home": "JPN",
+      "away": "ARG",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": null,
+      "city": null,
+      "home": "ARG",
+      "away": "NGA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "third",
+      "group": null,
+      "matchday": null,
+      "date": null,
+      "city": null,
+      "home": "MEX",
+      "away": "NGA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": null,
+      "city": null,
+      "home": "DEN",
+      "away": "ARG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 6
+}

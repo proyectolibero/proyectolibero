@@ -90,7 +90,7 @@ function extractAnchors(rawLine) {
  * @returns {{
  *   name: string|null,
  *   editions: Array<{label:string, year:number|string, href:string|null, raw:string}>,
- *   sections: Array<{label:string, raw:string}>,
+ *   sections: Array<{label:string, year:(number|string|null), raw:string}>,
  *   notes: Array<{line:number, text:string}>,
  *   warnings: Array<{line:number, reason:string}>
  * }}
@@ -105,13 +105,15 @@ function parseOverview(text, ctx) {
   const lines = source.split("\n");
   let section = null;
   let sectionLabel = null;
+  let sectionYear = null;
   let nameSet = Boolean(context.name);
   if (nameSet) result.name = context.name;
 
   const closeSection = () => {
     if (section !== null) {
-      result.sections.push({ label: sectionLabel, raw: section.join("\n") });
+      result.sections.push({ label: sectionLabel, year: sectionYear, raw: section.join("\n") });
       section = null;
+      sectionYear = null;
     }
   };
 
@@ -119,6 +121,7 @@ function parseOverview(text, ctx) {
     closeSection();
     section = [];
     sectionLabel = label;
+    sectionYear = headingEditionYear(label);
   };
 
   const addEdition = (label, year, href, raw, line) => {
@@ -194,4 +197,4 @@ function editionYearNumbers(year) {
   return [Number(match[1]), end];
 }
 
-module.exports = { parseOverview, editionYearNumbers };
+module.exports = { parseOverview, editionYearNumbers, headingEditionYear };

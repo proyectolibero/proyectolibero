@@ -90,6 +90,76 @@
       "edition": "1977-80"
     },
     {
+      "path": "data/football/intconcup/1992.json",
+      "sha256": "37c09894836ffda317a1e3b93c25cbd9a8ad60d24ec686b240bac8e38326a483",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1992
+    },
+    {
+      "path": "data/football/intconcup/1995.json",
+      "sha256": "99b2b44f744dd849f99a295ba49cdafcdc8dc0e0f19dc0e7c90358d925955185",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1995
+    },
+    {
+      "path": "data/football/intconcup/1997.json",
+      "sha256": "9624074a820ed35635374a55903e1cdd075019e9699a82f40e7e0639b4f51460",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1997
+    },
+    {
+      "path": "data/football/intconcup/1999.json",
+      "sha256": "9b2babe52f0e72ea795b968f6067d684b9d629a1eb710a344f16e58466e6db95",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1999
+    },
+    {
+      "path": "data/football/intconcup/2001.json",
+      "sha256": "f181eb341d42e0e36a75ee6f9938bf5fa9af2b1419f8c32f091412e9c665e052",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2001
+    },
+    {
+      "path": "data/football/intconcup/2003.json",
+      "sha256": "ed6c3c36340d56ce5dacb6d6a2dc23149dbf6e1a1b9a9d2f1b378fa6f0afefba",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2003
+    },
+    {
+      "path": "data/football/intconcup/2005.json",
+      "sha256": "9c5ccb3d6f889977b8e765b83c50f8aa500d7c5d4c5df11d811ef89dbf3f3815",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2005
+    },
+    {
+      "path": "data/football/intconcup/2009.json",
+      "sha256": "edb2db7026c137fe54fc74d4d9a523a9fa740a5c1425794c5b3553366e6bd693",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2009
+    },
+    {
+      "path": "data/football/intconcup/2013.json",
+      "sha256": "0674e12dc6ab977af013f813ae8bc557493c2dde4f79ca826c76b0a3677777d4",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2013
+    },
+    {
+      "path": "data/football/intconcup/2017.json",
+      "sha256": "abf857b40ff15db99a8c7577dab9109b0431ee18ced01e52a62b29e143835386",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2017
+    },
+    {
       "path": "data/football/worldcup/1930.json",
       "sha256": "32d7f79b35346397a87ffe3900f26ca988526a2f84c9cfc9f1539ca240d8e7de",
       "schemaVersion": 2,
@@ -251,12 +321,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "03f08dab7bb263c7ac61cb40b29e4181fb2ad820dc489d20150f01674cb20a43",
+  "checksum": "42ec5d0b9f17812cd1367b9256bcf18d2cfaddf51d168d087bc86516e8c0a31e",
   "dataset": {
     "sports": 4,
     "competitions": 3,
-    "editions": 35,
-    "matches": 1252,
+    "editions": 45,
+    "matches": 1392,
     "results": 0
   },
   "license": {

@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "intconcup",
+  "edition": 2005,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "BRA",
+    "runnerUp": "ARG",
+    "decidedBy": "final",
+    "finalMatchId": "m016"
+  },
+  "coverage": {
+    "matches": 16,
+    "goals": 56,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Intercontinental Championship and FIFA Confederations Cup (Marcelo Leme de Arruda, Atsushi Fujioka, Takashi Koyama)",
+      "url": "https://www.rsssf.org/tablesi/intconcup.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-07",
+  "provenance": {
+    "primary": "rsssf"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 9,
+          "ga": 5,
+          "pts": 7
+        },
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 8,
+          "ga": 5,
+          "pts": 7
+        },
+        {
+          "team": "TUN",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 5,
+          "pts": 3
+        },
+        {
+          "team": "AUS",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 5,
+          "ga": 10,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 3,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "JPN",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "GRE",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 0,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2005-06-15",
+      "city": "Köln",
+      "home": "ARG",
+      "away": "TUN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2005-06-15",
+      "city": "Frankfurt",
+      "home": "GER",
+      "away": "AUS",
+      "score": [
+        4,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2005-06-18",
+      "city": "Köln",
+      "home": "TUN",
+      "away": "GER",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2005-06-18",
+      "city": "Nürnberg",
+      "home": "AUS",
+      "away": "ARG",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2005-06-21",
+      "city": "Leipzig",
+      "home": "AUS",
+      "away": "TUN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2005-06-21",
+      "city": "Nürnberg",
+      "home": "ARG",
+      "away": "GER",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2005-06-16",
+      "city": "Hannover",
+      "home": "JPN",
+      "away": "MEX",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2005-06-16",
+      "city": "Leipzig",
+      "home": "BRA",
+      "away": "GRE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2005-06-19",
+      "city": "Frankfurt",
+      "home": "GRE",
+      "away": "JPN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2005-06-19",
+      "city": "Hannover",
+      "home": "MEX",
+      "away": "BRA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2005-06-22",
+      "city": "Frankfurt",
+      "home": "GRE",
+      "away": "MEX",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2005-06-22",
+      "city": "Köln",
+      "home": "JPN",
+      "away": "BRA",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2005-06-25",
+      "city": "Nürnberg",
+      "home": "GER",
+      "away": "BRA",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m014",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2005-06-26",
+      "city": "Hannover",
+      "home": "MEX",
+      "away": "ARG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m015",
+      "stage": "third",
+      "group": null,
+      "matchday": null,
+      "date": "2005-06-29",
+      "city": "Leipzig",
+      "home": "GER",
+      "away": "MEX",
+      "score": [
+        4,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m016",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "2005-06-29",
+      "city": "Frankfurt",
+      "home": "BRA",
+      "away": "ARG",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 8
+}

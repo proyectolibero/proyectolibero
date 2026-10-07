@@ -6,7 +6,8 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { parseOverview } = require("../ingest/overview.js");
 const { parseCompact } = require("../ingest/compact.js");
-const { parseDate } = require("../ingest/rsssf.js");
+const { parseDate, resolveCountry, resolveCountryName } = require("../ingest/rsssf.js");
+const { normalizeTeam } = require("../ingest/build.js");
 
 const FIXTURES = path.join(__dirname, "fixtures", "rsssf");
 const CTX = { sourceId: "rsssf", retrieved: "2026-10-07" };
@@ -83,6 +84,57 @@ test("parseCompact avisa de una línea irreconocible sin lanzar excepción", () 
   assert.equal(warnings.length, 1);
   assert.equal(warnings[0].line, 3);
   assert.match(warnings[0].reason, /no reconocida/);
+});
+
+test("parseCompact admite grupos con paréntesis y fase de tercer puesto", () => {
+  const text = [
+    "Group A (in Japan)",
+    "30/ 5/01 Taegu    France       5-0 South Korea",
+    "         Suwon    Mexico       0-2 Australia",
+    "",
+    "Third Place Match (in Ulsan)",
+    " 9/ 6/01 Ulsan    Australia    1-0 Brazil",
+    "Final (in Yokohama)",
+    "10/ 6/01 Yokohama Japan        0-1 France"
+  ].join("\n");
+  const parsed = parseCompact(text, { ...CTX, year: "2001" });
+
+  assert.equal(parsed.matches.length, 4);
+  assert.equal(parsed.matches[0].group, "Group A");
+  assert.equal(parsed.matches[1].date, "2001-05-30", "la segunda línea hereda la fecha");
+  assert.equal(parsed.matches[2].section, "Third Place Match");
+  assert.equal(parsed.matches[3].section, "Final");
+  assert.equal(parsed.warnings.length, 0, JSON.stringify(parsed.warnings));
+});
+
+test("parseCompact lee una lista sin fechas y deja la fecha en null", () => {
+  const text = [
+    "Semifinals",
+    "Argentina    4-0 Ivory Coast",
+    "Saudi Arabia 3-0 USA",
+    "Final",
+    "Argentina    3-1 Saudi Arabia"
+  ].join("\n");
+  const parsed = parseCompact(text, { ...CTX, year: "1992" });
+
+  assert.equal(parsed.matches.length, 3);
+  assert.ok(parsed.matches.every((match) => match.date === null));
+  assert.equal(parsed.matches[2].home, "Argentina");
+  assert.equal(parsed.matches[2].away, "Saudi Arabia");
+});
+
+test("resolveCountry reconoce códigos FIFA ya dados y alias modernos", () => {
+  assert.equal(resolveCountry("UAE"), "UAE");
+  assert.equal(resolveCountry("Tahiti"), "TAH");
+  assert.equal(resolveCountryName("Czech Rep."), "CZE");
+  assert.equal(resolveCountryName("Czech Republic"), "CZE");
+});
+
+test("normalizeTeam no confunde nombres de 4 letras con códigos", () => {
+  assert.equal(normalizeTeam("Iraq"), "IRQ");
+  assert.equal(normalizeTeam("Tahiti"), "TAH");
+  assert.equal(normalizeTeam("Czech Republic"), "CZE");
+  assert.equal(normalizeTeam("UAE"), "UAE");
 });
 
 test("parseDate acepta años de dos cifras dentro de un rango", () => {

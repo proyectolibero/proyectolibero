@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "sport": "football",
+  "competition": "intconcup",
+  "teamMode": "country",
+  "sources": [
+    {
+      "name": "RSSSF — Intercontinental Championship and FIFA Confederations Cup (Marcelo Leme de Arruda, Atsushi Fujioka, Takashi Koyama)",
+      "url": "https://www.rsssf.org/tablesi/intconcup.html",
+      "retrieved": "2026-10-07"
+    }
+  ],
+  "editions": [
+    {
+      "year": 1992,
+      "held": true,
+      "hosts": [
+        "KSA"
+      ],
+      "champion": "ARG",
+      "runnerUp": "KSA",
+      "final": {
+        "score": [
+          3,
+          1
+        ]
+      },
+      "data": "1992.json"
+    },
+    {
+      "year": 1995,
+      "held": true,
+      "hosts": [
+        "KSA"
+      ],
+      "champion": "DEN",
+      "runnerUp": "ARG",
+      "final": {
+        "score": [
+          2,
+          0
+        ]
+      },
+      "data": "1995.json"
+    },
+    {
+      "year": 1997,
+      "held": true,
+      "hosts": [
+        "KSA"
+      ],
+      "champion": "BRA",
+      "runnerUp": "AUS",
+      "final": {
+        "score": [
+          6,
+          0
+        ]
+      },
+      "data": "1997.json"
+    },
+    {
+      "year": 1999,
+      "held": true,
+      "hosts": [
+        "MEX"
+      ],
+      "champion": "MEX",
+      "runnerUp": "BRA",
+      "final": {
+        "score": [
+          4,
+          3
+        ]
+      },
+      "data": "1999.json"
+    },
+    {
+      "year": 2001,
+      "held": true,
+      "hosts": [
+        "JPN",
+        "KOR"
+      ],
+      "champion": "FRA",
+      "runnerUp": "JPN",
+      "final": {
+        "score": [
+          1,
+          0
+        ]
+      },
+      "data": "2001.json"
+    },
+    {
+      "year": 2003,
+      "held": true,
+      "hosts": [
+        "FRA"
+      ],
+      "champion": "FRA",
+      "runnerUp": "CMR",
+      "final": {
+        "score": [
+          1,
+          0
+        ],
+        "notes": [
+          "aet"
+        ]
+      },
+      "data": "2003.json"
+    },
+    {
+      "year": 2005,
+      "held": true,
+      "hosts": [
+        "GER"
+      ],
+      "champion": "BRA",
+      "runnerUp": "ARG",
+      "final": {
+        "score": [
+          4,
+          1
+        ]
+      },
+      "data": "2005.json"
+    },
+    {
+      "year": 2009,
+      "held": true,
+      "hosts": [
+        "RSA"
+      ],
+      "champion": "BRA",
+      "runnerUp": "USA",
+      "final": {
+        "score": [
+          3,
+          2
+        ]
+      },
+      "data": "2009.json"
+    },
+    {
+      "year": 2013,
+      "held": true,
+      "hosts": [
+        "BRA"
+      ],
+      "champion": "BRA",
+      "runnerUp": "ESP",
+      "final": {
+        "score": [
+          3,
+          0
+        ]
+      },
+      "data": "2013.json"
+    },
+    {
+      "year": 2017,
+      "held": true,
+      "hosts": [
+        "RUS"
+      ],
+      "champion": "GER",
+      "runnerUp": "CHI",
+      "final": {
+        "score": [
+          1,
+          0
+        ]
+      },
+      "data": "2017.json"
+    }
+  ]
+}

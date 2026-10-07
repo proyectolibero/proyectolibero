@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "intconcup",
+  "edition": 2001,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "FRA",
+    "runnerUp": "JPN",
+    "decidedBy": "final",
+    "finalMatchId": "m016"
+  },
+  "coverage": {
+    "matches": 16,
+    "goals": 31,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Intercontinental Championship and FIFA Confederations Cup (Marcelo Leme de Arruda, Atsushi Fujioka, Takashi Koyama)",
+      "url": "https://www.rsssf.org/tablesi/intconcup.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-07",
+  "provenance": {
+    "primary": "rsssf"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 9,
+          "ga": 1,
+          "pts": 6
+        },
+        {
+          "team": "AUS",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 3,
+          "ga": 1,
+          "pts": 6
+        },
+        {
+          "team": "KOR",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 3,
+          "ga": 6,
+          "pts": 6
+        },
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 8,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "JPN",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 0,
+          "pts": 7
+        },
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 2,
+          "ga": 0,
+          "pts": 5
+        },
+        {
+          "team": "CMR",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "CAN",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 0,
+          "ga": 5,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2001-05-30",
+      "city": "Taegu",
+      "home": "FRA",
+      "away": "KOR",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2001-05-30",
+      "city": "Suwon",
+      "home": "MEX",
+      "away": "AUS",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2001-06-01",
+      "city": "Taegu",
+      "home": "AUS",
+      "away": "FRA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2001-06-01",
+      "city": "Ulsan",
+      "home": "KOR",
+      "away": "MEX",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2001-06-03",
+      "city": "Ulsan",
+      "home": "FRA",
+      "away": "MEX",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2001-06-03",
+      "city": "Suwon",
+      "home": "KOR",
+      "away": "AUS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2001-05-31",
+      "city": "Ibaraki",
+      "home": "BRA",
+      "away": "CMR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2001-05-31",
+      "city": "Niigata",
+      "home": "JPN",
+      "away": "CAN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2001-06-02",
+      "city": "Ibaraki",
+      "home": "CAN",
+      "away": "BRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2001-06-02",
+      "city": "Niigata",
+      "home": "CMR",
+      "away": "JPN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2001-06-04",
+      "city": "Ibaraki",
+      "home": "BRA",
+      "away": "JPN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2001-06-04",
+      "city": "Niigata",
+      "home": "CMR",
+      "away": "CAN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2001-06-07",
+      "city": "Yokohama",
+      "home": "JPN",
+      "away": "AUS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m014",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2001-06-07",
+      "city": "Suwon",
+      "home": "FRA",
+      "away": "BRA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m015",
+      "stage": "third",
+      "group": null,
+      "matchday": null,
+      "date": "2001-06-09",
+      "city": "Ulsan",
+      "home": "AUS",
+      "away": "BRA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m016",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "2001-06-10",
+      "city": "Yokohama",
+      "home": "JPN",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 8
+}

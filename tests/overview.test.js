@@ -114,6 +114,28 @@ test("parseOverview reconoce un encabezado en texto plano con año al final", ()
   assert.equal(result.sections.length, 2);
 });
 
+test("parseOverview anota el año de cada sección aunque el encabezado lo lleve en el nombre", () => {
+  const text = [
+    "<H2>FIFA Confederations Cup</H2>",
+    '<h4><a name="92">Intercontinental Championship 1992</a></h4>',
+    "<pre>",
+    "Final",
+    "Argentina 3-1 Saudi Arabia",
+    "</pre>",
+    '<h4><a name="95">Intercontinental Championship 1995</a></h4>',
+    "<pre>",
+    "Final",
+    "Denmark 2-0 Argentina",
+    "</pre>"
+  ].join("\n");
+  const result = parseOverview(text);
+
+  const first = result.sections.find((section) => section.label === "Intercontinental Championship 1992");
+  const title = result.sections.find((section) => section.label === "FIFA Confederations Cup");
+  assert.equal(first.year, 1992);
+  assert.equal(title.year, null);
+});
+
 test("parseOverview no lanza con entrada vacía y devuelve la estructura completa", () => {
   assert.deepEqual(parseOverview(""), {
     name: null,

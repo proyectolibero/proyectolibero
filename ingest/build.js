@@ -18,7 +18,7 @@
  * Este módulo nunca lanza por datos «sucios»: acumula `warnings` en el borrador.
  */
 
-const { parse, detectKind } = require("./rsssf.js");
+const { parse, detectKind, resolveCountryName } = require("./rsssf.js");
 
 const COUNTRIES = require("../i18n/countries.json");
 
@@ -74,11 +74,13 @@ function normalizeTeam(raw) {
   if (typeof raw !== "string") return null;
   const text = raw.trim().replace(/[.,;]+$/, "");
   if (text === "") return null;
+  const named = NAME_TO_CODE[text.toLowerCase()] || resolveCountryName(text);
+  if (named) return named;
   if (/^[A-Za-z]{2,4}$/.test(text)) {
     const upper = text.toUpperCase();
     return CODE_ALIASES[upper] || upper;
   }
-  return NAME_TO_CODE[text.toLowerCase()] || text;
+  return text;
 }
 
 function stageFromSection(section) {

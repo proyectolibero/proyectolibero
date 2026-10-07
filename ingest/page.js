@@ -14,7 +14,7 @@
  * tabla o la final permiten derivarlos y no coinciden, se avisa sin inventar.
  */
 
-const { parseOverview, editionYearNumbers } = require("./overview.js");
+const { parseOverview, editionYearNumbers, headingEditionYear } = require("./overview.js");
 const { parseCompact } = require("./compact.js");
 const { normalizeTeam, stageFromSection, groupLetter, groupIssue } = require("./build.js");
 
@@ -249,7 +249,11 @@ function buildCompetitionDrafts(input) {
   for (const edition of competition.editions) {
     if (!edition.held) continue;
     const target = canonicalYear(edition.year);
-    const section = overview.sections.find((item) => canonicalYear(item.label) === target);
+    const section = overview.sections.find((item) => {
+      const year = item.year !== undefined ? item.year : headingEditionYear(item.label);
+      if (year !== null) return canonicalYear(year) === target;
+      return canonicalYear(item.label) === target;
+    });
     if (!section) {
       warnings.push({ year: edition.year, reason: "sin sección de resultados en la fuente" });
       continue;

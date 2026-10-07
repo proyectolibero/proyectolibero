@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "intconcup",
+  "edition": 1992,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "ARG",
+    "runnerUp": "KSA",
+    "decidedBy": "final",
+    "finalMatchId": "m004"
+  },
+  "coverage": {
+    "matches": 4,
+    "goals": 18,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Intercontinental Championship and FIFA Confederations Cup (Marcelo Leme de Arruda, Atsushi Fujioka, Takashi Koyama)",
+      "url": "https://www.rsssf.org/tablesi/intconcup.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-07",
+  "provenance": {
+    "primary": "rsssf"
+  },
+  "groups": [],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": null,
+      "city": null,
+      "home": "ARG",
+      "away": "CIV",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": null,
+      "city": null,
+      "home": "KSA",
+      "away": "USA",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "third",
+      "group": null,
+      "matchday": null,
+      "date": null,
+      "city": null,
+      "home": "USA",
+      "away": "CIV",
+      "score": [
+        5,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": null,
+      "city": null,
+      "home": "ARG",
+      "away": "KSA",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

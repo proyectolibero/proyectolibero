@@ -105,12 +105,17 @@ const COUNTRY_ALIASES = {
   "turkey": "TUR",
   "south korea": "KOR",
   "north korea": "PRK",
-  "korea": "KOR"
+  "korea": "KOR",
+  "czech republic": "CZE",
+  "czech rep.": "CZE",
+  "czech rep": "CZE"
 };
 
 /** Índice inverso nombre en inglés (minúsculas) → código FIFA de 3 letras. */
-const COUNTRIES_BY_NAME = (() => {
-  const map = new Map();
+const COUNTRIES_BY_NAME = new Map();
+/** Códigos FIFA declarados en `i18n/countries.json` (para reconocerlos en la fuente). */
+const COUNTRY_CODES = new Set();
+(() => {
   let countries = {};
   try {
     countries = require("../i18n/countries.json");
@@ -118,18 +123,33 @@ const COUNTRIES_BY_NAME = (() => {
     countries = {};
   }
   for (const [code, names] of Object.entries(countries)) {
+    COUNTRY_CODES.add(code.toUpperCase());
     if (names && typeof names.en === "string") {
-      map.set(names.en.trim().toLowerCase(), code);
+      COUNTRIES_BY_NAME.set(names.en.trim().toLowerCase(), code);
     }
   }
-  return map;
 })();
 
-/** Resuelve el nombre de país de la fuente a un código FIFA; `null` si no hay. */
-function resolveCountry(name) {
-  const key = String(name || "").trim().toLowerCase();
-  if (!key) return null;
+/**
+ * Resuelve un nombre o alias de país (nunca un código de 3-4 letras) a su código
+ * FIFA. `null` si la fuente usa un código o un nombre desconocido.
+ */
+function resolveCountryName(name) {
+  const text = String(name || "").trim();
+  if (!text) return null;
+  const key = text.toLowerCase();
   return COUNTRY_ALIASES[key] || COUNTRIES_BY_NAME.get(key) || null;
+}
+
+/** Resuelve el nombre de país (o su código ya dado) a un código FIFA; `null` si no hay. */
+function resolveCountry(name) {
+  const text = String(name || "").trim();
+  if (!text) return null;
+  const named = resolveCountryName(text);
+  if (named) return named;
+  const upper = text.toUpperCase();
+  if (/^[A-Za-z]{2,4}$/.test(upper) && COUNTRY_CODES.has(upper)) return upper;
+  return null;
 }
 
 function emptyResult() {
@@ -742,6 +762,7 @@ module.exports = {
   parseDate,
   parseStanding,
   resolveCountry,
+  resolveCountryName,
   decodeHtml,
   cleanLine,
   decodeEntities: decodeHtml,

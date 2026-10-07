@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "intconcup",
+  "edition": 2013,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "BRA",
+    "runnerUp": "ESP",
+    "decidedBy": "final",
+    "finalMatchId": "m016"
+  },
+  "coverage": {
+    "matches": 16,
+    "goals": 68,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Intercontinental Championship and FIFA Confederations Cup (Marcelo Leme de Arruda, Atsushi Fujioka, Takashi Koyama)",
+      "url": "https://www.rsssf.org/tablesi/intconcup.html",
+      "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-07",
+  "provenance": {
+    "primary": "rsssf"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 9,
+          "ga": 2,
+          "pts": 9
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 8,
+          "ga": 8,
+          "pts": 6
+        },
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 5,
+          "pts": 3
+        },
+        {
+          "team": "JPN",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 4,
+          "ga": 9,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 15,
+          "ga": 1,
+          "pts": 9
+        },
+        {
+          "team": "URU",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 11,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "NGA",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 7,
+          "ga": 6,
+          "pts": 3
+        },
+        {
+          "team": "TAH",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 24,
+          "pts": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2013-06-15",
+      "city": "Brasília",
+      "home": "BRA",
+      "away": "JPN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2013-06-16",
+      "city": "Rio de Janeiro",
+      "home": "ITA",
+      "away": "MEX",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2013-06-19",
+      "city": "Fortaleza",
+      "home": "BRA",
+      "away": "MEX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2013-06-19",
+      "city": "São Lourenço da Mata",
+      "home": "ITA",
+      "away": "JPN",
+      "score": [
+        4,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2013-06-22",
+      "city": "Salvador",
+      "home": "BRA",
+      "away": "ITA",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2013-06-22",
+      "city": "Belo Horizonte",
+      "home": "MEX",
+      "away": "JPN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2013-06-16",
+      "city": "São Lourenço da Mata",
+      "home": "ESP",
+      "away": "URU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2013-06-17",
+      "city": "Belo Horizonte",
+      "home": "NGA",
+      "away": "TAH",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2013-06-20",
+      "city": "Rio de Janeiro",
+      "home": "ESP",
+      "away": "TAH",
+      "score": [
+        10,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2013-06-20",
+      "city": "Salvador",
+      "home": "URU",
+      "away": "NGA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2013-06-23",
+      "city": "Fortaleza",
+      "home": "ESP",
+      "away": "NGA",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2013-06-23",
+      "city": "São Lourenço da Mata",
+      "home": "URU",
+      "away": "TAH",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2013-06-26",
+      "city": "Belo Horizonte",
+      "home": "BRA",
+      "away": "URU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m014",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2013-06-27",
+      "city": "Fortaleza",
+      "home": "ESP",
+      "away": "ITA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m015",
+      "stage": "third",
+      "group": null,
+      "matchday": null,
+      "date": "2013-06-30",
+      "city": "Salvador",
+      "home": "ITA",
+      "away": "URU",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m016",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "2013-06-30",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "ESP",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 8
+}

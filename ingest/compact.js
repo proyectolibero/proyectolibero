@@ -27,21 +27,31 @@ const STANDING_RE = /^\s*[-0-9]+\.\s*[A-Za-z]/;
 /** Fila de ranking sin columnas numéricas (`1.Bulgaria`), como en 1935. */
 const RANKING_ONLY_RE = /^\s*[-0-9]+\.\s*[A-Za-z][A-Za-z.'\- ]*$/;
 
-const GROUP_HEADER_RE = /^group\s+[A-Z0-9]+$/i;
+const GROUP_HEADER_RE = /^group\s+([A-Z0-9]+)(?:\s*\([^()]*\))?$/i;
 
 /** Rótulos de fase que abren un bloque de eliminatorias. */
 const PHASE_HEADERS = [
   [/^semi-?finals?$/i, "Semifinals"],
   [/^quarter-?finals?$/i, "Quarterfinals"],
+  [/^(?:match for (?:the )?)?third[- ]place(?: match)?$/i, "Third Place Match"],
   [/^final$/i, "Final"],
   [/^first round$/i, "First Round"],
   [/^second round$/i, "Second Round"],
   [/^playoffs?$/i, "Playoffs"]
 ];
 
+/** Marcador `d-d` de una línea de partido (también dentro de `(...)`). */
+const SCORE_RE = /(\d+)\s*[-:]\s*(\d+)/;
+
+/** Quita un paréntesis final (`Group A (in Japan)` → `Group A`). */
+function stripTrailingParen(text) {
+  return String(text).replace(/\s*\([^()]*\)\s*$/, "").trim();
+}
+
 /** Rótulos de tabla que no son datos pero sí se documentan. */
 const CAPTION_RE = /^(?:final\s+)?ranking(?:\s+at\s+end\s+of\s+tournament)?\s*:?\s*$/i;
 const NOTE_PREFIX_RE = /^(?:NB:|Topscorers?:)/i;
+const PENALTIES_RE = /\bwin(?:s)?\s+\d+\s*[-:]\s*\d+\s+on penalties/i;
 const AGGREGATE_RE = /\b(?:qualified|win|wins|winners?)\b[^.]*\b(?:aggregate|on away goals)\b/i;
 const FULL_DETAILS_RE = /^full details$/i;
 
@@ -110,10 +120,11 @@ function parseStandingLine(line, group, result, lineNo) {
 }
 
 function parseMatchLine(dateText, rest, group, section, ctx, result, lineNo, fullLine) {
-  const parsed = parseDate(dateText, ctx);
+  const hasDate = dateText !== null && dateText !== undefined && String(dateText).trim() !== "";
+  const parsed = hasDate ? parseDate(dateText, ctx) : { iso: null, warning: null };
   if (parsed.warning) warn(result, lineNo, parsed.warning);
 
-  const scoreMatch = /(\d+)\s*[-:]\s*(\d+)/.exec(rest);
+  const scoreMatch = SCORE_RE.exec(rest);
   if (!scoreMatch) {
     warn(result, lineNo, `marcador no reconocido: ${fullLine.trim()}`);
     return;
@@ -147,6 +158,20 @@ function parseMatchLine(dateText, rest, group, section, ctx, result, lineNo, ful
 }
 
 /**
+ * ¿La línea es un partido aunque no abra con fecha? Se exige un marcador y que
+ * el equipo local (sufijo) y el visitante (prefijo) resuelvan a selecciones: así
+ * se admiten las listas que solo fechan el primer partido de cada jornada
+ * (la segunda línea hereda la fecha) y las que no fechan ningún partido.
+ */
+function matchCandidate(line) {
+  const score = SCORE_RE.exec(line);
+  if (!score) return false;
+  const before = line.slice(0, score.index).trim();
+  const after = line.slice(score.index + score[0].length).trim();
+  return Boolean(trailingCountry(before) && leadingCountry(after));
+}
+
+/**
  * Parsea una lista compacta. `ctx` admite `{ sourceId, retrieved, year }`, donde
  * `year` puede ser un entero o un rango (`"1929-31"`).
  */
@@ -160,6 +185,8 @@ function parseCompact(text, ctx) {
   let group = null;
   let section = null;
   let pendingNote = null;
+  let lastDate = null;
+  let seenData = false;
 
   for (let index = 0; index < lines.length; index += 1) {
     const lineNo = index + 1;
@@ -167,10 +194,11 @@ function parseCompact(text, ctx) {
     const line = cleanLine(raw);
     if (line === "") continue;
     if (EDITION_HEADING_RE.test(line)) continue;
+    const core = stripTrailingParen(line);
 
     if (pendingNote !== null) {
       const isData = DATE_RE.test(line) || STANDING_RE.test(line);
-      const isHeader = GROUP_HEADER_RE.test(line) || PHASE_HEADERS.some(([re]) => re.test(line));
+      const isHeader = GROUP_HEADER_RE.test(core) || PHASE_HEADERS.some(([re]) => re.test(core));
       if (/^\s/.test(raw) && !isData && !isHeader && !NOTE_PREFIX_RE.test(line)) {
         result.notes[pendingNote].text += ` ${line}`;
         continue;
@@ -184,21 +212,28 @@ function parseCompact(text, ctx) {
       continue;
     }
     if (CAPTION_RE.test(line) || FULL_DETAILS_RE.test(line)) continue;
+    if (PENALTIES_RE.test(line)) {
+      result.notes.push({ line: lineNo, text: line });
+      continue;
+    }
     if (/^(?:competition\s+)?abandoned\b/i.test(line)) {
       result.notes.push({ line: lineNo, text: line });
       continue;
     }
 
-    if (GROUP_HEADER_RE.test(line)) {
-      group = line;
-      section = line;
-      result.groups.push({ name: line, raw });
+    const groupHeader = GROUP_HEADER_RE.exec(line);
+    if (groupHeader) {
+      group = `Group ${groupHeader[1]}`;
+      section = group;
+      seenData = true;
+      result.groups.push({ name: group, raw });
       continue;
     }
-    const phase = PHASE_HEADERS.find(([re]) => re.test(line));
+    const phase = PHASE_HEADERS.find(([re]) => re.test(core));
     if (phase) {
       section = phase[1];
       group = null;
+      seenData = true;
       continue;
     }
     if (AGGREGATE_RE.test(line)) {
@@ -207,11 +242,28 @@ function parseCompact(text, ctx) {
     }
     if (STANDING_RE.test(line)) {
       parseStandingLine(line, group, result, lineNo);
+      seenData = true;
       continue;
     }
     const date = DATE_RE.exec(line);
     if (date) {
       parseMatchLine(date[1], date[2], group, section, context, result, lineNo, line);
+      seenData = true;
+      const last = result.matches[result.matches.length - 1];
+      if (last && last.date) lastDate = last.date;
+      continue;
+    }
+    if (matchCandidate(line)) {
+      parseMatchLine(lastDate, line, group, section, context, result, lineNo, line);
+      seenData = true;
+      continue;
+    }
+
+    if (!seenData) continue;
+    if (/^\s/.test(raw)) {
+      const lastNote = result.notes[result.notes.length - 1];
+      if (lastNote) lastNote.text += ` ${line}`;
+      else result.notes.push({ line: lineNo, text: line });
       continue;
     }
     warn(result, lineNo, `línea no reconocida: ${line}`);
