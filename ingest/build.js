@@ -1,0 +1,608 @@
+"use strict";
+
+/**
+ * Fusión de fuentes RSSSF en un borrador de edición v2 (arquetipo `encounter`).
+ *
+ * Entrada: `parts = [{ kind, text, sourceId, retrieved, url? }]`, donde `kind`
+ * es `f` (listado maestro), `full` (detalle) o `qf-scor` (goleadores).
+ *
+ * Política de fusión:
+ * - `f` es la lista maestra de partidos y la fuente primaria de score/fecha/ciudad.
+ * - `full` aporta detalle (árbitro, asistencia, eventos, descanso, estadio) al
+ *   partido emparejado por (fecha, equipos) y, si no, por (fecha, orden).
+ * - Los partidos que solo aparecen en `full` (p. ej. una final sin cabecera de
+ *   fecha en `f`) se añaden al borrador.
+ * - Los desacuerdos f/full no se resuelven aquí: se registran en
+ *   `provenance.rejected` y se conserva el valor de `f` como primario.
+ *
+ * Este módulo nunca lanza por datos «sucios»: acumula `warnings` en el borrador.
+ */
+
+const { parse, detectKind } = require("./rsssf.js");
+
+const COUNTRIES = require("../i18n/countries.json");
+
+const DEFAULT_SPORT = "football";
+const DEFAULT_COMPETITION = "worldcup";
+const DEFAULT_LICENSE = "rsssf-attribution";
+
+/** Códigos alternativos usados por RSSSF `full` que no son el canónico del catálogo. */
+const CODE_ALIASES = { JUG: "YUG", CZE: "TCH", GER: "FRG", HOL: "NED" };
+
+/** Notas del esquema v2 que puede aportar la fuente resumida. */
+const KNOWN_NOTES = new Set([
+  "aet", "pen", "replay", "awarded", "walkover", "notplayed", "withdrawn", "singlematch"
+]);
+
+/** `section` → `stage` del catálogo (el orden de los patrones importa). */
+const STAGE_PATTERNS = [
+  [/^final (group|pool)$/i, "finalGroup"],
+  [/^group\s+[a-z0-9]+$/i, "group"],
+  [/^(first phase|group stage|first round)$/i, "group"],
+  [/^second (group )?(round|phase)$/i, "group2"],
+  [/^playoffs?/i, "playoff"],
+  [/^deciding match/i, "playoff"],
+  [/^round of 32$/i, "r32"],
+  [/^(round of 16|eighth-?finals?)$/i, "r16"],
+  [/^quarter-?finals?$/i, "qf"],
+  [/^semi-?finals?$/i, "sf"],
+  [/^(match for (the )?third place|third[- ]place( match)?)$/i, "third"],
+  [/^final$/i, "final"]
+];
+
+const KIND_LABELS = {
+  f: "final tournament",
+  full: "full details",
+  "qf-scor": "goal scorers",
+  q: "qualifying tournament",
+  "q-det": "qualifying details"
+};
+
+/** Mapa inverso (nombre en inglés/español → código) a partir de `i18n/countries.json`. */
+const NAME_TO_CODE = (() => {
+  const map = {};
+  for (const [code, names] of Object.entries(COUNTRIES)) {
+    for (const lang of ["en", "es"]) {
+      const label = names && names[lang];
+      if (typeof label === "string" && label.length > 0) map[label.toLowerCase()] = code;
+    }
+  }
+  return map;
+})();
+
+function normalizeTeam(raw) {
+  if (typeof raw !== "string") return null;
+  const text = raw.trim().replace(/[.,;]+$/, "");
+  if (text === "") return null;
+  if (/^[A-Za-z]{2,4}$/.test(text)) {
+    const upper = text.toUpperCase();
+    return CODE_ALIASES[upper] || upper;
+  }
+  return NAME_TO_CODE[text.toLowerCase()] || text;
+}
+
+function stageFromSection(section) {
+  if (typeof section !== "string" || section.trim() === "") return null;
+  for (const [pattern, stage] of STAGE_PATTERNS) {
+    if (pattern.test(section.trim())) return stage;
+  }
+  return null;
+}
+
+function groupLetter(section) {
+  const text = typeof section === "string" ? section.trim() : "";
+  if (/^final (group|pool)$/i.test(text)) return "F";
+  const match = /^group\s+([A-Z0-9]+)$/i.exec(text);
+  return match ? match[1].toUpperCase() : null;
+}
+
+/** Deriva el `kind` de una parte a partir del sufijo de su `sourceId` (`rsssf:54full`). */
+function kindFromSourceId(sourceId) {
+  const match = /(?:^|:)(\d{2,4})(f|full|q|q-det|qf-scor)$/i.exec(String(sourceId || ""));
+  return match ? match[2].toLowerCase() : null;
+}
+
+function sourceUrl(part) {
+  if (typeof part.url === "string" && part.url !== "") return part.url;
+  const match = /^rsssf:(\d{2})(.+)$/.exec(String(part.sourceId || ""));
+  return match ? `https://www.rsssf.org/tables/${match[1]}${match[2]}.html` : null;
+}
+
+function toDate(value) {
+  if (typeof value !== "string" || value.length < 10) return null;
+  return value.slice(0, 10);
+}
+
+function sourceName(part, kind, year) {
+  const label = KIND_LABELS[kind] || kind;
+  return `RSSSF — World Cup ${year} (${label})`;
+}
+
+function buildSources(parts, year) {
+  return parts.map((part) => {
+    const kind = part.kind || kindFromSourceId(part.sourceId);
+    return {
+      id: part.sourceId,
+      name: sourceName(part, kind, year),
+      url: sourceUrl(part),
+      retrieved: toDate(part.retrieved) || part.retrieved,
+      publisher: "RSSSF",
+      license: DEFAULT_LICENSE,
+      redistribute: true
+    };
+  });
+}
+
+function minuteValue(minute) {
+  const match = /^(\d+)/.exec(String(minute || ""));
+  return match ? Number(match[1]) : minute;
+}
+
+/** Convierte los eventos del `full` (score `"1:0"`) en eventos del esquema. */
+function mapEvents(events, match) {
+  const out = [];
+  let running = [0, 0];
+  for (const event of events || []) {
+    const scoreMatch = /(\d+)\s*:\s*(\d+)/.exec(String(event.score || ""));
+    if (!scoreMatch) continue;
+    const score = [Number(scoreMatch[1]), Number(scoreMatch[2])];
+    let team = null;
+    if (score[0] > running[0]) team = match.home;
+    else if (score[1] > running[1]) team = match.away;
+    if (!team) team = match.home;
+    out.push({ minute: minuteValue(event.minute), player: event.player, team, score });
+    running = score;
+  }
+  return out;
+}
+
+/**
+ * Extrae el detalle del `full`. `fallback` aporta los equipos de `f` cuando el
+ * `full` no trae cabecera de marcador (p. ej. el 54full omite el de GER-TUR):
+ * sin él los eventos no pueden atribuirse a un equipo (`team: null`).
+ */
+function extraFromFull(match, fallback) {
+  if (!match || !match.extra) return null;
+  const home = match.home || (fallback && fallback.home) || null;
+  const away = match.away || (fallback && fallback.away) || null;
+  const referee = match.extra.referee
+    ? { ...match.extra.referee, country: normalizeTeam(match.extra.referee.country) || match.extra.referee.country }
+    : null;
+  const extra = {
+    referee,
+    attendance: typeof match.extra.attendance === "number" ? match.extra.attendance : null,
+    halfTime: match.extra.halfTime || null,
+    stadium: match.extra.stadium || null,
+    events: mapEvents(match.extra.events, { home, away })
+  };
+  return extra;
+}
+
+/** Prepara un partido parseado para la fusión, normalizando equipos y fase. */
+function prepare(match) {
+  return {
+    date: match.date || null,
+    city: match.city || null,
+    home: normalizeTeam(match.home),
+    away: normalizeTeam(match.away),
+    score:
+      typeof match.homeScore === "number" && typeof match.awayScore === "number"
+        ? [match.homeScore, match.awayScore]
+        : null,
+    status: match.status || "played",
+    section: match.section || null,
+    stage: stageFromSection(match.section),
+    notes: (match.notes || [])
+      .map((note) => String(note).toLowerCase())
+      .filter((note) => KNOWN_NOTES.has(note)),
+    raw: match.raw || null,
+    extra: match.extra || null,
+    full: null
+  };
+}
+
+/** Empareja cada partido de `f` con su detalle en `full`. */
+function pairMatches(fMatches, fullMatches) {
+  const pool = fullMatches.map((match) => ({ match, used: false }));
+  for (const entry of fMatches) {
+    let index = pool.findIndex(
+      (item) =>
+        !item.used &&
+        item.match.date === entry.date &&
+        item.match.home !== null &&
+        item.match.home === entry.home &&
+        item.match.away === entry.away
+    );
+    if (index < 0) {
+      index = pool.findIndex(
+        (item) =>
+          !item.used &&
+          item.match.date === entry.date &&
+          item.match.home !== null &&
+          item.match.home === entry.away &&
+          item.match.away === entry.home
+      );
+    }
+    if (index >= 0) {
+      entry.full = pool[index].match;
+      pool[index].used = true;
+    }
+  }
+  const remainingFull = pool.filter((item) => !item.used);
+  for (const entry of fMatches) {
+    if (entry.full) continue;
+    const index = remainingFull.findIndex((item) => !item.used && item.match.date === entry.date);
+    if (index >= 0) {
+      entry.full = remainingFull[index].match;
+      remainingFull[index].used = true;
+    }
+  }
+  return pool.filter((item) => !item.used).map((item) => item.match);
+}
+
+function disagreement(fEntry, fullEntry) {
+  if (!fullEntry) return null;
+  if (fullEntry.home && fullEntry.home === fEntry.away && fullEntry.away === fEntry.home) {
+    return {
+      field: "score",
+      value: fullEntry.score ? fullEntry.score.join("-") : null,
+      reason: "f y full invierten local/visitante; se conserva el orden de f"
+    };
+  }
+  if (fullEntry.score && fEntry.score && (fullEntry.score[0] !== fEntry.score[0] || fullEntry.score[1] !== fEntry.score[1])) {
+    return {
+      field: "score",
+      value: fullEntry.score.join("-"),
+      reason: `marcador de full difiere de f ("${fEntry.score.join("-")}"); se conserva f`
+    };
+  }
+  if (fullEntry.date && fEntry.date && fullEntry.date !== fEntry.date) {
+    return { field: "date", value: fullEntry.date, reason: `full="${fullEntry.date}" y f="${fEntry.date}" difieren; se conserva f` };
+  }
+  if (fullEntry.city && fEntry.city && fullEntry.city !== fEntry.city) {
+    return { field: "city", value: fullEntry.city, reason: `full="${fullEntry.city}" y f="${fEntry.city}" difieren; se conserva f` };
+  }
+  return null;
+}
+
+function matchFromF(fEntry, fullEntry) {
+  return {
+    id: null,
+    stage: fEntry.stage,
+    group: fEntry.stage === "group" || fEntry.stage === "group2" ? groupLetter(fEntry.section) : null,
+    matchday: null,
+    date: fEntry.date,
+    city: fEntry.city,
+    home: fEntry.home,
+    away: fEntry.away,
+    score: fEntry.score,
+    status: fEntry.status,
+    notes: fEntry.notes,
+    pens: null,
+    extra: extraFromFull(fullEntry, { home: fEntry.home, away: fEntry.away }),
+    raw: null
+  };
+}
+
+function matchFromFull(fullEntry) {
+  return {
+    id: null,
+    stage: fullEntry.stage,
+    group: null,
+    matchday: null,
+    date: fullEntry.date,
+    city: fullEntry.city,
+    home: fullEntry.home,
+    away: fullEntry.away,
+    score: fullEntry.score,
+    status: fullEntry.status,
+    notes: [],
+    pens: null,
+    extra: extraFromFull(fullEntry),
+    raw: null
+  };
+}
+
+/**
+ * Comprueba la coherencia interna de una tabla de grupo. Devuelve `null` si es
+ * publicable o el motivo del descarte. Una tabla a la que la fuente le ha
+ * perdido filas o columnas no se publica (antes omitir que mentir): el
+ * validador EDI007 la rechazaría y además induciría a error.
+ */
+function groupIssue(letter, standings, matches) {
+  if (!Array.isArray(standings) || standings.length === 0) return "sin filas de clasificación";
+  if (standings.length < 2) return "menos de dos equipos";
+  let sumGf = 0;
+  let sumGa = 0;
+  for (const row of standings) {
+    const columns = [row.p, row.w, row.d, row.l, row.gf, row.ga, row.pts];
+    if (!columns.every((value) => Number.isInteger(value))) return `columnas incompletas en ${row.team || "?"}`;
+    if (row.p !== row.w + row.d + row.l) return `${row.team}: p != w+d+l`;
+    if (row.pts !== 2 * row.w + row.d && row.pts !== 3 * row.w + row.d) return `${row.team}: pts inconsistente`;
+    sumGf += row.gf;
+    sumGa += row.ga;
+  }
+  if (sumGf !== sumGa) return `suma GF ${sumGf} != suma GA ${sumGa} (faltan equipos o columnas)`;
+  const list = Array.isArray(matches) ? matches : [];
+  const played = list.filter((match) => match.stage === "group" && match.group === letter && Array.isArray(match.score));
+  const matchGoals = played.reduce((sum, match) => sum + match.score[0] + match.score[1], 0);
+  if (played.length > 0 && matchGoals !== sumGf) return `goles de partidos ${matchGoals} != clasificación ${sumGf}`;
+  return null;
+}
+
+function buildGroups(standings, matches, warnings) {
+  const groups = new Map();
+  for (const standing of standings) {
+    const letter = groupLetter(standing.group);
+    if (!letter) {
+      warnings.push({ reason: `clasificación sin grupo reconocible: ${standing.raw}` });
+      continue;
+    }
+    const team = normalizeTeam(standing.team);
+    if (!team) continue;
+    const columns = [standing.p, standing.w, standing.d, standing.l, standing.gf, standing.ga, standing.pts];
+    if (!columns.every((value) => Number.isInteger(value))) {
+      warnings.push({ reason: `clasificación incompleta descartada en grupo ${letter} (${team}: retirado o fila perdida)` });
+      continue;
+    }
+    if (!groups.has(letter)) groups.set(letter, []);
+    groups.get(letter).push({
+      team,
+      p: standing.p,
+      w: standing.w,
+      d: standing.d,
+      l: standing.l,
+      gf: standing.gf,
+      ga: standing.ga,
+      pts: standing.pts
+    });
+  }
+  const built = [...groups.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([letter, teams]) => ({
+      letter,
+      standings: teams.sort((a, b) => (a.pts === b.pts ? (b.gf - b.ga) - (a.gf - a.ga) : b.pts - a.pts))
+    }));
+  const kept = [];
+  for (const group of built) {
+    const issue = groupIssue(group.letter, group.standings, matches);
+    if (issue) {
+      warnings.push({ reason: `grupo ${group.letter} omitido: la clasificación de la fuente está incompleta o no cuadra (${issue})` });
+      continue;
+    }
+    kept.push(group);
+  }
+  return kept;
+}
+
+function standingsDisagreements(fStandings, fullStandings) {
+  const fullIndex = new Map();
+  for (const standing of fullStandings) {
+    const letter = groupLetter(standing.group);
+    const team = normalizeTeam(standing.team);
+    if (letter && team) fullIndex.set(`${letter}|${team}`, standing);
+  }
+  const rejected = [];
+  for (const standing of fStandings) {
+    const letter = groupLetter(standing.group);
+    const team = normalizeTeam(standing.team);
+    if (!letter || !team) continue;
+    const other = fullIndex.get(`${letter}|${team}`);
+    if (!other) continue;
+    if (standing.gf !== other.gf || standing.ga !== other.ga || standing.pts !== other.pts) {
+      rejected.push({
+        field: `groups.${letter}.standings.${team}`,
+        value: `${other.gf}-${other.ga}`,
+        reason: `full="${other.gf}-${other.ga} ${other.pts}" y f="${standing.gf}-${standing.ga} ${standing.pts}" difieren; se conserva f`
+      });
+    }
+  }
+  return rejected;
+}
+
+function extractHosts(parts, year) {
+  const fPart = parts.find((part) => (part.kind || kindFromSourceId(part.sourceId)) === "f");
+  if (!fPart) return null;
+  const match = new RegExp(`World Cup\\s+${year}\\s*\\(([^,)]+)`, "i").exec(fPart.text || "");
+  if (!match) return null;
+  const code = normalizeTeam(match[1].trim());
+  return code && code.length === 3 ? [code] : null;
+}
+
+function teamsCount(matches) {
+  const set = new Set();
+  for (const match of matches) {
+    if (match.home) set.add(match.home);
+    if (match.away) set.add(match.away);
+  }
+  return set.size;
+}
+
+function deriveResults(matches, groups, warnings) {
+  const results = {};
+  const final = matches.find((match) => match.stage === "final");
+  if (final && final.score) {
+    if (final.score[0] === final.score[1]) {
+      warnings.push({ reason: `la final ${final.id} empata; no se puede derivar campeón sin penaltis` });
+    } else {
+      results.champion = final.score[0] > final.score[1] ? final.home : final.away;
+      results.runnerUp = final.score[0] > final.score[1] ? final.away : final.home;
+      results.finalMatchId = final.id;
+    }
+  } else {
+    const finalGroup = groups.find((group) => group.letter === "F");
+    if (finalGroup && finalGroup.standings.length >= 2) {
+      const [first, second] = finalGroup.standings;
+      results.champion = first.team;
+      results.runnerUp = second.team;
+      const decisive = matches.find(
+        (match) =>
+          match.stage === "finalGroup" &&
+          ((match.home === first.team && match.away === second.team) ||
+            (match.home === second.team && match.away === first.team))
+      );
+      if (decisive) results.finalMatchId = decisive.id;
+      else warnings.push({ reason: "no se localiza el partido decisivo del grupo final; finalMatchId omitido" });
+    } else {
+      warnings.push({ reason: "no hay partido de stage 'final' ni grupo final utilizable; results sin derivar" });
+    }
+  }
+  const third = matches.find((match) => match.stage === "third");
+  if (third && third.score && third.score[0] !== third.score[1]) {
+    results.third = third.score[0] > third.score[1] ? third.home : third.away;
+  }
+  return results;
+}
+
+function buildScorers(results, warnings) {
+  const scorers = [];
+  for (const scorer of results.scorers || []) {
+    if (!scorer || !scorer.player || typeof scorer.goals !== "number") continue;
+    const country = normalizeTeam(scorer.country) || scorer.country;
+    if (!country) {
+      warnings.push({ reason: `goleador ${scorer.player} sin país resoluble (${scorer.country || "?"}); descartado` });
+      continue;
+    }
+    const entry = {
+      player: scorer.player,
+      country,
+      goals: scorer.goals,
+      scope: "final"
+    };
+    if (scorer.ownGoal) entry.ownGoal = true;
+    scorers.push(entry);
+  }
+  return scorers;
+}
+
+/**
+ * Construye un borrador de edición v2 a partir de las fuentes dadas.
+ * @param {{ year: number|string, parts: Array<object>, ctx?: object }} input
+ * @returns {object} borrador (no validado por el esquema)
+ */
+function buildDraft(input) {
+  const { year, parts } = input || {};
+  const ctx = (input && input.ctx) || {};
+  if (year === undefined || year === null) throw new Error("buildDraft: falta 'year'");
+  if (!Array.isArray(parts) || parts.length === 0) throw new Error("buildDraft: 'parts' vacío");
+
+  const warnings = [];
+  const normalized = parts.map((part) => ({
+    ...part,
+    kind: part.kind || kindFromSourceId(part.sourceId) || detectKind(part.url || "")
+  }));
+
+  const fPart = normalized.find((part) => part.kind === "f");
+  const fullPart = normalized.find((part) => part.kind === "full");
+  if (!fPart && !fullPart) throw new Error("buildDraft: no hay fuente 'f' ni 'full'");
+
+  const parseCtx = (part) => ({ sourceId: part.sourceId, retrieved: part.retrieved, year: Number(year) });
+  const empty = { matches: [], standings: [], scorers: [], groups: [], notes: [], warnings: [] };
+  const fResult = fPart ? parse("f", fPart.text, parseCtx(fPart)) : empty;
+  const fullResult = fullPart ? parse("full", fullPart.text, parseCtx(fullPart)) : empty;
+  const scorerPart = normalized.find((part) => part.kind === "qf-scor");
+  const scorerResult = scorerPart ? parse("qf-scor", scorerPart.text, parseCtx(scorerPart)) : empty;
+  if (!scorerPart) {
+    warnings.push({ reason: "no hay fuente de goleadores (qf-scor) en inbox/; se publica sin scorers[]" });
+  }
+
+  for (const parsed of [fResult, fullResult, scorerResult]) {
+    for (const warning of parsed.warnings) {
+      warnings.push({ segment: warning.line, reason: warning.reason });
+    }
+  }
+
+  const fMatches = fResult.matches.map(prepare);
+  const fullMatches = fullResult.matches.map(prepare);
+  const fullOnly = pairMatches(fMatches, fullMatches);
+  const fullSourceId = fullPart ? fullPart.sourceId : null;
+
+  const rejected = [];
+  const entries = [];
+  for (const fEntry of fMatches) {
+    const entry = matchFromF(fEntry, fEntry.full);
+    const diff = disagreement(fEntry, fEntry.full);
+    if (diff) rejected.push({ ref: entry, source: fullSourceId, ...diff });
+    entries.push(entry);
+  }
+  for (const fullEntry of fullOnly) {
+    if (!fullEntry.home || !fullEntry.away) {
+      warnings.push({ reason: `partido solo en full sin equipos identificables (${fullEntry.date || "sin fecha"}); descartado` });
+      continue;
+    }
+    entries.push(matchFromFull(fullEntry));
+  }
+  entries.forEach((entry, index) => {
+    entry.id = `m${String(index + 1).padStart(3, "0")}`;
+    if (entry.extra === null) delete entry.extra;
+    if (!entry.stage) {
+      warnings.push({ id: entry.id, reason: `fase no reconocida (section="${entry.section || ""}"); stage=null` });
+    }
+  });
+
+  const groups = buildGroups(fResult.standings, entries, warnings);
+  for (const diff of standingsDisagreements(fResult.standings, fullResult.standings)) {
+    rejected.push({ ref: null, source: fullSourceId, ...diff });
+  }
+
+  const scorers = buildScorers(scorerResult, warnings);
+  const results = deriveResults(entries, groups, warnings);
+  const goals = entries.reduce(
+    (sum, entry) => sum + (entry.score ? entry.score[0] + entry.score[1] : 0),
+    0
+  );
+  const scorerGoals = scorers.reduce((sum, scorer) => sum + scorer.goals, 0);
+  const primaryId = (fPart && fPart.sourceId) || (fullPart && fullPart.sourceId) || null;
+
+  const retrievedDates = normalized.map((part) => toDate(part.retrieved)).filter(Boolean).sort();
+  const asOf = retrievedDates[retrievedDates.length - 1] || null;
+
+  const coverage = {
+    matches: entries.length,
+    goals,
+    scorers: scorers.length,
+    scope: "final",
+    complete: false
+  };
+  if (scorerPart) coverage.scorersComplete = scorerGoals === goals;
+
+  const provenanceRejected = rejected.map((item) => ({
+    source: item.source || (normalized[0] && normalized[0].sourceId) || "rsssf",
+    field: item.ref ? `matches.${item.ref.id}.${item.field}` : item.field,
+    value: item.value,
+    reason: item.reason
+  }));
+  const provenance = primaryId
+    ? { primary: primaryId, ...(provenanceRejected.length > 0 ? { rejected: provenanceRejected } : {}) }
+    : provenanceRejected.length > 0
+      ? { rejected: provenanceRejected }
+      : {};
+
+  const draft = {
+    schemaVersion: 2,
+    archetype: "encounter",
+    sport: ctx.sport || DEFAULT_SPORT,
+    competition: ctx.competition || DEFAULT_COMPETITION,
+    edition: Number(year),
+    status: "closed",
+    teamMode: "country",
+    results,
+    coverage,
+    sources: buildSources(normalized, year),
+    asOf,
+    provenance,
+    groups,
+    matches: entries,
+    scorers,
+    warnings
+  };
+
+  const hosts = extractHosts(normalized, year);
+  if (hosts) draft.hosts = hosts;
+  const count = teamsCount(entries);
+  if (count > 0) draft.teamsCount = count;
+
+  return draft;
+}
+
+module.exports = { buildDraft, normalizeTeam, stageFromSection, groupLetter };
