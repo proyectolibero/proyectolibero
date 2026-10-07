@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "updatedAt": "2026-10-06",
+  "description": "Catálogo maestro de deportes del proyecto. Un deporte es un contenedor de competiciones; declara qué arquetipos de resultado puede producir.",
+  "sports": [
+    {
+      "id": "football",
+      "name": "Association football",
+      "i18nKey": "sport.football",
+      "resultArchetypes": ["encounter"],
+      "status": "active",
+      "competitions": 1,
+      "notes": "Primer deporte del proyecto y piloto del arquetipo encounter."
+    },
+    {
+      "id": "aquatics",
+      "name": "Aquatic sports",
+      "i18nKey": "sport.aquatics",
+      "resultArchetypes": ["ranking", "timed"],
+      "status": "planned",
+      "competitions": 0
+    },
+    {
+      "id": "archery",
+      "name": "Archery",
+      "i18nKey": "sport.archery",
+      "resultArchetypes": ["ranking"],
+      "status": "planned",
+      "competitions": 0
+    },
+    {
+      "id": "athletics",
+      "name": "Athletics",
+      "i18nKey": "sport.athletics",
+      "resultArchetypes": ["ranking", "timed"],
+      "status": "planned",
+      "competitions": 0
+    }
+  ]
+}

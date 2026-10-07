@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 1938,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": ["FRA"],
+  "teamsCount": 15,
+  "results": {
+    "champion": "ITA",
+    "runnerUp": "HUN",
+    "third": "BRA",
+    "finalMatchId": "m019"
+  },
+  "coverage": {
+    "matches": 2,
+    "goals": 12,
+    "complete": false
+  },
+  "sources": [
+    {
+      "id": "rsssf:38f",
+      "name": "RSSSF — World Cup 1938 final tournament details (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tables/38f.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "matches": [
+    {
+      "id": "m019",
+      "stage": "final",
+      "date": "1938-06-19",
+      "city": "Paris",
+      "home": "ITA",
+      "away": "HUN",
+      "score": [4, 2],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": { "name": "Capdeville", "country": "FRA" },
+        "attendance": 60000,
+        "events": [
+          { "minute": 6, "player": "Colaussi", "team": "ITA", "score": [1, 0] },
+          { "minute": 8, "player": "Titkos", "team": "HUN", "score": [1, 1] },
+          { "minute": 16, "player": "Piola", "team": "ITA", "score": [2, 1] },
+          { "minute": 35, "player": "Colaussi", "team": "ITA", "score": [3, 1] },
+          { "minute": 70, "player": "Sárosi", "team": "HUN", "score": [3, 2] },
+          { "minute": 82, "player": "Piola", "team": "ITA", "score": [4, 2] }
+        ]
+      },
+      "provenance": { "primary": "rsssf:38f", "rejected": [] },
+      "raw": null
+    },
+    {
+      "id": "m018",
+      "stage": "third",
+      "date": "1938-06-19",
+      "city": "Bordeaux",
+      "home": "BRA",
+      "away": "SWE",
+      "score": [4, 2],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ]
+}

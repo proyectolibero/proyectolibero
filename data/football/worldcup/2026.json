@@ -1,0 +1,2029 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 2026,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "CAN",
+    "MEX",
+    "USA"
+  ],
+  "teamsCount": 48,
+  "results": {
+    "champion": "ESP",
+    "runnerUp": "ARG",
+    "third": "ENG",
+    "finalMatchId": "m104"
+  },
+  "coverage": {
+    "matches": 104,
+    "goals": 308,
+    "scorers": 1,
+    "scope": "final",
+    "complete": true,
+    "scorersComplete": false,
+    "note": "RSSSF 2026f documenta el torneo final completo (104 partidos con fecha y ciudad, y las 12 clasificaciones): el resultado está completo (Nivel 1, coverage.complete:true). NO publica la lista completa de goleadores (no existen 2026full ni 2026f-scor): solo consta el máximo goleador (Mbappé, 10), por lo que coverage.scorersComplete es false (ADR-016/D24)."
+  },
+  "sources": [
+    {
+      "id": "rsssf:2026f",
+      "name": "RSSSF — World Cup 2026 final tournament (Roberto Di Maggio)",
+      "url": "https://www.rsssf.org/tables/2026f.html",
+      "retrieved": "2026-10-06",
+      "author": "Roberto Di Maggio",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:worldcup",
+      "name": "RSSSF — World Cup 1930-2026 overview (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tablesw/worldcup.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "provenance": {
+    "primary": "rsssf:2026f",
+    "rejected": [
+      {
+        "source": "rsssf:2026f",
+        "field": "scorers",
+        "value": "Mbappé (France) 10 goals",
+        "reason": "RSSSF 2026f no publica la lista completa de goleadores (no existen 2026full ni 2026f-scor): solo el máximo goleador. La suma de scorers[] no cuadra con los 308 goles de los partidos; se conserva el dato literal de la fuente sin alterarlo (ADR-015)."
+      }
+    ]
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 6,
+          "ga": 0,
+          "pts": 9
+        },
+        {
+          "team": "RSA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "KOR",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "CZE",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "SUI",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 7,
+          "ga": 3,
+          "pts": 7
+        },
+        {
+          "team": "CAN",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 8,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "BIH",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "QAT",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 10,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 7,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "MAR",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 6,
+          "ga": 3,
+          "pts": 7
+        },
+        {
+          "team": "SCO",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 1,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "HAI",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 8,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "USA",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 8,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "AUS",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "PAR",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "TUR",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 5,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "standings": [
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 10,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "CIV",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "ECU",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "CUW",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 9,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 10,
+          "ga": 4,
+          "pts": 7
+        },
+        {
+          "team": "JPN",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 7,
+          "ga": 3,
+          "pts": 5
+        },
+        {
+          "team": "SWE",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 7,
+          "ga": 7,
+          "pts": 4
+        },
+        {
+          "team": "TUN",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 12,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "standings": [
+        {
+          "team": "BEL",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 6,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "EGY",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 5,
+          "ga": 3,
+          "pts": 5
+        },
+        {
+          "team": "IRN",
+          "p": 3,
+          "w": 0,
+          "d": 3,
+          "l": 0,
+          "gf": 3,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "NZL",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 10,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 0,
+          "pts": 7
+        },
+        {
+          "team": "CPV",
+          "p": 3,
+          "w": 0,
+          "d": 3,
+          "l": 0,
+          "gf": 2,
+          "ga": 2,
+          "pts": 3
+        },
+        {
+          "team": "URU",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 3,
+          "ga": 4,
+          "pts": 2
+        },
+        {
+          "team": "KSA",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 1,
+          "ga": 5,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 10,
+          "ga": 2,
+          "pts": 9
+        },
+        {
+          "team": "NOR",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 8,
+          "ga": 7,
+          "pts": 6
+        },
+        {
+          "team": "SEN",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 8,
+          "ga": 6,
+          "pts": 3
+        },
+        {
+          "team": "IRQ",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 12,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "J",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 8,
+          "ga": 1,
+          "pts": 9
+        },
+        {
+          "team": "AUT",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 6,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "ALG",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 7,
+          "pts": 4
+        },
+        {
+          "team": "JOR",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 3,
+          "ga": 8,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "K",
+      "standings": [
+        {
+          "team": "COL",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "POR",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 6,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "COD",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "UZB",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 11,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "L",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 6,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "CRO",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 5,
+          "pts": 6
+        },
+        {
+          "team": "GHA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "PAN",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 0,
+          "ga": 4,
+          "pts": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "date": "2026-06-11",
+      "city": "Mexico City",
+      "home": "MEX",
+      "away": "RSA",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "date": "2026-06-11",
+      "city": "Guadalajara",
+      "home": "KOR",
+      "away": "CZE",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "date": "2026-06-18",
+      "city": "Atlanta",
+      "home": "CZE",
+      "away": "RSA",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "date": "2026-06-18",
+      "city": "Guadalajara",
+      "home": "MEX",
+      "away": "KOR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "date": "2026-06-24",
+      "city": "Mexico City",
+      "home": "CZE",
+      "away": "MEX",
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "date": "2026-06-24",
+      "city": "Monterrey",
+      "home": "RSA",
+      "away": "KOR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "date": "2026-06-12",
+      "city": "Toronto",
+      "home": "CAN",
+      "away": "BIH",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "date": "2026-06-13",
+      "city": "San Francisco",
+      "home": "QAT",
+      "away": "SUI",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "date": "2026-06-18",
+      "city": "Los Angeles",
+      "home": "SUI",
+      "away": "BIH",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "date": "2026-06-18",
+      "city": "Vancouver",
+      "home": "CAN",
+      "away": "QAT",
+      "score": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "date": "2026-06-24",
+      "city": "Vancouver",
+      "home": "SUI",
+      "away": "CAN",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "date": "2026-06-24",
+      "city": "Seattle",
+      "home": "BIH",
+      "away": "QAT",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "date": "2026-06-13",
+      "city": "East Rutherford",
+      "home": "BRA",
+      "away": "MAR",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "date": "2026-06-13",
+      "city": "Boston",
+      "home": "HAI",
+      "away": "SCO",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "date": "2026-06-19",
+      "city": "Boston",
+      "home": "SCO",
+      "away": "MAR",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "date": "2026-06-19",
+      "city": "Philadelphia",
+      "home": "BRA",
+      "away": "HAI",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "date": "2026-06-24",
+      "city": "Miami",
+      "home": "SCO",
+      "away": "BRA",
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "date": "2026-06-24",
+      "city": "Atlanta",
+      "home": "MAR",
+      "away": "HAI",
+      "score": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "date": "2026-06-12",
+      "city": "Los Angeles",
+      "home": "USA",
+      "away": "PAR",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "date": "2026-06-13",
+      "city": "Vancouver",
+      "home": "AUS",
+      "away": "TUR",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "date": "2026-06-19",
+      "city": "Seattle",
+      "home": "USA",
+      "away": "AUS",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "date": "2026-06-19",
+      "city": "San Francisco",
+      "home": "TUR",
+      "away": "PAR",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "date": "2026-06-25",
+      "city": "Los Angeles",
+      "home": "TUR",
+      "away": "USA",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "date": "2026-06-25",
+      "city": "San Francisco",
+      "home": "PAR",
+      "away": "AUS",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m025",
+      "stage": "group",
+      "group": "E",
+      "date": "2026-06-14",
+      "city": "Houston",
+      "home": "GER",
+      "away": "CUW",
+      "score": [
+        7,
+        1
+      ]
+    },
+    {
+      "id": "m026",
+      "stage": "group",
+      "group": "E",
+      "date": "2026-06-14",
+      "city": "Philadelphia",
+      "home": "CIV",
+      "away": "ECU",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m027",
+      "stage": "group",
+      "group": "E",
+      "date": "2026-06-20",
+      "city": "Toronto",
+      "home": "GER",
+      "away": "CIV",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m028",
+      "stage": "group",
+      "group": "E",
+      "date": "2026-06-20",
+      "city": "Kansas City",
+      "home": "ECU",
+      "away": "CUW",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m029",
+      "stage": "group",
+      "group": "E",
+      "date": "2026-06-25",
+      "city": "Philadelphia",
+      "home": "CUW",
+      "away": "CIV",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m030",
+      "stage": "group",
+      "group": "E",
+      "date": "2026-06-25",
+      "city": "East Rutherford",
+      "home": "ECU",
+      "away": "GER",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m031",
+      "stage": "group",
+      "group": "F",
+      "date": "2026-06-14",
+      "city": "Dallas",
+      "home": "NED",
+      "away": "JPN",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m032",
+      "stage": "group",
+      "group": "F",
+      "date": "2026-06-14",
+      "city": "Monterrey",
+      "home": "SWE",
+      "away": "TUN",
+      "score": [
+        5,
+        1
+      ]
+    },
+    {
+      "id": "m033",
+      "stage": "group",
+      "group": "F",
+      "date": "2026-06-20",
+      "city": "Houston",
+      "home": "NED",
+      "away": "SWE",
+      "score": [
+        5,
+        1
+      ]
+    },
+    {
+      "id": "m034",
+      "stage": "group",
+      "group": "F",
+      "date": "2026-06-20",
+      "city": "Monterrey",
+      "home": "TUN",
+      "away": "JPN",
+      "score": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "m035",
+      "stage": "group",
+      "group": "F",
+      "date": "2026-06-25",
+      "city": "Dallas",
+      "home": "JPN",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m036",
+      "stage": "group",
+      "group": "F",
+      "date": "2026-06-25",
+      "city": "Kansas City",
+      "home": "TUN",
+      "away": "NED",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m037",
+      "stage": "group",
+      "group": "G",
+      "date": "2026-06-15",
+      "city": "Seattle",
+      "home": "BEL",
+      "away": "EGY",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m038",
+      "stage": "group",
+      "group": "G",
+      "date": "2026-06-15",
+      "city": "Los Angeles",
+      "home": "IRN",
+      "away": "NZL",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m039",
+      "stage": "group",
+      "group": "G",
+      "date": "2026-06-21",
+      "city": "Los Angeles",
+      "home": "BEL",
+      "away": "IRN",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m040",
+      "stage": "group",
+      "group": "G",
+      "date": "2026-06-21",
+      "city": "Vancouver",
+      "home": "NZL",
+      "away": "EGY",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m041",
+      "stage": "group",
+      "group": "G",
+      "date": "2026-06-26",
+      "city": "Seattle",
+      "home": "EGY",
+      "away": "IRN",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m042",
+      "stage": "group",
+      "group": "G",
+      "date": "2026-06-26",
+      "city": "Vancouver",
+      "home": "NZL",
+      "away": "BEL",
+      "score": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "m043",
+      "stage": "group",
+      "group": "H",
+      "date": "2026-06-15",
+      "city": "Atlanta",
+      "home": "ESP",
+      "away": "CPV",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m044",
+      "stage": "group",
+      "group": "H",
+      "date": "2026-06-15",
+      "city": "Miami",
+      "home": "KSA",
+      "away": "URU",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m045",
+      "stage": "group",
+      "group": "H",
+      "date": "2026-06-21",
+      "city": "Atlanta",
+      "home": "ESP",
+      "away": "KSA",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "m046",
+      "stage": "group",
+      "group": "H",
+      "date": "2026-06-21",
+      "city": "Miami",
+      "home": "URU",
+      "away": "CPV",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m047",
+      "stage": "group",
+      "group": "H",
+      "date": "2026-06-26",
+      "city": "Houston",
+      "home": "CPV",
+      "away": "KSA",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m048",
+      "stage": "group",
+      "group": "H",
+      "date": "2026-06-26",
+      "city": "Guadalajara",
+      "home": "URU",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m049",
+      "stage": "group",
+      "group": "I",
+      "date": "2026-06-16",
+      "city": "East Rutherford",
+      "home": "FRA",
+      "away": "SEN",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m050",
+      "stage": "group",
+      "group": "I",
+      "date": "2026-06-16",
+      "city": "Boston",
+      "home": "IRQ",
+      "away": "NOR",
+      "score": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "m051",
+      "stage": "group",
+      "group": "I",
+      "date": "2026-06-22",
+      "city": "Philadelphia",
+      "home": "FRA",
+      "away": "IRQ",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m052",
+      "stage": "group",
+      "group": "I",
+      "date": "2026-06-22",
+      "city": "East Rutherford",
+      "home": "NOR",
+      "away": "SEN",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m053",
+      "stage": "group",
+      "group": "I",
+      "date": "2026-06-26",
+      "city": "Boston",
+      "home": "NOR",
+      "away": "FRA",
+      "score": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "m054",
+      "stage": "group",
+      "group": "I",
+      "date": "2026-06-26",
+      "city": "Toronto",
+      "home": "SEN",
+      "away": "IRQ",
+      "score": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "m055",
+      "stage": "group",
+      "group": "J",
+      "date": "2026-06-16",
+      "city": "Kansas City",
+      "home": "ARG",
+      "away": "ALG",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m056",
+      "stage": "group",
+      "group": "J",
+      "date": "2026-06-16",
+      "city": "San Francisco",
+      "home": "AUT",
+      "away": "JOR",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m057",
+      "stage": "group",
+      "group": "J",
+      "date": "2026-06-22",
+      "city": "Dallas",
+      "home": "ARG",
+      "away": "AUT",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m058",
+      "stage": "group",
+      "group": "J",
+      "date": "2026-06-22",
+      "city": "San Francisco",
+      "home": "JOR",
+      "away": "ALG",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m059",
+      "stage": "group",
+      "group": "J",
+      "date": "2026-06-27",
+      "city": "Kansas City",
+      "home": "ALG",
+      "away": "AUT",
+      "score": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "m060",
+      "stage": "group",
+      "group": "J",
+      "date": "2026-06-27",
+      "city": "Dallas",
+      "home": "JOR",
+      "away": "ARG",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m061",
+      "stage": "group",
+      "group": "K",
+      "date": "2026-06-17",
+      "city": "Houston",
+      "home": "POR",
+      "away": "COD",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m062",
+      "stage": "group",
+      "group": "K",
+      "date": "2026-06-17",
+      "city": "Mexico City",
+      "home": "UZB",
+      "away": "COL",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m063",
+      "stage": "group",
+      "group": "K",
+      "date": "2026-06-23",
+      "city": "Houston",
+      "home": "POR",
+      "away": "UZB",
+      "score": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "m064",
+      "stage": "group",
+      "group": "K",
+      "date": "2026-06-23",
+      "city": "Guadalajara",
+      "home": "COL",
+      "away": "COD",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m065",
+      "stage": "group",
+      "group": "K",
+      "date": "2026-06-27",
+      "city": "Miami",
+      "home": "COL",
+      "away": "POR",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m066",
+      "stage": "group",
+      "group": "K",
+      "date": "2026-06-27",
+      "city": "Atlanta",
+      "home": "COD",
+      "away": "UZB",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m067",
+      "stage": "group",
+      "group": "L",
+      "date": "2026-06-17",
+      "city": "Dallas",
+      "home": "ENG",
+      "away": "CRO",
+      "score": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "m068",
+      "stage": "group",
+      "group": "L",
+      "date": "2026-06-17",
+      "city": "Toronto",
+      "home": "GHA",
+      "away": "PAN",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m069",
+      "stage": "group",
+      "group": "L",
+      "date": "2026-06-23",
+      "city": "Boston",
+      "home": "ENG",
+      "away": "GHA",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m070",
+      "stage": "group",
+      "group": "L",
+      "date": "2026-06-23",
+      "city": "Toronto",
+      "home": "PAN",
+      "away": "CRO",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m071",
+      "stage": "group",
+      "group": "L",
+      "date": "2026-06-27",
+      "city": "East Rutherford",
+      "home": "PAN",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m072",
+      "stage": "group",
+      "group": "L",
+      "date": "2026-06-27",
+      "city": "Philadelphia",
+      "home": "CRO",
+      "away": "GHA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m073",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-06-28",
+      "city": "Los Angeles",
+      "home": "RSA",
+      "away": "CAN",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m074",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-06-29",
+      "city": "Boston",
+      "home": "BRA",
+      "away": "JPN",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m075",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-06-29",
+      "city": "Boston",
+      "home": "GER",
+      "away": "PAR",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "m076",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-06-29",
+      "city": "Monterrey",
+      "home": "NED",
+      "away": "MAR",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "m077",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-06-30",
+      "city": "Dallas",
+      "home": "CIV",
+      "away": "NOR",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m078",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-06-30",
+      "city": "East Rutherford",
+      "home": "FRA",
+      "away": "SWE",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m079",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-06-30",
+      "city": "Mexico City",
+      "home": "MEX",
+      "away": "ECU",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m080",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-07-01",
+      "city": "Atlanta",
+      "home": "ENG",
+      "away": "COD",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m081",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-07-01",
+      "city": "Seattle",
+      "home": "BEL",
+      "away": "SEN",
+      "score": [
+        3,
+        2
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m082",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-07-01",
+      "city": "San Francisco",
+      "home": "USA",
+      "away": "BIH",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m083",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-07-02",
+      "city": "Los Angeles",
+      "home": "ESP",
+      "away": "AUT",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m084",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-07-02",
+      "city": "Toronto",
+      "home": "POR",
+      "away": "CRO",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m085",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-07-02",
+      "city": "Vancouver",
+      "home": "SUI",
+      "away": "ALG",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m086",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-07-03",
+      "city": "Dallas",
+      "home": "AUS",
+      "away": "EGY",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "m087",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-07-03",
+      "city": "Miami",
+      "home": "ARG",
+      "away": "CPV",
+      "score": [
+        3,
+        2
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m088",
+      "stage": "r32",
+      "group": null,
+      "date": "2026-07-03",
+      "city": "Kansas City",
+      "home": "COL",
+      "away": "GHA",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m089",
+      "stage": "r16",
+      "group": null,
+      "date": "2026-07-04",
+      "city": "Houston",
+      "home": "CAN",
+      "away": "MAR",
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m090",
+      "stage": "r16",
+      "group": null,
+      "date": "2026-07-04",
+      "city": "Philadelphia",
+      "home": "PAR",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m091",
+      "stage": "r16",
+      "group": null,
+      "date": "2026-07-05",
+      "city": "East Rutherford",
+      "home": "BRA",
+      "away": "NOR",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m092",
+      "stage": "r16",
+      "group": null,
+      "date": "2026-07-05",
+      "city": "Mexico City",
+      "home": "MEX",
+      "away": "ENG",
+      "score": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "m093",
+      "stage": "r16",
+      "group": null,
+      "date": "2026-07-06",
+      "city": "Dallas",
+      "home": "POR",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m094",
+      "stage": "r16",
+      "group": null,
+      "date": "2026-07-06",
+      "city": "Seattle",
+      "home": "USA",
+      "away": "BEL",
+      "score": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "m095",
+      "stage": "r16",
+      "group": null,
+      "date": "2026-07-07",
+      "city": "Atlanta",
+      "home": "ARG",
+      "away": "EGY",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m096",
+      "stage": "r16",
+      "group": null,
+      "date": "2026-07-07",
+      "city": "Vancouver",
+      "home": "SUI",
+      "away": "COL",
+      "score": [
+        0,
+        0
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        4,
+        3
+      ]
+    },
+    {
+      "id": "m097",
+      "stage": "qf",
+      "group": null,
+      "date": "2026-07-09",
+      "city": "Boston",
+      "home": "FRA",
+      "away": "MAR",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m098",
+      "stage": "qf",
+      "group": null,
+      "date": "2026-07-10",
+      "city": "Los Angeles",
+      "home": "ESP",
+      "away": "BEL",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m099",
+      "stage": "qf",
+      "group": null,
+      "date": "2026-07-11",
+      "city": "Miami",
+      "home": "NOR",
+      "away": "ENG",
+      "score": [
+        1,
+        2
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m100",
+      "stage": "qf",
+      "group": null,
+      "date": "2026-07-11",
+      "city": "Kansas City",
+      "home": "ARG",
+      "away": "SUI",
+      "score": [
+        3,
+        1
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m101",
+      "stage": "sf",
+      "group": null,
+      "date": "2026-07-14",
+      "city": "Dallas",
+      "home": "FRA",
+      "away": "ESP",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m102",
+      "stage": "sf",
+      "group": null,
+      "date": "2026-07-15",
+      "city": "Atlanta",
+      "home": "ENG",
+      "away": "ARG",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m103",
+      "stage": "third",
+      "group": null,
+      "date": "2026-07-18",
+      "city": "Miami",
+      "home": "FRA",
+      "away": "ENG",
+      "score": [
+        4,
+        6
+      ]
+    },
+    {
+      "id": "m104",
+      "stage": "final",
+      "group": null,
+      "date": "2026-07-19",
+      "city": "East Rutherford",
+      "home": "ESP",
+      "away": "ARG",
+      "score": [
+        1,
+        0
+      ],
+      "notes": [
+        "aet"
+      ],
+      "extra": {
+        "attendance": 80660,
+        "events": [
+          {
+            "minute": 106,
+            "player": "F. Torres",
+            "team": "ESP",
+            "score": [
+              1,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "scorers": [
+    {
+      "player": "Mbappé",
+      "country": "FRA",
+      "goals": 10,
+      "scope": "final"
+    }
+  ]
+}

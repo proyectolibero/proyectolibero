@@ -96,6 +96,17 @@
       "usedBy": [
         "1938.json"
       ]
+    },
+    {
+      "id": "src-9",
+      "name": "Wikipedia — 1938 FIFA World Cup final",
+      "url": "https://en.wikipedia.org/wiki/1938_FIFA_World_Cup_final",
+      "retrieved": "2026-10-06",
+      "publisher": "Wikipedia",
+      "license": "cc-by-sa",
+      "usedBy": [
+        "1938.json"
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "project": "Deporte Mundial",
   "description": "Portal estático multilingüe de estadísticas deportivas (HTML+CSS+JS puro, hash routing, GitHub Pages)",
-  "updatedAt": "2026-10-06",
+  "updatedAt": "2026-10-07",
   "languages": [
     "es",
     "en",
@@ -24,9 +24,9 @@
         "1930": "done",
         "1934": "done",
         "1938": "done",
-        "1950": "pending"
+        "1950": "done"
       },
-      "notes": "1938.json: 47 partidos (28 clasificación + 19 fase final), 90 goleadores (180 goles), 5 fuentes RSSSF. validate.js 0 errores; verificación de totales por equipo OK; render #/mundial/1938 OK."
+      "notes": "Las 23 ediciones celebradas (1930–2026; 1942/1946 no celebradas) migradas al esquema v2 y registradas en el catálogo: 1162 partidos y 3384 goles. Nivel 2 (clasificación completa) solo en 1938 y 1950 (coverage.scope \"all\"); el resto nivel 1 (scope \"final\"). Release 2026.10 con 23 ficheros. Gate y MCP en 0 errores/0 avisos; 69 tests en verde."
     },
     "validation": {
       "status": "done",
@@ -42,7 +42,7 @@
     },
     "docs": {
       "status": "done",
-      "notes": "README + docs/ (ESTRUCTURA, ESQUEMA-DATOS, I18N, FUENTES, FLUJO-EDICIONES, MONETIZACION)"
+      "notes": "Fase 0: ESQUEMA-DATOS-v2, SOSTENIBILIDAD (sustituye MONETIZACION), CONTRIBUCION, AGENTES, DISENO, SEO, adr/README (índice ADR-001..014), ESTRUCTURA y README actualizados."
     },
     "monetization": {
       "status": "done",
@@ -55,6 +55,22 @@
     "verification": {
       "status": "done",
       "notes": "validate.js 0 errores; servidor local + Playwright: 6 vistas, 5 idiomas, móvil 375px (hamburguesa on/off-canvas) y escritorio, buscador multi-idioma, consola sin errores (solo favicon 404 corregido con SVG inline)"
+    },
+    "catalog": {
+      "status": "done",
+      "notes": "catalog/sports.json (4 deportes; football activo) + catalog/competitions/football.worldcup.json (cobertura 23 celebradas/3 publicadas/20 pendientes, vocabulario de fases con finalGroup para 1950, licencias y flag redistribute, política de actualización manual)."
+    },
+    "schema.v2": {
+      "status": "done",
+      "notes": "core/ (io atómico, catálogo, validador por arquetipo, reindex, view-model, release, CLI), 11 fases en el catálogo, procedencia determinista, gate i18n restaurado (I18N001/002, CAT005, EDI012/013), migración v1→v2 y adaptador web v2→v1. Pendiente fase 2 (panel admin) y fase 4 (SSG/SEO)."
+    },
+    "admin.panel": {
+      "status": "done",
+      "notes": "Fase 2 verificada end-to-end en navegador (servidor del agente colgado, puerto 8787): las 6 secciones OK. Estado (23 publicadas/1162 partidos/3384 goles/release 2026.10/validacion 0-0), Catalogo (23/23, 0 pendientes), Detalle de competicion (25 ediciones + formulario de edicion vigilada), Edicion 1938 con visor de Procedencia (primary + rechazos con motivo), Releases con dry-run (no escribe) y Auditoria (registra release.build). Unico error de consola: favicon 404. Nits: el favicon y que el release asOf sale con la fecha de hoy en vez de la del dato."
+    },
+    "ingest": {
+      "status": "done",
+      "notes": "Fase 3: cadena determinista completa (ingest/fetch.js, ingest/rsssf.js con parsers f/full/qf-scor, ingest/build.js, ingest/reconcile.js, scripts/ingest.js con fetch/build/reconcile/promote). 124 tests en verde y validate 0/0. Aceptacion: re-derivar 1954 da 0 diferencias bloqueantes y el borrador valida con 0 errores (promote listo, sin ejecutar: la publicacion es humana). Skill .opencode/skills/deporte-ingesta y docs alineados. Pendiente: parsers q/q-det (nivel 2) y seccion Ingesta en el panel."
     }
   },
   "nextSteps": [

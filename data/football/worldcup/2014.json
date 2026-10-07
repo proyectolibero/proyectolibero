@@ -1,0 +1,2274 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 2014,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "BRA"
+  ],
+  "teamsCount": 32,
+  "results": {
+    "champion": "GER",
+    "runnerUp": "ARG",
+    "third": "NED",
+    "finalMatchId": "m064"
+  },
+  "coverage": {
+    "matches": 64,
+    "goals": 171,
+    "scorers": 122,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:2014f",
+      "name": "RSSSF — World Cup 2014 (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tables/2014f.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:2014full",
+      "name": "RSSSF — World Cup 2014 - Match Details (Neil Morrison)",
+      "url": "https://www.rsssf.org/tables/2014full.html",
+      "retrieved": "2026-10-06",
+      "author": "Neil Morrison",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "provenance": {
+    "primary": "rsssf:2014f",
+    "rejected": [
+      {
+        "source": "rsssf:2014full",
+        "field": "match.m006.city",
+        "value": "São Lourenço da Mata",
+        "reason": "2014full sitúa el partido en São Lourenço da Mata; se conserva Recife de rsssf:2014f (primary)."
+      },
+      {
+        "source": "rsssf:2014full",
+        "field": "match.m014.city",
+        "value": "São Lourenço da Mata",
+        "reason": "2014full sitúa el partido en São Lourenço da Mata; se conserva Recife de rsssf:2014f (primary)."
+      },
+      {
+        "source": "rsssf:2014full",
+        "field": "match.m022.city",
+        "value": "São Lourenço da Mata",
+        "reason": "2014full sitúa el partido en São Lourenço da Mata; se conserva Recife de rsssf:2014f (primary)."
+      },
+      {
+        "source": "rsssf:2014full",
+        "field": "match.m028.city",
+        "value": "Curitiba",
+        "reason": "2014full sitúa el partido en Curitiba; se conserva Cuiabá de rsssf:2014f (primary)."
+      },
+      {
+        "source": "rsssf:2014full",
+        "field": "match.m042.city",
+        "value": "São Lourenço da Mata",
+        "reason": "2014full sitúa el partido en São Lourenço da Mata; se conserva Recife de rsssf:2014f (primary)."
+      },
+      {
+        "source": "rsssf:2014full",
+        "field": "match.m052.city",
+        "value": "São Lourenço da Mata",
+        "reason": "2014full sitúa el partido en São Lourenço da Mata; se conserva Recife de rsssf:2014f (primary)."
+      },
+      {
+        "source": "rsssf:2014full",
+        "field": "matches[].order",
+        "value": "winner-first",
+        "reason": "2014full lista en primer lugar al ganador; se conserva el orden de emparejamiento de rsssf:2014f (primary)."
+      },
+      {
+        "source": "rsssf:2014full",
+        "field": "statistics.ownGoals",
+        "value": 5,
+        "reason": "La sección Statistics de 2014full declara 5 goles en propia; los relatos de partido documentan 6 (Marcelo, Valladares, Kolašinac, Boye, Jara, Yobo). Se publica la lista derivada de los relatos (ADR-015)."
+      }
+    ]
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 7,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "CRO",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 6,
+          "ga": 6,
+          "pts": 3
+        },
+        {
+          "team": "CMR",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 9,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 10,
+          "ga": 3,
+          "pts": 9
+        },
+        {
+          "team": "CHI",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 4,
+          "ga": 7,
+          "pts": 3
+        },
+        {
+          "team": "AUS",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 3,
+          "ga": 9,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "COL",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 9,
+          "ga": 2,
+          "pts": 9
+        },
+        {
+          "team": "GRE",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "CIV",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 4,
+          "ga": 5,
+          "pts": 3
+        },
+        {
+          "team": "JPN",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "CRC",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "URU",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 8,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "SUI",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 7,
+          "ga": 6,
+          "pts": 6
+        },
+        {
+          "team": "ECU",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "HON",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 8,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 6,
+          "ga": 3,
+          "pts": 9
+        },
+        {
+          "team": "NGA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "BIH",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 4,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "IRN",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "standings": [
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 7,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "USA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "POR",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 7,
+          "pts": 4
+        },
+        {
+          "team": "GHA",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "standings": [
+        {
+          "team": "BEL",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 9
+        },
+        {
+          "team": "ALG",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 6,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "RUS",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 2,
+          "ga": 3,
+          "pts": 2
+        },
+        {
+          "team": "KOR",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 3,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "date": "2014-06-12",
+      "city": "São Paulo",
+      "home": "BRA",
+      "away": "CRO",
+      "score": [
+        3,
+        1
+      ],
+      "extra": {
+        "attendance": 62103
+      }
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "date": "2014-06-13",
+      "city": "Natal",
+      "home": "MEX",
+      "away": "CMR",
+      "score": [
+        1,
+        0
+      ],
+      "extra": {
+        "attendance": 39216
+      }
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "date": "2014-06-17",
+      "city": "Fortaleza",
+      "home": "BRA",
+      "away": "MEX",
+      "score": [
+        0,
+        0
+      ],
+      "extra": {
+        "attendance": 60342
+      }
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "date": "2014-06-18",
+      "city": "Manaus",
+      "home": "CMR",
+      "away": "CRO",
+      "score": [
+        0,
+        4
+      ],
+      "extra": {
+        "attendance": 39982
+      }
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "date": "2014-06-23",
+      "city": "Brasília",
+      "home": "BRA",
+      "away": "CMR",
+      "score": [
+        4,
+        1
+      ],
+      "extra": {
+        "attendance": 69112
+      }
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "date": "2014-06-23",
+      "city": "Recife",
+      "home": "CRO",
+      "away": "MEX",
+      "score": [
+        1,
+        3
+      ],
+      "extra": {
+        "attendance": 41212
+      }
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "date": "2014-06-13",
+      "city": "Salvador",
+      "home": "ESP",
+      "away": "NED",
+      "score": [
+        1,
+        5
+      ],
+      "extra": {
+        "attendance": 48173
+      }
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "date": "2014-06-13",
+      "city": "Cuiabá",
+      "home": "CHI",
+      "away": "AUS",
+      "score": [
+        3,
+        1
+      ],
+      "extra": {
+        "attendance": 40275
+      }
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "date": "2014-06-18",
+      "city": "Porto Alegre",
+      "home": "AUS",
+      "away": "NED",
+      "score": [
+        2,
+        3
+      ],
+      "extra": {
+        "attendance": 42877
+      }
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "date": "2014-06-18",
+      "city": "Rio de Janeiro",
+      "home": "ESP",
+      "away": "CHI",
+      "score": [
+        0,
+        2
+      ],
+      "extra": {
+        "attendance": 74101
+      }
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "date": "2014-06-23",
+      "city": "Curitiba",
+      "home": "AUS",
+      "away": "ESP",
+      "score": [
+        0,
+        3
+      ],
+      "extra": {
+        "attendance": 39375
+      }
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "date": "2014-06-23",
+      "city": "São Paulo",
+      "home": "NED",
+      "away": "CHI",
+      "score": [
+        2,
+        0
+      ],
+      "extra": {
+        "attendance": 62996
+      }
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "date": "2014-06-14",
+      "city": "Belo Horizonte",
+      "home": "COL",
+      "away": "GRE",
+      "score": [
+        3,
+        0
+      ],
+      "extra": {
+        "attendance": 57174
+      }
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "date": "2014-06-14",
+      "city": "Recife",
+      "home": "CIV",
+      "away": "JPN",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 40267
+      }
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "date": "2014-06-19",
+      "city": "Brasília",
+      "home": "COL",
+      "away": "CIV",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 68748
+      }
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "date": "2014-06-19",
+      "city": "Natal",
+      "home": "JPN",
+      "away": "GRE",
+      "score": [
+        0,
+        0
+      ],
+      "extra": {
+        "attendance": 39485
+      }
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "date": "2014-06-24",
+      "city": "Fortaleza",
+      "home": "GRE",
+      "away": "CIV",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 59095
+      }
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "date": "2014-06-24",
+      "city": "Cuiabá",
+      "home": "JPN",
+      "away": "COL",
+      "score": [
+        1,
+        4
+      ],
+      "extra": {
+        "attendance": 40340
+      }
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "date": "2014-06-14",
+      "city": "Fortaleza",
+      "home": "URU",
+      "away": "CRC",
+      "score": [
+        1,
+        3
+      ],
+      "extra": {
+        "attendance": 58679
+      }
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "date": "2014-06-14",
+      "city": "Manaus",
+      "home": "ENG",
+      "away": "ITA",
+      "score": [
+        1,
+        2
+      ],
+      "extra": {
+        "attendance": 39800
+      }
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "date": "2014-06-19",
+      "city": "São Paulo",
+      "home": "URU",
+      "away": "ENG",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 62575
+      }
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "date": "2014-06-20",
+      "city": "Recife",
+      "home": "ITA",
+      "away": "CRC",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 40285
+      }
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "date": "2014-06-24",
+      "city": "Belo Horizonte",
+      "home": "CRC",
+      "away": "ENG",
+      "score": [
+        0,
+        0
+      ],
+      "extra": {
+        "attendance": 57823
+      }
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "date": "2014-06-24",
+      "city": "Natal",
+      "home": "ITA",
+      "away": "URU",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 39706
+      }
+    },
+    {
+      "id": "m025",
+      "stage": "group",
+      "group": "E",
+      "date": "2014-06-15",
+      "city": "Brasília",
+      "home": "SUI",
+      "away": "ECU",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 68351
+      }
+    },
+    {
+      "id": "m026",
+      "stage": "group",
+      "group": "E",
+      "date": "2014-06-15",
+      "city": "Porto Alegre",
+      "home": "FRA",
+      "away": "HON",
+      "score": [
+        3,
+        0
+      ],
+      "extra": {
+        "attendance": 43012
+      }
+    },
+    {
+      "id": "m027",
+      "stage": "group",
+      "group": "E",
+      "date": "2014-06-20",
+      "city": "Salvador",
+      "home": "SUI",
+      "away": "FRA",
+      "score": [
+        2,
+        5
+      ],
+      "extra": {
+        "attendance": 51003
+      }
+    },
+    {
+      "id": "m028",
+      "stage": "group",
+      "group": "E",
+      "date": "2014-06-20",
+      "city": "Cuiabá",
+      "home": "HON",
+      "away": "ECU",
+      "score": [
+        1,
+        2
+      ],
+      "extra": {
+        "attendance": 39224
+      }
+    },
+    {
+      "id": "m029",
+      "stage": "group",
+      "group": "E",
+      "date": "2014-06-25",
+      "city": "Rio de Janeiro",
+      "home": "ECU",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "extra": {
+        "attendance": 73749
+      }
+    },
+    {
+      "id": "m030",
+      "stage": "group",
+      "group": "E",
+      "date": "2014-06-25",
+      "city": "Manaus",
+      "home": "HON",
+      "away": "SUI",
+      "score": [
+        0,
+        3
+      ],
+      "extra": {
+        "attendance": 40322
+      }
+    },
+    {
+      "id": "m031",
+      "stage": "group",
+      "group": "F",
+      "date": "2014-06-15",
+      "city": "Rio de Janeiro",
+      "home": "ARG",
+      "away": "BIH",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 74738
+      }
+    },
+    {
+      "id": "m032",
+      "stage": "group",
+      "group": "F",
+      "date": "2014-06-16",
+      "city": "Curitiba",
+      "home": "IRN",
+      "away": "NGA",
+      "score": [
+        0,
+        0
+      ],
+      "extra": {
+        "attendance": 39081
+      }
+    },
+    {
+      "id": "m033",
+      "stage": "group",
+      "group": "F",
+      "date": "2014-06-21",
+      "city": "Belo Horizonte",
+      "home": "ARG",
+      "away": "IRN",
+      "score": [
+        1,
+        0
+      ],
+      "extra": {
+        "attendance": 57698
+      }
+    },
+    {
+      "id": "m034",
+      "stage": "group",
+      "group": "F",
+      "date": "2014-06-21",
+      "city": "Cuiabá",
+      "home": "NGA",
+      "away": "BIH",
+      "score": [
+        1,
+        0
+      ],
+      "extra": {
+        "attendance": 40499
+      }
+    },
+    {
+      "id": "m035",
+      "stage": "group",
+      "group": "F",
+      "date": "2014-06-25",
+      "city": "Salvador",
+      "home": "BIH",
+      "away": "IRN",
+      "score": [
+        3,
+        1
+      ],
+      "extra": {
+        "attendance": 48011
+      }
+    },
+    {
+      "id": "m036",
+      "stage": "group",
+      "group": "F",
+      "date": "2014-06-25",
+      "city": "Porto Alegre",
+      "home": "NGA",
+      "away": "ARG",
+      "score": [
+        2,
+        3
+      ],
+      "extra": {
+        "attendance": 43285
+      }
+    },
+    {
+      "id": "m037",
+      "stage": "group",
+      "group": "G",
+      "date": "2014-06-16",
+      "city": "Salvador",
+      "home": "GER",
+      "away": "POR",
+      "score": [
+        4,
+        0
+      ],
+      "extra": {
+        "attendance": 51081
+      }
+    },
+    {
+      "id": "m038",
+      "stage": "group",
+      "group": "G",
+      "date": "2014-06-16",
+      "city": "Natal",
+      "home": "GHA",
+      "away": "USA",
+      "score": [
+        1,
+        2
+      ],
+      "extra": {
+        "attendance": 39760
+      }
+    },
+    {
+      "id": "m039",
+      "stage": "group",
+      "group": "G",
+      "date": "2014-06-21",
+      "city": "Fortaleza",
+      "home": "GER",
+      "away": "GHA",
+      "score": [
+        2,
+        2
+      ],
+      "extra": {
+        "attendance": 59621
+      }
+    },
+    {
+      "id": "m040",
+      "stage": "group",
+      "group": "G",
+      "date": "2014-06-22",
+      "city": "Manaus",
+      "home": "USA",
+      "away": "POR",
+      "score": [
+        2,
+        2
+      ],
+      "extra": {
+        "attendance": 40123
+      }
+    },
+    {
+      "id": "m041",
+      "stage": "group",
+      "group": "G",
+      "date": "2014-06-26",
+      "city": "Brasília",
+      "home": "POR",
+      "away": "GHA",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 67540
+      }
+    },
+    {
+      "id": "m042",
+      "stage": "group",
+      "group": "G",
+      "date": "2014-06-26",
+      "city": "Recife",
+      "home": "USA",
+      "away": "GER",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 41876
+      }
+    },
+    {
+      "id": "m043",
+      "stage": "group",
+      "group": "H",
+      "date": "2014-06-17",
+      "city": "Belo Horizonte",
+      "home": "BEL",
+      "away": "ALG",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 56800
+      }
+    },
+    {
+      "id": "m044",
+      "stage": "group",
+      "group": "H",
+      "date": "2014-06-17",
+      "city": "Cuiabá",
+      "home": "RUS",
+      "away": "KOR",
+      "score": [
+        1,
+        1
+      ],
+      "extra": {
+        "attendance": 37603
+      }
+    },
+    {
+      "id": "m045",
+      "stage": "group",
+      "group": "H",
+      "date": "2014-06-22",
+      "city": "Rio de Janeiro",
+      "home": "BEL",
+      "away": "RUS",
+      "score": [
+        1,
+        0
+      ],
+      "extra": {
+        "attendance": 73819
+      }
+    },
+    {
+      "id": "m046",
+      "stage": "group",
+      "group": "H",
+      "date": "2014-06-22",
+      "city": "Porto Alegre",
+      "home": "KOR",
+      "away": "ALG",
+      "score": [
+        2,
+        4
+      ],
+      "extra": {
+        "attendance": 42732
+      }
+    },
+    {
+      "id": "m047",
+      "stage": "group",
+      "group": "H",
+      "date": "2014-06-26",
+      "city": "Curitiba",
+      "home": "ALG",
+      "away": "RUS",
+      "score": [
+        1,
+        1
+      ],
+      "extra": {
+        "attendance": 39311
+      }
+    },
+    {
+      "id": "m048",
+      "stage": "group",
+      "group": "H",
+      "date": "2014-06-26",
+      "city": "São Paulo",
+      "home": "KOR",
+      "away": "BEL",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 61397
+      }
+    },
+    {
+      "id": "m049",
+      "stage": "r16",
+      "group": null,
+      "date": "2014-06-28",
+      "city": "Belo Horizonte",
+      "home": "BRA",
+      "away": "CHI",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        3,
+        2
+      ],
+      "extra": {
+        "attendance": 57714
+      }
+    },
+    {
+      "id": "m050",
+      "stage": "r16",
+      "group": null,
+      "date": "2014-06-28",
+      "city": "Rio de Janeiro",
+      "home": "COL",
+      "away": "URU",
+      "score": [
+        2,
+        0
+      ],
+      "extra": {
+        "attendance": 73804
+      }
+    },
+    {
+      "id": "m051",
+      "stage": "r16",
+      "group": null,
+      "date": "2014-06-29",
+      "city": "Fortaleza",
+      "home": "NED",
+      "away": "MEX",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 58817
+      }
+    },
+    {
+      "id": "m052",
+      "stage": "r16",
+      "group": null,
+      "date": "2014-06-29",
+      "city": "Recife",
+      "home": "CRC",
+      "away": "GRE",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        5,
+        3
+      ],
+      "extra": {
+        "attendance": 41242
+      }
+    },
+    {
+      "id": "m053",
+      "stage": "r16",
+      "group": null,
+      "date": "2014-06-30",
+      "city": "Brasília",
+      "home": "FRA",
+      "away": "NGA",
+      "score": [
+        2,
+        0
+      ],
+      "extra": {
+        "attendance": 67882
+      }
+    },
+    {
+      "id": "m054",
+      "stage": "r16",
+      "group": null,
+      "date": "2014-06-30",
+      "city": "Porto Alegre",
+      "home": "GER",
+      "away": "ALG",
+      "score": [
+        2,
+        1
+      ],
+      "notes": [
+        "aet"
+      ],
+      "extra": {
+        "attendance": 43063
+      }
+    },
+    {
+      "id": "m055",
+      "stage": "r16",
+      "group": null,
+      "date": "2014-07-01",
+      "city": "São Paulo",
+      "home": "ARG",
+      "away": "SUI",
+      "score": [
+        1,
+        0
+      ],
+      "notes": [
+        "aet"
+      ],
+      "extra": {
+        "attendance": 63255
+      }
+    },
+    {
+      "id": "m056",
+      "stage": "r16",
+      "group": null,
+      "date": "2014-07-01",
+      "city": "Salvador",
+      "home": "BEL",
+      "away": "USA",
+      "score": [
+        2,
+        1
+      ],
+      "notes": [
+        "aet"
+      ],
+      "extra": {
+        "attendance": 51227
+      }
+    },
+    {
+      "id": "m057",
+      "stage": "qf",
+      "group": null,
+      "date": "2014-07-04",
+      "city": "Rio de Janeiro",
+      "home": "FRA",
+      "away": "GER",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 74240
+      }
+    },
+    {
+      "id": "m058",
+      "stage": "qf",
+      "group": null,
+      "date": "2014-07-04",
+      "city": "Fortaleza",
+      "home": "BRA",
+      "away": "COL",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 60342
+      }
+    },
+    {
+      "id": "m059",
+      "stage": "qf",
+      "group": null,
+      "date": "2014-07-05",
+      "city": "Brasília",
+      "home": "ARG",
+      "away": "BEL",
+      "score": [
+        1,
+        0
+      ],
+      "extra": {
+        "attendance": 68551
+      }
+    },
+    {
+      "id": "m060",
+      "stage": "qf",
+      "group": null,
+      "date": "2014-07-05",
+      "city": "Salvador",
+      "home": "NED",
+      "away": "CRC",
+      "score": [
+        0,
+        0
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        4,
+        3
+      ],
+      "extra": {
+        "attendance": 51179
+      }
+    },
+    {
+      "id": "m061",
+      "stage": "sf",
+      "group": null,
+      "date": "2014-07-08",
+      "city": "Belo Horizonte",
+      "home": "BRA",
+      "away": "GER",
+      "score": [
+        1,
+        7
+      ],
+      "extra": {
+        "attendance": 58141
+      }
+    },
+    {
+      "id": "m062",
+      "stage": "sf",
+      "group": null,
+      "date": "2014-07-09",
+      "city": "São Paulo",
+      "home": "ARG",
+      "away": "NED",
+      "score": [
+        0,
+        0
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        4,
+        2
+      ],
+      "extra": {
+        "attendance": 63267
+      }
+    },
+    {
+      "id": "m063",
+      "stage": "third",
+      "group": null,
+      "date": "2014-07-12",
+      "city": "Brasília",
+      "home": "BRA",
+      "away": "NED",
+      "score": [
+        0,
+        3
+      ],
+      "extra": {
+        "attendance": 68034
+      }
+    },
+    {
+      "id": "m064",
+      "stage": "final",
+      "group": null,
+      "date": "2014-07-13",
+      "city": "Rio de Janeiro",
+      "home": "GER",
+      "away": "ARG",
+      "score": [
+        1,
+        0
+      ],
+      "notes": [
+        "aet"
+      ],
+      "extra": {
+        "attendance": 74738
+      }
+    }
+  ],
+  "scorers": [
+    {
+      "player": "James Rodríguez",
+      "country": "COL",
+      "goals": 6,
+      "scope": "final"
+    },
+    {
+      "player": "Thomas Müller",
+      "country": "GER",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Lionel Messi",
+      "country": "ARG",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Neymar Santos Júnior",
+      "country": "BRA",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Robin van Persie",
+      "country": "NED",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "André Schürrle",
+      "country": "GER",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Arjen Robben",
+      "country": "NED",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Enner Valencia",
+      "country": "ECU",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Karim Benzema",
+      "country": "FRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Xherdan Shaqiri",
+      "country": "SUI",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Abdelmoumene Djabou",
+      "country": "ALG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Ahmed Musa",
+      "country": "NGA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Alexis Sánchez",
+      "country": "CHI",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "André Ayew",
+      "country": "GHA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Asamoah Gyan",
+      "country": "GHA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Bryan Ruiz",
+      "country": "CRC",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Clint Dempsey",
+      "country": "USA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Gervais Kouassi 'Gervinho'",
+      "country": "CIV",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Islam Slimani",
+      "country": "ALG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Ivan Perišić",
+      "country": "CRO",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Jackson Martínez",
+      "country": "COL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Luis Suárez",
+      "country": "URU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Mario Götze",
+      "country": "GER",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Mario Mandžukić",
+      "country": "CRO",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Mats Hummels",
+      "country": "GER",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Memphis Depay",
+      "country": "NED",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Miroslav Klose",
+      "country": "GER",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Oscar Emboaba Júnior",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Tim Cahill",
+      "country": "AUS",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Toni Kroos",
+      "country": "GER",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Wilfried Bony",
+      "country": "CIV",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Admir Mehmedi",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Aleksandr Kerzhakov",
+      "country": "RUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Aleksandr Kokorin",
+      "country": "RUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Andhréas Sámaris",
+      "country": "GRE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Andrés Guardado",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ángel Di María",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Avdija Vršajević",
+      "country": "BIH",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Blaise Matuidi",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Blerim Džemaili",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Carlo Costly",
+      "country": "HON",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Charles Aránguiz",
+      "country": "CHI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Claudio Marchisio",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Cristiano Ronaldo Aveiro",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Daley Blind",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Daniel Sturridge",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "David Luiz Marinho",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "David Villa",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Diego Godín",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Divock Origi",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dries Mertens",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Edin Džeko",
+      "country": "BIH",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Edinson Cavani",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Eduardo Vargas",
+      "country": "CHI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Fernando Roza 'Fernandinho'",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Fernando Torres",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Frederico Guedes 'Fred'",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Georginio Wĳnaldum",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Giovani dos Santos",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gonzalo Higuaín",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gonzalo Jara",
+      "country": "CHI",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Granit Xhaka",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Haris Seferović",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ivica Olić",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jan Vertonghen",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Javier Hernández",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jean Beausejour",
+      "country": "CHI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jermaine Jones",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Joel Campbell",
+      "country": "CRC",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Joël Matip",
+      "country": "CMR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "John Boye",
+      "country": "GHA",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "John Brooks",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jorge Valdivia",
+      "country": "CHI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Joseph Yobo",
+      "country": "NGA",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Juan Fernando Quintero",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Juan Guillermo Cuadrado",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Juan Mata",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Julian Green",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Keisuke Honda",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kevin De Bruyne",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Klaas-Jan Huntelaar",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Koo Ja-Cheol",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lee Keun-Ho",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Leroy Fer",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Luís da Cunha 'Nani'",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marcelo da Silva Júnior",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Marcos Rojo",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marcos Ureña",
+      "country": "CRC",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mario Balotelli",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marouane Fellaini",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mathieu Valbuena",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mesut Özil",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mile Jedinak",
+      "country": "AUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Miralem Pjanić",
+      "country": "BIH",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Moussa Sissoko",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Noel Valladares",
+      "country": "HON",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Olivier Giroud",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Oribe Peralta",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Óscar Duarte",
+      "country": "CRC",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Pablo Armero",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Paul Pogba",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Peter Odemwingie",
+      "country": "NGA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rafael Márquez",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rafik Halliche",
+      "country": "ALG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Reza Ghouchannejad",
+      "country": "IRN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Romelu Lukaku",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sami Khedira",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sead Kolašinac",
+      "country": "BIH",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Shinji Okazaki",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Silvestre Varela",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sofiane Feghouli",
+      "country": "ALG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sokrátis Papastathópoulos",
+      "country": "GRE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Son Heung-Min",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Stefan de Vrĳ",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Teófilo Gutiérrez",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Thiago da Silva",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Vedad Ibišević",
+      "country": "BIH",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Wayne Rooney",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Wesley Sneĳder",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Xabi Alonso",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yacine Brahimi",
+      "country": "ALG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yórghos Samarás",
+      "country": "GRE",
+      "goals": 1,
+      "scope": "final"
+    }
+  ]
+}

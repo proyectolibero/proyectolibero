@@ -1,0 +1,561 @@
+{
+  "schemaVersion": 2,
+  "releaseId": "2026.10",
+  "asOf": "2026-10-07",
+  "created": "2026-10-06T00:00:00Z",
+  "generatedBy": "core/release.js",
+  "contents": [
+    {
+      "path": "data/football/worldcup/1930.json",
+      "sha256": "32d7f79b35346397a87ffe3900f26ca988526a2f84c9cfc9f1539ca240d8e7de",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1930
+    },
+    {
+      "path": "data/football/worldcup/1934.json",
+      "sha256": "35fbba3ea5785658b2552001a1d979bc57158e2f640b344d4d80ba2812a481ab",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1934
+    },
+    {
+      "path": "data/football/worldcup/1938.json",
+      "sha256": "9d9d5ffb9d16e7bd5849d56b488850198f06d768c3d99782f00d6226750bd90c",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1938
+    },
+    {
+      "path": "data/football/worldcup/1950.json",
+      "sha256": "84785798035aa7e77267ac41c7384485c8483c8bc4229643d1fa61891d6ba135",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1950
+    },
+    {
+      "path": "data/football/worldcup/1954.json",
+      "sha256": "72955679f409aa4ba9809b24cf3ce60577dfaadbd2e64de393757827dbe2c4cf",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1954
+    },
+    {
+      "path": "data/football/worldcup/1958.json",
+      "sha256": "944f8a9374e22c5a29520492d4ee003929410e667e41923b2e27b798d1d74943",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1958
+    },
+    {
+      "path": "data/football/worldcup/1962.json",
+      "sha256": "fef1738f69da2b2983b6407bebeae3d01aea606c3c6b39ed250a255c94f2784a",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1962
+    },
+    {
+      "path": "data/football/worldcup/1966.json",
+      "sha256": "f8d736f851edf4ea3a5940385f455c2127909a077db9f45bedca9617232ebdfa",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1966
+    },
+    {
+      "path": "data/football/worldcup/1970.json",
+      "sha256": "378174809fcf5b03ade866d31e1422f927c841c6611c4d5a39a9ff59caad812b",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1970
+    },
+    {
+      "path": "data/football/worldcup/1974.json",
+      "sha256": "c9d74c95a1faae8cbe2b389c0acffc97fbad429acb6a3a75dc73052c0b8e6a02",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1974
+    },
+    {
+      "path": "data/football/worldcup/1978.json",
+      "sha256": "5656d74195c38910681d79d841bc21807ffc0025fde13d62a732b655e11c1b82",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1978
+    },
+    {
+      "path": "data/football/worldcup/1982.json",
+      "sha256": "4d6f98170938c168f6a4e5101849313924866b5e6ef3674be9c90ab1c111eb46",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1982
+    },
+    {
+      "path": "data/football/worldcup/1986.json",
+      "sha256": "6258a7730126764fe58c1ad423894c93a04a8374ff5937d8b8cc5016eb09f3d6",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1986
+    },
+    {
+      "path": "data/football/worldcup/1990.json",
+      "sha256": "dc15db0a982e7145944b966454a5963ac86cc928b033482eae1a75fd9005b8b9",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1990
+    },
+    {
+      "path": "data/football/worldcup/1994.json",
+      "sha256": "0365695f642c1b6e58bbd693ac44939d6db0aa2a1c37c79329604afb2ef8e7d1",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1994
+    },
+    {
+      "path": "data/football/worldcup/1998.json",
+      "sha256": "4b63f7bafef16520042b60a335e1fa349affa9a53102e43d7c7883dac2df50dd",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1998
+    },
+    {
+      "path": "data/football/worldcup/2002.json",
+      "sha256": "b595717d976d787868a182f03357c17eefb2ffe68c9f635ae7a5008d4655f5ae",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2002
+    },
+    {
+      "path": "data/football/worldcup/2006.json",
+      "sha256": "8eadc3190dfe814e431c7984e57567eb67fef83c69197217c3c37e4a687994a6",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2006
+    },
+    {
+      "path": "data/football/worldcup/2010.json",
+      "sha256": "bf62abdaceed35338a7b0879680a8230bcd931780bca5a0c7bca5c716bfe8400",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2010
+    },
+    {
+      "path": "data/football/worldcup/2014.json",
+      "sha256": "2b421144760b2c3a8138e1b1f7684b4ac60d6a6fef9be27948a53001fcdf29e7",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2014
+    },
+    {
+      "path": "data/football/worldcup/2018.json",
+      "sha256": "6b0fb2edaecf3522407c28b8f32821b82a42a5638a64b9881e4aa1b27ee5fe5d",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2018
+    },
+    {
+      "path": "data/football/worldcup/2022.json",
+      "sha256": "f5961575a6ed3c3878cf5349a9988454acc8828ec7507ef2b673665411c69f70",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2022
+    },
+    {
+      "path": "data/football/worldcup/2026.json",
+      "sha256": "0bb8187f829f02b21ac6f5a548f803878922d26658fa5c7d254f362cb1f5526d",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2026
+    }
+  ],
+  "checksum": "49a8440099a3473d171bc6ce4a30c9623dca5e6ea47107d6ddd81c5c88983ba2",
+  "dataset": {
+    "sports": 4,
+    "competitions": 1,
+    "editions": 23,
+    "matches": 1162,
+    "results": 0
+  },
+  "license": {
+    "layers": "CC-BY-4.0",
+    "commercialResale": false,
+    "attribution": [
+      {
+        "source": "wikipedia:2022wc",
+        "name": "Wikipedia — 2022 FIFA World Cup (goalscorers)",
+        "url": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:2002f",
+        "name": "RSSSF — World Cup 2002 final tournament details (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/2002f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:2002full",
+        "name": "RSSSF — World Cup 2002 full details (Erlan Manaschev)",
+        "url": "https://www.rsssf.org/tables/2002full.html",
+        "retrieved": "2026-10-06",
+        "author": "Erlan Manaschev"
+      },
+      {
+        "source": "rsssf:2002q-scor",
+        "name": "RSSSF — World Cup 2002 goal scorers (Jaroslaw Owsianski)",
+        "url": "https://www.rsssf.org/tables/2002q-scor.html",
+        "retrieved": "2026-10-06",
+        "author": "Jaroslaw Owsianski"
+      },
+      {
+        "source": "rsssf:2006f",
+        "name": "RSSSF — World Cup 2006 (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/2006f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:2006full",
+        "name": "RSSSF — World Cup 2006 - Match Details (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/2006full.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:2010f",
+        "name": "RSSSF — World Cup 2010 (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/2010f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:2010full",
+        "name": "RSSSF — World Cup 2010 - Match Details (Neil Morrison)",
+        "url": "https://www.rsssf.org/tables/2010full.html",
+        "retrieved": "2026-10-06",
+        "author": "Neil Morrison"
+      },
+      {
+        "source": "rsssf:2014f",
+        "name": "RSSSF — World Cup 2014 (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/2014f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:2014full",
+        "name": "RSSSF — World Cup 2014 - Match Details (Neil Morrison)",
+        "url": "https://www.rsssf.org/tables/2014full.html",
+        "retrieved": "2026-10-06",
+        "author": "Neil Morrison"
+      },
+      {
+        "source": "rsssf:2018f",
+        "name": "RSSSF — World Cup 2018 (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/2018f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:2018full",
+        "name": "RSSSF — World Cup 2018 - Match Details (Neil Morrison)",
+        "url": "https://www.rsssf.org/tables/2018full.html",
+        "retrieved": "2026-10-06",
+        "author": "Neil Morrison"
+      },
+      {
+        "source": "rsssf:2022f",
+        "name": "RSSSF — World Cup 2022 (Qatar, November 20 - December 18, 2022) (Roberto Di Maggio)",
+        "url": "https://www.rsssf.org/tables/2022f.html",
+        "retrieved": "2026-10-06",
+        "author": "Roberto Di Maggio"
+      },
+      {
+        "source": "rsssf:2026f",
+        "name": "RSSSF — World Cup 2026 final tournament (Roberto Di Maggio)",
+        "url": "https://www.rsssf.org/tables/2026f.html",
+        "retrieved": "2026-10-06",
+        "author": "Roberto Di Maggio"
+      },
+      {
+        "source": "rsssf:30f-scor",
+        "name": "RSSSF — World Cup 1930 goal scorers (Jaroslaw Owsianski)",
+        "url": "https://www.rsssf.org/tables/30f-scor.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:34qf-scor",
+        "name": "RSSSF — World Cup 1934 goal scorers (Jaroslaw Owsianski)",
+        "url": "https://www.rsssf.org/tables/34qf-scor.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:38f",
+        "name": "RSSSF — World Cup 1938 final tournament details (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/38f.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:38full",
+        "name": "RSSSF — World Cup 1938 full details (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/38full.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:38q",
+        "name": "RSSSF — World Cup 1938 qualifying (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/38q.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:38qf-scor",
+        "name": "RSSSF — World Cup 1938 goal scorers (Jaroslaw Owsianski)",
+        "url": "https://www.rsssf.org/tables/38qf-scor.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:38qual",
+        "name": "RSSSF — World Cup 1938 qualifying full data (Barrie Courtney)",
+        "url": "https://www.rsssf.org/tables/38qual.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:50f",
+        "name": "RSSSF — World Cup 1950 (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/50f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:50full",
+        "name": "RSSSF — World Cup 1950 full details (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/50full.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:50q-det",
+        "name": "RSSSF — World Cup 1950 qualifying match details (Barrie Courtney)",
+        "url": "https://www.rsssf.org/tables/50q-det.html",
+        "retrieved": "2026-10-06",
+        "author": "Barrie Courtney"
+      },
+      {
+        "source": "rsssf:50q",
+        "name": "RSSSF — World Cup 1950 qualifying (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/50q.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:50qf-scor",
+        "name": "RSSSF — World Cup 1950 goal scorers (Jaroslaw Owsianski)",
+        "url": "https://www.rsssf.org/tables/50qf-scor.html",
+        "retrieved": "2026-10-06",
+        "author": "Jaroslaw Owsianski"
+      },
+      {
+        "source": "rsssf:54f",
+        "name": "RSSSF — World Cup 1954 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/54f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:54full",
+        "name": "RSSSF — World Cup 1954 full details (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/54full.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:54qf-scor",
+        "name": "RSSSF — World Cup 1954 goal scorers (Jaroslaw Owsianski)",
+        "url": "https://www.rsssf.org/tables/54qf-scor.html",
+        "retrieved": "2026-10-06",
+        "author": "Jaroslaw Owsianski"
+      },
+      {
+        "source": "rsssf:58f",
+        "name": "RSSSF — World Cup 1958 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/58f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:58full",
+        "name": "RSSSF — World Cup 1958 full details (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/58full.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:58qf-scor",
+        "name": "RSSSF — World Cup 1958 goal scorers (Jaroslaw Owsianski)",
+        "url": "https://www.rsssf.org/tables/58qf-scor.html",
+        "retrieved": "2026-10-06",
+        "author": "Jaroslaw Owsianski"
+      },
+      {
+        "source": "rsssf:62f",
+        "name": "RSSSF — World Cup 1962 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/62f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:62full",
+        "name": "RSSSF — World Cup 1962 full details (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/62full.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:62qf-scor",
+        "name": "RSSSF — World Cup 1962 goal scorers (Jaroslaw Owsianski)",
+        "url": "https://www.rsssf.org/tables/62qf-scor.html",
+        "retrieved": "2026-10-06",
+        "author": "Jaroslaw Owsianski"
+      },
+      {
+        "source": "rsssf:66f",
+        "name": "RSSSF — World Cup 1966 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/66f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:66full",
+        "name": "RSSSF — World Cup 1966 finals, full details",
+        "url": "https://www.rsssf.org/tables/66full.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:66qf-scor",
+        "name": "RSSSF — World Cup 1966 goal scorers (Jaroslaw Owsianski)",
+        "url": "https://www.rsssf.org/tables/66qf-scor.html",
+        "retrieved": "2026-10-06",
+        "author": "Jaroslaw Owsianski"
+      },
+      {
+        "source": "rsssf:70f",
+        "name": "RSSSF — World Cup 1970 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/70f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:70full",
+        "name": "RSSSF — World Cup 1970 finals, full details",
+        "url": "https://www.rsssf.org/tables/70full.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:74f",
+        "name": "RSSSF — World Cup 1974 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/74f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:74full",
+        "name": "RSSSF — World Cup 1974 finals, full details",
+        "url": "https://www.rsssf.org/tables/74full.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:78f",
+        "name": "RSSSF — World Cup 1978 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/78f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:78full",
+        "name": "RSSSF — World Cup 1978 full details",
+        "url": "https://www.rsssf.org/tables/78full.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:82f",
+        "name": "RSSSF — World Cup 1982 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/82f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:82full",
+        "name": "RSSSF — World Cup 1982 full details",
+        "url": "https://www.rsssf.org/tables/82full.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:86f",
+        "name": "RSSSF — World Cup 1986 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/86f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:86full",
+        "name": "RSSSF — World Cup 1986 full details",
+        "url": "https://www.rsssf.org/tables/86full.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:90f",
+        "name": "RSSSF — World Cup 1990 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/90f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:90full",
+        "name": "RSSSF — World Cup 1990 full details",
+        "url": "https://www.rsssf.org/tables/90full.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:94f",
+        "name": "RSSSF — World Cup 1994 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "url": "https://www.rsssf.org/tables/94f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+      },
+      {
+        "source": "rsssf:94full",
+        "name": "RSSSF — World Cup 1994 full details",
+        "url": "https://www.rsssf.org/tables/94full.html",
+        "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:98f",
+        "name": "RSSSF — World Cup 1998 final tournament details (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/98f.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:98full",
+        "name": "RSSSF — World Cup 1998 full details (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tables/98full.html",
+        "retrieved": "2026-10-06",
+        "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:worldcup",
+        "name": "RSSSF — World Cup 1930 overview (Karel Stokkermans)",
+        "url": "https://www.rsssf.org/tablesw/worldcup.html",
+        "retrieved": "2026-10-06"
+      }
+    ],
+    "referenceOnly": [
+      {
+        "source": "wikipedia",
+        "name": "Wikipedia — 1938 FIFA World Cup final",
+        "url": "https://en.wikipedia.org/wiki/1938_FIFA_World_Cup_final",
+        "retrieved": "2026-10-06"
+      }
+    ]
+  },
+  "notes": "Release v2: todas las ediciones incluidas están en schemaVersion 2. checksum = SHA-256 del JSON canónico de contents[] (claves ordenadas)."
+}

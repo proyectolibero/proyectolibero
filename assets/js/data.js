@@ -1,4 +1,5 @@
 import { DATA_BASE } from "./config.js";
+import { toEditionViewModel } from "./viewmodel.js";
 
 const cache = new Map();
 
@@ -15,8 +16,8 @@ export function loadIndex() {
   return fetchJSON(`${DATA_BASE}/_index.json`);
 }
 
-export function loadEdition(fileName) {
-  return fetchJSON(`${DATA_BASE}/${fileName}`);
+export async function loadEdition(fileName) {
+  return toEditionViewModel(await fetchJSON(`${DATA_BASE}/${fileName}`));
 }
 
 export async function loadEditionsWithData() {

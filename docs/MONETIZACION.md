@@ -1,29 +1,26 @@
-# Monetización
+# Monetización → sustituido por SOSTENIBILIDAD
 
-## Fase actual (fase 1): solo donaciones
+> **Este documento queda fuera de vigor.** El modelo de monetización descrito
+> aquí (fase de donaciones + "API de datos de pago", "contenido patrocinado",
+> "afiliados") fue sustituido tras la redefinición del proyecto.
+>
+> **Documento vigente: [`SOSTENIBILIDAD.md`](SOSTENIBILIDAD.md)**
+> **Decisión: ADR-007 / D16**
 
-- Botón de donaciones en el footer, cableado en `index.html` + `assets/js/app.js`.
-- Controlado por `DONATE_URL` en `assets/js/config.js`:
+## Qué cambió
 
-```js
-export const DONATE_URL = ""; // "" → botón oculto
-```
-
-- Al configurarlo (PayPal, Ko-fi, Buy Me a Coffee...), basta poner la URL: el botón aparece solo y se traduce con `menu.donate`.
-- **Sin dominio propio**: rutas relativas, sirve en GitHub Pages o cualquier hosting estático.
-
-## Fases futuras (evaluar cuando haya alcance)
-
-| Opción | Requisitos previos |
+| Antes (v1) | Ahora (v2) |
 |---|---|
-| Afiliados (Amazon, tiendas de entradas...) | Botones contextuales sin romper UX; declarar afiliación |
-| Ads (AdSense u otros) | Dominio propio recomendable; balance con móvil-first y sin trackers intrusivos |
-| API de datos de pago | Solo si el dataset tiene valor diferencial y hay tráfico |
-| Contenido patrocinado | Editorial independiente; nunca datos alterados |
+| Donaciones como única fase | Donaciones + **programa de entidades colaboradoras de investigación** |
+| "API de datos de pago" genérica | **Nunca** se vende el dato; se cede el *servicio* (release sellado + DOI + soporte) |
+| Afiliados y contenido patrocinado | Descartado: el portal es un archivo, no un medio |
+| Ads (AdSense) | Descartado: sin trackers intrusivos |
 
-## Principios
+## Invariantes que se mantienen (y refuerzan)
 
-1. **Nunca** monetizar alterando o recortando datos.
-2. **Nunca** trackers intrusivos ni popups; el portal es un recurso público.
-3. Transparencia: cualquier afiliación/ads se declara en `#/fuentes` o footer.
-4. El código sigue siendo open source; la donación apoya el mantenimiento, no compra features.
+1. Nunca se monetiza alterando o recortando datos.
+2. Nunca trackers intrusivos ni popups.
+3. Transparencia total: licencias, atribuciones y cuentas del proyecto públicas.
+4. El código y los datos siguen siendo abiertos; la aportación no compra contenido.
+
+Ver `SOSTENIBILIDAD.md` para vías, tramos de cuota, licencias y reporte anual.

@@ -1,199 +1,1352 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "archetype": "encounter",
   "sport": "football",
   "competition": "worldcup",
   "edition": 1938,
+  "status": "closed",
   "teamMode": "country",
-  "hosts": ["FRA"],
+  "hosts": [
+    "FRA"
+  ],
   "teamsCount": 15,
-  "champion": "ITA",
-  "runnerUp": "HUN",
-  "third": "BRA",
+  "results": {
+    "champion": "ITA",
+    "runnerUp": "HUN",
+    "third": "BRA",
+    "finalMatchId": "m019"
+  },
+  "coverage": {
+    "matches": 47,
+    "goals": 180,
+    "scorers": 90,
+    "complete": true
+  },
   "sources": [
     {
+      "id": "rsssf:38q",
       "name": "RSSSF — World Cup 1938 qualifying (Karel Stokkermans, Sergio Henrique Jarreta)",
       "url": "https://www.rsssf.org/tables/38q.html",
-      "retrieved": "2026-10-06"
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
     },
     {
+      "id": "rsssf:38qual",
       "name": "RSSSF — World Cup 1938 qualifying full data (Barrie Courtney)",
       "url": "https://www.rsssf.org/tables/38qual.html",
-      "retrieved": "2026-10-06"
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
     },
     {
+      "id": "rsssf:38full",
       "name": "RSSSF — World Cup 1938 full details (Karel Stokkermans)",
       "url": "https://www.rsssf.org/tables/38full.html",
-      "retrieved": "2026-10-06"
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
     },
     {
+      "id": "rsssf:38f",
       "name": "RSSSF — World Cup 1938 final tournament details (Karel Stokkermans)",
       "url": "https://www.rsssf.org/tables/38f.html",
-      "retrieved": "2026-10-06"
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
     },
     {
+      "id": "rsssf:38qf-scor",
       "name": "RSSSF — World Cup 1938 goal scorers (Jaroslaw Owsianski)",
       "url": "https://www.rsssf.org/tables/38qf-scor.html",
-      "retrieved": "2026-10-06"
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "wikipedia",
+      "name": "Wikipedia — 1938 FIFA World Cup final",
+      "url": "https://en.wikipedia.org/wiki/1938_FIFA_World_Cup_final",
+      "retrieved": "2026-10-06",
+      "publisher": "Wikipedia",
+      "license": "cc-by-sa",
+      "redistribute": false,
+      "note": "Solo contraste/referencia; no se redistribuye."
     }
   ],
+  "asOf": "2026-10-06",
   "groups": [],
   "matches": [
-    { "id": "q01", "date": "1937-06-16", "city": "Stockholm", "phase": "qualifying", "group": "1", "home": "SWE", "away": "FIN", "score": [4, 0] },
-    { "id": "q02", "date": "1937-06-20", "city": "Stockholm", "phase": "qualifying", "group": "1", "home": "SWE", "away": "EST", "score": [7, 2] },
-    { "id": "q03", "date": "1937-06-29", "city": "Helsinki", "phase": "qualifying", "group": "1", "home": "FIN", "away": "GER", "score": [0, 2] },
-    { "id": "q04", "date": "1937-08-19", "city": "Turku", "phase": "qualifying", "group": "1", "home": "FIN", "away": "EST", "score": [0, 1] },
-    { "id": "q05", "date": "1937-08-29", "city": "Königsberg", "phase": "qualifying", "group": "1", "home": "GER", "away": "EST", "score": [4, 1] },
-    { "id": "q06", "date": "1937-11-21", "city": "Hamburg", "phase": "qualifying", "group": "1", "home": "GER", "away": "SWE", "score": [5, 0] },
-    { "id": "q07", "date": "1937-10-10", "city": "Oslo", "phase": "qualifying", "group": "2a", "home": "NOR", "away": "IRL", "score": [3, 2] },
-    { "id": "q08", "date": "1937-11-07", "city": "Dublin", "phase": "qualifying", "group": "2a", "home": "IRL", "away": "NOR", "score": [3, 3] },
-    { "id": "q09", "date": "1937-10-10", "city": "Warszawa", "phase": "qualifying", "group": "2b", "home": "POL", "away": "YUG", "score": [4, 0] },
-    { "id": "q10", "date": "1938-04-03", "city": "Beograd", "phase": "qualifying", "group": "2b", "home": "YUG", "away": "POL", "score": [1, 0] },
-    { "id": "q11", "date": null, "city": "Cairo", "phase": "qualifying", "group": "3", "home": "EGY", "away": "ROU", "score": null, "status": "walkover", "notes": ["withdrawn"] },
-    { "id": "q12", "date": null, "city": "București", "phase": "qualifying", "group": "3", "home": "ROU", "away": "EGY", "score": null, "status": "walkover", "notes": ["withdrawn"] },
-    { "id": "q13", "date": "1938-05-01", "city": "Milano", "phase": "qualifying", "group": "4", "home": "SUI", "away": "POR", "score": [2, 1] },
-    { "id": "q14", "date": "1938-01-22", "city": "Tel-Aviv", "phase": "qualifying", "group": "5", "home": "PAL", "away": "GRE", "score": [1, 3] },
-    { "id": "q15", "date": "1938-02-20", "city": "Athinai", "phase": "qualifying", "group": "5", "home": "GRE", "away": "PAL", "score": [1, 0] },
-    { "id": "q16", "date": "1938-03-25", "city": "Budapest", "phase": "qualifying", "group": "5", "home": "HUN", "away": "GRE", "score": [11, 1] },
-    { "id": "q17", "date": "1937-11-07", "city": "Sofia", "phase": "qualifying", "group": "6", "home": "BUL", "away": "TCH", "score": [1, 1] },
-    { "id": "q18", "date": "1938-04-24", "city": "Praha", "phase": "qualifying", "group": "6", "home": "TCH", "away": "BUL", "score": [6, 0] },
-    { "id": "q19", "date": "1937-07-29", "city": "Riga", "phase": "qualifying", "group": "7", "home": "LAT", "away": "LTU", "score": [4, 2] },
-    { "id": "q20", "date": "1937-09-03", "city": "Kaunas", "phase": "qualifying", "group": "7", "home": "LTU", "away": "LAT", "score": [1, 5] },
-    { "id": "q21", "date": "1937-10-05", "city": "Wien", "phase": "qualifying", "group": "7", "home": "AUT", "away": "LAT", "score": [2, 1] },
-    { "id": "q22", "date": "1937-11-28", "city": "Rotterdam", "phase": "qualifying", "group": "8", "home": "NED", "away": "LUX", "score": [4, 0] },
-    { "id": "q23", "date": "1938-03-13", "city": "Luxembourg", "phase": "qualifying", "group": "8", "home": "LUX", "away": "BEL", "score": [2, 3] },
-    { "id": "q24", "date": "1938-04-03", "city": "Antwerpen", "phase": "qualifying", "group": "8", "home": "BEL", "away": "NED", "score": [1, 1] },
-    { "id": "q25", "date": "1938-01-25", "city": "Saigon", "phase": "qualifying", "group": "9", "home": "JPN", "away": "IHO", "score": null, "status": "walkover", "notes": ["withdrawn"] },
-    { "id": "q26", "date": "1938-05-26", "city": "Rotterdam", "phase": "qualifying", "group": "9", "home": "IHO", "away": "USA", "score": null, "status": "walkover", "notes": ["withdrawn"] },
-    { "id": "q27", "date": "1938-05-29", "city": "Bordeaux", "phase": "qualifying", "group": "12", "home": "CUB", "away": "ARG", "score": null, "status": "walkover", "notes": ["withdrawn"] },
-    { "id": "q28", "date": null, "phase": "qualifying", "group": "10", "home": "BRA", "away": "ARG", "score": null, "status": "walkover", "notes": ["withdrawn"] },
-    { "id": "m001", "date": "1938-06-04", "city": "Paris", "phase": "r16", "home": "SUI", "away": "GER", "score": [1, 1], "notes": ["aet"] },
-    { "id": "m002", "date": "1938-06-05", "city": "Toulouse", "phase": "r16", "home": "CUB", "away": "ROU", "score": [3, 3], "notes": ["aet"] },
-    { "id": "m003", "date": "1938-06-05", "city": "Le Havre", "phase": "r16", "home": "TCH", "away": "NED", "score": [3, 0], "notes": ["aet"] },
-    { "id": "m004", "date": "1938-06-05", "city": "Lyon", "phase": "r16", "home": "SWE", "away": "AUT", "score": null, "status": "notplayed", "notes": ["withdrawn"] },
-    { "id": "m005", "date": "1938-06-05", "city": "Paris", "phase": "r16", "home": "FRA", "away": "BEL", "score": [3, 1] },
-    { "id": "m006", "date": "1938-06-05", "city": "Reims", "phase": "r16", "home": "HUN", "away": "IHO", "score": [6, 0] },
-    { "id": "m007", "date": "1938-06-05", "city": "Marseille", "phase": "r16", "home": "ITA", "away": "NOR", "score": [2, 1], "notes": ["aet"] },
-    { "id": "m008", "date": "1938-06-05", "city": "Strasbourg", "phase": "r16", "home": "BRA", "away": "POL", "score": [6, 5], "notes": ["aet"] },
-    { "id": "m009", "date": "1938-06-09", "city": "Paris", "phase": "r16", "home": "SUI", "away": "GER", "score": [4, 2], "notes": ["replay"] },
-    { "id": "m010", "date": "1938-06-09", "city": "Toulouse", "phase": "r16", "home": "CUB", "away": "ROU", "score": [2, 1], "notes": ["replay"] },
-    { "id": "m011", "date": "1938-06-12", "city": "Paris", "phase": "qf", "home": "ITA", "away": "FRA", "score": [3, 1] },
-    { "id": "m012", "date": "1938-06-12", "city": "Antibes", "phase": "qf", "home": "SWE", "away": "CUB", "score": [8, 0] },
-    { "id": "m013", "date": "1938-06-12", "city": "Lille", "phase": "qf", "home": "HUN", "away": "SUI", "score": [2, 0] },
-    { "id": "m014", "date": "1938-06-12", "city": "Bordeaux", "phase": "qf", "home": "BRA", "away": "TCH", "score": [1, 1], "notes": ["aet"] },
-    { "id": "m015", "date": "1938-06-14", "city": "Bordeaux", "phase": "qf", "home": "BRA", "away": "TCH", "score": [2, 1], "notes": ["replay"] },
-    { "id": "m016", "date": "1938-06-16", "city": "Paris", "phase": "sf", "home": "HUN", "away": "SWE", "score": [5, 1] },
-    { "id": "m017", "date": "1938-06-16", "city": "Marseille", "phase": "sf", "home": "ITA", "away": "BRA", "score": [2, 1] },
-    { "id": "m018", "date": "1938-06-19", "city": "Bordeaux", "phase": "third", "home": "BRA", "away": "SWE", "score": [4, 2] },
+    {
+      "id": "q01",
+      "date": "1937-06-16",
+      "city": "Stockholm",
+      "stage": "qualifying",
+      "group": "1",
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "q02",
+      "date": "1937-06-20",
+      "city": "Stockholm",
+      "stage": "qualifying",
+      "group": "1",
+      "home": "SWE",
+      "away": "EST",
+      "score": [
+        7,
+        2
+      ]
+    },
+    {
+      "id": "q03",
+      "date": "1937-06-29",
+      "city": "Helsinki",
+      "stage": "qualifying",
+      "group": "1",
+      "home": "FIN",
+      "away": "GER",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "q04",
+      "date": "1937-08-19",
+      "city": "Turku",
+      "stage": "qualifying",
+      "group": "1",
+      "home": "FIN",
+      "away": "EST",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "q05",
+      "date": "1937-08-29",
+      "city": "Königsberg",
+      "stage": "qualifying",
+      "group": "1",
+      "home": "GER",
+      "away": "EST",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "q06",
+      "date": "1937-11-21",
+      "city": "Hamburg",
+      "stage": "qualifying",
+      "group": "1",
+      "home": "GER",
+      "away": "SWE",
+      "score": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "q07",
+      "date": "1937-10-10",
+      "city": "Oslo",
+      "stage": "qualifying",
+      "group": "2a",
+      "home": "NOR",
+      "away": "IRL",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "q08",
+      "date": "1937-11-07",
+      "city": "Dublin",
+      "stage": "qualifying",
+      "group": "2a",
+      "home": "IRL",
+      "away": "NOR",
+      "score": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "q09",
+      "date": "1937-10-10",
+      "city": "Warszawa",
+      "stage": "qualifying",
+      "group": "2b",
+      "home": "POL",
+      "away": "YUG",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "q10",
+      "date": "1938-04-03",
+      "city": "Beograd",
+      "stage": "qualifying",
+      "group": "2b",
+      "home": "YUG",
+      "away": "POL",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q11",
+      "date": null,
+      "city": "Cairo",
+      "stage": "qualifying",
+      "group": "3",
+      "home": "EGY",
+      "away": "ROU",
+      "score": null,
+      "status": "walkover",
+      "notes": [
+        "withdrawn"
+      ]
+    },
+    {
+      "id": "q12",
+      "date": null,
+      "city": "București",
+      "stage": "qualifying",
+      "group": "3",
+      "home": "ROU",
+      "away": "EGY",
+      "score": null,
+      "status": "walkover",
+      "notes": [
+        "withdrawn"
+      ]
+    },
+    {
+      "id": "q13",
+      "date": "1938-05-01",
+      "city": "Milano",
+      "stage": "qualifying",
+      "group": "4",
+      "home": "SUI",
+      "away": "POR",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "q14",
+      "date": "1938-01-22",
+      "city": "Tel-Aviv",
+      "stage": "qualifying",
+      "group": "5",
+      "home": "PAL",
+      "away": "GRE",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "q15",
+      "date": "1938-02-20",
+      "city": "Athinai",
+      "stage": "qualifying",
+      "group": "5",
+      "home": "GRE",
+      "away": "PAL",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q16",
+      "date": "1938-03-25",
+      "city": "Budapest",
+      "stage": "qualifying",
+      "group": "5",
+      "home": "HUN",
+      "away": "GRE",
+      "score": [
+        11,
+        1
+      ]
+    },
+    {
+      "id": "q17",
+      "date": "1937-11-07",
+      "city": "Sofia",
+      "stage": "qualifying",
+      "group": "6",
+      "home": "BUL",
+      "away": "TCH",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "q18",
+      "date": "1938-04-24",
+      "city": "Praha",
+      "stage": "qualifying",
+      "group": "6",
+      "home": "TCH",
+      "away": "BUL",
+      "score": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "q19",
+      "date": "1937-07-29",
+      "city": "Riga",
+      "stage": "qualifying",
+      "group": "7",
+      "home": "LAT",
+      "away": "LTU",
+      "score": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "q20",
+      "date": "1937-09-03",
+      "city": "Kaunas",
+      "stage": "qualifying",
+      "group": "7",
+      "home": "LTU",
+      "away": "LAT",
+      "score": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "q21",
+      "date": "1937-10-05",
+      "city": "Wien",
+      "stage": "qualifying",
+      "group": "7",
+      "home": "AUT",
+      "away": "LAT",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "q22",
+      "date": "1937-11-28",
+      "city": "Rotterdam",
+      "stage": "qualifying",
+      "group": "8",
+      "home": "NED",
+      "away": "LUX",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "q23",
+      "date": "1938-03-13",
+      "city": "Luxembourg",
+      "stage": "qualifying",
+      "group": "8",
+      "home": "LUX",
+      "away": "BEL",
+      "score": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "q24",
+      "date": "1938-04-03",
+      "city": "Antwerpen",
+      "stage": "qualifying",
+      "group": "8",
+      "home": "BEL",
+      "away": "NED",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "q25",
+      "date": "1938-01-25",
+      "city": "Saigon",
+      "stage": "qualifying",
+      "group": "9",
+      "home": "JPN",
+      "away": "IHO",
+      "score": null,
+      "status": "walkover",
+      "notes": [
+        "withdrawn"
+      ]
+    },
+    {
+      "id": "q26",
+      "date": "1938-05-26",
+      "city": "Rotterdam",
+      "stage": "qualifying",
+      "group": "9",
+      "home": "IHO",
+      "away": "USA",
+      "score": null,
+      "status": "walkover",
+      "notes": [
+        "withdrawn"
+      ]
+    },
+    {
+      "id": "q27",
+      "date": "1938-05-29",
+      "city": "Bordeaux",
+      "stage": "qualifying",
+      "group": "12",
+      "home": "CUB",
+      "away": "ARG",
+      "score": null,
+      "status": "walkover",
+      "notes": [
+        "withdrawn"
+      ]
+    },
+    {
+      "id": "q28",
+      "date": null,
+      "stage": "qualifying",
+      "group": "10",
+      "home": "BRA",
+      "away": "ARG",
+      "score": null,
+      "status": "walkover",
+      "notes": [
+        "withdrawn"
+      ]
+    },
+    {
+      "id": "m001",
+      "date": "1938-06-04",
+      "city": "Paris",
+      "stage": "r16",
+      "home": "SUI",
+      "away": "GER",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m002",
+      "date": "1938-06-05",
+      "city": "Toulouse",
+      "stage": "r16",
+      "home": "CUB",
+      "away": "ROU",
+      "score": [
+        3,
+        3
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m003",
+      "date": "1938-06-05",
+      "city": "Le Havre",
+      "stage": "r16",
+      "home": "TCH",
+      "away": "NED",
+      "score": [
+        3,
+        0
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m004",
+      "date": "1938-06-05",
+      "city": "Lyon",
+      "stage": "r16",
+      "home": "SWE",
+      "away": "AUT",
+      "score": null,
+      "status": "notplayed",
+      "notes": [
+        "withdrawn"
+      ]
+    },
+    {
+      "id": "m005",
+      "date": "1938-06-05",
+      "city": "Paris",
+      "stage": "r16",
+      "home": "FRA",
+      "away": "BEL",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m006",
+      "date": "1938-06-05",
+      "city": "Reims",
+      "stage": "r16",
+      "home": "HUN",
+      "away": "IHO",
+      "score": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "m007",
+      "date": "1938-06-05",
+      "city": "Marseille",
+      "stage": "r16",
+      "home": "ITA",
+      "away": "NOR",
+      "score": [
+        2,
+        1
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m008",
+      "date": "1938-06-05",
+      "city": "Strasbourg",
+      "stage": "r16",
+      "home": "BRA",
+      "away": "POL",
+      "score": [
+        6,
+        5
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m009",
+      "date": "1938-06-09",
+      "city": "Paris",
+      "stage": "r16",
+      "home": "SUI",
+      "away": "GER",
+      "score": [
+        4,
+        2
+      ],
+      "notes": [
+        "replay"
+      ]
+    },
+    {
+      "id": "m010",
+      "date": "1938-06-09",
+      "city": "Toulouse",
+      "stage": "r16",
+      "home": "CUB",
+      "away": "ROU",
+      "score": [
+        2,
+        1
+      ],
+      "notes": [
+        "replay"
+      ],
+      "provenance": {
+        "primary": "rsssf:38f",
+        "rejected": [
+          {
+            "source": "rsssf:38full",
+            "field": "date",
+            "value": "1934-06-09",
+            "reason": "Errata de 38full (09.06.34); el replay CUB-ROM es de 1938 (D9)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "m011",
+      "date": "1938-06-12",
+      "city": "Paris",
+      "stage": "qf",
+      "home": "ITA",
+      "away": "FRA",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m012",
+      "date": "1938-06-12",
+      "city": "Antibes",
+      "stage": "qf",
+      "home": "SWE",
+      "away": "CUB",
+      "score": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": "m013",
+      "date": "1938-06-12",
+      "city": "Lille",
+      "stage": "qf",
+      "home": "HUN",
+      "away": "SUI",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m014",
+      "date": "1938-06-12",
+      "city": "Bordeaux",
+      "stage": "qf",
+      "home": "BRA",
+      "away": "TCH",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m015",
+      "date": "1938-06-14",
+      "city": "Bordeaux",
+      "stage": "qf",
+      "home": "BRA",
+      "away": "TCH",
+      "score": [
+        2,
+        1
+      ],
+      "notes": [
+        "replay"
+      ]
+    },
+    {
+      "id": "m016",
+      "date": "1938-06-16",
+      "city": "Paris",
+      "stage": "sf",
+      "home": "HUN",
+      "away": "SWE",
+      "score": [
+        5,
+        1
+      ]
+    },
+    {
+      "id": "m017",
+      "date": "1938-06-16",
+      "city": "Marseille",
+      "stage": "sf",
+      "home": "ITA",
+      "away": "BRA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m018",
+      "date": "1938-06-19",
+      "city": "Bordeaux",
+      "stage": "third",
+      "home": "BRA",
+      "away": "SWE",
+      "score": [
+        4,
+        2
+      ]
+    },
     {
       "id": "m019",
       "date": "1938-06-19",
       "city": "Paris",
-      "phase": "final",
+      "stage": "final",
       "home": "ITA",
       "away": "HUN",
-      "score": [4, 2],
-      "referee": { "name": "Capdeville", "country": "FRA" },
-      "attendance": 60000,
-      "events": [
-        { "minute": 6, "player": "Colaussi", "team": "ITA", "score": [1, 0] },
-        { "minute": 8, "player": "Titkos", "team": "HUN", "score": [1, 1] },
-        { "minute": 16, "player": "Piola", "team": "ITA", "score": [2, 1] },
-        { "minute": 35, "player": "Colaussi", "team": "ITA", "score": [3, 1] },
-        { "minute": 70, "player": "Sárosi", "team": "HUN", "score": [3, 2] },
-        { "minute": 82, "player": "Piola", "team": "ITA", "score": [4, 2] }
-      ]
+      "score": [
+        4,
+        2
+      ],
+      "extra": {
+        "referee": {
+          "name": "Capdeville",
+          "country": "FRA"
+        },
+        "attendance": 60000,
+        "events": [
+          {
+            "minute": 6,
+            "player": "Colaussi",
+            "team": "ITA",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 8,
+            "player": "Titkos",
+            "team": "HUN",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "minute": 16,
+            "player": "Piola",
+            "team": "ITA",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 35,
+            "player": "Colaussi",
+            "team": "ITA",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "minute": 70,
+            "player": "Sárosi",
+            "team": "HUN",
+            "score": [
+              3,
+              2
+            ]
+          },
+          {
+            "minute": 82,
+            "player": "Piola",
+            "team": "ITA",
+            "score": [
+              4,
+              2
+            ]
+          }
+        ]
+      },
+      "provenance": {
+        "primary": "rsssf:38f",
+        "rejected": [
+          {
+            "source": "wikipedia",
+            "field": "extra.attendance",
+            "value": 45000,
+            "reason": "Wikipedia/FIFA dan 45.000; se conserva 60.000 de RSSSF (D8)."
+          },
+          {
+            "source": "rsssf:38f",
+            "field": "extra.referee",
+            "value": "Capderville",
+            "reason": "Errata de 38f; 38full y Wikipedia dan 'Capdeville' (D8)."
+          },
+          {
+            "source": "rsssf:38full",
+            "field": "extra.events.5.minute",
+            "value": 85,
+            "reason": "38full da el 4-2 de Piola en el 85'; se usa 82' (38f y Wikipedia, D8)."
+          }
+        ]
+      }
     }
   ],
   "scorers": [
-    { "player": "Gyula Zsengellér", "country": "HUN", "goals": 10, "scope": "all" },
-    { "player": "Leônidas da Silva", "country": "BRA", "goals": 7, "scope": "all" },
-    { "player": "Gustav Wetterström", "country": "SWE", "goals": 6, "scope": "all" },
-    { "player": "György Sárosi", "country": "HUN", "goals": 5, "scope": "all" },
-    { "player": "Silvio Piola", "country": "ITA", "goals": 5, "scope": "all" },
-    { "player": "Fricis Kaneps", "country": "LAT", "goals": 5, "scope": "all" },
-    { "player": "Ernest Otton Wilimowski", "country": "POL", "goals": 5, "scope": "all" },
-    { "player": "Oldrich Nejedlý", "country": "TCH", "goals": 4, "scope": "all" },
-    { "player": "Pál Titkos", "country": "HUN", "goals": 4, "scope": "all" },
-    { "player": "Luigi Colaussi", "country": "ITA", "goals": 4, "scope": "all" },
-    { "player": "Reidar Kvammen", "country": "NOR", "goals": 4, "scope": "all" },
-    { "player": "Vladislav Šimůnek", "country": "TCH", "goals": 3, "scope": "all" },
-    { "player": "Josef Gauchel", "country": "GER", "goals": 3, "scope": "all" },
-    { "player": "Ernst Lehner", "country": "GER", "goals": 3, "scope": "all" },
-    { "player": "Kleanthis Vikelidis", "country": "GRE", "goals": 3, "scope": "all" },
-    { "player": "József Nemes", "country": "HUN", "goals": 3, "scope": "all" },
-    { "player": "Ilja Vestermans", "country": "LAT", "goals": 3, "scope": "all" },
-    { "player": "Piet De Boer", "country": "NED", "goals": 3, "scope": "all" },
-    { "player": "André Abegglen", "country": "SUI", "goals": 3, "scope": "all" },
-    { "player": "Harry Andersson", "country": "SWE", "goals": 3, "scope": "all" },
-    { "player": "Lenart Bunke", "country": "SWE", "goals": 3, "scope": "all" },
-    { "player": "Arne Nyberg", "country": "SWE", "goals": 3, "scope": "all" },
-    { "player": "José Perácio", "country": "BRA", "goals": 3, "scope": "all" },
-    { "player": "Romeu Pellicciari", "country": "BRA", "goals": 3, "scope": "all" },
-    { "player": "Hendrik Isemborghs", "country": "BEL", "goals": 2, "scope": "all" },
-    { "player": "Bernard Voorhoof", "country": "BEL", "goals": 2, "scope": "all" },
-    { "player": "Georg Siimenson", "country": "EST", "goals": 2, "scope": "all" },
-    { "player": "Jean Eduard Marie Nicolas", "country": "FRA", "goals": 2, "scope": "all" },
-    { "player": "Helmut Schön", "country": "GER", "goals": 2, "scope": "all" },
-    { "player": "Otto Siffling", "country": "GER", "goals": 2, "scope": "all" },
-    { "player": "James Dunne", "country": "IRL", "goals": 2, "scope": "all" },
-    { "player": "Vaclavs Borduško", "country": "LAT", "goals": 2, "scope": "all" },
-    { "player": "Jonas Paulionis", "country": "LTU", "goals": 2, "scope": "all" },
-    { "player": "Alf Martinsen", "country": "NOR", "goals": 2, "scope": "all" },
-    { "player": "Leonard Franciszek Piatek", "country": "POL", "goals": 2, "scope": "all" },
-    { "player": "Stefan Dobay", "country": "ROU", "goals": 2, "scope": "all" },
-    { "player": "Sven Jonasson", "country": "SWE", "goals": 2, "scope": "all" },
-    { "player": "Gustav Josefsson", "country": "SWE", "goals": 2, "scope": "all" },
-    { "player": "José Antonio Magriñá", "country": "CUB", "goals": 2, "scope": "all" },
-    { "player": "Héctor Socorro", "country": "CUB", "goals": 2, "scope": "all" },
-    { "player": "Franz Binder", "country": "AUT", "goals": 1, "scope": "all" },
-    { "player": "Camillo Jerusalem", "country": "AUT", "goals": 1, "scope": "all" },
-    { "player": "Raymond Braine", "country": "BEL", "goals": 1, "scope": "all" },
-    { "player": "Georgi Panchedijev", "country": "BUL", "goals": 1, "scope": "all" },
-    { "player": "Vlastimil Kopecký", "country": "TCH", "goals": 1, "scope": "all" },
-    { "player": "Josef Koštálek", "country": "TCH", "goals": 1, "scope": "all" },
-    { "player": "Josef Ludl", "country": "TCH", "goals": 1, "scope": "all" },
-    { "player": "Jan Říha", "country": "TCH", "goals": 1, "scope": "all" },
-    { "player": "Josef Zeman", "country": "TCH", "goals": 1, "scope": "all" },
-    { "player": "Richard Kuremaa", "country": "EST", "goals": 1, "scope": "all" },
-    { "player": "Heinrich Uukkivi", "country": "EST", "goals": 1, "scope": "all" },
-    { "player": "Oscar Heisserer", "country": "FRA", "goals": 1, "scope": "all" },
-    { "player": "Émile Veinante", "country": "FRA", "goals": 1, "scope": "all" },
-    { "player": "Wilhelm Hahnemann", "country": "GER", "goals": 1, "scope": "all" },
-    { "player": "Friedrich Sczepan", "country": "GER", "goals": 1, "scope": "all" },
-    { "player": "Adolf Urban", "country": "GER", "goals": 1, "scope": "all" },
-    { "player": "Lefteris Makris", "country": "GRE", "goals": 1, "scope": "all" },
-    { "player": "Antonis Migiakis", "country": "GRE", "goals": 1, "scope": "all" },
-    { "player": "Vilmos Kohut", "country": "HUN", "goals": 1, "scope": "all" },
-    { "player": "Géza Toldi", "country": "HUN", "goals": 1, "scope": "all" },
-    { "player": "Jenő Vincze", "country": "HUN", "goals": 1, "scope": "all" },
-    { "player": "Harry A. Duggan", "country": "IRL", "goals": 1, "scope": "all" },
-    { "player": "Mattie Geoghegan", "country": "IRL", "goals": 1, "scope": "all" },
-    { "player": "Kevin P. O'Flanagan", "country": "IRL", "goals": 1, "scope": "all" },
-    { "player": "Pietro Ferraris", "country": "ITA", "goals": 1, "scope": "all" },
-    { "player": "Giuseppe Meazza", "country": "ITA", "goals": 1, "scope": "all" },
-    { "player": "Juozas Gudelis", "country": "LTU", "goals": 1, "scope": "all" },
-    { "player": "Gustave Kemp", "country": "LUX", "goals": 1, "scope": "all" },
-    { "player": "Camille Libar", "country": "LUX", "goals": 1, "scope": "all" },
-    { "player": "Johannes Chrisothomus Smit", "country": "NED", "goals": 1, "scope": "all" },
-    { "player": "Henk Van Spaandonck", "country": "NED", "goals": 1, "scope": "all" },
-    { "player": "Arne Brustad", "country": "NOR", "goals": 1, "scope": "all" },
-    { "player": "Peri Neufeld", "country": "PAL", "goals": 1, "scope": "all" },
-    { "player": "Fryderyk Egon Scherfke", "country": "POL", "goals": 1, "scope": "all" },
-    { "player": "Jerzy Adolf Wostal", "country": "POL", "goals": 1, "scope": "all" },
-    { "player": "Fernando Peyroteo", "country": "POR", "goals": 1, "scope": "all" },
-    { "player": "Iuliu Barátky", "country": "ROU", "goals": 1, "scope": "all" },
-    { "player": "Nicolae Covaci", "country": "ROU", "goals": 1, "scope": "all" },
-    { "player": "Tore Keller", "country": "SWE", "goals": 1, "scope": "all" },
-    { "player": "Erik Persson", "country": "SWE", "goals": 1, "scope": "all" },
-    { "player": "Kurt Svanström", "country": "SWE", "goals": 1, "scope": "all" },
-    { "player": "Georges Aeby", "country": "SUI", "goals": 1, "scope": "all" },
-    { "player": "Lauro Amadó", "country": "SUI", "goals": 1, "scope": "all" },
-    { "player": "Alfred Bickel", "country": "SUI", "goals": 1, "scope": "all" },
-    { "player": "Eugène Walaschek", "country": "SUI", "goals": 1, "scope": "all" },
-    { "player": "Blagoje Marjanovic", "country": "YUG", "goals": 1, "scope": "all" },
-    { "player": "Roberto Emilio da Cunha", "country": "BRA", "goals": 1, "scope": "all" },
-    { "player": "Tomás Fernández", "country": "CUB", "goals": 1, "scope": "all" },
-    { "player": "Sven Jacobsson", "country": "SWE", "goals": 1, "scope": "all", "ownGoal": true },
-    { "player": "Ernst Lörtscher", "country": "SUI", "goals": 1, "scope": "all", "ownGoal": true }
+    {
+      "player": "Gyula Zsengellér",
+      "country": "HUN",
+      "goals": 10,
+      "scope": "all"
+    },
+    {
+      "player": "Leônidas da Silva",
+      "country": "BRA",
+      "goals": 7,
+      "scope": "all"
+    },
+    {
+      "player": "Gustav Wetterström",
+      "country": "SWE",
+      "goals": 6,
+      "scope": "all"
+    },
+    {
+      "player": "György Sárosi",
+      "country": "HUN",
+      "goals": 5,
+      "scope": "all"
+    },
+    {
+      "player": "Silvio Piola",
+      "country": "ITA",
+      "goals": 5,
+      "scope": "all"
+    },
+    {
+      "player": "Fricis Kaneps",
+      "country": "LAT",
+      "goals": 5,
+      "scope": "all"
+    },
+    {
+      "player": "Ernest Otton Wilimowski",
+      "country": "POL",
+      "goals": 5,
+      "scope": "all"
+    },
+    {
+      "player": "Oldrich Nejedlý",
+      "country": "TCH",
+      "goals": 4,
+      "scope": "all"
+    },
+    {
+      "player": "Pál Titkos",
+      "country": "HUN",
+      "goals": 4,
+      "scope": "all"
+    },
+    {
+      "player": "Luigi Colaussi",
+      "country": "ITA",
+      "goals": 4,
+      "scope": "all"
+    },
+    {
+      "player": "Reidar Kvammen",
+      "country": "NOR",
+      "goals": 4,
+      "scope": "all"
+    },
+    {
+      "player": "Vladislav Šimůnek",
+      "country": "TCH",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "Josef Gauchel",
+      "country": "GER",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "Ernst Lehner",
+      "country": "GER",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "Kleanthis Vikelidis",
+      "country": "GRE",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "József Nemes",
+      "country": "HUN",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "Ilja Vestermans",
+      "country": "LAT",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "Piet De Boer",
+      "country": "NED",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "André Abegglen",
+      "country": "SUI",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "Harry Andersson",
+      "country": "SWE",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "Lenart Bunke",
+      "country": "SWE",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "Arne Nyberg",
+      "country": "SWE",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "José Perácio",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "Romeu Pellicciari",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "all"
+    },
+    {
+      "player": "Hendrik Isemborghs",
+      "country": "BEL",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Bernard Voorhoof",
+      "country": "BEL",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Georg Siimenson",
+      "country": "EST",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Jean Eduard Marie Nicolas",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Helmut Schön",
+      "country": "GER",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Otto Siffling",
+      "country": "GER",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "James Dunne",
+      "country": "IRL",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Vaclavs Borduško",
+      "country": "LAT",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Jonas Paulionis",
+      "country": "LTU",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Alf Martinsen",
+      "country": "NOR",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Leonard Franciszek Piatek",
+      "country": "POL",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Stefan Dobay",
+      "country": "ROU",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Sven Jonasson",
+      "country": "SWE",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Gustav Josefsson",
+      "country": "SWE",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "José Antonio Magriñá",
+      "country": "CUB",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Héctor Socorro",
+      "country": "CUB",
+      "goals": 2,
+      "scope": "all"
+    },
+    {
+      "player": "Franz Binder",
+      "country": "AUT",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Camillo Jerusalem",
+      "country": "AUT",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Raymond Braine",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Georgi Panchedijev",
+      "country": "BUL",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Vlastimil Kopecký",
+      "country": "TCH",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Josef Koštálek",
+      "country": "TCH",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Josef Ludl",
+      "country": "TCH",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Jan Říha",
+      "country": "TCH",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Josef Zeman",
+      "country": "TCH",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Richard Kuremaa",
+      "country": "EST",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Heinrich Uukkivi",
+      "country": "EST",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Oscar Heisserer",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Émile Veinante",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Wilhelm Hahnemann",
+      "country": "GER",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Friedrich Sczepan",
+      "country": "GER",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Adolf Urban",
+      "country": "GER",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Lefteris Makris",
+      "country": "GRE",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Antonis Migiakis",
+      "country": "GRE",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Vilmos Kohut",
+      "country": "HUN",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Géza Toldi",
+      "country": "HUN",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Jenő Vincze",
+      "country": "HUN",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Harry A. Duggan",
+      "country": "IRL",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Mattie Geoghegan",
+      "country": "IRL",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Kevin P. O'Flanagan",
+      "country": "IRL",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Pietro Ferraris",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Giuseppe Meazza",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Juozas Gudelis",
+      "country": "LTU",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Gustave Kemp",
+      "country": "LUX",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Camille Libar",
+      "country": "LUX",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Johannes Chrisothomus Smit",
+      "country": "NED",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Henk Van Spaandonck",
+      "country": "NED",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Arne Brustad",
+      "country": "NOR",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Peri Neufeld",
+      "country": "PAL",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Fryderyk Egon Scherfke",
+      "country": "POL",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Jerzy Adolf Wostal",
+      "country": "POL",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Fernando Peyroteo",
+      "country": "POR",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Iuliu Barátky",
+      "country": "ROU",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Nicolae Covaci",
+      "country": "ROU",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Tore Keller",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Erik Persson",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Kurt Svanström",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Georges Aeby",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Lauro Amadó",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Alfred Bickel",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Eugène Walaschek",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Blagoje Marjanovic",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Roberto Emilio da Cunha",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Tomás Fernández",
+      "country": "CUB",
+      "goals": 1,
+      "scope": "all"
+    },
+    {
+      "player": "Sven Jacobsson",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "all",
+      "ownGoal": true
+    },
+    {
+      "player": "Ernst Lörtscher",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "all",
+      "ownGoal": true
+    }
   ]
 }

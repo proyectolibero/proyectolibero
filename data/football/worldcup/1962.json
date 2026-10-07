@@ -1,0 +1,1055 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 1962,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "CHI"
+  ],
+  "teamsCount": 16,
+  "results": {
+    "champion": "BRA",
+    "runnerUp": "TCH",
+    "third": "CHI",
+    "finalMatchId": "m032"
+  },
+  "coverage": {
+    "matches": 32,
+    "goals": 89,
+    "scorers": 54,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:62f",
+      "name": "RSSSF — World Cup 1962 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+      "url": "https://www.rsssf.org/tables/62f.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:62full",
+      "name": "RSSSF — World Cup 1962 full details (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tables/62full.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "author": "Karel Stokkermans",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:62qf-scor",
+      "name": "RSSSF — World Cup 1962 goal scorers (Jaroslaw Owsianski)",
+      "url": "https://www.rsssf.org/tables/62qf-scor.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "author": "Jaroslaw Owsianski",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "URS",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 8,
+          "ga": 5,
+          "pts": 5
+        },
+        {
+          "team": "YUG",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 8,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "URU",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 4,
+          "ga": 6,
+          "pts": 2
+        },
+        {
+          "team": "COL",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 5,
+          "ga": 11,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "FRG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "CHI",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 2,
+          "pts": 3
+        },
+        {
+          "team": "SUI",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 8,
+          "pts": 0
+        }
+      ],
+      "provenance": {
+        "primary": "rsssf:62f",
+        "rejected": [
+          {
+            "source": "rsssf:62full",
+            "field": "groups.B.standings.ITA",
+            "value": "2-3",
+            "reason": "62full da Italia 2-3; sus partidos (0-0, 0-2, 3-0) y 62f fijan 3-2."
+          }
+        ]
+      }
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "TCH",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 4,
+          "pts": 2
+        },
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 3,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "HUN",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 8,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "BUL",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 7,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "date": "1962-05-30",
+      "city": "Arica",
+      "stage": "group",
+      "group": "A",
+      "home": "URU",
+      "away": "COL",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m002",
+      "date": "1962-05-31",
+      "city": "Arica",
+      "stage": "group",
+      "group": "A",
+      "home": "URS",
+      "away": "YUG",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m003",
+      "date": "1962-06-02",
+      "city": "Arica",
+      "stage": "group",
+      "group": "A",
+      "home": "YUG",
+      "away": "URU",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m004",
+      "date": "1962-06-03",
+      "city": "Arica",
+      "stage": "group",
+      "group": "A",
+      "home": "URS",
+      "away": "COL",
+      "score": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "m005",
+      "date": "1962-06-06",
+      "city": "Arica",
+      "stage": "group",
+      "group": "A",
+      "home": "URS",
+      "away": "URU",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m006",
+      "date": "1962-06-07",
+      "city": "Arica",
+      "stage": "group",
+      "group": "A",
+      "home": "YUG",
+      "away": "COL",
+      "score": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "m007",
+      "date": "1962-05-30",
+      "city": "Santiago",
+      "stage": "group",
+      "group": "B",
+      "home": "CHI",
+      "away": "SUI",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m008",
+      "date": "1962-05-31",
+      "city": "Santiago",
+      "stage": "group",
+      "group": "B",
+      "home": "ITA",
+      "away": "FRG",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m009",
+      "date": "1962-06-02",
+      "city": "Santiago",
+      "stage": "group",
+      "group": "B",
+      "home": "CHI",
+      "away": "ITA",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m010",
+      "date": "1962-06-03",
+      "city": "Santiago",
+      "stage": "group",
+      "group": "B",
+      "home": "FRG",
+      "away": "SUI",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m011",
+      "date": "1962-06-06",
+      "city": "Santiago",
+      "stage": "group",
+      "group": "B",
+      "home": "FRG",
+      "away": "CHI",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m012",
+      "date": "1962-06-07",
+      "city": "Santiago",
+      "stage": "group",
+      "group": "B",
+      "home": "ITA",
+      "away": "SUI",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m013",
+      "date": "1962-05-30",
+      "city": "Viña del Mar",
+      "stage": "group",
+      "group": "C",
+      "home": "BRA",
+      "away": "MEX",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m014",
+      "date": "1962-05-31",
+      "city": "Viña del Mar",
+      "stage": "group",
+      "group": "C",
+      "home": "TCH",
+      "away": "ESP",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m015",
+      "date": "1962-06-02",
+      "city": "Viña del Mar",
+      "stage": "group",
+      "group": "C",
+      "home": "BRA",
+      "away": "TCH",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m016",
+      "date": "1962-06-03",
+      "city": "Viña del Mar",
+      "stage": "group",
+      "group": "C",
+      "home": "ESP",
+      "away": "MEX",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m017",
+      "date": "1962-06-06",
+      "city": "Viña del Mar",
+      "stage": "group",
+      "group": "C",
+      "home": "BRA",
+      "away": "ESP",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m018",
+      "date": "1962-06-07",
+      "city": "Viña del Mar",
+      "stage": "group",
+      "group": "C",
+      "home": "MEX",
+      "away": "TCH",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m019",
+      "date": "1962-05-30",
+      "city": "Rancagua",
+      "stage": "group",
+      "group": "D",
+      "home": "ARG",
+      "away": "BUL",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m020",
+      "date": "1962-05-31",
+      "city": "Rancagua",
+      "stage": "group",
+      "group": "D",
+      "home": "HUN",
+      "away": "ENG",
+      "score": [
+        2,
+        1
+      ],
+      "provenance": {
+        "primary": "rsssf:62f",
+        "rejected": [
+          {
+            "source": "rsssf:62full",
+            "field": "date",
+            "value": "1962-06-31",
+            "reason": "62full da 31.06 (fecha inexistente); 62f fija el 31.05.1962."
+          }
+        ]
+      }
+    },
+    {
+      "id": "m021",
+      "date": "1962-06-02",
+      "city": "Rancagua",
+      "stage": "group",
+      "group": "D",
+      "home": "ENG",
+      "away": "ARG",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m022",
+      "date": "1962-06-03",
+      "city": "Rancagua",
+      "stage": "group",
+      "group": "D",
+      "home": "HUN",
+      "away": "BUL",
+      "score": [
+        6,
+        1
+      ]
+    },
+    {
+      "id": "m023",
+      "date": "1962-06-06",
+      "city": "Rancagua",
+      "stage": "group",
+      "group": "D",
+      "home": "ARG",
+      "away": "HUN",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m024",
+      "date": "1962-06-07",
+      "city": "Rancagua",
+      "stage": "group",
+      "group": "D",
+      "home": "BUL",
+      "away": "ENG",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m025",
+      "date": "1962-06-10",
+      "city": "Arica",
+      "stage": "qf",
+      "home": "CHI",
+      "away": "URS",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m026",
+      "date": "1962-06-10",
+      "city": "Santiago",
+      "stage": "qf",
+      "home": "YUG",
+      "away": "FRG",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m027",
+      "date": "1962-06-10",
+      "city": "Viña del Mar",
+      "stage": "qf",
+      "home": "BRA",
+      "away": "ENG",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m028",
+      "date": "1962-06-10",
+      "city": "Rancagua",
+      "stage": "qf",
+      "home": "TCH",
+      "away": "HUN",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m029",
+      "date": "1962-06-13",
+      "city": "Santiago",
+      "stage": "sf",
+      "home": "BRA",
+      "away": "CHI",
+      "score": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "m030",
+      "date": "1962-06-13",
+      "city": "Viña del Mar",
+      "stage": "sf",
+      "home": "TCH",
+      "away": "YUG",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m031",
+      "date": "1962-06-16",
+      "city": "Santiago",
+      "stage": "third",
+      "home": "CHI",
+      "away": "YUG",
+      "score": [
+        1,
+        0
+      ],
+      "provenance": {
+        "primary": "rsssf:62f",
+        "rejected": [
+          {
+            "source": "rsssf:62full",
+            "field": "date",
+            "value": "1982-06-16",
+            "reason": "62full da 16.06.82 (año erróneo); 62f fija el 16.06.1962."
+          }
+        ]
+      }
+    },
+    {
+      "id": "m032",
+      "date": "1962-06-17",
+      "city": "Santiago",
+      "stage": "final",
+      "home": "BRA",
+      "away": "TCH",
+      "score": [
+        3,
+        1
+      ],
+      "extra": {
+        "referee": {
+          "name": "Latychev",
+          "country": "URS"
+        },
+        "attendance": 69000,
+        "events": [
+          {
+            "minute": 15,
+            "player": "Masopust",
+            "team": "TCH",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "minute": 17,
+            "player": "Amarildo",
+            "team": "BRA",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "minute": 69,
+            "player": "Zito",
+            "team": "BRA",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 78,
+            "player": "Vavá",
+            "team": "BRA",
+            "score": [
+              3,
+              1
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "scorers": [
+    {
+      "player": "Manoel Francisco dos Santos (Garrincha)",
+      "country": "BRA",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Edvaldo Izídio Neto (Vavá)",
+      "country": "BRA",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Leonel Sánchez",
+      "country": "CHI",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Flórián Albert",
+      "country": "HUN",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Dražan Jerković",
+      "country": "YUG",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Valentin Ivanov",
+      "country": "URS",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Amarildo",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Adolf Scherer",
+      "country": "TCH",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Milan Galić",
+      "country": "YUG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Lajos Tichy",
+      "country": "HUN",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Jaime Ramírez",
+      "country": "CHI",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Eladio Rojas",
+      "country": "CHI",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Jorge Toro",
+      "country": "CHI",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Ron Flowers",
+      "country": "ENG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Uwe Seeler",
+      "country": "FRG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Giacomo Bulgarelli",
+      "country": "ITA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "José Sasia",
+      "country": "URU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Igor Chislenko",
+      "country": "URS",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Viktor Ponedelnik",
+      "country": "URS",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Héctor Facundo",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "José Sanfilippo",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Édson Arantes de Nascimento (Pelé)",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mário Zagalo",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Zito",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Georgi Asparoukhov",
+      "country": "BUL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Germán Aceros",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marcos Coll",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marino Klinger",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Antonio Rada",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Francisco Zuluaga",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Josef Kadraba",
+      "country": "TCH",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Václav Mašek",
+      "country": "TCH",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Josef Masopust",
+      "country": "TCH",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jozef Štibrányi",
+      "country": "TCH",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Bobby Charlton",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jimmy Greaves",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gerry Hitchens",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Adelardo",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Joaquín Peiró",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Albert Brülls",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Horst Szymaniak",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ernő Solymosi",
+      "country": "HUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Bruno Mora",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Vojislav Melić",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Petar Radaković",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Josip Skoblar",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Alfredo del Águila",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Isidoro Díaz",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Héctor Hernández",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Heinz Schneiter",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rolf Wüthrich",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rubén Cabrera",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Luis Cubilla",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Aleksei Mamikin",
+      "country": "URS",
+      "goals": 1,
+      "scope": "final"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 1970,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "MEX"
+  ],
+  "teamsCount": 16,
+  "results": {
+    "champion": "BRA",
+    "runnerUp": "ITA",
+    "third": "FRG",
+    "finalMatchId": "m032"
+  },
+  "coverage": {
+    "matches": 32,
+    "goals": 95,
+    "scorers": 55,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:70f",
+      "name": "RSSSF — World Cup 1970 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+      "url": "https://www.rsssf.org/tables/70f.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:70full",
+      "name": "RSSSF — World Cup 1970 finals, full details",
+      "url": "https://www.rsssf.org/tables/70full.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        { "team": "URS", "p": 3, "w": 2, "d": 1, "l": 0, "gf": 6, "ga": 1, "pts": 5 },
+        { "team": "MEX", "p": 3, "w": 2, "d": 1, "l": 0, "gf": 5, "ga": 0, "pts": 5 },
+        { "team": "BEL", "p": 3, "w": 1, "d": 0, "l": 2, "gf": 4, "ga": 5, "pts": 2 },
+        { "team": "SLV", "p": 3, "w": 0, "d": 0, "l": 3, "gf": 0, "ga": 9, "pts": 0 }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        { "team": "ITA", "p": 3, "w": 1, "d": 2, "l": 0, "gf": 1, "ga": 0, "pts": 4 },
+        { "team": "URU", "p": 3, "w": 1, "d": 1, "l": 1, "gf": 2, "ga": 1, "pts": 3 },
+        { "team": "SWE", "p": 3, "w": 1, "d": 1, "l": 1, "gf": 2, "ga": 2, "pts": 3 },
+        { "team": "ISR", "p": 3, "w": 0, "d": 2, "l": 1, "gf": 1, "ga": 3, "pts": 2 }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        { "team": "BRA", "p": 3, "w": 3, "d": 0, "l": 0, "gf": 8, "ga": 3, "pts": 6 },
+        { "team": "ENG", "p": 3, "w": 2, "d": 0, "l": 1, "gf": 2, "ga": 1, "pts": 4 },
+        { "team": "ROU", "p": 3, "w": 1, "d": 0, "l": 2, "gf": 4, "ga": 5, "pts": 2 },
+        { "team": "TCH", "p": 3, "w": 0, "d": 0, "l": 3, "gf": 2, "ga": 7, "pts": 0 }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        { "team": "FRG", "p": 3, "w": 3, "d": 0, "l": 0, "gf": 10, "ga": 4, "pts": 6 },
+        { "team": "PER", "p": 3, "w": 2, "d": 0, "l": 1, "gf": 7, "ga": 5, "pts": 4 },
+        { "team": "BUL", "p": 3, "w": 0, "d": 1, "l": 2, "gf": 5, "ga": 9, "pts": 1 },
+        { "team": "MAR", "p": 3, "w": 0, "d": 1, "l": 2, "gf": 2, "ga": 6, "pts": 1 }
+      ]
+    }
+  ],
+  "matches": [
+    { "id": "m001", "stage": "group", "group": "A", "date": "1970-05-31", "city": "Mexico City", "home": "MEX", "away": "URS", "score": [0, 0] },
+    { "id": "m002", "stage": "group", "group": "A", "date": "1970-06-03", "city": "Mexico City", "home": "BEL", "away": "SLV", "score": [3, 0] },
+    { "id": "m003", "stage": "group", "group": "A", "date": "1970-06-06", "city": "Mexico City", "home": "URS", "away": "BEL", "score": [4, 1] },
+    { "id": "m004", "stage": "group", "group": "A", "date": "1970-06-07", "city": "Mexico City", "home": "MEX", "away": "SLV", "score": [4, 0] },
+    { "id": "m005", "stage": "group", "group": "A", "date": "1970-06-10", "city": "Mexico City", "home": "URS", "away": "SLV", "score": [2, 0] },
+    { "id": "m006", "stage": "group", "group": "A", "date": "1970-06-11", "city": "Mexico City", "home": "MEX", "away": "BEL", "score": [1, 0] },
+    { "id": "m007", "stage": "group", "group": "B", "date": "1970-06-02", "city": "Puebla", "home": "URU", "away": "ISR", "score": [2, 0] },
+    { "id": "m008", "stage": "group", "group": "B", "date": "1970-06-03", "city": "Toluca", "home": "ITA", "away": "SWE", "score": [1, 0] },
+    { "id": "m009", "stage": "group", "group": "B", "date": "1970-06-06", "city": "Puebla", "home": "URU", "away": "ITA", "score": [0, 0] },
+    { "id": "m010", "stage": "group", "group": "B", "date": "1970-06-07", "city": "Toluca", "home": "ISR", "away": "SWE", "score": [1, 1] },
+    { "id": "m011", "stage": "group", "group": "B", "date": "1970-06-10", "city": "Puebla", "home": "SWE", "away": "URU", "score": [1, 0] },
+    { "id": "m012", "stage": "group", "group": "B", "date": "1970-06-11", "city": "Toluca", "home": "ITA", "away": "ISR", "score": [0, 0] },
+    { "id": "m013", "stage": "group", "group": "C", "date": "1970-06-02", "city": "Guadalajara", "home": "ENG", "away": "ROU", "score": [1, 0] },
+    { "id": "m014", "stage": "group", "group": "C", "date": "1970-06-03", "city": "Guadalajara", "home": "BRA", "away": "TCH", "score": [4, 1] },
+    { "id": "m015", "stage": "group", "group": "C", "date": "1970-06-06", "city": "Guadalajara", "home": "ROU", "away": "TCH", "score": [2, 1] },
+    { "id": "m016", "stage": "group", "group": "C", "date": "1970-06-07", "city": "Guadalajara", "home": "BRA", "away": "ENG", "score": [1, 0] },
+    { "id": "m017", "stage": "group", "group": "C", "date": "1970-06-10", "city": "Guadalajara", "home": "BRA", "away": "ROU", "score": [3, 2] },
+    { "id": "m018", "stage": "group", "group": "C", "date": "1970-06-11", "city": "Guadalajara", "home": "ENG", "away": "TCH", "score": [1, 0] },
+    { "id": "m019", "stage": "group", "group": "D", "date": "1970-06-02", "city": "León", "home": "PER", "away": "BUL", "score": [3, 2] },
+    { "id": "m020", "stage": "group", "group": "D", "date": "1970-06-03", "city": "León", "home": "FRG", "away": "MAR", "score": [2, 1] },
+    { "id": "m021", "stage": "group", "group": "D", "date": "1970-06-06", "city": "León", "home": "PER", "away": "MAR", "score": [3, 0] },
+    { "id": "m022", "stage": "group", "group": "D", "date": "1970-06-07", "city": "León", "home": "FRG", "away": "BUL", "score": [5, 2] },
+    { "id": "m023", "stage": "group", "group": "D", "date": "1970-06-10", "city": "León", "home": "FRG", "away": "PER", "score": [3, 1] },
+    { "id": "m024", "stage": "group", "group": "D", "date": "1970-06-11", "city": "León", "home": "BUL", "away": "MAR", "score": [1, 1] },
+    { "id": "m025", "stage": "qf", "date": "1970-06-14", "city": "Mexico City", "home": "URU", "away": "URS", "score": [1, 0], "notes": ["aet"] },
+    { "id": "m026", "stage": "qf", "date": "1970-06-14", "city": "Toluca", "home": "ITA", "away": "MEX", "score": [4, 1] },
+    { "id": "m027", "stage": "qf", "date": "1970-06-14", "city": "Guadalajara", "home": "BRA", "away": "PER", "score": [4, 2] },
+    { "id": "m028", "stage": "qf", "date": "1970-06-14", "city": "León", "home": "FRG", "away": "ENG", "score": [3, 2], "notes": ["aet"] },
+    { "id": "m029", "stage": "sf", "date": "1970-06-17", "city": "Guadalajara", "home": "BRA", "away": "URU", "score": [3, 1] },
+    { "id": "m030", "stage": "sf", "date": "1970-06-17", "city": "Mexico City", "home": "ITA", "away": "FRG", "score": [4, 3], "notes": ["aet"] },
+    { "id": "m031", "stage": "third", "date": "1970-06-20", "city": "Mexico City", "home": "FRG", "away": "URU", "score": [1, 0] },
+    {
+      "id": "m032",
+      "stage": "final",
+      "date": "1970-06-21",
+      "city": "Mexico City",
+      "home": "BRA",
+      "away": "ITA",
+      "score": [4, 1],
+      "extra": {
+        "referee": { "name": "Glöckner", "country": "GDR" },
+        "attendance": 107000,
+        "events": [
+          { "minute": 18, "player": "Pelé", "team": "BRA", "score": [1, 0] },
+          { "minute": 37, "player": "Boninsegna", "team": "ITA", "score": [1, 1] },
+          { "minute": 66, "player": "Gérson", "team": "BRA", "score": [2, 1] },
+          { "minute": 71, "player": "Jairzinho", "team": "BRA", "score": [3, 1] },
+          { "minute": 87, "player": "Carlos Alberto", "team": "BRA", "score": [4, 1] }
+        ]
+      },
+      "provenance": {
+        "primary": "rsssf:70f",
+        "rejected": [
+          {
+            "source": "rsssf:70full",
+            "field": "extra.attendance",
+            "value": 108000,
+            "reason": "70full da 108.000; se conserva 107.000 de 70f."
+          }
+        ]
+      }
+    }
+  ],
+  "scorers": [
+    { "player": "Gerd Müller", "country": "FRG", "goals": 10, "scope": "final" },
+    { "player": "Jairzinho", "country": "BRA", "goals": 7, "scope": "final" },
+    { "player": "Teófilo Cubillas", "country": "PER", "goals": 5, "scope": "final" },
+    { "player": "Pelé", "country": "BRA", "goals": 4, "scope": "final" },
+    { "player": "Vitali Byshovets", "country": "URS", "goals": 4, "scope": "final" },
+    { "player": "Rivelino", "country": "BRA", "goals": 3, "scope": "final" },
+    { "player": "Uwe Seeler", "country": "FRG", "goals": 3, "scope": "final" },
+    { "player": "Gigi Riva", "country": "ITA", "goals": 3, "scope": "final" },
+    { "player": "Raoul Lambert", "country": "BEL", "goals": 2, "scope": "final" },
+    { "player": "Wilfried van Moer", "country": "BEL", "goals": 2, "scope": "final" },
+    { "player": "Tostão", "country": "BRA", "goals": 2, "scope": "final" },
+    { "player": "Ladislav Petráš", "country": "TCH", "goals": 2, "scope": "final" },
+    { "player": "Roberto Boninsegna", "country": "ITA", "goals": 2, "scope": "final" },
+    { "player": "Gianni Rivera", "country": "ITA", "goals": 2, "scope": "final" },
+    { "player": "Javier Valdivia", "country": "MEX", "goals": 2, "scope": "final" },
+    { "player": "Alberto Gallardo", "country": "PER", "goals": 2, "scope": "final" },
+    { "player": "Florea Dumitrache", "country": "ROU", "goals": 2, "scope": "final" },
+    { "player": "Carlos Alberto", "country": "BRA", "goals": 1, "scope": "final" },
+    { "player": "Clodoaldo", "country": "BRA", "goals": 1, "scope": "final" },
+    { "player": "Gérson", "country": "BRA", "goals": 1, "scope": "final" },
+    { "player": "Hristo Bonev", "country": "BUL", "goals": 1, "scope": "final" },
+    { "player": "Dinko Dermendzhiev", "country": "BUL", "goals": 1, "scope": "final" },
+    { "player": "Ivan Kolev", "country": "BUL", "goals": 1, "scope": "final" },
+    { "player": "Asparuh Nikodimov", "country": "BUL", "goals": 1, "scope": "final" },
+    { "player": "Dobromir Zhechev", "country": "BUL", "goals": 1, "scope": "final" },
+    { "player": "Allan Clarke", "country": "ENG", "goals": 1, "scope": "final" },
+    { "player": "Geoff Hurst", "country": "ENG", "goals": 1, "scope": "final" },
+    { "player": "Alan Mullery", "country": "ENG", "goals": 1, "scope": "final" },
+    { "player": "Martin Peters", "country": "ENG", "goals": 1, "scope": "final" },
+    { "player": "Franz Beckenbauer", "country": "FRG", "goals": 1, "scope": "final" },
+    { "player": "Reinhard Libuda", "country": "FRG", "goals": 1, "scope": "final" },
+    { "player": "Wolfgang Overath", "country": "FRG", "goals": 1, "scope": "final" },
+    { "player": "Karl-Heinz Schnellinger", "country": "FRG", "goals": 1, "scope": "final" },
+    { "player": "Mordechai Spiegler", "country": "ISR", "goals": 1, "scope": "final" },
+    { "player": "Tarcisio Burgnich", "country": "ITA", "goals": 1, "scope": "final" },
+    { "player": "Angelo Domenghini", "country": "ITA", "goals": 1, "scope": "final" },
+    { "player": "Maouhoub Ghazouani", "country": "MAR", "goals": 1, "scope": "final" },
+    { "player": "Houmane Jarir", "country": "MAR", "goals": 1, "scope": "final" },
+    { "player": "Juan Ignacio Basaguren", "country": "MEX", "goals": 1, "scope": "final" },
+    { "player": "Javier Fragoso", "country": "MEX", "goals": 1, "scope": "final" },
+    { "player": "José Luis González", "country": "MEX", "goals": 1, "scope": "final" },
+    { "player": "Gustavo Peña", "country": "MEX", "goals": 1, "scope": "final" },
+    { "player": "Roberto Challe", "country": "PER", "goals": 1, "scope": "final" },
+    { "player": "Héctor Chumpitaz", "country": "PER", "goals": 1, "scope": "final" },
+    { "player": "Emerich Dembrovschi", "country": "ROU", "goals": 1, "scope": "final" },
+    { "player": "Alexandru Neagu", "country": "ROU", "goals": 1, "scope": "final" },
+    { "player": "Ove Grahn", "country": "SWE", "goals": 1, "scope": "final" },
+    { "player": "Tom Turesson", "country": "SWE", "goals": 1, "scope": "final" },
+    { "player": "Luis Cubilla", "country": "URU", "goals": 1, "scope": "final" },
+    { "player": "Víctor Espárrago", "country": "URU", "goals": 1, "scope": "final" },
+    { "player": "Ildo Maneiro", "country": "URU", "goals": 1, "scope": "final" },
+    { "player": "Juan Mujica", "country": "URU", "goals": 1, "scope": "final" },
+    { "player": "Kakhi Asatiani", "country": "URS", "goals": 1, "scope": "final" },
+    { "player": "Vitali Khmelnitski", "country": "URS", "goals": 1, "scope": "final" },
+    { "player": "Gustavo Peña", "country": "MEX", "goals": 1, "scope": "final", "ownGoal": true }
+  ]
+}

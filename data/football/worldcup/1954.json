@@ -1,0 +1,1031 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 1954,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "SUI"
+  ],
+  "teamsCount": 16,
+  "results": {
+    "champion": "FRG",
+    "runnerUp": "HUN",
+    "third": "AUT",
+    "finalMatchId": "m026"
+  },
+  "coverage": {
+    "matches": 26,
+    "goals": 140,
+    "scorers": 63,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:54f",
+      "name": "RSSSF — World Cup 1954 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+      "url": "https://www.rsssf.org/tables/54f.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:54full",
+      "name": "RSSSF — World Cup 1954 full details (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tables/54full.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "author": "Karel Stokkermans",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:54qf-scor",
+      "name": "RSSSF — World Cup 1954 goal scorers (Jaroslaw Owsianski)",
+      "url": "https://www.rsssf.org/tables/54qf-scor.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "author": "Jaroslaw Owsianski",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 6,
+          "ga": 1,
+          "pts": 3
+        },
+        {
+          "team": "YUG",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 2,
+          "ga": 1,
+          "pts": 3
+        },
+        {
+          "team": "FRA",
+          "p": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 2
+        },
+        {
+          "team": "MEX",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 8,
+          "pts": 0
+        }
+      ],
+      "provenance": {
+        "primary": "rsssf:54f",
+        "rejected": [
+          {
+            "source": "rsssf:54full",
+            "field": "groups.A.standings.MEX",
+            "value": "2-6",
+            "reason": "54full da México 2-6; la suma de goles del grupo (13) y 54f fijan 2-8."
+          }
+        ]
+      }
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "HUN",
+          "p": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 17,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "FRG",
+          "p": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 7,
+          "ga": 9,
+          "pts": 2
+        },
+        {
+          "team": "TUR",
+          "p": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 8,
+          "ga": 4,
+          "pts": 2
+        },
+        {
+          "team": "KOR",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 0,
+          "ga": 16,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "URU",
+          "p": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 9,
+          "ga": 0,
+          "pts": 4
+        },
+        {
+          "team": "AUT",
+          "p": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 6,
+          "ga": 0,
+          "pts": 4
+        },
+        {
+          "team": "TCH",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 0,
+          "ga": 7,
+          "pts": 0
+        },
+        {
+          "team": "SCO",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 0,
+          "ga": 8,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 6,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "SUI",
+          "p": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 2,
+          "ga": 3,
+          "pts": 2
+        },
+        {
+          "team": "ITA",
+          "p": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 3,
+          "pts": 2
+        },
+        {
+          "team": "BEL",
+          "p": 2,
+          "w": 0,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 8,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "date": "1954-06-16",
+      "city": "Lausanne",
+      "stage": "group",
+      "group": "A",
+      "home": "YUG",
+      "away": "FRA",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m002",
+      "date": "1954-06-16",
+      "city": "Genève",
+      "stage": "group",
+      "group": "A",
+      "home": "BRA",
+      "away": "MEX",
+      "score": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "m003",
+      "date": "1954-06-19",
+      "city": "Genève",
+      "stage": "group",
+      "group": "A",
+      "home": "FRA",
+      "away": "MEX",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m004",
+      "date": "1954-06-19",
+      "city": "Lausanne",
+      "stage": "group",
+      "group": "A",
+      "home": "BRA",
+      "away": "YUG",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m005",
+      "date": "1954-06-17",
+      "city": "Zürich",
+      "stage": "group",
+      "group": "B",
+      "home": "HUN",
+      "away": "KOR",
+      "score": [
+        9,
+        0
+      ]
+    },
+    {
+      "id": "m006",
+      "date": "1954-06-17",
+      "city": "Bern",
+      "stage": "group",
+      "group": "B",
+      "home": "FRG",
+      "away": "TUR",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m007",
+      "date": "1954-06-20",
+      "city": "Basel",
+      "stage": "group",
+      "group": "B",
+      "home": "HUN",
+      "away": "FRG",
+      "score": [
+        8,
+        3
+      ]
+    },
+    {
+      "id": "m008",
+      "date": "1954-06-20",
+      "city": "Genève",
+      "stage": "group",
+      "group": "B",
+      "home": "TUR",
+      "away": "KOR",
+      "score": [
+        7,
+        0
+      ]
+    },
+    {
+      "id": "m009",
+      "date": "1954-06-16",
+      "city": "Bern",
+      "stage": "group",
+      "group": "C",
+      "home": "URU",
+      "away": "TCH",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m010",
+      "date": "1954-06-16",
+      "city": "Zürich",
+      "stage": "group",
+      "group": "C",
+      "home": "AUT",
+      "away": "SCO",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m011",
+      "date": "1954-06-19",
+      "city": "Basel",
+      "stage": "group",
+      "group": "C",
+      "home": "URU",
+      "away": "SCO",
+      "score": [
+        7,
+        0
+      ]
+    },
+    {
+      "id": "m012",
+      "date": "1954-06-19",
+      "city": "Zürich",
+      "stage": "group",
+      "group": "C",
+      "home": "AUT",
+      "away": "TCH",
+      "score": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "m013",
+      "date": "1954-06-17",
+      "city": "Basel",
+      "stage": "group",
+      "group": "D",
+      "home": "ENG",
+      "away": "BEL",
+      "score": [
+        4,
+        4
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m014",
+      "date": "1954-06-17",
+      "city": "Lausanne",
+      "stage": "group",
+      "group": "D",
+      "home": "SUI",
+      "away": "ITA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m015",
+      "date": "1954-06-20",
+      "city": "Bern",
+      "stage": "group",
+      "group": "D",
+      "home": "ENG",
+      "away": "SUI",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m016",
+      "date": "1954-06-20",
+      "city": "Lugano",
+      "stage": "group",
+      "group": "D",
+      "home": "ITA",
+      "away": "BEL",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m017",
+      "date": "1954-06-23",
+      "city": "Zürich",
+      "stage": "playoff",
+      "group": "B",
+      "home": "FRG",
+      "away": "TUR",
+      "score": [
+        7,
+        2
+      ]
+    },
+    {
+      "id": "m018",
+      "date": "1954-06-23",
+      "city": "Basel",
+      "stage": "playoff",
+      "group": "D",
+      "home": "SUI",
+      "away": "ITA",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m019",
+      "date": "1954-06-26",
+      "city": "Lausanne",
+      "stage": "qf",
+      "home": "AUT",
+      "away": "SUI",
+      "score": [
+        7,
+        5
+      ]
+    },
+    {
+      "id": "m020",
+      "date": "1954-06-26",
+      "city": "Basel",
+      "stage": "qf",
+      "home": "URU",
+      "away": "ENG",
+      "score": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "m021",
+      "date": "1954-06-27",
+      "city": "Bern",
+      "stage": "qf",
+      "home": "HUN",
+      "away": "BRA",
+      "score": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "m022",
+      "date": "1954-06-27",
+      "city": "Genève",
+      "stage": "qf",
+      "home": "FRG",
+      "away": "YUG",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m023",
+      "date": "1954-06-30",
+      "city": "Basel",
+      "stage": "sf",
+      "home": "FRG",
+      "away": "AUT",
+      "score": [
+        6,
+        1
+      ]
+    },
+    {
+      "id": "m024",
+      "date": "1954-06-30",
+      "city": "Lausanne",
+      "stage": "sf",
+      "home": "HUN",
+      "away": "URU",
+      "score": [
+        4,
+        2
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m025",
+      "date": "1954-07-03",
+      "city": "Zürich",
+      "stage": "third",
+      "home": "AUT",
+      "away": "URU",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m026",
+      "date": "1954-07-04",
+      "city": "Bern",
+      "stage": "final",
+      "home": "FRG",
+      "away": "HUN",
+      "score": [
+        3,
+        2
+      ],
+      "extra": {
+        "referee": {
+          "name": "Ling",
+          "country": "ENG"
+        },
+        "attendance": 65000,
+        "events": [
+          {
+            "minute": 6,
+            "player": "Puskás",
+            "team": "HUN",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "minute": 9,
+            "player": "Czibor",
+            "team": "HUN",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "minute": 11,
+            "player": "Morlock",
+            "team": "FRG",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "minute": 18,
+            "player": "Rahn",
+            "team": "FRG",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "minute": 84,
+            "player": "Rahn",
+            "team": "FRG",
+            "score": [
+              3,
+              2
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "scorers": [
+    {
+      "player": "Sándor Kocsis",
+      "country": "HUN",
+      "goals": 11,
+      "scope": "final"
+    },
+    {
+      "player": "Erich Probst",
+      "country": "AUT",
+      "goals": 6,
+      "scope": "final"
+    },
+    {
+      "player": "Maximilian Morlock",
+      "country": "FRG",
+      "goals": 6,
+      "scope": "final"
+    },
+    {
+      "player": "Josef Hügi",
+      "country": "SUI",
+      "goals": 6,
+      "scope": "final"
+    },
+    {
+      "player": "Helmut Rahn",
+      "country": "FRG",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Hans Schäfer",
+      "country": "FRG",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Ottmar Walter",
+      "country": "FRG",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Nándor Hidegkuti",
+      "country": "HUN",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Ferenc Puskás",
+      "country": "HUN",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Robert Ballaman",
+      "country": "SUI",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Carlos Borges",
+      "country": "URU",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Ernst Stojaspal",
+      "country": "AUT",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Theodor Wagner",
+      "country": "AUT",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Léopold Anoul",
+      "country": "BEL",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Nat Lofthouse",
+      "country": "ENG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Fritz Walter",
+      "country": "FRG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Zoltán Czibor",
+      "country": "HUN",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Burhan Sargın",
+      "country": "TUR",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Suat Mamat",
+      "country": "TUR",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Juan Hohberg",
+      "country": "URU",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Óscar Míguez",
+      "country": "URU",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Alfred Körner",
+      "country": "AUT",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Ernst Ocwirk",
+      "country": "AUT",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Waldir Pereira (Didi)",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Júlio Botelho (Julinho)",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "João Lázaro Robles (Pinga)",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Ivor Broadis",
+      "country": "ENG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Mihály Lantos",
+      "country": "HUN",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Péter Palotás",
+      "country": "HUN",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Lefter Küçükandonyadis",
+      "country": "TUR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Julio Abbadie",
+      "country": "URU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Juan Schiaffino",
+      "country": "URU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Henri Coppens",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Osvaldo da Silva (Baltazar)",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Djalma Santos",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Tom Finney",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "James Mullen",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dennis Wilshaw",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Raymond Kopaszewski",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jean Vincent",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Richard Hermann",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Bernhard Klodt",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Alfred Pfaff",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "József Tóth",
+      "country": "HUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Giampiero Boniperti",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Amleto Frignani",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Giancarlo Galli",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Benito Lorenzi",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Fulvio Nesti",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Egisto Pandolfini",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Miloš Milutinović",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Branislav Zebec",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Tomás Balcázar",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "José Luis Lamadrid",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jacques Fatton",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Erol Keskin",
+      "country": "TUR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mustafa Ertan",
+      "country": "TUR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Javier Ambrois",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Obdulio Varela",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Luis Alberto Cruz",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "James William Dickinson",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Raúl Cárdenas",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Ivan Horvat",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    }
+  ]
+}

@@ -1,0 +1,2066 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 2022,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "QAT"
+  ],
+  "teamsCount": 32,
+  "results": {
+    "champion": "ARG",
+    "runnerUp": "FRA",
+    "third": "CRO",
+    "finalMatchId": "m064"
+  },
+  "coverage": {
+    "matches": 64,
+    "goals": 172,
+    "scorers": 119,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:2022f",
+      "name": "RSSSF — World Cup 2022 (Qatar, November 20 - December 18, 2022) (Roberto Di Maggio)",
+      "url": "https://www.rsssf.org/tables/2022f.html",
+      "retrieved": "2026-10-06",
+      "author": "Roberto Di Maggio",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "wikipedia:2022wc",
+      "name": "Wikipedia — 2022 FIFA World Cup (goalscorers)",
+      "url": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup",
+      "retrieved": "2026-10-06",
+      "publisher": "Wikipedia",
+      "license": "cc-by-sa",
+      "redistribute": true,
+      "note": "RSSSF no publica una lista completa de goleadores del torneo final de 2022 (no existe 2022full.html ni página de goleadores); la lista se toma de Wikipedia conforme a ADR-015 (fidelidad a la fuente)."
+    }
+  ],
+  "asOf": "2026-10-06",
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "SEN",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "ECU",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "QAT",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 7,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 9,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "USA",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 2,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "IRN",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 4,
+          "ga": 7,
+          "pts": 3
+        },
+        {
+          "team": "WAL",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "POL",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "KSA",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 5,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "AUS",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 3,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "TUN",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 1,
+          "ga": 1,
+          "pts": 4
+        },
+        {
+          "team": "DEN",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 3,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "standings": [
+        {
+          "team": "JPN",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 9,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 6,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "CRC",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 11,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "standings": [
+        {
+          "team": "MAR",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "CRO",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "BEL",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 1,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "CAN",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 7,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 3,
+          "ga": 1,
+          "pts": 6
+        },
+        {
+          "team": "SUI",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "CMR",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "SRB",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 5,
+          "ga": 8,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "standings": [
+        {
+          "team": "POR",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "KOR",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "URU",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "GHA",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 5,
+          "ga": 7,
+          "pts": 3
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "date": "2022-11-20",
+      "city": "Al-Khor",
+      "home": "QAT",
+      "away": "ECU",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "date": "2022-11-21",
+      "city": "Doha",
+      "home": "SEN",
+      "away": "NED",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "date": "2022-11-25",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "SEN",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "date": "2022-11-25",
+      "city": "Al-Rayyan",
+      "home": "NED",
+      "away": "ECU",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "date": "2022-11-29",
+      "city": "Al-Rayyan",
+      "home": "ECU",
+      "away": "SEN",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "date": "2022-11-29",
+      "city": "Al-Khor",
+      "home": "QAT",
+      "away": "NED",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "date": "2022-11-21",
+      "city": "Al-Rayyan",
+      "home": "ENG",
+      "away": "IRN",
+      "score": [
+        6,
+        2
+      ]
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "date": "2022-11-21",
+      "city": "Al-Rayyan",
+      "home": "USA",
+      "away": "WAL",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "date": "2022-11-25",
+      "city": "Al-Rayyan",
+      "home": "WAL",
+      "away": "IRN",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "date": "2022-11-25",
+      "city": "Al-Khor",
+      "home": "ENG",
+      "away": "USA",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "date": "2022-11-29",
+      "city": "Al-Rayyan",
+      "home": "WAL",
+      "away": "ENG",
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "date": "2022-11-29",
+      "city": "Doha",
+      "home": "IRN",
+      "away": "USA",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "date": "2022-11-22",
+      "city": "Lusail",
+      "home": "ARG",
+      "away": "KSA",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "date": "2022-11-22",
+      "city": "Doha",
+      "home": "MEX",
+      "away": "POL",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "date": "2022-11-26",
+      "city": "Al-Rayyan",
+      "home": "POL",
+      "away": "KSA",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "date": "2022-11-26",
+      "city": "Lusail",
+      "home": "ARG",
+      "away": "MEX",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "date": "2022-11-30",
+      "city": "Doha",
+      "home": "POL",
+      "away": "ARG",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "date": "2022-11-30",
+      "city": "Lusail",
+      "home": "KSA",
+      "away": "MEX",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "date": "2022-11-22",
+      "city": "Al-Rayyan",
+      "home": "DEN",
+      "away": "TUN",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "date": "2022-11-22",
+      "city": "Al-Wakrah",
+      "home": "FRA",
+      "away": "AUS",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "date": "2022-11-26",
+      "city": "Al-Wakrah",
+      "home": "TUN",
+      "away": "AUS",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "date": "2022-11-26",
+      "city": "Doha",
+      "home": "FRA",
+      "away": "DEN",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "date": "2022-11-30",
+      "city": "Al-Wakrah",
+      "home": "AUS",
+      "away": "DEN",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "date": "2022-11-30",
+      "city": "Al-Rayyan",
+      "home": "TUN",
+      "away": "FRA",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m025",
+      "stage": "group",
+      "group": "E",
+      "date": "2022-11-23",
+      "city": "Al-Rayyan",
+      "home": "GER",
+      "away": "JPN",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m026",
+      "stage": "group",
+      "group": "E",
+      "date": "2022-11-23",
+      "city": "Doha",
+      "home": "ESP",
+      "away": "CRC",
+      "score": [
+        7,
+        0
+      ]
+    },
+    {
+      "id": "m027",
+      "stage": "group",
+      "group": "E",
+      "date": "2022-11-27",
+      "city": "Al-Rayyan",
+      "home": "JPN",
+      "away": "CRC",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m028",
+      "stage": "group",
+      "group": "E",
+      "date": "2022-11-27",
+      "city": "Al-Khor",
+      "home": "ESP",
+      "away": "GER",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m029",
+      "stage": "group",
+      "group": "E",
+      "date": "2022-12-01",
+      "city": "Al-Rayyan",
+      "home": "JPN",
+      "away": "ESP",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m030",
+      "stage": "group",
+      "group": "E",
+      "date": "2022-12-01",
+      "city": "Al-Khor",
+      "home": "CRC",
+      "away": "GER",
+      "score": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "m031",
+      "stage": "group",
+      "group": "F",
+      "date": "2022-11-23",
+      "city": "Al-Khor",
+      "home": "MAR",
+      "away": "CRO",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m032",
+      "stage": "group",
+      "group": "F",
+      "date": "2022-11-23",
+      "city": "Al-Rayyan",
+      "home": "BEL",
+      "away": "CAN",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m033",
+      "stage": "group",
+      "group": "F",
+      "date": "2022-11-27",
+      "city": "Doha",
+      "home": "BEL",
+      "away": "MAR",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m034",
+      "stage": "group",
+      "group": "F",
+      "date": "2022-11-27",
+      "city": "Al-Rayyan",
+      "home": "CRO",
+      "away": "CAN",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m035",
+      "stage": "group",
+      "group": "F",
+      "date": "2022-12-01",
+      "city": "Al-Rayyan",
+      "home": "CRO",
+      "away": "BEL",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m036",
+      "stage": "group",
+      "group": "F",
+      "date": "2022-12-01",
+      "city": "Doha",
+      "home": "CAN",
+      "away": "MAR",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m037",
+      "stage": "group",
+      "group": "G",
+      "date": "2022-11-24",
+      "city": "Al-Wakrah",
+      "home": "SUI",
+      "away": "CMR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m038",
+      "stage": "group",
+      "group": "G",
+      "date": "2022-11-24",
+      "city": "Lusail",
+      "home": "BRA",
+      "away": "SRB",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m039",
+      "stage": "group",
+      "group": "G",
+      "date": "2022-11-28",
+      "city": "Al-Wakrah",
+      "home": "CMR",
+      "away": "SRB",
+      "score": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "m040",
+      "stage": "group",
+      "group": "G",
+      "date": "2022-11-28",
+      "city": "Doha",
+      "home": "BRA",
+      "away": "SUI",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m041",
+      "stage": "group",
+      "group": "G",
+      "date": "2022-12-02",
+      "city": "Doha",
+      "home": "SRB",
+      "away": "SUI",
+      "score": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "m042",
+      "stage": "group",
+      "group": "G",
+      "date": "2022-12-02",
+      "city": "Lusail",
+      "home": "CMR",
+      "away": "BRA",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m043",
+      "stage": "group",
+      "group": "H",
+      "date": "2022-11-24",
+      "city": "Al-Rayyan",
+      "home": "URU",
+      "away": "KOR",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m044",
+      "stage": "group",
+      "group": "H",
+      "date": "2022-11-24",
+      "city": "Doha",
+      "home": "POR",
+      "away": "GHA",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m045",
+      "stage": "group",
+      "group": "H",
+      "date": "2022-11-28",
+      "city": "Al-Rayyan",
+      "home": "KOR",
+      "away": "GHA",
+      "score": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "m046",
+      "stage": "group",
+      "group": "H",
+      "date": "2022-11-28",
+      "city": "Lusail",
+      "home": "POR",
+      "away": "URU",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m047",
+      "stage": "group",
+      "group": "H",
+      "date": "2022-12-02",
+      "city": "Al-Wakrah",
+      "home": "GHA",
+      "away": "URU",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m048",
+      "stage": "group",
+      "group": "H",
+      "date": "2022-12-02",
+      "city": "Al-Rayyan",
+      "home": "KOR",
+      "away": "POR",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m049",
+      "stage": "r16",
+      "group": null,
+      "date": "2022-12-03",
+      "city": "Al-Rayyan",
+      "home": "NED",
+      "away": "USA",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m050",
+      "stage": "r16",
+      "group": null,
+      "date": "2022-12-03",
+      "city": "Al-Rayyan",
+      "home": "ARG",
+      "away": "AUS",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m051",
+      "stage": "r16",
+      "group": null,
+      "date": "2022-12-04",
+      "city": "Doha",
+      "home": "FRA",
+      "away": "POL",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m052",
+      "stage": "r16",
+      "group": null,
+      "date": "2022-12-04",
+      "city": "Al-Khor",
+      "home": "ENG",
+      "away": "SEN",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m053",
+      "stage": "r16",
+      "group": null,
+      "date": "2022-12-05",
+      "city": "Al-Wakrah",
+      "home": "JPN",
+      "away": "CRO",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m054",
+      "stage": "r16",
+      "group": null,
+      "date": "2022-12-05",
+      "city": "Doha",
+      "home": "BRA",
+      "away": "KOR",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m055",
+      "stage": "r16",
+      "group": null,
+      "date": "2022-12-06",
+      "city": "Al-Rayyan",
+      "home": "MAR",
+      "away": "ESP",
+      "score": [
+        0,
+        0
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m056",
+      "stage": "r16",
+      "group": null,
+      "date": "2022-12-06",
+      "city": "Lusail",
+      "home": "POR",
+      "away": "SUI",
+      "score": [
+        6,
+        1
+      ]
+    },
+    {
+      "id": "m057",
+      "stage": "qf",
+      "group": null,
+      "date": "2022-12-09",
+      "city": "Al-Rayyan",
+      "home": "CRO",
+      "away": "BRA",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "m058",
+      "stage": "qf",
+      "group": null,
+      "date": "2022-12-09",
+      "city": "Lusail",
+      "home": "NED",
+      "away": "ARG",
+      "score": [
+        2,
+        2
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "m059",
+      "stage": "qf",
+      "group": null,
+      "date": "2022-12-10",
+      "city": "Doha",
+      "home": "MAR",
+      "away": "POR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m060",
+      "stage": "qf",
+      "group": null,
+      "date": "2022-12-10",
+      "city": "Al-Khor",
+      "home": "ENG",
+      "away": "FRA",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m061",
+      "stage": "sf",
+      "group": null,
+      "date": "2022-12-13",
+      "city": "Lusail",
+      "home": "ARG",
+      "away": "CRO",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m062",
+      "stage": "sf",
+      "group": null,
+      "date": "2022-12-14",
+      "city": "Al-Khor",
+      "home": "FRA",
+      "away": "MAR",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m063",
+      "stage": "third",
+      "group": null,
+      "date": "2022-12-17",
+      "city": "Al-Rayyan",
+      "home": "CRO",
+      "away": "MAR",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m064",
+      "stage": "final",
+      "group": null,
+      "date": "2022-12-18",
+      "city": "Lusail",
+      "home": "ARG",
+      "away": "FRA",
+      "score": [
+        3,
+        3
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        4,
+        2
+      ],
+      "extra": {
+        "referee": {
+          "name": "Marciniak",
+          "country": "POL"
+        },
+        "attendance": 88966,
+        "events": [
+          {
+            "minute": 23,
+            "player": "Messi",
+            "team": "ARG",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 36,
+            "player": "Di María",
+            "team": "ARG",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 80,
+            "player": "Mbappé",
+            "team": "FRA",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 81,
+            "player": "Mbappé",
+            "team": "FRA",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "minute": 108,
+            "player": "Messi",
+            "team": "ARG",
+            "score": [
+              3,
+              2
+            ]
+          },
+          {
+            "minute": 118,
+            "player": "Mbappé",
+            "team": "FRA",
+            "score": [
+              3,
+              3
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "scorers": [
+    {
+      "player": "Kylian Mbappé",
+      "country": "FRA",
+      "goals": 8,
+      "scope": "final"
+    },
+    {
+      "player": "Lionel Messi",
+      "country": "ARG",
+      "goals": 7,
+      "scope": "final"
+    },
+    {
+      "player": "Julián Álvarez",
+      "country": "ARG",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Olivier Giroud",
+      "country": "FRA",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Richarlison",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Enner Valencia",
+      "country": "ECU",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Marcus Rashford",
+      "country": "ENG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Bukayo Saka",
+      "country": "ENG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Cody Gakpo",
+      "country": "NED",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Gonçalo Ramos",
+      "country": "POR",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Álvaro Morata",
+      "country": "ESP",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Neymar",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Vincent Aboubakar",
+      "country": "CMR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Andrej Kramarić",
+      "country": "CRO",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Harry Kane",
+      "country": "ENG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Niclas Füllkrug",
+      "country": "GER",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Kai Havertz",
+      "country": "GER",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Mohammed Kudus",
+      "country": "GHA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Mehdi Taremi",
+      "country": "IRN",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Ritsu Dōan",
+      "country": "JPN",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Youssef En-Nesyri",
+      "country": "MAR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Wout Weghorst",
+      "country": "NED",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Robert Lewandowski",
+      "country": "POL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Bruno Fernandes",
+      "country": "POR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Rafael Leão",
+      "country": "POR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Salem Al-Dawsari",
+      "country": "KSA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Aleksandar Mitrović",
+      "country": "SRB",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Cho Gue-sung",
+      "country": "KOR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Ferran Torres",
+      "country": "ESP",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Breel Embolo",
+      "country": "SUI",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Giorgian de Arrascaeta",
+      "country": "URU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Ángel Di María",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Enzo Fernández",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Alexis Mac Allister",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nahuel Molina",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mitchell Duke",
+      "country": "AUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Craig Goodwin",
+      "country": "AUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mathew Leckie",
+      "country": "AUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Michy Batshuayi",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Casemiro",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lucas Paquetá",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Vinícius Júnior",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jean-Charles Castelletto",
+      "country": "CMR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Eric Maxim Choupo-Moting",
+      "country": "CMR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Alphonso Davies",
+      "country": "CAN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Keysher Fuller",
+      "country": "CRC",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yeltsin Tejeda",
+      "country": "CRC",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Juan Pablo Vargas",
+      "country": "CRC",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Joško Gvardiol",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marko Livaja",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lovro Majer",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mislav Oršić",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ivan Perišić",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Bruno Petković",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Andreas Christensen",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Moisés Caicedo",
+      "country": "ECU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jude Bellingham",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Phil Foden",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jack Grealish",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jordan Henderson",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Raheem Sterling",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Théo Hernandez",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Randal Kolo Muani",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Adrien Rabiot",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Aurélien Tchouaméni",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Serge Gnabry",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "İlkay Gündoğan",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "André Ayew",
+      "country": "GHA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Osman Bukari",
+      "country": "GHA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mohammed Salisu",
+      "country": "GHA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rouzbeh Cheshmi",
+      "country": "IRN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ramin Rezaeian",
+      "country": "IRN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Takuma Asano",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Daizen Maeda",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ao Tanaka",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Luis Chávez",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Henry Martín",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Zakaria Aboukhlal",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Achraf Dari",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Romain Saïss",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Hakim Ziyech",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Daley Blind",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Memphis Depay",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Denzel Dumfries",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Frenkie de Jong",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Davy Klaassen",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Piotr Zieliński",
+      "country": "POL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "João Félix",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Raphaël Guerreiro",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ricardo Horta",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Pepe",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Cristiano Ronaldo",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mohammed Muntari",
+      "country": "QAT",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Saleh Al-Shehri",
+      "country": "KSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Boulaye Dia",
+      "country": "SEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Famara Diédhiou",
+      "country": "SEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Bamba Dieng",
+      "country": "SEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kalidou Koulibaly",
+      "country": "SEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ismaïla Sarr",
+      "country": "SEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sergej Milinković-Savić",
+      "country": "SRB",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Strahinja Pavlović",
+      "country": "SRB",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dušan Vlahović",
+      "country": "SRB",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Hwang Hee-chan",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kim Young-gwon",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Paik Seung-ho",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marco Asensio",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gavi",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dani Olmo",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Carlos Soler",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Manuel Akanji",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Remo Freuler",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Xherdan Shaqiri",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Wahbi Khazri",
+      "country": "TUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Christian Pulisic",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Timothy Weah",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Haji Wright",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gareth Bale",
+      "country": "WAL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Enzo Fernández",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Nayef Aguerd",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    }
+  ]
+}

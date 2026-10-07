@@ -1,135 +1,719 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "archetype": "encounter",
   "sport": "football",
   "competition": "worldcup",
   "edition": 1930,
+  "status": "closed",
   "teamMode": "country",
-  "hosts": ["URU"],
+  "hosts": [
+    "URU"
+  ],
   "teamsCount": 13,
-  "champion": "URU",
-  "runnerUp": "ARG",
-  "third": null,
+  "results": {
+    "champion": "URU",
+    "runnerUp": "ARG",
+    "third": null,
+    "finalMatchId": "m018"
+  },
+  "coverage": {
+    "matches": 18,
+    "goals": 70,
+    "scorers": 37,
+    "complete": true
+  },
   "sources": [
     {
+      "id": "rsssf:worldcup",
       "name": "RSSSF — World Cup 1930 overview (Karel Stokkermans)",
       "url": "https://www.rsssf.org/tablesw/worldcup.html",
-      "retrieved": "2026-10-06"
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
     },
     {
+      "id": "rsssf:30f-scor",
       "name": "RSSSF — World Cup 1930 goal scorers (Jaroslaw Owsianski)",
       "url": "https://www.rsssf.org/tables/30f-scor.html",
-      "retrieved": "2026-10-06"
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
     }
   ],
+  "asOf": "2026-10-06",
   "groups": [
     {
       "letter": "A",
       "standings": [
-        { "team": "ARG", "p": 3, "w": 3, "d": 0, "l": 0, "gf": 10, "ga": 4, "pts": 6 },
-        { "team": "CHI", "p": 3, "w": 2, "d": 0, "l": 1, "gf": 5, "ga": 3, "pts": 4 },
-        { "team": "FRA", "p": 3, "w": 1, "d": 0, "l": 2, "gf": 4, "ga": 3, "pts": 2 },
-        { "team": "MEX", "p": 3, "w": 0, "d": 0, "l": 3, "gf": 4, "ga": 13, "pts": 0 }
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 10,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "CHI",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 4,
+          "ga": 3,
+          "pts": 2
+        },
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 4,
+          "ga": 13,
+          "pts": 0
+        }
       ]
     },
     {
       "letter": "B",
       "standings": [
-        { "team": "YUG", "p": 2, "w": 2, "d": 0, "l": 0, "gf": 6, "ga": 1, "pts": 4 },
-        { "team": "BRA", "p": 2, "w": 1, "d": 0, "l": 1, "gf": 5, "ga": 2, "pts": 2 },
-        { "team": "BOL", "p": 2, "w": 0, "d": 0, "l": 2, "gf": 0, "ga": 8, "pts": 0 }
+        {
+          "team": "YUG",
+          "p": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 6,
+          "ga": 1,
+          "pts": 4
+        },
+        {
+          "team": "BRA",
+          "p": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 2,
+          "pts": 2
+        },
+        {
+          "team": "BOL",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 0,
+          "ga": 8,
+          "pts": 0
+        }
       ]
     },
     {
       "letter": "C",
       "standings": [
-        { "team": "URU", "p": 2, "w": 2, "d": 0, "l": 0, "gf": 5, "ga": 0, "pts": 4 },
-        { "team": "ROU", "p": 2, "w": 1, "d": 0, "l": 1, "gf": 3, "ga": 5, "pts": 2 },
-        { "team": "PER", "p": 2, "w": 0, "d": 0, "l": 2, "gf": 1, "ga": 4, "pts": 0 }
+        {
+          "team": "URU",
+          "p": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 5,
+          "ga": 0,
+          "pts": 4
+        },
+        {
+          "team": "ROU",
+          "p": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 3,
+          "ga": 5,
+          "pts": 2
+        },
+        {
+          "team": "PER",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 1,
+          "ga": 4,
+          "pts": 0
+        }
       ]
     },
     {
       "letter": "D",
       "standings": [
-        { "team": "USA", "p": 2, "w": 2, "d": 0, "l": 0, "gf": 6, "ga": 0, "pts": 4 },
-        { "team": "PAR", "p": 2, "w": 1, "d": 0, "l": 1, "gf": 1, "ga": 3, "pts": 2 },
-        { "team": "BEL", "p": 2, "w": 0, "d": 0, "l": 2, "gf": 0, "ga": 4, "pts": 0 }
+        {
+          "team": "USA",
+          "p": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 6,
+          "ga": 0,
+          "pts": 4
+        },
+        {
+          "team": "PAR",
+          "p": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 3,
+          "pts": 2
+        },
+        {
+          "team": "BEL",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 0,
+          "ga": 4,
+          "pts": 0
+        }
       ]
     }
   ],
   "matches": [
-    { "id": "m001", "date": "1930-07-13", "city": "Montevideo", "phase": "group", "group": "A", "home": "FRA", "away": "MEX", "score": [4, 1] },
-    { "id": "m002", "date": "1930-07-15", "city": "Montevideo", "phase": "group", "group": "A", "home": "FRA", "away": "ARG", "score": [0, 1] },
-    { "id": "m003", "date": "1930-07-16", "city": "Montevideo", "phase": "group", "group": "A", "home": "MEX", "away": "CHI", "score": [0, 3] },
-    { "id": "m004", "date": "1930-07-19", "city": "Montevideo", "phase": "group", "group": "A", "home": "FRA", "away": "CHI", "score": [0, 1] },
-    { "id": "m005", "date": "1930-07-19", "city": "Montevideo", "phase": "group", "group": "A", "home": "MEX", "away": "ARG", "score": [3, 6] },
-    { "id": "m006", "date": "1930-07-22", "city": "Montevideo", "phase": "group", "group": "A", "home": "ARG", "away": "CHI", "score": [3, 1] },
-    { "id": "m007", "date": "1930-07-14", "city": "Montevideo", "phase": "group", "group": "B", "home": "YUG", "away": "BRA", "score": [2, 1] },
-    { "id": "m008", "date": "1930-07-17", "city": "Montevideo", "phase": "group", "group": "B", "home": "YUG", "away": "BOL", "score": [4, 0] },
-    { "id": "m009", "date": "1930-07-20", "city": "Montevideo", "phase": "group", "group": "B", "home": "BRA", "away": "BOL", "score": [4, 0] },
-    { "id": "m010", "date": "1930-07-14", "city": "Montevideo", "phase": "group", "group": "C", "home": "ROU", "away": "PER", "score": [3, 1] },
-    { "id": "m011", "date": "1930-07-18", "city": "Montevideo", "phase": "group", "group": "C", "home": "URU", "away": "PER", "score": [1, 0] },
-    { "id": "m012", "date": "1930-07-21", "city": "Montevideo", "phase": "group", "group": "C", "home": "URU", "away": "ROU", "score": [4, 0] },
-    { "id": "m013", "date": "1930-07-13", "city": "Montevideo", "phase": "group", "group": "D", "home": "USA", "away": "BEL", "score": [3, 0] },
-    { "id": "m014", "date": "1930-07-17", "city": "Montevideo", "phase": "group", "group": "D", "home": "USA", "away": "PAR", "score": [3, 0] },
-    { "id": "m015", "date": "1930-07-20", "city": "Montevideo", "phase": "group", "group": "D", "home": "PAR", "away": "BEL", "score": [1, 0] },
-    { "id": "m016", "date": "1930-07-26", "city": "Montevideo", "phase": "sf", "home": "ARG", "away": "USA", "score": [6, 1] },
-    { "id": "m017", "date": "1930-07-27", "city": "Montevideo", "phase": "sf", "home": "URU", "away": "YUG", "score": [6, 1] },
+    {
+      "id": "m001",
+      "date": "1930-07-13",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "A",
+      "home": "FRA",
+      "away": "MEX",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m002",
+      "date": "1930-07-15",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "A",
+      "home": "FRA",
+      "away": "ARG",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m003",
+      "date": "1930-07-16",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "A",
+      "home": "MEX",
+      "away": "CHI",
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m004",
+      "date": "1930-07-19",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "A",
+      "home": "FRA",
+      "away": "CHI",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m005",
+      "date": "1930-07-19",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "A",
+      "home": "MEX",
+      "away": "ARG",
+      "score": [
+        3,
+        6
+      ]
+    },
+    {
+      "id": "m006",
+      "date": "1930-07-22",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "A",
+      "home": "ARG",
+      "away": "CHI",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m007",
+      "date": "1930-07-14",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "B",
+      "home": "YUG",
+      "away": "BRA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m008",
+      "date": "1930-07-17",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "B",
+      "home": "YUG",
+      "away": "BOL",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "m009",
+      "date": "1930-07-20",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "B",
+      "home": "BRA",
+      "away": "BOL",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "m010",
+      "date": "1930-07-14",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "C",
+      "home": "ROU",
+      "away": "PER",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m011",
+      "date": "1930-07-18",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "C",
+      "home": "URU",
+      "away": "PER",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m012",
+      "date": "1930-07-21",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "C",
+      "home": "URU",
+      "away": "ROU",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "m013",
+      "date": "1930-07-13",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "D",
+      "home": "USA",
+      "away": "BEL",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m014",
+      "date": "1930-07-17",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "D",
+      "home": "USA",
+      "away": "PAR",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m015",
+      "date": "1930-07-20",
+      "city": "Montevideo",
+      "stage": "group",
+      "group": "D",
+      "home": "PAR",
+      "away": "BEL",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m016",
+      "date": "1930-07-26",
+      "city": "Montevideo",
+      "stage": "sf",
+      "home": "ARG",
+      "away": "USA",
+      "score": [
+        6,
+        1
+      ]
+    },
+    {
+      "id": "m017",
+      "date": "1930-07-27",
+      "city": "Montevideo",
+      "stage": "sf",
+      "home": "URU",
+      "away": "YUG",
+      "score": [
+        6,
+        1
+      ]
+    },
     {
       "id": "m018",
       "date": "1930-07-30",
-      "phase": "final",
+      "stage": "final",
       "home": "URU",
       "away": "ARG",
-      "score": [4, 2],
-      "referee": { "name": "Langenus", "country": "BEL" },
-      "attendance": 80000,
-      "events": [
-        { "minute": 12, "player": "Dorado", "team": "URU", "score": [1, 0] },
-        { "minute": 20, "player": "Peucelle", "team": "ARG", "score": [1, 1] },
-        { "minute": 38, "player": "Stábile", "team": "ARG", "score": [1, 2] },
-        { "minute": 58, "player": "Cea", "team": "URU", "score": [2, 2] },
-        { "minute": 68, "player": "Iriarte", "team": "URU", "score": [3, 2] },
-        { "minute": 89, "player": "Castro", "team": "URU", "score": [4, 2] }
-      ]
+      "score": [
+        4,
+        2
+      ],
+      "extra": {
+        "referee": {
+          "name": "Langenus",
+          "country": "BEL"
+        },
+        "attendance": 80000,
+        "events": [
+          {
+            "minute": 12,
+            "player": "Dorado",
+            "team": "URU",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 20,
+            "player": "Peucelle",
+            "team": "ARG",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "minute": 38,
+            "player": "Stábile",
+            "team": "ARG",
+            "score": [
+              1,
+              2
+            ]
+          },
+          {
+            "minute": 58,
+            "player": "Cea",
+            "team": "URU",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "minute": 68,
+            "player": "Iriarte",
+            "team": "URU",
+            "score": [
+              3,
+              2
+            ]
+          },
+          {
+            "minute": 89,
+            "player": "Castro",
+            "team": "URU",
+            "score": [
+              4,
+              2
+            ]
+          }
+        ]
+      }
     }
   ],
   "scorers": [
-    { "player": "Guillermo Stábile", "country": "ARG", "goals": 8, "scope": "final" },
-    { "player": "José Pedro Cea", "country": "URU", "goals": 5, "scope": "final" },
-    { "player": "Ivan Beck", "country": "YUG", "goals": 3, "scope": "final" },
-    { "player": "Carlos Desiderio Peucelle", "country": "ARG", "goals": 3, "scope": "final" },
-    { "player": "João Coelho Neto \"Preguinho\"", "country": "BRA", "goals": 3, "scope": "final" },
-    { "player": "Juan Pelegrino Anselmo", "country": "URU", "goals": 3, "scope": "final" },
-    { "player": "Bert Patenaude", "country": "USA", "goals": 3, "scope": "final" },
-    { "player": "André Maschinot", "country": "FRA", "goals": 2, "scope": "final" },
-    { "player": "Constantin Stanciu", "country": "ROU", "goals": 2, "scope": "final" },
-    { "player": "Djordje Vujadinovic", "country": "YUG", "goals": 2, "scope": "final" },
-    { "player": "Luis Fernando Monti", "country": "ARG", "goals": 2, "scope": "final" },
-    { "player": "Adolfo Bernabé Zumelzú", "country": "ARG", "goals": 2, "scope": "final" },
-    { "player": "Moderato Visintainer", "country": "BRA", "goals": 2, "scope": "final" },
-    { "player": "Carlos Vidal Lepe", "country": "CHI", "goals": 2, "scope": "final" },
-    { "player": "Héctor Castro", "country": "URU", "goals": 2, "scope": "final" },
-    { "player": "Pablo Dorado", "country": "URU", "goals": 2, "scope": "final" },
-    { "player": "Victoriano Santos Iriarte", "country": "URU", "goals": 2, "scope": "final" },
-    { "player": "Manuel Rosas Sánchez", "country": "MEX", "goals": 2, "scope": "final" },
-    { "player": "Bartholomew McGhee", "country": "USA", "goals": 2, "scope": "final" },
-    { "player": "Marcel Langiller", "country": "FRA", "goals": 1, "scope": "final" },
-    { "player": "Lucien Laurent", "country": "FRA", "goals": 1, "scope": "final" },
-    { "player": "Stefan Barbu", "country": "ROU", "goals": 1, "scope": "final" },
-    { "player": "Blagoje Marjanovic", "country": "YUG", "goals": 1, "scope": "final" },
-    { "player": "Aleksander Tirnanic", "country": "YUG", "goals": 1, "scope": "final" },
-    { "player": "Marino Evaristo", "country": "ARG", "goals": 1, "scope": "final" },
-    { "player": "Alejandro Scopelli Casanova", "country": "ARG", "goals": 1, "scope": "final" },
-    { "player": "Francisco Antonio Varallo", "country": "ARG", "goals": 1, "scope": "final" },
-    { "player": "Guillermo Arellano Moraga", "country": "CHI", "goals": 1, "scope": "final" },
-    { "player": "Guillermo Subiabre Astorga", "country": "CHI", "goals": 1, "scope": "final" },
-    { "player": "Delfín Benítez Cáceres", "country": "PAR", "goals": 1, "scope": "final" },
-    { "player": "Luis Alfonso Souza Ferreira", "country": "PER", "goals": 1, "scope": "final" },
-    { "player": "Héctor Pedro Scarone", "country": "URU", "goals": 1, "scope": "final" },
-    { "player": "Juan Carreño Sandoval", "country": "MEX", "goals": 1, "scope": "final" },
-    { "player": "Roberto Gayán Márquez", "country": "MEX", "goals": 1, "scope": "final" },
-    { "player": "James Brown", "country": "USA", "goals": 1, "scope": "final" },
-    { "player": "Manuel Rosas Sánchez", "country": "MEX", "goals": 1, "scope": "final", "ownGoal": true },
-    { "player": "Aurelio González", "country": "PAR", "goals": 1, "scope": "final", "ownGoal": true }
+    {
+      "player": "Guillermo Stábile",
+      "country": "ARG",
+      "goals": 8,
+      "scope": "final"
+    },
+    {
+      "player": "José Pedro Cea",
+      "country": "URU",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Ivan Beck",
+      "country": "YUG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Carlos Desiderio Peucelle",
+      "country": "ARG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "João Coelho Neto \"Preguinho\"",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Juan Pelegrino Anselmo",
+      "country": "URU",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Bert Patenaude",
+      "country": "USA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "André Maschinot",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Constantin Stanciu",
+      "country": "ROU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Djordje Vujadinovic",
+      "country": "YUG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Luis Fernando Monti",
+      "country": "ARG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Adolfo Bernabé Zumelzú",
+      "country": "ARG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Moderato Visintainer",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Carlos Vidal Lepe",
+      "country": "CHI",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Héctor Castro",
+      "country": "URU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Pablo Dorado",
+      "country": "URU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Victoriano Santos Iriarte",
+      "country": "URU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Manuel Rosas Sánchez",
+      "country": "MEX",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Bartholomew McGhee",
+      "country": "USA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Marcel Langiller",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lucien Laurent",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Stefan Barbu",
+      "country": "ROU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Blagoje Marjanovic",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Aleksander Tirnanic",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marino Evaristo",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Alejandro Scopelli Casanova",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Francisco Antonio Varallo",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Guillermo Arellano Moraga",
+      "country": "CHI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Guillermo Subiabre Astorga",
+      "country": "CHI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Delfín Benítez Cáceres",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Luis Alfonso Souza Ferreira",
+      "country": "PER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Héctor Pedro Scarone",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Juan Carreño Sandoval",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Roberto Gayán Márquez",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "James Brown",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Manuel Rosas Sánchez",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Aurelio González",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    }
   ]
 }

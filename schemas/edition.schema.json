@@ -1,0 +1,222 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://proyectolibero.org/schemas/edition.schema.json",
+  "title": "Edición (cualquier arquetipo)",
+  "type": "object",
+  "required": [
+    "schemaVersion", "archetype", "sport", "competition", "edition",
+    "status", "teamMode", "results", "coverage", "sources", "asOf"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "archetype": { "enum": ["encounter", "ranking", "timed", "scored"] },
+    "sport": { "type": "string" },
+    "competition": { "type": "string" },
+    "edition": { "type": ["integer", "string"] },
+    "status": { "const": "closed" },
+    "teamMode": { "enum": ["country", "club", "individual"] },
+    "hosts": { "type": "array", "items": { "type": "string" } },
+    "teamsCount": { "type": "integer", "minimum": 0 },
+    "results": {
+      "type": "object",
+      "required": ["champion", "runnerUp"],
+      "properties": {
+        "champion": { "type": ["string", "object"] },
+        "runnerUp": { "type": ["string", "object"] },
+        "third": { "type": ["string", "object", "null"] },
+        "finalMatchId": { "type": ["string", "null"] }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["matches", "complete"],
+      "additionalProperties": true,
+      "properties": {
+        "matches": { "type": "integer", "minimum": 0 },
+        "scorers": { "type": "integer", "minimum": 0 },
+        "goals": { "type": "integer", "minimum": 0 },
+        "complete": { "type": "boolean" }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "url", "retrieved", "license", "redistribute"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "retrieved": { "type": "string", "format": "date" },
+          "author": { "type": "string" },
+          "publisher": { "type": "string" },
+          "license": { "type": "string" },
+          "redistribute": { "type": "boolean" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "asOf": { "type": "string", "format": "date" },
+    "matches": { "type": "array", "items": { "$ref": "#/$defs/encounterResult" } },
+    "events": { "type": "array", "items": { "$ref": "#/$defs/rankingResult" } },
+    "scorers": { "type": "array", "items": { "$ref": "#/$defs/scorer" } }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "archetype": { "const": "encounter" } } },
+      "then": { "required": ["matches"] }
+    },
+    {
+      "if": { "properties": { "archetype": { "enum": ["ranking", "timed", "scored"] } } },
+      "then": { "required": ["events"] }
+    }
+  ],
+  "$defs": {
+    "provenance": {
+      "type": "object",
+      "required": ["primary"],
+      "additionalProperties": false,
+      "properties": {
+        "primary": { "type": "string" },
+        "rejected": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["source", "field", "reason"],
+            "additionalProperties": false,
+            "properties": {
+              "source": { "type": "string" },
+              "field": { "type": "string" },
+              "value": {},
+              "reason": { "type": "string", "minLength": 3 }
+            }
+          }
+        }
+      }
+    },
+    "encounterResult": {
+      "type": "object",
+      "required": ["id", "stage", "home", "away"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "stage": { "type": "string" },
+        "group": { "type": ["string", "null"] },
+        "matchday": { "type": ["integer", "string", "null"] },
+        "date": { "type": ["string", "null"], "format": "date" },
+        "city": { "type": ["string", "null"] },
+        "home": { "type": "string" },
+        "away": { "type": "string" },
+        "score": {
+          "anyOf": [
+            { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+            { "type": "null" }
+          ]
+        },
+        "status": { "enum": ["played", "notplayed", "awarded", "walkover"] },
+        "notes": {
+          "type": "array",
+          "items": { "enum": ["aet", "pen", "replay", "awarded", "walkover", "notplayed", "withdrawn", "singleMatch"] }
+        },
+        "pens": {
+          "anyOf": [
+            { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+            { "type": "null" }
+          ]
+        },
+        "extra": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "referee": {
+              "type": "object",
+              "required": ["name"],
+              "properties": {
+                "name": { "type": "string" },
+                "country": { "type": "string" },
+                "raw": { "type": "string" }
+              }
+            },
+            "attendance": { "type": ["integer", "null"] },
+            "events": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["minute", "player", "team", "score"],
+                "properties": {
+                  "minute": { "type": ["integer", "string"] },
+                  "player": { "type": "string" },
+                  "team": { "type": "string" },
+                  "score": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 }
+                }
+              }
+            }
+          }
+        },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "raw": { "type": ["string", "null"] }
+      }
+    },
+    "rankingResult": {
+      "type": "object",
+      "required": ["id", "stage", "label", "results"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "stage": { "type": "string" },
+        "date": { "type": ["string", "null"], "format": "date" },
+        "city": { "type": ["string", "null"] },
+        "label": { "type": "string" },
+        "discipline": { "type": ["string", "null"] },
+        "gender": { "enum": ["men", "women", "mixed"] },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "raw": { "type": ["string", "null"] },
+        "results": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["place", "name", "country"],
+            "properties": {
+              "place": { "type": "integer", "minimum": 1 },
+              "medal": { "type": ["string", "null"], "enum": ["gold", "silver", "bronze", null] },
+              "entity": { "enum": ["athlete", "team"] },
+              "name": { "type": "string" },
+              "country": { "type": "string" },
+              "athleteKey": { "type": ["string", "null"] },
+              "teamKey": { "type": ["string", "null"] },
+              "members": { "type": "array", "items": { "type": "string" } },
+              "time": {
+                "type": "object",
+                "required": ["raw"],
+                "properties": {
+                  "raw": { "type": "string" },
+                  "ms": { "type": ["integer", "null"] }
+                }
+              },
+              "score": { "type": ["string", "number", "null"] },
+              "points": { "type": ["number", "null"] },
+              "raw": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "scorer": {
+      "type": "object",
+      "required": ["player", "country", "goals", "scope"],
+      "additionalProperties": false,
+      "properties": {
+        "player": { "type": "string" },
+        "country": { "type": "string" },
+        "goals": { "type": "integer", "minimum": 1 },
+        "scope": { "enum": ["all", "final"] },
+        "ownGoal": { "type": "boolean" },
+        "annulled": { "type": "boolean" },
+        "raw": { "type": "string" }
+      }
+    }
+  }
+}

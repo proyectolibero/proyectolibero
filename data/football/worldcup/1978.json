@@ -1,0 +1,1219 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 1978,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "ARG"
+  ],
+  "teamsCount": 16,
+  "results": {
+    "champion": "ARG",
+    "runnerUp": "NED",
+    "third": "BRA",
+    "finalMatchId": "m038"
+  },
+  "coverage": {
+    "matches": 38,
+    "goals": 102,
+    "scorers": 63,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:78full",
+      "name": "RSSSF — World Cup 1978 full details",
+      "url": "https://www.rsssf.org/tables/78full.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:78f",
+      "name": "RSSSF — World Cup 1978 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+      "url": "https://www.rsssf.org/tables/78f.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "provenance": {
+    "primary": "rsssf:78f",
+    "rejected": [
+      {
+        "source": "rsssf:78full",
+        "field": "scorers",
+        "value": "97 goles de jugadores + 3 en propia = 100 (los partidos suman 102)",
+        "reason": "La lista resumen de goleadores de la fuente no suma con los goles de los partidos; la lista publicada se deriva de los relatos de los mismos partidos de la fuente (ADR-015/D22)."
+      }
+    ]
+  },
+  "groups": [
+    {
+      "stage": "group",
+      "letter": "A",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 6,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 5,
+          "ga": 5,
+          "pts": 2
+        },
+        {
+          "team": "HUN",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 3,
+          "ga": 8,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "B",
+      "standings": [
+        {
+          "team": "POL",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "FRG",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 6,
+          "ga": 0,
+          "pts": 4
+        },
+        {
+          "team": "TUN",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 2,
+          "pts": 3
+        },
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 12,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "C",
+      "standings": [
+        {
+          "team": "AUT",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 3,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 2,
+          "ga": 1,
+          "pts": 4
+        },
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 3
+        },
+        {
+          "team": "SWE",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 3,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "D",
+      "standings": [
+        {
+          "team": "PER",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 7,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "SCO",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 6,
+          "pts": 3
+        },
+        {
+          "team": "IRN",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 8,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "group2",
+      "letter": "1",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 9,
+          "ga": 4,
+          "pts": 5
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 3
+        },
+        {
+          "team": "FRG",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 4,
+          "ga": 5,
+          "pts": 2
+        },
+        {
+          "team": "AUT",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 4,
+          "ga": 8,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "stage": "group2",
+      "letter": "2",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 8,
+          "ga": 0,
+          "pts": 5
+        },
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 6,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "POL",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
+          "pts": 2
+        },
+        {
+          "team": "PER",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 0,
+          "ga": 10,
+          "pts": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "date": "1978-06-02",
+      "city": "Mar del Plata",
+      "home": "ITA",
+      "away": "FRA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "date": "1978-06-02",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "HUN",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "date": "1978-06-06",
+      "city": "Mar del Plata",
+      "home": "ITA",
+      "away": "HUN",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "date": "1978-06-06",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "FRA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "date": "1978-06-10",
+      "city": "Mar del Plata",
+      "home": "FRA",
+      "away": "HUN",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "date": "1978-06-10",
+      "city": "Buenos Aires",
+      "home": "ITA",
+      "away": "ARG",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "date": "1978-06-01",
+      "city": "Buenos Aires",
+      "home": "POL",
+      "away": "FRG",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "date": "1978-06-02",
+      "city": "Rosario",
+      "home": "TUN",
+      "away": "MEX",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "date": "1978-06-06",
+      "city": "Rosario",
+      "home": "POL",
+      "away": "TUN",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "date": "1978-06-06",
+      "city": "Cordoba",
+      "home": "FRG",
+      "away": "MEX",
+      "score": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "date": "1978-06-10",
+      "city": "Cordoba",
+      "home": "TUN",
+      "away": "FRG",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "date": "1978-06-10",
+      "city": "Rosario",
+      "home": "POL",
+      "away": "MEX",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "date": "1978-06-03",
+      "city": "Mar del Plata",
+      "home": "BRA",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "date": "1978-06-03",
+      "city": "Buenos Aires",
+      "home": "AUT",
+      "away": "ESP",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "date": "1978-06-07",
+      "city": "Buenos Aires",
+      "home": "AUT",
+      "away": "SWE",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "date": "1978-06-07",
+      "city": "Mar del Plata",
+      "home": "BRA",
+      "away": "ESP",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "date": "1978-06-11",
+      "city": "Mar del Plata",
+      "home": "BRA",
+      "away": "AUT",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "date": "1978-06-11",
+      "city": "Buenos Aires",
+      "home": "ESP",
+      "away": "SWE",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "date": "1978-06-03",
+      "city": "Mendoza",
+      "home": "NED",
+      "away": "IRN",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "date": "1978-06-03",
+      "city": "Cordoba",
+      "home": "PER",
+      "away": "SCO",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "date": "1978-06-07",
+      "city": "Mendoza",
+      "home": "NED",
+      "away": "PER",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "date": "1978-06-07",
+      "city": "Cordoba",
+      "home": "IRN",
+      "away": "SCO",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "date": "1978-06-11",
+      "city": "Mendoza",
+      "home": "SCO",
+      "away": "NED",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "date": "1978-06-11",
+      "city": "Cordoba",
+      "home": "PER",
+      "away": "IRN",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m025",
+      "stage": "group2",
+      "group": "1",
+      "date": "1978-06-14",
+      "city": "Buenos Aires",
+      "home": "ITA",
+      "away": "FRG",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m026",
+      "stage": "group2",
+      "group": "1",
+      "date": "1978-06-14",
+      "city": "Cordoba",
+      "home": "NED",
+      "away": "AUT",
+      "score": [
+        5,
+        1
+      ]
+    },
+    {
+      "id": "m027",
+      "stage": "group2",
+      "group": "1",
+      "date": "1978-06-18",
+      "city": "Cordoba",
+      "home": "NED",
+      "away": "FRG",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m028",
+      "stage": "group2",
+      "group": "1",
+      "date": "1978-06-18",
+      "city": "Buenos Aires",
+      "home": "ITA",
+      "away": "AUT",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m029",
+      "stage": "group2",
+      "group": "1",
+      "date": "1978-06-21",
+      "city": "Buenos Aires",
+      "home": "NED",
+      "away": "ITA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m030",
+      "stage": "group2",
+      "group": "1",
+      "date": "1978-06-21",
+      "city": "Cordoba",
+      "home": "AUT",
+      "away": "FRG",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m031",
+      "stage": "group2",
+      "group": "2",
+      "date": "1978-06-14",
+      "city": "Mendoza",
+      "home": "BRA",
+      "away": "PER",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m032",
+      "stage": "group2",
+      "group": "2",
+      "date": "1978-06-14",
+      "city": "Rosario",
+      "home": "ARG",
+      "away": "POL",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m033",
+      "stage": "group2",
+      "group": "2",
+      "date": "1978-06-18",
+      "city": "Mendoza",
+      "home": "POL",
+      "away": "PER",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m034",
+      "stage": "group2",
+      "group": "2",
+      "date": "1978-06-18",
+      "city": "Rosario",
+      "home": "ARG",
+      "away": "BRA",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m035",
+      "stage": "group2",
+      "group": "2",
+      "date": "1978-06-21",
+      "city": "Mendoza",
+      "home": "BRA",
+      "away": "POL",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m036",
+      "stage": "group2",
+      "group": "2",
+      "date": "1978-06-21",
+      "city": "Rosario",
+      "home": "ARG",
+      "away": "PER",
+      "score": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "m037",
+      "stage": "third",
+      "group": null,
+      "date": "1978-06-24",
+      "city": "Buenos Aires",
+      "home": "BRA",
+      "away": "ITA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m038",
+      "stage": "final",
+      "group": null,
+      "date": "1978-06-25",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "NED",
+      "score": [
+        3,
+        1
+      ],
+      "notes": [
+        "aet"
+      ]
+    }
+  ],
+  "scorers": [
+    {
+      "player": "Kempes",
+      "country": "ARG",
+      "goals": 6,
+      "scope": "final"
+    },
+    {
+      "player": "Cubillas",
+      "country": "PER",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Rensenbrink",
+      "country": "NED",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Krankl",
+      "country": "AUT",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Luqué",
+      "country": "ARG",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Dirceu",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Rep",
+      "country": "NED",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Roberto",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Rossi",
+      "country": "ITA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Rummenige",
+      "country": "FRG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Bertoni",
+      "country": "ARG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Bettega",
+      "country": "ITA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Boniek",
+      "country": "POL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Brandts",
+      "country": "NED",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "D. Müller",
+      "country": "FRG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Flohe",
+      "country": "FRG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Gemmill",
+      "country": "SCO",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Haan",
+      "country": "NED",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Lato",
+      "country": "POL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Nelinho",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "A.Tóth",
+      "country": "HUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Abramczik",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Asensi",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Benetti",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Berdoll",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Causio",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Csapó",
+      "country": "HUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Cueto",
+      "country": "PER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dalglish",
+      "country": "SCO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Danaifar",
+      "country": "IRN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dani",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Deyna",
+      "country": "POL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dhouieb",
+      "country": "TUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ghommidh",
+      "country": "TUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "H.Müller",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Hölzenbein",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Houseman",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jordan",
+      "country": "SCO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kaabi",
+      "country": "TUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lacombe",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "López",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nanninga",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Obermayer",
+      "country": "AUT",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Passarella",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Platini",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "R.Van de Kerkhof",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rangel",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Reinaldo",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rocheteau",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rowshan",
+      "country": "IRN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Schachner",
+      "country": "AUT",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sjöberg",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Szarmach",
+      "country": "POL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Tarantini",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Vásquez-Ayala",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Velasquez",
+      "country": "PER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "W.Van de Kerkhof",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Zaccarelli",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Zico",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Zombori",
+      "country": "HUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Brandts",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Vogts",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Eskandarian",
+      "country": "IRN",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    }
+  ]
+}

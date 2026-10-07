@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 1966,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "ENG"
+  ],
+  "teamsCount": 16,
+  "results": {
+    "champion": "ENG",
+    "runnerUp": "FRG",
+    "third": "POR",
+    "finalMatchId": "m032"
+  },
+  "coverage": {
+    "matches": 32,
+    "goals": 89,
+    "scorers": 47,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:66f",
+      "name": "RSSSF — World Cup 1966 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+      "url": "https://www.rsssf.org/tables/66f.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:66full",
+      "name": "RSSSF — World Cup 1966 finals, full details",
+      "url": "https://www.rsssf.org/tables/66full.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:66qf-scor",
+      "name": "RSSSF — World Cup 1966 goal scorers (Jaroslaw Owsianski)",
+      "url": "https://www.rsssf.org/tables/66qf-scor.html",
+      "retrieved": "2026-10-06",
+      "author": "Jaroslaw Owsianski",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        { "team": "ENG", "p": 3, "w": 2, "d": 1, "l": 0, "gf": 4, "ga": 0, "pts": 5 },
+        { "team": "URU", "p": 3, "w": 1, "d": 2, "l": 0, "gf": 2, "ga": 1, "pts": 4 },
+        { "team": "MEX", "p": 3, "w": 0, "d": 2, "l": 1, "gf": 1, "ga": 3, "pts": 2 },
+        { "team": "FRA", "p": 3, "w": 0, "d": 1, "l": 2, "gf": 2, "ga": 5, "pts": 1 }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        { "team": "FRG", "p": 3, "w": 2, "d": 1, "l": 0, "gf": 7, "ga": 1, "pts": 5 },
+        { "team": "ARG", "p": 3, "w": 2, "d": 1, "l": 0, "gf": 4, "ga": 1, "pts": 5 },
+        { "team": "ESP", "p": 3, "w": 1, "d": 0, "l": 2, "gf": 4, "ga": 5, "pts": 2 },
+        { "team": "SUI", "p": 3, "w": 0, "d": 0, "l": 3, "gf": 1, "ga": 9, "pts": 0 }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        { "team": "POR", "p": 3, "w": 3, "d": 0, "l": 0, "gf": 9, "ga": 2, "pts": 6 },
+        { "team": "HUN", "p": 3, "w": 2, "d": 0, "l": 1, "gf": 7, "ga": 5, "pts": 4 },
+        { "team": "BRA", "p": 3, "w": 1, "d": 0, "l": 2, "gf": 4, "ga": 6, "pts": 2 },
+        { "team": "BUL", "p": 3, "w": 0, "d": 0, "l": 3, "gf": 1, "ga": 8, "pts": 0 }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        { "team": "URS", "p": 3, "w": 3, "d": 0, "l": 0, "gf": 6, "ga": 1, "pts": 6 },
+        { "team": "PRK", "p": 3, "w": 1, "d": 1, "l": 1, "gf": 2, "ga": 4, "pts": 3 },
+        { "team": "ITA", "p": 3, "w": 1, "d": 0, "l": 2, "gf": 2, "ga": 2, "pts": 2 },
+        { "team": "CHI", "p": 3, "w": 0, "d": 1, "l": 2, "gf": 2, "ga": 5, "pts": 1 }
+      ]
+    }
+  ],
+  "matches": [
+    { "id": "m001", "stage": "group", "group": "A", "date": "1966-07-11", "city": "London", "home": "ENG", "away": "URU", "score": [0, 0] },
+    { "id": "m002", "stage": "group", "group": "A", "date": "1966-07-13", "city": "London", "home": "FRA", "away": "MEX", "score": [1, 1] },
+    { "id": "m003", "stage": "group", "group": "A", "date": "1966-07-15", "city": "London", "home": "URU", "away": "FRA", "score": [2, 1] },
+    { "id": "m004", "stage": "group", "group": "A", "date": "1966-07-16", "city": "London", "home": "ENG", "away": "MEX", "score": [2, 0] },
+    { "id": "m005", "stage": "group", "group": "A", "date": "1966-07-19", "city": "London", "home": "MEX", "away": "URU", "score": [0, 0] },
+    { "id": "m006", "stage": "group", "group": "A", "date": "1966-07-20", "city": "London", "home": "ENG", "away": "FRA", "score": [2, 0] },
+    { "id": "m007", "stage": "group", "group": "B", "date": "1966-07-12", "city": "Sheffield", "home": "FRG", "away": "SUI", "score": [5, 0] },
+    { "id": "m008", "stage": "group", "group": "B", "date": "1966-07-13", "city": "Birmingham", "home": "ARG", "away": "ESP", "score": [2, 1] },
+    { "id": "m009", "stage": "group", "group": "B", "date": "1966-07-15", "city": "Sheffield", "home": "ESP", "away": "SUI", "score": [2, 1] },
+    { "id": "m010", "stage": "group", "group": "B", "date": "1966-07-16", "city": "Birmingham", "home": "ARG", "away": "FRG", "score": [0, 0] },
+    { "id": "m011", "stage": "group", "group": "B", "date": "1966-07-19", "city": "Sheffield", "home": "ARG", "away": "SUI", "score": [2, 0] },
+    { "id": "m012", "stage": "group", "group": "B", "date": "1966-07-20", "city": "Birmingham", "home": "FRG", "away": "ESP", "score": [2, 1] },
+    { "id": "m013", "stage": "group", "group": "C", "date": "1966-07-12", "city": "Liverpool", "home": "BRA", "away": "BUL", "score": [2, 0] },
+    { "id": "m014", "stage": "group", "group": "C", "date": "1966-07-13", "city": "Manchester", "home": "POR", "away": "HUN", "score": [3, 1] },
+    { "id": "m015", "stage": "group", "group": "C", "date": "1966-07-15", "city": "Liverpool", "home": "HUN", "away": "BRA", "score": [3, 1] },
+    { "id": "m016", "stage": "group", "group": "C", "date": "1966-07-16", "city": "Manchester", "home": "POR", "away": "BUL", "score": [3, 0] },
+    { "id": "m017", "stage": "group", "group": "C", "date": "1966-07-19", "city": "Liverpool", "home": "POR", "away": "BRA", "score": [3, 1] },
+    { "id": "m018", "stage": "group", "group": "C", "date": "1966-07-20", "city": "Manchester", "home": "HUN", "away": "BUL", "score": [3, 1] },
+    { "id": "m019", "stage": "group", "group": "D", "date": "1966-07-12", "city": "Middlesbrough", "home": "URS", "away": "PRK", "score": [3, 0] },
+    { "id": "m020", "stage": "group", "group": "D", "date": "1966-07-13", "city": "Sunderland", "home": "ITA", "away": "CHI", "score": [2, 0] },
+    { "id": "m021", "stage": "group", "group": "D", "date": "1966-07-15", "city": "Middlesbrough", "home": "PRK", "away": "CHI", "score": [1, 1] },
+    { "id": "m022", "stage": "group", "group": "D", "date": "1966-07-16", "city": "Sunderland", "home": "URS", "away": "ITA", "score": [1, 0] },
+    { "id": "m023", "stage": "group", "group": "D", "date": "1966-07-19", "city": "Middlesbrough", "home": "PRK", "away": "ITA", "score": [1, 0] },
+    { "id": "m024", "stage": "group", "group": "D", "date": "1966-07-20", "city": "Sunderland", "home": "URS", "away": "CHI", "score": [2, 1] },
+    { "id": "m025", "stage": "qf", "date": "1966-07-23", "city": "London", "home": "ENG", "away": "ARG", "score": [1, 0] },
+    { "id": "m026", "stage": "qf", "date": "1966-07-23", "city": "Sheffield", "home": "FRG", "away": "URU", "score": [4, 0] },
+    { "id": "m027", "stage": "qf", "date": "1966-07-23", "city": "Liverpool", "home": "POR", "away": "PRK", "score": [5, 3] },
+    { "id": "m028", "stage": "qf", "date": "1966-07-23", "city": "Sunderland", "home": "URS", "away": "HUN", "score": [2, 1] },
+    { "id": "m029", "stage": "sf", "date": "1966-07-25", "city": "Liverpool", "home": "FRG", "away": "URS", "score": [2, 1] },
+    { "id": "m030", "stage": "sf", "date": "1966-07-26", "city": "London", "home": "ENG", "away": "POR", "score": [2, 1] },
+    { "id": "m031", "stage": "third", "date": "1966-07-28", "city": "London", "home": "POR", "away": "URS", "score": [2, 1] },
+    {
+      "id": "m032",
+      "stage": "final",
+      "date": "1966-07-30",
+      "city": "London",
+      "home": "ENG",
+      "away": "FRG",
+      "score": [4, 2],
+      "notes": ["aet"],
+      "extra": {
+        "referee": { "name": "Dienst", "country": "SUI" },
+        "attendance": 97000,
+        "events": [
+          { "minute": 12, "player": "Haller", "team": "FRG", "score": [0, 1] },
+          { "minute": 18, "player": "Hurst", "team": "ENG", "score": [1, 1] },
+          { "minute": 78, "player": "Peters", "team": "ENG", "score": [2, 1] },
+          { "minute": 90, "player": "Weber", "team": "FRG", "score": [2, 2] },
+          { "minute": 101, "player": "Hurst", "team": "ENG", "score": [3, 2] },
+          { "minute": 120, "player": "Hurst", "team": "ENG", "score": [4, 2] }
+        ]
+      },
+      "provenance": {
+        "primary": "rsssf:66f",
+        "rejected": [
+          {
+            "source": "rsssf:66full",
+            "field": "extra.attendance",
+            "value": 94000,
+            "reason": "66full da 94.000; se conserva 97.000 de 66f, más próximo a la cifra oficial de Wembley (96.924)."
+          }
+        ]
+      }
+    }
+  ],
+  "scorers": [
+    { "player": "Eusébio", "country": "POR", "goals": 9, "scope": "final" },
+    { "player": "Helmut Haller", "country": "FRG", "goals": 6, "scope": "final" },
+    { "player": "Geoff Hurst", "country": "ENG", "goals": 4, "scope": "final" },
+    { "player": "Franz Beckenbauer", "country": "FRG", "goals": 4, "scope": "final" },
+    { "player": "Ferenc Bene", "country": "HUN", "goals": 4, "scope": "final" },
+    { "player": "Valeri Porkuyan", "country": "URS", "goals": 4, "scope": "final" },
+    { "player": "Luis Artime", "country": "ARG", "goals": 3, "scope": "final" },
+    { "player": "Bobby Charlton", "country": "ENG", "goals": 3, "scope": "final" },
+    { "player": "Roger Hunt", "country": "ENG", "goals": 3, "scope": "final" },
+    { "player": "José Augusto", "country": "POR", "goals": 3, "scope": "final" },
+    { "player": "José Torres", "country": "POR", "goals": 3, "scope": "final" },
+    { "player": "Eduard Malafeyev", "country": "URS", "goals": 3, "scope": "final" },
+    { "player": "Rubén Marcos", "country": "CHI", "goals": 2, "scope": "final" },
+    { "player": "Uwe Seeler", "country": "FRG", "goals": 2, "scope": "final" },
+    { "player": "Kálmán Mészöly", "country": "HUN", "goals": 2, "scope": "final" },
+    { "player": "Park Seung-zin", "country": "PRK", "goals": 2, "scope": "final" },
+    { "player": "Igor Chislenko", "country": "URS", "goals": 2, "scope": "final" },
+    { "player": "Ermindo Onega", "country": "ARG", "goals": 1, "scope": "final" },
+    { "player": "Garrincha", "country": "BRA", "goals": 1, "scope": "final" },
+    { "player": "Pelé", "country": "BRA", "goals": 1, "scope": "final" },
+    { "player": "Rildo", "country": "BRA", "goals": 1, "scope": "final" },
+    { "player": "Tostão", "country": "BRA", "goals": 1, "scope": "final" },
+    { "player": "Georgi Asparoukhov", "country": "BUL", "goals": 1, "scope": "final" },
+    { "player": "Martin Peters", "country": "ENG", "goals": 1, "scope": "final" },
+    { "player": "Amancio", "country": "ESP", "goals": 1, "scope": "final" },
+    { "player": "Luis Fusté", "country": "ESP", "goals": 1, "scope": "final" },
+    { "player": "Pirri", "country": "ESP", "goals": 1, "scope": "final" },
+    { "player": "Manuel Sanchis", "country": "ESP", "goals": 1, "scope": "final" },
+    { "player": "Héctor de Bourgoing", "country": "FRA", "goals": 1, "scope": "final" },
+    { "player": "Gérard Hausser", "country": "FRA", "goals": 1, "scope": "final" },
+    { "player": "Lothar Emmerich", "country": "FRG", "goals": 1, "scope": "final" },
+    { "player": "Siegfried Held", "country": "FRG", "goals": 1, "scope": "final" },
+    { "player": "Wolfgang Weber", "country": "FRG", "goals": 1, "scope": "final" },
+    { "player": "János Farkas", "country": "HUN", "goals": 1, "scope": "final" },
+    { "player": "Paolo Barison", "country": "ITA", "goals": 1, "scope": "final" },
+    { "player": "Sandro Mazzola", "country": "ITA", "goals": 1, "scope": "final" },
+    { "player": "Lee Dong-woon", "country": "PRK", "goals": 1, "scope": "final" },
+    { "player": "Park Doo-ik", "country": "PRK", "goals": 1, "scope": "final" },
+    { "player": "Yang Seung-kook", "country": "PRK", "goals": 1, "scope": "final" },
+    { "player": "Enrique Borja", "country": "MEX", "goals": 1, "scope": "final" },
+    { "player": "António Simões", "country": "POR", "goals": 1, "scope": "final" },
+    { "player": "René-Pierre Quentin", "country": "SUI", "goals": 1, "scope": "final" },
+    { "player": "Julio César Cortés", "country": "URU", "goals": 1, "scope": "final" },
+    { "player": "Pedro Rocha", "country": "URU", "goals": 1, "scope": "final" },
+    { "player": "Anatoli Banichevski", "country": "URS", "goals": 1, "scope": "final" },
+    { "player": "Ivan Davidov", "country": "BUL", "goals": 1, "scope": "final", "ownGoal": true },
+    { "player": "Ivan Vutzov", "country": "BUL", "goals": 1, "scope": "final", "ownGoal": true }
+  ]
+}

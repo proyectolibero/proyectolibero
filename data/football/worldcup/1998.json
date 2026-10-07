@@ -1,0 +1,2006 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 1998,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "FRA"
+  ],
+  "teamsCount": 32,
+  "results": {
+    "champion": "FRA",
+    "runnerUp": "BRA",
+    "third": "CRO",
+    "finalMatchId": "m064"
+  },
+  "coverage": {
+    "matches": 64,
+    "goals": 171,
+    "scorers": 111,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:98f",
+      "name": "RSSSF — World Cup 1998 final tournament details (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tables/98f.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "author": "Karel Stokkermans",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:98full",
+      "name": "RSSSF — World Cup 1998 full details (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tables/98full.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "author": "Karel Stokkermans",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "NOR",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 5,
+          "ga": 4,
+          "pts": 5
+        },
+        {
+          "team": "MAR",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "SCO",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 7,
+          "ga": 3,
+          "pts": 7
+        },
+        {
+          "team": "CHI",
+          "p": 3,
+          "w": 0,
+          "d": 3,
+          "l": 0,
+          "gf": 4,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "AUT",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 3,
+          "ga": 4,
+          "pts": 2
+        },
+        {
+          "team": "CMR",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 2,
+          "ga": 5,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 9,
+          "ga": 1,
+          "pts": 9
+        },
+        {
+          "team": "DEN",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "RSA",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 3,
+          "ga": 6,
+          "pts": 2
+        },
+        {
+          "team": "KSA",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 7,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "NGA",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 5,
+          "pts": 6
+        },
+        {
+          "team": "PAR",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 3,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 8,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "BUL",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 7,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 7,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 7,
+          "ga": 5,
+          "pts": 5
+        },
+        {
+          "team": "BEL",
+          "p": 3,
+          "w": 0,
+          "d": 3,
+          "l": 0,
+          "gf": 3,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "KOR",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 9,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "standings": [
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 6,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "YUG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "IRN",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "USA",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 5,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "standings": [
+        {
+          "team": "ROU",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "COL",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 1,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "TUN",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 7,
+          "ga": 0,
+          "pts": 9
+        },
+        {
+          "team": "CRO",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "JAM",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 9,
+          "pts": 3
+        },
+        {
+          "team": "JPN",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 4,
+          "pts": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "date": "1998-06-10",
+      "city": "St. Denis",
+      "stage": "group",
+      "group": "A",
+      "home": "BRA",
+      "away": "SCO",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m002",
+      "date": "1998-06-10",
+      "city": "Montpellier",
+      "stage": "group",
+      "group": "A",
+      "home": "MAR",
+      "away": "NOR",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m003",
+      "date": "1998-06-16",
+      "city": "Bordeaux",
+      "stage": "group",
+      "group": "A",
+      "home": "SCO",
+      "away": "NOR",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m004",
+      "date": "1998-06-16",
+      "city": "Nantes",
+      "stage": "group",
+      "group": "A",
+      "home": "BRA",
+      "away": "MAR",
+      "score": [
+        3,
+        0
+      ],
+      "provenance": {
+        "primary": "rsssf:98f",
+        "rejected": [
+          {
+            "source": "rsssf:98full",
+            "field": "date",
+            "value": "1996-06-16",
+            "reason": "98full imprime 16.06.96 (errata de año); 98f (primary) y el contexto fijan 1998-06-16."
+          }
+        ]
+      }
+    },
+    {
+      "id": "m005",
+      "date": "1998-06-23",
+      "city": "Marseille",
+      "stage": "group",
+      "group": "A",
+      "home": "BRA",
+      "away": "NOR",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m006",
+      "date": "1998-06-23",
+      "city": "St. Etienne",
+      "stage": "group",
+      "group": "A",
+      "home": "SCO",
+      "away": "MAR",
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m007",
+      "date": "1998-06-11",
+      "city": "Bordeaux",
+      "stage": "group",
+      "group": "B",
+      "home": "ITA",
+      "away": "CHI",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m008",
+      "date": "1998-06-11",
+      "city": "Toulouse",
+      "stage": "group",
+      "group": "B",
+      "home": "CMR",
+      "away": "AUT",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m009",
+      "date": "1998-06-17",
+      "city": "St. Etienne",
+      "stage": "group",
+      "group": "B",
+      "home": "CHI",
+      "away": "AUT",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m010",
+      "date": "1998-06-17",
+      "city": "Montpellier",
+      "stage": "group",
+      "group": "B",
+      "home": "ITA",
+      "away": "CMR",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m011",
+      "date": "1998-06-23",
+      "city": "St. Denis",
+      "stage": "group",
+      "group": "B",
+      "home": "ITA",
+      "away": "AUT",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m012",
+      "date": "1998-06-23",
+      "city": "Nantes",
+      "stage": "group",
+      "group": "B",
+      "home": "CHI",
+      "away": "CMR",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m013",
+      "date": "1998-06-12",
+      "city": "Lens",
+      "stage": "group",
+      "group": "C",
+      "home": "KSA",
+      "away": "DEN",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m014",
+      "date": "1998-06-12",
+      "city": "Marseille",
+      "stage": "group",
+      "group": "C",
+      "home": "FRA",
+      "away": "RSA",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m015",
+      "date": "1998-06-18",
+      "city": "Toulouse",
+      "stage": "group",
+      "group": "C",
+      "home": "RSA",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m016",
+      "date": "1998-06-18",
+      "city": "St. Denis",
+      "stage": "group",
+      "group": "C",
+      "home": "FRA",
+      "away": "KSA",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "m017",
+      "date": "1998-06-24",
+      "city": "Lyon",
+      "stage": "group",
+      "group": "C",
+      "home": "FRA",
+      "away": "DEN",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m018",
+      "date": "1998-06-24",
+      "city": "Bordeaux",
+      "stage": "group",
+      "group": "C",
+      "home": "RSA",
+      "away": "KSA",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m019",
+      "date": "1998-06-12",
+      "city": "Montpellier",
+      "stage": "group",
+      "group": "D",
+      "home": "PAR",
+      "away": "BUL",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m020",
+      "date": "1998-06-13",
+      "city": "Nantes",
+      "stage": "group",
+      "group": "D",
+      "home": "ESP",
+      "away": "NGA",
+      "score": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "m021",
+      "date": "1998-06-19",
+      "city": "Paris",
+      "stage": "group",
+      "group": "D",
+      "home": "NGA",
+      "away": "BUL",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m022",
+      "date": "1998-06-19",
+      "city": "St. Etienne",
+      "stage": "group",
+      "group": "D",
+      "home": "ESP",
+      "away": "PAR",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m023",
+      "date": "1998-06-24",
+      "city": "Lens",
+      "stage": "group",
+      "group": "D",
+      "home": "ESP",
+      "away": "BUL",
+      "score": [
+        6,
+        1
+      ]
+    },
+    {
+      "id": "m024",
+      "date": "1998-06-24",
+      "city": "Toulouse",
+      "stage": "group",
+      "group": "D",
+      "home": "NGA",
+      "away": "PAR",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m025",
+      "date": "1998-06-13",
+      "city": "Lyon",
+      "stage": "group",
+      "group": "E",
+      "home": "KOR",
+      "away": "MEX",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m026",
+      "date": "1998-06-13",
+      "city": "St. Denis",
+      "stage": "group",
+      "group": "E",
+      "home": "NED",
+      "away": "BEL",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m027",
+      "date": "1998-06-20",
+      "city": "Bordeaux",
+      "stage": "group",
+      "group": "E",
+      "home": "BEL",
+      "away": "MEX",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m028",
+      "date": "1998-06-20",
+      "city": "Marseille",
+      "stage": "group",
+      "group": "E",
+      "home": "NED",
+      "away": "KOR",
+      "score": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "m029",
+      "date": "1998-06-25",
+      "city": "St. Etienne",
+      "stage": "group",
+      "group": "E",
+      "home": "NED",
+      "away": "MEX",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m030",
+      "date": "1998-06-25",
+      "city": "Paris",
+      "stage": "group",
+      "group": "E",
+      "home": "BEL",
+      "away": "KOR",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m031",
+      "date": "1998-06-14",
+      "city": "St. Etienne",
+      "stage": "group",
+      "group": "F",
+      "home": "YUG",
+      "away": "IRN",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m032",
+      "date": "1998-06-15",
+      "city": "Paris",
+      "stage": "group",
+      "group": "F",
+      "home": "GER",
+      "away": "USA",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m033",
+      "date": "1998-06-21",
+      "city": "Lens",
+      "stage": "group",
+      "group": "F",
+      "home": "GER",
+      "away": "YUG",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m034",
+      "date": "1998-06-21",
+      "city": "Lyon",
+      "stage": "group",
+      "group": "F",
+      "home": "USA",
+      "away": "IRN",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m035",
+      "date": "1998-06-25",
+      "city": "Montpellier",
+      "stage": "group",
+      "group": "F",
+      "home": "GER",
+      "away": "IRN",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m036",
+      "date": "1998-06-25",
+      "city": "Nantes",
+      "stage": "group",
+      "group": "F",
+      "home": "USA",
+      "away": "YUG",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m037",
+      "date": "1998-06-15",
+      "city": "Marseille",
+      "stage": "group",
+      "group": "G",
+      "home": "ENG",
+      "away": "TUN",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m038",
+      "date": "1998-06-15",
+      "city": "Lyon",
+      "stage": "group",
+      "group": "G",
+      "home": "ROU",
+      "away": "COL",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m039",
+      "date": "1998-06-22",
+      "city": "Montpellier",
+      "stage": "group",
+      "group": "G",
+      "home": "COL",
+      "away": "TUN",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m040",
+      "date": "1998-06-22",
+      "city": "Toulouse",
+      "stage": "group",
+      "group": "G",
+      "home": "ROU",
+      "away": "ENG",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m041",
+      "date": "1998-06-26",
+      "city": "St. Denis",
+      "stage": "group",
+      "group": "G",
+      "home": "ROU",
+      "away": "TUN",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m042",
+      "date": "1998-06-26",
+      "city": "Lens",
+      "stage": "group",
+      "group": "G",
+      "home": "COL",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m043",
+      "date": "1998-06-14",
+      "city": "Toulouse",
+      "stage": "group",
+      "group": "H",
+      "home": "ARG",
+      "away": "JPN",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m044",
+      "date": "1998-06-14",
+      "city": "Lens",
+      "stage": "group",
+      "group": "H",
+      "home": "JAM",
+      "away": "CRO",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m045",
+      "date": "1998-06-20",
+      "city": "Nantes",
+      "stage": "group",
+      "group": "H",
+      "home": "JPN",
+      "away": "CRO",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m046",
+      "date": "1998-06-21",
+      "city": "Paris",
+      "stage": "group",
+      "group": "H",
+      "home": "ARG",
+      "away": "JAM",
+      "score": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "m047",
+      "date": "1998-06-26",
+      "city": "Bordeaux",
+      "stage": "group",
+      "group": "H",
+      "home": "ARG",
+      "away": "CRO",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m048",
+      "date": "1998-06-26",
+      "city": "Lyon",
+      "stage": "group",
+      "group": "H",
+      "home": "JPN",
+      "away": "JAM",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m049",
+      "date": "1998-06-27",
+      "city": "Marseille",
+      "stage": "r16",
+      "home": "ITA",
+      "away": "NOR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m050",
+      "date": "1998-06-27",
+      "city": "Paris",
+      "stage": "r16",
+      "home": "BRA",
+      "away": "CHI",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m051",
+      "date": "1998-06-28",
+      "city": "Lens",
+      "stage": "r16",
+      "home": "FRA",
+      "away": "PAR",
+      "score": [
+        1,
+        0
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m052",
+      "date": "1998-06-28",
+      "city": "St. Denis",
+      "stage": "r16",
+      "home": "NGA",
+      "away": "DEN",
+      "score": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "m053",
+      "date": "1998-06-29",
+      "city": "Montpellier",
+      "stage": "r16",
+      "home": "GER",
+      "away": "MEX",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m054",
+      "date": "1998-06-29",
+      "city": "Toulouse",
+      "stage": "r16",
+      "home": "NED",
+      "away": "YUG",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m055",
+      "date": "1998-06-30",
+      "city": "Bordeaux",
+      "stage": "r16",
+      "home": "ROU",
+      "away": "CRO",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m056",
+      "date": "1998-06-30",
+      "city": "St. Etienne",
+      "stage": "r16",
+      "home": "ARG",
+      "away": "ENG",
+      "score": [
+        2,
+        2
+      ],
+      "notes": [
+        "aet"
+      ],
+      "pens": [
+        4,
+        3
+      ]
+    },
+    {
+      "id": "m057",
+      "date": "1998-07-03",
+      "city": "St. Denis",
+      "stage": "qf",
+      "home": "ITA",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "notes": [
+        "aet"
+      ],
+      "pens": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "m058",
+      "date": "1998-07-03",
+      "city": "Nantes",
+      "stage": "qf",
+      "home": "BRA",
+      "away": "DEN",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m059",
+      "date": "1998-07-04",
+      "city": "Marseille",
+      "stage": "qf",
+      "home": "NED",
+      "away": "ARG",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m060",
+      "date": "1998-07-04",
+      "city": "Lyon",
+      "stage": "qf",
+      "home": "GER",
+      "away": "CRO",
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m061",
+      "date": "1998-07-07",
+      "city": "Marseille",
+      "stage": "sf",
+      "home": "BRA",
+      "away": "NED",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet"
+      ],
+      "pens": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "m062",
+      "date": "1998-07-08",
+      "city": "St. Denis",
+      "stage": "sf",
+      "home": "FRA",
+      "away": "CRO",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m063",
+      "date": "1998-07-11",
+      "city": "Paris",
+      "stage": "third",
+      "home": "NED",
+      "away": "CRO",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m064",
+      "date": "1998-07-12",
+      "city": "Saint Denis",
+      "stage": "final",
+      "home": "FRA",
+      "away": "BRA",
+      "score": [
+        3,
+        0
+      ],
+      "extra": {
+        "referee": {
+          "name": "Belqola",
+          "country": "MAR"
+        },
+        "attendance": 80000,
+        "events": [
+          {
+            "minute": 27,
+            "player": "Zidane",
+            "team": "FRA",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 45,
+            "player": "Zidane",
+            "team": "FRA",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 90,
+            "player": "Petit",
+            "team": "FRA",
+            "score": [
+              3,
+              0
+            ]
+          }
+        ]
+      },
+      "provenance": {
+        "primary": "rsssf:98f",
+        "rejected": [
+          {
+            "source": "rsssf:98full",
+            "field": "city",
+            "value": "St.Denis",
+            "reason": "98full abrevia la sede como 'St.Denis'; 98f (primary) la rotula 'Saint Denis'."
+          },
+          {
+            "source": "rsssf:98full",
+            "field": "extra.attendance",
+            "value": 75000,
+            "reason": "98full da ~75.000 (estimado); 98f (primary) da 80.000."
+          },
+          {
+            "source": "rsssf:98full",
+            "field": "extra.referee.name",
+            "value": "Belquola",
+            "reason": "98full imprime 'Belquola'; 98f (primary) da 'Belqola'."
+          }
+        ]
+      }
+    }
+  ],
+  "scorers": [
+    {
+      "player": "Šuker",
+      "country": "CRO",
+      "goals": 6,
+      "scope": "final"
+    },
+    {
+      "player": "Batistuta",
+      "country": "ARG",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Vieri",
+      "country": "ITA",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Ronaldo",
+      "country": "BRA",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Salas",
+      "country": "CHI",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Hernández",
+      "country": "MEX",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Bebeto",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "C.Sampaio",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Rivaldo",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Henry",
+      "country": "FRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Bergkamp",
+      "country": "NED",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Bierhoff",
+      "country": "GER",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Klinsmann",
+      "country": "GER",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Ortega",
+      "country": "ARG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Wilmots",
+      "country": "BEL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Prosinečki",
+      "country": "CRO",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "B.Laudrup",
+      "country": "DEN",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Shearer",
+      "country": "ENG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Owen",
+      "country": "ENG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Hierro",
+      "country": "ESP",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Kiko",
+      "country": "ESP",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Morientes",
+      "country": "ESP",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Petit",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Thuram",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Zidane",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "R.de Boer",
+      "country": "NED",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Cocu",
+      "country": "NED",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Kluivert",
+      "country": "NED",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "R.Baggio",
+      "country": "ITA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Whitmore",
+      "country": "JAM",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Komljenović",
+      "country": "YUG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Bassir",
+      "country": "MAR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Hadda",
+      "country": "MAR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Pelaez",
+      "country": "MEX",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Ille",
+      "country": "ROU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Bartlett",
+      "country": "RSA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Lopez",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Pineda",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Zanetti",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Al Jaber",
+      "country": "KSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Al Tunian",
+      "country": "KSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Herzog",
+      "country": "AUT",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Polster",
+      "country": "AUT",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Vastic",
+      "country": "AUT",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nilis",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kostandinov",
+      "country": "BUL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nyanka",
+      "country": "CMR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mboma",
+      "country": "CMR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sierra",
+      "country": "CHI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Preciado",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jarni",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Stanić",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Vlaović",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Helveg",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jørgensen",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "M.Laudrup",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Møller",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "A.Nielsen",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rieper",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sand",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Anderton",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Beckham",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Scholes",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Luis Enrique",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Raúl",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Blanc",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Djorkaeff",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dugarry",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lizarazu",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Trézéguet",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Möller",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Davids",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "van Hooijdonk",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Overmars",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Zenden",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Estili",
+      "country": "IRN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mahdavikia",
+      "country": "IRN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "di Biagio",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Earle",
+      "country": "JAM",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nakayama",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mihajlović",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Stanković",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Stojković",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ha Seok-ju",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yoo Sang-chul",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Hadji",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Blanco",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "García Aspe",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Adepoju",
+      "country": "NGA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Babangida",
+      "country": "NGA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ipkeba",
+      "country": "NGA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lawal",
+      "country": "NGA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Oliseh",
+      "country": "NGA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Oruma",
+      "country": "NGA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Eggen",
+      "country": "NOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "H.Flo",
+      "country": "NOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "T.A.Flo",
+      "country": "NOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rekdal",
+      "country": "NOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ayala",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Benitez",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Cardoso",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Petrescu",
+      "country": "ROU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "McCarthy",
+      "country": "RSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Burley",
+      "country": "SCO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Collins",
+      "country": "SCO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Souayah",
+      "country": "TUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "McBride",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mihajlović",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Chippo",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Issa",
+      "country": "RSA",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Boyd",
+      "country": "SCO",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    }
+  ],
+  "provenance": {
+    "primary": "rsssf:98f",
+    "rejected": [
+      {
+        "source": "rsssf:98full",
+        "field": "scorers",
+        "value": "167 goles de jugadores + 4 autogoles = 170",
+        "reason": "La lista de goleadores de 98full suma 170 goles (71+23+7+3+2+1 jugadores con 1/2/3/4/5/6 goles = 167, más 4 autogoles) mientras que los partidos del torneo suman 171 goles (coverage.goals). Se publica la lista de la fuente sin alterarla (ADR-015) y se registra el desajuste."
+      }
+    ]
+  }
+}

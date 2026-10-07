@@ -1,0 +1,1520 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 1994,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "USA"
+  ],
+  "teamsCount": 24,
+  "results": {
+    "champion": "BRA",
+    "runnerUp": "ITA",
+    "third": "SWE",
+    "finalMatchId": "m052"
+  },
+  "coverage": {
+    "matches": 52,
+    "goals": 141,
+    "scorers": 81,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:94f",
+      "name": "RSSSF — World Cup 1994 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+      "url": "https://www.rsssf.org/tables/94f.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:94full",
+      "name": "RSSSF — World Cup 1994 full details",
+      "url": "https://www.rsssf.org/tables/94full.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "groups": [
+    {
+      "stage": "group",
+      "letter": "A",
+      "standings": [
+        {
+          "team": "ROU",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 5,
+          "pts": 6
+        },
+        {
+          "team": "SUI",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "USA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "COL",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 4,
+          "ga": 5,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "B",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 6,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "SWE",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 6,
+          "ga": 4,
+          "pts": 5
+        },
+        {
+          "team": "RUS",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 7,
+          "ga": 6,
+          "pts": 3
+        },
+        {
+          "team": "CMR",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 3,
+          "ga": 11,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "C",
+      "standings": [
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 3,
+          "pts": 7
+        },
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 6,
+          "ga": 4,
+          "pts": 5
+        },
+        {
+          "team": "KOR",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 4,
+          "ga": 5,
+          "pts": 2
+        },
+        {
+          "team": "BOL",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "D",
+      "standings": [
+        {
+          "team": "NGA",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "BUL",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "GRE",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 0,
+          "ga": 10,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "E",
+      "standings": [
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "IRL",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "NOR",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 1,
+          "ga": 1,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "F",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "KSA",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "BEL",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 2,
+          "ga": 1,
+          "pts": 6
+        },
+        {
+          "team": "MAR",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 5,
+          "pts": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "date": "1994-06-18",
+      "city": "Detroit",
+      "home": "USA",
+      "away": "SUI",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "date": "1994-06-18",
+      "city": "Los Angeles",
+      "home": "COL",
+      "away": "ROU",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "date": "1994-06-22",
+      "city": "Detroit",
+      "home": "SUI",
+      "away": "ROU",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "date": "1994-06-22",
+      "city": "Los Angeles",
+      "home": "USA",
+      "away": "COL",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "date": "1994-06-26",
+      "city": "Los Angeles",
+      "home": "USA",
+      "away": "ROU",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "date": "1994-06-26",
+      "city": "San Francisco",
+      "home": "SUI",
+      "away": "COL",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "date": "1994-06-19",
+      "city": "Los Angeles",
+      "home": "CMR",
+      "away": "SWE",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "date": "1994-06-20",
+      "city": "San Francisco",
+      "home": "BRA",
+      "away": "RUS",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "date": "1994-06-24",
+      "city": "San Francisco",
+      "home": "BRA",
+      "away": "CMR",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "date": "1994-06-24",
+      "city": "Detroit",
+      "home": "RUS",
+      "away": "SWE",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "date": "1994-06-28",
+      "city": "Detroit",
+      "home": "BRA",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "date": "1994-06-28",
+      "city": "San Francisco",
+      "home": "RUS",
+      "away": "CMR",
+      "score": [
+        6,
+        1
+      ]
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "date": "1994-06-17",
+      "city": "Chicago",
+      "home": "GER",
+      "away": "BOL",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "date": "1994-06-17",
+      "city": "Dallas",
+      "home": "ESP",
+      "away": "KOR",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "date": "1994-06-21",
+      "city": "Chicago",
+      "home": "GER",
+      "away": "ESP",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "date": "1994-06-23",
+      "city": "Boston",
+      "home": "BOL",
+      "away": "KOR",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "date": "1994-06-27",
+      "city": "Dallas",
+      "home": "GER",
+      "away": "KOR",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "date": "1994-06-27",
+      "city": "Chicago",
+      "home": "BOL",
+      "away": "ESP",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "date": "1994-06-21",
+      "city": "Boston",
+      "home": "ARG",
+      "away": "GRE",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "date": "1994-06-21",
+      "city": "Dallas",
+      "home": "NGA",
+      "away": "BUL",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "date": "1994-06-25",
+      "city": "Boston",
+      "home": "ARG",
+      "away": "NGA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "date": "1994-06-26",
+      "city": "Chicago",
+      "home": "GRE",
+      "away": "BUL",
+      "score": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "date": "1994-06-30",
+      "city": "Dallas",
+      "home": "ARG",
+      "away": "BUL",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "date": "1994-06-30",
+      "city": "Boston",
+      "home": "GRE",
+      "away": "NGA",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m025",
+      "stage": "group",
+      "group": "E",
+      "date": "1994-06-18",
+      "city": "New York",
+      "home": "ITA",
+      "away": "IRL",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m026",
+      "stage": "group",
+      "group": "E",
+      "date": "1994-06-19",
+      "city": "Washington",
+      "home": "NOR",
+      "away": "MEX",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m027",
+      "stage": "group",
+      "group": "E",
+      "date": "1994-06-23",
+      "city": "New York",
+      "home": "ITA",
+      "away": "NOR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m028",
+      "stage": "group",
+      "group": "E",
+      "date": "1994-06-24",
+      "city": "Orlando",
+      "home": "IRL",
+      "away": "MEX",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m029",
+      "stage": "group",
+      "group": "E",
+      "date": "1994-06-28",
+      "city": "Washington",
+      "home": "ITA",
+      "away": "MEX",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m030",
+      "stage": "group",
+      "group": "E",
+      "date": "1994-06-28",
+      "city": "New York",
+      "home": "IRL",
+      "away": "NOR",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m031",
+      "stage": "group",
+      "group": "F",
+      "date": "1994-06-19",
+      "city": "Orlando",
+      "home": "BEL",
+      "away": "MAR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m032",
+      "stage": "group",
+      "group": "F",
+      "date": "1994-06-20",
+      "city": "Washington",
+      "home": "NED",
+      "away": "KSA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m033",
+      "stage": "group",
+      "group": "F",
+      "date": "1994-06-25",
+      "city": "Orlando",
+      "home": "BEL",
+      "away": "NED",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m034",
+      "stage": "group",
+      "group": "F",
+      "date": "1994-06-25",
+      "city": "New York",
+      "home": "MAR",
+      "away": "KSA",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m035",
+      "stage": "group",
+      "group": "F",
+      "date": "1994-06-29",
+      "city": "Orlando",
+      "home": "MAR",
+      "away": "NED",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m036",
+      "stage": "group",
+      "group": "F",
+      "date": "1994-06-29",
+      "city": "Washington",
+      "home": "BEL",
+      "away": "KSA",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m037",
+      "stage": "r16",
+      "group": null,
+      "date": "1994-07-02",
+      "city": "Chicago",
+      "home": "GER",
+      "away": "BEL",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m038",
+      "stage": "r16",
+      "group": null,
+      "date": "1994-07-02",
+      "city": "Washington",
+      "home": "SUI",
+      "away": "ESP",
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m039",
+      "stage": "r16",
+      "group": null,
+      "date": "1994-07-03",
+      "city": "Dallas",
+      "home": "SWE",
+      "away": "KSA",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m040",
+      "stage": "r16",
+      "group": null,
+      "date": "1994-07-03",
+      "city": "Los Angeles",
+      "home": "ROU",
+      "away": "ARG",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m041",
+      "stage": "r16",
+      "group": null,
+      "date": "1994-07-04",
+      "city": "Orlando",
+      "home": "NED",
+      "away": "IRL",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m042",
+      "stage": "r16",
+      "group": null,
+      "date": "1994-07-04",
+      "city": "San Francisco",
+      "home": "BRA",
+      "away": "USA",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m043",
+      "stage": "r16",
+      "group": null,
+      "date": "1994-07-05",
+      "city": "Boston",
+      "home": "NGA",
+      "away": "ITA",
+      "score": [
+        1,
+        2
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m044",
+      "stage": "r16",
+      "group": null,
+      "date": "1994-07-05",
+      "city": "New York",
+      "home": "MEX",
+      "away": "BUL",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m045",
+      "stage": "qf",
+      "group": null,
+      "date": "1994-07-09",
+      "city": "Boston",
+      "home": "ITA",
+      "away": "ESP",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m046",
+      "stage": "qf",
+      "group": null,
+      "date": "1994-07-09",
+      "city": "Dallas",
+      "home": "NED",
+      "away": "BRA",
+      "score": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "m047",
+      "stage": "qf",
+      "group": null,
+      "date": "1994-07-10",
+      "city": "New York",
+      "home": "BUL",
+      "away": "GER",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m048",
+      "stage": "qf",
+      "group": null,
+      "date": "1994-07-10",
+      "city": "San Francisco",
+      "home": "SWE",
+      "away": "ROU",
+      "score": [
+        2,
+        2
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        5,
+        4
+      ]
+    },
+    {
+      "id": "m049",
+      "stage": "sf",
+      "group": null,
+      "date": "1994-07-13",
+      "city": "New York",
+      "home": "BUL",
+      "away": "ITA",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m050",
+      "stage": "sf",
+      "group": null,
+      "date": "1994-07-13",
+      "city": "Los Angeles",
+      "home": "SWE",
+      "away": "BRA",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m051",
+      "stage": "third",
+      "group": null,
+      "date": "1994-07-16",
+      "city": "Los Angeles",
+      "home": "BUL",
+      "away": "SWE",
+      "score": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "m052",
+      "stage": "final",
+      "group": null,
+      "date": "1994-07-17",
+      "city": "Los Angeles",
+      "home": "BRA",
+      "away": "ITA",
+      "score": [
+        0,
+        0
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        3,
+        2
+      ]
+    }
+  ],
+  "scorers": [
+    {
+      "player": "Stoichkov",
+      "country": "BUL",
+      "goals": 6,
+      "scope": "final"
+    },
+    {
+      "player": "Salenko",
+      "country": "RUS",
+      "goals": 6,
+      "scope": "final"
+    },
+    {
+      "player": "Romário",
+      "country": "BRA",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Klinsmann",
+      "country": "GER",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "R.Baggio",
+      "country": "ITA",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "K.Andersson",
+      "country": "SWE",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Batistuta",
+      "country": "ARG",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Răducioiu",
+      "country": "ROU",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Dahlin",
+      "country": "SWE",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Bebeto",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Caminero",
+      "country": "ESP",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Bergkamp",
+      "country": "NED",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Hagi",
+      "country": "ROU",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Brolin",
+      "country": "SWE",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Caniggia",
+      "country": "ARG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Amin",
+      "country": "KSA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Albert",
+      "country": "BEL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Letchkov",
+      "country": "BUL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Valencia",
+      "country": "COL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Goikoetxea",
+      "country": "ESP",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Völler",
+      "country": "GER",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Jong",
+      "country": "NED",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "D.Baggio",
+      "country": "ITA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Hong Myung-ho",
+      "country": "KOR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Luis Garcia",
+      "country": "MEX",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Amunike",
+      "country": "ROU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Amokachi NGA",
+      "country": "ROU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Dumitrescu",
+      "country": "ROU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Knup",
+      "country": "SUI",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Balbo",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Maradona",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Al-Ghashiyan",
+      "country": "KSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Al-Jaber",
+      "country": "KSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Owairan",
+      "country": "KSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Degryse",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Grun",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "E.Sánchez",
+      "country": "BOL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Branco",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marcio Santos",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rai",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Borimirov",
+      "country": "BUL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sirakov",
+      "country": "BUL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Embe",
+      "country": "CMR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Milla",
+      "country": "CMR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Omam Biyik",
+      "country": "CMR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gaviria",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lozano",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Beguiristain",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Guardiola",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Hierro",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Salinas",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Luis Enrique",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Matthäus",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Riedle",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Roy",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Taument",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Winter",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Aldridge",
+      "country": "IRL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Houghton",
+      "country": "IRL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Massaro",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Hwang Seon-bong",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Seo Jung-won",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Chamuch",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nader",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Bernal",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Garcia Aspe",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Finidi",
+      "country": "NOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Siasia",
+      "country": "NOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yekini NGA",
+      "country": "NOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rekdal",
+      "country": "NOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Petrescu",
+      "country": "ROU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Radchenko",
+      "country": "RUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Brégy",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Chapuisat",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sutter",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Larsson",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ljung",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mild",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Stewart",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Wynalda",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Escobar",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    }
+  ]
+}

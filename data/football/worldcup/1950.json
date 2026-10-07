@@ -1,0 +1,889 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 1950,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "BRA"
+  ],
+  "teamsCount": 13,
+  "results": {
+    "champion": "URU",
+    "runnerUp": "BRA",
+    "third": "SWE",
+    "finalMatchId": "m024"
+  },
+  "coverage": {
+    "matches": 57,
+    "goals": 209,
+    "scorers": 107,
+    "scope": "all",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:50f",
+      "name": "RSSSF — World Cup 1950 (Karel Stokkermans, Sergio Henrique Jarreta)",
+      "url": "https://www.rsssf.org/tables/50f.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:50full",
+      "name": "RSSSF — World Cup 1950 full details (Karel Stokkermans, Sergio Henrique Jarreta)",
+      "url": "https://www.rsssf.org/tables/50full.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:50q",
+      "name": "RSSSF — World Cup 1950 qualifying (Karel Stokkermans, Sergio Henrique Jarreta)",
+      "url": "https://www.rsssf.org/tables/50q.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:50q-det",
+      "name": "RSSSF — World Cup 1950 qualifying match details (Barrie Courtney)",
+      "url": "https://www.rsssf.org/tables/50q-det.html",
+      "retrieved": "2026-10-06",
+      "author": "Barrie Courtney",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:50qf-scor",
+      "name": "RSSSF — World Cup 1950 goal scorers (Jaroslaw Owsianski)",
+      "url": "https://www.rsssf.org/tables/50qf-scor.html",
+      "retrieved": "2026-10-06",
+      "author": "Jaroslaw Owsianski",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "wikipedia",
+      "name": "Wikipedia — 1950 FIFA World Cup",
+      "url": "https://en.wikipedia.org/wiki/1950_FIFA_World_Cup",
+      "retrieved": "2026-10-06",
+      "publisher": "Wikipedia",
+      "license": "cc-by-sa",
+      "redistribute": false,
+      "note": "Solo contraste/referencia; no se redistribuye."
+    }
+  ],
+  "asOf": "2026-10-06",
+  "provenance": {
+    "primary": "rsssf:50f",
+    "rejected": [
+      {
+        "source": "rsssf:50qf-scor",
+        "field": "scorers.Ademir.goals",
+        "value": 7,
+        "reason": "FIFA reasignó a Ademir el 1-0 (antes propia de Parra) y el 5-0 (antes de Jair) del BRA 6-1 ESP; 50f/50full y el consenso FIFA dan 9 (D21)."
+      },
+      {
+        "source": "rsssf:50qf-scor",
+        "field": "scorers.Jair.goals",
+        "value": 3,
+        "reason": "El 5-0 del BRA 6-1 ESP pasa a Ademir por decisión de FIFA; 50f/50full dan 2 goles a Jair (D21)."
+      },
+      {
+        "source": "rsssf:50qf-scor",
+        "field": "scorers.Parra.ownGoal",
+        "value": 1,
+        "reason": "La propia de Parra del BRA 6-1 ESP fue reasignada a Ademir por FIFA; se elimina de la lista de goleadores (D21)."
+      }
+    ]
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        { "team": "BRA", "p": 3, "w": 2, "d": 1, "l": 0, "gf": 8, "ga": 2, "pts": 5 },
+        { "team": "YUG", "p": 3, "w": 2, "d": 0, "l": 1, "gf": 7, "ga": 3, "pts": 4 },
+        { "team": "SUI", "p": 3, "w": 1, "d": 1, "l": 1, "gf": 4, "ga": 6, "pts": 3 },
+        { "team": "MEX", "p": 3, "w": 0, "d": 0, "l": 3, "gf": 2, "ga": 10, "pts": 0 }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        { "team": "ESP", "p": 3, "w": 3, "d": 0, "l": 0, "gf": 6, "ga": 1, "pts": 6 },
+        { "team": "ENG", "p": 3, "w": 1, "d": 0, "l": 2, "gf": 2, "ga": 2, "pts": 2 },
+        { "team": "CHI", "p": 3, "w": 1, "d": 0, "l": 2, "gf": 5, "ga": 6, "pts": 2 },
+        { "team": "USA", "p": 3, "w": 1, "d": 0, "l": 2, "gf": 4, "ga": 8, "pts": 2 }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        { "team": "SWE", "p": 2, "w": 1, "d": 1, "l": 0, "gf": 5, "ga": 4, "pts": 3 },
+        { "team": "ITA", "p": 2, "w": 1, "d": 0, "l": 1, "gf": 4, "ga": 3, "pts": 2 },
+        { "team": "PAR", "p": 2, "w": 0, "d": 1, "l": 1, "gf": 2, "ga": 4, "pts": 1 }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        { "team": "URU", "p": 1, "w": 1, "d": 0, "l": 0, "gf": 8, "ga": 0, "pts": 2 },
+        { "team": "BOL", "p": 1, "w": 0, "d": 0, "l": 1, "gf": 0, "ga": 8, "pts": 0 }
+      ]
+    },
+    {
+      "letter": "F",
+      "standings": [
+        { "team": "URU", "p": 3, "w": 2, "d": 1, "l": 0, "gf": 7, "ga": 5, "pts": 5 },
+        { "team": "BRA", "p": 3, "w": 2, "d": 0, "l": 1, "gf": 14, "ga": 4, "pts": 4 },
+        { "team": "SWE", "p": 3, "w": 1, "d": 0, "l": 2, "gf": 6, "ga": 11, "pts": 2 },
+        { "team": "ESP", "p": 3, "w": 0, "d": 1, "l": 2, "gf": 4, "ga": 11, "pts": 1 }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "q01",
+      "date": "1949-10-01",
+      "city": "Belfast",
+      "stage": "qualifying",
+      "group": "1",
+      "home": "NIR",
+      "away": "SCO",
+      "score": [2, 8]
+    },
+    {
+      "id": "q02",
+      "date": "1949-10-15",
+      "city": "Cardiff",
+      "stage": "qualifying",
+      "group": "1",
+      "home": "WAL",
+      "away": "ENG",
+      "score": [1, 4]
+    },
+    {
+      "id": "q03",
+      "date": "1949-11-09",
+      "city": "Glasgow",
+      "stage": "qualifying",
+      "group": "1",
+      "home": "SCO",
+      "away": "WAL",
+      "score": [2, 0]
+    },
+    {
+      "id": "q04",
+      "date": "1949-11-16",
+      "city": "Manchester",
+      "stage": "qualifying",
+      "group": "1",
+      "home": "ENG",
+      "away": "NIR",
+      "score": [9, 2]
+    },
+    {
+      "id": "q05",
+      "date": "1950-03-08",
+      "city": "Wrexham",
+      "stage": "qualifying",
+      "group": "1",
+      "home": "WAL",
+      "away": "NIR",
+      "score": [0, 0]
+    },
+    {
+      "id": "q06",
+      "date": "1950-04-15",
+      "city": "Glasgow",
+      "stage": "qualifying",
+      "group": "1",
+      "home": "SCO",
+      "away": "ENG",
+      "score": [0, 1]
+    },
+    {
+      "id": "q07",
+      "date": "1949-11-20",
+      "city": "Ankara",
+      "stage": "qualifying",
+      "group": "2",
+      "home": "TUR",
+      "away": "SYR",
+      "score": [7, 0]
+    },
+    {
+      "id": "q08",
+      "date": null,
+      "stage": "qualifying",
+      "group": "2",
+      "home": "TUR",
+      "away": "AUT",
+      "score": null,
+      "status": "walkover",
+      "notes": ["withdrawn"]
+    },
+    {
+      "id": "q09",
+      "date": "1949-08-21",
+      "city": "Beograd",
+      "stage": "qualifying",
+      "group": "3",
+      "home": "YUG",
+      "away": "ISR",
+      "score": [6, 0]
+    },
+    {
+      "id": "q10",
+      "date": "1949-09-18",
+      "city": "Tel Aviv",
+      "stage": "qualifying",
+      "group": "3",
+      "home": "ISR",
+      "away": "YUG",
+      "score": [2, 5]
+    },
+    {
+      "id": "q11",
+      "date": "1949-10-09",
+      "city": "Beograd",
+      "stage": "qualifying",
+      "group": "3",
+      "home": "FRA",
+      "away": "YUG",
+      "score": [1, 1]
+    },
+    {
+      "id": "q12",
+      "date": "1949-10-30",
+      "city": "Paris",
+      "stage": "qualifying",
+      "group": "3",
+      "home": "YUG",
+      "away": "FRA",
+      "score": [1, 1]
+    },
+    {
+      "id": "q13",
+      "date": "1949-12-11",
+      "city": "Firenze",
+      "stage": "qualifying",
+      "group": "3",
+      "home": "YUG",
+      "away": "FRA",
+      "score": [3, 2],
+      "notes": ["aet"]
+    },
+    {
+      "id": "q14",
+      "date": "1949-06-26",
+      "city": "Zürich",
+      "stage": "qualifying",
+      "group": "4",
+      "home": "SUI",
+      "away": "LUX",
+      "score": [5, 2]
+    },
+    {
+      "id": "q15",
+      "date": "1949-09-18",
+      "city": "Luxembourg",
+      "stage": "qualifying",
+      "group": "4",
+      "home": "LUX",
+      "away": "SUI",
+      "score": [2, 3]
+    },
+    {
+      "id": "q16",
+      "date": null,
+      "stage": "qualifying",
+      "group": "4",
+      "home": "SUI",
+      "away": "BEL",
+      "score": null,
+      "status": "walkover",
+      "notes": ["withdrawn"]
+    },
+    {
+      "id": "q17",
+      "date": "1949-06-02",
+      "city": "Stockholm",
+      "stage": "qualifying",
+      "group": "5",
+      "home": "SWE",
+      "away": "IRL",
+      "score": [3, 1]
+    },
+    {
+      "id": "q18",
+      "date": "1949-09-08",
+      "city": "Dublin",
+      "stage": "qualifying",
+      "group": "5",
+      "home": "IRL",
+      "away": "FIN",
+      "score": [3, 0]
+    },
+    {
+      "id": "q19",
+      "date": "1949-10-09",
+      "city": "Helsinki",
+      "stage": "qualifying",
+      "group": "5",
+      "home": "FIN",
+      "away": "IRL",
+      "score": [1, 1]
+    },
+    {
+      "id": "q20",
+      "date": "1949-11-13",
+      "city": "Dublin",
+      "stage": "qualifying",
+      "group": "5",
+      "home": "IRL",
+      "away": "SWE",
+      "score": [1, 3]
+    },
+    {
+      "id": "q21",
+      "date": "1950-04-02",
+      "city": "Madrid",
+      "stage": "qualifying",
+      "group": "6",
+      "home": "ESP",
+      "away": "POR",
+      "score": [5, 1]
+    },
+    {
+      "id": "q22",
+      "date": "1950-04-09",
+      "city": "Lisboa",
+      "stage": "qualifying",
+      "group": "6",
+      "home": "POR",
+      "away": "ESP",
+      "score": [2, 2]
+    },
+    {
+      "id": "q23",
+      "date": null,
+      "stage": "qualifying",
+      "group": "7",
+      "home": "CHI",
+      "away": "ARG",
+      "score": null,
+      "status": "walkover",
+      "notes": ["withdrawn"]
+    },
+    {
+      "id": "q24",
+      "date": null,
+      "stage": "qualifying",
+      "group": "7",
+      "home": "BOL",
+      "away": "ARG",
+      "score": null,
+      "status": "walkover",
+      "notes": ["withdrawn"]
+    },
+    {
+      "id": "q25",
+      "date": null,
+      "stage": "qualifying",
+      "group": "8",
+      "home": "URU",
+      "away": "PER",
+      "score": null,
+      "status": "walkover",
+      "notes": ["withdrawn"]
+    },
+    {
+      "id": "q26",
+      "date": null,
+      "stage": "qualifying",
+      "group": "8",
+      "home": "PAR",
+      "away": "ECU",
+      "score": null,
+      "status": "walkover",
+      "notes": ["withdrawn"]
+    },
+    {
+      "id": "q27",
+      "date": "1949-09-04",
+      "city": "Cd. de Mexico",
+      "stage": "qualifying",
+      "group": "9",
+      "home": "USA",
+      "away": "MEX",
+      "score": [0, 6]
+    },
+    {
+      "id": "q28",
+      "date": "1949-09-11",
+      "city": "Cd. de Mexico",
+      "stage": "qualifying",
+      "group": "9",
+      "home": "MEX",
+      "away": "CUB",
+      "score": [2, 0]
+    },
+    {
+      "id": "q29",
+      "date": "1949-09-14",
+      "city": "Cd. de Mexico",
+      "stage": "qualifying",
+      "group": "9",
+      "home": "CUB",
+      "away": "USA",
+      "score": [1, 1]
+    },
+    {
+      "id": "q30",
+      "date": "1949-09-18",
+      "city": "Cd. de Mexico",
+      "stage": "qualifying",
+      "group": "9",
+      "home": "MEX",
+      "away": "USA",
+      "score": [6, 2]
+    },
+    {
+      "id": "q31",
+      "date": "1949-09-21",
+      "city": "Cd. de Mexico",
+      "stage": "qualifying",
+      "group": "9",
+      "home": "USA",
+      "away": "CUB",
+      "score": [5, 2]
+    },
+    {
+      "id": "q32",
+      "date": "1949-09-25",
+      "city": "Cd. de Mexico",
+      "stage": "qualifying",
+      "group": "9",
+      "home": "CUB",
+      "away": "MEX",
+      "score": [0, 3]
+    },
+    {
+      "id": "q33",
+      "date": null,
+      "stage": "qualifying",
+      "group": "10",
+      "home": "IND",
+      "away": "MYA",
+      "score": null,
+      "status": "walkover",
+      "notes": ["withdrawn"]
+    },
+    {
+      "id": "m001",
+      "date": "1950-06-24",
+      "city": "Rio de Janeiro",
+      "stage": "group",
+      "group": "A",
+      "home": "BRA",
+      "away": "MEX",
+      "score": [4, 0]
+    },
+    {
+      "id": "m002",
+      "date": "1950-06-25",
+      "city": "Belo Horizonte",
+      "stage": "group",
+      "group": "A",
+      "home": "YUG",
+      "away": "SUI",
+      "score": [3, 0]
+    },
+    {
+      "id": "m003",
+      "date": "1950-06-28",
+      "city": "São Paulo",
+      "stage": "group",
+      "group": "A",
+      "home": "BRA",
+      "away": "SUI",
+      "score": [2, 2]
+    },
+    {
+      "id": "m004",
+      "date": "1950-06-28",
+      "city": "Porto Alegre",
+      "stage": "group",
+      "group": "A",
+      "home": "YUG",
+      "away": "MEX",
+      "score": [4, 1]
+    },
+    {
+      "id": "m005",
+      "date": "1950-07-01",
+      "city": "Rio de Janeiro",
+      "stage": "group",
+      "group": "A",
+      "home": "BRA",
+      "away": "YUG",
+      "score": [2, 0]
+    },
+    {
+      "id": "m006",
+      "date": "1950-07-02",
+      "city": "Porto Alegre",
+      "stage": "group",
+      "group": "A",
+      "home": "SUI",
+      "away": "MEX",
+      "score": [2, 1]
+    },
+    {
+      "id": "m007",
+      "date": "1950-06-25",
+      "city": "Rio de Janeiro",
+      "stage": "group",
+      "group": "B",
+      "home": "ENG",
+      "away": "CHI",
+      "score": [2, 0]
+    },
+    {
+      "id": "m008",
+      "date": "1950-06-25",
+      "city": "Curitiba",
+      "stage": "group",
+      "group": "B",
+      "home": "ESP",
+      "away": "USA",
+      "score": [3, 1]
+    },
+    {
+      "id": "m009",
+      "date": "1950-06-29",
+      "city": "Belo Horizonte",
+      "stage": "group",
+      "group": "B",
+      "home": "USA",
+      "away": "ENG",
+      "score": [1, 0]
+    },
+    {
+      "id": "m010",
+      "date": "1950-06-29",
+      "city": "Rio de Janeiro",
+      "stage": "group",
+      "group": "B",
+      "home": "ESP",
+      "away": "CHI",
+      "score": [2, 0]
+    },
+    {
+      "id": "m011",
+      "date": "1950-07-02",
+      "city": "Rio de Janeiro",
+      "stage": "group",
+      "group": "B",
+      "home": "ESP",
+      "away": "ENG",
+      "score": [1, 0]
+    },
+    {
+      "id": "m012",
+      "date": "1950-07-02",
+      "city": "Recife",
+      "stage": "group",
+      "group": "B",
+      "home": "CHI",
+      "away": "USA",
+      "score": [5, 2]
+    },
+    {
+      "id": "m013",
+      "date": "1950-06-25",
+      "city": "São Paulo",
+      "stage": "group",
+      "group": "C",
+      "home": "SWE",
+      "away": "ITA",
+      "score": [3, 2]
+    },
+    {
+      "id": "m014",
+      "date": "1950-06-29",
+      "city": "Curitiba",
+      "stage": "group",
+      "group": "C",
+      "home": "SWE",
+      "away": "PAR",
+      "score": [2, 2]
+    },
+    {
+      "id": "m015",
+      "date": "1950-07-02",
+      "city": "São Paulo",
+      "stage": "group",
+      "group": "C",
+      "home": "ITA",
+      "away": "PAR",
+      "score": [2, 0]
+    },
+    {
+      "id": "m016",
+      "date": "1950-06-25",
+      "city": "Porto Alegre",
+      "stage": "group",
+      "group": "D",
+      "home": "URU",
+      "away": "FRA",
+      "score": null,
+      "status": "notplayed",
+      "notes": ["withdrawn"]
+    },
+    {
+      "id": "m017",
+      "date": "1950-06-29",
+      "city": "Recife",
+      "stage": "group",
+      "group": "D",
+      "home": "BOL",
+      "away": "FRA",
+      "score": null,
+      "status": "notplayed",
+      "notes": ["withdrawn"]
+    },
+    {
+      "id": "m018",
+      "date": "1950-07-02",
+      "city": "Belo Horizonte",
+      "stage": "group",
+      "group": "D",
+      "home": "URU",
+      "away": "BOL",
+      "score": [8, 0]
+    },
+    {
+      "id": "m019",
+      "date": "1950-07-09",
+      "city": "Rio de Janeiro",
+      "stage": "finalGroup",
+      "group": "F",
+      "home": "BRA",
+      "away": "SWE",
+      "score": [7, 1],
+      "provenance": {
+        "primary": "rsssf:50f",
+        "rejected": [
+          {
+            "source": "rsssf:50full",
+            "field": "date",
+            "value": "1950-07-03",
+            "reason": "Errata 03/09 de 50full; 50f da 09.07.1950, fecha histórica del BRA 7-1 SWE."
+          }
+        ]
+      }
+    },
+    {
+      "id": "m020",
+      "date": "1950-07-09",
+      "city": "São Paulo",
+      "stage": "finalGroup",
+      "group": "F",
+      "home": "ESP",
+      "away": "URU",
+      "score": [2, 2]
+    },
+    {
+      "id": "m021",
+      "date": "1950-07-13",
+      "city": "Rio de Janeiro",
+      "stage": "finalGroup",
+      "group": "F",
+      "home": "BRA",
+      "away": "ESP",
+      "score": [6, 1]
+    },
+    {
+      "id": "m022",
+      "date": "1950-07-13",
+      "city": "São Paulo",
+      "stage": "finalGroup",
+      "group": "F",
+      "home": "URU",
+      "away": "SWE",
+      "score": [3, 2]
+    },
+    {
+      "id": "m023",
+      "date": "1950-07-16",
+      "city": "São Paulo",
+      "stage": "finalGroup",
+      "group": "F",
+      "home": "SWE",
+      "away": "ESP",
+      "score": [3, 1]
+    },
+    {
+      "id": "m024",
+      "date": "1950-07-16",
+      "city": "Rio de Janeiro",
+      "stage": "finalGroup",
+      "group": "F",
+      "home": "URU",
+      "away": "BRA",
+      "score": [2, 1],
+      "extra": {
+        "referee": {
+          "name": "Reader",
+          "country": "ENG"
+        },
+        "attendance": 200000,
+        "events": [
+          { "minute": 47, "player": "Friaça", "team": "BRA", "score": [0, 1] },
+          { "minute": 66, "player": "Schiaffino", "team": "URU", "score": [1, 1] },
+          { "minute": 79, "player": "Ghiggia", "team": "URU", "score": [2, 1] }
+        ]
+      },
+      "provenance": {
+        "primary": "rsssf:50f",
+        "rejected": [
+          {
+            "source": "fifa",
+            "field": "extra.attendance",
+            "value": 173850,
+            "reason": "Cifra oficial posterior de FIFA; se conserva 200.000 de 50f/50full como primary (D21)."
+          },
+          {
+            "source": "rsssf:50full",
+            "field": "extra.events",
+            "value": "46', 58', 61'",
+            "reason": "50full da los minutos 46/58/61; 50f da 47/66/79, corroborado por FIFA/Wikipedia (D21)."
+          }
+        ]
+      }
+    }
+  ],
+  "scorers": [
+    { "player": "ADEMIR Marques de Meneses", "country": "BRA", "goals": 9, "scope": "all" },
+    { "player": "Telmo Zarraonaindía Montoya 'ZARRA'", "country": "ESP", "goals": 7, "scope": "all" },
+    { "player": "Karl Erik PALMÉR", "country": "SWE", "goals": 6, "scope": "all" },
+    { "player": "Željko CAJKOVSKI", "country": "YUG", "goals": 6, "scope": "all" },
+    { "player": "Estanislao BASORA Brunet", "country": "ESP", "goals": 5, "scope": "all" },
+    { "player": "Jacques FATTON", "country": "SUI", "goals": 5, "scope": "all" },
+    { "player": "Oscar Omar MÍGUEZ", "country": "URU", "goals": 5, "scope": "all" },
+    { "player": "Horacio CASARÍN García Lazo", "country": "MEX", "goals": 5, "scope": "all" },
+    { "player": "Stanley Harding MORTENSEN", "country": "ENG", "goals": 4, "scope": "all" },
+    { "player": "John F. ROWLEY", "country": "ENG", "goals": 4, "scope": "all" },
+    { "player": "Stjepan BOBEK", "country": "YUG", "goals": 4, "scope": "all" },
+    { "player": "Francisco Aramburú 'CHICO'", "country": "BRA", "goals": 4, "scope": "all" },
+    { "player": "Alcide Edgardo GHIGGIA", "country": "URU", "goals": 4, "scope": "all" },
+    { "player": "John SOUZA", "country": "USA", "goals": 4, "scope": "all" },
+    { "player": "John Edward Thompson MILBURN", "country": "ENG", "goals": 3, "scope": "all" },
+    { "player": "Cornelius MARTIN", "country": "IRL", "goals": 3, "scope": "all" },
+    { "player": "Samuel SMYTH", "country": "NIR", "goals": 3, "scope": "all" },
+    { "player": "Henry Miller MORRIS", "country": "SCO", "goals": 3, "scope": "all" },
+    { "player": "Sune ANDERSSON", "country": "SWE", "goals": 3, "scope": "all" },
+    { "player": "Hans JEPPSON", "country": "SWE", "goals": 3, "scope": "all" },
+    { "player": "Stig SUNDKVIST", "country": "SWE", "goals": 3, "scope": "all" },
+    { "player": "FAHRETTIN Cansever", "country": "TUR", "goals": 3, "scope": "all" },
+    { "player": "Milos PAJEVIC", "country": "YUG", "goals": 3, "scope": "all" },
+    { "player": "Juan Alberto SCHIAFFINO", "country": "URU", "goals": 3, "scope": "all" },
+    { "player": "Luis DE LA FUENTE", "country": "MEX", "goals": 3, "scope": "all" },
+    { "player": "Stanley C. PEARSSON", "country": "ENG", "goals": 2, "scope": "all" },
+    { "player": "Henri BAILLOT", "country": "FRA", "goals": 2, "scope": "all" },
+    { "player": "Yehoshua GLASER", "country": "ISR", "goals": 2, "scope": "all" },
+    { "player": "Riccardo CARAPELLESE", "country": "ITA", "goals": 2, "scope": "all" },
+    { "player": "William WADDELL", "country": "SCO", "goals": 2, "scope": "all" },
+    { "player": "Silvestre IGOA Garciandía", "country": "ESP", "goals": 2, "scope": "all" },
+    { "player": "Charles ANTENEN", "country": "SUI", "goals": 2, "scope": "all" },
+    { "player": "René MAILLARD", "country": "SUI", "goals": 2, "scope": "all" },
+    { "player": "Prvoslav MICHAJLOVIC", "country": "YUG", "goals": 2, "scope": "all" },
+    { "player": "Kosta TOMAŠEVIC", "country": "YUG", "goals": 2, "scope": "all" },
+    { "player": "Marko VALOK", "country": "YUG", "goals": 2, "scope": "all" },
+    { "player": "Osvaldo da Silva 'BALTAZAR'", "country": "BRA", "goals": 2, "scope": "all" },
+    { "player": "Thomaz Soares da Silva 'ZIZINHO'", "country": "BRA", "goals": 2, "scope": "all" },
+    { "player": "Atillio CREMASCHI Oyarzún", "country": "CHI", "goals": 2, "scope": "all" },
+    { "player": "Antonio FLÓRES Rodríguez", "country": "MEX", "goals": 2, "scope": "all" },
+    { "player": "Luis LUNA", "country": "MEX", "goals": 2, "scope": "all" },
+    { "player": "José Alberto NARANJO Rivera", "country": "MEX", "goals": 2, "scope": "all" },
+    { "player": "Mario OCHOA Gil", "country": "MEX", "goals": 2, "scope": "all" },
+    { "player": "Héctor ORTÍZ Benítez", "country": "MEX", "goals": 2, "scope": "all" },
+    { "player": "Peter MATEVICH", "country": "USA", "goals": 2, "scope": "all" },
+    { "player": "Frank WALLACE", "country": "USA", "goals": 2, "scope": "all" },
+    { "player": "JAIR da Rosa Pinto", "country": "BRA", "goals": 2, "scope": "all" },
+    { "player": "Royston Thomas Frank BENTLEY", "country": "ENG", "goals": 1, "scope": "all" },
+    { "player": "Jack FROGGATT", "country": "ENG", "goals": 1, "scope": "all" },
+    { "player": "John Wilfried MANION", "country": "ENG", "goals": 1, "scope": "all" },
+    { "player": "Jorma VAIHELA", "country": "FIN", "goals": 1, "scope": "all" },
+    { "player": "Jean LUCIANO", "country": "FRA", "goals": 1, "scope": "all" },
+    { "player": "Marius WALTER", "country": "FRA", "goals": 1, "scope": "all" },
+    { "player": "Peter FARRELL", "country": "IRL", "goals": 1, "scope": "all" },
+    { "player": "John T. GAVIN", "country": "IRL", "goals": 1, "scope": "all" },
+    { "player": "David WALSH", "country": "IRL", "goals": 1, "scope": "all" },
+    { "player": "Ermes MUCCINELLI", "country": "ITA", "goals": 1, "scope": "all" },
+    { "player": "Egisto PANDOLFINI", "country": "ITA", "goals": 1, "scope": "all" },
+    { "player": "Robert Anderson BRENNAN", "country": "NIR", "goals": 1, "scope": "all" },
+    { "player": "Jim KREMER", "country": "LUX", "goals": 1, "scope": "all" },
+    { "player": "Armand MÜLLER", "country": "LUX", "goals": 1, "scope": "all" },
+    { "player": "Michel REUTER", "country": "LUX", "goals": 1, "scope": "all" },
+    { "player": "Camille WAGNER", "country": "LUX", "goals": 1, "scope": "all" },
+    { "player": "Fernando CABRITA", "country": "POR", "goals": 1, "scope": "all" },
+    { "player": "Jesus CORREIRA", "country": "POR", "goals": 1, "scope": "all" },
+    { "player": "José Antonio Barreto TRAVAÇOS", "country": "POR", "goals": 1, "scope": "all" },
+    { "player": "James MASON", "country": "SCO", "goals": 1, "scope": "all" },
+    { "player": "Alexander Bryce LINWOOD", "country": "SCO", "goals": 1, "scope": "all" },
+    { "player": "John McPHAIL", "country": "SCO", "goals": 1, "scope": "all" },
+    { "player": "Lawrence REILLY", "country": "SCO", "goals": 1, "scope": "all" },
+    { "player": "William STEEL", "country": "SCO", "goals": 1, "scope": "all" },
+    { "player": "Augustín GAINZA Vicandi", "country": "ESP", "goals": 1, "scope": "all" },
+    { "player": "Luis MOLOWNY Arbelo", "country": "ESP", "goals": 1, "scope": "all" },
+    { "player": "José Luis López PANIZO", "country": "ESP", "goals": 1, "scope": "all" },
+    { "player": "Nils LIEDHOLM", "country": "SWE", "goals": 1, "scope": "all" },
+    { "player": "Bror MELLBERG", "country": "SWE", "goals": 1, "scope": "all" },
+    { "player": "René BADER", "country": "SUI", "goals": 1, "scope": "all" },
+    { "player": "Robert BALLAMAN", "country": "SUI", "goals": 1, "scope": "all" },
+    { "player": "Traugott OBERER", "country": "SUI", "goals": 1, "scope": "all" },
+    { "player": "BÜLENT Eken", "country": "TUR", "goals": 1, "scope": "all" },
+    { "player": "EROL Keskin", "country": "TUR", "goals": 1, "scope": "all" },
+    { "player": "GÜNDÜZ Kílíç", "country": "TUR", "goals": 1, "scope": "all" },
+    { "player": "LEFTER Küçükandonyadis", "country": "TUR", "goals": 1, "scope": "all" },
+    { "player": "Mervyn W. GRIFFITHS", "country": "WAL", "goals": 1, "scope": "all" },
+    { "player": "Zlatko CAJKOVSKI", "country": "YUG", "goals": 1, "scope": "all" },
+    { "player": "Rajko MITIC", "country": "YUG", "goals": 1, "scope": "all" },
+    { "player": "Tihomir OGNJANOV", "country": "YUG", "goals": 1, "scope": "all" },
+    { "player": "Bozidar SENCAR", "country": "YUG", "goals": 1, "scope": "all" },
+    { "player": "ALFREDO Mostard Filho", "country": "BRA", "goals": 1, "scope": "all" },
+    { "player": "Albino FRIAÇA Cardosa", "country": "BRA", "goals": 1, "scope": "all" },
+    { "player": "Manoel Marinho Alves 'MANECA'", "country": "BRA", "goals": 1, "scope": "all" },
+    { "player": "Andrés PRIETO Urrejola", "country": "CHI", "goals": 1, "scope": "all" },
+    { "player": "Fernando RIERA Bauzá", "country": "CHI", "goals": 1, "scope": "all" },
+    { "player": "Jorge ROBLEDO Oliver", "country": "CHI", "goals": 1, "scope": "all" },
+    { "player": "Atillo LÓPEZ", "country": "PAR", "goals": 1, "scope": "all" },
+    { "player": "César LÓPEZ FRETES", "country": "PAR", "goals": 1, "scope": "all" },
+    { "player": "Julio Gervasio PÉREZ", "country": "URU", "goals": 1, "scope": "all" },
+    { "player": "Obdulio Jacinto Muinos VARELA", "country": "URU", "goals": 1, "scope": "all" },
+    { "player": "Ernesto José VIDAL", "country": "URU", "goals": 1, "scope": "all" },
+    { "player": "Jacinto BARQUIN", "country": "CUB", "goals": 1, "scope": "all" },
+    { "player": "Jose GOMEZ", "country": "CUB", "goals": 1, "scope": "all" },
+    { "player": "Santiago VEIGA 'VAMPIRO'", "country": "CUB", "goals": 1, "scope": "all" },
+    { "player": "Carlos González SEPTIÉN", "country": "MEX", "goals": 1, "scope": "all" },
+    { "player": "Walter Alfred BAHR", "country": "USA", "goals": 1, "scope": "all" },
+    { "player": "Joseph Nicolas GAETJENS", "country": "USA", "goals": 1, "scope": "all" },
+    { "player": "Virginio Peter PARIANI", "country": "USA", "goals": 1, "scope": "all" },
+    { "player": "Ben WATTMAN", "country": "USA", "goals": 1, "scope": "all" }
+  ]
+}

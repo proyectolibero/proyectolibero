@@ -1,0 +1,139 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://proyectolibero.org/schemas/catalog.competition.schema.json",
+  "title": "Ficha de competición del catálogo",
+  "type": "object",
+  "required": [
+    "schemaVersion", "id", "sport", "competition", "name", "i18nKey",
+    "organizer", "scope", "teamMode", "resultArchetype", "cadence", "status",
+    "firstEdition", "editions", "stages", "updatePolicy", "license", "sources"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*/[a-z][a-z0-9-]*$" },
+    "sport": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "competition": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "i18nKey": { "type": "string" },
+    "organizer": { "type": "string" },
+    "scope": { "enum": ["international", "continental", "national", "regional"] },
+    "teamMode": { "enum": ["country", "club", "individual"] },
+    "resultArchetype": { "enum": ["encounter", "ranking", "timed", "scored"] },
+    "gender": { "enum": ["men", "women", "mixed"] },
+    "cadence": {
+      "type": "object",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "enum": ["interval", "annual", "once"] },
+        "years": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "status": { "enum": ["active", "historical", "dormant", "discontinued"] },
+    "firstEdition": { "type": "integer" },
+    "lastEditionHeld": { "type": "integer" },
+    "nextEditionExpected": { "type": ["integer", "null"] },
+    "editionsNotHeld": { "type": "array", "items": { "type": "integer" } },
+    "coverage": {
+      "type": "object",
+      "required": ["held", "published", "missing"],
+      "additionalProperties": false,
+      "properties": {
+        "held": { "type": "integer", "minimum": 0 },
+        "published": { "type": "integer", "minimum": 0 },
+        "missing": { "type": "integer", "minimum": 0 },
+        "missingYears": { "type": "array", "items": { "type": "integer" } }
+      }
+    },
+    "editions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["year", "held"],
+        "additionalProperties": false,
+        "properties": {
+          "year": { "type": "integer" },
+          "held": { "type": "boolean" },
+          "hosts": { "type": "array", "items": { "type": "string" } },
+          "champion": { "type": "string" },
+          "runnerUp": { "type": "string" },
+          "final": {
+            "type": "object",
+            "required": ["score"],
+            "additionalProperties": false,
+            "properties": {
+              "score": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+              "pens": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+              "notes": { "type": "array", "items": { "type": "string" } }
+            }
+          },
+          "data": {
+            "anyOf": [
+              { "type": "string", "pattern": "^[A-Za-z0-9._-]+\\.json$" },
+              { "type": "null" }
+            ]
+          }
+        }
+      }
+    },
+    "stages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "key", "kind", "order"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-zA-Z0-9]*$" },
+          "key": { "type": "string", "pattern": "^phase\\.[a-zA-Z0-9]+$" },
+          "kind": { "enum": ["qualifying", "group", "knockout", "ranking", "heat"] },
+          "order": { "type": "integer" }
+        }
+      }
+    },
+    "updatePolicy": {
+      "type": "object",
+      "required": ["mode", "trigger"],
+      "additionalProperties": false,
+      "properties": {
+        "mode": { "enum": ["manual", "scraped", "feed"] },
+        "trigger": { "enum": ["administration"] },
+        "checkEveryDays": { "type": "integer", "minimum": 1 },
+        "liveSource": { "type": "string", "format": "uri" },
+        "note": { "type": "string" }
+      }
+    },
+    "license": {
+      "type": "object",
+      "required": ["layers", "attributionRequired", "commercialResale"],
+      "additionalProperties": false,
+      "properties": {
+        "layers": { "type": "string" },
+        "attributionRequired": { "type": "boolean" },
+        "commercialResale": { "const": false },
+        "note": { "type": "string" }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "url", "license", "redistribute"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "publisher": { "type": "string" },
+          "license": { "type": "string" },
+          "redistribute": { "type": "boolean" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "updatedAt": { "type": "string", "format": "date" }
+  }
+}

@@ -1,0 +1,1531 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 1986,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "MEX"
+  ],
+  "teamsCount": 24,
+  "results": {
+    "champion": "ARG",
+    "runnerUp": "FRG",
+    "third": "FRA",
+    "finalMatchId": "m052"
+  },
+  "coverage": {
+    "matches": 52,
+    "goals": 132,
+    "scorers": 81,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:86full",
+      "name": "RSSSF — World Cup 1986 full details",
+      "url": "https://www.rsssf.org/tables/86full.html",
+      "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:86f",
+      "name": "RSSSF — World Cup 1986 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+      "url": "https://www.rsssf.org/tables/86f.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "provenance": {
+    "primary": "rsssf:86f",
+    "rejected": [
+      {
+        "source": "rsssf:86full",
+        "field": "scorers",
+        "value": "130 goles de jugadores + 1 en propia = 131 (los partidos suman 132)",
+        "reason": "La lista resumen de goleadores de la fuente no suma con los goles de los partidos; la lista publicada se deriva de los relatos de los mismos partidos de la fuente (ADR-015/D22)."
+      }
+    ]
+  },
+  "groups": [
+    {
+      "stage": "group",
+      "letter": "A",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 6,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 5,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "BUL",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 2,
+          "ga": 4,
+          "pts": 2
+        },
+        {
+          "team": "KOR",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 7,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "B",
+      "standings": [
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "PAR",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 4,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "BEL",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 5,
+          "pts": 3
+        },
+        {
+          "team": "IRQ",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 4,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "C",
+      "standings": [
+        {
+          "team": "URS",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 9,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "HUN",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 9,
+          "pts": 2
+        },
+        {
+          "team": "CAN",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 0,
+          "ga": 5,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "D",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 5,
+          "ga": 0,
+          "pts": 6
+        },
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "NIR",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 6,
+          "pts": 1
+        },
+        {
+          "team": "ALG",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 5,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "E",
+      "standings": [
+        {
+          "team": "DEN",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 9,
+          "ga": 1,
+          "pts": 6
+        },
+        {
+          "team": "FRG",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "URU",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 2,
+          "ga": 7,
+          "pts": 2
+        },
+        {
+          "team": "SCO",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 3,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "group",
+      "letter": "F",
+      "standings": [
+        {
+          "team": "MAR",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 3,
+          "ga": 1,
+          "pts": 4
+        },
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 1,
+          "pts": 3
+        },
+        {
+          "team": "POL",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 1,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "POR",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 2
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "date": "1986-05-31",
+      "city": "Mexico City",
+      "home": "ITA",
+      "away": "BUL",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "date": "1986-06-02",
+      "city": "Mexico City",
+      "home": "ARG",
+      "away": "KOR",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "date": "1986-06-05",
+      "city": "Puebla",
+      "home": "ARG",
+      "away": "ITA",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "date": "1986-06-05",
+      "city": "Mexico City",
+      "home": "BUL",
+      "away": "KOR",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "date": "1986-06-10",
+      "city": "Mexico City",
+      "home": "ARG",
+      "away": "BUL",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "date": "1986-06-10",
+      "city": "Puebla",
+      "home": "ITA",
+      "away": "KOR",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "date": "1986-06-03",
+      "city": "Mexico City",
+      "home": "MEX",
+      "away": "BEL",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "date": "1986-06-04",
+      "city": "Toluca",
+      "home": "PAR",
+      "away": "IRQ",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "date": "1986-06-07",
+      "city": "Mexico City",
+      "home": "MEX",
+      "away": "PAR",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "date": "1986-06-08",
+      "city": "Toluca",
+      "home": "BEL",
+      "away": "IRQ",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "date": "1986-06-11",
+      "city": "Toluca",
+      "home": "BEL",
+      "away": "PAR",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "date": "1986-06-11",
+      "city": "Mexico City",
+      "home": "MEX",
+      "away": "IRQ",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "date": "1986-06-01",
+      "city": "Leon",
+      "home": "FRA",
+      "away": "CAN",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "date": "1986-06-02",
+      "city": "Irapuato",
+      "home": "URS",
+      "away": "HUN",
+      "score": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "date": "1986-06-05",
+      "city": "Leon",
+      "home": "FRA",
+      "away": "URS",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "date": "1986-06-06",
+      "city": "Irapuato",
+      "home": "HUN",
+      "away": "CAN",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "date": "1986-06-09",
+      "city": "Leon",
+      "home": "FRA",
+      "away": "HUN",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "date": "1986-06-09",
+      "city": "Irapuato",
+      "home": "URS",
+      "away": "CAN",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "date": "1986-06-01",
+      "city": "Guadalajara",
+      "home": "BRA",
+      "away": "ESP",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "date": "1986-06-03",
+      "city": "Guadalajara",
+      "home": "ALG",
+      "away": "NIR",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "date": "1986-06-06",
+      "city": "Guadalajara",
+      "home": "BRA",
+      "away": "ALG",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "date": "1986-06-07",
+      "city": "Guadalajara",
+      "home": "ESP",
+      "away": "NIR",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "date": "1986-06-12",
+      "city": "Guadalajara",
+      "home": "BRA",
+      "away": "NIR",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "date": "1986-06-12",
+      "city": "Monterrey",
+      "home": "ESP",
+      "away": "ALG",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m025",
+      "stage": "group",
+      "group": "E",
+      "date": "1986-06-04",
+      "city": "Queretaro",
+      "home": "FRG",
+      "away": "URU",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m026",
+      "stage": "group",
+      "group": "E",
+      "date": "1986-06-04",
+      "city": "Nezahualcoyotl",
+      "home": "DEN",
+      "away": "SCO",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m027",
+      "stage": "group",
+      "group": "E",
+      "date": "1986-06-08",
+      "city": "Queretaro",
+      "home": "FRG",
+      "away": "SCO",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m028",
+      "stage": "group",
+      "group": "E",
+      "date": "1986-06-08",
+      "city": "Nezahualcoyotl",
+      "home": "DEN",
+      "away": "URU",
+      "score": [
+        6,
+        1
+      ]
+    },
+    {
+      "id": "m029",
+      "stage": "group",
+      "group": "E",
+      "date": "1986-06-13",
+      "city": "Queretaro",
+      "home": "DEN",
+      "away": "FRG",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m030",
+      "stage": "group",
+      "group": "E",
+      "date": "1986-06-13",
+      "city": "Nezahualcoyotl",
+      "home": "SCO",
+      "away": "URU",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m031",
+      "stage": "group",
+      "group": "F",
+      "date": "1986-06-02",
+      "city": "Monterrey",
+      "home": "MAR",
+      "away": "POL",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m032",
+      "stage": "group",
+      "group": "F",
+      "date": "1986-06-03",
+      "city": "Monterrey",
+      "home": "POR",
+      "away": "ENG",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m033",
+      "stage": "group",
+      "group": "F",
+      "date": "1986-06-06",
+      "city": "Monterrey",
+      "home": "ENG",
+      "away": "MAR",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m034",
+      "stage": "group",
+      "group": "F",
+      "date": "1986-06-07",
+      "city": "Monterrey",
+      "home": "POL",
+      "away": "POR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m035",
+      "stage": "group",
+      "group": "F",
+      "date": "1986-06-11",
+      "city": "Monterrey",
+      "home": "ENG",
+      "away": "POL",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m036",
+      "stage": "group",
+      "group": "F",
+      "date": "1986-06-11",
+      "city": "Guadalajara",
+      "home": "MAR",
+      "away": "POR",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m037",
+      "stage": "r16",
+      "group": null,
+      "date": "1986-06-15",
+      "city": "Mexico City",
+      "home": "MEX",
+      "away": "BUL",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m038",
+      "stage": "r16",
+      "group": null,
+      "date": "1986-06-15",
+      "city": "Leon",
+      "home": "BEL",
+      "away": "URS",
+      "score": [
+        4,
+        3
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m039",
+      "stage": "r16",
+      "group": null,
+      "date": "1986-06-16",
+      "city": "Guadalajara",
+      "home": "BRA",
+      "away": "POL",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "m040",
+      "stage": "r16",
+      "group": null,
+      "date": "1986-06-16",
+      "city": "Puebla",
+      "home": "ARG",
+      "away": "URU",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m041",
+      "stage": "r16",
+      "group": null,
+      "date": "1986-06-17",
+      "city": "Mexico City",
+      "home": "FRA",
+      "away": "ITA",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m042",
+      "stage": "r16",
+      "group": null,
+      "date": "1986-06-17",
+      "city": "Monterrey",
+      "home": "FRG",
+      "away": "MAR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m043",
+      "stage": "r16",
+      "group": null,
+      "date": "1986-06-18",
+      "city": "Mexico City",
+      "home": "ENG",
+      "away": "PAR",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m044",
+      "stage": "r16",
+      "group": null,
+      "date": "1986-06-18",
+      "city": "Queretaro",
+      "home": "ESP",
+      "away": "DEN",
+      "score": [
+        5,
+        1
+      ]
+    },
+    {
+      "id": "m045",
+      "stage": "qf",
+      "group": null,
+      "date": "1986-06-21",
+      "city": "Guadalajara",
+      "home": "FRA",
+      "away": "BRA",
+      "score": [
+        1,
+        1
+      ],
+      "pens": [
+        4,
+        3
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m046",
+      "stage": "qf",
+      "group": null,
+      "date": "1986-06-21",
+      "city": "Monterrey",
+      "home": "FRG",
+      "away": "MEX",
+      "score": [
+        0,
+        0
+      ],
+      "pens": [
+        4,
+        1
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m047",
+      "stage": "qf",
+      "group": null,
+      "date": "1986-06-22",
+      "city": "Mexico City",
+      "home": "ARG",
+      "away": "ENG",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m048",
+      "stage": "qf",
+      "group": null,
+      "date": "1986-06-22",
+      "city": "Puebla",
+      "home": "BEL",
+      "away": "ESP",
+      "score": [
+        1,
+        1
+      ],
+      "pens": [
+        5,
+        4
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m049",
+      "stage": "sf",
+      "group": null,
+      "date": "1986-06-25",
+      "city": "Guadalajara",
+      "home": "FRG",
+      "away": "FRA",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m050",
+      "stage": "sf",
+      "group": null,
+      "date": "1986-06-25",
+      "city": "Mexico City",
+      "home": "ARG",
+      "away": "BEL",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m051",
+      "stage": "third",
+      "group": null,
+      "date": "1986-06-28",
+      "city": "Puebla",
+      "home": "FRA",
+      "away": "BEL",
+      "score": [
+        4,
+        2
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m052",
+      "stage": "final",
+      "group": null,
+      "date": "1986-06-29",
+      "city": "Mexico City",
+      "home": "ARG",
+      "away": "FRG",
+      "score": [
+        3,
+        2
+      ]
+    }
+  ],
+  "scorers": [
+    {
+      "player": "Lineker",
+      "country": "ENG",
+      "goals": 6,
+      "scope": "final"
+    },
+    {
+      "player": "Careca",
+      "country": "BRA",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Maradona",
+      "country": "ARG",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Butragueño",
+      "country": "ESP",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Altobelli",
+      "country": "ITA",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Belanov",
+      "country": "URS",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Valdano",
+      "country": "ARG",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Elkjær-Larsen",
+      "country": "DEN",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Ceulemans",
+      "country": "BEL",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Claesen",
+      "country": "BEL",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "J.Olsen",
+      "country": "DEN",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Völler",
+      "country": "FRG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Burruchaga",
+      "country": "ARG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Cabañas",
+      "country": "PAR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Calderé",
+      "country": "ESP",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Josimar",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "K.Allofs",
+      "country": "FRG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Khairi",
+      "country": "MAR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Papin",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Platini",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Quirarte",
+      "country": "MEX",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Romero",
+      "country": "PAR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Scifo",
+      "country": "BEL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Socrates",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Stopyra",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Yaremchuk",
+      "country": "URS",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Aleinikov",
+      "country": "URS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Alzamendi",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Amaiesh",
+      "country": "IRQ",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Amoros",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Beardsley",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Blokhin",
+      "country": "URS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Brehme",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Brown",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Carlos Manuel",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Clarke",
+      "country": "NIR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Demol",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Détári",
+      "country": "HUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Diamantino",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Edinho",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Eloy",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Eriksen",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Esterházy",
+      "country": "HUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Fernandez",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ferreri",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Flóres",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Francescoli",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Genghini",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Getov",
+      "country": "BUL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Goicoechea",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Julio Salinas",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kim Jong-boo",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Krimau",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Laudrup",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lerby",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Matthäus",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Negrete",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Park Chang-sun",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Pasculli",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rats",
+      "country": "URS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rocheteau",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rodionov",
+      "country": "URS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ruggeri",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rummenige",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sánchez",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Servin",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Señor",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sirakov",
+      "country": "BUL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Smolarek",
+      "country": "POL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Strachan",
+      "country": "SCO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Tigana",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "van den Bergh",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Vercauteren",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Veyt",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Whiteside",
+      "country": "NIR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yakovienko",
+      "country": "URS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Zavarov",
+      "country": "URS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Zidane",
+      "country": "ALG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Choi Kwang-rae",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Choi Song-hoo",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Huh Jung-moo",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    }
+  ]
+}

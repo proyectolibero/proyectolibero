@@ -1,0 +1,1960 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 2006,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "GER"
+  ],
+  "teamsCount": 32,
+  "results": {
+    "champion": "ITA",
+    "runnerUp": "FRA",
+    "third": "GER",
+    "finalMatchId": "m064"
+  },
+  "coverage": {
+    "matches": 64,
+    "goals": 147,
+    "scorers": 110,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:2006f",
+      "name": "RSSSF — World Cup 2006 (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tables/2006f.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:2006full",
+      "name": "RSSSF — World Cup 2006 - Match Details (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tables/2006full.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "provenance": {
+    "primary": "rsssf:2006f",
+    "rejected": [
+      {
+        "source": "rsssf:2006full",
+        "field": "city",
+        "value": "Munich, Nuremberg, Cologne, Hanover",
+        "reason": "2006full usa los topónimos ingleses de las sedes; se conservan los de 2006f (NNf primary): München, Nürnberg, Köln, Hannover."
+      }
+    ]
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 8,
+          "ga": 2,
+          "pts": 9
+        },
+        {
+          "team": "ECU",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "POL",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "CRC",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 3,
+          "ga": 9,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "SWE",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 3,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "PAR",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 2,
+          "pts": 3
+        },
+        {
+          "team": "TRI",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 0,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 8,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 3,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "CIV",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 5,
+          "ga": 6,
+          "pts": 3
+        },
+        {
+          "team": "SCG",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 10,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "POR",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 5,
+          "ga": 1,
+          "pts": 9
+        },
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "ANG",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 1,
+          "ga": 2,
+          "pts": 2
+        },
+        {
+          "team": "IRN",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "GHA",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "CZE",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "USA",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 7,
+          "ga": 1,
+          "pts": 9
+        },
+        {
+          "team": "AUS",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "CRO",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 2,
+          "ga": 3,
+          "pts": 2
+        },
+        {
+          "team": "JPN",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 7,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "standings": [
+        {
+          "team": "SUI",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 0,
+          "pts": 7
+        },
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 3,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "KOR",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "TOG",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 6,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 8,
+          "ga": 1,
+          "pts": 9
+        },
+        {
+          "team": "UKR",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "TUN",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 3,
+          "ga": 6,
+          "pts": 1
+        },
+        {
+          "team": "KSA",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 7,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "date": "2006-06-09",
+      "city": "München",
+      "home": "GER",
+      "away": "CRC",
+      "score": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "date": "2006-06-09",
+      "city": "Gelsenkirchen",
+      "home": "POL",
+      "away": "ECU",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "date": "2006-06-14",
+      "city": "Dortmund",
+      "home": "GER",
+      "away": "POL",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "date": "2006-06-15",
+      "city": "Hamburg",
+      "home": "ECU",
+      "away": "CRC",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "date": "2006-06-20",
+      "city": "Hannover",
+      "home": "CRC",
+      "away": "POL",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "date": "2006-06-20",
+      "city": "Berlin",
+      "home": "ECU",
+      "away": "GER",
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "date": "2006-06-10",
+      "city": "Frankfurt",
+      "home": "ENG",
+      "away": "PAR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "date": "2006-06-10",
+      "city": "Dortmund",
+      "home": "TRI",
+      "away": "SWE",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "date": "2006-06-15",
+      "city": "Nürnberg",
+      "home": "ENG",
+      "away": "TRI",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "date": "2006-06-15",
+      "city": "Berlin",
+      "home": "SWE",
+      "away": "PAR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "date": "2006-06-20",
+      "city": "Kaiserslautern",
+      "home": "PAR",
+      "away": "TRI",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "date": "2006-06-20",
+      "city": "Köln",
+      "home": "SWE",
+      "away": "ENG",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "date": "2006-06-10",
+      "city": "Hamburg",
+      "home": "ARG",
+      "away": "CIV",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "date": "2006-06-11",
+      "city": "Leipzig",
+      "home": "SCG",
+      "away": "NED",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "date": "2006-06-16",
+      "city": "Gelsenkirchen",
+      "home": "ARG",
+      "away": "SCG",
+      "score": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "date": "2006-06-16",
+      "city": "Stuttgart",
+      "home": "NED",
+      "away": "CIV",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "date": "2006-06-21",
+      "city": "Frankfurt",
+      "home": "NED",
+      "away": "ARG",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "date": "2006-06-21",
+      "city": "München",
+      "home": "CIV",
+      "away": "SCG",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "date": "2006-06-11",
+      "city": "Nürnberg",
+      "home": "MEX",
+      "away": "IRN",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "date": "2006-06-11",
+      "city": "Köln",
+      "home": "ANG",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "date": "2006-06-16",
+      "city": "Hannover",
+      "home": "MEX",
+      "away": "ANG",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "date": "2006-06-17",
+      "city": "Frankfurt",
+      "home": "POR",
+      "away": "IRN",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "date": "2006-06-21",
+      "city": "Gelsenkirchen",
+      "home": "POR",
+      "away": "MEX",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "date": "2006-06-21",
+      "city": "Leipzig",
+      "home": "IRN",
+      "away": "ANG",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m025",
+      "stage": "group",
+      "group": "E",
+      "date": "2006-06-12",
+      "city": "Gelsenkirchen",
+      "home": "USA",
+      "away": "CZE",
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m026",
+      "stage": "group",
+      "group": "E",
+      "date": "2006-06-12",
+      "city": "Hannover",
+      "home": "ITA",
+      "away": "GHA",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m027",
+      "stage": "group",
+      "group": "E",
+      "date": "2006-06-17",
+      "city": "Köln",
+      "home": "CZE",
+      "away": "GHA",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m028",
+      "stage": "group",
+      "group": "E",
+      "date": "2006-06-17",
+      "city": "Kaiserslautern",
+      "home": "ITA",
+      "away": "USA",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m029",
+      "stage": "group",
+      "group": "E",
+      "date": "2006-06-22",
+      "city": "Hamburg",
+      "home": "CZE",
+      "away": "ITA",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m030",
+      "stage": "group",
+      "group": "E",
+      "date": "2006-06-22",
+      "city": "Nürnberg",
+      "home": "GHA",
+      "away": "USA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m031",
+      "stage": "group",
+      "group": "F",
+      "date": "2006-06-12",
+      "city": "Kaiserslautern",
+      "home": "AUS",
+      "away": "JPN",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m032",
+      "stage": "group",
+      "group": "F",
+      "date": "2006-06-13",
+      "city": "Berlin",
+      "home": "BRA",
+      "away": "CRO",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m033",
+      "stage": "group",
+      "group": "F",
+      "date": "2006-06-18",
+      "city": "Nürnberg",
+      "home": "JPN",
+      "away": "CRO",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m034",
+      "stage": "group",
+      "group": "F",
+      "date": "2006-06-18",
+      "city": "München",
+      "home": "BRA",
+      "away": "AUS",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m035",
+      "stage": "group",
+      "group": "F",
+      "date": "2006-06-22",
+      "city": "Stuttgart",
+      "home": "CRO",
+      "away": "AUS",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m036",
+      "stage": "group",
+      "group": "F",
+      "date": "2006-06-22",
+      "city": "Dortmund",
+      "home": "JPN",
+      "away": "BRA",
+      "score": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "m037",
+      "stage": "group",
+      "group": "G",
+      "date": "2006-06-13",
+      "city": "Frankfurt",
+      "home": "KOR",
+      "away": "TOG",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m038",
+      "stage": "group",
+      "group": "G",
+      "date": "2006-06-13",
+      "city": "Stuttgart",
+      "home": "FRA",
+      "away": "SUI",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m039",
+      "stage": "group",
+      "group": "G",
+      "date": "2006-06-18",
+      "city": "Leipzig",
+      "home": "FRA",
+      "away": "KOR",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m040",
+      "stage": "group",
+      "group": "G",
+      "date": "2006-06-19",
+      "city": "Dortmund",
+      "home": "TOG",
+      "away": "SUI",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m041",
+      "stage": "group",
+      "group": "G",
+      "date": "2006-06-23",
+      "city": "Köln",
+      "home": "TOG",
+      "away": "FRA",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m042",
+      "stage": "group",
+      "group": "G",
+      "date": "2006-06-23",
+      "city": "Hannover",
+      "home": "SUI",
+      "away": "KOR",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m043",
+      "stage": "group",
+      "group": "H",
+      "date": "2006-06-14",
+      "city": "Leipzig",
+      "home": "ESP",
+      "away": "UKR",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "m044",
+      "stage": "group",
+      "group": "H",
+      "date": "2006-06-14",
+      "city": "München",
+      "home": "TUN",
+      "away": "KSA",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m045",
+      "stage": "group",
+      "group": "H",
+      "date": "2006-06-19",
+      "city": "Hamburg",
+      "home": "KSA",
+      "away": "UKR",
+      "score": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "m046",
+      "stage": "group",
+      "group": "H",
+      "date": "2006-06-19",
+      "city": "Stuttgart",
+      "home": "ESP",
+      "away": "TUN",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m047",
+      "stage": "group",
+      "group": "H",
+      "date": "2006-06-23",
+      "city": "Kaiserslautern",
+      "home": "KSA",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m048",
+      "stage": "group",
+      "group": "H",
+      "date": "2006-06-23",
+      "city": "Berlin",
+      "home": "UKR",
+      "away": "TUN",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m049",
+      "stage": "r16",
+      "group": null,
+      "date": "2006-06-24",
+      "city": "München",
+      "home": "GER",
+      "away": "SWE",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m050",
+      "stage": "r16",
+      "group": null,
+      "date": "2006-06-24",
+      "city": "Leipzig",
+      "home": "ARG",
+      "away": "MEX",
+      "score": [
+        2,
+        1
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m051",
+      "stage": "r16",
+      "group": null,
+      "date": "2006-06-25",
+      "city": "Stuttgart",
+      "home": "ENG",
+      "away": "ECU",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m052",
+      "stage": "r16",
+      "group": null,
+      "date": "2006-06-25",
+      "city": "Nürnberg",
+      "home": "POR",
+      "away": "NED",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m053",
+      "stage": "r16",
+      "group": null,
+      "date": "2006-06-26",
+      "city": "Kaiserslautern",
+      "home": "ITA",
+      "away": "AUS",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m054",
+      "stage": "r16",
+      "group": null,
+      "date": "2006-06-26",
+      "city": "Köln",
+      "home": "SUI",
+      "away": "UKR",
+      "score": [
+        0,
+        0
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m055",
+      "stage": "r16",
+      "group": null,
+      "date": "2006-06-27",
+      "city": "Dortmund",
+      "home": "BRA",
+      "away": "GHA",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m056",
+      "stage": "r16",
+      "group": null,
+      "date": "2006-06-27",
+      "city": "Hannover",
+      "home": "ESP",
+      "away": "FRA",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m057",
+      "stage": "qf",
+      "group": null,
+      "date": "2006-06-30",
+      "city": "Berlin",
+      "home": "GER",
+      "away": "ARG",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "m058",
+      "stage": "qf",
+      "group": null,
+      "date": "2006-06-30",
+      "city": "Hamburg",
+      "home": "ITA",
+      "away": "UKR",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m059",
+      "stage": "qf",
+      "group": null,
+      "date": "2006-07-01",
+      "city": "Gelsenkirchen",
+      "home": "ENG",
+      "away": "POR",
+      "score": [
+        0,
+        0
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m060",
+      "stage": "qf",
+      "group": null,
+      "date": "2006-07-01",
+      "city": "Frankfurt",
+      "home": "BRA",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m061",
+      "stage": "sf",
+      "group": null,
+      "date": "2006-07-04",
+      "city": "Dortmund",
+      "home": "GER",
+      "away": "ITA",
+      "score": [
+        0,
+        2
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m062",
+      "stage": "sf",
+      "group": null,
+      "date": "2006-07-05",
+      "city": "München",
+      "home": "POR",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m063",
+      "stage": "third",
+      "group": null,
+      "date": "2006-07-08",
+      "city": "Stuttgart",
+      "home": "GER",
+      "away": "POR",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m064",
+      "stage": "final",
+      "group": null,
+      "date": "2006-07-09",
+      "city": "Berlin",
+      "home": "ITA",
+      "away": "FRA",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        5,
+        3
+      ]
+    }
+  ],
+  "scorers": [
+    {
+      "player": "Miroslav Klose",
+      "country": "GER",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Thierry Henry",
+      "country": "FRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Zinedine Zidane",
+      "country": "FRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Fernando Torres",
+      "country": "ESP",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Lukas Podolski",
+      "country": "GER",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Maxi Rodriguez",
+      "country": "ARG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Ronaldo",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Hernan Crespo",
+      "country": "ARG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "David Villa",
+      "country": "ESP",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Bastian Schweinsteiger",
+      "country": "GER",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Luca Toni",
+      "country": "ITA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Marco Materazzi",
+      "country": "ITA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Patrick Vieira",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Tomas Rosicky",
+      "country": "CZE",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Tim Cahill",
+      "country": "AUS",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Paulo Wanchope",
+      "country": "CRC",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Omar Bravo",
+      "country": "MEX",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Agustin Delgado",
+      "country": "ECU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Carlos Tenorio",
+      "country": "ECU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Bartosz Bosacki",
+      "country": "POL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Steven Gerrard",
+      "country": "ENG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Aruna Dindane",
+      "country": "CIV",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Andriy Shevchenko",
+      "country": "UKR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Alexander Frei",
+      "country": "SUI",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Adriano",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Maniche Ribeiro",
+      "country": "POR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Jan Koller",
+      "country": "CZE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Zinha",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jose Fonseca",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rafael Marquez",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Shunsuke Nakamura",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ahn Jung-hwan",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lee Chun-soo",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Park Ji-sung",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Torsten Frings",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Oliver Neuville",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Philipp Lahm",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yahya Golmohammadi",
+      "country": "IRN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sohrab Bakhtiarizadeh",
+      "country": "IRN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Flavio",
+      "country": "ANG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Didier Drogba",
+      "country": "CIV",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Bakary Kone",
+      "country": "CIV",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Bonaventure Kalou",
+      "country": "CIV",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nikola Zigic",
+      "country": "SCG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sasa Ilic",
+      "country": "SCG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Abdelkader Coubadja",
+      "country": "TOG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "John Aloisi",
+      "country": "AUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Craig Moore",
+      "country": "AUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Harry Kewell",
+      "country": "AUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kaka",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Fred",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gilberto",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Juninho Pernambucano",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ze Roberto",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Arjen Robben",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Robin van Persie",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ruud van Nistelrooy",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Xabi Alonso",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Raul",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Juanito",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Franck Ribery",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Andrea Pirlo",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Vincenzo Iaquinta",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Alberto Gilardino",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Filippo Inzaghi",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Francesco Totti",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gianluca Zambrotta",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Fabio Grosso",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Alessandro Del Piero",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Clint Dempsey",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Pedro Pauleta",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Deco Souza",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Cristiano Ronaldo",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Simao Sabrosa",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nuno Gomes",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Zied Jaziri",
+      "country": "TUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Radhi Jaidi",
+      "country": "TUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jaouhar Mnari",
+      "country": "TUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yassir Al Qahtani",
+      "country": "KSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sami Al Jaber",
+      "country": "KSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ivan Kaviedes",
+      "country": "ECU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Peter Crouch",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Joe Cole",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "David Beckham",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Fredrik Ljungberg",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Henrik Larsson",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marcus Allback",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Esteban Cambiasso",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lionel Messi",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Carlos Tevez",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Javier Saviola",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Roberto Ayala",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Asamoah Gyan",
+      "country": "GHA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sulley Muntari",
+      "country": "GHA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Stephen Appiah",
+      "country": "GHA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Haminu Dramani",
+      "country": "GHA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Andriy Rusol",
+      "country": "UKR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Serhiy Rebrov",
+      "country": "UKR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Maksym Kalinichenko",
+      "country": "UKR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Tranquillo Barnetta",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Philippe Senderos",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ronald Gomez",
+      "country": "CRC",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nelson Cuevas",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Darijo Srna",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Niko Kovac",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Keiji Tamada",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Carlos Gamarra",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Brent Sancho",
+      "country": "TRI",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Cristian Zaccardo",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Armando Petit",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    }
+  ]
+}

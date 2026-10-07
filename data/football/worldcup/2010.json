@@ -1,0 +1,1883 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 2010,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "RSA"
+  ],
+  "teamsCount": 32,
+  "results": {
+    "champion": "ESP",
+    "runnerUp": "NED",
+    "third": "GER",
+    "finalMatchId": "m064"
+  },
+  "coverage": {
+    "matches": 64,
+    "goals": 145,
+    "scorers": 98,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:2010f",
+      "name": "RSSSF — World Cup 2010 (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tables/2010f.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:2010full",
+      "name": "RSSSF — World Cup 2010 - Match Details (Neil Morrison)",
+      "url": "https://www.rsssf.org/tables/2010full.html",
+      "retrieved": "2026-10-06",
+      "author": "Neil Morrison",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "provenance": {
+    "primary": "rsssf:2010f",
+    "rejected": [
+      {
+        "source": "rsssf:2010full",
+        "field": "match.m022.city",
+        "value": "Phokeng",
+        "reason": "2010full sitúa el GHA-AUS (19/06/2010) en Phokeng (Royal Bafokeng Stadium); 2010f da Rustenburg (NNf primary)."
+      },
+      {
+        "source": "rsssf:2010full",
+        "field": "match.m023.city",
+        "value": "Mbombela",
+        "reason": "2010full sitúa el AUS-SRB (23/06/2010) en Mbombela (Mbombela Stadium); 2010f da Nelspruit (NNf primary)."
+      },
+      {
+        "source": "rsssf:2010full",
+        "field": "scorers.ownGoal",
+        "value": 2,
+        "reason": "La sección Statistics de 2010full declara 2 goles en propia; sus relatos marcan 3 (Agger, Park Chu-Young y Piqué en ESP-CHI). Se publica la lista derivada de los relatos (ADR-015)."
+      }
+    ]
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "URU",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 0,
+          "pts": 7
+        },
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "RSA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 7,
+          "ga": 1,
+          "pts": 9
+        },
+        {
+          "team": "KOR",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "GRE",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
+          "pts": 3
+        },
+        {
+          "team": "NGA",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 3,
+          "ga": 5,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "USA",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 4,
+          "ga": 3,
+          "pts": 5
+        },
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 2,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "SVN",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "ALG",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 0,
+          "ga": 2,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 1,
+          "pts": 6
+        },
+        {
+          "team": "GHA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "AUS",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "SRB",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 3,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 5,
+          "ga": 1,
+          "pts": 9
+        },
+        {
+          "team": "JPN",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "DEN",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 6,
+          "pts": 3
+        },
+        {
+          "team": "CMR",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 5,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "standings": [
+        {
+          "team": "PAR",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 3,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "SVK",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "NZL",
+          "p": 3,
+          "w": 0,
+          "d": 3,
+          "l": 0,
+          "gf": 2,
+          "ga": 2,
+          "pts": 3
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 4,
+          "ga": 5,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "POR",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 7,
+          "ga": 0,
+          "pts": 5
+        },
+        {
+          "team": "CIV",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "PRK",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 12,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "CHI",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 3,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "SUI",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 1,
+          "ga": 1,
+          "pts": 4
+        },
+        {
+          "team": "HON",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 0,
+          "ga": 3,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "date": "2010-06-11",
+      "city": "Johannesburg",
+      "home": "RSA",
+      "away": "MEX",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "date": "2010-06-11",
+      "city": "Cape Town",
+      "home": "URU",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "date": "2010-06-16",
+      "city": "Pretoria",
+      "home": "RSA",
+      "away": "URU",
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "date": "2010-06-17",
+      "city": "Polokwane",
+      "home": "FRA",
+      "away": "MEX",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "date": "2010-06-22",
+      "city": "Bloemfontein",
+      "home": "RSA",
+      "away": "FRA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "date": "2010-06-22",
+      "city": "Rustenburg",
+      "home": "MEX",
+      "away": "URU",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "date": "2010-06-12",
+      "city": "Port Elizabeth",
+      "home": "KOR",
+      "away": "GRE",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "date": "2010-06-12",
+      "city": "Johannesburg",
+      "home": "ARG",
+      "away": "NGA",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "date": "2010-06-17",
+      "city": "Johannesburg",
+      "home": "ARG",
+      "away": "KOR",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "date": "2010-06-17",
+      "city": "Bloemfontein",
+      "home": "GRE",
+      "away": "NGA",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "date": "2010-06-22",
+      "city": "Polokwane",
+      "home": "GRE",
+      "away": "ARG",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "date": "2010-06-22",
+      "city": "Durban",
+      "home": "NGA",
+      "away": "KOR",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "date": "2010-06-12",
+      "city": "Rustenburg",
+      "home": "ENG",
+      "away": "USA",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "date": "2010-06-13",
+      "city": "Polokwane",
+      "home": "ALG",
+      "away": "SVN",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "date": "2010-06-18",
+      "city": "Johannesburg",
+      "home": "SVN",
+      "away": "USA",
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "date": "2010-06-18",
+      "city": "Cape Town",
+      "home": "ENG",
+      "away": "ALG",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "date": "2010-06-23",
+      "city": "Port Elizabeth",
+      "home": "SVN",
+      "away": "ENG",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "date": "2010-06-23",
+      "city": "Pretoria",
+      "home": "USA",
+      "away": "ALG",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "date": "2010-06-13",
+      "city": "Pretoria",
+      "home": "GER",
+      "away": "AUS",
+      "score": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "date": "2010-06-13",
+      "city": "Durban",
+      "home": "SRB",
+      "away": "GHA",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "date": "2010-06-18",
+      "city": "Port Elizabeth",
+      "home": "GER",
+      "away": "SRB",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "date": "2010-06-19",
+      "city": "Rustenburg",
+      "home": "GHA",
+      "away": "AUS",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "date": "2010-06-23",
+      "city": "Nelspruit",
+      "home": "AUS",
+      "away": "SRB",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "date": "2010-06-23",
+      "city": "Johannesburg",
+      "home": "GHA",
+      "away": "GER",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m025",
+      "stage": "group",
+      "group": "E",
+      "date": "2010-06-14",
+      "city": "Johannesburg",
+      "home": "NED",
+      "away": "DEN",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m026",
+      "stage": "group",
+      "group": "E",
+      "date": "2010-06-14",
+      "city": "Bloemfontein",
+      "home": "JPN",
+      "away": "CMR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m027",
+      "stage": "group",
+      "group": "E",
+      "date": "2010-06-19",
+      "city": "Durban",
+      "home": "NED",
+      "away": "JPN",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m028",
+      "stage": "group",
+      "group": "E",
+      "date": "2010-06-19",
+      "city": "Pretoria",
+      "home": "CMR",
+      "away": "DEN",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m029",
+      "stage": "group",
+      "group": "E",
+      "date": "2010-06-24",
+      "city": "Cape Town",
+      "home": "CMR",
+      "away": "NED",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m030",
+      "stage": "group",
+      "group": "E",
+      "date": "2010-06-24",
+      "city": "Rustenburg",
+      "home": "DEN",
+      "away": "JPN",
+      "score": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m031",
+      "stage": "group",
+      "group": "F",
+      "date": "2010-06-14",
+      "city": "Cape Town",
+      "home": "ITA",
+      "away": "PAR",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m032",
+      "stage": "group",
+      "group": "F",
+      "date": "2010-06-15",
+      "city": "Rustenburg",
+      "home": "NZL",
+      "away": "SVK",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m033",
+      "stage": "group",
+      "group": "F",
+      "date": "2010-06-20",
+      "city": "Bloemfontein",
+      "home": "SVK",
+      "away": "PAR",
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "m034",
+      "stage": "group",
+      "group": "F",
+      "date": "2010-06-20",
+      "city": "Nelspruit",
+      "home": "ITA",
+      "away": "NZL",
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "m035",
+      "stage": "group",
+      "group": "F",
+      "date": "2010-06-24",
+      "city": "Polokwane",
+      "home": "PAR",
+      "away": "NZL",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m036",
+      "stage": "group",
+      "group": "F",
+      "date": "2010-06-24",
+      "city": "Johannesburg",
+      "home": "SVK",
+      "away": "ITA",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m037",
+      "stage": "group",
+      "group": "G",
+      "date": "2010-06-15",
+      "city": "Port Elizabeth",
+      "home": "CIV",
+      "away": "POR",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m038",
+      "stage": "group",
+      "group": "G",
+      "date": "2010-06-15",
+      "city": "Johannesburg",
+      "home": "BRA",
+      "away": "PRK",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m039",
+      "stage": "group",
+      "group": "G",
+      "date": "2010-06-20",
+      "city": "Johannesburg",
+      "home": "BRA",
+      "away": "CIV",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m040",
+      "stage": "group",
+      "group": "G",
+      "date": "2010-06-21",
+      "city": "Cape Town",
+      "home": "POR",
+      "away": "PRK",
+      "score": [
+        7,
+        0
+      ]
+    },
+    {
+      "id": "m041",
+      "stage": "group",
+      "group": "G",
+      "date": "2010-06-25",
+      "city": "Nelspruit",
+      "home": "PRK",
+      "away": "CIV",
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "m042",
+      "stage": "group",
+      "group": "G",
+      "date": "2010-06-25",
+      "city": "Durban",
+      "home": "POR",
+      "away": "BRA",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m043",
+      "stage": "group",
+      "group": "H",
+      "date": "2010-06-16",
+      "city": "Nelspruit",
+      "home": "HON",
+      "away": "CHI",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m044",
+      "stage": "group",
+      "group": "H",
+      "date": "2010-06-16",
+      "city": "Durban",
+      "home": "ESP",
+      "away": "SUI",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m045",
+      "stage": "group",
+      "group": "H",
+      "date": "2010-06-21",
+      "city": "Port Elizabeth",
+      "home": "CHI",
+      "away": "SUI",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m046",
+      "stage": "group",
+      "group": "H",
+      "date": "2010-06-21",
+      "city": "Johannesburg",
+      "home": "ESP",
+      "away": "HON",
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "m047",
+      "stage": "group",
+      "group": "H",
+      "date": "2010-06-25",
+      "city": "Pretoria",
+      "home": "CHI",
+      "away": "ESP",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m048",
+      "stage": "group",
+      "group": "H",
+      "date": "2010-06-25",
+      "city": "Bloemfontein",
+      "home": "SUI",
+      "away": "HON",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "m049",
+      "stage": "r16",
+      "group": null,
+      "date": "2010-06-26",
+      "city": "Port Elizabeth",
+      "home": "URU",
+      "away": "KOR",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m050",
+      "stage": "r16",
+      "group": null,
+      "date": "2010-06-26",
+      "city": "Rustenburg",
+      "home": "USA",
+      "away": "GHA",
+      "score": [
+        1,
+        2
+      ],
+      "notes": [
+        "aet"
+      ]
+    },
+    {
+      "id": "m051",
+      "stage": "r16",
+      "group": null,
+      "date": "2010-06-27",
+      "city": "Bloemfontein",
+      "home": "GER",
+      "away": "ENG",
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "m052",
+      "stage": "r16",
+      "group": null,
+      "date": "2010-06-27",
+      "city": "Johannesburg",
+      "home": "ARG",
+      "away": "MEX",
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m053",
+      "stage": "r16",
+      "group": null,
+      "date": "2010-06-28",
+      "city": "Durban",
+      "home": "NED",
+      "away": "SVK",
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "m054",
+      "stage": "r16",
+      "group": null,
+      "date": "2010-06-28",
+      "city": "Johannesburg",
+      "home": "BRA",
+      "away": "CHI",
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m055",
+      "stage": "r16",
+      "group": null,
+      "date": "2010-06-29",
+      "city": "Pretoria",
+      "home": "PAR",
+      "away": "JPN",
+      "score": [
+        0,
+        0
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        5,
+        3
+      ]
+    },
+    {
+      "id": "m056",
+      "stage": "r16",
+      "group": null,
+      "date": "2010-06-29",
+      "city": "Cape Town",
+      "home": "ESP",
+      "away": "POR",
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "m057",
+      "stage": "qf",
+      "group": null,
+      "date": "2010-07-02",
+      "city": "Port Elizabeth",
+      "home": "BRA",
+      "away": "NED",
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "m058",
+      "stage": "qf",
+      "group": null,
+      "date": "2010-07-02",
+      "city": "Johannesburg",
+      "home": "URU",
+      "away": "GHA",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "m059",
+      "stage": "qf",
+      "group": null,
+      "date": "2010-07-03",
+      "city": "Cape Town",
+      "home": "ARG",
+      "away": "GER",
+      "score": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "m060",
+      "stage": "qf",
+      "group": null,
+      "date": "2010-07-03",
+      "city": "Johannesburg",
+      "home": "PAR",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m061",
+      "stage": "sf",
+      "group": null,
+      "date": "2010-07-06",
+      "city": "Cape Town",
+      "home": "NED",
+      "away": "URU",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m062",
+      "stage": "sf",
+      "group": null,
+      "date": "2010-07-07",
+      "city": "Durban",
+      "home": "GER",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "m063",
+      "stage": "third",
+      "group": null,
+      "date": "2010-07-10",
+      "city": "Port Elizabeth",
+      "home": "GER",
+      "away": "URU",
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "m064",
+      "stage": "final",
+      "group": null,
+      "date": "2010-07-11",
+      "city": "Johannesburg",
+      "home": "ESP",
+      "away": "NED",
+      "score": [
+        1,
+        0
+      ],
+      "notes": [
+        "aet"
+      ]
+    }
+  ],
+  "scorers": [
+    {
+      "player": "David Villa",
+      "country": "ESP",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Thomas Müller",
+      "country": "GER",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Wesley Sneĳder",
+      "country": "NED",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Diego Forlán",
+      "country": "URU",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Gonzalo Higuaín",
+      "country": "ARG",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Miroslav Klose",
+      "country": "GER",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Róbert Vittek",
+      "country": "SVK",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Luís Fabiano Clemente",
+      "country": "BRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Asamoah Gyan",
+      "country": "GHA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Luis Suárez",
+      "country": "URU",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Landon Donovan",
+      "country": "USA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Carlos Tévez",
+      "country": "ARG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Brett Holman",
+      "country": "AUS",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Elano Blumer",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Róbson de Souza 'Robinho'",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Samuel Eto'o",
+      "country": "CMR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Andrés Iniesta",
+      "country": "ESP",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Lukas Podolski",
+      "country": "GER",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Keisuke Honda",
+      "country": "JPN",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Lee Chung-Yong",
+      "country": "KOR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Lee Jung-Soo",
+      "country": "KOR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Javier Hernández",
+      "country": "MEX",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Arjen Robben",
+      "country": "NED",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Kalu Uche",
+      "country": "NGA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Tiago Mendes",
+      "country": "POR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Gabriel Heinze",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Martín Demichelis",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Martín Palermo",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Tim Cahill",
+      "country": "AUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Juan dos Santos",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Maicon Sisenando",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jean Beausejour",
+      "country": "CHI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mark González",
+      "country": "CHI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Didier Drogba",
+      "country": "CIV",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Romaric N’Dri",
+      "country": "CIV",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Salomon Kalou",
+      "country": "CIV",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yaya Touré",
+      "country": "CIV",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Daniel Agger",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Dennis Rommedahl",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jon Dahl Tomasson",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nicklas Bendtner",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jermain Defoe",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Matthew Upson",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Steven Gerrard",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Carles Puyol",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gerard Piqué",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Florent Malouda",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Arne Friedrich",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Claudemir Barreto 'Cacau'",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marcell Jansen",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mesut Özil",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sami Khedira",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kevin-Prince Boateng",
+      "country": "GHA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sulley Muntari",
+      "country": "GHA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dhimítris Salpingyídhis",
+      "country": "GRE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Vasílyis Torosídhis",
+      "country": "GRE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Antonio Di Natale",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Daniele De Rossi",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Fabio Quagliarella",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Vincenzo Iaquinta",
+      "country": "ITA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Shinji Okazaki",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yasuhito Endo",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Park Chu-Young",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Park Chu-Young",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Park Ji-Sung",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Cuauhtémoc Blanco",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rafael Márquez",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dirk Kuĳt",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Giovanni van Bronckhorst",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Klaas-Jan Huntelaar",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Robin van Persie",
+      "country": "NED",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yakubu Aiyegbeni",
+      "country": "NGA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Shane Smeltz",
+      "country": "NZL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Winston Reid",
+      "country": "NZL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Antolín Alcaraz",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Cristian Riveros",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Enrique Vera",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Cristiano Ronaldo Aveiro",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Hugo Almeida",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Liédson Muniz",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Raul Meireles",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Simão Sabrosa",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ji Yun-Nam",
+      "country": "PRK",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Bongani Khumalo",
+      "country": "RSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Katlego Mphela",
+      "country": "RSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Siphiwe Tshabalala",
+      "country": "RSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marko Pantelić",
+      "country": "SRB",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Milan Jovanović",
+      "country": "SRB",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gelson Fernandes",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kamil Kopúnek",
+      "country": "SVK",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Robert Koren",
+      "country": "SVN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Valter Birsa",
+      "country": "SVN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Zlatan Ljubijankič",
+      "country": "SVN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Álvaro Pereira",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Edinson Cavani",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Maxi Pereira",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Clint Dempsey",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Michael Bradley",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    }
+  ]
+}

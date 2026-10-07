@@ -1,0 +1,2308 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "worldcup",
+  "edition": 2018,
+  "status": "closed",
+  "teamMode": "country",
+  "hosts": [
+    "RUS"
+  ],
+  "teamsCount": 32,
+  "results": {
+    "champion": "FRA",
+    "runnerUp": "CRO",
+    "third": "BEL",
+    "finalMatchId": "m064"
+  },
+  "coverage": {
+    "matches": 64,
+    "goals": 169,
+    "scorers": 122,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:2018f",
+      "name": "RSSSF — World Cup 2018 (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tables/2018f.html",
+      "retrieved": "2026-10-06",
+      "author": "Karel Stokkermans",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:2018full",
+      "name": "RSSSF — World Cup 2018 - Match Details (Neil Morrison)",
+      "url": "https://www.rsssf.org/tables/2018full.html",
+      "retrieved": "2026-10-06",
+      "author": "Neil Morrison",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-06",
+  "provenance": {
+    "primary": "rsssf:2018f",
+    "rejected": [
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m003.city",
+        "value": "Sankt-Peterburg",
+        "reason": "2018full sitúa el partido en Sankt-Peterburg; se conserva Skt. Peterburg de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m007.city",
+        "value": "Sankt-Peterburg",
+        "reason": "2018full sitúa el partido en Sankt-Peterburg; se conserva Skt. Peterburg de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m021.city",
+        "value": "Nizhniy Novgorod",
+        "reason": "2018full sitúa el partido en Nizhniy Novgorod; se conserva Nz. Novgorod de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m024.city",
+        "value": "Sankt-Peterburg",
+        "reason": "2018full sitúa el partido en Sankt-Peterburg; se conserva Skt. Peterburg de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m027.city",
+        "value": "Sankt-Peterburg",
+        "reason": "2018full sitúa el partido en Sankt-Peterburg; se conserva Skt. Peterburg de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m030.city",
+        "value": "Nizhniy Novgorod",
+        "reason": "2018full sitúa el partido en Nizhniy Novgorod; se conserva Nz. Novgorod de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m032.city",
+        "value": "Nizhniy Novgorod",
+        "reason": "2018full sitúa el partido en Nizhniy Novgorod; se conserva Nz. Novgorod de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m040.city",
+        "value": "Nizhniy Novgorod",
+        "reason": "2018full sitúa el partido en Nizhniy Novgorod; se conserva Nz. Novgorod de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m052.city",
+        "value": "Nizhniy Novgorod",
+        "reason": "2018full sitúa el partido en Nizhniy Novgorod; se conserva Nz. Novgorod de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m055.city",
+        "value": "Sankt-Peterburg",
+        "reason": "2018full sitúa el partido en Sankt-Peterburg; se conserva Skt. Peterburg de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m057.city",
+        "value": "Nizhniy Novgorod",
+        "reason": "2018full sitúa el partido en Nizhniy Novgorod; se conserva Nz. Novgorod de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m061.city",
+        "value": "Sankt-Peterburg",
+        "reason": "2018full sitúa el partido en Sankt-Peterburg; se conserva Skt. Peterburg de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "match.m063.city",
+        "value": "Sankt-Peterburg",
+        "reason": "2018full sitúa el partido en Sankt-Peterburg; se conserva Skt. Peterburg de rsssf:2018f (primary)."
+      },
+      {
+        "source": "rsssf:2018full",
+        "field": "matches[].order",
+        "value": "winner-first",
+        "reason": "2018full lista en primer lugar al ganador; se conserva el orden de emparejamiento de rsssf:2018f (primary)."
+      }
+    ]
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "URU",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 5,
+          "ga": 0,
+          "pts": 9
+        },
+        {
+          "team": "RUS",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 8,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "KSA",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 7,
+          "pts": 3
+        },
+        {
+          "team": "EGY",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 6,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 6,
+          "ga": 5,
+          "pts": 5
+        },
+        {
+          "team": "POR",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 5,
+          "ga": 4,
+          "pts": 5
+        },
+        {
+          "team": "IRN",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "MAR",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 3,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "DEN",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 2,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "PER",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 2,
+          "pts": 3
+        },
+        {
+          "team": "AUS",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "CRO",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 7,
+          "ga": 1,
+          "pts": 9
+        },
+        {
+          "team": "ARG",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "NGA",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "ISL",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "SUI",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 5,
+          "ga": 4,
+          "pts": 5
+        },
+        {
+          "team": "SRB",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "CRC",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "standings": [
+        {
+          "team": "SWE",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "MEX",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 3,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "KOR",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "standings": [
+        {
+          "team": "BEL",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 9,
+          "ga": 2,
+          "pts": 9
+        },
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 8,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "TUN",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 5,
+          "ga": 8,
+          "pts": 3
+        },
+        {
+          "team": "PAN",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 11,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "standings": [
+        {
+          "team": "COL",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "JPN",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "SEN",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "POL",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
+          "pts": 3
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "date": "2018-06-14",
+      "city": "Moskva",
+      "home": "RUS",
+      "away": "KSA",
+      "score": [
+        5,
+        0
+      ],
+      "extra": {
+        "attendance": 78011
+      }
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "date": "2018-06-15",
+      "city": "Yekaterinburg",
+      "home": "EGY",
+      "away": "URU",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 27015
+      }
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "date": "2018-06-19",
+      "city": "Skt. Peterburg",
+      "home": "RUS",
+      "away": "EGY",
+      "score": [
+        3,
+        1
+      ],
+      "extra": {
+        "attendance": 64468
+      }
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "date": "2018-06-20",
+      "city": "Rostov-na-Donu",
+      "home": "URU",
+      "away": "KSA",
+      "score": [
+        1,
+        0
+      ],
+      "extra": {
+        "attendance": 42678
+      }
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "date": "2018-06-25",
+      "city": "Volgograd",
+      "home": "KSA",
+      "away": "EGY",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 36823
+      }
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "date": "2018-06-25",
+      "city": "Samara",
+      "home": "RUS",
+      "away": "URU",
+      "score": [
+        0,
+        3
+      ],
+      "extra": {
+        "attendance": 41970
+      }
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "date": "2018-06-15",
+      "city": "Skt. Peterburg",
+      "home": "MAR",
+      "away": "IRN",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 62548
+      }
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "date": "2018-06-15",
+      "city": "Sochi",
+      "home": "POR",
+      "away": "ESP",
+      "score": [
+        3,
+        3
+      ],
+      "extra": {
+        "attendance": 43866
+      }
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "date": "2018-06-20",
+      "city": "Moskva",
+      "home": "POR",
+      "away": "MAR",
+      "score": [
+        1,
+        0
+      ],
+      "extra": {
+        "attendance": 78011
+      }
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "date": "2018-06-20",
+      "city": "Kazan",
+      "home": "IRN",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 42718
+      }
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "date": "2018-06-25",
+      "city": "Saransk",
+      "home": "IRN",
+      "away": "POR",
+      "score": [
+        1,
+        1
+      ],
+      "extra": {
+        "attendance": 41685
+      }
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "date": "2018-06-25",
+      "city": "Kaliningrad",
+      "home": "ESP",
+      "away": "MAR",
+      "score": [
+        2,
+        2
+      ],
+      "extra": {
+        "attendance": 33973
+      }
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "date": "2018-06-16",
+      "city": "Kazan",
+      "home": "FRA",
+      "away": "AUS",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 41279
+      }
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "date": "2018-06-16",
+      "city": "Saransk",
+      "home": "PER",
+      "away": "DEN",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 40502
+      }
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "date": "2018-06-21",
+      "city": "Samara",
+      "home": "DEN",
+      "away": "AUS",
+      "score": [
+        1,
+        1
+      ],
+      "extra": {
+        "attendance": 40727
+      }
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "date": "2018-06-21",
+      "city": "Yekaterinburg",
+      "home": "FRA",
+      "away": "PER",
+      "score": [
+        1,
+        0
+      ],
+      "extra": {
+        "attendance": 32789
+      }
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "date": "2018-06-26",
+      "city": "Sochi",
+      "home": "AUS",
+      "away": "PER",
+      "score": [
+        0,
+        2
+      ],
+      "extra": {
+        "attendance": 44073
+      }
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "date": "2018-06-26",
+      "city": "Moskva",
+      "home": "DEN",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "extra": {
+        "attendance": 78011
+      }
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "date": "2018-06-16",
+      "city": "Moskva",
+      "home": "ARG",
+      "away": "ISL",
+      "score": [
+        1,
+        1
+      ],
+      "extra": {
+        "attendance": 44190
+      }
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "date": "2018-06-16",
+      "city": "Kaliningrad",
+      "home": "CRO",
+      "away": "NGA",
+      "score": [
+        2,
+        0
+      ],
+      "extra": {
+        "attendance": 31136
+      }
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "date": "2018-06-21",
+      "city": "Nz. Novgorod",
+      "home": "ARG",
+      "away": "CRO",
+      "score": [
+        0,
+        3
+      ],
+      "extra": {
+        "attendance": 43319
+      }
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "date": "2018-06-22",
+      "city": "Volgograd",
+      "home": "NGA",
+      "away": "ISL",
+      "score": [
+        2,
+        0
+      ],
+      "extra": {
+        "attendance": 40904
+      }
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "date": "2018-06-26",
+      "city": "Rostov-na-Donu",
+      "home": "ISL",
+      "away": "CRO",
+      "score": [
+        1,
+        2
+      ],
+      "extra": {
+        "attendance": 43472
+      }
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "date": "2018-06-26",
+      "city": "Skt. Peterburg",
+      "home": "NGA",
+      "away": "ARG",
+      "score": [
+        1,
+        2
+      ],
+      "extra": {
+        "attendance": 64468
+      }
+    },
+    {
+      "id": "m025",
+      "stage": "group",
+      "group": "E",
+      "date": "2018-06-17",
+      "city": "Samara",
+      "home": "CRC",
+      "away": "SRB",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 41432
+      }
+    },
+    {
+      "id": "m026",
+      "stage": "group",
+      "group": "E",
+      "date": "2018-06-17",
+      "city": "Rostov-na-Donu",
+      "home": "BRA",
+      "away": "SUI",
+      "score": [
+        1,
+        1
+      ],
+      "extra": {
+        "attendance": 43109
+      }
+    },
+    {
+      "id": "m027",
+      "stage": "group",
+      "group": "E",
+      "date": "2018-06-22",
+      "city": "Skt. Peterburg",
+      "home": "BRA",
+      "away": "CRC",
+      "score": [
+        2,
+        0
+      ],
+      "extra": {
+        "attendance": 64468
+      }
+    },
+    {
+      "id": "m028",
+      "stage": "group",
+      "group": "E",
+      "date": "2018-06-22",
+      "city": "Kaliningrad",
+      "home": "SRB",
+      "away": "SUI",
+      "score": [
+        1,
+        2
+      ],
+      "extra": {
+        "attendance": 33167
+      }
+    },
+    {
+      "id": "m029",
+      "stage": "group",
+      "group": "E",
+      "date": "2018-06-27",
+      "city": "Moskva",
+      "home": "SRB",
+      "away": "BRA",
+      "score": [
+        0,
+        2
+      ],
+      "extra": {
+        "attendance": 44190
+      }
+    },
+    {
+      "id": "m030",
+      "stage": "group",
+      "group": "E",
+      "date": "2018-06-27",
+      "city": "Nz. Novgorod",
+      "home": "SUI",
+      "away": "CRC",
+      "score": [
+        2,
+        2
+      ],
+      "extra": {
+        "attendance": 43319
+      }
+    },
+    {
+      "id": "m031",
+      "stage": "group",
+      "group": "F",
+      "date": "2018-06-17",
+      "city": "Moskva",
+      "home": "GER",
+      "away": "MEX",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 78011
+      }
+    },
+    {
+      "id": "m032",
+      "stage": "group",
+      "group": "F",
+      "date": "2018-06-18",
+      "city": "Nz. Novgorod",
+      "home": "SWE",
+      "away": "KOR",
+      "score": [
+        1,
+        0
+      ],
+      "extra": {
+        "attendance": 42300
+      }
+    },
+    {
+      "id": "m033",
+      "stage": "group",
+      "group": "F",
+      "date": "2018-06-23",
+      "city": "Rostov-na-Donu",
+      "home": "KOR",
+      "away": "MEX",
+      "score": [
+        1,
+        2
+      ],
+      "extra": {
+        "attendance": 43472
+      }
+    },
+    {
+      "id": "m034",
+      "stage": "group",
+      "group": "F",
+      "date": "2018-06-23",
+      "city": "Sochi",
+      "home": "GER",
+      "away": "SWE",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 44287
+      }
+    },
+    {
+      "id": "m035",
+      "stage": "group",
+      "group": "F",
+      "date": "2018-06-27",
+      "city": "Kazan",
+      "home": "KOR",
+      "away": "GER",
+      "score": [
+        2,
+        0
+      ],
+      "extra": {
+        "attendance": 41835
+      }
+    },
+    {
+      "id": "m036",
+      "stage": "group",
+      "group": "F",
+      "date": "2018-06-27",
+      "city": "Yekaterinburg",
+      "home": "MEX",
+      "away": "SWE",
+      "score": [
+        0,
+        3
+      ],
+      "extra": {
+        "attendance": 33061
+      }
+    },
+    {
+      "id": "m037",
+      "stage": "group",
+      "group": "G",
+      "date": "2018-06-18",
+      "city": "Sochi",
+      "home": "BEL",
+      "away": "PAN",
+      "score": [
+        3,
+        0
+      ],
+      "extra": {
+        "attendance": 43257
+      }
+    },
+    {
+      "id": "m038",
+      "stage": "group",
+      "group": "G",
+      "date": "2018-06-18",
+      "city": "Volgograd",
+      "home": "TUN",
+      "away": "ENG",
+      "score": [
+        1,
+        2
+      ],
+      "extra": {
+        "attendance": 41064
+      }
+    },
+    {
+      "id": "m039",
+      "stage": "group",
+      "group": "G",
+      "date": "2018-06-23",
+      "city": "Moskva",
+      "home": "BEL",
+      "away": "TUN",
+      "score": [
+        5,
+        2
+      ],
+      "extra": {
+        "attendance": 44190
+      }
+    },
+    {
+      "id": "m040",
+      "stage": "group",
+      "group": "G",
+      "date": "2018-06-24",
+      "city": "Nz. Novgorod",
+      "home": "ENG",
+      "away": "PAN",
+      "score": [
+        6,
+        1
+      ],
+      "extra": {
+        "attendance": 43319
+      }
+    },
+    {
+      "id": "m041",
+      "stage": "group",
+      "group": "G",
+      "date": "2018-06-28",
+      "city": "Kaliningrad",
+      "home": "ENG",
+      "away": "BEL",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 33973
+      }
+    },
+    {
+      "id": "m042",
+      "stage": "group",
+      "group": "G",
+      "date": "2018-06-28",
+      "city": "Saransk",
+      "home": "PAN",
+      "away": "TUN",
+      "score": [
+        1,
+        2
+      ],
+      "extra": {
+        "attendance": 37168
+      }
+    },
+    {
+      "id": "m043",
+      "stage": "group",
+      "group": "H",
+      "date": "2018-06-19",
+      "city": "Saransk",
+      "home": "COL",
+      "away": "JPN",
+      "score": [
+        1,
+        2
+      ],
+      "extra": {
+        "attendance": 40842
+      }
+    },
+    {
+      "id": "m044",
+      "stage": "group",
+      "group": "H",
+      "date": "2018-06-19",
+      "city": "Moskva",
+      "home": "POL",
+      "away": "SEN",
+      "score": [
+        1,
+        2
+      ],
+      "extra": {
+        "attendance": 44190
+      }
+    },
+    {
+      "id": "m045",
+      "stage": "group",
+      "group": "H",
+      "date": "2018-06-24",
+      "city": "Yekaterinburg",
+      "home": "JPN",
+      "away": "SEN",
+      "score": [
+        2,
+        2
+      ],
+      "extra": {
+        "attendance": 32572
+      }
+    },
+    {
+      "id": "m046",
+      "stage": "group",
+      "group": "H",
+      "date": "2018-06-24",
+      "city": "Kazan",
+      "home": "POL",
+      "away": "COL",
+      "score": [
+        0,
+        3
+      ],
+      "extra": {
+        "attendance": 42873
+      }
+    },
+    {
+      "id": "m047",
+      "stage": "group",
+      "group": "H",
+      "date": "2018-06-28",
+      "city": "Volgograd",
+      "home": "JPN",
+      "away": "POL",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 42189
+      }
+    },
+    {
+      "id": "m048",
+      "stage": "group",
+      "group": "H",
+      "date": "2018-06-28",
+      "city": "Samara",
+      "home": "SEN",
+      "away": "COL",
+      "score": [
+        0,
+        1
+      ],
+      "extra": {
+        "attendance": 41970
+      }
+    },
+    {
+      "id": "m049",
+      "stage": "r16",
+      "group": null,
+      "date": "2018-06-30",
+      "city": "Kazan",
+      "home": "FRA",
+      "away": "ARG",
+      "score": [
+        4,
+        3
+      ],
+      "extra": {
+        "attendance": 42873
+      }
+    },
+    {
+      "id": "m050",
+      "stage": "r16",
+      "group": null,
+      "date": "2018-06-30",
+      "city": "Sochi",
+      "home": "URU",
+      "away": "POR",
+      "score": [
+        2,
+        1
+      ],
+      "extra": {
+        "attendance": 44287
+      }
+    },
+    {
+      "id": "m051",
+      "stage": "r16",
+      "group": null,
+      "date": "2018-07-01",
+      "city": "Moskva",
+      "home": "RUS",
+      "away": "ESP",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        4,
+        3
+      ],
+      "extra": {
+        "attendance": 78011
+      }
+    },
+    {
+      "id": "m052",
+      "stage": "r16",
+      "group": null,
+      "date": "2018-07-01",
+      "city": "Nz. Novgorod",
+      "home": "CRO",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        3,
+        2
+      ],
+      "extra": {
+        "attendance": 40851
+      }
+    },
+    {
+      "id": "m053",
+      "stage": "r16",
+      "group": null,
+      "date": "2018-07-02",
+      "city": "Samara",
+      "home": "BRA",
+      "away": "MEX",
+      "score": [
+        2,
+        0
+      ],
+      "extra": {
+        "attendance": 41970
+      }
+    },
+    {
+      "id": "m054",
+      "stage": "r16",
+      "group": null,
+      "date": "2018-07-02",
+      "city": "Rostov-na-Donu",
+      "home": "BEL",
+      "away": "JPN",
+      "score": [
+        3,
+        2
+      ],
+      "extra": {
+        "attendance": 41466
+      }
+    },
+    {
+      "id": "m055",
+      "stage": "r16",
+      "group": null,
+      "date": "2018-07-03",
+      "city": "Skt. Peterburg",
+      "home": "SWE",
+      "away": "SUI",
+      "score": [
+        1,
+        0
+      ],
+      "extra": {
+        "attendance": 64042
+      }
+    },
+    {
+      "id": "m056",
+      "stage": "r16",
+      "group": null,
+      "date": "2018-07-03",
+      "city": "Moskva",
+      "home": "COL",
+      "away": "ENG",
+      "score": [
+        1,
+        1
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        3,
+        4
+      ],
+      "extra": {
+        "attendance": 44190
+      }
+    },
+    {
+      "id": "m057",
+      "stage": "qf",
+      "group": null,
+      "date": "2018-07-06",
+      "city": "Nz. Novgorod",
+      "home": "URU",
+      "away": "FRA",
+      "score": [
+        0,
+        2
+      ],
+      "extra": {
+        "attendance": 43319
+      }
+    },
+    {
+      "id": "m058",
+      "stage": "qf",
+      "group": null,
+      "date": "2018-07-06",
+      "city": "Kazan",
+      "home": "BRA",
+      "away": "BEL",
+      "score": [
+        1,
+        2
+      ],
+      "extra": {
+        "attendance": 42873
+      }
+    },
+    {
+      "id": "m059",
+      "stage": "qf",
+      "group": null,
+      "date": "2018-07-07",
+      "city": "Samara",
+      "home": "SWE",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ],
+      "extra": {
+        "attendance": 39991
+      }
+    },
+    {
+      "id": "m060",
+      "stage": "qf",
+      "group": null,
+      "date": "2018-07-07",
+      "city": "Sochi",
+      "home": "RUS",
+      "away": "CRO",
+      "score": [
+        2,
+        2
+      ],
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        3,
+        4
+      ],
+      "extra": {
+        "attendance": 44287
+      }
+    },
+    {
+      "id": "m061",
+      "stage": "sf",
+      "group": null,
+      "date": "2018-07-10",
+      "city": "Skt. Peterburg",
+      "home": "FRA",
+      "away": "BEL",
+      "score": [
+        1,
+        0
+      ],
+      "extra": {
+        "attendance": 64286
+      }
+    },
+    {
+      "id": "m062",
+      "stage": "sf",
+      "group": null,
+      "date": "2018-07-11",
+      "city": "Moskva",
+      "home": "CRO",
+      "away": "ENG",
+      "score": [
+        2,
+        1
+      ],
+      "notes": [
+        "aet"
+      ],
+      "extra": {
+        "attendance": 78011
+      }
+    },
+    {
+      "id": "m063",
+      "stage": "third",
+      "group": null,
+      "date": "2018-07-14",
+      "city": "Skt. Peterburg",
+      "home": "BEL",
+      "away": "ENG",
+      "score": [
+        2,
+        0
+      ],
+      "extra": {
+        "attendance": 64406
+      }
+    },
+    {
+      "id": "m064",
+      "stage": "final",
+      "group": null,
+      "date": "2018-07-15",
+      "city": "Moskva",
+      "home": "FRA",
+      "away": "CRO",
+      "score": [
+        4,
+        2
+      ],
+      "extra": {
+        "attendance": 78011
+      }
+    }
+  ],
+  "scorers": [
+    {
+      "player": "Harry Kane",
+      "country": "ENG",
+      "goals": 6,
+      "scope": "final"
+    },
+    {
+      "player": "Antoine Griezmann",
+      "country": "FRA",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Cristiano Ronaldo Aveiro",
+      "country": "POR",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Denis Cheryshev",
+      "country": "RUS",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Kylian Mbappé",
+      "country": "FRA",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Romelu Lukaku",
+      "country": "BEL",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Artyom Dzyuba",
+      "country": "RUS",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Diego Costa",
+      "country": "ESP",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Eden Hazard",
+      "country": "BEL",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Edinson Cavani",
+      "country": "URU",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Ivan Perišić",
+      "country": "CRO",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Mario Mandžukić",
+      "country": "CRO",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Yerry Mina",
+      "country": "COL",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Ahmed Musa",
+      "country": "NGA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Andreas Granqvist",
+      "country": "SWE",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "John Stones",
+      "country": "ENG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Luis Suárez",
+      "country": "URU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Luka Modrić",
+      "country": "CRO",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Mile Jedinak",
+      "country": "AUS",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Mohammed Salah",
+      "country": "EGY",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Neymar Santos Júnior",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Philippe Coutinho Correia",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Sergio Agüero",
+      "country": "ARG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Son Heung-Min",
+      "country": "KOR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Takashi Inui",
+      "country": "JPN",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Wahbi Khazri",
+      "country": "TUN",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Adnan Januzaj",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ahmed Fathy",
+      "country": "EGY",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Aleksandar Kolarov",
+      "country": "SRB",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Aleksandar Mitrović",
+      "country": "SRB",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Aleksandr Golovin",
+      "country": "RUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Alfreð Finnbogason",
+      "country": "ISL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "André Carrillo",
+      "country": "PER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Andrej Kramarić",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ángel Di María",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ante Rebić",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Aziz Behich",
+      "country": "AUS",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Aziz Bouhaddouz",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Benjamin Pavard",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Blerim Džemaili",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Carlos Vela",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Christian Eriksen",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dele Alli",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Denis Cheryshev",
+      "country": "RUS",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Domagoj Vida",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dries Mertens",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dylan Bronn",
+      "country": "TUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Edson Álvarez",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Fakhreddine Ben Youssef",
+      "country": "TUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Felipe Baloy",
+      "country": "PAN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ferjani Sassi",
+      "country": "TUN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Fernando Roza 'Fernandinho'",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Gabriel Mercado",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Genki Haraguchi",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Granit Xhaka",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Grzegorz Krychowiak",
+      "country": "POL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gylfi Þór Sigurðsson",
+      "country": "ISL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Harry Maguire",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Hirving Lozano",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Iago Aspas",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Isco Alarcón",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ivan Rakitić",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jan Bednarek",
+      "country": "POL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jan Vertonghen",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Javier Hernández",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jesse Lingard",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "José María Giménez",
+      "country": "URU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "José Paulo Maciel Júnior 'Paulinho'",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Josip Drmić",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Juan Fernando Quintero",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Juan Guillermo Cuadrado",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Karim Ansarifard",
+      "country": "IRN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Keisuke Honda",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kendall Waston",
+      "country": "CRC",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Képler Ferreira 'Pepe'",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kevin De Bruyne",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Khalid Boutaïb",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kieran Trippier",
+      "country": "ENG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Kim Young-Gwon",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lionel Messi",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ludwig Augustinsson",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "M'Baye Niang",
+      "country": "SEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Manuel Akanji",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Marco Reus",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Marcos Rojo",
+      "country": "ARG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mário Fernandes",
+      "country": "RUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mario Mandžukić",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Marouane Fellaini",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mathias Jørgensen",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Michy Batshuayi",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Milan Badelj",
+      "country": "CRO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Moussa Wagué",
+      "country": "SEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nacer Chadli",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nacho Fernández",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Oghenekaro Etebo",
+      "country": "NGA",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Ola Toivonen",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Paolo Guerrero",
+      "country": "PER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Paul Pogba",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Radamel Falcao García",
+      "country": "COL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Raphaël Varane",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Renato Augusto",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ricardo Quaresma Bernardo",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Roberto Firmino de Oliveira",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sadio Mané",
+      "country": "SEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Salem Ad-Dawsari",
+      "country": "KSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Salman Al-Faraj",
+      "country": "KSA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Samuel Umtiti",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Sergey Ignashevich",
+      "country": "RUS",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Shinji Kagawa",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Steven Zuber",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Thiago Cionek",
+      "country": "POL",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Thiago da Silva",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Thomas Meunier",
+      "country": "BEL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Toni Kroos",
+      "country": "GER",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Victor Moses",
+      "country": "NGA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Xherdan Shaqiri",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yann Sommer",
+      "country": "SUI",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Yassine Meriah",
+      "country": "TUN",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "Youssef En-Nesyri",
+      "country": "MAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yuriy Gazinskiy",
+      "country": "RUS",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yussuf Yurary Poulsen",
+      "country": "DEN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yūya Ōsako",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    }
+  ]
+}
