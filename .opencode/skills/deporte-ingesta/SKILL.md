@@ -48,6 +48,9 @@ node scripts/ingest.js promote --year=1954            # muestra el diff, no escr
 node scripts/ingest.js promote --year=1954 --confirm  # atómico + revalida + revierte si falla
 ```
 
+`promote --confirm` regenera el release (`releases/<id>/release.json`) en la
+misma transacción que la edición y el catálogo; `--no-release` lo omite.
+
 Opciones de `fetch`: `--url=<URL> [--id=<sourceId>]`, `--retrieved=<ISO>`,
 `--delay=<ms>` (por defecto 1500) y `--timeout=<ms>` (por defecto 20000).
 
@@ -124,9 +127,10 @@ ampliar el mapeo o el catálogo mediante una decisión.
 - Los borradores pueden no ser aún válidos (p. ej. falta una fecha o un partido):
   el gate de `promote` lo detecta y **aborta sin escribir**.
 - `promote` es el único paso que escribe en `data/`, y siempre vía `--confirm`.
-  Sin `--confirm` es **dry-run** (muestra el diff y la validación, no escribe).
-  Si el borrador no valida, se detiene antes de escribir; si tras escribir el
-  proyecto deja de validar, **revierte** el destino al estado previo.
+  Sin `--confirm` es **dry-run** (muestra el diff, el release previsto y la
+  validación, no escribe). Si el borrador no valida, se detiene antes de escribir;
+  tras escribir regenera el release y, si el proyecto deja de validar, **revierte**
+  edición, catálogo y release al estado previo. `--no-release` omite el release.
 
 ## Verificación
 ```bash

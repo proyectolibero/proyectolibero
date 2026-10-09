@@ -6,6 +6,7 @@ const path = require("node:path");
 const io = require("../core/io.js");
 const { loadCatalog } = require("../core/catalog.js");
 const { makeContext, validateEditionObject, validateProject } = require("../core/validate.js");
+const { buildRelease, writeRelease, checksumOfContents } = require("../core/release.js");
 const { fetchMany } = require("../ingest/fetch.js");
 const { buildDraft } = require("../ingest/build.js");
 const { parse } = require("../ingest/rsssf.js");
@@ -48,7 +49,10 @@ const USAGE = [
   "  --competition=<id>                  Competición (obligatorio; ^[a-z][a-z0-9-]*$)",
   "  --year=<año>                        Edición (obligatorio; entero o rango: 1954, 1929-31, 1929/31)",
   "  --confirm                           Publica de verdad (sin él: dry-run)",
-  "  --dry-run                           Fuerza la previsualización (comportamiento por defecto)"
+  "  --dry-run                           Fuerza la previsualización (comportamiento por defecto)",
+  "  --release-id=<YYYY.MM>              Release a regenerar (por defecto, el más reciente)",
+  "  --asOf=<YYYY-MM-DD>                 Fecha del release regenerado (por defecto, la del existente)",
+  "  --no-release                        No regenera el release (por defecto, sí lo regenera)"
 ].join("\n");
 
 function parseFlags(list) {
@@ -553,20 +557,194 @@ function summariseResults(draft) {
   return { unit: isEncounter ? "partidos" : "eventos", count: results.length, goals };
 }
 
-function runDryRun(targets, loaded) {
+/* -------------------------------------------------------------------------- */
+/* release: planificación y regeneración dentro de la transacción de promote  */
+/* -------------------------------------------------------------------------- */
+
+const RELEASE_ID = /^\d{4}\.\d{2}(-[a-z0-9]+)?$/;
+const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
+const RELEASE_ISSUE = /^REL/;
+
+/** Manifiestos de release legibles en `releases/` (ignora los corruptos). */
+function listReleaseManifests(root) {
+  const out = [];
+  for (const file of io.listFiles(path.join(root, "releases"), "**/release.json")) {
+    try {
+      const manifest = io.readJSON(file);
+      if (manifest && typeof manifest.releaseId === "string") out.push({ file, manifest });
+    } catch {
+      // Un release ilegible lo reportará validateProject; aquí no bloquea el plan.
+    }
+  }
+  return out;
+}
+
+/**
+ * Decide qué release se regenerará al publicar:
+ * - `skip`: `--no-release` (no se toca `releases/`);
+ * - `none`: no hay release y no se pidió uno, así que no se crea;
+ * - `regenerate`: usa el release más reciente o el que indique `--release-id`;
+ * - `error`: `--release-id` o `--asOf` inválidos.
+ */
+function resolveReleasePlan(root, flags) {
+  if (flags["no-release"] === true) return { mode: "skip" };
+  const explicit = typeof flags["release-id"] === "string" ? flags["release-id"] : null;
+  if (explicit !== null && !RELEASE_ID.test(explicit)) {
+    return { mode: "error", message: `--release-id inválido: ${explicit} (se espera YYYY.MM)` };
+  }
+  const asOfFlag = typeof flags.asOf === "string" ? flags.asOf : null;
+  if (asOfFlag !== null && !ISO_DATE.test(asOfFlag)) {
+    return { mode: "error", message: `--asOf inválido: ${asOfFlag} (se espera YYYY-MM-DD)` };
+  }
+
+  const manifests = listReleaseManifests(root);
+  let base = null;
+  if (explicit !== null) base = manifests.find((item) => item.manifest.releaseId === explicit) || null;
+  else if (manifests.length > 0) {
+    base = manifests.reduce((best, item) => (item.manifest.releaseId > best.manifest.releaseId ? item : best));
+  }
+  const releaseId = explicit !== null ? explicit : base && base.manifest.releaseId;
+  if (!releaseId) return { mode: "none" };
+
+  let file;
+  try {
+    file = io.resolveWithin(root, "releases", releaseId, "release.json");
+  } catch (err) {
+    return { mode: "error", message: `--release-id inseguro: ${err.message}` };
+  }
+  return {
+    mode: "regenerate",
+    releaseId,
+    file,
+    asOf: asOfFlag !== null ? asOfFlag : base ? base.manifest.asOf : undefined,
+    created: base ? base.manifest.created : undefined
+  };
+}
+
+/** Entrada de `contents[]` para la edición que se está publicando. */
+function targetContent(target, draft, comp, entry) {
+  const text = `${JSON.stringify(draft, null, 2)}\n`.replace(/\r\n/g, "\n");
+  return {
+    path: target.relDest,
+    sha256: io.sha256Text(text),
+    schemaVersion: draft.schemaVersion,
+    archetype: draft.archetype || comp.resultArchetype,
+    edition: draft.edition !== undefined ? draft.edition : entry.year
+  };
+}
+
+/** Entrada de `contents[]` para una edición ya publicada en disco. */
+function existingContent(root, comp, entry) {
+  const rel = `data/${comp.sport}/${comp.competition}/${entry.data}`;
+  const absolute = io.resolveWithin(root, rel);
+  const edition = io.readJSON(absolute);
+  return {
+    path: rel,
+    sha256: io.sha256File(absolute),
+    schemaVersion: edition.schemaVersion,
+    archetype: edition.archetype || comp.resultArchetype,
+    edition: edition.edition !== undefined ? edition.edition : entry.year
+  };
+}
+
+/** Reconstruye en memoria el `contents[]` que tendría el release regenerado. */
+function predictReleaseContents(root, catalog, draft, target) {
+  const contents = [];
+  for (const comp of Object.values(catalog.competitions)) {
+    for (const entry of comp.editions || []) {
+      if (!entry.held) continue;
+      const isTarget =
+        comp.sport === target.sport && comp.competition === target.competition && sameYear(entry.year, target.year);
+      if (!isTarget && !entry.data) continue;
+      contents.push(isTarget ? targetContent(target, draft, comp, entry) : existingContent(root, comp, entry));
+    }
+  }
+  contents.sort((a, b) => (a.path < b.path ? -1 : a.path > b.path ? 1 : 0));
+  return contents;
+}
+
+/** Clasifica qué cambia entre el release actual y el previsto (nuevo/±/retirado). */
+function diffReleaseContents(current, predicted) {
+  const before = new Map(current.map((item) => [item.path, item]));
+  const after = new Map(predicted.map((item) => [item.path, item]));
+  return {
+    added: predicted.filter((item) => !before.has(item.path)),
+    changed: predicted.filter((item) => before.has(item.path) && before.get(item.path).sha256 !== item.sha256),
+    removed: current.filter((item) => !after.has(item.path))
+  };
+}
+
+/** Imprime, sin escribir, el release que regeneraría `promote --confirm`. */
+function reportReleasePlan(targets, loaded, flags) {
+  const root = targets.root;
+  const plan = resolveReleasePlan(root, flags);
+  if (plan.mode === "error") {
+    console.log(`  release: ${plan.message}`);
+    return;
+  }
+  if (plan.mode === "skip") {
+    console.log("  release: no se tocará (--no-release)");
+    return;
+  }
+  if (plan.mode === "none") {
+    console.log("  release: no existe ningún release en releases/; no se creará (usa --release-id para crear uno)");
+    return;
+  }
+  let predicted;
+  try {
+    predicted = predictReleaseContents(root, loadCatalog(root), loaded.draft, targets);
+  } catch (err) {
+    console.log(`  release: no se pudo predecir (${err.message})`);
+    return;
+  }
+  const base = listReleaseManifests(root).find((item) => item.manifest.releaseId === plan.releaseId);
+  const currentContents = base ? base.manifest.contents || [] : [];
+  const diff = diffReleaseContents(currentContents, predicted);
+  console.log(`  release: releases/${plan.releaseId}/release.json (asOf ${plan.asOf || "hoy"})`);
+  console.log(
+    `    ficheros: ${currentContents.length} actuales → ${predicted.length} previstos ` +
+    `(+${diff.added.length} nuevos, ~${diff.changed.length} modificados, -${diff.removed.length} retirados)`
+  );
+  console.log(`    checksum previsto: ${checksumOfContents(predicted)}`);
+  for (const item of diff.added) console.log(`    + ${item.path}`);
+  for (const item of diff.changed) console.log(`    ~ ${item.path}`);
+  for (const item of diff.removed) console.log(`    - ${item.path}`);
+}
+
+/** Restaura el release previo o elimina el creado tras una reversión. */
+function rollbackRelease(plan, previous) {
+  if (previous === null) {
+    fs.rmSync(plan.file, { force: true });
+    try {
+      fs.rmdirSync(path.dirname(plan.file));
+    } catch {
+      // El directorio no está vacío o ya no existe: se deja tal cual.
+    }
+    return;
+  }
+  fs.writeFileSync(plan.file, previous);
+}
+
+/** Un problema de proyecto achacable al release (código `REL*` o fichero en `releases/`). */
+function isReleaseIssue(issue) {
+  return (issue.code && RELEASE_ISSUE.test(issue.code)) || (issue.file && String(issue.file).startsWith("releases/"));
+}
+
+function runDryRun(targets, loaded, flags) {
   const { sport, competition, year, relDraft, relDest, relCatalog } = targets;
   const { draft, validation, edition } = loaded;
   const destExists = fs.existsSync(targets.destFile);
   console.log(`promote ${sport}/${competition}/${year} [dry-run]`);
   console.log(`  origen:  ${relDraft}`);
   console.log(`  destino: ${relDest}`);
-  console.log(`  catálogo: ${relCatalog} (edición ${year})`);
+  console.log(`  catálogo: ${relCatalog} → editions[].data = ${year}.json`);
   console.log(`  edición ya publicada en catálogo: ${edition && edition.data ? "sí" : "no"}`);
   console.log(`  destino existe: ${destExists ? "sí" : "no"}`);
   if (destExists) reportReconcile(draft, targets.destFile);
   console.log(`  validación del borrador: ${validation.errors.length} error(es), ${validation.warnings.length} aviso(s)`);
   printIssues(validation.errors, "E ");
   printIssues(validation.warnings, "W ");
+  reportReleasePlan(targets, loaded, flags);
   console.log("  (dry-run: no se escribe nada; usa --confirm para publicar)");
   return 0;
 }
@@ -593,12 +771,13 @@ function recalcPublishedCoverage(catalog) {
 }
 
 /*
- * Publicación vigilada: escribe la edición en `data/` y, en la MISMA
- * transacción, actualiza la ficha del catálogo (`editions[].data` + cobertura).
- * Guarda el contenido previo de AMBOS ficheros; si la validación del proyecto
- * falla tras escribir, restaura los dos byte a byte (ADR-020).
+ * Publicación vigilada: escribe la edición en `data/`, actualiza la ficha del
+ * catálogo (`editions[].data` + cobertura) y regenera el release, todo en la
+ * MISMA transacción. Guarda el contenido previo de los TRES artefactos; si la
+ * validación del proyecto falla tras escribir, restaura los tres byte a byte
+ * (ADR-020). `--no-release` omite la regeneración del release.
  */
-function promoteConfirmed(targets, loaded) {
+function promoteConfirmed(targets, loaded, flags) {
   const { sport, competition, year, relDest, relCatalog, destFile, catalogFile, root } = targets;
   const { draft, validation } = loaded;
   if (validation.errors.length > 0) {
@@ -624,28 +803,57 @@ function promoteConfirmed(targets, loaded) {
     return 1;
   }
 
+  const plan = resolveReleasePlan(root, flags);
+  if (plan.mode === "error") {
+    console.error(`promote: ${plan.message}; no se escribe nada.`);
+    return 1;
+  }
+
   const destExists = fs.existsSync(destFile);
   const previousDest = destExists ? fs.readFileSync(destFile) : null;
   const previousCatalog = fs.readFileSync(catalogFile);
+  const previousRelease = plan.mode === "regenerate" && fs.existsSync(plan.file) ? fs.readFileSync(plan.file) : null;
 
   edition.data = `${year}.json`;
   recalcPublishedCoverage(catalogDoc);
 
-  io.writeJSON(destFile, draft);
-  io.writeJSON(catalogFile, catalogDoc);
-
-  let project;
-  try {
-    project = validateProject(root);
-  } catch (err) {
-    project = { errors: [{ code: "PROMOTE001", file: relDest, message: `la validación del proyecto lanzó: ${err.message}` }] };
-  }
-  if (project.errors.length > 0) {
+  const rollbackAll = () => {
     rollbackFile(destFile, previousDest);
     rollbackFile(catalogFile, previousCatalog);
+    if (plan.mode === "regenerate") rollbackRelease(plan, previousRelease);
+  };
+  const artifacts =
+    plan.mode === "regenerate"
+      ? `${relDest}, ${relCatalog} y releases/${plan.releaseId}/release.json`
+      : `${relDest} y ${relCatalog}`;
+
+  let manifest = null;
+  let project;
+  try {
+    io.writeJSON(destFile, draft);
+    io.writeJSON(catalogFile, catalogDoc);
+    if (plan.mode === "regenerate") {
+      manifest = buildRelease(root, { releaseId: plan.releaseId, asOf: plan.asOf, created: plan.created });
+      writeRelease(root, manifest);
+    }
+    project = validateProject(root);
+  } catch (err) {
+    rollbackAll();
+    console.error(`promote: fallo al escribir o regenerar (${err.message}); se revirtieron ${artifacts} byte a byte.`);
+    return 1;
+  }
+
+  let deferredReleaseIssues = [];
+  if (plan.mode === "skip") {
+    deferredReleaseIssues = project.errors.filter(isReleaseIssue);
+    project = { errors: project.errors.filter((issue) => !isReleaseIssue(issue)), warnings: project.warnings };
+  }
+
+  if (project.errors.length > 0) {
+    rollbackAll();
     console.error(
       `promote: la validación del proyecto falló tras escribir (${project.errors.length} error(es)); ` +
-      `se revirtieron ${relDest} y ${relCatalog}.`
+      `se revirtieron ${artifacts} byte a byte.`
     );
     printIssues(project.errors, "E ");
     return 1;
@@ -659,6 +867,17 @@ function promoteConfirmed(targets, loaded) {
   console.log(`  fichero: ${relDest}`);
   console.log(`  catálogo: ${relCatalog} → editions[].data = ${year}.json (publicadas ${publishedText})`);
   console.log(`  bytes: ${fs.statSync(destFile).size}  ${summary.unit}: ${summary.count} goles: ${summary.goals}`);
+  if (manifest) {
+    console.log(
+      `  release: releases/${manifest.releaseId}/release.json regenerado ` +
+      `(${manifest.contents.length} fichero(s), checksum ${manifest.checksum})`
+    );
+  } else if (plan.mode === "skip") {
+    console.log("  release: no modificado (--no-release)");
+    for (const issue of deferredReleaseIssues) console.log(`  [pendiente] ${issue.code} ${issue.file}: ${issue.message}`);
+  } else {
+    console.log("  release: no existe ningún release en releases/; no se crea (usa --release-id para crear uno)");
+  }
   console.log(`  validación del proyecto: 0 errores`);
   console.log(`  auditoría: promote ${sport}/${competition}/${year} ${date}`);
   return 0;
@@ -717,7 +936,7 @@ function commandPromote(flags, root = ROOT) {
   }
 
   const confirm = options.confirm === true && options["dry-run"] !== true;
-  return confirm ? promoteConfirmed(resolved, loaded) : runDryRun(resolved, loaded);
+  return confirm ? promoteConfirmed(resolved, loaded, options) : runDryRun(resolved, loaded, options);
 }
 
 async function main() {

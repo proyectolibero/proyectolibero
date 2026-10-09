@@ -26,6 +26,10 @@ node scripts/ingest.js promote --year=1954            # dry-run: muestra el diff
 node scripts/ingest.js promote --year=1954 --confirm  # atómico + revalida + revierte si falla
 ```
 
+`promote --confirm` regenera en la misma transacción la edición, la ficha del
+catálogo y el release (`releases/<id>/release.json`), para que el proyecto siga
+validando; usa `--no-release` para omitir el release (p. ej. si lo gestionas aparte).
+
 El reconciliador clasifica las diferencias en `blocking` (contradice lo publicado
 o faltan datos del borrador), `minor` (orientación/orden) e `info` (lo publicado
 que el borrador no aporta) y sugiere entradas `provenance.rejected` sin decidir

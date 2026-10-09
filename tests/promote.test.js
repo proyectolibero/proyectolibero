@@ -14,7 +14,7 @@ const path = require("node:path");
 const { ROOT, tmpRoot } = require("./helpers.js");
 const { commandPromote } = require("../scripts/ingest.js");
 const { validateProject } = require("../core/validate.js");
-const { writeJSON } = require("../core/io.js");
+const { writeJSON, sha256File } = require("../core/io.js");
 const { buildRelease, writeRelease } = require("../core/release.js");
 
 const YEAR = 1954;
@@ -176,14 +176,23 @@ test("promote --confirm con stage fuera del vocabulario no escribe (exit 1)", ()
   assert.ok(!fs.existsSync(destPath(root)), "un borrador inválido no debe escribir");
 });
 
-test("promote --confirm revierte si el proyecto deja de validar (byte a byte)", () => {
+test("promote --confirm revierte edición, catálogo y release byte a byte si el proyecto deja de validar", () => {
   const root = makeRepo();
+  const catalogPath = path.join(root, "catalog", "competitions", "football.worldcup.json");
+  const releaseFile = path.join(root, "releases", "2026.10", "release.json");
+
   writeJSON(destPath(root), validDraft());
+  writeRelease(root, buildRelease(root, { releaseId: "2026.10", asOf: "2026-10-07", created: "2026-10-07T00:00:00Z" }));
 
-  const manifest = buildRelease(root, { releaseId: "2026.10", asOf: "2026-10-07", created: "2026-10-07T00:00:00Z" });
-  writeRelease(root, manifest);
+  // Inconsistencia de proyecto que promote NO corrige (i18nKey inexistente):
+  // la escritura de los tres artefactos debe revertirse en bloque.
+  const broken = competitionCatalog();
+  broken.i18nKey = "comp.inexistente.key";
+  writeJSON(catalogPath, broken);
 
-  const before = fs.readFileSync(destPath(root));
+  const destBefore = fs.readFileSync(destPath(root));
+  const catalogBefore = fs.readFileSync(catalogPath);
+  const releaseBefore = fs.readFileSync(releaseFile);
 
   const changed = validDraft();
   changed.matches[0].score = [4, 2];
@@ -192,10 +201,9 @@ test("promote --confirm revierte si el proyecto deja de validar (byte a byte)", 
 
   const code = commandPromote({ sport: "football", competition: "worldcup", year: String(YEAR), confirm: true }, root);
   assert.equal(code, 1);
-  assert.deepEqual(fs.readFileSync(destPath(root)), before, "el destino debe quedar byte a byte como estaba");
-
-  const { errors } = validateProject(root);
-  assert.equal(errors.length, 0, JSON.stringify(errors));
+  assert.deepEqual(fs.readFileSync(destPath(root)), destBefore, "la edición debe quedar byte a byte como estaba");
+  assert.deepEqual(fs.readFileSync(catalogPath), catalogBefore, "el catálogo debe quedar byte a byte como estaba");
+  assert.deepEqual(fs.readFileSync(releaseFile), releaseBefore, "el release debe quedar byte a byte como estaba");
 });
 
 test("promote rechaza sport y competition con path traversal", () => {
@@ -206,6 +214,91 @@ test("promote rechaza sport y competition con path traversal", () => {
   assert.equal(badSport, 1);
   assert.equal(badCompetition, 1);
   assert.ok(!fs.existsSync(destPath(root)));
+});
+
+/* -------------------------------------------------------------------------- */
+/* ADR-020: promote como transacción atómica de edición + catálogo + release   */
+/* -------------------------------------------------------------------------- */
+
+/** Hash estable del árbol de un subdirectorio (para probar "no escribe nada"). */
+function treeHash(root, sub) {
+  const base = path.join(root, sub);
+  const entries = [];
+  const walk = (dir) => {
+    if (!fs.existsSync(dir)) return;
+    for (const item of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, item.name);
+      if (item.isDirectory()) walk(full);
+      else entries.push(`${path.relative(base, full).split(path.sep).join("/")}:${sha256File(full)}`);
+    }
+  };
+  walk(base);
+  return entries.sort().join("\n");
+}
+
+test("promote --confirm regenera el release obsoleto y el proyecto valida 0", () => {
+  const root = makeRepo();
+  const releaseFile = path.join(root, "releases", "2026.10", "release.json");
+
+  writeJSON(destPath(root), validDraft());
+  writeRelease(root, buildRelease(root, { releaseId: "2026.10", asOf: "2026-10-07", created: "2026-10-07T00:00:00Z" }));
+
+  const changed = validDraft();
+  changed.matches[0].score = [4, 2];
+  changed.coverage.goals = 6;
+  writeDraft(root, changed);
+
+  const code = commandPromote({ sport: "football", competition: "worldcup", year: String(YEAR), confirm: true }, root);
+  assert.equal(code, 0);
+
+  const manifest = JSON.parse(fs.readFileSync(releaseFile, "utf8"));
+  const entry = manifest.contents.find((c) => c.path === "data/football/worldcup/1954.json");
+  assert.ok(entry, "el release regenerado debe incluir la edición publicada");
+  assert.equal(entry.sha256, sha256File(destPath(root)), "el release debe reflejar el nuevo contenido");
+
+  const { errors, warnings } = validateProject(root);
+  assert.equal(errors.length, 0, JSON.stringify(errors));
+  assert.equal(warnings.length, 0, JSON.stringify(warnings));
+});
+
+test("promote --confirm con --no-release no toca releases/", () => {
+  const root = makeRepo();
+  const releaseFile = path.join(root, "releases", "2026.10", "release.json");
+
+  writeJSON(destPath(root), validDraft());
+  writeRelease(root, buildRelease(root, { releaseId: "2026.10", asOf: "2026-10-07", created: "2026-10-07T00:00:00Z" }));
+  const releaseBefore = fs.readFileSync(releaseFile);
+
+  const changed = validDraft();
+  changed.matches[0].score = [4, 2];
+  changed.coverage.goals = 6;
+  writeDraft(root, changed);
+
+  const code = commandPromote(
+    { sport: "football", competition: "worldcup", year: String(YEAR), confirm: true, "no-release": true },
+    root
+  );
+  assert.equal(code, 0, "el operador difiere el release: promote no revierte por él");
+  assert.deepEqual(fs.readFileSync(releaseFile), releaseBefore, "el release no debe cambiar");
+  assert.deepEqual(JSON.parse(fs.readFileSync(destPath(root), "utf8")), changed, "la edición sí se publica");
+});
+
+test("promote dry-run anticipa el release y no escribe en data/, catalog/ ni releases/", () => {
+  const root = makeRepo();
+  writeJSON(destPath(root), validDraft());
+  writeRelease(root, buildRelease(root, { releaseId: "2026.10", asOf: "2026-10-07", created: "2026-10-07T00:00:00Z" }));
+
+  const changed = validDraft();
+  changed.matches[0].score = [4, 2];
+  changed.coverage.goals = 6;
+  writeDraft(root, changed);
+
+  const before = ["data", "catalog", "releases"].map((sub) => treeHash(root, sub));
+  const code = commandPromote({ sport: "football", competition: "worldcup", year: String(YEAR) }, root);
+  const after = ["data", "catalog", "releases"].map((sub) => treeHash(root, sub));
+
+  assert.equal(code, 0);
+  assert.deepEqual(after, before, "el dry-run no debe escribir en data/, catalog/ ni releases/");
 });
 
 /* -------------------------------------------------------------------------- */
@@ -358,17 +451,13 @@ test("promote aborta si el catálogo no contiene la edición (no la crea a ciega
   assert.ok(!fs.existsSync(path.join(root, RANGE_DEST_REL)));
 });
 
-test("promote --confirm revierte edición y catálogo byte a byte si el proyecto deja de validar", () => {
+test("promote --confirm con año de rango regenera el release y el proyecto valida 0", () => {
   const root = makeRangeRepo({ published: true });
-  const catalogPath = path.join(root, RANGE_CATALOG_REL);
   const destFile = path.join(root, RANGE_DEST_REL);
+  const releaseFile = path.join(root, "releases", "2026.10", "release.json");
 
   writeJSON(destFile, rangeDraft());
-  const manifest = buildRelease(root, { releaseId: "2026.10", asOf: "2026-10-07", created: "2026-10-07T00:00:00Z" });
-  writeRelease(root, manifest);
-
-  const catalogBefore = fs.readFileSync(catalogPath);
-  const destBefore = fs.readFileSync(destFile);
+  writeRelease(root, buildRelease(root, { releaseId: "2026.10", asOf: "2026-10-07", created: "2026-10-07T00:00:00Z" }));
 
   const changed = rangeDraft();
   changed.matches[0].score = [3, 1];
@@ -376,10 +465,14 @@ test("promote --confirm revierte edición y catálogo byte a byte si el proyecto
   writeJSON(path.join(root, RANGE_DRAFT_REL), changed);
 
   const code = commandPromote({ sport: "football", competition: "balkancup", year: RANGE_YEAR, confirm: true }, root);
-  assert.equal(code, 1);
-  assert.deepEqual(fs.readFileSync(destFile), destBefore, "la edición debe quedar byte a byte como estaba");
-  assert.deepEqual(fs.readFileSync(catalogPath), catalogBefore, "el catálogo debe quedar byte a byte como estaba");
+  assert.equal(code, 0);
 
-  const { errors } = validateProject(root);
+  const manifest = JSON.parse(fs.readFileSync(releaseFile, "utf8"));
+  const entry = manifest.contents.find((c) => c.path === RANGE_DEST_REL.split(path.sep).join("/"));
+  assert.ok(entry, "el release regenerado debe incluir la edición de rango");
+  assert.equal(entry.sha256, sha256File(destFile));
+
+  const { errors, warnings } = validateProject(root);
   assert.equal(errors.length, 0, JSON.stringify(errors));
+  assert.equal(warnings.length, 0, JSON.stringify(warnings));
 });
