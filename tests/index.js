@@ -23,6 +23,7 @@ require("./ingest.test.js");
 require("./parse.test.js");
 require("./overview.test.js");
 require("./compact.test.js");
+require("./nordic.test.js");
 require("./build.test.js");
 require("./reconcile.test.js");
 require("./promote.test.js");

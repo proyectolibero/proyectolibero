@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "nordic",
+  "edition": "1937-47",
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "SWE",
+    "runnerUp": "DEN",
+    "decidedBy": "standings"
+  },
+  "coverage": {
+    "matches": 24,
+    "goals": 118,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:nord3747",
+      "name": "RSSSF — Nordic Championships 1937-47",
+      "url": "https://www.rsssf.org/tablesn/nord3747.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:nord3747"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "SWE",
+          "p": 12,
+          "w": 9,
+          "d": 0,
+          "l": 3,
+          "gf": 41,
+          "ga": 16,
+          "pts": 18
+        },
+        {
+          "team": "DEN",
+          "p": 12,
+          "w": 7,
+          "d": 1,
+          "l": 4,
+          "gf": 34,
+          "ga": 21,
+          "pts": 15
+        },
+        {
+          "team": "NOR",
+          "p": 12,
+          "w": 5,
+          "d": 2,
+          "l": 5,
+          "gf": 31,
+          "ga": 30,
+          "pts": 12
+        },
+        {
+          "team": "FIN",
+          "p": 12,
+          "w": 1,
+          "d": 1,
+          "l": 10,
+          "gf": 12,
+          "ga": 51,
+          "pts": 3
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1937-06-13",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "NOR",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1937-06-16",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1937-09-05",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "NOR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1937-09-19",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SWE",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1937-10-03",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "DEN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1937-10-17",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "FIN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1938-06-17",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "FIN",
+      "score": [
+        9,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1938-06-21",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "SWE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1938-07-04",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SWE",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1938-08-31",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "DEN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1938-09-18",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1938-10-02",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "NOR",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1939-06-09",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m014",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1939-09-03",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "NOR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m015",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1939-09-17",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "FIN",
+      "score": [
+        8,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m016",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1939-09-17",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SWE",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m017",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1939-10-01",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "DEN",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m018",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1939-10-22",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "NOR",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m019",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1947-06-15",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "SWE",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m020",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1947-08-24",
+      "city": "Borås",
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m021",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1947-09-07",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "NOR",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m022",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1947-09-21",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "DEN",
+      "score": [
+        3,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m023",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1947-10-05",
+      "city": "Århus",
+      "home": "DEN",
+      "away": "FIN",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m024",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1947-10-05",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "NOR",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

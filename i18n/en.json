@@ -24,6 +24,7 @@
   "comp.intconcup.name": "FIFA Confederations Cup",
   "comp.balkancup.name": "Balkan Cup",
   "comp.eurochamp.name": "UEFA European Championship",
+  "comp.nordic.name": "Nordic Championships",
   "edition.title": "{year} World Cup",
   "edition.pending": "Edition in preparation. Data will be published soon.",
   "edition.host": "Host country",

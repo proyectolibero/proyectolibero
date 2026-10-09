@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "sport": "football",
+  "competition": "nordic",
+  "teamMode": "country",
+  "sources": [
+    {
+      "name": "RSSSF — Nordic Championships (Lars Aarhus, Søren Elbech, Heikki Pietarinen)",
+      "url": "https://www.rsssf.org/tablesn/nordic.html",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "editions": [
+    {
+      "year": "1924-28",
+      "held": true,
+      "champion": "DEN",
+      "runnerUp": "SWE",
+      "data": "1924-28.json"
+    },
+    {
+      "year": "1929-32",
+      "held": true,
+      "champion": "NOR",
+      "runnerUp": "SWE",
+      "data": "1929-32.json"
+    },
+    {
+      "year": "1933-36",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "data": "1933-36.json"
+    },
+    {
+      "year": "1937-47",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "data": "1937-47.json"
+    },
+    {
+      "year": "1948-51",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "data": "1948-51.json"
+    },
+    {
+      "year": "1952-55",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "NOR",
+      "data": "1952-55.json"
+    },
+    {
+      "year": "1956-59",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "NOR",
+      "data": "1956-59.json"
+    },
+    {
+      "year": "1960-63",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "data": "1960-63.json"
+    },
+    {
+      "year": "1964-67",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "data": "1964-67.json"
+    },
+    {
+      "year": "1968-71",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "data": "1968-71.json"
+    },
+    {
+      "year": "1972-77",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "data": "1972-77.json"
+    },
+    {
+      "year": "1978-80",
+      "held": true,
+      "champion": "DEN",
+      "runnerUp": "SWE",
+      "data": "1978-80.json"
+    },
+    {
+      "year": "1981-83",
+      "held": true,
+      "champion": "DEN",
+      "runnerUp": "SWE",
+      "data": "1981-83.json"
+    },
+    {
+      "year": "2000-01",
+      "held": true,
+      "champion": "FIN",
+      "runnerUp": "ISL",
+      "data": "2000-01.json"
+    }
+  ]
+}

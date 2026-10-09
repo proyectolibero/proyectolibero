@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "nordic",
+  "edition": "1972-77",
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "SWE",
+    "runnerUp": "DEN",
+    "decidedBy": "standings"
+  },
+  "coverage": {
+    "matches": 24,
+    "goals": 61,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:nord7277",
+      "name": "RSSSF — Nordic Championships 1972-77",
+      "url": "https://www.rsssf.org/tablesn/nord7277.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:nord7277"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "SWE",
+          "p": 12,
+          "w": 8,
+          "d": 2,
+          "l": 2,
+          "gf": 24,
+          "ga": 9,
+          "pts": 18
+        },
+        {
+          "team": "DEN",
+          "p": 12,
+          "w": 7,
+          "d": 3,
+          "l": 2,
+          "gf": 15,
+          "ga": 7,
+          "pts": 17
+        },
+        {
+          "team": "NOR",
+          "p": 12,
+          "w": 2,
+          "d": 3,
+          "l": 7,
+          "gf": 12,
+          "ga": 19,
+          "pts": 7
+        },
+        {
+          "team": "FIN",
+          "p": 12,
+          "w": 1,
+          "d": 4,
+          "l": 7,
+          "gf": 10,
+          "ga": 26,
+          "pts": 6
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1972-05-28",
+      "city": "Turku",
+      "home": "FIN",
+      "away": "NOR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1972-06-07",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "FIN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1972-06-29",
+      "city": "Malmö",
+      "home": "SWE",
+      "away": "DEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1972-09-17",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SWE",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1973-06-21",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "NOR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1973-07-08",
+      "city": "Halmstad",
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1973-08-29",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SWE",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1973-09-23",
+      "city": "Trondheim",
+      "home": "NOR",
+      "away": "DEN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1974-06-03",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "SWE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1974-06-06",
+      "city": "Oulu",
+      "home": "FIN",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1974-08-08",
+      "city": "Gothenburg",
+      "home": "SWE",
+      "away": "NOR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1974-08-15",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "FIN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1975-05-15",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "NOR",
+      "score": [
+        3,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m014",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1975-06-25",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "FIN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m015",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1975-09-25",
+      "city": "Malmö",
+      "home": "SWE",
+      "away": "DEN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m016",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1976-06-01",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SWE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m017",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1976-06-24",
+      "city": "Bergen",
+      "home": "NOR",
+      "away": "DEN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m018",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1976-08-11",
+      "city": "Malmö",
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m019",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1976-08-25",
+      "city": "Vejle",
+      "home": "DEN",
+      "away": "NOR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m020",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1976-09-22",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SWE",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m021",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1977-05-26",
+      "city": "Gothenburg",
+      "home": "SWE",
+      "away": "NOR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m022",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1977-06-15",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "SWE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m023",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1977-06-22",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "DEN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m024",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1977-08-18",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "FIN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

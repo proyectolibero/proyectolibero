@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "nordic",
+  "edition": "1981-83",
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "DEN",
+    "runnerUp": "SWE",
+    "decidedBy": "standings"
+  },
+  "coverage": {
+    "matches": 11,
+    "goals": 30,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:nord8183",
+      "name": "RSSSF — Nordic Championships 1981-83",
+      "url": "https://www.rsssf.org/tablesn/nord8183.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:nord8183"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "DEN",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 11,
+          "ga": 8,
+          "pts": 9
+        },
+        {
+          "team": "SWE",
+          "p": 5,
+          "w": 2,
+          "d": 1,
+          "l": 2,
+          "gf": 6,
+          "ga": 4,
+          "pts": 5
+        },
+        {
+          "team": "NOR",
+          "p": 5,
+          "w": 2,
+          "d": 1,
+          "l": 2,
+          "gf": 6,
+          "ga": 7,
+          "pts": 5
+        },
+        {
+          "team": "FIN",
+          "p": 6,
+          "w": 1,
+          "d": 1,
+          "l": 4,
+          "gf": 7,
+          "ga": 11,
+          "pts": 3
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1981-05-14",
+      "city": "Malmö",
+      "home": "SWE",
+      "away": "DEN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1981-07-02",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "NOR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1981-07-29",
+      "city": "Halmstad",
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1981-08-12",
+      "city": "Tampere",
+      "home": "FIN",
+      "away": "DEN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1981-09-23",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "NOR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1982-04-28",
+      "city": "Stavanger",
+      "home": "NOR",
+      "away": "FIN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1982-05-05",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1982-06-15",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "DEN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1982-08-11",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "FIN",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1982-08-11",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SWE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1983-09-07",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SWE",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

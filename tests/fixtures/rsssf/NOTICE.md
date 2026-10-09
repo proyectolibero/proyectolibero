@@ -7,6 +7,8 @@ documentos publicados por la **Rec.Sport.Soccer Statistics Foundation (RSSSF)**:
 - `50full.html.txt` — <https://www.rsssf.org/tablesw/50full.html>
 - `eurochamp.html.txt` — <https://www.rsssf.org/tablese/eurochamp.html>
 - `balkancup.html.txt` — <https://www.rsssf.org/tablesb/balkancup.html>
+- `nord2428.html.txt` — <https://www.rsssf.org/tablesn/nord2428.html>
+- `nord2001.html.txt` — <https://www.rsssf.org/tablesn/nord2001.html>
 
 Autoría:
 
@@ -15,6 +17,8 @@ Autoría:
 - Europeo (`eurochamp`): Karel Stokkermans, última actualización 28 Oct 2024.
 - Balkan Cup (`balkancup`): Guy De Dekker y Karel Stokkermans, última
   actualización 12 Oct 2025.
+- Nordic Championships (`nord2428`, `nord2001`): Lars Aarhus, Søren Elbech y
+  Heikki Pietarinen, última actualización 21 Dec 2017.
 
 ## Licencia
 
@@ -29,7 +33,8 @@ true` en el bloque `sources[]` de cada edición, siguiendo [`docs/FUENTES.md`](.
 ## Uso
 
 Estos recortes se usan **exclusivamente** como fixtures de los tests unitarios
-de los parsers (`ingest/rsssf.js` y `ingest/overview.js`; `tests/parse.test.js`
-y `tests/overview.test.js`), sin red. Se conservan la cabecera, varios partidos
+de los parsers (`ingest/rsssf.js`, `ingest/overview.js`, `ingest/compact.js` y
+`ingest/nordic.js`; `tests/parse.test.js`, `tests/overview.test.js`,
+`tests/compact.test.js` y `tests/nordic.test.js`), sin red. Se conservan la cabecera, varios partidos
 completos, un bloque de clasificación de cada edición y las listas/encabezados
 de las páginas índice necesarios para probar la detección de ediciones.

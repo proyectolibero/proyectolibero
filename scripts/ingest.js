@@ -11,6 +11,8 @@ const { fetchMany } = require("../ingest/fetch.js");
 const { buildDraft } = require("../ingest/build.js");
 const { parse } = require("../ingest/rsssf.js");
 const { buildCompetitionDrafts, buildDraft: buildEditionDraft } = require("../ingest/page.js");
+const { parseOverview } = require("../ingest/overview.js");
+const { parseNordic, buildNordicDraft, canonicalYear } = require("../ingest/nordic.js");
 const { reconcile } = require("../ingest/reconcile.js");
 
 const ROOT = path.resolve(__dirname, "..");
@@ -26,6 +28,7 @@ const USAGE = [
   "  build       Fusiona las fuentes de inbox/ en un borrador v2 (drafts/…).",
   "  build-page  Fragmenta una página con resultados inline en un borrador por edición.",
   "  build-editions  Construye un borrador por edición desde páginas de edición (kind 'e').",
+  "  build-nordic    Construye un borrador por edición desde el índice y sus páginas enlazadas (formato Nordic).",
   "  reconcile   Compara el borrador con la edición publicada (no escribe nada).",
   "  promote     Publica un borrador validado en data/ (por defecto, dry-run).",
   "",
@@ -46,6 +49,10 @@ const USAGE = [
   "  --details=<año>:<dirInbox>,…       Detalles por edición (formato `ed`) a fusionar",
   "",
   "Opciones de build-editions:",
+  "  --competition=<sport>/<competicion> Competición del catálogo (obligatorio)",
+  "  --year=<año>                        Solo esa edición (por defecto, todas)",
+  "",
+  "Opciones de build-nordic:",
   "  --competition=<sport>/<competicion> Competición del catálogo (obligatorio)",
   "  --year=<año>                        Solo esa edición (por defecto, todas)",
   "",
@@ -537,6 +544,120 @@ function commandBuildEditions(flags) {
     for (const issue of validation.errors) console.log(`    E ${issue.code} ${issue.message}`);
   }
   console.log(`build-editions: ${ready} listas, ${failed} con incidencias.`);
+  return failed > 0 ? 1 : 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* build-nordic: un borrador por edición desde el índice y sus páginas          */
+/* -------------------------------------------------------------------------- */
+
+/** Coherencia de la liguilla: ΣGF=ΣGA y goles de los partidos = ΣGF. */
+function leagueCoherenceIssues(draft) {
+  const issues = [];
+  const group = (draft.groups || [])[0];
+  if (!group) return ["sin tabla de clasificación"];
+  const standings = group.standings || [];
+  const sumGf = standings.reduce((sum, row) => sum + row.gf, 0);
+  const sumGa = standings.reduce((sum, row) => sum + row.ga, 0);
+  if (sumGf !== sumGa) issues.push(`suma GF ${sumGf} != suma GA ${sumGa}`);
+  const matchGoals = (draft.matches || []).reduce((sum, match) => sum + (match.score ? match.score[0] + match.score[1] : 0), 0);
+  if (matchGoals !== sumGf) issues.push(`goles de partidos ${matchGoals} != suma GF ${sumGf}`);
+  return issues;
+}
+
+function commandBuildNordic(flags) {
+  const target = parseCompetitionFlag(flags.competition);
+  if (!target) {
+    console.error("build-nordic: --competition=<sport>/<competicion> es obligatorio (p. ej. football/nordic).");
+    return 1;
+  }
+  const competition = loadCatalog(ROOT).competitions[`${target.sport}/${target.competition}`];
+  if (!competition) {
+    console.error(`build-nordic: la competición '${target.sport}/${target.competition}' no existe en el catálogo.`);
+    return 1;
+  }
+  const source = (competition.sources || [])[0];
+  if (!source || !source.url) {
+    console.error("build-nordic: la competición no declara una fuente con URL.");
+    return 1;
+  }
+  const local = locateInboxSource(ROOT, source.url);
+  if (!local) {
+    console.error(`build-nordic: no hay fuente en inbox/ para ${source.url}. Ejecuta antes 'fetch'.`);
+    return 1;
+  }
+
+  const overview = parseOverview(local.text);
+  const hrefByYear = new Map();
+  for (const entry of overview.editions) {
+    if (typeof entry.year === "string" && /[-/]/.test(entry.year) && entry.href) {
+      hrefByYear.set(canonicalYear(entry.year), entry.href);
+    }
+  }
+
+  let only = null;
+  if (flags.year !== undefined) {
+    only = normalizeYear(flags.year);
+    if (only === null) {
+      console.error("build-nordic: --year debe ser un año (1924) o un rango (1924-28).");
+      return 1;
+    }
+  }
+
+  const ctx = makeContext(ROOT);
+  let ready = 0;
+  let failed = 0;
+  for (const edition of competition.editions || []) {
+    if (!edition.held) continue;
+    if (only !== null && !sameYear(edition.year, only)) continue;
+    const key = canonicalYear(edition.year);
+    const href = hrefByYear.get(key);
+    if (!href) {
+      console.log(`[warn] edición ${edition.year}: sin enlace en el índice`);
+      failed += 1;
+      continue;
+    }
+    const url = new URL(href, source.url).href;
+    const page = locateInboxSource(ROOT, url);
+    if (!page) {
+      console.log(`[warn] edición ${edition.year}: sin página en inbox/ (fetch ${url})`);
+      failed += 1;
+      continue;
+    }
+
+    const parsed = parseNordic(page.text, {
+      sourceId: page.meta.id,
+      retrieved: page.meta.retrieved,
+      year: edition.year
+    });
+    const warnings = parsed.warnings.map((warning) => ({ line: warning.line, reason: warning.reason }));
+    const draft = buildNordicDraft(edition, parsed, competition, {
+      id: page.meta.id,
+      name: `RSSSF — Nordic Championships ${edition.year}`,
+      url,
+      retrieved: page.meta.retrieved,
+      license: source.license
+    }, warnings);
+
+    const file = pageDraftPath(ROOT, target.sport, target.competition, edition.year);
+    io.writeJSON(file, draft);
+    const rel = path.relative(ROOT, file).split(path.sep).join("/");
+    const validation = validateEditionObject(ctx, rel, draft, competition, edition);
+    const coherence = leagueCoherenceIssues(draft);
+    const leader = draft.groups[0] ? draft.groups[0].standings[0].team : null;
+    const contrast = leader === edition.champion;
+    const ok = validation.errors.length === 0 && coherence.length === 0 && contrast;
+    if (ok) ready += 1; else failed += 1;
+    console.log(
+      `build ${edition.year}: partidos=${draft.matches.length} goles=${draft.coverage.goals} ` +
+      `tabla=${draft.groups[0] ? draft.groups[0].standings.length : 0} champ=${draft.results.champion} ` +
+      `val=${validation.errors.length}E/${validation.warnings.length}W ` +
+      `coherencia=${coherence.length === 0 ? "OK" : "FALLA"} contraste=${contrast ? "OK" : "FALLA"}`
+    );
+    for (const issue of coherence) console.log(`    K ${issue}`);
+    for (const issue of validation.errors) console.log(`    E ${issue.code} ${issue.message}`);
+  }
+  console.log(`build-nordic: ${ready} listas, ${failed} con incidencias.`);
   return failed > 0 ? 1 : 0;
 }
 
@@ -1082,6 +1203,8 @@ async function main() {
       return commandBuildPage(parseFlags(rest));
     case "build-editions":
       return commandBuildEditions(parseFlags(rest));
+    case "build-nordic":
+      return commandBuildNordic(parseFlags(rest));
     case "reconcile":
       return commandReconcile(parseFlags(rest));
     case "promote":

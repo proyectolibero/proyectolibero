@@ -279,6 +279,104 @@
       "edition": 2017
     },
     {
+      "path": "data/football/nordic/1924-28.json",
+      "sha256": "81cdaefb4d302e78d569a896d5375625e3a0f0797d820453fa65449f1b7fda1c",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1924-28"
+    },
+    {
+      "path": "data/football/nordic/1929-32.json",
+      "sha256": "79ab3f8318b7ee78242486a5148d954a0a2afc6b90fdf18ed3d0aba82bdad5a5",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1929-32"
+    },
+    {
+      "path": "data/football/nordic/1933-36.json",
+      "sha256": "671fac4a96ef5e811c19b7150938965affc835552ed533be5aac1c0eebaeae86",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1933-36"
+    },
+    {
+      "path": "data/football/nordic/1937-47.json",
+      "sha256": "1f24f6c728e9c92c7cd9b79e91bc5d6aa1df0fa827fafdb62bc0decf7716f7cd",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1937-47"
+    },
+    {
+      "path": "data/football/nordic/1948-51.json",
+      "sha256": "6a5678eccc1d711762a9864a06900e25445156ca22682b6b3070d4222ed3fb49",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1948-51"
+    },
+    {
+      "path": "data/football/nordic/1952-55.json",
+      "sha256": "26f349a137824a66f54d98d967b2a47dccb757ece33caac53efc0ac81def65ed",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1952-55"
+    },
+    {
+      "path": "data/football/nordic/1956-59.json",
+      "sha256": "4b6bbf7b8e6e86a89062891ff6ed7ad42c2f2174a02a6d3450a312016920101e",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1956-59"
+    },
+    {
+      "path": "data/football/nordic/1960-63.json",
+      "sha256": "9feba24434e7b1d9297e185a34096c429f3699535d6413fb0eae24de4f804141",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1960-63"
+    },
+    {
+      "path": "data/football/nordic/1964-67.json",
+      "sha256": "2858f4ffb892aef36455721ddba70edf7c3e1eae6556d302105bb2ce3475c1fb",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1964-67"
+    },
+    {
+      "path": "data/football/nordic/1968-71.json",
+      "sha256": "2fd5b0dcc0e1d3af5229dea777c2e96e3b6d5a5136760dc93bd19f76cbe40d90",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1968-71"
+    },
+    {
+      "path": "data/football/nordic/1972-77.json",
+      "sha256": "1e11cf0b0e0978471944d2925e2a4f8b189da0dc642187f8cd76a1a7de88f379",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1972-77"
+    },
+    {
+      "path": "data/football/nordic/1978-80.json",
+      "sha256": "a6a56404e19219cb502f1e00106ce79baa1644291f668ae9c97ace51e36d4b5b",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1978-80"
+    },
+    {
+      "path": "data/football/nordic/1981-83.json",
+      "sha256": "f5d86632b575ec67334c30774cbaa211f3d479f5784f6f6f6ae03244858bfb55",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "1981-83"
+    },
+    {
+      "path": "data/football/nordic/2000-01.json",
+      "sha256": "fb944d925b0eff8e8de49a470535e61237e8eb0df6b3fa1c694c9efd08a326ca",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": "2000-01"
+    },
+    {
       "path": "data/football/worldcup/1930.json",
       "sha256": "32d7f79b35346397a87ffe3900f26ca988526a2f84c9cfc9f1539ca240d8e7de",
       "schemaVersion": 2,
@@ -440,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "d894d8af5f12bb1ef7cf4d186b66f70c766191f68ac55e6eb554c51e625b3d58",
+  "checksum": "9cb4e79bd05b3ef6294240cde28672841df28958414130fcdf2ae99481893b1d",
   "dataset": {
     "sports": 4,
-    "competitions": 4,
-    "editions": 62,
-    "matches": 1780,
+    "competitions": 5,
+    "editions": 76,
+    "matches": 2073,
     "results": 0
   },
   "license": {
@@ -933,6 +1031,90 @@
         "name": "RSSSF — intconcup95",
         "url": "https://www.rsssf.org/tablesi/intconcup95.html",
         "retrieved": "2026-10-07"
+      },
+      {
+        "source": "rsssf:nord2001",
+        "name": "RSSSF — Nordic Championships 2000-01",
+        "url": "https://www.rsssf.org/tablesn/nord2001.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord2428",
+        "name": "RSSSF — Nordic Championships 1924-28",
+        "url": "https://www.rsssf.org/tablesn/nord2428.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord2932",
+        "name": "RSSSF — Nordic Championships 1929-32",
+        "url": "https://www.rsssf.org/tablesn/nord2932.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord3336",
+        "name": "RSSSF — Nordic Championships 1933-36",
+        "url": "https://www.rsssf.org/tablesn/nord3336.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord3747",
+        "name": "RSSSF — Nordic Championships 1937-47",
+        "url": "https://www.rsssf.org/tablesn/nord3747.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord4851",
+        "name": "RSSSF — Nordic Championships 1948-51",
+        "url": "https://www.rsssf.org/tablesn/nord4851.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord5255",
+        "name": "RSSSF — Nordic Championships 1952-55",
+        "url": "https://www.rsssf.org/tablesn/nord5255.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord5659",
+        "name": "RSSSF — Nordic Championships 1956-59",
+        "url": "https://www.rsssf.org/tablesn/nord5659.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord6063",
+        "name": "RSSSF — Nordic Championships 1960-63",
+        "url": "https://www.rsssf.org/tablesn/nord6063.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord6467",
+        "name": "RSSSF — Nordic Championships 1964-67",
+        "url": "https://www.rsssf.org/tablesn/nord6467.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord6871",
+        "name": "RSSSF — Nordic Championships 1968-71",
+        "url": "https://www.rsssf.org/tablesn/nord6871.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord7277",
+        "name": "RSSSF — Nordic Championships 1972-77",
+        "url": "https://www.rsssf.org/tablesn/nord7277.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord7880",
+        "name": "RSSSF — Nordic Championships 1978-80",
+        "url": "https://www.rsssf.org/tablesn/nord7880.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:nord8183",
+        "name": "RSSSF — Nordic Championships 1981-83",
+        "url": "https://www.rsssf.org/tablesn/nord8183.html",
+        "retrieved": "2026-10-09"
       },
       {
         "source": "rsssf:worldcup",

@@ -9,8 +9,8 @@
       "i18nKey": "sport.football",
       "resultArchetypes": ["encounter"],
       "status": "active",
-      "competitions": 4,
-      "notes": "Primer deporte del proyecto y piloto del arquetipo encounter. Además del Mundial y la Eurocopa, incluye Intercontinental/Confederaciones y Copa de los Balcanes (ADR-019)."
+      "competitions": 5,
+      "notes": "Primer deporte del proyecto y piloto del arquetipo encounter. Además del Mundial y la Eurocopa, incluye Intercontinental/Confederaciones, Copa de los Balcanes (ADR-019) y Campeonato Nórdico (liguilla sin final)."
     },
     {
       "id": "aquatics",

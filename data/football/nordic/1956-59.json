@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "nordic",
+  "edition": "1956-59",
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "SWE",
+    "runnerUp": "NOR",
+    "decidedBy": "standings"
+  },
+  "coverage": {
+    "matches": 24,
+    "goals": 110,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:nord5659",
+      "name": "RSSSF — Nordic Championships 1956-59",
+      "url": "https://www.rsssf.org/tablesn/nord5659.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:nord5659"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "SWE",
+          "p": 12,
+          "w": 9,
+          "d": 2,
+          "l": 1,
+          "gf": 45,
+          "ga": 17,
+          "pts": 20
+        },
+        {
+          "team": "NOR",
+          "p": 12,
+          "w": 6,
+          "d": 2,
+          "l": 4,
+          "gf": 27,
+          "ga": 26,
+          "pts": 14
+        },
+        {
+          "team": "DEN",
+          "p": 12,
+          "w": 5,
+          "d": 3,
+          "l": 4,
+          "gf": 30,
+          "ga": 23,
+          "pts": 13
+        },
+        {
+          "team": "FIN",
+          "p": 12,
+          "w": 0,
+          "d": 1,
+          "l": 11,
+          "gf": 8,
+          "ga": 44,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1956-06-10",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SWE",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1956-06-24",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "NOR",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1956-08-26",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "FIN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1956-09-16",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "DEN",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1956-09-16",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SWE",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1956-10-21",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1957-06-30",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "SWE",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1957-09-01",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "NOR",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1957-09-22",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "DEN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1957-09-22",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1957-10-13",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "FIN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1957-10-13",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "NOR",
+      "score": [
+        5,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1958-06-15",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "FIN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m014",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1958-06-29",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "NOR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m015",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1958-08-20",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SWE",
+      "score": [
+        1,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m016",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1958-09-14",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "DEN",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m017",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1958-09-14",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SWE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m018",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1958-10-26",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "DEN",
+      "score": [
+        4,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m019",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1959-06-21",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "SWE",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m020",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1959-06-28",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "NOR",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m021",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1959-08-02",
+      "city": "Malmö",
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m022",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1959-09-13",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "DEN",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m023",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1959-10-04",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "FIN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m024",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1959-10-18",
+      "city": "Gothenburg",
+      "home": "SWE",
+      "away": "NOR",
+      "score": [
+        6,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

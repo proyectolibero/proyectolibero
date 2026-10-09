@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 2,
+  "id": "football/nordic",
+  "sport": "football",
+  "competition": "nordic",
+  "name": "Nordic Championships",
+  "i18nKey": "comp.nordic.name",
+  "organizer": "—",
+  "scope": "regional",
+  "teamMode": "country",
+  "resultArchetype": "encounter",
+  "gender": "men",
+  "cadence": {
+    "type": "interval"
+  },
+  "status": "discontinued",
+  "firstEdition": 1924,
+  "lastEditionHeld": 2001,
+  "nextEditionExpected": null,
+  "coverage": {
+    "held": 14,
+    "published": 14,
+    "missing": 0
+  },
+  "editions": [
+    {
+      "year": "1924-28",
+      "held": true,
+      "champion": "DEN",
+      "runnerUp": "SWE",
+      "data": "1924-28.json"
+    },
+    {
+      "year": "1929-32",
+      "held": true,
+      "champion": "NOR",
+      "runnerUp": "SWE",
+      "data": "1929-32.json"
+    },
+    {
+      "year": "1933-36",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "data": "1933-36.json"
+    },
+    {
+      "year": "1937-47",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "note": "Serie interrumpida por la Segunda Guerra Mundial; los partidos de 1945 y 1946 no contaron y el título no se cerró hasta 1947.",
+      "data": "1937-47.json"
+    },
+    {
+      "year": "1948-51",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "data": "1948-51.json"
+    },
+    {
+      "year": "1952-55",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "NOR",
+      "data": "1952-55.json"
+    },
+    {
+      "year": "1956-59",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "NOR",
+      "data": "1956-59.json"
+    },
+    {
+      "year": "1960-63",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "data": "1960-63.json"
+    },
+    {
+      "year": "1964-67",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "data": "1964-67.json"
+    },
+    {
+      "year": "1968-71",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "data": "1968-71.json"
+    },
+    {
+      "year": "1972-77",
+      "held": true,
+      "champion": "SWE",
+      "runnerUp": "DEN",
+      "note": "Torneo de 6 años.",
+      "data": "1972-77.json"
+    },
+    {
+      "year": "1978-80",
+      "held": true,
+      "champion": "DEN",
+      "runnerUp": "SWE",
+      "note": "Torneo de 3 años.",
+      "data": "1978-80.json"
+    },
+    {
+      "year": "1981-83",
+      "held": true,
+      "champion": "DEN",
+      "runnerUp": "SWE",
+      "note": "El último partido (Suecia-Noruega) no se jugó al estar ya decidido el título; Dinamarca fue campeona.",
+      "data": "1981-83.json"
+    },
+    {
+      "year": "2000-01",
+      "held": true,
+      "champion": "FIN",
+      "runnerUp": "ISL",
+      "note": "Torneo único que incluyó por primera vez a Islandia e Islas Feroe; un partido (Noruega-Islas Feroe) no se jugó.",
+      "data": "2000-01.json"
+    }
+  ],
+  "stages": [
+    {
+      "id": "league",
+      "key": "phase.league",
+      "kind": "group",
+      "order": 20
+    }
+  ],
+  "updatePolicy": {
+    "mode": "manual",
+    "trigger": "administration",
+    "checkEveryDays": 30,
+    "liveSource": "https://www.rsssf.org/tablesn/nordic.html",
+    "note": "RSSSF no declara un organizador institucional: cada edición la organizaba y financiaba por turnos una de las federaciones nórdicas (DBU, SFF, NFF, SPL), por lo que organizer se deja como '—'. Cadencia muy irregular: series de 5 años (1924-28), de 4 (1929-32 a 1968-71), de 6 (1972-77), de 3 (1978-80 y 1981-83) y un torneo único en 2000-01; la serie 1937-47 quedó interrumpida por la Segunda Guerra Mundial (1945-46 no contaron) y la de 1981-83 no disputó su último partido. Sin partido final: siempre se decidió por liguilla (decidedBy 'standings'); los empates se resolvieron en la propia tabla por goal average o enfrentamiento directo, no con partidos de desempate. Solo ediciones cerradas; las actualizaciones siempre las inicia la administración."
+  },
+  "license": {
+    "layers": "CC-BY-4.0",
+    "attributionRequired": true,
+    "commercialResale": false,
+    "note": "Los hechos no son propiedad de nadie; las capas propias (normalización, esquema, procedencia) se publican con atribución. Se preserva siempre la atribución a las fuentes."
+  },
+  "sources": [
+    {
+      "id": "rsssf",
+      "name": "RSSSF — Nordic Championships (Lars Aarhus, Søren Elbech, Heikki Pietarinen)",
+      "url": "https://www.rsssf.org/tablesn/nordic.html",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true,
+      "note": "Copia libre con reconocimiento adecuado a los autores."
+    }
+  ],
+  "updatedAt": "2026-10-09"
+}

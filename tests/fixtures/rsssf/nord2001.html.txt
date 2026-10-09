@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Nordic Championship 2000-01</title>
+</head>
+
+<body>
+<h2>Nordic Championships 2000-01</h2>
+
+[ <a href="nordic.html">Overview</a>
+| <a href="nord8183.html">1981-83</a>
+]
+<p>
+<h3>Schedule</h3>
+<pre>
+31.01.2000 La Manga     Denmark   Sweden    0-1
+31.01.2000 La Manga     Faroes    Finland   0-1
+31.01.2000 La Manga     Norway    Iceland   0-0
+02.02.2000 La Manga     Norway    Denmark   4-2
+02.02.2000 La Manga     Finland   Iceland   0-1
+04.02.2000 La Manga     Denmark   Finland   1-2
+04.02.2000 La Manga     Faroes    Iceland   2-3
+04.02.2000 La Manga     Norway    Sweden    1-1
+16.08.2000 T&oacute;rshavn     Faroes    Denmark   0-2 
+16.08.2000 Reykjav&iacute;k    Iceland   Sweden    2-1
+16.08.2000 Helsinki     Finland   Norway    3-1 
+02.09.2000 Reykjavík    Iceland   Denmark   1-2
+31.01.2001 Växjö        Sweden    Faroes    0-0  (indoor)
+01.02.2001 Jönköping    Sweden    Finland   0-1  (indoor)
+  .  .2001 indoor       Norway    Faroes    n/p  (cancelled because of irrelevance)
+
+</pre>
+<h3>Table</h3>
+<pre>
+               G    W    D    L    Goals   P
+Finland         5    4    0    1     7-  3 12  Winners
+Iceland         5    3    1    1     7-  5 10
+Denmark         5    2    0    3     7-  8  6
+Norway          4    1    2    1     6-  6  5  [1 0 1 0 1-1 1]
+Sweden          5    1    2    2     3-  4  5  [1 0 1 0 1-1 1]
+Faroe Islands   4    0    1    3     2-  6  1
+               ------------------------------
+               28   11    6   11    32- 32 39
+
+[first tie-breaker head-to-head]
+
+NB: Denmark played the first three matches with a League XI.
+    Sweden played the 2001 matches with domestic-based players only.
+    Finland played all matches bar the one against Norway with players 
+      from the domestic and other Nordic leagues only. 
+
+</pre>
+<HR>
+<A NAME="about"><H2>About this document</H2></A>
+<P>Prepared and maintained by <I>Lars Aarhus, Heikki Pietarinen
+and Søren Elbech</I> for the
+<A HREF="../nersssf.html">
+Rec.Sport.Soccer Statistics Foundation</A>
+<P><I>
+Authors: Lars Aarhus, Heikki Pietarinen and Søren Elbech<BR>
+Last updated: 21 Dec 2017<BR></I>
+<P>
+<B>(C) Copyright Lars Aarhus, Heikki Pietarinen,
+Søren Elbech and RSSSF 2000/17</B><BR>
+You are free to copy this document in whole or part provided that proper
+acknowledgement is given to the authors. All rights reserved.
+</body>
+</html>

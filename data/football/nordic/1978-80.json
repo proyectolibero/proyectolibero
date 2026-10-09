@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "nordic",
+  "edition": "1978-80",
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "DEN",
+    "runnerUp": "SWE",
+    "decidedBy": "standings"
+  },
+  "coverage": {
+    "matches": 12,
+    "goals": 30,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:nord7880",
+      "name": "RSSSF — Nordic Championships 1978-80",
+      "url": "https://www.rsssf.org/tablesn/nord7880.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:nord7880"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "DEN",
+          "p": 6,
+          "w": 5,
+          "d": 1,
+          "l": 0,
+          "gf": 9,
+          "ga": 3,
+          "pts": 11
+        },
+        {
+          "team": "SWE",
+          "p": 6,
+          "w": 3,
+          "d": 0,
+          "l": 3,
+          "gf": 7,
+          "ga": 6,
+          "pts": 6
+        },
+        {
+          "team": "NOR",
+          "p": 6,
+          "w": 2,
+          "d": 1,
+          "l": 3,
+          "gf": 11,
+          "ga": 9,
+          "pts": 5
+        },
+        {
+          "team": "FIN",
+          "p": 6,
+          "w": 0,
+          "d": 2,
+          "l": 4,
+          "gf": 3,
+          "ga": 12,
+          "pts": 2
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1978-05-31",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "DEN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1978-06-28",
+      "city": "Borås",
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1978-08-09",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "NOR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1978-08-16",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "SWE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1979-06-28",
+      "city": "Gothenburg",
+      "home": "SWE",
+      "away": "NOR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1979-08-15",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SWE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1979-08-29",
+      "city": "Mikkeli",
+      "home": "FIN",
+      "away": "DEN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1979-09-26",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "FIN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1980-05-07",
+      "city": "Gothenburg",
+      "home": "SWE",
+      "away": "DEN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1980-05-22",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SWE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1980-06-04",
+      "city": "Copenhagen",
+      "home": "DEN",
+      "away": "NOR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "league",
+      "group": null,
+      "matchday": null,
+      "date": "1980-08-21",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "FIN",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

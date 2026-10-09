@@ -113,7 +113,8 @@ const COUNTRY_ALIASES = {
   "czech republic": "CZE",
   "czech rep.": "CZE",
   "czech rep": "CZE",
-  "united states": "USA"
+  "united states": "USA",
+  "faroes": "FRO"
 };
 
 /** Índice inverso nombre en inglés (minúsculas) → código FIFA de 3 letras. */
