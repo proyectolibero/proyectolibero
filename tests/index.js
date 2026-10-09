@@ -27,3 +27,4 @@ require("./nordic.test.js");
 require("./build.test.js");
 require("./reconcile.test.js");
 require("./promote.test.js");
+require("./integrity.test.js");
