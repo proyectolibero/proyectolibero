@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "eurochamp",
+  "edition": 1988,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "NED",
+    "runnerUp": "URS",
+    "decidedBy": "final",
+    "finalMatchId": "m015"
+  },
+  "coverage": {
+    "matches": 15,
+    "goals": 34,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:88e",
+      "name": "RSSSF — European Championship 1988",
+      "url": "https://www.rsssf.org/tables/88e.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:88e"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "FRG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 5,
+          "pts": 2
+        },
+        {
+          "team": "DEN",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 7,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "URS",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "IRL",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 3
+        },
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 7,
+          "pts": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1988-06-10",
+      "city": "Düsseldorf",
+      "home": "FRG",
+      "away": "ITA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1988-06-11",
+      "city": "Hannover",
+      "home": "DEN",
+      "away": "ESP",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1988-06-14",
+      "city": "Gelsenkirchen",
+      "home": "FRG",
+      "away": "DEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1988-06-14",
+      "city": "Frankfurt",
+      "home": "ITA",
+      "away": "ESP",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1988-06-17",
+      "city": "München",
+      "home": "FRG",
+      "away": "ESP",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1988-06-17",
+      "city": "Köln",
+      "home": "ITA",
+      "away": "DEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1988-06-12",
+      "city": "Stuttgart",
+      "home": "ENG",
+      "away": "IRL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1988-06-12",
+      "city": "Köln",
+      "home": "NED",
+      "away": "URS",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1988-06-15",
+      "city": "Düsseldorf",
+      "home": "ENG",
+      "away": "NED",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1988-06-15",
+      "city": "Hannover",
+      "home": "IRL",
+      "away": "URS",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1988-06-18",
+      "city": "Frankfurt",
+      "home": "ENG",
+      "away": "URS",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1988-06-18",
+      "city": "Gelsenkirchen",
+      "home": "IRL",
+      "away": "NED",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1988-06-21",
+      "city": "Hamburg",
+      "home": "FRG",
+      "away": "NED",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m014",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1988-06-22",
+      "city": "Stuttgart",
+      "home": "URS",
+      "away": "ITA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m015",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1988-06-25",
+      "city": "München",
+      "home": "NED",
+      "away": "URS",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 8
+}

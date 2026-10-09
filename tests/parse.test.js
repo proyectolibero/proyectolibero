@@ -463,3 +463,95 @@ test("parse('ed') lee la fecha numérica y la tanda PENALTY SHOOTOUT (formato 19
   assert.deepEqual(matches[1].pens, [5, 4]);
   assert.deepEqual(matches[1].notes, ["pen"]);
 });
+
+test("detectKind reconoce las páginas de edición (kind 'e')", () => {
+  assert.equal(detectKind("https://www.rsssf.org/tables/60e.html"), "e");
+  assert.equal(detectKind("https://www.rsssf.org/tables/2024e.html"), "e");
+  assert.equal(detectKind("https://www.rsssf.org/tablese/eurochamp.html"), null);
+});
+
+test("parse('e') lee el torneo final del formato antiguo y descarta la clasificación", () => {
+  const text = [
+    "<h3>Qualifying Stage</h3>",
+    "05.04.1959 in Dublin (Dalymount Park)",
+    "Ireland          2-0 Czechoslovakia",
+    "<h3>Final Tournament (in France)</h3>",
+    "SEMIFINALS",
+    "Marseille, July 6, Stade Vélodrome",
+    "Soviet Union     3-0 Czechoslovakia",
+    "  [V.Ivanov 34, 56, Ponedelnik 65]",
+    "  [ref: Jionni (Italy); att: 28,000]",
+    "FINAL",
+    "Paris, Parc des Princes, July 10",
+    "Soviet Union     2-1 Yugoslavia      [aet]"
+  ].join("\n");
+  const { matches, warnings } = parse("e", text, { year: 1960 });
+  assert.equal(warnings.length, 0);
+  assert.equal(matches.length, 2);
+  assert.equal(matches[0].date, "1960-07-06");
+  assert.equal(matches[0].city, "Marseille");
+  assert.equal(matches[0].home, "Soviet Union");
+  assert.equal(matches[0].away, "Czechoslovakia");
+  assert.equal(matches[0].section, "Semifinals");
+  assert.equal(matches[1].date, "1960-07-10");
+  assert.equal(matches[1].section, "Final");
+  assert.deepEqual(matches[1].notes, ["aet"]);
+  assert.equal(matches[1].score, "2-1");
+});
+
+test("parse('e') lee la lista compacta con grupo, tabla y marcador con guion largo", () => {
+  const text = [
+    "<h3>Final Tournament (in Germany)</h3>",
+    "Group A",
+    "14- 6-24 München        Germany            5–1 Scotland",
+    "15- 6-24 Köln           Hungary            1–3 Switzerland",
+    "",
+    " 1.GERMANY             3  2  1  0   8- 2   7 ",
+    " 2.SWITZERLAND         3  1  2  0   5- 3   5",
+    "",
+    "Final",
+    "14- 7-24 Berlin         Spain              2–1 England"
+  ].join("\n");
+  const { matches, standings, warnings } = parse("e", text, { year: 2024 });
+  assert.equal(warnings.length, 0);
+  assert.equal(matches.length, 3);
+  assert.equal(matches[0].group, "Group A");
+  assert.equal(matches[0].city, "München");
+  assert.equal(matches[0].home, "Germany");
+  assert.equal(matches[0].score, "5-1");
+  assert.equal(matches[2].section, "Final");
+  assert.equal(standings.length, 2);
+  assert.equal(standings[0].team, "GERMANY");
+  assert.deepEqual([standings[0].gf, standings[0].ga, standings[0].pts], [8, 2, 7]);
+});
+
+test("parse('e') distingue el partido de desempate de la final", () => {
+  const text = [
+    "<h3>Final Tournament (in Italy)</h3>",
+    "FINAL",
+    "Roma, June 8, Stadio Olimpico",
+    "Italy 1-1 Yugoslavia [aet]",
+    "FINAL REPLAY",
+    "Roma, June 10, Stadio Olimpico",
+    "Italy 2-0 Yugoslavia"
+  ].join("\n");
+  const { matches, warnings } = parse("e", text, { year: 1968 });
+  assert.equal(warnings.length, 0);
+  assert.equal(matches.length, 2);
+  assert.equal(matches[0].section, "Final");
+  assert.deepEqual(matches[0].notes, ["aet"]);
+  assert.equal(matches[1].section, "Final");
+  assert.deepEqual(matches[1].notes, ["replay"]);
+});
+
+test("parse('e') atribuye la tanda al partido anterior", () => {
+  const text = [
+    "<h3>Final Tournament (in England)</h3>",
+    "Final",
+    "11- 7-21 London England 1-1 Italy [aet, 2-3 pen]"
+  ].join("\n");
+  const { matches, warnings } = parse("e", text, { year: 2020 });
+  assert.equal(warnings.length, 0);
+  assert.deepEqual(matches[0].pens, [2, 3]);
+  assert.deepEqual([...matches[0].notes].sort(), ["aet", "pen"]);
+});

@@ -1,0 +1,764 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "eurochamp",
+  "edition": 2008,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "ESP",
+    "runnerUp": "GER",
+    "decidedBy": "final",
+    "finalMatchId": "m031"
+  },
+  "coverage": {
+    "matches": 31,
+    "goals": 77,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:08e",
+      "name": "RSSSF — European Championship 2008",
+      "url": "https://www.rsssf.org/tables/08e.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:08e"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "POR",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "TUR",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 5,
+          "pts": 6
+        },
+        {
+          "team": "SUI",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "CZE",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 4,
+          "ga": 6,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "CRO",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "pts": 9
+        },
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "AUT",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 3,
+          "pts": 1
+        },
+        {
+          "team": "POL",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 9,
+          "ga": 1,
+          "pts": 9
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "ROU",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 1,
+          "ga": 3,
+          "pts": 2
+        },
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 8,
+          "ga": 3,
+          "pts": 9
+        },
+        {
+          "team": "RUS",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "SWE",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "GRE",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 5,
+          "pts": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2008-06-07",
+      "city": null,
+      "home": "SUI",
+      "away": "CZE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2008-06-07",
+      "city": null,
+      "home": "POR",
+      "away": "TUR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2008-06-11",
+      "city": null,
+      "home": "CZE",
+      "away": "POR",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2008-06-11",
+      "city": null,
+      "home": "SUI",
+      "away": "TUR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2008-06-15",
+      "city": null,
+      "home": "SUI",
+      "away": "POR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2008-06-15",
+      "city": null,
+      "home": "TUR",
+      "away": "CZE",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2008-06-08",
+      "city": null,
+      "home": "AUT",
+      "away": "CRO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2008-06-08",
+      "city": null,
+      "home": "GER",
+      "away": "POL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2008-06-12",
+      "city": null,
+      "home": "CRO",
+      "away": "GER",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2008-06-12",
+      "city": null,
+      "home": "AUT",
+      "away": "POL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2008-06-16",
+      "city": null,
+      "home": "AUT",
+      "away": "GER",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2008-06-16",
+      "city": null,
+      "home": "POL",
+      "away": "CRO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2008-06-09",
+      "city": null,
+      "home": "ROU",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2008-06-09",
+      "city": null,
+      "home": "NED",
+      "away": "ITA",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2008-06-13",
+      "city": null,
+      "home": "ITA",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2008-06-13",
+      "city": null,
+      "home": "NED",
+      "away": "FRA",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2008-06-17",
+      "city": null,
+      "home": "FRA",
+      "away": "ITA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2008-06-17",
+      "city": null,
+      "home": "NED",
+      "away": "ROU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2008-06-10",
+      "city": null,
+      "home": "ESP",
+      "away": "RUS",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2008-06-10",
+      "city": null,
+      "home": "GRE",
+      "away": "SWE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2008-06-14",
+      "city": null,
+      "home": "SWE",
+      "away": "ESP",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2008-06-14",
+      "city": null,
+      "home": "GRE",
+      "away": "RUS",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2008-06-18",
+      "city": null,
+      "home": "GRE",
+      "away": "ESP",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2008-06-18",
+      "city": null,
+      "home": "RUS",
+      "away": "SWE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m025",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-19",
+      "city": null,
+      "home": "POR",
+      "away": "GER",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m026",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-20",
+      "city": null,
+      "home": "CRO",
+      "away": "TUR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "pen",
+        "aet"
+      ],
+      "pens": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "m027",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-21",
+      "city": null,
+      "home": "NED",
+      "away": "RUS",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    },
+    {
+      "id": "m028",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-22",
+      "city": null,
+      "home": "ESP",
+      "away": "ITA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [
+        "pen",
+        "aet"
+      ],
+      "pens": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "m029",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-25",
+      "city": null,
+      "home": "GER",
+      "away": "TUR",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m030",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-26",
+      "city": null,
+      "home": "RUS",
+      "away": "ESP",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m031",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-29",
+      "city": null,
+      "home": "GER",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 16
+}

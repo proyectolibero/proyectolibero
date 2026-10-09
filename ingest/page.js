@@ -324,4 +324,4 @@ function buildCompetitionDrafts(input) {
   return { drafts, warnings };
 }
 
-module.exports = { buildCompetitionDrafts, mergeEditionDetail, canonicalYear };
+module.exports = { buildCompetitionDrafts, mergeEditionDetail, canonicalYear, buildDraft };

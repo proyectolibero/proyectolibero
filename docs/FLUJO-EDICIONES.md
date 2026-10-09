@@ -82,6 +82,12 @@ Ejemplos: `https://www.rsssf.org/tablesw/38f.html`,
 `https://www.rsssf.org/tablesw/38q.html`,
 `https://www.rsssf.org/tablesw/38qf-scor.html`.
 
+Otras competiciones (p. ej. la Eurocopa) no tienen ficheros `f`/`full`: cada
+edición es una página propia con el torneo final y la clasificación en el mismo
+documento (`60e.html`, `2024e.html`). El parser `e` de `ingest/rsssf.js` se queda
+con el bloque "Final Tournament" y `node scripts/ingest.js build-editions
+--competition=<sport>/<competicion>` genera un borrador por edición.
+
 Registrar cada fuente en el `sources[]` de la edición (y, si es de uso general,
 en el catálogo) con:
 

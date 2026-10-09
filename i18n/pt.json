@@ -23,6 +23,7 @@
   "comp.worldcup.name": "Copa do Mundo da FIFA",
   "comp.intconcup.name": "Copa das Confederações da FIFA",
   "comp.balkancup.name": "Copa dos Balcãs",
+  "comp.eurochamp.name": "Campeonato Europeu de Futebol (Eurocopa)",
   "edition.title": "Copa do Mundo de {year}",
   "edition.pending": "Edição em preparação. Os dados serão publicados em breve.",
   "edition.host": "País anfitrião",

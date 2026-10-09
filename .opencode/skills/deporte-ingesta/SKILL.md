@@ -25,6 +25,7 @@ inbox/    drafts/    diferencias      aprueba / rechaza      data/ (atómico)
 |---|---|---|---|
 | `fetch` | `ingest/fetch.js` | `inbox/<sourceId>/` (HTML, `.txt` UTF-8 y `meta.json` con url/retrieved/charset/sha256) | no |
 | `build` | `ingest/build.js` (+ `ingest/rsssf.js`) | `drafts/football/worldcup/<año>.json` | no |
+| `build-page` / `build-editions` | `ingest/page.js` (+ `ingest/rsssf.js`) | `drafts/<sport>/<competición>/<año>.json` | no |
 | `reconcile` | `ingest/reconcile.js` | diferencias `blocking`/`minor`/`info` + sugerencias | no |
 | `promote` | `scripts/ingest.js` | edición publicada (solo con `--confirm`) | **sí (humano)** |
 
@@ -32,7 +33,8 @@ inbox/    drafts/    diferencias      aprueba / rechaza      data/ (atómico)
 ```bash
 # 0. Patrón de id de fuente: rsssf:<aa><sufijo>, con aa = dos últimas cifras
 #    del año. Sufijos: f (torneo final), full (detalle), q (clasificación),
-#    q-det (detalle de clasificación) y qf-scor (goleadores).
+#    q-det (detalle de clasificación), qf-scor (goleadores) y e (página de una
+#    edición concreta, p. ej. 60e/2024e; la consume 'build-editions').
 
 # 1. Descargar (secuencial, con pausa; user-agent identificable y timeout).
 node scripts/ingest.js fetch --sources=rsssf:54f,rsssf:54full --year=1954
@@ -115,8 +117,9 @@ ampliar el mapeo o el catálogo mediante una decisión.
 - No subir `inbox/` ni `drafts/` a git: son artefactos internos (ignorados).
 
 ## Limitaciones conocidas
-- Parsers implementados en `ingest/rsssf.js`: `f`, `full` y `qf-scor`
-  (goleadores). Pendientes: `q` y `q-det` (clasificación); devuelven un aviso y
+- Parsers implementados en `ingest/rsssf.js`: `f`, `full`, `qf-scor`
+  (goleadores) y `e` (página de una edición: se queda con el torneo final).
+  Pendientes: `q` y `q-det` (clasificación); devuelven un aviso y
   arrays vacíos, así que la cadena **no** produce Nivel 2 (clasificación) por sí
   sola.
 - `build` cubre el arquetipo `encounter` del fútbol; otros arquetipos

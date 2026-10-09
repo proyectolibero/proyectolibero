@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "eurochamp",
+  "edition": 1968,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "ITA",
+    "runnerUp": "YUG",
+    "decidedBy": "final",
+    "finalMatchId": "m005"
+  },
+  "coverage": {
+    "matches": 5,
+    "goals": 7,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:68e",
+      "name": "RSSSF — European Championship 1968",
+      "url": "https://www.rsssf.org/tables/68e.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:68e"
+  },
+  "groups": [],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1968-06-05",
+      "city": "Napoli",
+      "home": "ITA",
+      "away": "URS",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1968-06-05",
+      "city": "Firenze",
+      "home": "YUG",
+      "away": "ENG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "third",
+      "group": null,
+      "matchday": null,
+      "date": "1968-06-08",
+      "city": "Roma",
+      "home": "ENG",
+      "away": "URS",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1968-06-08",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "YUG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1968-06-10",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "YUG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [
+        "replay"
+      ],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

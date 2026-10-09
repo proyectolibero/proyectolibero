@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "eurochamp",
+  "edition": 1960,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "URS",
+    "runnerUp": "YUG",
+    "decidedBy": "final",
+    "finalMatchId": "m004"
+  },
+  "coverage": {
+    "matches": 4,
+    "goals": 17,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:60e",
+      "name": "RSSSF — European Championship 1960",
+      "url": "https://www.rsssf.org/tables/60e.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:60e"
+  },
+  "groups": [],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1960-07-06",
+      "city": "Marseille",
+      "home": "URS",
+      "away": "TCH",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1960-07-06",
+      "city": "Paris",
+      "home": "YUG",
+      "away": "FRA",
+      "score": [
+        5,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "third",
+      "group": null,
+      "matchday": null,
+      "date": "1960-07-09",
+      "city": "Marseille",
+      "home": "TCH",
+      "away": "FRA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1960-07-10",
+      "city": "Paris",
+      "home": "URS",
+      "away": "YUG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

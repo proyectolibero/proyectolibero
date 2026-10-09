@@ -1,0 +1,760 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "eurochamp",
+  "edition": 2004,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "GRE",
+    "runnerUp": "POR",
+    "decidedBy": "final",
+    "finalMatchId": "m031"
+  },
+  "coverage": {
+    "matches": 31,
+    "goals": 77,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:04e",
+      "name": "RSSSF — European Championship 2004",
+      "url": "https://www.rsssf.org/tables/04e.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:04e"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "POR",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "GRE",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "RUS",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 7,
+          "ga": 4,
+          "pts": 7
+        },
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 8,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "CRO",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 4,
+          "ga": 6,
+          "pts": 2
+        },
+        {
+          "team": "SUI",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "SWE",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 8,
+          "ga": 3,
+          "pts": 5
+        },
+        {
+          "team": "DEN",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 4,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 3,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "BUL",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 9,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "CZE",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 7,
+          "ga": 4,
+          "pts": 9
+        },
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 6,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 2,
+          "ga": 3,
+          "pts": 2
+        },
+        {
+          "team": "LAT",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 5,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2004-06-12",
+      "city": null,
+      "home": "POR",
+      "away": "GRE",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2004-06-12",
+      "city": null,
+      "home": "ESP",
+      "away": "RUS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2004-06-16",
+      "city": null,
+      "home": "GRE",
+      "away": "ESP",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2004-06-16",
+      "city": null,
+      "home": "RUS",
+      "away": "POR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2004-06-20",
+      "city": null,
+      "home": "ESP",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2004-06-20",
+      "city": null,
+      "home": "RUS",
+      "away": "GRE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2004-06-13",
+      "city": null,
+      "home": "SUI",
+      "away": "CRO",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2004-06-13",
+      "city": null,
+      "home": "FRA",
+      "away": "ENG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2004-06-17",
+      "city": null,
+      "home": "ENG",
+      "away": "SUI",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2004-06-17",
+      "city": null,
+      "home": "CRO",
+      "away": "FRA",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2004-06-21",
+      "city": null,
+      "home": "CRO",
+      "away": "ENG",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2004-06-21",
+      "city": null,
+      "home": "SUI",
+      "away": "FRA",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2004-06-14",
+      "city": null,
+      "home": "DEN",
+      "away": "ITA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2004-06-14",
+      "city": null,
+      "home": "SWE",
+      "away": "BUL",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2004-06-18",
+      "city": null,
+      "home": "BUL",
+      "away": "DEN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2004-06-18",
+      "city": null,
+      "home": "ITA",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2004-06-22",
+      "city": null,
+      "home": "ITA",
+      "away": "BUL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2004-06-22",
+      "city": null,
+      "home": "DEN",
+      "away": "SWE",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2004-06-15",
+      "city": null,
+      "home": "GER",
+      "away": "NED",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2004-06-15",
+      "city": null,
+      "home": "CZE",
+      "away": "LAT",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2004-06-19",
+      "city": null,
+      "home": "GER",
+      "away": "LAT",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2004-06-19",
+      "city": null,
+      "home": "NED",
+      "away": "CZE",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2004-06-23",
+      "city": null,
+      "home": "NED",
+      "away": "LAT",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2004-06-23",
+      "city": null,
+      "home": "GER",
+      "away": "CZE",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m025",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2004-06-24",
+      "city": null,
+      "home": "POR",
+      "away": "ENG",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [
+        "pen"
+      ],
+      "pens": [
+        6,
+        5
+      ]
+    },
+    {
+      "id": "m026",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2004-06-25",
+      "city": null,
+      "home": "FRA",
+      "away": "GRE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m027",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2004-06-26",
+      "city": null,
+      "home": "SWE",
+      "away": "NED",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [
+        "pen"
+      ],
+      "pens": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "m028",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2004-06-27",
+      "city": null,
+      "home": "CZE",
+      "away": "DEN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m029",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2004-06-30",
+      "city": null,
+      "home": "POR",
+      "away": "NED",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m030",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2004-07-01",
+      "city": null,
+      "home": "GRE",
+      "away": "CZE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m031",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "2004-07-04",
+      "city": null,
+      "home": "POR",
+      "away": "GRE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 16
+}

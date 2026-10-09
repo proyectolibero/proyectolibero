@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "eurochamp",
+  "edition": 1980,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "FRG",
+    "runnerUp": "BEL",
+    "decidedBy": "final",
+    "finalMatchId": "m014"
+  },
+  "coverage": {
+    "matches": 14,
+    "goals": 27,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:80e",
+      "name": "RSSSF — European Championship 1980",
+      "url": "https://www.rsssf.org/tables/80e.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:80e"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "FRG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "TCH",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 3
+        },
+        {
+          "team": "GRE",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "BEL",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 3,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 1,
+          "ga": 0,
+          "pts": 4
+        },
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1980-06-11",
+      "city": "Roma",
+      "home": "FRG",
+      "away": "TCH",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1980-06-11",
+      "city": "Napoli",
+      "home": "NED",
+      "away": "GRE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1980-06-14",
+      "city": "Napoli",
+      "home": "FRG",
+      "away": "NED",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1980-06-14",
+      "city": "Roma",
+      "home": "TCH",
+      "away": "GRE",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1980-06-17",
+      "city": "Milano",
+      "home": "TCH",
+      "away": "NED",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1980-06-17",
+      "city": "Torino",
+      "home": "FRG",
+      "away": "GRE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1980-06-12",
+      "city": "Torino",
+      "home": "BEL",
+      "away": "ENG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1980-06-12",
+      "city": "Milano",
+      "home": "ESP",
+      "away": "ITA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1980-06-15",
+      "city": "Milano",
+      "home": "ESP",
+      "away": "BEL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1980-06-15",
+      "city": "Torino",
+      "home": "ITA",
+      "away": "ENG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1980-06-18",
+      "city": "Napoli",
+      "home": "ESP",
+      "away": "ENG",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1980-06-18",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "BEL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "third",
+      "group": null,
+      "matchday": null,
+      "date": "1980-06-21",
+      "city": "Napoli",
+      "home": "TCH",
+      "away": "ITA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "pen"
+      ],
+      "pens": [
+        9,
+        8
+      ]
+    },
+    {
+      "id": "m014",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1980-06-22",
+      "city": "Roma",
+      "home": "FRG",
+      "away": "BEL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 8
+}

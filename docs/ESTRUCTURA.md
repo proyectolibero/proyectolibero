@@ -57,7 +57,7 @@ Deporte/
 │
 ├── ingest/                     # Cadena de ingesta determinista (fetch → build → reconcile)
 │   ├── fetch.js                # Descarga a inbox/ (bytes + texto UTF-8 + meta.json)
-│   ├── rsssf.js                # Parsers deterministas de páginas RSSSF (f, full, qf-scor; q y q-det pendientes)
+│   ├── rsssf.js                # Parsers deterministas de páginas RSSSF (f, full, qf-scor, e; q y q-det pendientes)
 │   ├── build.js                # Fusiona fuentes en un borrador v2 (drafts/)
 │   └── reconcile.js            # Diff borrador vs publicado (blocking/minor/info)
 │

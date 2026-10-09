@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "eurochamp",
+  "edition": 1972,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "FRG",
+    "runnerUp": "URS",
+    "decidedBy": "final",
+    "finalMatchId": "m004"
+  },
+  "coverage": {
+    "matches": 4,
+    "goals": 10,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:72e",
+      "name": "RSSSF — European Championship 1972",
+      "url": "https://www.rsssf.org/tables/72e.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:72e"
+  },
+  "groups": [],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1972-06-14",
+      "city": "Antwerpen",
+      "home": "FRG",
+      "away": "BEL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1972-06-14",
+      "city": "Brussel",
+      "home": "URS",
+      "away": "HUN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "third",
+      "group": null,
+      "matchday": null,
+      "date": "1972-06-17",
+      "city": "Liège",
+      "home": "BEL",
+      "away": "HUN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1972-06-18",
+      "city": "Bruxelles",
+      "home": "FRG",
+      "away": "URS",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

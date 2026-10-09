@@ -23,6 +23,7 @@
   "comp.worldcup.name": "国际足联世界杯",
   "comp.intconcup.name": "国际足联联合会杯",
   "comp.balkancup.name": "巴尔干杯",
+  "comp.eurochamp.name": "欧洲足球锦标赛（欧洲杯）",
   "edition.title": "{year}年世界杯",
   "edition.pending": "本届数据正在整理中，即将发布。",
   "edition.host": "主办国",

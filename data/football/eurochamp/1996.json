@@ -1,0 +1,776 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "eurochamp",
+  "edition": 1996,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "GER",
+    "runnerUp": "CZE",
+    "decidedBy": "final",
+    "finalMatchId": "m031"
+  },
+  "coverage": {
+    "matches": 31,
+    "goals": 64,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:96e",
+      "name": "RSSSF — European Championship 1996",
+      "url": "https://www.rsssf.org/tables/96e.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:96e"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 7,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "SCO",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 1,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "SUI",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 4,
+          "ga": 3,
+          "pts": 5
+        },
+        {
+          "team": "BUL",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "ROU",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 4,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 0,
+          "pts": 7
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "CZE",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "RUS",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 8,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "POR",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "CRO",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "DEN",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "TUR",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 0,
+          "ga": 5,
+          "pts": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1996-06-08",
+      "city": "London",
+      "home": "ENG",
+      "away": "SUI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1996-06-10",
+      "city": "Birmingham",
+      "home": "NED",
+      "away": "SCO",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1996-06-13",
+      "city": "Birmingham",
+      "home": "SUI",
+      "away": "NED",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1996-06-15",
+      "city": "London",
+      "home": "SCO",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1996-06-18",
+      "city": "Birmingham",
+      "home": "SCO",
+      "away": "SUI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "1996-06-18",
+      "city": "London",
+      "home": "NED",
+      "away": "ENG",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1996-06-09",
+      "city": "Leeds",
+      "home": "ESP",
+      "away": "BUL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1996-06-10",
+      "city": "Newcastle",
+      "home": "ROU",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1996-06-13",
+      "city": "Newcastle",
+      "home": "BUL",
+      "away": "ROU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1996-06-15",
+      "city": "Leeds",
+      "home": "FRA",
+      "away": "ESP",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1996-06-18",
+      "city": "Newcastle",
+      "home": "FRA",
+      "away": "BUL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "1996-06-18",
+      "city": "Leeds",
+      "home": "ROU",
+      "away": "ESP",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "1996-06-09",
+      "city": "Manchester",
+      "home": "GER",
+      "away": "CZE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "1996-06-11",
+      "city": "Liverpool",
+      "home": "ITA",
+      "away": "RUS",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "1996-06-14",
+      "city": "Liverpool",
+      "home": "CZE",
+      "away": "ITA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "1996-06-16",
+      "city": "Manchester",
+      "home": "RUS",
+      "away": "GER",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "1996-06-19",
+      "city": "Liverpool",
+      "home": "RUS",
+      "away": "CZE",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "1996-06-19",
+      "city": "Manchester",
+      "home": "ITA",
+      "away": "GER",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "1996-06-09",
+      "city": "Sheffield",
+      "home": "DEN",
+      "away": "POR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "1996-06-11",
+      "city": "Nottingham",
+      "home": "TUR",
+      "away": "CRO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "1996-06-14",
+      "city": "Nottingham",
+      "home": "POR",
+      "away": "TUR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "1996-06-16",
+      "city": "Sheffield",
+      "home": "DEN",
+      "away": "CRO",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "1996-06-19",
+      "city": "Nottingham",
+      "home": "CRO",
+      "away": "POR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "1996-06-19",
+      "city": "Sheffield",
+      "home": "DEN",
+      "away": "TUR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m025",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "1996-06-22",
+      "city": "London",
+      "home": "ENG",
+      "away": "ESP",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "m026",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "1996-06-22",
+      "city": "Liverpool",
+      "home": "FRA",
+      "away": "NED",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        5,
+        4
+      ]
+    },
+    {
+      "id": "m027",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "1996-06-23",
+      "city": "Manchester",
+      "home": "GER",
+      "away": "CRO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m028",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "1996-06-23",
+      "city": "Birmingham",
+      "home": "POR",
+      "away": "CZE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m029",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1996-06-26",
+      "city": "Manchester",
+      "home": "FRA",
+      "away": "CZE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "m030",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1996-06-26",
+      "city": "London",
+      "home": "ENG",
+      "away": "GER",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "m031",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1996-06-30",
+      "city": "London",
+      "home": "GER",
+      "away": "CZE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 16
+}

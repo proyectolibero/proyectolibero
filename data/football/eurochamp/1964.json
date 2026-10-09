@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "eurochamp",
+  "edition": 1964,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "ESP",
+    "runnerUp": "URS",
+    "decidedBy": "final",
+    "finalMatchId": "m004"
+  },
+  "coverage": {
+    "matches": 4,
+    "goals": 13,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:64e",
+      "name": "RSSSF — European Championship 1964",
+      "url": "https://www.rsssf.org/tables/64e.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:64e"
+  },
+  "groups": [],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1964-06-17",
+      "city": "Madrid",
+      "home": "ESP",
+      "away": "HUN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1964-06-17",
+      "city": "Barcelona",
+      "home": "URS",
+      "away": "DEN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "third",
+      "group": null,
+      "matchday": null,
+      "date": "1964-06-20",
+      "city": "Barcelona",
+      "home": "HUN",
+      "away": "DEN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1964-06-21",
+      "city": "Madrid",
+      "home": "ESP",
+      "away": "URS",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 4
+}

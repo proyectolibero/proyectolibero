@@ -5,7 +5,9 @@
  *
  * Alcance actual: `f` (listado resumido), `full` (detallado del Mundial),
  * `ed` (detalle por edición de otras competiciones: fecha en línea propia y,
- * si la hay, tanda de penaltis) y `qf-scor` (goleadores y totales por equipo).
+ * si la hay, tanda de penaltis), `qf-scor` (goleadores y totales por equipo) y
+ * `e` (página de una edición concreta —p. ej. `60e.html`/`2024e.html`—: se
+ * queda con el torneo final y admite las dos eras de formato).
  * Los formatos de clasificación (`q`, `q-det`) todavía no se implementan:
  * `parse` devuelve arrays vacíos y un aviso.
  *
@@ -13,7 +15,7 @@
  * `ingest/fetch.js`); aquí se limpian las etiquetas y se decodifican entidades.
  */
 
-const KINDS = ["full", "qf-scor", "q-det", "f", "q", "ed"];
+const KINDS = ["full", "qf-scor", "q-det", "f", "q", "ed", "e"];
 
 /** Entidades HTML nombradas frecuentes en RSSSF (Latin-1, tipográficas y símbolos). */
 const ENTITIES = {
@@ -900,6 +902,254 @@ function parseScorers(text, result) {
   }
 }
 
+/* -------------------------------------------------------------------------- */
+/* Formato `e`: página de una edición (torneo final de la Eurocopa y similares) */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Encabezado HTML que abre el bloque del torneo final dentro de una página de
+ * edición. Todo lo anterior (fase de clasificación) se descarta: el alcance del
+ * proyecto es el torneo final.
+ */
+const EDITION_FT_HEADER = /<h[1-6][^>]*>[^<]*Final Tournament/i;
+
+/** Cabecera de fecha/ciudad antigua: `City, Month D[, Stadium]` o `DD.MM.YYYY in City (Stadium)`. */
+const EDITION_CITY_DATE = /^(.+?),\s*([A-Za-z]{3,9})\.?\s+(\d{1,2})(?:,\s*(\d{4}))?(?:,\s*(.+))?\s*$/;
+const EDITION_IN_CITY = /^(\d{1,2}\.\d{1,2}\.\d{2,4})\s+in\s+(.+?)(?:\s*\((.+)\))?\s*$/;
+
+/** Prefijos de fecha/hora de una línea de partido compacta. */
+const EDITION_DATE_DMY = /^(\d{1,2})\s*-\s*(\d{1,2})\s*-\s*(\d{2,4})\s+(.*)$/;
+const EDITION_DATE_TIME = /^(\d{1,2})\s*-\s*(\d{1,2})\s+(\d{1,2}\.\d{2})\s+(.*)$/;
+const EDITION_DATE_NAMED = /^(\d{1,2})\s+([A-Za-z]{3,9})\s+(\d{4})\s+(.*)$/;
+const EDITION_DATE_MONTH = /^([A-Za-z]{3,9})\s+(\d{1,2})\s+(.*)$/;
+const EDITION_TIME_ONLY = /^(\d{1,2}\.\d{2})\s+(.*)$/;
+const EDITION_TIME_TOKEN = /\b\d{1,2}\.\d{2}\b/g;
+const EDITION_SCORE = /(\d+)\s*[–:-]\s*(\d+)/;
+const EDITION_BRACKET = /\[([^\]]*)\]\s*$/;
+const EDITION_STANDING = /^\s*[-0-9]+\.\s*[A-Za-z]/;
+
+/** Encabezados de fase y de grupo (se normalizan a `section`/`group`). */
+const EDITION_GROUP = /^group\s+([A-Z0-9]+)$/i;
+const EDITION_FINAL_GROUP = /^final group\s+([0-9]+|pool)$/i;
+const EDITION_R16 = /^(?:1\/8 finals?|eighth-?finals?|round of 16)$/i;
+const EDITION_QF = /^quarter-?finals?$/i;
+const EDITION_SF = /^semi-?finals?$/i;
+const EDITION_THIRD = /^(?:match for (?:the )?third place|third[- ]place(?: match)?)$/i;
+const EDITION_FINAL = /^final$/i;
+const EDITION_FINAL_REPLAY = /^final replay$/i;
+
+/** Línea que no es dato (goleadores, árbitros, alineaciones, notas, cabeceras). */
+const EDITION_NOISE =
+  /^(?:\[|scorers?\b|topscorer|top scorer|ref\b|referee|att\b|attendance|nb:|note\b|draw\b|stadiums?\b|participants\b|qualified\b|additional\b|full details\b|full stats\b|match details\b|city ground|thanks\b|\(no match|penalty shootout|winners\b|all-?time|final tournament details\b)/i;
+const EDITION_PENS_LINE = /^(.+?)\s+wins?\s+(\d+)\s*[-:]\s*(\d+)\s+on penalties\s*$/i;
+
+function editionStripBrackets(text) {
+  return String(text).replace(/\[[^\]]*\]/g, " ");
+}
+
+/** ¿La línea es una cabecera que abre el torneo final? `-1` si no aparece. */
+function editionStart(lines) {
+  for (let i = 0; i < lines.length; i += 1) if (EDITION_FT_HEADER.test(lines[i])) return i;
+  return -1;
+}
+
+/** Cabecera de fecha/ciudad (formato antiguo); `null` si la línea no lo es. */
+function editionCityDate(line, ctx) {
+  const inCity = EDITION_IN_CITY.exec(line);
+  if (inCity) {
+    const parsed = parseDate(inCity[1], ctx);
+    if (parsed.iso) return { date: parsed.iso, city: inCity[2].trim() };
+  }
+  const match = EDITION_CITY_DATE.exec(line);
+  if (!match) return null;
+  const month = MONTH_NUMBERS[match[2].slice(0, 3).toLowerCase()];
+  if (!month) return null;
+  const year = match[4] || (ctx && ctx.year) || 0;
+  const parsed = parseDate(`${match[3]} ${match[2].slice(0, 3)} ${year}`, ctx);
+  if (!parsed.iso) return null;
+  return { date: parsed.iso, city: String(match[1]).split(",")[0].trim() };
+}
+
+/** Normaliza un encabezado de fase/grupo a `{ section, group, resetGroup, replay }`. */
+function editionSection(line) {
+  const folded = line.replace(/\[[^\]]*\]/g, " ").replace(/\s*\([^()]*\)\s*$/, "").trim()
+    .replace(/^"?phase platini"?\s*-?\s*/i, "").trim();
+  if (/^(?:group stage|final tournament proper)$/i.test(folded)) return { section: null, resetGroup: true };
+  const group = EDITION_GROUP.exec(folded);
+  if (group) {
+    const name = `Group ${group[1].toUpperCase()}`;
+    return { section: name, group: name };
+  }
+  const finalGroup = EDITION_FINAL_GROUP.exec(folded);
+  if (finalGroup) {
+    const letter = /pool/i.test(finalGroup[1]) ? "F" : String.fromCharCode(64 + Number(finalGroup[1]));
+    const name = `Group ${letter}`;
+    return { section: name, group: name };
+  }
+  if (EDITION_R16.test(folded)) return { section: "Round of 16", resetGroup: true };
+  if (EDITION_QF.test(folded)) return { section: "Quarterfinals", resetGroup: true };
+  if (EDITION_SF.test(folded)) return { section: "Semifinals", resetGroup: true };
+  if (EDITION_THIRD.test(folded)) return { section: "Match for Third Place", resetGroup: true };
+  if (EDITION_FINAL_REPLAY.test(folded)) return { section: "Final", resetGroup: true, replay: true };
+  if (EDITION_FINAL.test(folded)) return { section: "Final", resetGroup: true };
+  return null;
+}
+
+/** Extrae el prefijo de fecha/hora de una línea de partido como `{ date, rest }`. */
+function editionDatePrefix(text, ctx, fallback) {
+  let match = EDITION_DATE_DMY.exec(text);
+  if (match) return { date: parseDate(`${match[1]}.${match[2]}.${match[3]}`, ctx).iso, rest: match[4] };
+  match = EDITION_DATE_TIME.exec(text);
+  if (match) return { date: parseDate(`${match[1]}.${match[2]}.${(ctx && ctx.year) || 0}`, ctx).iso, rest: match[4] };
+  match = EDITION_DATE_NAMED.exec(text);
+  if (match && MONTH_NUMBERS[match[2].slice(0, 3).toLowerCase()]) {
+    return { date: parseDate(`${match[1]} ${match[2]} ${match[3]}`, ctx).iso, rest: match[4] };
+  }
+  match = EDITION_DATE_MONTH.exec(text);
+  if (match && MONTH_NUMBERS[match[1].slice(0, 3).toLowerCase()]) {
+    return { date: parseDate(`${match[2]} ${match[1].slice(0, 3)} ${(ctx && ctx.year) || 0}`, ctx).iso, rest: match[3] };
+  }
+  match = EDITION_TIME_ONLY.exec(text);
+  if (match) return { date: fallback, rest: match[2] };
+  return { date: fallback, rest: text };
+}
+
+/** Anota `pens[]` y `pen` al último partido desde `Team [win|wins] A-B on penalties`. */
+function attachEditionPens(lastMatch, match) {
+  if (!lastMatch) return;
+  const winner = match[1].trim().toLowerCase();
+  const scored = [Number(match[2]), Number(match[3])];
+  const home = String(lastMatch.home).toLowerCase();
+  const away = String(lastMatch.away).toLowerCase();
+  if (winner === home) lastMatch.pens = scored;
+  else if (winner === away) lastMatch.pens = [scored[1], scored[0]];
+  else return;
+  if (!lastMatch.notes.includes("pen")) lastMatch.notes = [...lastMatch.notes, "pen"];
+}
+
+/** Convierte una línea en un partido `encounter`; `null` si no es reconocible. */
+function editionMatch(text, state, ctx) {
+  const prefix = editionDatePrefix(text, ctx, state.date || null);
+  const score = EDITION_SCORE.exec(prefix.rest);
+  if (!score) return null;
+  const before = prefix.rest.slice(0, score.index).replace(EDITION_TIME_TOKEN, " ").replace(/\s+/g, " ").trim();
+  let after = prefix.rest.slice(score.index + score[0].length).trim();
+  const bracket = EDITION_BRACKET.exec(after);
+  if (bracket) after = after.slice(0, bracket.index).trim();
+  const home = trailingCountry(before);
+  const away = leadingCountry(editionStripBrackets(after).trim());
+  if (!home || !away) return null;
+
+  const notes = [];
+  if (state.replay) notes.push("replay");
+  let city = state.city || (home.before ? home.before.replace(/\s+/g, " ").trim() : null);
+  let pens = null;
+  if (bracket) {
+    const content = bracket[1].toLowerCase();
+    const shootout = /(\d+)\s*[-:]\s*(\d+)\s*pen/.exec(content);
+    if (shootout) {
+      pens = [Number(shootout[1]), Number(shootout[2])];
+      notes.push("pen");
+    }
+    if (/aet|asdet|a\.e\.t/.test(content)) notes.push("aet");
+    if (!city && !/\d/.test(content) && !/^(aet|asdet|pen|replay|awarded|walkover)/.test(content)) city = bracket[1].trim();
+  }
+  return {
+    raw: text,
+    date: prefix.date || null,
+    city: city || null,
+    home: home.name,
+    away: away.name,
+    score: `${score[1]}-${score[2]}`,
+    homeScore: Number(score[1]),
+    awayScore: Number(score[2]),
+    status: "played",
+    group: state.group || null,
+    section: state.section || null,
+    notes: [...new Set(notes)],
+    pens,
+    extra: null
+  };
+}
+
+/** Procesa una línea de datos: separa el partido de la clasificación incrustada. */
+function editionDataLine(line, state, ctx, result, lineNo) {
+  const split = /\s{2,}([-0-9]+\.[A-Z][\s\S]*)$/.exec(line);
+  let matchText = line;
+  let standingText = null;
+  if (split) {
+    matchText = line.slice(0, split.index).trim();
+    standingText = split[1].trim();
+  } else if (EDITION_STANDING.test(line)) {
+    standingText = line;
+    matchText = "";
+  }
+  const match = matchText ? editionMatch(matchText, state, ctx) : null;
+  if (!match && !standingText) return null;
+  if (standingText) {
+    const fragment = editionStripBrackets(standingText).replace(/\s*\([^)]*\)\s*$/, "").trim();
+    parseStanding(fragment, state.group || null, result, lineNo);
+  }
+  if (match) result.matches.push(match);
+  return { match };
+}
+
+/**
+ * Parsea el formato `e`: la página de una edición (`60e.html`, `2024e.html`).
+ * Se queda con el bloque del torneo final (todo lo anterior es clasificación) y
+ * admite las dos eras de la fuente: cabecera `City, Month D, Stadium` / 
+ * `DD.MM.YYYY in City (Stadium)` + `EquipoA marcador EquipoB` (1960–1996) y la
+ * lista compacta `D-M-YY Ciudad EquipoA marcador EquipoB` (2000–2024), con o
+ * sin clasificaciones incrustadas, tandas de penaltis y fases de grupo.
+ */
+function parseEditionPage(text, ctx, result) {
+  const lines = String(text).replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n");
+  const start = editionStart(lines);
+  if (start < 0) {
+    warn(result, null, "no se localiza el encabezado 'Final Tournament'");
+    return;
+  }
+  let section = null;
+  let group = null;
+  let pending = null;
+  let lastDate = null;
+  let lastMatch = null;
+  let replay = false;
+
+  for (let i = start; i < lines.length; i += 1) {
+    const line = cleanLine(lines[i]);
+    if (line === "" || EDITION_NOISE.test(line)) continue;
+    const pens = EDITION_PENS_LINE.exec(line);
+    if (pens) { attachEditionPens(lastMatch, pens); continue; }
+    const header = editionSection(line);
+    if (header) {
+      if (header.group) { group = header.group; result.groups.push({ name: header.group, raw: lines[i] }); }
+      else if (header.resetGroup) group = null;
+      if (header.section !== undefined) section = header.section;
+      replay = Boolean(header.replay);
+      pending = null;
+      continue;
+    }
+    const cityDate = editionCityDate(line, ctx);
+    if (cityDate) { pending = cityDate; continue; }
+    const state = {
+      date: (pending && pending.date) || lastDate,
+      city: pending && pending.city,
+      section,
+      group,
+      replay
+    };
+    const data = editionDataLine(line, state, ctx, result, i + 1);
+    if (!data) continue;
+    pending = null;
+    replay = false;
+    if (data.match) {
+      lastMatch = data.match;
+      if (data.match.date) lastDate = data.match.date;
+    }
+  }
+}
+
 /**
  * Punto de entrada. `kind` es el de `detectKind`; `ctx` lleva `{ sourceId,
  * retrieved, year }`. Nunca lanza: las líneas problemáticas van a `warnings`.
@@ -908,7 +1158,7 @@ function parse(kind, text, ctx) {
   const result = emptyResult();
   const context = ctx || {};
   const normalized = String(kind || "").toLowerCase();
-  if (normalized !== "f" && normalized !== "full" && normalized !== "ed" && normalized !== "qf-scor") {
+  if (normalized !== "f" && normalized !== "full" && normalized !== "ed" && normalized !== "e" && normalized !== "qf-scor") {
     warn(result, null, `kind '${kind}' no implementado todavía`);
     return result;
   }
@@ -919,6 +1169,7 @@ function parse(kind, text, ctx) {
   if (normalized === "f") parseSummary(normalizedText, context, result);
   else if (normalized === "full") parseFull(normalizedText, context, result);
   else if (normalized === "ed") parseEditionDetail(normalizedText, context, result);
+  else if (normalized === "e") parseEditionPage(normalizedText, context, result);
   else parseScorers(normalizedText, result);
   return result;
 }

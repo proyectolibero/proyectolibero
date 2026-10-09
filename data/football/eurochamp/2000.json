@@ -1,0 +1,760 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "eurochamp",
+  "edition": 2000,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "FRA",
+    "runnerUp": "ITA",
+    "decidedBy": "final",
+    "finalMatchId": "m031"
+  },
+  "coverage": {
+    "matches": 31,
+    "goals": 85,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:00e",
+      "name": "RSSSF — European Championship 2000",
+      "url": "https://www.rsssf.org/tables/00e.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:00e"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "POR",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 7,
+          "ga": 2,
+          "pts": 9
+        },
+        {
+          "team": "ROU",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 5,
+          "ga": 6,
+          "pts": 3
+        },
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 5,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 6,
+          "ga": 2,
+          "pts": 9
+        },
+        {
+          "team": "TUR",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "BEL",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
+          "pts": 3
+        },
+        {
+          "team": "SWE",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 5,
+          "pts": 6
+        },
+        {
+          "team": "YUG",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 7,
+          "ga": 7,
+          "pts": 4
+        },
+        {
+          "team": "NOR",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 1,
+          "ga": 1,
+          "pts": 4
+        },
+        {
+          "team": "SVN",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 4,
+          "ga": 5,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 7,
+          "ga": 2,
+          "pts": 9
+        },
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 7,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "CZE",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 3,
+          "pts": 3
+        },
+        {
+          "team": "DEN",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 0,
+          "ga": 8,
+          "pts": 0
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2000-06-12",
+      "city": "Liège",
+      "home": "GER",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2000-06-12",
+      "city": "Eindhoven",
+      "home": "POR",
+      "away": "ENG",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2000-06-17",
+      "city": "Arnhem",
+      "home": "ROU",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2000-06-17",
+      "city": "Charleroi",
+      "home": "ENG",
+      "away": "GER",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2000-06-20",
+      "city": "Charleroi",
+      "home": "ENG",
+      "away": "ROU",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2000-06-20",
+      "city": "Rotterdam",
+      "home": "POR",
+      "away": "GER",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2000-06-10",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "SWE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2000-06-11",
+      "city": "Arnhem",
+      "home": "TUR",
+      "away": "ITA",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2000-06-14",
+      "city": "Bruxelles",
+      "home": "ITA",
+      "away": "BEL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2000-06-15",
+      "city": "Eindhoven",
+      "home": "SWE",
+      "away": "TUR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2000-06-19",
+      "city": "Brussel",
+      "home": "TUR",
+      "away": "BEL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2000-06-19",
+      "city": "Eindhoven",
+      "home": "ITA",
+      "away": "SWE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2000-06-13",
+      "city": "Rotterdam",
+      "home": "ESP",
+      "away": "NOR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2000-06-13",
+      "city": "Charleroi",
+      "home": "YUG",
+      "away": "SVN",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2000-06-18",
+      "city": "Amsterdam",
+      "home": "SVN",
+      "away": "ESP",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2000-06-18",
+      "city": "Liège",
+      "home": "NOR",
+      "away": "YUG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2000-06-21",
+      "city": "Brugge",
+      "home": "YUG",
+      "away": "ESP",
+      "score": [
+        3,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2000-06-21",
+      "city": "Arnhem",
+      "home": "SVN",
+      "away": "NOR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2000-06-11",
+      "city": "Brugge",
+      "home": "FRA",
+      "away": "DEN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2000-06-11",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "CZE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2000-06-16",
+      "city": "Brugge",
+      "home": "CZE",
+      "away": "FRA",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2000-06-16",
+      "city": "Rotterdam",
+      "home": "DEN",
+      "away": "NED",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2000-06-21",
+      "city": "Amsterdam",
+      "home": "FRA",
+      "away": "NED",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2000-06-21",
+      "city": "Liège",
+      "home": "DEN",
+      "away": "CZE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m025",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2000-06-24",
+      "city": "Amsterdam",
+      "home": "POR",
+      "away": "TUR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m026",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2000-06-24",
+      "city": "Bruxelles",
+      "home": "ITA",
+      "away": "ROU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m027",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2000-06-25",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "YUG",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m028",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2000-06-25",
+      "city": "Brugge",
+      "home": "FRA",
+      "away": "ESP",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m029",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2000-06-28",
+      "city": "Brussel",
+      "home": "POR",
+      "away": "FRA",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    },
+    {
+      "id": "m030",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2000-06-29",
+      "city": "Amsterdam",
+      "home": "ITA",
+      "away": "NED",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [
+        "pen",
+        "aet"
+      ],
+      "pens": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "m031",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "2000-07-02",
+      "city": "Rotterdam",
+      "home": "FRA",
+      "away": "ITA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 16
+}

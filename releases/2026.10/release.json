@@ -90,6 +90,125 @@
       "edition": "1977-80"
     },
     {
+      "path": "data/football/eurochamp/1960.json",
+      "sha256": "5b16a91ad06f06ae47c29d99475cde0edccba4f877a244e381eb11a038dd5869",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1960
+    },
+    {
+      "path": "data/football/eurochamp/1964.json",
+      "sha256": "e840d65ca7e05badd9efc7b32cc3bcc5530aff750c505d9a4202003c4b26a7ba",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1964
+    },
+    {
+      "path": "data/football/eurochamp/1968.json",
+      "sha256": "4c549bbc4a24b9dd7672e5f565ac735a3ad4d385d1f48a64a2b6c52a9c301b48",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1968
+    },
+    {
+      "path": "data/football/eurochamp/1972.json",
+      "sha256": "14f7521de1e4d5f9a043f9fcc2b5cd6bba2a6caec80ffaa7211537b4e0d57717",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1972
+    },
+    {
+      "path": "data/football/eurochamp/1976.json",
+      "sha256": "fc2559a1342dca7cb2a1141b96226f633bc49c4ae3218b6cf41aa4f014c4a9c1",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1976
+    },
+    {
+      "path": "data/football/eurochamp/1980.json",
+      "sha256": "33055890bb2cbb6c8ede606d7b258bfac09e55f76b0536ae7e33116d6e80acfd",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1980
+    },
+    {
+      "path": "data/football/eurochamp/1984.json",
+      "sha256": "9cb64ef8ef0ca39464c5b59084b7c948a67a9f7dcc4b2e70fe965c106d1918f9",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1984
+    },
+    {
+      "path": "data/football/eurochamp/1988.json",
+      "sha256": "f4977bc05f6e68797586949373f584bc352cc3a9dc1eb4c57e11902fc2a4af72",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1988
+    },
+    {
+      "path": "data/football/eurochamp/1992.json",
+      "sha256": "2b2678da6735d0d717dc235a2859565a463a4e97425448313d52e3194d7d6340",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1992
+    },
+    {
+      "path": "data/football/eurochamp/1996.json",
+      "sha256": "a6c559cab19daeef87214ae3adeb472e233293d59f86006f57ef583dc3c61d65",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 1996
+    },
+    {
+      "path": "data/football/eurochamp/2000.json",
+      "sha256": "d71420a34e897fe9c866dd0b1348fb412b0011c07dcbc6f54d6a93c07db187bf",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2000
+    },
+    {
+      "path": "data/football/eurochamp/2004.json",
+      "sha256": "2f50decaaf7728305b9c80ec116b80e88d5e459c3c7fba4877d8dfa92c586100",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2004
+    },
+    {
+      "path": "data/football/eurochamp/2008.json",
+      "sha256": "e3bdc26156340dfc26c200b12fbf62dc9283e739e4c41fefa2d0970ad0889b60",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2008
+    },
+    {
+      "path": "data/football/eurochamp/2012.json",
+      "sha256": "dac7272fb37daa90bbc00d15e68b785c2ebf6ef489eb7ee2d138ad08d4182aef",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2012
+    },
+    {
+      "path": "data/football/eurochamp/2016.json",
+      "sha256": "fa9f31e24d0e8a2683543e8ec97f2af211f38581439c5f76fd522959f471ba2d",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2016
+    },
+    {
+      "path": "data/football/eurochamp/2020.json",
+      "sha256": "61e2505615db44ff9a0a59e96ed5c7eedb16a76f7d99eb4432eb47868986dc16",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2020
+    },
+    {
+      "path": "data/football/eurochamp/2024.json",
+      "sha256": "49237cbb70c147b16b86a857f33fedc27a4be117ae3053b473a22de91a96f2fa",
+      "schemaVersion": 2,
+      "archetype": "encounter",
+      "edition": 2024
+    },
+    {
       "path": "data/football/intconcup/1992.json",
       "sha256": "1d83a9c9fedca718041c36bb60b469bb6f17ae73f857a2be232b875d2193185b",
       "schemaVersion": 2,
@@ -321,12 +440,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "6cb528707ca4483040e8992924f9d7632c78f80a89997c034a8b17b9a503492d",
+  "checksum": "d894d8af5f12bb1ef7cf4d186b66f70c766191f68ac55e6eb554c51e625b3d58",
   "dataset": {
     "sports": 4,
-    "competitions": 3,
-    "editions": 45,
-    "matches": 1392,
+    "competitions": 4,
+    "editions": 62,
+    "matches": 1780,
     "results": 0
   },
   "license": {
@@ -338,6 +457,24 @@
         "name": "Wikipedia — 2022 FIFA World Cup (goalscorers)",
         "url": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup",
         "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:00e",
+        "name": "RSSSF — European Championship 2000",
+        "url": "https://www.rsssf.org/tables/00e.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:04e",
+        "name": "RSSSF — European Championship 2004",
+        "url": "https://www.rsssf.org/tables/04e.html",
+        "retrieved": "2026-10-09"
+      },
+      {
+        "source": "rsssf:08e",
+        "name": "RSSSF — European Championship 2008",
+        "url": "https://www.rsssf.org/tables/08e.html",
+        "retrieved": "2026-10-09"
       },
       {
         "source": "rsssf:2002f",
@@ -389,6 +526,12 @@
         "author": "Neil Morrison"
       },
       {
+        "source": "rsssf:2012e",
+        "name": "RSSSF — European Championship 2012",
+        "url": "https://www.rsssf.org/tables/2012e.html",
+        "retrieved": "2026-10-09"
+      },
+      {
         "source": "rsssf:2014f",
         "name": "RSSSF — World Cup 2014 (Karel Stokkermans)",
         "url": "https://www.rsssf.org/tables/2014f.html",
@@ -401,6 +544,12 @@
         "url": "https://www.rsssf.org/tables/2014full.html",
         "retrieved": "2026-10-06",
         "author": "Neil Morrison"
+      },
+      {
+        "source": "rsssf:2016e",
+        "name": "RSSSF — European Championship 2016",
+        "url": "https://www.rsssf.org/tables/2016e.html",
+        "retrieved": "2026-10-09"
       },
       {
         "source": "rsssf:2018f",
@@ -417,11 +566,23 @@
         "author": "Neil Morrison"
       },
       {
+        "source": "rsssf:2020e",
+        "name": "RSSSF — European Championship 2020",
+        "url": "https://www.rsssf.org/tables/2020e.html",
+        "retrieved": "2026-10-09"
+      },
+      {
         "source": "rsssf:2022f",
         "name": "RSSSF — World Cup 2022 (Qatar, November 20 - December 18, 2022) (Roberto Di Maggio)",
         "url": "https://www.rsssf.org/tables/2022f.html",
         "retrieved": "2026-10-06",
         "author": "Roberto Di Maggio"
+      },
+      {
+        "source": "rsssf:2024e",
+        "name": "RSSSF — European Championship 2024",
+        "url": "https://www.rsssf.org/tables/2024e.html",
+        "retrieved": "2026-10-09"
       },
       {
         "source": "rsssf:2026f",
@@ -550,6 +711,12 @@
         "author": "Jaroslaw Owsianski"
       },
       {
+        "source": "rsssf:60e",
+        "name": "RSSSF — European Championship 1960",
+        "url": "https://www.rsssf.org/tables/60e.html",
+        "retrieved": "2026-10-09"
+      },
+      {
         "source": "rsssf:62f",
         "name": "RSSSF — World Cup 1962 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
         "url": "https://www.rsssf.org/tables/62f.html",
@@ -569,6 +736,12 @@
         "url": "https://www.rsssf.org/tables/62qf-scor.html",
         "retrieved": "2026-10-06",
         "author": "Jaroslaw Owsianski"
+      },
+      {
+        "source": "rsssf:64e",
+        "name": "RSSSF — European Championship 1964",
+        "url": "https://www.rsssf.org/tables/64e.html",
+        "retrieved": "2026-10-09"
       },
       {
         "source": "rsssf:66f",
@@ -591,6 +764,12 @@
         "author": "Jaroslaw Owsianski"
       },
       {
+        "source": "rsssf:68e",
+        "name": "RSSSF — European Championship 1968",
+        "url": "https://www.rsssf.org/tables/68e.html",
+        "retrieved": "2026-10-09"
+      },
+      {
         "source": "rsssf:70f",
         "name": "RSSSF — World Cup 1970 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
         "url": "https://www.rsssf.org/tables/70f.html",
@@ -602,6 +781,12 @@
         "name": "RSSSF — World Cup 1970 finals, full details",
         "url": "https://www.rsssf.org/tables/70full.html",
         "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:72e",
+        "name": "RSSSF — European Championship 1972",
+        "url": "https://www.rsssf.org/tables/72e.html",
+        "retrieved": "2026-10-09"
       },
       {
         "source": "rsssf:74f",
@@ -617,6 +802,12 @@
         "retrieved": "2026-10-06"
       },
       {
+        "source": "rsssf:76e",
+        "name": "RSSSF — European Championship 1976",
+        "url": "https://www.rsssf.org/tables/76e.html",
+        "retrieved": "2026-10-09"
+      },
+      {
         "source": "rsssf:78f",
         "name": "RSSSF — World Cup 1978 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
         "url": "https://www.rsssf.org/tables/78f.html",
@@ -628,6 +819,12 @@
         "name": "RSSSF — World Cup 1978 full details",
         "url": "https://www.rsssf.org/tables/78full.html",
         "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:80e",
+        "name": "RSSSF — European Championship 1980",
+        "url": "https://www.rsssf.org/tables/80e.html",
+        "retrieved": "2026-10-09"
       },
       {
         "source": "rsssf:82f",
@@ -643,6 +840,12 @@
         "retrieved": "2026-10-06"
       },
       {
+        "source": "rsssf:84e",
+        "name": "RSSSF — European Championship 1984",
+        "url": "https://www.rsssf.org/tables/84e.html",
+        "retrieved": "2026-10-09"
+      },
+      {
         "source": "rsssf:86f",
         "name": "RSSSF — World Cup 1986 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
         "url": "https://www.rsssf.org/tables/86f.html",
@@ -654,6 +857,12 @@
         "name": "RSSSF — World Cup 1986 full details",
         "url": "https://www.rsssf.org/tables/86full.html",
         "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:88e",
+        "name": "RSSSF — European Championship 1988",
+        "url": "https://www.rsssf.org/tables/88e.html",
+        "retrieved": "2026-10-09"
       },
       {
         "source": "rsssf:90f",
@@ -669,6 +878,12 @@
         "retrieved": "2026-10-06"
       },
       {
+        "source": "rsssf:92e",
+        "name": "RSSSF — European Championship 1992",
+        "url": "https://www.rsssf.org/tables/92e.html",
+        "retrieved": "2026-10-09"
+      },
+      {
         "source": "rsssf:94f",
         "name": "RSSSF — World Cup 1994 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
         "url": "https://www.rsssf.org/tables/94f.html",
@@ -680,6 +895,12 @@
         "name": "RSSSF — World Cup 1994 full details",
         "url": "https://www.rsssf.org/tables/94full.html",
         "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:96e",
+        "name": "RSSSF — European Championship 1996",
+        "url": "https://www.rsssf.org/tables/96e.html",
+        "retrieved": "2026-10-09"
       },
       {
         "source": "rsssf:98f",

@@ -1,0 +1,1202 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "eurochamp",
+  "edition": 2024,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "ESP",
+    "runnerUp": "ENG",
+    "decidedBy": "final",
+    "finalMatchId": "m051"
+  },
+  "coverage": {
+    "matches": 51,
+    "goals": 117,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:2024e",
+      "name": "RSSSF — European Championship 2024",
+      "url": "https://www.rsssf.org/tables/2024e.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:2024e"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "standings": [
+        {
+          "team": "GER",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 8,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "SUI",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 5,
+          "ga": 3,
+          "pts": 5
+        },
+        {
+          "team": "HUN",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
+          "pts": 3
+        },
+        {
+          "team": "SCO",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 7,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 5,
+          "ga": 0,
+          "pts": 9
+        },
+        {
+          "team": "ITA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "CRO",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 3,
+          "ga": 6,
+          "pts": 2
+        },
+        {
+          "team": "ALB",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 3,
+          "ga": 5,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 2,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "DEN",
+          "p": 3,
+          "w": 0,
+          "d": 3,
+          "l": 0,
+          "gf": 2,
+          "ga": 2,
+          "pts": 3
+        },
+        {
+          "team": "SVN",
+          "p": 3,
+          "w": 0,
+          "d": 3,
+          "l": 0,
+          "gf": 2,
+          "ga": 2,
+          "pts": 3
+        },
+        {
+          "team": "SRB",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 1,
+          "ga": 2,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "standings": [
+        {
+          "team": "AUT",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "FRA",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 2,
+          "ga": 1,
+          "pts": 5
+        },
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "POL",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 3,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "standings": [
+        {
+          "team": "ROU",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "BEL",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 1,
+          "pts": 4
+        },
+        {
+          "team": "SVK",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "UKR",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 4,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "standings": [
+        {
+          "team": "POR",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "TUR",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 5,
+          "pts": 6
+        },
+        {
+          "team": "GEO",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "CZE",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 3,
+          "ga": 5,
+          "pts": 1
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2024-06-14",
+      "city": "München",
+      "home": "GER",
+      "away": "SCO",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2024-06-15",
+      "city": "Köln",
+      "home": "HUN",
+      "away": "SUI",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2024-06-19",
+      "city": "Stuttgart",
+      "home": "GER",
+      "away": "HUN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2024-06-19",
+      "city": "Köln",
+      "home": "SCO",
+      "away": "SUI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m005",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2024-06-23",
+      "city": "Frankfurt",
+      "home": "SUI",
+      "away": "GER",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m006",
+      "stage": "group",
+      "group": "A",
+      "matchday": null,
+      "date": "2024-06-23",
+      "city": "Stuttgart",
+      "home": "SCO",
+      "away": "HUN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m007",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2024-06-15",
+      "city": "Berlin",
+      "home": "ESP",
+      "away": "CRO",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m008",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2024-06-15",
+      "city": "Dortmund",
+      "home": "ITA",
+      "away": "ALB",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m009",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2024-06-19",
+      "city": "Hamburg",
+      "home": "CRO",
+      "away": "ALB",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m010",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2024-06-20",
+      "city": "Gelsenkirchen",
+      "home": "ESP",
+      "away": "ITA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m011",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2024-06-24",
+      "city": "Düsseldorf",
+      "home": "ALB",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m012",
+      "stage": "group",
+      "group": "B",
+      "matchday": null,
+      "date": "2024-06-24",
+      "city": "Leipzig",
+      "home": "CRO",
+      "away": "ITA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m013",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2024-06-16",
+      "city": "Stuttgart",
+      "home": "SVN",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m014",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2024-06-16",
+      "city": "Gelsenkirchen",
+      "home": "SRB",
+      "away": "ENG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m015",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2024-06-20",
+      "city": "München",
+      "home": "SVN",
+      "away": "SRB",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m016",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2024-06-20",
+      "city": "Frankfurt",
+      "home": "DEN",
+      "away": "ENG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2024-06-25",
+      "city": "Köln",
+      "home": "ENG",
+      "away": "SVN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m018",
+      "stage": "group",
+      "group": "C",
+      "matchday": null,
+      "date": "2024-06-25",
+      "city": "München",
+      "home": "DEN",
+      "away": "SRB",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m019",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2024-06-16",
+      "city": "Hamburg",
+      "home": "POL",
+      "away": "NED",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m020",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2024-06-17",
+      "city": "Düsseldorf",
+      "home": "AUT",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m021",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2024-06-21",
+      "city": "Berlin",
+      "home": "POL",
+      "away": "AUT",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m022",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2024-06-21",
+      "city": "Leipzig",
+      "home": "NED",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m023",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2024-06-25",
+      "city": "Berlin",
+      "home": "NED",
+      "away": "AUT",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m024",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "2024-06-25",
+      "city": "Dortmund",
+      "home": "FRA",
+      "away": "POL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m025",
+      "stage": "group",
+      "group": "E",
+      "matchday": null,
+      "date": "2024-06-17",
+      "city": "München",
+      "home": "ROU",
+      "away": "UKR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m026",
+      "stage": "group",
+      "group": "E",
+      "matchday": null,
+      "date": "2024-06-17",
+      "city": "Frankfurt",
+      "home": "BEL",
+      "away": "SVK",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m027",
+      "stage": "group",
+      "group": "E",
+      "matchday": null,
+      "date": "2024-06-21",
+      "city": "Düsseldorf",
+      "home": "SVK",
+      "away": "UKR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m028",
+      "stage": "group",
+      "group": "E",
+      "matchday": null,
+      "date": "2024-06-22",
+      "city": "Köln",
+      "home": "BEL",
+      "away": "ROU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m029",
+      "stage": "group",
+      "group": "E",
+      "matchday": null,
+      "date": "2024-06-26",
+      "city": "Frankfurt",
+      "home": "SVK",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m030",
+      "stage": "group",
+      "group": "E",
+      "matchday": null,
+      "date": "2024-06-26",
+      "city": "Stuttgart",
+      "home": "UKR",
+      "away": "BEL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m031",
+      "stage": "group",
+      "group": "F",
+      "matchday": null,
+      "date": "2024-06-18",
+      "city": "Dortmund",
+      "home": "TUR",
+      "away": "GEO",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m032",
+      "stage": "group",
+      "group": "F",
+      "matchday": null,
+      "date": "2024-06-18",
+      "city": "Leipzig",
+      "home": "POR",
+      "away": "CZE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m033",
+      "stage": "group",
+      "group": "F",
+      "matchday": null,
+      "date": "2024-06-22",
+      "city": "Hamburg",
+      "home": "GEO",
+      "away": "CZE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m034",
+      "stage": "group",
+      "group": "F",
+      "matchday": null,
+      "date": "2024-06-22",
+      "city": "Dortmund",
+      "home": "TUR",
+      "away": "POR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m035",
+      "stage": "group",
+      "group": "F",
+      "matchday": null,
+      "date": "2024-06-26",
+      "city": "Gelsenkirchen",
+      "home": "GEO",
+      "away": "POR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m036",
+      "stage": "group",
+      "group": "F",
+      "matchday": null,
+      "date": "2024-06-26",
+      "city": "Hamburg",
+      "home": "CZE",
+      "away": "TUR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m037",
+      "stage": "r16",
+      "group": null,
+      "matchday": null,
+      "date": "2024-06-29",
+      "city": "Berlin",
+      "home": "SUI",
+      "away": "ITA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m038",
+      "stage": "r16",
+      "group": null,
+      "matchday": null,
+      "date": "2024-06-29",
+      "city": "Dortmund",
+      "home": "GER",
+      "away": "DEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m039",
+      "stage": "r16",
+      "group": null,
+      "matchday": null,
+      "date": "2024-06-30",
+      "city": "Gelsenkirchen",
+      "home": "ENG",
+      "away": "SVK",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    },
+    {
+      "id": "m040",
+      "stage": "r16",
+      "group": null,
+      "matchday": null,
+      "date": "2024-06-30",
+      "city": "Köln",
+      "home": "ESP",
+      "away": "GEO",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m041",
+      "stage": "r16",
+      "group": null,
+      "matchday": null,
+      "date": "2024-07-01",
+      "city": "Düsseldorf",
+      "home": "FRA",
+      "away": "BEL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m042",
+      "stage": "r16",
+      "group": null,
+      "matchday": null,
+      "date": "2024-07-01",
+      "city": "Frankfurt",
+      "home": "POR",
+      "away": "SVN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [
+        "pen",
+        "aet"
+      ],
+      "pens": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "m043",
+      "stage": "r16",
+      "group": null,
+      "matchday": null,
+      "date": "2024-07-02",
+      "city": "München",
+      "home": "ROU",
+      "away": "NED",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m044",
+      "stage": "r16",
+      "group": null,
+      "matchday": null,
+      "date": "2024-07-02",
+      "city": "Leipzig",
+      "home": "AUT",
+      "away": "TUR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m045",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2024-07-05",
+      "city": "Stuttgart",
+      "home": "ESP",
+      "away": "GER",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    },
+    {
+      "id": "m046",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2024-07-05",
+      "city": "Hamburg",
+      "home": "POR",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [
+        "pen",
+        "aet"
+      ],
+      "pens": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "m047",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2024-07-06",
+      "city": "Düsseldorf",
+      "home": "ENG",
+      "away": "SUI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "pen",
+        "aet"
+      ],
+      "pens": [
+        5,
+        3
+      ]
+    },
+    {
+      "id": "m048",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
+      "date": "2024-07-06",
+      "city": "Berlin",
+      "home": "NED",
+      "away": "TUR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m049",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2024-07-09",
+      "city": "München",
+      "home": "ESP",
+      "away": "FRA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m050",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "2024-07-10",
+      "city": "Dortmund",
+      "home": "NED",
+      "away": "ENG",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    },
+    {
+      "id": "m051",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "2024-07-14",
+      "city": "Berlin",
+      "home": "ESP",
+      "away": "ENG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null
+    }
+  ],
+  "scorers": [],
+  "warnings": [],
+  "teamsCount": 24
+}

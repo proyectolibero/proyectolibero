@@ -10,7 +10,7 @@ const { buildRelease, writeRelease, checksumOfContents } = require("../core/rele
 const { fetchMany } = require("../ingest/fetch.js");
 const { buildDraft } = require("../ingest/build.js");
 const { parse } = require("../ingest/rsssf.js");
-const { buildCompetitionDrafts } = require("../ingest/page.js");
+const { buildCompetitionDrafts, buildDraft: buildEditionDraft } = require("../ingest/page.js");
 const { reconcile } = require("../ingest/reconcile.js");
 
 const ROOT = path.resolve(__dirname, "..");
@@ -25,6 +25,7 @@ const USAGE = [
   "  fetch       Descarga fuentes a inbox/<sourceId>/ (HTML, texto UTF-8 y meta.json).",
   "  build       Fusiona las fuentes de inbox/ en un borrador v2 (drafts/…).",
   "  build-page  Fragmenta una página con resultados inline en un borrador por edición.",
+  "  build-editions  Construye un borrador por edición desde páginas de edición (kind 'e').",
   "  reconcile   Compara el borrador con la edición publicada (no escribe nada).",
   "  promote     Publica un borrador validado en data/ (por defecto, dry-run).",
   "",
@@ -43,6 +44,10 @@ const USAGE = [
   "Opciones de build-page:",
   "  --competition=<sport>/<competicion> Competición del catálogo (obligatorio)",
   "  --details=<año>:<dirInbox>,…       Detalles por edición (formato `ed`) a fusionar",
+  "",
+  "Opciones de build-editions:",
+  "  --competition=<sport>/<competicion> Competición del catálogo (obligatorio)",
+  "  --year=<año>                        Solo esa edición (por defecto, todas)",
   "",
   "Opciones de promote:",
   "  --sport=<id>                        Deporte (obligatorio; ^[a-z][a-z0-9-]*$)",
@@ -410,6 +415,129 @@ function commandBuildPage(flags) {
   }
   console.log(`build-page: ${built.drafts.length} borrador(es) escritos, ${withErrors} con errores.`);
   return built.drafts.length === 0 ? 1 : 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* build-editions: un borrador por edición desde páginas de edición (kind `e`) */
+/* -------------------------------------------------------------------------- */
+
+/** ídems de página candidatos para una edición (`2024e` y `24e`). */
+function editionPageCandidates(year) {
+  return [`${year}e`, `${String(year).slice(-2)}e`];
+}
+
+/** Localiza en `inbox/` la página de una edición; `null` si no está descargada. */
+function locateEditionSource(root, year) {
+  for (const page of editionPageCandidates(year)) {
+    const url = `https://www.rsssf.org/tables/${page}.html`;
+    const local = locateInboxSource(root, url);
+    if (local) return { url, ...local };
+  }
+  return null;
+}
+
+/** Ganador de un partido por marcador o, si es empate, por tanda; `null` si no. */
+function decidedWinner(match) {
+  if (Array.isArray(match.score) && match.score[0] !== match.score[1]) {
+    return match.score[0] > match.score[1] ? match.home : match.away;
+  }
+  if (Array.isArray(match.pens) && match.pens[0] !== match.pens[1]) {
+    return match.pens[0] > match.pens[1] ? match.home : match.away;
+  }
+  return null;
+}
+
+function editionFinalOutcome(finals) {
+  for (const match of finals) {
+    const winner = decidedWinner(match);
+    if (winner) return { champion: winner, runnerUp: winner === match.home ? match.away : match.home };
+  }
+  return null;
+}
+
+/** ¿El marcador de `match` coincide con la final del catálogo (en cualquier orientación)? */
+function matchesCatalogFinal(match, entry) {
+  if (!entry.final || !Array.isArray(entry.final.score) || !Array.isArray(match.score)) return false;
+  const sameSet =
+    (match.home === entry.champion && match.away === entry.runnerUp) ||
+    (match.home === entry.runnerUp && match.away === entry.champion);
+  if (!sameSet) return false;
+  const [home, away] = match.score;
+  const [champ, run] = entry.final.score;
+  return (home === champ && away === run) || (home === run && away === champ);
+}
+
+/** Contraste independiente del borrador con el catálogo (campeón, subcampeón y final). */
+function contrastEdition(draft, entry) {
+  const issues = [];
+  const finals = (draft.matches || []).filter((match) => match.stage === "final");
+  const outcome = editionFinalOutcome(finals);
+  if (!outcome) issues.push("no se puede derivar campeón de la final");
+  else {
+    if (outcome.champion !== entry.champion) issues.push(`campeón final ${outcome.champion} != catálogo ${entry.champion}`);
+    if (outcome.runnerUp !== entry.runnerUp) issues.push(`subcampeón final ${outcome.runnerUp} != catálogo ${entry.runnerUp}`);
+  }
+  if (entry.final && Array.isArray(entry.final.score) && !finals.some((match) => matchesCatalogFinal(match, entry))) {
+    issues.push(`marcador de la final no coincide con catálogo ${entry.final.score.join("-")}`);
+  }
+  return issues;
+}
+
+function commandBuildEditions(flags) {
+  const target = parseCompetitionFlag(flags.competition);
+  if (!target) {
+    console.error("build-editions: --competition=<sport>/<competicion> es obligatorio (p. ej. football/eurochamp).");
+    return 1;
+  }
+  const competition = loadCatalog(ROOT).competitions[`${target.sport}/${target.competition}`];
+  if (!competition) {
+    console.error(`build-editions: la competición '${target.sport}/${target.competition}' no existe en el catálogo.`);
+    return 1;
+  }
+  const onlyYear = typeof flags.year === "string" && /^\d{4}$/.test(flags.year) ? Number(flags.year) : null;
+  const ctx = makeContext(ROOT);
+  let ready = 0;
+  let failed = 0;
+  for (const edition of competition.editions || []) {
+    if (!edition.held || (onlyYear !== null && edition.year !== onlyYear)) continue;
+    const local = locateEditionSource(ROOT, edition.year);
+    if (!local) {
+      console.log(`[warn] edición ${edition.year}: sin página en inbox/ (fetch ${editionPageCandidates(edition.year)[0]}.html)`);
+      failed += 1;
+      continue;
+    }
+    const parsed = parse("e", local.text, {
+      sourceId: local.meta.id,
+      retrieved: local.meta.retrieved,
+      url: local.meta.url,
+      year: edition.year
+    });
+    const warnings = parsed.warnings.map((warning) => ({ line: warning.line, reason: warning.reason }));
+    const draft = buildEditionDraft(edition, parsed, competition, {
+      id: local.meta.id,
+      name: `RSSSF — European Championship ${edition.year}`,
+      url: local.meta.url,
+      retrieved: local.meta.retrieved,
+      license: "rsssf-attribution"
+    }, warnings);
+    const file = pageDraftPath(ROOT, target.sport, target.competition, edition.year);
+    io.writeJSON(file, draft);
+    const rel = path.relative(ROOT, file).split(path.sep).join("/");
+    const validation = validateEditionObject(ctx, rel, draft, competition, edition);
+    const issues = contrastEdition(draft, edition);
+    const ok = validation.errors.length === 0 && issues.length === 0;
+    if (ok) ready += 1; else failed += 1;
+    const stages = [...new Set(draft.matches.map((match) => match.stage))].join("/");
+    console.log(
+      `build ${edition.year}: partidos=${draft.matches.length} goles=${draft.coverage.goals} fases=${stages} ` +
+      `champ=${draft.results.champion} val=${validation.errors.length}E/${validation.warnings.length}W ` +
+      `contraste=${issues.length === 0 ? "OK" : "FALLA"}`
+    );
+    for (const issue of issues) console.log(`    C ${issue}`);
+    for (const issue of validation.errors) console.log(`    E ${issue.code} ${issue.message}`);
+  }
+  console.log(`build-editions: ${ready} listas, ${failed} con incidencias.`);
+  return failed > 0 ? 1 : 0;
 }
 
 function commandReconcile(flags) {
@@ -952,6 +1080,8 @@ async function main() {
       return commandBuild(parseFlags(rest));
     case "build-page":
       return commandBuildPage(parseFlags(rest));
+    case "build-editions":
+      return commandBuildEditions(parseFlags(rest));
     case "reconcile":
       return commandReconcile(parseFlags(rest));
     case "promote":

@@ -26,7 +26,7 @@ ingest/  ingest/  ingest/   ingest/   core/validate  aprobación    scripts/inge
 - `fetch`, `parse`, `build` y `reconcile` son **deterministas** (módulos de
   `ingest/`), no agentes: `ingest/fetch.js` descarga a `inbox/` con user-agent
   identificable, timeout y ritmo secuencial; `ingest/rsssf.js` parsea (`f`,
-  `full` y `qf-scor`; `q`/`q-det` pendientes); el `ingest/build.js` fusiona en
+  `full`, `qf-scor` y `e`; `q`/`q-det` pendientes); el `ingest/build.js` fusiona en
   `drafts/`; `ingest/reconcile.js` produce el diff.
 - La skill **`deporte-ingesta`** es el único punto de entrada de un agente a la
   cadena: orquesta los comandos, resume las diferencias y **espera aprobación**.

@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "archetype": "encounter",
+  "sport": "football",
+  "competition": "eurochamp",
+  "edition": 1976,
+  "status": "closed",
+  "teamMode": "country",
+  "results": {
+    "champion": "TCH",
+    "runnerUp": "FRG",
+    "decidedBy": "final"
+  },
+  "coverage": {
+    "matches": 4,
+    "goals": 19,
+    "scope": "final",
+    "complete": true
+  },
+  "sources": [
+    {
+      "id": "rsssf:76e",
+      "name": "RSSSF — European Championship 1976",
+      "url": "https://www.rsssf.org/tables/76e.html",
+      "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    }
+  ],
+  "asOf": "2026-10-09",
+  "provenance": {
+    "primary": "rsssf:76e"
+  },
+  "groups": [],
+  "matches": [
+    {
+      "id": "m001",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1976-06-16",
+      "city": "Zagreb",
+      "home": "TCH",
+      "away": "NED",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    },
+    {
+      "id": "m002",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
+      "date": "1976-06-17",
+      "city": "Beograd",
+      "home": "FRG",
+      "away": "YUG",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    },
+    {
+      "id": "m003",
+      "stage": "third",
+      "group": null,
+      "matchday": null,
+      "date": "1976-06-19",
+      "city": "Zagreb",
+      "home": "NED",
+      "away": "YUG",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null
+    },
+    {
+      "id": "m004",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
+      "date": "1976-06-20",
+      "city": "Beograd",
+      "home": "TCH",
+      "away": "FRG",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [
+        "aet",
+        "pen"
+      ],
+      "pens": [
+        5,
+        3
+      ]
+    }
+  ],
+  "scorers": [],
+  "warnings": [
+    {
+      "reason": "campeón derivado de la final (FRG) != catálogo (TCH); se conserva el catálogo"
+    },
+    {
+      "reason": "final a doble vuelta sin partido con el campeón como ganador; finalMatchId omitido"
+    }
+  ],
+  "teamsCount": 4
+}

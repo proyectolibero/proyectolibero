@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "sport": "football",
+  "competition": "eurochamp",
+  "teamMode": "country",
+  "sources": [
+    {
+      "name": "RSSSF — European Championship (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tablese/eurochamp.html",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "editions": [
+    {
+      "year": 1960,
+      "held": true,
+      "hosts": [
+        "FRA"
+      ],
+      "champion": "URS",
+      "runnerUp": "YUG",
+      "final": {
+        "score": [
+          2,
+          1
+        ],
+        "notes": [
+          "aet"
+        ]
+      },
+      "data": "1960.json"
+    },
+    {
+      "year": 1964,
+      "held": true,
+      "hosts": [
+        "ESP"
+      ],
+      "champion": "ESP",
+      "runnerUp": "URS",
+      "final": {
+        "score": [
+          2,
+          1
+        ]
+      },
+      "data": "1964.json"
+    },
+    {
+      "year": 1968,
+      "held": true,
+      "hosts": [
+        "ITA"
+      ],
+      "champion": "ITA",
+      "runnerUp": "YUG",
+      "final": {
+        "score": [
+          1,
+          1
+        ],
+        "notes": [
+          "aet"
+        ]
+      },
+      "data": "1968.json"
+    },
+    {
+      "year": 1972,
+      "held": true,
+      "hosts": [
+        "BEL"
+      ],
+      "champion": "FRG",
+      "runnerUp": "URS",
+      "final": {
+        "score": [
+          3,
+          0
+        ]
+      },
+      "data": "1972.json"
+    },
+    {
+      "year": 1976,
+      "held": true,
+      "hosts": [
+        "YUG"
+      ],
+      "champion": "TCH",
+      "runnerUp": "FRG",
+      "final": {
+        "score": [
+          2,
+          2
+        ],
+        "pens": [
+          5,
+          3
+        ],
+        "notes": [
+          "aet",
+          "pen"
+        ]
+      },
+      "data": "1976.json"
+    },
+    {
+      "year": 1980,
+      "held": true,
+      "hosts": [
+        "ITA"
+      ],
+      "champion": "FRG",
+      "runnerUp": "BEL",
+      "final": {
+        "score": [
+          2,
+          1
+        ]
+      },
+      "data": "1980.json"
+    },
+    {
+      "year": 1984,
+      "held": true,
+      "hosts": [
+        "FRA"
+      ],
+      "champion": "FRA",
+      "runnerUp": "ESP",
+      "final": {
+        "score": [
+          2,
+          0
+        ]
+      },
+      "data": "1984.json"
+    },
+    {
+      "year": 1988,
+      "held": true,
+      "hosts": [
+        "FRG"
+      ],
+      "champion": "NED",
+      "runnerUp": "URS",
+      "final": {
+        "score": [
+          2,
+          0
+        ]
+      },
+      "data": "1988.json"
+    },
+    {
+      "year": 1992,
+      "held": true,
+      "hosts": [
+        "SWE"
+      ],
+      "champion": "DEN",
+      "runnerUp": "GER",
+      "final": {
+        "score": [
+          2,
+          0
+        ]
+      },
+      "data": "1992.json"
+    },
+    {
+      "year": 1996,
+      "held": true,
+      "hosts": [
+        "ENG"
+      ],
+      "champion": "GER",
+      "runnerUp": "CZE",
+      "final": {
+        "score": [
+          2,
+          1
+        ],
+        "notes": [
+          "aet"
+        ]
+      },
+      "data": "1996.json"
+    },
+    {
+      "year": 2000,
+      "held": true,
+      "hosts": [
+        "BEL",
+        "NED"
+      ],
+      "champion": "FRA",
+      "runnerUp": "ITA",
+      "final": {
+        "score": [
+          2,
+          1
+        ],
+        "notes": [
+          "aet"
+        ]
+      },
+      "data": "2000.json"
+    },
+    {
+      "year": 2004,
+      "held": true,
+      "hosts": [
+        "POR"
+      ],
+      "champion": "GRE",
+      "runnerUp": "POR",
+      "final": {
+        "score": [
+          1,
+          0
+        ]
+      },
+      "data": "2004.json"
+    },
+    {
+      "year": 2008,
+      "held": true,
+      "hosts": [
+        "AUT",
+        "SUI"
+      ],
+      "champion": "ESP",
+      "runnerUp": "GER",
+      "final": {
+        "score": [
+          1,
+          0
+        ]
+      },
+      "data": "2008.json"
+    },
+    {
+      "year": 2012,
+      "held": true,
+      "hosts": [
+        "POL",
+        "UKR"
+      ],
+      "champion": "ESP",
+      "runnerUp": "ITA",
+      "final": {
+        "score": [
+          4,
+          0
+        ]
+      },
+      "data": "2012.json"
+    },
+    {
+      "year": 2016,
+      "held": true,
+      "hosts": [
+        "FRA"
+      ],
+      "champion": "POR",
+      "runnerUp": "FRA",
+      "final": {
+        "score": [
+          1,
+          0
+        ],
+        "notes": [
+          "aet"
+        ]
+      },
+      "data": "2016.json"
+    },
+    {
+      "year": 2020,
+      "held": true,
+      "hosts": [
+        "ENG"
+      ],
+      "champion": "ITA",
+      "runnerUp": "ENG",
+      "final": {
+        "score": [
+          1,
+          1
+        ],
+        "pens": [
+          3,
+          2
+        ],
+        "notes": [
+          "aet",
+          "pen"
+        ]
+      },
+      "data": "2020.json"
+    },
+    {
+      "year": 2024,
+      "held": true,
+      "hosts": [
+        "GER"
+      ],
+      "champion": "ESP",
+      "runnerUp": "ENG",
+      "final": {
+        "score": [
+          2,
+          1
+        ]
+      },
+      "data": "2024.json"
+    }
+  ]
+}
