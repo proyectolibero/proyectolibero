@@ -455,35 +455,35 @@
     },
     {
       "path": "data/football/worldcup/1982.json",
-      "sha256": "57831e6479c1e176174f2602d516bd5a0d1db58c82826a59e65307893298895d",
+      "sha256": "f79ad82599541a212f9296805186e8d73958b628c299fcd2c799717eb452e57f",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1982
     },
     {
       "path": "data/football/worldcup/1986.json",
-      "sha256": "f89c32df2060ef181fac5b7162cb4d2f1a13d856d2d408150b63eb2cda6968b4",
+      "sha256": "a846a29f84b9206f074b75d36de4f87f78370134aaa05cb7234be3ce62d2de43",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1986
     },
     {
       "path": "data/football/worldcup/1990.json",
-      "sha256": "494d0ffbda1ef4d6ec9102cbb2881c3c413d5c2f28823a945a87e2f39298f7c6",
+      "sha256": "52e3bb28cd6685f18c075666d0bb7708907b8202fb9e5da11c6ac9adfb348def",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1990
     },
     {
       "path": "data/football/worldcup/1994.json",
-      "sha256": "bca25e6adf4be742b86e20383d847a8bec11ff501e8987a2d9738000c9055aec",
+      "sha256": "ac98fa587725f5ab2cf413a320485144a18d25084bf0dcc137f5b009bea99699",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1994
     },
     {
       "path": "data/football/worldcup/1998.json",
-      "sha256": "ecf3cf161e19c44f98d76a0963f13e6e69d1758686399071f56dd2fdc09bffa5",
+      "sha256": "882342aa1c6d7f1e4e0bcc5f1f6a9d375d628b6d8beb81c55d228b48bd318e48",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1998
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "4817835363ac77fe6f4bb67a7fca471707886a99e64b5d2e16e19c4aef3bbc58",
+  "checksum": "c8bffe836f14d3597456bc46585908a1f45b655f45129e8276827f8bc46b5069",
   "dataset": {
     "sports": 4,
     "competitions": 5,

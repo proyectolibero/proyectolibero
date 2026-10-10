@@ -717,7 +717,7 @@
       ],
       "sheet": {
         "source": "rsssf:94full",
-        "text": "26.06.94  (11.35) Chicago, Soldier Field\nBUL - GRE 4:0 (1:0)\n(+63000) Bujsaim EMI, Al-Ghattan BHR, Calix HON\nBUL: Mihailov (c) - Kremenljev, Ivanov, Houbtchev, Tzvetanov (76\nKiriakov) - Yankov, Letchkov, Sirakov, Balakov - Stoichkov, Kostadinov (81\nBorimirov)\nGRE: Atmatzidis - Karataidis, Apostolakis (c), Karagiannis, Kalitzakis -\nKofidis, Hantzidis (47 Mitropoulos), Nioplias, Marangos - Alexoudis\n(57 Dimitriadis), Machlas\n1:0 Stoichkov 5 p, 2:0 Stoichkov 55 p, 3:0 Letchkov 66, 4:0 Borimirov 90\nbooked: Houbtchev, Ivanov, Yankov, Borimirov / Alexoudis, Chantzidis,\nKaragiannis, Mitropoulos\n30.06.94  Boston, Foxboro Stadium\nNGA - GRE 2:0 (1:0)\n(~53000) Mottram SCO, Park Hae-young KOR, Alves BRA\nNGA: Rufai (c), Keshi, Ochechukwu, Nwanu, Emenalo - Oliseh, Siasia,\nAmokachi, Finidi (83 Adepoju) - Yekini (69 Okocha), Amunike\nGRE: Karkamanis - Alexiou, Karagiannis, Kalitzakis, Kofidis - Hantzidis,\nMitropoulos (c - 72 Tsiantakis), Nioplias, Tsalouhidis, Alexandris, Machlas\n(79 Dimitriadis)\n1:0 Finidi 45, 2:0 Amokachi 90\nbooked: Oliseh, Keshi / Mitropoulos, Kalitzakis\nNOTE: Together with the BUL-ARG match, the 499th (or 500th) game\nof the World Cup",
+        "text": "26.06.94  (11.35) Chicago, Soldier Field\nBUL - GRE 4:0 (1:0)\n(+63000) Bujsaim EMI, Al-Ghattan BHR, Calix HON\nBUL: Mihailov (c) - Kremenljev, Ivanov, Houbtchev, Tzvetanov (76\nKiriakov) - Yankov, Letchkov, Sirakov, Balakov - Stoichkov, Kostadinov (81\nBorimirov)\nGRE: Atmatzidis - Karataidis, Apostolakis (c), Karagiannis, Kalitzakis -\nKofidis, Hantzidis (47 Mitropoulos), Nioplias, Marangos - Alexoudis\n(57 Dimitriadis), Machlas\n1:0 Stoichkov 5 p, 2:0 Stoichkov 55 p, 3:0 Letchkov 66, 4:0 Borimirov 90\nbooked: Houbtchev, Ivanov, Yankov, Borimirov / Alexoudis, Chantzidis,\nKaragiannis, Mitropoulos",
         "lang": "en"
       }
     },
@@ -750,7 +750,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "30.06.94  Boston, Foxboro Stadium\nNGA - GRE 2:0 (1:0)\n(~53000) Mottram SCO, Park Hae-young KOR, Alves BRA\nNGA: Rufai (c), Keshi, Ochechukwu, Nwanu, Emenalo - Oliseh, Siasia,\nAmokachi, Finidi (83 Adepoju) - Yekini (69 Okocha), Amunike\nGRE: Karkamanis - Alexiou, Karagiannis, Kalitzakis, Kofidis - Hantzidis,\nMitropoulos (c - 72 Tsiantakis), Nioplias, Tsalouhidis, Alexandris, Machlas\n(79 Dimitriadis)\n1:0 Finidi 45, 2:0 Amokachi 90\nbooked: Oliseh, Keshi / Mitropoulos, Kalitzakis\nNOTE: Together with the BUL-ARG match, the 499th (or 500th) game\nof the World Cup",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -961,7 +966,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "29.06.94  (12.35) Washington DC, RFK Memorial Stadium\nARS - BEL 1:0 (1:0)\n(-53000) Krug GER, Brazzale AUS, Taibi ARG\nARS: Al Deayea - Zebermawi, Al Khlaiwi, Madani, Al Jawad (c) - K.Al Owairan\n(63 Al Dosari), Al Bishi, Al Jebreen - Saleh, M.Abdullah (46 Al Muwallid),\nFalatah\nBEL: Preud'homme (c) - Albert, Smidts, de Wolf, Staelens - Van der Elst,\nBoffin, Scifo, Degryse (24 Nilis) - Medved, Wilmots (54 Weber)\n1:0 Al Owairan 5\nbooked: Madani, Falatah / Scifo, Smidts",
+        "lang": "en"
+      }
     },
     {
       "id": "m037",
@@ -1271,7 +1281,12 @@
       "pens": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "17.07.94  Los Angeles, Rose Bowl\nBRA - ITA 0:0 (0:0, 0:0, 0:0)  p. 3-2\n(~94000) Puhl HUN\nBRA: Taffarel - Jorginho (22 Cafú), Aldair, Marcio Santos, Branco -\nMazinho, Mauro Silva, Dunga (c), Zinho (106 Viola) - Bebeto, Romário\nITA: Pagliuca - Mussi (34 Apolloni), F.Baresi (c), Maldini, Benarrivo -\nBerti, D.Baggio (95 Evani), Albertini, Donadoni - R.Baggio, Massaro\nPenalties: (0:0) F.Baresi (out), (0:0) Marcio Santos (save Pagliuca), 0:1\nAlbertini, 1:1 Romário, 1:2 Evani, 2:2 Branco, (2:2) Massaro (save Taffarel),\n3:2 Dunga, (3:2) R.Baggio (out)\nbooked: Mazinho, Cafú / Apolloni, Albertini",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [

@@ -1349,7 +1349,12 @@
       "score": [
         1,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:98full",
+        "text": "28.06.98  (20.00) St.Denis, Stade de France\nDAN - NGA 4:1 (2:0)\n(-60000) Meier SUI, Ghandafari KUW, Tresaco ESP\nDAN: Schmeichel - Rieper, Høgh, Colding, Heintze - Helveg, A.Nielsen,\nB.Laudrup (78 Wieghorst), Møller (59 Sand) - M.Laudrup (c - 84 Frandsen),\nJørgensen\nNGA: Rufai - Ochechukwu (c), Babayaro, West, Adepoju - Lawal (73\nBabangida), Oliseh, Finidi - Kanu (65 Yekini), Ipkeba, Okocha\n1:0 Møller 3, 2:0 B.Laudrup 12, 3:0 Sand 60, 4:0 Helveg 76, 4:1 Babangida 78\nbooked: Rieper / Okocha",
+        "lang": "en"
+      }
     },
     {
       "id": "m053",
@@ -1419,7 +1424,12 @@
       "pens": [
         4,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:98full",
+        "text": "30.06.98  (20.00) St.Etienne, Stade G.Guichard\nARG - ENG 2:2 (2:2, 2:2, 2:2)  p 4-3\n(~36000) Nielsen DAN, Al-Musawi OMA, Abdul Hamid MAR\nARG: Roa - Ayala, Alameyda, Chamot - Ortega, Vivas, Simeone (c - 92 Berti),\nVeron, Zanetti - López (70 Gallardo), Batistuta (70 Crespo)\nENG: Seaman - G.Neville (73 Southgate), Adams, Campbell - Anderton\n(97 Batty), Beckham, Ince, Scholes (80 Merson), Le Saux - Shearer (c), Owen\n1:0 Batistuta 5 p, 1:1 Shearer 9 p, 1:2 Owen 16, 2:2 Zanetti 45+\nPenalties: 1:0 Berti, 1:1 Shearer, (1:1) Crespo (save Seaman), (1:1) Ince\n(save Roa), 2:1 Veron, 2:2 Merson, 3:2 Gallardo, 3:3 Owen, 4:3 Ayala,\n(4:3) Batty (save Roa)\nbooked: Pineda, Veron, Almeyda, Roa (during penalties) / Seaman, Ince\nsent off: Beckham (47)",
+        "lang": "en"
+      }
     },
     {
       "id": "m057",
@@ -1438,7 +1448,12 @@
       "pens": [
         3,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:98full",
+        "text": "03.07.98  (15.30) St.Denis, Stade de France\nFRA - ITA 0:0 (0:0, 0:0, 0:0)  p 4-3\n(-78000) Dallas SCO, Grigorescu ROM, Warren ENG\nFRA: Barthéz - Thuram, Blanc, Desailly, Lizarazu - Deschamps (c), Petit,\nDjorkaeff, Karembeu (65 Henry) - Zidane, Guivarc'h (65 Trezéguet)\nITA: Pagliuca - Costacurta, Maldini (c), Bergomi, Cannavaro - D.Baggio\n(53 Albertini), Pessotto (90 Di Livio), Di Biagio, Moriero - Del Piero (67\nR.Baggio), Vieri\nPenalties: 1:0 Zidane, 1:1 R.Baggio, (1:1) Lizarazu (save Pagliuca), (1:1)\nAlbertini (save Barthéz), 2:1 Trézeguet, 2:2 Costacurta, 3;2 Henry, 3:3\nVieri, 4:3 Blanc, (4:3) Di Biaggio (out)\nbooked: Deschamps, Guivarc'h / Costacurta, Bergomi, Del Piero",
+        "lang": "en"
+      }
     },
     {
       "id": "m058",
@@ -1508,7 +1523,12 @@
       "pens": [
         4,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:98full",
+        "text": "07.07.98  (20.00) Marseilles, Stade Vélodrome\nBRA - HOL 1:1 (0:0, 1:1, 1:1)  p 4-2\n(~60000) Al-Bujsaim EMI, Al-Musawi OMA, Ghandafari KUW\nBRA: Taffarel - Zé Carlos, Aldair, Baiano, Roberto Carlos - César\nSampaio, Dunga (c), Leonardo (85 Emerson), Rivaldo - Bebeto (70 Denilson),\nRonaldo\nHOL: van der Sar - Reiziger (57 Winter), Stam, F.de Boer (c) - R.de\nBoer, Jonk (111 Seedorf), Davids, Cocu - Bergkamp, Kluivert, Zenden\n(75 van Hooijdonk)\n1:0 Ronaldo 46, 1:1 Kluivert 85 h\nPenalties: 1:0 Ronaldo, 1:1 F.de Boer, 2:1 Rivaldo, 2:2 Bergkamp, 3:2 Emerson,\n(3:2) Cocu (save Taffarel), 4:2 Dunga, (4:2) R.de Boer (save Taffarel)\nbooked: César Sampaio, Zé Carlos / Reiziger, Davids, Seedorf, van Hooijdonk",
+        "lang": "en"
+      }
     },
     {
       "id": "m062",

@@ -653,7 +653,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "20.06.90  (21.00) Genoa, Stadio Luigi Ferraris\nCOS - SWE 2:1 (0:1)\n(~30233) Petrović JUG, Courtney ENG, Snoddy NIR\nCOS: Conejo - Flores (c), González, Montero, Chavez - Chavarria\n(76 Guimaráes), Ramirez, Gómez (60 Medford), Cayasso - Marchena, C.Jara\nSWE: Ravelli - R.Nilsson, Larsson, Hysen (c) - Schwarz, Strömberg\n(83 Enqvist), Ingesson, J.Nilsson, Pettersson - Brolin (34 Gren), Ekström\n0:1 Ekström 32, 1:1 Flores 75 h, 2:1 Medford 88\nbooked: Gómez, Marchena / Strömberg, Schwarz",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -903,7 +908,7 @@
       ],
       "sheet": {
         "source": "rsssf:90full",
-        "text": "12.06.90  (21.00) Palermo, Stadio Della Favorita\nEGY - HOL 1:1 (0:0)\n(-34000) Soriano ESP, Codesal MEX, Cardellino URU\nEGY: Shobeir - I.Hassan, Yassein, H.Ramzy, A.Ramzy (71 Tolba) - Yakan,\nYoussef, Abdelghani, H.Hassan - Abdelhamid (c - 71 Abdelrahman), El Kass\nHOL: Van Breukelen - Van Aerle, Rijkaard, R.Koeman, Van Tiggelen - Rutjes,\nWouters, E.Koeman (71 Ri.Witschge), Vanenburg (46 Kieft) - Van Basten,\nGullit (c)\n0:1 Kieft 58, 1:1 Abdelghani 83 p\nbooked: A.Ramzy / Kieft\n16.06.90  (17..00) Cagliari, Stadio Sant' Elia\nENG - HOL 0:0\n(+35000) Petrović JUG, Hensal ARG, Codesal MEX\nENG: Shilton - Parker, Pearce, Walker, Butcher - Wright, Robson (c - 71 Platt),\nWaddle (65 Bull), Gascoigne - Barnes, Lineker\nHOL: Van Breukelen - Van Aerle, Rijkaard, R.Koeman, Van Tiggelen - Wouters,\nRi.Witschge, van't Schip (81 Kieft), Gillhaus - Van Basten, Gullit (c)\n17.06.90  Palermo, Stadio Della Favorita\nEGY - IRL 0:0\n(+33000) Van Langenhove BEL, Quiniou FRA, Lo Bello ITA\nEGY: Shobeir - I.Hassan, Yassein, H.Ramzy, Tolba (61 Aboud Zeid) - Yakan,\nYoussef, Abdelghani (c), H.Hassan - Oraby, El Kass (77 Abdelhamid)\nIRL: Bonner - Morris, Staunton, McCarthy (c), Moran - McGrath, Houghton,\nTownsend, Aldridge (65 McLoughlin) - Cascarino (85 Quinn), Sheedy\nbooked: Shobeir / Morris",
+        "text": "12.06.90  (21.00) Palermo, Stadio Della Favorita\nEGY - HOL 1:1 (0:0)\n(-34000) Soriano ESP, Codesal MEX, Cardellino URU\nEGY: Shobeir - I.Hassan, Yassein, H.Ramzy, A.Ramzy (71 Tolba) - Yakan,\nYoussef, Abdelghani, H.Hassan - Abdelhamid (c - 71 Abdelrahman), El Kass\nHOL: Van Breukelen - Van Aerle, Rijkaard, R.Koeman, Van Tiggelen - Rutjes,\nWouters, E.Koeman (71 Ri.Witschge), Vanenburg (46 Kieft) - Van Basten,\nGullit (c)\n0:1 Kieft 58, 1:1 Abdelghani 83 p\nbooked: A.Ramzy / Kieft",
         "lang": "en"
       }
     },
@@ -918,7 +923,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "16.06.90  (17..00) Cagliari, Stadio Sant' Elia\nENG - HOL 0:0\n(+35000) Petrović JUG, Hensal ARG, Codesal MEX\nENG: Shilton - Parker, Pearce, Walker, Butcher - Wright, Robson (c - 71 Platt),\nWaddle (65 Bull), Gascoigne - Barnes, Lineker\nHOL: Van Breukelen - Van Aerle, Rijkaard, R.Koeman, Van Tiggelen - Wouters,\nRi.Witschge, van't Schip (81 Kieft), Gillhaus - Van Basten, Gullit (c)",
+        "lang": "en"
+      }
     },
     {
       "id": "m034",
@@ -931,7 +941,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "17.06.90  Palermo, Stadio Della Favorita\nEGY - IRL 0:0\n(+33000) Van Langenhove BEL, Quiniou FRA, Lo Bello ITA\nEGY: Shobeir - I.Hassan, Yassein, H.Ramzy, Tolba (61 Aboud Zeid) - Yakan,\nYoussef, Abdelghani (c), H.Hassan - Oraby, El Kass (77 Abdelhamid)\nIRL: Bonner - Morris, Staunton, McCarthy (c), Moran - McGrath, Houghton,\nTownsend, Aldridge (65 McLoughlin) - Cascarino (85 Quinn), Sheedy\nbooked: Shobeir / Morris",
+        "lang": "en"
+      }
     },
     {
       "id": "m035",
@@ -1063,7 +1078,12 @@
       "pens": [
         5,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "25.06.90  (17.00) Genoa, Stadio Luigi Ferraris\n(-32000) Wright BRA, Maciel PAR, Mandi SRI\nIRL - ROM 0:0 (0:0, 0:0, 0:0)  p 5-4\nIRL: Bonner - Morris, Staunton (95 O'Leary), McCarthy (c), Moran -\nMcGrath, Houghton, Townsend, Aldridge (19 Cascarino) - Sheedy, Quinn\nROM: Lung (c) - Rednic, Klein, Andone, Gh.Popescu - Rotariu, Sabău (96\nD.Timofte), Hagi, Lupescu - Răducioiu (76 Lupu), Balint\nPenalties: 0:1 Hagi, 1:1 Sheedy, 1:2 Lupu, 2:2 Houghton, 2:3 Rotariu, 3:3\nTownsend, 3:4 Lupescu, 4:4 Cascarino, (4:4) D.Timofte (save Bonner), 4:5\nO'Leary\nbooked: Aldridge, McGrath / Hagi, Lupu",
+        "lang": "en"
+      }
     },
     {
       "id": "m042",
@@ -1144,7 +1164,12 @@
       "pens": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "30.06.90  (17.00) Florence, Stadio Communale\nARG - JUG 0:0 (0:0, 0:0, 0:0)  p 3-2\n(-39000) Röthlisberger SUI, Hansal ALG, Jonini TUN\nARG: Goycoechea - Ruggeri, Simon, Olarticoechea (51 Troglio),\nSerrizuela - Giusti, Burruchaga, Basualdo, Calderón (89 Dezotti) -\nCaniggia, Maradona (c)\nJUG: Ivković - Spasić, Hadžibegić, Jozić, Vulić - Šabanadžović,\nD.Brnović, Sušić (60 Savićević), Stojković - Prosinečki, Vujović (c)\nPenalties: 1:0 Serrizuela, (1:0) Stojković, 2:0 Burruchaga, 2:1 Prosinečki,\n(2:1) Maradona (save Ivković), 2:2 Savicević, (2:2) Troglio (out), (2:2)\nD.Brnović (save Goychoecea), 3:2 Desotti, (3:2) Hadžibegić (save Goychoecea)\nbooked: Serrizuela, Olartichoecea, Simon / Šabadžanović\nsent off: Šabadzanović (31)",
+        "lang": "en"
+      }
     },
     {
       "id": "m046",
@@ -1248,7 +1273,12 @@
       "pens": [
         4,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "04.07.90  (20.00) Turin, Stadio Delle Alpi\nGER - ENG 1:1 (0:0, 1:1, 1:1)   p. 4-3\n(-63000) Wright BRA, Pérez COL, Quiniou FRA\nGER: Illgner - Brehme, Kohler, Augenthaler, Buchwald - Berthold, Hässler\n(68 Reuter), Thon, Matthäus (c) - Klinsmann, Völler (33 Riedle)\nENG: Shilton (c) - Pearce, Walker, Butcher (72 Steven), Parker - Wright,\nWaddle, Platt, Gascoigne - Lineker, Beardsley\n1:0 Brehme 59, 1:1 Lineker 80\nPenalties: 0:1 Lineker, 1:1 Brehme, 1:2 Beardsley, 2:2 Matthäus, 2:3 Platt, 3:3\nRiedle, (3:3) Pearce (save Illgner), 4:3 Thon, (4:3) Waddle (missed)\nbooked: Brehme / Parker, Gascoigne",
+        "lang": "en"
+      }
     },
     {
       "id": "m051",

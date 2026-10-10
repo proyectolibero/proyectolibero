@@ -512,7 +512,7 @@
       ],
       "sheet": {
         "source": "rsssf:86full",
-        "text": "08.06.86  (12.00) Toluca, Estadio Bombonera\nBEL - IRK 2:1 (2:0)\n(~20000) Diaz COL, Sánchez ESP, Christov CZE\nBEL: Pfaff - Gerets, Demol (69 Grun), F.van Der Elst, de Wolf - Vercauteren,\nVandereycken, Scifo (67 Clijsters) - Ceulemans (c), Desmet, Claesen\nIRK: Salman (c) - Allawe, Mahmoud, Salim, Al-Roubai - Abidoun, Amaiesh,\nMinshid (82 Aufi), Hanna - Hassan, Shihab\n1:0 Scifo 16, 2:0 Claesen 22 p, 2:1 Ammaiesh 67\nbooked: Salman, Salim, AL-Roubai, Abidoun, Haman, Mahmoud (after match)\nsent off: Hanna (51)\n11.06.86  Toluca, Estadio Bombonera\nBEL - PAR 2:2 (1:0)\n(~16000) Dochev BUL, Silva CHI, Ben Naceur TUN\nBEL: Pfaff - Broos, Demol, Grun (89 L.van der Elst), Renquin - Vercauteren,\nVervoort, Scifo, Ceulemans (c) - Veyt, Claesen\nPAR: Fernandez - Torales, Zabala, Delgado (c), Nunez - Ferreira, Romero,\nCabañas, Canete - Mendoza (68 Hicks), Guasch\n1:0 Vercauteren 32, 1:1 Cabañas 50, 2:1 Veyt 60, 2:2 Cabañas 76\nbooked: Ceulemans / Romero (82 the Paraguaian coach expulsed from the bench)",
+        "text": "08.06.86  (12.00) Toluca, Estadio Bombonera\nBEL - IRK 2:1 (2:0)\n(~20000) Diaz COL, Sánchez ESP, Christov CZE\nBEL: Pfaff - Gerets, Demol (69 Grun), F.van Der Elst, de Wolf - Vercauteren,\nVandereycken, Scifo (67 Clijsters) - Ceulemans (c), Desmet, Claesen\nIRK: Salman (c) - Allawe, Mahmoud, Salim, Al-Roubai - Abidoun, Amaiesh,\nMinshid (82 Aufi), Hanna - Hassan, Shihab\n1:0 Scifo 16, 2:0 Claesen 22 p, 2:1 Ammaiesh 67\nbooked: Salman, Salim, AL-Roubai, Abidoun, Haman, Mahmoud (after match)\nsent off: Hanna (51)",
         "lang": "en"
       }
     },
@@ -527,7 +527,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:86full",
+        "text": "11.06.86  Toluca, Estadio Bombonera\nBEL - PAR 2:2 (1:0)\n(~16000) Dochev BUL, Silva CHI, Ben Naceur TUN\nBEL: Pfaff - Broos, Demol, Grun (89 L.van der Elst), Renquin - Vercauteren,\nVervoort, Scifo, Ceulemans (c) - Veyt, Claesen\nPAR: Fernandez - Torales, Zabala, Delgado (c), Nunez - Ferreira, Romero,\nCabañas, Canete - Mendoza (68 Hicks), Guasch\n1:0 Vercauteren 32, 1:1 Cabañas 50, 2:1 Veyt 60, 2:2 Cabañas 76\nbooked: Ceulemans / Romero (82 the Paraguaian coach expulsed from the bench)",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
