@@ -17,12 +17,12 @@
     "finalMatchId": "m032"
   },
   "coverage": {
-    "matches": 32,
-    "goals": 95,
+    "matches": 204,
+    "goals": 637,
     "scorers": 55,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "scope": "all",
+    "complete": true,
+    "scorersComplete": false
   },
   "sources": [
     {
@@ -40,6 +40,15 @@
       "name": "RSSSF — World Cup 1970 finals, full details",
       "url": "https://www.rsssf.org/tables/70full.html",
       "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:70q",
+      "name": "RSSSF — World Cup 1970 (qualifying)",
+      "url": "https://www.rsssf.org/tables/70q.html",
+      "retrieved": "2026-10-10",
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
@@ -223,6 +232,401 @@
           "l": 2,
           "gf": 2,
           "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR1",
+      "standings": [
+        {
+          "team": "ROU",
+          "p": 6,
+          "w": 3,
+          "d": 2,
+          "l": 1,
+          "gf": 7,
+          "ga": 6,
+          "pts": 8
+        },
+        {
+          "team": "GRE",
+          "p": 6,
+          "w": 2,
+          "d": 3,
+          "l": 1,
+          "gf": 13,
+          "ga": 9,
+          "pts": 7
+        },
+        {
+          "team": "SUI",
+          "p": 6,
+          "w": 2,
+          "d": 1,
+          "l": 3,
+          "gf": 5,
+          "ga": 8,
+          "pts": 5
+        },
+        {
+          "team": "POR",
+          "p": 6,
+          "w": 1,
+          "d": 2,
+          "l": 3,
+          "gf": 8,
+          "ga": 10,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "letter": "EUR3",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 10,
+          "ga": 3,
+          "pts": 7
+        },
+        {
+          "team": "GDR",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 7,
+          "ga": 7,
+          "pts": 5
+        },
+        {
+          "team": "WAL",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 3,
+          "ga": 10,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR4",
+      "standings": [
+        {
+          "team": "URS",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 8,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "NIR",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 7,
+          "ga": 3,
+          "pts": 5
+        },
+        {
+          "team": "TUR",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 2,
+          "ga": 13,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR5",
+      "standings": [
+        {
+          "team": "SWE",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 12,
+          "ga": 5,
+          "pts": 6
+        },
+        {
+          "team": "FRA",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 6,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "NOR",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 4,
+          "ga": 13,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR6",
+      "standings": [
+        {
+          "team": "BEL",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 14,
+          "ga": 8,
+          "pts": 9
+        },
+        {
+          "team": "YUG",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 19,
+          "ga": 7,
+          "pts": 7
+        },
+        {
+          "team": "ESP",
+          "p": 6,
+          "w": 2,
+          "d": 2,
+          "l": 2,
+          "gf": 10,
+          "ga": 6,
+          "pts": 6
+        },
+        {
+          "team": "FIN",
+          "p": 6,
+          "w": 1,
+          "d": 0,
+          "l": 5,
+          "gf": 6,
+          "ga": 28,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR7",
+      "standings": [
+        {
+          "team": "FRG",
+          "p": 6,
+          "w": 5,
+          "d": 1,
+          "l": 0,
+          "gf": 20,
+          "ga": 3,
+          "pts": 11
+        },
+        {
+          "team": "SCO",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 18,
+          "ga": 7,
+          "pts": 7
+        },
+        {
+          "team": "AUT",
+          "p": 6,
+          "w": 3,
+          "d": 0,
+          "l": 3,
+          "gf": 12,
+          "ga": 7,
+          "pts": 6
+        },
+        {
+          "team": "CYP",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 2,
+          "ga": 35,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR8",
+      "standings": [
+        {
+          "team": "BUL",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 12,
+          "ga": 7,
+          "pts": 9
+        },
+        {
+          "team": "POL",
+          "p": 6,
+          "w": 4,
+          "d": 0,
+          "l": 2,
+          "gf": 19,
+          "ga": 8,
+          "pts": 8
+        },
+        {
+          "team": "NED",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 9,
+          "ga": 5,
+          "pts": 7
+        },
+        {
+          "team": "LUX",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 4,
+          "ga": 24,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "SAM11",
+      "standings": [
+        {
+          "team": "URU",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 0,
+          "pts": 7
+        },
+        {
+          "team": "CHI",
+          "p": 4,
+          "w": 1,
+          "d": 2,
+          "l": 1,
+          "gf": 5,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "ECU",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 2,
+          "ga": 8,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "SAM9",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 6,
+          "w": 6,
+          "d": 0,
+          "l": 0,
+          "gf": 23,
+          "ga": 2,
+          "pts": 12
+        },
+        {
+          "team": "PAR",
+          "p": 6,
+          "w": 4,
+          "d": 0,
+          "l": 2,
+          "gf": 6,
+          "ga": 5,
+          "pts": 8
+        },
+        {
+          "team": "PER",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 7,
+          "ga": 4,
+          "pts": 5
+        },
+        {
+          "team": "BOL",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 5,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "ARG",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 6,
+          "pts": 3
+        },
+        {
+          "team": "COL",
+          "p": 6,
+          "w": 1,
+          "d": 1,
+          "l": 4,
+          "gf": 7,
+          "ga": 12,
+          "pts": 3
+        },
+        {
+          "team": "VEN",
+          "p": 6,
+          "w": 0,
+          "d": 1,
+          "l": 5,
+          "gf": 1,
+          "ga": 18,
           "pts": 1
         }
       ]
@@ -870,6 +1274,3102 @@
         "text": "21.06.70  (12.00) Mexico City, Estadio Azteca\nBRA - ITA 4:1 (1:1)\n(-108000) Glöckner DDR, Scheurer SUI, Coerezza ARG\nBRA: Félix - Carlos Alberto (c), Brito, Piazza, Everaldo - Clodoaldo,\nGérson, Jairzinho, Tostão - Pelé, Rivelino.\nITA: Albertosi - Burgnich, Cera, Bertini (75 Juliano) - Rosato, Facchetti (c),\nDomenghini, de Sisti, Mazzola - Boninsegna (84 Rivera), Riva.\n1:0 Pelé 18, 1:1 Boninsegna 37, 2:1 Gérson 66, 3:1 Jairzinho 71, 4:1 Carlos\nAlberto 87\nbooked: Rivelino / Burgnich",
         "lang": "en"
       }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1968-10-12",
+      "city": "Basel",
+      "home": "SUI",
+      "away": "GRE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m033"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1968-10-27",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "ROU",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m034"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1968-11-23",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "SUI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m035"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1968-12-11",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "POR",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m036"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1969-04-16",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "SUI",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m037"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1969-04-16",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "ROU",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m038"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1969-05-04",
+      "city": "Porto",
+      "home": "POR",
+      "away": "GRE",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m039"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1969-05-14",
+      "city": "Lausanne",
+      "home": "SUI",
+      "away": "ROU",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m040"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1969-10-12",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "POR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m041"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1969-10-15",
+      "city": "Thessaloniki",
+      "home": "GRE",
+      "away": "SUI",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m042"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1969-11-02",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "POR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m043"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1969-11-16",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "GRE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m044"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1968-09-25",
+      "city": "København",
+      "home": "DEN",
+      "away": "TCH",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m045"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1968-10-20",
+      "city": "Bratislava",
+      "home": "TCH",
+      "away": "DEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m046"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1969-05-04",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "TCH",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m047"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1969-05-25",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "TCH",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m048"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1969-05-27",
+      "city": "København",
+      "home": "DEN",
+      "away": "IRL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m049"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1969-06-08",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "HUN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m050"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1969-06-15",
+      "city": "København",
+      "home": "DEN",
+      "away": "HUN",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m051"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1969-09-14",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "HUN",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1969-10-07",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "IRL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1969-10-15",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1969-10-22",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "DEN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1969-11-05",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "IRL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1969-12-03",
+      "city": "Marseille",
+      "home": "TCH",
+      "away": "HUN",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1968-10-23",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "ITA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1969-03-29",
+      "city": "Berlin",
+      "home": "GDR",
+      "away": "ITA",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1969-04-16",
+      "city": "Dresden",
+      "home": "GDR",
+      "away": "WAL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1969-10-22",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "GDR",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1969-11-04",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "WAL",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1969-11-22",
+      "city": "Napoli",
+      "home": "ITA",
+      "away": "GDR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1968-10-23",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "TUR",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1968-12-11",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "NIR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1969-09-10",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "URS",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1969-10-15",
+      "city": "Kiev",
+      "home": "URS",
+      "away": "TUR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1969-10-22",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "NIR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1969-11-16",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "URS",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1968-10-09",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "NOR",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1968-11-06",
+      "city": "Strasbourg",
+      "home": "FRA",
+      "away": "NOR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1969-06-19",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SWE",
+      "score": [
+        2,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1969-09-10",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "FRA",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1969-10-15",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "FRA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1969-11-01",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "SWE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1968-06-19",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "BEL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1968-09-25",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "FIN",
+      "score": [
+        9,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1968-10-09",
+      "city": "Waregem",
+      "home": "BEL",
+      "away": "FIN",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1968-10-16",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "YUG",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1968-10-27",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "ESP",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1968-12-11",
+      "city": "Madrid",
+      "home": "ESP",
+      "away": "BEL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1969-02-23",
+      "city": "Liège",
+      "home": "BEL",
+      "away": "ESP",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1969-04-30",
+      "city": "Barcelona",
+      "home": "ESP",
+      "away": "YUG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1969-06-04",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "YUG",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1969-06-25",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "ESP",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1969-10-15",
+      "city": "Cádiz",
+      "home": "ESP",
+      "away": "FIN",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1969-10-19",
+      "city": "Skopje",
+      "home": "YUG",
+      "away": "BEL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1968-05-19",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "CYP",
+      "score": [
+        7,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1968-10-13",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "FRG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1968-11-06",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "AUT",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1968-11-23",
+      "city": "Nicosia",
+      "home": "CYP",
+      "away": "FRG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1968-12-11",
+      "city": "Nicosia",
+      "home": "CYP",
+      "away": "SCO",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1969-04-16",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "FRG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1969-04-19",
+      "city": "Nicosia",
+      "home": "CYP",
+      "away": "AUT",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1969-05-10",
+      "city": "Nürnberg",
+      "home": "FRG",
+      "away": "AUT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1969-05-17",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "CYP",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1969-05-21",
+      "city": "Essen",
+      "home": "FRG",
+      "away": "CYP",
+      "score": [
+        12,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1969-10-22",
+      "city": "Hamburg",
+      "home": "FRG",
+      "away": "SCO",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1969-11-05",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "SCO",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1968-09-04",
+      "city": "Rotterdam",
+      "home": "LUX",
+      "away": "NED",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1968-10-27",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "NED",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1969-03-26",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "LUX",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1969-04-20",
+      "city": "Kraków",
+      "home": "POL",
+      "away": "LUX",
+      "score": [
+        8,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1969-04-23",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "LUX",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1969-05-07",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "POL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1969-06-15",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "POL",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1969-09-07",
+      "city": "Chorzów",
+      "home": "POL",
+      "away": "NED",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1969-10-12",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "POL",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1969-10-22",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "BUL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1969-11-09",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "BUL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1969-12-07",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "BUL",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-07-27",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "ARG",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-03",
+      "city": "Lima",
+      "home": "PER",
+      "away": "ARG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-10",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "PER",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-17",
+      "city": "Lima",
+      "home": "PER",
+      "away": "BOL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-24",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "BOL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-31",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "PER",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-07-27",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "VEN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-02",
+      "city": "Caracas",
+      "home": "VEN",
+      "away": "COL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-06",
+      "city": "Caracas",
+      "home": "VEN",
+      "away": "PAR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-06",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "BRA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-10",
+      "city": "Caracas",
+      "home": "VEN",
+      "away": "BRA",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-10",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "PAR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-17",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "BRA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-21",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "COL",
+      "score": [
+        6,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-21",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "VEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-24",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "COL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-24",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "VEN",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1969-08-31",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "PAR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1969-07-06",
+      "city": "Guayaquil",
+      "home": "ECU",
+      "away": "URU",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1969-07-13",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "URU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1969-07-20",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "ECU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1969-07-27",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "ECU",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1969-08-03",
+      "city": "Guayaquil",
+      "home": "ECU",
+      "away": "CHI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1969-08-10",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "CHI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-10-06",
+      "city": "Toronto",
+      "home": "CAN",
+      "away": "BER",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-10-13",
+      "city": "Toronto",
+      "home": "CAN",
+      "away": "USA",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-10-20",
+      "city": "Hamilton",
+      "home": "BER",
+      "away": "CAN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-10-26",
+      "city": "Atlanta",
+      "home": "USA",
+      "away": "CAN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-11-03",
+      "city": "Kansas City",
+      "home": "USA",
+      "away": "BER",
+      "score": [
+        6,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-11-11",
+      "city": "Hamilton",
+      "home": "BER",
+      "away": "USA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-11-17",
+      "city": "Guatemala",
+      "home": "GUA",
+      "away": "TRI",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-11-20",
+      "city": "Guatemala",
+      "home": "TRI",
+      "away": "GUA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-11-23",
+      "city": "Port-au-Prince",
+      "home": "TRI",
+      "away": "HAI",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-11-25",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "TRI",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m145"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-12-08",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "GUA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1969-02-23",
+      "city": "Guatemala",
+      "home": "GUA",
+      "away": "HAI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-11-27",
+      "city": "San José",
+      "home": "CRC",
+      "away": "JAM",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m148"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-12-01",
+      "city": "San José",
+      "home": "JAM",
+      "away": "CRC",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m149"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-12-05",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "JAM",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-12-08",
+      "city": "Tegucigalpa",
+      "home": "JAM",
+      "away": "HON",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-12-22",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "CRC",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m152"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-12-29",
+      "city": "San José",
+      "home": "CRC",
+      "away": "HON",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m153"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-11-24",
+      "city": "Paramaribo",
+      "home": "SUR",
+      "away": "ANT",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m154"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-12-01",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "SUR",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m155"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-12-05",
+      "city": "Oranjestad",
+      "home": "ANT",
+      "away": "SUR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m156"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-12-12",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "ANT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m157"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-12-15",
+      "city": "San Salvador",
+      "home": "ANT",
+      "away": "SLV",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m158"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1968-12-22",
+      "city": "Paramaribo",
+      "home": "SUR",
+      "away": "SLV",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m159"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1969-04-20",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "USA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m160"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1969-05-11",
+      "city": "San Diego",
+      "home": "USA",
+      "away": "HAI",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m161"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1969-06-08",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "SLV",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m162"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1969-06-15",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "HON",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m163"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1969-06-26",
+      "city": "Cd. de Mexico",
+      "home": "SLV",
+      "away": "HON",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m164"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1969-09-21",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "SLV",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m165"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1969-09-28",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "HAI",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m166"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA12",
+      "matchday": null,
+      "date": "1969-10-08",
+      "city": "Kingston",
+      "home": "SLV",
+      "away": "HAI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m167"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1968-11-17",
+      "city": "Alger",
+      "home": "ALG",
+      "away": "TUN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m168"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1968-12-29",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "ALG",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m169"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1968-11-03",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "SEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m170"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-01-05",
+      "city": "Dakar",
+      "home": "SEN",
+      "away": "MAR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m171"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-02-13",
+      "city": "Las Palmas",
+      "home": "MAR",
+      "away": "SEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m172"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-01-26",
+      "city": "Tripoli",
+      "home": "LBY",
+      "away": "ETH",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m173"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-02-09",
+      "city": "Adis Abeba",
+      "home": "ETH",
+      "away": "LBY",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m174"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1968-10-27",
+      "city": "Ndola",
+      "home": "ZAM",
+      "away": "SDN",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m175"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1968-11-08",
+      "city": "Khartoum",
+      "home": "SDN",
+      "away": "ZAM",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m176"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1968-12-07",
+      "city": "Lagos",
+      "home": "NGA",
+      "away": "CMR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m177"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1968-12-22",
+      "city": "Douala",
+      "home": "CMR",
+      "away": "NGA",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m178"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-04-27",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "MAR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m179"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-05-18",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "TUN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m180"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-06-13",
+      "city": "Marseille",
+      "home": "MAR",
+      "away": "TUN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m181"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-05-04",
+      "city": "Adis Abeba",
+      "home": "ETH",
+      "away": "SDN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m182"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-05-11",
+      "city": "Khartoum",
+      "home": "SDN",
+      "away": "ETH",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m183"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-05-10",
+      "city": "Ibadan",
+      "home": "NGA",
+      "away": "GHA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m184"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-05-18",
+      "city": "Accra",
+      "home": "GHA",
+      "away": "NGA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m185"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-09-13",
+      "city": "Ibadan",
+      "home": "NGA",
+      "away": "SDN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m186"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-09-21",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "NGA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m187"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-10-03",
+      "city": "Khartoum",
+      "home": "SDN",
+      "away": "NGA",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m188"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-10-10",
+      "city": "Khartoum",
+      "home": "SDN",
+      "away": "MAR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m189"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-10-26",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "SDN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m190"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR13",
+      "matchday": null,
+      "date": "1969-11-08",
+      "city": "Ibadan",
+      "home": "NGA",
+      "away": "MAR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m191"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-10-10",
+      "city": "Seoul",
+      "home": "AUS",
+      "away": "JPN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m192"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-10-12",
+      "city": "Seoul",
+      "home": "JPN",
+      "away": "KOR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m193"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-10-14",
+      "city": "Seoul",
+      "home": "AUS",
+      "away": "KOR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m194"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-10-16",
+      "city": "Seoul",
+      "home": "JPN",
+      "away": "AUS",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m195"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-10-18",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "JPN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m196"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-10-20",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "AUS",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m197"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-11-23",
+      "city": "Lourenço Marques",
+      "home": "AUS",
+      "away": "RHO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m198"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-11-27",
+      "city": "Lourenço Marques",
+      "home": "RHO",
+      "away": "AUS",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m199"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-11-29",
+      "city": "Lourenço Marques",
+      "home": "AUS",
+      "away": "RHO",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m200"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-09-28",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "NZL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m201"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-10-01",
+      "city": "Ramat Gan",
+      "home": "NZL",
+      "away": "ISR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m202"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-12-04",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "AUS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m203"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO14",
+      "matchday": null,
+      "date": "1969-12-14",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "ISR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m204"
     }
   ],
   "scorers": [

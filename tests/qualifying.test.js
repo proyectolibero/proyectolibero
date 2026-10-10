@@ -93,21 +93,20 @@ test("mergeQualifying añade la clasificación y conserva las fichas del torneo 
     COMPETITION
   );
 
-  assert.equal(matches, 53, "57 menos los 4 partidos con Saar (país no resoluble)");
-  assert.equal(dropped, 4);
-  assert.equal(groups, 7, "el grupo 1 (Saar) no se puede reconstruir y se omite");
+  assert.equal(matches, 57, "los 57 partidos se resuelven: Saar ya está en countries.json");
+  assert.equal(dropped, 0);
+  assert.equal(groups, 8, "el grupo 1 (Saar, NOR, FRG) se reconstruye");
 
-  assert.equal(edition.matches.length, 54);
+  assert.equal(edition.matches.length, 58);
   assert.equal(edition.matches[0].sheet.text, "ficha verbatim del torneo final");
   assert.equal(edition.matches.filter((match) => match.sheet).length, 1);
   assert.equal(edition.matches[1].stage, "qualifyingGroup");
 
-  assert.equal(edition.coverage.matches, 54);
+  assert.equal(edition.coverage.matches, 58);
   assert.equal(edition.coverage.scope, "all");
-  assert.equal(edition.coverage.complete, false, "fase de clasificación parcial: cobertura honesta");
-  assert.ok(edition.coverage.note);
+  assert.equal(edition.coverage.complete, true, "con Saar resoluble la clasificación queda completa");
 
-  assert.deepEqual(edition.groups.map((group) => group.letter).sort(), ["10", "11", "12", "2", "3", "4", "8"]);
+  assert.deepEqual(edition.groups.map((group) => group.letter).sort(), ["1", "10", "11", "12", "2", "3", "4", "8"]);
 });
 
 test("reconcile marca las adiciones de clasificación como info, no blocking", () => {
@@ -131,3 +130,39 @@ test("reconcile marca las adiciones de clasificación como info, no blocking", (
   assert.equal(summary.info, 1);
   assert.equal(differences[0].severity, "info");
 });
+
+test("parse q reconoce grupos con prefijo de confederación y los hace únicos", () => {
+  const text = [
+    "Europe Group 1 [England]",
+    "03.10.56  London          England          2-1 Ireland            1.ENGLAND 4  3  1  0  15- 5  7",
+    "South America Group 1 [Brazil]",
+    "01.05.57  Lima            Peru             2-1 Brazil             1.BRAZIL  4  3  0  1  10- 2  6"
+  ].join("\n");
+  const result = parse("q", text, { year: "1954-58", sourceId: "rsssf:58q" });
+
+  assert.equal(result.matches.length, 2);
+  assert.equal(result.matches[0].group, "EUR1");
+  assert.equal(result.matches[0].stage, "qualifyingGroup");
+  assert.equal(result.matches[1].group, "SAM1");
+  assert.deepEqual(result.standings.map((row) => row.group), ["EUR1", "SAM1"]);
+});
+
+test("parse q toma la región de una cabecera suelta para los grupos sin prefijo", () => {
+  const text = [
+    "<PRE>",
+    "Europe",
+    "Group 1",
+    " 1.RUSSIA       10  7  2  1 18- 5 23",
+    " 2.Slovenia     10  5  5  0 17- 9 20",
+    "South America",
+    "Group 1",
+    " 1.Brazil        4  3  0  1 10- 2  6",
+    " 2.Peru          4  2  0  2  7- 5  4",
+    "</PRE>"
+  ].join("\n");
+  const result = parse("q", text, { year: "1998-02", sourceId: "rsssf:2002q" });
+
+  assert.deepEqual(result.groups.map((g) => g.name), ["Group 1", "Group 1"]);
+  assert.deepEqual(result.standings.map((row) => row.group), ["EUR1", "EUR1", "SAM1", "SAM1"]);
+});
+

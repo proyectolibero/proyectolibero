@@ -123,7 +123,14 @@ const COUNTRY_ALIASES = {
   "czech rep.": "CZE",
   "czech rep": "CZE",
   "united states": "USA",
-  "faroes": "FRO"
+  "faroes": "FRO",
+  "trinidad": "TRI",
+  "trinidad/tobago": "TRI",
+  "trinidad-tobago": "TRI",
+  "dutch antilles": "ANT",
+  "surinam": "SUR",
+  "rhodesia": "RHO",
+  "cd. de mexico mexico": "MEX"
 };
 
 /** Índice inverso nombre en inglés (minúsculas) → código FIFA de 3 letras. */
@@ -323,7 +330,7 @@ function parseStanding(fragment, group, result, line) {
   }
   entry.place = placeMatch[1] === "-" ? null : parseInt(placeMatch[1], 10);
   let rest = placeMatch[2];
-  const teamMatch = /^([A-Za-z][A-Za-z.'\-]*(?:\s+[A-Za-z][A-Za-z.'\-]*)*)/.exec(rest);
+  const teamMatch = /^([\p{L}][\p{L}.'\-]*(?:\s+[\p{L}][\p{L}.'\-]*)*)/u.exec(rest);
   if (teamMatch) {
     const withdrew = /\s+withdrew$/i.test(teamMatch[0]);
     entry.team = teamMatch[0].replace(/\s+withdrew$/i, "").trim();
@@ -517,15 +524,64 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
 /* -------------------------------------------------------------------------- */
 
 /**
- * Encabezado de un grupo de clasificación, con la lista de equipos del grupo
- * entre corchetes cuando la fuente la da: `Group 1 [West Germany]`.
+ * Encabezado de un grupo de clasificación: `Group 1`, `Europe Group 1` o
+ * `Group A [West Germany]`. El prefijo regional opcional (Europa, Sudamérica…)
+ * distingue los grupos que la fuente numera por separado en cada confederación.
+ * El prefijo se limita a regiones y rondas conocidas para no confundir prosa
+ * (p. ej. el enlace "Match Details Group 13") con un grupo.
  */
-const QUALIFYING_GROUP = /^Group\s+([A-Z0-9]+)\s*(?:\[[^\]]*\])?\s*:?\s*$/i;
+const QUALIFYING_GROUP_PREFIX =
+  "(Europe|South America|North and Central America|Central and North America|"
+  + "North America|Central America|Africa|Asia and Africa|Asia and Oceania|Asia|Oceania|"
+  + "Subgroups?|Semi-?finals?|Play-?offs?)";
+const QUALIFYING_GROUP = new RegExp(
+  `^(?:${QUALIFYING_GROUP_PREFIX}(?:\\s+and\\s+[A-Za-z][A-Za-z.'-]*)*\\s+)?Group\\s+([A-Z0-9]+)\\s*(?:\\[[^\\]]*\\])?\\s*:?\\s*$`,
+  "i"
+);
 
-/** Etiqueta de grupo normalizada (`Group 1`) o `null` si la sección no es un grupo. */
+/** Códigos cortos de las confederaciones que prefijan los grupos. */
+const QUALIFYING_REGION_CODES = [
+  [/^north and central america/i, "NCA"],
+  [/^central and north america/i, "NCA"],
+  [/^north america/i, "NCA"],
+  [/^central america/i, "NCA"],
+  [/^south america/i, "SAM"],
+  [/^asia and africa/i, "ASA"],
+  [/^asia and oceania/i, "ASO"],
+  [/^europe/i, "EUR"],
+  [/^africa/i, "AFR"],
+  [/^asia/i, "ASI"],
+  [/^oceania/i, "OCE"]
+];
+
+/** Código corto de un prefijo de grupo; iniciales para prefijos desconocidos. */
+function qualifyingPrefix(word) {
+  const text = String(word || "").trim();
+  if (text === "") return null;
+  for (const [pattern, code] of QUALIFYING_REGION_CODES) if (pattern.test(text)) return code;
+  const letters = text.toUpperCase().replace(/[^A-Z]/g, "");
+  return letters ? letters.slice(0, 3) : null;
+}
+
+/** Etiqueta única del grupo a partir del prefijo (opcional) y su número/letra. */
+function qualifyingGroupKey(prefix, token) {
+  const code = qualifyingPrefix(prefix);
+  const label = String(token).toUpperCase();
+  return code ? `${code}${label}` : label;
+}
+
+/**
+ * Cabecera de región suelta (`Europe`, `South America`…) que abre una
+ * confederación en las páginas modernas (2002+), donde los grupos van sin
+ * prefijo.
+ */
+const QUALIFYING_REGION_LINE =
+  /^(Europe|South America|North and Central America|Central and North America|North America|Central America|Africa|Asia and Africa|Asia and Oceania|Asia|Oceania)\b/i;
+
+/** Etiqueta de grupo normalizada (`EUR1`, `1`, `A`) o `null` si no es un grupo. */
 function qualifyingGroupLabel(section) {
   const match = QUALIFYING_GROUP.exec(String(section == null ? "" : section).trim());
-  return match ? `Group ${match[1].toUpperCase()}` : null;
+  return match ? qualifyingGroupKey(match[1], match[2]) : null;
 }
 
 /**
@@ -558,25 +614,33 @@ function parseQualifying(text, ctx, result) {
   const all = source.split("\n");
   const hasPre = /<PRE>/i.test(source);
   let inPre = !hasPre;
+  let region = null;
   let group = null;
   let section = null;
 
   for (let i = 0; i < all.length; i += 1) {
     const raw = all[i];
-    if (hasPre) {
-      if (/<PRE>/i.test(raw)) { inPre = true; continue; }
-      if (/<\/PRE>/i.test(raw)) { inPre = false; continue; }
-      if (!inPre) continue;
-    }
     const lineNo = i + 1;
     const line = cleanLine(raw);
+
+    // La cabecera de región puede estar dentro o fuera de <PRE> (H4 de 2006+).
+    if (line !== "") {
+      const regionHit = QUALIFYING_REGION_LINE.exec(line);
+      if (regionHit && !QUALIFYING_GROUP.test(line)) region = qualifyingPrefix(regionHit[1]) || region;
+    }
+
+    if (hasPre) {
+      if (/<\/PRE>/i.test(raw)) { inPre = false; continue; }
+      if (/<PRE>/i.test(raw)) { inPre = true; continue; }
+      if (!inPre) continue;
+    }
     if (line === "") continue;
 
     const header = QUALIFYING_GROUP.exec(line);
     if (header) {
-      group = `Group ${header[1].toUpperCase()}`;
+      group = qualifyingGroupKey(header[1] || region, header[2]);
       section = group;
-      result.groups.push({ name: group, raw });
+      result.groups.push({ name: line, raw });
       continue;
     }
 
@@ -584,6 +648,9 @@ function parseQualifying(text, ctx, result) {
       result.notes.push({ line: lineNo, text: line });
       continue;
     }
+
+    // Anotaciones entre corchetes/paréntesis (goleadores, aplazados) no son datos.
+    if (/^[[(]/.test(line)) continue;
 
     let matchText = line;
     let standingText = null;

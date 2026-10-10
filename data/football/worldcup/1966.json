@@ -17,12 +17,12 @@
     "finalMatchId": "m032"
   },
   "coverage": {
-    "matches": 32,
-    "goals": 89,
+    "matches": 159,
+    "goals": 482,
     "scorers": 47,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "scope": "all",
+    "complete": true,
+    "scorersComplete": false
   },
   "sources": [
     {
@@ -50,6 +50,15 @@
       "url": "https://www.rsssf.org/tables/66qf-scor.html",
       "retrieved": "2026-10-06",
       "author": "Jaroslaw Owsianski",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:66q",
+      "name": "RSSSF — World Cup 1966 (qualifying)",
+      "url": "https://www.rsssf.org/tables/66q.html",
+      "retrieved": "2026-10-10",
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
@@ -234,6 +243,496 @@
           "gf": 2,
           "ga": 5,
           "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR2",
+      "standings": [
+        {
+          "team": "FRG",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 14,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "SWE",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 10,
+          "ga": 3,
+          "pts": 5
+        },
+        {
+          "team": "CYP",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 0,
+          "ga": 19,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR3",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 9,
+          "ga": 2,
+          "pts": 10
+        },
+        {
+          "team": "NOR",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 10,
+          "ga": 5,
+          "pts": 7
+        },
+        {
+          "team": "YUG",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 10,
+          "ga": 8,
+          "pts": 7
+        },
+        {
+          "team": "LUX",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 6,
+          "ga": 20,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR4",
+      "standings": [
+        {
+          "team": "POR",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 9,
+          "ga": 4,
+          "pts": 9
+        },
+        {
+          "team": "TCH",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 12,
+          "ga": 4,
+          "pts": 7
+        },
+        {
+          "team": "ROU",
+          "p": 6,
+          "w": 3,
+          "d": 0,
+          "l": 3,
+          "gf": 9,
+          "ga": 7,
+          "pts": 6
+        },
+        {
+          "team": "TUR",
+          "p": 6,
+          "w": 1,
+          "d": 0,
+          "l": 5,
+          "gf": 4,
+          "ga": 19,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR5",
+      "standings": [
+        {
+          "team": "SUI",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 7,
+          "ga": 3,
+          "pts": 9
+        },
+        {
+          "team": "NIR",
+          "p": 6,
+          "w": 3,
+          "d": 2,
+          "l": 1,
+          "gf": 9,
+          "ga": 5,
+          "pts": 8
+        },
+        {
+          "team": "NED",
+          "p": 6,
+          "w": 2,
+          "d": 2,
+          "l": 2,
+          "gf": 6,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "ALB",
+          "p": 6,
+          "w": 0,
+          "d": 1,
+          "l": 5,
+          "gf": 2,
+          "ga": 12,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR6",
+      "standings": [
+        {
+          "team": "HUN",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 8,
+          "ga": 3,
+          "pts": 7
+        },
+        {
+          "team": "GDR",
+          "p": 4,
+          "w": 1,
+          "d": 2,
+          "l": 1,
+          "gf": 5,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "AUT",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 1,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR7",
+      "standings": [
+        {
+          "team": "URS",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 19,
+          "ga": 6,
+          "pts": 10
+        },
+        {
+          "team": "WAL",
+          "p": 6,
+          "w": 3,
+          "d": 0,
+          "l": 3,
+          "gf": 11,
+          "ga": 9,
+          "pts": 6
+        },
+        {
+          "team": "GRE",
+          "p": 6,
+          "w": 2,
+          "d": 1,
+          "l": 3,
+          "gf": 10,
+          "ga": 14,
+          "pts": 5
+        },
+        {
+          "team": "DEN",
+          "p": 6,
+          "w": 1,
+          "d": 1,
+          "l": 4,
+          "gf": 7,
+          "ga": 18,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "EUR8",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 17,
+          "ga": 3,
+          "pts": 9
+        },
+        {
+          "team": "SCO",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 8,
+          "ga": 8,
+          "pts": 7
+        },
+        {
+          "team": "POL",
+          "p": 6,
+          "w": 2,
+          "d": 2,
+          "l": 2,
+          "gf": 11,
+          "ga": 10,
+          "pts": 6
+        },
+        {
+          "team": "FIN",
+          "p": 6,
+          "w": 1,
+          "d": 0,
+          "l": 5,
+          "gf": 5,
+          "ga": 20,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "NCA13",
+      "standings": [
+        {
+          "team": "CRC",
+          "p": 4,
+          "w": 4,
+          "d": 0,
+          "l": 0,
+          "gf": 9,
+          "ga": 1,
+          "pts": 8
+        },
+        {
+          "team": "MEX",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 12,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "MEX",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 8,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "JAM",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "CRC",
+          "p": 4,
+          "w": 1,
+          "d": 2,
+          "l": 1,
+          "gf": 8,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "USA",
+          "p": 4,
+          "w": 1,
+          "d": 2,
+          "l": 1,
+          "gf": 4,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "ANT",
+          "p": 4,
+          "w": 1,
+          "d": 2,
+          "l": 1,
+          "gf": 2,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "CUB",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 3,
+          "ga": 5,
+          "pts": 3
+        },
+        {
+          "team": "SUR",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 8,
+          "ga": 9,
+          "pts": 2
+        },
+        {
+          "team": "TRI",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 5,
+          "ga": 12,
+          "pts": 2
+        },
+        {
+          "team": "HON",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 1,
+          "ga": 6,
+          "pts": 1
+        },
+        {
+          "team": "JAM",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 3,
+          "ga": 19,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "SAM10",
+      "standings": [
+        {
+          "team": "URU",
+          "p": 4,
+          "w": 4,
+          "d": 0,
+          "l": 0,
+          "gf": 11,
+          "ga": 2,
+          "pts": 8
+        },
+        {
+          "team": "PER",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 8,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "VEN",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 4,
+          "ga": 15,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "SAM12",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 9,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "PAR",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 3,
+          "ga": 5,
+          "pts": 3
+        },
+        {
+          "team": "BOL",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 4,
+          "ga": 9,
+          "pts": 2
         }
       ]
     }
@@ -883,6 +1382,2292 @@
         "text": "30.07.66  (15.00) London, July 30, 1966.\nENG - GER 4:2 (1:1, 2:2, 3:2)\n(+94000) Dienst SUI, Bachramov ZSR, Galba CZE\nENG: Banks - Cohen, J. Charlton, Moore (c), Wilson - Stiles, R. Charlton,\nPeters - Ball, Hunt, Hurst\nGER: Tilkowski - Höttges, Schulz, Weber, Schnellinger - Beckenbauer,\nOverath, Haller - Seeler (c), Held, Emmerich\n0:1 Haller 12, 1:1 Hurst 18 h, 2:1 Peters 78, 2:2 Weber 90, 3:2 Hurst 101,\n4:2 Hurst 120\nNOTE: 200th game of the World Cup",
         "lang": "en"
       }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1965-05-09",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "ISR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m033"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1965-06-13",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "ISR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m034"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1965-09-26",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "BEL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m035"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1965-10-27",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "BUL",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m036"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1965-11-10",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "BEL",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m037"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1965-11-21",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "BUL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m038"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1965-12-29",
+      "city": "Firenze",
+      "home": "BUL",
+      "away": "BEL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m039"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1964-11-04",
+      "city": "Berlin",
+      "home": "FRG",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m040"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1965-04-24",
+      "city": "Karlsruhe",
+      "home": "FRG",
+      "away": "CYP",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m041"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1965-05-05",
+      "city": "Norrköping",
+      "home": "SWE",
+      "away": "CYP",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m042"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1965-09-26",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "FRG",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m043"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1965-11-07",
+      "city": "Famagusta",
+      "home": "CYP",
+      "away": "SWE",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m044"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1965-11-14",
+      "city": "Nicosia",
+      "home": "CYP",
+      "away": "FRG",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m045"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1964-09-20",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "LUX",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m046"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1964-10-04",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "FRA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m047"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1964-11-08",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "NOR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m048"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1964-11-11",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "NOR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m049"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1965-04-18",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "FRA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m050"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1965-05-27",
+      "city": "Trondheim",
+      "home": "NOR",
+      "away": "LUX",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m051"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1965-06-16",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "YUG",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1965-09-15",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1965-09-19",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "YUG",
+      "score": [
+        2,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1965-10-09",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "YUG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1965-11-06",
+      "city": "Marseille",
+      "home": "FRA",
+      "away": "LUX",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1965-11-07",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "NOR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1965-01-24",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "TUR",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1965-04-19",
+      "city": "Ankara",
+      "home": "TUR",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1965-04-25",
+      "city": "Bratislava",
+      "home": "TCH",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1965-05-02",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "TUR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1965-05-30",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "TCH",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1965-06-13",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "ROU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1965-09-19",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "ROU",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1965-10-09",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "TCH",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1965-10-23",
+      "city": "Ankara",
+      "home": "TUR",
+      "away": "ROU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1965-10-31",
+      "city": "Porto",
+      "home": "POR",
+      "away": "TCH",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1965-11-21",
+      "city": "Brno",
+      "home": "TCH",
+      "away": "TUR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1965-11-21",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "POR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1964-05-24",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "ALB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1964-10-14",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "SUI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1964-10-25",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "NED",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1964-11-14",
+      "city": "Lausanne",
+      "home": "SUI",
+      "away": "NIR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1965-03-17",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "NED",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1965-04-07",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "NIR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1965-04-11",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "SUI",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1965-05-02",
+      "city": "Genève",
+      "home": "SUI",
+      "away": "ALB",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1965-05-07",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "ALB",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1965-10-17",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "SUI",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1965-11-14",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "NED",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1965-11-24",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "NIR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1965-04-25",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "GDR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1965-05-23",
+      "city": "Leipzig",
+      "home": "GDR",
+      "away": "HUN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1965-06-13",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "HUN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1965-09-05",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "AUT",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1965-10-09",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "GDR",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1965-10-31",
+      "city": "Leipzig",
+      "home": "GDR",
+      "away": "AUT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1964-10-21",
+      "city": "København",
+      "home": "DEN",
+      "away": "WAL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1964-11-29",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "DEN",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1964-12-09",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "WAL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1965-03-17",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "GRE",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1965-05-23",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "GRE",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1965-05-30",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "WAL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1965-06-27",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "DEN",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1965-10-03",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "URS",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1965-10-17",
+      "city": "København",
+      "home": "DEN",
+      "away": "URS",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1965-10-27",
+      "city": "København",
+      "home": "DEN",
+      "away": "GRE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1965-10-27",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "URS",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1965-12-01",
+      "city": "Wrexham",
+      "home": "WAL",
+      "away": "DEN",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1964-10-21",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "FIN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1965-11-04",
+      "city": "Genova",
+      "home": "ITA",
+      "away": "FIN",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1965-04-18",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "ITA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1965-05-23",
+      "city": "Chorzów",
+      "home": "POL",
+      "away": "SCO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1965-05-27",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SCO",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1965-06-23",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "ITA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1965-09-26",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "POL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1965-10-13",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "POL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1965-10-24",
+      "city": "Szczecin",
+      "home": "POL",
+      "away": "FIN",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1965-11-01",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "POL",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1965-11-09",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "ITA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1965-12-07",
+      "city": "Napoli",
+      "home": "ITA",
+      "away": "SCO",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1965-05-05",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "ESP",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1965-10-27",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "IRL",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1965-11-10",
+      "city": "Paris",
+      "home": "ESP",
+      "away": "IRL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1965-05-16",
+      "city": "Lima",
+      "home": "PER",
+      "away": "VEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1965-05-23",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "VEN",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1965-05-30",
+      "city": "Caracas",
+      "home": "VEN",
+      "away": "URU",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1965-06-02",
+      "city": "Caracas",
+      "home": "VEN",
+      "away": "PER",
+      "score": [
+        3,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1965-06-06",
+      "city": "Lima",
+      "home": "PER",
+      "away": "URU",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1965-06-13",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "PER",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1965-07-20",
+      "city": "Barranquilla",
+      "home": "COL",
+      "away": "ECU",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1965-07-25",
+      "city": "Guayaquil",
+      "home": "ECU",
+      "away": "COL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1965-08-01",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "COL",
+      "score": [
+        7,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1965-08-07",
+      "city": "Barranquilla",
+      "home": "COL",
+      "away": "CHI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1965-08-15",
+      "city": "Guayaquil",
+      "home": "ECU",
+      "away": "CHI",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1965-08-22",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "ECU",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1965-10-12",
+      "city": "Lima",
+      "home": "CHI",
+      "away": "ECU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1965-07-25",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "BOL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1965-08-01",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "PAR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1965-08-08",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "ARG",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1965-08-17",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "BOL",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1965-08-22",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "PAR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1965-08-29",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "ARG",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-02-28",
+      "city": "San Pedro Sula",
+      "home": "HON",
+      "away": "MEX",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-03-04",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "HON",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-03-07",
+      "city": "Los Angeles",
+      "home": "USA",
+      "away": "MEX",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-03-12",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "USA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-03-17",
+      "city": "San Pedro Sula",
+      "home": "HON",
+      "away": "USA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-03-21",
+      "city": "Tegucigalpa",
+      "home": "USA",
+      "away": "HON",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-01-16",
+      "city": "Kingston",
+      "home": "JAM",
+      "away": "CUB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-01-20",
+      "city": "Kingston",
+      "home": "ANT",
+      "away": "CUB",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-01-23",
+      "city": "Kingston",
+      "home": "JAM",
+      "away": "ANT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-01-30",
+      "city": "Havana",
+      "home": "CUB",
+      "away": "ANT",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-02-03",
+      "city": "Havana",
+      "home": "ANT",
+      "away": "JAM",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-02-07",
+      "city": "Havana",
+      "home": "CUB",
+      "away": "JAM",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m145"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-02-07",
+      "city": "Port of Spain",
+      "home": "TRI",
+      "away": "SUR",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-02-12",
+      "city": "San José",
+      "home": "CRC",
+      "away": "SUR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-02-21",
+      "city": "San José",
+      "home": "CRC",
+      "away": "TRI",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m148"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-02-28",
+      "city": "Paramaribo",
+      "home": "SUR",
+      "away": "CRC",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m149"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-03-07",
+      "city": "Port of Spain",
+      "home": "TRI",
+      "away": "CRC",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-03-14",
+      "city": "Paramaribo",
+      "home": "SUR",
+      "away": "TRI",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-04-25",
+      "city": "San José",
+      "home": "CRC",
+      "away": "MEX",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m152"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-05-03",
+      "city": "Kingston",
+      "home": "JAM",
+      "away": "MEX",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m153"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-05-07",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "JAM",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m154"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-05-11",
+      "city": "San José",
+      "home": "CRC",
+      "away": "JAM",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m155"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-05-16",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "CRC",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m156"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1965-05-22",
+      "city": "Kingston",
+      "home": "JAM",
+      "away": "CRC",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m157"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR6",
+      "matchday": null,
+      "date": "1965-11-21",
+      "city": "Phnom Penh",
+      "home": "PRK",
+      "away": "AUS",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m158"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR6",
+      "matchday": null,
+      "date": "1965-11-24",
+      "city": "Phnom Penh",
+      "home": "AUS",
+      "away": "PRK",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m159"
     }
   ],
   "scorers": [

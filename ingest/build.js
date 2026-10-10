@@ -101,7 +101,12 @@ function groupLetter(section) {
   const text = typeof section === "string" ? section.trim() : "";
   if (/^final (group|pool)$/i.test(text)) return "F";
   const match = /^group\s+([A-Z0-9]+)$/i.exec(text);
-  return match ? match[1].toUpperCase() : null;
+  if (match) return match[1].toUpperCase();
+  // Claves ya normalizadas por el parser `q`: `EUR1`, `SAM10`, `SUB1`, `1`, `A`.
+  if (/^[A-Z]{2,4}[A-Z0-9]{1,2}$/.test(text) || /^[A-Z0-9]{1,2}$/i.test(text)) {
+    return text.toUpperCase();
+  }
+  return null;
 }
 
 /** Deriva el `kind` de una parte a partir del sufijo de su `sourceId` (`rsssf:54full`). */
@@ -427,14 +432,23 @@ function mergeQualifying(edition, parsed, sourceId, competition) {
   const warnings = [];
   const { entries, dropped } = qualifyingEntries(parsed, warnings);
   const matches = Array.isArray(result.matches) ? result.matches : [];
+  const signature = (match) =>
+    `${match.stage}|${match.date || ""}|${match.home}|${match.away}|${Array.isArray(match.score) ? match.score.join("-") : ""}`;
+  const seen = new Set(matches.map(signature));
   let next = matches.reduce((max, match) => {
     const matchId = /^m(\d+)$/.exec(String((match && match.id) || ""));
     return matchId ? Math.max(max, Number(matchId[1])) : max;
   }, 0);
+  let added = 0;
   for (const entry of entries) {
+    // Idempotencia: una reejecución sobre una edición que ya trae la
+    // clasificación no vuelve a añadir el mismo partido.
+    if (seen.has(signature(entry))) continue;
+    seen.add(signature(entry));
     next += 1;
     entry.id = `m${String(next).padStart(3, "0")}`;
     matches.push(entry);
+    added += 1;
   }
   result.matches = matches;
 
@@ -442,7 +456,9 @@ function mergeQualifying(edition, parsed, sourceId, competition) {
     .map((row) => qualifyingStanding(row, warnings))
     .filter(Boolean);
   const groups = buildGroups(standings, matches, warnings);
-  result.groups = [...(result.groups || []), ...groups];
+  const byLetter = new Map((result.groups || []).map((group) => [group.letter, group]));
+  for (const group of groups) byLetter.set(group.letter, group);
+  result.groups = [...byLetter.values()];
 
   const goals = matches.reduce((sum, match) => sum + (Array.isArray(match.score) ? match.score[0] + match.score[1] : 0), 0);
   result.coverage = { ...(result.coverage || {}), matches: matches.length, goals };
@@ -454,8 +470,14 @@ function mergeQualifying(edition, parsed, sourceId, competition) {
     const note = "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar).";
     result.coverage = { ...result.coverage, complete: false, note };
   }
+  // Al añadir la clasificación, los goleadores (que cubren solo el torneo final)
+  // dejan de sumar todos los goles: se documenta la discrepancia (ADR-015).
+  if (Array.isArray(result.scorers) && result.scorers.length > 0) {
+    const scorerGoals = result.scorers.reduce((sum, scorer) => sum + (scorer.goals || 0), 0);
+    result.coverage = { ...result.coverage, scorersComplete: scorerGoals === goals };
+  }
 
-  return { edition: result, matches: entries.length, groups: groups.length, dropped, warnings };
+  return { edition: result, matches: added, groups: groups.length, dropped, warnings };
 }
 
 /** Empareja cada partido de `f` con su detalle en `full`. */

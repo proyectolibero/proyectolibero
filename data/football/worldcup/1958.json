@@ -17,12 +17,12 @@
     "finalMatchId": "m035"
   },
   "coverage": {
-    "matches": 35,
-    "goals": 126,
+    "matches": 124,
+    "goals": 467,
     "scorers": 59,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "scope": "all",
+    "complete": true,
+    "scorersComplete": false
   },
   "sources": [
     {
@@ -52,6 +52,15 @@
       "retrieved": "2026-10-06",
       "publisher": "RSSSF",
       "author": "Jaroslaw Owsianski",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:58q",
+      "name": "RSSSF — World Cup 1958 (qualifying)",
+      "url": "https://www.rsssf.org/tables/58q.html",
+      "retrieved": "2026-10-10",
+      "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
     }
@@ -245,6 +254,356 @@
           "l": 2,
           "gf": 2,
           "ga": 7,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR1",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 15,
+          "ga": 5,
+          "pts": 7
+        },
+        {
+          "team": "IRL",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 6,
+          "ga": 7,
+          "pts": 5
+        },
+        {
+          "team": "DEN",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 4,
+          "ga": 13,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR2",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 19,
+          "ga": 4,
+          "pts": 7
+        },
+        {
+          "team": "BEL",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 16,
+          "ga": 11,
+          "pts": 5
+        },
+        {
+          "team": "ISL",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 6,
+          "ga": 26,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR3",
+      "standings": [
+        {
+          "team": "HUN",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 12,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "BUL",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 11,
+          "ga": 7,
+          "pts": 4
+        },
+        {
+          "team": "NOR",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 3,
+          "ga": 15,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR4",
+      "standings": [
+        {
+          "team": "TCH",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 9,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "WAL",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 6,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "GDR",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 5,
+          "ga": 12,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR5",
+      "standings": [
+        {
+          "team": "AUT",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 14,
+          "ga": 3,
+          "pts": 7
+        },
+        {
+          "team": "NED",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 12,
+          "ga": 7,
+          "pts": 5
+        },
+        {
+          "team": "LUX",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 3,
+          "ga": 19,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR7",
+      "standings": [
+        {
+          "team": "YUG",
+          "p": 4,
+          "w": 2,
+          "d": 2,
+          "l": 0,
+          "gf": 7,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "ROU",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 6,
+          "ga": 4,
+          "pts": 5
+        },
+        {
+          "team": "GRE",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 2,
+          "ga": 9,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR8",
+      "standings": [
+        {
+          "team": "NIR",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 6,
+          "ga": 3,
+          "pts": 5
+        },
+        {
+          "team": "ITA",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 5,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "POR",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 7,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "EUR9",
+      "standings": [
+        {
+          "team": "SCO",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 10,
+          "ga": 9,
+          "pts": 6
+        },
+        {
+          "team": "ESP",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 12,
+          "ga": 8,
+          "pts": 5
+        },
+        {
+          "team": "SUI",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 6,
+          "ga": 11,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "SAM11",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 10,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "BOL",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 6,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "CHI",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 10,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "SAM12",
+      "standings": [
+        {
+          "team": "PAR",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 11,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "URU",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 6,
+          "pts": 5
+        },
+        {
+          "team": "COL",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 3,
+          "ga": 8,
           "pts": 1
         }
       ]
@@ -964,6 +1323,1608 @@
         "text": "29.06.58  (15.00) Solna, Raasunda Stadium\nBRA - SWE 5:2 (2:1)\n(~50000) Guigue FRA, Dusch GER, Gardeazábal ESP\nBRA: Gilmar - D.Santos, N.Santos, Zito - Bellini (c), Orlando - Garrincha,\nDidi, Vavá, Pelé, Zagalo\nSWE: Svensson - Bergmark, Axbom, Börjesson - Gustavsson, Parling - Hamrin,\nGren, Simonsson, Liedholm (c), Skoglund\n0:1 Liedholm 4, 1:1 Vavá 9, 2:1 Vavá 32, 3:1 Pelé 55, 4:1 Zagalo 68, 4:2\nSimonsson 80, 5:2 Pelé 90 h",
         "lang": "en"
       }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1956-10-03",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "DEN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m036"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1956-12-05",
+      "city": "Wolverhampton",
+      "home": "ENG",
+      "away": "DEN",
+      "score": [
+        5,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m037"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1957-05-08",
+      "city": "London",
+      "home": "ENG",
+      "away": "IRL",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m038"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1957-05-15",
+      "city": "København",
+      "home": "DEN",
+      "away": "ENG",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m039"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1957-05-19",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "ENG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m040"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1957-10-02",
+      "city": "København",
+      "home": "DEN",
+      "away": "IRL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m041"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1956-11-11",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "BEL",
+      "score": [
+        6,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m042"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1957-06-02",
+      "city": "Nantes",
+      "home": "FRA",
+      "away": "ISL",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m043"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1957-06-05",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "ISL",
+      "score": [
+        8,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m044"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1957-09-01",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "FRA",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m045"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1957-09-04",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "BEL",
+      "score": [
+        2,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m046"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1957-10-27",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m047"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1957-05-22",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "BUL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m048"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1957-06-12",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "HUN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m049"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1957-06-23",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "BUL",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m050"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1957-09-15",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "HUN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m051"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1957-11-03",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "NOR",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1957-11-10",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "NOR",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1957-05-01",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "TCH",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1957-05-19",
+      "city": "Leipzig",
+      "home": "GDR",
+      "away": "WAL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1957-05-26",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "WAL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1957-06-16",
+      "city": "Brno",
+      "home": "TCH",
+      "away": "GDR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1957-09-25",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "GDR",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1957-10-27",
+      "city": "Leipzig",
+      "home": "GDR",
+      "away": "TCH",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1956-09-30",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "LUX",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1957-03-20",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "LUX",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1957-05-26",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "NED",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1957-09-11",
+      "city": "Rotterdam",
+      "home": "LUX",
+      "away": "NED",
+      "score": [
+        2,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1957-09-25",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "AUT",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1957-09-29",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "AUT",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1957-06-23",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "POL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1957-07-05",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "POL",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1957-07-27",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "FIN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1957-08-15",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "URS",
+      "score": [
+        0,
+        10
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1957-10-20",
+      "city": "Chorzów",
+      "home": "POL",
+      "away": "URS",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1957-11-03",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "FIN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1957-11-24",
+      "city": "Leipzig",
+      "home": "URS",
+      "away": "POL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1957-05-05",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "YUG",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1957-06-16",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "ROU",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1957-09-29",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "YUG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1957-11-03",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "GRE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1957-11-10",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "GRE",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1957-11-17",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "ROU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1957-01-16",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "NIR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1957-04-25",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "NIR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1957-05-01",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "POR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1957-05-26",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "ITA",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1957-12-22",
+      "city": "Milano",
+      "home": "ITA",
+      "away": "POR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1958-01-15",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "ITA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1957-03-10",
+      "city": "Madrid",
+      "home": "ESP",
+      "away": "SUI",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1957-05-08",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "ESP",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1957-05-19",
+      "city": "Basel",
+      "home": "SUI",
+      "away": "SCO",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1957-05-26",
+      "city": "Madrid",
+      "home": "ESP",
+      "away": "SCO",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1957-11-06",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "SUI",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1957-11-24",
+      "city": "Lausanne",
+      "home": "SUI",
+      "away": "ESP",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1957-04-13",
+      "city": "Lima",
+      "home": "PER",
+      "away": "BRA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1957-04-21",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "PER",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1957-09-22",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "BOL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1957-09-29",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "CHI",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1957-10-06",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "ARG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1957-10-13",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "ARG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1957-10-20",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "CHI",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1957-10-27",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "BOL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1957-06-16",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "URU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1957-06-20",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "PAR",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1957-06-30",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "COL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1957-07-07",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "COL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1957-07-14",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "URU",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1957-07-28",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "PAR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-04-07",
+      "city": "Cd. de México",
+      "home": "MEX",
+      "away": "USA",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-04-28",
+      "city": "Los Angeles",
+      "home": "USA",
+      "away": "MEX",
+      "score": [
+        2,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-06-22",
+      "city": "Toronto",
+      "home": "CAN",
+      "away": "USA",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-06-30",
+      "city": "Cd. de México",
+      "home": "MEX",
+      "away": "CAN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-07-03",
+      "city": "Cd. de México",
+      "home": "CAN",
+      "away": "MEX",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-07-06",
+      "city": "Saint Louis",
+      "home": "USA",
+      "away": "CAN",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-02-10",
+      "city": "Cd. Guatemala",
+      "home": "GUA",
+      "away": "CRC",
+      "score": [
+        2,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-02-17",
+      "city": "San José",
+      "home": "CRC",
+      "away": "GUA",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-03-03",
+      "city": "San José",
+      "home": "CRC",
+      "away": "CUW",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-03-14",
+      "city": "Cd. Guatemala",
+      "home": "GUA",
+      "away": "CUW",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-08-04",
+      "city": "Willemstad",
+      "home": "CUW",
+      "away": "CRC",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-10-20",
+      "city": "Cd. de México",
+      "home": "MEX",
+      "away": "CRC",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1957-10-27",
+      "city": "San José",
+      "home": "CRC",
+      "away": "MEX",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASA14",
+      "matchday": null,
+      "date": "1957-05-12",
+      "city": "Jakarta",
+      "home": "IDN",
+      "away": "CHN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASA14",
+      "matchday": null,
+      "date": "1957-06-02",
+      "city": "Beijing",
+      "home": "CHN",
+      "away": "IDN",
+      "score": [
+        4,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASA14",
+      "matchday": null,
+      "date": "1957-06-23",
+      "city": "Rangoon",
+      "home": "IDN",
+      "away": "CHN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASA14",
+      "matchday": null,
+      "date": "1957-03-08",
+      "city": "Khartoum",
+      "home": "SDN",
+      "away": "SYR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASA14",
+      "matchday": null,
+      "date": "1957-05-24",
+      "city": "Damascus",
+      "home": "SYR",
+      "away": "SDN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASA14",
+      "matchday": null,
+      "date": "1958-01-15",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "WAL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASA14",
+      "matchday": null,
+      "date": "1958-02-05",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "ISR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
     }
   ],
   "scorers": [

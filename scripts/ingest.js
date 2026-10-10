@@ -342,7 +342,9 @@ function commandBuildEnriched(year, parts) {
       sourceId: qPart.sourceId,
       retrieved: qPart.retrieved,
       url: qPart.url,
-      year
+      // La fase de clasificación arranca varios años antes del torneo final; se
+      // da un rango de 4 años para que las fechas de dos cifras no se descarten.
+      year: `${year - 4}-${String(year).slice(-2)}`
     });
     const competition = loadCatalog(ROOT).competitions["football/worldcup"];
     const merged = mergeQualifying(edition, parsed, qPart.sourceId, competition);

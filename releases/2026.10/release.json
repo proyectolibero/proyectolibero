@@ -413,28 +413,28 @@
     },
     {
       "path": "data/football/worldcup/1958.json",
-      "sha256": "3047f323ebc935f747fdcda5ebc41acb04ee5fc7d03a6f31ff90415399a78110",
+      "sha256": "14583b0583e57828a0d1b4835a89a7321dd3697a38ab7e976a43e49dbe0de48b",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1958
     },
     {
       "path": "data/football/worldcup/1962.json",
-      "sha256": "ef3f89ee1e7c68bf58d1ac6a06c583c1041d66d2aab4973693bc55a554265f34",
+      "sha256": "531a182a29d9423ccd777a8dde7a8d988e43635090fd40645404e3fc2face6a2",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1962
     },
     {
       "path": "data/football/worldcup/1966.json",
-      "sha256": "3f08461d3a4d70e053dadf62bdb883fa49186b8de5b8ecc2870a922ac8a2a13a",
+      "sha256": "b1fa24667ac87053baf50111701165538ae9b5c4856a58ba287c7a239cc4840e",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1966
     },
     {
       "path": "data/football/worldcup/1970.json",
-      "sha256": "e6379cfcdf90663751034cdc2c3656503755ebf480c051ad57582c207673ed3b",
+      "sha256": "35b9e93092105bb0de6596f2d540457b849bf450e094ad36d2cd88358619be00",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1970
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "92072f92f11b6b81bda1326ba528f160ccabf7de75151cee5909741e044e3326",
+  "checksum": "a5edf706a80feb0556c02ea97b816d8649a32744da4f8efbca36c0e716f61f2f",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 2130,
+    "matches": 2611,
     "results": 0
   },
   "license": {
@@ -817,6 +817,12 @@
         "author": "Karel Stokkermans"
       },
       {
+        "source": "rsssf:58q",
+        "name": "RSSSF — World Cup 1958 (qualifying)",
+        "url": "https://www.rsssf.org/tables/58q.html",
+        "retrieved": "2026-10-10"
+      },
+      {
         "source": "rsssf:58qf-scor",
         "name": "RSSSF — World Cup 1958 goal scorers (Jaroslaw Owsianski)",
         "url": "https://www.rsssf.org/tables/58qf-scor.html",
@@ -842,6 +848,12 @@
         "url": "https://www.rsssf.org/tables/62full.html",
         "retrieved": "2026-10-06",
         "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:62q",
+        "name": "RSSSF — World Cup 1962 (qualifying)",
+        "url": "https://www.rsssf.org/tables/62q.html",
+        "retrieved": "2026-10-10"
       },
       {
         "source": "rsssf:62qf-scor",
@@ -870,6 +882,12 @@
         "retrieved": "2026-10-06"
       },
       {
+        "source": "rsssf:66q",
+        "name": "RSSSF — World Cup 1966 (qualifying)",
+        "url": "https://www.rsssf.org/tables/66q.html",
+        "retrieved": "2026-10-10"
+      },
+      {
         "source": "rsssf:66qf-scor",
         "name": "RSSSF — World Cup 1966 goal scorers (Jaroslaw Owsianski)",
         "url": "https://www.rsssf.org/tables/66qf-scor.html",
@@ -894,6 +912,12 @@
         "name": "RSSSF — World Cup 1970 finals, full details",
         "url": "https://www.rsssf.org/tables/70full.html",
         "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:70q",
+        "name": "RSSSF — World Cup 1970 (qualifying)",
+        "url": "https://www.rsssf.org/tables/70q.html",
+        "retrieved": "2026-10-10"
       },
       {
         "source": "rsssf:72e",

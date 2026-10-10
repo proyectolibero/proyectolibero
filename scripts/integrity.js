@@ -155,7 +155,12 @@ function checkDates(edition, file, out) {
     if (typeof match.date !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(match.date)) continue;
     if (!bounds) continue;
     const year = Number(match.date.slice(0, 4));
-    if (year < bounds[0] - 1 || year > bounds[1] + 1) {
+    // La fase de clasificación arranca varios años antes del torneo final
+    // (hasta ~4, p. ej. 2019 para el Mundial de 2022); el margen se amplía solo
+    // para esos partidos, no para el torneo final.
+    const qualifying = typeof match.stage === "string" && match.stage.startsWith("qualifying");
+    const earliest = bounds[0] - (qualifying ? 4 : 1);
+    if (year < earliest || year > bounds[1] + 1) {
       out.push(
         anomaly("DATE_RANGE", file, `partido ${match.id} con fecha ${match.date} fuera de ${bounds[0]}–${bounds[1]}`)
       );

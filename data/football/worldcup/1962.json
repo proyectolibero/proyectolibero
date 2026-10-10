@@ -17,12 +17,12 @@
     "finalMatchId": "m032"
   },
   "coverage": {
-    "matches": 32,
-    "goals": 89,
+    "matches": 125,
+    "goals": 412,
     "scorers": 54,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "scope": "all",
+    "complete": true,
+    "scorersComplete": false
   },
   "sources": [
     {
@@ -52,6 +52,15 @@
       "retrieved": "2026-10-06",
       "publisher": "RSSSF",
       "author": "Jaroslaw Owsianski",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:62q",
+      "name": "RSSSF — World Cup 1962 (qualifying)",
+      "url": "https://www.rsssf.org/tables/62q.html",
+      "retrieved": "2026-10-10",
+      "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
     }
@@ -246,6 +255,146 @@
           "gf": 1,
           "ga": 7,
           "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR3",
+      "standings": [
+        {
+          "team": "FRG",
+          "p": 4,
+          "w": 4,
+          "d": 0,
+          "l": 0,
+          "gf": 11,
+          "ga": 5,
+          "pts": 8
+        },
+        {
+          "team": "NIR",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 7,
+          "ga": 8,
+          "pts": 2
+        },
+        {
+          "team": "GRE",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 3,
+          "ga": 8,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR4",
+      "standings": [
+        {
+          "team": "HUN",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 11,
+          "ga": 5,
+          "pts": 7
+        },
+        {
+          "team": "NED",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 4,
+          "ga": 7,
+          "pts": 2
+        },
+        {
+          "team": "GDR",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 3,
+          "ga": 6,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR5",
+      "standings": [
+        {
+          "team": "URS",
+          "p": 4,
+          "w": 4,
+          "d": 0,
+          "l": 0,
+          "gf": 11,
+          "ga": 3,
+          "pts": 8
+        },
+        {
+          "team": "TUR",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "NOR",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 3,
+          "ga": 11,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR6",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 16,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "POR",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 9,
+          "ga": 7,
+          "pts": 3
+        },
+        {
+          "team": "LUX",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 5,
+          "ga": 21,
+          "pts": 2
         }
       ]
     }
@@ -885,6 +1034,1674 @@
         "text": "17.06.1962  (14.30) Santiago, Estadio Nacional\nBRA - CZE 3:1 (1:1)\n(~69000) Latichev ZSR, Davidson SCO, Horn HOL\nBRA: Gilmar - D. Santos, N. Santos, Zito - Mauro (c), Zózimo, Garrincha,\nDidi - Vavá, Amarildo, Zagalo\nCZE: Schrojf - Tichý, Novák (c), Masopust - Popluhár, Pluskal - Pospichal,\nScherer, Kadraba, Kvašňák, Jelinek\n0:1 Masopust 15, 1:1 Amarildo 17, 2:1 Zito 69 h, 3:1 Vavá 78",
         "lang": "en"
       }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1960-10-19",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "BEL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m033"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1960-11-20",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "SUI",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m034"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1961-05-20",
+      "city": "Lausanne",
+      "home": "SUI",
+      "away": "BEL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m035"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1961-05-28",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "SUI",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m036"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1961-10-04",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "SWE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m037"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1961-10-29",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "SWE",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m038"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1961-11-12",
+      "city": "Berlin",
+      "home": "SUI",
+      "away": "SWE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m039"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1960-09-25",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "FRA",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m040"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1960-12-11",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "BUL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m041"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1961-06-16",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "BUL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m042"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1961-09-28",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "FIN",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m043"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1961-10-29",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "FIN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m044"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1961-11-12",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "FRA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m045"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1961-12-16",
+      "city": "Milano",
+      "home": "BUL",
+      "away": "FRA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m046"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1960-10-26",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "FRG",
+      "score": [
+        3,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m047"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1960-11-20",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "FRG",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m048"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1961-05-03",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "NIR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m049"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1961-05-10",
+      "city": "Berlin",
+      "home": "FRG",
+      "away": "NIR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m050"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1961-10-17",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "GRE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m051"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1961-10-22",
+      "city": "Augsburg",
+      "home": "FRG",
+      "away": "GRE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1961-04-16",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "GDR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1961-04-30",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "HUN",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1961-05-14",
+      "city": "Leipzig",
+      "home": "GDR",
+      "away": "NED",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1961-09-10",
+      "city": "Berlin",
+      "home": "GDR",
+      "away": "HUN",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1961-10-01",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "GDR",
+      "score": null,
+      "status": "notplayed",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1961-10-22",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "NED",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1961-06-01",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "TUR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1961-06-18",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "TUR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1961-07-01",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "NOR",
+      "score": [
+        5,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1961-08-23",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "URS",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1961-10-29",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "NOR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1961-11-12",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "URS",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1960-10-19",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "ENG",
+      "score": [
+        0,
+        9
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1961-03-19",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "LUX",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1961-05-21",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "ENG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1961-09-28",
+      "city": "London",
+      "home": "ENG",
+      "away": "LUX",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1961-10-08",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "POR",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1961-10-25",
+      "city": "London",
+      "home": "ENG",
+      "away": "POR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1960-11-13",
+      "city": "Nicosia",
+      "home": "CYP",
+      "away": "ISR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1960-11-27",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "CYP",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1961-03-14",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "ETH",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1961-03-19",
+      "city": "Ramat Gan",
+      "home": "ETH",
+      "away": "ISR",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1961-10-15",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "ITA",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1961-11-04",
+      "city": "Torino",
+      "home": "ITA",
+      "away": "ISR",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1961-05-03",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "IRL",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1961-05-07",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "SCO",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1961-05-14",
+      "city": "Bratislava",
+      "home": "TCH",
+      "away": "SCO",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1961-09-26",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "TCH",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1961-10-08",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "TCH",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1961-10-29",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "IRL",
+      "score": [
+        7,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1961-11-29",
+      "city": "Brussel",
+      "home": "TCH",
+      "away": "SCO",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1961-04-19",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "ESP",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1961-05-18",
+      "city": "Madrid",
+      "home": "ESP",
+      "away": "WAL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1961-11-12",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1961-11-23",
+      "city": "Madrid",
+      "home": "ESP",
+      "away": "MAR",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR10",
+      "matchday": null,
+      "date": "1961-06-04",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "POL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR10",
+      "matchday": null,
+      "date": "1961-06-25",
+      "city": "Chorzów",
+      "home": "POL",
+      "away": "YUG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR10",
+      "matchday": null,
+      "date": "1961-10-08",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "KOR",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR10",
+      "matchday": null,
+      "date": "1961-11-26",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "YUG",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1960-12-04",
+      "city": "Guayaquil",
+      "home": "ECU",
+      "away": "ARG",
+      "score": [
+        3,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1960-12-17",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "ECU",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1961-07-15",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "URU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1961-07-30",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "BOL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM13",
+      "matchday": null,
+      "date": "1961-04-30",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "PER",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM13",
+      "matchday": null,
+      "date": "1961-05-07",
+      "city": "Lima",
+      "home": "PER",
+      "away": "COL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1960-11-06",
+      "city": "Los Angeles",
+      "home": "USA",
+      "away": "MEX",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1960-11-13",
+      "city": null,
+      "home": "MEX",
+      "away": "USA",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1960-08-21",
+      "city": "San José",
+      "home": "CRC",
+      "away": "GUA",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1960-08-28",
+      "city": "Guatemala",
+      "home": "GUA",
+      "away": "CRC",
+      "score": [
+        4,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1960-09-04",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "CRC",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1960-09-11",
+      "city": "San José",
+      "home": "CRC",
+      "away": "HON",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1960-09-25",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "GUA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1960-10-02",
+      "city": "Guatemala",
+      "home": "GUA",
+      "away": "HON",
+      "score": null,
+      "status": "notplayed",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1961-01-14",
+      "city": "Guatemala",
+      "home": "CRC",
+      "away": "HON",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1960-10-02",
+      "city": "Paramaribo",
+      "home": "SUR",
+      "away": "ANT",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1960-11-27",
+      "city": "Willemstad",
+      "home": "ANT",
+      "away": "SUR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1961-03-22",
+      "city": "San José",
+      "home": "CRC",
+      "away": "MEX",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1961-03-29",
+      "city": "San José",
+      "home": "CRC",
+      "away": "ANT",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1961-04-05",
+      "city": null,
+      "home": "MEX",
+      "away": "ANT",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1961-04-12",
+      "city": null,
+      "home": "MEX",
+      "away": "CRC",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1961-04-23",
+      "city": "Willemstad",
+      "home": "ANT",
+      "away": "CRC",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1961-05-21",
+      "city": "Willemstad",
+      "home": "ANT",
+      "away": "MEX",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1961-10-29",
+      "city": null,
+      "home": "MEX",
+      "away": "PAR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA14",
+      "matchday": null,
+      "date": "1961-11-05",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "MEX",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR15",
+      "matchday": null,
+      "date": "1960-10-30",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "TUN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR15",
+      "matchday": null,
+      "date": "1960-11-13",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "MAR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR15",
+      "matchday": null,
+      "date": "1961-01-22",
+      "city": "Palermo",
+      "home": "MAR",
+      "away": "TUN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR15",
+      "matchday": null,
+      "date": "1960-08-28",
+      "city": "Accra",
+      "home": "GHA",
+      "away": "NGA",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR15",
+      "matchday": null,
+      "date": "1960-09-10",
+      "city": "Lagos",
+      "home": "NGA",
+      "away": "GHA",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR15",
+      "matchday": null,
+      "date": "1961-04-02",
+      "city": "Accra",
+      "home": "GHA",
+      "away": "MAR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR15",
+      "matchday": null,
+      "date": "1961-05-28",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "GHA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI16",
+      "matchday": null,
+      "date": "1960-11-06",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "JPN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI16",
+      "matchday": null,
+      "date": "1961-06-11",
+      "city": "Tokyo",
+      "home": "JPN",
+      "away": "KOR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
     }
   ],
   "scorers": [
