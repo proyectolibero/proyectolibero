@@ -511,7 +511,9 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
   return true;
 }
 
-const FULL_DATE_HEADER = new RegExp(`^(${DATE_TOKEN})\\s+\\((\\d{1,2}\\.\\d{2})\\)\\s*(.+)$`);
+// Cabecera clásica `DD.MM.YY (hh.mm) Ciudad, Estadio` (el tiempo es opcional:
+// hay páginas, como 94full, que omiten `(hh.mm)` en las rondas finales).
+const FULL_DATE_HEADER = new RegExp(`^(${DATE_TOKEN})\\s*(?:\\((\\d{1,2}\\.\\d{2})\\)\\s*)?(.+)$`);
 // Cabecera moderna (2002+): `DD/MM/YYYY, Ciudad (País), Estadio, Asist.` — la
 // coma pega directamente a la fecha, lo que la distingue de la cabecera clásica
 // (que intercala `(hh.mm)`). Ver docs/RSSSF-GRAMATICA.md §6.1.
@@ -615,7 +617,7 @@ function parseFull(text, ctx, result) {
     }
 
     const dateHeader = FULL_DATE_HEADER.exec(line);
-    if (dateHeader) {
+    if (dateHeader && !dateHeader[3].startsWith(",")) {
       inData = true;
       const tail = dateHeader[3];
       const comma = tail.indexOf(",");
@@ -625,7 +627,7 @@ function parseFull(text, ctx, result) {
         raw,
         sheetLines: [sheetLine(raw)],
         date: parsedDate.iso,
-        time: dateHeader[2],
+        time: dateHeader[2] || null,
         city: comma >= 0 ? tail.slice(0, comma).trim() : tail.trim(),
         home: null,
         away: null,

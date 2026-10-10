@@ -222,6 +222,22 @@ test("parse('full') moderno tolera la lista de goleadores en varias líneas", ()
   assert.equal(matches[0].city, "Moskva");
 });
 
+test("parse('full') acepta la cabecera clásica sin hora (hh.mm opcional)", () => {
+  const text = [
+    "<H2>Final</H2>",
+    "17.07.94  Los Angeles, Rose Bowl",
+    "",
+    "BRA - ITA 0:0 (0:0)"
+  ].join("\n");
+  const { matches } = parse("full", text, { year: 1994, sourceId: "rsssf:94full" });
+  assert.equal(matches.length, 1);
+  assert.equal(matches[0].date, "1994-07-17");
+  assert.equal(matches[0].time, null);
+  assert.equal(matches[0].city, "Los Angeles");
+  assert.equal(matches[0].extra.stadium, "Rose Bowl");
+  assert.ok(matches[0].rawSheet.includes("BRA - ITA 0:0 (0:0)"));
+});
+
 test("parse decodifica entidades HTML (&atilde; → ã)", () => {
   const text = "Group A\n28.06.50  S&atilde;o Paulo       Brazil           2-2 Switzerland";
   const { matches } = parse("f", text, CTX);
