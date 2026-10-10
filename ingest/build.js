@@ -19,6 +19,7 @@
  */
 
 const { parse, detectKind, resolveCountryName } = require("./rsssf.js");
+const { desiredCoverage } = require("../scripts/migrate-coverage.js");
 
 const COUNTRIES = require("../i18n/countries.json");
 
@@ -89,6 +90,11 @@ function stageFromSection(section) {
     if (pattern.test(section.trim())) return stage;
   }
   return null;
+}
+
+/** `true` si `code` es un país declarado en `i18n/countries.json`. */
+function isKnownCountry(code) {
+  return typeof code === "string" && Object.prototype.hasOwnProperty.call(COUNTRIES, code);
 }
 
 function groupLetter(section) {
@@ -352,6 +358,106 @@ function attachSheets(edition, fullMatches, sourceId) {
   return { edition: result, matched, unmatched: total - matched };
 }
 
+/* -------------------------------------------------------------------------- */
+/* Fase de clasificación: fusión de los partidos y tablas del parser `q`        */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Convierte los partidos de la fase de clasificación (parser `q`) en entradas
+ * del esquema `encounter`. Fase genérica `qualifyingGroup` (con `group`) cuando
+ * el partido está en un grupo; `qualifying` cuando no. Los países que no
+ * resuelven a un código de `i18n/countries.json` (p. ej. `Saar`) se omiten con
+ * aviso: antes omitir que inventar un código (D29).
+ */
+function qualifyingEntries(parsed, warnings) {
+  const entries = [];
+  let dropped = 0;
+  for (const match of parsed.matches || []) {
+    const home = normalizeTeam(match.home);
+    const away = normalizeTeam(match.away);
+    if (!isKnownCountry(home) || !isKnownCountry(away)) {
+      warnings.push({ reason: `partido de clasificación omitido: país no resoluble (${match.home}-${match.away})` });
+      dropped += 1;
+      continue;
+    }
+    const letter = groupLetter(match.section);
+    entries.push({
+      stage: letter ? "qualifyingGroup" : "qualifying",
+      group: letter,
+      matchday: null,
+      date: match.date || null,
+      city: match.city || null,
+      home,
+      away,
+      score: typeof match.homeScore === "number" ? [match.homeScore, match.awayScore] : null,
+      status: match.status || "played",
+      notes: (match.notes || []).map((note) => String(note).toLowerCase()).filter((note) => KNOWN_NOTES.has(note)),
+      pens: Array.isArray(match.pens) ? [...match.pens] : null,
+      raw: null
+    });
+  }
+  return { entries, dropped };
+}
+
+/** Fila de clasificación con país resoluble; `null` (y aviso) si no lo es. */
+function qualifyingStanding(row, warnings) {
+  const team = normalizeTeam(row.team);
+  if (!isKnownCountry(team)) {
+    warnings.push({ reason: `fila de clasificación omitida: país no resoluble (${row.team})` });
+    return null;
+  }
+  return row;
+}
+
+/**
+ * Fusiona la fase de clasificación en una edición publicada sin perder nada de
+ * lo ya publicado (fichas `sheet` incluidas): añade los partidos del parser `q`
+ * con su `stage`, las tablas de sus grupos y deriva la cobertura con la regla
+ * D37 (`desiredCoverage`). Si algún equipo no se pudo resolver (y por tanto se
+ * omitió) la cobertura pasa a `complete:false` con una nota honesta.
+ *
+ * @param {object} edition edición publicada (torneo final)
+ * @param {object} parsed resultado de `parse("q", …)`
+ * @param {string} sourceId id de la fuente `q`
+ * @param {object} [competition] ficha del catálogo (para derivar la cobertura)
+ * @returns {{ edition: object, matches: number, groups: number, dropped: number, warnings: object[] }}
+ */
+function mergeQualifying(edition, parsed, sourceId, competition) {
+  const result = JSON.parse(JSON.stringify(edition));
+  const warnings = [];
+  const { entries, dropped } = qualifyingEntries(parsed, warnings);
+  const matches = Array.isArray(result.matches) ? result.matches : [];
+  let next = matches.reduce((max, match) => {
+    const matchId = /^m(\d+)$/.exec(String((match && match.id) || ""));
+    return matchId ? Math.max(max, Number(matchId[1])) : max;
+  }, 0);
+  for (const entry of entries) {
+    next += 1;
+    entry.id = `m${String(next).padStart(3, "0")}`;
+    matches.push(entry);
+  }
+  result.matches = matches;
+
+  const standings = (parsed.standings || [])
+    .map((row) => qualifyingStanding(row, warnings))
+    .filter(Boolean);
+  const groups = buildGroups(standings, matches, warnings);
+  result.groups = [...(result.groups || []), ...groups];
+
+  const goals = matches.reduce((sum, match) => sum + (Array.isArray(match.score) ? match.score[0] + match.score[1] : 0), 0);
+  result.coverage = { ...(result.coverage || {}), matches: matches.length, goals };
+  if (competition) {
+    const derived = desiredCoverage(competition, result, {});
+    if (derived) result.coverage = derived;
+  }
+  if (dropped > 0) {
+    const note = "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar).";
+    result.coverage = { ...result.coverage, complete: false, note };
+  }
+
+  return { edition: result, matches: entries.length, groups: groups.length, dropped, warnings };
+}
+
 /** Empareja cada partido de `f` con su detalle en `full`. */
 function pairMatches(fMatches, fullMatches) {
   const pool = fullMatches.map((match) => ({ match, used: false }));
@@ -481,7 +587,9 @@ function groupIssue(letter, standings, matches) {
   }
   if (sumGf !== sumGa) return `suma GF ${sumGf} != suma GA ${sumGa} (faltan equipos o columnas)`;
   const list = Array.isArray(matches) ? matches : [];
-  const played = list.filter((match) => match.stage === "group" && match.group === letter && Array.isArray(match.score));
+  const played = list.filter(
+    (match) => (match.stage === "group" || match.stage === "qualifyingGroup") && match.group === letter && Array.isArray(match.score)
+  );
   const matchGoals = played.reduce((sum, match) => sum + match.score[0] + match.score[1], 0);
   if (played.length > 0 && matchGoals !== sumGf) return `goles de partidos ${matchGoals} != clasificación ${sumGf}`;
   return null;
@@ -762,4 +870,4 @@ function buildDraft(input) {
   return draft;
 }
 
-module.exports = { buildDraft, normalizeTeam, stageFromSection, groupLetter, groupIssue, attachSheets };
+module.exports = { buildDraft, normalizeTeam, stageFromSection, groupLetter, groupIssue, attachSheets, mergeQualifying };

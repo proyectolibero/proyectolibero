@@ -5,11 +5,12 @@
  *
  * Alcance actual: `f` (listado resumido), `full` (detallado del Mundial),
  * `ed` (detalle por edición de otras competiciones: fecha en línea propia y,
- * si la hay, tanda de penaltis), `qf-scor` (goleadores y totales por equipo) y
+ * si la hay, tanda de penaltis), `qf-scor` (goleadores y totales por equipo),
  * `e` (página de una edición concreta —p. ej. `60e.html`/`2024e.html`—: se
- * queda con el torneo final y admite las dos eras de formato).
- * Los formatos de clasificación (`q`, `q-det`) todavía no se implementan:
- * `parse` devuelve arrays vacíos y un aviso.
+ * queda con el torneo final y admite las dos eras de formato) y `q`/`q-det`
+ * (fase de clasificación: grupos, resultados, tablas y prosa; ver
+ * `parseQualifying`). `q-det` se trata por ahora con la misma gramática
+ * compacta que `q`.
  *
  * El texto de entrada es el HTML ya decodificado a UTF-8 (salida de
  * `ingest/fetch.js`); aquí se limpian las etiquetas y se decodifican entidades.
@@ -509,6 +510,101 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
     extra: null
   });
   return true;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Formato `q` / `q-det`: fase de clasificación (grupos + tablas + prosa)      */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Encabezado de un grupo de clasificación, con la lista de equipos del grupo
+ * entre corchetes cuando la fuente la da: `Group 1 [West Germany]`.
+ */
+const QUALIFYING_GROUP = /^Group\s+([A-Z0-9]+)\s*(?:\[[^\]]*\])?\s*:?\s*$/i;
+
+/** Etiqueta de grupo normalizada (`Group 1`) o `null` si la sección no es un grupo. */
+function qualifyingGroupLabel(section) {
+  const match = QUALIFYING_GROUP.exec(String(section == null ? "" : section).trim());
+  return match ? `Group ${match[1].toUpperCase()}` : null;
+}
+
+/**
+ * Prosa de clasificación que no es dato de partido ni de tabla: clasificados
+ * directos, retiradas, walkovers y desempates por sorteo. Se conserva como
+ * nota; nunca se inventa un partido a partir de ella.
+ */
+const QUALIFYING_PROSE =
+  /(?:withdrew|withdrawal|walkover|drawing of lots|qualified as (?:hosts|holders)|refused to play|disqualified)/i;
+
+/**
+ * Parsea la fase de clasificación de una edición del Mundial (formato `q` y su
+ * variante detallada `q-det`, tratada de forma compacta). Gramática (ver
+ * `docs/RSSSF-GRAMATICA.md` y `docs/RSSSF-INVENTARIO.md`):
+ *
+ *   - `Group N [Equipo…]` abre un grupo.
+ *   - Una línea con fecha y marcador es un partido; puede llevar la tabla a la
+ *     derecha (`1.EQUIPO p w d l gf-ga pts`), como en `38q.html`.
+ *   - Una línea `N.EQUIPO …` sin partido es una fila de tabla suelta.
+ *   - La prosa (retiradas, walkovers, sorteo) va a `notes`.
+ *
+ * Cada partido expone `stage` (`qualifyingGroup` si está en un grupo,
+ * `qualifying` si no) y `group`, para que el esquema no tenga que adivinar la
+ * fase. Solo se procesa el interior de `<PRE>` cuando existe (evita la
+ * navegación y el pie). Nunca lanza: lo irreconocible va a `warnings`.
+ */
+function parseQualifying(text, ctx, result) {
+  const source = String(text == null ? "" : text).replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+  if (source === "") return;
+  const all = source.split("\n");
+  const hasPre = /<PRE>/i.test(source);
+  let inPre = !hasPre;
+  let group = null;
+  let section = null;
+
+  for (let i = 0; i < all.length; i += 1) {
+    const raw = all[i];
+    if (hasPre) {
+      if (/<PRE>/i.test(raw)) { inPre = true; continue; }
+      if (/<\/PRE>/i.test(raw)) { inPre = false; continue; }
+      if (!inPre) continue;
+    }
+    const lineNo = i + 1;
+    const line = cleanLine(raw);
+    if (line === "") continue;
+
+    const header = QUALIFYING_GROUP.exec(line);
+    if (header) {
+      group = `Group ${header[1].toUpperCase()}`;
+      section = group;
+      result.groups.push({ name: group, raw });
+      continue;
+    }
+
+    if (/^NB:/i.test(line) || QUALIFYING_PROSE.test(line)) {
+      result.notes.push({ line: lineNo, text: line });
+      continue;
+    }
+
+    let matchText = line;
+    let standingText = null;
+    const split = /\s{2,}([-0-9]+\.[A-Z][\s\S]*)$/.exec(line);
+    if (split) {
+      standingText = split[1].trim();
+      matchText = line.slice(0, split.index).trim();
+    } else if (/^[-0-9]+\.\s*[A-Za-z]/.test(line)) {
+      standingText = line;
+      matchText = "";
+    }
+
+    if (standingText) parseStanding(standingText, group, result, lineNo);
+    if (matchText && parseSummaryMatch(matchText, group, section, ctx, result, lineNo)) {
+      const match = result.matches[result.matches.length - 1];
+      if (match) {
+        match.stage = group ? "qualifyingGroup" : "qualifying";
+        match.qualifying = true;
+      }
+    }
+  }
 }
 
 // Cabecera clásica `DD.MM.YY (hh.mm) Ciudad, Estadio` (el tiempo es opcional:
@@ -1376,7 +1472,8 @@ function parse(kind, text, ctx) {
   const result = emptyResult();
   const context = ctx || {};
   const normalized = String(kind || "").toLowerCase();
-  if (normalized !== "f" && normalized !== "full" && normalized !== "ed" && normalized !== "e" && normalized !== "qf-scor") {
+  if (normalized !== "f" && normalized !== "full" && normalized !== "ed" && normalized !== "e"
+    && normalized !== "qf-scor" && normalized !== "q" && normalized !== "q-det") {
     warn(result, null, `kind '${kind}' no implementado todavía`);
     return result;
   }
@@ -1388,6 +1485,7 @@ function parse(kind, text, ctx) {
   else if (normalized === "full") parseFull(normalizedText, context, result);
   else if (normalized === "ed") parseEditionDetail(normalizedText, context, result);
   else if (normalized === "e") parseEditionPage(normalizedText, context, result);
+  else if (normalized === "q" || normalized === "q-det") parseQualifying(normalizedText, context, result);
   else parseScorers(normalizedText, result);
   return result;
 }
@@ -1397,6 +1495,8 @@ module.exports = {
   parse,
   parseDate,
   parseStanding,
+  parseSummaryMatch,
+  parseQualifying,
   resolveCountry,
   resolveCountryName,
   trailingCountry,

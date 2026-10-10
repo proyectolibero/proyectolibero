@@ -72,7 +72,7 @@ test("parse('f') separa la línea de clasificación del partido", () => {
 });
 
 test("parse de un kind no implementado devuelve vacíos y un aviso", () => {
-  const result = parse("q", "contenido de clasificación", CTX);
+  const result = parse("qual", "contenido de clasificación detallada", CTX);
   assert.deepEqual(result.matches, []);
   assert.deepEqual(result.standings, []);
   assert.deepEqual(result.scorers, []);

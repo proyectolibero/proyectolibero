@@ -8,7 +8,7 @@ const { loadCatalog } = require("../core/catalog.js");
 const { makeContext, validateEditionObject, validateProject } = require("../core/validate.js");
 const { buildRelease, writeRelease, checksumOfContents } = require("../core/release.js");
 const { fetchMany } = require("../ingest/fetch.js");
-const { buildDraft, attachSheets } = require("../ingest/build.js");
+const { buildDraft, attachSheets, mergeQualifying } = require("../ingest/build.js");
 const { parse } = require("../ingest/rsssf.js");
 const { buildCompetitionDrafts, buildDraft: buildEditionDraft } = require("../ingest/page.js");
 const { parseOverview } = require("../ingest/overview.js");
@@ -275,12 +275,35 @@ function fullSourceEntry(part, year) {
   };
 }
 
+/** Fuente v2 para la fase de clasificación (atribución RSSSF). */
+function qualifyingSourceEntry(part, year) {
+  const retrieved = typeof part.retrieved === "string" ? part.retrieved.slice(0, 10) : null;
+  return {
+    id: part.sourceId,
+    name: `RSSSF — World Cup ${year} (qualifying)`,
+    url: part.url || null,
+    retrieved,
+    publisher: "RSSSF",
+    license: "rsssf-attribution",
+    redistribute: true
+  };
+}
+
+/** Añade una fuente al bloque `sources[]` si no estaba ya. */
+function addSource(edition, entry) {
+  if (!entry) return;
+  if ((edition.sources || []).some((source) => source.id === entry.id)) return;
+  edition.sources = [...(edition.sources || []), entry];
+}
+
 /**
  * `build --base=published`: en lugar de fusionar `f`/`full` desde cero (que
  * reemplazaría ediciones migradas y puede degradarlas), toma la edición
- * publicada como base y le añade la ficha verbatim (`sheet`) extraída de `full`
- * (ADR-023/D33). Preserva íntegros el resto de datos y la procedencia; solo
- * publica la ficha de los partidos que el parser `full` reconoce.
+ * publicada como base y le añade, sin perder nada de lo ya publicado:
+ *   - la ficha verbatim (`sheet`) extraída de `full` (ADR-023/D33);
+ *   - la fase de clasificación (`q`/`q-det`): partidos con `stage` de
+ *     clasificación y las tablas de sus grupos (ADR-022/D32).
+ * La cobertura se re-deriva con la regla D37 tras la fusión.
  */
 function commandBuildEnriched(year, parts) {
   const published = publishedPath(year);
@@ -289,28 +312,55 @@ function commandBuildEnriched(year, parts) {
     return 1;
   }
   const fullPart = parts.find((part) => (part.kind || "") === "full");
-  if (!fullPart) {
-    console.error(`build --base=published: no hay fuente 'full' en inbox/ para ${year}; sin ella no hay fichas.`);
+  const qPart = parts.find((part) => (part.kind || "") === "q" || (part.kind || "") === "q-det");
+  if (!fullPart && !qPart) {
+    console.error(`build --base=published: no hay fuente 'full' ni 'q' en inbox/ para ${year}.`);
     return 1;
   }
-  const parsed = parse("full", fullPart.text, {
-    sourceId: fullPart.sourceId,
-    retrieved: fullPart.retrieved,
-    url: fullPart.url,
-    year
-  });
-  const edition = io.readJSON(published);
-  const { edition: enriched, matched, unmatched } = attachSheets(edition, parsed.matches, fullPart.sourceId);
-  if (matched > 0 && !(enriched.sources || []).some((source) => source.id === fullPart.sourceId)) {
-    enriched.sources = [...(enriched.sources || []), fullSourceEntry(fullPart, year)];
+
+  let edition = io.readJSON(published);
+  let matched = 0;
+  let unmatched = (edition.matches || []).length;
+
+  if (fullPart) {
+    const parsed = parse("full", fullPart.text, {
+      sourceId: fullPart.sourceId,
+      retrieved: fullPart.retrieved,
+      url: fullPart.url,
+      year
+    });
+    const enriched = attachSheets(edition, parsed.matches, fullPart.sourceId);
+    edition = enriched.edition;
+    matched = enriched.matched;
+    unmatched = enriched.unmatched;
+    if (matched > 0) addSource(edition, fullSourceEntry(fullPart, year));
+    console.log(`  fuente full  ${fullPart.sourceId} (${parsed.matches.length} bloques, ${parsed.warnings.length} avisos)`);
+  }
+
+  if (qPart) {
+    const parsed = parse(qPart.kind || "q", qPart.text, {
+      sourceId: qPart.sourceId,
+      retrieved: qPart.retrieved,
+      url: qPart.url,
+      year
+    });
+    const competition = loadCatalog(ROOT).competitions["football/worldcup"];
+    const merged = mergeQualifying(edition, parsed, qPart.sourceId, competition);
+    edition = merged.edition;
+    if (merged.matches > 0) addSource(edition, qualifyingSourceEntry(qPart, year));
+    console.log(`  fuente q     ${qPart.sourceId} (${parsed.matches.length} partidos, ${parsed.standings.length} filas de tabla, ${parsed.warnings.length} avisos)`);
+    console.log(`  clasificación añadida: ${merged.matches} partidos, ${merged.groups} grupos, ${merged.dropped} omitidos por país no resoluble`);
+    for (const warning of merged.warnings) console.log(`    [warn] ${warning.reason}`);
   }
 
   const target = draftPath(year);
-  io.writeJSON(target, enriched);
-  const withSheet = (enriched.matches || []).filter((match) => match.sheet && match.sheet.text).length;
+  io.writeJSON(target, edition);
+  const withSheet = (edition.matches || []).filter((match) => match.sheet && match.sheet.text).length;
   console.log(`build ${year} --base=published: ${path.relative(ROOT, target)}`);
-  console.log(`  fuente full  ${fullPart.sourceId} (${parsed.matches.length} bloques, ${parsed.warnings.length} avisos)`);
-  console.log(`  partidos=${(enriched.matches || []).length} conSheet=${withSheet} emparejados=${matched} sinFicha=${unmatched}`);
+  console.log(
+    `  partidos=${(edition.matches || []).length} conSheet=${withSheet} emparejados=${matched} sinFicha=${unmatched} ` +
+    `cobertura=${edition.coverage.scope}/${edition.coverage.complete}`
+  );
   return 0;
 }
 

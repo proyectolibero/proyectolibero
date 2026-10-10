@@ -1,0 +1,10 @@
+# Normaliza los finales de línea a LF en los ficheros versionados.
+#
+# En Windows, un checkout con `core.autocrlf=true` reescribía `data/**` a CRLF,
+# lo que cambiaba el sha256 de las ediciones y disparaba 20 incidencias `REL002`
+# (checksum del release distinto del fichero en disco). Fijar `eol=lf` para los
+# datos y su código protege la reproducibilidad byte a byte del release.
+data/**  text eol=lf
+*.json   text eol=lf
+*.md     text eol=lf
+*.js     text eol=lf

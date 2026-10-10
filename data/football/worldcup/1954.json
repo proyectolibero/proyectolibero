@@ -13,12 +13,13 @@
     "third": "AUT"
   },
   "coverage": {
-    "matches": 26,
-    "goals": 140,
+    "matches": 79,
+    "goals": 336,
     "scorers": 167,
-    "scope": "final",
+    "scope": "all",
     "complete": false,
-    "scorersComplete": false
+    "scorersComplete": false,
+    "note": "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar)."
   },
   "sources": [
     {
@@ -44,6 +45,15 @@
       "name": "RSSSF — World Cup 1954 (goal scorers)",
       "url": "https://www.rsssf.org/tables/54qf-scor.html",
       "retrieved": "2026-10-07",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:54q",
+      "name": "RSSSF — World Cup 1954 (qualifying)",
+      "url": "https://www.rsssf.org/tables/54q.html",
+      "retrieved": "2026-10-10",
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
@@ -215,6 +225,261 @@
           "gf": 0,
           "ga": 8,
           "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "10",
+      "standings": [
+        {
+          "team": "YUG",
+          "p": 4,
+          "w": 4,
+          "d": 0,
+          "l": 0,
+          "gf": 4,
+          "ga": 0,
+          "pts": 8
+        },
+        {
+          "team": "GRE",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 2,
+          "pts": 4
+        },
+        {
+          "team": "ISR",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 0,
+          "ga": 5,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "11",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 4,
+          "w": 4,
+          "d": 0,
+          "l": 0,
+          "gf": 8,
+          "ga": 1,
+          "pts": 8
+        },
+        {
+          "team": "PAR",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 8,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "CHI",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 1,
+          "ga": 10,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "12",
+      "standings": [
+        {
+          "team": "MEX",
+          "p": 4,
+          "w": 4,
+          "d": 0,
+          "l": 0,
+          "gf": 19,
+          "ga": 1,
+          "pts": 8
+        },
+        {
+          "team": "USA",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 7,
+          "ga": 9,
+          "pts": 4
+        },
+        {
+          "team": "HAI",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 2,
+          "ga": 18,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "2",
+      "standings": [
+        {
+          "team": "BEL",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 11,
+          "ga": 6,
+          "pts": 7
+        },
+        {
+          "team": "SWE",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 9,
+          "ga": 8,
+          "pts": 3
+        },
+        {
+          "team": "FIN",
+          "p": 4,
+          "w": 0,
+          "d": 2,
+          "l": 2,
+          "gf": 7,
+          "ga": 13,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "3",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 11,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "SCO",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 8,
+          "ga": 8,
+          "pts": 3
+        },
+        {
+          "team": "NIR",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 4,
+          "ga": 7,
+          "pts": 2
+        },
+        {
+          "team": "WAL",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 5,
+          "ga": 9,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "4",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 4,
+          "w": 4,
+          "d": 0,
+          "l": 0,
+          "gf": 20,
+          "ga": 4,
+          "pts": 8
+        },
+        {
+          "team": "IRL",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 8,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "LUX",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 1,
+          "ga": 19,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "8",
+      "standings": [
+        {
+          "team": "TCH",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 1,
+          "pts": 7
+        },
+        {
+          "team": "ROU",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 5,
+          "ga": 5,
+          "pts": 4
+        },
+        {
+          "team": "BUL",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 3,
+          "ga": 7,
+          "pts": 1
         }
       ]
     }
@@ -2140,6 +2405,960 @@
         "text": "04.07.54  (17.00) Bern, Wankdorf-Stadion\nGER - HUN 3:2 (2:2)\n(~65000) Ling ENG, Orlandini ITA, Griffiths WAL\nGER: Turek - Posipal, Kohlmeyer, Eckel - Liebrich, Mai - Rahn, Morlock,\nO. Walter, F. Walter (c), Schäfer.\nHUN: Grosics - Buzánszky, Lantos, Bozsik - Lóránt, Zakariás - Czibor,\nKocsis, Hidegkuti, Puskás (c), M.Tóth.\n0:1 Puskás 6, 0:2 Czibor 9, 1:2 Morlock 11, 2:2 Rahn 18, 3:2 Rahn 84",
         "lang": "en"
       }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1953-08-19",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "FRG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m027"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1953-11-22",
+      "city": "Hamburg",
+      "home": "FRG",
+      "away": "NOR",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m028"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1953-05-25",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "BEL",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m029"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1953-05-28",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "BEL",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m030"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1953-08-05",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SWE",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m031"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1953-08-16",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m032"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1953-09-23",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "FIN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m033"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1953-10-08",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "SWE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m034"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1953-10-03",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "SCO",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m035"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1953-10-10",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "ENG",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m036"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1953-11-04",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "WAL",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m037"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1953-11-11",
+      "city": "Liverpool",
+      "home": "ENG",
+      "away": "NIR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m038"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1954-03-31",
+      "city": "Wrexham",
+      "home": "WAL",
+      "away": "NIR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m039"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1954-04-03",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "ENG",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m040"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1953-09-20",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "FRA",
+      "score": [
+        1,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m041"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1953-10-04",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "FRA",
+      "score": [
+        3,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m042"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1953-10-28",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "LUX",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m043"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1953-11-25",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "IRL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m044"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1953-12-27",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "LUX",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m045"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1954-03-07",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "IRL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m046"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1953-09-27",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "POR",
+      "score": [
+        9,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m047"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1953-11-29",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "AUT",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m048"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1954-01-06",
+      "city": "Madrid",
+      "home": "ESP",
+      "away": "TUR",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m049"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1954-03-14",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "ESP",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m050"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1954-03-17",
+      "city": "Roma",
+      "home": "TUR",
+      "away": "ESP",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m051"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1953-06-14",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "ROU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1953-06-28",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "BUL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1953-09-06",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "TCH",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1953-10-11",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "ROU",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1953-10-25",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "TCH",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1953-11-08",
+      "city": "Bratislava",
+      "home": "TCH",
+      "away": "BUL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1953-11-13",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "ITA",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1954-01-24",
+      "city": "Milano",
+      "home": "ITA",
+      "away": "EGY",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "1953-05-09",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "GRE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "1953-11-01",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "ISR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "1953-11-08",
+      "city": "Skopje",
+      "home": "YUG",
+      "away": "ISR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "1954-03-08",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "GRE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "1954-03-21",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "YUG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "1954-03-28",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "YUG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "11",
+      "matchday": null,
+      "date": "1954-02-14",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "CHI",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "11",
+      "matchday": null,
+      "date": "1954-02-21",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "PAR",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "11",
+      "matchday": null,
+      "date": "1954-02-28",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "BRA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "11",
+      "matchday": null,
+      "date": "1954-03-07",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "BRA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "11",
+      "matchday": null,
+      "date": "1954-03-14",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "CHI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "11",
+      "matchday": null,
+      "date": "1954-03-21",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "PAR",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "12",
+      "matchday": null,
+      "date": "1953-07-19",
+      "city": "Cd. de México",
+      "home": "MEX",
+      "away": "HAI",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "12",
+      "matchday": null,
+      "date": "1953-12-27",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "MEX",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "12",
+      "matchday": null,
+      "date": "1954-01-10",
+      "city": "Cd. de México",
+      "home": "MEX",
+      "away": "USA",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "12",
+      "matchday": null,
+      "date": "1954-01-14",
+      "city": "Cd. de México",
+      "home": "MEX",
+      "away": "USA",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "12",
+      "matchday": null,
+      "date": "1954-04-03",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "USA",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "12",
+      "matchday": null,
+      "date": "1954-04-04",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "USA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "13",
+      "matchday": null,
+      "date": "1954-03-07",
+      "city": "Tokyo",
+      "home": "JPN",
+      "away": "KOR",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "13",
+      "matchday": null,
+      "date": "1954-03-14",
+      "city": "Tokyo",
+      "home": "JPN",
+      "away": "KOR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
     }
   ],
   "scorers": [

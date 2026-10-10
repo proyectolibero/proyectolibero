@@ -145,7 +145,13 @@ function compareUnmatchedMatches(draftLeft, publishedLeft, differences, draft) {
   for (const draftMatch of draftLeft) {
     if (matched.has(draftMatch)) continue;
     const path = matchPath(draftMatch);
-    differences.push(diff(path, "match", null, matchSummary(draftMatch), "blocking", suggestionFor(draft, path, matchSummary(draftMatch))));
+    // Un partido de clasificación ausente en lo publicado no contradice el
+    // torneo final: es una ampliación de alcance (ADR-022/D32), no un error.
+    const qualifying = typeof draftMatch.stage === "string" && draftMatch.stage.startsWith("qualifying");
+    const severity = qualifying ? "info" : "blocking";
+    differences.push(
+      diff(path, "match", null, matchSummary(draftMatch), severity, severity === "blocking" ? suggestionFor(draft, path, matchSummary(draftMatch)) : null)
+    );
   }
   publishedLeft.forEach((publishedMatch, index) => {
     if (taken[index]) return;
@@ -189,6 +195,10 @@ function compareGroups(draft, published, differences, ignore) {
     if (isIgnored(pathBase, ignore)) continue;
     const publishedTeams = publishedGroups.get(letter) || new Map();
     const draftTeams = draftGroups.get(letter) || new Map();
+    // Un grupo que no existe en lo publicado es una ampliación (p. ej. los
+    // grupos de clasificación de una edición que solo tenía el torneo final),
+    // no una contradicción: sus filas se señalan como info.
+    const groupIsNew = !publishedGroups.has(letter);
     for (const [team, standing] of publishedTeams) {
       const draftStanding = draftTeams.get(team);
       if (!draftStanding) {
@@ -210,8 +220,9 @@ function compareGroups(draft, published, differences, ignore) {
     }
     for (const [team, standing] of draftTeams) {
       if (publishedTeams.has(team)) continue;
+      const severity = groupIsNew ? "info" : "blocking";
       differences.push(
-        diff(`${pathBase}.${team}`, "standings", null, statsText(standing), "blocking", suggestionFor(draft, `${pathBase}.${team}`, statsText(standing)))
+        diff(`${pathBase}.${team}`, "standings", null, statsText(standing), severity, severity === "blocking" ? suggestionFor(draft, `${pathBase}.${team}`, statsText(standing)) : null)
       );
     }
   }

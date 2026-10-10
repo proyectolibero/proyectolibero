@@ -406,7 +406,7 @@
     },
     {
       "path": "data/football/worldcup/1954.json",
-      "sha256": "dd39af00108d6002389058865902565c76cc6c304186222adec1cbb69d2e296b",
+      "sha256": "b89699a7df68d7e9af28c14c8268a2467b8e9bd9e9509be807e9e7c25207119d",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1954
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "c8bffe836f14d3597456bc46585908a1f45b655f45129e8276827f8bc46b5069",
+  "checksum": "aeab36861b3b89d66b1ee0c62fa09ce695cb4804ab1f5f7c2504a9bd9886924d",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 2073,
+    "matches": 2126,
     "results": 0
   },
   "license": {
@@ -788,6 +788,12 @@
         "source": "rsssf:54full",
         "name": "RSSSF — World Cup 1954 (full details)",
         "url": "https://www.rsssf.org/tables/54full.html",
+        "retrieved": "2026-10-10"
+      },
+      {
+        "source": "rsssf:54q",
+        "name": "RSSSF — World Cup 1954 (qualifying)",
+        "url": "https://www.rsssf.org/tables/54q.html",
         "retrieved": "2026-10-10"
       },
       {
