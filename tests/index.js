@@ -14,6 +14,7 @@ require("./i18n-gate.test.js");
 require("./security.test.js");
 require("./validate-cli.test.js");
 require("./migrate.test.js");
+require("./migrate-coverage.test.js");
 require("./viewmodel.test.js");
 require("./viewmodel.parity.test.js");
 require("./site-load.test.js");

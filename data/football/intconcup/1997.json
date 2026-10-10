@@ -15,9 +15,9 @@
   "coverage": {
     "matches": 16,
     "goals": 52,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "scope": "all",
+    "complete": true,
+    "note": "Sin fase de clasificación en esta competición."
   },
   "sources": [
     {
