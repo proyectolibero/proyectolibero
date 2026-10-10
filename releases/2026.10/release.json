@@ -406,7 +406,7 @@
     },
     {
       "path": "data/football/worldcup/1954.json",
-      "sha256": "7f5e6b3546bd5e9b9c8220063b87ebe2937b88e1804966653a2877993778f07f",
+      "sha256": "dd39af00108d6002389058865902565c76cc6c304186222adec1cbb69d2e296b",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1954
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "abc555e3026de8d053194fabce61870ea11339925f98d34c2da361b5de89e5ed",
+  "checksum": "71c703399ddfa16afee668c283bd10fd1b93a6d5429d1b1bdcdc1160d822502b",
   "dataset": {
     "sports": 4,
     "competitions": 5,
@@ -768,24 +768,21 @@
       },
       {
         "source": "rsssf:54f",
-        "name": "RSSSF — World Cup 1954 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+        "name": "RSSSF — World Cup 1954 (final tournament)",
         "url": "https://www.rsssf.org/tables/54f.html",
-        "retrieved": "2026-10-06",
-        "author": "Karel Stokkermans, Sergio Henrique Jarreta"
+        "retrieved": "2026-10-10"
       },
       {
         "source": "rsssf:54full",
-        "name": "RSSSF — World Cup 1954 full details (Karel Stokkermans)",
+        "name": "RSSSF — World Cup 1954 (full details)",
         "url": "https://www.rsssf.org/tables/54full.html",
-        "retrieved": "2026-10-06",
-        "author": "Karel Stokkermans"
+        "retrieved": "2026-10-10"
       },
       {
         "source": "rsssf:54qf-scor",
-        "name": "RSSSF — World Cup 1954 goal scorers (Jaroslaw Owsianski)",
+        "name": "RSSSF — World Cup 1954 (goal scorers)",
         "url": "https://www.rsssf.org/tables/54qf-scor.html",
-        "retrieved": "2026-10-06",
-        "author": "Jaroslaw Owsianski"
+        "retrieved": "2026-10-07"
       },
       {
         "source": "rsssf:58f",

@@ -177,3 +177,47 @@ test("build integra los goleadores de qf-scor y declara su cobertura", () => {
   assert.ok(draft.scorers.every((scorer) => scorer.country));
   assert.ok(draft.scorers.every((scorer) => scorer.scope === "final"));
 });
+
+test("buildDraft añade la ficha (sheet) de 'full' y la omite si no hay bloque", () => {
+  const fText = [
+    "Group A",
+    "10.06.54  Ciudad Uno  AAA  2-1 BBB",
+    "11.06.54  Ciudad Dos  CCC  0-0 DDD",
+    "12.06.54  Ciudad Tres  EEE  1-0 FFF"
+  ].join("\n");
+  const fullText = [
+    "<H2>Group A - AAA BBB</H2>",
+    "10.06.54  (15.00) Ciudad Uno, Estadio Uno",
+    "AAA - BBB 2:1 (1:0)",
+    "(+30000) Arbitro Uno ENG, Segundo FRA",
+    "<B>AAA</B>: Portero - Defensa (c), Medio",
+    "<B>BBB</B>: Portero - Defensa, Medio",
+    "1:0 Delantero 12, 2:0 Otro 40, 2:1 Tercero 88",
+    "",
+    "<H2>Group A - CCC DDD</H2>",
+    "11.06.54  (18.00) Ciudad Dos, Estadio Dos",
+    "CCC - DDD 0:0",
+    "(~9000) Arbitro Dos ITA",
+    "<B>CCC</B>: Portero - Defensa, Medio",
+    "<B>DDD</B>: Portero - Defensa, Medio",
+    "",
+    "12.06.54  (20.00) Ciudad Tres, Estadio Tres"
+  ].join("\n");
+  const draft = buildDraft({
+    year: 1954,
+    parts: [
+      { kind: "f", sourceId: "rsssf:54f", retrieved: "2026-10-07", text: fText },
+      { kind: "full", sourceId: "rsssf:54full", retrieved: "2026-10-07", text: fullText }
+    ]
+  });
+
+  assert.equal(draft.matches.length, 3);
+  const withSheet = draft.matches.filter((match) => match.sheet);
+  assert.equal(withSheet.length, 2);
+  assert.ok(withSheet.every((match) => match.sheet.source === "rsssf:54full" && match.sheet.lang === "en"));
+  const first = draft.matches.find((match) => match.home === "AAA");
+  assert.ok(first.sheet.text.includes("AAA - BBB 2:1 (1:0)"));
+  assert.ok(first.sheet.text.includes("(+30000) Arbitro Uno ENG, Segundo FRA"));
+  const third = draft.matches.find((match) => match.home === "EEE");
+  assert.equal(third.sheet, undefined);
+});

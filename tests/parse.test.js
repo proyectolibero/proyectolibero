@@ -151,6 +151,34 @@ test("parse('full') extrae eventos con minuto simple y con sufijo h", () => {
   assert.deepEqual(events[2], { minute: "71 h", player: "Baltazar", score: "3:0" });
 });
 
+test("parse('full') expone rawSheet verbatim con resultado, goleadores y árbitro", () => {
+  const detailed = parse("full", readFixture("50full.html.txt"), { ...CTX, sourceId: "rsssf:50full" });
+  assert.equal(detailed.matches.length, 7);
+  assert.equal(detailed.matches.filter((match) => match.rawSheet).length, 7);
+  const first = detailed.matches[0].rawSheet;
+  assert.ok(first.includes("BRA - MEX 4:0 (1:0)"));
+  assert.ok(first.includes("(+81000) Reader ENG, Mitchell SCO, Griffiths WAL"));
+  assert.ok(first.includes("1:0 Ademir 31, 2:0 Jair 65, 3:0 Baltazar 71 h, 4:0 Ademir 79"));
+});
+
+test("parse('full') deja rawSheet vacío en un partido sin bloque", () => {
+  const text = [
+    "<H2>Group A - AAA BBB</H2>",
+    "10.06.54  (15.00) Ciudad Uno, Estadio Uno",
+    "AAA - BBB 2:1 (1:0)",
+    "(+30000) Arbitro Uno ENG, Segundo FRA",
+    "<B>AAA</B>: Portero - Defensa (c), Medio",
+    "<B>BBB</B>: Portero - Defensa, Medio",
+    "1:0 Delantero 12, 2:0 Otro 40, 2:1 Tercero 88",
+    "",
+    "11.06.54  (18.00) Ciudad Dos, Estadio Dos"
+  ].join("\n");
+  const { matches } = parse("full", text, { year: 1954, sourceId: "rsssf:54full" });
+  assert.equal(matches.length, 2);
+  assert.ok(matches[0].rawSheet.includes("AAA - BBB 2:1 (1:0)"));
+  assert.equal(matches[1].rawSheet, "");
+});
+
 test("parse decodifica entidades HTML (&atilde; → ã)", () => {
   const text = "Group A\n28.06.50  S&atilde;o Paulo       Brazil           2-2 Switzerland";
   const { matches } = parse("f", text, CTX);

@@ -87,6 +87,14 @@ function cleanLine(line) {
 }
 
 /**
+ * Línea de la ficha verbatim: quita las etiquetas HTML sin insertar espacios
+ * (para no alterar `CODE: ...`) y decodifica entidades. Conserva el texto.
+ */
+function sheetLine(line) {
+  return decodeHtml(String(line).replace(/<[^>]*>/g, "")).trim();
+}
+
+/**
  * Alias históricos y de uso común que no coinciden con el nombre en inglés de
  * `i18n/countries.json`. Se consulta antes que el índice inverso.
  */
@@ -524,20 +532,27 @@ function parseFull(text, ctx, result) {
     const line = cleanLine(raw);
     if (line === "") continue;
 
-    if (/<H2>/i.test(raw) && FULL_SECTION.test(line)) {
-      inData = true;
-      const g = /^(Group\s+[A-Z0-9]+)/i.exec(line);
-      if (g) {
-        section = g[1];
-        group = g[1];
-        result.groups.push({ name: line, raw });
-      } else if (/final pool/i.test(line)) {
-        section = "Final Pool";
-        group = "Final Pool";
-        result.groups.push({ name: line, raw });
+    // Cualquier encabezado <H2> cierra el bloque verbatim del partido en curso
+    // (grupos, fases y también secciones finales como goleadores o entrenadores).
+    if (/<H2>/i.test(raw)) {
+      if (FULL_SECTION.test(line)) {
+        inData = true;
+        const g = /^(Group\s+[A-Z0-9]+)/i.exec(line);
+        if (g) {
+          section = g[1];
+          group = g[1];
+          result.groups.push({ name: line, raw });
+        } else if (/final pool/i.test(line)) {
+          section = "Final Pool";
+          group = "Final Pool";
+          result.groups.push({ name: line, raw });
+        } else {
+          section = line;
+          group = null;
+        }
       } else {
-        section = line;
-        group = null;
+        // Sección ajena al torneo (goleadores, entrenadores…): fin de los datos.
+        inData = false;
       }
       current = null;
       continue;
@@ -552,6 +567,7 @@ function parseFull(text, ctx, result) {
       if (parsedDate.warning) warn(result, lineNo, parsedDate.warning);
       current = {
         raw,
+        sheetLines: [sheetLine(raw)],
         date: parsedDate.iso,
         time: dateHeader[2],
         city: comma >= 0 ? tail.slice(0, comma).trim() : tail.trim(),
@@ -578,7 +594,7 @@ function parseFull(text, ctx, result) {
 
     if (/^NOTE\b/i.test(line) || /^NB:/i.test(line)) {
       result.notes.push({ line: lineNo, text: line, group });
-      if (current) current.raw += `\n${raw}`;
+      if (current) appendSheet(current, raw);
       continue;
     }
 
@@ -591,7 +607,7 @@ function parseFull(text, ctx, result) {
         current.awayScore = +score[4];
         current.score = `${score[3]}:${score[4]}`;
         current.extra.halfTime = score[5] || null;
-        current.raw += `\n${raw}`;
+        appendSheet(current, raw);
         continue;
       }
       if (current.extra.attendance === null) {
@@ -600,17 +616,17 @@ function parseFull(text, ctx, result) {
           current.extra.attendance = attendance.attendance;
           current.extra.attendanceApprox = attendance.approx;
           current.extra.referee = parseReferee(attendance.rest);
-          current.raw += `\n${raw}`;
+          appendSheet(current, raw);
           continue;
         }
       }
       if (FULL_LINEUP.test(line)) {
-        current.raw += `\n${raw}`;
+        appendSheet(current, raw);
         continue;
       }
       if (FULL_EVENTS.test(line)) {
         current.extra.events.push(...parseEvents(line));
-        current.raw += `\n${raw}`;
+        appendSheet(current, raw);
         continue;
       }
     }
@@ -621,9 +637,21 @@ function parseFull(text, ctx, result) {
       continue;
     }
     if (!inData) continue;
-    if (current) current.raw += `\n${raw}`;
+    if (current) appendSheet(current, raw);
     else warn(result, lineNo, `línea no reconocida: ${line}`);
   }
+
+  for (const match of result.matches) {
+    const block = match.sheetLines || [];
+    match.rawSheet = block.length > 1 ? block.join("\n") : "";
+    delete match.sheetLines;
+  }
+}
+
+/** Añade una línea cruda al bloque verbatim del partido (texto + `raw`). */
+function appendSheet(match, raw) {
+  match.raw += `\n${raw}`;
+  match.sheetLines.push(sheetLine(raw));
 }
 
 /* -------------------------------------------------------------------------- */

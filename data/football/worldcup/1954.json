@@ -6,57 +6,127 @@
   "edition": 1954,
   "status": "closed",
   "teamMode": "country",
-  "hosts": [
-    "SUI"
-  ],
-  "teamsCount": 16,
   "results": {
     "champion": "FRG",
     "runnerUp": "HUN",
-    "third": "AUT",
-    "finalMatchId": "m026"
+    "finalMatchId": "m026",
+    "third": "AUT"
   },
   "coverage": {
     "matches": 26,
     "goals": 140,
-    "scorers": 63,
+    "scorers": 167,
     "scope": "final",
     "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "scorersComplete": false
   },
   "sources": [
     {
       "id": "rsssf:54f",
-      "name": "RSSSF — World Cup 1954 final tournament (Karel Stokkermans, Sergio Henrique Jarreta)",
+      "name": "RSSSF — World Cup 1954 (final tournament)",
       "url": "https://www.rsssf.org/tables/54f.html",
-      "retrieved": "2026-10-06",
+      "retrieved": "2026-10-10",
       "publisher": "RSSSF",
-      "author": "Karel Stokkermans, Sergio Henrique Jarreta",
       "license": "rsssf-attribution",
       "redistribute": true
     },
     {
       "id": "rsssf:54full",
-      "name": "RSSSF — World Cup 1954 full details (Karel Stokkermans)",
+      "name": "RSSSF — World Cup 1954 (full details)",
       "url": "https://www.rsssf.org/tables/54full.html",
-      "retrieved": "2026-10-06",
+      "retrieved": "2026-10-10",
       "publisher": "RSSSF",
-      "author": "Karel Stokkermans",
       "license": "rsssf-attribution",
       "redistribute": true
     },
     {
       "id": "rsssf:54qf-scor",
-      "name": "RSSSF — World Cup 1954 goal scorers (Jaroslaw Owsianski)",
+      "name": "RSSSF — World Cup 1954 (goal scorers)",
       "url": "https://www.rsssf.org/tables/54qf-scor.html",
-      "retrieved": "2026-10-06",
+      "retrieved": "2026-10-07",
       "publisher": "RSSSF",
-      "author": "Jaroslaw Owsianski",
       "license": "rsssf-attribution",
       "redistribute": true
     }
   ],
-  "asOf": "2026-10-06",
+  "asOf": "2026-10-10",
+  "provenance": {
+    "primary": "rsssf:54f",
+    "rejected": [
+      {
+        "source": "rsssf:54full",
+        "field": "matches.m002.city",
+        "value": "Geneva",
+        "reason": "full=\"Geneva\" y f=\"Genève\" difieren; se conserva f"
+      },
+      {
+        "source": "rsssf:54full",
+        "field": "matches.m003.city",
+        "value": "Geneva",
+        "reason": "full=\"Geneva\" y f=\"Genève\" difieren; se conserva f"
+      },
+      {
+        "source": "rsssf:54full",
+        "field": "matches.m006.city",
+        "value": "Berne",
+        "reason": "full=\"Berne\" y f=\"Bern\" difieren; se conserva f"
+      },
+      {
+        "source": "rsssf:54full",
+        "field": "matches.m007.city",
+        "value": "Basle",
+        "reason": "full=\"Basle\" y f=\"Basel\" difieren; se conserva f"
+      },
+      {
+        "source": "rsssf:54full",
+        "field": "matches.m008.city",
+        "value": "Geneva",
+        "reason": "full=\"Geneva\" y f=\"Genève\" difieren; se conserva f"
+      },
+      {
+        "source": "rsssf:54full",
+        "field": "matches.m010.city",
+        "value": "Berne",
+        "reason": "full=\"Berne\" y f=\"Bern\" difieren; se conserva f"
+      },
+      {
+        "source": "rsssf:54full",
+        "field": "matches.m016.score",
+        "value": "2-0",
+        "reason": "f y full invierten local/visitante; se conserva el orden de f"
+      },
+      {
+        "source": "rsssf:54full",
+        "field": "matches.m019.score",
+        "value": "7-5",
+        "reason": "f y full invierten local/visitante; se conserva el orden de f"
+      },
+      {
+        "source": "rsssf:54full",
+        "field": "matches.m020.city",
+        "value": "Basle",
+        "reason": "full=\"Basle\" y f=\"Basel\" difieren; se conserva f"
+      },
+      {
+        "source": "rsssf:54full",
+        "field": "matches.m021.city",
+        "value": "Berne",
+        "reason": "full=\"Berne\" y f=\"Bern\" difieren; se conserva f"
+      },
+      {
+        "source": "rsssf:54full",
+        "field": "matches.m022.city",
+        "value": "Geneva",
+        "reason": "full=\"Geneva\" y f=\"Genève\" difieren; se conserva f"
+      },
+      {
+        "source": "rsssf:54full",
+        "field": "groups.A.standings.MEX",
+        "value": "2-6",
+        "reason": "full=\"2-6 0\" y f=\"2-8 0\" difieren; se conserva f"
+      }
+    ]
+  },
   "groups": [
     {
       "letter": "A",
@@ -99,62 +169,6 @@
           "l": 2,
           "gf": 2,
           "ga": 8,
-          "pts": 0
-        }
-      ],
-      "provenance": {
-        "primary": "rsssf:54f",
-        "rejected": [
-          {
-            "source": "rsssf:54full",
-            "field": "groups.A.standings.MEX",
-            "value": "2-6",
-            "reason": "54full da México 2-6; la suma de goles del grupo (13) y 54f fijan 2-8."
-          }
-        ]
-      }
-    },
-    {
-      "letter": "B",
-      "standings": [
-        {
-          "team": "HUN",
-          "p": 2,
-          "w": 2,
-          "d": 0,
-          "l": 0,
-          "gf": 17,
-          "ga": 3,
-          "pts": 4
-        },
-        {
-          "team": "FRG",
-          "p": 2,
-          "w": 1,
-          "d": 0,
-          "l": 1,
-          "gf": 7,
-          "ga": 9,
-          "pts": 2
-        },
-        {
-          "team": "TUR",
-          "p": 2,
-          "w": 1,
-          "d": 0,
-          "l": 1,
-          "gf": 8,
-          "ga": 4,
-          "pts": 2
-        },
-        {
-          "team": "KOR",
-          "p": 2,
-          "w": 0,
-          "d": 0,
-          "l": 2,
-          "gf": 0,
-          "ga": 16,
           "pts": 0
         }
       ]
@@ -203,398 +217,1875 @@
           "pts": 0
         }
       ]
-    },
-    {
-      "letter": "D",
-      "standings": [
-        {
-          "team": "ENG",
-          "p": 2,
-          "w": 1,
-          "d": 1,
-          "l": 0,
-          "gf": 6,
-          "ga": 4,
-          "pts": 3
-        },
-        {
-          "team": "SUI",
-          "p": 2,
-          "w": 1,
-          "d": 0,
-          "l": 1,
-          "gf": 2,
-          "ga": 3,
-          "pts": 2
-        },
-        {
-          "team": "ITA",
-          "p": 2,
-          "w": 1,
-          "d": 0,
-          "l": 1,
-          "gf": 5,
-          "ga": 3,
-          "pts": 2
-        },
-        {
-          "team": "BEL",
-          "p": 2,
-          "w": 0,
-          "d": 1,
-          "l": 1,
-          "gf": 5,
-          "ga": 8,
-          "pts": 1
-        }
-      ]
     }
   ],
   "matches": [
     {
       "id": "m001",
-      "date": "1954-06-16",
-      "city": "Lausanne",
       "stage": "group",
       "group": "A",
+      "matchday": null,
+      "date": "1954-06-16",
+      "city": "Lausanne",
       "home": "YUG",
       "away": "FRA",
       "score": [
         1,
         0
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Griffiths",
+          "country": "WAL"
+        },
+        "attendance": 16000,
+        "halfTime": "1:0",
+        "stadium": "La Pontaise",
+        "events": [
+          {
+            "minute": 14,
+            "player": "Milutinović",
+            "team": "YUG",
+            "score": [
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "16.06.54  (18.00) Lausanne, La Pontaise\nJUG - FRA 1:0 (1:0)\n(~16000) Griffiths WAL, Asensi ESP, Baumberger SUI\nJUG: Beara - B.Stanković, Crnković, Žl.Čajkovski - I.Horvat, Boškov -\nMilutinović, Mitić, Vukas, Bobek (c), Zebec\nFRA: Remetter - Gianessi, Kaelbel, Penverne - Jonquet (c), Marcel - Kopa,\nGlovacki, Strappe, Dereuddre, Vincent\n1:0 Milutinović 14\nNOTE: Match preceded by WC opening ceremony",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
-      "date": "1954-06-16",
-      "city": "Genève",
       "stage": "group",
       "group": "A",
+      "matchday": null,
+      "date": "1954-06-16",
+      "city": "Genève",
       "home": "BRA",
       "away": "MEX",
       "score": [
         5,
         0
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Wyssling",
+          "country": "SUI"
+        },
+        "attendance": 12000,
+        "halfTime": "4:0",
+        "stadium": "Les Charmilles",
+        "events": [
+          {
+            "minute": 24,
+            "player": "Baltazar",
+            "team": "BRA",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 29,
+            "player": "Didi",
+            "team": "BRA",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 34,
+            "player": "Pinga",
+            "team": "BRA",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "minute": 42,
+            "player": "Pinga",
+            "team": "BRA",
+            "score": [
+              4,
+              0
+            ]
+          },
+          {
+            "minute": 90,
+            "player": "Julinho",
+            "team": "BRA",
+            "score": [
+              5,
+              0
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "16.06.54  (18.00) Geneva, Les Charmilles\nBRA - MEX 5:0 (4:0)\n(+12000) Wyssling SUI, Costa POR, Schönholser SUI\nBRA: Castilho - D.Santos, N.Santos, Brandaozinho - Pinheiro, Bauer (c) -\nJulinho, Didi, Baltazar, Pinga, Rodriguez\nMEX: Mota - López, Gomez, Cárdenas - Romo, Avalos - Torres, Naranjo (c),\nLamadrid, Balcázar, Arellano\n1:0 Baltazar 24, 2:0 Didi 29 f, 3:0 Pinga 34, 4:0 Pinga 42, 5:0 Julinho 90",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
-      "date": "1954-06-19",
-      "city": "Genève",
       "stage": "group",
       "group": "A",
+      "matchday": null,
+      "date": "1954-06-19",
+      "city": "Genève",
       "home": "FRA",
       "away": "MEX",
       "score": [
         3,
         2
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Asensi",
+          "country": "ESP"
+        },
+        "attendance": 20000,
+        "halfTime": "1:0",
+        "stadium": "Les Charmilles",
+        "events": [
+          {
+            "minute": 19,
+            "player": "Vincent",
+            "team": "FRA",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 46,
+            "player": "Cárdenas",
+            "team": "FRA",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 54,
+            "player": "Lamadrid",
+            "team": "MEX",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 85,
+            "player": "Balcázar",
+            "team": "MEX",
+            "score": [
+              2,
+              2
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "19.06.54  (17.10) Geneva, Les Charmilles\nFRA - MEX 3:2 (1:0)\n(-20000) Asensi ESP, Franken BEL, Baumberger SUI\nFRA: Remetter - Gianessi, Kaelbel, Marche (c) - Ben Tifour, Marcel -\nKopa, Mahjoub, Strappe, Dereuddre, Vincent\nMEX: Carbajal - López, Martinez, Cárdenas - Romo, Avalos - Torres,\nNaranjo (c), Lamadrid, Balcázar, Arellano\n1:0 Vincent 19, 2:0 Cárdenas 46 o, 2:1 Lamadrid 54, 2:2 Balcázar 85, 3:2\nKopa 88 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
-      "date": "1954-06-19",
-      "city": "Lausanne",
       "stage": "group",
       "group": "A",
+      "matchday": null,
+      "date": "1954-06-19",
+      "city": "Lausanne",
       "home": "BRA",
       "away": "YUG",
       "score": [
         1,
         1
       ],
+      "status": "played",
       "notes": [
         "aet"
-      ]
+      ],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Faultless",
+          "country": "SCO"
+        },
+        "attendance": 21000,
+        "halfTime": "0:0, 1:1, 1:1",
+        "stadium": "La Pontaise",
+        "events": [
+          {
+            "minute": 49,
+            "player": "Zebec",
+            "team": "YUG",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "minute": 69,
+            "player": "Didi",
+            "team": "BRA",
+            "score": [
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "19.06.54  (17.00) Lausanne, La Pontaise\nBRA - JUG 1:1 (0:0, 1:1, 1:1)\n(~21000) Faultless SCO, Steiner AUT, van Gunten SUI\nBRA: Castilho - D.Santos, N.Santos, Brandaozinho - Pinheiro, Bauer (c) -\nJulinho, Didi, Baltazar, Pinga, Rodriguez\nJUG: Beara - Stanković, Crnković, Čajkovski - I.Horvat, Boskov - Milutinović,\nMitić (c), Vukas, Dvornić, Zebec\n0:1 Zebec 49, 1:1 Didi 69",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
-      "date": "1954-06-17",
-      "city": "Zürich",
       "stage": "group",
       "group": "B",
+      "matchday": null,
+      "date": "1954-06-17",
+      "city": "Zürich",
       "home": "HUN",
       "away": "KOR",
       "score": [
         9,
         0
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Vincentini",
+          "country": "FRA"
+        },
+        "attendance": 13000,
+        "halfTime": "4:0",
+        "stadium": "June 17th - Sportzplatz Hardturm",
+        "events": [
+          {
+            "minute": 11,
+            "player": "Puskás",
+            "team": "HUN",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 16,
+            "player": "Lantos",
+            "team": "HUN",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 24,
+            "player": "Kocsis",
+            "team": "HUN",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "minute": 31,
+            "player": "Kocsis",
+            "team": "HUN",
+            "score": [
+              4,
+              0
+            ]
+          },
+          {
+            "minute": 49,
+            "player": "Kocsis",
+            "team": "HUN",
+            "score": [
+              5,
+              0
+            ]
+          },
+          {
+            "minute": 59,
+            "player": "Czibor",
+            "team": "HUN",
+            "score": [
+              6,
+              0
+            ]
+          },
+          {
+            "minute": 76,
+            "player": "Palotás",
+            "team": "HUN",
+            "score": [
+              7,
+              0
+            ]
+          },
+          {
+            "minute": 83,
+            "player": "Palotás",
+            "team": "HUN",
+            "score": [
+              8,
+              0
+            ]
+          },
+          {
+            "minute": 89,
+            "player": "Puskás",
+            "team": "HUN",
+            "score": [
+              9,
+              0
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "17.06.54  (18.00) Zürich, June 17th - Sportzplatz Hardturm\nHUN - KOR 9:0 (4:0)\n(~13000) Vincentini FRA, Steiner AUT, van Gunten SUI\nHUN: Grosics - Buzánszky, Lantos, Bozsik - Lóránt, Szojka - Budai,\nKocsis, Palotás, Puskás, Czibor\nKOR: Hong Duck-young - Park Kyu-chong, Min Byung-dae (c), Park Yae-\nseung - Kang Chang-gi, Choo Young-kwang - Chung Nam-sik, Park Il-kap, Sung\nNak-woon, Woo Sang-kwoo, Choi Chung-min\n1:0 Puskás 11, 2:0 Lantos 16 f, 3:0 Kocsis 24, 4:0 Kocsis 31, 5:0 Kocsis 49,\n6:0 Czibor 59, 7:0 Palotás 76, 8:0 Palotás 83, 9:0 Puskás 89",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
-      "date": "1954-06-17",
-      "city": "Bern",
       "stage": "group",
       "group": "B",
+      "matchday": null,
+      "date": "1954-06-17",
+      "city": "Bern",
       "home": "FRG",
       "away": "TUR",
       "score": [
         4,
         1
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Costa",
+          "country": "POR"
+        },
+        "attendance": 28000,
+        "halfTime": null,
+        "stadium": "Wankdorf Stadion",
+        "events": [
+          {
+            "minute": 3,
+            "player": "Suat",
+            "team": "TUR",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "minute": 12,
+            "player": "Schäfer",
+            "team": "FRG",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "minute": 51,
+            "player": "Klodt",
+            "team": "FRG",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 80,
+            "player": "O.Walter",
+            "team": "FRG",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "minute": 84,
+            "player": "Morlock",
+            "team": "FRG",
+            "score": [
+              4,
+              1
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "17.06.54  (18.00) Berne, Wankdorf Stadion\n(~28000) Costa POR, Zsolt HUN, Merlotti SUI\nGER: Turek - Laband, Kohlmeyer, Eckel - Posipal, Mai - Klodt, Morlock,\nO.Walter, F.Walter (c), Schäfer\nTUR: Turgay - Ridvan, Basri, Mustafa - Çetin, Rober - Erol, Suat, Feridun,\nBurhan, Lefter\n0:1 Suat 3, 1:1 Schäfer 12, 2:1 Klodt 51, 3:1 O.Walter 80, 4:1 Morlock 84",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
-      "date": "1954-06-20",
-      "city": "Basel",
       "stage": "group",
       "group": "B",
+      "matchday": null,
+      "date": "1954-06-20",
+      "city": "Basel",
       "home": "HUN",
       "away": "FRG",
       "score": [
         8,
         3
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Ling",
+          "country": "ENG"
+        },
+        "attendance": 56000,
+        "halfTime": "3:1",
+        "stadium": "St. Jakob Stadion",
+        "events": [
+          {
+            "minute": 4,
+            "player": "Kocsis",
+            "team": "HUN",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 17,
+            "player": "Puskás",
+            "team": "HUN",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 21,
+            "player": "Kocsis",
+            "team": "HUN",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "minute": 28,
+            "player": "Pfaff",
+            "team": "FRG",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "minute": 52,
+            "player": "Hidegkuti",
+            "team": "HUN",
+            "score": [
+              4,
+              1
+            ]
+          },
+          {
+            "minute": 56,
+            "player": "Hidegkuti",
+            "team": "HUN",
+            "score": [
+              5,
+              1
+            ]
+          },
+          {
+            "minute": 69,
+            "player": "Kocsis",
+            "team": "HUN",
+            "score": [
+              6,
+              1
+            ]
+          },
+          {
+            "minute": 75,
+            "player": "J.Tóth",
+            "team": "HUN",
+            "score": [
+              7,
+              1
+            ]
+          },
+          {
+            "minute": 76,
+            "player": "Rahn",
+            "team": "FRG",
+            "score": [
+              7,
+              2
+            ]
+          },
+          {
+            "minute": 79,
+            "player": "Kocsis",
+            "team": "HUN",
+            "score": [
+              8,
+              2
+            ]
+          },
+          {
+            "minute": 84,
+            "player": "Hermann",
+            "team": "FRG",
+            "score": [
+              8,
+              3
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "20.06.54  (16.50) Basle, St. Jakob Stadion\nHUN - GER 8:3 (3:1)\n(+56000) Ling ENG, Griffiths WAL, Schicken SUI\nHUN: Grosics - Buzánszky, Lantos, Bozsik - Lóránt, Zakárias, J.Tóth,\nKocsis, Hidegkuti, Puskás (c), Czibor\nGER: Kwiatkowski - Bauer, Kohlmeyer, Posipal - Liebrich, Mebus - Rahn,\nEckel, F.Walter (c), Pfaff, Herrmann\n1:0 Kocsis 4, 2:0 Puskás 17, 3:0 Kocsis 21, 3:1 Pfaff 28, 4:1 Hidegkuti 52,\n5:1 Hidegkuti 56, 6:1 Kocsis 69, 7:1 J.Tóth 75, 7:2 Rahn 76, 8:2 Kocsis 79,\n8:3 Hermann 84",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
-      "date": "1954-06-20",
-      "city": "Genève",
       "stage": "group",
       "group": "B",
+      "matchday": null,
+      "date": "1954-06-20",
+      "city": "Genève",
       "home": "TUR",
       "away": "KOR",
       "score": [
         7,
         0
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Marino",
+          "country": "URU"
+        },
+        "attendance": 4000,
+        "halfTime": "4:0",
+        "stadium": "Les Charmilles",
+        "events": [
+          {
+            "minute": 18,
+            "player": "Suat",
+            "team": "TUR",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 18,
+            "player": "Lefter",
+            "team": "TUR",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 30,
+            "player": "Suat",
+            "team": "TUR",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "minute": 38,
+            "player": "Burhan",
+            "team": "TUR",
+            "score": [
+              4,
+              0
+            ]
+          },
+          {
+            "minute": 64,
+            "player": "Burhan",
+            "team": "TUR",
+            "score": [
+              5,
+              0
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "20.06.54  (17.00) Geneva, Les Charmilles\nTUR - KOR 7:0 (4:0)\n(~4000) Marino URU, Orlandini ITA, Schönholser SUI\nTUR: Turgay (c) - Ridvan, Basri, Mustafa - Çetin, Rober - Erol, Suat, Necmi,\nBurhan, Lefter\nKOR: Hong Duck-young - Park Kyu-chong (c), Han Chang-wha, Lee Chung-kap -\nKang Chang-gi, Kim Ji-sung - Choi Young-kwun, Lee Seo-nam, Lee Ki-joo, Woo\nSang-kwon, Chung Kook-chin\n1:0 Suat 18, 2:0 Lefter 18, 3:0 Suat 30, 4:0 Burhan 38, 5:0 Burhan 64, 6:0\nBurhan 70 h, 7:0 Erol 76",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
-      "date": "1954-06-16",
-      "city": "Bern",
+      "stage": "playoff",
+      "group": null,
+      "matchday": null,
+      "date": "1954-06-23",
+      "city": "Zürich",
+      "home": "FRG",
+      "away": "TUR",
+      "score": [
+        7,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Vincentini",
+          "country": "ITA"
+        },
+        "attendance": 17000,
+        "halfTime": "3:1",
+        "stadium": "Sportzplatz Hardturm (playoff)",
+        "events": [
+          {
+            "minute": 7,
+            "player": "O.Walter",
+            "team": "FRG",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 11,
+            "player": "Schäfer",
+            "team": "FRG",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 22,
+            "player": "Mustafa",
+            "team": "TUR",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 31,
+            "player": "Morlock",
+            "team": "FRG",
+            "score": [
+              3,
+              1
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "23.06.54  (18.00) Zürich, Sportzplatz Hardturm (playoff)\nGER - TUR 7:2 (3:1)\n(~17000) Vincentini ITA, Faultless SCO, Dörflinger SUI\nGER: Turek - Laband, Bauer, Eckel - Posipal, Mai - Klodt, Morlock, O.Walter,\nF.Walter (c), Schäfer\nTUR: Sükrü - Ridvan, Basri, Naci - Mustafa, Cetin - Rober, Erol, Necmi,\nCoskun, Lefter\n1:0 O.Walter 7, 2:0 Schäfer 11, 2:1 Mustafa 22 h, 3:1 Morlock 31, 4:1 Morlock\n62, 5:1 F.Walter 63, 6:1 Morlock 71, 7:1 Schäfer 79, 7:2 Lefter 84",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "m010",
       "stage": "group",
       "group": "C",
+      "matchday": null,
+      "date": "1954-06-16",
+      "city": "Bern",
       "home": "URU",
       "away": "TCH",
       "score": [
         2,
         0
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Ellis",
+          "country": "ENG"
+        },
+        "attendance": 20500,
+        "halfTime": "0:0",
+        "stadium": "Wankdorf Stadion",
+        "events": [
+          {
+            "minute": 70,
+            "player": "Miguez",
+            "team": "URU",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 84,
+            "player": "Schiaffino",
+            "team": "URU",
+            "score": [
+              2,
+              0
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "16.06.54  (18.00) Berne, Wankdorf Stadion\nURU - CZE 2:0 (0:0)\n(+20500) Ellis ENG, Schicker SUI, Ling ENG\nURU: Maspoli - Santamaria, Martinez, Andrade - Varela (c), Cruz - Abbadie,\nAmbrois, Miguez, Schiaffino, Borges\nCZE: Reimann - Šafránek, Novák (c), Trnka - Hledik, Hertl - Hlaváček, Hemele,\nKačáni, Pažický, Pešek\n1:0 Miguez 70 h, 2:0 Schiaffino 84 f",
+        "lang": "en"
+      }
     },
     {
-      "id": "m010",
-      "date": "1954-06-16",
-      "city": "Zürich",
+      "id": "m011",
       "stage": "group",
       "group": "C",
+      "matchday": null,
+      "date": "1954-06-16",
+      "city": "Zürich",
       "home": "AUT",
       "away": "SCO",
       "score": [
         1,
         0
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Franken",
+          "country": "BEL"
+        },
+        "attendance": 25000,
+        "halfTime": "1:0",
+        "stadium": "Sportzplatz Hardturm",
+        "events": [
+          {
+            "minute": 32,
+            "player": "Probst",
+            "team": "AUT",
+            "score": [
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "16.06.54  (18.00) Zürich, Sportzplatz Hardturm\nAUT - SCO 1:0 (1:0)\n(~25000) Franken BEL, Vianna BRA, Gulde SUI\nAUT: Schmied - Hanappi, Barschandt, Ocwirk (c) - Happel, Koller - R.Körner,\nSchleger, Dienst, Probst, A.Körner\nSCO: Martin - Cunningham (c), Aird, Docherty - Davidson, Cowie - McKenzie,\nFernie, Mochan, Brown, Ormond\n1:0 Probst 32",
+        "lang": "en"
+      }
     },
     {
-      "id": "m011",
-      "date": "1954-06-19",
-      "city": "Basel",
+      "id": "m012",
       "stage": "group",
       "group": "C",
+      "matchday": null,
+      "date": "1954-06-19",
+      "city": "Basel",
       "home": "URU",
       "away": "SCO",
       "score": [
         7,
         0
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Orlandini",
+          "country": "ITA"
+        },
+        "attendance": 34000,
+        "halfTime": "2:0",
+        "stadium": "St.Jakob Stadion",
+        "events": [
+          {
+            "minute": 17,
+            "player": "Borges",
+            "team": "URU",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 31,
+            "player": "Miguez",
+            "team": "URU",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 48,
+            "player": "Borges",
+            "team": "URU",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "minute": 55,
+            "player": "Abbadie",
+            "team": "URU",
+            "score": [
+              4,
+              0
+            ]
+          },
+          {
+            "minute": 58,
+            "player": "Borges",
+            "team": "URU",
+            "score": [
+              5,
+              0
+            ]
+          },
+          {
+            "minute": 82,
+            "player": "Miguez",
+            "team": "URU",
+            "score": [
+              6,
+              0
+            ]
+          },
+          {
+            "minute": 84,
+            "player": "Abbadie",
+            "team": "URU",
+            "score": [
+              7,
+              0
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "19.06.54  (16.50) Basel, St.Jakob Stadion\nURU - SCO 7:0 (2:0)\n(~34000) Orlandini ITA, Wyssling SUI, Guidi SUI\nURU: Maspoli - Santamaria, Martinez, Andrade - Varela (c), Cruz -\nAbbadie, Ambrois, Miguez, Schiaffino, Borges\nSCO: Martin - Cunningham (c), Aird, Docherty - Davidson, Cowie - McKenzie,\nFernie, Mochan, Brown, Ormond\n1:0 Borges 17, 2:0 Miguez 31, 3:0 Borges 48, 4:0 Abbadie 55, 5:0 Borges 58,\n6:0 Miguez 82, 7:0 Abbadie 84",
+        "lang": "en"
+      }
     },
     {
-      "id": "m012",
-      "date": "1954-06-19",
-      "city": "Zürich",
+      "id": "m013",
       "stage": "group",
       "group": "C",
+      "matchday": null,
+      "date": "1954-06-19",
+      "city": "Zürich",
       "home": "AUT",
       "away": "TCH",
       "score": [
         5,
         0
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Stefanović",
+          "country": "YUG"
+        },
+        "attendance": 21000,
+        "halfTime": "4:0",
+        "stadium": "Sportzplatz Hardturm",
+        "events": [
+          {
+            "minute": 3,
+            "player": "Stojaspal",
+            "team": "AUT",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 4,
+            "player": "Probst",
+            "team": "AUT",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 21,
+            "player": "Probst",
+            "team": "AUT",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "minute": 24,
+            "player": "Probst",
+            "team": "AUT",
+            "score": [
+              4,
+              0
+            ]
+          },
+          {
+            "minute": 65,
+            "player": "Stojaspal",
+            "team": "AUT",
+            "score": [
+              5,
+              0
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "19.06.54  (17.00) Zürich, Sportzplatz Hardturm\nAUT - CZE 5:0 (4:0)\n(~21000) Stefanović JUG, Dörflinger SUI, Gulde SUI\nAUT: Schmied - Hanappi, Barschandt, Ocwirk (c) - Happel, Koller -\nR.Körner, Wagner, Stojaspal, Probst, A.Körner\nCZE: Stacho - Šafránek, Novák (c), Trnka - Pluskal, Hertl - Hlaváček, Hemele,\nKačáni, Pažický, Kraus\n1:0 Stojaspal 3, 2:0 Probst 4, 3:0 Probst 21, 4:0 Probst 24, 5:0 Stojaspal 65",
+        "lang": "en"
+      }
     },
     {
-      "id": "m013",
-      "date": "1954-06-17",
-      "city": "Basel",
+      "id": "m014",
       "stage": "group",
       "group": "D",
+      "matchday": null,
+      "date": "1954-06-17",
+      "city": "Basel",
       "home": "ENG",
       "away": "BEL",
       "score": [
         4,
         4
       ],
-      "notes": [
-        "aet"
-      ]
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Schmetzer",
+          "country": "FRG"
+        },
+        "attendance": 14000,
+        "halfTime": "2:1, 3:3, 4:3",
+        "stadium": "St.Jakob Stadion",
+        "events": [
+          {
+            "minute": 6,
+            "player": "Anoul",
+            "team": "BEL",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "minute": 25,
+            "player": "Broadis",
+            "team": "ENG",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "minute": 37,
+            "player": "Lofthouse",
+            "team": "ENG",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 62,
+            "player": "Broadis",
+            "team": "ENG",
+            "score": [
+              3,
+              1
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "17.06.54  (18.10) Basel, St.Jakob Stadion\nENG - BEL 4:4 (2:1, 3:3, 4:3)\n(~14000) Schmetzer GER, Büchmuller SUI, Rufli SUI\nENG: Merrick - Staniforth, Byrne, Wright (c) - Owen, Dickinson - Matthews,\nBroadis, Lofthouse, Taylor, Finney\nBEL: Gernaey - Dries, van Brandt, Huysmans - Carre, Mees - Mermans (c), Houf,\nCoppens, Anoul, P.van Den Bosch\n0:1 Anoul 6, 1:1 Broadis 25, 2:1 Lofthouse 37 h, 3:1 Broadis 62, 3:2 Anoul\n72 h, 3:3 Coppens 76, 4:3 Lofthouse 92, 4:4 Dickinson 93 o",
+        "lang": "en"
+      }
     },
     {
-      "id": "m014",
-      "date": "1954-06-17",
-      "city": "Lausanne",
+      "id": "m015",
       "stage": "group",
       "group": "D",
+      "matchday": null,
+      "date": "1954-06-17",
+      "city": "Lausanne",
       "home": "SUI",
       "away": "ITA",
       "score": [
         2,
         1
-      ]
-    },
-    {
-      "id": "m015",
-      "date": "1954-06-20",
-      "city": "Bern",
-      "stage": "group",
-      "group": "D",
-      "home": "ENG",
-      "away": "SUI",
-      "score": [
-        2,
-        0
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Vianna",
+          "country": "BRA"
+        },
+        "attendance": 40000,
+        "halfTime": "1:1",
+        "stadium": "La Pontaise",
+        "events": [
+          {
+            "minute": 18,
+            "player": "Ballaman",
+            "team": "SUI",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 44,
+            "player": "Boniperti",
+            "team": "ITA",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "minute": 79,
+            "player": "Hügi",
+            "team": "SUI",
+            "score": [
+              2,
+              1
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "17.06.54  (17.50) Lausanne, La Pontaise\nSUI - ITA 2:1 (1:1)\n(+40000) Vianna BRA, Asensi ESP, Morino URU\nSUI: Parlier - Neury, Kernen, Flückiger - Bocquet (c), Casali - Ballaman,\nVonlanthen, Hügi, Meier, Fatton\nITA: Ghezzi - Vincenzi, Giacomazzi, Neri - Tognon, Nesti - Muccinelli,\nBoniperti (c), Galli, Pandolfini, Lorenzi\n1:0 Ballaman 18 h, 1:1 Boniperti 44, 2:1 Hügi 79",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
-      "date": "1954-06-20",
-      "city": "Lugano",
       "stage": "group",
       "group": "D",
+      "matchday": null,
+      "date": "1954-06-20",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Zsolt",
+          "country": "HUN"
+        },
+        "attendance": 43000,
+        "halfTime": "0:0",
+        "stadium": "Wankdorf Stadion",
+        "events": [
+          {
+            "minute": 43,
+            "player": "Mullen",
+            "team": "ENG",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 69,
+            "player": "Wilshaw",
+            "team": "ENG",
+            "score": [
+              2,
+              0
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "20.06.54  (17.10) Berne, Wankdorf Stadion\nENG - SUI 2:0 (0:0)\n(+43000) Zsolt HUN, Stefanović JUG, Costa POR\nENG: Merrick - Staniforth, Byrne, Wright (c) - McGarry, Dickinson -\nWilshaw, Broadis, Mullen, Taylor, Finney\nSUI: Parlier - Neury, Kernen, Eggimann - Bocquet (c), Bigler - Ballaman,\nVonlanthen, Antenen, Meier, Fatton\n1:0 Mullen 43, 2:0 Wilshaw 69",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "m017",
+      "stage": "group",
+      "group": "D",
+      "matchday": null,
+      "date": "1954-06-20",
+      "city": "Lugano",
       "home": "ITA",
       "away": "BEL",
       "score": [
         4,
         1
-      ]
-    },
-    {
-      "id": "m017",
-      "date": "1954-06-23",
-      "city": "Zürich",
-      "stage": "playoff",
-      "group": "B",
-      "home": "FRG",
-      "away": "TUR",
-      "score": [
-        7,
-        2
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "STeiner",
+          "country": "AUT"
+        },
+        "attendance": 25000,
+        "halfTime": "1:0",
+        "stadium": "Stadio Comunale di Cornaredo",
+        "events": [
+          {
+            "minute": 41,
+            "player": "Pandolfini",
+            "team": "ITA",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 49,
+            "player": "Galli",
+            "team": "ITA",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 58,
+            "player": "Frignani",
+            "team": "ITA",
+            "score": [
+              3,
+              0
+            ]
+          },
+          {
+            "minute": 73,
+            "player": "Lorenzi",
+            "team": "ITA",
+            "score": [
+              4,
+              0
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "20.06.54  (17.00) Lugano, Stadio Comunale di Cornaredo\nITA - BEL 4:1 (1:0)\n(~25000) STeiner AUT, Schmetzer GER, Merlotti SUI\nITA: Ghezzi - Magnini, Giacomazzi, Neri - Tognon, Nesti - Frignani, Cappello,\nGalli, Pandolfini (c), Lorenzi\nBEL: Gernaey - Dries, van Brandt, Huysmans - Carre, Mees - Mermans (c),\nH.van Den Bosch, Coppens, Anoul, P.van Den Bosch\n1:0 Pandolfini 41 p, 2:0 Galli 49 h, 3:0 Frignani 58, 4:0 Lorenzi 73, 4:1\nAnoul 81",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
+      "stage": "playoff",
+      "group": null,
+      "matchday": null,
       "date": "1954-06-23",
       "city": "Basel",
-      "stage": "playoff",
-      "group": "D",
       "home": "SUI",
       "away": "ITA",
       "score": [
         4,
         1
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Griffiths",
+          "country": "WAL"
+        },
+        "attendance": 30000,
+        "halfTime": "1:0",
+        "stadium": "St.Jakob Stadion (playoff)",
+        "events": [
+          {
+            "minute": 12,
+            "player": "Hügl",
+            "team": "SUI",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 48,
+            "player": "Ballmann",
+            "team": "SUI",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 67,
+            "player": "Nesti",
+            "team": "ITA",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 85,
+            "player": "Hügl",
+            "team": "SUI",
+            "score": [
+              3,
+              1
+            ]
+          },
+          {
+            "minute": 90,
+            "player": "Fatton",
+            "team": "SUI",
+            "score": [
+              4,
+              1
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "23.06.54  (18.00) Basel, St.Jakob Stadion (playoff)\nSUI - ITA 4:1 (1:0)\n(~30000) Griffiths WAL, Ling ENG, Costa POR\nSUI: Parlier - Neury, Kernen, Eggimann - Bocquet (c), Casali - Ballaman,\nVonlanthen, Hügi, Antenen, Fatton\nITA: Viola - Magnini, Giacomazzi, Mari - Tognon, Nesti - Muccinelli,\nSegato, Frignani, Pandolfini (c), Lorenzi\n1:0 Hügl 12, 2:0 Ballmann 48 h, 2:1 Nesti 67, 3:1 Hügl 85, 4:1 Fatton 90",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
       "date": "1954-06-26",
       "city": "Lausanne",
-      "stage": "qf",
-      "home": "AUT",
-      "away": "SUI",
+      "home": "SUI",
+      "away": "AUT",
       "score": [
-        7,
-        5
-      ]
+        5,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Faultless",
+          "country": "SCO"
+        },
+        "attendance": 32000,
+        "halfTime": "5:4",
+        "stadium": "La Pontaise",
+        "events": [
+          {
+            "minute": 16,
+            "player": "Ballaman",
+            "team": "SUI",
+            "score": [
+              0,
+              1
+            ]
+          },
+          {
+            "minute": 17,
+            "player": "Hügi",
+            "team": "SUI",
+            "score": [
+              0,
+              2
+            ]
+          },
+          {
+            "minute": 23,
+            "player": "Hügi",
+            "team": "SUI",
+            "score": [
+              0,
+              3
+            ]
+          },
+          {
+            "minute": 25,
+            "player": "Wagner",
+            "team": "AUT",
+            "score": [
+              1,
+              3
+            ]
+          },
+          {
+            "minute": 26,
+            "player": "A.Körner",
+            "team": "AUT",
+            "score": [
+              2,
+              2
+            ]
+          },
+          {
+            "minute": 28,
+            "player": "Wagner",
+            "team": "AUT",
+            "score": [
+              3,
+              3
+            ]
+          },
+          {
+            "minute": 32,
+            "player": "Ocwirk",
+            "team": "AUT",
+            "score": [
+              4,
+              3
+            ]
+          },
+          {
+            "minute": 34,
+            "player": "A.Körner",
+            "team": "AUT",
+            "score": [
+              5,
+              3
+            ]
+          },
+          {
+            "minute": 41,
+            "player": "Ballaman",
+            "team": "SUI",
+            "score": [
+              5,
+              4
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "26.06.54  (17.00) Lausanne, La Pontaise\nAUT - SUI 7:5 (5:4)\n(-32000) Faultless SCO, Schmetzer GER, Asensi ESP\nAUT: Schmied - Hanappi, Barschandt, Ocwirk (c) - Happel, Koller - R.Körner,\nWagner, Stojaspal, Probst, A.Körner\nSUI: Parlier - Neury, Kernen, Eggimann - Bocquet (c), Casali - Antenen,\nVonlanthen, Hügi, Ballaman, Fatton\n0:1 Ballaman 16, 0:2 Hügi 17, 0:3 Hügi 23, 1:3 Wagner 25, 2:2 A.Körner 26,\n3:3 Wagner 28, 4:3 Ocwirk 32, 5:3 A.Körner 34, 5:4 Ballaman 41, 6:4 Wagner\n52, 6:5 Hügi 60, 7:5 Probst 77 (42 A.Körner missed penalty)",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
       "date": "1954-06-26",
       "city": "Basel",
-      "stage": "qf",
       "home": "URU",
       "away": "ENG",
       "score": [
         4,
         2
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Steiner",
+          "country": "AUT"
+        },
+        "attendance": 50000,
+        "halfTime": "2:1",
+        "stadium": "St.Jakob Stadion",
+        "events": [
+          {
+            "minute": 5,
+            "player": "Borges",
+            "team": "URU",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 16,
+            "player": "Lofthouse",
+            "team": "ENG",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "minute": 44,
+            "player": "Varela",
+            "team": "URU",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 47,
+            "player": "Schiaffino",
+            "team": "URU",
+            "score": [
+              3,
+              1
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "26.06.54  (17.00) Basle, St.Jakob Stadion\nURU - ENG 4:2 (2:1)\n(~50000) Steiner AUT, Orlandini ITA, Stefanović JUG\nURU: Maspoli - Martinez, Santamaria, Andrade - Varela (c), Cruz - Abbadie,\nAmbrois, Miguez, Schiaffino, Borges\nENG: Merrick - Staniforth, Byrne, McGarry - (c) Wright, Dickinson - Matthews,\nBroadis, Lofthouse, Wilshaw, Finney\n1:0 Borges 5, 1:1 Lofthouse 16, 2:1 Varela 44, 3:1 Schiaffino 47, 3:2\nFinney 67, 4:2 Ambrois 78",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
       "date": "1954-06-27",
       "city": "Bern",
-      "stage": "qf",
       "home": "HUN",
       "away": "BRA",
       "score": [
         4,
         2
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Ellis",
+          "country": "ENG"
+        },
+        "attendance": 40000,
+        "halfTime": "2:1",
+        "stadium": "Wankdorfstadion",
+        "events": [
+          {
+            "minute": 4,
+            "player": "Hidegkuti",
+            "team": "HUN",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 7,
+            "player": "Kocsis",
+            "team": "HUN",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 18,
+            "player": "D.Santos",
+            "team": "BRA",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 53,
+            "player": "Lántós",
+            "team": "HUN",
+            "score": [
+              3,
+              1
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "27.06.54  (17.00) Berne, Wankdorfstadion\nHUN - BRA 4:2 (2:1)\n(~40000) Ellis ENG, Ling ENG, Wyssling SUI\nHUN: Grosics - Buzánszky, Lantos, Bozsik (c) - Lóránt, Zakárias - M.Tóth,\nKocsis, Hidegkuti, Czibor, J.Tóth\nBRA: Castilho - D.Santos, N.Santos, Brandaozinho - Pinheiro, Bauer (c) -\nJulinho, Didi, Indio, Humberto, Maurinho\n1:0 Hidegkuti 4, 2:0 Kocsis 7 h, 2:1 D.Santos 18 p, 3:1 Lántós 53 p, 3:2\nJulinho 65, 4:2 Kocsis 88 h\nsent off: Bozsik (71) / N.Santos (71), Humberto (79)",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
+      "stage": "qf",
+      "group": null,
+      "matchday": null,
       "date": "1954-06-27",
       "city": "Genève",
-      "stage": "qf",
       "home": "FRG",
       "away": "YUG",
       "score": [
         2,
         0
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Zsolt",
+          "country": "HUN"
+        },
+        "attendance": 17000,
+        "halfTime": "1:0",
+        "stadium": "Les Charmilles",
+        "events": [
+          {
+            "minute": 10,
+            "player": "Horvat",
+            "team": "FRG",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 86,
+            "player": "Rahn",
+            "team": "FRG",
+            "score": [
+              2,
+              0
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "27.06.54  (17.00) Geneva, Les Charmilles\nGER - JUG 2:0 (1:0)\n(~17000) Zsolt HUN, Franken BEL, Büchmuller SUI\nGER: Turek - Laband, Kohlmeyer, Eckel - Liebrich, Mai - Rahn, Morlock,\nO.Walter, F.Walter (c), Schäfer\nJUG: Beara - B.Stanković, Crnković, Zl.Čajkovski - I.Horvat, Boskov -\nMilutinović, Mitić, Vukas, Bobek (c), Zebec\n1:0 Horvat 10 o, 2:0 Rahn 86",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
       "date": "1954-06-30",
       "city": "Basel",
-      "stage": "sf",
       "home": "FRG",
       "away": "AUT",
       "score": [
         6,
         1
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Orlandini",
+          "country": "ITA"
+        },
+        "attendance": 58000,
+        "halfTime": "1:0",
+        "stadium": "St.Jakob Stadion",
+        "events": [
+          {
+            "minute": 31,
+            "player": "Schäfer",
+            "team": "FRG",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 47,
+            "player": "Morlock",
+            "team": "FRG",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 52,
+            "player": "Probst",
+            "team": "AUT",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 56,
+            "player": "F.Walter",
+            "team": "FRG",
+            "score": [
+              3,
+              1
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "30.06.54  (18.00) Basel, St.Jakob Stadion\nGER - AUT 6:1 (1:0)\n(+58000) Orlandini ITA, Ellis ENG, Buchmüller SUI\nGER: Turek - Posipal, Kohlmeyer, Eckel - Liebrich, Mai - Rahn, Morlock,\nO.Walter, F.Walter (c), Schäfer\nAUT: Zeman - Hanappi, Schleger, Ocwirk (c) - Happel, Koller, R.Körner,\nWagner, Stojaspal, Probst, A.Körner\n1:0 Schäfer 31, 2:0 Morlock 47 h, 2:1 Probst 52, 3:1 F.Walter 56 p, 4:1 O.Walter\n61 h, 5:1 F.Walter 65 p, 6:1 O.Walter 89 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
+      "stage": "sf",
+      "group": null,
+      "matchday": null,
       "date": "1954-06-30",
       "city": "Lausanne",
-      "stage": "sf",
       "home": "HUN",
       "away": "URU",
       "score": [
         4,
         2
       ],
-      "notes": [
-        "aet"
-      ]
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Griffiths",
+          "country": "WAL"
+        },
+        "attendance": 37000,
+        "halfTime": "1:0, 2:2, 2:2",
+        "stadium": "La Pontaise",
+        "events": [
+          {
+            "minute": 12,
+            "player": "Czibor",
+            "team": "HUN",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 47,
+            "player": "Hidegkuti",
+            "team": "HUN",
+            "score": [
+              2,
+              0
+            ]
+          },
+          {
+            "minute": 76,
+            "player": "Hohberg",
+            "team": "URU",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 87,
+            "player": "Hohberg",
+            "team": "URU",
+            "score": [
+              2,
+              2
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "30.06.54  (18.00) Lausanne, La Pontaise\nHUN - URU 4:2 (1:0, 2:2, 2:2)\n(~37000) Griffiths WAL, Faultless SCO, Vincentini FRA\nHUN: Grosics - Buzanszky, Lantos, Bozsik (c) - Lóránt, Zakariás - Budai,\nKocsis, Hidegkuti, Czibor, Palotás\nURU: Maspoli - Martinez (c), Santamaria, Andrade - Carballo, Cruz - Souto,\nAmbrois, Hohberg, Schiaffino, Borges\n1:0 Czibor 12, 2:0 Hidegkuti 47 h, 2:1 Hohberg 76, 2:2 Hohberg 87, 3:2 Kocsis\n109 h, 4:2 Kocsis 117 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
+      "stage": "third",
+      "group": null,
+      "matchday": null,
       "date": "1954-07-03",
       "city": "Zürich",
-      "stage": "third",
       "home": "AUT",
       "away": "URU",
       "score": [
         3,
         1
-      ]
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "extra": {
+        "referee": {
+          "name": "Wyssling",
+          "country": "SUI"
+        },
+        "attendance": 32000,
+        "halfTime": "1:1",
+        "stadium": "Sportzplatz Hardturm",
+        "events": [
+          {
+            "minute": 16,
+            "player": "Stojaspal",
+            "team": "AUT",
+            "score": [
+              1,
+              0
+            ]
+          },
+          {
+            "minute": 21,
+            "player": "Hohberg",
+            "team": "URU",
+            "score": [
+              1,
+              1
+            ]
+          },
+          {
+            "minute": 59,
+            "player": "Cruz",
+            "team": "AUT",
+            "score": [
+              2,
+              1
+            ]
+          },
+          {
+            "minute": 79,
+            "player": "Ocwirk",
+            "team": "AUT",
+            "score": [
+              3,
+              1
+            ]
+          }
+        ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "03.07.54  (17.00) Zürich, Sportzplatz Hardturm\nAUT - URU 3:1 (1:1)\n(+32000) Wyssling SUI, Zsolt HUN, Ellis ENG\nAUT: Schmied - Hanappi, Barschandt, Ocwirk (c) - Kollmann, Koller -\nR.Körner, Wagner, Stojaspal, Probst, Dienst\nURU: Maspoli - Martinez (c), Santamaria, Andrade - Carballo, Cruz -  Abbadie,\nMendez, Hohberg, Schiaffino, Borges\n1:0 Stojaspal 16 p, 1:1 Hohberg 21, 2:1 Cruz 59 o, 3:1 Ocwirk 79\nNOTE: 100th game of the World Cup",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
+      "stage": "final",
+      "group": null,
+      "matchday": null,
       "date": "1954-07-04",
       "city": "Bern",
-      "stage": "final",
       "home": "FRG",
       "away": "HUN",
       "score": [
         3,
         2
       ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
       "extra": {
         "referee": {
           "name": "Ling",
           "country": "ENG"
         },
         "attendance": 65000,
+        "halfTime": "2:2",
+        "stadium": "Wankdorf-Stadion",
         "events": [
           {
             "minute": 6,
@@ -642,391 +2133,1174 @@
             ]
           }
         ]
+      },
+      "raw": null,
+      "sheet": {
+        "source": "rsssf:54full",
+        "text": "04.07.54  (17.00) Bern, Wankdorf-Stadion\nGER - HUN 3:2 (2:2)\n(~65000) Ling ENG, Orlandini ITA, Griffiths WAL\nGER: Turek - Posipal, Kohlmeyer, Eckel - Liebrich, Mai - Rahn, Morlock,\nO. Walter, F. Walter (c), Schäfer.\nHUN: Grosics - Buzánszky, Lantos, Bozsik - Lóránt, Zakariás - Czibor,\nKocsis, Hidegkuti, Puskás (c), M.Tóth.\n0:1 Puskás 6, 0:2 Czibor 9, 1:2 Morlock 11, 2:2 Rahn 18, 3:2 Rahn 84",
+        "lang": "en"
       }
     }
   ],
   "scorers": [
     {
-      "player": "Sándor Kocsis",
+      "player": "Maximilan MORLOCK",
+      "country": "FRG",
+      "goals": 12,
+      "scope": "final"
+    },
+    {
+      "player": "Erich PROBST",
+      "country": "AUT",
+      "goals": 11,
+      "scope": "final"
+    },
+    {
+      "player": "Sándor KOCSIS Péter",
       "country": "HUN",
       "goals": 11,
       "scope": "final"
     },
     {
-      "player": "Erich Probst",
-      "country": "AUT",
+      "player": "Nathaniel LOFTHOUSE",
+      "country": "ENG",
       "goals": 6,
       "scope": "final"
     },
     {
-      "player": "Maximilian Morlock",
-      "country": "FRG",
-      "goals": 6,
-      "scope": "final"
-    },
-    {
-      "player": "Josef Hügi",
+      "player": "Josef HÜGI",
       "country": "SUI",
       "goals": 6,
       "scope": "final"
     },
     {
-      "player": "Helmut Rahn",
+      "player": "Osvaldo da Silva ‘BALTAZÁR’",
+      "country": "BRA",
+      "goals": 6,
+      "scope": "final"
+    },
+    {
+      "player": "Tomás BALCÁZAR González",
+      "country": "MEX",
+      "goals": 6,
+      "scope": "final"
+    },
+    {
+      "player": "Léopold ANOUL",
+      "country": "BEL",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Henri COPPENS",
+      "country": "BEL",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Helmut RAHN",
       "country": "FRG",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Hans SCHÄFER",
+      "country": "FRG",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Friedrich WALTER",
+      "country": "FRG",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Ottmar WALTER",
+      "country": "FRG",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "BURHAN Sargín",
+      "country": "TUR",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "José Luis LAMADRID Cano",
+      "country": "MEX",
+      "goals": 5,
+      "scope": "final"
+    },
+    {
+      "player": "Theodor WAGNER",
+      "country": "AUT",
       "goals": 4,
       "scope": "final"
     },
     {
-      "player": "Hans Schäfer",
-      "country": "FRG",
-      "goals": 4,
-      "scope": "final"
-    },
-    {
-      "player": "Ottmar Walter",
-      "country": "FRG",
-      "goals": 4,
-      "scope": "final"
-    },
-    {
-      "player": "Nándor Hidegkuti",
+      "player": "Nándor HIDEGKUTI",
       "country": "HUN",
       "goals": 4,
       "scope": "final"
     },
     {
-      "player": "Ferenc Puskás",
+      "player": "Ferenc PUSKÁS Bíró",
       "country": "HUN",
       "goals": 4,
       "scope": "final"
     },
     {
-      "player": "Robert Ballaman",
+      "player": "Nils Åki SANDELL",
+      "country": "SWE",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Robert BALLAMAN",
       "country": "SUI",
       "goals": 4,
       "scope": "final"
     },
     {
-      "player": "Carlos Borges",
+      "player": "SUAT Mamat",
+      "country": "TUR",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Júlio Botelho ‘JULINHO’",
+      "country": "BRA",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Carlos BORGES",
       "country": "URU",
       "goals": 4,
       "scope": "final"
     },
     {
-      "player": "Ernst Stojaspal",
+      "player": "William LOOBY",
+      "country": "USA",
+      "goals": 4,
+      "scope": "final"
+    },
+    {
+      "player": "Ernst OCWIRK",
       "country": "AUT",
       "goals": 3,
       "scope": "final"
     },
     {
-      "player": "Theodor Wagner",
+      "player": "Ernst STOJASPAL",
       "country": "AUT",
       "goals": 3,
       "scope": "final"
     },
     {
-      "player": "Léopold Anoul",
+      "player": "František VLK",
+      "country": "TCH",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Ivan Arthur BROADIS",
+      "country": "ENG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Dennis J. WILSHAW",
+      "country": "ENG",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Kalevi LEHTOVIRTA",
+      "country": "FIN",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Just FONTAINE",
+      "country": "FRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Jean VINCENT",
+      "country": "FRA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Zoltán CZIBOR",
+      "country": "HUN",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Giampiero BONIPERTI",
+      "country": "ITA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Amleto FRIGNANI",
+      "country": "ITA",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "John William CHARLES",
+      "country": "WAL",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Manuel LUGO",
+      "country": "PAR",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Juan Eduardo HOHBERG",
+      "country": "URU",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Oscar Omar MÍGUEZ",
+      "country": "URU",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Pedro ARNAUDA",
+      "country": "MEX",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "CHOI Chung Min",
+      "country": "KOR",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "CHUNG Nam Sik",
+      "country": "KOR",
+      "goals": 3,
+      "scope": "final"
+    },
+    {
+      "player": "Alfred KÖRNER",
+      "country": "AUT",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Mathieu BOLLEN",
       "country": "BEL",
-      "goals": 3,
-      "scope": "final"
-    },
-    {
-      "player": "Nat Lofthouse",
-      "country": "ENG",
-      "goals": 3,
-      "scope": "final"
-    },
-    {
-      "player": "Fritz Walter",
-      "country": "FRG",
-      "goals": 3,
-      "scope": "final"
-    },
-    {
-      "player": "Zoltán Czibor",
-      "country": "HUN",
-      "goals": 3,
-      "scope": "final"
-    },
-    {
-      "player": "Burhan Sargın",
-      "country": "TUR",
-      "goals": 3,
-      "scope": "final"
-    },
-    {
-      "player": "Suat Mamat",
-      "country": "TUR",
-      "goals": 3,
-      "scope": "final"
-    },
-    {
-      "player": "Juan Hohberg",
-      "country": "URU",
-      "goals": 3,
-      "scope": "final"
-    },
-    {
-      "player": "Óscar Míguez",
-      "country": "URU",
-      "goals": 3,
-      "scope": "final"
-    },
-    {
-      "player": "Alfred Körner",
-      "country": "AUT",
       "goals": 2,
       "scope": "final"
     },
     {
-      "player": "Ernst Ocwirk",
-      "country": "AUT",
-      "goals": 2,
-      "scope": "final"
-    },
-    {
-      "player": "Waldir Pereira (Didi)",
-      "country": "BRA",
-      "goals": 2,
-      "scope": "final"
-    },
-    {
-      "player": "Júlio Botelho (Julinho)",
-      "country": "BRA",
-      "goals": 2,
-      "scope": "final"
-    },
-    {
-      "player": "João Lázaro Robles (Pinga)",
-      "country": "BRA",
-      "goals": 2,
-      "scope": "final"
-    },
-    {
-      "player": "Ivor Broadis",
+      "player": "Harold W. HASSALL",
       "country": "ENG",
       "goals": 2,
       "scope": "final"
     },
     {
-      "player": "Mihály Lantos",
+      "player": "James MULLEN",
+      "country": "ENG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Olavi LAHTINEN",
+      "country": "FIN",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Jean DESGRANGES",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Pierre FLAMION",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Léon GLOVACKI",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Raymond KOPASZEWSKI",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Roger PIANTONI",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Joseph UJLAKI",
+      "country": "FRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Mihály LANTOS",
       "country": "HUN",
       "goals": 2,
       "scope": "final"
     },
     {
-      "player": "Péter Palotás",
+      "player": "Péter PALOTÁS",
       "country": "HUN",
       "goals": 2,
       "scope": "final"
     },
     {
-      "player": "Lefter Küçükandonyadis",
+      "player": "Arthur G. FITZSIMONS",
+      "country": "IRL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "David J. WALSH",
+      "country": "IRL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Egisto PANDOLFINI",
+      "country": "ITA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Peter Jones McPARLAND",
+      "country": "NIR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Iosif PETSCHOVSKI",
+      "country": "ROU",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Allan Duncan BROWN",
+      "country": "SCO",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Charles FLEMING",
+      "country": "SCO",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "LEFTER Kücükandonyadis",
       "country": "TUR",
       "goals": 2,
       "scope": "final"
     },
     {
-      "player": "Julio Abbadie",
+      "player": "Ivor John ALLCHURCH",
+      "country": "WAL",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Miloš MILUTINOVIC",
+      "country": "YUG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Branislav ZEBEC",
+      "country": "YUG",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Waldir Pereira ‘DIDI’",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Joao Lázaro Robles ‘PINGA’",
+      "country": "BRA",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "José PARODI",
+      "country": "PAR",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Julio Cesar ABBADÍE",
       "country": "URU",
       "goals": 2,
       "scope": "final"
     },
     {
-      "player": "Juan Schiaffino",
+      "player": "Juan Alberto SCHIAFFINO",
       "country": "URU",
       "goals": 2,
       "scope": "final"
     },
     {
-      "player": "Henri Coppens",
+      "player": "Juan Alfredo TORRES Gonzáles",
+      "country": "MEX",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Toshio IWATANI",
+      "country": "JPN",
+      "goals": 2,
+      "scope": "final"
+    },
+    {
+      "player": "Robert DIENST",
+      "country": "AUT",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ernst Franz Hermann HAPPEL",
+      "country": "AUT",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Victor LEMBERECHTS",
       "country": "BEL",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Osvaldo da Silva (Baltazar)",
-      "country": "BRA",
+      "player": "Victor MEES",
+      "country": "BEL",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Djalma Santos",
-      "country": "BRA",
+      "player": "Jean STRAETMANS",
+      "country": "BEL",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Tom Finney",
+      "player": "Stefan BOZHKOV",
+      "country": "BUL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ivan Petkov KOLEV",
+      "country": "BUL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dobrimir TASHKOV",
+      "country": "BUL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Emil PAŽICKÝ",
+      "country": "TCH",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "František ŠAFRÁNEK",
+      "country": "TCH",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ronald ALLEN",
       "country": "ENG",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "James Mullen",
+      "player": "Thomas FINNEY",
       "country": "ENG",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Dennis Wilshaw",
+      "player": "John NICHOLLS",
       "country": "ENG",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Raymond Kopaszewski",
+      "player": "Nils RIKBERG",
+      "country": "FIN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jorma VAIHELA",
+      "country": "FIN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Raymond CICCI",
       "country": "FRA",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Jean Vincent",
+      "player": "Jacques FOIX",
       "country": "FRA",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Richard Hermann",
+      "player": "Edouard KARGU",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Armand PENVERNE",
+      "country": "FRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Richard Franz HERMANN",
       "country": "FRG",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Bernhard Klodt",
+      "player": "Bernhard KLODT",
       "country": "FRG",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Alfred Pfaff",
+      "player": "Alfred PFAFF",
       "country": "FRG",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "József Tóth",
+      "player": "Horst SCHADE",
+      "country": "FRG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Athanasios BEBIS",
+      "country": "GRE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Yorgos KAMARAS",
+      "country": "GRE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Dimitriou KOKKINAKIS",
+      "country": "GRE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "József TÓTH",
       "country": "HUN",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Giampiero Boniperti",
+      "player": "George CUMMINS",
+      "country": "IRL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Thomas EGLINGTON",
+      "country": "IRL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Frank O'FARRELL",
+      "country": "IRL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Reginald A. RYAN",
+      "country": "IRL",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Giancarlo GALLI",
       "country": "ITA",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Amleto Frignani",
+      "player": "Benito LORENZI",
       "country": "ITA",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Giancarlo Galli",
+      "player": "Ermes MUCCINELLI",
       "country": "ITA",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Benito Lorenzi",
+      "player": "Fulvio NESTI",
       "country": "ITA",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Fulvio Nesti",
+      "player": "Eduardo RICAGNI",
       "country": "ITA",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Egisto Pandolfini",
-      "country": "ITA",
+      "player": "Antoine KOHN",
+      "country": "LUX",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Miloš Milutinović",
-      "country": "YUG",
+      "player": "Norman LOCKHART",
+      "country": "NIR",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Branislav Zebec",
-      "country": "YUG",
+      "player": "Edward J. McMORRAN",
+      "country": "NIR",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Tomás Balcázar",
-      "country": "MEX",
+      "player": "Knut DAHLEN",
+      "country": "NOR",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "José Luis Lamadrid",
-      "country": "MEX",
+      "player": "Harald HENNUM",
+      "country": "NOR",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Jacques Fatton",
+      "player": "Hans NORDHAL",
+      "country": "NOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gunnar THORESEN",
+      "country": "NOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "JOSÉ Santos AGUAS",
+      "country": "POR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Valeriu CALINOIU",
+      "country": "ROU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Alexandru ENE",
+      "country": "ROU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gavril SERFÖZÖ",
+      "country": "ROU",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "John Gillespie HENDERSON",
+      "country": "SCO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Robert JOHNSTONE",
+      "country": "SCO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "William Esplin ORMOND",
+      "country": "SCO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Lawrence REILLY",
+      "country": "SCO",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rafael ALSÚA Alonso",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "José Luis ARTECHE Mugueri",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Adrián ESCUDERO García",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Augustín GAINZA Vicandi",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "MIGUEL Gonzáles Péres",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "VENANCIO Pérez García",
+      "country": "ESP",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Bengt BENGTSSON",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Hans PERSSON",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gösta SANDBERG",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Herbert SANDIN",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Arne SELMOSSON",
+      "country": "SWE",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jacques FATTON",
       "country": "SUI",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Erol Keskin",
+      "player": "EROL Keskin",
       "country": "TUR",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Mustafa Ertan",
+      "player": "MUSTAFA Ertan",
       "country": "TUR",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Javier Ambrois",
+      "player": "RECEP Adanír",
+      "country": "TUR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Frane MATOSIC",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Todor VESELINOVIC",
+      "country": "YUG",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "HUMBERTO Barbosa Tozzi",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "DJALMA dos SANTOS",
+      "country": "BRA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Jorge ROBLEDO Oliver",
+      "country": "CHI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ireneo HERMOSILLA",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Silvio PARODI",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Romerito MARTÍNEZ",
+      "country": "PAR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Javier AMBROIS",
       "country": "URU",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Obdulio Varela",
+      "player": "Obdulio Jacinto Muinos VARELA",
       "country": "URU",
       "goals": 1,
       "scope": "final"
     },
     {
-      "player": "Luis Alberto Cruz",
+      "player": "Gerard ELLIE",
+      "country": "HAI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gerard HAIG",
+      "country": "HAI",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Rafael AVALOS",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gregório Alvarez GÓMEZ Mundblid",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "José Alberto NARANJO Rivera",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Nicolás TÉLLEZ",
+      "country": "MEX",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Cornelius CASEY",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Efraim CHACHURIAN",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ruben MENDOZA",
+      "country": "USA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Ken NAGANUMA",
+      "country": "JPN",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "CHOI Kwang Suk",
+      "country": "KOR",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Mohamed Diab El-Attar ‘AD DIBA’",
+      "country": "EGY",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Alaa El-Hamouly ‘EL DIN’",
+      "country": "EGY",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Luis Alberto CRUZ",
       "country": "URU",
       "goals": 1,
       "scope": "final",
       "ownGoal": true
     },
     {
-      "player": "James William Dickinson",
+      "player": "James William DICKINSON",
       "country": "ENG",
       "goals": 1,
       "scope": "final",
       "ownGoal": true
     },
     {
-      "player": "Raúl Cárdenas",
+      "player": "Raúl CÁRDENAS de la Vega",
       "country": "MEX",
       "goals": 1,
       "scope": "final",
       "ownGoal": true
     },
     {
-      "player": "Ivan Horvat",
+      "player": "Ivan HORVAT",
       "country": "YUG",
+      "goals": 1,
+      "scope": "final",
+      "ownGoal": true
+    },
+    {
+      "player": "William SCHEPPELL",
+      "country": "USA",
       "goals": 1,
       "scope": "final",
       "ownGoal": true
     }
-  ]
+  ],
+  "warnings": [
+    {
+      "segment": 64,
+      "reason": "partido no reconocido: Bern, July 4, 1954."
+    },
+    {
+      "segment": 65,
+      "reason": "partido no reconocido: West Germany     3-2 Hungary"
+    },
+    {
+      "segment": 66,
+      "reason": "partido no reconocido: West Germany: Turek, Posipal, Kohlmeyer, Eckel, Liebrich, Mai, Rahn,"
+    },
+    {
+      "segment": 67,
+      "reason": "partido no reconocido: Morlock, O. Walter, F. Walter, Schäfer."
+    },
+    {
+      "segment": 68,
+      "reason": "partido no reconocido: Hungary: Grosics, Buzánszky, Lantos, Bozsik, Lóránt, Zakariás, Czibor,"
+    },
+    {
+      "segment": 69,
+      "reason": "partido no reconocido: Kocsis, Hidegkuti, Puskás, M. Tóth."
+    },
+    {
+      "segment": 71,
+      "reason": "partido no reconocido: Referee: Ling (England)"
+    },
+    {
+      "segment": 72,
+      "reason": "partido no reconocido: Attendance: 65,000."
+    },
+    {
+      "segment": 74,
+      "reason": "partido no reconocido: Scorers: 6' Puskás 0-1; 9' Czibor 0-2; 11' Morlock 1-2; 18' Rahn 2-2;"
+    },
+    {
+      "segment": 75,
+      "reason": "partido no reconocido: 84' Rahn 3-2."
+    },
+    {
+      "segment": 77,
+      "reason": "partido no reconocido: Topscorer: Kocsis (Hungary) 11 goals."
+    },
+    {
+      "segment": 81,
+      "reason": "partido no reconocido: Detailed Infos"
+    },
+    {
+      "segment": 84,
+      "reason": "partido no reconocido: 1950 Final Tournament"
+    },
+    {
+      "segment": 86,
+      "reason": "partido no reconocido: 1954 Qualifying Tournament"
+    },
+    {
+      "segment": 88,
+      "reason": "partido no reconocido: 1958 Final Tournament"
+    },
+    {
+      "segment": 90,
+      "reason": "partido no reconocido: Overview File"
+    },
+    {
+      "segment": 93,
+      "reason": "partido no reconocido: About this document"
+    },
+    {
+      "segment": 94,
+      "reason": "partido no reconocido: Prepared and maintained by  Karel Stokkermans and Sergio"
+    },
+    {
+      "segment": 95,
+      "reason": "partido no reconocido: Henrique Jarreta  for the"
+    },
+    {
+      "segment": 97,
+      "reason": "partido no reconocido: Rec.Sport.Soccer Statistics Foundation"
+    },
+    {
+      "segment": 99,
+      "reason": "partido no reconocido: Authors: Karel Stokkermans and Sergio Henrique Jarreta"
+    },
+    {
+      "segment": 100,
+      "reason": "partido no reconocido: Last updated: 22 Oct 1999"
+    },
+    {
+      "segment": 102,
+      "reason": "partido no reconocido: (C) Copyright Karel Stokkermans, Sergio Henrique Jarreta"
+    },
+    {
+      "segment": 103,
+      "reason": "partido no reconocido: and RSSSF 1995/1999"
+    },
+    {
+      "segment": 104,
+      "reason": "partido no reconocido: You are free to copy this document in whole or part provided that proper"
+    },
+    {
+      "segment": 105,
+      "reason": "partido no reconocido: acknowledgement is given to the authors. All rights reserved."
+    },
+    {
+      "segment": 64,
+      "reason": "país no resuelto: Saar"
+    },
+    {
+      "segment": 65,
+      "reason": "país no resuelto: Saar"
+    },
+    {
+      "segment": 65,
+      "reason": "país no resuelto: Saar"
+    },
+    {
+      "segment": 65,
+      "reason": "país no resuelto: Saar"
+    },
+    {
+      "segment": 107,
+      "reason": "país no resuelto: Saar"
+    },
+    {
+      "segment": 113,
+      "reason": "línea de totales no reconocida: after deadline - Island, Bolivia, Costa Rica, Cuba, India, Vietnam"
+    },
+    {
+      "reason": "grupo B omitido: la clasificación de la fuente está incompleta o no cuadra (suma GF 24 != suma GA 28 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo D omitido: la clasificación de la fuente está incompleta o no cuadra (suma GF 13 != suma GA 15 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "goleador Herbert BINKERT sin país resoluble (?); descartado"
+    },
+    {
+      "reason": "goleador Herbert MARTIN sin país resoluble (?); descartado"
+    },
+    {
+      "reason": "goleador Werner OTTO sin país resoluble (?); descartado"
+    },
+    {
+      "reason": "goleador Gerhard SIEDL sin país resoluble (?); descartado"
+    }
+  ],
+  "hosts": [
+    "SUI"
+  ],
+  "teamsCount": 16
 }

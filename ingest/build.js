@@ -198,9 +198,19 @@ function prepare(match) {
       .map((note) => String(note).toLowerCase())
       .filter((note) => KNOWN_NOTES.has(note)),
     raw: match.raw || null,
+    rawSheet: typeof match.rawSheet === "string" && match.rawSheet !== "" ? match.rawSheet : null,
     extra: match.extra || null,
     full: null
   };
+}
+
+/**
+ * Ficha verbatim (`sheet`) de un partido de `full`, o `null` si no tiene bloque.
+ * El texto procede de la fuente (sin estructurar) y se publica tal cual.
+ */
+function sheetFrom(entry, sourceId) {
+  if (!entry || !entry.rawSheet || !sourceId) return null;
+  return { source: sourceId, text: entry.rawSheet, lang: "en" };
 }
 
 /** Empareja cada partido de `f` con su detalle en `full`. */
@@ -267,8 +277,8 @@ function disagreement(fEntry, fullEntry) {
   return null;
 }
 
-function matchFromF(fEntry, fullEntry) {
-  return {
+function matchFromF(fEntry, fullEntry, fullSourceId) {
+  const match = {
     id: null,
     stage: fEntry.stage,
     group: fEntry.stage === "group" || fEntry.stage === "group2" ? groupLetter(fEntry.section) : null,
@@ -284,10 +294,13 @@ function matchFromF(fEntry, fullEntry) {
     extra: extraFromFull(fullEntry, { home: fEntry.home, away: fEntry.away }),
     raw: null
   };
+  const sheet = sheetFrom(fullEntry, fullSourceId);
+  if (sheet) match.sheet = sheet;
+  return match;
 }
 
-function matchFromFull(fullEntry) {
-  return {
+function matchFromFull(fullEntry, fullSourceId) {
+  const match = {
     id: null,
     stage: fullEntry.stage,
     group: null,
@@ -303,6 +316,9 @@ function matchFromFull(fullEntry) {
     extra: extraFromFull(fullEntry),
     raw: null
   };
+  const sheet = sheetFrom(fullEntry, fullSourceId);
+  if (sheet) match.sheet = sheet;
+  return match;
 }
 
 /**
@@ -522,7 +538,7 @@ function buildDraft(input) {
   const rejected = [];
   const entries = [];
   for (const fEntry of fMatches) {
-    const entry = matchFromF(fEntry, fEntry.full);
+    const entry = matchFromF(fEntry, fEntry.full, fullSourceId);
     const diff = disagreement(fEntry, fEntry.full);
     if (diff) rejected.push({ ref: entry, source: fullSourceId, ...diff });
     entries.push(entry);
@@ -532,7 +548,7 @@ function buildDraft(input) {
       warnings.push({ reason: `partido solo en full sin equipos identificables (${fullEntry.date || "sin fecha"}); descartado` });
       continue;
     }
-    entries.push(matchFromFull(fullEntry));
+    entries.push(matchFromFull(fullEntry, fullSourceId));
   }
   entries.forEach((entry, index) => {
     entry.id = `m${String(index + 1).padStart(3, "0")}`;
