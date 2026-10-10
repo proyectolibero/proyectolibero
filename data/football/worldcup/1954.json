@@ -13,13 +13,12 @@
     "third": "AUT"
   },
   "coverage": {
-    "matches": 79,
-    "goals": 336,
-    "scorers": 167,
+    "matches": 83,
+    "goals": 348,
+    "scorers": 171,
     "scope": "all",
-    "complete": false,
-    "scorersComplete": false,
-    "note": "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar)."
+    "complete": true,
+    "scorersComplete": false
   },
   "sources": [
     {
@@ -51,7 +50,7 @@
     },
     {
       "id": "rsssf:54q",
-      "name": "RSSSF — World Cup 1954 (qualifying)",
+      "name": "RSSSF — World Cup 1954 (qualifying tournament)",
       "url": "https://www.rsssf.org/tables/54q.html",
       "retrieved": "2026-10-10",
       "publisher": "RSSSF",
@@ -225,6 +224,41 @@
           "gf": 0,
           "ga": 8,
           "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "1",
+      "standings": [
+        {
+          "team": "FRG",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 12,
+          "ga": 3,
+          "pts": 7
+        },
+        {
+          "team": "SAA",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 8,
+          "pts": 3
+        },
+        {
+          "team": "NOR",
+          "p": 4,
+          "w": 0,
+          "d": 2,
+          "l": 2,
+          "gf": 4,
+          "ga": 9,
+          "pts": 2
         }
       ]
     },
@@ -2410,6 +2444,24 @@
       "stage": "qualifyingGroup",
       "group": "1",
       "matchday": null,
+      "date": "1953-06-24",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SAA",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m027"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
       "date": "1953-08-19",
       "city": "Oslo",
       "home": "NOR",
@@ -2422,7 +2474,43 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m027"
+      "id": "m028"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1953-10-11",
+      "city": "Sttutgart",
+      "home": "FRG",
+      "away": "SAA",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m029"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1953-11-08",
+      "city": "Saarbrücken",
+      "home": "SAA",
+      "away": "NOR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m030"
     },
     {
       "stage": "qualifyingGroup",
@@ -2440,7 +2528,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m028"
+      "id": "m031"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1954-03-28",
+      "city": "Saarbrücken",
+      "home": "SAA",
+      "away": "FRG",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m032"
     },
     {
       "stage": "qualifyingGroup",
@@ -2458,7 +2564,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m029"
+      "id": "m033"
     },
     {
       "stage": "qualifyingGroup",
@@ -2476,7 +2582,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m030"
+      "id": "m034"
     },
     {
       "stage": "qualifyingGroup",
@@ -2494,7 +2600,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m031"
+      "id": "m035"
     },
     {
       "stage": "qualifyingGroup",
@@ -2512,7 +2618,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m032"
+      "id": "m036"
     },
     {
       "stage": "qualifyingGroup",
@@ -2530,7 +2636,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m033"
+      "id": "m037"
     },
     {
       "stage": "qualifyingGroup",
@@ -2548,7 +2654,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m034"
+      "id": "m038"
     },
     {
       "stage": "qualifyingGroup",
@@ -2566,7 +2672,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m035"
+      "id": "m039"
     },
     {
       "stage": "qualifyingGroup",
@@ -2584,7 +2690,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m036"
+      "id": "m040"
     },
     {
       "stage": "qualifyingGroup",
@@ -2602,7 +2708,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m037"
+      "id": "m041"
     },
     {
       "stage": "qualifyingGroup",
@@ -2620,7 +2726,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m038"
+      "id": "m042"
     },
     {
       "stage": "qualifyingGroup",
@@ -2638,7 +2744,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m039"
+      "id": "m043"
     },
     {
       "stage": "qualifyingGroup",
@@ -2656,7 +2762,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m040"
+      "id": "m044"
     },
     {
       "stage": "qualifyingGroup",
@@ -2674,7 +2780,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m041"
+      "id": "m045"
     },
     {
       "stage": "qualifyingGroup",
@@ -2692,7 +2798,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m042"
+      "id": "m046"
     },
     {
       "stage": "qualifyingGroup",
@@ -2710,7 +2816,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m043"
+      "id": "m047"
     },
     {
       "stage": "qualifyingGroup",
@@ -2728,7 +2834,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m044"
+      "id": "m048"
     },
     {
       "stage": "qualifyingGroup",
@@ -2746,7 +2852,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m045"
+      "id": "m049"
     },
     {
       "stage": "qualifyingGroup",
@@ -2764,7 +2870,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m046"
+      "id": "m050"
     },
     {
       "stage": "qualifyingGroup",
@@ -2782,7 +2888,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m047"
+      "id": "m051"
     },
     {
       "stage": "qualifyingGroup",
@@ -2800,7 +2906,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m048"
+      "id": "m052"
     },
     {
       "stage": "qualifyingGroup",
@@ -2818,7 +2924,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m049"
+      "id": "m053"
     },
     {
       "stage": "qualifyingGroup",
@@ -2836,7 +2942,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m050"
+      "id": "m054"
     },
     {
       "stage": "qualifyingGroup",
@@ -2854,7 +2960,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m051"
+      "id": "m055"
     },
     {
       "stage": "qualifyingGroup",
@@ -2872,7 +2978,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m052"
+      "id": "m056"
     },
     {
       "stage": "qualifyingGroup",
@@ -2890,7 +2996,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m053"
+      "id": "m057"
     },
     {
       "stage": "qualifyingGroup",
@@ -2908,7 +3014,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m054"
+      "id": "m058"
     },
     {
       "stage": "qualifyingGroup",
@@ -2926,7 +3032,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m055"
+      "id": "m059"
     },
     {
       "stage": "qualifyingGroup",
@@ -2944,7 +3050,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m056"
+      "id": "m060"
     },
     {
       "stage": "qualifyingGroup",
@@ -2962,7 +3068,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m057"
+      "id": "m061"
     },
     {
       "stage": "qualifyingGroup",
@@ -2980,7 +3086,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m058"
+      "id": "m062"
     },
     {
       "stage": "qualifyingGroup",
@@ -2998,7 +3104,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m059"
+      "id": "m063"
     },
     {
       "stage": "qualifyingGroup",
@@ -3016,7 +3122,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m060"
+      "id": "m064"
     },
     {
       "stage": "qualifyingGroup",
@@ -3034,7 +3140,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m061"
+      "id": "m065"
     },
     {
       "stage": "qualifyingGroup",
@@ -3052,7 +3158,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m062"
+      "id": "m066"
     },
     {
       "stage": "qualifyingGroup",
@@ -3070,7 +3176,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m063"
+      "id": "m067"
     },
     {
       "stage": "qualifyingGroup",
@@ -3088,7 +3194,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m064"
+      "id": "m068"
     },
     {
       "stage": "qualifyingGroup",
@@ -3106,7 +3212,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m065"
+      "id": "m069"
     },
     {
       "stage": "qualifyingGroup",
@@ -3124,7 +3230,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m066"
+      "id": "m070"
     },
     {
       "stage": "qualifyingGroup",
@@ -3142,7 +3248,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m067"
+      "id": "m071"
     },
     {
       "stage": "qualifyingGroup",
@@ -3160,7 +3266,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m068"
+      "id": "m072"
     },
     {
       "stage": "qualifyingGroup",
@@ -3178,7 +3284,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m069"
+      "id": "m073"
     },
     {
       "stage": "qualifyingGroup",
@@ -3196,7 +3302,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m070"
+      "id": "m074"
     },
     {
       "stage": "qualifyingGroup",
@@ -3214,7 +3320,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m071"
+      "id": "m075"
     },
     {
       "stage": "qualifyingGroup",
@@ -3232,7 +3338,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m072"
+      "id": "m076"
     },
     {
       "stage": "qualifyingGroup",
@@ -3250,7 +3356,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m073"
+      "id": "m077"
     },
     {
       "stage": "qualifyingGroup",
@@ -3268,7 +3374,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m074"
+      "id": "m078"
     },
     {
       "stage": "qualifyingGroup",
@@ -3286,7 +3392,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m075"
+      "id": "m079"
     },
     {
       "stage": "qualifyingGroup",
@@ -3304,7 +3410,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m076"
+      "id": "m080"
     },
     {
       "stage": "qualifyingGroup",
@@ -3322,7 +3428,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m077"
+      "id": "m081"
     },
     {
       "stage": "qualifyingGroup",
@@ -3340,7 +3446,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m078"
+      "id": "m082"
     },
     {
       "stage": "qualifyingGroup",
@@ -3358,7 +3464,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m079"
+      "id": "m083"
     }
   ],
   "scorers": [
@@ -4083,6 +4189,30 @@
       "scope": "final"
     },
     {
+      "player": "Herbert BINKERT",
+      "country": "SAA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Herbert MARTIN",
+      "country": "SAA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Werner OTTO",
+      "country": "SAA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
+      "player": "Gerhard SIEDL",
+      "country": "SAA",
+      "goals": 1,
+      "scope": "final"
+    },
+    {
       "player": "John Gillespie HENDERSON",
       "country": "SCO",
       "goals": 1,
@@ -4476,24 +4606,60 @@
       "reason": "partido no reconocido: acknowledgement is given to the authors. All rights reserved."
     },
     {
-      "segment": 64,
-      "reason": "país no resuelto: Saar"
+      "segment": 24,
+      "reason": "línea no reconocida: Scorers' list"
     },
     {
-      "segment": 65,
-      "reason": "país no resuelto: Saar"
+      "segment": 25,
+      "reason": "línea no reconocida: Coaches, assistants, reserve players"
     },
     {
-      "segment": 65,
-      "reason": "país no resuelto: Saar"
+      "segment": 26,
+      "reason": "línea no reconocida: Oldest and youngest"
     },
     {
-      "segment": 65,
-      "reason": "país no resuelto: Saar"
+      "segment": 30,
+      "reason": "línea no reconocida: Switzerland, 16 June - 4 July 1954 (Basel, Berne, Geneva, Lausanne, Lugano,"
     },
     {
-      "segment": 107,
-      "reason": "país no resuelto: Saar"
+      "segment": 31,
+      "reason": "línea no reconocida: Zürich). Decided at FIFA Congress in Rio de Janeiro, 22 July 1950. Entries"
+    },
+    {
+      "segment": 32,
+      "reason": "línea no reconocida: deadline 31 Jan 1953. 45 teams entered, 39 seeded, 36 actually played."
+    },
+    {
+      "segment": 33,
+      "reason": "línea no reconocida: Qualifications drawn 15 Feb 1953. Finals drawn 30 Nov 1953. Quarterfinals"
+    },
+    {
+      "segment": 34,
+      "reason": "línea no reconocida: drawn 21 Jun 1954. Semifinals drawn 27 Jun 1954. All draws in Zürich."
+    },
+    {
+      "segment": 36,
+      "reason": "línea no reconocida: General Note : The placement in groups was determined solely on"
+    },
+    {
+      "segment": 37,
+      "reason": "línea no reconocida: the base of points, goal difference was disregarded. This led to playoff"
+    },
+    {
+      "segment": 38,
+      "reason": "línea no reconocida: matches in two groups (curiosly, teams with worse g/d won)."
+    },
+    {
+      "segment": 41,
+      "reason": "línea no reconocida: Matches were extended by an extra-time whenever there happened to be a"
+    },
+    {
+      "segment": 42,
+      "reason": "línea no reconocida: draw after normal time. If the draw persisted after the extra time,"
+    },
+    {
+      "segment": 43,
+      "reason": "línea no reconocida: the result was final."
     },
     {
       "segment": 113,
@@ -4504,18 +4670,6 @@
     },
     {
       "reason": "grupo D omitido: la clasificación de la fuente está incompleta o no cuadra (suma GF 13 != suma GA 15 (faltan equipos o columnas))"
-    },
-    {
-      "reason": "goleador Herbert BINKERT sin país resoluble (?); descartado"
-    },
-    {
-      "reason": "goleador Herbert MARTIN sin país resoluble (?); descartado"
-    },
-    {
-      "reason": "goleador Werner OTTO sin país resoluble (?); descartado"
-    },
-    {
-      "reason": "goleador Gerhard SIEDL sin país resoluble (?); descartado"
     }
   ],
   "hosts": [

@@ -11,12 +11,18 @@
   "teamMode": "country",
   "resultArchetype": "encounter",
   "gender": "mixed",
-  "cadence": { "type": "interval", "years": 4 },
+  "cadence": {
+    "type": "interval",
+    "years": 4
+  },
   "status": "active",
   "firstEdition": 1930,
   "lastEditionHeld": 2026,
   "nextEditionExpected": 2030,
-  "editionsNotHeld": [1942, 1946],
+  "editionsNotHeld": [
+    1942,
+    1946
+  ],
   "coverage": {
     "held": 23,
     "published": 23,
@@ -24,47 +30,513 @@
     "missingYears": []
   },
   "editions": [
-    { "year": 1930, "held": true, "hosts": ["URU"], "champion": "URU", "runnerUp": "ARG", "final": { "score": [4, 2] }, "data": "1930.json" },
-    { "year": 1934, "held": true, "hosts": ["ITA"], "champion": "ITA", "runnerUp": "TCH", "final": { "score": [2, 1], "notes": ["aet"] }, "data": "1934.json" },
-    { "year": 1938, "held": true, "hosts": ["FRA"], "champion": "ITA", "runnerUp": "HUN", "final": { "score": [4, 2] }, "data": "1938.json" },
-    { "year": 1942, "held": false },
-    { "year": 1946, "held": false },
-    { "year": 1950, "held": true, "hosts": ["BRA"], "champion": "URU", "runnerUp": "BRA", "final": { "score": [2, 1] }, "data": "1950.json" },
-    { "year": 1954, "held": true, "hosts": ["SUI"], "champion": "FRG", "runnerUp": "HUN", "final": { "score": [3, 2] }, "data": "1954.json" },
-    { "year": 1958, "held": true, "hosts": ["SWE"], "champion": "BRA", "runnerUp": "SWE", "final": { "score": [5, 2] }, "data": "1958.json" },
-    { "year": 1962, "held": true, "hosts": ["CHI"], "champion": "BRA", "runnerUp": "TCH", "final": { "score": [3, 1] }, "data": "1962.json" },
-    { "year": 1966, "held": true, "hosts": ["ENG"], "champion": "ENG", "runnerUp": "FRG", "final": { "score": [4, 2], "notes": ["aet"] }, "data": "1966.json" },
-    { "year": 1970, "held": true, "hosts": ["MEX"], "champion": "BRA", "runnerUp": "ITA", "final": { "score": [4, 1] }, "data": "1970.json" },
-    { "year": 1974, "held": true, "hosts": ["FRG"], "champion": "FRG", "runnerUp": "NED", "final": { "score": [2, 1] }, "data": "1974.json" },
-    { "year": 1978, "held": true, "hosts": ["ARG"], "champion": "ARG", "runnerUp": "NED", "final": { "score": [3, 1], "notes": ["aet"] }, "data": "1978.json" },
-    { "year": 1982, "held": true, "hosts": ["ESP"], "champion": "ITA", "runnerUp": "FRG", "final": { "score": [3, 1] }, "data": "1982.json" },
-    { "year": 1986, "held": true, "hosts": ["MEX"], "champion": "ARG", "runnerUp": "FRG", "final": { "score": [3, 2] }, "data": "1986.json" },
-    { "year": 1990, "held": true, "hosts": ["ITA"], "champion": "FRG", "runnerUp": "ARG", "final": { "score": [1, 0] }, "data": "1990.json" },
-    { "year": 1994, "held": true, "hosts": ["USA"], "champion": "BRA", "runnerUp": "ITA", "final": { "score": [0, 0], "pens": [3, 2], "notes": ["aet", "pen"] }, "data": "1994.json" },
-    { "year": 1998, "held": true, "hosts": ["FRA"], "champion": "FRA", "runnerUp": "BRA", "final": { "score": [3, 0] }, "data": "1998.json" },
-    { "year": 2002, "held": true, "hosts": ["KOR", "JPN"], "champion": "BRA", "runnerUp": "GER", "final": { "score": [2, 0] }, "data": "2002.json" },
-    { "year": 2006, "held": true, "hosts": ["GER"], "champion": "ITA", "runnerUp": "FRA", "final": { "score": [1, 1], "pens": [5, 3], "notes": ["aet", "pen"] }, "data": "2006.json" },
-    { "year": 2010, "held": true, "hosts": ["RSA"], "champion": "ESP", "runnerUp": "NED", "final": { "score": [1, 0], "notes": ["aet"] }, "data": "2010.json" },
-    { "year": 2014, "held": true, "hosts": ["BRA"], "champion": "GER", "runnerUp": "ARG", "final": { "score": [1, 0], "notes": ["aet"] }, "data": "2014.json" },
-    { "year": 2018, "held": true, "hosts": ["RUS"], "champion": "FRA", "runnerUp": "CRO", "final": { "score": [4, 2] }, "data": "2018.json" },
-    { "year": 2022, "held": true, "hosts": ["QAT"], "champion": "ARG", "runnerUp": "FRA", "final": { "score": [3, 3], "pens": [4, 2], "notes": ["aet", "pen"] }, "data": "2022.json" },
-    { "year": 2026, "held": true, "hosts": ["CAN", "MEX", "USA"], "champion": "ESP", "runnerUp": "ARG", "final": { "score": [1, 0], "notes": ["aet"] }, "data": "2026.json" }
+    {
+      "year": 1930,
+      "held": true,
+      "hosts": [
+        "URU"
+      ],
+      "champion": "URU",
+      "runnerUp": "ARG",
+      "final": {
+        "score": [
+          4,
+          2
+        ]
+      },
+      "data": "1930.json"
+    },
+    {
+      "year": 1934,
+      "held": true,
+      "hosts": [
+        "ITA"
+      ],
+      "champion": "ITA",
+      "runnerUp": "TCH",
+      "final": {
+        "score": [
+          2,
+          1
+        ],
+        "notes": [
+          "aet"
+        ]
+      },
+      "data": "1934.json"
+    },
+    {
+      "year": 1938,
+      "held": true,
+      "hosts": [
+        "FRA"
+      ],
+      "champion": "ITA",
+      "runnerUp": "HUN",
+      "final": {
+        "score": [
+          4,
+          2
+        ]
+      },
+      "data": "1938.json"
+    },
+    {
+      "year": 1942,
+      "held": false
+    },
+    {
+      "year": 1946,
+      "held": false
+    },
+    {
+      "year": 1950,
+      "held": true,
+      "hosts": [
+        "BRA"
+      ],
+      "champion": "URU",
+      "runnerUp": "BRA",
+      "final": {
+        "score": [
+          2,
+          1
+        ]
+      },
+      "data": "1950.json"
+    },
+    {
+      "year": 1954,
+      "held": true,
+      "hosts": [
+        "SUI"
+      ],
+      "champion": "FRG",
+      "runnerUp": "HUN",
+      "final": {
+        "score": [
+          3,
+          2
+        ]
+      },
+      "data": "1954.json"
+    },
+    {
+      "year": 1958,
+      "held": true,
+      "hosts": [
+        "SWE"
+      ],
+      "champion": "BRA",
+      "runnerUp": "SWE",
+      "final": {
+        "score": [
+          5,
+          2
+        ]
+      },
+      "data": "1958.json"
+    },
+    {
+      "year": 1962,
+      "held": true,
+      "hosts": [
+        "CHI"
+      ],
+      "champion": "BRA",
+      "runnerUp": "TCH",
+      "final": {
+        "score": [
+          3,
+          1
+        ]
+      },
+      "data": "1962.json"
+    },
+    {
+      "year": 1966,
+      "held": true,
+      "hosts": [
+        "ENG"
+      ],
+      "champion": "ENG",
+      "runnerUp": "FRG",
+      "final": {
+        "score": [
+          4,
+          2
+        ],
+        "notes": [
+          "aet"
+        ]
+      },
+      "data": "1966.json"
+    },
+    {
+      "year": 1970,
+      "held": true,
+      "hosts": [
+        "MEX"
+      ],
+      "champion": "BRA",
+      "runnerUp": "ITA",
+      "final": {
+        "score": [
+          4,
+          1
+        ]
+      },
+      "data": "1970.json"
+    },
+    {
+      "year": 1974,
+      "held": true,
+      "hosts": [
+        "FRG"
+      ],
+      "champion": "FRG",
+      "runnerUp": "NED",
+      "final": {
+        "score": [
+          2,
+          1
+        ]
+      },
+      "data": "1974.json"
+    },
+    {
+      "year": 1978,
+      "held": true,
+      "hosts": [
+        "ARG"
+      ],
+      "champion": "ARG",
+      "runnerUp": "NED",
+      "final": {
+        "score": [
+          3,
+          1
+        ],
+        "notes": [
+          "aet"
+        ]
+      },
+      "data": "1978.json"
+    },
+    {
+      "year": 1982,
+      "held": true,
+      "hosts": [
+        "ESP"
+      ],
+      "champion": "ITA",
+      "runnerUp": "FRG",
+      "final": {
+        "score": [
+          3,
+          1
+        ]
+      },
+      "data": "1982.json"
+    },
+    {
+      "year": 1986,
+      "held": true,
+      "hosts": [
+        "MEX"
+      ],
+      "champion": "ARG",
+      "runnerUp": "FRG",
+      "final": {
+        "score": [
+          3,
+          2
+        ]
+      },
+      "data": "1986.json"
+    },
+    {
+      "year": 1990,
+      "held": true,
+      "hosts": [
+        "ITA"
+      ],
+      "champion": "FRG",
+      "runnerUp": "ARG",
+      "final": {
+        "score": [
+          1,
+          0
+        ]
+      },
+      "data": "1990.json"
+    },
+    {
+      "year": 1994,
+      "held": true,
+      "hosts": [
+        "USA"
+      ],
+      "champion": "BRA",
+      "runnerUp": "ITA",
+      "final": {
+        "score": [
+          0,
+          0
+        ],
+        "pens": [
+          3,
+          2
+        ],
+        "notes": [
+          "aet",
+          "pen"
+        ]
+      },
+      "data": "1994.json"
+    },
+    {
+      "year": 1998,
+      "held": true,
+      "hosts": [
+        "FRA"
+      ],
+      "champion": "FRA",
+      "runnerUp": "BRA",
+      "final": {
+        "score": [
+          3,
+          0
+        ]
+      },
+      "data": "1998.json"
+    },
+    {
+      "year": 2002,
+      "held": true,
+      "hosts": [
+        "KOR",
+        "JPN"
+      ],
+      "champion": "BRA",
+      "runnerUp": "GER",
+      "final": {
+        "score": [
+          2,
+          0
+        ]
+      },
+      "data": "2002.json"
+    },
+    {
+      "year": 2006,
+      "held": true,
+      "hosts": [
+        "GER"
+      ],
+      "champion": "ITA",
+      "runnerUp": "FRA",
+      "final": {
+        "score": [
+          1,
+          1
+        ],
+        "pens": [
+          5,
+          3
+        ],
+        "notes": [
+          "aet",
+          "pen"
+        ]
+      },
+      "data": "2006.json"
+    },
+    {
+      "year": 2010,
+      "held": true,
+      "hosts": [
+        "RSA"
+      ],
+      "champion": "ESP",
+      "runnerUp": "NED",
+      "final": {
+        "score": [
+          1,
+          0
+        ],
+        "notes": [
+          "aet"
+        ]
+      },
+      "data": "2010.json"
+    },
+    {
+      "year": 2014,
+      "held": true,
+      "hosts": [
+        "BRA"
+      ],
+      "champion": "GER",
+      "runnerUp": "ARG",
+      "final": {
+        "score": [
+          1,
+          0
+        ],
+        "notes": [
+          "aet"
+        ]
+      },
+      "data": "2014.json"
+    },
+    {
+      "year": 2018,
+      "held": true,
+      "hosts": [
+        "RUS"
+      ],
+      "champion": "FRA",
+      "runnerUp": "CRO",
+      "final": {
+        "score": [
+          4,
+          2
+        ]
+      },
+      "data": "2018.json"
+    },
+    {
+      "year": 2022,
+      "held": true,
+      "hosts": [
+        "QAT"
+      ],
+      "champion": "ARG",
+      "runnerUp": "FRA",
+      "final": {
+        "score": [
+          3,
+          3
+        ],
+        "pens": [
+          4,
+          2
+        ],
+        "notes": [
+          "aet",
+          "pen"
+        ]
+      },
+      "data": "2022.json"
+    },
+    {
+      "year": 2026,
+      "held": true,
+      "hosts": [
+        "CAN",
+        "MEX",
+        "USA"
+      ],
+      "champion": "ESP",
+      "runnerUp": "ARG",
+      "final": {
+        "score": [
+          1,
+          0
+        ],
+        "notes": [
+          "aet"
+        ]
+      },
+      "data": "2026.json"
+    }
   ],
   "stages": [
-    { "id": "qualifyingRound", "key": "phase.qualifyingRound", "kind": "qualifying", "order": 5 },
-    { "id": "qualifyingGroup", "key": "phase.qualifyingGroup", "kind": "qualifying", "order": 6 },
-    { "id": "qualifyingPlayoff", "key": "phase.qualifyingPlayoff", "kind": "knockout", "order": 7 },
-    { "id": "qualifying", "key": "phase.qualifying", "kind": "qualifying", "order": 10 },
-    { "id": "group", "key": "phase.group", "kind": "group", "order": 20 },
-    { "id": "group2", "key": "phase.group2", "kind": "group", "order": 22 },
-    { "id": "playoff", "key": "phase.playoff", "kind": "knockout", "order": 24 },
-    { "id": "finalGroup", "key": "phase.finalGroup", "kind": "group", "order": 25 },
-    { "id": "r32", "key": "phase.r32", "kind": "knockout", "order": 28 },
-    { "id": "r16", "key": "phase.r16", "kind": "knockout", "order": 30 },
-    { "id": "qf", "key": "phase.qf", "kind": "knockout", "order": 40 },
-    { "id": "sf", "key": "phase.sf", "kind": "knockout", "order": 50 },
-    { "id": "third", "key": "phase.third", "kind": "knockout", "order": 60 },
-    { "id": "final", "key": "phase.final", "kind": "knockout", "order": 70 }
+    {
+      "id": "qualifyingRound",
+      "key": "phase.qualifyingRound",
+      "kind": "qualifying",
+      "order": 5
+    },
+    {
+      "id": "qualifyingGroup",
+      "key": "phase.qualifyingGroup",
+      "kind": "qualifying",
+      "order": 6
+    },
+    {
+      "id": "qualifyingPlayoff",
+      "key": "phase.qualifyingPlayoff",
+      "kind": "knockout",
+      "order": 7
+    },
+    {
+      "id": "qualifying",
+      "key": "phase.qualifying",
+      "kind": "qualifying",
+      "order": 10
+    },
+    {
+      "id": "group",
+      "key": "phase.group",
+      "kind": "group",
+      "order": 20
+    },
+    {
+      "id": "group2",
+      "key": "phase.group2",
+      "kind": "group",
+      "order": 22
+    },
+    {
+      "id": "playoff",
+      "key": "phase.playoff",
+      "kind": "knockout",
+      "order": 24
+    },
+    {
+      "id": "finalGroup",
+      "key": "phase.finalGroup",
+      "kind": "group",
+      "order": 25
+    },
+    {
+      "id": "r32",
+      "key": "phase.r32",
+      "kind": "knockout",
+      "order": 28
+    },
+    {
+      "id": "r16",
+      "key": "phase.r16",
+      "kind": "knockout",
+      "order": 30
+    },
+    {
+      "id": "qf",
+      "key": "phase.qf",
+      "kind": "knockout",
+      "order": 40
+    },
+    {
+      "id": "sf",
+      "key": "phase.sf",
+      "kind": "knockout",
+      "order": 50
+    },
+    {
+      "id": "third",
+      "key": "phase.third",
+      "kind": "knockout",
+      "order": 60
+    },
+    {
+      "id": "final",
+      "key": "phase.final",
+      "kind": "knockout",
+      "order": 70
+    }
   ],
   "updatePolicy": {
     "mode": "manual",
