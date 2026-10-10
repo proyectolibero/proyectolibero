@@ -17,6 +17,7 @@
   "coverage": {
     "matches": 2,
     "goals": 12,
+    "scope": "final",
     "complete": false
   },
   "sources": [

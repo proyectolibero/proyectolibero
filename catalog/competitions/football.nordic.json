@@ -6,6 +6,7 @@
   "name": "Nordic Championships",
   "i18nKey": "comp.nordic.name",
   "organizer": "—",
+  "kind": "international",
   "scope": "regional",
   "teamMode": "country",
   "resultArchetype": "encounter",

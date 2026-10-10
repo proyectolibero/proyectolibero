@@ -20,7 +20,8 @@
     "matches": 47,
     "goals": 180,
     "scorers": 90,
-    "complete": true
+    "complete": true,
+    "scope": "all"
   },
   "sources": [
     {

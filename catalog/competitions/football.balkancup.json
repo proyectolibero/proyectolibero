@@ -6,6 +6,7 @@
   "name": "Balkan Cup",
   "i18nKey": "comp.balkancup.name",
   "organizer": "—",
+  "kind": "international",
   "scope": "continental",
   "teamMode": "country",
   "resultArchetype": "encounter",

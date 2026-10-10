@@ -31,6 +31,7 @@ function competitionCatalog() {
     name: "FIFA World Cup",
     i18nKey: "comp.worldcup.name",
     organizer: "FIFA",
+    kind: "international",
     scope: "international",
     teamMode: "country",
     resultArchetype: "encounter",
@@ -320,6 +321,7 @@ function balkanCatalog({ published = false } = {}) {
     name: "Balkan Cup",
     i18nKey: "comp.worldcup.name",
     organizer: "Balkan Cup",
+    kind: "international",
     scope: "regional",
     teamMode: "country",
     resultArchetype: "encounter",
@@ -363,7 +365,7 @@ function rangeDraft() {
     hosts: ["ROU"],
     teamsCount: 2,
     results: { champion: "ROU", runnerUp: "YUG", finalMatchId: "m001" },
-    coverage: { matches: 1, goals: 3, complete: true, scope: "final" },
+    coverage: { matches: 1, goals: 3, complete: true, scope: "all" },
     sources: [
       {
         id: "rsssf:balkan",

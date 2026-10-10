@@ -5,7 +5,7 @@
   "type": "object",
   "required": [
     "schemaVersion", "id", "sport", "competition", "name", "i18nKey",
-    "organizer", "scope", "teamMode", "resultArchetype", "cadence", "status",
+    "organizer", "kind", "scope", "teamMode", "resultArchetype", "cadence", "status",
     "firstEdition", "editions", "stages", "updatePolicy", "license", "sources"
   ],
   "additionalProperties": false,
@@ -17,6 +17,7 @@
     "name": { "type": "string", "minLength": 1 },
     "i18nKey": { "type": "string" },
     "organizer": { "type": "string" },
+    "kind": { "enum": ["international", "domestic"] },
     "scope": { "enum": ["international", "continental", "national", "regional"] },
     "teamMode": { "enum": ["country", "club", "individual"] },
     "resultArchetype": { "enum": ["encounter", "ranking", "timed", "scored"] },

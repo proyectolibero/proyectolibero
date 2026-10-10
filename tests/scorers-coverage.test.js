@@ -51,6 +51,7 @@ test("EDI013: aviso (no error) cuando la suma de goleadores no cuadra y no está
 
 test("coverage.complete:true con scorersComplete:false es válido (sin error ni aviso)", () => {
   const edition = mismatched();
+  edition.coverage.scope = "all";
   edition.coverage.complete = true;
   edition.coverage.scorersComplete = false;
   const result = validate(edition);

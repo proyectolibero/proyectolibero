@@ -388,20 +388,59 @@ function checkCoverage(errors, warnings, file, edition) {
     const goals = edition.matches.reduce((sum, m) => sum + (Array.isArray(m.score) ? m.score[0] + m.score[1] : 0), 0);
     if (coverage.goals !== goals) push(errors, "EDI008", file, `coverage.goals ${coverage.goals} != ${goals}`);
   }
+  checkCompleteScope(errors, file, coverage);
   checkScorersCoverage(warnings, file, edition, coverage);
 }
 
 /*
  * Coherencia de penaltis: una tanda (`pens[]`) solo se da tras un partido
  * empatado. Un `pens[]` con marcador nulo o no igualado es una incoherencia
- * (EDI017); el alcance no incluye exigir la nota `pen`, porque hay ediciones
+ * (EDI019); el alcance no incluye exigir la nota `pen`, porque hay ediciones
  * publicadas que registran la tanda sin ella.
  */
 function checkPensCoherence(list, file, edition) {
   for (const match of edition.matches || []) {
     if (!Array.isArray(match.pens)) continue;
     if (!Array.isArray(match.score) || match.score[0] !== match.score[1]) {
-      push(list, "EDI017", file, `partido ${match.id} con pens[] pero marcador no empatado`);
+      push(list, "EDI019", file, `partido ${match.id} con pens[] pero marcador no empatado`);
+    }
+  }
+}
+
+/*
+ * ADR-022/D32: una edición solo puede declararse completa (`coverage.complete`)
+ * si su alcance es `"all"` (clasificación + torneo final). `complete:true` con
+ * `scope:"final"` presentaría como completa una edición a la que le falta la
+ * clasificación; es una contradicción (`EDI017`).
+ */
+function checkCompleteScope(list, file, coverage) {
+  if (coverage.complete === true && coverage.scope !== "all") {
+    push(
+      list,
+      "EDI017",
+      file,
+      `coverage.complete true exige coverage.scope "all" (actual: ${JSON.stringify(coverage.scope)}) (ADR-022)`
+    );
+  }
+}
+
+/*
+ * ADR-023/D33: la ficha de partido (`sheet`) es el texto verbatim de la fuente.
+ * Su `source` debe estar declarada en `sources[]` (de la edición o del catálogo)
+ * y `text` no puede quedar vacío; cualquier ficha huérfana o vacía es `EDI018`.
+ */
+function checkMatchSheets(list, file, edition, sourceIds) {
+  for (const match of edition.matches || []) {
+    const sheet = match.sheet;
+    if (!sheet || typeof sheet !== "object") continue;
+    const where = `partido ${match.id}`;
+    if (typeof sheet.source !== "string" || !sheet.source) {
+      push(list, "EDI018", file, `${where}: sheet sin source`);
+    } else if (sourceIds && !sourceIds.has(sheet.source)) {
+      push(list, "EDI018", file, `${where}: sheet.source ${sheet.source} no declarada en sources[]`);
+    }
+    if (typeof sheet.text !== "string" || sheet.text.trim() === "") {
+      push(list, "EDI018", file, `${where}: sheet.text vacío`);
     }
   }
 }
@@ -448,6 +487,7 @@ function validateEditionV2(ctx, file, edition, competition, entry) {
   checkFinalMatchId(errors, file, edition);
   checkChampionCoverage(errors, file, edition);
   checkPensCoherence(errors, file, edition);
+  checkMatchSheets(errors, file, edition, sourceIds);
   validateScorers(errors, file, edition.scorers || [], ctx.countries);
   if (Array.isArray(edition.groups) && edition.groups.length) validateGroups(errors, file, edition.groups, edition.matches || [], ctx.countries);
   checkCoverage(errors, warnings, file, edition);

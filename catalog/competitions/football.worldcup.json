@@ -6,6 +6,7 @@
   "name": "FIFA World Cup",
   "i18nKey": "comp.worldcup.name",
   "organizer": "FIFA",
+  "kind": "international",
   "scope": "international",
   "teamMode": "country",
   "resultArchetype": "encounter",
@@ -50,6 +51,9 @@
     { "year": 2026, "held": true, "hosts": ["CAN", "MEX", "USA"], "champion": "ESP", "runnerUp": "ARG", "final": { "score": [1, 0], "notes": ["aet"] }, "data": "2026.json" }
   ],
   "stages": [
+    { "id": "qualifyingRound", "key": "phase.qualifyingRound", "kind": "qualifying", "order": 5 },
+    { "id": "qualifyingGroup", "key": "phase.qualifyingGroup", "kind": "qualifying", "order": 6 },
+    { "id": "qualifyingPlayoff", "key": "phase.qualifyingPlayoff", "kind": "knockout", "order": 7 },
     { "id": "qualifying", "key": "phase.qualifying", "kind": "qualifying", "order": 10 },
     { "id": "group", "key": "phase.group", "kind": "group", "order": 20 },
     { "id": "group2", "key": "phase.group2", "kind": "group", "order": 22 },

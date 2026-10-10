@@ -20,7 +20,9 @@
     "matches": 47,
     "goals": 209,
     "scorers": 106,
-    "complete": true
+    "complete": false,
+    "scope": "final",
+    "note": "Publicada la fase final; pendiente la clasificación."
   },
   "sources": [
     {

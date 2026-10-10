@@ -140,6 +140,7 @@ test("ADR-020: champion null con complete:true: EDI015", () => {
   edition.results.champion = null;
   edition.results.runnerUp = null;
   edition.results.finalMatchId = null;
+  edition.coverage.scope = "all";
   edition.coverage.complete = true;
   edition.coverage.note = "Edición abandonada sin campeón (ADR-020).";
   assert.ok(codes(validate(edition)).includes("EDI015"));
@@ -154,10 +155,41 @@ test("ADR-020: champion null sin motivo documentado: EDI016", () => {
   assert.ok(codes(validate(edition)).includes("EDI016"));
 });
 
-test("EDI017: pens[] con marcador no empatado es incoherente", () => {
+test("EDI019: pens[] con marcador no empatado es incoherente", () => {
   const edition = clone();
   edition.matches[1].pens = [4, 3];
+  assert.ok(codes(validate(edition)).includes("EDI019"));
+});
+
+test("EDI017: coverage.complete true con scope final es contradicción (ADR-022)", () => {
+  const edition = clone();
+  edition.coverage.complete = true;
   assert.ok(codes(validate(edition)).includes("EDI017"));
+});
+
+test("EDI017: coverage.complete true con scope all es válido", () => {
+  const edition = clone();
+  edition.coverage.scope = "all";
+  edition.coverage.complete = true;
+  assert.ok(!codes(validate(edition)).includes("EDI017"));
+});
+
+test("EDI018: sheet con source no declarada es error", () => {
+  const edition = clone();
+  edition.matches[0].sheet = { source: "rsssf:fantasma", text: "Ficha verbatim." };
+  assert.ok(codes(validate(edition)).includes("EDI018"));
+});
+
+test("EDI018: sheet con text vacío es error", () => {
+  const edition = clone();
+  edition.matches[0].sheet = { source: "rsssf:38f", text: "   " };
+  assert.ok(codes(validate(edition)).includes("EDI018"));
+});
+
+test("EDI018: sheet con source declarada y texto verbatim es válido", () => {
+  const edition = clone();
+  edition.matches[0].sheet = { source: "rsssf:38f", text: "SUI - GER 1:1 (1:1, 1:1, 1:1)", lang: "en" };
+  assert.ok(!codes(validate(edition)).includes("EDI018"));
 });
 
 test("pens[] con marcador empatado y nota pen es coherente", () => {

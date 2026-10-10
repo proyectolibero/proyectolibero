@@ -64,7 +64,8 @@ Ejemplo:
 | `id` | `"football/worldcup"` (clave estable; **no cambia nunca**) |
 | `sport`, `competition` | Claves; deben casar con la ruta y con los datos |
 | `name`, `i18nKey` | Nombre oficial e internacional, y clave de traducción |
-| `organizer`, `scope` | Federación y ámbito (`international`, `continental`, `national`) |
+| `organizer`, `kind` | Federación y tipo de competición (`international` \| `domestic`) |
+| `scope` | Ámbito (`international`, `continental`, `national`, `regional`) |
 | `teamMode` | `country` \| `club` \| `individual` |
 | `resultArchetype` | Arquetipo único de la competición |
 | `gender` | `men` \| `women` \| `mixed` |
@@ -84,6 +85,13 @@ sus fases (`kind`: `qualifying` \| `group` \| `knockout` \| `ranking` \| `heat`)
 y las ediciones solo referencian `stage: "<id>"`. Añadir una fase nueva (por
 ejemplo `finalGroup`, necesaria para el Mundial de 1950) es **extender el
 catálogo y añadir una clave i18n**, no tocar el esquema.
+
+Las competiciones **con clasificación** (Mundial y Eurocopa) amplían su
+vocabulario con `qualifyingRound`, `qualifyingGroup` y `qualifyingPlayoff`
+(además del `qualifying` genérico del Mundial, que se conserva), con sus claves
+i18n `phase.qualifyingRound` / `phase.qualifyingGroup` / `phase.qualifyingPlayoff`
+en los 5 idiomas. El resto de competiciones internacionales (Balkan,
+Confederaciones, Nordic) no tienen clasificatorias y **no declaran estas fases**.
 
 ## 3. Edición
 
@@ -113,9 +121,19 @@ Ruta: `data/<sport>/<competition>/<edition>.json`. Campos comunes:
 | `matches` / `events` | int | Nº real de partidos/resultados publicados |
 | `goals` | int | Suma de los goles de los partidos (cifra garantizada por el validador) |
 | `scorers` | int | Nº de entradas de `scorers[]` |
-| `scope` | `"final"` \| `"all"` | Nivel: solo torneo final, o también clasificación |
-| `complete` | bool | `true` si el **resultado** está completo (Nivel 1, ADR-016) |
+| `scope` | `"final"` \| `"all"` | **Obligatorio**: solo torneo final, o clasificación + torneo final (ADR-022) |
+| `complete` | bool | `true` **solo** si `scope:"all"` y no falta ninguna fase (ADR-022) |
 | `scorersComplete` | bool (opcional) | `false` si la lista de goleadores es parcial/añadido (ADR-015/D24) |
+| `matchsheets` | `{ complete: bool }` (opcional) | Grado de cobertura de las fichas de partido (ADR-023) |
+| `note` | string (opcional) | Motivo de una cobertura incompleta o parcial |
+
+**La clasificación es parte de la edición (ADR-022/D32).** La edición solo está
+completa cuando incluye la fase de clasificación (cuando existe):
+`coverage.scope:"all"` **y** `coverage.complete:true`. Si solo se publica el
+torneo final, es `scope:"final"` y `complete:false`, con una `note` que lo
+declare ("Publicada la fase final; pendiente la clasificación."). `complete:true`
+con `scope` distinto de `"all"` es una contradicción (**`EDI017`**). El campo
+`scope` es obligatorio en el esquema v2.1.
 
 **El resultado manda (ADR-016/D24).** `coverage.complete:true` con
 `scorersComplete:false` es válido: la edición publica todos los partidos con
@@ -194,6 +212,11 @@ Trans-Caucásica).
     "attendance": 60000,
     "events": [ { "minute": 6, "player": "Colaussi", "team": "ITA", "score": [1, 0] } ]
   },
+  "sheet": {
+    "source": "rsssf:38full",
+    "text": "SUI - GER 1:1 (1:1, 1:1, 1:1)\nHuber - Minelli (c), Lehmann ...",
+    "lang": "en"
+  },
   "provenance": { "primary": "rsssf:38f", "rejected": [] },
   "raw": null
 }
@@ -202,6 +225,14 @@ Trans-Caucásica).
 `date` y `matchday` son **obligatorios cuando la fuente los da**: el resultado
 completo (fecha + jornada/ronda) es el núcleo del archivo; alineaciones, árbitros,
 asistencias y minuto a minuto son añadidos opcionales.
+
+**Ficha de partido (`sheet`, ADR-023/D33).** Cada partido admite un objeto
+`sheet` opcional con el **texto verbatim** de la ficha de la fuente: `source`
+(id de fuente declarado en `sources[]`), `text` (bloque original, nunca vacío) y
+`lang` (opcional). No se convierte en estadísticas de jugadores ni se traduce; se
+presenta tal cual con la atribución de la edición. Una `sheet` cuya `source` no
+esté declarada o cuyo `text` esté vacío es **`EDI018`**. Los campos estructurados
+(fecha, equipos, marcador, árbitro, asistencia, eventos) se mantienen aparte.
 
 ### 3.2 Arquetipo `ranking` (arquería, atletismo de marca…)
 
@@ -288,12 +319,15 @@ salvo como referencia interna marcada. El validador lo comprueba.
    `decidedBy: "standings"` se omite. `coChampions` sin repeticiones, sin el
    campeón y con países conocidos (ADR-019). `champion: null` exige
    `coverage.complete:false` y un motivo documentado (`EDI015`/`EDI016`, ADR-020).
-6. Sumas de GF/GA y `coverage` coincide con lo contado. El desajuste entre la
+6. Sumas de GF/GA y `coverage` coincide con lo contado. `coverage.complete:true`
+   exige `coverage.scope:"all"` (`EDI017`, ADR-022). El desajuste entre la
    suma de `scorers[].goals` y `coverage.goals` es **aviso** (`EDI013`), nunca
    error, y solo si no está documentado (ADR-015).
 7. `provenance`: a lo sumo una `primary`; `rejected[]` con `source`/`field`/`reason`.
 8. Códigos de país en `i18n/countries.json`; ciudades y nombres propios intactos.
-9. `sources[]` con `id` único y `license`/`redistribute` declarados.
+9. `sources[]` con `id` único y `license`/`redistribute` declarados. La `source`
+   de cada `sheet` debe estar declarada y su `text` no puede estar vacío
+   (`EDI018`, ADR-023).
 10. Release: cada `sha256` de `contents[]` coincide con el fichero real.
 11. i18n: las claves `phase.*`/`notes.*` usadas existen en los 5 idiomas; paridad.
 12. Sin ficheros de datos huérfanos (no referenciados por catálogo ni release).

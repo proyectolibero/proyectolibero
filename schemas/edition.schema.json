@@ -31,13 +31,24 @@
     },
     "coverage": {
       "type": "object",
-      "required": ["matches", "complete"],
+      "required": ["matches", "scope", "complete"],
       "additionalProperties": true,
       "properties": {
         "matches": { "type": "integer", "minimum": 0 },
         "scorers": { "type": "integer", "minimum": 0 },
         "goals": { "type": "integer", "minimum": 0 },
-        "complete": { "type": "boolean" }
+        "scope": { "enum": ["all", "final"] },
+        "complete": { "type": "boolean" },
+        "scorersComplete": { "type": "boolean" },
+        "matchsheets": {
+          "type": "object",
+          "required": ["complete"],
+          "additionalProperties": false,
+          "properties": {
+            "complete": { "type": "boolean" }
+          }
+        },
+        "note": { "type": "string" }
       }
     },
     "sources": {
@@ -155,6 +166,16 @@
                 }
               }
             }
+          }
+        },
+        "sheet": {
+          "type": "object",
+          "required": ["source", "text"],
+          "additionalProperties": false,
+          "properties": {
+            "source": { "type": "string" },
+            "text": { "type": "string" },
+            "lang": { "type": "string" }
           }
         },
         "provenance": { "$ref": "#/$defs/provenance" },

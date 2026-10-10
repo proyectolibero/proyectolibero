@@ -6,6 +6,7 @@
   "name": "UEFA European Championship",
   "i18nKey": "comp.eurochamp.name",
   "organizer": "UEFA",
+  "kind": "international",
   "scope": "continental",
   "teamMode": "country",
   "resultArchetype": "encounter",
@@ -335,6 +336,24 @@
     }
   ],
   "stages": [
+    {
+      "id": "qualifyingRound",
+      "key": "phase.qualifyingRound",
+      "kind": "qualifying",
+      "order": 5
+    },
+    {
+      "id": "qualifyingGroup",
+      "key": "phase.qualifyingGroup",
+      "kind": "qualifying",
+      "order": 6
+    },
+    {
+      "id": "qualifyingPlayoff",
+      "key": "phase.qualifyingPlayoff",
+      "kind": "knockout",
+      "order": 7
+    },
     {
       "id": "group",
       "key": "phase.group",

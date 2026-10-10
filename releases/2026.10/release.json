@@ -1,398 +1,398 @@
 {
   "schemaVersion": 2,
   "releaseId": "2026.10",
-  "asOf": "2026-10-07",
+  "asOf": "2026-10-10",
   "created": "2026-10-06T00:00:00Z",
   "generatedBy": "core/release.js",
   "contents": [
     {
       "path": "data/football/balkancup/1929-31.json",
-      "sha256": "6a1ab55064527500c3c5b5d8fa9b02ef1bfb73d98258881680ef2c09218c62aa",
+      "sha256": "d07965a8dbee725ef9e00ac5b784f4ce3beb15ad0d018149f33d23ad8c4a1285",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1929-31"
     },
     {
       "path": "data/football/balkancup/1931.json",
-      "sha256": "2fb2192f84cd7d32a12d9d56b8c205bae7059a28bd6af00332dd5b29f0aa43ff",
+      "sha256": "102cd88f423c2a5b86484970aba1f6b744931cfa03c0588c683ff8095163d2c4",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1931
     },
     {
       "path": "data/football/balkancup/1932.json",
-      "sha256": "0d43d6b94dbd922bec5e5f2d1111720062494186a9d65b82452940a497a1de12",
+      "sha256": "4fc3f3e558ed60ff8899edc4032d3a68420ce30a5fa372065458112decafd0a8",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1932
     },
     {
       "path": "data/football/balkancup/1933.json",
-      "sha256": "0ebc1f5152f8f0960b77ce5de8034bb25298ca87895a983c4afbe0bd3abba603",
+      "sha256": "2c625a407017d001dc1384ee87422ce5bb0ed6ea54f133c7896539219e809704",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1933
     },
     {
       "path": "data/football/balkancup/1934-35.json",
-      "sha256": "be2f6fa7071b42db38273064906fe64795d5f13254f58241536c7d8e2c1c4b68",
+      "sha256": "be9651b5028f953c55865d3ef5ab0c6a31f81fbdecbaf63ff8063b0fe50e2cb2",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1934-35"
     },
     {
       "path": "data/football/balkancup/1935.json",
-      "sha256": "b085a23820686460e71ceb713db00b8f1bc82344027a6944779e2b31b737b74d",
+      "sha256": "4a5487005d2804e030d8e27101bf069736d90dd240be41876f4f670e7c66b2ea",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1935
     },
     {
       "path": "data/football/balkancup/1936.json",
-      "sha256": "2931de8ec6b60e18a0fa9aace0e89c0e0b63f306b8c9eaa30fd1bcb673a54632",
+      "sha256": "f698bcaa890ad4f1286b1528c27223f4a559a468ed89f1a7a4bdf5cc36acc2e7",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1936
     },
     {
       "path": "data/football/balkancup/1946.json",
-      "sha256": "5c3dca97ab0e4f7419c4bc7114aeb8a807089d826dae5f7cccbf53703518cfbb",
+      "sha256": "c874d4fae7b5c208ae11847e69d1f69ad20a4847479b1a8a794a51c5bc72a12f",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1946
     },
     {
       "path": "data/football/balkancup/1947.json",
-      "sha256": "792dd5da0d7b2fb595a60c21cd6b63be7bae1974d735b16d428ce2be6a731df5",
+      "sha256": "033897e0f5c6d2dcd464585fc129215751e2c788fca3835912681af930ddeae9",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1947
     },
     {
       "path": "data/football/balkancup/1948.json",
-      "sha256": "f4446af7c6e7f0a7753451052e81e6edd7cbbdaa3376dae22cf1806e22b9457a",
+      "sha256": "fc0b53b9a9f8f896d12fe216d253612c3060f2404071519f5f39e98bd74d6480",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1948
     },
     {
       "path": "data/football/balkancup/1973-76.json",
-      "sha256": "5c8899fa68b8559444828c6211cb915546ed0b30f66888813a4cec8b8c0291c1",
+      "sha256": "bca4202a989a5ba0d9a52241091652e6f28992fc162b5fa9984e3d6d90959850",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1973-76"
     },
     {
       "path": "data/football/balkancup/1977-80.json",
-      "sha256": "4dd6507e468dfe9ce7d62f7504d44d45032d950945b11739997bb2e18cc82f44",
+      "sha256": "742e662eb4576d6c786860cd34740a79424d6952256f190f0f3f314ed8502b05",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1977-80"
     },
     {
       "path": "data/football/eurochamp/1960.json",
-      "sha256": "5b16a91ad06f06ae47c29d99475cde0edccba4f877a244e381eb11a038dd5869",
+      "sha256": "b47b4bdaee9051688876234444b73405a16c18564211c525e18da26d589c00e1",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1960
     },
     {
       "path": "data/football/eurochamp/1964.json",
-      "sha256": "e840d65ca7e05badd9efc7b32cc3bcc5530aff750c505d9a4202003c4b26a7ba",
+      "sha256": "c6ccdb94f1733052ae5ea5425cb67dda650cabfea4dbe6618725ce3157d05412",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1964
     },
     {
       "path": "data/football/eurochamp/1968.json",
-      "sha256": "4c549bbc4a24b9dd7672e5f565ac735a3ad4d385d1f48a64a2b6c52a9c301b48",
+      "sha256": "ceb01d115f9eac77b2ccecabbb4aa3eb29af014759f4af095ca5b50de6ba7a87",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1968
     },
     {
       "path": "data/football/eurochamp/1972.json",
-      "sha256": "14f7521de1e4d5f9a043f9fcc2b5cd6bba2a6caec80ffaa7211537b4e0d57717",
+      "sha256": "2b4fefb583aa79be345187e5d9d8d6ddb780ecac689f8481eba24e180cfa3dc4",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1972
     },
     {
       "path": "data/football/eurochamp/1976.json",
-      "sha256": "fc2559a1342dca7cb2a1141b96226f633bc49c4ae3218b6cf41aa4f014c4a9c1",
+      "sha256": "c56f64125ce39f539deb549d46ef9584c2e9480bc94d9fbb00d2d1d885b27ce3",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1976
     },
     {
       "path": "data/football/eurochamp/1980.json",
-      "sha256": "33055890bb2cbb6c8ede606d7b258bfac09e55f76b0536ae7e33116d6e80acfd",
+      "sha256": "659b3268f95f5967a0ac91f6caa5e8f1646ce59077bc6a2f35b31afaf211e5f0",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1980
     },
     {
       "path": "data/football/eurochamp/1984.json",
-      "sha256": "9cb64ef8ef0ca39464c5b59084b7c948a67a9f7dcc4b2e70fe965c106d1918f9",
+      "sha256": "8fab18ce738ee8454e7c6ac247c529547e9fc8a1e7e51b403ee1a1ce3936d2d4",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1984
     },
     {
       "path": "data/football/eurochamp/1988.json",
-      "sha256": "f4977bc05f6e68797586949373f584bc352cc3a9dc1eb4c57e11902fc2a4af72",
+      "sha256": "bdbd9db34f1ca20efb859e9d0f17bfb96502d58528dcdec676d258039a9757fb",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1988
     },
     {
       "path": "data/football/eurochamp/1992.json",
-      "sha256": "2b2678da6735d0d717dc235a2859565a463a4e97425448313d52e3194d7d6340",
+      "sha256": "9d5c2ee60f458c31c1cb16e9891d7adc1ac91eb8fafab29914e8a5e346c16896",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1992
     },
     {
       "path": "data/football/eurochamp/1996.json",
-      "sha256": "a6c559cab19daeef87214ae3adeb472e233293d59f86006f57ef583dc3c61d65",
+      "sha256": "1ededc770fe15bd72fcfef4c88d8eb05f17635bf1010cd69c1c8b2a8c1541c98",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1996
     },
     {
       "path": "data/football/eurochamp/2000.json",
-      "sha256": "d71420a34e897fe9c866dd0b1348fb412b0011c07dcbc6f54d6a93c07db187bf",
+      "sha256": "87a5e3df913da679c22019d2bb3c159e9fb18bc0e38d511e48dfe15954687eb1",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2000
     },
     {
       "path": "data/football/eurochamp/2004.json",
-      "sha256": "2f50decaaf7728305b9c80ec116b80e88d5e459c3c7fba4877d8dfa92c586100",
+      "sha256": "5abd6a9ca3afd23c2ddd147cf0ce8278d8f7fe652808a0e6ca489e50e874467a",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2004
     },
     {
       "path": "data/football/eurochamp/2008.json",
-      "sha256": "e3bdc26156340dfc26c200b12fbf62dc9283e739e4c41fefa2d0970ad0889b60",
+      "sha256": "39321e435f9f2da920261d078927df797cdd63f0c7d4c6ea152a58276f65c83a",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2008
     },
     {
       "path": "data/football/eurochamp/2012.json",
-      "sha256": "dac7272fb37daa90bbc00d15e68b785c2ebf6ef489eb7ee2d138ad08d4182aef",
+      "sha256": "60764dc96edfb4e06d9b29ceb107e67669f1ef04198740d4007cd9d053b9e1ec",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2012
     },
     {
       "path": "data/football/eurochamp/2016.json",
-      "sha256": "fa9f31e24d0e8a2683543e8ec97f2af211f38581439c5f76fd522959f471ba2d",
+      "sha256": "f0c467a8e9a1bf75e9abe42b281aa1c6ce6323ed9025fab458a599e983698d4a",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2016
     },
     {
       "path": "data/football/eurochamp/2020.json",
-      "sha256": "61e2505615db44ff9a0a59e96ed5c7eedb16a76f7d99eb4432eb47868986dc16",
+      "sha256": "e734563c8462941305d12a81ed0ef2124d86e76e40865d84016ec2aedce59444",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2020
     },
     {
       "path": "data/football/eurochamp/2024.json",
-      "sha256": "49237cbb70c147b16b86a857f33fedc27a4be117ae3053b473a22de91a96f2fa",
+      "sha256": "7c468d8cfe153cdaebf983cb5a7c3056142914b65dec692b5790af4c7784aa86",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2024
     },
     {
       "path": "data/football/intconcup/1992.json",
-      "sha256": "1d83a9c9fedca718041c36bb60b469bb6f17ae73f857a2be232b875d2193185b",
+      "sha256": "7e3f34a474712ac35ac9bd6dafcaca6b8a50046087e241814b611277ff91c067",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1992
     },
     {
       "path": "data/football/intconcup/1995.json",
-      "sha256": "3597bff9025efadc639a9a67c75938eaa078c5d0579ccdd266a1e05ed746f988",
+      "sha256": "588ec4e59b3ba34303f617f857f41457ab20e358d8ccfd2be3d86f138130418d",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1995
     },
     {
       "path": "data/football/intconcup/1997.json",
-      "sha256": "9624074a820ed35635374a55903e1cdd075019e9699a82f40e7e0639b4f51460",
+      "sha256": "020c276070dfc38cc974797eaaf891a88a6d6bb3a41bad7f3a23c05e96cbac9a",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1997
     },
     {
       "path": "data/football/intconcup/1999.json",
-      "sha256": "9b2babe52f0e72ea795b968f6067d684b9d629a1eb710a344f16e58466e6db95",
+      "sha256": "d3a3d00ec403f3e97385d30b74928c73f1e86fe9250e2baedb329a5551b31035",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1999
     },
     {
       "path": "data/football/intconcup/2001.json",
-      "sha256": "f181eb341d42e0e36a75ee6f9938bf5fa9af2b1419f8c32f091412e9c665e052",
+      "sha256": "2f41eaa2e38a2af7cbfbce2600cc97cf7b839caf31555d915b5862513630bdab",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2001
     },
     {
       "path": "data/football/intconcup/2003.json",
-      "sha256": "ed6c3c36340d56ce5dacb6d6a2dc23149dbf6e1a1b9a9d2f1b378fa6f0afefba",
+      "sha256": "80b5ff3207343aacdb06862e18247fd23f28dd106c6cc9fd018cf3de7260599f",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2003
     },
     {
       "path": "data/football/intconcup/2005.json",
-      "sha256": "d593e086398ced2c7aef6cb9102b8f674527d08b8e35c0b54420ac9afe80e9c1",
+      "sha256": "bf31391a52f471260f268bf12a0970790ffd18aa0df3476d6bfa8b21e61a02e8",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2005
     },
     {
       "path": "data/football/intconcup/2009.json",
-      "sha256": "edb2db7026c137fe54fc74d4d9a523a9fa740a5c1425794c5b3553366e6bd693",
+      "sha256": "7d19dd5db41f25e652002728fe9aee8fddccf5f334b44980b07598d2ed38650e",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2009
     },
     {
       "path": "data/football/intconcup/2013.json",
-      "sha256": "ea16df421651d866dfd86b349abcaacda79f4f6f031c4d28f0dd31c5a6579ac6",
+      "sha256": "0cf303d1e249cdea3e32a8d70e1e8ebc8d0080857bdd1a4e72d2cab1ff07a8e0",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2013
     },
     {
       "path": "data/football/intconcup/2017.json",
-      "sha256": "5df62fe65a0b789162535a0ae14f2d3e5b1b3cbb28e83f93caa397d56a5b685e",
+      "sha256": "42c24a942f3c3fcf035565f4d08733969fd1902172a3a61f63ec0e111718fea2",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2017
     },
     {
       "path": "data/football/nordic/1924-28.json",
-      "sha256": "81cdaefb4d302e78d569a896d5375625e3a0f0797d820453fa65449f1b7fda1c",
+      "sha256": "1575646c29520c575758c3ea3d160ecad83e41bdbc1a2ee3fecaed3b6d2108c0",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1924-28"
     },
     {
       "path": "data/football/nordic/1929-32.json",
-      "sha256": "79ab3f8318b7ee78242486a5148d954a0a2afc6b90fdf18ed3d0aba82bdad5a5",
+      "sha256": "145943fd1915090c4e414522545162b55f05e3a4cfbf8748521ac2bba20947a4",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1929-32"
     },
     {
       "path": "data/football/nordic/1933-36.json",
-      "sha256": "671fac4a96ef5e811c19b7150938965affc835552ed533be5aac1c0eebaeae86",
+      "sha256": "e9a6b9b500dd7cad580b290bf0c8b1799f8d68646e76711bec83a557fed1b95d",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1933-36"
     },
     {
       "path": "data/football/nordic/1937-47.json",
-      "sha256": "1f24f6c728e9c92c7cd9b79e91bc5d6aa1df0fa827fafdb62bc0decf7716f7cd",
+      "sha256": "010ff700694396aeef9c4ad453dba3a9a3cb19820efedc5f0e0b2bd0d21b84d2",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1937-47"
     },
     {
       "path": "data/football/nordic/1948-51.json",
-      "sha256": "6a5678eccc1d711762a9864a06900e25445156ca22682b6b3070d4222ed3fb49",
+      "sha256": "57f54048d092bd5918527f8aa1b2f1fdcb77e1631ca1c79423e0d7519e5afeda",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1948-51"
     },
     {
       "path": "data/football/nordic/1952-55.json",
-      "sha256": "26f349a137824a66f54d98d967b2a47dccb757ece33caac53efc0ac81def65ed",
+      "sha256": "caae874a1163b15cadbd5027a00c06f3f0fb4d09a74e2fd439ac1f303ad92361",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1952-55"
     },
     {
       "path": "data/football/nordic/1956-59.json",
-      "sha256": "4b6bbf7b8e6e86a89062891ff6ed7ad42c2f2174a02a6d3450a312016920101e",
+      "sha256": "b694d88d9e2e79a0cc1bdee705792e7330bf3591ec07023a8d44a6dca5513bec",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1956-59"
     },
     {
       "path": "data/football/nordic/1960-63.json",
-      "sha256": "9feba24434e7b1d9297e185a34096c429f3699535d6413fb0eae24de4f804141",
+      "sha256": "1a601f35a55ae57282d423778fe0476383fc4306c9bc95367f04eb19390e0e5b",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1960-63"
     },
     {
       "path": "data/football/nordic/1964-67.json",
-      "sha256": "2858f4ffb892aef36455721ddba70edf7c3e1eae6556d302105bb2ce3475c1fb",
+      "sha256": "5ad8d4b6f28b6bba430d52c628fee42c1de631244da5852e788c88ac92f6618f",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1964-67"
     },
     {
       "path": "data/football/nordic/1968-71.json",
-      "sha256": "2fd5b0dcc0e1d3af5229dea777c2e96e3b6d5a5136760dc93bd19f76cbe40d90",
+      "sha256": "7e59a297dc66110069283f38ef2e9967c5aa919be534a348c3ae60a653cde1d7",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1968-71"
     },
     {
       "path": "data/football/nordic/1972-77.json",
-      "sha256": "1e11cf0b0e0978471944d2925e2a4f8b189da0dc642187f8cd76a1a7de88f379",
+      "sha256": "a9b592d42c979934710cf0b6ca57b05b8cc62ed8bd2a3745a5fe5bc4ec9fcec9",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1972-77"
     },
     {
       "path": "data/football/nordic/1978-80.json",
-      "sha256": "a6a56404e19219cb502f1e00106ce79baa1644291f668ae9c97ace51e36d4b5b",
+      "sha256": "710d05b2069b8f801375eafc36e623d46b989f7ac0940b2dd30edf21cbc70837",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1978-80"
     },
     {
       "path": "data/football/nordic/1981-83.json",
-      "sha256": "f5d86632b575ec67334c30774cbaa211f3d479f5784f6f6f6ae03244858bfb55",
+      "sha256": "dd8f1542bb039b966d6f20887d3aa057eee34bf7bab622642fbdf988e6468bd5",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1981-83"
     },
     {
       "path": "data/football/nordic/2000-01.json",
-      "sha256": "fb944d925b0eff8e8de49a470535e61237e8eb0df6b3fa1c694c9efd08a326ca",
+      "sha256": "e0d86eaede88b2adc7700a7343ebdabc8a2c7d6253edd851b84936be6c25ffec",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "2000-01"
     },
     {
       "path": "data/football/worldcup/1930.json",
-      "sha256": "32d7f79b35346397a87ffe3900f26ca988526a2f84c9cfc9f1539ca240d8e7de",
+      "sha256": "fd1fe26229cdf2cb40b444420ab5092c32c324e32030e2316bb47491e20bcd5c",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1930
     },
     {
       "path": "data/football/worldcup/1934.json",
-      "sha256": "35fbba3ea5785658b2552001a1d979bc57158e2f640b344d4d80ba2812a481ab",
+      "sha256": "ecfaae23264c9110d1f2a3e64b07799546a6fe92cdf7250866aeb0186dfc2ede",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1934
     },
     {
       "path": "data/football/worldcup/1938.json",
-      "sha256": "9d9d5ffb9d16e7bd5849d56b488850198f06d768c3d99782f00d6226750bd90c",
+      "sha256": "8e1d82389189486e1a92b94fd0e87b2eeb2a1728eb303ff168853ffee3e43857",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1938
@@ -406,139 +406,139 @@
     },
     {
       "path": "data/football/worldcup/1954.json",
-      "sha256": "72955679f409aa4ba9809b24cf3ce60577dfaadbd2e64de393757827dbe2c4cf",
+      "sha256": "7f5e6b3546bd5e9b9c8220063b87ebe2937b88e1804966653a2877993778f07f",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1954
     },
     {
       "path": "data/football/worldcup/1958.json",
-      "sha256": "944f8a9374e22c5a29520492d4ee003929410e667e41923b2e27b798d1d74943",
+      "sha256": "e4d8d9a186f4f33ba51755b3b8d92310771776747d19f1d75511af9af3ce8eec",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1958
     },
     {
       "path": "data/football/worldcup/1962.json",
-      "sha256": "fef1738f69da2b2983b6407bebeae3d01aea606c3c6b39ed250a255c94f2784a",
+      "sha256": "edc4e08d8f81cb918a1526568552142b6800858460cba91030ddf8aa2b5c2c63",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1962
     },
     {
       "path": "data/football/worldcup/1966.json",
-      "sha256": "f8d736f851edf4ea3a5940385f455c2127909a077db9f45bedca9617232ebdfa",
+      "sha256": "06e7eab25c0ff06cd4edf58277af17412ee5267def34832bbde4c701c690102a",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1966
     },
     {
       "path": "data/football/worldcup/1970.json",
-      "sha256": "378174809fcf5b03ade866d31e1422f927c841c6611c4d5a39a9ff59caad812b",
+      "sha256": "17bcfd4faccb58b4484214941f3ef25149d65b2e5c7b88e441701fcd62484e63",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1970
     },
     {
       "path": "data/football/worldcup/1974.json",
-      "sha256": "c9d74c95a1faae8cbe2b389c0acffc97fbad429acb6a3a75dc73052c0b8e6a02",
+      "sha256": "bcc972840bf15c4b684d544289e212a63f32ab186d43b87c7815d18c1b79fc44",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1974
     },
     {
       "path": "data/football/worldcup/1978.json",
-      "sha256": "5656d74195c38910681d79d841bc21807ffc0025fde13d62a732b655e11c1b82",
+      "sha256": "fca0efb63290f5d5e77118f19174c907a055f00b9b7c57067c2ad1722b393499",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1978
     },
     {
       "path": "data/football/worldcup/1982.json",
-      "sha256": "4d6f98170938c168f6a4e5101849313924866b5e6ef3674be9c90ab1c111eb46",
+      "sha256": "73d626f1e0d9112b265afe9b60aefb05b5f182f18ce1e358b48f86aeb7353888",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1982
     },
     {
       "path": "data/football/worldcup/1986.json",
-      "sha256": "6258a7730126764fe58c1ad423894c93a04a8374ff5937d8b8cc5016eb09f3d6",
+      "sha256": "1f74c3a0c1e462dd8d9ef51e6e5c4a09fbb433c3b50123af51b53903b75a50a2",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1986
     },
     {
       "path": "data/football/worldcup/1990.json",
-      "sha256": "dc15db0a982e7145944b966454a5963ac86cc928b033482eae1a75fd9005b8b9",
+      "sha256": "04dd232c568e9e4b00215402a84d81c5fbd9b1386d0cbec2a9e295e8f11cee12",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1990
     },
     {
       "path": "data/football/worldcup/1994.json",
-      "sha256": "0365695f642c1b6e58bbd693ac44939d6db0aa2a1c37c79329604afb2ef8e7d1",
+      "sha256": "88aab99e57f42e48249fb7733ee68b8a8a265790bec10266db19935f40f6bb55",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1994
     },
     {
       "path": "data/football/worldcup/1998.json",
-      "sha256": "4b63f7bafef16520042b60a335e1fa349affa9a53102e43d7c7883dac2df50dd",
+      "sha256": "ebbc9b47d52e6fb986a1ca312f1ef85878c90046f6e6a91f98f31b98bebaf554",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1998
     },
     {
       "path": "data/football/worldcup/2002.json",
-      "sha256": "b595717d976d787868a182f03357c17eefb2ffe68c9f635ae7a5008d4655f5ae",
+      "sha256": "536e943ef2b3f10843acda7a49b941a3779732fe77189f4ac75aba88d95d41f0",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2002
     },
     {
       "path": "data/football/worldcup/2006.json",
-      "sha256": "8eadc3190dfe814e431c7984e57567eb67fef83c69197217c3c37e4a687994a6",
+      "sha256": "e96a030a9814541ac5b59416db31969f29de97bc2bb986db700ed8b39abacc1f",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2006
     },
     {
       "path": "data/football/worldcup/2010.json",
-      "sha256": "bf62abdaceed35338a7b0879680a8230bcd931780bca5a0c7bca5c716bfe8400",
+      "sha256": "0534b8244bbc5dac259e95ec1b37b6a41389d7ffbd6d427b1b93ae45d9e8bd41",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2010
     },
     {
       "path": "data/football/worldcup/2014.json",
-      "sha256": "2b421144760b2c3a8138e1b1f7684b4ac60d6a6fef9be27948a53001fcdf29e7",
+      "sha256": "1985fcd45fe813b9f1c73b34012aabd335214fafb2ac704321666afd4ac88c61",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2014
     },
     {
       "path": "data/football/worldcup/2018.json",
-      "sha256": "6b0fb2edaecf3522407c28b8f32821b82a42a5638a64b9881e4aa1b27ee5fe5d",
+      "sha256": "9b1c0496dfb2c0d2cfcfc757d343ecf4628b88fde5700bd8fa663f87f52dfa4f",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2018
     },
     {
       "path": "data/football/worldcup/2022.json",
-      "sha256": "f5961575a6ed3c3878cf5349a9988454acc8828ec7507ef2b673665411c69f70",
+      "sha256": "d7fc9308248f8659fa78b8f738365e39c8eeb203b133edd2574b77bd6686d5fd",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2022
     },
     {
       "path": "data/football/worldcup/2026.json",
-      "sha256": "0bb8187f829f02b21ac6f5a548f803878922d26658fa5c7d254f362cb1f5526d",
+      "sha256": "195e9cec4fb2a59f436692f222ef690a78c1a4486a0460d813f7b5257b671e50",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2026
     }
   ],
-  "checksum": "9cb4e79bd05b3ef6294240cde28672841df28958414130fcdf2ae99481893b1d",
+  "checksum": "8955de3a5c865b6339939454e569a992fd2710aa3aa5582559b0a7d9f684a383",
   "dataset": {
     "sports": 4,
     "competitions": 5,

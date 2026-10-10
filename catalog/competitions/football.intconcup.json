@@ -6,6 +6,7 @@
   "name": "Intercontinental Championship / FIFA Confederations Cup",
   "i18nKey": "comp.intconcup.name",
   "organizer": "FIFA",
+  "kind": "international",
   "scope": "international",
   "teamMode": "country",
   "resultArchetype": "encounter",
