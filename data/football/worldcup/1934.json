@@ -611,7 +611,7 @@
       ],
       "sheet": {
         "source": "rsssf:34full",
-        "text": "31.05.34  (16.30) Milano, Stadio San Siro\n(-15000) Barlassina ITA, van Moorsel HOl, Marcet SUI\nGER - SWE 2:1 (0:0)\nGER: Kress - Haringer, Busch - Gramlich, Szepan (c), Zielinski -\nLehner, Hohmann, Conen, Siffling, Kobierski\nSWE: Rydberg - Axelsson, S.Andersson - Carlsson, Rosen (c), E.Andersson -\nDunker, Gustafsson, Jonasson, Keller, Kroon\n1:0 Hohmann 60, 2:0 Hohmann 63, 2:1 Dunker 82\n31.05.34  Bologna, Stadio Littoriale\n(~25000) Mattea FRA, Birlem GER, Escartin ESP\nAUT - HUN 2:1 (1:0)\nAUT: Platzer - Cisar, Sesta - Wagner, Smistik (c), Urbanek - Zischek,\nBican, Sindelar, Horvath, Viertl\nHUN: A.Szabó - Vagó, Sternberg (c) - Pálotas, Szücs, Szalay - Markos,\nAvar, Sarosi, Toldi, Kemenyi\n1:0 Horvath 8, 2:0 Zischek 51, 2:1 Sárosi 60 p\nsent off: Markos (80)\n31.05.34  Florence, Stadio Giovanni Berta\nITA - ESP 1:1 (0:1, 1:1, 1:1)\n(~35000) Baert BEL, Ivanciscs HUN, Ženišek CZE\nITA: Combi (c) - Monzeglio, Allemandi - Pizziolo, Monti, Castellazzi -\nGuaita, Meazza, Schiavio, Ferrari, Orsi\nESP: Zamora (c) - Ciriaco, Quincoces - Cillauren, Muguerza, Lafuente -\nIraragorri, Lángara, Fede, Regueiro, Gorostiza\n0:1 Regueiro 30, 1:1 Ferrari 44\nNOTE: This match was replayed\n01.06.34  Florence, Stadio Giovanni Berta (replay)\n(~45000) Mercet SUI, Ivanciscs HUN, Ženišek CZE\nITA - ESP 1:0 (1:0)\nITA: Combi (c) - Monzeglio, Allemandi - Ferraris, Monti, Bertolini -\nGuaita, Meazza, Borel, De Maria, Orsi\nESP: Nogues - Zabalo, Quincoces (c) - Cillauren, Muguerza, Lecue -\nVentolrá, Regueiro, Campanal, Chacho, Bosch\n1:0 Meazza 11 h",
+        "text": "31.05.34  (16.30) Milano, Stadio San Siro\n(-15000) Barlassina ITA, van Moorsel HOl, Marcet SUI\nGER - SWE 2:1 (0:0)\nGER: Kress - Haringer, Busch - Gramlich, Szepan (c), Zielinski -\nLehner, Hohmann, Conen, Siffling, Kobierski\nSWE: Rydberg - Axelsson, S.Andersson - Carlsson, Rosen (c), E.Andersson -\nDunker, Gustafsson, Jonasson, Keller, Kroon\n1:0 Hohmann 60, 2:0 Hohmann 63, 2:1 Dunker 82",
         "lang": "en"
       }
     },
@@ -642,7 +642,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "31.05.34  Bologna, Stadio Littoriale\n(~25000) Mattea FRA, Birlem GER, Escartin ESP\nAUT - HUN 2:1 (1:0)\nAUT: Platzer - Cisar, Sesta - Wagner, Smistik (c), Urbanek - Zischek,\nBican, Sindelar, Horvath, Viertl\nHUN: A.Szabó - Vagó, Sternberg (c) - Pálotas, Szücs, Szalay - Markos,\nAvar, Sarosi, Toldi, Kemenyi\n1:0 Horvath 8, 2:0 Zischek 51, 2:1 Sárosi 60 p\nsent off: Markos (80)",
+        "lang": "en"
+      }
     },
     {
       "id": "f12",
@@ -657,7 +662,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "31.05.34  Florence, Stadio Giovanni Berta\nITA - ESP 1:1 (0:1, 1:1, 1:1)\n(~35000) Baert BEL, Ivanciscs HUN, Ženišek CZE\nITA: Combi (c) - Monzeglio, Allemandi - Pizziolo, Monti, Castellazzi -\nGuaita, Meazza, Schiavio, Ferrari, Orsi\nESP: Zamora (c) - Ciriaco, Quincoces - Cillauren, Muguerza, Lafuente -\nIraragorri, Lángara, Fede, Regueiro, Gorostiza\n0:1 Regueiro 30, 1:1 Ferrari 44\nNOTE: This match was replayed",
+        "lang": "en"
+      }
     },
     {
       "id": "f13",
@@ -672,7 +682,12 @@
       ],
       "notes": [
         "replay"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "01.06.34  Florence, Stadio Giovanni Berta (replay)\n(~45000) Mercet SUI, Ivanciscs HUN, Ženišek CZE\nITA - ESP 1:0 (1:0)\nITA: Combi (c) - Monzeglio, Allemandi - Ferraris, Monti, Bertolini -\nGuaita, Meazza, Borel, De Maria, Orsi\nESP: Nogues - Zabalo, Quincoces (c) - Cillauren, Muguerza, Lecue -\nVentolrá, Regueiro, Campanal, Chacho, Bosch\n1:0 Meazza 11 h",
+        "lang": "en"
+      }
     },
     {
       "id": "f14",

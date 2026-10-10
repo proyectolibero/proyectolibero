@@ -409,7 +409,7 @@
       ],
       "sheet": {
         "source": "rsssf:58full",
-        "text": "11.06.58  (19.00) Norrköping, Idrottsparken\nPAR - SCO 3:2 (2:1)\n(+11000) Orlandini ITA, Gardeazábal ESP, Angrén SWE\nPAR: Aguilar - Arevalo, Echague, Achucaro - Lezcano, Villalba - Aguero (c),\nParodi, Romero, Re, Amarilla\nSCO: Younger (c) - Caldow, Parker - Turnbull, Evans, Cowie, Leggat -\nRobertson, Mudie, Collins, Fernie\n1:0 Aguero 4, 1:1 Mudie 23, 2:1 Re 44, 3:1 Parodi 74, 3:2 Collins 76\n11.06.58  Västeraas, Arosvallen\nJUG - FRA 3:2 (1:1)\n(+12000) Griffiths WAL, Dragvoli NOR, Wyssling SUI\nJUG: Beara - Tomić, Crnković, Krstić - Zebec (c), Boskov - Petaković,\nVeselinović, Milutinović, Šekularac, Rajkov\nFRA: Remetter - Kaelbel, Lerond, Penverne - Jonquet (c), Marche - Wisnieski,\nFontaine, Kopa, Piantoni, Vincent\n0:1 Fontaine 5, 1:1 Petaković 16, 2:1 Vaselinović 65, 2:2 Fontaine 85, 3:2\nVaselinović 87",
+        "text": "11.06.58  (19.00) Norrköping, Idrottsparken\nPAR - SCO 3:2 (2:1)\n(+11000) Orlandini ITA, Gardeazábal ESP, Angrén SWE\nPAR: Aguilar - Arevalo, Echague, Achucaro - Lezcano, Villalba - Aguero (c),\nParodi, Romero, Re, Amarilla\nSCO: Younger (c) - Caldow, Parker - Turnbull, Evans, Cowie, Leggat -\nRobertson, Mudie, Collins, Fernie\n1:0 Aguero 4, 1:1 Mudie 23, 2:1 Re 44, 3:1 Parodi 74, 3:2 Collins 76",
         "lang": "en"
       }
     },
@@ -424,7 +424,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "11.06.58  Västeraas, Arosvallen\nJUG - FRA 3:2 (1:1)\n(+12000) Griffiths WAL, Dragvoli NOR, Wyssling SUI\nJUG: Beara - Tomić, Crnković, Krstić - Zebec (c), Boskov - Petaković,\nVeselinović, Milutinović, Šekularac, Rajkov\nFRA: Remetter - Kaelbel, Lerond, Penverne - Jonquet (c), Marche - Wisnieski,\nFontaine, Kopa, Piantoni, Vincent\n0:1 Fontaine 5, 1:1 Petaković 16, 2:1 Vaselinović 65, 2:2 Fontaine 85, 3:2\nVaselinović 87",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",

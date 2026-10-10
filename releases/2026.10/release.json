@@ -385,21 +385,21 @@
     },
     {
       "path": "data/football/worldcup/1934.json",
-      "sha256": "f607830086c907c3450ba66d6297abe2c2ab789a83a168e34683f3328402f31c",
+      "sha256": "45ce4fa43a59edeef26d0578a6e38dbdbd7ea2c435dc447abb36e9b85ff6001a",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1934
     },
     {
       "path": "data/football/worldcup/1938.json",
-      "sha256": "69391d28dd0020bb6573f3315861332fa8afb1a6c748c4ca5acaccc9aa578d47",
+      "sha256": "dacc1ec696fda3006f4e5baac09dac15b527b3c65f4724bf34283c3be257fd16",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1938
     },
     {
       "path": "data/football/worldcup/1950.json",
-      "sha256": "23518b46587f3e44892f64d93ca741c18cabbd04aae08c45b3fb6395554aa8a7",
+      "sha256": "0a138090eb9421a5fad2545126e920cd87b564bd548436a8b698f245c7281572",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1950
@@ -413,7 +413,7 @@
     },
     {
       "path": "data/football/worldcup/1958.json",
-      "sha256": "b23cd32e621f745287e76929ec739041b282bb469ba58b5c970a337946624cec",
+      "sha256": "3047f323ebc935f747fdcda5ebc41acb04ee5fc7d03a6f31ff90415399a78110",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1958
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "06331584d6077b8a1a0ba237ea1c219ead5bc78e12bce764892d93614a72e5a4",
+  "checksum": "b248e69eefad2d22e4ffab430dd2fe9d9b792f47089231b450eb69cdd9efde5b",
   "dataset": {
     "sports": 4,
     "competitions": 5,

@@ -1035,7 +1035,12 @@
       "status": "notplayed",
       "notes": [
         "withdrawn"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:50full",
+        "text": "29.06.50  (18.15) Porto Alegre, Estádio dos Eucaliptos\n(+11000) Leafe ENG, van der Meer HOL, Dahlner SWE\nJUG - MEX 4:1 (2:0)\nJUG: Mrkušić - I.Horvat (c), B.Stanković, Zl.Čajkovski - M.Jovanović, Djajić -\nP.Mihajlović, Mitić, K.Tomašević, Bobek, Ž.Čajkovski\nMEX: Carbajal - Gutierrez, Gomez, Ruiz - Ochoa, Flores - Naranjo, Ortiz,\nCasarin (c), Peréz, Velasquez\n1:0 Bobek 20, 2:0 Ž.Čajkovski 23. 3:0 Ž.Čajkovski 51. 4:0 Tomašsević 80, 4:1\nOrtiz\n89 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",

@@ -508,7 +508,7 @@
       ],
       "sheet": {
         "source": "rsssf:38full",
-        "text": "05.06.38  (18.30) Le Havre, Stade de la Cavée Verte\nLeclerc FRA, Olive FRA, Sdez FRA\nCZE - HOL 3:0 (0:0, 0:0, 1:0)\nCZE: Planička (c) - Burgr, Daučik - Koštálek, Bouček, Kopecký -\nŘiha, Šimúnek, Zeman, Nejedlý, Puč\nHOL: Van Male - Weber, Caldenhove - Paauwe, Anderiesen, Van Heel (c) -\nWels, Van der Veen, Smit, Vente, de Harder\n1:0 Koštálek 93, 2:0 Zeman 111, 3:0 Nejedlý 118\n05.06.38  (?) Lyon\nSWE - AUT\nMatch cancelled because of the Austrian Anschluß in March 1938.",
+        "text": "05.06.38  (18.30) Le Havre, Stade de la Cavée Verte\nLeclerc FRA, Olive FRA, Sdez FRA\nCZE - HOL 3:0 (0:0, 0:0, 1:0)\nCZE: Planička (c) - Burgr, Daučik - Koštálek, Bouček, Kopecký -\nŘiha, Šimúnek, Zeman, Nejedlý, Puč\nHOL: Van Male - Weber, Caldenhove - Paauwe, Anderiesen, Van Heel (c) -\nWels, Van der Veen, Smit, Vente, de Harder\n1:0 Koštálek 93, 2:0 Zeman 111, 3:0 Nejedlý 118",
         "lang": "en"
       }
     },
@@ -523,7 +523,12 @@
       "status": "notplayed",
       "notes": [
         "withdrawn"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "05.06.38  (?) Lyon\nSWE - AUT\nMatch cancelled because of the Austrian Anschluß in March 1938.",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -643,6 +648,11 @@
             "reason": "Errata de 38full (09.06.34); el replay CUB-ROM es de 1938 (D9)."
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "09.06.34  (18.00) Toulouse, Stade Chapou (replay)\n(~5000) Birlem GER, Capdeville FRA, Marenco FRA\nCUB - ROM 2:1 (0:1)\nCUB: Ayra - Barquin, Chorens - Arias, Rodriguez, Berges (c) - Magriñá,\nFernández, Socorro, Tuñas, Sosa\nROM: Sadovschi - Bürger, Felecan - Bărbulescu, Răşinaru, Rafinschi -\nBogdan, Moldoveanu, Baratki, Prassler, Dobai\n0:1 Dobay 39, 1:1 Socorro 51, 2:1 Fernández 53",
+        "lang": "en"
       }
     },
     {
