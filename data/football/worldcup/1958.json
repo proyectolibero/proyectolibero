@@ -262,7 +262,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "08.06.58  (19.00) Halmstad, Örjans Vall\nNIR - CZE 1:0 (1:0)\n(-11000) Seipelt AUT, Ellis ENG, Campos POR\nNIR: Gregg - Keith, McMichael, Blanchflower (c) - Cunningham, Peacock -\nBingham, Cush, Dougan, McIlroy, McParland\nCZE: Dolejši - Mráz, Novák (c), Pluskal - Čadek, Masopust - Hovorka, Dvořak,\nBorovička, Hertl, Kraus\n1:0 Cush 20",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -275,7 +280,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "08.06.58  (19.00) Malmö, Malmö Stadion\n(+31000) Leafe ENG, Helge DAN, Ahlner SWE\nGER - ARG 3:1 (2:1)\nGER: Herkenrath - Stollenwerk, Juskowiak, Eckel - Erhardt, Szymaniak -\nRahn, F.Walter, Seeler, Schmidt, Schäfer (c)\nARG: Carrizo - Lombardo, Vairo, Rossi - Dellacha (c), Varacka - Corbatta, Prado,\nMenendez, Rojas, Cruz\n0:1 Carbatta 3, 1:1 Rahn 33, 2:1 Seeler 42, 3:1 Rahn 79",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -288,7 +298,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "11.06.58  (19.00) Halmstad, Örjans Vall\nARG - NIR 3:1 (1:1)\n(+14000) Ahlner SWE, Campos POR, Helge DAN\nARG: Carrizo - Lombardo, Vairo, Rossi - Dellacha (c), Varacka - Corbatta,\nAvio, Menendez, Labruna, Boggio\nNIR: Gregg - Keith, McMichael, Blanchflower (c) - Cunningham, Peacock -\nBingham, Cush, Coyle, McIlroy, McParland\n0:1 McParland 4, 1:1 Corbatta 36 p, 2:1 Menéndez 66, 3:1 Avio 80",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -301,7 +316,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "11.06.58  (19.00) Hälsingborg, Olympiavalle\nGER - CZE 2:2 (0:2)\n(~25000) Ellis ENG, Seipelt AUT, Leafe ENG\nGER: Herkenrath - Stollenwerk, Juskowiak, Schnellinger - Erhardt, Szymaniak -\nRahn, F.Walter, Seeler, Klodt, Schäfer (c)\nCZE: Dolejši - Mráz, Novák (c), Pluskál - Popluhar, Masopust - Hovorka, Dvořák,\nMolnár, Feureisl, Zikán\n0:1 Dvořák 24 p, 0:2 Zikan 42, 1:2 Schäfer 60, 2:2 Rahn 70",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -314,7 +334,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "15.06.58  (19.00) Malmö, Malmö Stadion\nGER - NIR 2:2 (1:1)\n(-22000) Campos POR, Ahlner SWE, Helge DAN\nGER: Herkenrath - Stollenwerk, Juskowiak, Eckel - Erhardt, Szymaniak -\nRahn, F.Walter, Seeler, Klodt, Schäfer (c)\nNIR: Gregg - Keith, McMichael, Blanchflower (c) - Cunningham, Peacock -\nBingham, Cush, Casey, McIlroy, McParland\n0:1 McParland 19, 1:1 Rahn 21, 1:2 McParland 60, 2:2 Seeler 79",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -327,7 +352,12 @@
       "score": [
         6,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "15.06.58  (19.00) Hälsingborg, Olympiavalle\nCZE - ARG 6:1 (3:0)\n(~16000) Ellis ENG, Leafe ENG, Seipelt AUT\nCZE: Dolejši - Mráz, Novák (c), Popluhár - Masopust, Hovorka - Dvořák,\nBorovička, Molnár, Feureisl, Zikán\nARG: Carrizo - Lombardo, Vairo, Rossi - Dellacha (c), Varacka - Corbatta,\nAvio, Menéndez, Labruna, Cruz\n1:0 Dvořák 8, 2:0 Zikan 17, 3:0 Hovorka 39, 3:1 Corbatta 65 p, 4:1 Feureisl\n69, 5:1 Zikan 82, 6:1 Hovorka 89",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -340,7 +370,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "08.06.58  (19.00) Västeraas, Arosvallen\nSCO - JUG 1:1 (0:1)\n(+9500) Wyssling SUI, Macko GER, Orlandini ITA\nSCO: Younger (c) - Caldow, Hewie, Turnbull - Evans, Cowie - Leggat, Murray\nMudie, Collins, Imlach\nJUG: Beara - Šijaković, Crnković, Krstić - Zebec (c), Boskov - Petaković,\nVeselinović, Milutinović, Šekularac, Rajkov\n0:1 Petaković 13, 1:1 Murray 48",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -353,7 +388,12 @@
       "score": [
         7,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "08.06.58  (19.00) Norrköping, Idrottsparken\nFRA - PAR 7:3 (2:2)\n(+16000) Gardeázabal ESP, Griffiths WAL, Brossi ARG\nFRA: Remetter - Kaelbel, Lerond, Penverne - Jonquet (c), Marcel -\nWisnieski, Fontaine, Kopa, Piantoni, Vincent\nPAR: Mayeregger - Arevalo, Miranda, Achucaro - Lezcano, Villalba -\nAguero (c), Parodi, Romero, Re, Amarilla\n0:1 Amarilla 21, 1:1 Fontaine 25, 2:1 Fontaine 30, 2:2 Amarilla 42 p, 2:3\nRomero 50, 3:3 Piantoni 31, 4:3 Wisnieski 62, 5:2 Fontaine 66, 6:2 Kopa 70,\n7:3 Vincent 84",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -366,7 +406,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "11.06.58  (19.00) Norrköping, Idrottsparken\nPAR - SCO 3:2 (2:1)\n(+11000) Orlandini ITA, Gardeazábal ESP, Angrén SWE\nPAR: Aguilar - Arevalo, Echague, Achucaro - Lezcano, Villalba - Aguero (c),\nParodi, Romero, Re, Amarilla\nSCO: Younger (c) - Caldow, Parker - Turnbull, Evans, Cowie, Leggat -\nRobertson, Mudie, Collins, Fernie\n1:0 Aguero 4, 1:1 Mudie 23, 2:1 Re 44, 3:1 Parodi 74, 3:2 Collins 76\n11.06.58  Västeraas, Arosvallen\nJUG - FRA 3:2 (1:1)\n(+12000) Griffiths WAL, Dragvoli NOR, Wyssling SUI\nJUG: Beara - Tomić, Crnković, Krstić - Zebec (c), Boskov - Petaković,\nVeselinović, Milutinović, Šekularac, Rajkov\nFRA: Remetter - Kaelbel, Lerond, Penverne - Jonquet (c), Marche - Wisnieski,\nFontaine, Kopa, Piantoni, Vincent\n0:1 Fontaine 5, 1:1 Petaković 16, 2:1 Vaselinović 65, 2:2 Fontaine 85, 3:2\nVaselinović 87",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -392,7 +437,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "15.06.58  (19.00) Örebro, Eyravallen\nFRA - SCO 2:1 (2:0)\n(-14000) Brossi ARG, Orlandini iTA, Wyssling SUI\nFRA: Abbes - Kaelbel, Lerond, Penverne - Jocquet (c), Marcel - Wisnieski,\nFontaine, Kopa, Piantoni, Vincent\nSCO: Brown - Caldow, Hewie, Turnbull - Evans (c), Mackay - Imlach, Murray,\nMudie, Collins, Baird\n1:0 Kopa 22, 2:0 Fontaine 45, 2:1 Baird 66 (23 Howie missed penalty)",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -405,7 +455,12 @@
       "score": [
         3,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "15.06.58  (19.00) Eskilstuna, Tunavallen\nPAR - JUG 3:3 (1:2)\n(+13000) Macko CZE, Gardeazábal ESP, Griffiths WAL\nPAR: Aguilar - Arevalo, Echague, Achucaro - Lezcano, Villalba - Aguero (c),\nParodi, Romero, Re, Amarilla\nJUG: Beara - Tomić, Crnković, Krstić - Zebec (c), Boskov - Petaković,\nVeselinović, Ognjanović, Šekularac, Rajkov\n0:1 Ognjanović 12, 1:1 Parodi 21, 1:2 Veselinović 29, 2:2 Aguero 49, 2:3 Rajkov\n74, 3:3 Romero 90",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -418,7 +473,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "08.06.58  (14.00) Solna, Raasunda Stadion\nSWE - MEX 3:0 (1:0)\n(+34000) Latichev ZSR, Mowatt SCO, Eriksson FIN\nSWE: Svensson - Bergmark, Axbom, Liedholm (c), Gustavsson - Parling, Hamrin -\nMellberg, Simonsson, Gren, Skoglund\nMEX: Carbajal (c) - del Muro, Villegas, Portugal, Romo - Flóres, Hernández -\nReyes, Calderón, Gutiérrez, Sesma\n1:0 Simonsson 17 h, 2:0 Liedholm 58 p (penalty was repeated), 3:0 Simonsson 64\nNOTE: Match preceded by WC opening ceremony",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -431,7 +491,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "08.06.58  (19.00) Sandviken, Jernvallen\nHUN - WAL 1:1 (1:1)\n(+15000) Codesal URU, Lemešić JUG, van Nuffel BEL\nHUN: Grosics - Matrái, Sárosi, Bozsik - Sipos, Berendi - Sándor,\nHidegkuti (c), Tichy, Bundzsák, Fenyvesi\nWAL: Kelsey - Williams, Hopkins, Sullivan - M.Charles, Bowen (c) - Webster,\nMedwin, J.Charles, Allchurch, Jones\n1:0 Bozsik 4, 1:1 J.Charles 26",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -444,7 +509,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "11.06.58  (19.00) Solna, Raasunda Stadion\nMEX - WAL 1:1 (0:1)\n(+15000) Lemešić JUG, Codesal URU, Latichev ZSR\nMEX: Carbajal - del Muro, Cárdenas (c), Belmonte - Romo, Flóres - González,\nReyes, Blanco, Gutiérrez, Sesma\nWAL: Kelsey - Williams, Hopkins, Baker - M.Charles, Bowen (c) - Webster,\nMedwin, J.Charles, Allchurch, Jones\n0:1 Allchurch 32, 1:1 Belmonte 69",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -457,7 +527,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "12.06.58  (19.00) Solna, Raasunda Stadion\nSWE - HUN 2:1 (1:0)\n(-39000) Mowatt SCO, Dragvoll NOR, van Nuffel BEL\nSWE: Svensson - Bergmark, Axbom, Liedholm (c) - Gustavsson, Parling -\nHamrin, Mellberg, Simonsson, Gren, Skoglund\nHUN: Grosics - Matrái, Sárosi, Bozsik (c) - Sipos, Berendi - Sándor, Szojka,\nTichy, Bundzsák, Fenyvesi\n1:0 Hamrin 34, 2:0 Hamrin 55, 2:1 Tichy 78 (69 Liedholm missed penalty)",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -470,7 +545,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "15.06.58  (14.00) Solna, Raasunda Stadion\nSWE - WAL 0:0\n(+29000) van Nuffel BEL, Latichev ZSR, Lemešić JUG\nSWE: Svensson - Bergmark, Axbom, Börjesson - Gustavsson (c), Parling -\nBerndtsson, Selmonsson, Källgren, Löfgren, Skoglund\nWAL: Kelsey - Williams, Hopkins, Sullivan - M.Charles, Bowen (c) - Vernon,\nHewitt, J.Charles, Allchurch, Jones",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -483,7 +563,12 @@
       "score": [
         4,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "15.06.58  (19.00) Sandviken, Jernvallen\nHUN - MEX 4:0 (1:0)\n(+13000) Eriksson FIN, Codesal URU, Mowatt SCO\nHUN: Ilku - Matrái, Sárosi, Kotasz - Sipos, Budai - Hidegkuti (c), Szojka,\nTichy, Bencsics, Sándor\nMEX: Carbajal - del Muro, Cárdenas (c), Belmonte - Sepulveda, Flóres -\nGonzález, Reyes, Blanco, Gutiérrez, Sesma\n1:0 Tichy 19, 2:0 Tichy 46, 3:0 Sándor 54, 4:0 Benecsis 69",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -496,7 +581,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "08.06.58  (19.00) Uddevalla, Rimnersvallen\nBRA - AUT 3:0 (1:0)\n(~21000) Guigue FRA, Dusch GER, Bronkhorm HOL\nBRA: Gilmar - De Sordi, N.Santos, Dino - Bellini (c), Orlando - Joel,\nDidi, Atlafini, Dida, Zagalo\nAUT: Szanwald - Halla, Swoboda, Hanappi (c) - Happel, Koller - Horak,\nSenekowitsch, Buzek, A.Körner, Schleger\n1:0 Atlafini 37, 2:0 N.Santos 48 f, 3:0 Atlafini 80",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -509,7 +599,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "08.06.58  (19.00) Gothenburg, Nya Ullevi Stadion\nENG - ZSR 2:2 (0:1)\n(+49000) Zsolt HUN, Jörgensen DAN, Nilsen NOR\nENG: McDonald - Howe, Banks, Clamp - Wright (c), Slater - Douglas, Robson,\nKevan, Haynes, Finney\nZSR: Yashin - Kesarev, Kuznetsov, Voinov - Krijevski, Tsarev - A.Ivanov,\nV.Ivanov, Simonian (c), Salnikov, Ilyin\n0:1 Simonian 13, 0:2 A.Ivanov 56, 1:2 Kevan 65 h, 2:2 Finney 84 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -522,7 +617,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "11.06.58  (19.00) Boraas, Ryavallen\nZSR - AUT 2:0 (1:0)\n(+21000) Jörgensen DAN, Nilsen NOR, Ackeborn SWE\nZSR: Yashin - Kesarev, Kuznetsov, Voinov - Krijevski, Tsarev -\nA.Ivanov, V.Ivanov, Simonian (c), Salnikov, Ilyin\nAUT: Schmied - E.Kozlicek, Swoboda, Hanappi (c) - Stotz, Koller - Horak,\nP.Kozlicek, Buzek, A.Körner, Senekowitsch\n1:0 A.Ivanov 15, 2:0 Ilyin 65 (55 Yashin saved a penalty by Buzek)\nNOTE: Some sources award Ilyin's goal to V.Ivanov",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -535,7 +635,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "11.06.58  (19.00) Gothenburg, Nya Ullevi Stadion\nBRA - ENG 0:0\n(-41000) Dusch GER, Zsolt HUN, Lööw SWE\nBRA: Gilmar - de Sordi, N.Santos, Dino - Bellini (c), Orlando - Joel, Didi,\nMazola, Váva, Zagalo\nENG: McDonald - Howe, Banks, Clamp - Wright (c), Slater - Douglas, Robson,\nKevan, Haynes, A'Court",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -548,7 +653,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "15.06.58  (19.00) Boraas, June 15th - Ryavallen\nAUT - ENG 2:2 (1:0)\n(-17000) Bronkhorst HOL, Dusch GER, Zsolt HUN\nAUT: Szanwald - Kollmann, Swoboda, Hanappi (c) - Happel, Koller - E.Kozlicek,\nSenekowitsch, Buzek, Körner, P.Kozlicek\nENG: McDonald - Howe, Banks, Clamp - Wright (c), Slater - Douglas, Robson,\nKevan, Haynes, A'Court\n1:0 Koller 15, 1:1 Haynes 56, 2:1 A.Körner 71, 2:2 Kevan 74",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -561,7 +671,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "15.06.58  (19.00) Gothenburg, Nya Ullevi Stadion\nBRA - ZSR 2:0 (1:0)\n(-51000) Guigue FRA, Jörgensen DAN, Nilsen NOR\nBRA: Gilmar - de Sordi, N.Santos, Zito - Bellini (c), Orlando - Garrincha,\nDidi, Pelé, Vává, Zagalo\nZSR: Yashin - Kesarev, Kuznetsov, Voinov - Krijevski, Tsarev - A.Ivanov,\nV.Ivanov, Simonian, Netto (c), Ilyin\n1:0 Vává 3, 2:0 Vává 77",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -577,7 +692,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "17.06.58  (19.00) Malmö, Malmö Stadion (playoff)\nNIR - CZE 2:1 (1:1)\n(+6000) Guigue FRA, Ahlner SWE, Campos POR\nNIR: Uprichard - Keith, McMichael, Blanchflower (c) - Cunningham, Peacock -\nBingham, Cush, Scott, McIlroy, McParland\nCZE: Dolejši - Mráz, Novák (c), Bubernik - Popluhár, Masopust - Zikán, Dvořák,\nBorovička, Feureisl, Molnár\n0:1 Zikán 19 h, 1:1 McParland 44, McParland 99\nsent off: Bubernik (102)",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -614,7 +734,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "17.06.58  (19.00) Gothenburg, Nya Ullevi Stadion (playoff)\nZSR - ENG 1:0 (0:0)\n(+23000) Dusch GER, Seipelt AUT, Bronkhorst HOL\nZSR: Yashin - Kesarev, Kuznetsov, Voinov - Krijevski, Tsarev - Apoukhtin,\nV.Ivanov, Simonian (c), Falin, Ilyin\nENG: McDonald - Howe, Banks, Clayton - Wright (c), Slater - Brabrook, Broadbent,\nKevan, Haynes, A'Court\n1:0 Ilyin 68",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -626,7 +751,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "19.06.58  (14.00) Solna, Raasunda Stadion\nSWE - ZSR 2:0 (0:0)\n(-32000) Leafe ENG, Brozzi ARG, Dragvolt NOR\nSWE: Svensson - Bergmark, Axbom, Börjesson - Gustavsson, Parling - Hamrin,\nGren, Simonsson, Liedholm (c), Skoglund\nZSR: Yashin - Kesarev, Kuznetsov, Voinov - Krijevski, Tsarev - A.Ivanov,\nV.Ivanov, Simonian (c), Salnikov, Ilyin\n1:0 Hamrin 48 h, 2:0 Simonsson 87",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -638,7 +768,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "19.06.58  (19.00) Malmö, Malmö Stadion\nGER - JUG 1:0 (1:0)\n(~20000) Wyssling SUI, Campos POR, Helge DAN\nGER: Herkenrath - Stollenwerk, Juskowiak, Eckel - Erhardt, Szymaniak -\nRahn, F.Walter, Seeler, Schmidt, Schäfer (c)\nJUG: Krivokuca - Sijaković, Crnković, Krstić - Zebec (c), Boskov - Petaković,\nOgnjanović, Milutinović, Veselinović, Rajkov\n1:0 Rahn 12 f",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -650,7 +785,12 @@
       "score": [
         4,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "19.06.58  (19.00) Norrköping, Idrottsparken\nFRA - NIR 4:0 (1:0)\n(-12000) Gardeázabal ESP, Andrén SWE, Latichev ZSR\nFRA: Abbes - Kaelbel, Lerond, Penverne - Jonquet (c), Marcel - Wisnieski,\nFontaine, Kopa, Piantoni, Vincent\nNIR: Gregg - Keith, McMichael, Blanchflower (c) - Cunningham, Cush - Bingham,\nCasey, Scott, McIlroy, McParland\n1:0 Wisnieski 43, 2:0 Fontaine 55 h, 3:0 Fontaine 63, 4:0 Plantoni 70",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -662,7 +802,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "19.06.58  (19.00) Gothenburg, Nya Ullevi Stadion\nBRA - WAL 1:0 (0:0)\n(-26000) Seipelt AUT, Dusch GER, Guigue FRA\nBRA: Gilmar - de Sordi, N.Santos, Zito - Bellini (c), Orlando - Garrincha,\nDidi, Mazola, Pelé, Zagalo\nWAL: Kelsey - Williams, Hopkins, Sullivan - M.Charles, Bowen (c) - Medwin,\nHewitt, Webster, Allchurch, Jones\n1:0 Pelé 73",
+        "lang": "en"
+      }
     },
     {
       "id": "m032",
@@ -674,7 +819,12 @@
       "score": [
         5,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "24.06.58  (19.00) Solna, Raasunda Stadium\nBRA - FRA 5:2 (2:1)\n(-28000) Griffiths WAL, Leafe ENG, Wyssling SUI\nBRA: Gilmar - de Sordi, N.Santos, Zito - Bellini (c), Orlando - Garrincha,\nDidi, Vává, Pelé, Zagalo\nFRA: Abbes - Kaelbel, Lerond, Penverne - Jonquet (c), Marcel - Wisnieski,\nFontaine, Kopa, Piantoni, Vincent\n1:0 Vává 2, 1:1 Fontaine 9, 2:1 Didi 39, 3:1 Pelé 53, 4:1 Pelé 64, 5:1 Pelé\n76, 5:2 Plantoni 83",
+        "lang": "en"
+      }
     },
     {
       "id": "m033",
@@ -686,7 +836,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "24.06.58  (19.00) Gothenburg, Nya Ullevi\nSWE - GER 3:1 (1:1)\n(+50000) Zsolt HUN, Seipelt AUT, Ellis ENG\nSWE: Svensson - Axbom, Bergmark, Gustavsson - Börjesson, Parling - Hamrin,\nGren, Simonsson, Liedholm (c), Skoglund\nGER: Herkenrath - Stollenwerk, Juskowiak, Eckel - Erhardt, Szymaniak -\nRahn, F.Walter, Seeler, Cieslarczyk, Schäfer (c)\n0:1 Schäfer 24, 1:1 Skoglund 33, 2:1 Gren 50, 3:1 Hamrin 88\nsent off: Juskowiak (89)",
+        "lang": "en"
+      }
     },
     {
       "id": "m034",
@@ -709,6 +864,11 @@
             "reason": "58full da 26.06; 58f y el registro histórico fijan el tercer puesto el 28.06.1958."
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "26.06.58  (17.00) Gothenburg, Nya Ullevi\nFRA - GER 6:3 (3:1)\n(~33000) Brozzi ARG, Ellis ENG, Lundell SWE\nFRA: Abbes - Kaelbel, Lerond, Penverne (c) - Lafont, Marcel - Wisnieski,\nFontaine, Kopa, Douis, Vincent\nGER: Kwiatkowski - Stollenwerk, Wewers, Erhardt - Schnellinger, Szymaniak -\nRahn, Strum, Schäfer (c), Kelbassa, Cieslarczyk\n1:0 Fontaine 16, 1:1 Cieslarczyk 18, 2:1 Kopa 27 p, 3:1 Fontaine 36, 4:1 Douis\n50, 4:2 Rahn 52, 5:2 Fontaine 78, 5:3 Schäfer 84, 6:3 Fontaine 89",
+        "lang": "en"
       }
     },
     {
@@ -793,6 +953,11 @@
             ]
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:58full",
+        "text": "29.06.58  (15.00) Solna, Raasunda Stadium\nBRA - SWE 5:2 (2:1)\n(~50000) Guigue FRA, Dusch GER, Gardeazábal ESP\nBRA: Gilmar - D.Santos, N.Santos, Zito - Bellini (c), Orlando - Garrincha,\nDidi, Vavá, Pelé, Zagalo\nSWE: Svensson - Bergmark, Axbom, Börjesson - Gustavsson, Parling - Hamrin,\nGren, Simonsson, Liedholm (c), Skoglund\n0:1 Liedholm 4, 1:1 Vavá 9, 2:1 Vavá 32, 3:1 Pelé 55, 4:1 Zagalo 68, 4:2\nSimonsson 80, 5:2 Pelé 90 h",
+        "lang": "en"
       }
     }
   ],

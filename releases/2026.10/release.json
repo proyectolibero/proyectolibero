@@ -378,28 +378,28 @@
     },
     {
       "path": "data/football/worldcup/1930.json",
-      "sha256": "435697e2333bb959b19af52bf113d1821051fd98f5c5051d481ae37f1029d32e",
+      "sha256": "2f8fbf642e6c482c18a92d8339cc541497f6071e1ba4ebac6791a5b6c2285695",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1930
     },
     {
       "path": "data/football/worldcup/1934.json",
-      "sha256": "2b72b079efb4900c96bfa177a58f333909e917c0f9682a3b36106b54d37349f1",
+      "sha256": "f607830086c907c3450ba66d6297abe2c2ab789a83a168e34683f3328402f31c",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1934
     },
     {
       "path": "data/football/worldcup/1938.json",
-      "sha256": "8e1d82389189486e1a92b94fd0e87b2eeb2a1728eb303ff168853ffee3e43857",
+      "sha256": "69391d28dd0020bb6573f3315861332fa8afb1a6c748c4ca5acaccc9aa578d47",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1938
     },
     {
       "path": "data/football/worldcup/1950.json",
-      "sha256": "84785798035aa7e77267ac41c7384485c8483c8bc4229643d1fa61891d6ba135",
+      "sha256": "23518b46587f3e44892f64d93ca741c18cabbd04aae08c45b3fb6395554aa8a7",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1950
@@ -413,7 +413,7 @@
     },
     {
       "path": "data/football/worldcup/1958.json",
-      "sha256": "e4d8d9a186f4f33ba51755b3b8d92310771776747d19f1d75511af9af3ce8eec",
+      "sha256": "b23cd32e621f745287e76929ec739041b282bb469ba58b5c970a337946624cec",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1958
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "71c703399ddfa16afee668c283bd10fd1b93a6d5429d1b1bdcdc1160d822502b",
+  "checksum": "593767b855995280ebf8b8bed7835d9009f9d50b1fb514237db282072255bd1c",
   "dataset": {
     "sports": 4,
     "competitions": 5,
@@ -694,6 +694,18 @@
         "name": "RSSSF — World Cup 1930 goal scorers (Jaroslaw Owsianski)",
         "url": "https://www.rsssf.org/tables/30f-scor.html",
         "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:30full",
+        "name": "RSSSF — World Cup 1930 (full details)",
+        "url": "https://www.rsssf.org/tables/30full.html",
+        "retrieved": "2026-10-10"
+      },
+      {
+        "source": "rsssf:34full",
+        "name": "RSSSF — World Cup 1934 (full details)",
+        "url": "https://www.rsssf.org/tables/34full.html",
+        "retrieved": "2026-10-10"
       },
       {
         "source": "rsssf:34qf-scor",

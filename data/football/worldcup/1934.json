@@ -41,6 +41,15 @@
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
+    },
+    {
+      "id": "rsssf:34full",
+      "name": "RSSSF — World Cup 1934 (full details)",
+      "url": "https://www.rsssf.org/tables/34full.html",
+      "retrieved": "2026-10-10",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
     }
   ],
   "asOf": "2026-10-06",
@@ -460,7 +469,12 @@
       "score": [
         5,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "27.05.34  (16.30) Florence, Stadio Giovanni Berta\nGER - BEL 5:2 (1:2)\n(-8000) Mattea ITA, Baert FRA, Melandri ITA\nGER: Kress - Haringer, Schwartz - Janes, Szepan (c), Zielinski -\nLehner, Hohmann, Conen, Siffling, Kobierski\nBEL: van de Weyer - Smellinckx, Joacim - Peeraer, Welkenhuysen (c),\nClaessens - Devries, Voorhoof, Capelle, Grimmonprez, Heremans\n1:0 Kobierski 25, 1:1 Voorhoof 29, 1:2 Voorhoof 43, 2:2 Sifling 49, 3:2\nConen 66, 4:2 Conen 70, 5:2 Conen 87",
+        "lang": "en"
+      }
     },
     {
       "id": "f02",
@@ -472,7 +486,12 @@
       "score": [
         2,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "27.05.34  (16.30) Bologna, Stadio Littoriale\nSWE - ARG 3:2 (1:1)\n(-15000) Braun AUT, Carraro ITA, Turbiani ITA\nSWE: Rydberg - Axelsson, S.Andersson - Carlsson, Rosen (c), E.Andersson -\nDunker, Gustafsson, Jonasson, Keller, Kroon\nARG: Freschi - Pedevilla, Belis - Nehin, Sosa-Urbieta, López (c) -\nRúa, Wilde, De Vincenzi, Galateo, Irañeta\n0:1 Belis 4 f, 1:1 Jonasson 9, 1:2 Galateo 46, 2:2 Jonasson 67, 3:2 Kroon 79",
+        "lang": "en"
+      }
     },
     {
       "id": "f03",
@@ -484,7 +503,12 @@
       "score": [
         2,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "27.05.34  (16.30) Milano, Stadio San Siro\nSUI - HOL 3:2 (2:1)\n(-40000) Eklind SWE, Beranek AUT, Bonivento ITA\nSUI: Séchehaye - Minelli (c), Weiler - Guinchard, Jaccard, Hufschmid -\nvon Känel, Passello, Kielholz, Abegglen III, Bossi\nHOL: Van der Meulen - Weber, Van Run - Pellikaan, Anderiesen, Van\nHeel (c) - Wels, Vente, Bakhuys, Smit, Van Nellen\n1:0 Kielholz 7, 1:1 Smit 19, 2:1 Kielholz 29, 3:1 Abegglen 69, 3:2\nVente 84",
+        "lang": "en"
+      }
     },
     {
       "id": "f04",
@@ -496,7 +520,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "27.05.34  (16.30) Trieste, Stadio Littorio\nCZE - ROM 2:1 (0:1)\n(+8000) Langenus BEL, Scarpi ITA, Scorzoni ITA\nCZE: Plánička (c) - Ženišek, Čtyroký - Koštálek, Čambal, Krcil -\nJunek, Silný, Sobotka, Nejedlý, Puč\nROM: Zombory - Vogl (c), Albu - Deheleanu, Cotormani, Moraveţ -\nBindea, Covaci, Sepi, Bodola, Dobai\n0:1 Dobay 11, 1:1 Puč 50, 2:1 Nejedlý 67",
+        "lang": "en"
+      }
     },
     {
       "id": "f05",
@@ -511,7 +540,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "27.05.34   (16.30) Torino, Stadio Mussolini\nAUT - FRA 3:2 (1:1, 1:1, 2:1)\n(-20000) van Moorsel HOL, Caironi ITA, Baert BEL\nAUT: Platzer - Cisar, Sesta - Wagner, Smistik (c), Urbanek -\nZischek, Bican, Sindelar, Schall, Viertl\nFRA: Thépot (c) - Mairesse, Mattler - Delfour, Verriest, Liétaer -\nKeller, Alcazar, Nicolas, Rio, Aston\n0:1 Nicolas 18, 1:1 Sindelar 44, 2:1 Schall 93, 3:1 Bican 109, 3:2 Verriest\n118 p",
+        "lang": "en"
+      }
     },
     {
       "id": "f06",
@@ -523,7 +557,12 @@
       "score": [
         4,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "27.05.34  (16.30) Naples, Stadio Ascarelli\nHUN - EGY 4:2 (2:2)\n(-12000) Barlassina ITA, Datillo ITA, Sassi ITA\nHUN: A.Szabó - Futó, Sternberg (c) - Palotás, Szücs, Lázár - Markos,\nVincze, Teleki, Toldi, G.Szabó\nEGY: Mansour - Ali Shafi, Hamidu - El Far, Rafaat, R. Hassan -\nLatif, Fawzi, El Tetch (c), Taha, M. Hassan\n1:0 Teleki 11, 2:0 Toldi 31, 2:1 Fawzi 35 h, 2:2 Fawzi 39, 3:2 Vincze 53,\n4:2 Toldi 61",
+        "lang": "en"
+      }
     },
     {
       "id": "f07",
@@ -535,7 +574,12 @@
       "score": [
         1,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "27.05.34  (16.30) Genova, Stadio Marassi\nESP - BRA 3:1 (3:0)\n(-25000) Birlem GER, Carminati ITA, Ivanicsics HUN\nESP: Zamora (c) - Ciriaco, Quincoces - Cillauren, Muguerza, Márculete -\nIraragorri, Lánguara, Lecue, Lafuente, Gorostiza\nBRA: Pedrosa - Silvio, Luz - Tinoco, Martim Silveira (c), Canalli -\nLuizinho, de Brito, Leónidas, Armadinho, Patesko\n1:0 Iraragorii 18 p, 2:0 Lángara 25, 3:0 Lángara 29, 3:1 Leónidas 55\n(62 Zamora saved a penalty by Brito)",
+        "lang": "en"
+      }
     },
     {
       "id": "f08",
@@ -547,7 +591,12 @@
       "score": [
         7,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "27.05.34  (16.30) Rome, Stadio del PNF\nITA - USA 7:1 (3:0)\n(~30000) Mercet SUI, Escartin ESP, Ženišek CZE\nITA: Combi - Rosetta (c), Allemandi - Pizziolo, Monti, Bertolini -\nGuarisi, Meazza, Schiavio, Ferrari, Orsi\nUSA: Hjulian -  Czerkiewicz, Moorhouse (c) - Pietras, Gonsalvez,\nFlorie - Ryan, Nilsen, Donelli, Dick, Maclean\n1:0 Schiavio 18, 2:0 Orsi 20, 3:0 Schiavio 29, 3:1 Donelli 67, 4:1 Ferrari\n63, 5:1 Schiavio 64 h, 6:1 Orsi 69, 7:1 Meazza 89",
+        "lang": "en"
+      }
     },
     {
       "id": "f09",
@@ -559,7 +608,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "31.05.34  (16.30) Milano, Stadio San Siro\n(-15000) Barlassina ITA, van Moorsel HOl, Marcet SUI\nGER - SWE 2:1 (0:0)\nGER: Kress - Haringer, Busch - Gramlich, Szepan (c), Zielinski -\nLehner, Hohmann, Conen, Siffling, Kobierski\nSWE: Rydberg - Axelsson, S.Andersson - Carlsson, Rosen (c), E.Andersson -\nDunker, Gustafsson, Jonasson, Keller, Kroon\n1:0 Hohmann 60, 2:0 Hohmann 63, 2:1 Dunker 82\n31.05.34  Bologna, Stadio Littoriale\n(~25000) Mattea FRA, Birlem GER, Escartin ESP\nAUT - HUN 2:1 (1:0)\nAUT: Platzer - Cisar, Sesta - Wagner, Smistik (c), Urbanek - Zischek,\nBican, Sindelar, Horvath, Viertl\nHUN: A.Szabó - Vagó, Sternberg (c) - Pálotas, Szücs, Szalay - Markos,\nAvar, Sarosi, Toldi, Kemenyi\n1:0 Horvath 8, 2:0 Zischek 51, 2:1 Sárosi 60 p\nsent off: Markos (80)\n31.05.34  Florence, Stadio Giovanni Berta\nITA - ESP 1:1 (0:1, 1:1, 1:1)\n(~35000) Baert BEL, Ivanciscs HUN, Ženišek CZE\nITA: Combi (c) - Monzeglio, Allemandi - Pizziolo, Monti, Castellazzi -\nGuaita, Meazza, Schiavio, Ferrari, Orsi\nESP: Zamora (c) - Ciriaco, Quincoces - Cillauren, Muguerza, Lafuente -\nIraragorri, Lángara, Fede, Regueiro, Gorostiza\n0:1 Regueiro 30, 1:1 Ferrari 44\nNOTE: This match was replayed\n01.06.34  Florence, Stadio Giovanni Berta (replay)\n(~45000) Mercet SUI, Ivanciscs HUN, Ženišek CZE\nITA - ESP 1:0 (1:0)\nITA: Combi (c) - Monzeglio, Allemandi - Ferraris, Monti, Bertolini -\nGuaita, Meazza, Borel, De Maria, Orsi\nESP: Nogues - Zabalo, Quincoces (c) - Cillauren, Muguerza, Lecue -\nVentolrá, Regueiro, Campanal, Chacho, Bosch\n1:0 Meazza 11 h",
+        "lang": "en"
+      }
     },
     {
       "id": "f10",
@@ -571,7 +625,12 @@
       "score": [
         2,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "31.05.34  (16.30) Torino, Stadio Mussolini\n(~12000) Beranek AUT, Mohammed EGY, Baert FRA\nCZE - SUI 3:2 (1:1)\nCZE: Planička (c) - Ženišek, Čtyroký - Koštálek, Čambal, Krcil - Junek,\nSvoboda, Sobotka, Nejedlý, Puč\nSUI: Séchehaye - Minelli (c), Weiler - Guinchard, Jaccard, Hufschmid -\nvon Känel, Jäggi, Kielholz, Abegglen III, Jaeck.\n0:1 Kielholz 18, 1:1 Svoboda 24, 2:1 Sobotka 49, 2:2 Jäggi 78, 3:2 Nejedlý\n82",
+        "lang": "en"
+      }
     },
     {
       "id": "f11",
@@ -625,7 +684,12 @@
       "score": [
         1,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "03.06.34  (16.30) Rome, Stadio del PNF\nCZE - GER 3:1 (1:0)\n(~10000) Barlassina ITA, Beranek AUT, Escartin ESP\nCZE: Planička (c) - Burgr, Čtyroký - Koštálek, Čambal, Krcil - Junek,\nSvoboda, Sobotka, Nejedlý, Puč\nGER: Kress - Busch, Haringer - Zielinski, Szepan (c), Bender - Lehner,\nSiffling, Conen, Noack, Kobierski\n1:0 Nejedlý 21, 1:1 Noack 59, 2:1 Nejedlý 69, 3:1 Nejedlý 81\nNB: some sources credit the 2:1 to Krcil; FIFA officially recognised the\ngoal as Nejedlý's on November 10, 2006 (!)",
+        "lang": "en"
+      }
     },
     {
       "id": "f15",
@@ -637,7 +701,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "03.06.34  (16.30) Milano, Stadio San Siro\nITA - AUT 1:0 (0:0)\n(~60000) Eklind SWE, Baert BEL, Ženišek CZE\nITA: Combi (c) - Monzeglio, Allemandi - Ferraris, Monti, Bertolini -\nGuaita, Meazza, Schiavio, Ferrari, Orsi\nAUT: Platzer - Cisar, Sesta - Wagner, Smistik (c), Urbanek - Zischek,\nBican, Sindelar, Schall, Viertl\n1:0 Guaita 19",
+        "lang": "en"
+      }
     },
     {
       "id": "f16",
@@ -649,7 +718,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "07.06.34  (17.30) Napoli, Stadio Ascarelli\n(-8000) Carraro ITA, Caironi ITA, Escartin ESP\nGER - AUT 3:2 (3:1)\nGER: Jakob - Busch, Janes - Zielinski, Szepan (c), Münzenberg - Bender,\nLehner, Siffling, Conen, Heidemann\nAUT: Platzer - Cisar, Sesta - Wagner, Smistik (c), Urbanek - Zischek,\nBican, Braun, Horvath, Viertl\n1:0 Lehner 4, 2:0 Conen 29, 2:1 Horvath 30, 3:1 Lehner 42, 3:2 Sesta 55",
+        "lang": "en"
+      }
     },
     {
       "id": "f17",
@@ -700,6 +774,11 @@
             ]
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:34full",
+        "text": "10.06.34  (17.00) Rome, Stadio del PNF\nITA - CZE 2:1 (0:0, 1:1, 2:1)\n(~45000) Eklind SWE, Baert BEL, Ivanicsics HUN\nITA: Combi (c) - Monzeglio, Allemandi - Ferraris, Monti, Bertolini -\nGuaita, Meazza, Schiavio, Ferrari, Orsi\nCZE: Plánička (c) - Ženišek, Čtyroký - Koštálek, Čambal, Krcil -\nJunek, Svoboda, Sobotka, Nejedlý, Puč\n0:1 Puč 71, 1:1 Orsi 81, 2:1 Schiavio 95",
+        "lang": "en"
       }
     }
   ],

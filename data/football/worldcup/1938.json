@@ -465,7 +465,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "04.06.38  (18.00) Paris, Parc des Princes\n(~30000) Langenus BEL, van Moorsel HOL, Marenco FRA\nSUI - GER 1:1 (1:1, 1:1, 1:1)\nSUI: Huber - Minelli (c), Lehmann - Springer, Vernati, Lörtscher -\nAmadó, Walaschek, Bickel, Abegglen III, Aebi\nGER: Raftl - Janes, Schmaus - Kupfer, Mock (c), Kitzinger - Lehner,\nGellesch, Gauchel, Hahnemann, Pesser\n0:1 Gauchel 29, 1:1 Abegglen 43 h\nsent off: Pesser (96)\nNOTE: Match preceded by stadium opening ceremony. This match\nwas replayed",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -480,7 +485,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "05.06.38  (17.00) Toulouse, Stade Chapou\n(+6000) Scarpi ITA, Valprede FRA, Mercx FRA\nCUB - ROM 3:3 (1:1, 2:2, 3:3)\nCUB: Carvajeles - Barquin, Chorens - Arias, Rodriguez, Berges (c) -\nMagriñá, Fernández, Socorro, Tuñas, Sosa\nROM: Pavlovici - Bürger, Chiroiu - Vintila, Răşinaru, Rafinschi -\nBindea, Covaci (c), Baratki, Bodola, Dobai\n0:1 Covaci 38, 1:1 Socorro 41, 2:1 Magriñá 51, 2:2 Baratki 68,\n3:2 Magriñá 93, 3:3 Dobay 101\nNOTE: This match was replayed",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -495,7 +505,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "05.06.38  (18.30) Le Havre, Stade de la Cavée Verte\nLeclerc FRA, Olive FRA, Sdez FRA\nCZE - HOL 3:0 (0:0, 0:0, 1:0)\nCZE: Planička (c) - Burgr, Daučik - Koštálek, Bouček, Kopecký -\nŘiha, Šimúnek, Zeman, Nejedlý, Puč\nHOL: Van Male - Weber, Caldenhove - Paauwe, Anderiesen, Van Heel (c) -\nWels, Van der Veen, Smit, Vente, de Harder\n1:0 Koštálek 93, 2:0 Zeman 111, 3:0 Nejedlý 118\n05.06.38  (?) Lyon\nSWE - AUT\nMatch cancelled because of the Austrian Anschluß in March 1938.",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -520,7 +535,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "05.06.38  (17.00) Paris, Stade Olympique de Colombes\nFRA - BEL 3:1 (2:1)\n(~ 32000) Wüthrich SUI, Krist CZE, Birlem GER\nFRA: Di Lorto - Cazanave, Mattler (c) - Bastien, Jordan, Diagne - Aston,\nHeisserer, Nicolas, Delfour, Veinante\nBEL: Badjou - Paverick, Seys - van Alphen, Stijnen (c), De Winter - van\nde Wouwer, Voorhoof, Isemborghs, Braine, Buyle\n1:0 Veinante 1 (35 sec), 2:0 Nicolas 16, 2:1 Isemborghs 38, 3:1 Nicolas 69",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -532,7 +552,12 @@
       "score": [
         6,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "05.06.38  (17.00) Reims, Stade Velodrome Municipal\nHUN - IHO 6:0 (4:0)\n(~8000) Conrié FRA, Delasalle FRA, Weingärtner GER\nHUN: Hada - Kóranyi, Biró - Lázár, Turai, Balogh - Sas, Zsengellér,\nSárosi (c), Toldi, Kohut\nIHO: Mo Heng - Hukom, Samuels - Nawir (c), Meeng, Anwar - Hong Djien,\nSoedarmadji, Zomers, Pattiwael, Taihitu\n1:0 Kohut 13, 2:0 Toldi 15, 3:0 Sárosi 28, 4:0 Zsengellér 35, 5:0 Zsengellér\n78, 6:0 Sárosi 89",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -547,7 +572,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "05.06.38  (17.00) Marseille, Stade Velodrome\nITA - NOR 2:1 (1:0, 1:1, 2:1)\n(~18000) Beranek GER (*), Bouture FRA, Tréhou FRA\n(*) Beranek was from Austria which of course did not exist after the Anschluß\nITA: Olivieri - Monzeglio, Rava - Serantoni, Andreolo, Locatelli -\nPasinati, Meazza (c), Piola, Ferrari, Ferraris II\nNOR: Johansen - Johannesen, Holmsen - Henriksen, Eriksen (c), Holmberg -\nFrantzen, Kvammen, Brynildsen, Isaksen, Brustad\n1:0 Ferraris 2, 1:1 Brustad 83, 2:1 Piola 94",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -562,7 +592,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "05.06.38  (17.30) Strasbourg, Stade de la Meinau\nBRA - POL 6:5 (3:1, 4:4, 6:4)\n(~16000) Eklind SWE, Poissant FRA, Kissenberger FRA\nBRA: Batatais - Domingos, Machado - Zezé Procopio, Martim Silveira (c),\nAlfonsinho - Lopez, Romeu, Leónidas, Peració, Hercules\nPOL: Madejski - Szczepaniak (c), Gałecki - Góra, Nyc, Dytko - Piec I,\nPiątek, Scherfke, Wilimowski, Wodarz\n1:0 Leónidas 18, 1:1 Scherfke 23 p, 2:1 Romeu 25, 3:1 Peració 44 h, 3:2\nWilimowski 53, 3:3 Wilimowski 59, 4:3 Peració 71, 4:4 Wilimowski 89,\n5:4 Leónidas 93, 6:4 Leónidas 104, 6:5 Wilimowski 118",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -577,7 +612,12 @@
       ],
       "notes": [
         "replay"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "09.06.38  (18.00) Paris, Parc des Princes (replay)\n(~22000) Eklind SWE, Baert BEL, van Moorsel HOL\nSUI - GER 4:2 (1:2)\nSUI: Huber - Minelli (c), Lehmann - Springer, Vernati, Lörtscher -\nAmadó, Walaschek, Bickel, Abegglen III, Aebi\nGER: Raftl - Janes, Streitle - Kupfer, Goldbrunner, Skoumal -\nLehner, Stroh, Sczepan (c), Hahnemann, Neumer\n0:1 Hahnemann 8, 0:2 Lörtscher 22 o, 1:2 Walaschek 42, 2:2 Bickel 64,\n3:2 Abegglen 75, 4:2 Abegglen 78\nNOTE: Some sources award Lörtscher's own goal to Lehner",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -615,7 +655,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "12.06.38  (17.00) Paris, Stade Olympique de Colombes\nITA - FRA 3:1 (1:1)\n(+58000) Baert BEL, Wüthrich SUI, Eklind SWE\nITA: Olivieri - Foni, Rava - Serantoni, Andreolo, Locatelli -\nBiavati, Meazza (c), Piola, Ferrari, Colaussi\nFRA: Di Lorto - Cazenave, Mattler (c) - Bastien, Jordan, Diagne -\nAston, Heisserer, Nicolas, Delfour, Veinante\n1:0 Colaussi 9, 1:1 Heisserer 10, 2:1 Piola 51 h, 3:1 Piola 72",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -627,7 +672,12 @@
       "score": [
         8,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "12.06.38  (17.00) Antibes, Stade du Fort Carré\nSWE - CUB 8:0 (4:0)\n(~6000) Krist CZE, Weingärtner GER, Sedez FRA\nSWE: Abrahamsson - Eriksson, Källgren - Almgren, Jacobsson, Svanström -\nWetterström, Keller (c), H.Andersson, Jonasson, Nyberg\nCUB: Carvajeles - Barquin, Chorens - Arias, Rodriguez, Berges (c) -\nFerrer, Fernández, Socorro, Tunas, Alonzo\n1:0 H.Andersson 9 h, 2:0 Wetterström 22, 3:0 Wetterström 37, 4:0 Wetterström\n44, 5:0 Keller 60, 6:0 H.Andersson 61 h, 7:0 Nyberg 84, 8:0 H.Andersson 89\n(42 Abrahamsson saved a penalty by Fernández)",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -639,7 +689,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "12.06.38  (17.00) Lille, Stade Victor Boucquey\nHUN - SUI 2:0 (1:0)\n(~14000) Barlassina ITA, Beranek GER (*), Bouture FRA\n(*) Beranek was from Austria which of course did not exist after the Anschluß\nHUN: Szabó - Korányi, Biró - Lazar, Turai, Szalay - Sas,\nZsengellér, Sárosi (c), Vincze, Kohut\nSUI: Huber - Stelzer, Lehmann (c) - Springer, Vernati, Lörtscher - Amadó,\nWalaschek, Bickel, Abegglen III, Grassi\n1:0 Sárosi 40 h, 2:0 Zsengeller 90",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -654,7 +709,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "12.06.38  (17.00) Bordeaux, Parc de Lescure\nBRA - CZE 1:1 (1:0, 1:1, 1:1)\n(~25000) von Hertzka HUN, Scarpi ITA, Delasalle FRA\nBRA: Walter - Domingos, Machado - Zezé Procopio, Martim Silveira (c),\nAlfonsinho - López, Romeu, Leónidas, Perácio, Hércules\nCZE: Planička (c) - Burgr, Daučik - Koštálek, Bouček, Kopecký -\nŘiha, Šimúnek, Ludl, Nejedlý, Puč.\n1:0 Leónidas 30, 1:1 Nejedlý 65 p\nsent off: Zezé (10), Machado (45), Řiha (45)\nNOTE: This match was replayed",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -669,7 +729,12 @@
       ],
       "notes": [
         "replay"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "14.06.38  (18.00) Bordeaux, Parc de Lescure (replay)\nBRA - CZE 2:1 (0:1)\n(~20000) Capdeville FRA, Kissenberger FRA, Marenco FRA\nBRA: Walter - Jau, Nariz - Britto, Brandão, Argemiro - Roberto,\nLuizinho, Leonidas (c), Tim, Patesko\nCZE: Burket - Burgr (c), Daučik - Koštálek, Bouček, Kopecký - Kreuz,\nHorak, Ludl, Senecký, Rulc\n0:1 Kopecký 25, 1:1 Leónidas 57 2:1 Roberto 62",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -681,7 +746,12 @@
       "score": [
         5,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "16.06.38  (18.00) Paris, Parc des princes\nHUN - SWE 5:1 (3:1)\n(+22000) Leclerq FRA, Scarpi ITA, van Moorsel HOL\nHUN: Szabó - Korányi, Biró - Szalay, Turai, Lazar - Sas, Zsengellér,\nSárosi (c), Toldi, Titkos\nSWE: Abrahamsson - Eriksson, Källgren - Almgren, Jacobsson, Svanström -\nWetterström, Keller (c), H.Andersson, Jonasson, Nyberg\n0:1 Nyberg 1 (35 sec), 1:1 Jakobson 19 o, 2:1 Titkos 26, 3:1 Zsengellér 38,\n4:1 Sárosi 61, 5:1 Zsengellér 78\nNOTE: Some sources give Jakobson's own goal as Zsengellér's",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -693,7 +763,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "16.06.38  (18.00) Marseille, Stade Velodrome\nITA - BRA 2:1 (0:0)\n(~30000) Wüthrich SUI, Beranek GER (*), Marenco FRA\n(*) Beranek was from Austria which of course did not exist after the Anschluß\nITA: Olivieri - Foni, Rava - Serantoni, Andreolo,  Locatelli -\nBiavati, Meazza (c), Piola, Ferrari, Colaussi\nBRA: Wálter - Domingos, Machado - Zezé Procopio, Martim Silveira (c),\nAlfonsinho - López, Luizinho, Peració, Romeu, Patesko\n1:0 Colaussi 51, 2:0 Meazza 60 p, 2:1 Romeu 87",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -705,7 +780,12 @@
       "score": [
         4,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "19.06.38  (17.00) Bordeaux, Parc de Lescure\nBRA - SWE 4:2 (1:2)\n(+20000) Langenus BEL, Valprede FRA, Olive FRA\nBRA: Batatais - Domingos, Machado - Zezé Procopio, Brandao, Alfonsinho -\nRoberto, Leónidas (c), Perácio, Romeu, Patesko\nSWE: Abrahamsson - Eriksson, Nilsson - Almgren, Linderholm, Svanström (c) -\nPersson, A.Andersson, H.Andersson, Jonasson, Nyberg\n0:1 Jonasson 28, 0:2 Nyberg 38, 1:2 Romeu 44, 2:2 Leónidas 63, 3:2 Leónidas 74,\n4:2 Perácio 80\n(78 Patesco missed penalty)",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -803,6 +883,11 @@
             "reason": "38full da el 4-2 de Piola en el 85'; se usa 82' (38f y Wikipedia, D8)."
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:38full",
+        "text": "19.06.38  (17.00) Paris, Stade Olympique de Colombes\nITA - HUN 4:2 (3:1)\n(~60000) Capdeville FRA, Krist CZE, Wüthrich SUI\nITA: Olivieri - Foni, Rava - Serantoni, Andreolo, Locatelli - Biavati,\nMeazza (c), Piola, Ferrari, Colaussi.\nHUN: Szabó - Polgár, Biró - Szalay, Szücs, Lázár - Sas, Vincze,\nSárosi (c), Zsengellér, Titkos\n1:0 Colaussi 6, 1:1 Titkos 8, 2:1 Piola 16, 3:1 Colaussi 35, 3:2 Sárosi 70,\n4:2 Piola 85",
+        "lang": "en"
       }
     }
   ],
