@@ -213,6 +213,112 @@ function sheetFrom(entry, sourceId) {
   return { source: sourceId, text: entry.rawSheet, lang: "en" };
 }
 
+/* -------------------------------------------------------------------------- */
+/* Enriquecimiento de una edición publicada con las fichas (sheet) de `full`    */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Formas canónicas de un equipo para el emparejamiento: su código (resolviendo
+ * el nombre) más el alias histórico (`GER`→`FRG`). Se comparan por intersección
+ * para tolerar que la fuente use el nombre, un código moderno o su alias.
+ */
+function teamForms(raw) {
+  const text = typeof raw === "string" ? raw.trim() : "";
+  if (text === "") return [];
+  const resolved = NAME_TO_CODE[text.toLowerCase()] || (text.length <= 4 ? text.toUpperCase() : null);
+  if (!resolved) return [text.toUpperCase()];
+  const forms = new Set([resolved]);
+  if (CODE_ALIASES[resolved]) forms.add(CODE_ALIASES[resolved]);
+  return [...forms];
+}
+
+function sameTeam(a, b) {
+  const first = teamForms(a);
+  const second = teamForms(b);
+  return first.some((code) => second.includes(code));
+}
+
+function samePair(match, block) {
+  return sameTeam(match.home, block.home) && sameTeam(match.away, block.away);
+}
+
+function reversedPair(match, block) {
+  return sameTeam(match.home, block.away) && sameTeam(match.away, block.home);
+}
+
+function fullScoreValue(score) {
+  const match = /(\d+)\s*:\s*(\d+)/.exec(String(score || ""));
+  return match ? `${match[1]}-${match[2]}` : null;
+}
+
+function matchScoreValue(score) {
+  return Array.isArray(score) ? `${score[0]}-${score[1]}` : null;
+}
+
+function sameCity(a, b) {
+  const first = String(a || "").trim().toLowerCase();
+  const second = String(b || "").trim().toLowerCase();
+  return first !== "" && first === second;
+}
+
+/**
+ * Localiza el bloque de `full` que corresponde a un partido publicado. Prioriza
+ * la identidad fuerte (fecha + equipos, en cualquier orientación) y cae a
+ * heurísticos solo cuando son unívocos: ciudad, marcador y, por último, equipos
+ * (una selección no suele repetir rival en una misma edición).
+ */
+function findFullBlock(match, pool) {
+  const free = (predicate) => pool.filter((block) => !block.used && predicate(block));
+  const unique = (candidates) => (candidates.length === 1 ? candidates[0] : null);
+  const byPriority = [
+    (block) => block.date === match.date && samePair(match, block),
+    (block) => block.date === match.date && reversedPair(match, block),
+    (block) => block.date === match.date && sameCity(match.city, block.city),
+    (block) => block.date === match.date && matchScoreValue(match.score) !== null && fullScoreValue(block.score) === matchScoreValue(match.score),
+    (block) => samePair(match, block) || reversedPair(match, block)
+  ];
+  for (const predicate of byPriority) {
+    const found = unique(free(predicate));
+    if (found) return found;
+  }
+  return null;
+}
+
+/**
+ * Devuelve una copia de `edition` con la ficha verbatim (`sheet`) de `full`
+ * añadida a los partidos emparejados. No altera ningún otro dato publicado: es
+ * la vía segura para escalar la ficha a ediciones migradas que no se reproducen
+ * desde las fuentes `f`/`full` (ADR-023/D33).
+ *
+ * @param {object} edition edición publicada
+ * @param {object[]} fullMatches partidos del parser `full`
+ * @param {string} sourceId id de la fuente `full`
+ * @returns {{ edition: object, matched: number, unmatched: number }}
+ */
+function attachSheets(edition, fullMatches, sourceId) {
+  const result = JSON.parse(JSON.stringify(edition));
+  const pool = (fullMatches || [])
+    .filter((match) => match && typeof match.rawSheet === "string" && match.rawSheet.trim() !== "")
+    .map((match) => ({
+      date: match.date || null,
+      city: match.city || null,
+      home: match.home || null,
+      away: match.away || null,
+      score: match.score || null,
+      text: match.rawSheet,
+      used: false
+    }));
+  let matched = 0;
+  for (const match of result.matches || []) {
+    const block = findFullBlock(match, pool);
+    if (!block) continue;
+    block.used = true;
+    matched += 1;
+    match.sheet = { source: sourceId, text: block.text, lang: "en" };
+  }
+  return { edition: result, matched, unmatched: (result.matches || []).length - matched };
+}
+
 /** Empareja cada partido de `f` con su detalle en `full`. */
 function pairMatches(fMatches, fullMatches) {
   const pool = fullMatches.map((match) => ({ match, used: false }));
@@ -623,4 +729,4 @@ function buildDraft(input) {
   return draft;
 }
 
-module.exports = { buildDraft, normalizeTeam, stageFromSection, groupLetter, groupIssue };
+module.exports = { buildDraft, normalizeTeam, stageFromSection, groupLetter, groupIssue, attachSheets };

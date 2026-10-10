@@ -179,6 +179,49 @@ test("parse('full') deja rawSheet vacío en un partido sin bloque", () => {
   assert.equal(matches[1].rawSheet, "");
 });
 
+test("parse('full') lee la cabecera moderna (DD/MM/YYYY, ciudad, estadio, asistencia)", () => {
+  const text = [
+    "<h4><a name=\"gra\">Group A</a></h4>",
+    "31/05/2002, Seoul (South Korea), Seoul World Cup Stadium, 62561",
+    "World Cup",
+    "FRANCE              0",
+    "SENEGAL             1 (Papa Bouba Diop 30')",
+    "France:             Fabien Barthez, Bixente Lizarazu",
+    "Referee:            Ali Bujsaim (UAE)."
+  ].join("\n");
+  const { matches, warnings } = parse("full", text, { year: 2002, sourceId: "rsssf:2002full" });
+  assert.equal(warnings.length, 0);
+  assert.equal(matches.length, 1);
+  const match = matches[0];
+  assert.equal(match.date, "2002-05-31");
+  assert.equal(match.city, "Seoul");
+  assert.equal(match.home, "FRANCE");
+  assert.equal(match.away, "SENEGAL");
+  assert.equal(match.score, "0:1");
+  assert.equal(match.extra.stadium, "Seoul World Cup Stadium");
+  assert.equal(match.extra.attendance, 62561);
+  assert.equal(match.section, "Group A");
+  assert.ok(match.rawSheet.includes("SENEGAL             1 (Papa Bouba Diop 30')"));
+  assert.ok(match.rawSheet.includes("Referee:            Ali Bujsaim (UAE)."));
+});
+
+test("parse('full') moderno tolera la lista de goleadores en varias líneas", () => {
+  const text = [
+    "<h2>World Cup 2018 - Match Details</h2>",
+    "Group A",
+    "14/06/2018, Moskva, Stadion Luzhniki, 78011",
+    "RUSSIA              5 (8 Yuriy Gazinskiy 12',",
+    "                       17 Aleksandr Golovin 90+4')",
+    "SAUDI ARABIA        0"
+  ].join("\n");
+  const { matches } = parse("full", text, { year: 2018, sourceId: "rsssf:2018full" });
+  assert.equal(matches.length, 1);
+  assert.equal(matches[0].home, "RUSSIA");
+  assert.equal(matches[0].away, "SAUDI ARABIA");
+  assert.equal(matches[0].score, "5:0");
+  assert.equal(matches[0].city, "Moskva");
+});
+
 test("parse decodifica entidades HTML (&atilde; → ã)", () => {
   const text = "Group A\n28.06.50  S&atilde;o Paulo       Brazil           2-2 Switzerland";
   const { matches } = parse("f", text, CTX);

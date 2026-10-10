@@ -4,7 +4,7 @@ const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
-const { buildDraft } = require("../ingest/build.js");
+const { buildDraft, attachSheets } = require("../ingest/build.js");
 const { makeContext, validateEditionObject } = require("../core/validate.js");
 
 const ROOT = path.join(__dirname, "..");
@@ -220,4 +220,49 @@ test("buildDraft añade la ficha (sheet) de 'full' y la omite si no hay bloque",
   assert.ok(first.sheet.text.includes("(+30000) Arbitro Uno ENG, Segundo FRA"));
   const third = draft.matches.find((match) => match.home === "EEE");
   assert.equal(third.sheet, undefined);
+});
+
+test("attachSheets añade la ficha a la edición publicada sin alterar el resto", () => {
+  const edition = {
+    schemaVersion: 2,
+    sources: [{ id: "rsssf:2002f", license: "x", redistribute: true }],
+    matches: [
+      { id: "m1", date: "2002-05-31", city: "Seoul", home: "FRA", away: "SEN", score: [0, 1] },
+      { id: "m2", date: "2002-06-01", city: "Ulsan", home: "URU", away: "DEN", score: [1, 2] }
+    ]
+  };
+  const fullMatches = [
+    { date: "2002-05-31", city: "Seoul", home: "FRANCE", away: "SENEGAL", score: "0:1", rawSheet: "bloque FRA-SEN" },
+    { date: "2002-06-01", city: "Ulsan", home: "URUGUAY", away: "DENMARK", score: "1:2", rawSheet: "bloque URU-DEN" }
+  ];
+
+  const { edition: out, matched, unmatched } = attachSheets(edition, fullMatches, "rsssf:2002full");
+
+  assert.equal(matched, 2);
+  assert.equal(unmatched, 0);
+  assert.deepEqual(out.matches[0].sheet, { source: "rsssf:2002full", text: "bloque FRA-SEN", lang: "en" });
+  assert.deepEqual(out.matches[0].score, [0, 1]);
+  assert.equal(out.matches[0].home, "FRA");
+  assert.equal(edition.matches[0].sheet, undefined, "no muta el original");
+});
+
+test("attachSheets empareja por marcador cuando los equipos no coinciden y omite sin bloque", () => {
+  const edition = {
+    schemaVersion: 2,
+    sources: [],
+    matches: [
+      { id: "m1", date: "1962-05-31", city: "Rancagua", home: "HUN", away: "ENG", score: [2, 1] },
+      { id: "m2", date: "1962-06-17", city: "Santiago", home: "BRA", away: "TCH", score: [3, 1] }
+    ]
+  };
+  const fullMatches = [
+    { date: "1962-05-31", city: "Rancagua", home: "ZZZ", away: "YYY", score: "2:1", rawSheet: "bloque húngaro" }
+  ];
+
+  const { edition: out, matched, unmatched } = attachSheets(edition, fullMatches, "rsssf:62full");
+
+  assert.equal(matched, 1);
+  assert.equal(unmatched, 1);
+  assert.equal(out.matches[0].sheet.text, "bloque húngaro");
+  assert.equal(out.matches[1].sheet, undefined);
 });

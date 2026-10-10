@@ -8,7 +8,7 @@ const { loadCatalog } = require("../core/catalog.js");
 const { makeContext, validateEditionObject, validateProject } = require("../core/validate.js");
 const { buildRelease, writeRelease, checksumOfContents } = require("../core/release.js");
 const { fetchMany } = require("../ingest/fetch.js");
-const { buildDraft } = require("../ingest/build.js");
+const { buildDraft, attachSheets } = require("../ingest/build.js");
 const { parse } = require("../ingest/rsssf.js");
 const { buildCompetitionDrafts, buildDraft: buildEditionDraft } = require("../ingest/page.js");
 const { parseOverview } = require("../ingest/overview.js");
@@ -43,6 +43,7 @@ const USAGE = [
   "",
   "Opciones de build/reconcile:",
   "  --year=<año>                        Año de la edición (obligatorio)",
+  "  --base=published                    (build) Añade fichas (sheet) de 'full' a la edición publicada, sin reemplazarla",
   "",
   "Opciones de build-page:",
   "  --competition=<sport>/<competicion> Competición del catálogo (obligatorio)",
@@ -83,9 +84,9 @@ function toPositiveInt(value, fallback) {
   return Math.floor(number);
 }
 
-/** `rsssf:<aa><sufijo>` → `https://www.rsssf.org/tables/<aa><sufijo>.html`. */
+/** `rsssf:<aa|aaaa><sufijo>` → `https://www.rsssf.org/tables/<aa|aaaa><sufijo>.html`. */
 function resolveRsssfUrl(id) {
-  const match = /^rsssf:(\d{2})(f|full|q|q-det|qf-scor)$/.exec(id);
+  const match = /^rsssf:(\d{2,4})(f|full|q|q-det|qf-scor)$/.exec(id);
   return match ? `https://www.rsssf.org/tables/${match[1]}${match[2]}.html` : null;
 }
 
@@ -236,6 +237,8 @@ function commandBuild(flags) {
     return 1;
   }
 
+  if (flags.base === "published") return commandBuildEnriched(year, parts);
+
   let draft;
   try {
     draft = buildDraft({ year, parts, ctx: { sport: "football", competition: "worldcup" } });
@@ -255,6 +258,59 @@ function commandBuild(flags) {
       .join(",")} goleadores=${draft.scorers.length}`
   );
   console.log(`  results=${JSON.stringify(draft.results)} warnings=${draft.warnings.length} rechazados=${(draft.provenance.rejected || []).length}`);
+  return 0;
+}
+
+/** Fuente v2 para la página `full` (atribución RSSSF) a partir de su parte de inbox. */
+function fullSourceEntry(part, year) {
+  const retrieved = typeof part.retrieved === "string" ? part.retrieved.slice(0, 10) : null;
+  return {
+    id: part.sourceId,
+    name: `RSSSF — World Cup ${year} (full details)`,
+    url: part.url || null,
+    retrieved,
+    publisher: "RSSSF",
+    license: "rsssf-attribution",
+    redistribute: true
+  };
+}
+
+/**
+ * `build --base=published`: en lugar de fusionar `f`/`full` desde cero (que
+ * reemplazaría ediciones migradas y puede degradarlas), toma la edición
+ * publicada como base y le añade la ficha verbatim (`sheet`) extraída de `full`
+ * (ADR-023/D33). Preserva íntegros el resto de datos y la procedencia; solo
+ * publica la ficha de los partidos que el parser `full` reconoce.
+ */
+function commandBuildEnriched(year, parts) {
+  const published = publishedPath(year);
+  if (!fs.existsSync(published)) {
+    console.error(`build --base=published: no existe la edición publicada ${path.relative(ROOT, published)}.`);
+    return 1;
+  }
+  const fullPart = parts.find((part) => (part.kind || "") === "full");
+  if (!fullPart) {
+    console.error(`build --base=published: no hay fuente 'full' en inbox/ para ${year}; sin ella no hay fichas.`);
+    return 1;
+  }
+  const parsed = parse("full", fullPart.text, {
+    sourceId: fullPart.sourceId,
+    retrieved: fullPart.retrieved,
+    url: fullPart.url,
+    year
+  });
+  const edition = io.readJSON(published);
+  const { edition: enriched, matched, unmatched } = attachSheets(edition, parsed.matches, fullPart.sourceId);
+  if (matched > 0 && !(enriched.sources || []).some((source) => source.id === fullPart.sourceId)) {
+    enriched.sources = [...(enriched.sources || []), fullSourceEntry(fullPart, year)];
+  }
+
+  const target = draftPath(year);
+  io.writeJSON(target, enriched);
+  const withSheet = (enriched.matches || []).filter((match) => match.sheet && match.sheet.text).length;
+  console.log(`build ${year} --base=published: ${path.relative(ROOT, target)}`);
+  console.log(`  fuente full  ${fullPart.sourceId} (${parsed.matches.length} bloques, ${parsed.warnings.length} avisos)`);
+  console.log(`  partidos=${(enriched.matches || []).length} conSheet=${withSheet} emparejados=${matched} sinFicha=${unmatched}`);
   return 0;
 }
 

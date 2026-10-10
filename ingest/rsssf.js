@@ -512,12 +512,51 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
 }
 
 const FULL_DATE_HEADER = new RegExp(`^(${DATE_TOKEN})\\s+\\((\\d{1,2}\\.\\d{2})\\)\\s*(.+)$`);
+// Cabecera moderna (2002+): `DD/MM/YYYY, Ciudad (País), Estadio, Asist.` — la
+// coma pega directamente a la fecha, lo que la distingue de la cabecera clásica
+// (que intercala `(hh.mm)`). Ver docs/RSSSF-GRAMATICA.md §6.1.
+const FULL_DATE_HEADER_MODERN = new RegExp(`^(${DATE_TOKEN})\\s*,\\s*(.+)$`);
+// Línea de equipo del formato moderno: `FRANCE 0` / `SENEGAL 1 (Papa Bouba Diop 30')`.
+// La lista de goleadores entre paréntesis puede continuar en líneas siguientes,
+// por eso no se exige que el paréntesis cierre en la misma línea.
+const FULL_TEAM_LINE = /^([A-Z][A-Za-z0-9.'& -]*?)\s+(\d+)(?:\s+\(.*)?$/;
+// Secciones del formato moderno escritas en texto plano (sin etiqueta <H2>/<h4>).
+const FULL_PLAIN_SECTION =
+  /^(Group\s+[A-Z0-9]+|Round\s+\d+|Round of \d+|Quarter-?finals?|Semi-?finals?|Third[- ]place(?: match)?|Match for (?:the )?third place|Play-?offs?|First round|Second round|Final)$/i;
+// Cabecera del formato 2006: `[Jun 9]` (mes con nombre y día, sin año: se toma
+// el de la edición) seguida de una línea de sede `In Ciudad (Estadio)`.
+const FULL_BRACKET_DATE = /^\[([A-Za-z]{3,9})\.?\s+(\d{1,2})\]$/;
+const FULL_VENUE_LINE = /^In\s+(.+?)(?:\s*\(([^)]*)\))?$/;
 const FULL_SCORE = /^([A-Za-z][A-Za-z0-9.]*)\s*[-–:]\s*([A-Za-z][A-Za-z0-9.]*)\s+(\d+)\s*[-:]\s*(\d+)(?:\s*\(([^)]*)\))?$/;
 const FULL_LINEUP = /^([A-Za-z]{2,4})\s*:\s*(.+)$/;
 const FULL_EVENTS = /^\d+\s*:\s*\d+\s+/;
 const FULL_STANDING = /^[-0-9]+\.\s*[A-Za-z]/;
 
 const FULL_SECTION = /(group|final pool|quarter-?final|semi-?final|third place|final|playoff)/i;
+
+/**
+ * Descompone la cola de una cabecera moderna
+ * (`Seoul (South Korea), Seoul World Cup Stadium, 62561`) en ciudad, estadio y
+ * asistencia. La ciudad puede llevar el país entre paréntesis (se descarta); la
+ * asistencia, si la hay, es el último segmento numérico.
+ */
+function parseModernHeaderTail(tail) {
+  const segments = String(tail).split(",").map((part) => part.trim()).filter(Boolean);
+  let city = segments[0] || null;
+  if (city) city = city.replace(/\s*\([^)]*\)\s*$/, "").trim() || city;
+  let stadium = null;
+  let attendance = null;
+  if (segments.length >= 2) {
+    const last = segments[segments.length - 1];
+    if (/^\d[\d.,]*$/.test(last)) {
+      attendance = Number(last.replace(/[.,]/g, ""));
+      stadium = segments.length >= 3 ? segments[segments.length - 2] : null;
+    } else {
+      stadium = last;
+    }
+  }
+  return { city, stadium, attendance: Number.isFinite(attendance) ? attendance : null };
+}
 
 function parseFull(text, ctx, result) {
   const lines = text.split("\n");
@@ -532,9 +571,10 @@ function parseFull(text, ctx, result) {
     const line = cleanLine(raw);
     if (line === "") continue;
 
-    // Cualquier encabezado <H2> cierra el bloque verbatim del partido en curso
-    // (grupos, fases y también secciones finales como goleadores o entrenadores).
-    if (/<H2>/i.test(raw)) {
+    // Cualquier encabezado (<H2> clásico, <h4> moderno…) cierra el bloque
+    // verbatim del partido en curso (grupos, fases y también secciones finales
+    // como goleadores o entrenadores).
+    if (/<H[1-6][^>]*>/i.test(raw)) {
       if (FULL_SECTION.test(line)) {
         inData = true;
         const g = /^(Group\s+[A-Z0-9]+)/i.exec(line);
@@ -553,6 +593,22 @@ function parseFull(text, ctx, result) {
       } else {
         // Sección ajena al torneo (goleadores, entrenadores…): fin de los datos.
         inData = false;
+      }
+      current = null;
+      continue;
+    }
+
+    // Sección del formato moderno en texto plano (`Group A`, `Round 2`,
+    // `Quarter-finals`…): actualiza la sección y cierra el bloque en curso.
+    if (!/^\s/.test(raw) && FULL_PLAIN_SECTION.test(line)) {
+      inData = true;
+      const g = /^(Group\s+[A-Z0-9]+)/i.exec(line);
+      if (g) {
+        section = g[1];
+        group = g[1];
+      } else {
+        section = line;
+        group = null;
       }
       current = null;
       continue;
@@ -592,6 +648,78 @@ function parseFull(text, ctx, result) {
       continue;
     }
 
+    const modernHeader = FULL_DATE_HEADER_MODERN.exec(line);
+    if (modernHeader) {
+      inData = true;
+      const parsedDate = parseDate(modernHeader[1], ctx);
+      if (parsedDate.warning) warn(result, lineNo, parsedDate.warning);
+      const { city, stadium, attendance } = parseModernHeaderTail(modernHeader[2]);
+      current = {
+        raw,
+        sheetLines: [sheetLine(raw)],
+        date: parsedDate.iso,
+        time: null,
+        city,
+        home: null,
+        away: null,
+        score: null,
+        homeScore: null,
+        awayScore: null,
+        status: "played",
+        group,
+        section,
+        modern: true,
+        extra: {
+          halfTime: null,
+          attendance,
+          attendanceApprox: false,
+          referee: null,
+          events: [],
+          stadium
+        }
+      };
+      result.matches.push(current);
+      continue;
+    }
+
+    const bracketDate = FULL_BRACKET_DATE.exec(line);
+    if (bracketDate) {
+      inData = true;
+      const range = expectedYearRange(ctx && ctx.year);
+      let parsedDate = { iso: null, warning: `fecha "${line}" sin año de edición` };
+      if (range) {
+        parsedDate = parseDate(`${bracketDate[2]} ${bracketDate[1]} ${range.start}`, ctx);
+      }
+      if (parsedDate.warning) warn(result, lineNo, parsedDate.warning);
+      current = {
+        raw,
+        sheetLines: [sheetLine(raw)],
+        date: parsedDate.iso,
+        time: null,
+        city: null,
+        home: null,
+        away: null,
+        score: null,
+        homeScore: null,
+        awayScore: null,
+        status: "played",
+        group,
+        section,
+        modern: true,
+        dayGrouped: true,
+        extra: {
+          halfTime: null,
+          attendance: null,
+          attendanceApprox: false,
+          referee: null,
+          events: [],
+          stadium: null
+        }
+      };
+      result.matches.push(current);
+      continue;
+    }
+
     if (/^NOTE\b/i.test(line) || /^NB:/i.test(line)) {
       result.notes.push({ line: lineNo, text: line, group });
       if (current) appendSheet(current, raw);
@@ -599,6 +727,65 @@ function parseFull(text, ctx, result) {
     }
 
     if (current) {
+      // Formato 2006: un mismo día agrupa varios partidos; cada partido abre con
+      // una línea de sede `In Ciudad (Estadio)` (la fecha viene del bloque `[Mon D]`).
+      if (current.dayGrouped) {
+        const venue = FULL_VENUE_LINE.exec(line);
+        if (venue) {
+          if (current.home === null) {
+            current.city = venue[1].trim();
+            current.extra.stadium = venue[2] ? venue[2].trim() : null;
+            appendSheet(current, raw);
+          } else {
+            current = {
+              raw,
+              sheetLines: [sheetLine(raw)],
+              date: current.date,
+              time: null,
+              city: venue[1].trim(),
+              home: null,
+              away: null,
+              score: null,
+              homeScore: null,
+              awayScore: null,
+              status: "played",
+              group: current.group,
+              section: current.section,
+              modern: true,
+              dayGrouped: true,
+              extra: {
+                halfTime: null,
+                attendance: null,
+                attendanceApprox: false,
+                referee: null,
+                events: [],
+                stadium: venue[2] ? venue[2].trim() : null
+              }
+            };
+            result.matches.push(current);
+          }
+          continue;
+        }
+      }
+      // Formato moderno: dos líneas `EQUIPO <goles> (goleadores)` dan local y
+      // visitante. La primera completa `home`; la segunda, `away` y el marcador.
+      if (current.modern && current.away === null) {
+        const teamLine = FULL_TEAM_LINE.exec(line);
+        if (teamLine) {
+          const team = teamLine[1].trim();
+          const goals = Number(teamLine[2]);
+          if (current.home === null) {
+            current.home = team;
+            current.homeScore = goals;
+          } else {
+            current.away = team;
+            current.awayScore = goals;
+            current.score = `${current.homeScore}:${current.awayScore}`;
+          }
+          appendSheet(current, raw);
+          continue;
+        }
+      }
       const score = current.score === null ? FULL_SCORE.exec(line) : null;
       if (score) {
         current.home = score[1];
