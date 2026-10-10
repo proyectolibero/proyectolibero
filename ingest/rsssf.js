@@ -130,7 +130,24 @@ const COUNTRY_ALIASES = {
   "dutch antilles": "ANT",
   "surinam": "SUR",
   "rhodesia": "RHO",
-  "cd. de mexico mexico": "MEX"
+  "cd. de mexico mexico": "MEX",
+  "congo": "CGO",
+  "congo-brazzaville": "CGO",
+  "congo-brazz.": "CGO",
+  "congo-brazz": "CGO",
+  "congo-kinshasa": "COD",
+  "congo-kinsh.": "COD",
+  "dominican rep.": "DOM",
+  "dominican rep": "DOM",
+  "antigua": "ATG",
+  "hongkong": "HKG",
+  "mauretania": "MTN",
+  "upper volta": "VOL",
+  "south vietnam": "VSO",
+  "north yemen": "YAR",
+  "south yemen": "YMD",
+  "taiwan": "TPE",
+  "fort lauderdale usa": "USA"
 };
 
 /** Índice inverso nombre en inglés (minúsculas) → código FIFA de 3 letras. */
@@ -469,7 +486,10 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
   const parsedDate = parseDate(dateMatch[1], ctx);
   if (parsedDate.warning) warn(result, lineNo, parsedDate.warning);
   const rest = dateMatch[2];
-  const scoreMatch = /(\bn\/p\b|\d+\s*[-:]\s*\d+)/.exec(rest);
+  // El marcador se busca fuera de los corchetes: una nota como
+  // `[abandoned at 2-3; awarded 0-2]` no debe confundirse con el resultado.
+  const masked = rest.replace(/\[[^\]]*\]/g, (block) => " ".repeat(block.length));
+  const scoreMatch = /(\bn\/p\b|\d+\s*[-:]\s*\d+)/.exec(masked);
   if (!scoreMatch) {
     warn(result, lineNo, `marcador no reconocido: ${text}`);
     return null;
@@ -638,6 +658,11 @@ function parseQualifying(text, ctx, result) {
 
     const header = QUALIFYING_GROUP.exec(line);
     if (header) {
+      const prefixCode = header[1] ? qualifyingPrefix(header[1]) : null;
+      // Un encabezado con prefijo fija la región vigente: los grupos siguientes
+      // sin prefijo (p. ej. el `Group 1` de Asia tras `Asia and Oceania Group 13`)
+      // heredan el código y no colisionan con los grupos del torneo final.
+      if (prefixCode) region = prefixCode;
       group = qualifyingGroupKey(header[1] || region, header[2]);
       section = group;
       result.groups.push({ name: line, raw });

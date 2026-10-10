@@ -17,12 +17,12 @@
     "finalMatchId": "m038"
   },
   "coverage": {
-    "matches": 38,
-    "goals": 102,
+    "matches": 289,
+    "goals": 823,
     "scorers": 63,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "scope": "all",
+    "complete": true,
+    "scorersComplete": false
   },
   "sources": [
     {
@@ -40,6 +40,15 @@
       "url": "https://www.rsssf.org/tables/78f.html",
       "retrieved": "2026-10-06",
       "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:78q",
+      "name": "RSSSF — World Cup 1978 (qualifying)",
+      "url": "https://www.rsssf.org/tables/78q.html",
+      "retrieved": "2026-10-10",
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
@@ -330,6 +339,451 @@
           "l": 3,
           "gf": 0,
           "ga": 10,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR1",
+      "standings": [
+        {
+          "team": "POL",
+          "p": 6,
+          "w": 5,
+          "d": 1,
+          "l": 0,
+          "gf": 17,
+          "ga": 4,
+          "pts": 11
+        },
+        {
+          "team": "POR",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 12,
+          "ga": 6,
+          "pts": 9
+        },
+        {
+          "team": "DEN",
+          "p": 6,
+          "w": 2,
+          "d": 0,
+          "l": 4,
+          "gf": 14,
+          "ga": 12,
+          "pts": 4
+        },
+        {
+          "team": "CYP",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 3,
+          "ga": 24,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR2",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 18,
+          "ga": 4,
+          "pts": 10
+        },
+        {
+          "team": "ENG",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 15,
+          "ga": 4,
+          "pts": 10
+        },
+        {
+          "team": "FIN",
+          "p": 6,
+          "w": 2,
+          "d": 0,
+          "l": 4,
+          "gf": 11,
+          "ga": 16,
+          "pts": 4
+        },
+        {
+          "team": "LUX",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 2,
+          "ga": 22,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR3",
+      "standings": [
+        {
+          "team": "AUT",
+          "p": 6,
+          "w": 4,
+          "d": 2,
+          "l": 0,
+          "gf": 14,
+          "ga": 2,
+          "pts": 10
+        },
+        {
+          "team": "GDR",
+          "p": 6,
+          "w": 3,
+          "d": 3,
+          "l": 0,
+          "gf": 15,
+          "ga": 4,
+          "pts": 9
+        },
+        {
+          "team": "TUR",
+          "p": 6,
+          "w": 2,
+          "d": 1,
+          "l": 3,
+          "gf": 9,
+          "ga": 5,
+          "pts": 5
+        },
+        {
+          "team": "MLT",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 0,
+          "ga": 27,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR4",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 6,
+          "w": 5,
+          "d": 1,
+          "l": 0,
+          "gf": 11,
+          "ga": 3,
+          "pts": 11
+        },
+        {
+          "team": "BEL",
+          "p": 6,
+          "w": 3,
+          "d": 0,
+          "l": 3,
+          "gf": 7,
+          "ga": 6,
+          "pts": 6
+        },
+        {
+          "team": "NIR",
+          "p": 6,
+          "w": 2,
+          "d": 1,
+          "l": 3,
+          "gf": 7,
+          "ga": 6,
+          "pts": 5
+        },
+        {
+          "team": "ISL",
+          "p": 6,
+          "w": 1,
+          "d": 0,
+          "l": 5,
+          "gf": 2,
+          "ga": 12,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR5",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 7,
+          "ga": 4,
+          "pts": 5
+        },
+        {
+          "team": "BUL",
+          "p": 4,
+          "w": 1,
+          "d": 2,
+          "l": 1,
+          "gf": 5,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "IRL",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "EUR6",
+      "standings": [
+        {
+          "team": "SWE",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 7,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "NOR",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "SUI",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 3,
+          "ga": 5,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR7",
+      "standings": [
+        {
+          "team": "SCO",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "TCH",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 4,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "WAL",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 3,
+          "ga": 4,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR8",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 1,
+          "pts": 6
+        },
+        {
+          "team": "ROU",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 7,
+          "ga": 8,
+          "pts": 4
+        },
+        {
+          "team": "YUG",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 6,
+          "ga": 8,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "SAM10",
+      "standings": [
+        {
+          "team": "BOL",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 8,
+          "ga": 3,
+          "pts": 7
+        },
+        {
+          "team": "BRA",
+          "p": 4,
+          "w": 2,
+          "d": 2,
+          "l": 0,
+          "gf": 8,
+          "ga": 1,
+          "pts": 6
+        },
+        {
+          "team": "PER",
+          "p": 4,
+          "w": 2,
+          "d": 2,
+          "l": 0,
+          "gf": 8,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "CHI",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 3,
+          "pts": 5
+        },
+        {
+          "team": "BRA",
+          "p": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 9,
+          "ga": 0,
+          "pts": 4
+        },
+        {
+          "team": "URU",
+          "p": 4,
+          "w": 1,
+          "d": 2,
+          "l": 1,
+          "gf": 5,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "PAR",
+          "p": 4,
+          "w": 1,
+          "d": 2,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "PER",
+          "p": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 1,
+          "pts": 2
+        },
+        {
+          "team": "COL",
+          "p": 4,
+          "w": 0,
+          "d": 2,
+          "l": 2,
+          "gf": 1,
+          "ga": 8,
+          "pts": 2
+        },
+        {
+          "team": "VEN",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 2,
+          "ga": 8,
+          "pts": 1
+        },
+        {
+          "team": "ECU",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 1,
+          "ga": 9,
+          "pts": 1
+        },
+        {
+          "team": "BOL",
+          "p": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 0,
+          "ga": 13,
           "pts": 0
         }
       ]
@@ -1022,6 +1476,4526 @@
         "text": "25.06.78  (15.00) Buenos Aires, Estadio Monumental\nARG - HOL 3:1 (1:0, 1:1, 2:1)\n(~70000) Gonella ITA, Barreto URU, Lienmayr AUT\nARG: Fillol - Olguin, Galvan, Passarella (c), Tarantini - Ardiles (66 Larossa),\nGallego, Kempes, Bertoni - Luqué, Ortiz (75 Houseman)\nHOL: Jongbloed - Poortvliet, Krol (c), Brandts, Jansen (73 Suurbier) -\nNeeskens, Haan, W. van de Kerkhof, R. van de Kerkhof - Rep (59 Nanninga),\nRensenbrink\n1:0 Kempes 38, 1:1 Nanninga 82 h, 2:1 Kempes 105, 3:1 Bertoni 115\nbooked: Ardilles, Larossa / Krol, Poortvliet",
         "lang": "en"
       }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1976-05-23",
+      "city": "Limassol",
+      "home": "CYP",
+      "away": "DEN",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m039"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1976-10-16",
+      "city": "Porto",
+      "home": "POR",
+      "away": "POL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m040"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1976-10-27",
+      "city": "København",
+      "home": "DEN",
+      "away": "CYP",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m041"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1976-10-31",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "CYP",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m042"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1976-11-17",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "DEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m043"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1976-12-05",
+      "city": "Limassol",
+      "home": "CYP",
+      "away": "POR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m044"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1977-05-01",
+      "city": "København",
+      "home": "DEN",
+      "away": "POL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m045"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1977-05-15",
+      "city": "Limassol",
+      "home": "CYP",
+      "away": "POL",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m046"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1977-09-21",
+      "city": "Chorzów",
+      "home": "POL",
+      "away": "DEN",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m047"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1977-10-09",
+      "city": "København",
+      "home": "DEN",
+      "away": "POR",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m048"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1977-10-29",
+      "city": "Chorzów",
+      "home": "POL",
+      "away": "POR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m049"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1977-11-16",
+      "city": "Faro",
+      "home": "POR",
+      "away": "CYP",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m050"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1976-06-13",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "ENG",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m051"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1976-09-22",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "LUX",
+      "score": [
+        7,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1976-10-13",
+      "city": "London",
+      "home": "ENG",
+      "away": "FIN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1976-10-16",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "ITA",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1976-11-17",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "ENG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1977-03-30",
+      "city": "London",
+      "home": "ENG",
+      "away": "LUX",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1977-05-26",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "FIN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1977-06-08",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "ITA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1977-10-12",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1977-10-15",
+      "city": "Torino",
+      "home": "ITA",
+      "away": "FIN",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1977-11-16",
+      "city": "London",
+      "home": "ENG",
+      "away": "ITA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1977-12-03",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "LUX",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1976-10-31",
+      "city": "Izmir",
+      "home": "TUR",
+      "away": "MLT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1976-11-17",
+      "city": "Dresden",
+      "home": "GDR",
+      "away": "TUR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1976-12-05",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "AUT",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1977-04-02",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "GDR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1977-04-17",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "TUR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1977-04-30",
+      "city": "Salzburg",
+      "home": "AUT",
+      "away": "MLT",
+      "score": [
+        9,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1977-09-24",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "GDR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1977-10-12",
+      "city": "Leipzig",
+      "home": "GDR",
+      "away": "AUT",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1977-10-29",
+      "city": "Potsdam",
+      "home": "GDR",
+      "away": "MLT",
+      "score": [
+        9,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1977-10-30",
+      "city": "Izmir",
+      "home": "TUR",
+      "away": "AUT",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1977-11-16",
+      "city": "Izmir",
+      "home": "TUR",
+      "away": "GDR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1977-11-27",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "TUR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1976-09-05",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "BEL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1976-09-08",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "NED",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1976-10-13",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "NIR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1976-11-10",
+      "city": "Liège",
+      "home": "BEL",
+      "away": "NIR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1977-03-26",
+      "city": "Antwerpen",
+      "home": "BEL",
+      "away": "NED",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1977-06-11",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "NIR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1977-08-31",
+      "city": "Nijmegen",
+      "home": "NED",
+      "away": "ISL",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1977-09-03",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "ISL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1977-09-21",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "ISL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1977-10-12",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "NED",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1977-10-26",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "BEL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1977-11-16",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "BEL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1976-10-09",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "FRA",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1976-11-17",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "IRL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1977-03-30",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "FRA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1977-06-01",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "IRL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1977-10-12",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "BUL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1977-11-16",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "BUL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1976-06-16",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "NOR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1976-09-08",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SUI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1976-10-09",
+      "city": "Basel",
+      "home": "SUI",
+      "away": "SWE",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1977-06-08",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "SUI",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1977-09-07",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SWE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1977-10-30",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "NOR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1976-10-13",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "SCO",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1976-11-17",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "WAL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1977-03-30",
+      "city": "Wrexham",
+      "home": "WAL",
+      "away": "TCH",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1977-09-21",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "TCH",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1977-10-12",
+      "city": "Liverpool",
+      "home": "WAL",
+      "away": "SCO",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1977-11-16",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "WAL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1976-10-10",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "YUG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1977-04-16",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "ESP",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1977-05-08",
+      "city": "Zagreb",
+      "home": "YUG",
+      "away": "ROU",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1977-10-26",
+      "city": "Madrid",
+      "home": "ESP",
+      "away": "ROU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1977-11-13",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "YUG",
+      "score": [
+        4,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1977-11-30",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1976-10-09",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "HUN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1977-04-24",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "GRE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1977-04-30",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "URS",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1977-05-10",
+      "city": "Thessaloniki",
+      "home": "GRE",
+      "away": "URS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1977-05-18",
+      "city": "Tbilisi",
+      "home": "URS",
+      "away": "HUN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1977-05-28",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "GRE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1977-10-29",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "BOL",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1977-11-30",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "HUN",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-02-20",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "BRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-02-24",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "PAR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-03-06",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "COL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-03-09",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "COL",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-03-13",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "BRA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-03-20",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "PAR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-02-09",
+      "city": "Caracas",
+      "home": "VEN",
+      "away": "URU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-02-27",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "URU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-03-06",
+      "city": "Caracas",
+      "home": "VEN",
+      "away": "BOL",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-03-13",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "VEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-03-17",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "VEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-03-27",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "BOL",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-02-20",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "PER",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-02-27",
+      "city": "Guayaquil",
+      "home": "ECU",
+      "away": "CHI",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-03-06",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "PER",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-03-12",
+      "city": "Lima",
+      "home": "PER",
+      "away": "ECU",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-03-20",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "ECU",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-03-26",
+      "city": "Lima",
+      "home": "PER",
+      "away": "CHI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-07-10",
+      "city": "Cali",
+      "home": "BRA",
+      "away": "PER",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-07-14",
+      "city": "Cali",
+      "home": "BRA",
+      "away": "BOL",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1977-07-17",
+      "city": "Cali",
+      "home": "PER",
+      "away": "BOL",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-09-24",
+      "city": "Vancouver",
+      "home": "CAN",
+      "away": "USA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-10-03",
+      "city": "Los Angeles",
+      "home": "USA",
+      "away": "MEX",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-10-10",
+      "city": "Vancouver",
+      "home": "CAN",
+      "away": "MEX",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-10-15",
+      "city": "Puebla",
+      "home": "MEX",
+      "away": "USA",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-10-20",
+      "city": "Seattle",
+      "home": "USA",
+      "away": "CAN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-10-27",
+      "city": "Toluca",
+      "home": "MEX",
+      "away": "CAN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m145"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-12-22",
+      "city": "Port-au-Prince",
+      "home": "CAN",
+      "away": "USA",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-04-04",
+      "city": "Panama",
+      "home": "PAN",
+      "away": "CRC",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-05-02",
+      "city": "Panama",
+      "home": "PAN",
+      "away": "SLV",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m148"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-07-11",
+      "city": "San José",
+      "home": "CRC",
+      "away": "PAN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m149"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-08-01",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "PAN",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-09-17",
+      "city": "Panama",
+      "home": "PAN",
+      "away": "GUA",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-09-26",
+      "city": "Cd. Guatemala",
+      "home": "GUA",
+      "away": "PAN",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m152"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-12-01",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "CRC",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m153"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-12-05",
+      "city": "San José",
+      "home": "CRC",
+      "away": "GUA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m154"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-12-08",
+      "city": "Cd. Guatemala",
+      "home": "GUA",
+      "away": "SLV",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m155"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-12-12",
+      "city": "Cd. Guatemala",
+      "home": "GUA",
+      "away": "CRC",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m156"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-12-15",
+      "city": "San José",
+      "home": "CRC",
+      "away": "SLV",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m157"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-12-19",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "GUA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m158"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-07-04",
+      "city": "Georgetown",
+      "home": "GUY",
+      "away": "SUR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m159"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-08-29",
+      "city": "Paramaribo",
+      "home": "SUR",
+      "away": "GUY",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m160"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-08-15",
+      "city": "Bridgetown",
+      "home": "BRB",
+      "away": "TRI",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m161"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-08-31",
+      "city": "Port of Spain",
+      "home": "TRI",
+      "away": "BRB",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m162"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-09-14",
+      "city": "Bridgetown",
+      "home": "BRB",
+      "away": "TRI",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m163"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-11-14",
+      "city": "Paramaribo",
+      "home": "SUR",
+      "away": "TRI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m164"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-11-28",
+      "city": "Port of Spain",
+      "home": "TRI",
+      "away": "SUR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m165"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-12-18",
+      "city": "Cayenne",
+      "home": "SUR",
+      "away": "TRI",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [
+        "aet"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m166"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-04-02",
+      "city": "Santo Domingo",
+      "home": "DOM",
+      "away": "HAI",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m167"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-04-17",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "DOM",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m168"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-07-31",
+      "city": "Oranjestad",
+      "home": "ANT",
+      "away": "HAI",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m169"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-08-14",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "ANT",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m170"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-08-15",
+      "city": "Kingston",
+      "home": "JAM",
+      "away": "CUB",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m171"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-08-29",
+      "city": "Havana",
+      "home": "CUB",
+      "away": "JAM",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m172"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-11-28",
+      "city": "Havana",
+      "home": "CUB",
+      "away": "HAI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m173"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-12-11",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "CUB",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m174"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1976-12-29",
+      "city": "Panama",
+      "home": "HAI",
+      "away": "CUB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m175"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-08",
+      "city": "Monterrey",
+      "home": "GUA",
+      "away": "SUR",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m176"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-08",
+      "city": "Monterrey",
+      "home": "SLV",
+      "away": "CAN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m177"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-09",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "HAI",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m178"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-12",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "SLV",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m179"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-12",
+      "city": "Cd. de Mexico",
+      "home": "CAN",
+      "away": "SUR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m180"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-12",
+      "city": "Monterrey",
+      "home": "HAI",
+      "away": "GUA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m181"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-15",
+      "city": "Monterrey",
+      "home": "MEX",
+      "away": "SUR",
+      "score": [
+        8,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m182"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-16",
+      "city": "Cd. de Mexico",
+      "home": "HAI",
+      "away": "SLV",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m183"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-16",
+      "city": "Cd. de Mexico",
+      "home": "CAN",
+      "away": "GUA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m184"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-19",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "GUA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m185"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-20",
+      "city": "Monterrey",
+      "home": "SLV",
+      "away": "SUR",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m186"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-20",
+      "city": "Monterrey",
+      "home": "CAN",
+      "away": "HAI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m187"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-22",
+      "city": "Monterrey",
+      "home": "MEX",
+      "away": "CAN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m188"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-23",
+      "city": "Cd. de Mexico",
+      "home": "HAI",
+      "away": "SUR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m189"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1977-10-23",
+      "city": "Cd. de Mexico",
+      "home": "GUA",
+      "away": "SLV",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m190"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-03-07",
+      "city": "Freetown",
+      "home": "SLE",
+      "away": "NIG",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m191"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-03-21",
+      "city": "Niamey",
+      "home": "NIG",
+      "away": "SLE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m192"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-03-13",
+      "city": "Ouagadougou",
+      "home": "VOL",
+      "away": "MTN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m193"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-03-28",
+      "city": "Nouakchott",
+      "home": "MTN",
+      "away": "VOL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m194"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-04-01",
+      "city": "Alger",
+      "home": "ALG",
+      "away": "LBY",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m195"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-04-16",
+      "city": "Tripoli",
+      "home": "LBY",
+      "away": "ALG",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m196"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-12-12",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "TUN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m197"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-01-09",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "MAR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m198"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-10-17",
+      "city": "Lomé",
+      "home": "TOG",
+      "away": "SEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m199"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-10-31",
+      "city": "Dakar",
+      "home": "SEN",
+      "away": "TOG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m200"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-10-10",
+      "city": "Accra",
+      "home": "GHA",
+      "away": "GUI",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m201"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-10-31",
+      "city": "Conakry",
+      "home": "GUI",
+      "away": "GHA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m202"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-01-16",
+      "city": "Lomé",
+      "home": "GUI",
+      "away": "GHA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m203"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-10-16",
+      "city": "Freetown",
+      "home": "SLE",
+      "away": "NGA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m204"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-10-30",
+      "city": "Lagos",
+      "home": "NGA",
+      "away": "SLE",
+      "score": [
+        6,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m205"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-10-17",
+      "city": "Brazzaville",
+      "home": "CGO",
+      "away": "CMR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m206"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-10-31",
+      "city": "Yaoundé",
+      "home": "CMR",
+      "away": "CGO",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m207"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-09-04",
+      "city": "Ouagadougou",
+      "home": "VOL",
+      "away": "CIV",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m208"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-09-26",
+      "city": "Abidjan",
+      "home": "CIV",
+      "away": "VOL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m209"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-10-29",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "ETH",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m210"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-11-14",
+      "city": "Addis Abeba",
+      "home": "ETH",
+      "away": "EGY",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m211"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-05-09",
+      "city": "Lusaka",
+      "home": "ZAM",
+      "away": "MWI",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m212"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1976-05-30",
+      "city": "Blantyre",
+      "home": "MWI",
+      "away": "ZAM",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m213"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-02-06",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "ALG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m214"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-02-28",
+      "city": "Alger",
+      "home": "ALG",
+      "away": "TUN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m215"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-02-13",
+      "city": "Lomé",
+      "home": "TOG",
+      "away": "GUI",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m216"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-02-27",
+      "city": "Conakry",
+      "home": "GUI",
+      "away": "TOG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m217"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-02-13",
+      "city": "Bouaké",
+      "home": "CIV",
+      "away": "CGO",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m218"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-02-27",
+      "city": "Brazzaville",
+      "home": "CGO",
+      "away": "CIV",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m219"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-02-06",
+      "city": "Nairobi",
+      "home": "KEN",
+      "away": "EGY",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m220"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-02-27",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "KEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m221"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-02-13",
+      "city": "Kampala",
+      "home": "UGA",
+      "away": "ZAM",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m222"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-02-27",
+      "city": "Ndola",
+      "home": "ZAM",
+      "away": "UGA",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m223"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-06-05",
+      "city": "Conakry",
+      "home": "GUI",
+      "away": "TUN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m224"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-06-19",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "GUI",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m225"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-07-10",
+      "city": "Lagos",
+      "home": "NGA",
+      "away": "CIV",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m226"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-07-25",
+      "city": "Bouaké",
+      "home": "CIV",
+      "away": "NGA",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m227"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-07-15",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "ZAM",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m228"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-07-31",
+      "city": "Lusaka",
+      "home": "ZAM",
+      "away": "EGY",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m229"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-09-25",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "NGA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m230"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-10-08",
+      "city": "Lagos",
+      "home": "NGA",
+      "away": "EGY",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m231"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-10-21",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "NGA",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m232"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-11-12",
+      "city": "Lagos",
+      "home": "NGA",
+      "away": "TUN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m233"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-11-25",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "TUN",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m234"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1977-12-11",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "EGY",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m235"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-02-27",
+      "city": "Singapore",
+      "home": "SIN",
+      "away": "THA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m236"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-02-28",
+      "city": "Singapore",
+      "home": "HKG",
+      "away": "IDN",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m237"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-01",
+      "city": "Singapore",
+      "home": "MAS",
+      "away": "THA",
+      "score": [
+        6,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m238"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-02",
+      "city": "Singapore",
+      "home": "SIN",
+      "away": "HKG",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m239"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-03",
+      "city": "Singapore",
+      "home": "IDN",
+      "away": "MAS",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m240"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-05",
+      "city": "Singapore",
+      "home": "HKG",
+      "away": "THA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m241"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-06",
+      "city": "Singapore",
+      "home": "SIN",
+      "away": "MAS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m242"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-07",
+      "city": "Singapore",
+      "home": "THA",
+      "away": "IDN",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m243"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-08",
+      "city": "Singapore",
+      "home": "HKG",
+      "away": "MAS",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m244"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-09",
+      "city": "Singapore",
+      "home": "SIN",
+      "away": "IDN",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m245"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-12",
+      "city": "Singapore",
+      "home": "HKG",
+      "away": "SIN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m246"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-02-27",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "KOR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m247"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-06",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "JPN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m248"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-10",
+      "city": "Ramat Gan",
+      "home": "JPN",
+      "away": "ISR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m249"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-20",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "ISR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m250"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-26",
+      "city": "Tokyo",
+      "home": "JPN",
+      "away": "KOR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m251"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-04-03",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "JPN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m252"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1976-11-12",
+      "city": "Jeddah",
+      "home": "KSA",
+      "away": "SYR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m253"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1976-11-26",
+      "city": "Damascus",
+      "home": "SYR",
+      "away": "KSA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m254"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-01-07",
+      "city": "Riyadh",
+      "home": "KSA",
+      "away": "IRN",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m255"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-01-28",
+      "city": "Damascus",
+      "home": "SYR",
+      "away": "IRN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m256"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-04-22",
+      "city": "Shiraz",
+      "home": "IRN",
+      "away": "KSA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m257"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-11",
+      "city": "Doha",
+      "home": "KUW",
+      "away": "BHR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m258"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-13",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "BHR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m259"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-15",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "KUW",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m260"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-17",
+      "city": "Doha",
+      "home": "KUW",
+      "away": "BHR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m261"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-19",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "BHR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m262"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-21",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "KUW",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m263"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-13",
+      "city": "Suva",
+      "home": "AUS",
+      "away": "TPE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m264"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-16",
+      "city": "Suva",
+      "home": "TPE",
+      "away": "AUS",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m265"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-20",
+      "city": "Auckland",
+      "home": "NZL",
+      "away": "TPE",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m266"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-23",
+      "city": "Auckland",
+      "home": "TPE",
+      "away": "NZL",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m267"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-27",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "NZL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m268"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-03-30",
+      "city": "Auckland",
+      "home": "NZL",
+      "away": "AUS",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m269"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-06-19",
+      "city": "Hongkong",
+      "home": "HKG",
+      "away": "IRN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m270"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-06-26",
+      "city": "Hongkong",
+      "home": "HKG",
+      "away": "KOR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m271"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-07-03",
+      "city": "Pusan",
+      "home": "KOR",
+      "away": "IRN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m272"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-07-10",
+      "city": "Adelaide",
+      "home": "AUS",
+      "away": "HKG",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m273"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-08-14",
+      "city": "Melbourne",
+      "home": "AUS",
+      "away": "IRN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m274"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-08-27",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "KOR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m275"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-10-02",
+      "city": "Hongkong",
+      "home": "HKG",
+      "away": "KUW",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m276"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-10-09",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "KUW",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m277"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-10-16",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "KUW",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m278"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-10-23",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "AUS",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m279"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-10-28",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "KUW",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m280"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-10-30",
+      "city": "Hongkong",
+      "home": "HKG",
+      "away": "AUS",
+      "score": [
+        2,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m281"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-11-05",
+      "city": "Kuwait",
+      "home": "KUW",
+      "away": "KOR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m282"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-11-11",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "KOR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m283"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-11-12",
+      "city": "Kuwait",
+      "home": "KUW",
+      "away": "HKG",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m284"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-11-18",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "HKG",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m285"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-11-19",
+      "city": "Kuwait",
+      "home": "KUW",
+      "away": "AUS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m286"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-11-25",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "AUS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m287"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-12-03",
+      "city": "Kuwait",
+      "home": "KUW",
+      "away": "IRN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m288"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO13",
+      "matchday": null,
+      "date": "1977-12-04",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "HKG",
+      "score": [
+        5,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m289"
     }
   ],
   "scorers": [

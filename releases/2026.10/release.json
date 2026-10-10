@@ -441,28 +441,28 @@
     },
     {
       "path": "data/football/worldcup/1974.json",
-      "sha256": "5e6a90a3c7523006a0868adf91aaaa038627f114ebe6145bab910f57871573f0",
+      "sha256": "2509c41a13dd389d8a08162b39e5af9cd7ffb3fb71f958dc2e5edf21cf20bfdb",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1974
     },
     {
       "path": "data/football/worldcup/1978.json",
-      "sha256": "a81dfeb04f2d82551c40ead26f9efbcf2582db974de806ab0da82cb09c32a03f",
+      "sha256": "9909c4f4563ffc1dbb6f76449a4901c48c48f8cd48c7313e1317dd807c31dc09",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1978
     },
     {
       "path": "data/football/worldcup/1982.json",
-      "sha256": "f79ad82599541a212f9296805186e8d73958b628c299fcd2c799717eb452e57f",
+      "sha256": "3712336676e519eb7db49b8757dca31dff9011657b7da56aa4ac20f6e6f6295f",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1982
     },
     {
       "path": "data/football/worldcup/1986.json",
-      "sha256": "a846a29f84b9206f074b75d36de4f87f78370134aaa05cb7234be3ce62d2de43",
+      "sha256": "9990554c2cb0bf0a01886f85d752a88148a98702f3129664c9b9b53b04790ce2",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1986
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "a5edf706a80feb0556c02ea97b816d8649a32744da4f8efbca36c0e716f61f2f",
+  "checksum": "0030d3918164e2099875547edd387b98f02cab2f6163a3926f6c9373a7d8aefe",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 2611,
+    "matches": 3702,
     "results": 0
   },
   "license": {
@@ -939,6 +939,12 @@
         "retrieved": "2026-10-06"
       },
       {
+        "source": "rsssf:74q",
+        "name": "RSSSF — World Cup 1974 (qualifying)",
+        "url": "https://www.rsssf.org/tables/74q.html",
+        "retrieved": "2026-10-10"
+      },
+      {
         "source": "rsssf:76e",
         "name": "RSSSF — European Championship 1976",
         "url": "https://www.rsssf.org/tables/76e.html",
@@ -956,6 +962,12 @@
         "name": "RSSSF — World Cup 1978 full details",
         "url": "https://www.rsssf.org/tables/78full.html",
         "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:78q",
+        "name": "RSSSF — World Cup 1978 (qualifying)",
+        "url": "https://www.rsssf.org/tables/78q.html",
+        "retrieved": "2026-10-10"
       },
       {
         "source": "rsssf:80e",
@@ -977,6 +989,12 @@
         "retrieved": "2026-10-06"
       },
       {
+        "source": "rsssf:82q",
+        "name": "RSSSF — World Cup 1982 (qualifying)",
+        "url": "https://www.rsssf.org/tables/82q.html",
+        "retrieved": "2026-10-10"
+      },
+      {
         "source": "rsssf:84e",
         "name": "RSSSF — European Championship 1984",
         "url": "https://www.rsssf.org/tables/84e.html",
@@ -994,6 +1012,12 @@
         "name": "RSSSF — World Cup 1986 full details",
         "url": "https://www.rsssf.org/tables/86full.html",
         "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:86q",
+        "name": "RSSSF — World Cup 1986 (qualifying)",
+        "url": "https://www.rsssf.org/tables/86q.html",
+        "retrieved": "2026-10-10"
       },
       {
         "source": "rsssf:88e",

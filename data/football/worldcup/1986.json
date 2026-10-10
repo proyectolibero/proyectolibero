@@ -17,12 +17,12 @@
     "finalMatchId": "m052"
   },
   "coverage": {
-    "matches": 52,
-    "goals": 132,
+    "matches": 364,
+    "goals": 960,
     "scorers": 81,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "scope": "all",
+    "complete": true,
+    "scorersComplete": false
   },
   "sources": [
     {
@@ -40,6 +40,15 @@
       "url": "https://www.rsssf.org/tables/86f.html",
       "retrieved": "2026-10-06",
       "author": "Karel Stokkermans, Sergio Henrique Jarreta",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:86q",
+      "name": "RSSSF — World Cup 1986 (qualifying)",
+      "url": "https://www.rsssf.org/tables/86q.html",
+      "retrieved": "2026-10-10",
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
@@ -331,6 +340,396 @@
           "gf": 2,
           "ga": 4,
           "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR2",
+      "standings": [
+        {
+          "team": "FRG",
+          "p": 8,
+          "w": 5,
+          "d": 2,
+          "l": 1,
+          "gf": 22,
+          "ga": 9,
+          "pts": 12
+        },
+        {
+          "team": "POR",
+          "p": 8,
+          "w": 5,
+          "d": 0,
+          "l": 3,
+          "gf": 12,
+          "ga": 10,
+          "pts": 10
+        },
+        {
+          "team": "SWE",
+          "p": 8,
+          "w": 4,
+          "d": 1,
+          "l": 3,
+          "gf": 14,
+          "ga": 9,
+          "pts": 9
+        },
+        {
+          "team": "TCH",
+          "p": 8,
+          "w": 3,
+          "d": 2,
+          "l": 3,
+          "gf": 11,
+          "ga": 12,
+          "pts": 8
+        },
+        {
+          "team": "MLT",
+          "p": 8,
+          "w": 0,
+          "d": 1,
+          "l": 7,
+          "gf": 6,
+          "ga": 25,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR3",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 8,
+          "w": 4,
+          "d": 4,
+          "l": 0,
+          "gf": 21,
+          "ga": 2,
+          "pts": 12
+        },
+        {
+          "team": "NIR",
+          "p": 8,
+          "w": 4,
+          "d": 2,
+          "l": 2,
+          "gf": 8,
+          "ga": 5,
+          "pts": 10
+        },
+        {
+          "team": "ROU",
+          "p": 8,
+          "w": 3,
+          "d": 3,
+          "l": 2,
+          "gf": 12,
+          "ga": 7,
+          "pts": 9
+        },
+        {
+          "team": "FIN",
+          "p": 8,
+          "w": 3,
+          "d": 2,
+          "l": 3,
+          "gf": 7,
+          "ga": 12,
+          "pts": 8
+        },
+        {
+          "team": "TUR",
+          "p": 8,
+          "w": 0,
+          "d": 1,
+          "l": 7,
+          "gf": 2,
+          "ga": 24,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR4",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 8,
+          "w": 5,
+          "d": 1,
+          "l": 2,
+          "gf": 15,
+          "ga": 4,
+          "pts": 11
+        },
+        {
+          "team": "BUL",
+          "p": 8,
+          "w": 5,
+          "d": 1,
+          "l": 2,
+          "gf": 13,
+          "ga": 5,
+          "pts": 11
+        },
+        {
+          "team": "GDR",
+          "p": 8,
+          "w": 5,
+          "d": 0,
+          "l": 3,
+          "gf": 16,
+          "ga": 9,
+          "pts": 10
+        },
+        {
+          "team": "YUG",
+          "p": 8,
+          "w": 3,
+          "d": 2,
+          "l": 3,
+          "gf": 7,
+          "ga": 8,
+          "pts": 8
+        },
+        {
+          "team": "LUX",
+          "p": 8,
+          "w": 0,
+          "d": 0,
+          "l": 8,
+          "gf": 2,
+          "ga": 27,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR5",
+      "standings": [
+        {
+          "team": "HUN",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 12,
+          "ga": 4,
+          "pts": 10
+        },
+        {
+          "team": "NED",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 11,
+          "ga": 5,
+          "pts": 7
+        },
+        {
+          "team": "AUT",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 9,
+          "ga": 8,
+          "pts": 7
+        },
+        {
+          "team": "CYP",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 3,
+          "ga": 18,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR6",
+      "standings": [
+        {
+          "team": "DEN",
+          "p": 8,
+          "w": 5,
+          "d": 1,
+          "l": 2,
+          "gf": 17,
+          "ga": 6,
+          "pts": 11
+        },
+        {
+          "team": "URS",
+          "p": 8,
+          "w": 4,
+          "d": 2,
+          "l": 2,
+          "gf": 13,
+          "ga": 8,
+          "pts": 10
+        },
+        {
+          "team": "SUI",
+          "p": 8,
+          "w": 2,
+          "d": 4,
+          "l": 2,
+          "gf": 5,
+          "ga": 10,
+          "pts": 8
+        },
+        {
+          "team": "IRL",
+          "p": 8,
+          "w": 2,
+          "d": 2,
+          "l": 4,
+          "gf": 5,
+          "ga": 10,
+          "pts": 6
+        },
+        {
+          "team": "NOR",
+          "p": 8,
+          "w": 1,
+          "d": 3,
+          "l": 4,
+          "gf": 4,
+          "ga": 10,
+          "pts": 5
+        }
+      ]
+    },
+    {
+      "letter": "OCE15",
+      "standings": [
+        {
+          "team": "AUS",
+          "p": 6,
+          "w": 4,
+          "d": 2,
+          "l": 0,
+          "gf": 20,
+          "ga": 2,
+          "pts": 10
+        },
+        {
+          "team": "ISR",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 17,
+          "ga": 6,
+          "pts": 7
+        },
+        {
+          "team": "NZL",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 13,
+          "ga": 7,
+          "pts": 7
+        },
+        {
+          "team": "TPE",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 1,
+          "ga": 36,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "SAM8",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 12,
+          "ga": 6,
+          "pts": 9
+        },
+        {
+          "team": "PER",
+          "p": 6,
+          "w": 3,
+          "d": 2,
+          "l": 1,
+          "gf": 8,
+          "ga": 4,
+          "pts": 8
+        },
+        {
+          "team": "COL",
+          "p": 6,
+          "w": 2,
+          "d": 2,
+          "l": 2,
+          "gf": 6,
+          "ga": 6,
+          "pts": 6
+        },
+        {
+          "team": "VEN",
+          "p": 6,
+          "w": 0,
+          "d": 1,
+          "l": 5,
+          "gf": 5,
+          "ga": 15,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "SAM9",
+      "standings": [
+        {
+          "team": "URU",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "CHI",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 10,
+          "ga": 5,
+          "pts": 5
+        },
+        {
+          "team": "ECU",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 4,
+          "ga": 11,
+          "pts": 1
         }
       ]
     }
@@ -1298,6 +1697,5622 @@
         "text": "29.06.86  (12.00) Mexico City, Estadio Azteca\nARG - GER 3:2 (1:0)\n(~114000) Arppi Filho BRA, Fredriksson SWE, Ulloa COS\nARG: Pumpido - Brown, Cuciuffo, Ruggeri, Olarticoechea - Giusti,\nBatista, Maradona (c), Enrique - Burruchaga (89 Trobbiani), Valdano\nGER: Schumacher - Jakobs, Berthold, K.-H.Förster, Briegel - Matthäus,\nBrehme, Magath (63 D.Hoeness), Eder, K.H.Rummenigge (c), K.K.Allofs (46 Völler)\n1:0 Brown 23 h, 2:0 Valdano 56, 2:1 Rummenige 74, 2:2 Völler 82 h, 3:2\nBurruchaga 88\nbooked: Maradona, Enrique, Pumpido, Olarticoechea / Matthäus, Briegel",
         "lang": "en"
       }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1984-10-17",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "ALB",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1984-10-17",
+      "city": "Zabrze",
+      "home": "POL",
+      "away": "GRE",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1984-10-31",
+      "city": "Mielec",
+      "home": "POL",
+      "away": "ALB",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1984-12-19",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "BEL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1984-12-22",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "BEL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1985-02-27",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "ALB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1985-03-27",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "GRE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1985-05-01",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "POL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1985-05-19",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "POL",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1985-05-30",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "POL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1985-09-11",
+      "city": "Chorzów",
+      "home": "POL",
+      "away": "BEL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1985-10-30",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "GRE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1985-10-16",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "NED",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1985-11-20",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "BEL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1984-05-23",
+      "city": "Norrköping",
+      "home": "SWE",
+      "away": "MLT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1984-09-12",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1984-10-14",
+      "city": "Porto",
+      "home": "POR",
+      "away": "TCH",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1984-10-17",
+      "city": "Köln",
+      "home": "FRG",
+      "away": "SWE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1984-10-31",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "MLT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1984-11-14",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "SWE",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1984-12-16",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "FRG",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-02-10",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "POR",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-02-24",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "FRG",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-03-27",
+      "city": "Saarbrücken",
+      "home": "FRG",
+      "away": "MLT",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-04-21",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "TCH",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-04-30",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "FRG",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-06-05",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "TCH",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-09-25",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "FRG",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-09-25",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "POR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-10-12",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "MLT",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-10-16",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "SWE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-10-16",
+      "city": "Stuttgart",
+      "home": "FRG",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-11-17",
+      "city": "München",
+      "home": "FRG",
+      "away": "TCH",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1985-11-17",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "SWE",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1984-05-27",
+      "city": "Pori",
+      "home": "FIN",
+      "away": "NIR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1984-09-12",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "ROU",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1984-10-17",
+      "city": "London",
+      "home": "ENG",
+      "away": "FIN",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1984-10-31",
+      "city": "Antalya",
+      "home": "TUR",
+      "away": "FIN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1984-11-14",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "FIN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1984-11-14",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "ENG",
+      "score": [
+        0,
+        8
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-02-27",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "ENG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-04-03",
+      "city": "Craiova",
+      "home": "ROU",
+      "away": "TUR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-05-01",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "TUR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-05-01",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "ENG",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-05-22",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "ENG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-06-06",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-08-28",
+      "city": "Timisoara",
+      "home": "ROU",
+      "away": "FIN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-09-11",
+      "city": "Izmir",
+      "home": "TUR",
+      "away": "NIR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-09-11",
+      "city": "London",
+      "home": "ENG",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-09-25",
+      "city": "Tampere",
+      "home": "FIN",
+      "away": "TUR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-10-16",
+      "city": "London",
+      "home": "ENG",
+      "away": "TUR",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-10-16",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "NIR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-11-13",
+      "city": "Izmir",
+      "home": "TUR",
+      "away": "ROU",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1985-11-13",
+      "city": "London",
+      "home": "ENG",
+      "away": "NIR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1984-09-29",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "BUL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1984-10-13",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "FRA",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1984-10-20",
+      "city": "Leipzig",
+      "home": "GDR",
+      "away": "YUG",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1984-11-17",
+      "city": "Esch-sur-Alzette",
+      "home": "LUX",
+      "away": "GDR",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1984-11-21",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "BUL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1984-12-05",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "LUX",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1984-12-08",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "GDR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-03-27",
+      "city": "Zenica",
+      "home": "YUG",
+      "away": "LUX",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-04-03",
+      "city": "Sarajevo",
+      "home": "YUG",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-04-06",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "GDR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-05-01",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "YUG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-05-02",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "FRA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-05-18",
+      "city": "Potsdam",
+      "home": "GDR",
+      "away": "LUX",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-06-01",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "YUG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-09-11",
+      "city": "Leipzig",
+      "home": "GDR",
+      "away": "FRA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-09-25",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "BUL",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-09-28",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "GDR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-10-30",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "LUX",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-11-16",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "YUG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1985-11-16",
+      "city": "Karl-Marx-Stadt",
+      "home": "GDR",
+      "away": "BUL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1984-05-02",
+      "city": "Nicosia",
+      "home": "CYP",
+      "away": "AUT",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1984-09-26",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "AUT",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1984-10-17",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "HUN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1984-11-14",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "NED",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1984-11-17",
+      "city": "Limassol",
+      "home": "CYP",
+      "away": "HUN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1984-12-23",
+      "city": "Nicosia",
+      "home": "CYP",
+      "away": "NED",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1985-02-27",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "CYP",
+      "score": [
+        7,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1985-04-03",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "CYP",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1985-04-17",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "HUN",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1985-05-01",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "AUT",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1985-05-07",
+      "city": "Graz",
+      "home": "AUT",
+      "away": "CYP",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1985-05-14",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "NED",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1984-09-12",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "URS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1984-09-12",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SUI",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1984-09-26",
+      "city": "København",
+      "home": "DEN",
+      "away": "NOR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1984-10-10",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "URS",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1984-10-17",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "DEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1984-10-17",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "IRL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1984-11-14",
+      "city": "København",
+      "home": "DEN",
+      "away": "IRL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m145"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-04-17",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "URS",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-05-01",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "NOR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-05-02",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "SUI",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m148"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-06-02",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "SUI",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m149"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-06-05",
+      "city": "København",
+      "home": "DEN",
+      "away": "URS",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-09-11",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "IRL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-09-25",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "DEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m152"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-10-09",
+      "city": "København",
+      "home": "DEN",
+      "away": "SUI",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m153"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-10-16",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "DEN",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m154"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-10-16",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "IRL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m155"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-10-30",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "NOR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m156"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-11-13",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "DEN",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m157"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1985-11-13",
+      "city": "Luzern",
+      "home": "SUI",
+      "away": "NOR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m158"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1984-09-12",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "WAL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m159"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1984-10-17",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "ISL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m160"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1984-10-17",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "WAL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m161"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1984-11-14",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "ISL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m162"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1984-11-14",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "ESP",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m163"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1985-02-27",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "SCO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m164"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1985-03-27",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "WAL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m165"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1985-04-30",
+      "city": "Wrexham",
+      "home": "WAL",
+      "away": "ESP",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m166"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1985-05-28",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "SCO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m167"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1985-06-12",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "ESP",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m168"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1985-09-10",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "SCO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m169"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1985-09-25",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "ISL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m170"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1985-11-20",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "AUS",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m171"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1985-12-04",
+      "city": "Melbourne",
+      "home": "AUS",
+      "away": "SCO",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m172"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1985-05-26",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "PER",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m173"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1985-05-26",
+      "city": "San Cristóbal",
+      "home": "VEN",
+      "away": "ARG",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m174"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1985-06-02",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "ARG",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m175"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1985-06-02",
+      "city": "San Cristóbal",
+      "home": "VEN",
+      "away": "PER",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m176"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1985-06-09",
+      "city": "Lima",
+      "home": "PER",
+      "away": "COL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m177"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1985-06-09",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "VEN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m178"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1985-06-16",
+      "city": "Lima",
+      "home": "PER",
+      "away": "VEN",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m179"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1985-06-16",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "COL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m180"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1985-06-23",
+      "city": "San Cristóbal",
+      "home": "VEN",
+      "away": "COL",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m181"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1985-06-23",
+      "city": "Lima",
+      "home": "PER",
+      "away": "ARG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m182"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1985-06-30",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "VEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m183"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1985-06-30",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "PER",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m184"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1985-03-03",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "CHI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m185"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1985-03-10",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "ECU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m186"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1985-03-17",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "ECU",
+      "score": [
+        6,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m187"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1985-03-24",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "URU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m188"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1985-03-31",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "URU",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m189"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM9",
+      "matchday": null,
+      "date": "1985-04-07",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "CHI",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m190"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1985-05-26",
+      "city": "Santa Cruz de la Sierra",
+      "home": "BOL",
+      "away": "PAR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m191"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1985-06-02",
+      "city": "Santa Cruz de la Sierra",
+      "home": "BOL",
+      "away": "BRA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m192"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1985-06-09",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "BOL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m193"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1985-06-16",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "BRA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m194"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1985-06-23",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "PAR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m195"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1985-06-30",
+      "city": "São Paulo",
+      "home": "BRA",
+      "away": "BOL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m196"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1985-10-27",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "COL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m197"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1985-11-03",
+      "city": "Cali",
+      "home": "COL",
+      "away": "PAR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m198"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1985-10-27",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "PER",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m199"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1985-11-03",
+      "city": "Lima",
+      "home": "PER",
+      "away": "CHI",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m200"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1985-11-10",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "CHI",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m201"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1985-11-17",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "PAR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m202"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1984-07-29",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "PUR",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m203"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1984-08-05",
+      "city": "San Juan",
+      "home": "PUR",
+      "away": "SLV",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m204"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1984-09-29",
+      "city": "Willemstad",
+      "home": "ANT",
+      "away": "USA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m205"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1984-10-06",
+      "city": "Saint Louis",
+      "home": "USA",
+      "away": "ANT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m206"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1984-06-15",
+      "city": "Colón",
+      "home": "PAN",
+      "away": "HON",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m207"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1984-06-24",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "PAN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m208"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1984-08-04",
+      "city": "Port-au-Prince",
+      "home": "ATG",
+      "away": "HAI",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m209"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1984-08-07",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "ATG",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m210"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1984-08-15",
+      "city": "Paramaribo",
+      "home": "SUR",
+      "away": "GUY",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m211"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1984-08-29",
+      "city": "Georgetown",
+      "home": "GUY",
+      "away": "SUR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m212"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-02-24",
+      "city": "San Salvador",
+      "home": "SUR",
+      "away": "SLV",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m213"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-02-27",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "SUR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m214"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-03-03",
+      "city": "Tegucigalpa",
+      "home": "SUR",
+      "away": "HON",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m215"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-03-06",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "SUR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m216"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-03-10",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "HON",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m217"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-03-14",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "SLV",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m218"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-04-13",
+      "city": "Vancouver",
+      "home": "CAN",
+      "away": "HAI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m219"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-04-20",
+      "city": "Vancouver",
+      "home": "CAN",
+      "away": "GUA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m220"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-04-26",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "GUA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m221"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-05-05",
+      "city": "Ciuded de Guatemala",
+      "home": "GUA",
+      "away": "CAN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m222"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-05-08",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "CAN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m223"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-05-15",
+      "city": "Ciudad de Guatemala",
+      "home": "GUA",
+      "away": "HAI",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m224"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-04-24",
+      "city": "San José",
+      "home": "TRI",
+      "away": "CRC",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m225"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-04-28",
+      "city": "San José",
+      "home": "CRC",
+      "away": "TRI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m226"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-05-15",
+      "city": "Saint Louis",
+      "home": "USA",
+      "away": "TRI",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m227"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-05-19",
+      "city": "Los Angeles",
+      "home": "TRI",
+      "away": "USA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m228"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-05-26",
+      "city": "Alajuela",
+      "home": "CRC",
+      "away": "USA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m229"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-05-31",
+      "city": "Los Angeles",
+      "home": "USA",
+      "away": "CRC",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m230"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-08-11",
+      "city": "San José",
+      "home": "CRC",
+      "away": "HON",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m231"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-08-17",
+      "city": "Toronto",
+      "home": "CAN",
+      "away": "CRC",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m232"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-08-25",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "CAN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m233"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-09-01",
+      "city": "San José",
+      "home": "CRC",
+      "away": "CAN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m234"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-09-08",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "CRC",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m235"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA11",
+      "matchday": null,
+      "date": "1985-09-14",
+      "city": "Saint John's",
+      "home": "CAN",
+      "away": "HON",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m236"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-08-28",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "ZIM",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m237"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-09-30",
+      "city": "Harare",
+      "home": "ZIM",
+      "away": "EGY",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m238"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-10-13",
+      "city": "Nairobi",
+      "home": "KEN",
+      "away": "ETH",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m239"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-10-28",
+      "city": "Addis Abeba",
+      "home": "ETH",
+      "away": "KEN",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m240"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-07-15",
+      "city": "Curepipe",
+      "home": "MRI",
+      "away": "MWI",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m241"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-07-28",
+      "city": "Lilongwe",
+      "home": "MWI",
+      "away": "MRI",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m242"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-07-29",
+      "city": "Ndola",
+      "home": "ZAM",
+      "away": "UGA",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m243"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-08-25",
+      "city": "Kampala",
+      "home": "UGA",
+      "away": "ZAM",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m244"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-10-13",
+      "city": "Mwanza",
+      "home": "TAN",
+      "away": "SDN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m245"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-10-27",
+      "city": "Khartoum",
+      "home": "SDN",
+      "away": "TAN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m246"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-06-30",
+      "city": "Freetown",
+      "home": "SLE",
+      "away": "MAR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m247"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-07-15",
+      "city": "Rabat",
+      "home": "MAR",
+      "away": "SLE",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m248"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-10-28",
+      "city": "Cotonou",
+      "home": "BEN",
+      "away": "TUN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m249"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-11-13",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "BEN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m250"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-10-21",
+      "city": "Abidjan",
+      "home": "CIV",
+      "away": "GAM",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m251"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-11-04",
+      "city": "Banjul",
+      "home": "GAM",
+      "away": "CIV",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m252"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-10-20",
+      "city": "Lagos",
+      "home": "NGA",
+      "away": "LBR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m253"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-11-04",
+      "city": "Monrovia",
+      "home": "LBR",
+      "away": "NGA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m254"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-07-01",
+      "city": "Luanda",
+      "home": "ANG",
+      "away": "SEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m255"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1984-07-15",
+      "city": "Dakar",
+      "home": "SEN",
+      "away": "ANG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m256"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-04-07",
+      "city": "Lusaka",
+      "home": "ZAM",
+      "away": "CMR",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m257"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-04-21",
+      "city": "Yaoundé",
+      "home": "CMR",
+      "away": "ZAM",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m258"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-04-07",
+      "city": "Rabat",
+      "home": "MAR",
+      "away": "MWI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m259"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-04-21",
+      "city": "Lilongwe",
+      "home": "MWI",
+      "away": "MAR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m260"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-03-31",
+      "city": "Luanda",
+      "home": "ANG",
+      "away": "ALG",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m261"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-04-19",
+      "city": "Alger",
+      "home": "ALG",
+      "away": "ANG",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m262"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-04-06",
+      "city": "Nairobi",
+      "home": "KEN",
+      "away": "NGA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m263"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-04-20",
+      "city": "Lagos",
+      "home": "NGA",
+      "away": "KEN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m264"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-04-05",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "MAD",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m265"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-04-21",
+      "city": "Tananarive",
+      "home": "MAD",
+      "away": "EGY",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m266"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-02-10",
+      "city": "Conakry",
+      "home": "GUI",
+      "away": "TUN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m267"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-02-24",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "GUI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m268"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-02-22",
+      "city": "Khartoum",
+      "home": "SDN",
+      "away": "LBY",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m269"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-03-08",
+      "city": "Tripoli",
+      "home": "LBY",
+      "away": "SDN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m270"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-04-07",
+      "city": "Abidjan",
+      "home": "CIV",
+      "away": "GHA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m271"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-04-21",
+      "city": "Accra",
+      "home": "GHA",
+      "away": "CIV",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m272"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-07-13",
+      "city": "Alger",
+      "home": "ALG",
+      "away": "ZAM",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m273"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-07-28",
+      "city": "Lusaka",
+      "home": "ZAM",
+      "away": "ALG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m274"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-07-06",
+      "city": "Lagos",
+      "home": "NGA",
+      "away": "TUN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m275"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-07-20",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "NGA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m276"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-07-14",
+      "city": "Accra",
+      "home": "GHA",
+      "away": "LBY",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m277"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-07-26",
+      "city": "Benghazi",
+      "home": "LBY",
+      "away": "GHA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m278"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-07-12",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "MAR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m279"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-07-28",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "EGY",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m280"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-10-06",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "ALG",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m281"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-10-18",
+      "city": "Alger",
+      "home": "ALG",
+      "away": "TUN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m282"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-10-06",
+      "city": "Rabat",
+      "home": "MAR",
+      "away": "LBY",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m283"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR12",
+      "matchday": null,
+      "date": "1985-10-18",
+      "city": "Benghazi",
+      "home": "LBY",
+      "away": "MAR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m284"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-04-12",
+      "city": "Riyadh",
+      "home": "KSA",
+      "away": "UAE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m285"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-04-19",
+      "city": "Dubai",
+      "home": "UAE",
+      "away": "KSA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m286"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-03-15",
+      "city": "Kuwait",
+      "home": "IRQ",
+      "away": "LIB",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m287"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-03-15",
+      "city": "Amman",
+      "home": "JOR",
+      "away": "QAT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m288"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-03-18",
+      "city": "Kuwait",
+      "home": "IRQ",
+      "away": "LIB",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m289"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-03-22",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "LIB",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m290"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-03-27",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "LIB",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m291"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-03-29",
+      "city": "Amman",
+      "home": "JOR",
+      "away": "IRQ",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m292"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-04-05",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "IRQ",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m293"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-04-12",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "JOR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m294"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-04-19",
+      "city": "Kuwait",
+      "home": "IRQ",
+      "away": "JOR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m295"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-05-05",
+      "city": "Calcutta",
+      "home": "IRQ",
+      "away": "QAT",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m296"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-03-22",
+      "city": "Damascus",
+      "home": "SYR",
+      "away": "KUW",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m297"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-03-29",
+      "city": "Sanaa",
+      "home": "YAR",
+      "away": "SYR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m298"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-04-05",
+      "city": "Kuwait",
+      "home": "KUW",
+      "away": "YAR",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m299"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-04-12",
+      "city": "Kuwait",
+      "home": "KUW",
+      "away": "SYR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m300"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-04-19",
+      "city": "Damascus",
+      "home": "SYR",
+      "away": "YAR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m301"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-04-26",
+      "city": "Sanaa",
+      "home": "YAR",
+      "away": "KUW",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m302"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-03-29",
+      "city": "Aden",
+      "home": "YMD",
+      "away": "BHR",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m303"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-04-12",
+      "city": "Manama",
+      "home": "BHR",
+      "away": "YMD",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m304"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-09-20",
+      "city": "Dubai",
+      "home": "UAE",
+      "away": "IRQ",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m305"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-09-27",
+      "city": "Taif",
+      "home": "IRQ",
+      "away": "UAE",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m306"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-09-06",
+      "city": "Manama",
+      "home": "BHR",
+      "away": "SYR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m307"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-09-20",
+      "city": "Damascus",
+      "home": "SYR",
+      "away": "BHR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m308"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-11-15",
+      "city": "Damascus",
+      "home": "SYR",
+      "away": "IRQ",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m309"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI13",
+      "matchday": null,
+      "date": "1985-11-29",
+      "city": "Taif",
+      "home": "IRQ",
+      "away": "SYR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m310"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-02",
+      "city": "Katmandu",
+      "home": "NEP",
+      "away": "KOR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m311"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-10",
+      "city": "Kuala Lumpur",
+      "home": "MAS",
+      "away": "KOR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m312"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-16",
+      "city": "Katmandu",
+      "home": "NEP",
+      "away": "MAS",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m313"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-31",
+      "city": "Kuala Lumpur",
+      "home": "MAS",
+      "away": "NEP",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m314"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-04-06",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "NEP",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m315"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-05-19",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "MAS",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m316"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-15",
+      "city": "Jakarta",
+      "home": "IDN",
+      "away": "THA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m317"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-18",
+      "city": "Jakarta",
+      "home": "IDN",
+      "away": "BAN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m318"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-21",
+      "city": "Jakarta",
+      "home": "IDN",
+      "away": "IND",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m319"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-23",
+      "city": "Bangkok",
+      "home": "THA",
+      "away": "BAN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m320"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-26",
+      "city": "Bangkok",
+      "home": "THA",
+      "away": "IND",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m321"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-29",
+      "city": "Bangkok",
+      "home": "THA",
+      "away": "IDN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m322"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-30",
+      "city": "Dhaka",
+      "home": "BAN",
+      "away": "IND",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m323"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-04-02",
+      "city": "Dhaka",
+      "home": "BAN",
+      "away": "IDN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m324"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-04-05",
+      "city": "Dhaka",
+      "home": "BAN",
+      "away": "THA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m325"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-04-06",
+      "city": "Calcutta",
+      "home": "IND",
+      "away": "IDN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m326"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-04-09",
+      "city": "Calcutta",
+      "home": "IND",
+      "away": "THA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m327"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-04-12",
+      "city": "Calcutta",
+      "home": "IND",
+      "away": "BAN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m328"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-02-17",
+      "city": "Macao",
+      "home": "MAC",
+      "away": "BRU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m329"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-02-17",
+      "city": "Hongkong",
+      "home": "HKG",
+      "away": "CHN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m330"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-02-20",
+      "city": "Macao",
+      "home": "MAC",
+      "away": "CHN",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m331"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-02-23",
+      "city": "Hongkong",
+      "home": "HKG",
+      "away": "BRU",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m332"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-02-26",
+      "city": "Macao",
+      "home": "CHN",
+      "away": "BRU",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m333"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-01",
+      "city": "Hongkong",
+      "home": "BRU",
+      "away": "CHN",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m334"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-04-06",
+      "city": "Bandar Seri Begawan",
+      "home": "BRU",
+      "away": "HKG",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m335"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-04-13",
+      "city": "Bandar Seri Begawan",
+      "home": "BRU",
+      "away": "MAC",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m336"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-04-28",
+      "city": "Macao",
+      "home": "MAC",
+      "away": "HKG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m337"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-05-04",
+      "city": "Hongkong",
+      "home": "HKG",
+      "away": "MAC",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m338"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-05-12",
+      "city": "Beijing",
+      "home": "CHN",
+      "away": "MAC",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m339"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-05-19",
+      "city": "Beijing",
+      "home": "CHN",
+      "away": "HKG",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m340"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-01-19",
+      "city": "Singapore",
+      "home": "SIN",
+      "away": "PRK",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m341"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-02-23",
+      "city": "Singapore",
+      "home": "SIN",
+      "away": "JPN",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m342"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-03-21",
+      "city": "Tokyo",
+      "home": "JPN",
+      "away": "PRK",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m343"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-04-30",
+      "city": "Pyongyang",
+      "home": "PRK",
+      "away": "JPN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m344"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-05-18",
+      "city": "Tokyo",
+      "home": "JPN",
+      "away": "SIN",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m345"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-05-25",
+      "city": "Pyongyang",
+      "home": "PRK",
+      "away": "SIN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m346"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-07-21",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "IDN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m347"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-07-30",
+      "city": "Jakarta",
+      "home": "IDN",
+      "away": "KOR",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m348"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-08-11",
+      "city": "Kobe",
+      "home": "JPN",
+      "away": "HKG",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m349"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-09-22",
+      "city": "Hongkong",
+      "home": "HKG",
+      "away": "JPN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m350"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-10-26",
+      "city": "Tokyo",
+      "home": "JPN",
+      "away": "KOR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m351"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI14",
+      "matchday": null,
+      "date": "1985-11-03",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "JPN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m352"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE15",
+      "matchday": null,
+      "date": "1985-09-03",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "TPE",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m353"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE15",
+      "matchday": null,
+      "date": "1985-09-08",
+      "city": "Ramat Gan",
+      "home": "TPE",
+      "away": "ISR",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m354"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE15",
+      "matchday": null,
+      "date": "1985-09-21",
+      "city": "Auckland",
+      "home": "NZL",
+      "away": "AUS",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m355"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE15",
+      "matchday": null,
+      "date": "1985-10-05",
+      "city": "Auckland",
+      "home": "NZL",
+      "away": "TPE",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m356"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE15",
+      "matchday": null,
+      "date": "1985-10-08",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "AUS",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m357"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE15",
+      "matchday": null,
+      "date": "1985-10-12",
+      "city": "Christchurch",
+      "home": "TPE",
+      "away": "NZL",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m358"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE15",
+      "matchday": null,
+      "date": "1985-10-20",
+      "city": "Melbourne",
+      "home": "AUS",
+      "away": "ISR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m359"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE15",
+      "matchday": null,
+      "date": "1985-10-23",
+      "city": "Adelaide",
+      "home": "AUS",
+      "away": "TPE",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m360"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE15",
+      "matchday": null,
+      "date": "1985-10-26",
+      "city": "Auckland",
+      "home": "NZL",
+      "away": "ISR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m361"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE15",
+      "matchday": null,
+      "date": "1985-10-27",
+      "city": "Sydney",
+      "home": "TPE",
+      "away": "AUS",
+      "score": [
+        0,
+        8
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m362"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE15",
+      "matchday": null,
+      "date": "1985-11-03",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "NZL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m363"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE15",
+      "matchday": null,
+      "date": "1985-11-10",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "NZL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m364"
     }
   ],
   "scorers": [

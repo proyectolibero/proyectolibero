@@ -17,12 +17,12 @@
     "finalMatchId": "m038"
   },
   "coverage": {
-    "matches": 38,
-    "goals": 97,
+    "matches": 261,
+    "goals": 711,
     "scorers": 53,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "scope": "all",
+    "complete": true,
+    "scorersComplete": false
   },
   "sources": [
     {
@@ -40,6 +40,15 @@
       "name": "RSSSF — World Cup 1974 finals, full details",
       "url": "https://www.rsssf.org/tables/74full.html",
       "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:74q",
+      "name": "RSSSF — World Cup 1974 (qualifying)",
+      "url": "https://www.rsssf.org/tables/74q.html",
+      "retrieved": "2026-10-10",
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
@@ -336,6 +345,361 @@
           "l": 3,
           "gf": 2,
           "ga": 6,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR2",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 6,
+          "w": 4,
+          "d": 2,
+          "l": 0,
+          "gf": 12,
+          "ga": 0,
+          "pts": 10
+        },
+        {
+          "team": "TUR",
+          "p": 6,
+          "w": 2,
+          "d": 2,
+          "l": 2,
+          "gf": 5,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "SUI",
+          "p": 6,
+          "w": 2,
+          "d": 2,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "LUX",
+          "p": 6,
+          "w": 1,
+          "d": 0,
+          "l": 5,
+          "gf": 2,
+          "ga": 14,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR3",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 6,
+          "w": 4,
+          "d": 2,
+          "l": 0,
+          "gf": 24,
+          "ga": 2,
+          "pts": 10
+        },
+        {
+          "team": "BEL",
+          "p": 6,
+          "w": 4,
+          "d": 2,
+          "l": 0,
+          "gf": 12,
+          "ga": 0,
+          "pts": 10
+        },
+        {
+          "team": "NOR",
+          "p": 6,
+          "w": 2,
+          "d": 0,
+          "l": 4,
+          "gf": 9,
+          "ga": 16,
+          "pts": 4
+        },
+        {
+          "team": "ISL",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 2,
+          "ga": 29,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR4",
+      "standings": [
+        {
+          "team": "GDR",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 18,
+          "ga": 3,
+          "pts": 10
+        },
+        {
+          "team": "ROU",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 17,
+          "ga": 4,
+          "pts": 9
+        },
+        {
+          "team": "FIN",
+          "p": 6,
+          "w": 1,
+          "d": 1,
+          "l": 4,
+          "gf": 3,
+          "ga": 21,
+          "pts": 3
+        },
+        {
+          "team": "ALB",
+          "p": 6,
+          "w": 1,
+          "d": 0,
+          "l": 5,
+          "gf": 3,
+          "ga": 13,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR5",
+      "standings": [
+        {
+          "team": "POL",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 6,
+          "ga": 3,
+          "pts": 5
+        },
+        {
+          "team": "ENG",
+          "p": 4,
+          "w": 1,
+          "d": 2,
+          "l": 1,
+          "gf": 3,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "WAL",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 3,
+          "ga": 5,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "EUR6",
+      "standings": [
+        {
+          "team": "BUL",
+          "p": 6,
+          "w": 4,
+          "d": 2,
+          "l": 0,
+          "gf": 13,
+          "ga": 3,
+          "pts": 10
+        },
+        {
+          "team": "POR",
+          "p": 6,
+          "w": 2,
+          "d": 3,
+          "l": 1,
+          "gf": 10,
+          "ga": 6,
+          "pts": 7
+        },
+        {
+          "team": "NIR",
+          "p": 6,
+          "w": 1,
+          "d": 3,
+          "l": 2,
+          "gf": 5,
+          "ga": 6,
+          "pts": 5
+        },
+        {
+          "team": "CYP",
+          "p": 6,
+          "w": 1,
+          "d": 0,
+          "l": 5,
+          "gf": 1,
+          "ga": 14,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "EUR8",
+      "standings": [
+        {
+          "team": "SCO",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 8,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "TCH",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 9,
+          "ga": 3,
+          "pts": 5
+        },
+        {
+          "team": "DEN",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 2,
+          "ga": 13,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR9",
+      "standings": [
+        {
+          "team": "URS",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 2,
+          "pts": 6
+        },
+        {
+          "team": "IRL",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 5,
+          "pts": 3
+        },
+        {
+          "team": "FRA",
+          "p": 4,
+          "w": 1,
+          "d": 1,
+          "l": 2,
+          "gf": 3,
+          "ga": 5,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "SAM10",
+      "standings": [
+        {
+          "team": "URU",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 6,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "COL",
+          "p": 4,
+          "w": 1,
+          "d": 3,
+          "l": 0,
+          "gf": 3,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "ECU",
+          "p": 4,
+          "w": 0,
+          "d": 2,
+          "l": 2,
+          "gf": 3,
+          "ga": 8,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "SAM11",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 4,
+          "w": 3,
+          "d": 1,
+          "l": 0,
+          "gf": 9,
+          "ga": 2,
+          "pts": 7
+        },
+        {
+          "team": "PAR",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 8,
+          "ga": 5,
+          "pts": 5
+        },
+        {
+          "team": "BOL",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 1,
+          "ga": 11,
           "pts": 0
         }
       ]
@@ -1054,6 +1418,4020 @@
         "text": "07.07.74  (16.00) Müchen, Olympiastadion\nGER - HOL 2:1 (2:1)\n(~80000) Taylor ENG, Barreto URU, González MEX\nGER: Maier - Vogts, Beckenbauer (c), Schwarzenbeck, Breitner - Hoeness,\nBonhof, Overath, Grabowski - Müller, Hölzenbein\nHOL: Jongbloed - Suurbier, Rijsbergen (69 De Jong), Haan, Krol - Jansen,\nNeeskens, Van Hanegem, Rep - Cruijff (c), Rensenbrink (46 R.van de Kerkhof)\n0:1 Neeskens 2 p, 1:1 Breitner 25 p, 2:1 Müller 43\nbooked: Vogts / Neeskens, Van Hanegem, Cruijff (during half-time)",
         "lang": "en"
       }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1971-11-14",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "HUN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m039"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1972-04-30",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "MLT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m040"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1972-05-06",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "MLT",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m041"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1972-05-25",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "HUN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m042"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1972-06-10",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "SWE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m043"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1972-10-15",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "HUN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m044"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1972-10-15",
+      "city": "Göteborg",
+      "home": "SWE",
+      "away": "MLT",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m045"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1972-11-25",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "AUT",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m046"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1973-04-29",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "AUT",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m047"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1973-05-23",
+      "city": "Göteborg",
+      "home": "SWE",
+      "away": "AUT",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m048"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1973-06-13",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "SWE",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m049"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1973-11-11",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "SWE",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m050"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1973-11-27",
+      "city": "Gelsenkirchen",
+      "home": "SWE",
+      "away": "AUT",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m051"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1972-10-07",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "ITA",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1972-10-21",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "ITA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1972-10-22",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "TUR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1972-12-10",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "LUX",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1973-01-13",
+      "city": "Napoli",
+      "home": "ITA",
+      "away": "TUR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1973-02-25",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "ITA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1973-03-31",
+      "city": "Genova",
+      "home": "ITA",
+      "away": "LUX",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1973-04-08",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "SUI",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1973-05-09",
+      "city": "Basel",
+      "home": "SUI",
+      "away": "TUR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1973-09-26",
+      "city": "Luzern",
+      "home": "SUI",
+      "away": "LUX",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1973-10-20",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "SUI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1973-11-18",
+      "city": "Izmir",
+      "home": "TUR",
+      "away": "SUI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1972-05-18",
+      "city": "Liège",
+      "home": "BEL",
+      "away": "ISL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1972-05-22",
+      "city": "Brugge",
+      "home": "ISL",
+      "away": "BEL",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1972-08-03",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "ISL",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1972-10-04",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "BEL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1972-11-01",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "NOR",
+      "score": [
+        9,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1972-11-19",
+      "city": "Antwerpen",
+      "home": "BEL",
+      "away": "NED",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1973-08-02",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "NOR",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1973-08-22",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "ISL",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1973-08-29",
+      "city": "Deventer",
+      "home": "ISL",
+      "away": "NED",
+      "score": [
+        1,
+        8
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1973-09-12",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "NED",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1973-10-31",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "NOR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1973-11-18",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "BEL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1972-06-21",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "ALB",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1972-09-20",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1972-10-07",
+      "city": "Dresden",
+      "home": "GDR",
+      "away": "FIN",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1972-10-29",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "ALB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1973-04-07",
+      "city": "Magdeburg",
+      "home": "GDR",
+      "away": "ALB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1973-05-06",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "ROU",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1973-05-27",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "GDR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1973-06-06",
+      "city": "Tampere",
+      "home": "FIN",
+      "away": "GDR",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1973-09-26",
+      "city": "Leipzig",
+      "home": "GDR",
+      "away": "ROU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1973-10-10",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "FIN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1973-10-14",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "FIN",
+      "score": [
+        9,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1973-11-03",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "GDR",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1972-11-15",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "ENG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1973-01-24",
+      "city": "London",
+      "home": "ENG",
+      "away": "WAL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1973-03-28",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "POL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1973-06-06",
+      "city": "Chorzów",
+      "home": "POL",
+      "away": "ENG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1973-09-26",
+      "city": "Chorzów",
+      "home": "POL",
+      "away": "WAL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1973-10-17",
+      "city": "London",
+      "home": "ENG",
+      "away": "POL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1972-03-29",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "CYP",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1972-05-10",
+      "city": "Nicosia",
+      "home": "CYP",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1972-10-18",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "NIR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1972-11-19",
+      "city": "Lisi (Akdogan)",
+      "home": "CYP",
+      "away": "BUL",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1973-02-14",
+      "city": "Nicosia",
+      "home": "CYP",
+      "away": "NIR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1973-03-28",
+      "city": "Coventry",
+      "home": "NIR",
+      "away": "POR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1973-05-02",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "POR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1973-05-08",
+      "city": "London",
+      "home": "NIR",
+      "away": "CYP",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1973-09-26",
+      "city": "Sheffield",
+      "home": "NIR",
+      "away": "BUL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1973-10-13",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "BUL",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1973-11-14",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "NIR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1973-11-18",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "CYP",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1972-10-19",
+      "city": "Las Palmas",
+      "home": "ESP",
+      "away": "YUG",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1972-11-19",
+      "city": "Beograd",
+      "home": "YUG",
+      "away": "GRE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1973-01-17",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "ESP",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1973-02-21",
+      "city": "Málaga",
+      "home": "ESP",
+      "away": "GRE",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1973-10-21",
+      "city": "Zagreb",
+      "home": "YUG",
+      "away": "ESP",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1973-12-19",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "YUG",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "1974-02-13",
+      "city": "Frankfurt",
+      "home": "YUG",
+      "away": "ESP",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1972-10-18",
+      "city": "København",
+      "home": "DEN",
+      "away": "SCO",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1972-11-15",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "DEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1973-05-02",
+      "city": "København",
+      "home": "DEN",
+      "away": "TCH",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1973-06-06",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "DEN",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1973-09-26",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "TCH",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "1973-10-17",
+      "city": "Bratislava",
+      "home": "TCH",
+      "away": "SCO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1972-10-13",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "URS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1972-10-18",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "URS",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1972-11-15",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "FRA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1973-05-13",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "IRL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1973-05-19",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "IRL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1973-05-26",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "FRA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR9",
+      "matchday": null,
+      "date": "1973-09-26",
+      "city": "Moskva",
+      "home": "URS",
+      "away": "CHI",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1973-06-21",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "ECU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1973-06-24",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "URU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1973-06-28",
+      "city": "Guayaquil",
+      "home": "ECU",
+      "away": "COL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1973-07-01",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "URU",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1973-07-05",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "COL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM10",
+      "matchday": null,
+      "date": "1973-07-08",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "ECU",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1973-09-02",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "PAR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1973-09-09",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "BOL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1973-09-16",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "ARG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1973-09-23",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "ARG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1973-09-30",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "BOL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM11",
+      "matchday": null,
+      "date": "1973-10-07",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "PAR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1973-04-29",
+      "city": "Lima",
+      "home": "PER",
+      "away": "CHI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1973-05-13",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "PER",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM12",
+      "matchday": null,
+      "date": "1973-08-05",
+      "city": "Montevideo",
+      "home": "CHI",
+      "away": "PER",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-08-20",
+      "city": "St. John's",
+      "home": "CAN",
+      "away": "USA",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-08-24",
+      "city": "Toronto",
+      "home": "CAN",
+      "away": "MEX",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-08-29",
+      "city": "Baltimore",
+      "home": "USA",
+      "away": "CAN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-09-03",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "USA",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-09-06",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "CAN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m145"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-09-10",
+      "city": "Los Angeles",
+      "home": "USA",
+      "away": "MEX",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-12-03",
+      "city": "Guatemala",
+      "home": "GUA",
+      "away": "SLV",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-12-10",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "GUA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m148"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-12-03",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "CRC",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m149"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-12-10",
+      "city": "San José",
+      "home": "CRC",
+      "away": "HON",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-04-15",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "PUR",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-04-23",
+      "city": "San Juan",
+      "home": "PUR",
+      "away": "HAI",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m152"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-11-10",
+      "city": "Port of Spain",
+      "home": "TRI",
+      "away": "ATG",
+      "score": [
+        11,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m153"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-11-19",
+      "city": "St. John's",
+      "home": "ATG",
+      "away": "TRI",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m154"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-11-28",
+      "city": "Port of Spain",
+      "home": "TRI",
+      "away": "SUR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m155"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-11-30",
+      "city": "San Fernando",
+      "home": "SUR",
+      "away": "TRI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m156"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-12-03",
+      "city": "Saint John's",
+      "home": "ATG",
+      "away": "SUR",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m157"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1972-12-05",
+      "city": "Saint John's",
+      "home": "SUR",
+      "away": "ATG",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m158"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-11-29",
+      "city": "Port-au-Prince",
+      "home": "HON",
+      "away": "TRI",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m159"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-11-30",
+      "city": "Port-au-Prince",
+      "home": "MEX",
+      "away": "GUA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m160"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-01",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "ANT",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m161"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-03",
+      "city": "Port-au-Prince",
+      "home": "HON",
+      "away": "MEX",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m162"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-04",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "TRI",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m163"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-05",
+      "city": "Port-au-Prince",
+      "home": "ANT",
+      "away": "GUA",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m164"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-07",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "HON",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m165"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-08",
+      "city": "Port-au-Prince",
+      "home": "MEX",
+      "away": "ANT",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m166"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-10",
+      "city": "Port-au-Prince",
+      "home": "TRI",
+      "away": "GUA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m167"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-12",
+      "city": "Port-au-Prince",
+      "home": "HON",
+      "away": "ANT",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m168"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-13",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "GUA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m169"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-14",
+      "city": "Port-au-Prince",
+      "home": "TRI",
+      "away": "MEX",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m170"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-15",
+      "city": "Port-au-Prince",
+      "home": "HON",
+      "away": "GUA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m171"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-17",
+      "city": "Port-au-Prince",
+      "home": "TRI",
+      "away": "ANT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m172"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA13",
+      "matchday": null,
+      "date": "1973-12-18",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "MEX",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m173"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-11-19",
+      "city": "Agadir",
+      "home": "MAR",
+      "away": "SEN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m174"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-12-03",
+      "city": "Dakar",
+      "home": "SEN",
+      "away": "MAR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m175"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-03-02",
+      "city": "Alger",
+      "home": "ALG",
+      "away": "GUI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m176"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-03-12",
+      "city": "Conakry",
+      "home": "GUI",
+      "away": "ALG",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m177"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-12-08",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "TUN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m178"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-12-17",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "EGY",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m179"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-10-15",
+      "city": "Freetown",
+      "home": "SLE",
+      "away": "CIV",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m180"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-10-29",
+      "city": "Abidjan",
+      "home": "CIV",
+      "away": "SLE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m181"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-07-16",
+      "city": "Nairobi",
+      "home": "KEN",
+      "away": "SDN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m182"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-07-23",
+      "city": "Khartoum",
+      "home": "SDN",
+      "away": "KEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m183"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-11-25",
+      "city": "Dar Es Salaam",
+      "home": "TAN",
+      "away": "ETH",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m184"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-12-03",
+      "city": "Addis Abeba",
+      "home": "ETH",
+      "away": "TAN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m185"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-12-10",
+      "city": "Addis Abeba",
+      "home": "ETH",
+      "away": "TAN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m186"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-04-30",
+      "city": "Maseru",
+      "home": "LES",
+      "away": "ZAM",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m187"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-06-04",
+      "city": "Ndola",
+      "home": "ZAM",
+      "away": "LES",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m188"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-08-05",
+      "city": "Ibadan",
+      "home": "NGA",
+      "away": "CGO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m189"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-08-15",
+      "city": "Brazzaville",
+      "home": "CGO",
+      "away": "NGA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m190"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-06-18",
+      "city": "Cotonou",
+      "home": "DAH",
+      "away": "GHA",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m191"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-07-02",
+      "city": "Kumasi",
+      "home": "GHA",
+      "away": "DAH",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m192"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-06-06",
+      "city": "Lomé",
+      "home": "TOG",
+      "away": "ZAI",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m193"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-06-20",
+      "city": "Kinshasa",
+      "home": "ZAI",
+      "away": "TOG",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m194"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-02-11",
+      "city": "Conakry",
+      "home": "GUI",
+      "away": "MAR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m195"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-02-25",
+      "city": "Tetouan",
+      "home": "MAR",
+      "away": "GUI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m196"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-02-11",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "CIV",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m197"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-02-25",
+      "city": "Abidjan",
+      "home": "CIV",
+      "away": "TUN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m198"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-12-10",
+      "city": "Port Louis",
+      "home": "MRI",
+      "away": "KEN",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m199"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1972-12-17",
+      "city": "Nairobi",
+      "home": "KEN",
+      "away": "MRI",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m200"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-04-01",
+      "city": "Addis Abeba",
+      "home": "ETH",
+      "away": "ZAM",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m201"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-04-15",
+      "city": "Lusaka",
+      "home": "ZAM",
+      "away": "ETH",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m202"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-02-25",
+      "city": "Accra",
+      "home": "GHA",
+      "away": "NGA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m203"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-02-04",
+      "city": "Douala",
+      "home": "CMR",
+      "away": "ZAI",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m204"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-02-25",
+      "city": "Kinshasa",
+      "home": "ZAI",
+      "away": "CMR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m205"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-02-27",
+      "city": "Kinshasa",
+      "home": "ZAI",
+      "away": "CMR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m206"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-05-20",
+      "city": "Abidjan",
+      "home": "CIV",
+      "away": "MAR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m207"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-06-03",
+      "city": "Tetouan",
+      "home": "MAR",
+      "away": "CIV",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m208"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-08-12",
+      "city": "Ndola",
+      "home": "ZAM",
+      "away": "KEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m209"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-08-19",
+      "city": "Nairobi",
+      "home": "KEN",
+      "away": "ZAM",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m210"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-08-05",
+      "city": "Accra",
+      "home": "GHA",
+      "away": "ZAI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m211"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-08-19",
+      "city": "Kinshasa",
+      "home": "ZAI",
+      "away": "GHA",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m212"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-10-21",
+      "city": "Lusaka",
+      "home": "ZAM",
+      "away": "MAR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m213"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-11-04",
+      "city": "Lusaka",
+      "home": "ZAM",
+      "away": "ZAI",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m214"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-11-18",
+      "city": "Kinshasa",
+      "home": "ZAI",
+      "away": "ZAM",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m215"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-11-25",
+      "city": "Tetouan",
+      "home": "MAR",
+      "away": "ZAM",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m216"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR14",
+      "matchday": null,
+      "date": "1973-12-09",
+      "city": "Kinshasa",
+      "home": "ZAI",
+      "away": "MAR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m217"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-16",
+      "city": "Seoul",
+      "home": "VSO",
+      "away": "THA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m218"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-16",
+      "city": "Seoul",
+      "home": "ISR",
+      "away": "JPN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m219"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-17",
+      "city": "Seoul",
+      "home": "HKG",
+      "away": "MAS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m220"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-20",
+      "city": "Seoul",
+      "home": "JPN",
+      "away": "VSO",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m221"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-22",
+      "city": "Seoul",
+      "home": "HKG",
+      "away": "JPN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m222"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-24",
+      "city": "Seoul",
+      "home": "HKG",
+      "away": "VSO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m223"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-19",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "THA",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m224"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-19",
+      "city": "Seoul",
+      "home": "ISR",
+      "away": "MAS",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m225"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-21",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "MAS",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m226"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-21",
+      "city": "Seoul",
+      "home": "ISR",
+      "away": "THA",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m227"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-23",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "ISR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m228"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-23",
+      "city": "Seoul",
+      "home": "MAS",
+      "away": "THA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m229"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-26",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "HKG",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m230"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-26",
+      "city": "Seoul",
+      "home": "ISR",
+      "away": "JPN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m231"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-28",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "ISR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m232"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-04",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "PRK",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m233"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-04",
+      "city": "Tehran",
+      "home": "SYR",
+      "away": "KUW",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m234"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-06",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "KUW",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m235"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-06",
+      "city": "Tehran",
+      "home": "PRK",
+      "away": "SYR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m236"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-08",
+      "city": "Tehran",
+      "home": "PRK",
+      "away": "KUW",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m237"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-08",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "SYR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m238"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-11",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "PRK",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m239"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-11",
+      "city": "Tehran",
+      "home": "SYR",
+      "away": "KUW",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m240"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-13",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "KUW",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m241"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-13",
+      "city": "Tehran",
+      "home": "PRK",
+      "away": "SYR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m242"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-15",
+      "city": "Tehran",
+      "home": "SYR",
+      "away": "IRN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m243"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-05-15",
+      "city": "Tehran",
+      "home": "KUW",
+      "away": "PRK",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m244"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-03-04",
+      "city": "Auckland",
+      "home": "AUS",
+      "away": "NZL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m245"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-03-11",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "IRQ",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m246"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-03-11",
+      "city": "Sydney",
+      "home": "NZL",
+      "away": "IDN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m247"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-03-13",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "IDN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m248"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-03-13",
+      "city": "Sydney",
+      "home": "IRQ",
+      "away": "NZL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m249"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-03-16",
+      "city": "Sydney",
+      "home": "IRQ",
+      "away": "IDN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m250"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-03-16",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "NZL",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m251"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-03-18",
+      "city": "Melbourne",
+      "home": "AUS",
+      "away": "IRQ",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m252"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-03-18",
+      "city": "Melbourne",
+      "home": "IDN",
+      "away": "NZL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m253"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-03-21",
+      "city": "Sydney",
+      "home": "IRQ",
+      "away": "IDN",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m254"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-03-24",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "IDN",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m255"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-03-24",
+      "city": "Sydney",
+      "home": "IRQ",
+      "away": "NZL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m256"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-08-18",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "IRN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m257"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-08-24",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "AUS",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m258"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-10-28",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "KOR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m259"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-11-10",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "AUS",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m260"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASO15",
+      "matchday": null,
+      "date": "1973-11-13",
+      "city": "Hong Kong",
+      "home": "AUS",
+      "away": "KOR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m261"
     }
   ],
   "scorers": [
