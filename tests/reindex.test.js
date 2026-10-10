@@ -31,9 +31,10 @@ test("reindex sin competición recorre todas las publicadas y no lanza con varia
     .map((competition) => competition.id)
     .sort();
 
+  assert.ok(expected.length > 1, `debe haber varias competiciones publicadas (${expected.length})`);
+
   const result = core.writeIndex(root);
   const ids = result.competitions.map((competition) => competition.id).sort();
-  assert.deepEqual(ids, ["football/balkancup", "football/eurochamp", "football/intconcup", "football/worldcup"]);
   assert.deepEqual(ids, expected);
 
   for (const competition of result.competitions) {

@@ -8,4 +8,5 @@ admin/audit.jsonl
 inbox/
 drafts/
 panel-*.png
+preview-*.png
 *.tmp-*

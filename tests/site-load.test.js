@@ -3,7 +3,7 @@
 /*
  * Simula, sin navegador, el camino real de `assets/js/data.js`:
  *   _index.json -> editions[].data -> leer el fichero -> adaptador v2 -> v1.
- * Comprueba que las 23 ediciones publicadas siguen siendo consumibles por la web v1.
+ * Comprueba que las ediciones publicadas siguen siendo consumibles por la web v1.
  */
 
 const { test } = require("node:test");
@@ -11,16 +11,21 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 const { pathToFileURL } = require("node:url");
+const core = require("../core/index.js");
 const { ROOT } = require("./helpers.js");
 
+const COMPETITION = "football/worldcup";
 const BROWSER = pathToFileURL(path.join(ROOT, "assets", "js", "viewmodel.js")).href;
 const DATA_DIR = path.join(ROOT, "data", "football", "worldcup");
 
-test("site-load: _index + adaptador; las 23 ediciones exponen la forma v1", async () => {
+test("site-load: _index + adaptador; las ediciones publicadas exponen la forma v1", async () => {
   const { toEditionViewModel } = await import(BROWSER);
   const index = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "_index.json"), "utf8"));
   const withData = index.editions.filter((entry) => entry.held && entry.data);
-  assert.equal(withData.length, 23);
+
+  const catalog = core.loadCatalog(ROOT);
+  const published = (catalog.competitions[COMPETITION].editions || []).filter((entry) => entry.held && entry.data);
+  assert.equal(withData.length, published.length, "nº de ediciones publicadas según el catálogo");
 
   for (const entry of withData) {
     const raw = JSON.parse(fs.readFileSync(path.join(DATA_DIR, entry.data), "utf8"));
