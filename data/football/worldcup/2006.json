@@ -432,7 +432,12 @@
       "score": [
         4,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 9]\nIn Munich (FIFA World Cup Stadium)\nGermany 4 (Philipp Lahm 6, Miroslav Klose 17, 61, Torsten Frings 87)\nCosta Rica 2 (Paulo Wanchope 12, 73)\nHT: 2-1. Att: 64,950. Ref: Horacio Elizondo (Argentina).\nGER: 1-Jens Lehmann; 3-Arne Friedrich, 21-Christoph Metzelder, 17-Per\nMertesacker, 16-Philipp Lahm; 19-Bernd Schneider © (22-David\nOdonkor 90+1), 8-Torsten Frings, 18-Tim Borowski (5-Sebastian Kehl\n72), 7-Bastian Schweinsteiger; 11-Miroslav Klose (10-Oliver\nNeuville 79), 20-Lukas Podolski.\nCRC: 18-Jose Francisco Porras; 4-Michael Umana, 20-Douglas Sequeira,\n3-Luis Marin ©; 5-Gilberto Martinez (2-Jervis Drummond 67),\n6-Danny Fonseca, 8-Mauricio Solis (7-Christian Bolanos 78),\n12-Leonardo Gonzales; 10-Walter Centeno, 9-Paulo Wanchope,\n11-Ronald Gomez (14-Randall Azofeifa 90+1).\nBooked: CRC - Fonseca 30.\nMan-of-the-Match: Miroslav Klose (Germany).",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -445,7 +450,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Gelsenkirchen (FIFA World Cup Stadium)\nPoland 0\nEcuador 2 (Carlos Tenorio 24, Agustin Delgado 80)\nHT: 0-1. Att: 48,426. Ref: Toru Kamikawa (Japan).\nPOL: 1-Artur Boruc; 4-Marcin Baszczynski, 6-Jacek Bak ©, 2-Mariusz Jop,\n14-Michal Zewlakow; 10-Miroslaw Szymkowiak, 16-Arkadiusz Radomski,\n7-Radoslaw Sobolewski (21-Ireneusz Jelen 68), 8-Jacek Krzynowek\n(5-Kamil Kosowski 78); 15-Euzebiusz Smolarek, 9-Maciej Zurawski\n(23-Pawel Brozek 84).\nECU: 12-Christian Mora; 4-Ulises de la Cruz, 3-Ivan Hurtado © (2-Jorge\nGuagua 69), 17-Giovanny Espinoza, 18-Neicer Reasco; 8-Edison\nMendez, 14-Segundo Castillo, 20-Edwin Tenorio, 16-Luis Antonio\nValencia; 11-Agustin Delgado (6-Patricio Urrutia 83), 21-Carlos\nTenorio (10-Ivan Kaviedes 65).\nBooked: POL - Smolarek 36.\nECU - Hurtado 31, Mendez 70.\nMan-of-the-Match: Agustin Delgado (Ecuador).",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -458,7 +468,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 14]\nIn Dortmund (FIFA World Cup Stadium)\nGermany 1 (Oliver Neuville 90+1)\nPoland 0\nHT: 0-0. Att: 65,000. Ref: Luis Medina Cantalejo (Spain).\nGER: 1-Jens Lehmann; 3-Arne Friedrich (22-David Odonkor 63),\n21-Christoph Metzelder, 17-Per Mertesacker, 16-Philipp Lahm;\n19-Bernd Schneider, 8-Torsten Frings, 13-Michael Ballack ©,\n7-Bastian Schweinsteiger (18-Tim Borowski 77); 20-Lukas Podolski\n(10-Oliver Neuville 71), 11-Miroslav Klose.\nPOL: 1-Artur Boruc; 4-Marcin Baszczynski, 6-Jacek Bak ©, 19-Bartosz\nBosacki, 14-Michal Zewlakow (17-Dariusz Dudka 83); 8-Jacek\nKrzynowek (18-Mariusz Lewandowski 77), 16-Arkadiusz Radomski,\n7-Radoslaw Sobolewski, 21-Ireneusz Jelen (23-Pawel Brozek 90+1),\n9-Maciej Zurawski; 15-Euzebiusz Smolarek.\nBooked: GER - Ballack 58, Odonkor 68, Metzelder 70.\nPOL - Krzynowek 3, Sobolewski 28, 75, Boruc 89.\nSent off: POL - Sobolewski 75.\nMan-of-the-Match: Philipp Lahm (Germany).",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -471,7 +486,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Hamburg (FIFA World Cup Stadium)\nEcuador 3 (Carlos Tenorio 8, Agustin Delgado 54, Ivan Kaviedes 90+2)\nCosta Rica 0\nHT: 1-0. Att: 50,000. Ref: Coffi Codjia (Benin).\nECU: 12-Cristian Mora; 4-Ulises de la Cruz, 3-Ivan Hurtado ©,\n17-Giovanny Espinoza (2-Jorge Guaga 68), 18-Neicer Reasco;\n8-Edison Mendez, 20-Edwin Tenorio, 14-Segundo Castillo, 16-Luis\nAntonio Valencia (6-Patrico Urrutia 69); 11-Agustin Delgado,\n21-Carlos Tenorio (10-Ivan Kaviedes 46).\nCRC: 18-Jose Francisco Porras; 3-Luis Marin ©, 4-Michael Umana,\n15-Harold Wallace; 12-Leonardo Gonzalez (16-Carlos Hernandez 56),\n8-Mauricio Solis, 10-Walter Centeno (13-Kurt Bernard 84),\n20-Douglas Sequeira, 6-Danny Fonseca (19-Alvaro Saborio 29);\n11-Ronald Gomez, 9-Paulo Wanchope.\nBooked: ECU - Castillo 44, De la Cruz 54, Mora 60.\nCRC - Marin 10, Solis 28.\nMan-of-the-Match: Agustin Delgado (Ecuador).",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -484,7 +504,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Hanover (FIFA World Cup Stadium)\nCosta Rica 1 (Ronald Gomez 24)\nPoland 2 (Bartosz Bosacki 33, 66)\nHT: 1-1. Att: 43,000. Ref: Shamsul Maidin (Singapore).\nCRC: 18-Jose Francisco Porras; 2-Jervis Drummond (15-Harold Wallace\n70), 3-Luis Marin ©, 4-Michael Umana; 12-Leonardo Gonzalez,\n8-Mauricio Solis, 10-Walter Centeno, 7-Christian Bolanos\n(19-Alvaro Saborio 78), 17-Gabriel Badilla; 11-Ronald Gomez\n(16-Carlos Hernandez 82), 9-Paulo Wanchope.\nPOL: 1-Artur Boruc; 4-Marcin Baszczynski, 6-Jacek Bak ©, 19-Bartosz\nBosacki, 14-Michal Zewlakow; 8-Jacek Krzynowek, 16-Arkadiusz\nRadomski (18-Mariusz Lewandowski 64), 10-Miroslaw Szymkowiak,\n15-Euzebiusz Smolarek (11-Grzegorz Rasiak 85); 21-Ireneusz Jelen,\n9-Maciej Zurawski (23-Pawel Brozek 46).\nBooked: CRC - Umana 17, Marin 45+2, Gomez 45+3, Badilla 56, Gonzalez 76.\nPOL - Radomski 18, Bak 24, Zewlakow 29, Baszczynski 60, Boruc\n90.\nMan-of-the-Match: Bartosz Bosacki (Poland).\nStandings            P   W   D   L   F   A  Pts",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -497,7 +522,12 @@
       "score": [
         0,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 20]\nIn Berlin (Olympiastadion)\nEcuador 0\nGermany 3 (Miroslav Klose 4, 44, Lukas Podolski 57)\nHT: 0-2. Att: 72,000. Ref: Valentin Ivanov (Russia).\nECU: 12-Cristian Mora; 4-Ulises de la Cruz, 2-Jorge Guagua, 17-Giovanny\nEspinoza, 13-Paul Ambrossi; 8-Edison Mendez, 20-Edwin Tenorio,\n15-Marlon Ayovi © (6-Patrico Urrutia 68), 16-Luis Antonio Valencia\n(7-Cristian Lara 63); 9-Felix Borja (23-Cristian Benitez 46),\n10-Ivan Kaviedes.\nGER: 1-Jens Lehmann; 3-Arne Friedrich, 4-Robert Huth, 17-Per\nMertesacker, 16-Philipp Lahm; 19-Bernd Schneider (14-Gerald\nAsamoah 73), 8-Torsten Frings (18-Tim Borowski 66), 13-Michael\nBallack ©, 7-Bastian Schweinsteiger; 20-Lukas Podolski,\n11-Miroslav Klose (10-Oliver Neuville 66).\nBooked: ECU - Valencia 52.\nGER - Borowski 75.\nMan-of-the-Match: Michael Ballack (Germany).",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -510,7 +540,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Frankfurt (FIFA World Cup Stadium)\nEngland 1 (Carlos Gamarra og 3)\nParaguay 0\nHT: 1-0. Att: 48,000. Ref: Marco Rodriguez (Mexico).\nENG: 1-Paul Robinson; 2-Gary Neville, 5-Rio Ferdinand, 6-John Terry,\n3-Ashley Cole; 7-David Beckham ©, 4-Steven Gerrard, 8-Frank\nLampard, 11-Joe Cole (16-Owen Hargreaves 83); 10-Michael Owen\n(20-Stewart Downing 56), 21-Peter Crouch.\nPAR: 1-Justo Villar (22-Aldo Bobadilla 8); 6-Carlos Bonet (23-Nelson\nCuevas 68), 5-Julio Cesar Caceres, 4-Carlos Gamarra ©, 3-Delio\nToledo (2-Jorge Nunez 82); 21-Denis Caniza, 10-Roberto Acuna,\n13-Carlos Paredes, 16-Cristian Riveros; 9-Roque Santa Cruz,\n18-Nelson Valdez.\nBooked: ENG - Gerrard 19, Crouch 63.\nPAR - Valdez 22.\nMan-of-the-Match: Frank Lampard (England).",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -523,7 +558,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 10]\nIn Dortmund (FIFA World Cup Stadium)\nTrinidad & Tobago 0\nSweden 0\nAtt: 62,959. Ref: Shamsul Maidin (Singapore).\nTRI: 1-Shaka Hislop; 8-Cyd Gray, 6-Dennis Lawrence, 5-Brent Sancho,\n3-Avery John; 11-Carlos Edwards, 12-Collin Samuel (13-Cornell Glen\n52), 7-Christopher Birchall, 19-Dwight Yorke ©, 18-Densill\nTheobald (9-Aurtis Whitley 66); 14-Stern John.\nSWE: 23-Rami Shaaban; 7-Niclas Alexandersson, 3-Olof Mellberg ©,\n4-Teddy Lucic, 5-Erik Edman; 21-Christian Wilhelmsson (18-Mattias\nJonson 78), 6-Tobias Linderoth (16-Kim Kallstroem 78), 8-Anders\nSvensson (20-Marcus Allbaeck 62), 9-Fredrik Ljungberg; 11-Henrik\nLarsson, 10-Zlatan Ibrahimovic.\nBooked: TRI - A John 15, Yorke 74.\nSWE - Larsson 90.\nSent off: TRI - A John 46.\nMan-of-the-Match: Dwight Yorke (Trinidad & Tobago).",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -536,7 +576,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 15]\nIn Nuremberg (Franken-Stadion)\nEngland 2 (Peter Crouch 83, Steven Gerrard 90+1)\nTrinidad & Tobago 0\nHT: 0-0. Att: 41,000. Ref: Toru Kamikawa (Japan).\nENG: 1-Paul Robinson; 15-Jamie Carragher (19-Aaron Lennon 58), 5-Rio\nFerdinand, 6-John Terry, 3-Ashley Cole; 7-David Beckham ©, 8-Frank\nLampard, 4-Steven Gerrard, 11-Joe Cole (20 Stewart Downing 75);\n10-Michael Owen (9-Wayne Rooney 58), 21-Peter Crouch.\nTRI: 1-Shaka Hislop; 6-Dennis Lawrence, 5-Brent Sancho, 8-Cyd Gray,\n11-Carlos Edwards; 9-Aurtis Whitley, 7-Chris Birchall, 18-Densill\nTheobald (16-Evans Wise 85), 15-Kenwyne Jones (13-Cornell Glen\n70); 14-Stern John, 19-Dwight Yorke ©.\nBooked: ENG - Lampard 64.\nTRI - Theobald 18, Whitley 19, Jones 45, Hislop 47, Gray 56.\nMan-of-the-Match: David Beckham (England).",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -549,7 +594,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Berlin (Olympiastadion)\nSweden 1 (Freddie Ljungberg 89)\nParaguay 0\nHT: 0-0. Att: 72,000. Ref: Lubos Michel (Slovakia).\nSWE: 1-Andreas Isaksson; 3-Olof Mellberg ©, 4-Teddy Lucic, 5-Erik\nEdman; 6-Tobias Linderoth, 7-Niclas Alexandersson, 9-Fredrik\nLjungberg, 21-Christian Wilhelmsson (18-Mattias Jonson 68), 16-Kim\nKallstrom (17-Johan Elmander 86); 10-Zlatan Ibrahimovic (20-Marcus\nAllback 46), 11-Henrik Larsson.\nPAR: 22-Aldo Bobadilla; 21-Denis Caniza, 5-Julio Cesar Caceres,\n4-Carlos Gamarra ©, 2-Jorge Nunez; 6-Carlos Bonet (8-Edgar Barreto\n81), 10-Roberto Acuna, 13-Carlos Paredes, 16-Cristian Riveros\n(19-Julio Dos Santos 62); 9-Roque Santa Cruz (20-Dante Lopez 65),\n18-Nelson Haedo Valdez.\nBooked: SWE - Linderoth 14, Lucic 48, Allback 60.\nPAR - Caniza 3, Acuna 51, Nunez 54, Paredes 73, Barreto 85.\nMan-of-the-Match: Fredrik Ljungberg (Sweden).",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -562,7 +612,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Kaiserslautern (Fritz-Walter-Stadion)\nParaguay 2 (Brent Sancho og 25, Nelson Cuevas 86)\nTrinidad & Tobago 0\nHT: 1-0. Att: 46,000. Ref: Roberto Rosetti (Italy).\nPAR: 22-Aldo Bobadilla; 21-Denis Caniza (14-Paulo Da Silva 89), 5-Julio\nCesar Caceres (15-Julio Manzur 78), 4-Carlos Gamarra ©, 2-Jorge\nNunez; 10-Roberto Acuna, 8-Edgar Barreto, 13-Carlos Paredes,\n19-Julio Dos Santos; 9-Roque Santa Cruz, 18-Nelson Haedo Valdez\n(23-Nelson Cuevas 67).\nTRI: 21-Kelvin Jack; 6-Dennis Lawrence, 5-Brent Sancho, 3-Avery John\n(15-Kenwyne Jones 31); 11-Carlos Edwards, 9-Aurtis Whitley\n(10-Russell Latapy 67), 7-Chris Birchall, 18-Densill Theobald,\n19-Dwight Yorke ©; 14-Stern John, 13-Cornell Glen (16-Evans Wise\n41).\nBooked: PAR - Paredes 30, dos Santos 55.\nTRI - Sancho 45, Whitley 49.\nMan-of-the-Match: Julio Dos Santos (Paraguay).\nStandings            P   W   D   L   F   A  Pts",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -575,7 +630,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 20]\nIn Cologne (FIFA World Cup Stadium)\nSweden 2 (Marcus Allback 51, Henrik Larsson 90)\nEngland 2 (Joe Cole 34, Steven Gerrard 85)\nHT: 0-1. Att: 45,000. Ref: Massimo Busacca (Switzerland).\nSWE: 1-Andreas Isaksson; 3-Olof Mellberg ©, 4-Teddy Lucic, 5-Erik\nEdman, 7-Niclas Alexandersson; 18-Mattias Jonson (21-Christian\nWilhelmsson 54), 6-Tobias Linderoth (19-Daniel Andersson 90),\n16-Kim Kallstrom, 9-Fredrik Ljungberg; 20-Marcus Allback (17-Johan\nElmander 74), 11-Henrik Larsson.\nENG: 1-Paul Robinson; 15-Jamie Carragher, 5-Rio Ferdinand (12-Sol\nCampbell 56), 6-John Terry, 3-Ashley Cole; 7-David Beckham ©,\n8-Frank Lampard, 16-Owen Hargreaves, 11-Joe Cole; 10-Michael Owen\n(21-Peter Crouch 4), 9-Wayne Rooney (4-Steven Gerrard 69).\nBooked: SWE - Alexandersson 83, Ljungberg 87.\nENG - Hargreaves 76.\nMan-of-the-Match: Joe Cole (England).",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -588,7 +648,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 10]\nIn Hamburg (FIFA World Cup Stadium)\nArgentina 2 (Hernan Crespo 24, Javier Saviola 38)\nIvory Coast 1 (Didier Drogba 82)\nHT: 2-0. Att: 49,480. Ref: Frank De Bleeckere (Belgium).\nARG: 1-Roberto Abbondanzieri; 21-Nicolas Burdisso, 2-Roberto Ayala,\n6-Gabriel Heinze, 3-Juan Pablo Sorin ©; 18-Maxi Rodriguez,\n8-Javier Mascherano, 5-Esteban Cambiasso; 10-Juan Roman Riquelme\n(16-Pablo Aimar 90+3); 7-Javier Saviola (22-Luis Gonzalez 75),\n9-Hernan Crespo (14-Rodrigo Palacio 64).\nCIV: 1-Jean-Jacques Tizie; 21-Emmanuel Eboue, 4-Kolo Toure,\n12-Abdoulaye Meite, 3-Arthur Boka; 19-Yaya Toure, 18-Abdul Kader\nKeita (9-Arouna Kone 77), 8-Bonaventure Kalou (15-Aruna Dindane\n55), 5-Didier Zokora, 2-Kanga Akale (14-Bakary Kone 62); 11-Didier\nDrogba ©.\nBooked: ARG - Saviola 41, Heinze 49, Gonzalez 81.\nCIV - Eboue 61, Drogba 90+1.\nMan-of-the-Match: Javier Saviola (Argentina).",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -601,7 +666,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 11]\nIn Leipzig (Zentralstadion)\nSerbia & Montenegro 0\nNetherlands 1 (Arjen Robben 18)\nHT: 0-1. Att: 37,216. Ref: Markus Merk (Germany).\nSCG: 1-Dragoslav Jevric; 14-Nenad Djordjevic (7-Ognjen Koroman 43),\n6-Goran Gavrancic, 20-Mladen Krstajic, 3-Ivica Dragutinovic;\n17-Albert Nadj, 4-Igor Duljaj, 10-Dejan Stankovic, 11-Predrag\nDjordjevic; 8-Mateja Kezman (21-Danijel Ljuboja 67), 9-Savo\nMilosevic © (19-Nikola Zigic 46).\nNED: 1-Edwin van der Sar ©; 14-Johnny Heitinga, 13-Andre Ooijer,\n4-Joris Mathijsen (3-Khalid Boulahrouz 86), 5-Giovanni van\nBronckhorst; 18-Mark van Bommel (6-Denny Landzaat 60), 20-Wesley\nSneijder, 8-Philip Cocu; 17-Robin van Persie, 9-Ruud van\nNistelrooy (7-Dirk Kuyt 69), 11-Arjen Robben.\nBooked: SCG - Stankovic 34, Koroman 64, Dragutinovic 81, Gavrancic 90.\nNED - Van Bronckhorst 56, Heitinga 85.\nMan-of-the-Match: Arjen Robben (Netherlands).",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -614,7 +684,12 @@
       "score": [
         6,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 16]\nIn Gelsenkirchen (FIFA World Cup Stadium)\nArgentina 6 (Maxi Rodriguez 6, 41, Esteban Cambiasso 31, Hernan Crespo\n78, Carlos Tevez 84, Lionel Messi 88)\nSerbia & Montenegro 0\nHT: 3-0. Att: 52,000. Ref: Roberto Rosetti (Italy).\nARG: 1-Roberto Abbondanzieri; 21-Nicolas Burdisso, 2-Roberto Ayala,\n6-Gabriel Heinze, 3-Juan Pablo Sorin ©; 22-Luis Gonzalez\n(5-Esteban Cambiasso), 8-Javier Mascherano, 18-Maxi Rodriguez\n(19-Lionel Messi 75); 10-Juan Roman Riquelme; 7-Javier Saviola\n(11-Carlos Tevez 58), 9-Hernan Crespo.\nSCG: 1-Dragoslav Jevric; 4-Igor Duljaj, 6-Goran Gavrancic, 20-Mladen\nKrstajic, 15-Milan Dudic; 17-Albert Nadj (2-Ivan Ergic 46),\n10-Dejan Stankovic, 11-Predrag Djordjevic, 7-Ognjen Koroman\n(21-Danijel Ljuboja 49); 9-Savo Milosevic © (18-Zvonimir Vukic\n69), 8-Mateja Kezman.\nBooked: ARG - Crespo 37.\nSCG - Koroman 7, Nadj 27, Krstajic 42.\nSent off: SCG - Kezman 65.\nMan-of-the-Match: Javier Saviola (Argentina).",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -627,7 +702,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Stuttgart (Gottlieb-Daimler-Stadion)\nNetherlands 2 (Robin van Persie 23, Ruud van Nistelrooy 26)\nIvory Coast 1 (Bakary Kone 38)\nHT: 2-1. Att: 52,000. Ref: Oscar Ruiz (Colombia).\nNED: 1-Edwin van der Sar ©; 14-Johnny Heitinga (3-Khalid Boulahrouz\n46), 13-Andre Ooijer, 4-Joris Mathijsen, 5-Giovanni van\nBronckhorst; 18-Mark van Bommel, 20-Wesley Sneijder (10-Rafael van\nder Vaart 50), 8-Philip Cocu; 17-Robin van Persie, 9-Ruud van\nNistelrooy (6-Denny Landzaat 73), 11-Arjen Robben.\nCIV: 1-Jean-Jacques Tizie; 21-Emmanuel Eboue, 4-Kolo Toure, 3-Arthur\nBoka, 12-Abdoulaye Meite; 5-Didier Zokora, 14-Bakary Kone\n(15-Aruna Dindane 62), 19-Gneri Yaya Toure, 22-Romaric (10-Gilles\nYapi Yapo 62); 9-Arouna Kone (2-Kanga Akale 73), 11-Didier Drogba ©.\nBooked: NED - Robben 34, Mathijsen 35, Van Bommel 58, Boulahrouz 90+4.\nCIV - Zokora 25, Drogba 41, Boka 66.\nMan-of-the-Match: Arjen Robben (Netherlands).",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -640,7 +720,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 21]\nIn Frankfurt (FIFA World Cup Stadium)\nNetherlands 0\nArgentina 0\nAtt: 48,000. Ref: Luis Medina Cantalejo (Spain).\nNED: 1-Edwin van der Sar ©; 2-Kew Jaliens, 3-Khalid Boulahrouz, 13-Andre\nOoijer, 15-Tim de Cler; 20-Wesley Sneijder (16-Hedwiges Maduro\n86), 10-Rafael van der Vaart, 8-Philip Cocu; 7-Dirk Kuyt, 9-Ruud\nvan Nistelrooy (21-Ryan Babel 56), 17-Robin van Persie (6-Denny\nLandzaat 67).\nARG: 1-Roberto Abbondanzieri; 21-Nicolas Burdisso (4-Fabricio Coloccini\n4), 2-Roberto Ayala ©, 15-Gabriel Milito, 17-Leandro Cufre;\n5-Esteban Cambiasso, 8-Javier Mascherano, 10-Juan Roman Riquelme\n(16-Pablo Aimar 79), 18-Maxi Rodriguez; 19-Lionel Messi (20-Julio\nRicardo Cruz 69), 11-Carlos Tevez.\nBooked: NED - Kuyt 28, Ooijer 42, De Cler 48.\nARG - Cambiasso 57, Mascherano 90.\nMan-of-the-Match: Carlos Tevez (Argentina).",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -653,7 +738,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Munich (FIFA World Cup Stadium)\nIvory Coast 3 (Aruna Dindane 36pen, 67, Bonaventure Kalou 86pen)\nSerbia & Montenegro 2 (Nikola Zigic 10, Sasa Ilic 20)\nHT: 1-2. Att: 66,000. Ref: Marco Rodriguez (Mexico).\nCIV: 23-Boubacar Barry; 21-Emmanuel Eboue, 17-Cyrille Domoraud ©,\n3-Arthur Boka, 6-Blaise Kouassi; 5-Didier Zokora, 19-Gneri Yaya\nToure, 2-Kanga Akale (14-Bakary Kone 60), 18-Abdelkader Keita\n(8-Bonaventure Kalou 73); 9-Arouna Kone, 15-Aruna Dindane.\nSCG: 1-Dragoslav Jevric; 14-Nenad Djordjevic, 6-Goran Gavrancic,\n20-Mladen Krstajic (17-Albert Nadj 15), 15-Milan Dudic; 2-Ivan\nErgic, 4-Igor Duljaj, 10-Dejan Stankovic ©, 11-Predrag Djordjevic;\n22-Sasa Ilic, 19-Nikola Zigic (9-Savo Milosevic 66).\nBooked: CIV - Keita 33, Domoraud 41, 90+2, Dindane 43.\nSCG - Nadj 17, 45+1, Dudic 35, Duljaj 37, Gavrancic 57.\nSent off: CIV - Cyrille Domoraud 90+2.\nSCG - Albert Nadj 45+1.\nMan-of-the-Match: Aruna Dindane (Ivory Coast).\nStandings            P   W   D   L   F   A  Pts",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -666,7 +756,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 11]\nIn Nuremberg (Franken-Stadion)\nMexico 3 (Omar Bravo 28, 76, Antonio Naelson 'Zinha' 79)\nIran 1 (Yahya Golmohammadi 36)\nHT: 1-1. Att: 41,000. Ref: Roberto Rosetti (Italy).\nMEX: 1-Oswaldo Sanchez; 16-Mario Mendez, 5-Ricardo Osorio, 4-Rafael\nMarquez ©, 3-Carlos Salcido; 14-Gonzalo Pineda, 6-Gerardo Torrado\n(23-Luis Perez 46), 8-Pavel Pardo, 19-Omar Bravo; 10-Guillermo\nFranco (7-Antonio Naelson 'Zinha' 46), 9-Jared Borgetti (17-Jose\nFonseca 52).\nIRN: 1-Ebrahim Mirzapour; 13-Hossein Kaebi, 5-Rahman Rezaei, 4-Yahya\nGolmohammadi, 20-Mohammad Nosrati (15-Arash Borhani 81); 2-Mehdi\nMahdavikia, 6-Javad Nekonam, 14-Andranik Taymoorian, 8-Ali Karimi\n(21-Mehrzad Madanchi 63); 10-Ali Daei ©, 9-Vahid Hashemian.\nBooked: MEX - Torrado 18.\nIRN - Nekounam 55.\nMan-of-the-Match: Omar Bravo (Mexico).",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -679,7 +774,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Cologne (FIFA World Cup Stadium)\nAngola 0\nPortugal 1 (Pedro Pauleta 4)\nHT: 0-1. Att: 45,000. Ref: Jorge Larrionda (Uruguay).\nANG: 1-Joao Ricardo; 20-Loco, 3-Jamba, 5-Kali, 21-Delgado; 17-Ze\nKalanga (13-Edson 70), 8-Andre Macanga, 7-Paulo Figueiredo\n(6-Miloy 80), 14-Mendonca; 10-Akwa © (9-Mantorras 60), 11-Mateus.\nPOR: 1-Ricardo; 13-Miguel, 5-Fernando Meira, 16-Ricardo Carvalho,\n14-Nuno Valente; 7-Luis Figo ©, 8-Armando Petit (18-Maniche 72),\n19-Tiago (10-Hugo Viana 83); 17-Cristiano Ronaldo (6-Francisco\nCostinha 60), 9-Pedro Pauleta, 11-Simao Sabrosa.\nBooked: ANG - Jamba 28, Loco 45+3, Andre 52.\nPOR - Ronaldo 26, Nuno Valente 79.\nMan-of-the-Match: Luis Figo (Portugal).",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -692,7 +792,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 16]\nIn Hanover (FIFA World Cup Stadium)\nMexico 0\nAngola 0\nAtt: 43,000. Ref: Shamsul Maidin (Singapore).\nMEX: 1-Oswaldo Sanchez; 16-Mario Mendez, 4-Rafael Marquez ©, 5-Ricardo\nOsorio, 3-Carlos Salcido, 14-Gonzalo Pineda (11-Ramon Carlos\nMorales 78); 6-Gerardo Torrado, 7-Antonio Naelson “Zinha\"\n(21-Jesus Arellano 52), 8-Pavel Pardo; 10-Guillermo Franco\n(17-Jose Fonseca 73), 19-Omar Bravo.\nANG: 1-Joao Ricardo; 20-Loco, 3-Jamba, 5-Kali, 21-Delgado; 17-Ze\nKalanga (6-Miloy 83), 8-Andre Macanga, 7-Figueiredo (15-Rui\nMarques 72), 11-Mateus (9-Mantorras 68), 14-Mendonca; 10-Fabrice\nAkwa ©.\nBooked: MEX - Pineda 59.\nANG - Delgado 13, Andre 44, 79, Ze Kalanga 50, Joao Ricardo 86.\nSent off: ANG - Andre Macanga 79.\nMan-of-the-Match: Joao Ricardo (Angola).",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -705,7 +810,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 17]\nIn Frankfurt (FIFA World Cup Stadium)\nPortugal 2 (Deco 63, Cristiano Ronaldo 80pen)\nIran 0\nHT: 0-0. Att: 48,000. Ref: Eric Poulat (France).\nPOR: 1-Ricardo Pereira; 13-Miguel, 16-Ricardo Carvalho, 5-Fernando\nMeira, 14-Nuno Valente; 20-Deco Souza (19-Tiago 81), 6-Francisco\nCostinha, 18-Maniche (8-Armando Petit 67), 7-Luis Figo © (11-Simao\nSabrosa 88), 17-Cristiano Ronaldo; 9-Pedro Pauleta.\nIRN: 1-Ebrahim Mirzapour; 13-Hossein Kaebi, 5-Rahman Rezaei, 4-Yahya\nGolmohammadi © (3-Sohrab Bakhtiarizadeh 89), 20-Mohammad Nosrati;\n2-Mehdi Mahdavikia, 6-Javad Nekounam, 8-Ali Karimi (7-Ferydoon\nZandi 65), 14-Andranik Taymoorian; 21-Mehrzad Madanchi (11-Rasoul\nKhatibi 66), 9-Vahid Hashemian.\nBooked: POR - Pauleta 45, Deco 48, Costinha 61.\nIRN - Nekounam 20, Madanchi 32, Kaabi 73, Golmohammadi 87.\nMan-of-the-Match: Deco (Portugal).",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -718,7 +828,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 21]\nIn Gelsenkirchen (FIFA World Cup Stadium)\nPortugal 2 (Maniche 6, Simao Sabrosa 24pen)\nMexico 1 (Jose Fonseca 29)\nHT: 2-1. Att: 52,000. Ref: Lubos Michel (Slovakia).\nPOR: 1-Ricardo Perreira; 13-Miguel (2-Paulo Ferreira 61), 16-Ricardo\nCarvalho, 5-Fernando Meira, 3-Marco Caneira; 8-Armando Petit,\n18-Maniche, 19-Tiago, 7-Luis Figo © (15-Luis Boa Morte 80),\n11-Simao Sabrosa; 23-Helder Postiga (21-Nuno Gomes 69).\nMEX: 1-Oswaldo Sanchez; 16-Mario Mendez (10-Guillermo Franco 80),\n4-Rafael Marquez ©, 5-Ricardo Osorio, 3-Carlos Salcido, 14-Gonzalo\nPineda (15-Jose Antonio Castro 69); 22-Francisco Rodriguez\n(7-Antonio Naelson 'Zinha' 46), 23-Luis Perez, 8-Pavel Pardo;\n17-Jose Fonseca, 19-Omar Bravo.\nBooked: POR - Miguel 26, Maniche 69, Boa Morte 88, Nuno Gomes 90.\nMEX - Rodriguez 22, Perez 27, 61, Marquez 65, Zinha 87.\nSent off: MEX - Perez 61.\nMan-of-the-Match: Jose Fonseca (Mexico).",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -731,7 +846,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Leipzig (Zentralstadion)\nIran 1 (Sohrab Bakhtiarizadeh 75)\nAngola 1 (Flavio 60)\nHT: 0-0. Att: 43,000. Ref: Mark Shield (Australia).\nIRN: 1-Ebrahim Mirzapour; 13-Hossein Kaebi (15-Arash Borhani 67),\n5-Rahman Rezaei, 3-Sohrab Bakhtiarizadeh, 20-Mohammad Nosrati\n(23-Masoud Shojaei 13); 2-Mehdi Mahdavikia, 7-Ferydoon Zandi,\n21-Mehrzad Madanchi, 14-Andranik Taymoorian; 9-Vahid Hashemian\n(11-Rasoul Khatibi 39); 10-Ali Daei ©.\nANG: 1-Joao Ricardo; 20-Loco, 3-Jamba, 5-Kali, 21-Delgado; 17-Ze\nKalanga, 6-Miloy, 7-Figueiredo (15-Rui Marques 69), 11-Mateus\n(18-Love 23), 14-Mendonca; 10-Fabrice Akwa © (16-Flavio 51).\nBooked: IRN - Madanchi 37, Teymourian 55, Zandi 90.\nANG - Loco 22, Mendonca 45+1, Ze Kalanga 67.\nMan-of-the-Match: Ze Kalanga (Angola).\nStandings            P   W   D   L   F   A  Pts",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -744,7 +864,12 @@
       "score": [
         0,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 12]\nIn Gelsenkirchen (FIFA World Cup Stadium)\nUnited States 0\nCzech Republic 3 (Jan Koller 5, Tomas Rosicky 36, 76)\nHT: 0-2. Att: 52,000. Ref: Carlos Amarilla (Paraguay).\nUSA: 18-Kasey Keller; 6-Steve Cherundolo (9-Eddie Johnson 46),\n22-Oguchi Onyewu, 23-Eddie Pope, 7-Eddie Lewis; 17-DaMarcus\nBeasley, 21-Landon Donovan, 10-Claudio Reyna ©, 4-Pablo Mastroeni\n(5-John O’Brien 46), 15-Bobby Convey; 20-Brian McBride (16-Josh\nWolff 77).\nCZE: 1-Petr Cech; 2-Zdenek Grygera, 22-David Rozehnal, 21-Tomas\nUjfalusi, 6-Marek Jankulovski; 8-Karel Poborsky (19-Jan Polak 82),\n4-Tomas Galasek ©, 10-Tomas Rosicky (17-Jiri Stajner 86), 11-Pavel\nNedved, 20-Jaroslav Plasil; 9-Jan Koller (12-Vratislav Lokvenc 45).\nBooked: USA - Onyewu 5, Reyna 60.\nCZE - Rozehnal 16, Lokvenc 59, Rosicky 81, Grygera 88.\nMan-of-the-Match: Tomas Rosicky (Czech Republic).",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -757,7 +882,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Hanover (FIFA World Cup Stadium)\nItaly 2 (Andrea Pirlo 40, Vincenzo Iaquinta 83)\nGhana 0\nHT: 1-0. Att: 43,000. Ref: Carlos Simon (Brazil).\nITA: 1-Gianluigi Buffon; 2-Cristian Zaccardo, 13-Alessandro Nesta,\n5-Fabio Cannavaro ©, 3-Fabio Grosso; 20-Simone Perrotta, 21-Andrea\nPirlo, 10-Francesco Totti (16-Mauro Camoranesi 56), 4-Daniele De\nRossi; 9-Luca Toni (7-Alessandro Del Piero 82), 11-Alberto\nGilardino (15-Vincenzo Iaquinta 64).\nGHA: 22-Richard Kingston; 6-Emmanuel Pappoe (7-Shilla Illiasu 46),\n4-Samuel Kuffour, 5-John Mensah, 15-John Paintsil; 10-Stephen\nAppiah ©, 18-Eric Addo, 8-Mickael Essien, 11-Sulley Muntari;\n3-Asamoah Gyan (12-Alex Tachie-Mensah 89), 14-Matthew Amoah\n(19-Razak Pimpong 68).\nBooked: ITA - De Rossi 10, Camoranesi 62, Iaquinta 88.\nGHA - Muntari 41, Gyan 65.\nMan-of-the-Match: Andrea Pirlo (Italy).",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -770,7 +900,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 17]\nIn Cologne (FIFA World Cup Stadium)\nCzech Republic 0\nGhana 2 (Asamoah Gyan 2, Sulley Muntari 82)\nHT: 1-0. Att: 45,000. Ref: Horacio Elizondo (Argentina).\nCZE: 1-Petr Cech; 2-Zdenek Grygera, 6-Marek Jankulovski, 22-David\nRozehnal, 21-Tomas Ujfalusi; 4-Tomas Galasek © (19-Jan Polak 46),\n11-Pavel Nedved, 8-Karel Poborsky (17-Jiri Stajner 55), 10-Tomas\nRosicky, 20-Jaroslav Plasil (7-Libor Sionko 69); 12-Vratislav\nLokvenc.\nGHA: 22-Richard Kingston; 15-John Paintsil, 13-Habib Mohamed, 5-John\nMensah, 7-Illiasu Shilla; 11-Sulley Muntari, 8-Michael Essien,\n10-Stephen Appiah ©, 20-Otto Addo (9-Derek Boateng 46); 3-Asamoah\nGyan (19-Razak Pimpong 85), 14-Matthew Amoah (18-Eric Addo 80).\nBooked: CZE - Lokvenc 48.\nGHA - Addo 18, Essien 37, Gyan 66, Boateng 75, Muntari 84,\nHabib Mohamed 90+3.\nSent off: CZE - Ujfalusi 66.\nMan-of-the-Match: Michael Essien (Ghana).",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -783,7 +918,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Kaiserslautern (Fritz-Walter-Stadion)\nItaly 1 (Alberto Gilardino 22)\nUnited States 1 (Cristian Zaccardo og 27)\nHT: 1-1. Att: 46,000. Ref: Jorge Larrionda (Uruguay).\nITA: 1-Gianluigi Buffon; 2-Cristian Zaccardo (7-Alessandro Del Piero\n55), 13-Alessandro Nesta, 5-Fabio Cannavaro ©, 19-Gianluca\nZambrotta; 4-Daniele De Rossi, 21-Andrea Pirlo, 20-Simone\nPerrotta; 10-Francesco Totti (8-Gennaro Gattuso 35); 9-Luca Toni\n(15-Vincenza Iaquinta 61), 11-Alberto Gilardino.\nUSA: 18-Kasey Keller; 6-Steve Cherundolo, 22-Oguchi Onyewu, 23-Eddie\nPope, 3-Carlos Bocanegra; 8-Clint Dempsey (17-DaMarcus Beasley\n62), 10-Claudio Reyna ©, 4-Pablo Mastroeni, 15-Bobby Convey\n(13-Jimmy Conrad 52); 21-Landon Donovan, 20-Brian McBride.\nBooked: ITA - Totti 5, Zambrotta 70.\nUSA - Pope 21, 47.\nSent off: ITA - De Rossi 28.\nUSA - Mastroeni 45, Pope 47.\nMan-of-the-Match: Kasey Keller (United States).",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -796,7 +936,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 22]\nIn Hamburg (FIFA World Cup Stadium)\nCzech Republic 0\nItaly 2 (Marco Materazzi 26, Filippo Inzaghi 87)\nHT: 0-1. Att: 50,000. Ref: Benito Archundia (Mexico).\nCZE: 1-Petr Cech; 2-Zdenek Grygera, 6-Marek Jankulovski, 22-David\nRozehnal, 5-Radoslav Kovac (18-Marek Heinz 78); 19-Jan Polak,\n11-Pavel Nedved ©, 8-Karel Poborsky (17-Jiri Stajner 46), 10-Tomas\nRosicky, 20-Jaroslav Plasil; 15-Milan Baros (14-David Jarolim 64).\nITA: 1-Gianluigi Buffon; 3-Fabio Grosso, 13-Alessandro Nesta (23-Marco\nMaterazzi 17), 5-Fabio Cannavaro ©, 19-Gianluca Zambrotta;\n21-Andrea Pirlo, 8-Gennaro Gattuso, 20-Simone Perrotta, 16-Mauro\nCamoranesi (17-Simone Barone 74); 10-Francesco Totti; 11-Alberto\nGilardino (18-Filippo Inzaghi 61).\nBooked: CZE - Polak 35, 45+2.\nITA - Gattuso 31.\nSent off: CZE - Polak 45+2.\nMan-of-the-Match: Marco Materazzi (Italy).",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -809,7 +954,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Nuremberg (Franken-Stadion)\nGhana 2 (Haminu Dramani 22, Stephen Appiah 45+2pen)\nUnited States 1 (Clint Dempsey 43)\nHT: 2-1. Att: 41,000. Ref: Markus Merk (Germany).\nGHA: 22-Richard Kingston; 15-John Paintsil, 13-Habib Mohamed, 5-John\nMensah, 7-Shilla Illiasu; 9-Derek Boateng (20-Otto Addo 46),\n8-Michael Essien, 10-Stephen Appiah ©, 23-Haminu Dramani (12-Alex\nTachie-Mensah 12); 14-Matthew Amoah (18-Eric Addo 59), 19-Razak\nPimpong.\nUSA: 18-Kasey Keller; 3-Carlos Bocanegra, 22-Oguchi Onyewu, 13-Jimmy\nConrad, 6-Steve Cherundolo (9-Eddie Johnson 61), 7-Eddie Lewis\n(15-Bobby Convey 74); 17-DaMarcus Beasley, 10-Claudio Reyna ©\n(14-Ben Olson 40), 21-Landon Donovan, 8-Clint Dempsey; 20-Brian\nMcBride.\nBooked: GHA - Essien 5, Shilla 32, Mensah 81, Appiah 90+2.\nUSA - Lewis 7.\nMan-of-the-Match: Stephen Appiah (Ghana).\nStandings            P   W   D   L   F   A  Pts",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -822,7 +972,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 12]\nIn Kaiserslautern (Fritz-Walter-Stadion)\nAustralia 3 (Tim Cahill 84, 89, John Aloisi 90+2)\nJapan 1 (Shunsuke Nakamura 26)\nHT: 0-1. Att: 46,000. Ref: Esam Abd El Fatah (Egypt).\nAUS: 1-Mark Schwarzer; 3-Craig Moore (19-Josh Kennedy 61), 2-Lucas\nNeill, 14-Scott Chipperfield; 20-Luke Wilkshire (15-John Aloisi\n75), 7-Brett Emerton, 13-Vincenzo Grella, 5-Jason Culina, 23-Marco\nBresciano (4-Tim Cahill 53); 9-Mark Viduka ©, 10-Harry Kewell.\nJPN: 23-Yoshikatsu Kawaguchi; 19-Keisuke Tsuboi (2-Teruyuki Moniwa 56;\n16-Masashi Oguro 90+1), 5-Tsuneyasu Miyamoto ©, 22-Yuji Nakazawa;\n3-Yuichi Komano, 10-Shunsuke Nakamura, 7-Hidetoshi Nakata,\n15-Takashi Fukunishi, 14-Alex; 9-Naohiro Takahara, 13-Atsushi\nYanagisawa (18-Shinji Ono 79).\nBooked: AUS - Grella 34, Moore 57, Cahill 69, Aloisi 77.\nJPN - Miyamoto 31, Takahara 40, Moniwa 68.\nMan-of-the-Match: Tim Cahill (Australia).",
+        "lang": "en"
+      }
     },
     {
       "id": "m032",
@@ -835,7 +990,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 13]\nIn Berlin (Olympiastadion)\nBrazil 1 (Kaka 44)\nCroatia 0\nHT: 1-0. Att: 66,000. Ref: Benito Archundia (Mexico).\nBRA: 1-Dida; 2-Cafu ©, 3-Lucio, 4-Juan, 6-Roberto Carlos; 5-Emerson,\n8-Kaka, 10-Ronaldinho, 11-Ze Roberto; 7-Adriano, 9-Ronaldo\n(23-Robinho 69).\nCRO: 1-Stipe Pletikosa; 7-Dario Simic, 4-Robert Kovac, 3-Josep Simunic;\n2-Darijo Srna, 5-Igor Tudor, 19-Niko Kranjcar, 10-Nico Kovac ©\n(16-Jerko Leko 41), 8-Marko Babic; 17-Ivan Klasnic (18-Ivica Olic\n57), 9-Dado Prso.\nBooked: BRA - Emerson 42.\nCRO - N Kovac 32, R Kovac 67, Tudor 90.\nMan-of-the-Match: Kaka (Brazil).",
+        "lang": "en"
+      }
     },
     {
       "id": "m033",
@@ -848,7 +1008,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 18]\nIn Nuremberg (Franken-Stadion)\nJapan 0\nCroatia 0\nAtt: 41,000. Ref: Frank de Bleeckere (Belgium).\nJPN: 23-Yoshikatsu Kawaguchi; 21-Akira Kaji, 5-Tsuneyasu Miyamoto ©,\n22-Yuji Nakazawa, 14-Alessandro Santos; 8-Mitsuo Ogasawara,\n7-Hidetoshi Nakata, 15-Takashi Fukunishi (17-Junichi Inamoto 46),\n10-Shunsuke Nakamura; 9-Naohiro Takahara (16-Masahi Oguro 85),\n13-Atsushi Yanagisawa (20-Keiji Tamada 62).\nCRO: 1-Stipe Pletikosa; 7-Dario Simic, 4-Robert Kovac, 3-Josip Simunic;\n2-Darijo Srna (22-Ivan Bosnjak 87), 5-Igor Tudor (18-Ivica Olic\n70), 10-Niko Kovac ©, 8-Marko Babic; 19-Niko Kranjcar (14-Luka\nModric 78); 17-Ivan Klasnic, 9-Dado Prso.\nBooked: JPN - Miyamoto 22, Kawaguchi 42, Alex 73.\nCRO - R Kovac 32, Srna 69.\nMan-of-the-Match: Hidetoshi Nakata (Japan).",
+        "lang": "en"
+      }
     },
     {
       "id": "m034",
@@ -861,7 +1026,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Munich (FIFA World Cup Stadium)\nBrazil 2 (Adriano 49, Fred 89)\nAustralia 0\nHT: 0-0. Att: 66,000. Ref: Markus Merk (Germany).\nBRA: 1-Dida; 2-Cafu ©, 3-Lucio, 4-Juan, 6-Roberto Carlos; 5-Emerson\n(17-Gilberto Silva 72), 11-Ze Roberto; 8-Kaka, 10-Ronaldinho;\n9-Ronaldo (23-Robinho 72), 7-Adriano (21-Fred 88).\nAUS: 1-Mark Schwarzer; 2-Lucas Neill, 3-Craig Moore (15-John Aloisi 69),\n6-Tony Popovic (23-Marco Bresciano 40), 5-Jason Culina; 7-Brett\nEmerton, 14-Scott Chipperfield, 13-Vince Grella, 4-Tim Cahill\n(10-Harry Kewell 56), 21-Mile Sterjovski; 9-Mark Viduka ©.\nBooked: BRA - Cafu 29, Ronaldo 31, Robinho 83.\nAUS - Emerton 13, Culina 39.\nMan-of-the-Match: Ze Roberto (Brazil).",
+        "lang": "en"
+      }
     },
     {
       "id": "m035",
@@ -874,7 +1044,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Stuttgart (Gottlieb-Daimler-Stadion)\nCroatia 2 (Darijo Srna 2, Niko Kovac 56)\nAustralia 2 (Craig Moore 38pen, Harry Kewell 79)\nHT: 1-1. Att: 52,000. Ref: Graham Poll (England).\nCRO: 1-Stipe Pletikosa; 7-Dario Simic, 13-Stjepan Tomas, 3-Josip\nSimunic, 8-Marko Babic; 2-Darijo Srna, 5-Igor Tudor, 10-Niko Kovac\n©, 19-Niko Kranjcar (16-Jerko Leko 65); 18-Ivica Olic (14-Luka\nModric 74), 9-Dado Prso.\nAUS: 18-Zeljko Kalac; 7-Brett Emerton, 2-Lucas Neill, 3-Craig Moore,\n14-Scott Chipperfield (19-Josh Kennedy 75); 13-Vince Grella\n(15-John Aloisi 63), 5-Jason Culina, 4-Tim Cahill, 21-Mile\nSterjovski (23-Marco Bresciano 71), 10-Harry Kewell; 9-Mark Viduka\n©.\nBooked: CRO - Simic 32, 85, Tudor 38, Simunic 62, 90, Pletikosa 70.\nAUS - Emerton 81, 87.\nSent off: CRO - Simic 85, Simunic 90.\nAUS - Emerton 87.\nMan-of-the-Match: Harry Kewell (Australia).\nStandings            P   W   D   L   F   A  Pts",
+        "lang": "en"
+      }
     },
     {
       "id": "m036",
@@ -887,7 +1062,12 @@
       "score": [
         1,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 22]\nIn Dortmund (FIFA World Cup Stadium)\nJapan 1 (Keiji Tamada 34)\nBrazil 4 (Ronaldo 45+1, 81, Juninho Pernambucano 53, Gilberto 59)\nHT: 1-1. Att: 65,000. Ref: Eric Poulat (France).\nJPN: 23-Yoshikatsu Kawaguchi; 21-Akira Kaji, 22-Yuji Nakazawa,\n19-Keisuke Tsuboi, 14-Alessandro Santos; 8-Mitsuo Ogasawara\n(6-Koji Nakata 56), 7-Hidetoshi Nakata ©, 17-Junichi Inamoto,\n10-Shunsuke Nakamura; 20-Keiji Tamada, 11-Seiichiro Maki\n(9-Naohiro Takaha 60; 16-Masashi Oguro 66).\nBRA: 1-Dida © (12-Rogerio Ceni 82); 13-Cicinho, 3-Lucio, 4-Juan,\n16-Gilberto; 17-Gilberto Silva, 19-Juninho Pernambucano, 8-Kaka\n(20-Ricardinho 71), 10-Ronaldinho (11-Ze Roberto 71); 9-Ronaldo,\n23-Robinho.\nBooked: JPN - Kaji 40.\nBRA - Gilberto 44.\nMan-of-the-Match: Ronaldo (Brazil).",
+        "lang": "en"
+      }
     },
     {
       "id": "m037",
@@ -900,7 +1080,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 13]\nIn Frankfurt (FIFA World Cup Stadium)\nKorea Republic 2 (Lee Chun-soo 54, Ahn Jung-hwan 72)\nTogo 1 (Abdelkader Coubadja 31)\nHT: 0-1. Att: 48,000. Ref: Graham Poll (England).\nKOR: 1-Lee Woon-jae ©; 2-Kim Young-chul, 4-Choi Jin-cheul, 6-Kim Jin-\nkyu (9-Ahn Jung-hwan 46), 12-Lee Young-pyo; 22-Song Chong-gug,\n17-Lee Ho, 13-Lee Eul-yong (5-Kim Nam-il 68); 7-Park Ji-sung,\n19-Cho Jae-jin (18-Kim Sang-sik 83), 14-Lee Chun-soo.\nTOG: 16-Kossi Agassa; 5-Massamasso Tchangai, 3-Jean-Paul Abalo Dosseh ©,\n2-Dare Nibombe, 19-Ludovic Assemoassa (13-Richmond Forson 62);\n18-Yao Senaya Junior (23-Assimiou Toure 55), 15-Alaixys Romao,\n10-Cherif Toure-Maman, 7-Moustapha Salifou (6-Yao Aziawonou 86);\n4-Emmanuel Adebayor, 17-Abdelkader Coubadja.\nBooked: KOR - Young-chul 41, Chun-soo 51.\nTOG - Abalo 23, 53, Romao 24, 90+2.\nSent off: TOG - Abalo 53.\nMan-of-the-Match: Ahn Jung-hwan (South Korea).",
+        "lang": "en"
+      }
     },
     {
       "id": "m038",
@@ -913,7 +1098,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Stuttgart (Gottlieb-Daimler-Stadion)\nFrance 0\nSwitzerland 0\nAtt: 52,000. Ref: Valentin Ivanov (Russia).\nFRA: 16-Fabien Barthez; 19-Willy Sagnol, 15-Lilian Thuram, 5-William\nGallas, 3-Eric Abidal; 11-Sylvain Wiltord (8-Vikash Dhorasoo 84),\n4-Patrick Vieira, 10-Zinedine Zidane ©, 6-Claude Makelele,\n22-Franck Ribery (14-Louis Saha 70); 12-Thierry Henry.\nSUI: 1-Pascal Zuberbuehler; 23-Philipp Degen, 20-Patrick Mueller\n(2-Johan Djourou 75), 4-Philippe Senderos, 3-Ludovic Magnin;\n16-Tranquillo Barnetta, 6-Johann Vogel ©, 7-Ricardo Cabanas,\n8-Raphael Wicky (5-Xavier Margairaz 82); 9-Alexander Frei,\n11-Marco Streller (10-Daniel Gygax 56).\nBooked: FRA - Abidal 64, Zidane 72, Sagnol 90+3.\nSUI - Magnin 42, Barnetta 45, Degen 56, Cabanas 72, Frei 90+3.\nMan-of-the-Match: Claude Makelele (France).",
+        "lang": "en"
+      }
     },
     {
       "id": "m039",
@@ -926,7 +1116,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 18]\nIn Leipzig (Zentralstadion)\nFrance 1 (Thierry Henry 9)\nKorea Republic 1 (Park Ji-sung 81)\nHT: 1-0. Att: 43,000. Ref: Benito Archundia (Mexico).\nFRA: 16-Fabien Barthez; 19-Willy Sagnol, 15-Lilian Thuram, 5-William\nGallas, 3-Eric Abidal; 4-Patrick Vieira, 6-Claude Makelele;\n7-Florent Malouda (8-Vikash Dhorasoo 88), 10-Zinedine Zidane ©\n(20-David Trezeguet 90+1), 11-Sylvain Wiltord (22-Franck Ribery\n60); 12-Thierry Henry.\nKOR: 1-Lee Woon-jae ©; 2-Kim Young-chul, 3-Kim Dong-jin, 4-Choi Jin-\ncheul; 12-Lee Young-pyo, 5-Kim Nam-il, 17-Lee Ho (18-Kim Sang-sik\n69), 13-Lee Eul-yong (11-Seol Ki-hyeon 46); 14-Lee Chun-soo (9-Ahn\nJung-hwan 72), 19-Cho Jae-jin, 7-Park Ji-sung.\nBooked: FRA - Abidal 79, Zidane 85.\nKOR - Lee Ho 11, Dong-jin 29.\nMan-of-the-Match: Park Ji-sung (South Korea).",
+        "lang": "en"
+      }
     },
     {
       "id": "m040",
@@ -939,7 +1134,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 19]\nIn Dortmund (FIFA World Cup Stadium)\nTogo 0\nSwitzerland 2 (Alexander Frei 16, Tranquillo Barnetta 88)\nHT: 0-1. Att: 65,000. Ref: Carlos Amarilla (Paraguay).\nTOG: 16-Kossi Agassa; 2-Dare Nibombe, 23-Toure Assimiou, 5-Massamesso\nTchangai ©, 8-Kuami Agboh (7-Moustapha Salifou 25); 9-Thomas Dossevi\n(18-Yao Junior Senaya 69), 10-Cherif Toure Maman (11-Robert Malm\n88), 15-Alaixys Romao, 17-Mohamed Kader Coubadja; 13-Richmond\nForson, 4-Emmanuel Adebayor.\nSUI: 1-Pascal Zuberbuehler; 3-Ludovic Magnin, 4-Philippe Senderos,\n20-Patrick Mueller, 23-Philipp Degen; 8-Raphael Wicky, 6-Johann\nVogel ©, 7-Ricardo Cabanas (11-Marco Streller 77), 16-Tranquillo\nBarnetta; 10-Daniel Gygax (22-Hakan Yakin 46), 9-Alexander Frei\n(18-Mauro Lustrinelli 87).\nBooked: TOG - Salifou 45, Adebayor 47, Romao 53.\nSUI - Vogel 90.\nMan-of-the-Match: Alexander Frei (Switzerland).",
+        "lang": "en"
+      }
     },
     {
       "id": "m041",
@@ -952,7 +1152,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 23]\nIn Cologne (FIFA World Cup Stadium)\nTogo 0\nFrance 2 (Patrick Vieira 55, Thierry Henry 61)\nHT: 0-0. Att: 45,000. Ref: Jorge Larrionda (Uruguay).\nTOG: 16-Kossi Agassa; 2-Dare Nibombe, 3-Jean Paul Abalo Dosseh ©,\n5-Massamesso Tchangai; 7-Moustapha Salifou, 18-Yao Junior Senaya,\n10-Cherif Toure Mamam (14-Adekanmi Olufade 59), 6-Yao Aziawanou,\n17-Mohamed Kader Coubadja; 13-Richmond Forson, 4-Emmanuel Adebayor\n(9-Thomas Dossevi 75).\nFRA: 16-Fabien Barthez; 19-Willy Sagnol, 15-Lilian Thuram, 5-William\nGallas, 13-Mikael Silvestre; 22-Franck Ribery (9-Sidney Govou 77),\n4-Patrick Vieira © (18-Alou Diarra 81), 6-Claude Makelele,\n7-Florent Malouda (11-Sylvain Wiltord 74); 20-David Trezeguet,\n12-Thierry Henry.\nBooked: TOG - Aziawonou 38, Cherif Toure 44, Salifou 88.\nFRA - Makelele 30.\nMan-of-the-Match: Patrick Vieira (France).",
+        "lang": "en"
+      }
     },
     {
       "id": "m042",
@@ -965,7 +1170,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Hanover (FIFA World Cup Stadium)\nSwitzerland 2 (Philippe Senderos 23, Alexander Frei 77)\nKorea Republic 0\nHT: 1-0. Att: 43,000. Ref: Horacio Elizondo (Argentina).\nSUI: 1-Pascal Zuberbuehler; 23-Philipp Degen, 4-Philippe Senderos\n(2-Johan Djourou 53), 20-Patrick Mueller, 17-Christoph Spycher;\n16-Tranquillo Barnetta, 6-Johann Vogel ©, 7-Ricardo Cabanas,\n22-Hakan Yakin (5-Xavier Margairaz 71), 8-Raphael Wicky (19-Valon\nBehrami 88); 9-Alexander Frei.\nKOR: 1-Lee Woon-jae ©; 12-Lee Young-pyo (9-Ahn Jung-hwan 63), 6-Kim\nJin-kyu, 4-Choi Jin-cheul, 3-Kim Dong-jin; 7-Park Ji-sung, 5-Kim\nNam-il, 17-Lee Ho; 14-Lee Chun-soo, 19-Cho Jae-jin, 10-Park Chu-\nyoung (11-Seol Ki-hyeon 66).\nBooked: SUI - Senderos 43, Yakin 55, Wicky 69, Spycher 82, Djourou 90.\nKOR - Chu-young 23, Jin-kyu 37, Chun-soo 80.\nMan-of-the-Match: Alexander Frei (Switzerland).\nStandings            P   W   D   L   F   A  Pts",
+        "lang": "en"
+      }
     },
     {
       "id": "m043",
@@ -978,7 +1188,12 @@
       "score": [
         4,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 14]\nIn Leipzig (Zentralstadion)\nSpain 4 (Xabi Alonso 13, David Villa 17, 48pen, Fernando Torres 81)\nUkraine 0\nHT: 2-0. Att: 43,000. Ref: Massimo Busacca (Switzerland).\nESP: 1-Iker Casillas ©; 15-Sergio Ramos, 22-Pablo, 5-Carles Puyol,\n3-Mariano Pernia; 16-Marcos Senna, 14-Xabi Alonso (6-David Albelda\n55), 8-Xavi; 11-Luis Garcia (18-Francesc Fabregas 77), 21-David\nVilla (7-Raul 55), 9-Fernando Torres.\nUKR: 1-Oleksandr Shovkovskyi; 5-Vladimir Yezerskyi, 6-Andriy Rusol,\n17-Vladyslav Vashchuk, 2-Andriy Nesmachnyi; 9-Oleg Gusev (16-Andriy\nVorobey 46), 4-Anatoliy Tymoschuk, 14-Andriy Gusin (8-Oleg\nShelayev 46), 21-Ruslan Rotan (11-Serhiy Rebrov 64); 10-Andriy\nVoronin, 7-Andriy Shevchenko ©.\nBooked: UKR - Rusol 16, Yezerskyi 52.\nSent off: UKR - Vashchuk 47.\nMan-of-the-Match: Xavi (Spain).",
+        "lang": "en"
+      }
     },
     {
       "id": "m044",
@@ -991,7 +1206,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Munich (FIFA World Cup Stadium)\nTunisia 2 (Zied Jaziri 23, Radhi Jaidi 90+3)\nSaudi Arabia 2 (Yassir Al Qahtani 57, Sami Al Jaber 84)\nHT: 1-0. Att: 66,000. Ref: Mark Shield (Australia).\nTUN: 1-Ali Boumnijel; 6-Hatem Trabelsi, 18-David Jemmali, 3-Karim Hagui,\n15-Radhi Jaidi; 20-Hamed Namouchi, 13-Riadh Bouazizi © (8-Medhi\nNafti 55), 12-Joahar Mnari, 14-Adel Chedli (10-Kaies Ghodhbane 69);\n9-Yassine Chikhaoui (2-Karim Essediri 82), 5-Zied Jaziri.\nKSA: 21-Mabrouk Zaid; 2-Ahmed Dokhi, 3-Redha Tuker, 4-Hamad Al\nMontashari, 13-Hussein Sulimani ©; 6-Omar Al Ghamdi, 8-Mohamed\nNoor (7-Mohamed Ameen 75), 16-Khaled Al Thaker, 18-Nawaf Al Temyat\n(23-Malik Al Hawsawi 67), 14-Saud Al Khariri; 20-Yassir Al Qahtani\n(9-Sami Al Jaber 82).\nBooked: TUN - Hagui 35, Bouazizi 37, Chedli 65, Chikhaoui 79.\nMan-of-the-Match: Zied Jaziri (Tunisia).",
+        "lang": "en"
+      }
     },
     {
       "id": "m045",
@@ -1004,7 +1224,12 @@
       "score": [
         0,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 19]\nIn Hamburg (FIFA World Cup Stadium)\nSaudi Arabia 0\nUkraine 4 (Andriy Rusol 4, Serhiy Rebrov 36, Andriy Shevchenko 46,\nMaksym Kalinichenko 84)\nHT: 0-2. Att: 50,000. Ref: Graham Poll (England).\nKSA: 21-Mabrouk Zaid; 2-Ahmed Dokhi (12-Abdulaziz Al Khathran 55),\n13-Hussein Sulimani ©, 4-Hamad Al Montashari, 3-Redha Tukar;\n14-Saud Al Khariri, 6-Omar Al Ghamdi, 8-Mohamed Noor (9-Sami Al\nJaber 77), 7-Mohamed Ameen (23-Malik Al Hawsawi 55), 16-Khaled Al\nThaker; 20-Yasser Al Qahtani.\nUKR: 1-Oleksandr Shovkovskyi; 6-Andriy Rusol, 2-Andriy Nesmachnyi,\n22-Vyacheslav Sviderskyi; 9-Oleg Gusev, 4-Anatoliy Tymoschuk,\n8-Oleg Shelayev, 19-Maksym Kalinichenko, 11-Serhiy Rebrov\n(21-Ruslan Rotan 72), 7-Andriy Shevchenko © (15-Artem Milevskiy\n86), 10-Andriy Voronin (14-Andriy Gusin 79).\nBooked: KSA - Dokhi 41, Al-Ghamdi 57, Kariri 73.\nUKR - Nesmachnyi 22, Kalinichenko 77, Sviderskyi 89.\nMan-of-the-Match: Maksym Kalinichenko (Ukraine).",
+        "lang": "en"
+      }
     },
     {
       "id": "m046",
@@ -1017,7 +1242,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Stuttgart (Gottlieb-Daimler-Stadion)\nSpain 3 (Raul 71, Fernando Torres 76, 90+1 pen)\nTunisia 1 (Jaouhar Mnari 8)\nHT: 0-1. Att: 52,000. Ref: Carlos Simon (Brazil).\nESP: 1-Iker Casillas ©; 15-Sergio Ramos, 5-Carles Puyol, 22-Pablo Ibanez,\n3-Mariano Pernia; 16-Marcos Senna (18-Francesc Fabregas 46),\n14-Xabi Alonso, 8-Xavi; 11-Luis Garcia (7-Raul 46), 9-Fernando\nTorres, 21-David Villa (17-Joaquin 56).\nTUN: 1-Ali Boumnijel; 6-Hatem Trabelsi, 15-Radhi Jaidi, 3-Karim Hagui,\n19-Anis Ayari (4-Alaeddine Yahia 57); 20-Hamed Namouchi, 12-Jaouhar\nMnari, 14-Adel Chedli (7-Haykel Guemamdia 80), 8-Mehdi Nafti,\n13-Riadh Bouazizi © (10-Kaies Ghodhbane 57); 5-Zied Jaziri.\nBooked: ESP - Puyol 30, Fabregas 89.\nTUN - Ayari 32, Trabelsi 40, Jaidi 70, Guemamdia 80, Jaziri 85,\nMnari 90.\nMan-of-the-Match: Xabi Alonso (Spain).",
+        "lang": "en"
+      }
     },
     {
       "id": "m047",
@@ -1030,7 +1260,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 23]\nIn Kaiserslautern (Fritz-Walter-Stadion)\nSaudi Arabia 0\nSpain 1 (Juanito 36)\nHT: 0-1. Att: 46,000. Ref: Coffi Codjia (Benin).\nKSA: 21-Mabrouk Zaid; 2-Ahmed Dokhi, 13-Hussein Sulaimani (19-Mohammed\nMasaad 80), 4-Hamad Al Montashari, 3-Redha Tuker; 14-Saud Al\nKhariri, 8-Mohamed Noor, 12-Abdulaziz Al Khathran, 16-Khaled Al\nThaker (18-Nawaf Al Temyat 13), 9-Sami Al Jaber © (23-Malik Al\nHawsawi 68), 11-Saad Al Harthi.\nESP: 19-Santiago Canizares; 2-Michel Salgado, 20-Juanito, 4-Carlos\nMarchena, 12-Antonio Lopez; 6-David Albelda, 13-Andres Iniesta,\n18-Francesc Fabregas (8-Xavi 66); 17-Joaquin, 10-Jose Antonio\nReyes (9-Fernando Torres 70), 7-Raul © (21-David Villa 46).\nBooked: KSA - Al Jaber 27, Al Temyat 77.\nESP - Albelda 30, Reyes 35, Marchena 75.\nMan-of-the-Match: Juanito (Spain).",
+        "lang": "en"
+      }
     },
     {
       "id": "m048",
@@ -1043,7 +1278,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Berlin (Olympiastadion)\nUkraine 1 (Andriy Shevchenko 70pen)\nTunisia 0\nHT: 0-0. Att: 72,000. Ref: Carlos Amarilla (Paraguay).\nUKR: 1-Oleksandr Shovkovskyi; 6-Andriy Rusol, 22-Vyacheslav Sviderskyi,\n2-Andriy Nesmachnyi; 9-Oleg Gusev, 4-Anatoliy Tymoschuk, 8-Oleg\nShelayev, 19-Maksym Kalinichenko (14-Andry Gusin 75), 11-Serhiy\nRebrov (16-Andriy Vorobey 55); 7-Andriy Shevchenko © (15-Artem\nMilevskyi 88), 10-Andriy Voronin.\nTUN: 1-Ali Boumnijel; 6-Hatem Trabelsi, 15-Radhi Jaidi, 3-Karim Hagui,\n19-Anis Ayari; 20-Hamed Namouchi, 12-Jaouhar Mnari, 14-Adel Chedli\n(17-Issam Jomaa 79), 8-Mehdi Nafti (10-Kaies Ghodhbane 90+1),\n13-Riadh Bouazizi © (11-Francileudo dos Santos 79); 5-Zied Jaziri.\nBooked: UKR - Sviderskyy 18, Shelayev 47, Tymoschuk 61, Rusol 65.\nTUN - Jaziri 9, Bouazizi 43, Jaidi 90.\nSent off: TUN - Jaziri 45+1.\nMan-of-the-Match: Anatoliy Tymoschuk (Ukraine).\nStandings            P   W   D   L   F   A  Pts",
+        "lang": "en"
+      }
     },
     {
       "id": "m049",
@@ -1056,7 +1296,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 24]\nIn Munich (FIFA World Cup Stadium)\nGermany 2 (Lukas Podolski 4, 12)\nSweden 0\nHT: 2-0. Att: 66,000. Ref: Carlos Simon (Brazil).\nGER: 1-Jens Lehmann; 3-Arne Friedrich, 21-Christoph Metzelder, 17-Per\nMertesacker, 16-Philipp Lahm; 19-Bernd Schneider, 8-Torsten Frings\n(5-Sebastian Kehl 85), 13-Michael Ballack ©, 7-Bastian\nSchweinsteiger (18-Tim Borowski 72); 20-Lukas Podolski (10-Oliver\nNeuville 74), 11-Miroslav Klose.\nSWE: 1-Andreas Isaksson; 3-Olof Mellberg ©, 4-Teddy Lucic, 5-Erik\nEdman, 7-Niclas Alexandersson; 6-Tobias Linderoth, 9-Fredrik\nLjungberg, 18-Mattias Jonson (21-Christian Wilhelmsson 52), 16-Kim\nKallstrom (13-Petter Hansson 39); 10-Zlatan Ibrahimovic (20-Marcus\nAllback 72), 11-Henrik Larsson.\nBooked: GER - Frings 27.\nSWE - Lucic 28, 35, Jonson 48, Allback 78.\nSent off: SWE - Lucic 35.\nMan-of-the-Match: Miroslav Klose (Germany).",
+        "lang": "en"
+      }
     },
     {
       "id": "m050",
@@ -1072,7 +1317,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Leipzig (Zentralstadion)\nArgentina 2 (Hernan Crespo 10, Maxi Rodriguez 98)\nMexico 1 (Rafael Marquez 6)\nHT: 1-1. Att: 43,000. Ref: Massimo Busacca (Switzerland).\n[After extra-time]\nARG: 1-Roberto Abbondanzieri; 13-Lionel Scaloni, 2-Roberto Ayala,\n6-Gabriel Heinze, 3-Juan Pablo Sorin ©; 18-Maxi Rodriguez,\n8-Javier Mascherano, 5-Esteban Cambiasso (16-Pablo Aimar 76),\n10-Juan Roman Riquelme; 7-Javier Saviola (19-Lionel Messi 84),\n9-Hernan Crespo (11-Carlos Tevez 76).\nMEX: 1-Oswaldo Sanchez; 16-Mario Mendez, 15-Jose Antonio Castro,\n5-Ricardo Osorio, 3-Carlos Salcido; 4-Rafael Marquez ©, 18-Andres\nGuardado (14-Gonzalo Pineda 67), 8-Pavel Pardo (6-Gerardo Torrado\n38); 9-Jared Borgetti, 11-Ramon Morales (7-Antonio Naelson 'Zinha'\n74), 17-Jose Francisco Fonseca.\nBooked: ARG - Heinze 45+1, Sorin 112.\nMEX - Marquez 70, Castro 82, Torrado 118, Fonseca 119.\nMan-of-the-Match: Maxi Rodriguez (Argentina).",
+        "lang": "en"
+      }
     },
     {
       "id": "m051",
@@ -1085,7 +1335,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 25]\nIn Stuttgart (Gottlieb-Daimler-Stadion)\nEngland 1 (David Beckham 60)\nEcuador 0\nHT: 0-0. Att: 52,000. Ref: Frank De Bleeckere (Belgium).\nENG: 1-Paul Robinson; 16-Owen Hargreaves, 5-Rio Ferdinand, 6-John\nTerry, 3-Ashley Cole; 7-David Beckham © (19-Aaron Lennon 87),\n8-Frank Lampard, 18-Michael Carrick, 4-Steven Gerrard (20-Stewart\nDowning 90+2), 11-Joe Cole (15-Jamie Carragher 77); 9-Wayne Rooney.\nECU: 12-Cristian Mora; 4-Ulises de la Cruz, 3-Ivan Hurtado ©,\n17-Giovanny Espinoza, 18-Neicer Reasco; 8-Edison Mendez, 20-Edwin\nTenorio (7-Cristian Lara 69), 14-Segundo Castillo, 16-Luis Antonio\nValencia; 11-Agustin Delgado, 21-Carlos Tenorio (10-Ivan Kaviedes\n71).\nBooked: ENG - Terry 18, Robinson 78, Carragher 82.\nECU - Valencia 24, C Tenorio 37, De la Cruz 67.\nMan-of-the-Match: John Terry (England).",
+        "lang": "en"
+      }
     },
     {
       "id": "m052",
@@ -1098,7 +1353,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Nuremberg (Franken-Stadion)\nPortugal 1 (Maniche Ribeiro 23)\nNetherlands 0\nHT: 1-0. Att: 41,000. Ref: Valentin Ivanov (Russia).\nPOR: 1-Ricardo Pereira; 13-Miguel, 16-Ricardo Carvalho, 5-Fernando\nMeira, 14-Nuno Valente; 6-Francisco Costinha, 18-Maniche Ribeiro,\n7-Luis Figo © (19-Tiago 84), 20-Deco, 17-Cristiano Ronaldo\n(11-Simao Sabrosa 34); 9-Pedro Pauleta (8-Armando Petit 46).\nNED: 1-Edwin van der Sar ©; 3-Khalid Boulahrouz, 13-Andre Ooijer,\n4-Joris Mathijsen (10-Rafael van der Vaart 56), 5-Giovanni van\nBronckhorst; 18-Mark van Bommel (14-Johnny Heitinga 67), 20-Wesley\nSneijder, 8-Phillip Cocu (19-Jan Vennegoor of Hesselink 85);\n17-Robin van Persie, 7-Dirk Kuyt, 11-Arjen Robben.\nBooked: POR - Maniche 20, Costinha 31, 45+1, Petit 50, Figo 60, Deco 73,\n78, Nuno Valente 76, Ricardo 76.\nNED - Van Bommel 2, Boulahrouz 7, 63, Van Bronckhorst 59, 90+5,\nSneijder 73, Van der Vaart 74.\nSent off: POR - Costinha 45+1, Deco 78.\nNED - Boulahrouz 63, Van Bronckhorst 90+5.\nMan-of-the-Match: Maniche Ribeiro (Portugal).",
+        "lang": "en"
+      }
     },
     {
       "id": "m053",
@@ -1111,7 +1371,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 26]\nIn Kaiserslautern (Fritz-Walter-Stadion)\nItaly 1 (Francesco Totti 90+4pen)\nAustralia 0\nHT: 0-0. Att: 46,000. Ref: Luis Medina Cantalejo (Spain).\nITA: 1-Gianluigi Buffon; 19-Gianluca Zambrotta, 23-Marco Materazzi,\n5-Fabio Cannavaro ©, 3-Fabio Grosso; 20-Simone Perrotta, 21-Andrea\nPirlo, 8-Gennaro Gattuso; 7-Alessandro Del Piero (10-Francesco\nTotti 75), 9-Luca Toni (6-Andrea Barzagli 56), 11-Alberto\nGilardino (15-Vincenzo Iaquinta 46).\nAUS: 1-Mark Schwarzer; 23-Marco Bresciano, 2-Lucas Neill, 3-Craig Moore,\n14-Scott Chipperfield; 13-Vince Grella, 5-Jason Culina, 4-Tim\nCahill, 21-Mile Sterjovski (15-John Aloisi 81), 20-Luke Wilkshire;\n9-Mark Viduka ©.\nBooked: ITA - Grosso 29, Gattuso 89, Zambrotta 90+1.\nAUS - Grella 23, Cahill 49, Wilkshire 61.\nSent off: ITA - Materazzi 51.\nMan-of-the-Match: Gianluigi Buffon (Italy).",
+        "lang": "en"
+      }
     },
     {
       "id": "m054",
@@ -1132,7 +1397,12 @@
       "pens": [
         0,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Cologne (FIFA World Cup Stadium)\nSwitzerland 0\nUkraine 0\n[After extra-time; Ukraine win 3-0 on penalties]\nAtt: 45,000. Ref:  Benito Archundia (Mexico).\nSUI: 1-Pascal Zuberbuehler; 3-Ludovic Magnin, 2-Johann Djourou\n(13-Stephane Grichting 33), 20-Patrick Mueller, 23-Philipp Degen;\n8-Raphael Wicky, 6-Johann Vogel ©, 7-Ricardo Cabanas, 22-Hakan\nYakin (11-Marco Streller 64), 16-Tranquillo Barnetta; 9-Alexander\nFrei (18-Mauro Lustrinelli 116).\nUKR: 1-Oleksandr Shovkovskyi; 14-Andriy Gusin, 17-Vladyslav Vashchuk,\n2-Andriy Nesmachnyi; 9-Oleg Gusev, 4-Anatoliy Tymoschuk, 8-Oleg\nShelayev, 19-Maksym Kalinichenko (21-Ruslan Rotan 75), 16-Andriy\nVorobey (11-Serhiy Rebrov 93); 7-Andriy Shevchenko ©, 10-Andriy\nVoronin (15-Artem Milevskyi 111).\nBooked: SUI - Barnetta 59.\nMan-of-the-Match: Oleksandr Shovkovskyi (Ukraine).\nPenalty shoot-out:\nUKRAINE                        SWITZERLAND\nShevchenko (saved)    0-0      Streller (saved)      0-0\nMilevskyi (scored)    1-0      Barnetta (missed)     1-0\nRebrov (scored)       2-0      Cabanas  (saved)      2-0\nGusev (scored)        3-0",
+        "lang": "en"
+      }
     },
     {
       "id": "m055",
@@ -1145,7 +1415,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 27]\nIn Dortmund (FIFA World Cup Stadium)\nBrazil 3 (Ronaldo 5, Adriano 45+1, Ze Roberto 84)\nGhana 0\nHT: 2-0. Att: 65,000. Ref: Lubos Michel (Slovakia).\nBRA: 1-Dida; 2-Cafu ©, 3-Lucio, 4-Juan, 6-Roberto Carlos; 5-Emerson\n(17-Gilberto Silva 46), 11-Ze Roberto, 8-Kaka (20-Ricardinho 83),\n10-Ronaldinho; 9-Ronaldo, 7-Adriano (19-Juninho Pernambucano 61).\nGHA: 22-Richard Kingston; 15-John Paintsil, 6-Emmanuel Pappoe, 5-John\nMensah, 7-Shilla Illiasu; 18-Eric Addo (9-Derek Boateng 60),\n10-Stephen Appiah ©, 23-Haminu Dramani, 11-Sulley Muntari;\n14-Matthew Amoah (12-Alex Tachie-Mensah 69), 3-Asamoah Gyan.\nBooked: BRA - Adriano 13, Juan 44.\nGHA - Appiah 7, Muntari 11, Paintsil 29, Addo 38, Gyan 48, 81.\nSent off: GHA - Gyan 81.\nMan-of-the-Match: Ze Roberto (Brazil).",
+        "lang": "en"
+      }
     },
     {
       "id": "m056",
@@ -1158,7 +1433,12 @@
       "score": [
         1,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Hanover (FIFA World Cup Stadium)\nSpain 1 (David Villa 28pen)\nFrance 3 (Franck Ribery 41, Patrick Vieira 83, Zinedine Zidane 90+2)\nHT: 1-1. Att: 43,000. Ref: Roberto Rosetti (Italy).\nESP: 1-Iker Casillas; 15-Sergio Ramos, 5-Carles Puyol, 22-Pablo Ibanez,\n3-Mariano Pernia; 18-Francesc Fabregas, 14-Xabi Alonso, 8-Xavi\n(16-Marcos Senna 72); 7-Raul © (11-Luis Garcia 54), 9-Fernando\nTorres, 21-David Villa (17-Joaquin 54).\nFRA: 16-Fabien Barthez; 19-Willy Sagnol, 15-Lilian Thuram, 5-William\nGallas, 3-Eric Abidal; 4-Patrick Vieira, 6-Claude Makelele;\n22-Franck Ribery, 10-Zinedine Zidane ©, 7-Florent Malouda\n(9-Sidney Govou 74); 12-Thierry Henry (11-Sylvain Wiltord 88).\nBooked: ESP - Puyol 82.\nFRA - Vieira 68, Ribery 87, Zidane 90+.\nMan-of-the-Match: Patrick Vieira (France).",
+        "lang": "en"
+      }
     },
     {
       "id": "m057",
@@ -1179,7 +1459,12 @@
       "pens": [
         4,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jun 30]\nIn Berlin (Olympiastadion)\nGermany 1 (Miroslav Klose 80)\nArgentina 1 (Roberto Ayala 49)\nHT: 0-0. AET: 1-1. Att: 72,000. Ref: Lubos Michel (Slovakia).\n[Germany win 4-2 on penalties]\nGER: 1-Jens Lehmann; 3-Arne Friedrich, 21-Christoph Metzelder, 17-Per\nMertesacker, 16-Philipp Lahm; 19-Bernd Schneider (22-David Odonkor\n62), 8-Torsten Frings, 13-Michael Ballack ©, 7-Bastian\nSchweinsteiger (18-Tim Borowski 75); 20-Lukas Podolski,\n11-Miroslav Klose (10-Oliver Neuville 86).\nARG: 1-Roberto Abbondanzieri (12-Leo Franco 71); 4-Fabricio Coloccini,\n2-Roberto Ayala, 6-Gabriel Heinze, 3-Juan Pablo Sorin ©; 22-Luis\nGonzalez, 8-Javier Mascherano, 10-Juan Roman Riquelme (5-Esteban\nCambiasso 72), 18-Maxi Rodriguez; 11-Carlos Tevez, 9-Hernan Crespo\n(20-Julio Cruz 79).\nBooked: GER - Podolski 3, Odonkor 90+4, Friedrich 114.\nARG - Sorin 46, Mascherano 60, Rodriguez 88, Cruz 96.\nRed card: ARG - Leandro Cufre 121.\nMan-of-the-Match: Michael Ballack (Germany).\nPenalty shoot-out:\nGERMANY                        ARGENTINA\nNeuville (scored)     1-0      Cruz (scored)         1-1\nBallack (scored)      2-1      Ayala (saved)         2-1\nPodolski (scored)     3-1      Rodriguez (scored)    3-2\nBorowski (scored)     4-2      Cambiasso (missed)    4-2",
+        "lang": "en"
+      }
     },
     {
       "id": "m058",
@@ -1192,7 +1477,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Hamburg (FIFA World Cup Stadium)\nItaly 3 (Gianluca Zambrotta 6, Luca Toni 59, 69)\nUkraine 0\nHT: 1-0. Att: 50,000. Ref: Frank De Bleeckere (Belgium).\nITA: 1-Gianluigi Buffon; 19-Gianluca Zambrotta, 6-Andrea Barzagli,\n5-Fabio Cannavaro ©, 3-Fabio Grosso; 20-Simone Perrotta, 21-Andrea\nPirlo (17-Simone Barone 68), 8-Gennaro Gattuso (2-Cristian\nZaccardo 77); 16-Mauro Camoranesi (22-Massimo Oddo 68),\n10-Francesco Totti; 9-Luca Toni.\nUKR: 1-Oleksandr Shovkovskyi; 6-Andriy Rusol (17-Vladyslav Vashchuk\n45+2), 22-Vyacheslav Sviderskyi (16-Andriy Vorobey 20), 2-Andriy\nNesmachnyi; 9-Oleg Gusev, 4-Anatoliy Tymoschuk, 8-Oleg Shelayev,\n19-Maksym Kalinichenko, 14-Andriy Gusin; 7-Andriy Shevchenko ©,\n15-Artem Milevskiy (20-Oleksiy Belik 72).\nBooked: ITA - None.\nUKR - Sviderskyi 16, Kalinichenko 21, Milevskiy 68.\nMan-of-the-Match: Gennaro Gattuso (Italy).",
+        "lang": "en"
+      }
     },
     {
       "id": "m059",
@@ -1213,7 +1503,12 @@
       "pens": [
         1,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jul 1]\nIn Gelsenkirchen (FIFA World Cup Stadium)\nEngland 0\nPortugal 0\nAtt: 52,000. Ref: Horacio Elizondo (Argentina).\n[After extra-time, Portugal won 3-1 on penalties]\nENG: 1-Paul Robinson; 2-Gary Neville, 5-Rio Ferdinand, 6-John Terry,\n3-Ashley Cole; 7-David Beckham © (19-Aaron Lennon 52; 15-Jamie\nCarragher 119), 8-Frank Lampard, 16-Owen Hargreaves, 4-Steven\nGerrard, 11-Joe Cole (21-Peter Crouch 65); 9-Wayne Rooney.\nPOR: 1-Ricardo Pereira; 13-Miguel, 16-Ricardo Carvalho, 5-Fernando\nMeira, 14-Nuno Valente; 8-Armando Petit, 18-Maniche Ribeiro,\n19-Tiago (10-Hugo Viana 74), 7-Luis Figo © (23-Helder Postiga 86),\n17-Cristiano Ronaldo; 9-Pedro Pauleta (11-Simao Sabrosa 64).\nBooked: ENG - Terry 30, Hargreaves 107.\nPOR - Petit 44, Carvalho 111.\nSent off: ENG - Rooney 62.\nMan-of-the-Match: Owen Hargreaves (England).\nPenalty shoot-out:\nPORTUGAL                       ENGLAND\nSimao (scored)        1-0      Lampard (saved)       1-0\nViana (missed)        1-0      Hargreaves (scored)   1-1\nPetit (missed)        1-1      Gerrard (saved)       1-1\nPostiga (scored)      2-1      Carragher (saved)     2-1\nRonaldo (scored)      3-1",
+        "lang": "en"
+      }
     },
     {
       "id": "m060",
@@ -1226,7 +1521,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "In Frankfurt (FIFA World Cup Stadium)\nBrazil 0\nFrance 1 (Thierry Henry 57)\nHT: 0-0. Att: 48,000. Ref: Luis Medina Cantalejo (Spain).\nBRA: 1-Dida; 2-Cafu © (13-Cicinho 76), 3-Lucio, 4-Juan, 6-Roberto\nCarlos; 17-Gilberto Silva, 11-Ze Roberto, 8-Kaka (23-Robinho 79),\n19-Juninho Pernambucano (7-Adriano 63); 10-Ronaldinho, 9-Ronaldo.\nFRA: 16-Fabien Barthez; 19-Willy Sagnol, 15-Lilian Thuram, 5-William\nGallas, 3-Eric Abidal; 4-Patrick Vieira, 6-Claude Makelele;\n22-Franck Ribery (9-Sidney Govou 77), 10-Zinedine Zidane ©,\n7-Florent Malouda (11-Sylvain Wiltord 81); 12-Thierry Henry\n(14-Louis Saha 86).\nBooked: BRA - Cafu 25, Juan 45, Ronaldo 45+2, Lucio 75.\nFRA - Sagnol 74, Saha 87, Thuram 88.\nMan-of-the-Match: Zinedine Zidane (France).",
+        "lang": "en"
+      }
     },
     {
       "id": "m061",
@@ -1242,7 +1542,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jul 4]\nIn Dortmund (FIFA World Cup Stadium)\nGermany 0\nItaly 2 (Fabio Grosso 119, Alessandro Del Piero 120+1)\nHT: 0-0. Att: 65,000. Ref: Benito Archundia (Mexico).\n[After extra-time]\nGER: 1-Jens Lehmann; 3-Arne Friedrich, 21-Christoph Metzelder, 17-Per\nMertesacker, 16-Philipp Lahm; 19-Bernd Schneider (22-David Odonkor\n83), 5-Sebastian Kehl, 13-Michael Ballack ©, 18-Tim Borowski\n(7-Bastian Schweinsteiger 73); 20-Lukas Podolski, 11-Miroslav\nKlose (10-Oliver Neuville 111).\nITA: 1-Gianluigi Buffon; 19-Gianluca Zambrotta, 23-Marco Materazzi,\n5-Fabio Cannavaro ©, 3-Fabio Grosso; 20-Simone Perrotta\n(7-Alessandro Del Piero 104), 21-Andrea Pirlo, 8-Gennaro Gattuso,\n16-Mauro Camoranesi (15-Vincenzo Iaquinta 90); 10-Francesco Totti;\n9-Luca Toni (11-Alberto Gilardino 74).\nBooked: GER - Borowski 40, Metzelder 56.\nITA - Camoranesi 90.\nMan-of-the-Match: Fabio Cannavaro (Italy).",
+        "lang": "en"
+      }
     },
     {
       "id": "m062",
@@ -1255,7 +1560,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jul 5]\nIn Munich (FIFA World Cup Stadium)\nPortugal 0\nFrance 1 (Zinedine Zidane 33pen)\nHT: 0-1. Att: 66,000. Ref: Jorge Larrionda (Uruguay).\nPOR: 1-Ricardo Pereira; 13-Miguel (2-Paulo Ferreira 62), 16-Ricardo\nCarvalho, 5-Fernando Meira, 14-Nuno Valente; 6-Francisco Costinha\n(23-Helder Postiga 74), 18-Maniche Ribeiro, 20-Deco Souza, 7-Luis\nFigo ©, 17-Cristiano Ronaldo; 9-Pedro Pauleta (11-Simao Sabrosa\n68).\nFRA: 16-Fabien Barthez; 19-Willy Sagnol, 15-Lilian Thuram, 5-William\nGallas, 3-Eric Abidal; 4-Patrick Vieira, 6-Claude Makelele;\n22-Franck Ribery (9-Sidney Govou 72), 10-Zinedine Zidane ©,\n7-Florent Malouda (11-Sylvain Wiltord 69); 12-Thierry Henry\n(14-Louis Saha 85).\nBooked: POR - Carvalho 82.\nFRA - Saha 87.\nMan-of-the-Match: Lilian Thuram (France).",
+        "lang": "en"
+      }
     },
     {
       "id": "m063",
@@ -1268,7 +1578,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jul 8]\nIn Stuttgart (Gottlieb-Daimler-Stadion)\nGermany 3 (Bastian Schweinsteiger 56 78, Armando Petit og 60)\nPortugal 1 (Nuno Gomes 88)\nHT: 0-0. Att: 52,000. Ref: Toru Kamikawa (Japan).\nGER: 12-Oliver Kahn ©; 16-Philipp Lahm, 21-Christoph Metzelder, 6-Jens\nNowotny, 2-Marcell Jansen; 19-Bernd Schneider, 5-Sebastian Kehl,\n8-Torsten Frings, 7-Bastian Schweinsteiger (15-Thomas Hitzlsperger\n79); 20-Lukas Podolski (9-Mike Hanke 71), 11-Miroslav Klose\n(10-Oliver Neuville 64).\nPOR: 1-Ricardo Pereira; 2-Paulo Ferreira, 5-Fernando Meira, 4-Ricardo\nCosta, 14-Nuno Valente (21-Nuno Gomes 69); 6-Francisco Costinha\n(8-Armando Petit 46), 18-Maniche Ribeiro, 11-Simao Sabrosa,\n17-Cristiano Ronaldo, 20-Deco Souza; 9-Pedro Pauleta © (7-Luis\nFigo 77).\nBooked: GER - Frings 7, Schweinsteiger 78.\nPOR - Ricardo Costa 24, Costinha 33, Paulo Ferreira 60.\nMan-of-the-Match: Bastian Schweinsteiger (Germany).",
+        "lang": "en"
+      }
     },
     {
       "id": "m064",
@@ -1289,7 +1604,12 @@
       "pens": [
         5,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2006full",
+        "text": "[Jul 9]\nIn Berlin (Olympiastadion)\nItaly 1 (Marco Materazzi 19)\nFrance 1 (Zinedine Zidane 7pen)\nHT: 1-1. AET: 1-1. Att: 69,000. Ref: Horacio Elizondo (Argentina).\n[Italy win 5-3 on penalties]\nITA: 1-Gianluigi Buffon; 19-Gianluca Zambrotta, 23-Marco Materazzi,\n5-Fabio Cannavaro ©, 3-Fabio Grosso; 20-Simone Perrotta\n(15-Vincenzo Iaquinta 61), 21-Andrea Pirlo, 8-Gennaro Gattuso,\n16-Mauro Camoranesi (7-Alessandro Del Piero 86); 10-Francesco\nTotti (4-Daniele De Rossi 61); 9-Luca Toni.\nFRA: 16-Fabien Barthez; 19-Willy Sagnol, 15-Lilian Thuram, 5-William\nGallas, 3-Eric Abidal; 4-Patrick Vieira (18-Alou Diarra 56),\n6-Claude Makelele; 22-Franck Ribery (20-David Trezeguet 100),\n10-Zinedine Zidane ©, 7-Florent Malouda; 12-Thierry Henry\n(11-Sylvain Wiltord 107).\nBooked: ITA - Zambrotta 5.\nFRA - Sagnol 12, Makelele 76, Malouda 111.\nSent off: FRA - Zidane 110.\nMan-of-the-Match: Andrea Pirlo (Italy).\nPenalty shoot-out:\nITALY                          FRANCE\nPirlo (Goal)          1-0      Wiltord (Goal)        1-1\nMaterazzi (Goal)      2-1      Trezeguet (Crossbar)  2-1\nDe Rossi (Goal)       3-1      Abidal (Goal)         3-2\nDel Piero (Goal)      4-2      Sagnol (Goal)         4-3\nGrosso (Goal)         5-3\nHow the penalty shootout played out:\n1-0 Italy: Andrea Pirlo scores with a shot straight into the net.\n1-1 France: Sylvain Wiltord beats Ginaluigi Buffon, who dives to his\nright and guesses wrong.\n2-1 Italy: Marco Materazzi scores to keeper Fabien Barthez’s left.\n2-1 France: David Trezeguet’s shot goes off the crossbar and bounces\njust on the wrong side of the line.\n3-1 Italy: Daniele De Rossi scores high into the net.\n3-2 France: Eric Abidal beats Buffon, who dives the wrong way.\n4-2 Italy: Alessandro Del Piero scores high into the net.\n4-3 France: Willy Sagnol converts his penalty.\n5-3 Italy: Fabio Grosso beats Barthez who dives right, with the ball\ngoing to his left.",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [

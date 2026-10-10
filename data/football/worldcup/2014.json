@@ -477,6 +477,11 @@
       ],
       "extra": {
         "attendance": 62103
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "12/06/2014, São Paulo, Arena Corinthians, 62103\nWorld Cup\nBRAZIL              3 (10 Neymar Santos Júnior 29' 71' pen, 11 Oscar Emboaba Júnior 90+1')\nCROATIA             1 (6 Marcelo da Silva Júnior 11' OG)\nBrazil:             12 Júlio César de Espíndola; 2 Daniel Alves da Silva, 3 Thiago da Silva [c],\n(4-2-3-1)           4 David Luiz Marinho, 6 Marcelo da Silva Júnior; 8 José Paulo Maciel Júnior 'Paulinho'\n(18 Hernanes Lima 63'), 17 Luiz Gustavo Dias; 11 Oscar Emboaba Júnior,\n10 Neymar Santos Júnior (16 Ramires do Nascimento 88'), 7 Givanildo de Souza 'Hulk'\n(20 Bernard Duarte 68'); 9 Frederico Guedes 'Fred'.\nCroatia:            1 Stipe Pletikosa; 11 Darijo Srna [c], 5 Vedran Ćorluka, 6 Dejan Lovren,\n(4-2-3-1)           2 Šime Vrsaljko; 10 Luka Modrić, 7 Ivan Rakitić; 4 Ivan Perišić, 20 Mateo Kovačić\n(14 Marcelo Brozović 61'), 18 Ivica Olić; 9 Nikica Jelavić (16 Ante Rebić 78').\nReferee:            Yūichi Nishimura (Japan).\nCoaches:            Brazil: Luiz Felipe Scolari.\nCroatia: Niko Kovač.\nCards:              Brazil: 10 Neymar Santos Júnior [Y 27'], 17 Luiz Gustavo Dias [Y 87'].\nCroatia: 5 Vedran Ćorluka [Y 65'], 6 Dejan Lovren [Y 69'].",
+        "lang": "en"
       }
     },
     {
@@ -493,6 +498,11 @@
       ],
       "extra": {
         "attendance": 39216
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "13/06/2014, Natal, Arena das Dunas, 39216\nWorld Cup\nMEXICO              1 (19 Oribe Peralta 61')\nCAMEROON            0\nMexico:             13 Guillermo Ochoa; 2 Francisco Javier Rodríguez, 4 Rafael Márquez [c],\n(3-5-2)             15 Héctor Moreno; 22 Paul Aguilar, 6 Héctor Herrera (3 Carlos Salcido 90+2'),\n23 José Juan Vázquez, 18 Andrés Guardado (8 Marco Fabián 69'), 7 Miguel Layún;\n10 Giovani dos Santos, 19 Oribe Peralta (14 Javier Hernández 74').\nCameroon:           16 Charles Itandje; 4 Cédric Djeugoué (5 Dany Nounkeu 46'), 3 Nicolas Nkoulou,\n(4-5-1)             14 Aurélien Chedjou, 2 Benoît Assou-Ekotto; 8 Benjamin Moukandjo, 17 Stéphane Mbia,\n6 Alex Song (15 Pierre Webo 79'), 18 Eyong Enoh, 13 Eric Maxim Choupo-Moting;\n9 Samuel Eto'o [c].\nReferee:            Wilmar Roldán (Colombia).\nCoaches:            Mexico: Miguel Herrera.\nCameroon: Volker Finke (Germany).\nCards:              Mexico: 15 Héctor Moreno [Y 57'].\nCameroon: 5 Dany Nounkeu [Y 77'].",
+        "lang": "en"
       }
     },
     {
@@ -509,6 +519,11 @@
       ],
       "extra": {
         "attendance": 60342
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "17/06/2014, Fortaleza, Estádio Plácido Aderaldo Castelo 'Castelão', 60342\nWorld Cup\nBRAZIL              0\nMEXICO              0\nBrazil:             12 Júlio César de Espíndola; 2 Daniel Alves da Silva, 3 Thiago da Silva [c],\n(4-1-3-2)           4 David Luiz Marinho, 6 Marcelo da Silva Júnior; 17 Luiz Gustavo Dias;\n16 Ramires do Nascimento (20 Bernard Duarte 46'), 8 José Paulo Maciel Júnior 'Paulinho',\n11 Oscar Emboaba Júnior (19 Willian da Silva 84'); 9 Frederico Guedes 'Fred'\n(21 João Silva 'Jô' 68'), 10 Neymar Santos Júnior.\nMexico:             13 Guillermo Ochoa; 2 Francisco Javier Rodríguez, 4 Rafael Márquez [c],\n(3-5-2)             15 Héctor Moreno; 22 Paul Aguilar, 6 Héctor Herrera (8 Marco Fabián 76'),\n23 José Juan Vázquez, 18 Andrés Guardado, 7 Miguel Layún; 10 Giovani dos Santos\n(9 Raúl Jiménez 84'), 19 Oribe Peralta (14 Javier Hernández 74').\nReferee:            Cüneyt Çakır (Turkey).\nCoaches:            Brazil: Luiz Felipe Scolari.\nMexico: Miguel Herrera.\nCards:              Brazil: 16 Ramires do Nascimento [Y 44'], 3 Thiago da Silva [Y 79'].\nMexico: 22 Paul Aguilar [Y 59'], 23 Juan José Vázquez [Y 62'].",
+        "lang": "en"
       }
     },
     {
@@ -525,6 +540,11 @@
       ],
       "extra": {
         "attendance": 39982
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "18/06/2014, Manaus, Arena da Amazônia, 39982\nWorld Cup\nCROATIA             4 (18 Ivica Olić 11', 4 Ivan Perišić 48', 17 Mario Mandžukić 61' 73')\nCAMEROON            0\nCroatia:            1 Stipe Pletikosa; 11 Darijo Srna [c], 5 Vedran Ćorluka, 6 Dejan Lovren,\n(4-2-3-1)           3 Danijel Pranjić; 10 Luka Modrić, 7 Ivan Rakitić; 4 Ivan Perišić (16 Ante Rebić 78'),\n19 Jorge Sammir Campos (20 Mateo Kovačić 72'), 18 Ivica Olić (22 Eduardo da Silva 69');\n17 Mario Mandžukić.\nCameroon:           16 Charles Itandje; 17 Stéphane Mbia, 3 Nicolas Nkoulou [c], 14 Aurélien Chedjou\n(4-5-1)             (5 Dany Nounkeu 46'), 2 Benoît Assou-Ekotto; 8 Benjamin Moukandjo, 6 Alex Song,\n21 Joël Matip, 18 Eyong Enoh, 13 Eric Maxim Choupo-Moting (20 Edgar Salli 75');\n10 Vincent Aboubakar (15 Pierre Webo 70').\nReferee:            Pedro Proença Garcia (Portugal).\nCoaches:            Croatia: Niko Kovač.\nCameroon: Volker Finke (Germany).\nCards:              Croatia: 22 Eduardo da Silva [Y 89'].\nCameroon: 6 Alex Song [R 40'].",
+        "lang": "en"
       }
     },
     {
@@ -541,6 +561,11 @@
       ],
       "extra": {
         "attendance": 69112
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "23/06/2014, Brasília, Estádio Nacional 'Mané Garrincha', 69112\nWorld Cup\nBRAZIL              4 (10 Neymar Santos Júnior 17' 34', 9 Frederico Guedes 'Fred' 49',\n5 Fernando Roza 'Fernandinho' 84')\nCAMEROON            1 (21 Joël Matip 26')\nBrazil:             12 Júlio César de Espíndola; 2 Daniel Alves da Silva, 3 Thiago da Silva [c],\n(4-1-2-3)           4 David Luiz Marinho, 6 Marcelo da Silva Júnior; 17 Luiz Gustavo Dias;\n8 José Paulo Maciel Júnior 'Paulinho' (5 Fernando Roza 'Fernandinho' 46'),\n11 Oscar Emboaba Júnior; 7 Givanildo de Souza 'Hulk' (16 Ramires do Nascimento 63'),\n9 Frederico Guedes 'Fred', 10 Neymar Santos Júnior (19 Willian da Silva 71').\nCameroon:           16 Charles Itandje; 22 Allan Nyom, 3 Nicolas Nkoulou [c], 21 Joël Matip, 12 Henri Bedimo;\n(4-5-1)             8 Benjamin Moukandjo (20 Edgar Salli 58'), 18 Eyong Enoh, 17 Stéphane Mbia,\n7 Landry Nguémo, 13 Eric Maxim Choupo-Moting (11 Jean Makoun 81');\n10 Vincent Aboubakar (15 Pierre Webo 72').\nReferee:            Jonas Eriksson (Sweden).\nCoaches:            Brazil: Luiz Felipe Scolari.\nCameroon: Volker Finke (Germany).\nCards:              Brazil: none.\nCameroon: 18 Eyong Enoh [Y 11'], 20 Edgar Salli [Y 75'], 17 Stéphane Mbia [Y 80'].",
+        "lang": "en"
       }
     },
     {
@@ -557,6 +582,11 @@
       ],
       "extra": {
         "attendance": 41212
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "23/06/2014, São Lourenço da Mata, Itaipava Arena Pernambuco, 41212\nWorld Cup\nMEXICO              3 (4 Rafael Márquez 72', 18 Andrés Guardado 75', 14 Javier Hernández 82')\nCROATIA             1 (4 Ivan Perišić 87')\nMexico:             13 Guillermo Ochoa; 2 Francisco Javier Rodríguez, 4 Rafael Márquez [c],\n(3-5-2)             15 Héctor Moreno; 22 Paul Aguilar, 6 Héctor Herrera, 23 José Juan Vázquez,\n18 Andrés Guardado (8 Marco Fabián 84'), 7 Miguel Layún; 10 Giovani dos Santos\n(14 Javier Hernández 62'), 19 Oribe Peralta (21 Carlos Alberto Peña 79').\nCroatia:            1 Stipe Pletikosa; 11 Darijo Srna [c], 5 Vedran Ćorluka, 6 Dejan Lovren,\n(4-3-3)             2 Šime Vrsaljko (20 Mateo Kovačić 58'); 10 Luka Modrić, 7 Ivan Rakitić,\n3 Danijel Pranjić (9 Nikica Jelavić 74'); 4 Ivan Perišić, 17 Mario Mandžukić,\n18 Ivica Olić (16 Ante Rebić 69').\nReferee:            Ravshan Ermatov (Uzbekistan).\nCoaches:            Mexico: Miguel Herrera.\nCroatia: Niko Kovač.\nCards:              Mexico: 4 Rafael Márquez [Y 39'], 23 José Juan Vázquez [Y 66'].\nCroatia: 7 Ivan Rakitić [Y 9'], 16 Ante Rebić [R 89'].",
+        "lang": "en"
       }
     },
     {
@@ -573,6 +603,11 @@
       ],
       "extra": {
         "attendance": 48173
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "13/06/2014, Salvador, Itaipava Arena Fonte Nova, 48173\nWorld Cup\nNETHERLANDS         5 (9 Robin van Persie 44' 72', 11 Arjen Robben 53' 80', 3 Stefan de Vrĳ 64')\nSPAIN               1 (14 Xabi Alonso 27' pen)\nNetherlands:        1 Jasper Cillessen; 3 Stefan de Vrĳ (13 Joël Veltman 77'), 2 Ron Vlaar,\n(3-4-1-2)           4 Bruno Martins Indi; 7 Daryl Janmaat, 8 Jonathan de Guzmán\n(20 Georginio Wĳnaldum 62'), 6 Nigel de Jong, 5 Daley Blind; 10 Wesley Sneĳder;\n9 Robin van Persie [c] (17 Jeremain Lens 79'), 11 Arjen Robben.\nSpain:              1 Íker Casillas [c]; 22 César Azpilicueta, 3 Gerard Piqué, 15 Sergio Ramos,\n(4-2-3-1)           18 Jordi Alba; 16 Sergio Busquets, 14 Xabi Alonso (11 Pedro Rodríguez 63');\n21 David Jiménez Silva (10 Cesc Fábregas 78'), 8 Xavi Hernández, 6 Andrés Iniesta;\n19 Diego Costa (9 Fernando Torres 63').\nReferee:            Nicola Rizzoli (Italy).\nCoaches:            Netherlands: Louis van Gaal.\nSpain: Vicente Del Bosque.\nCards:              Netherlands: 8 Jonathan de Guzmán [Y 25'], 3 Stefan de Vrĳ [Y 41'],\n9 Robin van Persie [Y 66'].\nSpain: 1 Íker Casillas [Y 65'].",
+        "lang": "en"
       }
     },
     {
@@ -589,6 +624,11 @@
       ],
       "extra": {
         "attendance": 40275
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "13/06/2014, Cuiabá, Arena Multiuso Governador José Fragelli 'Arena Pantanal', 40275\nWorld Cup\nCHILE               3 (7 Alexis Sánchez 12', 10 Jorge Valdivia 14', 15 Jean Beausejour 90+2')\nAUSTRALIA           1 (4 Tim Cahill 35')\nChile:              1 Claudio Bravo [c]; 4 Mauricio Isla, 17 Gary Medel, 18 Gonzalo Jara, 2 Eugenio Mena;\n(4-1-2-3)           21 Marcelo Díaz; 20 Charles Aránguiz, 8 Arturo Vidal (16 Felipe Gutiérrez 60');\n7 Alexis Sánchez, 10 Jorge Valdivia (15 Jean Beausejour 68'), 11 Eduardo Vargas\n(9 Mauricio Pinilla 88').\nAustralia:          1 Maty Ryan; 2 Ivan Franjić (19 Ryan McGowan 49'), 22 Alex Wilkinson,\n(4-2-3-1)           6 Matthew Špiranović, 3 Jason Davidson; 15 Mile Jedinak [c], 5 Mark Milligan;\n7 Mathew Leckie, 23 Mark Bresciano (14 James Troisi 78'), 11 Tommy Oar\n(10 Ben Halloran 68'); 4 Tim Cahill.\nReferee:            Noumandiez Doué (Ivory Coast).\nCoaches:            Chile: Jorge Sampaoli (Argentina).\nAustralia: Ange Postecoglou.\nCards:              Chile: 20 Charles Aránguiz [Y 86'].\nAustralia: 4 Tim Cahill [Y 44'], 15 Mile Jedinak [Y 58'], 5 Mark Milligan [Y 67'].",
+        "lang": "en"
       }
     },
     {
@@ -605,6 +645,11 @@
       ],
       "extra": {
         "attendance": 42877
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "18/06/2014, Porto Alegre, Estádio José Pinheiro Borda 'Beira-Rio', 42877\nWorld Cup\nNETHERLANDS         3 (11 Arjen Robben 20', 9 Robin van Persie 58', 21 Memphis Depay 68')\nAUSTRALIA           2 (4 Tim Cahill 21', 15 Mile Jedinak 54' pen)\nNetherlands:        1 Jasper Cillessen; 3 Stefan de Vrĳ, 2 Ron Vlaar, 4 Bruno Martins Indi\n(3-4-1-2)           (21 Memphis Depay 45+3'); 7 Daryl Janmaat, 8 Jonathan de Guzmán\n(20 Georginio Wĳnaldum 78'), 6 Nigel de Jong, 5 Daley Blind; 10 Wesley Sneĳder;\n9 Robin van Persie [c] (17 Jeremain Lens 87'), 11 Arjen Robben.\nAustralia:          1 Maty Ryan; 19 Ryan McGowan, 22 Alex Wilkinson, 6 Matthew Špiranović,\n(4-2-3-1)           3 Jason Davidson; 15 Mile Jedinak [c], 17 Matt McKay; 7 Mathew Leckie, 23 Mark Bresciano\n(13 Oliver Bozanić 51'), 11 Tommy Oar (9 Adam Taggart 77'); 4 Tim Cahill\n(10 Ben Halloran 69').\nReferee:            Djamel Haïmoudi (Algeria).\nCoaches:            Netherlands: Louis van Gaal.\nAustralia: Ange Postecoglou.\nCards:              Netherlands: 9 Robin van Persie [Y 47'].\nAustralia: 4 Tim Cahill [Y 43'].",
+        "lang": "en"
       }
     },
     {
@@ -621,6 +666,11 @@
       ],
       "extra": {
         "attendance": 74101
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "18/06/2014, Rio de Janeiro, Estádio Jornalista Mário Filho 'Maracanã', 74101\nWorld Cup\nCHILE               2 (11 Eduardo Vargas 20', 20 Charles Aránguiz 43')\nSPAIN               0\nChile:              1 Claudio Bravo [c]; 5 Francisco Silva, 17 Gary Medel, 18 Gonzalo Jara; 4 Mauricio Isla,\n(3-4-1-2)           20 Charles Aránguiz (16 Felipe Gutiérrez 64'), 21 Marcelo Díaz, 2 Eugenio Mena;\n8 Arturo Vidal (6 Carlos Carmona 88'); 7 Alexis Sánchez, 11 Eduardo Vargas\n(10 Jorge Valdivia 85').\nSpain:              1 Íker Casillas [c]; 22 César Azpilicueta, 4 Javi Martínez, 15 Sergio Ramos,\n(4-2-3-1)           18 Jordi Alba; 16 Sergio Busquets, 14 Xabi Alonso (17 Jorge Resurrección 'Koke' 46');\n11 Pedro Rodríguez (20 Santi Cazorla 76'), 21 David Jiménez Silva, 6 Andrés Iniesta;\n19 Diego Costa (9 Fernando Torres 64').\nReferee:            Mark Geiger (USA).\nCoaches:            Chile: Jorge Sampaoli (Argentina).\nSpain: Vicente Del Bosque.\nCards:              Chile: 8 Arturo Vidal [Y 26'], 2 Eugenio Mena [Y 61'].\nSpain: 14 Xabi Alonso [Y 40'].",
+        "lang": "en"
       }
     },
     {
@@ -637,6 +687,11 @@
       ],
       "extra": {
         "attendance": 39375
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "23/06/2014, Curitiba, Estádio Joaquim Américo Guimarães 'Arena da Baixada', 39375\nWorld Cup\nSPAIN               3 (7 David Villa 36', 9 Fernando Torres 69', 13 Juan Mata 82')\nAUSTRALIA           0\nSpain:              23 Pepe Reina; 5 Juanfran Torres, 2 Raúl Albiol, 15 Sergio Ramos [c], 18 Jordi Alba;\n(4-1-4-1)           14 Xabi Alonso (21 David Jiménez Silva 83'); 20 Santi Cazorla (10 Cesc Fábregas 68'),\n17 Jorge Resurrección 'Koke', 6 Andrés Iniesta, 7 David Villa (13 Juan Mata 57');\n9 Fernando Torres.\nAustralia:          1 Maty Ryan; 19 Ryan McGowan, 22 Alex Wilkinson, 6 Matthew Špiranović,\n(4-2-3-1)           3 Jason Davidson; 15 Mile Jedinak [c], 17 Matt McKay; 7 Mathew Leckie, 13 Oliver Bozanić\n(23 Mark Bresciano 72'), 11 Tommy Oar (14 James Troisi 61'); 9 Adam Taggart\n(10 Ben Halloran 46').\nReferee:            Nawaf Shukrallah (Bahrain).\nCoaches:            Spain: Vicente Del Bosque.\nAustralia: Ange Postecoglou.\nCards:              Spain: 15 Sergio Ramos [Y 62'].\nAustralia: 6 Matthew Špiranović [Y 88'], 15 Mile Jedinak [Y 90+2'].",
+        "lang": "en"
       }
     },
     {
@@ -653,6 +708,11 @@
       ],
       "extra": {
         "attendance": 62996
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "23/06/2014, São Paulo, Arena Corinthians, 62996\nWorld Cup\nNETHERLANDS         2 (18 Leroy Fer 77', 21 Memphis Depay 90+2')\nCHILE               0\nNetherlands:        1 Jasper Cillessen; 7 Daryl Janmaat, 3 Stefan de Vrĳ, 2 Ron Vlaar, 5 Daley Blind,\n(5-3-2)             15 Dirk Kuĳt (14 Terence Kongolo 89'); 20 Georginio Wĳnaldum, 6 Nigel de Jong,\n10 Wesley Sneĳder (18 Leroy Fer 75'); 11 Arjen Robben [c], 17 Jeremain Lens\n(21 Memphis Depay 69').\nChile:              1 Claudio Bravo [c]; 5 Francisco Silva (10 Jorge Valdivia 70'), 17 Gary Medel,\n(3-5-2)             18 Gonzalo Jara; 4 Mauricio Isla, 16 Felipe Gutiérrez (15 Jean Beausejour 46'),\n21 Marcelo Díaz, 20 Charles Aránguiz, 2 Eugenio Mena; 7 Alexis Sánchez,\n11 Eduardo Vargas (9 Mauricio Pinilla 81').\nReferee:            Bakary Gassama (Gambia).\nCoaches:            Netherlands: Louis van Gaal.\nChile: Jorge Sampaoli (Argentina).\nCards:              Netherlands: 5 Daley Blind [Y 64'].\nChile: 5 Francisco Silva [Y 25'].",
+        "lang": "en"
       }
     },
     {
@@ -669,6 +729,11 @@
       ],
       "extra": {
         "attendance": 57174
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "14/06/2014, Belo Horizonte, Estádio Governador Magalhães Pinto 'Mineirão', 57174\nWorld Cup\nCOLOMBIA            3 (7 Pablo Armero 5', 9 Teófilo Gutiérrez 58', 10 James Rodríguez 90+3')\nGREECE              0\nColombia:           1 David Ospina; 18 Juan Camilo Zúñiga, 2 Cristián Zapata, 3 Mario Alberto Yepes [c],\n(4-2-3-1)           7 Pablo Armero (4 Santiago Arias 74'); 8 Abel Aguilar (15 Alexander Mejía 69'),\n6 Carlos Sánchez; 11 Juan Guillermo Cuadrado, 10 James Rodríguez, 14 Víctor Ibarbo;\n9 Teófilo Gutiérrez (21 Jackson Martínez 76').\nGreece:             1 Oréstis Karnézis; 15 Vasílis Torosídhis, 4 Kóstas Manolás,\n(4-1-4-1)           19 Sokrátis Papastathópoulos, 20 José Holebas; 21 Kóstas Katsouránis [c];\n14 Dhimítris Salpingídhis (18 Yiánnis Fetfadzídhis 57'), 2 Yiánnis Maniátis,\n8 Panayiótis Koné (10 Yórghos Karangoúnis 78'), 7 Yórghos Samarás; 17 Theofánis Gékas\n(9 Kóstas Mítroghlou 64').\nReferee:            Mark Geiger (USA).\nCoaches:            Colombia: José Pekerman (Argentina).\nGreece: Fernando Santos (Portugal).\nCards:              Colombia: 6 Carlos Sánchez [Y 26'].\nGreece: 19 Sokrátis Papastathópoulos [Y 52'], 14 Dhimítris Salpingídhis [Y 55'].",
+        "lang": "en"
       }
     },
     {
@@ -685,6 +750,11 @@
       ],
       "extra": {
         "attendance": 40267
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "14/06/2014, São Lourenço da Mata, Itaipava Arena Pernambuco, 40267\nWorld Cup\nIVORY COAST         2 (12 Wilfried Bony 64', 10 Gervais Kouassi 'Gervinho' 66')\nJAPAN               1 (4 Keisuke Honda 16')\nIvory Coast:        1 Boubacar Barry; 17 Serge Aurier, 5 Didier Zokora, 22 Sol Bamba, 3 Arthur Boka\n(4-2-3-1)           (18 Constant Djakpa 75'); 9 Cheick Tioté, 20 Serey Die (11 Didier Drogba 62');\n8 Salomon Kalou, 19 Yaya Touré [c], 10 Gervais Kouassi 'Gervinho'; 12 Wilfried Bony\n(13 Didier Ya Konan 78').\nJapan:              1 Eiji Kawashima; 2 Atsuto Uchida, 6 Masato Morishige, 22 Maya Yoshida,\n(4-2-3-1)           5 Yūto Nagatomo; 16 Hotaru Yamaguchi, 17 Makoto Hasebe [c] (7 Yasuhito Endō 54');\n9 Shinji Okazaki, 4 Keisuke Honda, 10 Shinji Kagawa (11 Yōichirō Kakitani 86');\n18 Yūya Ōsako (13 Yoshito Ōkubo 67').\nReferee:            Enrique Osses (Chile).\nCoaches:            Ivory Coast: Sabri Lamouchi (France).\nJapan: Alberto Zaccheroni (Italy).\nCards:              Ivory Coast: 22 Sol Bamba [Y 54'], 5 Didier Zokora [Y 58'].\nJapan: 22 Maya Yoshida [Y 23'], 6 Masato Morishige [Y 64'].",
+        "lang": "en"
       }
     },
     {
@@ -701,6 +771,11 @@
       ],
       "extra": {
         "attendance": 68748
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "19/06/2014, Brasília, Estádio Nacional 'Mané Garrincha', 68748\nWorld Cup\nCOLOMBIA            2 (10 James Rodríguez 64', 20 Juan Fernando Quintero 70')\nIVORY COAST         1 (10 Gervais Kouassi 'Gervinho' 73')\nColombia:           1 David Ospina; 18 Juan Camilo Zúñiga, 2 Cristián Zapata, 3 Mario Alberto Yepes [c],\n(4-2-3-1)           7 Pablo Armero (4 Santiago Arias 72'); 8 Abel Aguilar (15 Alexander Mejía 79'),\n6 Carlos Sánchez; 11 Juan Guillermo Cuadrado, 10 James Rodríguez, 14 Víctor Ibarbo\n(20 Juan Fernando Quintero 53'); 9 Teófilo Gutiérrez.\nIvory Coast:        1 Boubacar Barry; 17 Serge Aurier, 5 Didier Zokora, 22 Sol Bamba, 3 Arthur Boka;\n(4-2-3-1)           9 Cheick Tioté, 20 Serey Die (6 Mathis Bolly 73'); 15 Max Gradel (8 Salomon Kalou 67'),\n19 Yaya Touré [c], 10 Gervais Kouassi 'Gervinho'; 12 Wilfried Bony\n(11 Didier Drogba 60').\nReferee:            Howard Webb (England).\nCoaches:            Colombia: José Pekerman (Argentina).\nIvory Coast: Sabri Lamouchi (France).\nCards:              Colombia: none.\nIvory Coast: 5 Didier Zokora [Y 55'], 9 Cheick Tioté [Y 90'].",
+        "lang": "en"
       }
     },
     {
@@ -717,6 +792,11 @@
       ],
       "extra": {
         "attendance": 39485
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "19/06/2014, Natal, Arena das Dunas, 39485\nWorld Cup\nGREECE              0\nJAPAN               0\nGreece:             1 Oréstis Karnézis; 15 Vasílis Torosídhis, 4 Kóstas Manolás,\n(4-1-4-1)           19 Sokrátis Papastathópoulos, 20 José Holebas; 21 Kóstas Katsouránis [c];\n18 Yiánnis Fetfadzídhis (10 Yórghos Karangoúnis 41'), 2 Yiánnis Maniátis,\n8 Panayiótis Koné (14 Dhimítris Salpingídhis 81'), 7 Yórghos Samarás;\n9 Kóstas Mítroghlou (17 Theofánis Gékas 35').\nJapan:              1 Eiji Kawashima; 2 Atsuto Uchida, 22 Maya Yoshida, 15 Yasuyuki Konno, 5 Yūto Nagatomo;\n(4-2-3-1)           17 Makoto Hasebe [c] (7 Yasuhito Endō 46'), 16 Hotaru Yamaguchi; 13 Yoshito Ōkubo,\n4 Keisuke Honda, 9 Shinji Okazaki; 18 Yūya Ōsako (10 Shinji Kagawa 57').\nReferee:            Joel Aguilar (El Salvador).\nCoaches:            Greece: Fernando Santos (Portual).\nJapan: Alberto Zaccheroni (Italy).\nCards:              Greece: 21 Kóstas Katsouránis [Y 27' YR 38'], 7 Yórghos Samarás [Y 54'],\n15 Vasílis Torosídhis [Y 88'].\nJapan: 17 Makoto Hasebe [Y 12'].",
+        "lang": "en"
       }
     },
     {
@@ -733,6 +813,11 @@
       ],
       "extra": {
         "attendance": 59095
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "24/06/2014, Fortaleza, Estádio Plácido Aderaldo Castelo 'Castelão', 59095\nWorld Cup\nGREECE              2 (22 Andhréas Sámaris 42', 7 Yórghos Samarás 90+3' pen)\nIVORY COAST         1 (12 Wilfried Bony 74')\nGreece:             1 Oréstis Karnézis (12 Panayiótis Glíkos 24'); 15 Vasílis Torosídhis,\n(4-2-3-1)           4 Kóstas Manolás, 19 Sokrátis Papastathópoulos, 20 José Holebas; 2 Yiánnis Maniátis,\n10 Yórghos Karangoúnis [c] (17 Theofánis Gékas 78'); 14 Dhimítris Salpingídhis,\n8 Panayiótis Koné (22 Andhréas Sámaris 12'), 16 Lázaros Khristodhoulópoulos;\n7 Yórghos Samarás.\nIvory Coast:        1 Boubacar Barry; 17 Serge Aurier, 4 Kolo Touré, 22 Sol Bamba, 3 Arthur Boka;\n(4-2-3-1)           9 Cheick Tioté (12 Wilfried Bony 61'), 20 Serey Die; 8 Salomon Kalou, 19 Yaya Touré,\n10 Gervais Kouassi 'Gervinho' (21 Giovanni Sio 83'); 11 Didier Drogba [c]\n(14 Ismaël Diomandé 78').\nReferee:            Carlos Vera (Ecuador).\nCoaches:            Greece: Fernando Santos (Portugal).\nIvory Coast: Sabri Lamouchi (France).\nCards:              Greece: none.\nIvory Coast: 11 Didier Drogba [Y 37'], 8 Salomon Kalou [Y 62'],\n20 Serey Die [Y 70'].",
+        "lang": "en"
       }
     },
     {
@@ -749,6 +834,11 @@
       ],
       "extra": {
         "attendance": 40340
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "24/06/2014, Cuiabá, Arena Multiuso Governador José Fragelli 'Arena Pantanal', 40340\nWorld Cup\nCOLOMBIA            4 (11 Juan Guillermo Cuadrado 17' pen, 21 Jackson Martínez 55' 82',\n10 James Rodríguez 89')\nJAPAN               1 (9 Shinji Okazaki 45+2')\nColombia:           1 David Ospina [c] (22 Faryd Mondragón 85'); 4 Santiago Arias, 23 Carlos Valdés,\n(4-1-3-2)           16 Éder Álvarez Balanta, 7 Pablo Armero; 15 Alexander Mejía;\n11 Juan Guillermo Cuadrado (5 Carlos Carbonero 46'), 13 Fredy Guarín,\n20 Juan Fernando Quintero (10 James Rodríguez 46'); 19 Adrián Ramos,\n21 Jackson Martínez.\nJapan:              1 Eiji Kawashima; 2 Atsuto Uchida, 22 Maya Yoshida, 15 Yasuyuki Konno, 5 Yūto Nagatomo;\n(4-2-3-1)           14 Toshihiro Aoyama (16 Hotaru Yamaguchi 62'), 17 Makoto Hasebe [c]; 9 Shinji Okazaki\n(11 Yōichirō Kakitani 69'), 4 Keisuke Honda, 10 Shinji Kagawa\n(8 Hiroshi Kiyotake 85'); 13 Yoshito Ōkubo.\nReferee:            Pedro Proença Garcia (Portugal).\nCoaches:            Colombia: José Pekerman (Argentina).\nJapan: Alberto Zaccheroni (Italy).\nCards:              Colombia: 13 Fredy Guarín [Y 63'].\nJapan: 15 Yasuyuki Konno [Y 16'].",
+        "lang": "en"
       }
     },
     {
@@ -765,6 +855,11 @@
       ],
       "extra": {
         "attendance": 58679
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "14/06/2014, Fortaleza, Estádio Plácido Aderaldo Castelo 'Castelão', 58679\nWorld Cup\nCOSTA RICA          3 (9 Joel Campbell 54', 6 Óscar Duarte 57', 21 Marcos Ureña 84')\nURUGUAY             1 (21 Edinson Cavani 24' pen)\nCosta Rica:         1 Keylor Navas; 16 Cristian Gamboa, 6 Óscar Duarte, 3 Giancarlo González,\n(5-2-3)             4 Michael Umaña, 15 Júnior Díaz; 17 Yeltsin Tejeda (22 José Miguel Cubero 74'),\n5 Celso Borges; 10 Bryan Ruiz [c] (21 Marcos Ureña 83'), 9 Joel Campbell,\n7 Christian Bolaños (11 Michael Barrantes 89').\nUruguay:            1 Fernando Muslera; 16 Maximiliano Pereira, 2 Diego Lugano [c], 3 Diego Godín,\n(4-4-2)             22 Martín Cáceres; 11 Cristhian Stuani, 5 Walter Gargano (20 Alvaro González 60'),\n17 Egidio Arévalo Ríos, 7 Cristian Rodríguez (8 Abel Hernández 76'); 10 Diego Forlán\n(14 Nicolás Lodeiro 60'), 21 Edinson Cavani.\nReferee:            Dr Felix Brych (Germany).\nCoaches:            Costa Rica: Jorge Luis Pinto (Colombia).\nUruguay: Óscar Washington Tabárez.\nCards:              Costa Rica: none.\nUruguay: 2 Diego Lugano [Y 50'], 5 Walter Gargano [Y 56'],\n22 Martín Cáceres [Y 81'], 16 Maximiliano Pereira [R 90+4'].",
+        "lang": "en"
       }
     },
     {
@@ -781,6 +876,11 @@
       ],
       "extra": {
         "attendance": 39800
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "14/06/2014, Manaus, Arena da Amazônia, 39800\nWorld Cup\nITALY               2 (8 Claudio Marchisio 35', 9 Mario Balotelli 50')\nENGLAND             1 (9 Daniel Sturridge 37')\nItaly:              12 Salvatore Sirigu; 4 Matteo Darmian, 15 Andrea Barzagli, 20 Gabriel Paletta,\n(4-1-4-1)           3 Giorgio Chiellini; 16 Daniele De Rossi; 6 Antonio Candreva (18 Marco Parolo 79'),\n23 Marco Verratti (5 Thiago Motta 57'), 21 Andrea Pirlo [c], 8 Claudio Marchisio;\n9 Mario Balotelli (17 Ciro Immobile 73').\nEngland:            1 Joe Hart; 2 Glen Johnson, 5 Gary Cahill, 6 Phil Jagielka, 3 Leighton Baines;\n(4-2-3-1)           14 Jordan Henderson (7 Jack Wilshere 73'), 4 Steven Gerrard [c]; 11 Danny Welbeck\n(21 Ross Barkley 61'), 19 Raheem Sterling, 10 Wayne Rooney; 9 Daniel Sturridge\n(20 Adam Lallana 80').\nReferee:            Björn Kuipers (Netherlands).\nCoaches:            Italy: Cesare Prandelli.\nEngland: Roy Hodgson.\nCards:              Italy: none.\nEngland: 19 Raheem Sterling [Y 90+2'].",
+        "lang": "en"
       }
     },
     {
@@ -797,6 +897,11 @@
       ],
       "extra": {
         "attendance": 62575
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "19/06/2014, São Paulo, Arena Corinthians, 62575\nWorld Cup\nURUGUAY             2 (9 Luis Suárez 39' 85')\nENGLAND             1 (10 Wayne Rooney 75')\nUruguay:            1 Fernando Muslera; 22 Martín Cáceres, 13 José María Giménez, 3 Diego Godín [c],\n(4-1-3-2)           6 Alvaro Pereira; 17 Egidio Arévalo Ríos; 20 Alvaro González (4 Jorge Fucile 79'),\n14 Nicolás Lodeiro (11 Cristhian Stuani 67'), 7 Cristian Rodríguez; 9 Luis Suárez\n(19 Sebastián Coates 88'), 21 Edinson Cavani.\nEngland:            1 Joe Hart; 2 Glen Johnson, 5 Gary Cahill, 6 Phil Jagielka, 3 Leighton Baines;\n(4-2-3-1)           14 Jordan Henderson (18 Rickie Lambert 87'), 4 Steven Gerrard [c]; 19 Raheem Sterling\n(21 Ross Barkley 64'), 10 Wayne Rooney, 11 Danny Welbeck (20 Adam Lallana 71');\n9 Daniel Sturridge.\nReferee:            Carlos Velasco Carballo (Spain).\nCoaches:            Uruguay: Óscar Washington Tabárez.\nEngland: Roy Hodgson.\nCards:              Uruguay: 3 Diego Godín [Y 9'].\nEngland: 4 Steven Gerrard [Y 68'].",
+        "lang": "en"
       }
     },
     {
@@ -813,6 +918,11 @@
       ],
       "extra": {
         "attendance": 40285
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "20/06/2014, São Lourenço da Mata, Itaipava Arena Pernambuco, 40285\nWorld Cup\nCOSTA RICA          1 (10 Bryan Ruiz 44')\nITALY               0\nCosta Rica:         1 Keylor Navas; 16 Cristian Gamboa, 6 Óscar Duarte, 3 Giancarlo González,\n(5-2-3)             4 Michael Umaña, 15 Júnior Díaz; 17 Yeltsin Tejeda (22 José Miguel Cubero 68'),\n5 Celso Borges; 10 Bryan Ruiz [c] (14 Randall Brenes 81'), 9 Joel Campbell\n(21 Marcos Ureña 74'), 7 Christian Bolaños.\nItaly:              1 Gianluigi Buffon [c]; 7 Ignazio Abate, 15 Andrea Barzagli, 3 Giorgio Chiellini,\n(4-1-4-1)           4 Matteo Darmian; 16 Daniele De Rossi; 6 Antonio Candreva (22 Lorenzo Insigne 57'),\n5 Thiago Motta (10 Antonio Cassano 46'), 21 Andrea Pirlo, 8 Claudio Marchisio\n(11 Alessio Cerci 69'); 9 Mario Balotelli.\nReferee:            Enrique Osses (Chile).\nCoaches:            Costa Rica: Jorge Luis Pinto (Colombia).\nItaly: Cesare Prandelli.\nCards:              Costa Rica: 22 José Miguel Cubero [Y 71'].\nItaly: 9 Mario Balotelli [Y 69'].",
+        "lang": "en"
       }
     },
     {
@@ -829,6 +939,11 @@
       ],
       "extra": {
         "attendance": 57823
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "24/06/2014, Belo Horizonte, Estádio Governador Magalhães Pinto 'Mineirão', 57823\nWorld Cup\nCOSTA RICA          0\nENGLAND             0\nCosta Rica:         1 Keylor Navas; 16 Cristian Gamboa, 6 Óscar Duarte, 3 Giancarlo González,\n(5-2-3)             19 Roy Miller, 15 Júnior Díaz; 17 Yeltsin Tejeda, 5 Celso Borges\n(11 Michael Barrantes 78'); 10 Bryan Ruiz [c], 9 Joel Campbell (21 Marcos Ureña 65'),\n14 Randall Brenes (7 Christian Bolaños 59').\nEngland:            13 Ben Foster; 16 Phil Jones, 5 Gary Cahill, 12 Chris Smalling, 23 Luke Shaw;\n(4-1-4-1)           8 Frank J. Lampard [c]; 17 James Milner (10 Wayne Rooney 76'), 21 Ross Barkley,\n7 Jack Wilshere (4 Steven Gerrard 73'), 20 Adam Lallana (19 Raheem Sterling 62');\n9 Daniel Sturridge.\nReferee:            Djamel Haïmoudi (Algeria).\nCoaches:            Costa Rica: Jorge Luis Pinto (Colombia).\nEngland: Roy Hodgson.\nCards:              Costa Rica: 3 Giancarlo González [Y 60'].\nEngland: 21 Ross Barkley [Y 53'], 20 Adam Lallana [Y 57'].",
+        "lang": "en"
       }
     },
     {
@@ -845,6 +960,11 @@
       ],
       "extra": {
         "attendance": 39706
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "24/06/2014, Natal, Arena das Dunas, 39706\nWorld Cup\nURUGUAY             1 (3 Diego Godín 81')\nITALY               0\nUruguay:            1 Fernando Muslera; 13 José María Giménez, 3 Diego Godín [c], 22 Martín Cáceres;\n(3-3-3-1)           20 Alvaro González, 17 Egidio Arévalo Ríos, 6 Alvaro Pereira (11 Cristhian Stuani 63');\n14 Nicolás Lodeiro (16 Maximiliano Pereira 46'), 21 Edinson Cavani,\n7 Cristian Rodríguez (18 Gastón Ramírez 78'); 9 Luis Suárez.\nItaly:              1 Gianluigi Buffon [c]; 15 Andrea Barzagli, 19 Leonardo Bonucci, 3 Giorgio Chiellini;\n(3-5-2)             4 Matteo Darmian, 23 Marco Verratti (5 Thiago Motta 75'), 21 Andrea Pirlo,\n8 Claudio Marchisio, 2 Mattia De Sciglio; 9 Mario Balotelli (18 Marco Parolo 46'),\n17 Ciro Immobile (10 Antonio Cassano 71').\nReferee:            Marco Antonio Rodríguez (Mexico).\nCoaches:            Uruguay: Óscar Washington Tabárez.\nItaly: Cesare Prandelli.\nCards:              Uruguay: 17 Egidio Arévalo Ríos [Y 46'], 1 Fernando Muslera [Y 90+1'].\nItaly: 9 Mario Balotelli [Y 22'], 8 Claudio Marchisio [R 59'],\n2 Mattia De Sciglio [Y 77'].\nNote:               Luis Suárez was retrospectively suspended for nine competition matches\nfollowing an incident which was not seen by the referee.",
+        "lang": "en"
       }
     },
     {
@@ -861,6 +981,11 @@
       ],
       "extra": {
         "attendance": 68351
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "15/06/2014, Brasília, Estádio Nacional 'Mané Garrincha', 68351\nWorld Cup\nSWITZERLAND         2 (18 Admir Mehmedi 48', 9 Haris Seferović 90+3')\nECUADOR             1 (13 Enner Valencia 22')\nSwitzerland:        1 Diego Benaglio; 2 Stephan Lichtsteiner, 20 Johan Djourou, 5 Steve von Bergen,\n(4-2-3-1)           13 Ricardo Rodríguez; 11 Valon Behrami, 8 Gökhan Inler [c]; 23 Xherdan Shaqiri,\n10 Granit Xhaka, 14 Valentin Stocker (18 Admir Mehmedi 46'); 19 Josip Drmić\n(9 Haris Seferović 75').\nEcuador:            22 Alexander Domínguez; 4 Juan Carlos Paredes, 2 Jorge Guagua, 3 Frickson Erazo,\n(4-2-3-1)           10 Walter Ayoví; 6 Cristhian Noboa, 23 Carlos Gruezo; 16 Luis Antonio Valencia [c],\n13 Enner Valencia, 7 Jefferson Montero (9 João Rojas 77'); 11 Felipe Caicedo\n(15 Michael Arroyo 70').\nReferee:            Ravshan Ermatov (Uzbekistan).\nCoaches:            Switzerland: Ottmar Hitzfeld (Germany).\nEcuador: Reinaldo Rueda (Colombia).\nCards:              Switzerland: 20 Johan Djourou [Y 84'].\nEcuador: 4 Juan Carlos Paredes [Y 53'].",
+        "lang": "en"
       }
     },
     {
@@ -877,6 +1002,11 @@
       ],
       "extra": {
         "attendance": 43012
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "15/06/2014, Porto Alegre, Estádio José Pinheiro Borda 'Beira-Rio', 43012\nWorld Cup\nFRANCE              3 (10 Karim Benzema 45' pen 72', 18 Noel Valladares 48' OG)\nHONDURAS            0\nFrance:             1 Hugo Lloris [c]; 2 Mathieu Debuchy, 4 Raphaël Varane, 5 Mamadou Sakho,\n(4-3-3)             3 Patrice Evra; 19 Paul Pogba (18 Moussa Sissoko 57'), 6 Yohan Cabaye\n(12 Rio Mavuba 65'), 14 Blaise Matuidi; 8 Mathieu Valbuena (9 Olivier Giroud 78'),\n10 Karim Benzema, 11 Antoine Griezmann.\nHonduras:           18 Noel Valladares [c]; 21 Brayan Beckeles, 5 Víctor Bernárdez (2 Osman Chávez 46'),\n(4-4-2)             3 Maynor Figueroa, 7 Emilio Izaguirre; 17 Andy Najar (20 Jorge Claros 58'),\n19 Luis Garrido, 8 Wilson Palacios, 15 Roger Espinoza; 11 Jerry Bengtson\n(14 Óscar Boniek García 46'), 13 Carlo Costly.\nReferee:            Sandro Ricci (Brazil).\nCoaches:            France: Didier Deschamps.\nHonduras: Luis Fernando Suárez (Colombia).\nCards:              France: 3 Patrice Evra [Y 7'], 19 Paul Pogba [Y 28'], 6 Yohan Cabaye [Y 45+2'].\nHonduras: 8 Wilson Palacios [Y 27' YR 43'], 14 Óscar Boniek García [Y 53'],\n19 Luis Garrido [Y 83'].",
+        "lang": "en"
       }
     },
     {
@@ -893,6 +1023,11 @@
       ],
       "extra": {
         "attendance": 51003
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "20/06/2014, Salvador, Itaipava Arena Fonte Nova, 51003\nWorld Cup\nFRANCE              5 (9 Olivier Giroud 17', 14 Blaise Matuidi 18', 8 Mathieu Valbuena 40',\n10 Karim Benzema 67', 18 Moussa Sissoko 73')\nSWITZERLAND         2 (15 Blerim Džemaili 81', 10 Granit Xhaka 87')\nFrance:             1 Hugo Lloris [c]; 2 Mathieu Debuchy, 4 Raphaël Varane, 5 Mamadou Sakho\n(4-3-3)             (21 Laurent Koscielny 66'), 3 Patrice Evra; 18 Moussa Sissoko, 6 Yohan Cabaye,\n14 Blaise Matuidi; 8 Mathieu Valbuena (11 Antoine Griezmann 82'), 9 Olivier Giroud\n(19 Paul Pogba 63'), 10 Karim Benzema.\nSwitzerland:        1 Diego Benaglio; 2 Stephan Lichtsteiner, 20 Johan Djourou, 5 Steve von Bergen\n(4-2-3-1)           (4 Philippe Senderos 9'), 13 Ricardo Rodríguez; 11 Valon Behrami\n(15 Blerim Džemaili 46'), 8 Gökhan Inler [c]; 23 Xherdan Shaqiri, 10 Granit Xhaka,\n18 Admir Mehmedi; 9 Haris Seferović (19 Josip Drmić 69').\nReferee:            Björn Kuipers (Netherlands).\nCoaches:            France: Didier Deschamps.\nSwitzerland: Ottmar Hitzfeld (Germany).\nCards:              France: 6 Yohan Cabaye [Y 88'].\nSwitzerland: none.\nNote:               Diego Benaglio saved a penalty from Karim Benzema at 32'.",
+        "lang": "en"
       }
     },
     {
@@ -909,6 +1044,11 @@
       ],
       "extra": {
         "attendance": 39224
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "20/06/2014, Curitiba, Estádio Joaquim Américo Guimarães 'Arena da Baixada', 39224\nWorld Cup\nECUADOR             2 (13 Enner Valencia 34' 65')\nHONDURAS            1 (13 Carlo Costly 31')\nEcuador:            22 Alexander Domínguez; 4 Juan Carlos Paredes, 2 Jorge Guagua, 3 Frickson Erazo,\n(4-4-2)             10 Walter Ayoví; 16 Luis Antonio Valencia [c], 6 Cristhian Noboa, 14 Oswaldo Minda\n(23 Carlos Gruezo 83'), 7 Jefferson Montero (21 Gabriel Achilier 90+2');\n11 Felipe Caicedo (8 Édison Méndez 82'), 13 Enner Valencia.\nHonduras:           18 Noel Valladares [c]; 21 Brayan Beckeles, 5 Víctor Bernárdez, 3 Maynor Figueroa,\n(4-4-2)             7 Emilio Izaguirre (6 Juan Carlos García 46'); 14 Óscar Boniek García\n(23 Marvin Chávez 82'), 19 Luis Garrido (10 Mario Martínez 71'), 20 Jorge Claros,\n15 Roger Espinoza; 11 Jerry Bengtson, 13 Carlo Costly.\nReferee:            Ben Williams (Australia).\nCoaches:            Ecuador: Reinaldo Rueda (Colombia).\nHonduras: Luis Fernando Suárez (Colombia).\nCards:              Ecuador: 16 Luis Antonio Valencia [Y 57'], 13 Enner Valencia [Y 72'],\n7 Jefferson Montero [Y 80'].\nHonduras: 5 Víctor Bernárdez [Y 7'], 11 Jerry Bengtson [Y 45+3'].",
+        "lang": "en"
       }
     },
     {
@@ -925,6 +1065,11 @@
       ],
       "extra": {
         "attendance": 73749
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "25/06/2014, Rio de Janeiro, Estádio Jornalista Mário Filho 'Maracanã', 73749\nWorld Cup\nECUADOR             0\nFRANCE              0\nEcuador:            22 Alexander Domínguez; 4 Juan Carlos Paredes, 2 Jorge Guagua, 3 Frickson Erazo,\n(4-2-3-1)           10 Walter Ayoví; 6 Cristhian Noboa (11 Felipe Caicedo 89'), 14 Oswaldo Minda;\n16 Luis Antonio Valencia [c], 15 Michael Arroyo (21 Gabriel Achilier 81'),\n7 Jefferson Montero (5 Renato Ibarra 63'); 13 Enner Valencia.\nFrance:             1 Hugo Lloris [c]; 15 Bacary Sagna, 21 Laurent Koscielny, 5 Mamadou Sakho\n(4-3-3)             (4 Raphaël Varane 60'), 17 Lucas Digne; 19 Paul Pogba, 22 Morgan Schneiderlin,\n14 Blaise Matuidi (9 Olivier Giroud 67'); 18 Moussa Sissoko, 10 Karim Benzema,\n11 Antoine Griezmann (20 Loïc Rémy 79').\nReferee:            Noumandiez Doué (Ivory Coast).\nCoaches:            Ecuador: Reinaldo Rueda (Colombia).\nFrance: Didier Deschamps.\nCards:              Ecuador: 16 Luis Antonio Valencia [R 50'], 3 Frickson Erazo [Y 83'].\nFrance: none.",
+        "lang": "en"
       }
     },
     {
@@ -941,6 +1086,11 @@
       ],
       "extra": {
         "attendance": 40322
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "25/06/2014, Manaus, Arena da Amazônia, 40322\nWorld Cup\nSWITZERLAND         3 (23 Xherdan Shaqiri 6' 31' 71')\nHONDURAS            0\nSwitzerland:        1 Diego Benaglio; 2 Stephan Lichtsteiner, 22 Fabian Schär, 20 Johan Djourou,\n(4-2-3-1)           13 Ricardo Rodríguez; 11 Valon Behrami, 8 Gökhan Inler [c]; 10 Granit Xhaka\n(6 Michael Lang 77'), 23 Xherdan Shaqiri (15 Blerim Džemaili 87'), 18 Admir Mehmedi;\n19 Josip Drmić (9 Haris Seferović 73').\nHonduras:           18 Noel Valladares [c]; 21 Brayan Beckeles, 5 Víctor Bernárdez, 3 Maynor Figueroa,\n(4-4-2)             6 Juan Carlos García; 14 Óscar Boniek García (17 Andy Najar 77'), 20 Jorge Claros,\n8 Wilson Palacios, 15 Roger Espinoza (23 Marvin Chávez 46'); 11 Jerry Bengtson,\n13 Carlo Costly (9 Jerry Palacios 40').\nReferee:            Néstor Pitana (Argentina).\nCoaches:            Switzerland: Ottmar Hitzfeld (Germany).\nHonduras: Luis Fernando Suárez (Colombia).\nCards:              Switzerland: none.\nHonduras: 9 Jerry Palacios [Y 66'].",
+        "lang": "en"
       }
     },
     {
@@ -957,6 +1107,11 @@
       ],
       "extra": {
         "attendance": 74738
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "15/06/2014, Rio de Janeiro, Estádio Jornalista Mário Filho 'Maracanã', 74738\nWorld Cup\nARGENTINA           2 (5 Sead Kolašinac 3' OG, 10 Lionel Messi 65')\nBOSNIA/HERZEGOVINA  1 (9 Vedad Ibišević 84')\nArgentina:          1 Sergio Romero; 4 Pablo Zabaleta, 3 Hugo Campagnaro (5 Fernando Gago 46'),\n(5-3-2)             17 Federico Fernández, 2 Ezequiel Garay, 16 Marcos Rojo; 11 Maxi Rodríguez\n(9 Gonzalo Higuaín 46'), 14 Javier Mascherano, 7 Ángel Di María; 10 Lionel Messi [c],\n20 Sergio Agüero (6 Lucas Biglia 87').\nBosnia/Herzegovina: 1 Asmir Begović; 13 Mensur Mujdža (9 Vedad Ibišević 69'), 3 Ermin Bičakčić,\n(4-2-3-1)           4 Emir Spahić [c], 5 Sead Kolašinac; 8 Miralem Pjanić, 7 Muhamed Bešić;\n20 Izet Hajrović (19 Edin Višća 71'), 10 Zvjezdan Misimović (18 Haris Medunjanin 74'),\n16 Senad Lulić; 11 Edin Džeko.\nReferee:            Joel Aguilar (El Salvador).\nCoaches:            Argentina: Alejandro Sabella.\nBosnia/Herzegovina: Safet Sušić.\nCards:              Argentina: 16 Marcos Rojo [Y 25'].\nBosnia/Herzegovina: 4 Emir Spahić [Y 63'].",
+        "lang": "en"
       }
     },
     {
@@ -973,6 +1128,11 @@
       ],
       "extra": {
         "attendance": 39081
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "16/06/2014, Curitiba, Estádio Joaquim Américo Guimarães 'Arena da Baixada', 39081\nWorld Cup\nIRAN                0\nNIGERIA             0\nIran:               12 Alireza Haghighi; 15 Pejman Montazeri, 4 Jalal Hosseini, 5 Amir Hossein Sadeghi,\n(4-5-1)             23 Mehrdad Pouladi; 2 Khosro Heydari (7 Masoud Shojaei 89'), 14 Andranik Teymourian,\n6 Javad Nekounam [c], 3 Ehsan Hajsafi, 21 Ashkan Dejagah (9 Alireza Jahanbakhsh 78');\n16 Reza Ghouchannejad.\nNigeria:            1 Vincent Enyeama [c]; 5 Efe Ambrose, 22 Kenneth Omeruo, 14 Godfrey Oboabona\n(4-2-1-3)           (2 Joseph Yobo 29'), 13 Juwon Oshaniwa; 17 Ogenyi Onazi, 10 John Obi Mikel;\n15 Ramon Ameez (8 Peter Odemwingie 69'); 7 Ahmed Musa, 9 Emmanuel Emenike,\n11 Victor Moses (23 Shola Ameobi 52').\nReferee:            Carlos Vera (Ecuador).\nCoaches:            Iran: Carlos Queiroz (Portugal).\nNigeria: Stephen Keshi.\nCards:              Iran: 14 Andranik Teymourian [Y 75'].\nNigeria: none.",
+        "lang": "en"
       }
     },
     {
@@ -989,6 +1149,11 @@
       ],
       "extra": {
         "attendance": 57698
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "21/06/2014, Belo Horizonte, Estádio Governador Magalhães Pinto 'Mineirão', 57698\nWorld Cup\nARGENTINA           1 (10 Lionel Messi 90+1')\nIRAN                0\nArgentina:          1 Sergio Romero; 4 Pablo Zabaleta, 17 Federico Fernández, 2 Ezequiel Garay,\n(4-3-3)             16 Marcos Rojo; 5 Fernando Gago, 14 Javier Mascherano, 7 Ángel Di María\n(6 Lucas Biglia 90+4'); 10 Lionel Messi [c], 9 Gonzalo Higuaín\n(18 Rodrigo Palacio 77'), 20 Sergio Agüero (22 Ezequiel Lavezzi 77').\nIran:               12 Alireza Haghighi; 15 Pejman Montazeri, 4 Jalal Hosseini, 5 Amir Hossein Sadeghi,\n(4-5-1)             23 Mehrdad Pouladi; 7 Masoud Shojaei (2 Khosro Heydari 77'), 14 Andranik Teymourian,\n6 Javad Nekounam [c], 3 Ehsan Hajsafi (8 Reza Haghighi 88'), 21 Ashkan Dejagah\n(9 Alireza Jahanbakhsh 85'); 16 Reza Ghouchannejad.\nReferee:            Milorad Mažić (Serbia).\nCoaches:            Argentina: Alejandro Sabella.\nIran: Carlos Queiroz (Portugal).\nCards:              Argentina: none.\nIran: 6 Javad Nekounam [Y 53'], 7 Masoud Shojaei [Y 72'].",
+        "lang": "en"
       }
     },
     {
@@ -1005,6 +1170,11 @@
       ],
       "extra": {
         "attendance": 40499
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "21/06/2014, Cuiabá, Arena Multiuso Governador José Fragelli 'Arena Pantanal', 40499\nWorld Cup\nNIGERIA             1 (8 Peter Odemwingie 29')\nBOSNIA/HERZEGOVINA  0\nNigeria:            1 Vincent Enyeama; 5 Efe Ambrose, 2 Joseph Yobo [c], 22 Kenneth Omeruo,\n(4-2-3-1)           13 Juwon Oshaniwa; 17 Ogenyi Onazi, 10 John Obi Mikel; 8 Peter Odemwingie,\n18 Michael Babatunde (3 Ejike Uzoenyi 75'), 7 Ahmed Musa (23 Shola Ameobi 65');\n9 Emmanuel Emenike.\nBosnia/Herzegovina: 1 Asmir Begović; 13 Mensur Mujdža, 15 Toni Šunjić, 4 Emir Spahić [c], 16 Senad Lulić\n(4-2-3-1)           (23 Sejad Salihović 58'); 18 Haris Medunjanin (14 Tino-Sven Sušić 64'),\n7 Muhamed Bešić; 20 Izet Hajrović (9 Vedad Ibišević 57'), 8 Miralem Pjanić,\n10 Zvjezdan Misimović; 11 Edin Džeko.\nReferee:            Peter O'Leary (New Zealand).\nCoaches:            Nigeria: Stephen Keshi.\nBosnia/Herzegovina: Safet Sušić.\nCards:              Nigeria: 10 John Obi Mikel [Y 81'].\nBosnia/Herzegovina: 18 Haris Medunjanin [Y 6'].",
+        "lang": "en"
       }
     },
     {
@@ -1021,6 +1191,11 @@
       ],
       "extra": {
         "attendance": 48011
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "25/06/2014, Salvador, Itaipava Arena Fonte Nova, 48011\nWorld Cup\nBOSNIA/HERZEGOVINA  3 (11 Edin Džeko 23', 8 Miralem Pjanić 59', 2 Avdija Vršajević 83')\nIRAN                1 (16 Reza Ghouchannejad 82')\nBosnia/Herzegovina: 1 Asmir Begović; 2 Avdija Vršajević, 15 Toni Šunjić, 4 Emir Spahić [c],\n(4-1-3-2)           5 Sead Kolašinac; 7 Muhamed Bešić; 21 Anel Hadžić (6 Ognjen Vranješ 61'),\n8 Miralem Pjanić, 14 Tino-Sven Sušić (23 Sejad Salihović 79'); 11 Edin Džeko\n(19 Edin Višća 84'), 9 Vedad Ibišević.\nIran:               12 Alireza Haghighi; 15 Pejman Montazeri, 4 Jalal Hosseini, 5 Amir Hossein Sadeghi,\n(4-5-1)             23 Mehrdad Pouladi; 7 Masoud Shojaei (2 Khosro Heydari 46'), 14 Andranik Teymourian,\n6 Javad Nekounam [c], 3 Ehsan Hajsafi (9 Alireza Jahanbakhsh 63'), 21 Ashkan Dejagah\n(10 Karim Ansarifard 68'); 16 Reza Ghouchannejad.\nReferee:            Carlos Velasco Carballo (Spain).\nCoaches:            Bosnia/Herzegovina: Safet Sušić.\nIran: Carlos Queiroz (Portugal).\nCards:              Bosnia/Herzegovina: 7 Muhamed Bešić [Y 77'].\nIran: 10 Karim Ansarifard [Y 88'].",
+        "lang": "en"
       }
     },
     {
@@ -1037,6 +1212,11 @@
       ],
       "extra": {
         "attendance": 43285
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "25/06/2014, Porto Alegre, Estádio José Pinheiro Borda 'Beira-Rio', 43285\nWorld Cup\nARGENTINA           3 (10 Lionel Messi 3' 45+1', 16 Marcos Rojo 50')\nNIGERIA             2 (7 Ahmed Musa 4' 47')\nArgentina:          1 Sergio Romero; 4 Pablo Zabaleta, 17 Federico Fernández, 2 Ezequiel Garay,\n(4-3-3)             16 Marcos Rojo; 5 Fernando Gago, 14 Javier Mascherano, 7 Ángel Di María;\n20 Sergio Agüero (22 Ezequiel Lavezzi 38'), 10 Lionel Messi [c]\n(19 Ricardo Álvarez 63'), 9 Gonzalo Higuaín (6 Lucas Biglia 90+1').\nNigeria:            1 Vincent Enyeama; 5 Efe Ambrose, 2 Joseph Yobo [c], 22 Kenneth Omeruo,\n(4-2-3-1)           13 Juwon Oshaniwa; 17 Ogenyi Onazi, 10 John Obi Mikel; 8 Peter Odemwingie\n(19 Uche Nwofor 80'), 18 Michael Babatunde (20 Michael Uchebo 65'), 7 Ahmed Musa;\n9 Emmanuel Emenike.\nReferee:            Nicola Rizzoli (Italy).\nCoaches:            Argentina: Alejandro Sabella.\nNigeria: Stephen Keshi.\nCards:              Argentina: none.\nNigeria: 22 Kenneth Omeruo [Y 48'], 13 Juwon Oshaniwa [Y 51'].",
+        "lang": "en"
       }
     },
     {
@@ -1053,6 +1233,11 @@
       ],
       "extra": {
         "attendance": 51081
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "16/06/2014, Salvador, Itaipava Arena Fonte Nova, 51081\nWorld Cup\nGERMANY             4 (13 Thomas Müller 12' pen 45+1' 78', 5 Mats Hummels 32')\nPORTUGAL            0\nGermany:            1 Manuel Neuer; 20 Jérôme Boateng, 17 Per Mertesacker, 5 Mats Hummels\n(4-1-4-1)           (21 Shkodran Mustafi 73'), 4 Benedikt Höwedes; 16 Philipp Lahm [c]; 8 Mesut Özil\n(9 André Schürrle 63'), 6 Sami Khedira, 18 Toni Kroos, 19 Mario Götze; 13 Thomas Müller\n(10 Lukas Podolski 82').\nPortugal:           12 Rui Patrício; 21 João Pereira, 3 Képler Ferreira 'Pepe', 2 Bruno Alves,\n(4-3-3)             5 Fábio Coentrão (19 André Almeida 65'); 8 João Moutinho, 4 Miguel Veloso\n(13 Ricardo Costa 46'), 16 Raul Meireles; 17 Luís da Cunha 'Nani', 9 Hugo Almeida\n(11 Éder Lopes 28'), 7 Cristiano Ronaldo Aveiro [c].\nReferee:            Milorad Mažić (Serbia).\nCoaches:            Germany: Joachim Löw.\nPortugal: Paulo Bento.\nCards:              Germany: none.\nPortugal: 21 João Pereira [Y 11'], 3 Képler Ferreira 'Pepe' [R 37'].",
+        "lang": "en"
       }
     },
     {
@@ -1069,6 +1254,11 @@
       ],
       "extra": {
         "attendance": 39760
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "16/06/2014, Natal, Arena das Dunas, 39760\nWorld Cup\nUSA                 2 (8 Clint Dempsey 1', 6 John Brooks 86')\nGHANA               1 (10 André Ayew 82')\nUSA:                1 Tim Howard; 23 Fabian Johnson, 20 Geoff Cameron, 5 Matt Besler (6 John Brooks 46'),\n(4-4-2)             7 DaMarcus Beasley; 11 Alejandro Bedoya (19 Graham Zusi 77'), 4 Michael Bradley,\n15 Kyle Beckerman, 13 Jermaine Jones; 17 Jozy Altidore (9 Aron Jóhannsson 23'),\n8 Clint Dempsey [c].\nGhana:              12 Adam Kwarasey; 4 Daniel Opare, 21 John Boye, 19 Jonathan Mensah, 20 Kwadwo Asamoah;\n(4-2-3-1)           17 Mohammed Rabiu (5 Michael Essien 71'), 11 Sulley Muntari; 7 Christian Atsu\n(14 Albert Adomah 78'), 13 Jordan Ayew (9 Kevin-Prince Boateng 59'), 10 André Ayew;\n3 Asamoah Gyan [c].\nReferee:            Jonas Eriksson (Sweden).\nCoaches:            USA: Jürgen Klinsmann (Germany).\nGhana: James Kwesi Appiah.\nCards:              USA: none.\nGhana: 17 Mohammed Rabiu [Y 30'], 11 Sulley Muntari [Y 90+2'].",
+        "lang": "en"
       }
     },
     {
@@ -1085,6 +1275,11 @@
       ],
       "extra": {
         "attendance": 59621
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "21/06/2014, Fortaleza, Estádio Plácido Aderaldo Castelo 'Castelão', 59621\nWorld Cup\nGERMANY             2 (19 Mario Götze 51', 11 Miroslav Klose 71')\nGHANA               2 (10 André Ayew 54', 3 Asamoah Gyan 63')\nGermany:            1 Manuel Neuer; 20 Jérôme Boateng (21 Shkodran Mustafi 46'), 17 Per Mertesacker,\n(4-1-4-1)           5 Mats Hummels, 4 Benedikt Höwedes; 16 Philipp Lahm [c]; 8 Mesut Özil, 6 Sami Khedira\n(7 Bastian Schweinsteiger 69'), 18 Toni Kroos, 19 Mario Götze (11 Miroslav Klose 69');\n13 Thomas Müller.\nGhana:              16 Fatawu Dauda; 23 Harrison Afful, 21 John Boye, 19 Jonathan Mensah, 20 Kwadwo Asamoah;\n(4-2-3-1)           17 Mohammed Rabiu (8 Emmanuel Agyemang-Badu 78'), 11 Sulley Muntari; 7 Christian Atsu\n(22 Mubarak Wakaso 72'), 9 Kevin-Prince Boateng (13 Jordan Ayew 52'), 10 André Ayew;\n3 Asamoah Gyan [c].\nReferee:            Sandro Ricci (Brazil).\nCoaches:            Germany: Joachim Löw.\nGhana: James Kwesi Appiah.\nCards:              Germany: none.\nGhana: Sulley Muntari [Y 90+3'].",
+        "lang": "en"
       }
     },
     {
@@ -1101,6 +1296,11 @@
       ],
       "extra": {
         "attendance": 40123
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "22/06/2014, Manaus, Arena da Amazônia, 40123\nWorld Cup\nPORTUGAL            2 (17 Luís da Cunha 'Nani' 5', 18 Silvestre Varela 90+5')\nUSA                 2 (13 Jermaine Jones 64', 8 Clint Dempsey 81')\nPortugal:           22 Alberto 'Beto' Pimparel; 21 João Pereira, 13 Ricardo Costa, 2 Bruno Alves,\n(4-3-3)             19 André Almeida (6 William Carvalho 46'); 8 João Moutinho, 4 Miguel Veloso,\n16 Raul Meireles (18 Silvestre Varela 69'); 17 Luís da Cunha 'Nani', 23 Hélder Postiga\n(11 Éder Lopes 16'), 7 Cristiano Ronaldo Aveiro [c].\nUSA:                1 Tim Howard; 23 Fabian Johnson, 20 Geoff Cameron, 5 Matt Besler, 7 DaMarcus Beasley;\n(4-1-4-1)           15 Kyle Beckerman; 19 Graham Zusi (3 Omar Gonzalez 90+1'), 13 Jermaine Jones,\n4 Michael Bradley, 11 Alejandro Bedoya (2 DeAndre Yedlin 72'); 8 Clint Dempsey [c]\n(18 Chris Wondolowski 87').\nReferee:            Néstor Pitana (Argentina).\nCoaches:            Portugal: Paulo Bento.\nUSA: Jürgen Klinsmann (Germany).\nCards:              Portugal: none.\nUSA: 13 Jermaine Jones [Y 75'].",
+        "lang": "en"
       }
     },
     {
@@ -1117,6 +1317,11 @@
       ],
       "extra": {
         "attendance": 67540
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "26/06/2014, Brasília, Estádio Nacional 'Mané Garrincha', 67540\nWorld Cup\nPORTUGAL            2 (21 John Boye 30' OG, 7 Cristiano Ronaldo Aveiro 80')\nGHANA               1 (3 Asamoah Gyan 57')\nPortugal:           22 Alberto 'Beto' Pimparel (1 Eduardo Carvalho 89'); 21 João Pereira\n(4-1-3-2)           (18 Silvestre Varela 61'), 3 Képler Ferreira 'Pepe', 2 Bruno Alves, 4 Miguel Veloso;\n6 William Carvalho; 17 Luís da Cunha 'Nani', 8 João Moutinho, 20 Rúben Amorim;\n11 Éder Lopes (10 Adelino Vieira de Freitas 'Vieirinha' 69'),\n7 Cristiano Ronaldo Aveiro [c].\nGhana:              16 Fatawu Dauda; 23 Harrison Afful, 21 John Boye, 19 Jonathan Mensah, 20 Kwadwo Asamoah;\n(4-4-2)             7 Christian Atsu, 8 Emmanuel Agyemang-Badu, 17 Mohammed Rabiu\n(6 Afriyie Acquah 76'), 10 André Ayew (22 Mubarak Wakaso 81'); 3 Asamoah Gyan [c],\n18 Majeed Waris (13 Jordan Ayew 71').\nReferee:            Nawaf Shukrallah (Bahrain).\nCoaches:            Portugal: Paulo Bento.\nGhana: James Kwesi Appiah.\nCards:              Portugal: 8 João Moutinho [Y 90+4'].\nGhana: 23 Harrison Afful [Y 39'], 18 Majeed Waris [Y 55'],\n13 Jordan Ayew [Y 78'].",
+        "lang": "en"
       }
     },
     {
@@ -1133,6 +1338,11 @@
       ],
       "extra": {
         "attendance": 41876
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "26/06/2014, São Lourenço da Mata, Itaipava Arena Pernambuco, 41876\nWorld Cup\nGERMANY             1 (13 Thomas Müller 55')\nUSA                 0\nGermany:            1 Manuel Neuer; 20 Jérôme Boateng, 17 Per Mertesacker, 5 Mats Hummels,\n(4-1-4-1)           4 Benedikt Höwedes; 16 Philipp Lahm [c]; 8 Mesut Özil (9 André Schürrle 89'),\n7 Bastian Schweinsteiger (19 Mario Götze 76'), 18 Toni Kroos, 10 Lukas Podolski\n(11 Miroslav Klose 46'); 13 Thomas Müller.\nUSA:                1 Tim Howard; 23 Fabian Johnson, 3 Omar Gonzalez, 5 Matt Besler, 7 DaMarcus Beasley;\n(4-1-4-1)           15 Kyle Beckerman; 19 Graham Zusi (2 DeAndre Yedlin 84'), 13 Jermaine Jones,\n4 Michael Bradley, 14 Brad Davis (11 Alejandro Bedoya 59'); 8 Clint Dempsey [c].\nReferee:            Ravshan Ermatov (Uzbekistan).\nCoaches:            Germany: Joachim Löw.\nUSA: Jürgen Klinsmann (Germany).\nCards:              Germany: 4 Benedikt Höwedes [Y 11'].\nUSA: 3 Omar Gonzalez [Y 37'], 15 Kyle Beckerman [Y 62'].",
+        "lang": "en"
       }
     },
     {
@@ -1149,6 +1359,11 @@
       ],
       "extra": {
         "attendance": 56800
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "17/06/2014, Belo Horizonte, Estádio Governador Magalhães Pinto 'Mineirão', 56800\nWorld Cup\nBELGIUM             2 (8 Marouane Fellaini 70', 14 Dries Mertens 80')\nALGERIA             1 (10 Sofiane Feghouli 25' pen)\nBelgium:            1 Thibaut Courtois; 2 Toby Alderweireld, 15 Daniel Van Buyten,\n(4-1-4-1)           4 Vincent Kompany [c], 5 Jan Vertonghen; 6 Axel Witsel; 7 Kevin De Bruyne,\n22 Nacer Chadli (14 Dries Mertens 46'), 19 Moussa Dembélé (8 Marouane Fellaini 65'),\n10 Eden Hazard; 9 Romelu Lukaku (17 Divock Origi 58').\nAlgeria:            23 Raïs M'Bolhi; 22 Mehdi Mostefa, 2 Madjid Bougherra [c], 5 Rafik Halliche,\n(4-2-3-1)           3 Faouzi Ghoulam; 12 Carl Medjani (9 Nabil Ghilas 84'), 14 Nabil Bentaleb;\n10 Sofiane Feghouli, 19 Saphir Taïder, 21 Riyad Mahrez (8 Medhi Lacen 71');\n15 El-Arbi Hillel Soudani (13 Islam Slimani 66').\nReferee:            Marco Antonio Rodríguez (Mexico).\nCoaches:            Belgium: Marc Wilmots.\nAlgeria: Vahid Halilhodžić (Bosnia and Herzegovina).\nCards:              Belgium: 5 Jan Vertonghen [Y 24'].\nAlgeria: 14 Nabil Bentaleb [Y 34'].",
+        "lang": "en"
       }
     },
     {
@@ -1165,6 +1380,11 @@
       ],
       "extra": {
         "attendance": 37603
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "17/06/2014, Cuiabá, Arena Multiuso Governador José Fragelli 'Arena Pantanal', 37603\nWorld Cup\nRUSSIA              1 (11 Aleksandr Kerzhakov 74')\nSOUTH KOREA         1 (11 Lee Keun-Ho 68')\nRussia:             1 Igor Akinfeyev; 22 Andrey Yeshchenko, 14 Vasiliy Berezutskiy [c],\n(4-1-4-1)           4 Sergey Ignashevich, 23 Dmitriy Kombarov; 8 Denis Glushakov (7 Igor Denisov 72');\n19 Aleksandr Samedov, 17 Oleg Shatov (10 Alan Dzagoyev 59'), 20 Viktor Fayzulin,\n18 Yuriy Zhirkov (11 Aleksandr Kerzhakov 71'); 9 Aleksandr Kokorin.\nSouth Korea:        1 Jung Sung-Ryong; 12 Lee Yong, 20 Hong Jeong-Ho (6 Hwang Seok-Ho 72'),\n(4-2-3-1)           5 Kim Young-Kwon, 3 Yun Suk-Young; 14 Han Kook-Young, 16 Ki Sung-Yong;\n17 Lee Chung-Yong, 13 Koo Ja-Cheol [c], 9 Son Heung-Min (7 Kim Bo-Kyung 84');\n10 Park Chu-Young (11 Lee Keun-Ho 56').\nReferee:            Néstor Pitana (Argentina).\nCoaches:            Russia: Fabio Capello (Italy).\nSouth Korea: Hong Myung-Bo.\nCards:              Russia: 17 Oleg Shatov [Y 49'].\nSouth Korea: 9 Son Heung-Min [Y 13'], 16 Ki Sung-Yong [Y 30'],\n13 Koo Ja-Cheol [Y 90'].",
+        "lang": "en"
       }
     },
     {
@@ -1181,6 +1401,11 @@
       ],
       "extra": {
         "attendance": 73819
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "22/06/2014, Rio de Janeiro, Estádio Jornalista Mário Filho 'Maracanã', 73819\nWorld Cup\nBELGIUM             1 (17 Divock Origi 88')\nRUSSIA              0\nBelgium:            1 Thibaut Courtois; 2 Toby Alderweireld, 15 Daniel Van Buyten,\n(4-1-4-1)           4 Vincent Kompany [c], 3 Thomas Vermaelen (5 Jan Vertonghen 31'); 6 Axel Witsel;\n14 Dries Mertens (11 Kevin Mirallas 75'), 8 Marouane Fellaini, 7 Kevin De Bruyne,\n10 Eden Hazard; 9 Romelu Lukaku (17 Divock Origi 57').\nRussia:             1 Igor Akinfeyev; 2 Aleksey Kozlov (22 Andrey Yeshchenko 62'),\n(4-1-4-1)           14 Vasiliy Berezutskiy [c], 4 Sergey Ignashevich, 23 Dmitriy Kombarov;\n8 Denis Glushakov; 19 Aleksandr Samedov (11 Aleksandr Kerzhakov 90'), 17 Oleg Shatov\n(10 Alan Dzagoyev 83'), 20 Viktor Fayzulin, 6 Maksim Kanunnikov; 9 Aleksandr Kokorin.\nReferee:            Dr Felix Brych (Germany).\nCoaches:            Belgium: Marc Wilmots.\nRussia: Fabio Capello (Italy).\nCards:              Belgium: 6 Axel Witsel [Y 54'], 2 Toby Alderweireld [Y 73'].\nRussia: 8 Denis Glushakov [Y 38'].",
+        "lang": "en"
       }
     },
     {
@@ -1197,6 +1422,11 @@
       ],
       "extra": {
         "attendance": 42732
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "22/06/2014, Porto Alegre, Estádio José Pinheiro Borda 'Beira-Rio', 42732\nWorld Cup\nALGERIA             4 (13 Islam Slimani 26', 5 Rafik Halliche 28', 18 Abdelmoumene Djabou 38',\n11 Yacine Brahimi 62')\nSOUTH KOREA         2 (9 Son Heung-Min 50', 13 Koo Ja-Cheol 72')\nAlgeria:            23 Raïs M'Bolhi; 20 Aïssa Mandi, 2 Madjid Bougherra [c] (4 Essaïd Belkalem 89'),\n(4-2-3-1)           5 Rafik Halliche, 6 Djamel Mesbah; 12 Carl Medjani, 14 Nabil Bentaleb;\n10 Sofiane Feghouli, 11 Yacine Brahimi (8 Medhi Lacen 77'), 18 Abdelmoumene Djabou\n(9 Nabil Ghilas 73'); 13 Islam Slimani.\nSouth Korea:        1 Jung Sung-Ryong; 12 Lee Yong, 20 Hong Jeong-Ho, 5 Kim Young-Kwon, 3 Yun Suk-Young;\n(4-2-3-1)           14 Han Kook-Young (19 Ji Dong-Won 78'), 16 Ki Sung-Yong; 17 Lee Chung-Yong\n(11 Lee Keun-Ho 64'), 13 Koo Ja-Cheol [c], 9 Son Heung-Min; 10 Park Chu-Young\n(18 Kim Shin-Wook 57').\nReferee:            Wilmar Roldán (Colombia).\nCoaches:            Algeria: Vahid Halilhodžić (Bosnia and Herzegovina).\nSouth Korea: Hong Myung-Bo.\nCards:              Algeria: 2 Madjid Bougherra [Y 67'].\nSouth Korea: 12 Lee Yong [Y 54'], 14 Han Kook-Young [Y 69'].",
+        "lang": "en"
       }
     },
     {
@@ -1213,6 +1443,11 @@
       ],
       "extra": {
         "attendance": 39311
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "26/06/2014, Curitiba, Estádio Joaquim Américo Guimarães 'Arena da Baixada', 39311\nWorld Cup\nALGERIA             1 (13 Islam Slimani 60')\nRUSSIA              1 (9 Aleksandr Kokorin 6')\nAlgeria:            23 Raïs M'Bolhi; 20 Aïssa Mandi, 4 Essaïd Belkalem, 5 Rafik Halliche [c],\n(4-2-3-1)           6 Djamel Mesbah; 12 Carl Medjani, 14 Nabil Bentaleb; 10 Sofiane Feghouli,\n11 Yacine Brahimi (7 Hassan Yebda 71'), 18 Abdelmoumene Djabou (9 Nabil Ghilas 77');\n13 Islam Slimani (15 El-Arbi Hillel Soudani 90+1').\nRussia:             1 Igor Akinfeyev; 2 Aleksey Kozlov, 14 Vasiliy Berezutskiy [c],\n(4-2-3-1)           4 Sergey Ignashevich, 23 Dmitriy Kombarov; 8 Denis Glushakov (7 Igor Denisov 46'),\n20 Viktor Fayzulin; 19 Aleksandr Samedov, 9 Aleksandr Kokorin, 17 Oleg Shatov\n(10 Alan Dzagoyev 67'); 11 Aleksandr Kerzhakov (6 Maksim Kanunnikov 81').\nReferee:            Cüneyt Çakır (Turkey).\nCoaches:            Algeria: Vahid Halilhodžić (Bosnia and Herzegovina).\nRussia: Fabio Capello (Italy).\nCards:              Algeria: 6 Djamel Mesbah [Y 39'], 9 Nabil Ghilas [Y 87'].\nRussia: 23 Dmitriy Kombarov [Y 57'], 2 Aleksey Kozlov [Y 59'].\nNote:               The non-playing Algerian substitute 17 Liassine Cadamuro-Bentaïba was shown\nthe yellow card at 90+2'.",
+        "lang": "en"
       }
     },
     {
@@ -1229,6 +1464,11 @@
       ],
       "extra": {
         "attendance": 61397
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "26/06/2014, São Paulo, Arena Corinthians, 61397\nWorld Cup\nBELGIUM             1 (5 Jan Vertonghen 77')\nSOUTH KOREA         0\nBelgium:            1 Thibaut Courtois; 21 Anthony Vanden Borre, 15 Daniel Van Buyten,\n(4-1-4-1)           18 Nicolas Lombaerts, 5 Jan Vertonghen [c]; 19 Moussa Dembélé; 20 Adnan Januzaj\n(22 Nacer Chadli 60'), 8 Marouane Fellaini, 16 Steven Defour, 14 Dries Mertens\n(17 Divock Origi 60'); 11 Kevin Mirallas (10 Eden Hazard 88').\nSouth Korea:        21 Kim Seung-Gyu; 12 Lee Yong, 20 Hong Jeong-Ho, 5 Kim Young-Kwon, 3 Yun Suk-Young;\n(4-2-3-1)           14 Han Kook-Young (11 Lee Keun-Ho 46'), 16 Ki Sung-Yong; 17 Lee Chung-Yong,\n13 Koo Ja-Cheol [c], 9 Son Heung-Min (19 Ji Dong-Won 73'); 18 Kim Shin-Wook\n(7 Kim Bo-Kyung 66').\nReferee:            Ben Williams (Australia).\nCoaches:            Belgium: Marc Wilmots.\nSouth Korea: Hong Myung-Bo.\nCards:              Belgium: 16 Steven Defour [R 45'], 19 Moussa Dembélé [Y 50'].\nSouth Korea: 20 Hong Jeong-Ho [Y 35'].",
+        "lang": "en"
       }
     },
     {
@@ -1253,6 +1493,11 @@
       ],
       "extra": {
         "attendance": 57714
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "28/06/2014, Belo Horizonte, Estádio Governador Magalhães Pinto 'Mineirão', 57714\nWorld Cup\nBRAZIL              1 (18 Gonzalo Jara 18' OG)\nCHILE               1 (7 Alexis Sánchez 32')\nBrazil won 3-2 on penalties, after extra time.\nBrazil:             12 Júlio César de Espíndola; 2 Daniel Alves da Silva, 3 Thiago da Silva [c],\n(4-4-2)             4 David Luiz Marinho, 6 Marcelo da Silva Júnior; 11 Oscar Emboaba Júnior\n(19 Willian da Silva 106'), 5 Fernando Roza 'Fernandinho'\n(16 Ramires do Nascimento 72'), 17 Luiz Gustavo Dias, 7 Givanildo de Souza 'Hulk';\n9 Frederico Guedes 'Fred' (21 João Silva 'Jô' 64'), 10 Neymar Santos Júnior.\nChile:              1 Claudio Bravo [c]; 5 Francisco Silva, 17 Gary Medel (13 José Rojas 108'),\n(3-4-1-2)           18 Gonzalo Jara; 4 Mauricio Isla, 21 Marcelo Díaz, 20 Charles Aránguiz, 2 Eugenio Mena;\n8 Arturo Vidal (9 Mauricio Pinilla 87'); 7 Alexis Sánchez, 11 Eduardo Vargas\n(16 Felipe Gutiérrez 57').\nReferee:            Howard Webb (England).\nCoaches:            Brazil: Luiz Felipe Scolari.\nChile: Jorge Sampaoli (Argentina).\nCards:              Brazil: 7 Givanildo de Souza 'Hulk' [Y 55'], 17 Luiz Gustavo Dias [Y 60'],\n21 João Silva 'Jô' [Y 93'], 2 Daniel Alves da Silva [Y 105+1'].\nChile: 2 Eugenio Mena [Y 17'], 5 Francisco Silva [Y 40'],\n9 Mauricio Pinilla [Y 102'].\nPenalties:          1-0 4 David Luiz Marinho, 1-0 9 Mauricio Pinilla (save),\n1-0 19 Willian da Silva (miss), 1-0 7 Alexis Sánchez (save),\n2-0 6 Marcelo da Silva Júnior, 2-1 20 Charles Aránguiz,\n2-1 7 Givanildo de Souza 'Hulk' (save), 2-2 21 Marcelo Díaz,\n3-2 10 Neymar Santos Júnior, 3-2 18 Gonzalo Jara (miss).\nNote:               Brazil's goal is also attributed to David Luiz Marinho.",
+        "lang": "en"
       }
     },
     {
@@ -1269,6 +1514,11 @@
       ],
       "extra": {
         "attendance": 73804
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "28/06/2014, Rio de Janeiro, Estádio Jornalista Mário Filho 'Maracanã', 73804\nWorld Cup\nCOLOMBIA            2 (10 James Rodríguez 28' 50')\nURUGUAY             0\nColombia:           1 David Ospina; 18 Juan Camilo Zúñiga, 2 Cristián Zapata, 3 Mario Alberto Yepes [c],\n(4-2-2-2)           7 Pablo Armero; 8 Abel Aguilar, 6 Carlos Sánchez; 11 Juan Guillermo Cuadrado\n(13 Fredy Guarín 81'), 10 James Rodríguez (19 Adrián Ramos 85'); 9 Teófilo Gutiérrez\n(15 Alexander Mejía 68'), 21 Jackson Martínez.\nUruguay:            1 Fernando Muslera; 16 Maximiliano Pereira, 13 José María Giménez, 3 Diego Godín [c],\n(5-3-2)             22 Martín Cáceres, 6 Alvaro Pereira (18 Gastón Ramírez 53'); 20 Alvaro González\n(8 Abel Hernández 67'), 17 Egidio Arévalo Ríos, 7 Cristian Rodríguez; 10 Diego Forlán\n(11 Cristhian Stuani 53'), 21 Edinson Cavani.\nReferee:            Björn Kuipers (Netherlands).\nCoaches:            Colombia: José Pekerman (Argentina).\nUruguay: Óscar Washington Tabárez.\nCards:              Colombia: 7 Pablo Armero [Y 77'].\nUruguay: 13 José María Giménez [Y 55'].\nNote:               The non-playing Uruguayan substitute 2 Diego Lugano was shown the yellow card\nat 77'.",
+        "lang": "en"
       }
     },
     {
@@ -1285,6 +1535,11 @@
       ],
       "extra": {
         "attendance": 58817
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "29/06/2014, Fortaleza, Estádio Plácido Aderaldo Castelo 'Castelão', 58817\nWorld Cup\nNETHERLANDS         2 (10 Wesley Sneĳder 88', 19 Klaas-Jan Huntelaar 90+4' pen)\nMEXICO              1 (10 Giovani dos Santos 48')\nNetherlands:        1 Jasper Cillessen; 3 Stefan de Vrĳ, 2 Ron Vlaar, 5 Daley Blind; 12 Paul Verhaegh\n(3-5-2)             (21 Memphis Depay 56'), 20 Georginio Wĳnaldum, 6 Nigel de Jong\n(4 Bruno Martins Indi 9'), 10 Wesley Sneĳder, 15 Dirk Kuĳt; 9 Robin van Persie [c]\n(19 Klaas-Jan Huntelaar 76'), 11 Arjen Robben.\nMexico:             13 Guillermo Ochoa; 2 Francisco Javier Rodríguez, 4 Rafael Márquez [c],\n(3-5-2)             15 Héctor Moreno (5 Diego Reyes 46'); 22 Paul Aguilar, 6 Héctor Herrera,\n3 Carlos Salcido, 18 Andrés Guardado, 7 Miguel Layún; 10 Giovani dos Santos\n(20 Javier Aquino 61'), 19 Oribe Peralta (14 Javier Hernández 75').\nReferee:            Pedro Proença Garcia (Portugal).\nCoaches:            Netherlands: Louis van Gaal.\nMexico: Miguel Herrera.\nCards:              Netherlands: none.\nMexico: 22 Paul Aguilar [Y 69'], 4 Rafael Márquez [Y 90+2'],\n18 Andrés Guardado [Y 90+3'].",
+        "lang": "en"
       }
     },
     {
@@ -1309,6 +1564,11 @@
       ],
       "extra": {
         "attendance": 41242
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "29/06/2014, São Lourenço da Mata, Itaipava Arena Pernambuco, 41242\nWorld Cup\nCOSTA RICA          1 (10 Bryan Ruiz 52')\nGREECE              1 (19 Sokrátis Papastathópoulos 90+1')\nCosta Rica won 5-3 on penalties, after extra time.\nCosta Rica:         1 Keylor Navas; 16 Cristian Gamboa (2 Johnny Acosta 77'), 6 Óscar Duarte,\n(5-2-3)             3 Giancarlo González, 4 Michael Umaña, 15 Júnior Díaz; 17 Yeltsin Tejeda\n(22 José Miguel Cubero 66'), 5 Celso Borges; 10 Bryan Ruiz [c], 9 Joel Campbell,\n7 Christian Bolaños (14 Randall Brenes 83').\nGreece:             1 Oréstis Karnézis; 15 Vasílis Torosídhis, 4 Kóstas Manolás,\n(4-2-3-1)           19 Sokrátis Papastathópoulos, 20 José Holebas; 2 Yiánnis Maniátis\n(21 Kóstas Katsouránis 78'), 22 Andhréas Sámaris (9 Kóstas Mítroghlou 58');\n14 Dhimítris Salpingídhis (17 Theofánis Gékas 69'), 10 Yórghos Karangoúnis [c],\n16 Lázaros Khristodhoulópoulos; 7 Yórghos Samarás.\nReferee:            Ben Williams (Australia).\nCoaches:            Costa Rica: Jorge Luis Pinto (Colombia).\nGreece: Fernando Santos (Portugal).\nCards:              Costa Rica: 6 Óscar Duarte [Y 42' YR 66'], 17 Yeltsin Tejeda [Y 48'],\n10 Bryan Ruiz [Y 70'], 1 Keylor Navas [Y 90'].\nGreece: 22 Andhréas Sámaris [Y 36'], 4 Kóstas Manolás [Y 72'].\nPenalties:          1-0 5 Celso Borges, 1-1 9 Kóstas Mítroghlou, 2-1 10 Bryan Ruiz,\n2-2 16 Lázaros Khristodhoulópoulos, 3-2 3 Giancarlo González, 3-3 20 José Holebas,\n4-3 9 Joel Campbell, 4-3 17 Theofánis Gékas (save), 5-3 4 Michael Umaña.\nNotes:              The non-playing Costa Rican substitute 13 Esteban Granados was shown the\nyellow card at 56'.  The Greece coach Fernando Santos was \"sent off\" by the\nreferee just before the penalty shootout (120+').",
+        "lang": "en"
       }
     },
     {
@@ -1325,6 +1585,11 @@
       ],
       "extra": {
         "attendance": 67882
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "30/06/2014, Brasília, Estádio Nacional 'Mané Garrincha', 67882\nWorld Cup\nFRANCE              2 (19 Paul Pogba 79', 2 Joseph Yobo 90+1' OG)\nNIGERIA             0\nFrance:             1 Hugo Lloris [c]; 2 Mathieu Debuchy, 4 Raphaël Varane, 21 Laurent Koscielny,\n(4-3-3)             3 Patrice Evra; 19 Paul Pogba, 6 Yohan Cabaye, 14 Blaise Matuidi; 8 Mathieu Valbuena\n(18 Moussa Sissoko 90+4'), 9 Olivier Giroud (11 Antoine Griezmann 62'),\n10 Karim Benzema.\nNigeria:            1 Vincent Enyeama; 5 Efe Ambrose, 2 Joseph Yobo [c], 22 Kenneth Omeruo,\n(4-2-3-1)           13 Juwon Oshaniwa; 17 Ogenyi Onazi (4 Reuben Gabriel 59'), 10 John Obi Mikel;\n8 Peter Odemwingie, 11 Victor Moses (19 Uche Nwofor 89'), 7 Ahmed Musa;\n9 Emmanuel Emenike.\nReferee:            Mark Geiger (USA).\nCoaches:            France: Didier Deschamps.\nNigeria: Stephen Keshi.\nCards:              France: 14 Blaise Matuidi [Y 54'].\nNigeria: none.",
+        "lang": "en"
       }
     },
     {
@@ -1344,6 +1609,11 @@
       ],
       "extra": {
         "attendance": 43063
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "30/06/2014, Porto Alegre, Estádio José Pinheiro Borda 'Beira-Rio', 43063\nWorld Cup\nGERMANY             2 (9 André Schürrle 92', 8 Mesut Özil 119')\nALGERIA             1 (18 Abdelmoumene Djabou 120+1')\nAfter extra time.\nGermany:            1 Manuel Neuer; 21 Shkodran Mustafi (6 Sami Khedira 70'), 17 Per Mertesacker,\n(4-1-4-1)           20 Jérôme Boateng, 4 Benedikt Höwedes; 16 Philipp Lahm [c]; 8 Mesut Özil,\n7 Bastian Schweinsteiger (23 Christoph Kramer 109'), 18 Toni Kroos, 19 Mario Götze\n(9 André Schürrle 46'); 13 Thomas Müller.\nAlgeria:            23 Raïs M'Bolhi; 20 Aïssa Mandi, 4 Essaïd Belkalem, 5 Rafik Halliche [c]\n(4-2-3-1)           (2 Madjid Bougherra 97'), 3 Faouzi Ghoulam; 22 Mehdi Mostefa, 8 Medhi Lacen;\n10 Sofiane Feghouli, 19 Saphir Taïder (11 Yacine Brahimi 78'),\n15 El-Arbi Hillel Soudani (18 Abdelmoumene Djabou 100'); 13 Islam Slimani.\nReferee:            Sandro Ricci (Brazil).\nCoaches:            Germany: Joachim Löw.\nAlgeria: Vahid Halilhodžić (Bosnia and Herzegovina).\nCards:              Germany: 16 Philipp Lahm [Y 107'].\nAlgeria: 5 Rafik Halliche [Y 42'].",
+        "lang": "en"
       }
     },
     {
@@ -1363,6 +1633,11 @@
       ],
       "extra": {
         "attendance": 63255
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "01/07/2014, São Paulo, Arena Corinthians, 63255\nWorld Cup\nARGENTINA           1 (7 Ángel Di María 118')\nSWITZERLAND         0\nAfter extra time.\nArgentina:          1 Sergio Romero; 4 Pablo Zabaleta, 17 Federico Fernández, 2 Ezequiel Garay,\n(4-2-3-1)           16 Marcos Rojo (23 José María Basanta 105+1'); 5 Fernando Gago (6 Lucas Biglia 106'),\n14 Javier Mascherano; 22 Ezequiel Lavezzi (18 Rodrigo Palacio 74'),\n10 Lionel Messi [c], 7 Ángel Di María; 9 Gonzalo Higuaín.\nSwitzerland:        1 Diego Benaglio; 2 Stephan Lichtsteiner, 22 Fabian Schär, 20 Johan Djourou,\n(4-4-1-1)           13 Ricardo Rodríguez; 10 Granit Xhaka (16 Gelson Fernandes 66'), 11 Valon Behrami,\n8 Gökhan Inler [c], 18 Admir Mehmedi (15 Blerim Džemaili 113'); 23 Xherdan Shaqiri;\n19 Josip Drmić (9 Haris Seferović 82').\nReferee:            Jonas Eriksson (Sweden).\nCoaches:            Argentina: Alejandro Sabella.\nSwitzerland: Ottmar Hitzfeld (Germany).\nCards:              Argentina: 16 Marcos Rojo [Y 90'], 7 Ángel Di María [Y 120'],\n2 Ezequiel Garay [Y 120+4'].\nSwitzerland: 10 Granit Xhaka [Y 36'], 16 Gelson Fernandes [Y 73'].",
+        "lang": "en"
       }
     },
     {
@@ -1382,6 +1657,11 @@
       ],
       "extra": {
         "attendance": 51227
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "01/07/2014, Salvador, Itaipava Arena Fonte Nova, 51227\nWorld Cup\nBELGIUM             2 (7 Kevin De Bruyne 93', 9 Romelu Lukaku 105')\nUSA                 1 (16 Julian Green 107')\nAfter extra time.\nBelgium:            1 Thibaut Courtois; 2 Toby Alderweireld, 15 Daniel Van Buyten,\n(4-1-4-1)           4 Vincent Kompany [c], 5 Jan Vertonghen; 6 Axel Witsel; 14 Dries Mertens\n(11 Kevin Mirallas 60'), 8 Marouane Fellaini, 7 Kevin De Bruyne, 10 Eden Hazard\n(22 Nacer Chadli 111'); 17 Divock Origi (9 Romelu Lukaku 91').\nUSA:                1 Tim Howard; 23 Fabian Johnson (2 DeAndre Yedlin 32'), 3 Omar Gonzalez,\n(4-2-3-1)           5 Matt Besler, 7 DaMarcus Beasley; 13 Jermaine Jones, 20 Geoff Cameron; 19 Graham Zusi\n(18 Chris Wondolowski 72'), 4 Michael Bradley, 11 Alejandro Bedoya\n(16 Julian Green 105+2'); 8 Clint Dempsey [c].\nReferee:            Djamel Haïmoudi (Algeria).\nCoaches:            Belgium: Marc Wilmots.\nUSA: Jürgen Klinsmann (Germany).\nCards:              Belgium: 4 Vincent Kompany [Y 42'].\nUSA: 20 Geoff Cameron [Y 18'].",
+        "lang": "en"
       }
     },
     {
@@ -1398,6 +1678,11 @@
       ],
       "extra": {
         "attendance": 74240
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "04/07/2014, Rio de Janeiro, Estádio Jornalista Mário Filho 'Maracanã', 74240\nWorld Cup\nGERMANY             1 (5 Mats Hummels 12')\nFRANCE              0\nGermany:            1 Manuel Neuer; 16 Philipp Lahm [c], 20 Jérôme Boateng, 5 Mats Hummels,\n(4-1-4-1)           4 Benedikt Höwedes; 7 Bastian Schweinsteiger; 13 Thomas Müller, 6 Sami Khedira,\n18 Toni Kroos (23 Christoph Kramer 90+2'), 8 Mesut Özil (19 Mario Götze 83');\n11 Miroslav Klose (9 André Schürrle 69').\nFrance:             1 Hugo Lloris [c]; 2 Mathieu Debuchy, 4 Raphaël Varane, 5 Mamadou Sakho\n(4-3-3)             (21 Laurent Koscielny 72'), 3 Patrice Evra; 19 Paul Pogba, 6 Yohan Cabaye\n(20 Loïc Rémy 73'), 14 Blaise Matuidi; 8 Mathieu Valbuena (9 Olivier Giroud 85'),\n10 Karim Benzema, 11 Antoine Griezmann.\nReferee:            Néstor Pitana (Argentina).\nCoaches:            Germany: Joachim Löw.\nFrance: Didier Deschamps.\nCards:              Germany: 6 Sami Khedira [Y 54'], 7 Bastian Schweinsteiger [Y 80'].\nFrance: none.",
+        "lang": "en"
       }
     },
     {
@@ -1414,6 +1699,11 @@
       ],
       "extra": {
         "attendance": 60342
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "04/07/2014, Fortaleza, Estádio Plácido Aderaldo Castelo 'Castelão', 60342\nWorld Cup\nBRAZIL              2 (3 Thiago da Silva 7', 4 David Luiz Marinho 68')\nCOLOMBIA            1 (10 James Rodríguez 80' pen)\nBrazil:             12 Júlio César de Espíndola; 23 Maicon Sisenando, 3 Thiago da Silva [c],\n(4-1-3-2)           4 David Luiz Marinho, 6 Marcelo da Silva Júnior; 5 Fernando Roza 'Fernandinho';\n11 Oscar Emboaba Júnior, 8 José Paulo Maciel Júnior 'Paulinho'\n(18 Hernanes Lima 86'), 7 Givanildo de Souza 'Hulk' (16 Ramires do Nascimento 83');\n9 Frederico Guedes 'Fred', 10 Neymar Santos Júnior (15 Henrique Buss 88').\nColombia:           1 David Ospina; 18 Juan Camilo Zúñiga, 2 Cristián Zapata, 3 Mario Alberto Yepes [c],\n(4-2-3-1)           7 Pablo Armero; 6 Carlos Sánchez, 13 Fredy Guarín; 11 Juan Guillermo Cuadrado\n(20 Juan Fernando Quintero 80'), 10 James Rodríguez, 14 Víctor Ibarbo\n(19 Adrián Ramos 46'); 9 Teófilo Gutiérrez (17 Carlos Bacca 70').\nReferee:            Carlos Velasco Carballo (Spain).\nCoaches:            Brazil: Luiz Felipe Scolari.\nColombia: José Pekerman (Argentina).\nCards:              Brazil: 3 Thiago da Silva [Y 64'], 12 Júlio César de Espíndola [Y 78'].\nColombia: 10 James Rodríguez [Y 67'], 3 Mario Alberto Yepes [Y 69'].",
+        "lang": "en"
       }
     },
     {
@@ -1430,6 +1720,11 @@
       ],
       "extra": {
         "attendance": 68551
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "05/07/2014, Brasília, Estádio Nacional 'Mané Garrincha', 68551\nWorld Cup\nARGENTINA           1 (9 Gonzalo Higuaín 8')\nBELGIUM             0\nArgentina:          1 Sergio Romero; 4 Pablo Zabaleta, 15 Martín Demichelis, 2 Ezequiel Garay,\n(4-4-2)             23 José María Basanta; 7 Ángel Di María (8 Enzo Pérez 33'), 6 Lucas Biglia,\n14 Javier Mascherano, 22 Ezequiel Lavezzi (18 Rodrigo Palacio 71');\n10 Lionel Messi [c], 9 Gonzalo Higuaín (5 Fernando Gago 81').\nBelgium:            1 Thibaut Courtois; 2 Toby Alderweireld, 15 Daniel Van Buyten,\n(4-1-4-1)           4 Vincent Kompany [c], 5 Jan Vertonghen; 6 Axel Witsel; 11 Kevin Mirallas\n(14 Dries Mertens 60'), 8 Marouane Fellaini, 7 Kevin De Bruyne, 10 Eden Hazard\n(22 Nacer Chadli 75'); 17 Divock Origi (9 Romelu Lukaku 59').\nReferee:            Nicola Rizzoli (Italy).\nCoaches:            Argentina: Alejandro Sabella.\nBelgium: Marc Wilmots.\nCards:              Argentina: 6 Lucas Biglia [Y 75'].\nBelgium: 10 Eden Hazard [Y 53'], 2 Toby Alderweireld [Y 68'].",
+        "lang": "en"
       }
     },
     {
@@ -1454,6 +1749,11 @@
       ],
       "extra": {
         "attendance": 51179
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "05/07/2014, Salvador, Itaipava Arena Fonte Nova, 51179\nWorld Cup\nNETHERLANDS         0\nCOSTA RICA          0\nNetherlands won 4-3 on penalties, after extra time.\nNetherlands:        1 Jasper Cillessen (23 Tim Krul 120+1'); 3 Stefan de Vrĳ, 2 Ron Vlaar,\n(3-4-3)             4 Bruno Martins Indi (19 Klaas-Jan Huntelaar 106'); 15 Dirk Kuĳt,\n20 Georginio Wĳnaldum, 10 Wesley Sneĳder, 5 Daley Blind; 11 Arjen Robben,\n9 Robin van Persie [c], 21 Memphis Depay (17 Jeremain Lens 76').\nCosta Rica:         1 Keylor Navas; 16 Cristian Gamboa (8 Dave Myrie 79'), 2 Johnny Acosta,\n(5-2-3)             3 Giancarlo González, 4 Michael Umaña, 15 Júnior Díaz; 17 Yeltsin Tejeda\n(22 José Miguel Cubero 97'), 5 Celso Borges; 9 Joel Campbell (21 Marcos Ureña 66'),\n10 Bryan Ruiz [c], 7 Christian Bolaños.\nReferee:            Ravshan Ermatov (Uzbekistan).\nCoaches:            Netherlands: Louis van Gaal.\nCosta Rica: Jorge Luis Pinto (Colombia).\nCards:              Netherlands: 4 Bruno Martins Indi [Y 64'], 19 Klaas-Jan Huntelaar [Y 111'].\nCosta Rica: 15 Júnior Díaz [Y 37'], 4 Michael Umaña [Y 52'],\n3 Giancarlo González [Y 81'], 2 Johnny Acosta [Y 107'].\nPenalties:          0-1 5 Celso Borges, 1-1 9 Robin van Persie, 1-1 10 Bryan Ruiz (save),\n2-1 11 Arjen Robben, 2-2 3 Giancarlo González, 3-2 10 Wesley Sneĳder,\n3-3 7 Christian Bolaños, 4-3 15 Dirk Kuĳt, 4-3 4 Michael Umaña (save).",
+        "lang": "en"
       }
     },
     {
@@ -1470,6 +1770,11 @@
       ],
       "extra": {
         "attendance": 58141
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "08/07/2014, Belo Horizonte, Estádio Governador Magalhães Pinto 'Mineirão', 58141\nWorld Cup\nBRAZIL              1 (11 Oscar Emboaba Júnior 90')\nGERMANY             7 (13 Thomas Müller 11', 11 Miroslav Klose 23', 18 Toni Kroos 24' 26',\n6 Sami Khedira 29', 9 André Schürrle 69' 79')\nBrazil:             12 Júlio César de Espíndola; 23 Maicon Sisenando, 4 David Luiz Marinho [c],\n(4-2-3-1)           13 Dante Santos, 6 Marcelo da Silva Júnior; 5 Fernando Roza 'Fernandinho'\n(8 José Paulo Maciel Júnior 'Paulinho' 46'), 17 Luiz Gustavo Dias;\n20 Bernard Duarte, 11 Oscar Emboaba Júnior, 7 Givanildo de Souza 'Hulk'\n(16 Ramires do Nascimento 46'); 9 Frederico Guedes 'Fred' (19 Willian da Silva 69').\nGermany:            1 Manuel Neuer; 16 Philipp Lahm [c], 20 Jérôme Boateng, 5 Mats Hummels\n(4-1-4-1)           (17 Per Mertesacker 46'), 4 Benedikt Höwedes; 7 Bastian Schweinsteiger;\n13 Thomas Müller, 6 Sami Khedira (14 Julian Draxler 76'), 18 Toni Kroos, 8 Mesut Özil;\n11 Miroslav Klose (9 André Schürrle 58').\nReferee:            Marco Antonio Rodríguez (Mexico).\nCoaches:            Brazil: Luiz Felipe Scolari.\nGermany: Joachim Löw.\nCards:              Brazil: 13 Dante Santos [Y 68'].\nGermany: none.",
+        "lang": "en"
       }
     },
     {
@@ -1494,6 +1799,11 @@
       ],
       "extra": {
         "attendance": 63267
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "09/07/2014, São Paulo, Arena Corinthians, 63267\nWorld Cup\nARGENTINA           0\nNETHERLANDS         0\nArgentina won 4-2 on penalties, after extra time.\nArgentina:          1 Sergio Romero; 4 Pablo Zabaleta, 15 Martín Demichelis, 2 Ezequiel Garay,\n(4-4-2)             16 Marcos Rojo; 8 Enzo Pérez (18 Rodrigo Palacio 81'), 6 Lucas Biglia,\n14 Javier Mascherano, 22 Ezequiel Lavezzi (11 Maxi Rodríguez 101');\n10 Lionel Messi [c], 9 Gonzalo Higuaín (20 Sergio Agüero 82').\nNetherlands:        1 Jasper Cillessen; 3 Stefan de Vrĳ, 2 Ron Vlaar, 4 Bruno Martins Indi\n(3-5-2)             (7 Daryl Janmaat 46'); 15 Dirk Kuĳt, 20 Georginio Wĳnaldum, 6 Nigel de Jong\n(16 Jordy Clasie 62'), 10 Wesley Sneĳder, 5 Daley Blind; 11 Arjen Robben,\n9 Robin van Persie [c] (19 Klaas-Jan Huntelaar 96').\nReferee:            Cüneyt Çakır (Turkey).\nCoaches:            Argentina: Alejandro Sabella.\nNetherlands: Louis van Gaal.\nCards:              Argentina: 15 Martín Demichelis [Y 49'].\nNetherlands: 4 Bruno Martins Indi [Y 45'], 19 Klaas-Jan Huntelaar [Y 105'].\nPenalties:          0-0 2 Ron Vlaar (save), 1-0 10 Lionel Messi, 1-1 11 Arjen Robben,\n2-1 2 Ezequiel Garay, 2-1 10 Wesley Sneĳder (save), 3-1 20 Sergio Agüero,\n3-2 15 Dirk Kuĳt, 4-2 11 Maxi Rodríguez.",
+        "lang": "en"
       }
     },
     {
@@ -1510,6 +1820,11 @@
       ],
       "extra": {
         "attendance": 68034
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "12/07/2014, Brasília, Estádio Nacional 'Mané Garrincha', 68034\nWorld Cup\nBRAZIL              0\nNETHERLANDS         3 (9 Robin van Persie 3' pen, 5 Daley Blind 16', 20 Georginio Wĳnaldum 90+1')\nBrazil:             12 Júlio César de Espíndola; 23 Maicon Sisenando, 3 Thiago da Silva [c],\n(4-1-4-1)           4 David Luiz Marinho, 14 Maxwell Andrade; 17 Luiz Gustavo Dias\n(5 Fernando Roza 'Fernandinho' 46'); 16 Ramires do Nascimento\n(7 Givanildo de Souza 'Hulk' 73'), 8 José Paulo Maciel Júnior 'Paulinho'\n(18 Hernanes Lima 57'), 19 Willian da Silva, 11 Oscar Emboaba Júnior;\n21 João Silva 'Jô'.\nNetherlands:        1 Jasper Cillessen (22 Michel Vorm 90+3'); 3 Stefan de Vrĳ, 2 Ron Vlaar,\n(3-5-2)             4 Bruno Martins Indi; 15 Dirk Kuĳt, 20 Georginio Wĳnaldum, 16 Jordy Clasie\n(13 Joël Veltman 90'), 8 Jonathan de Guzmán, 5 Daley Blind (7 Daryl Janmaat 70');\n11 Arjen Robben, 9 Robin van Persie [c].\nReferee:            Djamel Haïmoudi (Algeria).\nCoaches:            Brazil: Luiz Felipe Scolari.\nNetherlands: Louis van Gaal.\nCards:              Brazil: 3 Thiago da Silva [Y 2'], 5 Fernando Roza 'Fernandinho' [Y 54'],\n11 Oscar Emboaba Júnior [Y 68'].\nNetherlands: 11 Arjen Robben [Y 9'], 8 Jonathan de Guzmán [Y 36'].",
+        "lang": "en"
       }
     },
     {
@@ -1529,6 +1844,11 @@
       ],
       "extra": {
         "attendance": 74738
+      },
+      "sheet": {
+        "source": "rsssf:2014full",
+        "text": "13/07/2014, Rio de Janeiro, Estádio Jornalista Mário Filho 'Maracanã', 74738\nWorld Cup\nGERMANY             1 (19 Mario Götze 113')\nARGENTINA           0\nAfter extra time.\nGermany:            1 Manuel Neuer; 16 Philipp Lahm [c], 20 Jérôme Boateng, 5 Mats Hummels,\n(4-1-4-1)           4 Benedikt Höwedes; 7 Bastian Schweinsteiger; 13 Thomas Müller, 23 Christoph Kramer\n(9 André Schürrle 32'), 18 Toni Kroos, 8 Mesut Özil (17 Per Mertesacker 120');\n11 Miroslav Klose (19 Mario Götze 88').\nArgentina:          1 Sergio Romero; 4 Pablo Zabaleta, 15 Martín Demichelis, 2 Ezequiel Garay,\n(4-4-2)             16 Marcos Rojo; 22 Ezequiel Lavezzi (20 Sergio Agüero 46'), 6 Lucas Biglia,\n14 Javier Mascherano, 8 Enzo Pérez (5 Fernando Gago 86');\n10 Lionel Messi [c], 9 Gonzalo Higuaín (18 Rodrigo Palacio 78').\nReferee:            Nicola Rizzoli (Italy).\nCoaches:            Germany: Joachim Löw.\nArgentina: Alejandro Sabella.\nCards:              Germany: 7 Bastian Schweinsteiger [Y 29'], 4 Benedikt Höwedes [Y 34'].\nArgentina: 14 Javier Mascherano [Y 64'], 20 Sergio Agüero [Y 65'].\nOfficial Awards\nFIFA Fair play Trophy: Colombia\n[Best player]\nHyundai young player award: Paul Pogba (France)\nadidas Bronze Ball: Arjen Robben (Netherlands)\nadidas Silver Ball: Thomas Müller (Germany)\nadidas Golden Ball: Lionel Messi (Argentina)\n[Best goalkeeper]\nadidas Golden Glove: Manuel Neuer (Germany)\n[Top scorer]\nadidas Bronze Boot: Neymar Santos Júnior (Brazil), 4 goals\nadidas Silver Boot: Thomas Müller (Germany), 5 goals\nadidas Golden Boot: James Rodríguez (Colombia), 6 goals\nNote: Neymar was awarded the Bronze Boot ahead of Lionel Messi (Argentina) and Robin van Persie (Netherlands),\nwho had also scored 4 goals each, based on 'assists' and minutes played.",
+        "lang": "en"
       }
     }
   ],

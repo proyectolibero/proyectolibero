@@ -490,35 +490,35 @@
     },
     {
       "path": "data/football/worldcup/2002.json",
-      "sha256": "536e943ef2b3f10843acda7a49b941a3779732fe77189f4ac75aba88d95d41f0",
+      "sha256": "5039265f6f999379f17b7576a217e6fa7d5c006e9851286d1565f4cb811e6687",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2002
     },
     {
       "path": "data/football/worldcup/2006.json",
-      "sha256": "e96a030a9814541ac5b59416db31969f29de97bc2bb986db700ed8b39abacc1f",
+      "sha256": "89fc1b08f51f0b9a860760aeec56cb1fae72063d755f98b1ecab873ce1b8a6a4",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2006
     },
     {
       "path": "data/football/worldcup/2010.json",
-      "sha256": "0534b8244bbc5dac259e95ec1b37b6a41389d7ffbd6d427b1b93ae45d9e8bd41",
+      "sha256": "10a000b2648937b5341c66965be0a9c313e6e2eee2f4b7036557ae24f071e881",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2010
     },
     {
       "path": "data/football/worldcup/2014.json",
-      "sha256": "1985fcd45fe813b9f1c73b34012aabd335214fafb2ac704321666afd4ac88c61",
+      "sha256": "f6404d5020a644aa76021db64e8428a6bfa680fae4132545a44e85cdfb5732d9",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2014
     },
     {
       "path": "data/football/worldcup/2018.json",
-      "sha256": "9b1c0496dfb2c0d2cfcfc757d343ecf4628b88fde5700bd8fa663f87f52dfa4f",
+      "sha256": "1fd0d6a00cbc3ba58ea5349691483142bcf0e0dd8f2d6d5b2f5ce42dfb0b5289",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2018
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "d3fbb41b58fc6d6ba0670072a2064a1250b514f252c6e0aba9bf3fae6e5f2e76",
+  "checksum": "06331584d6077b8a1a0ba237ea1c219ead5bc78e12bce764892d93614a72e5a4",
   "dataset": {
     "sports": 4,
     "competitions": 5,

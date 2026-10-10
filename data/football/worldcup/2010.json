@@ -444,7 +444,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "11/06/2010, Johannesburg, FNB Stadium 'Soccer City', 84490\nWorld Cup\nSOUTH AFRICA        1 (8 Siphiwe Tshabalala 55')\nMEXICO              1 (4 Rafael Márquez 79')\nSouth Africa:       16 Itumeleng Khume; 2 Siboniso Gaxa, 4 Aaron Mokoena [c], 20 Bongani Khumalo,\n(4-2-3-1)           15 Lucas Thwala (3 Tsepo Masilela 46'); 13 Kagisho Dikgacoi,\n12 Reneilwe Letsholonyane; 11 Teko Modise, 10 Steven Pienaar\n(17 Bernard Parker 83'), 8 Siphiwe Tshabalala; 9 Katlego Mphela.\nMexico:             1 Óscar Pérez; 5 Ricardo Osorio, 4 Rafael Márquez, 2 Francisco Javier Rodríguez;\n(3-4-3)             12 Paul Aguilar (18 Andrés Guardado 56'), 16 Efraín Juárez, 6 Gerardo Torrado [c],\n3 Carlos Salcido; 9 Guillermo Franco (14 Javier Hernández 73'),\n17 Giovani dos Santos, 11 Carlos Vela (10 Cuauhtémoc Blanco 69').\nReferee:            Ravshan Ermatov (Uzbekistan).\nCoaches:            South Africa: Carlos Alberto Parreira (Brazil).\nMexico: Javier Aguirre.\nCards:              South Africa: 13 Kagisho Dikgacoi [Y 27'], 3 Tsepo Masilela [Y 70'].\nMexico: 16 Efraín Juárez [Y 18'], 6 Gerardo Torrado [Y 56'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -457,7 +462,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "11/06/2010, Cape Town, Cape Town Stadium (Green Point), 64100\nWorld Cup\nFRANCE              0\nURUGUAY             0\nFrance:             1 Hugo Lloris; 2 Bacary Sagna, 5 William Gallas, 3 Éric Abidal,\n(4-3-3)             13 Patrice Evra [c]; 8 Yoann Gourcuff (15 Florent Malouda 75'), 19 Abou Diaby,\n14 Jérémy Toulalan; 10 Sidney Govou (11 André-Pierre Gignac 85'),\n21 Nicolas Anelka (12 Thierry Henry 72'), 7 Franck Ribéry.\nUruguay:            1 Fernando Muslera; 6 Mauricio Victorino, 2 Diego Lugano [c], 3 Diego Godín;\n(3-4-1-2)           16 Maximiliano Pereira, 15 Diego Pérez (8 Sebastián Eguren 88'),\n17 Egidio Arévalo Ríos, 11 Álvaro Pereira; 18 Ignacio González\n(14 Nicolás Lodeiro 63'); 9 Luis Suárez (13 Sebastián Abreu 73'), 10 Diego Forlán.\nReferee:            Yuichi Nishimura (Japan).\nCoaches:            France: Raymond Domenech.\nUruguay: Óscar Washington Tabárez.\nCards:              France: 13 Patrice Evra [Y 12'], 7 Franck Ribéry [Y 19'], 14 Jérémy Toulalan [Y 68'].\nUruguay: 6 Mauricio Victorino [Y 59'], 14 Nicolás Lodeiro [Y 65' YR 81'],\n2 Diego Lugano [Y 90+'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -470,7 +480,12 @@
       "score": [
         0,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "16/06/2010, Pretoria, Loftus Versfeld Stadium, 42658\nWorld Cup\nSOUTH AFRICA        0\nURUGUAY             3 (10 Diego Forlán 24' 80' pen, 11 Álvaro Pereira 90+')\nSouth Africa:       16 Itumeleng Khune; 2 Siboniso Gaxa, 4 Aaron Mokoena [c], 20 Bongani Khumalo,\n(4-2-3-1)           3 Tsepo Masilela; 13 Kagisho Dikgacoi, 12 Reneilwe Letsholonyane (19 Surprise Moriri 57');\n11 Teko Modise, 10 Steven Pienaar (1 Moeneeb Josephs 79'), 8 Siphiwe Tshabalala;\n9 Katlego Mphela.\nUruguay:            1 Fernando Muslera; 16 Maxi Pereira, 2 Diego Lugano [c], 3 Diego Godín, 4 Jorge Fucile\n(4-3-3)             (20 Álvaro Fernández 71'); 15 Diego Pérez (5 Walter Gargano 90+'), 17 Egidio Arévalo Ríos,\n11 Álvaro Pereira; 7 Edinson Cavani (21 Sebastián Fernández 89'), 10 Diego Forlán,\n9 Luis Suárez.\nReferee:            Massimo Busacca (Switzerland).\nCoaches:            South Africa: Carlos Alberto Parreira (Brazil).\nUruguay: Óscar Washington Tabárez.\nCards:              South Africa: 10 Steven Pienaar [Y 6'], 13 Kagisho Dikgacoi [Y 43'],\n16 Itumeleng Khune [R 76'].\nUruguay: none.",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -483,7 +498,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "17/06/2010, Polokwane, Peter Mokaba Stadium, 35370\nWorld Cup\nMEXICO              2 (14 Javier Hernández 64', 10 Cuauhtémoc Blanco 79' pen)\nFRANCE              0\nMexico:             1 Óscar Pérez; 2 Francisco Javier Rodríguez, 4 Rafael Márquez [c], 15 Héctor Moreno;\n(3-4-3)             5 Ricardo Osorio, 16 Efraín Juárez (14 Javier Hernández 55'), 6 Gerardo Torrado,\n3 Carlos Salcido; 9 Guillermo Franco (10 Cuauhtémoc Blanco 62'), 17 Giovani dos Santos,\n11 Carlos Vela (7 Pablo Barrera 31').\nFrance:             1 Hugo Lloris; 2 Bacary Sagna, 5 William Gallas, 3 Éric Abidal, 13 Patrice Evra;\n(4-3-3)             19 Abou Diaby, 14 Jérémy Toulalan, 15 Florent Malouda; 10 Sidney Govou\n(20 Mathieu Valbuena 69'), 21 Nicolas Anelka (11 André-Pierre Gignac 46'),\n7 Franck Ribéry.\nReferee:            Khalil Al-Ghamdi (Saudi Arabia).\nCoaches:            Mexico: Javier Aguirre.\nFrance: Raymond Domenech.\nCards:              Mexico: 9 Guillermo Franco [Y 4'], 16 Efraín Juárez [Y 48'], 15 Héctor Moreno [Y 49'],\n2 Francisco Javier Rodríguez [Y 82'].\nFrance: 14 Jérémy Toulalan [Y 45+'], 3 Éric Abidal [Y 78'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -496,7 +516,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "22/06/2010, Bloemfontein, Vodacom Park (Free State Stadium), 39415\nWorld Cup\nSOUTH AFRICA        2 (20 Bongani Khumalo 20', 9 Katlego Mphela 37')\nFRANCE              1 (15 Florent Malouda 70')\nSouth Africa:       1 Moeneeb Josephs; 5 Anele Ngcongca (2 Siboniso Gaxa 55'), 4 Aaron Mokoena [c],\n(4-4-2)             20 Bongani Khumalo, 3 Tsepo Masilela; 10 Steven Pienaar, 6 MacBeth Sibaya,\n23 Thanduyise Khuboni (11 Teko Modise 78'), 8 Siphiwe Tshabalala; 9 Katlego Mphela,\n17 Bernard Parker (18 Siyabonga Nomvethe 68').\nFrance:             1 Hugo Lloris; 2 Bacary Sagna, 17 Sébastien Squillaci, 5 William Gallas, 22 Gaël Clichy;\n(4-3-3)             19 Abou Diaby, 8 Yoann Gourcuff, 18 Alou Diarra [c] (10 Sidney Govou 82');\n11 André-Pierre Gignac (15 Florent Malouda 46'), 9 Djibril Cissé (12 Thierry Henry 55'),\n7 Franck Ribéry.\nReferee:            Óscar Ruiz (Colombia).\nCoaches:            South Africa: Carlos Alberto Parreira (Brazil).\nFrance: Raymond Domenech.\nCards:              South Africa: none.\nFrance: 8 Yoann Gourcuff [R 25'], 19 Abou Diaby [Y 71'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -509,7 +534,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "22/06/2010, Phokeng, Royal Bafokeng Stadium, 33425\nWorld Cup\nURUGUAY             1 (9 Luis Suárez 43')\nMEXICO              0\nUruguay:            1 Fernando Muslera; 16 Maxi Pereira, 2 Diego Lugano [c], 6 Mauricio Victorino,\n(4-3-3)             4 Jorge Fucile; 15 Diego Pérez, 17 Egidio Arévalo Ríos, 11 Álvaro Pereira\n(19 Andrés Scotti 77'); 7 Edinson Cavani, 10 Diego Forlán, 9 Luis Suárez\n(20 Álvaro Fernández 85').\nMexico:             1 Óscar Pérez; 5 Ricardo Osorio, 2 Francisco Javier Rodríguez, 15 Héctor Moreno\n(4-1-2-3)           (8 Israel Castro 57'), 3 Carlos Salcido; 4 Rafael Márquez; 6 Gerardo Torrado,\n18 Andrés Guardado (7 Pablo Barrera 46'); 17 Giovani dos Santos, 9 Guillermo Franco,\n10 Cuauhtémoc Blanco [c] (14 Javier Hernández 63').\nReferee:            Viktor Kassai (Hungary).\nCoaches:            Uruguay: Óscar Washington Tabárez.\nMexico: Javier Aguirre.\nCards:              Uruguay: 4 Jorge Fucile [Y 68'].\nMexico: 14 Javier Hernández [Y 77'], 8 Israel Castro [Y 86'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -522,7 +552,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "12/06/2010, Port Elizabeth, Nelson Mandela Bay Stadium, 31513\nWorld Cup\nSOUTH KOREA         2 (14 Lee Jung-Soo 7', 7 Park Ji-Sung 52')\nGREECE              0\nSouth Korea:        18 Jung Sung-Ryong; 22 Cha Du-Ri, 4 Cho Yong-Hyung, 14 Lee Jung-Soo,\n(4-2-3-1)           12 Lee Young-Pyo; 8 Kim Jung-Woo, 16 Ki Sung-Yong (5 Kim Nam-Il 75');\n17 Lee Chung-Yong (13 Kim Jae-Sung 90+'), 7 Park Ji-Sung [c], 19 Yeom Ki-Hun;\n10 Park Chu-Young (11 Lee Seung-Ryul 87').\nGreece:             12 Aléxandhros Dzórvas; 2 Yoúrkas Seitarídhis, 11 Loukás Víndra,\n(4-3-3)             8 Avraám Papadhópoulos, 15 Vasílyis Torosídhis; 10 Yórghos Karangoúnyis [c]\n(3 Khrístos Patsadzóghlou 46'), 6 Aléxandhros Dzyólyis,\n21 Konstandínos Katsourányis; 9 Ángyelos Kharistéas (20 Pandelyís Kapetános 61'),\n17 Theofányis Gyékas, 7 Yórghos Samarás (14 Dhimítris Salpingyídhis 59').\nReferee:            Michael Hester (New Zealand).\nCoaches:            South Korea: Huh Jung-Moo.\nGreece: Otto Rehhagel (Germany).\nCards:              South Korea: none.\nGreece: 15 Vasílyis Torosídhis [Y 56'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -535,7 +570,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "12/06/2010, Johannesburg, Coca-Cola Park (Ellis Park), 55686\nWorld Cup\nARGENTINA           1 (6 Gabriel Heinze 6')\nNIGERIA             0\nArgentina:          22 Sergio Romero; 17 Jonás Gutiérrez, 2 Martín Demichelis, 13 Walter Samuel,\n(4-2-3-1)           6 Gabriel Heinze; 14 Javier Mascherano [c], 8 Juan Sebastián Verón\n(20 Maxi Rodríguez 74'); 11 Carlos Tévez, 10 Lionel Messi, 7 Ángel Di María\n(4 Nicolás Burdisso 85'); 9 Gonzalo Higuaín (19 Diego Milito 79').\nNigeria:            1 Vincent Enyeama; 17 Chidi Odiah, 2 Joseph Yobo [c], 6 Danny Shittu,\n(4-1-3-2)           3 Taye Taiwo (12 Kalu Uche 74'); 20 Dickson Etuhu; 14 Sani Kaita,\n15 Lukman Haruna, 19 Chinedu Obasi (11 Peter Odemwingie 60'); 18 Victor Obinna\n(9 Obafemi Martins 52'), 8 Yakubu Aiyegbeni.\nReferee:            Wolfgang Stark (Germany).\nCoaches:            Argentina: Diego Maradona.\nNigeria: Lars Lagerbäck (Sweden).\nCards:              Argentina: 17 Jonás Gutiérrez [Y 41'].\nNigeria: 15 Lukman Haruna [Y 77'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -548,7 +588,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "17/06/2010, Johannesburg, FNB Stadium 'Soccer City', 82174\nWorld Cup\nARGENTINA           4 (10 Park Chu-Young 16' OG, 9 Gonzalo Higuaín 33' 76' 80')\nSOUTH KOREA         1 (17 Lee Chung-Yong 45+')\nArgentina:          22 Sergio Romero; 17 Jonás Gutiérrez, 2 Martín Demichelis, 13 Walter Samuel\n(4-1-3-2)           (4 Nicolás Burdisso 23'), 6 Gabriel Heinze; 14 Javier Mascherano [c];\n20 Maxi Rodríguez, 10 Lionel Messi, 7 Ángel Di María; 9 Gonzalo Higuaín\n(5 Mario Bolatti 82'), 11 Carlos Tévez (16 Sergio Agüero 75').\nSouth Korea:        18 Jung Sung-Ryong; 2 Oh Beom-Seok, 4 Cho Yong-Hyung, 14 Lee Jung-Soo,\n(4-2-3-1)           12 Lee Young-Pyo; 8 Kim Jung-Woo, 16 Ki Sung-Yong (5 Kim Nam-Il 46');\n17 Lee Chung-Yong, 7 Park Ji-Sung [c], 19 Yeom Ki-Hun; 10 Park Chu-Young\n(20 Lee Dong-Gook 81').\nReferee:            Frank De Bleeckere (Belgium).\nCoaches:            Argentina: Diego Maradona.\nSouth Korea: Huh Jung-Moo.\nCards:              Argentina: 17 Jonás Gutiérrez [Y 54'], 14 Javier Mascherano [Y 55'],\n6 Gabriel Heinze [Y 74'].\nSouth Korea: 19 Yeom Ki-Hun [Y 10'], 17 Lee Chung-Yong [Y 34'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -561,7 +606,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "17/06/2010, Bloemfontein, Vodacom Park (Free State Stadium), 31593\nWorld Cup\nGREECE              2 (14 Dhimítris Salpingyídhis 44', 15 Vasílyis Torosídhis 71')\nNIGERIA             1 (12 Kalu Uche 16')\nGreece:             12 Aléxandhros Dzórvas; 19 Sokrátis Papastathópoulos (7 Yórghos Samarás 37'),\n(3-5-2)             8 Avraám Papadhópoulos, 16 Sotíris Kyiryákos; 11 Loukás Víndra, 6 Aléxandhros Dzyólyis,\n21 Konstandínos Katsourányis, 10 Yórghos Karangoúnyis [c], 15 Vasílyis Torosídhis;\n14 Dhimítris Salpingyídhis, 17 Theofányis Gyékas (18 Sotíris Nyínyis 79').\nNigeria:            1 Vincent Enyeama; 17 Chidi Odiah, 2 Joseph Yobo [c], 6 Danny Shittu, 3 Taye Taiwo\n(4-4-2)             (21 Uwa Echiejile 55' (5 Rabiu Afolabi 77')); 14 Sani Kaita, 15 Lukman Haruna,\n20 Dickson Etuhu, 12 Kalu Uche; 11 Peter Odemwingie (19 Chinedu Obasi 46'),\n8 Yakubu Aiyegbeni.\nReferee:            Óscar Ruiz (Colombia).\nCoaches:            Greece: Otto Rehhagel (Germany).\nNigeria: Lars Lagerbäck (Sweden).\nCards:              Greece: 19 Sokrátis Papastathópoulos [Y 15'], 6 Aléxandhros Dzyólyis [Y 60'],\n7 Yórghos Samarás 37' [Y 88'].\nNigeria: 14 Sani Kaita [R 33'], 19 Chinedu Obasi [Y 89'].\nNote:               The first Greek goal could be regarded as an own-goal by Haruna.",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -574,7 +624,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "22/06/2010, Polokwane, Peter Mokaba Stadium, 38891\nWorld Cup\nARGENTINA           2 (2 Martín Demichelis 77', 18 Martín Palermo 89')\nGREECE              0\nArgentina:          22 Sergio Romero; 15 Nicolás Otamendi, 2 Martín Demichelis, 4 Nicolás Burdisso,\n(4-3-1-2)           3 Clemente Rodríguez; 20 Maxi Rodríguez (7 Ángel Di María 63'), 5 Mario Bolatti,\n8 Juan Sebastián Verón; 10 Lionel Messi [c]; 19 Diego Milito (18 Martín Palermo 80'),\n16 Sergio Agüero (23 Javier Pastore 77').\nGreece:             12 Aléxandhros Dzórvas; 11 Loukás Víndra, 8 Avraám Papadhópoulos, 5 Vangyélyis Móras,\n(5-1-3-1)           16 Sotíris Kyiryákos, 15 Vasílyis Torosídhis (3 Khrístos Patsadzóghlou 55');\n19 Sokrátis Papastathópoulos; 21 Konstandínos Katsourányis (18 Sotíris Nyínyis 54'),\n6 Aléxandhros Dzyólyis, 10 Yórghos Karangoúnyis [c] (4 Nyíkos Spirópoulos 46');\n7 Yórghos Samarás.\nReferee:            Ravshan Ermatov (Uzbekistan).\nCoaches:            Argentina: Diego Maradona.\nGreece: Otto Rehhagel (Germany).\nCards:              Argentina: 5 Mario Bolatti [Y 76'].\nGreece: 21 Konstandínos Katsourányis [Y 30'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -587,7 +642,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "22/06/2010, Durban, Moses Mabhida Stadium, 61874\nWorld Cup\nNIGERIA             2 (12 Kalu Uche 12', 8 Yakubu Aiyegbeni 69' pen)\nSOUTH KOREA         2 (14 Lee Jung-Soo 38', 10 Park Chu-Young 49')\nNigeria:            1 Vincent Enyeama; 17 Chidi Odiah, 2 Joseph Yobo (21 Uwa Echiejile 46'),\n(4-2-3-1)           6 Danny Shittu, 5 Rabiu Afolabi; 13 Yussuf Ayila, 20 Dickson Etuhu; 19 Chinedu Obasi,\n4 Nwankwo Kanu [c] (9 Obafemi Martins 57'), 12 Kalu Uche; 8 Yakubu Aiyegbeni\n(18 Victor Obinna 70').\nSouth Korea:        18 Jung Sung-Ryong; 22 Cha Du-Ri, 4 Cho Yong-Hyung, 14 Lee Jung-Soo, 12 Lee Young-Pyo;\n(4-2-3-1)           16 Ki Sung-Yong (13 Kim Jae-Sung 87'), 8 Kim Jung-Woo; 17 Lee Chung-Yong,\n7 Park Ji-Sung [c], 19 Yeom Ki-Hun (5 Kim Nam-Il 64'); 10 Park Chu-Young\n(15 Kim Dong-Jin 90+').\nReferee:            Olegário Benquerença (Portugal).\nCoaches:            Nigeria: Lars Lagerbäck (Sweden).\nSouth Korea: Huh Jung-Moo.\nCards:              Nigeria: 1 Vincent Enyeama [Y 31'], 19 Chinedu Obasi [Y 37'], 13 Yussuf Ayila [Y 42'].\nSouth Korea: 5 Kim Nam-Il [Y 68'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -600,7 +660,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "12/06/2010, Phokeng, Royal Bafokeng Stadium, 38646\nWorld Cup\nENGLAND             1 (4 Steven Gerrard 4')\nUSA                 1 (8 Clint Dempsey 40')\nEngland:            12 Robert Green; 2 Glen Johnson, 20 Ledley King (18 Jamie Carragher 46'),\n(4-4-2)             6 John Terry, 3 Ashley Cole; 7 Aaron Lennon, 4 Steven Gerrard [c],\n8 Frank J. Lampard, 16 James Milner (17 Shaun Wright-Phillips 30');\n21 Emile Heskey (9 Peter Crouch 79'), 10 Wayne Rooney.\nUSA:                1 Tim Howard; 6 Steve Cherundolo, 15 Jay DeMerit, 5 Oguchi Onyewu,\n(4-4-2)             3 Carlos Bocanegra [c]; 10 Landon Donovan, 4 Michael Bradley, 13 Ricardo Clark,\n8 Clint Dempsey; 20 Robbie Findley (14 Edson Buddle 77'), 17 Jozy Altidore\n(11 Stuart Holden 86').\nReferee:            Carlos Simon (Brazil).\nCoaches:            England: Fabio Capello (Italy).\nUSA: Bob Bradley.\nCards:              England: 16 James Milner [Y 26'], 18 Jamie Carragher [Y 59'], 4 Steven Gerrard [Y 61'].\nUSA: 6 Steve Cherundolo [Y 39'], 15 Jay DeMerit [Y 47'], 20 Robbie Findley [Y 74'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -613,7 +678,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "13/06/2010, Polokwane, Peter Mokaba Stadium, 30325\nWorld Cup\nSLOVENIA            1 (8 Robert Koren 79')\nALGERIA             0\nSlovenia:           1 Samir Handanovič; 2 Mišo Brečko, 4 Marko Šuler, 5 Boštjan Cesar, 13 Bojan Jokić;\n(4-1-3-2)           18 Aleksander Radosavljevič (20 Andrej Komac 87'); 17 Andraž Kirm, 8 Robert Koren [c],\n10 Valter Birsa (7 Nejc Pečnik 84'); 11 Milivoje Novakovič, 14 Zlatko Dedič\n(9 Zlatan Ljubijankič 53').\nAlgeria:            16 Faouzi Chaouchi; 2 Madjid Bougherra, 5 Rafik Halliche, 4 Antar Yahia [c];\n(3-4-2-1)           21 Foued Kadir (17 Adlène Guedioura 82'), 19 Hassan Yebda, 8 Medhi Lacen,\n3 Nadir Belhadj; 13 Karim Matmour (10 Rafik Saïfi 80'), 15 Karim Ziani;\n11 Rafik Djebbour (9 Abdelkader Ghezzal 58').\nReferee:            Carlos Batrés (Guatemala).\nCoaches:            Slovenia: Matjaž Kek.\nAlgeria: Rabah Saâdane.\nCards:              Slovenia: 18 Aleksander Radosavljevič [Y 35'], 20 Andrej Komac [Y 90+'].\nAlgeria: 9 Abdelkader Ghezzal [Y 59' YR 73'], 19 Hassan Yebda [Y 90+'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -626,7 +696,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "18/06/2010, Johannesburg, Coca-Cola Park (Ellis Park), 45573\nWorld Cup\nSLOVENIA            2 (10 Valter Birsa 13', 9 Zlatan Ljubijankič 42')\nUSA                 2 (10 Landon Donovan 48', 4 Michael Bradley 82')\nSlovenia:           1 Samir Handanovič; 2 Mišo Brečko, 4 Marko Šuler, 5 Boštjan Cesar, 13 Bojan Jokić;\n(4-4-2)             10 Valter Birsa (14 Zlatko Dedič 87'), 18 Aleksander Radosavljevič,\n8 Robert Koren [c], 17 Andraž Kirm; 9 Zlatan Ljubijankič (7 Nejc Pečnik 74'\n(20 Andrej Komac 90+')), 11 Milivoje Novakovič.\nUSA:                1 Tim Howard; 6 Steve Cherundolo, 15 Jay DeMerit, 5 Oguchi Onyewu (9 Herculez Gomez 80'),\n(4-4-2)             3 Carlos Bocanegra [c]; 10 Landon Donovan, 16 José Francisco Torres\n(22 Benny Feilhaber 46'), 4 Michael Bradley, 8 Clint Dempsey; 17 Jozy Altidore,\n20 Robbie Findley (19 Maurice Edu 46').\nReferee:            Koman Coulibaly (Mali).\nCoaches:            Slovenia: Matjaž Kek.\nUSA: Bob Bradley.\nCards:              Slovenia: 5 Boštjan Cesar [Y 35'], 4 Marko Šuler [Y 69'], 17 Andraž Kirm [Y 72'],\n13 Bojan Jokić [Y 75'].\nUSA: 20 Robbie Findley [Y 40'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -639,7 +714,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "18/06/2010, Cape Town, Cape Town Stadium (Green Point), 64100\nWorld Cup\nALGERIA             0\nENGLAND             0\nAlgeria:            23 Raïs M'Bolhi; 2 Madjid Bougherra, 5 Rafik Halliche, 4 Antar Yahia [c];\n(3-4-2-1)           21 Foued Kadir, 19 Hassan Yebda (20 Djamel Mesbah 89'), 8 Medhi Lacen, 3 Nadir Belhadj;\n7 Ryad Boudebouz (22 Djamel Abdoun 74'), 15 Karim Ziani (17 Adlène Guedioura 81');\n13 Karim Matmour.\nEngland:            1 David James; 2 Glen Johnson, 18 Jamie Carragher, 6 John Terry, 3 Ashley Cole;\n(4-4-2)             7 Aaron Lennon (17 Shaun Wright-Phillips 63'), 8 Frank J. Lampard, 14 Gareth Barry\n(9 Peter Crouch 84'), 4 Steven Gerrard [c]; 21 Emile Heskey (19 Jermain Defoe 74'),\n10 Wayne Rooney.\nReferee:            Ravshan Ermatov (Uzbekistan).\nCoaches:            Algeria: Rabah Saâdane.\nEngland: Fabio Capello (Italy).\nCards:              Algeria: 8 Medhi Lacen [Y 85'].\nEngland: 18 Jamie Carragher [Y 58'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -652,7 +732,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "23/06/2010, Port Elizabeth, Nelson Mandela Bay Stadium, 36893\nWorld Cup\nENGLAND             1 (19 Jermain Defoe 22')\nSLOVENIA            0\nEngland:            1 David James; 2 Glen Johnson, 6 John Terry, 15 Matthew Upson, 3 Ashley Cole;\n(4-4-2)             16 James Milner, 8 Frank J. Lampard, 14 Gareth Barry, 4 Steven Gerrard [c];\n19 Jermain Defoe (21 Emile Heskey 86'), 10 Wayne Rooney (11 Joe Cole 72').\nSlovenia:           1 Samir Handanovič; 2 Mišo Brečko, 4 Marko Šuler, 5 Boštjan Cesar, 13 Bojan Jokić;\n(4-4-2)             10 Valter Birsa, 18 Aleksander Radosavljevič, 8 Robert Koren [c], 17 Andraž Kirm\n(23 Tim Matavž 79'); 11 Milivoje Novakovič, 9 Zlatan Ljubijankič (14 Zlatko Dedič 62').\nReferee:            Wolfgang Stark (Germany).\nCoaches:            England: Fabio Capello (Italy).\nSlovenia: Matjaž Kek.\nCards:              England: 2 Glen Johnson [Y 48'].\nSlovenia: 13 Bojan Jokić [Y 40'], 10 Valter Birsa [Y 79'], 14 Zlatko Dedič [Y 81'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -665,7 +750,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "23/06/2010, Pretoria, Loftus Versfeld Stadium, 35827\nWorld Cup\nUSA                 1 (10 Landon Donovan 90+')\nALGERIA             0\nUSA:                1 Tim Howard; 6 Steve Cherundolo, 15 Jay DeMerit, 3 Carlos Bocanegra [c],\n(4-4-2)             12 Jonathan Bornstein (7 DaMarcus Beasley 80'); 10 Landon Donovan, 4 Michael Bradley,\n19 Maurice Edu (14 Edson Buddle 64'), 8 Clint Dempsey; 9 Herculez Gomez\n(22 Benny Feilhaber 46'), 17 Jozy Altidore.\nAlgeria:            23 Raïs M'Bolhi; 2 Madjid Bougherra, 5 Rafik Halliche, 4 Antar Yahia [c];\n(3-4-2-1)           21 Foued Kadir, 19 Hassan Yebda, 8 Medhi Lacen, 3 Nadir Belhadj; 13 Karim Matmour\n(10 Rafik Saïfi 85'), 15 Karim Ziani (17 Adlène Guedioura 69'); 11 Rafik Djebbour\n(9 Abdelkader Ghezzal 65').\nReferee:            Frank De Bleeckere (Belgium).\nCoaches:            USA: Bob Bradley.\nAlgeria: Rabah Saâdane.\nCards:              USA: 17 Jozy Altidore [Y 62'], 7 DaMarcus Beasley [Y 90'].\nAlgeria: 19 Hassan Yebda [Y 12'], 4 Antar Yahia [Y 76' YR 90+'], 8 Mehdi Lacen [Y 83'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -678,7 +768,12 @@
       "score": [
         4,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "13/06/2010, Durban, Moses Mabhida Stadium, 62660\nWorld Cup\nGERMANY             4 (10 Lukas Podolski 8', 11 Miroslav Klose 26', 13 Thomas Müller 68',\n19 Claudemir Barreto 'Cacau' 70')\nAUSTRALIA           0\nGermany:            1 Manuel Neuer; 16 Philipp Lahm [c], 17 Per Mertesacker, 3 Arne Friedrich,\n(4-2-3-1)           14 Holger Badstuber; 6 Sami Khedira, 7 Bastian Schweinsteiger; 13 Thomas Müller,\n8 Mesut Özil (23 Mario Gómez 74'), 10 Lukas Podolski (21 Marko Marin 81');\n11 Miroslav Klose (19 Claudemir Barreto 'Cacau' 68').\nAustralia:          1 Mark Schwarzer; 8 Luke Wilkshire, 2 Lucas Neill [c], 3 Craig Moore,\n(4-2-3-1)           11 Scott Chipperfield; 13 Vince Grella (14 Brett Holman 46'), 16 Carl Valeri;\n7 Brett Emerton (15 Mile Jedinak 74'), 4 Tim Cahill, 5 Jason Culina;\n19 Richard Garcia (17 Nikita Rukavytsya 64').\nReferee:            Marco Antonio Rodríguez (Mexico).\nCoaches:            Germany: Joachim Löw.\nAustralia: Pim Verbeek (Netherlands)\nCards:              Germany: 8 Mesut Özil [Y 12'], 19 Claudemir Barreto 'Cacau' [Y 90+'].\nAustralia: 3 Craig Moore [Y 24'], 2 Lucas Neill [Y 46'], 4 Tim Cahill [R 56'],\n16 Carl Valeri [Y 58'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -691,7 +786,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "13/06/2010, Pretoria, Loftus Versfeld Stadium, 38833\nWorld Cup\nGHANA               1 (3 Asamoah Gyan 84' pen)\nSERBIA              0\nGhana:              22 Richard Kingson; 4 John Paintsil, 5 John Mensah [c], 15 Isaac Vorsah, 2 Hans Sarpei;\n(4-1-4-1)           6 Anthony Annan; 12 Prince Tagoe, 21 Kwadwo Asamoah (10 Stephen Appiah 73'),\n23 Kevin-Prince Boateng (19 Lee Addy 90+'), 13 André Ayew; 3 Asamoah Gyan\n(20 Quincy Owusu-Abeyie 90+').\nSerbia:             1 Vladimir Stojković; 6 Branislav Ivanović, 5 Nemanja Vidić, 13 Aleksandar Luković,\n(4-4-2)             3 Aleksandar Kolarov; 17 Miloš Krasić, 10 Dejan Stanković [c], 11 Nenad Milijaš\n(22 Zdravko Kuzmanović 62'), 14 Milan Jovanović (20 Neven Subotić 76');\n15 Nikola Žigić (8 Danko Lazović 69'), 9 Marko Pantelić.\nReferee:            Héctor Baldassi (Argentina).\nCoaches:            Ghana: Milovan Rajevac (Serbia).\nSerbia: Radomir Antić.\nCards:              Ghana: 15 Isaac Vorsah [Y 26'], 12 Prince Tagoe [Y 89'].\nSerbia: 15 Nikola Žigić [Y 19'], 13 Aleksandar Luković [Y 54' YR 74'],\n22 Zdravko Kuzmanović [Y 83'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -704,7 +804,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "18/06/2010, Port Elizabeth, Nelson Mandela Bay Stadium, 38294\nWorld Cup\nSERBIA              1 (14 Milan Jovanović 38')\nGERMANY             0\nSerbia:             1 Vladimir Stojković; 6 Branislav Ivanović, 5 Nemanja Vidić, 20 Neven Subotić,\n(4-2-3-1)           3 Aleksandar Kolarov; 22 Zdravko Kuzmanović (19 Radoslav Petrović 75'),\n10 Dejan Stanković [c]; 17 Miloš Krasić, 18 Miloš Ninković (4 Gojko Kačar 70'),\n14 Milan Jovanović (8 Danko Lazović 79'); 15 Nikola Žigić.\nGermany:            1 Manuel Neuer; 16 Philipp Lahm [c], 17 Per Mertesacker, 3 Arne Friedrich,\n(4-2-3-1)           14 Holger Badstuber (23 Mario Gómez 77'); 6 Sami Khedira, 7 Bastian Schweinsteiger;\n13 Thomas Müller (21 Marko Marin 70'), 8 Mesut Özil (19 Claudemir Barreto 'Cacau' 70'),\n10 Lukas Podolski; 11 Miroslav Klose.\nReferee:            Alberto Undiano (Spain).\nCoaches:            Serbia: Radomir Antić.\nGermany: Joachim Löw.\nCards:              Serbia: 6 Branislav Ivanović [Y 18'], 3 Aleksandar Kolarov [Y 19'],\n20 Neven Subotić [Y 57'], 5 Nemanja Vidić [Y 60'].\nGermany: 11 Miroslav Klose [Y 12' YR 37'], 6 Sami Khedira [Y 22'],\n16 Philipp Lahm [Y 32'], 7 Bastian Schweinsteiger [Y 73'].\nNote:               Vladimir Stojković saved a penalty from Lukas Podolski at 60'.",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -717,7 +822,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "19/06/2010, Phokeng, Royal Bafokeng Stadium, 34812\nWorld Cup\nAUSTRALIA           1 (14 Brett Holman 11')\nGHANA               1 (3 Asamoah Gyan 25' pen)\nAustralia:          1 Mark Schwarzer; 8 Luke Wilkshire (17 Nikita Rukavytsya 84'), 2 Lucas Neill [c],\n(4-2-3-1)           3 Craig Moore, 21 David Carney; 5 Jason Culina, 16 Carl Valeri; 7 Brett Emerton,\n14 Brett Holman (9 Joshua Kennedy 68'), 23 Mark Bresciano (11 Scott Chipperfield 66');\n10 Harry Kewell.\nGhana:              22 Richard Kingson [c]; 4 John Paintsil, 8 Jonathan Mensah, 19 Lee Addy,\n(4-1-4-1)           2 Hans Sarpei; 6 Anthony Annan; 12 Prince Tagoe (20 Quincy Owusu-Abeyie 56'),\n21 Kwadwo Asamoah (11 Sulley Muntari 77'), 23 Kevin-Prince Boateng\n(14 Matthew Amoah 87'), 13 André Ayew; 3 Asamoah Gyan.\nReferee:            Roberto Rosetti (Italy).\nCoaches:            Australia: Pim Verbeek (Netherlands).\nGhana: Milovan Rajevac (Serbia).\nCards:              Australia: 10 Harry Kewell [R 24'], 3 Craig Moore [Y 86'].\nGhana: 19 Lee Addy [Y 40'], 8 Jonathan Mensah [Y 79'], 6 Anthony Annan [Y 84'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -730,7 +840,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "23/06/2010, Mbombela, Mbombela Stadium, 37836\nWorld Cup\nAUSTRALIA           2 (4 Tim Cahill 69', 14 Brett Holman 73')\nSERBIA              1 (9 Marko Pantelić 84')\nAustralia:          1 Mark Schwarzer; 8 Luke Wilkshire (19 Richard Garcia 82'), 6 Michael Beauchamp,\n(4-2-3-1)           2 Lucas Neill [c], 21 David Carney; 5 Jason Culina, 16 Carl Valeri (14 Brett Holman 65');\n7 Brett Emerton, 4 Tim Cahill, 23 Mark Bresciano (11 Scott Chipperfield 66');\n9 Joshua Kennedy.\nSerbia:             1 Vladimir Stojković; 6 Branislav Ivanović, 5 Nemanja Vidić, 13 Aleksandar Luković,\n(4-2-3-1)           16 Ivan Obradović; 22 Zdravko Kuzmanović (8 Danko Lazović 77'), 10 Dejan Stanković [c];\n17 Miloš Krasić (7 Zoran Tošić 62'), 18 Miloš Ninković, 14 Milan Jovanović;\n15 Nikola Žigić (9 Marko Pantelić 67').\nReferee:            Jorge Larrionda (Uruguay).\nCoaches:            Australia: Pim Verbeek (Netherlands).\nSerbia: Radomir Antić.\nCards:              Australia: 6 Michael Beauchamp [Y 49'], 8 Luke Wilkshire [Y 50'], 7 Brett Emerton [Y 67'].\nSerbia: 13 Aleksandar Luković [Y 18'], 18 Miloš Ninković [Y 59'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -743,7 +858,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "23/06/2010, Johannesburg, FNB Stadium 'Soccer City', 83391\nWorld Cup\nGERMANY             1 (8 Mesut Özil 60')\nGHANA               0\nGermany:            1 Manuel Neuer; 16 Philipp Lahm [c], 17 Per Mertesacker, 3 Arne Friedrich,\n(4-2-3-1)           20 Jerome Boateng (2 Marcell Jansen 73'); 6 Sami Khedira, 7 Bastian Schweinsteiger\n(18 Toni Kroos 81'); 13 Thomas Müller (15 Piotr Trochowski 67'), 8 Mesut Özil,\n10 Lukas Podolski; 19 Claudemir Barreto 'Cacau'.\nGhana:              22 Richard Kingson; 4 John Paintsil, 8 Jonathan Mensah, 5 John Mensah [c], 2 Hans Sarpei;\n(4-1-4-1)           6 Anthony Annan; 13 André Ayew (18 Dominic Adiyiah 90+'), 21 Kwadwo Asamoah,\n23 Kevin-Prince Boateng, 12 Prince Tagoe (11 Sulley Muntari 64'); 3 Asamoah Gyan\n(14 Matthew Amoah 82').\nReferee:            Carlos Simon (Brazil).\nCoaches:            Germany: Joachim Löw.\nGhana: Milovan Rajevac (Serbia).\nCards:              Germany: 13 Thomas Müller [Y 43'].\nGhana: 13 André Ayew [Y 40'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -756,7 +876,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "14/06/2010, Johannesburg, FNB Stadium 'Soccer City', 83465\nWorld Cup\nNETHERLANDS         2 (4 Daniel Agger 46' OG, 7 Dirk Kuĳt 85')\nDENMARK             0\nNetherlands:        1 Maarten Stekelenburg; 2 Gregory van der Wiel, 3 John Heitinga, 4 Joris Mathĳsen,\n(4-2-3-1)           5 Giovanni van Bronckhorst [c]; 6 Mark van Bommel, 8 Nigel de Jong\n(14 Demy de Zeeuw 88'); 7 Dirk Kuĳt, 10 Wesley Sneĳder, 23 Rafael van der Vaart\n(17 Eljero Elia 67'); 9 Robin van Persie (20 Ibrahim Afellay 77').\nDenmark:            1 Thomas Sørensen; 6 Lars Jacobsen, 3 Simon Kjær, 4 Daniel Agger, 15 Simon Poulsen;\n(4-1-4-1)           2 Christian Poulsen; 19 Dennis Rommedahl, 10 Martin Jørgensen [c], 12 Thomas Kahlenberg\n(21 Christian Eriksen 73'), 20 Thomas Enevoldsen (8 Jesper Grønkjær 56');\n11 Nicklas Bendtner (17 Mikkel Beckmann 62').\nReferee:            Stéphane Lannoy (France).\nCoaches:            Netherlands: Bert van Marwĳk.\nDenmark: Morten Olsen.\nCards:              Netherlands: 8 Nigel de Jong [Y 44'], 9 Robin van Persie [Y 49'].\nDenmark: 3 Simon Kjær [Y 63'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -769,7 +894,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "14/06/2010, Bloemfontein, Vodacom Park (Free State Stadium), 30620\nWorld Cup\nJAPAN               1 (18 Keisuke Honda 38')\nCAMEROON            0\nJapan:              21 Eiji Kawashima; 3 Yuichi Komano, 22 Yuji Nakazawa, 4 Marcus Túlio Tanaka,\n(4-1-4-1)           5 Yuto Nagatomo; 2 Yuki Abe; 8 Daisuke Matsui (9 Shinji Okazaki 69'),\n17 Makoto Hasebe [c] (20 Junichi Inamoto 88'), 7 Yasuhito Endo, 16 Yoshito Okubo\n(12 Kisho Yano 82'); 18 Keisuke Honda.\nCameroon:           16 Souleymanou Hamidou; 19 Stéphane Mbia, 3 Nicolas Nkoulou, 5 Sébastien Bassong,\n(4-3-3)             2 Benoît Assou-Ekotto; 11 Jean Makoun (8 Geremi Njitap 75'), 21 Joël Matip\n(10 Achille Emana 63'), 18 Eyong Enoh; 9 Samuel Eto'o [c], 13 Eric Choupo-Moting\n(17 Mohamadou Idrissou 75'), 15 Pierre Webo.\nReferee:            Olegário Benquerença (Portugal).\nCoaches:            Japan: Takeshi Okada.\nCameroon: Paul Le Guen (France).\nCards:              Japan: 2 Yuki Abe [Y 90+'].\nCameroon: 3 Nicolas Nkoulou [Y 72'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -782,7 +912,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "19/06/2010, Durban, Moses Mabhida Stadium, 62010\nWorld Cup\nNETHERLANDS         1 (10 Wesley Sneĳder 53')\nJAPAN               0\nNetherlands:        1 Maarten Stekelenburg; 2 Gregory van der Wiel, 3 John Heitinga, 4 Joris Mathĳsen,\n(4-2-3-1)           5 Giovanni van Bronckhorst [c]; 6 Mark van Bommel, 8 Nigel de Jong; 7 Dirk Kuĳt,\n10 Wesley Sneĳder (20 Ibrahim Afellay 83'), 23 Rafael van der Vaart (17 Eljero Elia 72');\n9 Robin van Persie (21 Klaas-Jan Huntelaar 88').\nJapan:              21 Eiji Kawashima; 3 Yuichi Komano, 22 Yuji Nakazawa, 4 Marcus Túlio Tanaka,\n(4-1-4-1)           5 Yuto Nagatomo; 2 Yuki Abe; 8 Daisuke Matsui (10 Shunsuke Nakamura 64'),\n17 Makoto Hasebe [c] (11 Keiji Tamada 77'), 7 Yasuhito Endo, 16 Yoshito Okubo\n(9 Shinji Okazaki 77'); 18 Keisuke Honda.\nReferee:            Héctor Baldassi (Argentina).\nCoaches:            Netherlands: Bert van Marwĳk.\nJapan: Takeshi Okada.\nCards:              Netherlands: 2 Gregory van der Wiel [Y 36'].\nJapan: none.",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -795,7 +930,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "19/06/2010, Pretoria, Loftus Versfeld Stadium, 38074\nWorld Cup\nDENMARK             2 (11 Nicklas Bendtner 33', 19 Dennis Rommedahl 61')\nCAMEROON            1 (9 Samuel Eto'o 10')\nDenmark:            1 Thomas Sørensen; 6 Lars Jacobsen, 3 Simon Kjær, 4 Daniel Agger, 15 Simon Poulsen;\n(4-2-3-1)           10 Martin Jørgensen (7 Daniel Jensen 46'), 2 Christian Poulsen; 19 Dennis Rommedahl,\n9 Jon Dahl Tomasson [c] (14 Jakob Poulsen 86'), 8 Jesper Grønkjær\n(12 Thomas Kahlenberg 67'); 11 Nicklas Bendtner.\nCameroon:           16 Souleymanou Hamidou; 19 Stéphane Mbia, 3 Nicolas Nkoulou, 5 Sébastien Bassong\n(4-1-3-2)           (17 Mohamadou Idrissou 73'), 2 Benoît Assou-Ekotto; 6 Alex Song; 8 Geremi Njitap,\n10 Achille Emana, 18 Eyong Enoh (11 Jean Makoun 46'); 15 Pierre Webo\n(23 Vincent Aboubakar 78'), 9 Samuel Eto'o [c].\nReferee:            Jorge Larrionda (Uruguay).\nCoaches:            Denmark: Morten Olsen.\nCameroon: Paul Le Guen (France).\nCards:              Denmark: 1 Thomas Sørensen [Y 86'], 3 Simon Kjær [Y 87'].\nCameroon: 5 Sébastien Bassong [Y 49'], 19 Stéphane Mbia [Y 75'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -808,7 +948,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "24/06/2010, Cape Town, Cape Town Stadium (Green Point), 63093\nWorld Cup\nNETHERLANDS         2 (9 Robin van Persie 36', 21 Klaas-Jan Huntelaar 83')\nCAMEROON            1 (9 Samuel Eto'o 65' pen)\nNetherlands:        1 Maarten Stekelenburg; 12 Khalid Boulahrouz, 3 John Heitinga, 4 Joris Mathĳsen,\n(4-2-3-1)           5 Giovanni van Bronckhorst [c]; 6 Mark van Bommel, 8 Nigel de Jong; 7 Dirk Kuĳt\n(17 Eljero Elia 66'), 10 Wesley Sneĳder, 23 Rafael van der Vaart (11 Arjen Robben 73');\n9 Robin van Persie (21 Klaas-Jan Huntelaar 59').\nCameroon:           16 Souleymanou Hamidou; 8 Geremi Njitap, 19 Stéphane Mbia, 3 Nicolas Nkoulou\n(4-4-2)             (4 Rigobert Song 73'), 2 Benoît Assou-Ekotto; 7 Landry Nguémo, 11 Jean Makoun,\n14 Aurélien Chedjou, 12 Gaëtan Bong (23 Vincent Aboubakar 56');\n13 Eric Choupo-Moting (17 Mohamadou Idrissou 72'), 9 Samuel Eto'o [c].\nReferee:            Pablo Pozo (Chile).\nCoaches:            Netherlands: Bert van Marwĳk.\nCameroon: Paul Le Guen (France).\nCards:              Netherlands: 7 Dirk Kuĳt [Y 17'], 23 Rafael van der Vaart [Y 65'],\n5 Giovanni van Bronckhorst [Y 70'].\nCameroon: 3 Nicolas Nkoulou [Y 25'], 19 Stéphane Mbia [Y 81'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -821,7 +966,12 @@
       "score": [
         1,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "24/06/2010, Phokeng, Royal Bafokeng Stadium, 27967\nWorld Cup\nJAPAN               3 (18 Keisuke Honda 17', 7 Yasuhito Endo 30', 9 Shinji Okazaki 87')\nDENMARK             1 (9 Jon Dahl Tomasson 81')\nJapan:              21 Eiji Kawashima; 3 Yuichi Komano, 22 Yuji Nakazawa, 4 Marcus Túlio Tanaka,\n(4-1-4-1)           5 Yuto Nagatomo; 2 Yuki Abe; 8 Daisuke Matsui (9 Shinji Okazaki 74'),\n17 Makoto Hasebe [c], 7 Yasuhito Endo (20 Junichi Inamoto 90+'), 16 Yoshito Okubo\n(15 Yasuyuki Konno 88'); 18 Keisuke Honda.\nDenmark:            1 Thomas Sørensen; 6 Lars Jacobsen, 13 Per Krøldrup (18 Søren Larsen 56'),\n(4-2-3-1)           4 Daniel Agger, 15 Simon Poulsen; 2 Christian Poulsen, 10 Martin Jørgensen\n(14 Jakob Poulsen 34'); 19 Dennis Rommedahl, 9 Jon Dahl Tomasson [c],\n12 Thomas Kahlenberg (21 Christian Eriksen 63'); 11 Nicklas Bendtner.\nReferee:            Jerome Damon (South Africa).\nCoaches:            Japan: Takeshi Okada.\nDenmark: Morten Olsen.\nCards:              Japan: 7 Yasuhito Endo [Y 12'], 5 Yuto Nagamoto [Y 26'].\nDenmark: 13 Per Krøldrup [Y 29'], 2 Christian Poulsen [Y 48'],\n11 Nicklas Bendtner [Y 66'].\nNote:               Eiji Kawashima saved a penalty from Jon Dahl Tomasson at 81' (though\nTomasson scored the rebound).",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -834,7 +984,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "14/06/2010, Cape Town, Cape Town Stadium (Green Point), 62869\nWorld Cup\nITALY               1 (6 Daniele De Rossi 63')\nPARAGUAY            1 (21 Antolín Alcaraz 39')\nItaly:              1 Gianluigi Buffon (12 Federico Marchetti 46'); 19 Gianluca Zambrotta,\n(4-2-3-1)           5 Fabio Cannavaro [c], 4 Giorgio Chiellini, 3 Domenico Criscito;\n22 Riccardo Montolivo, 6 Daniele De Rossi; 9 Vincenzo Iaquinta, 15 Claudio Marchisio\n(16 Mauro Camoranesi 59'), 7 Simone Pepe; 11 Alberto Gilardino (10 Antonio Di Natale 72').\nParaguay:           1 Justo Villar [c]; 6 Carlos Bonet, 14 Paulo da Silva, 21 Antolín Alcaraz,\n(4-4-2)             3 Claudio Morel Rodríguez; 13 Enrique Vera, 16 Cristian Riveros, 15 Víctor Cáceres,\n17 Aureliano Torres (11 Jonathan Santana 60'); 19 Lucas Barrios (7 Óscar Cardozo 76'),\n18 Nelson Haedo Váldez (9 Roque Santa Cruz 68').\nReferee:            Benito Archundia (Mexico).\nCoaches:            Italy: Marcello Lippi.\nParaguay: Gerardo Martino (Argentina).\nCards:              Italy: 16 Mauro Camoranesi [Y 70'].\nParaguay: 15 Víctor Cáceres [Y 62'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m032",
@@ -847,7 +1002,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "15/06/2010, Phokeng, Royal Bafokeng Stadium, 23871\nWorld Cup\nNEW ZEALAND         1 (4 Winston Reid 90+')\nSLOVAKIA            1 (11 Róbert Vittek 50')\nNew Zealand:        1 Mark Paston; 4 Winston Reid, 6 Ryan Nelsen [c], 19 Tommy Smith; 11 Leo Bertos,\n(3-4-3)             7 Simon Elliott, 5 Ivan Vicelich (21 Jeremy Christie 78'), 3 Tony Lochhead;\n10 Chris Killen (20 Chris Wood 72'), 14 Rory Fallon, 9 Shane Smeltz.\nSlovakia:           1 Ján Mucha; 5 Radoslav Zabavník, 3 Martin Škrtel, 16 Ján Ďurica, 4 Marek Čech;\n(4-1-3-2)           6 Zdeno Štrba; 7 Vladimír Weiss II (19 Juraj Kucka 90+'), 17 Marek Hamšík [c],\n18 Erik Jendrišek; 11 Róbert Vittek (15 Miroslav Stoch 84'), 9 Stanislav Šesták\n(13 Filip Hološko 81').\nReferee:            Jerome Damon (South Africa).\nCoaches:            New Zealand: Ricki Herbert.\nSlovakia: Vladimír Weiss I.\nCards:              New Zealand: 3 Tony Lochhead [Y 42'], 4 Winston Reid [Y 90+'].\nSlovakia: 6 Zdeno Štrba [Y 55'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m033",
@@ -860,7 +1020,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "20/06/2010, Bloemfontein, Vodacom Park (Free State Stadium), 26643\nWorld Cup\nPARAGUAY            2 (13 Enrique Vera 27', 16 Cristian Riveros 86')\nSLOVAKIA            0\nParaguay:           1 Justo Villar [c]; 6 Carlos Bonet, 14 Paulo da Silva, 21 Antolín Alcaraz,\n(4-3-3)             3 Claudio Morel Rodríguez; 13 Enrique Vera (8 Édgar Barreto 88'), 15 Víctor Cáceres,\n16 Cristian Riveros; 19 Lucas Barrios (7 Óscar Cardozo 82'), 9 Roque Santa Cruz,\n18 Nelson Haedo Váldez (17 Aureliano Torres 68').\nSlovakia:           1 Ján Mucha; 2 Peter Pekarík, 3 Martin Škrtel, 21 Kornel Saláta (15 Miroslav Stoch 83'),\n(4-1-4-1)           16 Ján Ďurica; 6 Zdeno Štrba; 7 Vladimír Weiss II, 17 Marek Hamšík [c], 8 Ján Kozák,\n9 Stanislav Šesták (13 Filip Hološko 70'); 11 Róbert Vittek.\nReferee:            Eddy Maillet (Seychelles).\nCoaches:            Paraguay: Gerardo Martino (Argentina).\nSlovakia: Vladimír Weiss I.\nCards:              Paraguay: 13 Enrique Vera [Y 45'].\nSlovakia: 16 Ján Ďurica [Y 42'], 9 Stanislav Šesták [Y 47'], 7 Vladimír Weiss II [Y 84'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m034",
@@ -873,7 +1038,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "20/06/2010, Mbombela, Mbombela Stadium, 38229\nWorld Cup\nITALY               1 (9 Vincenzo Iaquinta 29' pen)\nNEW ZEALAND         1 (9 Shane Smeltz 7')\nItaly:              12 Federico Marchetti; 19 Gianluca Zambrotta, 5 Fabio Cannavaro [c], 4 Giorgio Chiellini,\n(4-4-2)             3 Domenico Criscito; 7 Simone Pepe (16 Mauro Camoranesi 46'), 22 Riccardo Montolivo,\n6 Daniele De Rossi, 15 Claudio Marchisio (20 Giampaolo Pazzini 61'); 9 Vincenzo Iaquinta,\n11 Alberto Gilardino (10 Antonio Di Natale 46').\nNew Zealand:        1 Mark Paston; 4 Winston Reid, 6 Ryan Nelsen [c], 19 Tommy Smith; 11 Leo Bertos,\n(3-4-3)             7 Simon Elliott, 5 Ivan Vicelich (21 Jeremy Christie 81'), 3 Tony Lochhead;\n10 Chris Killen (13 Andy Barron 90+'), 9 Shane Smeltz, 14 Rory Fallon (20 Chris Wood 63').\nReferee:            Carlos Batrés (Guatemala).\nCoaches:            Italy: Marcello Lippi.\nNew Zealand: Ricki Herbert.\nCards:              Italy: none.\nNew Zealand: 14 Rory Fallon [Y 14'], 19 Tommy Smith [Y 28'], 6 Ryan Nelsen [Y 87'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m035",
@@ -886,7 +1056,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "24/06/2010, Polokwane, Peter Mokaba Stadium, 34850\nWorld Cup\nNEW ZEALAND         0\nPARAGUAY            0\nNew Zealand:        1 Mark Paston; 4 Winston Reid, 6 Ryan Nelsen [c], 19 Tommy Smith; 11 Leo Bertos,\n(3-4-3)             5 Ivan Vicelich, 7 Simon Elliott, 3 Tony Lochhead; 10 Chris Killen\n(22 Jeremy Brockie 79'), 14 Rory Fallon (20 Chris Wood 69'), 9 Shane Smeltz.\nParaguay:           1 Justo Villar; 4 Denis Caniza [c], 5 Julio César Cáceres, 14 Paulo da Silva,\n(4-3-3)             3 Claudio Morel Rodríguez; 13 Enrique Vera, 15 Víctor Cáceres, 16 Cristian Riveros;\n9 Roque Santa Cruz, 7 Óscar Cardozo (19 Lucas Barrios 66'), 18 Nelson Haedo Váldez\n(10 Édgar Benítez 67').\nReferee:            Yuichi Nishimura (Japan).\nCoaches:            New Zealand: Ricki Herbert.\nParaguay: Gerardo Martino (Argentina).\nCards:              New Zealand: 6 Ryan Nelsen [Y 56'].\nParaguay: 15 Víctor Cáceres [Y 10'], 9 Roque Santa Cruz [Y 41'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m036",
@@ -899,7 +1074,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "24/06/2010, Johannesburg, Coca-Cola Park (Ellis Park), 53412\nWorld Cup\nSLOVAKIA            3 (11 Róbert Vittek 25' 73', 20 Kamil Kopúnek 89')\nITALY               2 (10 Antonio Di Natale 81', 18 Fabio Quagliarella 90+')\nSlovakia:           1 Ján Mucha; 2 Peter Pekarík, 3 Martin Škrtel, 16 Ján Ďurica, 5 Radoslav Zabavník;\n(4-2-3-1)           6 Zdeno Štrba (20 Kamil Kopúnek 87'), 19 Juraj Kucka; 15 Miroslav Stoch,\n17 Marek Hamšík [c], 18 Erik Jendrišek (22 Martin Petráš 90+'); 11 Róbert Vittek\n(9 Stanislav Šesták 90+').\nItaly:              12 Federico Marchetti; 19 Gianluca Zambrotta, 5 Fabio Cannavaro [c], 4 Giorgio Chiellini,\n(4-3-3)             3 Domenico Criscito (2 Christian Maggio 46'); 22 Riccardo Montolivo (21 Andrea Pirlo 56'),\n6 Daniele De Rossi, 8 Gennaro Gattuso (18 Fabio Quagliarella 46'); 7 Simone Pepe,\n9 Vincenzo Iaquinta, 10 Antonio Di Natale.\nReferee:            Howard Webb (England).\nCoaches:            Slovakia: Vladimír Weiss I.\nItaly: Marcello Lippi.\nCards:              Slovakia: 6 Zdeno Štrba [Y 16'], 11 Róbert Vittek [Y 40'], 2 Peter Pekarík [Y 50'],\n1 Ján Mucha [Y 82'].\nItaly: 5 Fabio Cannavaro [Y 31'], 4 Giorgio Chiellini [Y 67'], 7 Simone Pepe [Y 76'],\n18 Fabio Quagliarella [Y 83'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m037",
@@ -912,7 +1092,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "15/06/2010, Port Elizabeth, Nelson Mandela Bay Stadium, 37034\nWorld Cup\nIVORY COAST         0\nPORTUGAL            0\nIvory Coast:        1 Boubacar Barry; 20 Guy Demel, 4 Kolo Touré [c], 5 Didier Zokora, 17 Siaka Tiéné;\n(4-1-4-1)           19 Yaya Touré; 15 Aruna Dindane, 21 Emmanuel Éboué (13 Romaric N’Dri 89'), 9 Cheick Tioté,\n8 Salomon Kalou (11 Didier Drogba 66'); 10 Gervais Kouassi 'Gervinho' (18 Kader Keïta 82').\nPortugal:           1 Eduardo Carvalho; 3 Paulo Ferreira, 6 Ricardo Carvalho, 2 Bruno Alves, 23 Fábio Coentrão;\n(4-2-3-1)           8 Pedro Mendes, 16 Raul Meireles (17 Ruben Amorim 85'); 10 Daniel Gomes 'Danny'\n(11 Simão Sabrosa 55'), 20 Anderson de Sousa 'Deco' (19 Tiago Mendes 62'),\n7 Cristiano Ronaldo Aveiro [c]; 9 Liédson Muniz.\nReferee:            Jorge Larrionda (Uruguay).\nCoaches:            Ivory Coast: Sven-Göran Eriksson (Sweden).\nPortugal: Carlos Queiroz.\nCards:              Ivory Coast: 5 Didier Zokora [Y 7'], 20 Guy Demel [Y 21'].\nPortugal: 7 Cristiano Ronaldo Aveiro [Y 21'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m038",
@@ -925,7 +1110,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "15/06/2010, Johannesburg, Coca-Cola Park (Ellis Park), 54331\nWorld Cup\nBRAZIL              2 (2 Maicon Sisenando 55', 7 Elano Blumer 72')\nNORTH KOREA         1 (8 Ji Yun-Nam 89')\nBrazil:             1 Júlio César Espíndola; 2 Maicon Sisenando, 3 Lucimar Ferreira 'Lúcio' [c],\n(4-2-3-1)           4 Juan dos Santos, 6 Michel Bastos; 8 Gilberto da Silva, 5 Felipe Melo de Carvalho\n(18 Ramires do Nascimento 84'); 7 Elano Blumer (13 Daniel Alves da Silva 73'),\n10 Ricardo Leite 'Kaká' (21 Nilmar da Silva 78'), 11 Róbson de Souza 'Robinho';\n9 Luís Fabiano Clemente.\nNorth Korea:        1 Ri Myong-Guk; 13 Pak Chol-Jin, 3 Ri Jun-Il, 5 Ri Kwang-Chon; 2 Cha Jong-Hyok,\n(3-5-2)             11 Mun In-Guk (6 Kim Kum-Il 80'), 17 An Yong-Hak, 4 Pak Nam-Chol, 8 Ji Yun-Nam;\n9 Jong Tae-Se, 10 Hong Yong-Jo [c].\nReferee:            Viktor Kassai (Hungary).\nCoaches:            Brazil: Carlos Verri 'Dunga'.\nNorth Korea: Kim Jong-Hun.\nCards:              Brazil: 18 Ramires do Nascimento [Y 88'].\nNorth Korea: none.",
+        "lang": "en"
+      }
     },
     {
       "id": "m039",
@@ -938,7 +1128,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "20/06/2010, Johannesburg, FNB Stadium 'Soccer City', 84455\nWorld Cup\nBRAZIL              3 (9 Luís Fabiano Clemente 25' 50', 7 Elano Blumer 62')\nIVORY COAST         1 (11 Didier Drogba 79')\nBrazil:             1 Júlio César Espíndola; 2 Maicon Sisenando, 3 Lucimar Ferreira 'Lúcio' [c],\n(4-2-3-1)           4 Juan dos Santos, 6 Michel Bastos; 8 Gilberto da Silva, 5 Felipe Melo de Carvalho;\n7 Elano Blumer (13 Daniel Alves da Silva 67'), 10 Ricardo Leite 'Kaká',\n11 Róbson de Souza 'Robinho' (18 Ramires do Nascimento 90+'); 9 Luís Fabiano Clemente.\nIvory Coast:        1 Boubacar Barry; 20 Guy Demel, 4 Kolo Touré, 5 Didier Zokora, 17 Siaka Tiéné;\n(4-1-4-1)           19 Yaya Touré; 15 Aruna Dindane (10 Gervais Kouassi 'Gervinho' 54'), 21 Emmanuel Éboué\n(13 Romaric N’Dri 72'), 9 Cheick Tioté, 8 Salomon Kalou (18 Kader Keïta 68');\n11 Didier Drogba [c].\nReferee:            Stéphane Lannoy (France),\nCoaches:            Brazil: Carlos Verri 'Dunga'.\nIvory Coast: Sven-Göran Eriksson (Sweden).\nCards:              Brazil: 10 Ricardo Leite 'Kaká' [Y 85' YR 88'].\nIvory Coast: 17 Siaka Tiéné [Y 31'], 18 Kader Keïta [Y 75'], 9 Cheick Tioté [Y 86'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m040",
@@ -951,7 +1146,12 @@
       "score": [
         7,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "21/06/2010, Cape Town, Cape Town Stadium (Green Point), 63644\nWorld Cup\nPORTUGAL            7 (16 Raul Meireles 29', 11 Simão Sabrosa 53', 18 Hugo Almeida 56',\n19 Tiago Mendes 60' 89', 9 Liédson Muniz 81', 7 Cristiano Ronaldo Aveiro 87')\nNORTH KOREA         0\nPortugal:           1 Eduardo Carvalho; 13 Miguel Monteiro, 6 Ricardo Carvalho, 2 Bruno Alves,\n(4-3-3)             23 Fábio Coentrão; 19 Tiago Mendes, 8 Pedro Mendes, 16 Raul Meireles\n(14 Miguel Veloso 70'); 11 Simão Sabrosa (5 Sérgio Valente 'Duda' 74'),\n18 Hugo Almeida (9 Liédson Muniz 77'), 7 Cristiano Ronaldo Aveiro [c].\nNorth Korea:        1 Ri Myong-Guk; 13 Pak Chol-Jin, 3 Ri Jun-Il, 5 Ri Kwang-Chon; 2 Cha Jong-Hyok\n(3-5-2)             (16 Nam Song-Chol 75'), 11 Mun In-Guk (15 Kim Yong-Jun 58'), 17 An Yong-Hak,\n4 Pak Nam-Chol (6 Kim Kum-Il 58'), 8 Ji Yun-Nam; 9 Jong Tae-Se, 10 Hong Yong-Jo [c].\nReferee:            Pablo Pozo (Chile).\nCoaches:            Portugal: Carlos Queiroz.\nNorth Korea: Kim Jong-Hun.\nCards:              Portugal: 8 Pedro Mendes [Y 38'], 18 Hugo Almeida [Y 70'].\nNorth Korea: 13 Pak Chol-Jin [Y 32'], 10 Hong Yong-Jo [Y 47'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m041",
@@ -964,7 +1164,12 @@
       "score": [
         0,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "25/06/2010, Mbombela, Mbombela Stadium, 34763\nWorld Cup\nIVORY COAST         3 (19 Yaya Touré 14', 13 Romaric N’Dri 20', 8 Salomon Kalou 82')\nNORTH KOREA         0\nIvory Coast:        1 Boubacar Barry; 21 Emmanuel Éboué, 4 Kolo Touré, 5 Didier Zokora, 3 Arthur Boka;\n(4-2-3-1)           19 Yaya Touré, 9 Cheick Tioté; 18 Kader Keïta (15 Aruna Dindane 64'), 13 Romaric N’Dri\n(7 Seydou Doumbia 79'), 10 Gervais Kouassi 'Gervinho' (8 Salomon Kalou 64');\n11 Didier Drogba [c].\nNorth Korea:        1 Ri Myong-Guk; 13 Pak Chol-Jin, 3 Ri Jun-Il, 5 Ri Kwang-Chon; 2 Cha Jong-Hyok,\n(3-5-2)             11 Mun In-Guk (12 Choe Kum-Chol 67'), 17 An Yong-Hak, 4 Pak Nam-Chol, 8 Ji Yun-Nam;\n9 Jong Tae-Se, 10 Hong Yong-Jo [c].\nReferee:            Alberto Undiano (Spain).\nCoaches:            Ivory Coast: Sven-Göran Eriksson (Sweden).\nNorth Korea: Kim Jong-Hun.\nCards:              None.",
+        "lang": "en"
+      }
     },
     {
       "id": "m042",
@@ -977,7 +1182,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "25/06/2010, Durban, Moses Mabhida Stadium, 62712\nWorld Cup\nBRAZIL              0\nPORTUGAL            0\nBrazil:             1 Júlio César Espíndola; 2 Maicon Sisenando, 3 Lucimar Ferreira 'Lúcio' [c],\n(4-2-3-1)           4 Juan dos Santos, 6 Michel Bastos; 8 Gilberto da Silva, 5 Felipe Melo de Carvalho\n(17 Josué de Oliveira 44'); 13 Daniel Alves da Silva, 19 Júlio Baptista\n(18 Ramires do Nascimento 82'), 21 Nilmar da Silva; 9 Luís Fabiano Clemente\n(23 Edinaldo Libânio 'Grafite' 85').\nPortugal:           1 Eduardo Carvalho; 21 Ricardo Costa, 6 Ricardo Carvalho, 2 Bruno Alves,\n(4-1-4-1)           23 Fábio Coentrão; 15 Képler Ferreira 'Pepe' (8 Pedro Mendes 64');\n10 Daniel Gomes 'Danny', 19 Tiago Mendes, 16 Raul Meireles (14 Miguel Veloso 84'),\n5 Sérgio Valente 'Duda' (11 Simão Sabrosa 54'); 7 Cristiano Ronaldo Aveiro [c].\nReferee:            Benito Archundia (Mexico).\nCoaches:            Brazil: Carlos Verri 'Dunga'.\nPortugal: Carlos Queiroz.\nCards:              Brazil: 9 Luís Fabiano Clemente [Y 15'], 4 Juan dos Santos [Y 25'],\n19 Tiago Mendes [Y 31'], 5 Felipe Melo de Carvalho [Y 43'].\nPortugal: 5 Sérgio Valente 'Duda' [Y 25'], 15 Képler Ferreira 'Pepe' [Y 40'],\n23 Fábio Coentrão [Y 45'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m043",
@@ -990,7 +1200,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "16/06/2010, Mbombela, Mbombela Stadium, 32664\nWorld Cup\nCHILE               1 (15 Jean Beausejour 34')\nHONDURAS            0\nChile:              1 Claudio Bravo [c]; 4 Mauricio Isla, 3 Waldo Ponce, 17 Gary Medel, 8 Arturo Vidal\n(4-2-1-3)           (5 Pablo Contreras 81'); 6 Carlos Carmona, 20 Rodrigo Millar (18 Gonzalo Jara 52');\n14 Matías Fernández; 7 Alexis Sánchez, 10 Jorge Valdivia (11 Mark González 87'),\n15 Jean Beausejour.\nHonduras:           18 Noel Valladares; 23 Sergio Mendoza, 2 Osman Chávez, 3 Maynor Figueroa,\n(4-4-1-1)           21 Emilio Izaguirre; 17 Édgard Álvarez, 20 Amado Guevara [c] (6 Hendry Thomas 66'),\n8 Wilson Palacios, 13 Roger Espinoza; 7 Ramón Núñez (15 Walter Martínez 78');\n9 Carlos Pavón (12 Georgie Welcome 60').\nReferee:            Eddy Maillet (Seychelles).\nCoaches:            Chile: Marcelo Bielsa (Argentina).\nHonduras: Alexis Mendoza (Colombia).\nCards:              Chile: 6 Carlos Carmona [Y 4'], 14 Matías Fernández [Y 19'].\nHonduras: 8 Wilson Palacios [Y 33'].\nNote:               The regular Honduras coach Rueda was suspended for this game; Mendoza deputized.",
+        "lang": "en"
+      }
     },
     {
       "id": "m044",
@@ -1003,7 +1218,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "16/06/2010, Durban, Moses Mabhida Stadium, 62453\nWorld Cup\nSWITZERLAND         1 (16 Gelson Fernandes 52')\nSPAIN               0\nSwitzerland:        1 Diego Benaglio; 2 Stephan Lichtsteiner, 4 Philippe Senderos (5 Steve von Bergen 36'),\n(4-4-2)             13 Stéphane Grichting, 17 Reto Ziegler; 7 Tranquillo Barnetta (22 Mario Eggimann 90+'),\n6 Benjamin Huggel, 8 Gökhan Inler [c], 16 Gelson Fernandes; 10 Blaise Nkufo,\n19 Eren Derdiyok (15 Hakan Yakin 79').\nSpain:              1 Íker Casillas [c]; 15 Sergio Ramos, 3 Gerard Piqué, 5 Carles Puyol, 11 Joan Capdevila;\n(4-2-3-1)           16 Sergio Busquets (9 Fernando Torres 61'), 14 Xabi Alonso; 21 David Jiménez Silva\n(22 Jesús Navas 62'), 8 Xavi Hernández, 6 Andrés Iniesta (18 Pedro Rodríguez 77');\n7 David Villa.\nReferee:            Howard Webb (England).\nCoaches:            Spain: Vicente Del Bosque.\nSwitzerland: Ottmar Hitzfeld (Germany).\nCards:              Spain: none.\nSwitzerland: 13 Stéphane Grichting [Y 30'], 17 Reto Ziegler [Y 73'],\n1 Diego Benaglio [Y 90+'], 15 Hakan Yakin [Y 90+'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m045",
@@ -1016,7 +1236,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "21/06/2010, Port Elizabeth, Nelson Mandela Bay Stadium, 34872\nWorld Cup\nCHILE               1 (11 Mark González 75')\nSWITZERLAND         0\nChile:              1 Claudio Bravo [c]; 17 Gary Medel, 3 Waldo Ponce, 18 Gonzalo Jara; 4 Mauricio Isla,\n(3-3-1-3)           6 Carlos Carmona, 8 Arturo Vidal (11 Mark González 46'); 14 Matías Fernández\n(22 Esteban Paredes 65'); 7 Alexis Sánchez, 9 Humberto Suazo (10 Jorge Valdivia 46'),\n15 Jean Beausejour.\nSwitzerland:        1 Diego Benaglio; 2 Stephan Lichtsteiner, 5 Steve von Bergen, 13 Stéphane Grichting,\n(4-4-2)             17 Reto Ziegler; 11 Valon Behrami, 8 Gökhan Inler, 6 Benjamin Huggel, 16 Gelson Fernandes\n(18 Albert Bunjaku 77'); 10 Blaise Nkufo (19 Eren Derdiyok 68'), 9 Alexander Frei [c]\n(7 Tranquillo Barnetta 42').\nReferee:            Khalil Al-Ghamdi (Saudi Arabia).\nCoaches:            Chile: Marcelo Bielsa (Argentina).\nSwitzerland: Ottmar Hitzfeld (Germany).\nCards:              Chile: 9 Humberto Suazo [Y 2'], 6 Carlos Carmona [Y 22'], 3 Waldo Ponce [Y 25'],\n14 Matías Fernández [Y 60'], 17 Gary Medel [Y 61'], 10 Jorge Valdivia [Y 90+'].\nSwitzerland: 10 Blaise Nkufo [Y 18'], 11 Valon Behrami [R 31'], 7 Tranquillo Barnetta [Y 48'],\n8 Gökhan Inler [Y 60'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m046",
@@ -1029,7 +1254,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "21/06/2010, Johannesburg, Coca-Cola Park (Ellis Park), 54386\nWorld Cup\nSPAIN               2 (7 David Villa 17' 51')\nHONDURAS            0\nSpain:              1 Íker Casillas [c]; 15 Sergio Ramos (17 Álvaro Arbeloa 77'), 3 Gerard Piqué,\n(4-2-3-1)           5 Carles Puyol, 11 Joan Capdevila; 16 Sergio Busquets, 14 Xabi Alonso; 22 Jesús Navas,\n8 Xavi Hernández (10 Cesc Fábregas 66'), 7 David Villa; 9 Fernando Torres\n(13 Juan Mata 70').\nHonduras:           18 Noel Valladares; 23 Sergio Mendoza, 2 Osman Chávez, 3 Maynor Figueroa,\n(4-1-4-1)           21 Emilio Izaguirre; 8 Wilson Palacios; 15 Walter Martínez, 19 Danilo Turcios\n(7 Ramón Núñez 63'), 20 Amado Guevara [c], 13 Roger Espinoza (12 Georgie Welcome 46');\n11 David Suazo (10 Jerry Palacios 84').\nReferee:            Yuichi Nishimura (Japan).\nCoaches:            Spain: Vicente Del Bosque.\nHonduras: Reinaldo Rueda (Colombia).\nCards:              Spain: none.\nHonduras: 19 Danilo Turcios [Y 8'], 21 Emilio Izaguirre [Y 38'].\nNote:               David Villa missed a penalty at 62'.",
+        "lang": "en"
+      }
     },
     {
       "id": "m047",
@@ -1042,7 +1272,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "25/06/2010, Pretoria, Loftus Versfeld Stadium, 41958\nWorld Cup\nSPAIN               2 (7 David Villa 24', 6 Andrés Iniesta 37')\nCHILE               1 (3 Gerard Piqué 47' OG)\nSpain:              1 Íker Casillas [c]; 15 Sergio Ramos, 3 Gerard Piqué, 5 Carles Puyol,\n(4-2-3-1)           11 Joan Capdevila; 14 Xabi Alonso (20 Javi Martínez 73'), 16 Sergio Busquets;\n6 Andrés Iniesta, 8 Xavi Hernández, 7 David Villa; 9 Fernando Torres\n(10 Cesc Fábregas 55').\nChile:              1 Claudio Bravo [c]; 17 Gary Medel, 3 Waldo Ponce, 18 Gonzalo Jara; 4 Mauricio Isla,\n(3-3-1-3)           13 Marco Estrada, 8 Arturo Vidal; 10 Jorge Valdivia (20 Rodrigo Millar 46');\n7 Alexis Sánchez (16 Fabián Orellana 65'), 15 Jean Beausejour, 11 Mark González\n(22 Esteban Paredes 46').\nReferee:            Marco Antonio Rodríguez (Mexico).\nCoaches:            Spain: Vicente Del Bosque.\nChile: Marcelo Bielsa (Argentina).\nCards:              Spain: none.\nChile: 17 Gary Medel [Y 15'], 3 Waldo Ponce [Y 19'], 13 Marco Estrada [Y 21' YR 37'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m048",
@@ -1055,7 +1290,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "25/06/2010, Bloemfontein, Vodacom Park (Free State Stadium), 28042\nWorld Cup\nHONDURAS            0\nSWITZERLAND         0\nHonduras:           18 Noel Valladares [c]; 16 Mauricio Sabillón, 2 Osman Chávez, 5 Víctor Bernárdez,\n(4-4-2)             3 Maynor Figueroa; 17 Édgard Álvarez, 6 Hendry Thomas, 8 Wilson Palacios,\n7 Ramón Núñez (15 Walter Martínez 67'); 11 David Suazo (19 Danilo Turcios 87'),\n10 Jerry Palacios (12 Georgie Welcome 78').\nSwitzerland:        1 Diego Benaglio; 2 Stephan Lichtsteiner, 5 Steve von Bergen, 13 Stéphane Grichting,\n(4-4-2)             17 Reto Ziegler; 7 Tranquillo Barnetta, 6 Benjamin Huggel (23 Xherdan Shaqiri 78'),\n8 Gökhan Inler [c], 16 Gelson Fernandes (15 Hakan Yakin 46'); 19 Eren Derdiyok,\n10 Blaise Nkufo (9 Alexander Frei 69').\nReferee:            Héctor Baldassi (Argentina).\nCoaches:            Honduras: Reinaldo Rueda (Colombia).\nSwitzerland: Ottmar Hitzfeld (Germany).\nCards:              Honduras: 6 Hendry Thomas [Y 4'], 11 David Suazo [Y 58'], 2 Osman Chávez [Y 64'],\n8 Wilson Palacios [Y 89'].\nSwitzerland: 16 Gelson Fernandes [Y 34'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m049",
@@ -1068,7 +1308,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "26/06/2010, Port Elizabeth, Nelson Mandela Bay Stadium, 30597\nWorld Cup\nURUGUAY             2 (9 Luis Suárez 8' 80')\nSOUTH KOREA         1 (17 Lee Chung-Yong 68')\nUruguay:            1 Fernando Muslera; 16 Maxi Pereira, 2 Diego Lugano [c], 3 Diego Godín\n(4-3-3)             (6 Mauricio Victorino 46'), 4 Jorge Fucile; 15 Diego Pérez, 17 Egidio Arévalo Ríos,\n11 Álvaro Pereira (14 Nicolás Lodeiro 74'); 7 Edinson Cavani, 10 Diego Forlán,\n9 Luis Suárez (20 Álvaro Fernández 84').\nSouth Korea:        18 Jung Sung-Ryong; 22 Cha Du-Ri, 4 Cho Yong-Hyung, 14 Lee Jung-Soo, 12 Lee Young-Pyo;\n(4-2-3-1)           8 Kim Jung-Woo, 16 Ki Sung-Yong (19 Yeom Ki-Hun 85'); 17 Lee Chung-Yong,\n13 Kim Jae-Sung (20 Lee Dong-Gook 61'), 7 Park Ji-Sung [c]; 10 Park Chu-Young.\nReferee:            Wolfgang Stark (Germany).\nCoaches:            Uruguay: Óscar Washington Tabárez.\nSouth Korea: Huh Jung-Moo.\nCards:              Uruguay: none.\nSouth Korea: 8 Kim Jung-Woo [Y 38'], 22 Cha Du-Ri [Y 69'], 4 Cho Yong-Hyung [Y 83'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m050",
@@ -1084,7 +1329,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "26/06/2010, Phokeng, Royal Bafokeng Stadium, 34976\nWorld Cup\nGHANA               2 (23 Kevin-Prince Boateng 5', 3 Asamoah Gyan 93')\nUSA                 1 (10 Landon Donovan 62' pen)\nAfter Extra Time.\nGhana:              22 Richard Kingson; 4 John Paintsil, 8 Jonathan Mensah, 5 John Mensah [c],\n(4-1-4-1)           2 Hans Sarpei (19 Lee Addy 73'); 6 Anthony Annan; 7 Samuel Inkoom\n(11 Sulley Muntari 113'), 21 Kwadwo Asamoah, 23 Kevin-Prince Boateng\n(10 Stephen Appiah 78'), 13 André Ayew; 3 Asamoah Gyan.\nUSA:                1 Tim Howard; 6 Steve Cherundolo, 15 Jay DeMerit, 3 Carlos Bocanegra [c],\n(4-4-2)             12 Jonathan Bornstein; 10 Landon Donovan, 4 Michael Bradley, 13 Ricardo Clark\n(19 Maurice Edu 31'), 8 Clint Dempsey; 20 Robbie Findley (22 Benny Feilhaber 46'),\n17 Jozy Altidore (9 Herculez Gomez 91').\nReferee:            Viktor Kassai (Hungary).\nCoaches:            Ghana: Milovan Rajevac (Serbia).\nUSA: Bob Bradley.\nCards:              Ghana: 8 Jonathan Mensah [Y 61'], 13 André Ayew [Y 90+'].\nUSA: 13 Ricardo Clark [Y 7'], 6 Steve Cherundolo [Y 17'], 3 Carlos Bocanegra [Y 68'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m051",
@@ -1097,7 +1347,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "27/06/2010, Bloemfontein, Vodacom Park (Free State Stadium), 40510\nWorld Cup\nGERMANY             4 (11 Miroslav Klose 20', 10 Lukas Podolski 32', 13 Thomas Müller 67' 70')\nENGLAND             1 (15 Matthew Upson 37')\nGermany:            1 Manuel Neuer; 16 Philipp Lahm [c], 17 Per Mertesacker, 3 Arne Friedrich,\n(4-2-3-1)           20 Jerome Boateng; 6 Sami Khedira, 7 Bastian Schweinsteiger; 13 Thomas Müller\n(15 Piotr Trochowski 72'), 8 Mesut Özil (9 Stefan Kießling 83'), 10 Lukas Podolski;\n11 Miroslav Klose (23 Mario Gómez 72').\nEngland:            1 David James; 2 Glen Johnson (17 Shaun Wright-Phillips 87'), 6 John Terry,\n(4-4-2)             15 Matthew Upson, 3 Ashley Cole; 16 James Milner (11 Joe Cole 64'),\n8 Frank J. Lampard, 14 Gareth Barry, 4 Steven Gerrard [c]; 19 Jermain Defoe\n(21 Emile Heskey 71'), 10 Wayne Rooney.\nReferee:            Jorge Larrionda (Uruguay).\nCoaches:            Germany: Joachim Löw.\nEngland: Fabio Capello (Italy).\nCards:              Germany: 3 Arne Friedrich [Y 47'].\nEngland: 2 Glen Johnson [Y 82'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m052",
@@ -1110,7 +1365,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "27/06/2010, Johannesburg, FNB Stadium 'Soccer City', 84377\nWorld Cup\nARGENTINA           3 (11 Carlos Tévez 25' 52', 9 Gonzalo Higuaín 33')\nMEXICO              1 (14 Javier Hernández 71')\nArgentina:          22 Sergio Romero; 15 Nicolás Otamendi, 2 Martín Demichelis, 4 Nicolás Burdisso,\n(4-1-3-2)           6 Gabriel Heinze; 14 Javier Mascherano [c]; 20 Maxi Rodríguez (23 Javier Pastore 87'),\n10 Lionel Messi, 7 Ángel Di María (17 Jonás Gutiérrez 79'); 9 Gonzalo Higuaín,\n11 Carlos Tévez (8 Juan Sebastián Verón 69').\nMexico:             1 Óscar Pérez; 16 Efraín Juárez, 5 Ricardo Osorio, 2 Francisco Javier Rodríguez,\n(4-4-2)             3 Carlos Salcido; 17 Giovani dos Santos, 4 Rafael Márquez [c], 6 Gerardo Torrado,\n18 Andrés Guardado (9 Guillermo Franco 61'); 21 Adolfo Bautista (7 Pablo Barrera 46'),\n14 Javier Hernández.\nReferee:            Roberto Rosetti (Italy).\nCoaches:            Argentina: Diego Maradona.\nMexico: Javier Aguirre.\nCards:              Argentina: none.\nMexico: 4 Rafael Márquez [Y 28'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m053",
@@ -1123,7 +1383,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "28/06/2010, Durban, Moses Mabhida Stadium, 61962\nWorld Cup\nNETHERLANDS         2 (11 Arjen Robben 18', 10 Wesley Sneĳder 84')\nSLOVAKIA            1 (11 Róbert Vittek 90+' pen)\nNetherlands:        1 Maarten Stekelenburg; 2 Gregory van der Wiel, 3 John Heitinga, 4 Joris Mathĳsen,\n(4-2-3-1)           5 Giovanni van Bronckhorst [c]; 8 Nigel de Jong, 6 Mark van Bommel; 11 Arjen Robben\n(17 Eljero Elia 71'), 10 Wesley Sneĳder (20 Ibrahim Afellay 90+'), 7 Dirk Kuĳt;\n9 Robin van Persie (21 Klaas-Jan Huntelaar 80').\nSlovakia:           1 Ján Mucha; 2 Peter Pekarík, 3 Martin Škrtel, 16 Ján Ďurica, 5 Radoslav Zabavník\n(4-2-3-1)           (14 Martin Jakubko 88'); 19 Juraj Kucka, 17 Marek Hamšík [c] (10 Marek Sapara 87');\n15 Miroslav Stoch, 7 Vladimír Weiss II, 18 Erik Jendrišek (20 Kamil Kopúnek 71');\n11 Róbert Vittek.\nReferee:            Alberto Undiano (Spain).\nCoaches:            Netherlands: Bert van Marwĳk.\nSlovakia: Vladimír Weiss I.\nCards:              Netherlands: 11 Arjen Robben [Y 31'], 1 Maarten Stekelenburg [Y 90+'].\nSlovakia: 19 Juraj Kucka [Y 40'], 20 Kamil Kopúnek [Y 72'], 3 Martin Škrtel [Y 84'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m054",
@@ -1136,7 +1401,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "28/06/2010, Johannesburg, Coca-Cola Park (Ellis Park), 54096\nWorld Cup\nBRAZIL              3 (4 Juan dos Santos 34', 9 Luís Fabiano Clemente 38', 11 Róbson de Souza 'Robinho' 59')\nCHILE               0\nBrazil:             1 Júlio César Espíndola; 2 Maicon Sisenando, 3 Lucimar Ferreira 'Lúcio' [c],\n(4-2-3-1)           4 Juan dos Santos, 6 Michel Bastos; 8 Gilberto da Silva, 18 Ramires do Nascimento;\n13 Daniel Alves da Silva, 10 Ricardo Leite 'Kaká' (20 Kléberson Pereira 81'),\n11 Róbson de Souza 'Robinho' (16 Gilberto Melo 85'); 9 Luís Fabiano Clemente\n(21 Nilmar da Silva 76').\nChile:              1 Claudio Bravo [c]; 18 Gonzalo Jara, 2 Ismael Fuentes, 5 Pablo Contreras\n(3-3-3-1)           (10 Jorge Valdivia 46'); 4 Mauricio Isla (20 Rodrigo Millar 62'), 6 Carlos Carmona,\n8 Arturo Vidal; 7 Alexis Sánchez, 15 Jean Beausejour, 11 Mark González\n(21 Rodrigo Tello 46'); 9 Humberto Suazo.\nReferee:            Howard Webb (England).\nCoaches:            Brazil: Carlos Verri 'Dunga'.\nChile: Marcelo Bielsa (Argentina).\nCards:              Brazil: 10 Ricardo Leite 'Kaká' [Y 30'], 18 Ramires do Nascimento [Y 71'].\nChile: 8 Arturo Vidal [Y 47'], 2 Ismael Fuentes [Y 68'], 20 Rodrigo Millar [Y 80'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m055",
@@ -1157,7 +1427,12 @@
       "pens": [
         5,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "29/06/2010, Pretoria, Loftus Versfeld Stadium, 36742\nWorld Cup\nPARAGUAY            0\nJAPAN               0\nParaguay won 5-3 on penalties.\nParaguay:           1 Justo Villar [c]; 6 Carlos Bonet, 14 Paulo da Silva, 21 Antolín Alcaraz,\n(4-3-3)             3 Claudio Morel Rodríguez; 13 Enrique Vera, 20 Néstor Ortigoza (8 Édgar Barreto 75'),\n16 Cristian Riveros; 9 Roque Santa Cruz (7 Óscar Cardozo 94'), 10 Édgar Benítez\n(18 Nelson Haedo Váldez 60'), 19 Lucas Barrios.\nJapan:              21 Eiji Kawashima; 3 Yuichi Komano, 22 Yuji Nakazawa, 4 Marcus Túlio Tanaka,\n(4-1-4-1)           5 Yuto Nagatomo; 2 Yuki Abe (14 Kengo Nakamura 81'); 8 Daisuke Matsui\n(9 Shinji Okazaki 65'), 17 Makoto Hasebe [c], 7 Yasuhito Endo, 16 Yoshito Okubo\n(11 Keiji Tamada 106'); 18 Keisuke Honda.\nReferee:            Frank De Bleeckere (Belgium).\nCoaches:            Paraguay: Gerardo Martino (Argentina).\nJapan: Takeshi Okada.\nCards:              Paraguay: 16 Cristian Riveros [Y 118'].\nJapan: 8 Daisuke Matsui [Y 58'], 5 Yuto Nagatomo [Y 72'], 18 Keisuke Honda [Y 90+'],\n7 Yasuhito Endo [Y 114'].\nPenalties:          1-0 Édgar Barreto, 1-1 Yasuhito Endo, 2-1 Lucas Barrios, 2-2 Makoto Hasebe,\n3-2 Cristian Riveros, 3-2 Yuichi Komano (miss), 4-2 Nelson Haedo Váldez,\n4-3 Keisuke Honda, 5-3 Óscar Cardozo.",
+        "lang": "en"
+      }
     },
     {
       "id": "m056",
@@ -1170,7 +1445,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "29/06/2010, Cape Town, Cape Town Stadium (Green Point), 62955\nWorld Cup\nSPAIN               1 (7 David Villa 63')\nPORTUGAL            0\nSpain:              1 Íker Casillas [c]; 15 Sergio Ramos, 3 Gerard Piqué, 5 Carles Puyol,\n(4-2-3-1)           11 Joan Capdevila; 14 Xabi Alonso (4 Carlos Marchena 90+'), 16 Sergio Busquets;\n6 Andrés Iniesta, 8 Xavi Hernández, 7 David Villa (18 Pedro Rodríguez 88');\n9 Fernando Torres (19 Fernando Llorente 59').\nPortugal:           1 Eduardo Carvalho; 21 Ricardo Costa, 6 Ricardo Carvalho, 2 Bruno Alves,\n(4-3-3)             23 Fábio Coentrão; 19 Tiago Mendes, 15 Képler Ferreira 'Pepe' (8 Pedro Mendes 72'),\n16 Raul Meireles; 11 Simão Sabrosa (9 Liédson Muniz 72'), 18 Hugo Almeida\n(10 Daniel Gomes 'Danny' 58'), 7 Cristiano Ronaldo Aveiro [c].\nReferee:            Héctor Baldassi (Argentina).\nCoaches:            Spain: Vicente Del Bosque.\nPortugal: Carlos Queiroz.\nCards:              Spain: 14 Xabi Alonso [Y 74'].\nPortugal: 19 Tiago Mendes [Y 80'], 21 Ricardo Costa [R 89'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m057",
@@ -1183,7 +1463,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "02/07/2010, Port Elizabeth, Nelson Mandela Bay Stadium, 40186\nWorld Cup\nNETHERLANDS         2 (10 Wesley Sneĳder 53' 68')\nBRAZIL              1 (11 Róbson de Souza 'Robinho' 10')\nNetherlands:        1 Maarten Stekelenburg; 2 Gregory van der Wiel, 3 John Heitinga, 13 André Ooĳer,\n(4-2-3-1)           5 Giovanni van Bronckhorst [c]; 6 Mark van Bommel, 8 Nigel de Jong; 11 Arjen Robben,\n10 Wesley Sneĳder, 7 Dirk Kuĳt; 9 Robin van Persie (21 Klaas-Jan Huntelaar 85').\nBrazil:             1 Júlio César Espíndola; 2 Maicon Sisenando, 3 Lucimar Ferreira 'Lúcio' [c],\n(4-2-3-1)           4 Juan dos Santos, 6 Michel Bastos (16 Gilberto Melo 62'); 8 Gilberto da Silva,\n5 Felipe Melo de Carvalho; 13 Daniel Alves da Silva, 10 Ricardo Leite 'Kaká',\n11 Róbson de Souza 'Robinho'; 9 Luís Fabiano Clemente (21 Nilmar da Silva 77').\nReferee:            Yuichi Nishimura (Japan).\nCoaches:            Netherlands: Bert van Marwĳk.\nBrazil: Carlos Verri 'Dunga'.\nCards:              Netherlands: 3 John Heitinga [Y 14'], 2 Gregory van der Wiel [Y 47'],\n8 Nigel de Jong [Y 64'], 13 André Ooĳer [Y 76'].\nBrazil: 6 Michel Bastos [Y 37'], 5 Felipe Melo de Carvalho [R 73'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m058",
@@ -1204,7 +1489,12 @@
       "pens": [
         4,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "02/07/2010, Johannesburg, FNB Stadium 'Soccer City', 84017\nWorld Cup\nURUGUAY             1 (10 Diego Forlán 55')\nGHANA               1 (11 Sulley Muntari 45+')\nUruguay won 4-2 on penalties.\nUruguay:            1 Fernando Muslera; 16 Maxi Pereira, 2 Diego Lugano [c] (19 Andrés Scotti 38'),\n(4-4-2)             6 Mauricio Victorino, 4 Jorge Fucile; 20 Álvaro Fernández (14 Nicolás Lodeiro 46'),\n15 Diego Pérez, 17 Egidio Arévalo Ríos, 7 Edinson Cavani (13 Sebastián Abreu 76');\n10 Diego Forlán, 9 Luis Suárez.\nGhana:              22 Richard Kingson; 4 John Paintsil, 15 Isaac Vorsah, 5 John Mensah [c], 2 Hans Sarpei;\n(4-1-4-1)           6 Anthony Annan; 7 Samuel Inkoom (10 Stephen Appiah 74'), 21 Kwadwo Asamoah,\n23 Kevin-Prince Boateng, 11 Sulley Muntari (18 Dominic Adiyiah 88'); 3 Asamoah Gyan.\nReferee:            Olegário Benquerença (Portugal).\nCoaches:            Uruguay: Óscar Washington Tabárez.\nGhana: Milovan Rajevac (Serbia).\nCards:              Uruguay: 4 Jorge Fucile [Y 20'], 17 Egidio Arévalo Ríos [Y 48'], 15 Diego Pérez [Y 59'],\n9 Luis Suárez [R 120+'].\nGhana: 4 John Paintsil [Y 54'], 2 Hans Sarpei [Y 77'], 5 John Mensah [Y 93'].\nPenalties:          1-0 Diego Forlán, 1-1 Asamoah Gyan, 2-1 Mauricio Victorino, 2-2 Stephen Appiah,\n3-2 Andrés Scotti, 3-2 John Mensah (save), 3-2 Maxi Pereira (miss),\n3-2 Dominic Adiyiah (save), 4-2 Sebastián Abreu.\nNote:               Asamoah Gyan missed a penalty at 120+'.",
+        "lang": "en"
+      }
     },
     {
       "id": "m059",
@@ -1217,7 +1507,12 @@
       "score": [
         0,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "03/07/2010, Cape Town, Cape Town Stadium (Green Point), 64100\nWorld Cup\nGERMANY             4 (13 Thomas Müller 3', 11 Miroslav Klose 68' 89', 3 Arne Friedrich 74')\nARGENTINA           0\nGermany:            1 Manuel Neuer; 16 Philipp Lahm [c], 17 Per Mertesacker, 3 Arne Friedrich,\n(4-2-3-1)           20 Jerome Boateng (2 Marcell Jansen 72'); 6 Sami Khedira (18 Toni Kroos 77'),\n7 Bastian Schweinsteiger; 13 Thomas Müller (15 Piotr Trochowski 84'), 8 Mesut Özil,\n10 Lukas Podolski; 11 Miroslav Klose.\nArgentina:          22 Sergio Romero; 15 Nicolás Otamendi (23 Javier Pastore 70'), 2 Martín Demichelis,\n(4-1-3-2)           4 Nicolás Burdisso, 6 Gabriel Heinze; 14 Javier Mascherano [c]; 20 Maxi Rodríguez,\n10 Lionel Messi, 7 Ángel Di María (16 Sergio Agüero 75'); 11 Carlos Tévez,\n9 Gonzalo Higuaín.\nReferee:            Ravshan Ermatov (Uzbekistan).\nCoaches:            Germany: Joachim Löw.\nArgentina: Diego Maradona.\nCards:              Germany: 13 Thomas Müller [Y 35'].\nArgentina: 15 Nicolás Otamendi [Y 11'], 14 Javier Mascherano [Y 80'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m060",
@@ -1230,7 +1525,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "03/07/2010, Johannesburg, Coca-Cola Park (Ellis Park), 55359\nWorld Cup\nSPAIN               1 (7 David Villa 83')\nPARAGUAY            0\nSpain:              1 Íker Casillas [c]; 15 Sergio Ramos, 3 Gerard Piqué, 5 Carles Puyol\n(4-2-3-1)           (4 Carlos Marchena 84'), 11 Joan Capdevila; 16 Sergio Busquets, 14 Xabi Alonso\n(18 Pedro Rodríguez 75'); 6 Andrés Iniesta, 8 Xavi Hernández, 7 David Villa;\n9 Fernando Torres (10 Cesc Fábregas 56').\nParaguay:           1 Justo Villar [c]; 2 Dario Verón, 14 Paulo da Silva, 21 Antolín Alcaraz,\n(4-4-2)             3 Claudio Morel Rodríguez; 8 Édgar Barreto (13 Enrique Vera 64'), 15 Víctor Cáceres\n(19 Lucas Barrios 84'), 16 Cristian Riveros, 11 Jonathan Santana; 7 Óscar Cardozo,\n18 Nelson Haedo Váldez (9 Roque Santa Cruz 73').\nReferee:            Carlos Batrés (Guatemala).\nCoaches:            Spain: Vicente Del Bosque.\nParaguay: Gerardo Martino (Argentina).\nCards:              Spain: 3 Gerard Piqué [Y 57'], 16 Sergio Busquets [Y 63'].\nParaguay: 15 Víctor Cáceres [Y 59'], 21 Antolín Alcaraz [Y 59'],\n3 Claudio Morel Rodríguez [Y 71'], 11 Jonathan Santana [Y 88'].\nNotes:              Íker Casillas saved a penalty from Óscar Cardozo at 59', and Justo Villar\nsaved a penalty from Xabi Alonso at 61'.",
+        "lang": "en"
+      }
     },
     {
       "id": "m061",
@@ -1243,7 +1543,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "06/07/2010, Cape Town, Cape Town Stadium (Green Point), 62479\nWorld Cup\nNETHERLANDS         3 (5 Giovanni van Bronckhorst 18', 10 Wesley Sneĳder 70', 11 Arjen Robben 73')\nURUGUAY             2 (10 Diego Forlán 41', 16 Maxi Pereira 90+')\nNetherlands:        1 Maarten Stekelenburg; 12 Khalid Boulahrouz, 3 John Heitinga, 4 Joris Mathĳsen,\n(4-2-3-1)           5 Giovanni van Bronckhorst [c]; 6 Mark van Bommel, 14 Demy de Zeeuw\n(23 Rafael van der Vaart 46'); 11 Arjen Robben (17 Eljero Elia 90'),\n10 Wesley Sneĳder, 7 Dirk Kuĳt; 9 Robin van Persie.\nUruguay:            1 Fernando Muslera; 16 Maxi Pereira, 6 Mauricio Victorino, 3 Diego Godín,\n(4-1-3-2)           22 Martín Cáceres; 17 Egidio Arévalo Ríos; 15 Diego Pérez, 5 Walter Gargano,\n11 Álvaro Pereira (13 Sebastián Abreu 78'); 10 Diego Forlán [c]\n(21 Sebastián Fernández 84'), 7 Edinson Cavani.\nReferee:            Ravshan Ermatov (Uzbekistan).\nCoaches:            Netherlands: Bert van Marwĳk.\nUruguay: Óscar Washington Tabárez.\nCards:              Netherlands: 10 Wesley Sneĳder [Y 29'], 12 Khalid Boulahrouz [Y 78'],\n6 Mark van Bommel [Y 90+'].\nUruguay: 16 Maxi Pereira [Y 21'], 22 Martín Cáceres [Y 29'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m062",
@@ -1256,7 +1561,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "07/07/2010, Durban, Moses Mabhida Stadium, 60960\nWorld Cup\nSPAIN               1 (5 Carles Puyol 73')\nGERMANY             0\nSpain:              1 Íker Casillas [c]; 15 Sergio Ramos, 3 Gerard Piqué, 5 Carles Puyol,\n(4-2-3-1)           11 Joan Capdevila; 16 Sergio Busquets, 14 Xabi Alonso (4 Carlos Marchena 90+');\n18 Pedro Rodríguez (21 David Jiménez Silva 86'), 8 Xavi Hernández,\n6 Andrés Iniesta; 7 David Villa (9 Fernando Torres 81').\nGermany:            1 Manuel Neuer; 16 Philipp Lahm [c], 17 Per Mertesacker, 3 Arne Friedrich,\n(4-4-1-1)           20 Jerome Boateng (2 Marcell Jansen 52'); 15 Piotr Trochowski (18 Toni Kroos 62'),\n6 Sami Khedira (23 Mario Gómez 81'), 7 Bastian Schweinsteiger, 10 Lukas Podolski;\n8 Mesut Özil; 11 Miroslav Klose.\nReferee:            Viktor Kassai (Hungary).\nCoaches:            Spain: Vicente Del Bosque.\nGermany: Joachim Löw.\nCards:              None.",
+        "lang": "en"
+      }
     },
     {
       "id": "m063",
@@ -1269,7 +1579,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "10/07/2010, Port Elizabeth, Nelson Mandela Bay Stadium, 36254\nWorld Cup\nGERMANY             3 (13 Thomas Müller 19', 2 Marcell Jansen 56', 6 Sami Khedira 82')\nURUGUAY             2 (7 Edinson Cavani 28', 10 Diego Forlán 51')\nGermany:            22 Hans-Jörg Butt; 20 Jerome Boateng, 17 Per Mertesacker, 3 Arne Friedrich,\n(4-2-3-1)           4 Dennis Aogo; 7 Bastian Schweinsteiger [c], 6 Sami Khedira; 13 Thomas Müller,\n8 Mesut Özil (5 Serdar Tasci 90+'), 2 Marcell Jansen (18 Toni Kroos 81');\n19 Claudemir Barreto 'Cacau' (9 Stefan Kießling 73').\nUruguay:            1 Fernando Muslera; 4 Jorge Fucile, 2 Diego Lugano [c], 3 Diego Godín,\n(4-4-2)             22 Martín Cáceres; 16 Maxi Pereira, 15 Diego Pérez (5 Walter Gargano 77'),\n17 Egidio Arévalo Ríos, 7 Edinson Cavani (13 Sebastián Abreu 88');\n9 Luis Suárez, 10 Diego Forlán.\nReferee:            Benito Archundia (Mexico).\nCoaches:            Germany: Joachim Löw.\nUruguay: Óscar Washington Tabárez.\nCards:              Germany: 4 Dennis Aogo [Y 5'], 19 Claudemir Barreto 'Cacau' [Y 6'],\n3 Arne Friedrich [Y 90+'].\nUruguay: 15 Diego Pérez [Y 61'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m064",
@@ -1285,7 +1600,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2010full",
+        "text": "11/07/2010, Johannesburg, FNB Stadium 'Soccer City', 84490\nWorld Cup\nSPAIN               1 (6 Andrés Iniesta 116')\nNETHERLANDS         0\nAfter Extra Time.\nSpain:              1 Íker Casillas [c]; 15 Sergio Ramos, 3 Gerard Piqué, 5 Carles Puyol,\n(4-2-3-1)           11 Joan Capdevila; 16 Sergio Busquets, 14 Xabi Alonso (10 Cesc Fábregas 87');\n18 Pedro Rodríguez (22 Jesús Navas 60'), 8 Xavi Hernández, 6 Andrés Iniesta;\n7 David Villa (9 Fernando Torres 106').\nNetherlands:        1 Maarten Stekelenburg; 2 Gregory van der Wiel, 3 John Heitinga, 4 Joris Mathĳsen,\n(4-2-3-1)           5 Giovanni van Bronckhorst [c] (15 Edson Braafheid 105'); 6 Mark van Bommel,\n8 Nigel de Jong (23 Rafael van der Vaart 99'); 11 Arjen Robben, 10 Wesley Sneĳder,\n7 Dirk Kuĳt (17 Eljero Elia 71'); 9 Robin van Persie.\nReferee:            Howard Webb (England).\nCoaches:            Spain: Vicente Del Bosque.\nNetherlands: Bert van Marwĳk.\nCards:              Spain: 5 Carles Puyol [Y 17'], 15 Sergio Ramos [Y 23'], 11 Joan Capdevila [Y 67'],\n6 Andrés Iniesta [Y 118'], 8 Xavi Hernández [Y 120+'].\nNetherlands: 9 Robin van Persie [Y 15'], 6 Mark van Bommel [Y 22'],\n8 Nigel de Jong [Y 28'], 5 Giovanni van Bronckhorst [Y 54'],\n3 John Heitinga [Y 56' YR 109'], 11 Arjen Robben [Y 84'],\n2 Gregory van der Wiel [Y 111'], 4 Joris Mathĳsen [Y 117'].\nNote:               Fernando Torres left the field due to injury at 120+' and was not replaced,\nas Spain had made their three substitutions.\nOfficial Awards\nFIFA Fair play Trophy: Spain\n[Best player]\nHyundai young player award: Thomas Müller (Germany)\nadidas Bronze Ball: David Villa (Spain)\nadidas Silver Ball: Wesley Sneĳder (Netherlands)\nadidas Golden Ball: Diego Forlán (Uruguay)\n[Best goalkeeper]\nadidas Golden Glove: Íker Casillas (Spain)\n[Top scorer]\nadidas Bronze Boot: Wesley Sneĳder (Netherlands), 5 goals and 1 'assist', in 652 minutes\nadidas Silver Boot: David Villa (Spain), 5 goals and 1 'assist', in 635 minutes\nadidas Golden Boot: Thomas Müller (Germany), 5 goals and 3 'assists'\nNote: Diego Forlán (Uruguay) was ranked fourth; he also had 5 goals and 1 'assist', but in 654 minutes (according to FIFA's own count).",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [

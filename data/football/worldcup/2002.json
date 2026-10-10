@@ -432,7 +432,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "31/05/2002, Seoul (South Korea), Seoul World Cup Stadium, 62561\nWorld Cup\nFRANCE              0\nSENEGAL             1 (Papa Bouba Diop 30')\nFrance:             Fabien Barthez, Bixente Lizarazu, Patrick Vieira, Youri Djorkaeff\n(Christophe Dugarry 60'), Marcel Desailly [c], Sylvain Wiltord\n(Djibril Cissé 81'), Thierry Henry, Lilian Thuram, Emmanuel Petit,\nFrank Leboeuf, David Trézéguet.\nSenegal:            Tonny Sylva, Omar Daf, Papa Malick Diop, Aliou Cissé [c], Khalilou Fadiga,\nEl-Hadji Diouf, Lamine Diatta, Moussa Ndiaye, Salif Diao, Ferdinand Coly,\nPapa Bouba Diop.\nReferee:            Ali Bujsaim (UAE).\nCoaches:            France: Roger Lemerre.\nSenegal: Bruno Metsu (France).\nCards:              France: Emmanuel Petit [Y 45+'].\nSenegal: Aliou Cissé [Y 51'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -445,7 +450,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "01/06/2002, Ulsan (South Korea), Munsu Football Stadium, 30157\nWorld Cup\nURUGUAY             1 (Darío Rodríguez 47')\nDENMARK             2 (Jon Dahl Tomasson 45', 83')\nUruguay:            Fabián Carini, Gustavo Méndez, Gonzalo Sorondo, Paolo Montero [c],\nDarío Rodríguez (Federico Magallanes 87'), Pablo García, Gustavo Varela,\nGianni Guigou, Álvaro Recoba (Mario Regueiro 80'), Darío Silva,\nSebastián Abreu (Richard Morales 88').\nDenmark:            Thomas Sørensen, Stig Tøfting, René Henriksen, Martin Laursen,\nJan Heintze [c] (Niclas Jensen 58'), Thomas Helveg, Thomas Gravesen,\nJesper Grønkjær (Martin Jørgensen 70'), Jon Dahl Tomasson,\nEbbe Sand (Christian Poulsen 89'), Dennis Rommedahl.\nReferee:            Saad Mane (Kuwait).\nCoaches:            Uruguay: Víctor Púa.\nDenmark: Morten Olsen.\nCards:              Uruguay: Gustavo Méndez [Y 25'].\nDenmark: Jan Heintze [Y 34'], Martin Laursen [Y 51'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -458,7 +468,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "06/06/2002, Daegu (South Korea), Daegu World Cup Stadium, 43500\nWorld Cup\nDENMARK             1 (Jon Dahl Tomasson 16' pen)\nSENEGAL             1 (Salif Diao 52')\nDenmark:            Thomas Sørensen, Stig Tøfting, René Henriksen, Martin Laursen,\nJan Heintze [c], Thomas Helveg, Thomas Gravesen (Christian Poulsen 62'),\nJesper Grønkjær (Martin Jørgensen 50'), Jon Dahl Tomasson,\nEbbe Sand, Dennis Rommedahl (Peter Løvenkrands 89').\nSenegal:            Tony Sylva, Omar Daf, Papa Sarr (Souleymane Camara 46' (Habib Bèye 82')),\nPapa Malick Diop [c], Khalilou Fadiga, El-Hadji Diouf, Lamine Diatta,\nMoussa Ndiaye (Henri Camara 46'), Salif Diao, Ferdinand Coly,\nPapa Bouba Diop.\nReferee:            Carlos Batrés (Guatemala).\nCoaches:            Denmark: Morten Olsen.\nSenegal: Bruno Metsu (France).\nCards:              Denmark: Ebbe Sand [Y 7'], Jon Dahl Tomasson [Y 20'],\nThomas Helveg [Y 82'], Christian Poulsen [Y 84'].\nSenegal: Khalilou Fadiga [Y 10'], Salif Diao [Y 62', YR 80'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -471,7 +486,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "06/06/2002, Busan (South Korea), Busan Asiad Main Stadium, 38289\nWorld Cup\nFRANCE              0\nURUGUAY             0\nFrance:             Fabien Barthez, Bixente Lizarazu, Patrick Vieira, Marcel Desailly [c],\nSylvain Wiltord (Christophe Dugarry 90+'), Thierry Henry, Lilian Thuram,\nEmmanuel Petit, Frank Leboeuf (Vincent Candela 16'), David Trézéguet\n(Djibril Cissé 81').\nUruguay:            Fabián Carini, Alejandro Lembo, Paolo Montero [c], Pablo García,\nDarío Rodríguez (Gianni Guigou 72'), Gustavo Varela, Darío Silva\n(Federico Magallanes 60'), Sebastián Abreu, Gonzalo Sorondo,\nMarcelo Romero (Gonzalo De los Santos 71'), Álvaro Recoba.\nReferee:            Felipe Ramos Rizo (Mexico).\nCoaches:            France: Roger Lemerre.\nUruguay: Víctor Púa.\nCards:              France: Thierry Henry [R 25'], Emmanuel Petit [Y 45+'].\nUruguay: Pablo García [Y 11'], Sebastián Abreu [Y 47'],\nMarcelo Romero [Y 45+'], Darío Silva [Y 47'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -484,7 +504,12 @@
       "score": [
         3,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "11/06/2002, Suwon (South Korea), Suwon World Cup Stadium, 33681\nWorld Cup\nSENEGAL             3 (Khalilou Fadiga 20' pen, Papa Bouba Diop 26', 38')\nURUGUAY             3 (Richard Morales 46', Diego Forlán 69', Álvaro Recoba 88' pen)\nSenegal:            Tony Sylva, Omar Daf, Papa Malick Diop, Alassane Ndour (Amdy Faye 76'),\nAliou Cissé [c], Henri Camara (Moussa Ndiaye 67'), Khalilou Fadiga,\nEl-Hadji Diouf, Lamine Diatta, Ferdinand Coly (Habib Bèye 63'),\nPapa Bouba Diop.\nUruguay:            Fabián Carini, Alejandro Lembo, Paolo Montero [c], Pablo García,\nDarío Rodríguez, Gustavo Varela, Darío Silva, Sebastián Abreu\n(Diego Forlán 46'), Gonzalo Sorondo (Mario Reguero 32'), Marcelo Romero\n(Richard Morales 46'), Álvaro Recoba.\nReferee:            Jan Wegereef (Netherlands).\nCoaches:            Senegal: Bruno Metsu (France).\nUruguay: Víctor Púa.\nCards:              Senegal: Henri Camara [Y 2'], Omar Daf [Y 4'], Ferdinand Coly [Y 39'],\nPapa Bouba Diop [Y 69'], El-Hadji Djouf [Y 82'],\nKhalilou Fadiga [Y 87'], Habib Bèye [Y 87'].\nUruguay: Marcelo Romero [Y 8'], Fabián Carini [Y 19'],\nPablo García [Y 35'], Darío Rodríguez [Y 40'],\nPaolo Montero [Y 82'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -497,7 +522,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "11/06/2002, Incheon (South Korea), Incheon Munhak Stadium, 48100\nWorld Cup\nDENMARK             2 (Dennis Rommedahl 22', Jon Dahl Tomasson 67')\nFRANCE              0\nDenmark:            Thomas Sørensen, Stig Tøfting (Brian Steen Nielsen 79'),\nRené Henriksen [c], Martin Laursen, Thomas Helveg, Thomas Gravesen,\nJon Dahl Tomasson, Martin Jørgensen (Jesper Grønkjær 46'), Niclas Jensen,\nChristian Poulsen (Kasper Bøgelund 76'), Dennis Rommedahl.\nFrance:             Fabien Barthez, Vincent Candela, Bixente Lizarazu, Patrick Vieira\n(Johan Micoud 71'), Claude Makelele, Marcel Desailly [c], Zinedine Zidane,\nSylvain Wiltord (Youri Djorkaeff 83'), Lilian Thuram, David Trézéguet,\nChristophe Dugarry (Djibril Cissé 54').\nReferee:            Vítor Melo Pereira (Portugal).\nCoaches:            Denmark: Morten Olsen.\nFrance: Roger Lemerre.\nCards:              Denmark: Christian Poulsen [Y 27'], Niclas Jensen [Y 71'].\nFrance: Christophe Dugarry [Y 8'].\nTable:",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -510,7 +540,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "02/06/2002, Busan (South Korea), Busan Asiad Main Stadium, 25186\nWorld Cup\nPARAGUAY            2 (Roque Santa Cruz 39', Francisco Arce 55')\nSOUTH AFRICA        2 (Teboho Mokoena 63', Quinton Fortune 90+' pen)\nParaguay:           Ricardo Tavarelli, Francisco Arce, Carlos Gamarra [c], Celso Ayala,\nEstanislao Struway (Juan Carlos Franco 86'), Guido Alvarenga\n(Diego Gavilán 66'), Roque Santa Cruz, Roberto Acuña, Jorge Campos\n(Gustavo Morínigo 72'), Julio César Cáceres, Denis Caniza.\nSouth Africa:       Andre Arendse, Cyril Nzama, Lucas Radebe [c], Bradley Carnell,\nAaron Mokoena, MacBeth Sibaya, Quinton Fortune, Teboho Mokoena,\nPierre Issa (MacDonald Mukasi 27'), Sibusiso Zuma, Benedict McCarthy\n(George Koumantarakis 78').\nReferee:            Lubos Michel (Slovakia).\nCoaches:            Paraguay: Cesare Maldini (Italy).\nSouth Africa: Jomo Sono.\nCards:              Paraguay: Julio César Cáceres [Y 35'], Denis Caniza [Y 65'],\nRicardo Tavarelli [Y 90'], Juan Carlos Franco [Y 90+'].\nSouth Africa: Aaron Mokoena [Y 3'], Pierre Issa [Y 9'],\nBenedict McCarthy [Y 38'], Sibusiso Zuma [Y 45+'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -523,7 +558,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "02/06/2002, Gwangju (South Korea), Gwangju World Cup Stadium, 28598\nWorld Cup\nSPAIN               3 (Raúl 44', Valerón 74', Hierro 87' pen)\nSLOVENIA            1 (Sebastjan Cimirotič 82')\nSpain:              Iker Casillas, Juanfran (Romero 82'), Puyol, Hierro [c], Raúl,\nBaraja, Diego Tristán (Morientes 67'), De Pedro, Valerón, Nadal,\nLuis Enrique (Iván Helguera 74').\nSlovenia:           Marko Simeunovič, Željko Milinovič, Marinko Galič, Aleksander Knavs,\nĐoni Novak (Saša Gajser 77'), Aleš Čeh [c], Milan Osterc\n(Sebastjan Cimirotič 57'), Zlatko Zahovič (Milenko Ačimovič 63'),\nMiran Pavlin, Mladen Rudonja, Amir Karič.\nReferee:            Mohamed Guezzaz (Morocco).\nCoaches:            Spain: Camacho.\nSlovenia: Srečko Katanec.\nCards:              Spain: Valerón [Y 36'].\nSlovenia: Amir Karič [Y 45+'], Sebastjan Cimirotič [Y 65'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -536,7 +576,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "07/06/2002, Jeonju (South Korea), Jeonju World Cup Stadium, 24000\nWorld Cup\nSPAIN               3 (Morientes 53', 69', Hierro 83' pen)\nPARAGUAY            1 (Puyol 10' OG)\nSpain:              Iker Casillas, Juanfran, Puyol, Hierro [c], Nadal, Baraja, Diego Tristán\n(Morientes 46'), De Pedro, Valerón (Xavi 85'), Raúl, Luis Enrique\n(Iván Helguera 46').\nParaguay:           José Luis Chilavert [c], Francisco Arce, Carlos Gamarra, Celso Ayala,\nRoque Santa Cruz, Roberto Acuña, Carlos Humberto Paredes,\nDiego Gavilán, Julio César Cáceres, José Cardozo (Jorge Campos 63'),\nDenis Caniza (Estanislao Struway 78').\nReferee:            Gamal Ghandour (Egypt).\nCoaches:            Spain: Camacho.\nParaguay: Cesare Maldini (Italy).\nCards:              Spain: Baraja [Y 9'].\nParaguay: Francisco Arce [Y 43'], Diego Gavilán [Y 60'],\nRoque Santa Cruz [Y 80'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -549,7 +594,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "08/06/2002, Daegu (South Korea), Daegu World Cup Stadium, 47226\nWorld Cup\nSOUTH AFRICA        1 (Siyabonga Nomvete 4')\nSLOVENIA            0\nSouth Africa:       Andre Arendse, Cyril Nzama, Bradley Carnell, Aaron Mokoena,\nMacBeth Sibaya, Quinton Fortune (Jabu Pule 84'), Teboho Mokoena,\nSiyabonga Nomvete (Delron Buckley 71'), Sibusiso Zuma, Benedict McCarthy\n(George Koumantarakis 80'), Lucas Radebe [c].\nSlovenia:           Marko Simeunovič, Željko Milinovič, Muamer Vugdalič, Aleksander Knavs\n(Spasoje Bulajič 60'), Đoni Novak, Aleš Čeh [c], Miran Pavlin,\nMladen Rudonja, Milenko Ačimovič (Nastja Čeh 60'), Amir Karič,\nSebastjan Cimirotič (Milan Osterc 41').\nReferee:            Ángel Sánchez (Argentina).\nCoaches:            South Africa: Jomo Sono.\nSlovenia: Srečko Katanec.\nCards:              South Africa: Lucas Radebe [Y 12'], Teboho Mokoena [Y 59'].\nSlovenia: Muamer Vugdalič [Y 35'], Željko Milinovič [Y 52'],\nAleš Čeh [Y 62'], Miran Pavlin [Y 75'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -562,7 +612,12 @@
       "score": [
         2,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "12/06/2002, Daejeon (South Korea), Daejeon World Cup Stadium, 31024\nWorld Cup\nSOUTH AFRICA        2 (Benedict McCarthy 31', Lucas Radebe 53')\nSPAIN               3 (Raúl 4', 56', Mendieta 45+')\nSouth Africa:       Andre Arendse, Cyril Nzama, Bradley Carnell, Aaron Mokoena,\nMacBeth Sibaya, Quinton Fortune (Jacob Lekgetho 83'), Teboho Mokoena,\nSiyabonga Nomvete (George Koumantarakis 74'), Sibusiso Zuma,\nBenedict McCarthy, Lucas Radebe [c] (Thabang Molefe 80').\nSpain:              Iker Casillas, Curro Torres, Iván Helguera, Raúl (Luis Enrique 82'),\nMorientes (Luque 77'), Albelda (Sergio 53'), Romero, Mendieta, Xavi,\nNadal [c], Joaquín.\nReferee:            Saad Mane (Kuwait).\nCoaches:            South Africa: Jomo Sono.\nSpain: Camacho.\nCards:              South Africa: Cyril Nzama [Y 16'], Bradley Carnell [Y 67'],\nSiyabonga Nomvete [Y 69'], Aaron Mokoena [Y 81'].\nSpain: None.",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -575,7 +630,12 @@
       "score": [
         1,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "12/06/2002, Seogwipo (South Korea), Jeju World Cup Stadium, 30176\nWorld Cup\nSLOVENIA            1 (Milenko Ačimovič 45+')\nPARAGUAY            3 (Nelson Cuevas 65', 84', Jorge Campos 73')\nSlovenia:           Mladen Dabanovič, Željko Milinovič, Đoni Novak, Aleš Čeh [c],\nMilan Osterc (Senad Tiganj 77'), Miran Pavlin (Mladen Rudonja 40'),\nRajko Tavčar, Milenko Ačimovič (Nastja Čeh 62'), Amir Karič,\nSebastjan Cimirotič, Spasoje Bulajič.\nParaguay:           José Luis Chilavert [c], Francisco Arce, Carlos Gamarra, Celso Ayala,\nGuido Alvarenga (Jorge Campos 53'), Roque Santa Cruz, Roberto Acuña,\nCarlos Humberto Paredes, Julio César Cáceres, José Cardozo\n(Nelson Cuevas 61' (Juan Carlos Franco 90+')), Denis Caniza.\nReferee:            Felipe Ramón Rizo (Mexico).\nCoaches:            Slovenia: Srečko Katanec.\nParaguay: Cesare Maldini (Italy).\nCards:              Slovenia: Miran Pavlin [Y 15'], Amir Karič [Y 68'],\nMladen Rudonja [Y 69'], Željko Milinovič [Y 79'],\nNastja Čeh [R 81'].\nParaguay: Carlos Humberto Paredes [Y 4' YR 22'].\nTable:",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -588,7 +648,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "03/06/2002, Ulsan (South Korea), Munsu Football Stadium, 33842\nWorld Cup\nBRAZIL              2 (Ronaldo 50', Rivaldo 87' pen)\nTURKEY              1 (Hasan Şaş 45+')\nBrazil:             Marcos, Cafu [c], Lúcio, Roque Júnior, Edmílson, Roberto Carlos,\nGilberto Silva, Ronaldo (Luizão 73'), Rivaldo, Ronaldinho Gaúcho\n(Denílson 67'), Juninho Paulista (Vampeta 72').\nTurkey:             Rüştü Reçber, Bülent Korkmaz (Ümit Davala 66'), Fatih Akyel, Alpay Özalan,\nTugay Kerimoğlu (Arif Erdem 88'), Hakan Şükür [c], Yıldıray Baştürk\n(İlhan Mansız 66'), Hasan Şaş, Ümit Özat, Hakan Ünsal, Emre Belözoğlu.\nReferee:            Kim Young-Joo (South Korea).\nCoaches:            Brazil: Luiz Felipe Scolari.\nTurkey: Şenol Güneş.\nCards:              Brazil: Denílson [Y 73'].\nTurkey: Fatih Akyel [Y 21'], Hakan Ünsal [Y 24', YR 90+'],\nAlpay Özalan [Y 44' R 86'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -601,7 +666,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "04/06/2002, Gwangju (South Korea), Gwangju World Cup Stadium, 27217\nWorld Cup\nCHINA               0\nCOSTA RICA          2 (Rónald Gómez 61', Mauricio Wright 65')\nChina:              Jiang Jin, Wu Chengying, Fan Zhiyi (Yu Genwei 74'), Sun Jihai\n(Qu Bo 26'), Li Tie, Ma Mingyu [c], Hao Haidong, Li Weifeng, Li Xiaopeng,\nYang Chen (Su Maozhen 66'), Xu Yunlong.\nCosta Rica:         Erick Lonnis [c], Luis Marín, Mauricio Wright, Gilberto Martínez,\nRolando Fonseca (Hernán Medford 57'), Mauricio Solís, Paulo Wanchope\n(Wílmer López 80'), Wálter Genteno, Rónald Gómez, Hárold Wallace\n(Steven Bryce 70'), Carlos Castro.\nReferee:            Kyros Vassaras (Greece).\nCoaches:            China: Bora Milutinović (Yugoslavia).\nCosta Rica: Alexandre Guimarães.\nCards:              China: Li Tie [Y 60'], Xu Yunlong [Y 72'], Li Xiaopeng [Y 77'].\nCosta Rica: Luis Marín [Y 15'], Mauricio Solís [Y 17'],\nRónald Gómez [Y 79'], Wálter Centeno [Y 85'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -614,7 +684,12 @@
       "score": [
         4,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "08/06/2002, Seogwipo (South Korea), Jeju World Cup Stadium, 36750\nWorld Cup\nBRAZIL              4 (Roberto Carlos 15', Rivaldo 32', Ronaldinho Gaúcho 45' pen, Ronaldo 55')\nCHINA               0\nBrazil:             Marcos, Cafu [c], Lúcio, Roque Júnior, Roberto Carlos, Gilberto Silva,\nRonaldo (Edílson 72'), Rivaldo, Ronaldinho Gaúcho (Denílson 46'),\nÂnderson Polga, Juninho Paulista (Ricardinho 70').\nChina:              Jiang Jin, Wu Chengying, Li Tie, Ma Mingyu [c] (Yang Pu 62'), Hao Haidong\n(Qu Bo 75'), Li Weifeng, Zhao Junzhe, Du Wei, Li Xiaopeng, Qi Hong\n(Shao Jiayi 66'), Xu Yunlong.\nReferee:            Anders Frisk (Sweden).\nCoaches:            Brazil: Luiz Felipe Scolari.\nChina: Bora Milutinović (Yugoslavia).\nCards:              Brazil: Ronaldinho Gaúcho [Y 25'], Roque Júnior [Y 69'].\nChina: None.",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -627,7 +702,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "09/06/2002, Incheon (South Korea), Munhak Stadium, 42299\nWorld Cup\nCOSTA RICA          1 (Winston Parks 86')\nTURKEY              1 (Emre Belözoğlu 56')\nCosta Rica:         Erick Lonnis [c], Luis Marín, Mauricio Wright, Gilberto Martínez,\nWílmer López (Winston Parks 77'), Mauricio Solís, Paulo Wanchope,\nWálter Centeno (Hernán Medford 66'), Rónald Gómez, Hárold Wallace\n(Steven Bryce 77'), Carlos Castro.\nTurkey:             Rüştü Reçber, Emre Aşık, Fatih Akyel, Tugay Kerimoğlu (Arif Erdem 88'),\nHakan Şükür [c] (İlhan Mansız 75'), Yıldıray Baştürk (Nihat Kahveci 66'),\nHasan Şaş, Ümit Özat, Ergün Penbe, Emre Belözoğlu, Ümit Davala.\nReferee:            Coffi Codjia (Benin).\nCoaches:            Costa Rica: Alexandre Guimarães.\nTurkey: Şenol Güneş.\nCards:              Costa Rica: Gilberto Martínez [Y 24'], Carlos Castro [Y 43'].\nTurkey: Emre Aşık [Y 20'], Tugay Kerimoğlu [Y 45'], Emre Belözoğlu [Y 89'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -640,7 +720,12 @@
       "score": [
         2,
         5
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "13/06/2002, Suwon (South Korea), Suwon World Cup Stadium, 38524\nWorld Cup\nCOSTA RICA          2 (Paulo Wanchope 39', Rónald Gómez 56')\nBRAZIL              5 (Ronaldo 10', 13', Edmílson 38', Rivaldo 62', Júnior 64')\nCosta Rica:         Erick Lonnis [c], Luis Marín, Mauricio Wright, Gilberto Martínez\n(Winston Parks 74'), Wílmer López, Mauricio Solís (Rolando Fonseca 65'),\nPaulo Wanchope, Wálter Centeno, Rónald Gómez, Hárold Wallace\n(Steven Bryce 46'), Carlos Castro.\nBrazil:             Marcos, Cafu [c], Lúcio, Edmílson, Gilberto Silva, Ronaldo, Rivaldo\n(Kaká 72'), Ânderson Polga, Júnior, Juninho Paulista (Ricardinho 61'),\nEdílson (Kléberson 57').\nReferee:            Gamal Ghandour (Egypt).\nCoaches:            Costa Rica: Alexandre Guimarães.\nBrazil: Luiz Felipe Scolari.\nCards:              Costa Rica: None.\nBrazil: Cafu [Y 90+'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -653,7 +738,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "13/06/2002, Seoul (South Korea), Seoul World Cup Stadium, 43605\nWorld Cup\nTURKEY              3 (Hasan Şaş 6', Bülent Korkmaz 9', Ümit Davala 85')\nCHINA               0\nTurkey:             Rüştü Reçber (Ömer Çatkış 35'), Emre Aşık, Bülent Korkmaz, Fatih Akyel,\nTugay Kerimoğlu (Tayfur Havutçu 84'), Hakan Şükür [c], Yıldıray Baştürk\n(İlhan Mansız 70'), Hasan Şaş, Hakan Ünsal, Emre Belözoğlu, Ümit Davala.\nChina:              Jiang Jin, Yang Pu, Wu Chengying (Shao Jiayi 46'), Li Tie, Hao Haidong\n(Yu Genwei 73'), Li Weifeng, Zhao Junzhe, Du Wei, Li Xiaopeng, Yang Chen\n(Qu Bo 73'), Xu Yunlong.\nReferee:            Oscar Ruiz (Colombia).\nCoaches:            Turkey: Şenol Güneş.\nChina: Bora Milutinović (Yugoslavia).\nCards:              Turkey: Emre Aşık [Y 19'], Emre Belözoğlu [Y 30'], Hasan Şaş [Y 81'].\nChina: Yang Pu [Y 45+'], Shao Jiayi [R 58'], Li Weifeng [Y 62'].\nTable:",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -666,7 +756,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "04/06/2002, Busan, Busan Asiad Main Stadium, 48760\nWorld Cup\nSOUTH KOREA         2 (Hwang Seon-Hong 26', Yoo Sang-Cheol 53')\nPOLAND              0\nSouth Korea:        Lee Woon-Jae, Choi Jin-Cheol, Kim Nam-Il, Yoo Sang-Cheol\n(Lee Cheon-Soo 61'), Kim Tae-Young, Seol Ki-Hyun (Cha Doo-Ri 89'),\nLee Eul-Yong, Hwang Seon-Hong (Ahn Jung-Hwan 50'), Hong Myung-Bo [c],\nPark Ji-Sung, Song Jong-Gook.\nPoland:             Jerzy Dudek, Michał Żewłakow, Tomasz Hajto, Piotr Świerczewski,\nRadosław Kałużny (Marcin Żewłakow 64'), Emmanuel Olisadebe,\nTomasz Wałdoch [c], Jacek Krzynówek, Maciej Żurawski\n(Paweł Kryszałowicz 46'), Jacek Bąk (Tomasz Kłos 50'), Marek Koźmiński.\nReferee:            Oscar Ruiz (Colombia).\nCoaches:            South Korea: Guus Hiddink (Netherlands).\nPoland: Jerzy Engel.\nCards:              South Korea: Park Ji-Sung [Y 70'], Cha Doo-Ri [Y 90'].\nPoland: Jacek Krzynówek [Y 31'], Tomasz Hajto [Y 79'],\nPiotr Świerczewski [Y 84'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -679,7 +774,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "05/06/2002, Suwon (South Korea), Suwon World Cup Stadium, 37306\nWorld Cup\nUSA                 3 (John O'Brien 4', Jorge Costa 29' OG, Brian McBride 36')\nPORTUGAL            2 (Beto 39', Jeff Agoos 71' OG)\nUSA:                Brad Friedel, Frankie Hejduk, Pablo Mastroeni, John O'Brien,\nErnie Stewart [c] (Cobi Jones 46'), Jeff Agoos, DaMarcus Beasley,\nBrian McBride, Landon Donovan (Joe-Max Moore 75'), Tony Sanneh, Eddie Pope\n(Carlos Llamosa 80').\nPortugal:           Vítor Baía, Jorge Costa (Jorge Andrade 73'), Fernando Couto [c], Figo,\nJoão Manuel Vieira Pinto, Pauleta, Rui Costa (Nuno Gomes 80'),\nSérgio Conceição, Petit, Beto, Rui Jorge (Paulo Bento 69').\nReferee:            Byron Moreno (Ecuador).\nCoaches:            USA: Bruce Arena.\nPortugal: António Oliveira.\nCards:              USA: DaMarcus Beasley [Y 90+'].\nPortugal: Beto [Y 34'], Petit [Y 52'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -692,7 +792,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "10/06/2002, Daegu, Daegu World Cup Stadium, 60778\nWorld Cup\nSOUTH KOREA         1 (Ahn Jung-Hwan 78')\nUSA                 1 (Clint Mathis 24')\nSouth Korea:        Lee Woon-Jae, Choi Jin-Cheol, Kim Nam-II, Yoo Sang-Cheol\n(Choi Yong-Soo 69'), Kim Tae-Young, Seol Ki-Hyun, Lee Eul-Yong,\nHwang Seon-Hong (Ahn Jung-Hwan 56'), Hong Myung-Bo [c], Park Ji-Sung\n(Lee Cheon-Soo 38'), Song Jong-Gook.\nUSA:                Brad Friedel, Frankie Hejduk, John O'Brien, Claudio Reyna [c],\nClint Mathis (Josh Wolff 82'), Jeff Agoos, DaMarcus Beasley\n(Eddie Lewis 75'), Brian McBride, Landon Donovan, Tony Sanneh, Eddie Pope.\nReferee:            Urs Meier (Switzerland).\nCoaches:            South Korea: Guus Hiddink (Netherlands).\nUSA: Bruce Arena.\nCards:              South Korea: Hong Myung-Bo [Y 80'].\nUSA: Frankie Hejduk [Y 30'], Jeff Agoos [Y 39'].\nNote:               Brad Friedel saved a penalty by Lee Eul-Yong at 39'.",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -705,7 +810,12 @@
       "score": [
         4,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "10/06/2002, Jeonju (South Korea), Jeonju World Cup Stadium, 31000\nWorld Cup\nPORTUGAL            4 (Pauleta 14', 65', 77', Rui Costa 88')\nPOLAND              0\nPortugal:           Vítor Baía, Jorge Costa, Fernando Couto [c], Figo, João Manuel Vieira Pinto\n(Rui Costa 60'), Pauleta, Sérgio Conceição (Capucho 69'), Paulo Bento,\nFrechaut (Beto 63'), Petit, Rui Jorge.\nPoland:             Jerzy Dudek, Michał Żewłakow (Tomasz Rząsa 71'), Tomasz Hajto,\nPiotr Świerczewski, Paweł Kryszałowicz, Radosław Kałużny\n(Arkadiusz Bąk 16'), Emmanuel Olisadebe, Tomasz Wałdoch [c],\nJacek Krzynówek, Maciej Żurawski (Marcin Żewłakow 56'), Marek Kożmiński.\nReferee:            Hugh Dallas (Scotland).\nCoaches:            Portugal: Antônio Oliveira.\nPoland: Jerzy Engel.\nCards:              Portugal: Frechaut [Y 25'], Jorge Costa [Y 27'], Rui Jorge [Y 31'].\nPoland: Piotr Świerczewski [Y 21'], Arkadiusz Bąk [Y 39'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -718,7 +828,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "14/06/2002, Incheon, Munhak Stadium, 50239\nWorld Cup\nSOUTH KOREA         1 (Park Ji-Sung 70')\nPORTUGAL            0\nSouth Korea:        Lee Woon-Jae, Choi Jin-Cheol, Kim Nam-Il, Yoo Sang-Cheol, Kim Tae-Young,\nSeol Ki-Hyun, Lee Young-Pyo, Ahn Jung-Hwan (Lee Cheon-Soo 90+'),\nHong Myung-Bo [c], Park Ji-Sung, Song Jong-Gook.\nPortugal:           Vítor Baía, Jorge Costa, Fernando Couto [c], Rui Jorge (Abel Xavier 73'),\nFigo, João Manuel Vieira Pinto, Pauleta (Jorge Andrade 69'),\nSérgio Conceição, Paulo Bento, Petit (Nuno Gomes 77').\nReferee:            Ángel Sánchez (Argentina)\nCoaches:            South Korea: Guus Hiddink (Netherlands).\nPortugal: António Oliveira.\nCards:              South Korea: Kim Tae-Young [Y 24'], Seol Ki-Hyun [Y 57'],\nKim Nam-II [Y 74'], Ahn Jung-Hwan [Y 90+'].\nPortugal: Beto [Y 22' YR 66'], João Manuel Vieira Pinto [R 27'],\nJorge Costa [Y 83'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -731,7 +846,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "14/06/2002, Daejeon (South Korea), Daejeon World Cup Stadium, 26482\nWorld Cup\nPOLAND              3 (Emmanuel Olisadebe 3', Paweł Kryszałowicz 5', Marcin Żewłakow 66')\nUSA                 1 (Landon Donovan 83')\nPoland:             Radosław Majdan, Tomasz Kłos (Tomasz Wałdoch 89'), Jacek Zieliński [c],\nCezary Kucharski (Marcin Żewłakow 65'), Paweł Kryszałowicz,\nEmmanuel Olisadebe (Paweł Sibik 86'), Arkadiusz Głowacki, Maciej Murawski,\nJacek Krzynówek, Maciej Żurawski, Marek Koźmiński.\nUSA:                Brad Friedel, Frankie Hejduk, John O'Brien, Ernie Stewart [c]\n(Cobi Jones 68'), Claudio Reyna [c], Clint Mathis, Jeff Agoos\n(DaMarcus Beasley 36'), Brian McBride (Joe-Max Moore 58'), Landon Donovan,\nTony Sanneh, Eddie Pope.\nReferee:            Jun Lu (China).\nCoaches:            Poland: Jerzy Engel.\nUSA: Bruce Arena.\nCards:              Poland: Radosław Majdan [Y 44'], Marek Koźmiński [Y 46'],\nCezary Kucharski [Y 63'], Emmanuel Olisadebe [Y 86'].\nUSA: Frankie Hejduk [Y 72'].\nNote:               Brad Friedel saved a penalty by Maciej Żurawski at 67'.\nTable:",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -744,7 +864,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "01/06/2002, Niigata (Japan), Niigata Stadium, 33679\nWorld Cup\nIRELAND             1 (Matt Holland 52')\nCAMEROON            1 (Patrick Mboma 39')\nIreland:            Shay Given, Ian Harte (Steven Reid 77'), Steve Staunton [c],\nJason McAteer (Steve Finnan 46'), Matt Holland, Damien Duff, Robbie Keane,\nKevin Kilbane, Mark Kinsella, Gary Breen, Gary Kelly.\nCameroon:           Alioum Boukar, Bill Tchato, Pierre Wome, Rigobert Song [c],\nRaymond Kalla, Geremi Njitap, Samuel Eto'o, Patrick Mboma\n(Patrick Suffo 69'), Lauren Etame-Mayer, Marc-Vivien Foé, Salomon Olembe.\nReferee:            Toru Kamikawa (Japan).\nCoaches:            Ireland: Mick McCarthy.\nCameroon: Winfried Schäfer (Germany).\nCards:              Ireland: Jason McAteer [Y 30'], Steve Finnan [Y 51'], Steven Reid [Y 82'].\nCameroon: Raymond Kalla [Y 89'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -757,7 +882,12 @@
       "score": [
         8,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "01/06/2002, Sapporo (Japan), Sapporo Dome, 32218\nWorld Cup\nGERMANY             8 (Miroslav Klose 20', 25', 70', Michael Ballack 40', Carsten Jancker 45+',\nThomas Linke 73', Oliver Bierhoff 84', Bernd Schneider 90+')\nSAUDI ARABIA        0\nGermany:            Oliver Kahn [c], Thomas Linke, Carsten Ramelow (Jens Jeremies 46'),\nChristian Ziege, Dietmar Hamann, Carsten Jancker (Oliver Bierhoff 67'),\nMiroslav Klose (Oliver Neuville 76'), Michael Ballack, Bernd Schneider,\nChristoph Metzelder, Torsten Frings.\nSaudi Arabia:       Mohammed Al-Deayea, Redha Tukar, Abdullah Sulaiman Zubromawi,\nMohammed Noor, Sami Al-Jaber [c], Ahmed Dukhi Al-Dosari, Hussein Sulimani,\nKhamis Al-Owairan Al-Dossari (Ibrahim Al-Shahrani 46'),\nAbdullah Al-Waked Al-Shahrani, Nawaf Al-Temyat (Abdulaziz Khathran 46'),\nAl-Hasan Al-Yami (Abdullah Gaman Al-Dosary 77').\nReferee:            Ubaldo Aquino (Paraguay).\nCoaches:            Germany: Rudi Völler.\nSaudi Arabia: Nasser Al-Johar.\nCards:              Germany: Christian Ziege [Y 43'], Dietmar Hamann [Y 83'].\nSaudi Arabia: Mohammed Noor [Y 90+'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -770,7 +900,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "05/06/2002, Ibaraki (Japan), Kashima Stadium, 35854\nWorld Cup\nGERMANY             1 (Miroslav Klose 19')\nIRELAND             1 (Robbie Keane 90+')\nGermany:            Oliver Kahn [c], Thomas Linke, Carsten Ramelow, Christian Ziege,\nDietmar Hamann, Carsten Jancker (Oliver Bierhoff 75'), Miroslav Klose\n(Marco Bode 85'), Michael Ballack, Bernd Schneider (Jens Jeremies 89'),\nChristoph Metzelder, Torsten Frings.\nIreland:            Shay Given, Steve Finnan, Ian Harte (Steven Reid 73'), Steve Staunton [c]\n(Kenny Cunningham 87'), Matt Holland, Damien Duff, Robbie Keane,\nKevin Kilbane, Mark Kinsella, Gary Breen, Gary Kelly (Niall Quinn 73').\nReferee:            Kim Milton Nielsen (Denmark).\nCoaches:            Germany: Rudi Völler.\nIreland: Mick McCarthy.\nCards:              None.",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -783,7 +918,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "06/06/2002, Saitama (Japan), Saitama Stadium, 52328\nWorld Cup\nCAMEROON            1 (Samuel Eto'o 66')\nSAUDI ARABIA        0\nCameroon:           Alioum Boukar, Bill Tchato, Pierre Wome, Rigobert Song [c], Raymond Kalla,\nGeremi Njitap, Samuel Eto'o, Patrick Mboma (Pius N'Diefi 74'),\nLauren Etame-Mayer, Marc-Vivien Foé, Daniel Ngom Kome (Salomon Olembe 46').\nSaudi Arabia:       Mohammed Al-Deayea, Mohammed Al-Jahani, Redha Tukar,\nAbdullah Sulaiman Zubromawi (Abdullah Gaman Al-Dosary 72'),\nFouzi Al-Shehri, Ibrahim Al-Shahrani, Obaid Al-Dosari\n(Al-Hasan Al-Yami 35'), Hussein Sulimani, Abdulaziz Khathran\n(Mohammed Noor 86'), Abdullah Al-Waked Al-Shahrani, Nawaf Al-Temyat.\nReferee:            Terje Hauge (Norway).\nCoaches:            Cameroon: Winfried Schäfer (Germany).\nSaudi Arabia: Nasser Al-Johar.\nCards:              Cameroon: Pierre Wome [Y 10'].\nSaudi Arabia: Al-Hasan Al-Yami [Y 59'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -796,7 +936,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "11/06/2002, Shizuoka (Japan), Shizuoka Stadium ECOPA, 47085\nWorld Cup\nCAMEROON            0\nGERMANY             2 (Marco Bode 50', Miroslav Klose 79')\nCameroon:           Alioum Boukar, Bill Tchato (Patrick Suffo 53'), Pierre Wome,\nRigobert Song [c], Raymond Kalla, Geremi Njitap, Samuel Eto'o,\nPatrick Mboma (Joseph-Désiré Job 80'), Lauren Etame-Mayer, Marc-Vivien Foé,\nSalomon Olembe (Daniel Ngom Kome 64').\nGermany:            Oliver Kahn [c], Thomas Linke, Carsten Ramelow, Christian Ziege,\nDietmar Hamann, Carsten Jancker (Marco Bode 46'), Miroslav Klose\n(Oliver Neuville 84'), Michael Ballack, Bernd Schneider,\nChristoph Metzelder, Torsten Frings.\nReferee:            Antonio López Nieto (Spain).\nCoaches:            Cameroon: Winfried Schäfer (Germany).\nGermany: Rudi Völler.\nCards:              Cameroon: Marc-Vivien Foé [Y 8'], Rigobert Song [Y 42'],\nBill Tchato [Y 44'], Geremi Njitap [Y 56'],\nSalomon Olembe [Y 58'], Patrick Suffo [Y 60' YR 77'],\nLauren Etame-Mayer [Y 81'].\nGermany: Carsten Jancker [Y 9'], Dietmar Hamann [Y 29'],\nMichael Ballack [Y 31'], Carsten Ramelow [Y 37' YR 40'],\nOliver Kahn [Y 42'], Christian Ziege [Y 72'],\nTorsten Frings [Y 74'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -809,7 +954,12 @@
       "score": [
         0,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "11/06/2002, Yokohama (Japan), International Stadium Yokohama, 65320\nWorld Cup\nSAUDI ARABIA        0\nIRELAND             3 (Robbie Keane 7', Gary Breen 61', Damien Duff 87')\nSaudi Arabia:       Mohammed Al-Deayea, Mohammed Al-Jahani (Ahmed Dukhi Al-Dosari 79'),\nRedha Tukar, Abdullah Sulaiman Zubromawi (Abdullah Gaman Al-Dosary 68'),\nFouzi Al-Shehri, Ibrahim Al-Shahrani, Hussein Sulimani,\nAbdulaziz Khathran (Mohammad Al-Shlhoub 67'), Khamis Al-Owairan Al-Dossari,\nNawaf Al-Temyat, Al-Hasan Al-Yami.\nIreland:            Shay Given, Steve Finnan, Ian Harte (Niall Quinn 46'), Steve Staunton [c],\nMatt Holland, Damien Duff, Robbie Keane, Kevin Kilbane, Mark Kinsella\n(Lee Carsley 89'), Gary Breen, Gary Kelly (Jason McAteer 80').\nReferee:            Falla Ndoye (Senegal).\nCoaches:            Saudi Arabia: Nasser Al-Johar.\nIreland: Mick McCarthy.\nCards:              Saudi Arabia: Nawaf Al-Temyat [Y 61'].\nIreland: Steve Staunton [Y 70'].\nTable:",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -822,7 +972,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "02/06/2002, Ibaraki (Japan), Kashima Stadium, 34050\nWorld Cup\nARGENTINA           1 (Gabriel Batistuta 63')\nNIGERIA             0\nArgentina:          Pablo Cavallero, Juan Pablo Sorín, Mauricio Pochettino, Walter Samuel,\nClaudio López (Cristian 'Kily' González 46'), Javier Zanetti,\nGabriel Batistuta (Hernán Crespo 81'), Ariel Ortega,\nJuan Sebastián Verón [c] (Pablo Aimar 78'), Diego Placente, Diego Simeone.\nNigeria:            Ike Shorunmu, Joseph Yobo, Celestine Babayaro, Nwankwo Kanu\n(Pius Ikedia 48'), Isaac Okoronkwo, Taribo West, Bartholomew Ogbeche,\nAugustine Okocha [c], Garba Lawal, Efetobore Sodje\n(Justice Christopher 73'), Julius Aghahowa.\nReferee:            Gilles Veissière (France).\nCoaches:            Argentina: Marcelo Bielsa.\nNigeria: Adegboye Onigbinde.\nCards:              Argentina: Walter Samuel [Y 51'], Diego Simeone [Y 90'].\nNigeria: Efetobore Sodje [Y 73'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m032",
@@ -835,7 +990,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "02/06/2002, Saitama (Japan), Saitama Stadium 2002, 52721\nWorld Cup\nENGLAND             1 (Sol Campbell 24')\nSWEDEN              1 (Niclas Alexandersson 59')\nEngland:            David Seaman, Danny Mills, Ashley Cole, Rio Ferdinand, Sol Campbell,\nDavid Beckham [c] (Kieron Dyer 63'), Paul Scholes, Michael Owen,\nEmile Heskey, Owen Hargreaves, Darius Vassell (Joe Cole 74').\nSweden:             Magnus Hedman, Olof Mellberg, Johan Mjällby [c], Tobias Linderoth,\nNiclas Alexandersson, Fredrik Ljungberg, Marcus Allbäck\n(Andreas Andersson 80'), Henrik Larsson, Andreas Jakobsson, Teddy Lucic,\nMagnus Svensson (Anders Svensson 56').\nReferee:            Carlos Simon (Brazil).\nCoaches:            England: Sven-Göran Eriksson (Sweden).\nSweden: Lars Lagerbäck and Tommy Söderberg.\nCards:              England: Sol Campbell [Y 12'].\nSweden: Marcus Allbäck [Y 45+'], Andreas Jakobsson [Y 73'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m033",
@@ -848,7 +1008,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "07/06/2002, Kobe (Japan), Kobe Wing Stadium, 36194\nWorld Cup\nSWEDEN              2 (Henrik Larsson 35', 63' pen)\nNIGERIA             1 (Julius Aghahowa 27')\nSweden:             Magnus Hedman, Olof Mellberg, Johan Mjällby [c], Tobias Linderoth,\nNiclas Alexandersson, Anders Svensson (Magnus Svensson 83'),\nFredrik Ljungberg, Marcus Allbäck (Andreas Andersson 64'), Henrik Larsson,\nAndreas Jakobsson, Teddy Lucic.\nNigeria:            Ike Shorunmu, Joseph Yobo, Celestine Babayaro (Nwankwo Kanu 65'),\nIsaac Okoronkwo, Taribo West, Bartholomew Ogbeche (Pius Ikedia 70'),\nAugustine Okocha [c], Ifeanyi Udeze, Justice Christopher, Julius Aghahowa.\nReferee:            René Ortube (Bolivia).\nCoaches:            Sweden: Lars Lagerbäck and Tommy Söderberg.\nNigeria: Adegboye Onigbinde.\nCards:              Sweden: Johan Mjällby [Y 31'], Niclas Alexandersson [Y 69'].\nNigeria: Taribo West [Y 80'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m034",
@@ -861,7 +1026,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "07/06/2002, Sapporo (Japan), Sapporo Dome, 35927\nWorld Cup\nARGENTINA           0\nENGLAND             1 (David Beckham 44' pen)\nArgentina:          Pablo Cavallero, Juan Pablo Sorín, Mauricio Pochettino, Walter Samuel,\nJavier Zanetti, Gabriel Batistuta (Hernán Crespo 60'), Ariel Ortega,\nJuan Sebastián Verón [c] (Pablo Aimar 46'), Diego Placente, Diego Simeone,\nCristian 'Kily' González (Claudio López 64').\nEngland:            David Seaman, Danny Mills, Ashley Cole, Rio Ferdinand, Sol Campbell,\nDavid Beckham [c], Paul Scholes, Michael Owen (Wayne Bridge 80'),\nEmile Heskey (Teddy Sheringham 54'), Owen Hargreaves (Trevor Sinclair 19'),\nNicky Butt.\nReferee:            Pierluigi Collina (Italy).\nCoaches:            Argentina: Marcelo Bielsa.\nEngland: Sven-Göran Eriksson (Sweden).\nCards:              Argentina: Gabriel Batistuta [Y 13'].\nEngland: Ashley Cole [Y 29'], Emile Heskey [Y 50'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m035",
@@ -874,7 +1044,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "12/06/2002, Miyagi (Japan), Miyagi Stadium, 45777\nWorld Cup\nSWEDEN              1 (Anders Svensson 59')\nARGENTINA           1 (Hernán Crespo 88')\nSweden:             Magnus Hedman, Olof Mellberg, Johan Mjällby [c], Tobias Linderoth,\nNiclas Alexandersson, Anders Svensson (Mattias Jonson 68'), Marcus Allbäck\n(Andreas Andersson 46'), Henrik Larsson (Zlatan Ibrahimovic 88'),\nAndreas Jakobsson, Teddy Lucic, Magnus Svensson.\nArgentina:          Pablo Cavallero, Juan Pablo Sorín (Cristian 'Kily' González 63'),\nMauricio Pochettino, Matías Almeyda (Juan Sebastián Verón 63'),\nWalter Samuel, Claudio López, Javier Zanetti, Gabriel Batistuta [c]\n(Hernán Crespo 58'), Ariel Ortega, Pablo Aimar, José Chamot.\nReferee:            Ali Bujsaim (UAE).\nCoaches:            Sweden: Lars Lagerbäck and Tommy Söderberg.\nArgentina: Marcelo Bielsa.\nCards:              Sweden: Magnus Svensson [Y 65'], Henrik Larsson [Y 78'].\nArgentina: José Chamot [Y 55'], Matías Almeyda [Y 58'],\nCristian 'Kily' González [Y 75'].\nNotes:              Magnus Hedman saved a penalty by Ariel Ortega at 88'.\nClaudio Caniggia was sent off from the substitutes bench at 45+'.",
+        "lang": "en"
+      }
     },
     {
       "id": "m036",
@@ -887,7 +1062,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "12/06/2002, Osaka (Japan), Osaka Nagai Stadium, 44864\nWorld Cup\nNIGERIA             0\nENGLAND             0\nNigeria:            Vincent Enyeama, Joseph Yobo, Isaac Okoronkwo, Augustine Okocha [c],\nIfeanyi Udeze, Justice Christopher, Efetobore Sodje, Julius Aghahowa,\nBenedict Akwuegbu, James Obiorah, Feml Opabunmi (Pius Ikedia 86').\nEngland:            David Seaman, Danny Mills, Ashley Cole (Wayne Bridge 85'),\nTrevor Sinclair, Rio Ferdinand, Sol Campbell, David Beckham [c],\nPaul Scholes, Michael Owen (Darius Vassell 77'), Emile Heskey\n(Teddy Sheringham 69'), Nicky Butt.\nReferee:            Brian Hall (USA).\nCoaches:            Nigeria: Adegboye Onigbinde.\nEngland: Sven-Göran Eriksson (Sweden).\nCards:              None.\nTable:",
+        "lang": "en"
+      }
     },
     {
       "id": "m037",
@@ -900,7 +1080,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "03/06/2002, Niigata (Japan), Niigata Stadium Big Swan, 32239\nWorld Cup\nCROATIA             0\nMEXICO              1 (Cuauhtémoc Blanco 60' pen)\nCroatia:            Stipe Pletikosa, Josip Šimunić, Stjepan Tomas, Boris Živković,\nRobert Prosinečki (Milan Rapaić 46'), Davor Šuker [c] (Daniel Šarić 64'),\nNiko Kovač, Alen Bokšić (Mario Stanić 67'), Zvonimir Soldo, Robert Jarni,\nRobert Kovač.\nMexico:             Oscar Pérez, Rafael Márquez [c], Manuel Vidrio, Gerardo Torrado,\nRamón Morales, Jared Borgetti (Luis Hernández 68'), Cuauhtémoc Blanco\n(Juan Francisco Palencia 79'), Braulio Luna, Sigifredo Mercado,\nSalvador Carmona, Gabriel Caballero.\nReferee:            Jun Lu (China).\nCoaches:            Croatia: Mirko Jozić.\nMexico: Javier Aguirre.\nCards:              Croatia: Boris Živković [R 59'].\nMexico: None.",
+        "lang": "en"
+      }
     },
     {
       "id": "m038",
@@ -913,7 +1098,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "3/06/2002, Sapporo (Japan), Sapporo Dome, Japan\nWorld Cup\nITALY               2 (Christian Vieri 7', 27')\nECUADOR             0\nItaly:              Gianluigi Buffon, Christian Panucci, Paolo Maldini [c], Fabio Cannavaro,\nFrancesco Totti (Alessandro Del Piero 74'), Cristiano Doni\n(Angelo Di Livio 64'), Alessandro Nesta, Luigi Di Biagio\n(Gennaro Gattuso 69'), Damiano Tommasi, Gianluca Zambrotta,\nChristian Vieri.\nEcuador:            José Francisco Cevallos, Augusto Porozo, Iván Hurtado [c],\nUlises De la Cruz, Alfonso Obregón, Raúl Guerrón, Alex Aguinaga [c]\n(Carlos Tenorio 46'), Agustín Delgado, Kléber Chalá (Nicolás Asencio 85'),\nEdison Méndez, Edwin Tenorio (Marlon Ayoví 59').\nReferee:            Brian Hall (USA).\nCoaches:            Italy: Giovanni Trapattoni.\nEcuador: Hernán Darío Gómez (Colombia).\nCards:              Italy: None.\nEcuador: Augusto Porozo [Y 14'], Ulises De la Cruz [Y 49'],\nKléber Chalá [Y 54'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m039",
@@ -926,7 +1116,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "08/06/2002, Ibaraki (Japan), Kashima Stadium, 36472\nWorld Cup\nITALY               1 (Christian Vieri 55')\nCROATIA             2 (Ivica Olić 73', Milan Rapaić 76')\nItaly:              Gianluigi Buffon, Christian Panucci, Paolo Maldini [c], Fabio Cannavaro,\nCristiano Zanetti, Francesco Totti, Cristiano Doni (Filippo Inzaghi 79'),\nAlessandro Nesta (Marco Materazzi 24'), Damiano Tommasi,\nGianluca Zambrotta, Christian Vieri.\nCroatia:            Stipe Pletikosa, Josip Šimunić, Stjepan Tomas, Milan Rapaić\n(Dario Šimić 79'), Davor Vugrinec (Ivica Olić 57'), Niko Kovač,\nAlen Bokšić, Zvonimir Soldo (Jurica Vranješ 62'), Daniel Šarić,\nRobert Jarni [c], Robert Kovač.\nReferee:            Graham Poll (England).\nCoaches:            Italy: Giovanni Trapattoni.\nCroatia: Mirko Jozić.\nCards:              Italy: Christian Vieri [Y 51'].\nCroatia: Robert Kovač [Y 39'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m040",
@@ -939,7 +1134,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "09/06/2002, Miyagi (Japan), Miyagi Stadium, 45610\nWorld Cup\nMEXICO              2 (Jared Borgetti 28', Gerardo Torrado 57')\nECUADOR             1 (Agustín Delgado 5')\nMexico:             Oscar Pérez, Rafael Márquez [c], Manuel Vidrio, Gerardo Torrado,\nRamón Morales, Jared Borgetti (Luis Hernández 77'), Cuauhtémoc Blanco\n(Sigifredo Mercado 90+'), Braulio Luna, Salvador Carmona, Johan Rodríguez\n(Gabriel Caballero 87'), Jesús Arellano.\nEcuador:            José Francisco Cevallos, Augusto Porozo, Iván Hurtado [c],\nUlises De la Cruz, Alfonso Obregón (Alex Aguinaga 58'), Raúl Guerrón,\nIván Kaviedes (Carlos Tenorio 53'), Agustín Delgado, Kléber Chala,\nEdison Méndez, Edwin Tenorio (Marlon Ayoví 35').\nReferee:            Mourad Deami (Tunisia).\nCoaches:            Mexico: Javier Aguirre.\nEcuador: Hernán Darío Gómez (Colombia).\nCards:              Mexico: Gerardo Torrado [Y 65'].\nEcuador: Iván Kaviedes [Y 15'], José Francisco Cevallos [Y 27'],\nRaúl Guerrón [Y 49'], Carlos Tenorio [Y 61'],\nAgustín Delgado [Y 87'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m041",
@@ -952,7 +1152,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "13/06/2002, Oita (Japan), Oita Stadium Big Eye, 39291\nWorld Cup\nMEXICO              1 (Jared Borgetti 34')\nITALY               1 (Alessandro Del Piero 85')\nMexico:             Oscar Pérez, Rafael Márquez [c], Manuel Vidrio, Gerardo Torrado,\nRamón Morales (Rafael García 76'), Braulio Luna, Salvador Carmona,\nJohan Rodríguez (Gabriel Caballero 76'), Jesús Arellano,\nJared Borgetti (Juan Francisco Palencia 76'), Cuauhtémoc Blanco.\nItaly:              Gianluigi Buffon, Christian Panucci (Francesco Coco 63'),\nPaolo Maldini [c], Fabio Cannavaro, Cristiano Zanetti, Filippo Inzaghi\n(Vincenzo Montella 55'), Francesco Totti (Alessandro Del Piero 78'),\nAlessandro Nesta, Damiano Tommasi, Gianluca Zambrotta, Christian Vieri.\nReferee:            Carlos Simon (Brazil).\nCoaches:            Mexico: Javier Aguirre.\nItaly: Giovanni Trapattoni.\nCards:              Mexico: Jesús Arellano [Y 2'], Oscar Pérez [Y 84'].\nItaly: Fabio Cannavaro [Y 5'], Christian Panucci [Y 10'],\nFrancesco Totti [Y 43'], Gianluca Zambrotta [Y 55'],\nVincenzo Montella [Y 57'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m042",
@@ -965,7 +1170,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "13/06/2002, Yokohama (Japan), International Stadium Yokohama, 65862\nWorld Cup\nECUADOR             1 (Edison Méndez 48')\nCROATIA             0\nEcuador:            José Francisco Cevallos, Augusto Porozo, Iván Hurtado [c],\nUlises De la Cruz, Alfonso Obregón (Alex Aguinaga 40'), Raúl Guerrón,\nAgustín Delgado, Marlon Ayoví, Kléber Chalá, Carlos Tenorio\n(Iván Kaviedes 76'), Edison Méndez.\nCroatia:            Stipe Pletikosa, Robert Kovač, Josip Šimunić, Stjepan Tomas, Niko Kovač\n(Jurica Vranješ 59'), Alen Bokšić, Daniel Šarić (Mario Stanić 68'),\nRobert Jarni [c], Ivica Olić, Dario Šimić (Davor Vugrinec 52'),\nMilan Rapaić.\nReferee:            Wílliam Mattus (Costa Rica).\nCoaches:            Ecuador: Hernán Darío Gómez (Colombia).\nCroatia: Mirko Jozić.\nCards:              Ecuador: Kléber Chalá [Y 86'].\nCroatia: Stjepan Tomas [Y 72'], Josip Šimunić [Y 90+'].\nTable:",
+        "lang": "en"
+      }
     },
     {
       "id": "m043",
@@ -978,7 +1188,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "04/06/2002, Saitama, Saitama Stadium 2002, 55256\nWorld Cup\nJAPAN               2 (Takayuji Suzuki 59', Junichi Inamoto 67')\nBELGIUM             2 (Marc Wilmots 57', Peter van der Heyden 75')\nJapan:              Seigo Narazaki, Naoki Matsuda, Ryozo Morioka [c] (Tsuneyasu Miyamoto 71'),\nJunichi Inamoto, Hidetoshi Nakata, Takayuki Suzuki (Hiroaki Morishima 68'),\nAtsushi Yanagisawa, Koji Nakata, Shinji Ono (Alex Santos 64'),\nKazuyuki Toda, Daisuke Ichikawa.\nBelgium:            Geert De Vlieger, Eric van Meir, Timmy Simons, Marc Wilmots [c], Bart Goor,\nJohan Walem (Wesley Sonck 68'), Gert Verheyen (Branko Strupar 83'),\nPeter van der Heyden, Jacky Peeters, Daniel Van Buyten, Yves Vanderhaeghe.\nReferee:            Wílliam Mattus (Costa Rica).\nCoaches:            Japan: Philippe Troussier (France).\nBelgium: Robert Waseige.\nCards:              Japan: Kazuyuki Toda [Y 31'], Junichi Inamoto [Y 54'].\nBelgium: Peter van der Heyden [Y 21'], Gert Verheyen [Y 62'],\nEric van Meir [Y 82'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m044",
@@ -991,7 +1206,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "05/06/2002, Kobe (Japan), Kobe Wing Stadium, 30957\nWorld Cup\nRUSSIA              2 (Egor Titov 59', Valery Karpin 64' pen)\nTUNISIA             0\nRussia:             Ruslan Nigmatullin, Yuri Kovtun, Yuri Nikiforov, Andrei Solomatin,\nIgor Semshov (Dmitry Khokhlov 46'), Viktor Onopko [c], Valery Karpin,\nEgor Titov, Vladimir Beschastnykh (Dmitri Sychev 55'), Ruslan Pimenov,\nMarat Izmailov (Dmitry Alenichev 78').\nTunisia:            Ali Boumnijel, Khaled Badra (Ali Zitouni 84'), Mohamed Mkacher,\nZied Jaziri, Hatem Trabelsi, Hassen Gabsi (Imed Mhedhebi 67'),\nAdel Sellimi [c] (Zoubeir Beya 67'), Raouf Bouzaiène, Riadh Bouazizi,\nRadhi Jaïdi, Slim Ben Achour.\nReferee:            Peter Prendergast (Jamaica).\nCoaches:            Russia: Oleg Romantsev.\nTunisia: Ammar Souayah.\nCards:              Russia: Igor Semshov [Y 27'], Dmitry Alenichev [Y 88'].\nTunisia: Hassen Gabsi [Y 50'], Zied Jaziri [Y 75'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m045",
@@ -1004,7 +1224,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "09/06/2002, Yokohama, International Stadium Yokohama, 66108\nWorld Cup\nJAPAN               1 (Junichi Inamoto 51')\nRUSSIA              0\nJapan:              Seigo Narazaki, Naoki Matsuda, Junichi Inamoto (Takashi Fukunishi 85'),\nHidetoshi Nakata, Takayuki Suzuki (Masashi Nakayama 72'),\nAtsushi Yanagisawa, Koji Nakata, Tsuneyasu Miyamoto [c], Shinji Ono\n(Toshihiro Hattori 75'), Tomokazu Myojin, Kazuyuki Toda.\nRussia:             Ruslan Nigmatullin, Yuri Kovtun, Yuri Nikiforov, Alexei Smertin\n(Vladimir Beschastnykh 57'), Andrei Solomatin, Igor Semshov,\nViktor Onopko [c], Valery Karpin, Egor Titov, Ruslan Pimenov\n(Dmitri Sychev 46'), Marat Izmailov (Dmitry Khokhlov 52').\nReferee:            Markus Merk (Germany).\nCoaches:            Japan: Philippe Troussier (France).\nRussia: Oleg Romantsev.\nCards:              Japan: Tsuneyasu Miyamoto [Y 15'], Koji Nakata [Y 42'],\nMasashi Nakayama [Y 90+'].\nRussia: Ruslan Pimenov [Y 13'], Andrei Solomatin [Y 38'],\nDmitry Khokhlov [Y 60'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m046",
@@ -1017,7 +1242,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "10/06/2002, Oita (Japan), Oita Stadium Big Eye, 39700\nWorld Cup\nTUNISIA             1 (Raouf Bouzaiène 17')\nBELGIUM             1 (Marc Wilmots 13')\nTunisia:            Ali Boumnijel, Khaled Badra [c], Zied Jaziri (Ali Zitouni 77'),\nHatem Trabelsi, Hassen Gabsi (Adel Sellimi 67'), Kaies Ghodhbane,\nRaouf Bouzaiène, Riadh Bouazizi, Radhi Jaïdi, Slim Ben Achour,\nMourad Melki (Zoubeir Beya 88').\nBelgium:            Geert De Vlieger, Eric Deflandre, Glen De Boeck, Timmy Simons\n(Mbo Mpenza 74'), Marc Wilmots [c], Bart Goor, Gert Verheyen\n(Wesley Sonck 46'), Peter van der Heyden, Daniel van Buyten,\nYves Vanderhaeghe, Branko Strupar (Sven Vermant 46').\nReferee:            Mark Shield (Australia).\nCoaches:            Tunisia: Ammar Souayah.\nBelgium: Robert Waseige.\nCards:              Tunisia: Hassen Gabsi [Y 22'], Kaies Ghodhbane [Y 43'],\nHatem Trabelsi [Y 68'], Mourad Melki [Y 69'].\nBelgium: Daniel van Buyten [Y 40'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m047",
@@ -1030,7 +1260,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "14/06/2002, Osaka, Nagai Stadium, 45213\nWorld Cup\nJAPAN               2 (Hiroaki Morishima 48', Hidetoshi Nakata 75')\nTUNISIA             0\nJapan:              Seigo Narazaki, Naoki Matsuda, Junichi Inamoto (Hiroaki Morishima 46'),\nHidetoshi Nakata (Mitsuo Ogasawara 84'), Takayuki Suzuki,\nAtsushi Yanagisawa (Daisuke Ichikawa 46'), Koji Nakata,\nTsuneyasu Miyamoto [c], Shinji Ono, Tomokazu Myojin, Kazuyuki Toda.\nTunisia:            Ali Boumnijel, Khaled Badra [c], Zied Jaziri, Hatem Trabelsi,\nKaies Ghodhbane, Raouf Bouzaiène (Ali Zitouni 78'), Riadh Bouazizi,\nRadhi Jaïdi, Slim Ben Achour, Mourad Melki (Zoubeir Beya 46'),\nJosé Clayton (Imed Mhedhebi 61').\nReferee:            Gilles Veissière (France).\nCoaches:            Japan: Philippe Troussier (France).\nTunisia: Ammar Souayah.\nCards:              Japan: none.\nTunisia: Riadh Bouazizi [Y 21'], Khaled Badra [Y 81'].\nTable:",
+        "lang": "en"
+      }
     },
     {
       "id": "m048",
@@ -1043,7 +1278,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "14/06/2002, Shizuoka (Japan), Shizuoka Stadium ECOPA, 46640\nWorld Cup\nBELGIUM             3 (Johan Walem 7', Wesley Sonck 78', Marc Wilmots 82')\nRUSSIA              2 (Vladimir Beschastnykh 52', Dmitri Sychev 88')\nBelgium:            Geert De Vlieger, Glen De Boeck (Eric van Meir 90+'), Nico van Kerckhoven,\nMarc Wilmots [c], Bart Goor, Johan Walem, Gert Verheyen (Timmy Simons 78'),\nJacky Peeters, Daniel van Buyten, Yves Vanderhaeghe, Mbo Mpenza\n(Wesley Sonck 70').\nRussia:             Ruslan Nigmatullin, Yuri Kovtun, Yuri Nikiforov (Dmitri Sennikov 43'),\nAlexei Smertin (Dmitri Sychev 34'), Andrei Solomatin, Viktor Onopko [c],\nValery Karpin (Alexander Kerzhakov 82'), Egor Titov, Vladimir Beschastnykh,\nDmitri Alenichev, Dmitry Khokhlov.\nReferee:            Kim Milton Nielsen (Denmark).\nCoaches:            Belgium: Robert Waseige.\nRussia: Oleg Romantsev.\nCards:              Belgium: Yves Vanderhaeghe [Y 39'].\nRussia: Andrei Solomatin [Y 12'], Alexei Smertin [Y 14'],\nDmitri Alenichev [Y 64'], Dmitri Sennikov [Y 84'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m049",
@@ -1055,7 +1295,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "15/06/2002, Seogwipo (South Korea), Jeju World Cup Stadium, 25176\nWorld Cup\nGERMANY             1 (Oliver Neuville 88')\nPARAGUAY            0\nGermany:            Oliver Kahn [c], Thomas Linke, Marko Rehmer (Sebastian Kehl 46'),\nOliver Neuville (Gerald Asamoah 90+'), Miroslav Klose, Michael Ballack,\nJens Jeremies, Marco Bode, Bernd Schneider, Christoph Metzelder\n(Frank Baumann 60'), Torsten Frings.\nParaguay:           José Luis Chilavert [c], Francisco Arce, Carlos Gamarra, Celso Ayala,\nEstanislao Struway (Nelson Cuevas 90+'), Roque Santa Cruz\n(Jorge Campos 29'), Roberto Acuña, Carlos Bonet (Diego Gavilán 84'),\nJulio César Cáceres, José Cardozo, Denis Caniza.\nReferee:            Carlos Batrés (Guatemala).\nCoaches:            Germany: Rudi Völler.\nParaguay: Cesare Maldini (Italy).\nCards:              Germany: Bernd Schneider [Y 35'], Frank Baumann [Y 71'],\nMichael Ballack [Y 90+'].\nParaguay: Roberto Acuña [Y 26' YR 90+'], José Cardozo [Y 50'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m050",
@@ -1067,7 +1312,12 @@
       "score": [
         0,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "15/06/2002, Niigata (Japan), Niigata Stadium Big Swan, 40582\nWorld Cup\nDENMARK             0\nENGLAND             3 (Rio Ferdinand 5', Michael Owen 22', Emile Heskey 44')\nDenmark:            Thomas Sørensen, Stig Tøfting (Claus Jensen 58'), René Henriksen [c],\nMartin Laursen, Thomas Helveg (Kasper Bøgelund 7'), Thomas Gravesen,\nJesper Grønkjær, Jon Dahl Tomasson, Ebbe Sand, Niclas Jensen,\nDennis Rommedahl.\nEngland:            David Seaman, Danny Mills, Ashley Cole, Trevor Sinclair, Rio Ferdinand,\nSol Campbell, David Beckham [c], Paul Scholes (Kieron Dyer 49'),\nMichael Owen (Robbie Fowler 46'), Emile Heskey (Teddy Sheringham 69'),\nNicky Butt.\nReferee:            Markus Merk (Germany).\nCoaches:            Denmark: Morten Olsen.\nEngland: Sven-Göran Eriksson (Sweden).\nCards:              Denmark: Stig Tøfting [Y 24'].\nEngland: Danny Mills [Y 50'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m051",
@@ -1082,7 +1332,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "16/06/2002, Oita (Japan), Oita Stadium Big Eye, 39747\nWorld Cup\nSWEDEN              1 (Henrik Larsson 11')\nSENEGAL             2 (Henri Camara 37', 104')\nAfter sudden death extra time.\nSweden:             Magnus Hedman, Olof Mellberg, Johan Mjällby [c], Tobias Linderoth,\nNiclas Alexandersson (Zlatan Ibrahimovic 76'), Anders Svensson,\nMarcus Allbäck (Andreas Andersson 65'), Henrik Larsson, Andreas Jakobsson,\nTeddy Lucic, Magnus Svensson (Mattias Jonson 99').\nSenegal:            Tony Sylva, Omar Daf, Papa Malick Diop (Habib Bèye 66'), Aliou Cissé [c],\nHenri Camara, El-Hadji Diouf, Amdy Faye, Lamine Diatta, Ferdinand Coly,\nPape Thiaw, Papa Bouba Diop.\nReferee:            Ubaldo Aquino (Paraguay).\nCoaches:            Sweden: Lars Lagerbäck and Tommy Söderberg.\nSenegal: Bruno Metsu (France).\nCards:              Sweden: None.\nSenegal: Ferdinand Coly [Y 73'], Pape Thiaw [Y 94'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m052",
@@ -1101,7 +1356,12 @@
       "pens": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "16/06/2002, Suwon (South Korea), Suwon World Cup Stadium, 38926\nWorld Cup\nSPAIN               1 (Fernando Morientes 8')\nIRELAND             1 (Robbie Keane 90' pen)\nSpain won 3-2 on penalties.\nSpain:              Iker Casillas, Juanfran, Iván Helguera, Puyol, Hierro [c], Raúl\n(Luque 80'), Baraja, Morientes (Albelda 72'), De Pedro (Mendieta 66'),\nValerón, Luis Enrique.\nIreland:            Shay Given, Steve Finnan, Ian Harte (David Connolly 82'),\nSteve Staunton [c] (Kenny Cunningham 50'), Matt Holland, Damien Duff,\nRobbie Keane, Kevin Kilbane, Mark Kinsella, Gary Breen, Gary Kelly\n(Niall Quinn 55').\nReferee:            Anders Frisk (Sweden).\nCoaches:            Spain: Camacho.\nIreland: Mick McCarthy.\nCards:              Spain: Juanfran [Y 62'], Baraja [Y 87'], Hierro [Y 89'].\nIreland: none.\nPenalties:          0-1 Robbie Keane, 1-1 Hierro, 1-1 Matt Holland (miss), 2-1 Baraja,\n2-1 David Connolly (save), 2-1 Juanfran (miss), 2-1 Kevin Kilbane (save),\n2-1 Valerón (miss), 2-2 Steve Finnan, 3-2 Mendieta.\nNote:               Iker Casillas saved a penalty by Ian Harte at 62'.",
+        "lang": "en"
+      }
     },
     {
       "id": "m053",
@@ -1113,7 +1373,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "17/06/2002, Jeonju (South Korea), Jeonju World Cup Stadium, 36380\nWorld Cup\nUSA                 2 (Brian McBride 8', Landon Donovan 65')\nMEXICO              0\nUSA:                Brad Friedel, Gregg Berhalter, Pablo Mastroeni (Carlos Llamosa 90+'),\nJohn O'Brien, Eddie Pope, Eddie Lewis, Claudio Reyna [c], Josh Wolff\n(Ernie Stewart 59'), Brian McBride (Cobi Jones 79'), Landon Donovan,\nTony Sanneh.\nMexico:             Oscar Pérez, Rafael Márquez [c], Manuel Vidrio (Sigifredo Mercado 46'),\nGerardo Torrado (Alberto García Aspe 78'), Jesús Arellano, Ramón Morales\n(Luis Hernández 28'), Jared Borgetti, Cuauhtémoc Blanco, Braulio Luna,\nSalvador Carmona, Johan Rodríguez.\nReferee:            Vítor Melo Pereira (Portugal)\nCoaches:            USA: Bruce Arena\nMexico: Javier Aguirre\nCards:              USA: Eddie Pope [Y 26'], Pablo Mastroeni [Y 47'], Josh Wolff [Y 50'],\nGregg Berhalter [Y 53'], Brad Friedel [Y 83'].\nMexico: Manuel Vidrio [Y 37'], Luis Hernández [Y 67'],\nCuauhtémoc Blanco [Y 70'], Alberto García Aspe [Y 81'],\nSalvador Carmona [Y 84'], Rafael Márquez [R 88'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m054",
@@ -1125,7 +1390,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "17/06/2002, Kobe (Japan), Kobe Wing Stadium, 40440\nWorld Cup\nBRAZIL              2 (Rivaldo 67', Ronaldo 87')\nBELGIUM             0\nBrazil:             Marcos, Cafu [c], Lúcio, Roque Júnior, Edmílson, Roberto Carlos,\nGilberto Silva, Ronaldo, Rivaldo (Ricardinho 90'), Ronaldinho Gaúcho\n(Kléberson 81'), Juninho Paulista (Denílson 57').\nBelgium:            Geert De Vlieger, Nico van Kerckhoven, Timmy Simons, Marc Wilmots [c],\nBart Goor, Johan Walem, Gert Verheyen, Jacky Peeters (Wesley Sonck 72'),\nDaniel van Buyten, Yves Vanderhaeghe, Mbo Mpenza.\nReferee:            Peter Prendergast (Jamaica).\nCoaches:            Brazil: Luiz Felipe Scolari.\nBelgium: Robert Waseige.\nCards:              Brazil: Roberto Carlos [Y 28'].\nBelgium: Yves Vanderhaeghe [Y 24'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m055",
@@ -1137,7 +1407,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "18/06/2002, Miyagi, Miyagi Stadium, 45666\nWorld Cup\nJAPAN               0\nTURKEY              1 (Ümit Davala 12')\nJapan:              Seigo Narazaki, Naoki Matsuda,  Tsuneyasu Miyamoto [c], Tomokazu Myojin,\nJunichi Inamoto (Daisuke Ichikawa 46' (Hiroaki Morishima 86')),\nHidetoshi Nakata, Akinori Nishizawa, Alex Santos (Takayuki Suzuki 46'),\nKoji Nakata, Shinji Ono, Kazuyuki Toda.\nTurkey:             Rüştü Reçber, Bülent Korkmaz, Fatih Akyel, Alpay Özalan, Tugay Kerimoğlu,\nHakan Şükür [c], Yıldıray Baştürk (İlhan Mansız 90'), Hasan Şaş\n(Tayfur Havutçu 85'), Ergün Penbe, Hakan Ünsal, Ümit Davala\n(Nihat Kahveci 74').\nReferee:            Pierluigi Collina (Italy).\nCoaches:            Japan: Philippe Troussier (France).\nTurkey: Şenol Güneş.\nCards:              Japan: Kazuyuki Toda [Y 45'].\nTurkey: Alpay Özalan [Y 21'], Ergün Penbe [Y 44'], Hakan Şükür [Y 90+'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m056",
@@ -1152,7 +1427,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "18/06/2002, Daejeon, Daejeon World Cup Stadium, 38588\nWorld Cup\nSOUTH KOREA         2 (Seol Ki-Hyun 88', Ahn Jung-Hwan 117')\nITALY               1 (Christian Vieri 18')\nAfter sudden death extra time.\nSouth Korea:        Lee Woon-Jae, Choi Jin-Cheol, Kim Nam-II (Lee Cheon-Soo, 68'),\nYoo Sang-Cheol, Kim Tae-Young (Hwang Seon-Hong 63'), Seol Ki-Hyun,\nLee Young-Pyo, Ahn Jung-Hwan, Hong Myung-Bo [c] (Cha Doo-Ri 83'),\nPark Ji-Sung, Song Jong-Gook.\nItaly:              Gianluigi Buffon, Christian Panucci, Paolo Maldini [c], Francesco Coco,\nCristiano Zanetti, Alessandro Del Piero (Gennaro Gattuso 61'),\nFrancesco Coco, Mark Iuliano, Damiano Tommasi, Gianluca Zambrotta\n(Angelo Di Livio 72'), Christian Vieri.\nReferee:            Byron Moreno (Ecuador).\nCoaches:            South Korea: Guus Hiddink (Netherlands).\nItaly: Giovanni Trapattoni.\nCards:              South Korea: Kim Tae-Young [Y 17'], Song Jong-Gook [Y 80'],\nLee Cheon-Soo [Y 99'], Choi Jin-Cheol [Y 115'].\nItaly: Francesco Coco [Y 4'], Francesco Totti [Y 22' YR 103'],\nDamiano Tommasi [Y 55'], Cristiano Zanetti [Y 59'].\nNote:               Gianluigi Buffon saved a penalty by Ahn Jung-Hwan at 4'.",
+        "lang": "en"
+      }
     },
     {
       "id": "m057",
@@ -1164,7 +1444,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "21/06/2002, Shizuoka (Japan), Shizuoka Stadium ECOPA, 47436\nWorld Cup\nENGLAND             1 (Michael Owen 23')\nBRAZIL              2 (Rivaldo 45+', Ronaldinho Gaúcho 50')\nEngland:            David Seaman, Danny Mills, Ashley Cole (Teddy Sheringham 80'),\nTrevor Sinclair (Kieron Dyer 56'), Rio Ferdinand, Sol Campbell,\nDavid Beckham [c], Paul Scholes, Michael Owen (Darius Vassell 79'),\nEmile Heskey, Nicky Butt.\nBrazil:             Marcos, Cafu [c], Lúcio, Roque Júnior, Edmílson, Roberto Carlos,\nGilberto Silva, Ronaldo (Edílson 70'), Rivaldo, Ronaldinho Gaúcho,\nKléberson.\nReferee:            Felipe Ramos Rizo (Mexico).\nCoaches:            England: Sven-Göran Eriksson (Sweden).\nBrazil: Luis Felipe Scolari.\nCards:              England: Paul Scholes [Y 75'], Rio Ferdinand [Y 86'].\nBrazil: Ronaldinho Gaúcho [R 57'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m058",
@@ -1176,7 +1461,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "21/06/2002, Ulsan (South Korea), Munsu Football Stadium, 37337\nWorld Cup\nGERMANY             1 (Michael Ballack 39')\nUSA                 0\nGermany:            Oliver Kahn, Thomas Linke, Christian Ziege, Oliver Neuville\n(Marco Bode 80'), Dietmar Hamann, Miroslav Klose (Oliver Bierhoff 88'),\nMichael Ballack, Sebastian Kehl, Bernd Schneider (Jens Jeremies 60'),\nChristoph Metzelder, Torsten Frings.\nUSA:                Brad Friedel, Frankie Hejduk (Cobi Jones 65'), Gregg Berhalter,\nPablo Mastroeni (Ernie Stewart 80'), John O'Brien, Eddie Lewis,\nClaudio Reyna [c], Brian McBride (Clint Mathis 58'), Landon Donovan,\nTony Sanneh, Eddie Pope.\nReferee:            Hugh Dallas (Scotland).\nCoaches:            Germany: Rudi Völler.\nUSA: Bruce Arena.\nCards:              Germany: Sebastian Kehl [Y 66'], Jens Jeremies [Y 68'].\nUSA: Eddie Lewis [Y 40'], Eddie Pope [Y 41'], Claudio Reyna [Y 68'],\nPablo Mastroeni [Y 69'], Gregg Berhalter [Y 70'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m059",
@@ -1195,7 +1485,12 @@
       "pens": [
         3,
         5
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "22/06/2002, Gwangju, Gwangju World Cup Stadium, 42114\nWorld Cup\nSOUTH KOREA         0\nSPAIN               0\nSouth Korea won 5-3 on penalties.\nSouth Korea:        Lee Woon-Jae, Choi Jin-Cheol, Kim Nam-II (Lee Eul-Yong, 32'),\nYoo Sang-Cheol (Lee Cheon-Soo 60'), Kim Tae-Young (Hwang Seon-Hong 90'),\nSeol Ki-Hyun, Lee Young-Pyo, Ahn Jung-Hwan, Hong Myung-Bo [c],\nPark Ji-Sung, Song Jong-Gook.\nSpain:              Iker Casillas, Iván Helguera (Xavi 93'), Puyol, Hierro [c], Baraja,\nMorientes, De Pedro (Mendieta 70'), Romero, Valerón (Luis Enrique 80'),\nNadal, Joaquín.\nReferee:            Gamal Ghandour (Egypt).\nCoaches:            South Korea: Guus Hiddink (Netherlands).\nSpain: Camacho.\nCards:              South Korea: Yoo Sang-Cheol [Y 52'].\nSpain: De Pedro [Y 53'], Morientes [Y 111'].\nPenalties:          1-0 Hwang Seon-Hong, 1-1 Hierro, 2-1 Park Ji-Sung, 2-2 Baraja,\n3-2 Seol Ki-Hyun, 3-3 Xavi, 4-3 Ahn Jung-Hwan, 4-3 Joaquín (save),\n5-3 Hong Myung-Bo.",
+        "lang": "en"
+      }
     },
     {
       "id": "m060",
@@ -1210,7 +1505,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "22/06/2002, Osaka (Japan), Nagai Stadium, 44233\nWorld Cup\nSENEGAL             0\nTURKEY              1 (İlhan Mansız 94')\nAfter sudden death extra time.\nSenegal:            Tony Sylva, Omar Daf, Papa Malick Diop, Aliou Cissé [c], Henri Camara,\nKhalilou Fadiga, El-Hadji Diouf, Lamine Diatta, Salif Diao,\nFerdinand Coly, Papa Bouba Diop.\nTurkey:             Rüştü Reçber, Bülent Korkmaz, Fatih Akyel, Alpay Özalan, Tugay Kerimoğlu,\nHakan Şükür [c] (İlhan Mansız 67'), Yıldıray Baştürk, Hasan Şaş,\nErgün Penbe, Emre Belözoğlu (Arif Erdem 91'), Ümit Davala.\nReferee:            Oscar Ruiz (Colombia).\nCoaches:            Senegal: Bruno Metsu (France).\nTurkey: Şenol Güneş.\nCards:              Senegal: Omar Daf [Y 12'], Aliou Cissé [Y 63'].\nTurkey: Emre Belözoğlu [Y 22'], İlhan Mansız [Y 87'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m061",
@@ -1222,7 +1522,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "25/06/2002, Seoul, Seoul World Cup Stadium, 65256\nWorld Cup\nSOUTH KOREA         0\nGERMANY             1 (Michael Ballack 75')\nSouth Korea:        Lee Woon-Jae, Choi Jin-Cheol (Lee Min-Sung 56'), Yoo Sang-Cheol,\nKim Tae-Young, Lee Young-Pyo, Lee Cheon-Soo, Cha Doo-Ri, Hwang Seon-Hong\n(Ahn Jung-Hwan 54'), Hong Myung-Bo [c] (Seol Ki-Hyun 80'), Park Ji-Sung,\nSong Jong-Gook.\nGermany:            Oliver Kahn [c], Thomas Linke, Carsten Ramelow, Oliver Neuville\n(Gerald Asamoah 88'), Dietmar Hamann, Miroslav Klose (Oliver Bierhoff 70'),\nMichael Ballack, Marco Bode, Bernd Schneider (Jens Jeremies 85'),\nChristoph Metzelder, Torsten Frings.\nReferee:            Urs Meier (Switzerland).\nCoaches:            South Korea: Guus Hiddink (Netherlands).\nGermany: Rudi Völler.\nCards:              South Korea: Lee Min-Sung [Y 90+'].\nGermany: Michael Ballack [Y 71'], Oliver Neuville [Y 85'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m062",
@@ -1234,7 +1539,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "26/06/2002, Saitama (Japan), Saitama Stadium 2002, 61058\nWorld Cup\nBRAZIL              1 (Ronaldo 49')\nTURKEY              0\nBrazil:             Marcos, Cafu, Lúcio, Roque Júnior, Edmílson, Roberto Carlos,\nGilberto Silva, Ronaldo (Luizão 68'), Rivaldo, Kléberson (Belletti 85'),\nEdílson (Denílson 75').\nTurkey:             Rüştü Reçber, Bülent Korkmaz, Fatih Akyel, Alpay Özalan, Tugay Kerimoğlu,\nHakan Şükür [c], Yıldıray Baştürk (Arif Erdem 88'), Hasan Şaş,\nErgün Penbe, Emre Belözoğlu (İlhan Mansız 62'), Ümit Davala\n(Mustafa İzzet 74').\nReferee:            Kim Milton Nielsen (Denmark).\nCoaches:            Brazil: Luiz Felipe Scolari.\nTurkey: Şenol Güneş.\nCards:              Brazil: Gilberto Silva [Y 41'].\nTurkey: Tugay Kerimoğlu [Y 59'], Hasan Şaş [Y 90'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m063",
@@ -1246,7 +1556,12 @@
       "score": [
         2,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "29/06/2002, Daegu, Daegu World Cup Stadium, 63483\nWorld Cup\nSOUTH KOREA         2 (Lee Eul-Yong 9', Song Jong-Gook 90+')\nTURKEY              3 (Hakan Şükür 1', İlhan Mansız 13', 32')\nSouth Korea:        Lee Woon-Jae, Yoo Sang-Cheol, Seol Ki-Hyun (Choi Tae-Uk 79'),\nLee Young-Pyo, Lee Eul-Yong (Cha Doo-Ri 65'), Lee Cheon-Soo, Lee Min-Sung,\nAhn Jung-Hwan, Hong Myung-Bo [c] (Kim Tae-Young 46'), Park Ji-Sung,\nSong Jong-Gook.\nTurkey:             Rüştü Reçber, Bülent Korkmaz, Fatih Akyel, Alpay Özalan, Tugay Kerimoğlu,\nHakan Şükür [c], Yıldıray Baştürk (Tayfur Havutçu 86'), İlhan Mansız,\nErgün Penbe, Emre Belözoğlu (Hakan Ünsal 41'), Ümit Davala\n(Okan Buruk 76').\nReferee:            Saad Mane (Kuwait).\nCoaches:            South Korea: Guus Hiddink (Netherlands).\nTurkey: Şenol Güneş.\nCards:              South Korea: Lee Eul-Yong [Y 23'].\nTurkey: Tugay Kerimoğlu [Y 50'], Rüştü Reçber [Y 83'].",
+        "lang": "en"
+      }
     },
     {
       "id": "m064",
@@ -1296,6 +1611,11 @@
             "reason": "2002full lista el partido como 'GERMANY 0 BRAZIL 2' (local GER); se conserva el orden de 2002f (primary): Brazil 2-0 Germany. El resto de datos (marcador, fecha, sede, árbitro y asistencia 69.029) coinciden."
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:2002full",
+        "text": "30/06/2002, Yokohama (Japan), International Stadium Yokohama, 69029\nWorld Cup\nGERMANY             0\nBRAZIL              2 (Ronaldo 67', 79')\nGermany:            Oliver Kahn [c], Thomas Linke, Carsten Ramelow, Oliver Neuville,\nDietmar Hamann, Miroslav Klose (Oliver Bierhoff 74'), Jens Jeremies\n(Gerald Asamoah 77'), Marco Bode (Christian Ziege 84'), Bernd Schneider,\nChristoph Metzelder, Torsten Frings.\nBrazil:             Marcos, Cafu [c], Lúcio, Roque Júnior, Edmílson, Roberto Carlos,\nGilberto Silva, Ronaldo (Denílson 90'), Rivaldo, Ronaldinho Gaúcho\n(Juninho Paulista 85'), Kléberson.\nReferee:            Pierluigi Collina (Italy).\nCoaches:            Germany: Rudi Völler.\nBrazil: Luiz Felipe Scolari.\nCards:              Germany: Miroslav Klose [Y 9'].\nBrazil: Roque Júnior [Y 6'].",
+        "lang": "en"
       }
     }
   ],

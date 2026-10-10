@@ -513,6 +513,11 @@
       ],
       "extra": {
         "attendance": 78011
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "14/06/2018, Moskva, Stadion Luzhniki, 78011\nRUSSIA              5 (8 Yuriy Gazinskiy 12', 6 Denis Cheryshev 43' 90+1', 22 Artyom Dzyuba 71',\n17 Aleksandr Golovin 90+4')\nSAUDI ARABIA        0\nRussia:             1 Igor Akinfeyev [c]; 2 Mário Fernandes, 3 Ilya Kutepov, 4 Sergey Ignashevich,\n(4-4-2)             18 Yuriy Zhirkov; 19 Aleksandr Samedov (7 Daler Kuzyayev 64'), 8 Yuriy Gazinskiy,\n11 Roman Zobnin, 17 Aleksandr Golovin; 9 Alan Dzagoyev (6 Denis Cheryshev 24'),\n10 Fyodor Smolov (22 Artyom Dzyuba 70').\nSaudi Arabia:       1 Abdullah Al-Mayouf; 6 Mohammed Al-Bureik, 3 Osama Hawsawi [c], 5 Omar Hawsawi,\n(4-1-4-1)           13 Yasser Ash-Shahrani; 14 Abdullah Otaif (19 Fahad Al-Muwaled 64');\n8 Yahya Ash-Shehri (9 Hatan Bahbri 72'), 17 Taisir Al-Jassem, 7 Salman Al-Faraj,\n18 Salem Ad-Dawsari; 10 Mohammed As-Sahlawi (20 Muhannad Assiri 84').\nReferee:            Néstor Pitana (Argentina).\nCoaches:            Russia: Stanislav Cherchesov.\nSaudi Arabia: Juan Antonio Pizzi (Argentina/Spain).\nCards:              Russia: 17 Aleksandr Golovin [Y 88'].\nSaudi Arabia: 17 Taisir Al-Jassem [Y 90+3'].",
+        "lang": "en"
       }
     },
     {
@@ -529,6 +534,11 @@
       ],
       "extra": {
         "attendance": 27015
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "15/06/2018, Yekaterinburg, Tsentralnyy Stadion (Yekaterinburg Arena), 27015\nURUGUAY             1 (2 José María Giménez 90')\nEGYPT               0\nUruguay:            1 Fernando Muslera; 4 Guillermo Varela, 2 José María Giménez, 3 Diego Godín [c],\n(4-4-2)             22 Martín Cáceres; 8 Nahitan Nández (5 Carlos Sánchez 58'), 15 Matías Vecino\n(14 Lucas Torreira 87'), 6 Rodrigo Bentancur, 10 Giorgian De Arrascaeta\n(7 Cristian Rodríguez 59'); 9 Luis Suárez, 21 Edinson Cavani.\nEgypt:              23 Mohammed Esh-Shenawy; 7 Ahmed Fathy [c], 2 Aly Gabr, 6 Ahmed Hegazy,\n(4-2-3-1)           13 Mohammed Abdesh-Shafy; 17 Mohammed En-Nenny, 8 Tareq Hamed (5 Sam Morsy 50');\n22 Amr Warda (14 Ramadan Sobhy 82'), 19 Abdallah Es-Said,\n21 Mahmoud Hassan 'Trézéguet'; 9 Marwan Mohsen\n(11 Mahmoud Abdel-Moneim 'Kahraba' 63').\nReferee:            Björn Kuipers (Netherlands).\nCoaches:            Uruguay: Óscar Washington Tabárez.\nEgypt: Héctor Cúper (Argentina).\nCards:              Uruguay: none.\nEgypt: 5 Sam Morsy [Y 90+3'], 6 Ahmed Hegazy [Y 90+6'].",
+        "lang": "en"
       }
     },
     {
@@ -545,6 +555,11 @@
       ],
       "extra": {
         "attendance": 64468
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "19/06/2018, Sankt-Peterburg, Stadion Krestovskiy (Stadion Sankt-Peterburg), 64468\nRUSSIA              3 (7 Ahmed Fathy 47' OG, 6 Denis Cheryshev 59', 22 Artyom Dzyuba 62')\nEGYPT               1 (10 Mohammed Salah 73' pen)\nRussia:             1 Igor Akinfeyev [c]; 2 Mário Fernandes, 3 Ilya Kutepov, 4 Sergey Ignashevich,\n(4-2-3-1)           18 Yuriy Zhirkov (13 Fyodor Kudryashov 86'); 8 Yuriy Gazinskiy, 11 Roman Zobnin;\n19 Aleksandr Samedov, 17 Aleksandr Golovin, 6 Denis Cheryshev (7 Daler Kuzyayev 74');\n22 Artyom Dzyuba (10 Fyodor Smolov 79').\nEgypt:              23 Mohammed Esh-Shenawy; 7 Ahmed Fathy [c], 2 Aly Gabr, 6 Ahmed Hegazy,\n(4-2-3-1)           13 Mohammed Abdesh-Shafy; 17 Mohammed En-Nenny (22 Amr Warda 64'), 8 Tareq Hamed;\n10 Mohammed Salah, 19 Abdallah Es-Said, 21 Mahmoud Hassan 'Trézéguet'\n(14 Ramadan Sobhy 68'); 9 Marwan Mohsen (11 Mahmoud Abdel-Moneim 'Kahraba' 82').\nReferee:            Enrique Cáceres (Paraguay).\nCoaches:            Russia: Stanislav Cherchesov.\nEgypt: Héctor Cúper (Argentina).\nCards:              Russia: 10 Fyodor Smolov [Y 84'].\nEgypt: 21 Mahmoud Hassan 'Trézéguet' [Y 57'].",
+        "lang": "en"
       }
     },
     {
@@ -561,6 +576,11 @@
       ],
       "extra": {
         "attendance": 42678
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "20/06/2018, Rostov-na-Donu, Rostov-Arena, 42678\nURUGUAY             1 (9 Luis Suárez 23')\nSAUDI ARABIA        0\nUruguay:            1 Fernando Muslera; 4 Guillermo Varela, 2 José María Giménez, 3 Diego Godín [c],\n(4-4-2)             22 Martín Cáceres; 5 Carlos Sánchez (8 Nahitan Nández 82'), 6 Rodrigo Bentancur,\n15 Matías Vecino (14 Lucas Torreira 59'), 7 Cristian Rodríguez (17 Diego Laxalt 59');\n21 Edinson Cavani, 9 Luis Suárez.\nSaudi Arabia:       22 Mohammed Al-Owais; 6 Mohammed Al-Bureik, 3 Osama Hawsawi [c], 4 Ali Al-Buleihi,\n(4-1-4-1)           13 Yasser Ash-Shahrani; 14 Abdullah Otaif; 9 Hatan Bahbri (12 Mohammed Kanno 75'),\n17 Taisir Al-Jassem (16 Hussain Al-Moqahwi 44'), 7 Salman Al-Faraj,\n18 Salem Ad-Dawsari; 19 Fahad Al-Muwaled (10 Mohammed As-Sahlawi 78').\nReferee:            Clément Turpin (France).\nCoaches:            Uruguay: Óscar Washington Tabárez.\nSaudi Arabia: Juan Antonio Pizzi (Argentina/Spain).\nCards:              None.",
+        "lang": "en"
       }
     },
     {
@@ -577,6 +597,11 @@
       ],
       "extra": {
         "attendance": 36823
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "25/06/2018, Volgograd, Volgograd Arena, 36823\nSAUDI ARABIA        2 (7 Salman Al-Faraj 45+6' pen, 18 Salem Ad-Dawsari 90+5')\nEGYPT               1 (10 Mohammed Salah 22')\nSaudi Arabia:       21 Yasser Al-Musailim; 6 Mohammed Al-Bureik, 3 Osama Hawsawi [c], 23 Moataz Hawsawi,\n(4-1-4-1)           13 Yasser Ash-Shahrani; 14 Abdullah Otaif; 9 Hatan Bahbri (20 Muhannad Assiri 65'),\n16 Hussain Al-Moqahwi, 7 Salman Al-Faraj, 18 Salem Ad-Dawsari; 19 Fahad Al-Muwaled\n(8 Yahya Ash-Shehri 79').\nEgypt:              1 Essam El-Hadary [c]; 7 Ahmed Fathy, 2 Aly Gabr, 6 Ahmed Hegazy,\n(4-4-2)             13 Mohammed Abdesh-Shafy; 19 Abdallah Es-Said (22 Amr Warda 45+7'),\n17 Mohammed En-Nenny, 8 Tareq Hamed, 21 Mahmoud Hassan 'Trézéguet'\n(11 Mahmoud Abdel-Moneim 'Kahraba' 81'); 10 Mohammed Salah, 9 Marwan Mohsen\n(14 Ramadan Sobhy 64').\nReferee:            Wilmar Roldán (Colombia).\nCoaches:            Saudi Arabia: Juan Antonio Pizzi (Argentina/Spain).\nEgypt: Héctor Cúper (Argentina).\nCards:              Saudi Arabia: none.\nEgypt: 2 Aly Gabr [Y 45+5'], 7 Ahmed Fathy [Y 86'].\nNote:               Essam El-Hadary saved a penalty from Fahad Al-Muwaled at 41'.",
+        "lang": "en"
       }
     },
     {
@@ -593,6 +618,11 @@
       ],
       "extra": {
         "attendance": 41970
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "25/06/2018, Samara, Kosmos Arena (Samara Arena), 41970\nRUSSIA              0\nURUGUAY             3 (9 Luis Suárez 10', 6 Denis Cheryshev 23' OG, 21 Edinson Cavani 90')\nRussia:             1 Igor Akinfeyev [c]; 23 Igor Smolnikov, 3 Ilya Kutepov, 4 Sergey Ignashevich,\n(4-2-3-1)           13 Fyodor Kudryashov; 8 Yuriy Gazinskiy (7 Daler Kuzyayev 46'), 11 Roman Zobnin;\n19 Aleksandr Samedov, 15 Aleksey Miranchuk (10 Fyodor Smolov 60'), 6 Denis Cheryshev\n(2 Mário Fernandes 38'); 22 Artyom Dzyuba.\nUruguay:            1 Fernando Muslera; 22 Martín Cáceres, 19 Sebastián Coates, 3 Diego Godín [c],\n(4-1-3-2)           17 Diego Laxalt; 14 Lucas Torreira; 8 Nahitan Nández (7 Cristian Rodríguez 73'),\n6 Rodrigo Bentancur (10 Giorgian De Arrascaeta 63'), 15 Matías Vecino; 9 Luis Suárez,\n21 Edinson Cavani (18 Maxi Gómez 90+3').\nReferee:            Malang Diedhiou (Senegal).\nCoaches:            Russia: Stanislav Cherchesov.\nUruguay: Óscar Washington Tabárez.\nCards:              Russia: 8 Yuriy Gazinskiy [Y 9'], 23 Igor Smolnikov [Y 27' YR 36'].\nUruguay: 6 Rodrigo Bentancur [Y 59'].",
+        "lang": "en"
       }
     },
     {
@@ -609,6 +639,11 @@
       ],
       "extra": {
         "attendance": 62548
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "15/06/2018, Sankt-Peterburg, Stadion Krestovskiy (Stadion Sankt-Peterburg), 62548\nIRAN                1 (20 Aziz Bouhaddouz 90+5' OG)\nMOROCCO             0\nIran:               1 Alireza Biranvand; 23 Ramin Rezaeian, 8 Morteza Pouraliganji, 4 Rouzbeh Cheshmi,\n(4-5-1)             3 Ehsan Hajsafi; 18 Alireza Jahanbakhsh (14 Saman Ghoddos 85'), 7 Masoud Shojaei [c]\n(17 Mehdi Taremi 68'), 9 Omid Ebrahimi (19 Majid Hosseini 80'), 11 Vahid Amiri,\n10 Karim Ansarifard; 20 Sardar Azmoun.\nMorocco:            12 Munir Mohand Mohamedi; 16 Nordin Amrabat (21 Sofyan Amrabat 76'),\n(4-1-4-1)           5 Medhi Benatia [c], 6 Romain Saïss, 2 Achraf Hakimi; 8 Karim El-Ahmadi;\n7 Hakim Ziyach, 10 Younès Belhanda, 14 Mbark Boussoufa, 18 Amine Harit\n(4 Manuel da Costa Trindade 82'); 9 Ayoub El-Kaabi (20 Aziz Bouhaddouz 77').\nReferee:            Cüneyt Çakır (Turkey).\nCoaches:            Iran: Carlos Queiroz (Portugal).\nMorocco: Hervé Renard (France).\nCards:              Iran: 7 Masoud Shojaei [Y 10'], 18 Alireza Jahanbakhsh [Y 47'],\n10 Karim Ansarifard [Y 90+2'].\nMorocco: 8 Karim El-Ahmadi [Y 34'].",
+        "lang": "en"
       }
     },
     {
@@ -625,6 +660,11 @@
       ],
       "extra": {
         "attendance": 43866
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "15/06/2018, Sochi, Olimpiyskiy Stadion Fisht, 43866\nPORTUGAL            3 (7 Cristiano Ronaldo Aveiro 4' pen 44' 88')\nSPAIN               3 (19 Diego Costa 24' 55', 4 Nacho Fernández 58')\nPortugal:           1 Rui Patrício; 21 Cédric Soares, 3 Képler Ferreira 'Pepe', 6 José Fonte,\n(4-4-2)             5 Raphaël Guerreiro; 11 Bernardo Silva (20 Ricardo Quaresma Bernardo 69'),\n8 João Moutinho, 14 William Carvalho, 16 Bruno Fernandes (10 João Mário Eduardo 68');\n17 Gonçalo Guedes (9 André Silva 80'), 7 Cristiano Ronaldo Aveiro [c].\nSpain:              1 David de Gea; 4 Nacho Fernández, 3 Gerard Piqué, 15 Sergio Ramos [c], 18 Jordi Alba;\n(4-3-3)             8 Jorge Resurrección 'Koke', 5 Sergio Busquets, 6 Andrés Iniesta\n(10 Thiago Alcântara do Nascimento 70'); 21 David Jiménez Silva\n(11 Lucas Vázquez 86'), 19 Diego Costa (17 Iago Aspas 77'), 22 Isco Alarcón.\nReferee:            Gianluca Rocchi (Italy).\nCoaches:            Portugal: Fernando Santos.\nSpain: Fernando Ruiz Hierro.\nCards:              Portugal: 16 Bruno Fernandes [Y 28'].\nSpain: 5 Sergio Busquets [Y 17'].",
+        "lang": "en"
       }
     },
     {
@@ -641,6 +681,11 @@
       ],
       "extra": {
         "attendance": 78011
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "20/06/2018, Moskva, Stadion Luzhniki, 78011\nPORTUGAL            1 (7 Cristiano Ronaldo Aveiro 4')\nMOROCCO             0\nPortugal:           1 Rui Patrício; 21 Cédric Soares, 3 Képler Ferreira 'Pepe', 6 José Fonte,\n(4-4-2)             5 Raphaël Guerreiro; 11 Bernardo Silva (18 Gelson Martins 59'), 8 João Moutinho\n(23 Adrien Silva 89'), 14 William Carvalho, 10 João Mário Eduardo\n(16 Bruno Fernandes 70'); 17 Gonçalo Guedes, 7 Cristiano Ronaldo Aveiro [c].\nMorocco:            12 Munir Mohand Mohamedi; 17 Nabil Dirar, 5 Medhi Benatia [c],\n(4-1-4-1)           4 Manuel da Costa Trindade, 2 Achraf Hakimi; 8 Karim El-Ahmadi (11 Fayçal Fajr 86');\n16 Nordin Amrabat, 10 Younès Belhanda (23 Mehdi Carcela 75'), 14 Mbark Boussoufa,\n7 Hakim Ziyach; 13 Khalid Boutaïb (9 Ayoub El-Kaabi 69').\nReferee:            Mark Geiger (USA).\nCoaches:            Portugal: Fernando Santos.\nMorocco: Hervé Renard (France).\nCards:              Portugal: 23 Adrien Silva [Y 90+2'].\nMorocco: 5 Medhi Benatia [Y 40'].",
+        "lang": "en"
       }
     },
     {
@@ -657,6 +702,11 @@
       ],
       "extra": {
         "attendance": 42718
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "20/06/2018, Kazan, Kazan Arena, 42718\nSPAIN               1 (19 Diego Costa 54')\nIRAN                0\nSpain:              1 David de Gea; 2 Dani Carvajal, 3 Gerard Piqué, 15 Sergio Ramos [c], 18 Jordi Alba;\n(4-3-3)             21 David Jiménez Silva, 5 Sergio Busquets, 6 Andrés Iniesta\n(8 Jorge Resurrección 'Koke' 71'); 11 Lucas Vázquez (20 Marco Asensio 80'),\n19 Diego Costa (9 Rodrigo Machado 89'), 22 Isco Alarcón.\nIran:               1 Alireza Biranvand; 23 Ramin Rezaeian, 8 Morteza Pouraliganji, 19 Majid Hosseini,\n(4-5-1)             3 Ehsan Hajsafi [c] (5 Milad Mohammadi 69'); 17 Mehdi Taremi, 9 Omid Ebrahimi,\n6 Saeid Ezzatollahi, 11 Vahid Amiri (14 Saman Ghoddos 86'), 10 Karim Ansarifard\n(18 Alireza Jahanbakhsh 74'); 20 Sardar Azmoun.\nReferee:            Andrés Cunha (Uruguay).\nCoaches:            Spain: Fernando Ruiz Hierro.\nIran: Carlos Queiroz (Portugal).\nCards:              Spain: none.\nIran: 11 Vahid Amiri [Y 79'], 9 Omid Ebrahimi [Y 90+2'].",
+        "lang": "en"
       }
     },
     {
@@ -673,6 +723,11 @@
       ],
       "extra": {
         "attendance": 41685
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "25/06/2018, Saransk, Mordoviya Arena, 41685\nIRAN                1 (10 Karim Ansarifard 90+3' pen)\nPORTUGAL            1 (20 Ricardo Quaresma Bernardo 45')\nIran:               1 Alireza Biranvand; 23 Ramin Rezaeian, 19 Majid Hosseini, 8 Morteza Pouraliganji,\n(4-1-4-1)           3 Ehsan Hajsafi [c] (5 Milad Mohammadi 56'); 6 Saeid Ezzatollahi\n(10 Karim Ansarifard 76'); 18 Alireza Jahanbakhsh (14 Saman Ghoddos 70'),\n9 Omid Ebrahimi, 11 Vahid Amiri, 17 Mehdi Taremi; 20 Sardar Azmoun.\nPortugal:           1 Rui Patrício; 21 Cédric Soares, 3 Képler Ferreira 'Pepe', 6 José Fonte,\n(4-4-2)             5 Raphaël Guerreiro; 20 Ricardo Quaresma Bernardo (11 Bernardo Silva 70'),\n23 Adrien Silva, 14 William Carvalho, 10 João Mário Eduardo (8 João Moutinho 84');\n9 André Silva (17 Gonçalo Guedes 90+6'), 7 Cristiano Ronaldo Aveiro [c].\nReferee:            Enrique Cáceres (Paraguay).\nCoaches:            Iran: Carlos Queiroz (Portugal).\nPortugal: Fernando Santos.\nCards:              Iran: 3 Ehsan Hajsafi [Y 51'], 20 Sardar Azmoun [Y 54'].\nPortugal: 5 Raphaël Guerreiro [Y 33'], 20 Ricardo Quaresma Bernardo [Y 64'],\n7 Cristiano Ronaldo Aveiro [Y 83'].\nNotes:              Alireza Biranvand saved a penalty from Cristiano Ronaldo Aveiro at 53'.\nCédric Soares was shown the yellow card after the final whistle.",
+        "lang": "en"
       }
     },
     {
@@ -689,6 +744,11 @@
       ],
       "extra": {
         "attendance": 33973
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "25/06/2018, Kaliningrad, Stadion Kaliningrad, 33973\nMOROCCO             2 (13 Khalid Boutaïb 14', 19 Youssef En-Nesyri 81')\nSPAIN               2 (22 Isco Alarcón 19', 17 Iago Aspas 90+2')\nMorocco:            12 Munir Mohand Mohamedi; 17 Nabil Dirar, 4 Manuel da Costa Trindade, 6 Romain Saïss,\n(4-1-4-1)           2 Achraf Hakimi; 8 Karim El-Ahmadi; 16 Nordin Amrabat, 14 Mbark Boussoufa [c],\n10 Younès Belhanda (11 Fayçal Fajr 63'), 7 Hakim Ziyach (20 Aziz Bouhaddouz 85');\n13 Khalid Boutaïb (19 Youssef En-Nesyri 72').\nSpain:              1 David de Gea; 2 Dani Carvajal, 3 Gerard Piqué, 15 Sergio Ramos [c], 18 Jordi Alba;\n(4-3-3)             10 Thiago Alcântara do Nascimento (20 Marco Asensio 74'), 5 Sergio Busquets,\n6 Andrés Iniesta; 21 David Jiménez Silva (9 Rodrigo Machado 84'), 19 Diego Costa\n(17 Iago Aspas 74'), 22 Isco Alarcón.\nReferee:            Ravshan Ermatov (Uzbekistan).\nCoaches:            Morocco: Hervé Renard (France).\nSpain: Fernando Ruiz Hierro.\nCards:              Morocco: 8 Karim El-Ahmadi [Y 21'], 16 Nordin Amrabat [Y 29'],\n4 Manuel da Costa Trindade [Y 31'], 14 Mbark Boussoufa [Y 31'],\n12 Munir Mohand Mohamedi [Y 88'], 2 Achraf Hakimi [Y 90+3'].\nSpain: none.\nNote:               Spain's second goal was awarded at 90+2' after video review; the ball\ncrossed the line at 90+1'.",
+        "lang": "en"
       }
     },
     {
@@ -705,6 +765,11 @@
       ],
       "extra": {
         "attendance": 41279
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "16/06/2018, Kazan, Kazan Arena, 41279\nFRANCE              2 (7 Antoine Griezmann 58' pen, 16 Aziz Behich 80' OG)\nAUSTRALIA           1 (15 Mile Jedinak 62' pen)\nFrance:             1 Hugo Lloris [c]; 2 Benjamin Pavard, 4 Raphaël Varane, 5 Samuel Umtiti,\n(4-3-3)             21 Lucas Hernández; 12 Corentin Tolisso (14 Blaise Matuidi 78'), 13 N'Golo Kanté,\n6 Paul Pogba; 7 Antoine Griezmann (9 Olivier Giroud 70'), 10 Kylian Mbappé,\n11 Ousmane Dembélé (18 Nabil Fekir 70').\nAustralia:          1 Maty Ryan; 19 Josh Risdon, 20 Trent Sainsbury, 5 Mark Milligan, 16 Aziz Behich;\n(4-2-3-1)           15 Mile Jedinak [c], 13 Aaron Mooy; 7 Mathew Leckie, 23 Tom Rogić\n(22 Jackson Irvine 72'), 10 Robbie Kruse (17 Daniel Arzani 84'); 11 Andrew Nabbout\n(9 Tomi Jurić 64').\nReferee:            Andrés Cunha (Uruguay).\nCoaches:            France: Didier Deschamps.\nAustralia: Bert van Marwijk (Netherlands).\nCards:              France: 12 Corentin Tolisso [Y 76'].\nAustralia: 7 Mathew Leckie [Y 13'], 19 Josh Risdon [Y 57'], 16 Aziz Behich [Y 87'].",
+        "lang": "en"
       }
     },
     {
@@ -721,6 +786,11 @@
       ],
       "extra": {
         "attendance": 40502
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "16/06/2018, Saransk, Mordoviya Arena, 40502\nDENMARK             1 (20 Yussuf Yurary Poulsen 59')\nPERU                0\nDenmark:            1 Kasper Schmeichel; 14 Henrik Dalsgaard, 4 Simon Kjær [c], 6 Andreas Christensen\n(4-2-3-1)           (13 Mathias Jørgensen 81'), 17 Jens Stryger Larsen; 7 William Kvist\n(19 Lasse Schöne 36'), 8 Thomas Delaney; 20 Yussuf Yurary Poulsen,\n10 Christian Eriksen, 23 Pione Sisto (11 Martin Braithwaite 67'); 9 Nicolai Jørgensen.\nPeru:               1 Pedro Gallese; 17 Luis Advíncula, 15 Christian Ramos, 2 Alberto Rodríguez [c],\n(4-4-1-1)           6 Miguel Trauco; 18 André Carrillo, 13 Renato Tapia (23 Pedro Aquino 87'),\n19 Yoshimar Yotún, 20 Edison Flores (9 Paolo Guerrero 62'); 8 Christian Cueva;\n10 Jefferson Farfán (11 Raúl Ruidíaz 85').\nReferee:            Bakary Gassama (Gambia).\nCoaches:            Denmark: Åge Hareide (Norway).\nPeru: Ricardo Gareca (Argentina).\nCards:              Denmark: 8 Thomas Delaney [Y 86'], 20 Yussuf Yurary Poulsen [Y 90+3'].\nPeru: 13 Renato Tapia [Y 38'].\nNote:               Christian Cueva missed a penalty at 45+1'.",
+        "lang": "en"
       }
     },
     {
@@ -737,6 +807,11 @@
       ],
       "extra": {
         "attendance": 40727
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "21/06/2018, Samara, Kosmos Arena (Samara Arena), 40727\nAUSTRALIA           1 (15 Mile Jedinak 38' pen)\nDENMARK             1 (10 Christian Eriksen 7')\nAustralia:          1 Maty Ryan; 19 Josh Risdon, 20 Trent Sainsbury, 5 Mark Milligan, 16 Aziz Behich;\n(4-2-3-1)           15 Mile Jedinak [c], 13 Aaron Mooy; 7 Mathew Leckie, 23 Tom Rogić\n(22 Jackson Irvine 82'), 10 Robbie Kruse (17 Daniel Arzani 68'); 11 Andrew Nabbout\n(9 Tomi Jurić 75').\nDenmark:            1 Kasper Schmeichel; 14 Henrik Dalsgaard, 4 Simon Kjær [c], 6 Andreas Christensen,\n(4-2-3-1)           17 Jens Stryger Larsen; 19 Lasse Schöne, 8 Thomas Delaney; 20 Yussuf Yurary Poulsen\n(11 Martin Braithwaite 59'), 10 Christian Eriksen, 23 Pione Sisto; 9 Nicolai Jørgensen\n(21 Andreas Cornelius 68').\nReferee:            Antonio Mateu Lahoz (Spain).\nCoaches:            Australia: Bert van Marwijk (Netherlands).\nDenmark: Åge Hareide (Norway).\nCards:              Australia: none.\nDenmark: 20 Yussuf Yurary Poulsen [Y 37'], 23 Pione Sisto [Y 84'].",
+        "lang": "en"
       }
     },
     {
@@ -753,6 +828,11 @@
       ],
       "extra": {
         "attendance": 32789
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "21/06/2018, Yekaterinburg, Tsentralnyy Stadion (Yekaterinburg Arena), 32789\nFRANCE              1 (10 Kylian Mbappé 34')\nPERU                0\nFrance:             1 Hugo Lloris [c]; 2 Benjamin Pavard, 4 Raphaël Varane, 5 Samuel Umtiti,\n(4-4-2)             21 Lucas Hernández; 10 Kylian Mbappé (11 Ousmane Dembélé 75'), 13 N'Golo Kanté,\n6 Paul Pogba (15 Steven Nzonzi 89'), 14 Blaise Matuidi; 7 Antoine Griezmann\n(18 Nabil Fekir 80'), 9 Olivier Giroud.\nPeru:               1 Pedro Gallese; 17 Luis Advíncula, 15 Christian Ramos, 2 Alberto Rodríguez\n(4-2-3-1)           (4 Anderson Santamaría 46'), 6 Miguel Trauco; 23 Pedro Aquino, 19 Yoshimar Yotún\n(10 Jefferson Farfán 46'); 18 André Carrillo, 8 Christian Cueva (11 Raúl Ruidíaz 82'),\n20 Edison Flores; 9 Paolo Guerrero [c].\nReferee:            Mohammed Abdullah Hassan Mohammed (UAE).\nCoaches:            France: Didier Deschamps.\nPeru: Ricardo Gareca (Argentina).\nCards:              France: 14 Blaise Matuidi [Y 16'], 6 Paul Pogba [Y 86'].\nPeru: 9 Paolo Guerrero [Y 23'], 23 Pedro Aquino [Y 81'].",
+        "lang": "en"
       }
     },
     {
@@ -769,6 +849,11 @@
       ],
       "extra": {
         "attendance": 44073
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "26/06/2018, Sochi, Olimpiyskiy Stadion Fisht, 44073\nPERU                2 (18 André Carrillo 18', 9 Paolo Guerrero 50')\nAUSTRALIA           0\nPeru:               1 Pedro Gallese; 17 Luis Advíncula, 15 Christian Ramos, 4 Anderson Santamaría,\n(4-4-1-1)           6 Miguel Trauco; 18 André Carrillo (16 Wilder Cartagena 79'), 13 Renato Tapia\n(7 Paolo Hurtado 63'), 19 Yoshimar Yotún (23 Pedro Aquino 46'), 20 Edison Flores;\n8 Christian Cueva; 9 Paolo Guerrero [c].\nAustralia:          1 Maty Ryan; 19 Josh Risdon, 20 Trent Sainsbury, 5 Mark Milligan, 16 Aziz Behich;\n(4-2-3-1)           15 Mile Jedinak [c], 13 Aaron Mooy; 7 Mathew Leckie, 23 Tom Rogić\n(22 Jackson Irvine 72'), 10 Robbie Kruse (17 Daniel Arzani 58'); 9 Tomi Jurić\n(4 Tim Cahill 53').\nReferee:            Sergey Karasyov (Russia).\nCoaches:            Peru: Ricardo Gareca (Argentina).\nAustralia: Bert van Marwijk (Netherlands).\nCards:              Peru: 19 Yoshimar Yotún [Y 45'], 7 Paolo Hurtado [Y 79'].\nAustralia: 15 Mile Jedinak [Y 10'], 17 Daniel Arzani [Y 60'], 23 Tom Rogić [Y 66'],\n5 Mark Milligan [Y 88'].",
+        "lang": "en"
       }
     },
     {
@@ -785,6 +870,11 @@
       ],
       "extra": {
         "attendance": 78011
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "26/06/2018, Moskva, Stadion Luzhniki, 78011\nDENMARK             0\nFRANCE              0\nDenmark:            1 Kasper Schmeichel; 14 Henrik Dalsgaard, 4 Simon Kjær [c], 13 Mathias Jørgensen,\n(4-1-4-1)           17 Jens Stryger Larsen; 6 Andreas Christensen; 11 Martin Braithwaite,\n10 Christian Eriksen, 8 Thomas Delaney (18 Lukas Lerager 90+2'), 23 Pione Sisto\n(15 Viktor Fischer 60'); 21 Andreas Cornelius (12 Kasper Dolberg 75').\nFrance:             16 Steve Mandanda; 19 Djibril Sidibé, 4 Raphaël Varane [c], 3 Presnel Kimpembe,\n(4-4-2)             21 Lucas Hernández (22 Benjamin Mendy 50'); 11 Ousmane Dembélé (10 Kylian Mbappé 78'),\n13 N'Golo Kanté, 15 Steven Nzonzi, 8 Thomas Lemar; 7 Antoine Griezmann\n(18 Nabil Fekir 68'), 9 Olivier Giroud.\nReferee:            Sandro Ricci (Brazil).\nCoaches:            Denmark: Åge Hareide (Norway).\nFrance: Didier Deschamps.\nCards:              Denmark: 13 Mathias Jørgensen [Y 45+3'].\nFrance: none.",
+        "lang": "en"
       }
     },
     {
@@ -801,6 +891,11 @@
       ],
       "extra": {
         "attendance": 44190
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "16/06/2018, Moskva, Otkrytiye Arena (Stadion Spartak), 44190\nARGENTINA           1 (19 Sergio Agüero 19')\nICELAND             1 (11 Alfreð Finnbogason 23')\nArgentina:          23 Willy Caballero; 18 Eduardo Salvio, 17 Nicolás Otamendi, 16 Marcos Rojo,\n(4-2-3-1)           3 Nicolás Tagliafico; 14 Javier Mascherano, 5 Lucas Biglia (7 Éver Banega 54');\n13 Maximiliano Meza (9 Gonzalo Higuaín 84'), 10 Lionel Messi [c], 11 Ángel Di María\n(22 Cristian Pavón 75'); 19 Sergio Agüero.\nIceland:            1 Hannes Þór Halldórsson; 2 Birkir Már Sævarsson, 14 Kári Árnason,\n(4-4-2)             6 Ragnar Sigurðsson, 18 Hörður Björgvin Magnússon; 7 Jóhann Berg Guðmundsson\n(19 Rúrik Gíslason 63'), 17 Aron Einar Gunnarsson [c] (23 Ari Freyr Skúlason 76'),\n20 Emil Hallfreðsson, 8 Birkir Bjarnason; 10 Gylfi Þór Sigurðsson,\n11 Alfreð Finnbogason (9 Björn Bergmann Sigurðarson 89').\nReferee:            Szymon Marciniak (Poland).\nCoaches:            Argentina: Jorge Sampaoli.\nIceland: Heimir Hallgrímsson.\nCards:              None.\nNote:               Hannes Þór Halldórsson saved a penalty from Lionel Messi at 64'.",
+        "lang": "en"
       }
     },
     {
@@ -817,6 +912,11 @@
       ],
       "extra": {
         "attendance": 31136
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "16/06/2018, Kaliningrad, Stadion Kaliningrad, 31136\nCROATIA             2 (8 Oghenekaro Etebo 32' OG, 10 Luka Modrić 71' pen)\nNIGERIA             0\nCroatia:            23 Danijel Subašić; 2 Šime Vrsaljko, 6 Dejan Lovren, 21 Domagoj Vida, 3 Ivan Strinić;\n(4-2-4)             10 Luka Modrić [c], 7 Ivan Rakitić; 4 Ivan Perišić, 17 Mario Mandžukić\n(20 Marko Pjaca 86'), 9 Andrej Kramarić (11 Marcelo Brozović 60'), 18 Ante Rebić\n(8 Mateo Kovačić 78').\nNigeria:            23 Francis Uzoho; 12 Shehu Abdullahi, 5 William Troost-Ekong, 6 Leon Balogun,\n(4-4-1-1)           2 Bryan Idowu; 11 Victor Moses, 4 Wilfred Ndidi, 8 Oghenekaro Etebo, 18 Alex Iwobi\n(7 Ahmed Musa 62'); 10 John Obi Mikel [c] (13 Simeon Nwankwo 88'); 9 Odion Ighalo\n(14 Kelechi Iheanacho 72').\nReferee:            Sandro Ricci (Brazil).\nCoaches:            Croatia: Zlatko Dalić.\nNigeria: Gernot Rohr (Germany).\nCards:              Croatia: 7 Ivan Rakitić [Y 30'], 11 Marcelo Brozović [Y 89'].\nNigeria: 5 William Troost-Ekong [Y 70'].",
+        "lang": "en"
       }
     },
     {
@@ -833,6 +933,11 @@
       ],
       "extra": {
         "attendance": 43319
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "21/06/2018, Nizhniy Novgorod, Stadion Nizhniy Novgorod, 43319\nCROATIA             3 (18 Ante Rebić 53', 10 Luka Modrić 80', 7 Ivan Rakitić 90+1')\nARGENTINA           0\nCroatia:            23 Danijel Subašić; 2 Šime Vrsaljko, 6 Dejan Lovren, 21 Domagoj Vida, 3 Ivan Strinić;\n(4-1-4-1)           11 Marcelo Brozović; 18 Ante Rebić (9 Andrej Kramarić 57'), 10 Luka Modrić [c],\n7 Ivan Rakitić, 4 Ivan Perišić (8 Mateo Kovačić 82'); 17 Mario Mandžukić\n(5 Vedran Ćorluka 90+3').\nArgentina:          23 Willy Caballero; 2 Gabriel Mercado, 17 Nicolás Otamendi, 3 Nicolás Tagliafico;\n(3-4-3)             18 Eduardo Salvio (22 Cristian Pavón 56'), 15 Enzo Pérez (21 Paulo Dybala 68'),\n14 Javier Mascherano, 8 Marcos Acuña; 10 Lionel Messi [c], 19 Sergio Agüero\n(9 Gonzalo Higuaín 54'), 13 Maximiliano Meza.\nReferee:            Ravshan Ermatov (Uzbekistan).\nCoaches:            Croatia: Zlatko Dalić.\nArgentina: Jorge Sampaoli.\nCards:              Croatia: 18 Ante Rebić [Y 39'], 17 Mario Mandžukić [Y 58'],\n2 Šime Vrsaljko [Y 67'], 5 Vedran Ćorluka [Y 90+4'].\nArgentina: 2 Gabriel Mercado [Y 51'], 17 Nicolás Otamendi [Y 85'],\n8 Marcos Acuña [Y 87'].",
+        "lang": "en"
       }
     },
     {
@@ -849,6 +954,11 @@
       ],
       "extra": {
         "attendance": 40904
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "22/06/2018, Volgograd, Volgograd Arena, 40904\nNIGERIA             2 (7 Ahmed Musa 49' 75')\nICELAND             0\nNigeria:            23 Francis Uzoho; 6 Leon Balogun, 5 William Troost-Ekong, 22 Kenneth Omeruo;\n(3-5-2)             11 Victor Moses, 10 John Obi Mikel [c], 4 Wilfred Ndidi, 8 Oghenekaro Etebo\n(18 Alex Iwobi 90+1'), 2 Bryan Idowu (21 Tyronne Ebuehi 46'); 14 Kelechi Iheanacho\n(9 Odion Ighalo 85'), 7 Ahmed Musa.\nIceland:            1 Hannes Þór Halldórsson; 2 Birkir Már Sævarsson, 14 Kári Árnason,\n(4-4-2)             6 Ragnar Sigurðsson (5 Sverrir Ingi Ingason 65'), 18 Hörður Björgvin Magnússon;\n19 Rúrik Gíslason, 17 Aron Einar Gunnarsson [c] (23 Ari Freyr Skúlason 87'),\n10 Gylfi Þór Sigurðsson, 8 Birkir Bjarnason; 11 Alfreð Finnbogason,\n22 Jón Daði Böðvarsson (9 Björn Bergmann Sigurðarson 71').\nReferee:            Matt Conger (New Zealand/USA).\nCoaches:            Nigeria: Gernot Rohr (Germany).\nIceland: Heimir Hallgrímsson.\nCards:              Nigeria: 2 Bryan Idowu [Y 44'].\nIceland: none.\nNote:               Gylfi Þór Sigurðsson missed a penalty at 83'.",
+        "lang": "en"
       }
     },
     {
@@ -865,6 +975,11 @@
       ],
       "extra": {
         "attendance": 43472
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "26/06/2018, Rostov-na-Donu, Rostov-Arena, 43472\nCROATIA             2 (19 Milan Badelj 53', 4 Ivan Perišić 90')\nICELAND             1 (10 Gylfi Þór Sigurðsson 76' pen)\nCroatia:            12 Lovre Kalinić; 13 Tin Jedvaj, 5 Vedran Ćorluka, 15 Duje Ćaleta-Car, 22 Josip Pivarić;\n(4-3-3)             10 Luka Modrić [c] (14 Filip Bradarić 65'), 19 Milan Badelj, 8 Mateo Kovačić\n(7 Ivan Rakitić 82'); 20 Marko Pjaca (6 Dejan Lovren 70'), 9 Andrej Kramarić,\n4 Ivan Perišić.\nIceland:            1 Hannes Þór Halldórsson; 2 Birkir Már Sævarsson, 5 Sverrir Ingi Ingason,\n(4-4-1-1)           6 Ragnar Sigurðsson (9 Björn Bergmann Sigurðarson 70'),\n18 Hörður Björgvin Magnússon; 7 Jóhann Berg Guðmundsson,\n17 Aron Einar Gunnarsson [c], 20 Emil Hallfreðsson, 8 Birkir Bjarnason\n(21 Arnór Ingvi Traustason 90'); 10 Gylfi Þór Sigurðsson; 11 Alfreð Finnbogason\n(4 Albert Guðmundsson 85').\nReferee:            Antonio Mateu Lahoz (Spain).\nCoaches:            Croatia: Zlatko Dalić.\nIceland: Heimir Hallgrímsson.\nCards:              Croatia: 20 Marko Pjaca [Y 14'], 13 Tin Jedvaj [Y 83'].\nIceland: 20 Emil Hallfreðsson [Y 59'], 11 Alfreð Finnbogason [Y 64'],\n2 Birkir Már Sævarsson [Y 84'].",
+        "lang": "en"
       }
     },
     {
@@ -881,6 +996,11 @@
       ],
       "extra": {
         "attendance": 64468
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "26/06/2018, Sankt-Peterburg, Stadion Krestovskiy (Stadion Sankt-Peterburg), 64468\nARGENTINA           2 (10 Lionel Messi 14', 16 Marcos Rojo 86')\nNIGERIA             1 (11 Victor Moses 51' pen)\nArgentina:          12 Franco Armani; 2 Gabriel Mercado, 17 Nicolás Otamendi, 16 Marcos Rojo,\n(4-3-3)             3 Nicolás Tagliafico (19 Sergio Agüero 80'); 15 Enzo Pérez (22 Cristian Pavón 61'),\n14 Javier Mascherano, 7 Éver Banega; 10 Lionel Messi [c], 9 Gonzalo Higuaín,\n11 Ángel Di María (13 Maximiliano Meza 72').\nNigeria:            23 Francis Uzoho; 6 Leon Balogun, 5 William Troost-Ekong, 22 Kenneth Omeruo\n(3-5-2)             (18 Alex Iwobi 90'); 11 Victor Moses, 4 Wilfred Ndidi, 8 Oghenekaro Etebo,\n10 John Obi Mikel [c], 2 Bryan Idowu; 14 Kelechi Iheanacho (9 Odion Ighalo 46'),\n7 Ahmed Musa (13 Simeon Nwankwo 90+2').\nReferee:            Cüneyt Çakır (Turkey).\nCoaches:            Argentina: Jorge Sampaoli.\nNigeria: Gernot Rohr (Germany).\nCards:              Argentina: 14 Javier Mascherano [Y 49'], 7 Éver Banega [Y 64'],\n10 Lionel Messi [Y 90+4'].\nNigeria: 6 Leon Balogun [Y 32'], 10 John Obi Mikel [Y 90+1'].",
+        "lang": "en"
       }
     },
     {
@@ -897,6 +1017,11 @@
       ],
       "extra": {
         "attendance": 41432
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "17/06/2018, Samara, Kosmos Arena (Samara Arena), 41432\nSERBIA              1 (11 Aleksandar Kolarov 56')\nCOSTA RICA          0\nSerbia:             1 Vladimir Stojković; 6 Branislav Ivanović, 15 Nikola Milenković, 3 Duško Tošić,\n(4-2-3-1)           11 Aleksandar Kolarov [c]; 4 Luka Milivojević, 21 Nemanja Matić; 10 Dušan Tadić\n(2 Antonio Rukavina 83'), 20 Sergej Milinković-Savić, 22 Adem Ljajić\n(17 Filip Kostić 70'); 9 Aleksandar Mitrović (8 Aleksandar Prijović 90').\nCosta Rica:         1 Keylor Navas; 16 Cristian Gamboa, 2 Johnny Acosta, 3 Giancarlo González,\n(5-2-3)             6 Óscar Duarte, 15 Francisco Calvo; 5 Celso Borges, 20 David Guzmán\n(9 Daniel Colindres 73'); 10 Bryan Ruiz [c], 21 Marcos Ureña (12 Joel Campbell 67'),\n11 Johan Venegas (7 Christian Bolaños 60').\nReferee:            Malang Diedhiou (Senegal).\nCoaches:            Serbia: Mladen Krstajić.\nCosta Rica: Óscar Ramírez.\nCards:              Serbia: 6 Branislav Ivanović [Y 59'], 8 Aleksandar Prijović [Y 90+8'].\nCosta Rica: 15 Francisco Calvo [Y 22'], 20 David Guzmán [Y 56'].",
+        "lang": "en"
       }
     },
     {
@@ -913,6 +1038,11 @@
       ],
       "extra": {
         "attendance": 43109
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "17/06/2018, Rostov-na-Donu, Rostov-Arena, 43109\nBRAZIL              1 (11 Philippe Coutinho Correia 20')\nSWITZERLAND         1 (14 Steven Zuber 50')\nBrazil:             1 Alisson Becker; 14 Danilo da Silva, 2 Thiago da Silva,\n(4-3-3)             3 João Miranda de Souza Filho, 12 Marcelo da Silva Júnior [c];\n15 José Paulo Maciel Júnior 'Paulinho' (8 Renato Augusto 67'), 5 Carlos Casimiro\n(17 Fernando Roza 'Fernandinho' 60'), 11 Philippe Coutinho Correia;\n19 Willian da Silva, 9 Gabriel Jesus (20 Roberto Firmino de Oliveira 79'),\n10 Neymar Santos Júnior.\nSwitzerland:        1 Yann Sommer; 2 Stephan Lichtsteiner [c] (6 Michael Lang 87'), 22 Fabian Schär,\n(4-2-3-1)           5 Manuel Akanji, 13 Ricardo Rodríguez; 11 Valon Behrami (17 Denis Zakaria 71'),\n10 Granit Xhaka; 23 Xherdan Shaqiri, 15 Blerim Džemaili, 14 Steven Zuber;\n9 Haris Seferović (7 Breel Embolo 80').\nReferee:            César Arturo Ramos (Mexico).\nCoaches:            Brazil: Adenor Bachi 'Tite'.\nSwitzerland: Vladimir Petković (Bosnia and Herzegovina/Switzerland).\nCards:              Brazil: 5 Carlos Casimiro [Y 47'].\nSwitzerland: 2 Stephan Lichtsteiner [Y 31'], 22 Fabian Schär [Y 65'],\n11 Valon Behrami [Y 68'].",
+        "lang": "en"
       }
     },
     {
@@ -929,6 +1059,11 @@
       ],
       "extra": {
         "attendance": 64468
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "22/06/2018, Sankt-Peterburg, Stadion Krestovskiy (Stadion Sankt-Peterburg), 64468\nBRAZIL              2 (11 Philippe Coutinho Correia 90+1', 10 Neymar Santos Júnior 90+7')\nCOSTA RICA          0\nBrazil:             1 Alisson Becker; 22 Fagner Lemos, 2 Thiago da Silva [c],\n(4-3-3)             3 João Miranda de Souza Filho, 12 Marcelo da Silva Júnior;\n15 José Paulo Maciel Júnior 'Paulinho' (20 Roberto Firmino de Oliveira 68'),\n5 Carlos Casimiro, 11 Philippe Coutinho Correia; 19 Willian da Silva\n(7 Douglas Costa de Souza 46'), 9 Gabriel Jesus\n(17 Fernando Roza 'Fernandinho' 90+3'), 10 Neymar Santos Júnior.\nCosta Rica:         1 Keylor Navas; 16 Cristian Gamboa (15 Francisco Calvo 75'), 2 Johnny Acosta,\n(5-2-3)             3 Giancarlo González, 6 Óscar Duarte, 8 Bryan Oviedo; 5 Celso Borges, 20 David Guzmán\n(17 Yeltsin Tejeda 83'); 11 Johan Venegas, 21 Marcos Ureña (7 Christian Bolaños 54'),\n10 Bryan Ruiz [c].\nReferee:            Björn Kuipers (Netherlands).\nCoaches:            Brazil: Adenor Bachi 'Tite'.\nCosta Rica: Óscar Ramírez.\nCards:              Brazil: 10 Neymar Santos Júnior [Y 81'], 11 Philippe Coutinho Correia [Y 81'].\nCosta Rica: 2 Johnny Acosta [Y 84'].",
+        "lang": "en"
       }
     },
     {
@@ -945,6 +1080,11 @@
       ],
       "extra": {
         "attendance": 33167
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "22/06/2018, Kaliningrad, Stadion Kaliningrad, 33167\nSWITZERLAND         2 (10 Granit Xhaka 52', 23 Xherdan Shaqiri 90')\nSERBIA              1 (9 Aleksandar Mitrović 5')\nSwitzerland:        1 Yann Sommer; 2 Stephan Lichtsteiner [c], 22 Fabian Schär, 5 Manuel Akanji,\n(4-2-3-1)           13 Ricardo Rodríguez; 11 Valon Behrami, 10 Granit Xhaka; 23 Xherdan Shaqiri,\n15 Blerim Džemaili (7 Breel Embolo 73'), 14 Steven Zuber (19 Josip Drmić 90+4');\n9 Haris Seferović (18 Mario Gavranović 46').\nSerbia:             1 Vladimir Stojković; 6 Branislav Ivanović, 15 Nikola Milenković, 3 Duško Tošić,\n(4-2-3-1)           11 Aleksandar Kolarov [c]; 4 Luka Milivojević (18 Nemanja Radonjić 81'),\n21 Nemanja Matić; 10 Dušan Tadić, 20 Sergej Milinković-Savić, 17 Filip Kostić\n(22 Adem Ljajić 64'); 9 Aleksandar Mitrović.\nReferee:            Dr Felix Brych (Germany).\nCoaches:            Switzerland: Vladimir Petković (Bosnia and Herzegovina/Switzerland).\nSerbia: Mladen Krstajić.\nCards:              Switzerland: 23 Xherdan Shaqiri [Y 90+1'].\nSerbia: 20 Sergej Milinković-Savić [Y 33'], 4 Luka Milivojević [Y 39'],\n21 Nemanja Matić [Y 45+2'], 9 Aleksandar Mitrović [Y 87'].",
+        "lang": "en"
       }
     },
     {
@@ -961,6 +1101,11 @@
       ],
       "extra": {
         "attendance": 44190
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "27/06/2018, Moskva, Otkrytiye Arena (Stadion Spartak), 44190\nBRAZIL              2 (15 José Paulo Maciel Júnior 'Paulinho' 36', 2 Thiago da Silva 68')\nSERBIA              0\nBrazil:             1 Alisson Becker; 22 Fagner Lemos, 2 Thiago da Silva,\n(4-3-3)             3 João Miranda de Souza Filho [c], 12 Marcelo da Silva Júnior\n(6 Filipe Luís Kasmirski 10'); 15 José Paulo Maciel Júnior 'Paulinho'\n(17 Fernando Roza 'Fernandinho' 66'), 5 Carlos Casimiro,\n11 Philippe Coutinho Correia (8 Renato Augusto 80'); 19 Willian da Silva,\n9 Gabriel Jesus, 10 Neymar Santos Júnior.\nSerbia:             1 Vladimir Stojković; 2 Antonio Rukavina, 15 Nikola Milenković, 13 Miloš Veljković,\n(4-2-3-1)           11 Aleksandar Kolarov [c]; 20 Sergej Milinković-Savić, 21 Nemanja Matić;\n10 Dušan Tadić, 22 Adem Ljajić (7 Andrija Živković 75'), 17 Filip Kostić\n(18 Nemanja Radonjić 82'); 9 Aleksandar Mitrović (19 Luka Jović 89').\nReferee:            Alireza Faghani (Iran).\nCoaches:            Brazil: Adenor Bachi 'Tite'.\nSerbia: Mladen Krstajić.\nCards:              Brazil: none.\nSerbia: 22 Adem Ljajić [Y 33'], 21 Nemanja Matić [Y 48'],\n9 Aleksandar Mitrović [Y 70'].",
+        "lang": "en"
       }
     },
     {
@@ -977,6 +1122,11 @@
       ],
       "extra": {
         "attendance": 43319
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "27/06/2018, Nizhniy Novgorod, Stadion Nizhniy Novgorod, 43319\nCOSTA RICA          2 (19 Kendall Waston 56', 1 Yann Sommer 90+3' OG)\nSWITZERLAND         2 (15 Blerim Džemaili 31', 19 Josip Drmić 88')\nCosta Rica:         1 Keylor Navas; 16 Cristian Gamboa (4 Ian Smith 90+3'), 2 Johnny Acosta,\n(5-2-3)             3 Giancarlo González, 19 Kendall Waston, 8 Bryan Oviedo; 5 Celso Borges,\n20 David Guzmán (14 Randall Azofeifa 90+1'); 10 Bryan Ruiz [c], 12 Joel Campbell,\n9 Daniel Colindres (13 Rodney Wallace 81').\nSwitzerland:        1 Yann Sommer; 2 Stephan Lichtsteiner [c], 22 Fabian Schär, 5 Manuel Akanji,\n(4-2-3-1)           13 Ricardo Rodríguez; 11 Valon Behrami (17 Denis Zakaria 60'), 10 Granit Xhaka;\n23 Xherdan Shaqiri (6 Michael Lang 81'), 15 Blerim Džemaili, 7 Breel Embolo;\n18 Mario Gavranović (19 Josip Drmić 69').\nReferee:            Clément Turpin (France).\nCoaches:            Costa Rica: Óscar Ramírez.\nSwitzerland: Vladimir Petković (Bosnia and Herzegovina/Switzerland).\nCards:              Costa Rica: 16 Cristian Gamboa [Y 11'], 12 Joel Campbell [Y 29'],\n19 Kendall Waston [Y 89'].\nSwitzerland: 2 Stephan Lichtsteiner [Y 37'], 17 Denis Zakaria [Y 75'],\n22 Fabian Schär [Y 83'].\nNote:               Bryan Ruiz missed a penalty at 90+3'; his shot hit the crossbar and then\nimmediately struck Yann Sommer, rebounding into the goal.",
+        "lang": "en"
       }
     },
     {
@@ -993,6 +1143,11 @@
       ],
       "extra": {
         "attendance": 78011
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "17/06/2018, Moskva, Stadion Luzhniki, 78011\nMEXICO              1 (22 Hirving Lozano 35')\nGERMANY             0\nMexico:             13 Guillermo Ochoa; 3 Carlos Salcedo, 2 Hugo Ayala, 15 Héctor Moreno, 23 Jesús Gallardo;\n(4-2-3-1)           16 Héctor Herrera, 18 Andrés Guardado [c] (4 Rafael Márquez 74'); 7 Miguel Layún,\n11 Carlos Vela (21 Edson Álvarez 58'), 22 Hirving Lozano (9 Raúl Jiménez 66');\n14 Javier Hernández.\nGermany:            1 Manuel Neuer [c]; 18 Joshua Kimmich, 17 Jérôme Boateng, 5 Mats Hummels,\n(4-2-3-1)           2 Marvin Plattenhardt (23 Mario Gómez 79'); 6 Sami Khedira (11 Marco Reus 60'),\n8 Toni Kroos; 13 Thomas Müller, 10 Mesut Özil, 7 Julian Draxler; 9 Timo Werner\n(20 Julian Brandt 86').\nReferee:            Alireza Faghani (Iran).\nCoaches:            Mexico: Juan Carlos Osorio (Colombia).\nGermany: Joachim Löw.\nCards:              Mexico: 15 Héctor Moreno [Y 40'], 16 Héctor Herrera [Y 90'].\nGermany: 13 Thomas Müller [Y 83'], 5 Mats Hummels [Y 84'].",
+        "lang": "en"
       }
     },
     {
@@ -1009,6 +1164,11 @@
       ],
       "extra": {
         "attendance": 42300
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "18/06/2018, Nizhniy Novgorod, Stadion Nizhniy Novgorod, 42300\nSWEDEN              1 (4 Andreas Granqvist 65' pen)\nSOUTH KOREA         0\nSweden:             1 Robin Olsen; 2 Mikael Lustig, 18 Pontus Jansson, 4 Andreas Granqvist [c],\n(4-4-2)             6 Ludwig Augustinsson; 17 Viktor Claesson, 7 Sebastian Larsson\n(13 Gustav Svensson 81'), 8 Albin Ekdal (15 Oscar Hiljemark 71'), 10 Emil Forsberg;\n9 Marcus Berg, 20 Ola Toivonen (22 Isaac Kiese Thelin 77').\nSouth Korea:        23 Jo Hyeon-Woo; 2 Lee Yong, 20 Jang Hyeon-Soo, 19 Kim Young-Gwon, 6 Park Joo-Ho\n(4-1-4-1)           (12 Kim Min-Woo 28'); 16 Ki Sung-Yong [c]; 11 Hwang Hee-Chan, 17 Lee Jae-Sung,\n13 Koo Ja-Cheol (10 Lee Seung-Woo 72'), 7 Son Heung-Min; 9 Kim Shin-Wook\n(15 Jung Woo-Young 66').\nReferee:            Joel Aguilar (El Salvador).\nCoaches:            Sweden: Janne Andersson.\nSouth Korea: Shin Tae-Yong.\nCards:              Sweden: 17 Viktor Claesson [Y 61'].\nSouth Korea: 9 Kim Shin-Wook [Y 12'], 11 Hwang Hee-Chan [Y 55'].",
+        "lang": "en"
       }
     },
     {
@@ -1025,6 +1185,11 @@
       ],
       "extra": {
         "attendance": 43472
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "23/06/2018, Rostov-na-Donu, Rostov-Arena, 43472\nMEXICO              2 (11 Carlos Vela 26' pen, 14 Javier Hernández 66')\nSOUTH KOREA         1 (7 Son Heung-Min 90+3')\nMexico:             13 Guillermo Ochoa; 21 Edson Álvarez, 3 Carlos Salcedo, 15 Héctor Moreno,\n(4-3-3)             23 Jesús Gallardo; 16 Héctor Herrera, 18 Andrés Guardado [c] (4 Rafael Márquez 68'),\n11 Carlos Vela (10 Giovani dos Santos 77'); 7 Miguel Layún, 14 Javier Hernández,\n22 Hirving Lozano (17 Jesús Manuel Corona 71').\nSouth Korea:        23 Jo Hyeon-Woo; 2 Lee Yong, 20 Jang Hyeon-Soo, 19 Kim Young-Gwon, 12 Kim Min-Woo\n(4-2-3-1)           (14 Hong Chul 84'); 8 Ju Se-Jong (10 Lee Seung-Woo 64'), 16 Ki Sung-Yong [c];\n18 Moon Seon-Min (15 Jung Woo-Young 77'), 17 Lee Jae-Sung, 11 Hwang Hee-Chan;\n7 Son Heung-Min.\nReferee:            Milorad Mažić (Serbia).\nCoaches:            Mexico: Juan Carlos Osorio (Colombia).\nSouth Korea: Shin Tae-Yong.\nCards:              Mexico: none.\nSouth Korea: 19 Kim Young-Gwon [Y 58'], 2 Lee Yong [Y 63'],\n10 Lee Seung-Woo [Y 72'], 15 Jung Woo-Young [Y 80'].",
+        "lang": "en"
       }
     },
     {
@@ -1041,6 +1206,11 @@
       ],
       "extra": {
         "attendance": 44287
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "23/06/2018, Sochi, Olimpiyskiy Stadion Fisht, 44287\nGERMANY             2 (11 Marco Reus 48', 8 Toni Kroos 90+5')\nSWEDEN              1 (20 Ola Toivonen 32')\nGermany:            1 Manuel Neuer [c]; 18 Joshua Kimmich, 17 Jérôme Boateng, 16 Antonio Rüdiger,\n(4-2-4)             3 Jonas Hector (20 Julian Brandt 87'); 19 Sebastian Rudy (21 İlkay Gündoğan 31'),\n8 Toni Kroos; 13 Thomas Müller, 9 Timo Werner, 11 Marco Reus, 7 Julian Draxler\n(23 Mario Gómez 46').\nSweden:             1 Robin Olsen; 2 Mikael Lustig, 3 Victor Lindelöf, 4 Andreas Granqvist [c],\n(4-4-2)             6 Ludwig Augustinsson; 17 Viktor Claesson (21 Jimmy Durmaz 74'), 7 Sebastian Larsson,\n8 Albin Ekdal, 10 Emil Forsberg; 20 Ola Toivonen (11 John Guidetti 78'), 9 Marcus Berg\n(22 Isaac Kiese Thelin 90').\nReferee:            Szymon Marciniak (Poland).\nCoaches:            Germany: Joachim Löw.\nSweden: Janne Andersson.\nCards:              Germany: 17 Jérôme Boateng [Y 71' YR 82'].\nSweden: 8 Albin Ekdal [Y 52'], 7 Sebastian Larsson [Y 90+7'].",
+        "lang": "en"
       }
     },
     {
@@ -1057,6 +1227,11 @@
       ],
       "extra": {
         "attendance": 41835
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "27/06/2018, Kazan, Kazan Arena, 41835\nSOUTH KOREA         2 (19 Kim Young-Gwon 90+3', 7 Son Heung-Min 90+6')\nGERMANY             0\nSouth Korea:        23 Jo Hyeon-Woo; 2 Lee Yong, 5 Yun Young-Sun, 19 Kim Young-Gwon, 14 Hong Chul;\n(4-2-3-1)           20 Jang Hyeon-Soo, 15 Jung Woo-Young; 17 Lee Jae-Sung, 13 Koo Ja-Cheol\n(11 Hwang Hee-Chan 56' (22 Go Yo-Han 79')), 18 Moon Seon-Min (8 Ju Se-Jong 69');\n7 Son Heung-Min [c].\nGermany:            1 Manuel Neuer [c]; 18 Joshua Kimmich, 15 Niklas Süle, 5 Mats Hummels, 3 Jonas Hector\n(4-2-3-1)           (20 Julian Brandt 78'); 6 Sami Khedira (23 Mario Gómez 58'), 8 Toni Kroos;\n14 Leon Goretzka (13 Thomas Müller 63'), 10 Mesut Özil, 11 Marco Reus; 9 Timo Werner.\nReferee:            Mark Geiger (USA).\nCoaches:            South Korea: Shin Tae-Yong.\nGermany: Joachim Löw.\nCards:              South Korea: 15 Jung Woo-Young [Y 9'], 17 Lee Jae-Sung [Y 23'],\n18 Moon Seon-Min [Y 48'], 7 Son Heung-Min [Y 65'].\nGermany: none.\nNote:               South Korea's first goal was awarded at 90+3' after video review; the ball\ncrossed the line at 90+2'.",
+        "lang": "en"
       }
     },
     {
@@ -1073,6 +1248,11 @@
       ],
       "extra": {
         "attendance": 33061
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "27/06/2018, Yekaterinburg, Tsentralnyy Stadion (Yekaterinburg Arena), 33061\nSWEDEN              3 (6 Ludwig Augustinsson 50', 4 Andreas Granqvist 62' pen,\n21 Edson Álvarez 74' OG)\nMEXICO              0\nSweden:             1 Robin Olsen; 2 Mikael Lustig, 3 Victor Lindelöf, 4 Andreas Granqvist [c],\n(4-4-2)             6 Ludwig Augustinsson; 17 Viktor Claesson, 7 Sebastian Larsson\n(13 Gustav Svensson 57'), 8 Albin Ekdal (15 Oscar Hiljemark 80'), 10 Emil Forsberg;\n20 Ola Toivonen, 9 Marcus Berg (22 Isaac Kiese Thelin 68').\nMexico:             13 Guillermo Ochoa; 21 Edson Álvarez, 3 Carlos Salcedo, 15 Héctor Moreno,\n(4-2-1-3)           23 Jesús Gallardo (8 Marco Fabián 65'); 16 Héctor Herrera, 18 Andrés Guardado [c]\n(17 Jesús Manuel Corona 75'); 11 Carlos Vela; 7 Miguel Layún (19 Oribe Peralta 89'),\n14 Javier Hernández, 22 Hirving Lozano.\nReferee:            Néstor Pitana (Argentina).\nCoaches:            Sweden: Janne Andersson.\nMexico: Juan Carlos Osorio (Colombia).\nCards:              Sweden: 7 Sebastian Larsson [Y 26'], 2 Mikael Lustig [Y 88'].\nMexico: 23 Jesús Gallardo [Y 1'], 15 Héctor Moreno [Y 61'], 7 Miguel Layún [Y 85'].",
+        "lang": "en"
       }
     },
     {
@@ -1089,6 +1269,11 @@
       ],
       "extra": {
         "attendance": 43257
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "18/06/2018, Sochi, Olimpiyskiy Stadion Fisht, 43257\nBELGIUM             3 (14 Dries Mertens 47', 9 Romelu Lukaku 69' 75')\nPANAMA              0\nBelgium:            1 Thibaut Courtois; 2 Toby Alderweireld, 20 Dedryck Boyata, 5 Jan Vertonghen;\n(3-4-3)             15 Thomas Meunier, 7 Kevin De Bruyne, 6 Axel Witsel (22 Nacer Chadli 90'),\n11 Yannick Carrasco (19 Mousa Dembélé 74'); 14 Dries Mertens (16 Thorgan Hazard 83'),\n9 Romelu Lukaku, 10 Eden Hazard [c].\nPanama:             1 Jaime Penedo; 2 Michael Amir Murillo, 5 Román Torres [c], 4 Fidel Escobar,\n(4-1-4-1)           15 Erick Davis; 6 Gabriel Gómez; 8 Édgar Bárcenas (9 Gabriel Torres 63'),\n11 Armando Cooper, 20 Aníbal Godoy, 21 José Luis Rodríguez (10 Ismael Díaz 63');\n7 Blas Pérez (18 Luis Tejada 73').\nReferee:            Janny Sikazwe (Zambia).\nCoaches:            Belgium: Roberto Martínez (Spain).\nPanama: Hernán Darío Gómez (Colombia).\nCards:              Belgium: 15 Thomas Meunier [Y 14'], 5 Jan Vertonghen [Y 59'],\n7 Kevin De Bruyne [Y 88'].\nPanama: 15 Erick Davis [Y 18'], 8 Édgar Bárcenas [Y 45+2'],\n11 Armando Cooper [Y 49'], 2 Michael Amir Murillo [Y 51'],\n20 Aníbal Godoy [Y 57'].",
+        "lang": "en"
       }
     },
     {
@@ -1105,6 +1290,11 @@
       ],
       "extra": {
         "attendance": 41064
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "18/06/2018, Volgograd, Volgograd Arena, 41064\nENGLAND             2 (9 Harry Kane 11' 90+1')\nTUNISIA             1 (13 Ferjani Sassi 35' pen)\nEngland:            1 Jordan Pickford; 2 Kyle Walker, 5 John Stones, 6 Harry Maguire; 12 Kieran Trippier,\n(3-5-2)             7 Jesse Lingard (4 Eric Dier 90+3'), 8 Jordan Henderson, 20 Dele Alli\n(21 Ruben Loftus-Cheek 80'), 18 Ashley Young; 10 Raheem Sterling\n(19 Marcus Rashford 68'), 9 Harry Kane [c].\nTunisia:            22 Mouez Hassen (1 Farouk Ben Mustapha 15'); 11 Dylan Bronn, 2 Syam Ben Youssef,\n(4-5-1)             4 Yassine Meriah, 12 Ali Maâloul; 8 Fakhreddine Ben Youssef, 13 Ferjani Sassi,\n17 Ellyes Skhiri, 9 Anice Badri, 23 Naïm Sliti (14 Mohamed Amine Ben Amor 74');\n10 Wahbi Khazri [c] (19 Saber Khalifa 85').\nReferee:            Wilmar Roldán (Colombia).\nCoaches:            England: Gareth Southgate.\nTunisia: Nabil Maâloul.\nCards:              England: 2 Kyle Walker [Y 33'].\nTunisia: none.",
+        "lang": "en"
       }
     },
     {
@@ -1121,6 +1311,11 @@
       ],
       "extra": {
         "attendance": 44190
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "23/06/2018, Moskva, Otkrytiye Arena (Stadion Spartak), 44190\nBELGIUM             5 (10 Eden Hazard 6' pen 51', 9 Romelu Lukaku 16' 45+3', 21 Michy Batshuayi 90')\nTUNISIA             2 (11 Dylan Bronn 18', 10 Wahbi Khazri 90+3')\nBelgium:            1 Thibaut Courtois; 2 Toby Alderweireld, 20 Dedryck Boyata, 5 Jan Vertonghen;\n(3-4-3)             15 Thomas Meunier, 7 Kevin De Bruyne, 6 Axel Witsel, 11 Yannick Carrasco;\n14 Dries Mertens (17 Youri Tielemans 86'), 9 Romelu Lukaku (8 Marouane Fellaini 59'),\n10 Eden Hazard [c] (21 Michy Batshuayi 68').\nTunisia:            1 Farouk Ben Mustapha; 11 Dylan Bronn (21 Hamdi Nagguez 24'), 2 Syam Ben Youssef\n(4-2-3-1)           (3 Yohan Ben Alouane 41'), 4 Yassine Meriah, 12 Ali Maâloul; 17 Ellyes Skhiri,\n13 Ferjani Sassi (23 Naïm Sliti 59'); 8 Fakhreddine Ben Youssef, 7 Saîfeddine Khaoui,\n9 Anice Badri; 10 Wahbi Khazri [c].\nReferee:            Jair Marrufo (USA).\nCoaches:            Belgium: Roberto Martínez (Spain).\nTunisia: Nabil Maâloul.\nCards:              Belgium: none.\nTunisia: 13 Ferjani Sassi [Y 14'].",
+        "lang": "en"
       }
     },
     {
@@ -1137,6 +1332,11 @@
       ],
       "extra": {
         "attendance": 43319
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "24/06/2018, Nizhniy Novgorod, Stadion Nizhniy Novgorod, 43319\nENGLAND             6 (5 John Stones 8' 40', 9 Harry Kane 22' pen 45+1' pen 62', 7 Jesse Lingard 36')\nPANAMA              1 (23 Felipe Baloy 78')\nEngland:            1 Jordan Pickford; 2 Kyle Walker, 5 John Stones, 6 Harry Maguire; 12 Kieran Trippier\n(3-5-2)             (3 Danny Rose 70'), 21 Ruben Loftus-Cheek, 8 Jordan Henderson, 7 Jesse Lingard\n(17 Fabian Delph 63'), 18 Ashley Young; 10 Raheem Sterling, 9 Harry Kane [c]\n(11 Jamie Vardy 63').\nPanama:             1 Jaime Penedo; 2 Michael Amir Murillo, 5 Román Torres [c], 4 Fidel Escobar,\n(4-1-4-1)           15 Erick Davis; 6 Gabriel Gómez (23 Felipe Baloy 69'); 8 Édgar Bárcenas\n(16 Abdiel Arroyo 69'), 11 Armando Cooper, 20 Aníbal Godoy (19 Ricardo Ávila 62'),\n21 José Luis Rodríguez; 7 Blas Pérez.\nReferee:            Gehad Grisha (Egypt).\nCoaches:            England: Gareth Southgate.\nPanama: Hernán Darío Gómez (Colombia).\nCards:              England: 21 Ruben Loftus-Cheek [Y 23'].\nPanama: 11 Armando Cooper [Y 10'], 4 Fidel Escobar [Y 44'],\n2 Michael Amir Murillo [Y 72'].",
+        "lang": "en"
       }
     },
     {
@@ -1153,6 +1353,11 @@
       ],
       "extra": {
         "attendance": 33973
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "28/06/2018, Kaliningrad, Stadion Kaliningrad, 33973\nBELGIUM             1 (18 Adnan Januzaj 51')\nENGLAND             0\nBelgium:            1 Thibaut Courtois [c]; 23 Leander Dendoncker, 20 Dedryck Boyata, 3 Thomas Vermaelen\n(3-4-3)             (4 Vincent Kompany 74'); 22 Nacer Chadli, 17 Youri Tielemans, 19 Mousa Dembélé,\n16 Thorgan Hazard; 18 Adnan Januzaj (14 Dries Mertens 86'), 21 Michy Batshuayi,\n8 Marouane Fellaini.\nEngland:            1 Jordan Pickford; 16 Phil Jones, 5 John Stones (6 Harry Maguire 46'), 15 Gary Cahill;\n(3-5-2)             22 Trent Alexander-Arnold (14 Danny Welbeck 79'), 21 Ruben Loftus-Cheek,\n4 Eric Dier [c], 17 Fabian Delph, 3 Danny Rose; 11 Jamie Vardy, 19 Marcus Rashford.\nReferee:            Damir Skomina (Slovenia).\nCoaches:            Belgium: Roberto Martínez (Spain).\nEngland: Gareth Southgate.\nCards:              Belgium: 17 Youri Tielemans [Y 19'], 23 Leander Dendoncker [Y 33'].\nEngland: none.",
+        "lang": "en"
       }
     },
     {
@@ -1169,6 +1374,11 @@
       ],
       "extra": {
         "attendance": 37168
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "28/06/2018, Saransk, Mordoviya Arena, 37168\nTUNISIA             2 (8 Fakhreddine Ben Youssef 51', 10 Wahbi Khazri 66')\nPANAMA              1 (4 Yassine Meriah 33' OG)\nTunisia:            16 Aymen Mathlouthi [c]; 21 Hamdi Nagguez, 6 Rami Bedoui, 4 Yassine Meriah,\n(4-3-3)             5 Oussama Haddadi; 20 Ghailene Chaalali, 17 Ellyes Skhiri, 13 Ferjani Sassi\n(9 Anice Badri 46'); 8 Fakhreddine Ben Youssef, 10 Wahbi Khazri\n(18 Bassem Srarfi 89'), 23 Naïm Sliti (15 Ahmed Khalil 77').\nPanama:             1 Jaime Penedo; 13 Adolfo Machado, 5 Román Torres [c] (18 Luis Tejada 56'),\n(4-1-4-1)           4 Fidel Escobar, 17 Luis Ovalle; 6 Gabriel Gómez; 21 José Luis Rodríguez,\n20 Aníbal Godoy, 19 Ricardo Ávila (16 Abdiel Arroyo 81'), 8 Édgar Bárcenas;\n9 Gabriel Torres (3 Harold Cummings 46').\nReferee:            Nawaf Shukrallah (Bahrain).\nCoaches:            Tunisia: Nabil Maâloul.\nPanama: Hernán Darío Gómez (Colombia).\nCards:              Tunisia: 13 Ferjani Sassi [Y 44'], 9 Anice Badri [Y 71'],\n20 Ghailene Chaalali [Y 90+3'].\nPanama: 19 Ricardo Ávila [Y 78'], 6 Gabriel Gómez [Y 79'],\n18 Luis Tejada [Y 90+6'].",
+        "lang": "en"
       }
     },
     {
@@ -1185,6 +1395,11 @@
       ],
       "extra": {
         "attendance": 40842
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "19/06/2018, Saransk, Mordoviya Arena, 40842\nJAPAN               2 (10 Shinji Kagawa 6' pen, 15 Yūya Ōsako 73')\nCOLOMBIA            1 (20 Juan Fernando Quintero 39')\nJapan:              1 Eiji Kawashima; 19 Hiroki Sakai, 22 Maya Yoshida, 3 Gen Shōji, 5 Yūto Nagatomo;\n(4-2-3-1)           7 Gaku Shibasaki (16 Hotaru Yamaguchi 80'), 17 Makoto Hasebe [c]; 8 Genki Haraguchi,\n10 Shinji Kagawa (4 Keisuke Honda 70'), 14 Takashi Inui; 15 Yūya Ōsako\n(9 Shinji Okazaki 85').\nColombia:           1 David Ospina; 4 Santiago Arias, 23 Dávinson Sánchez, 3 Óscar Murillo,\n(4-2-3-1)           17 Johan Mojica; 6 Carlos Sánchez, 16 Jefferson Lerma; 11 Juan Guillermo Cuadrado\n(5 Wilmar Barrios 31'), 20 Juan Fernando Quintero (10 James Rodríguez 59'),\n21 José Izquierdo (7 Carlos Bacca 70'); 9 Radamel Falcao García [c].\nReferee:            Damir Skomina (Slovenia).\nCoaches:            Japan: Akira Nishino.\nColombia: José Pekerman (Argentina).\nCards:              Japan: 1 Eiji Kawashima [Y 90+4'].\nColombia: 6 Carlos Sánchez [R 3'], 5 Wilmar Barrios [Y 64'],\n10 James Rodríguez [Y 86'].",
+        "lang": "en"
       }
     },
     {
@@ -1201,6 +1416,11 @@
       ],
       "extra": {
         "attendance": 44190
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "19/06/2018, Moskva, Otkrytiye Arena (Stadion Spartak), 44190\nSENEGAL             2 (4 Thiago Cionek 37' OG, 19 M'Baye Niang 60')\nPOLAND              1 (10 Grzegorz Krychowiak 86')\nSenegal:            16 Khadim N'Diaye; 22 Moussa Wagué, 6 Salif Sané, 3 Kalidou Koulibaly,\n(4-4-2)             12 Youssouf Sabaly; 18 Ismaïla Sarr, 5 Idrissa Gana Gueye, 13 Alfred N'Diaye\n(8 Cheikhou Kouyaté 87'), 10 Sadio Mané [c]; 9 Mame Biram Diouf\n(11 Cheikh N'Doye 62'), 19 M'Baye Niang (14 Pape Moussa Konaté 75').\nPoland:             1 Wojciech Szczęsny; 20 Łukasz Piszczek (18 Bartosz Bereszyński 83'),\n(4-4-2)             4 Thiago Cionek, 2 Michał Pazdan, 13 Maciej Rybus; 16 Jakub Błaszczykowski\n(5 Jan Bednarek 46'), 10 Grzegorz Krychowiak, 19 Piotr Zieliński, 11 Kamil Grosicki;\n7 Arkadiusz Milik (23 Dawid Kownacki 73'), 9 Robert Lewandowski [c].\nReferee:            Nawaf Shukrallah (Bahrain).\nCoaches:            Senegal: Aliou Cissé.\nPoland: Adam Nawałka.\nCards:              Senegal: 6 Salif Sané [Y 49'], 5 Idrissa Gana Gueye [Y 72'].\nPoland: 10 Grzegorz Krychowiak [Y 12'].",
+        "lang": "en"
       }
     },
     {
@@ -1217,6 +1437,11 @@
       ],
       "extra": {
         "attendance": 32572
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "24/06/2018, Yekaterinburg, Tsentralnyy Stadion (Yekaterinburg Arena), 32572\nJAPAN               2 (14 Takashi Inui 34', 4 Keisuke Honda 78')\nSENEGAL             2 (10 Sadio Mané 11', 22 Moussa Wagué 71')\nJapan:              1 Eiji Kawashima; 19 Hiroki Sakai, 22 Maya Yoshida, 3 Gen Shōji, 5 Yūto Nagatomo;\n(4-2-3-1)           7 Gaku Shibasaki, 17 Makoto Hasebe [c]; 8 Genki Haraguchi (9 Shinji Okazaki 75'),\n10 Shinji Kagawa (4 Keisuke Honda 72'), 14 Takashi Inui (11 Takashi Usami 87');\n15 Yūya Ōsako.\nSenegal:            16 Khadim N'Diaye; 22 Moussa Wagué, 6 Salif Sané, 3 Kalidou Koulibaly,\n(4-3-3)             12 Youssouf Sabaly; 17 Badou N'Diaye (11 Cheikh N'Doye 81'), 13 Alfred N'Diaye\n(8 Cheikhou Kouyaté 65'), 5 Idrissa Gana Gueye; 18 Ismaïla Sarr, 19 M'Baye Niang\n(9 Mame Biram Diouf 86'), 10 Sadio Mané [c].\nReferee:            Gianluca Rocchi (Italy).\nCoaches:            Japan: Akira Nishino.\nSenegal: Aliou Cissé.\nCards:              Japan: 14 Takashi Inui [Y 68'], 17 Makoto Hasebe [Y 90+4'].\nSenegal: 19 M'Baye Niang [Y 59'], 12 Youssouf Sabaly [Y 90'],\n11 Cheikh N'Doye [Y 90+1'].",
+        "lang": "en"
       }
     },
     {
@@ -1233,6 +1458,11 @@
       ],
       "extra": {
         "attendance": 42873
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "24/06/2018, Kazan, Kazan Arena, 42873\nCOLOMBIA            3 (13 Yerry Mina 40', 9 Radamel Falcao García 70', 11 Juan Guillermo Cuadrado 75')\nPOLAND              0\nColombia:           1 David Ospina; 4 Santiago Arias, 13 Yerry Mina, 23 Dávinson Sánchez, 17 Johan Mojica;\n(4-3-3)             20 Juan Fernando Quintero (16 Jefferson Lerma 73'), 5 Wilmar Barrios, 8 Abel Aguilar\n(15 Mateus Uribe 32'); 11 Juan Guillermo Cuadrado, 9 Radamel Falcao García [c]\n(7 Carlos Bacca 78'), 10 James Rodríguez.\nPoland:             1 Wojciech Szczęsny; 20 Łukasz Piszczek, 5 Jan Bednarek, 2 Michał Pazdan\n(3-4-3)             (15 Kamil Glik 80'); 18 Bartosz Bereszyński (14 Łukasz Teodorczyk 72'),\n6 Jacek Góralski, 10 Grzegorz Krychowiak, 13 Maciej Rybus; 19 Piotr Zieliński,\n9 Robert Lewandowski [c], 23 Dawid Kownacki (11 Kamil Grosicki 57').\nReferee:            César Arturo Ramos (Mexico).\nCoaches:            Colombia: José Pekerman (Argentina).\nPoland: Adam Nawałka.\nCards:              Colombia: none.\nPoland: 5 Jan Bednarek [Y 61'], 6 Jacek Góralski [Y 85'].",
+        "lang": "en"
       }
     },
     {
@@ -1249,6 +1479,11 @@
       ],
       "extra": {
         "attendance": 42189
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "28/06/2018, Volgograd, Volgograd Arena, 42189\nPOLAND              1 (5 Jan Bednarek 59')\nJAPAN               0\nPoland:             22 Łukasz Fabiański; 18 Bartosz Bereszyński, 15 Kamil Glik, 5 Jan Bednarek,\n(4-2-3-1)           3 Artur Jędrzejczyk; 10 Grzegorz Krychowiak, 6 Jacek Góralski; 11 Kamil Grosicki,\n19 Piotr Zieliński (14 Łukasz Teodorczyk 79'), 21 Rafał Kurzawa\n(17 Sławomir Peszko 80'); 9 Robert Lewandowski [c].\nJapan:              1 Eiji Kawashima [c]; 19 Hiroki Sakai, 22 Maya Yoshida, 20 Tomoaki Makino,\n(4-4-1-1)           5 Yūto Nagatomo; 21 Gōtoku Sakai, 7 Gaku Shibasaki, 16 Hotaru Yamaguchi,\n11 Takashi Usami (14 Takashi Inui 65'); 9 Shinji Okazaki (15 Yūya Ōsako 47');\n13 Yoshinori Mutō (17 Makoto Hasebe 82').\nReferee:            Janny Sikazwe (Zambia).\nCoaches:            Poland: Adam Nawałka.\nJapan: Akira Nishino.\nCards:              Poland: none.\nJapan: 20 Tomoaki Makino [Y 66'].",
+        "lang": "en"
       }
     },
     {
@@ -1265,6 +1500,11 @@
       ],
       "extra": {
         "attendance": 41970
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "28/06/2018, Samara, Kosmos Arena (Samara Arena), 41970\nCOLOMBIA            1 (13 Yerry Mina 74')\nSENEGAL             0\nColombia:           1 David Ospina; 4 Santiago Arias, 13 Yerry Mina, 23 Dávinson Sánchez, 17 Johan Mojica;\n(4-3-3)             20 Juan Fernando Quintero, 6 Carlos Sánchez, 15 Mateus Uribe (16 Jefferson Lerma 83');\n11 Juan Guillermo Cuadrado, 9 Radamel Falcao García [c] (19 Miguel Borja 89'),\n10 James Rodríguez (14 Luis Muriel 31').\nSenegal:            16 Khadim N'Diaye; 21 Lamine Gassama, 6 Salif Sané, 3 Kalidou Koulibaly,\n(4-4-2)             12 Youssouf Sabaly (22 Moussa Wagué 74'); 18 Ismaïla Sarr, 8 Cheikhou Kouyaté [c],\n5 Idrissa Gana Gueye, 20 Keïta Baldé (14 Pape Moussa Konaté 80'); 10 Sadio Mané,\n19 M'Baye Niang (15 Diafra Sakho 86').\nReferee:            Milorad Mažić (Serbia).\nCoaches:            Colombia: José Pekerman (Argentina).\nSenegal: Aliou Cissé.\nCards:              Colombia: 17 Johan Mojica [Y 45'].\nSenegal: 19 M'Baye Niang [Y 51'].",
+        "lang": "en"
       }
     },
     {
@@ -1281,6 +1521,11 @@
       ],
       "extra": {
         "attendance": 42873
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "30/06/2018, Kazan, Kazan Arena, 42873\nFRANCE              4 (7 Antoine Griezmann 13' pen, 2 Benjamin Pavard 57', 10 Kylian Mbappé 64' 68')\nARGENTINA           3 (11 Ángel Di María 41', 2 Gabriel Mercado 48', 19 Sergio Agüero 90+3')\nFrance:             1 Hugo Lloris [c]; 2 Benjamin Pavard, 4 Raphaël Varane, 5 Samuel Umtiti,\n(4-3-3)             21 Lucas Hernández; 6 Paul Pogba, 13 N'Golo Kanté, 14 Blaise Matuidi\n(12 Corentin Tolisso 75'); 10 Kylian Mbappé (20 Florin Thauvin 89'),\n7 Antoine Griezmann (18 Nabil Fekir 83'), 9 Olivier Giroud.\nArgentina:          12 Franco Armani; 2 Gabriel Mercado, 17 Nicolás Otamendi, 16 Marcos Rojo\n(4-3-3)             (6 Federico Fazio 46'), 3 Nicolás Tagliafico; 15 Enzo Pérez (19 Sergio Agüero 66'),\n14 Javier Mascherano, 7 Éver Banega; 22 Cristian Pavón (13 Maximiliano Meza 75'),\n10 Lionel Messi [c], 11 Ángel Di María.\nReferee:            Alireza Faghani (Iran).\nCoaches:            France: Didier Deschamps.\nArgentina: Jorge Sampaoli.\nCards:              France: 14 Blaise Matuidi [Y 72'], 2 Benjamin Pavard [Y 73'],\n9 Olivier Giroud [Y 90+3'].\nArgentina: 16 Marcos Rojo [Y 11'], 3 Nicolás Tagliafico [Y 19'],\n14 Javier Mascherano [Y 43'], 7 Éver Banega [Y 49'],\n17 Nicolás Otamendi [Y 90+3'].",
+        "lang": "en"
       }
     },
     {
@@ -1297,6 +1542,11 @@
       ],
       "extra": {
         "attendance": 44287
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "30/06/2018, Sochi, Olimpiyskiy Stadion Fisht, 44287\nURUGUAY             2 (21 Edinson Cavani 7' 62')\nPORTUGAL            1 (3 Képler Ferreira 'Pepe' 55')\nUruguay:            1 Fernando Muslera; 22 Martín Cáceres, 2 José María Giménez, 3 Diego Godín [c],\n(4-3-1-2)           17 Diego Laxalt; 8 Nahitan Nández (5 Carlos Sánchez 81'), 14 Lucas Torreira,\n15 Matías Vecino; 6 Rodrigo Bentancur (7 Cristian Rodríguez 63'); 9 Luis Suárez,\n21 Edinson Cavani (11 Cristhian Stuani 74').\nPortugal:           1 Rui Patrício; 15 Ricardo Pereira, 3 Képler Ferreira 'Pepe', 6 José Fonte,\n(4-4-2)             5 Raphaël Guerreiro; 11 Bernardo Silva, 23 Adrien Silva\n(20 Ricardo Quaresma Bernardo 65'), 14 William Carvalho, 10 João Mário Eduardo\n(4 Manuel Fernandes 85'); 17 Gonçalo Guedes (9 André Silva 74'),\n7 Cristiano Ronaldo Aveiro [c].\nReferee:            César Arturo Ramos (Mexico).\nCoaches:            Uruguay: Óscar Washington Tabárez.\nPortugal: Fernando Santos.\nCards:              Uruguay: none.\nPortugal: 7 Cristiano Ronaldo Aveiro [Y 90+3'].",
+        "lang": "en"
       }
     },
     {
@@ -1321,6 +1571,11 @@
       ],
       "extra": {
         "attendance": 78011
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "01/07/2018, Moskva, Stadion Luzhniki, 78011\nRUSSIA              1 (22 Artyom Dzyuba 41' pen)\nSPAIN               1 (4 Sergey Ignashevich 11' OG)\nRussia won 4-3 on penalties, after extra time.\nRussia:             1 Igor Akinfeyev [c]; 2 Mário Fernandes, 3 Ilya Kutepov, 4 Sergey Ignashevich,\n(5-4-1)             13 Fyodor Kudryashov, 18 Yuriy Zhirkov (14 Vladimir Granat 46'); 19 Aleksandr Samedov\n(6 Denis Cheryshev 61'), 7 Daler Kuzyayev (21 Aleksandr Yerokhin 97'),\n11 Roman Zobnin, 17 Aleksandr Golovin; 22 Artyom Dzyuba (10 Fyodor Smolov 65').\nSpain:              1 David de Gea; 4 Nacho Fernández (2 Dani Carvajal 70'), 3 Gerard Piqué,\n(4-2-3-1)           15 Sergio Ramos [c], 18 Jordi Alba; 8 Jorge Resurrección 'Koke', 5 Sergio Busquets;\n20 Marco Asensio (9 Rodrigo Machado 104'), 21 David Jiménez Silva\n(6 Andrés Iniesta 67'), 22 Isco Alarcón; 19 Diego Costa (17 Iago Aspas 80').\nReferee:            Björn Kuipers (Netherlands).\nCoaches:            Russia: Stanislav Cherchesov.\nSpain: Fernando Ruiz Hierro.\nCards:              Russia: 3 Ilya Kutepov [Y 54'], 11 Roman Zobnin [Y 71'].\nSpain: 3 Gerard Piqué [Y 40'].\nPenalties:          0-1 6 Andrés Iniesta, 1-1 10 Fyodor Smolov, 1-2 3 Gerard Piqué,\n2-2 4 Sergey Ignashevich, 2-2 8 Jorge Resurrección 'Koke' (save),\n3-2 17 Aleksandr Golovin, 3-3 15 Sergio Ramos, 4-3 6 Denis Cheryshev,\n4-3 17 Iago Aspas (save).",
+        "lang": "en"
       }
     },
     {
@@ -1345,6 +1600,11 @@
       ],
       "extra": {
         "attendance": 40851
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "01/07/2018, Nizhniy Novgorod, Stadion Nizhniy Novgorod, 40851\nCROATIA             1 (17 Mario Mandžukić 4')\nDENMARK             1 (13 Mathias Jørgensen 1')\nCroatia won 3-2 on penalties, after extra time.\nCroatia:            23 Danijel Subašić; 2 Šime Vrsaljko, 6 Dejan Lovren, 21 Domagoj Vida, 3 Ivan Strinić\n(4-3-3)             (22 Josip Pivarić 81'); 10 Luka Modrić [c], 11 Marcelo Brozović (8 Mateo Kovačić 71'),\n7 Ivan Rakitić; 18 Ante Rebić, 17 Mario Mandžukić (19 Milan Badelj 108'), 4 Ivan Perišić\n(9 Andrej Kramarić 97').\nDenmark:            1 Kasper Schmeichel; 14 Henrik Dalsgaard, 4 Simon Kjær [c], 13 Mathias Jørgensen,\n(4-2-3-1)           5 Jonas Knudsen; 6 Andreas Christensen (19 Lasse Schöne 46'), 8 Thomas Delaney\n(2 Michael Krohn-Dehli 98'); 20 Yussuf Yurary Poulsen, 10 Christian Eriksen,\n11 Martin Braithwaite (23 Pione Sisto 106'); 21 Andreas Cornelius\n(9 Nicolai Jørgensen 66').\nReferee:            Néstor Pitana (Argentina).\nCoaches:            Croatia: Zlatko Dalić.\nDenmark: Åge Hareide (Norway).\nCards:              Croatia: none.\nDenmark: 13 Mathias Jørgensen [Y 115'].\nPenalties:          0-0 10 Christian Eriksen (save), 0-0 19 Milan Badelj (save), 0-1 4 Simon Kjær,\n1-1 9 Andrej Kramarić, 1-2 2 Michael Krohn-Dehli, 2-2 10 Luka Modrić,\n2-2 19 Lasse Schöne (save), 2-2 22 Josip Pivarić (save),\n2-2 9 Nicolai Jørgensen (save), 3-2 7 Ivan Rakitić.\nNote:               Kasper Schmeichel saved a penalty from Luka Modrić at 116'.",
+        "lang": "en"
       }
     },
     {
@@ -1361,6 +1621,11 @@
       ],
       "extra": {
         "attendance": 41970
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "02/07/2018, Samara, Kosmos Arena (Samara Arena), 41970\nBRAZIL              2 (10 Neymar Santos Júnior 51', 20 Roberto Firmino de Oliveira 88')\nMEXICO              0\nBrazil:             1 Alisson Becker; 22 Fagner Lemos, 2 Thiago da Silva [c],\n(4-3-3)             3 João Miranda de Souza Filho, 6 Filipe Luís Kasmirski;\n15 José Paulo Maciel Júnior 'Paulinho' (17 Fernando Roza 'Fernandinho' 80'),\n5 Carlos Casimiro, 11 Philippe Coutinho Correia\n(20 Roberto Firmino de Oliveira 86'); 19 Willian da Silva\n(13 Marcos Corrêa 'Marquinhos' 90+1'), 9 Gabriel Jesus, 10 Neymar Santos Júnior.\nMexico:             13 Guillermo Ochoa; 21 Edson Álvarez (6 Jonathan dos Santos 55'), 2 Hugo Ayala,\n(4-3-3)             3 Carlos Salcedo, 23 Jesús Gallardo; 16 Héctor Herrera, 4 Rafael Márquez [c]\n(7 Miguel Layún 46'), 18 Andrés Guardado; 22 Hirving Lozano, 14 Javier Hernández\n(9 Raúl Jiménez 60'), 11 Carlos Vela.\nReferee:            Gianluca Rocchi (Italy).\nCoaches:            Brazil: Adenor Bachi 'Tite'.\nMexico: Juan Carlos Osorio (Colombia).\nCards:              Brazil: 6 Filipe Luís Kasmirski [Y 43'], 5 Carlos Casimiro [Y 59'].\nMexico: 21 Edson Álvarez [Y 38'], 16 Héctor Herrera [Y 55'],\n3 Carlos Salcedo [Y 77'], 18 Andrés Guardado [Y 90+2'].",
+        "lang": "en"
       }
     },
     {
@@ -1377,6 +1642,11 @@
       ],
       "extra": {
         "attendance": 41466
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "02/07/2018, Rostov-na-Donu, Rostov-Arena, 41466\nBELGIUM             3 (5 Jan Vertonghen 69', 8 Marouane Fellaini 74', 22 Nacer Chadli 90+4')\nJAPAN               2 (8 Genki Haraguchi 48', 14 Takashi Inui 52')\nBelgium:            1 Thibaut Courtois; 2 Toby Alderweireld, 4 Vincent Kompany, 5 Jan Vertonghen;\n(3-4-3)             15 Thomas Meunier, 6 Axel Witsel, 7 Kevin De Bruyne, 11 Yannick Carrasco\n(22 Nacer Chadli 65'); 14 Dries Mertens (8 Marouane Fellaini 65'), 9 Romelu Lukaku,\n10 Eden Hazard [c].\nJapan:              1 Eiji Kawashima; 19 Hiroki Sakai, 22 Maya Yoshida, 3 Gen Shōji, 5 Yūto Nagatomo;\n(4-2-3-1)           7 Gaku Shibasaki (16 Hotaru Yamaguchi 81'), 17 Makoto Hasebe [c]; 8 Genki Haraguchi\n(4 Keisuke Honda 81'), 10 Shinji Kagawa, 14 Takashi Inui; 15 Yūya Ōsako.\nReferee:            Malang Diedhiou (Senegal).\nCoaches:            Belgium: Roberto Martínez (Spain).\nJapan: Akira Nishino.\nCards:              Belgium: none.\nJapan: 7 Gaku Shibasaki [Y 40'].",
+        "lang": "en"
       }
     },
     {
@@ -1393,6 +1663,11 @@
       ],
       "extra": {
         "attendance": 64042
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "03/07/2018, Sankt-Peterburg, Stadion Krestovskiy (Stadion Sankt-Peterburg), 64042\nSWEDEN              1 (5 Manuel Akanji 66' OG)\nSWITZERLAND         0\nSweden:             1 Robin Olsen; 2 Mikael Lustig (16 Emil Krafth 82'), 3 Victor Lindelöf,\n(4-4-2)             4 Andreas Granqvist [c], 6 Ludwig Augustinsson; 17 Viktor Claesson,\n13 Gustav Svensson, 8 Albin Ekdal, 10 Emil Forsberg (5 Martin Olsson 82');\n20 Ola Toivonen, 9 Marcus Berg (22 Isaac Kiese Thelin 90+1').\nSwitzerland:        1 Yann Sommer; 6 Michael Lang, 20 Johan Djourou, 5 Manuel Akanji, 13 Ricardo Rodríguez;\n(4-2-3-1)           11 Valon Behrami [c], 10 Granit Xhaka; 23 Xherdan Shaqiri, 15 Blerim Džemaili\n(9 Haris Seferović 73'), 14 Steven Zuber (7 Breel Embolo 73'); 19 Josip Drmić.\nReferee:            Damir Skomina (Slovenia).\nCoaches:            Sweden: Janne Andersson.\nSwitzerland: Vladimir Petković (Bosnia and Herzegovina/Switzerland).\nCards:              Sweden: 2 Mikael Lustig [Y 31'].\nSwitzerland: 11 Valon Behrami [Y 61'], 10 Granit Xhaka [Y 68'],\n6 Michael Lang [R 90+4'].\nNote:               Sweden's goal is also attributed to Emil Forsberg.",
+        "lang": "en"
       }
     },
     {
@@ -1417,6 +1692,11 @@
       ],
       "extra": {
         "attendance": 44190
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "03/07/2018, Moskva, Otkrytiye Arena (Stadion Spartak), 44190\nENGLAND             1 (9 Harry Kane 57' pen)\nCOLOMBIA            1 (13 Yerry Mina 90+3')\nEngland won 4-3 on penalties, after extra time.\nEngland:            1 Jordan Pickford; 2 Kyle Walker (19 Marcus Rashford 113'), 5 John Stones,\n(3-5-2)             6 Harry Maguire; 12 Kieran Trippier, 7 Jesse Lingard, 8 Jordan Henderson, 20 Dele Alli\n(4 Eric Dier 81'), 18 Ashley Young (3 Danny Rose 102'); 10 Raheem Sterling\n(11 Jamie Vardy 88'), 9 Harry Kane [c].\nColombia:           1 David Ospina; 4 Santiago Arias (2 Cristián Zapata 116'), 13 Yerry Mina,\n(4-3-1-2)           23 Dávinson Sánchez, 17 Johan Mojica; 6 Carlos Sánchez (15 Mateus Uribe 79'),\n5 Wilmar Barrios, 16 Jefferson Lerma (7 Carlos Bacca 61'); 20 Juan Fernando Quintero\n(14 Luis Muriel 88'); 11 Juan Guillermo Cuadrado, 9 Radamel Falcao García [c].\nReferee:            Mark Geiger (USA).\nCoaches:            England: Gareth Southgate.\nColombia: José Pekerman (Argentina).\nCards:              England: 8 Jordan Henderson [Y 56'], 7 Jesse Lingard [Y 69'].\nColombia: 5 Wilmar Barrios [Y 41'], 4 Santiago Arias [Y 52'],\n6 Carlos Sánchez [Y 54'], 9 Radamel Falcao García [Y 63'],\n7 Carlos Bacca [Y 64'], 11 Juan Guillermo Cuadrado [Y 118'].\nPenalties:          0-1 9 Radamel Falcao García, 1-1 9 Harry Kane, 1-2 11 Juan Guillermo Cuadrado,\n2-2 19 Marcus Rashford, 2-3 14 Luis Muriel, 2-3 8 Jordan Henderson (save),\n2-3 15 Mateus Uribe (miss), 3-3 12 Kieran Trippier, 3-3 7 Carlos Bacca (save),\n4-3 4 Eric Dier.",
+        "lang": "en"
       }
     },
     {
@@ -1433,6 +1713,11 @@
       ],
       "extra": {
         "attendance": 43319
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "06/07/2018, Nizhniy Novgorod, Stadion Nizhniy Novgorod, 43319\nFRANCE              2 (4 Raphaël Varane 40', 7 Antoine Griezmann 61')\nURUGUAY             0\nFrance:             1 Hugo Lloris [c]; 2 Benjamin Pavard, 4 Raphaël Varane, 5 Samuel Umtiti,\n(4-3-3)             21 Lucas Hernández; 6 Paul Pogba, 13 N'Golo Kanté, 12 Corentin Tolisso\n(15 Steven Nzonzi 80'); 10 Kylian Mbappé (11 Ousmane Dembélé 88'), 7 Antoine Griezmann\n(18 Nabil Fekir 90+3'), 9 Olivier Giroud.\nUruguay:            1 Fernando Muslera; 22 Martín Cáceres, 2 José María Giménez, 3 Diego Godín [c],\n(4-3-1-2)           17 Diego Laxalt; 8 Nahitan Nández (20 Jonathan Urretaviscaya 73'), 14 Lucas Torreira,\n15 Matías Vecino; 6 Rodrigo Bentancur (7 Cristian Rodríguez 59'); 9 Luis Suárez,\n11 Cristhian Stuani (18 Maxi Gómez 59').\nReferee:            Néstor Pitana (Argentina).\nCoaches:            France: Didier Deschamps.\nUruguay: Óscar Washington Tabárez.\nCards:              France: 21 Lucas Hernández [Y 33'], 10 Kylian Mbappé [Y 69'].\nUruguay: 6 Rodrigo Bentancur [Y 38'], 7 Cristian Rodríguez [Y 69'].",
+        "lang": "en"
       }
     },
     {
@@ -1449,6 +1734,11 @@
       ],
       "extra": {
         "attendance": 42873
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "06/07/2018, Kazan, Kazan Arena, 42873\nBELGIUM             2 (17 Fernando Roza 'Fernandinho' 13' OG, 7 Kevin De Bruyne 31')\nBRAZIL              1 (8 Renato Augusto 76')\nBelgium:            1 Thibaut Courtois; 15 Thomas Meunier, 2 Toby Alderweireld, 4 Vincent Kompany,\n(4-3-3)             5 Jan Vertonghen; 8 Marouane Fellaini, 6 Axel Witsel, 22 Nacer Chadli\n(3 Thomas Vermaelen 83'); 9 Romelu Lukaku (17 Youri Tielemans 87'),\n7 Kevin De Bruyne, 10 Eden Hazard [c].\nBrazil:             1 Alisson Becker; 22 Fagner Lemos, 2 Thiago da Silva,\n(4-3-3)             3 João Miranda de Souza Filho [c], 12 Marcelo da Silva Júnior;\n15 José Paulo Maciel Júnior 'Paulinho' (8 Renato Augusto 73'),\n17 Fernando Roza 'Fernandinho', 11 Philippe Coutinho Correia; 19 Willian da Silva\n(20 Roberto Firmino de Oliveira 46'), 9 Gabriel Jesus\n(7 Douglas Costa de Souza 58'), 10 Neymar Santos Júnior.\nReferee:            Milorad Mažić (Serbia).\nCoaches:            Belgium: Roberto Martínez (Spain).\nBrazil: Adenor Bachi 'Tite'.\nCards:              Belgium: 2 Toby Alderweireld [Y 47'], 15 Thomas Meunier [Y 71'].\nBrazil: 17 Fernando Roza 'Fernandinho' [Y 85'], 22 Fagner Lemos [Y 90'].",
+        "lang": "en"
       }
     },
     {
@@ -1465,6 +1755,11 @@
       ],
       "extra": {
         "attendance": 39991
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "07/07/2018, Samara, Kosmos Arena (Samara Arena), 39991\nENGLAND             2 (6 Harry Maguire 30', 20 Dele Alli 59')\nSWEDEN              0\nEngland:            1 Jordan Pickford; 2 Kyle Walker, 5 John Stones, 6 Harry Maguire; 12 Kieran Trippier,\n(3-5-2)             7 Jesse Lingard, 8 Jordan Henderson (4 Eric Dier 85'), 20 Dele Alli\n(17 Fabian Delph 77'), 18 Ashley Young; 9 Harry Kane [c], 10 Raheem Sterling\n(19 Marcus Rashford 90+1').\nSweden:             1 Robin Olsen; 16 Emil Krafth (18 Pontus Jansson 85'), 3 Victor Lindelöf,\n(4-4-2)             4 Andreas Granqvist [c], 6 Ludwig Augustinsson; 17 Viktor Claesson,\n7 Sebastian Larsson, 8 Albin Ekdal, 10 Emil Forsberg (5 Martin Olsson 65');\n9 Marcus Berg, 20 Ola Toivonen (11 John Guidetti 65').\nReferee:            Björn Kuipers (Netherlands).\nCoaches:            England: Gareth Southgate.\nSweden: Janne Andersson.\nCards:              England: 6 Harry Maguire [Y 87'].\nSweden: 11 John Guidetti [Y 87'], 7 Sebastian Larsson [Y 90+4'].",
+        "lang": "en"
       }
     },
     {
@@ -1489,6 +1784,11 @@
       ],
       "extra": {
         "attendance": 44287
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "07/07/2018, Sochi, Olimpiyskiy Stadion Fisht, 44287\nRUSSIA              2 (6 Denis Cheryshev 31', 2 Mário Fernandes 115')\nCROATIA             2 (9 Andrej Kramarić 39', 21 Domagoj Vida 101')\nCroatia won 4-3 on penalties, after extra time.\nRussia:             1 Igor Akinfeyev [c]; 2 Mário Fernandes, 3 Ilya Kutepov, 4 Sergey Ignashevich,\n(4-4-2)             13 Fyodor Kudryashov; 19 Aleksandr Samedov (21 Aleksandr Yerokhin 54'),\n7 Daler Kuzyayev, 11 Roman Zobnin, 6 Denis Cheryshev (10 Fyodor Smolov 67');\n17 Aleksandr Golovin (9 Alan Dzagoyev 102'), 22 Artyom Dzyuba\n(8 Yuriy Gazinskiy 79').\nCroatia:            23 Danijel Subašić; 2 Šime Vrsaljko (5 Vedran Ćorluka 97'), 6 Dejan Lovren,\n(4-2-4)             21 Domagoj Vida, 3 Ivan Strinić (22 Josip Pivarić 74'); 10 Luka Modrić [c],\n7 Ivan Rakitić; 18 Ante Rebić, 17 Mario Mandžukić, 9 Andrej Kramarić\n(8 Mateo Kovačić 88'), 4 Ivan Perišić (11 Marcelo Brozović 63').\nReferee:            Sandro Ricci (Brazil).\nCoaches:            Russia: Stanislav Cherchesov.\nCroatia: Zlatko Dalić.\nCards:              Russia: 8 Yuriy Gazinskiy [Y 109'].\nCroatia: 6 Dejan Lovren [Y 35'], 3 Ivan Strinić [Y 38'], 21 Domagoj Vida [Y 101'],\n22 Josip Pivarić [Y 114'].\nPenalties:          0-0 10 Fyodor Smolov (save), 0-1 11 Marcelo Brozović, 1-1 9 Alan Dzagoyev,\n1-1 8 Mateo Kovačić (save), 1-1 2 Mário Fernandes (miss), 1-2 10 Luka Modrić,\n2-2 4 Sergey Ignashevich, 2-3 21 Domagoj Vida, 3-3 7 Daler Kuzyayev,\n3-4 7 Ivan Rakitić.",
+        "lang": "en"
       }
     },
     {
@@ -1505,6 +1805,11 @@
       ],
       "extra": {
         "attendance": 64286
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "10/07/2018, Sankt-Peterburg, Stadion Krestovskiy (Stadion Sankt-Peterburg), 64286\nFRANCE              1 (5 Samuel Umtiti 51')\nBELGIUM             0\nFrance:             1 Hugo Lloris [c]; 2 Benjamin Pavard, 4 Raphaël Varane, 5 Samuel Umtiti,\n(4-3-3)             21 Lucas Hernández; 6 Paul Pogba, 13 N'Golo Kanté, 14 Blaise Matuidi\n(12 Corentin Tolisso 86'); 10 Kylian Mbappé, 9 Olivier Giroud (15 Steven Nzonzi 85'),\n7 Antoine Griezmann.\nBelgium:            1 Thibaut Courtois; 22 Nacer Chadli (21 Michy Batshuayi 90+1'), 2 Toby Alderweireld,\n(4-2-3-1)           4 Vincent Kompany, 5 Jan Vertonghen; 6 Axel Witsel, 19 Mousa Dembélé\n(14 Dries Mertens 60'); 7 Kevin De Bruyne, 8 Marouane Fellaini\n(11 Yannick Carrasco 80'), 10 Eden Hazard [c]; 9 Romelu Lukaku.\nReferee:            Andrés Cunha (Uruguay).\nCoaches:            France: Didier Deschamps.\nBelgium: Roberto Martínez (Spain).\nCards:              France: 13 N'Golo Kanté [Y 87'], 10 Kylian Mbappé [Y 90+2'].\nBelgium: 10 Eden Hazard [Y 63'], 2 Toby Alderweireld [Y 71'],\n5 Jan Vertonghen [Y 90+4'].",
+        "lang": "en"
       }
     },
     {
@@ -1524,6 +1829,11 @@
       ],
       "extra": {
         "attendance": 78011
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "11/07/2018, Moskva, Stadion Luzhniki, 78011\nCROATIA             2 (4 Ivan Perišić 68', 17 Mario Mandžukić 109')\nENGLAND             1 (12 Kieran Trippier 5')\nAfter extra time.\nCroatia:            23 Danijel Subašić; 2 Šime Vrsaljko, 6 Dejan Lovren, 21 Domagoj Vida, 3 Ivan Strinić\n(4-3-3)             (22 Josip Pivarić 95'); 10 Luka Modrić [c] (19 Milan Badelj 119'), 11 Marcelo Brozović,\n7 Ivan Rakitić; 18 Ante Rebić (9 Andrej Kramarić 101'), 17 Mario Mandžukić\n(5 Vedran Ćorluka 115'), 4 Ivan Perišić.\nEngland:            1 Jordan Pickford; 2 Kyle Walker (11 Jamie Vardy 112'), 5 John Stones,\n(3-5-2)             6 Harry Maguire; 12 Kieran Trippier, 7 Jesse Lingard, 8 Jordan Henderson\n(4 Eric Dier 97'), 20 Dele Alli, 18 Ashley Young (3 Danny Rose 91'); 10 Raheem Sterling\n(19 Marcus Rashford 74'), 9 Harry Kane [c].\nReferee:            Cüneyt Çakır (Turkey).\nCoaches:            Croatia: Zlatko Dalić.\nEngland: Gareth Southgate.\nCards:              Croatia: 17 Mario Mandžukić [Y 48'], 18 Ante Rebić [Y 96'].\nEngland: 2 Kyle Walker [Y 54'].\nNote:               Kieran Trippier left the field due to injury at 116'; England continued\nwith 10 players, having already made their four permitted substitutions.",
+        "lang": "en"
       }
     },
     {
@@ -1540,6 +1850,11 @@
       ],
       "extra": {
         "attendance": 64406
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "14/07/2018, Sankt-Peterburg, Stadion Krestovskiy (Stadion Sankt-Peterburg), 64406\nBELGIUM             2 (15 Thomas Meunier 4', 10 Eden Hazard 82')\nENGLAND             0\nBelgium:            1 Thibaut Courtois; 2 Toby Alderweireld, 4 Vincent Kompany, 5 Jan Vertonghen;\n(3-4-3)             15 Thomas Meunier, 17 Youri Tielemans (19 Mousa Dembélé 78'), 6 Axel Witsel,\n22 Nacer Chadli (3 Thomas Vermaelen 39'); 9 Romelu Lukaku (14 Dries Mertens 60'),\n7 Kevin De Bruyne, 10 Eden Hazard [c].\nEngland:            1 Jordan Pickford; 16 Phil Jones, 5 John Stones, 6 Harry Maguire; 12 Kieran Trippier,\n(3-5-2)             21 Ruben Loftus-Cheek (20 Dele Alli 84'), 4 Eric Dier, 17 Fabian Delph, 3 Danny Rose\n(7 Jesse Lingard 46'); 10 Raheem Sterling (19 Marcus Rashford 46'), 9 Harry Kane [c].\nReferee:            Alireza Faghani (Iran).\nCoaches:            Belgium: Roberto Martínez (Spain).\nEngland: Gareth Southgate.\nCards:              Belgium: 6 Axel Witsel [Y 90+3'].\nEngland: 5 John Stones [Y 52'], 6 Harry Maguire [Y 76'].",
+        "lang": "en"
       }
     },
     {
@@ -1556,6 +1871,11 @@
       ],
       "extra": {
         "attendance": 78011
+      },
+      "sheet": {
+        "source": "rsssf:2018full",
+        "text": "15/07/2018, Moskva, Stadion Luzhniki, 78011\nFRANCE              4 (17 Mario Mandžukić 18' OG, 7 Antoine Griezmann 38' pen, 6 Paul Pogba 59',\n10 Kylian Mbappé 65')\nCROATIA             2 (4 Ivan Perišić 28', 17 Mario Mandžukić 69')\nFrance:             1 Hugo Lloris [c]; 2 Benjamin Pavard, 4 Raphaël Varane, 5 Samuel Umtiti,\n(4-3-3)             21 Lucas Hernández; 6 Paul Pogba, 13 N'Golo Kanté (15 Steven Nzonzi 55'),\n14 Blaise Matuidi (12 Corentin Tolisso 73'); 10 Kylian Mbappé, 7 Antoine Griezmann,\n9 Olivier Giroud (18 Nabil Fekir 81').\nCroatia:            23 Danijel Subašić; 2 Šime Vrsaljko, 6 Dejan Lovren, 21 Domagoj Vida, 3 Ivan Strinić\n(4-3-3)             (20 Marko Pjaca 82'); 10 Luka Modrić [c], 11 Marcelo Brozović, 7 Ivan Rakitić;\n18 Ante Rebić (9 Andrej Kramarić 71'), 17 Mario Mandžukić, 4 Ivan Perišić.\nReferee:            Néstor Pitana (Argentina).\nCoaches:            France: Didier Deschamps.\nCroatia: Zlatko Dalić.\nCards:              France: 13 N'Golo Kanté [Y 27'], 21 Lucas Hernández [Y 41'].\nCroatia: 2 Šime Vrsaljko [Y 90+2'].\nOfficial awards\nFIFA Fair play Trophy: Spain\n[Best player]\nFIFA Young player award: Kylian Mbappé (France)\nadidas Bronze Ball: Antoine Griezmann (France)\nadidas Silver Ball: Eden Hazard (Belgium)\nadidas Golden Ball: Luka Modrić (Croatia)\n[Best goalkeeper]\nadidas Golden Glove: Thibaut Courtois (Belgium)\n[Top scorer]\nadidas Bronze Boot: Romelu Lukaku (Belgium), 4 goals\nadidas Silver Boot: Antoine Griezmann (France), 4 goals\nadidas Golden Boot: Harry Kane (England), 6 goals\nNotes: Griezmann was awarded the Silver Boot ahead of Lukaku based on more 'assists'.  Similarly, Lukaku was\nawarded the Bronze Boot ahead of Denis Cheryshev (Russia), Cristiano Ronaldo Aveiro (Portugal), and\nKylian Mbappé (France) (all of whom had also scored 4 goals) based on more 'assists'.\noverview 2018 final tournament",
+        "lang": "en"
       }
     }
   ],
