@@ -336,7 +336,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "18.06.94  (17.35) Detroit, Pontiac Silverdome\nUSA - SUI 1:1 (1:1)\n(+73000) Lamolina ARG, Taibi ARG, Zarate PAR\nUSA: Meola (c) - Kooiman, Lalas, Balboa, Caligiuri - Ramos, Dooley, Harkes,\nSorber - Stewart (80 Jones), Wynalda (57 Wegerle)\nSUI: Pascolo - Hottiger, Herr, Geiger, Quentin - Ohrel, Sforza (79 Wyss),\nBrégy (c), Bickel (71 Subiat) - Sutter, Chapuisat\n0:1 Brégy 39 f, 1:1 Wynalda 45 f\nbooked: Harkes / Herr, Subiat\nNOTE: First WC match played completely indoors",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -349,7 +354,12 @@
       "score": [
         1,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "18.06.94  (16.35) Los Angeles, Rose Bowl\nROM - COL 3:1 (2:1)\n(+91000) Al-Sharif SYR, Al-Ghattan BHR, James TRI\nROM: Stelea - Petrescu, Belodedici, Gh.Popescu, Prodan - Mihali, Lupescu,\nMunteanu, Hagi (c) - Dumitrescu (65 Selymes), Răducioiu (90 Papura)\nCOL: Cordoba - Escobar, Herrera, W.Pérez, Perea - Alvarez,\nValderrama (c), G.J.Gómez, Rincón - Valencia, Asprilla\n1:0 Răducioiu 16, 2:0 Hagi 34, 2:1 Valencia 43 h, 3:1 Răducioiu 88\nbooked: Răducioiu / Herrera, Valderrama, Alvarez",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -362,7 +372,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "22.06.94  (16.05) Detroit, Pontiac Silverdome\nSUI - ROM 4:1 (1:1)\n(+61000) Junini TUN, Hassan EGY, Fanaei IRN\nSUI: Pascolo - Hottiger, Herr, Geiger, Quentin - Ohrel (82 Sylvestre),\nSforza, Brégy (c), Knup - Sutter (70 Bickel), Chapuisat\nROM: Stelea - Petrescu, Belodedici, Gh.Popescu, Prodan - Mihali,\nLupescu (85 Panduru), Munteanu, Hagi (c) - Dumitrescu (70 Vladoiu), Răducioiu\n1:0 Sutter 16, 1:1 Hagi 36, 2:1 Chapuisat 53, 3:1 Knup 66, 4:1 Knup 73 h\nbooked: Mihali, Lupescu, Belodedici\nsent off: Vladoiu (74)",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -375,7 +390,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "22.06.94  (16.35) Los Angeles, Rose Bowl\nUSA - COL 2:1 (1:0)\n(+93000) Baldas ITA, Ramicone ITA, Rharib MAR\nUSA: Meola (c) - Clavijo, Lalas, Balboa, Caligiuri - Ramos, Dooley, Harkes,\nSorber - Stewart (67 Jones), Wynalda (62 Wegerle)\nCOL: Cordoba - Escobar, Herrera, W.Pérez, Perea - Alvarez,\nValderrama (c), Gaviria, Rincón - de Avila (46 Valencia), Asprilla (46\nValenciano)\n1:0 Escobar 34 o, 2:0 Stewart 52, 2:1 Valencia 90\nbooked: Lalas / de Avila",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -388,7 +408,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "26.06.94  (13.05) Los Angeles, Rose Bowl\nROM - USA 1:0 (1:0)\n(-94000) Van der Ende HOL, Dolstra HOL, Dunster AUS\nROM: Prunea - Petrescu, Belodedici (88 Mihali), Gh.Popescu, Prodan -\nSelymes, Lupescu, Munteanu, Hagi (c) - Dumitrescu, Răducioiu (83 Gâlcă)\nUSA: Meola (c) - Clavijo, Lalas, Balboa, Caligiuri - Ramos (63 Jones), Dooley,\nHarkes, Sorber (75 Wegerle) - Stewart, Wynalda\n1:0 Petrescu 17\nbooked: Clavijo, Harkes / Răducioiu, Petrescu",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -401,7 +426,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "26.06.94  (13.05) San Francisco, Stanford Stadium\nCOL - SUI 2:0 (1:0)\n(-84000) Mikkelsen DAN, Christensen-Meyer DAN, James TRI\nCOL: Cordoba - Escobar, Herrera, W.Pérez, Mendoza - Alvarez,\nValderrama (c), Gaviria (76 Lozano), Rincon - Valencia (63 de Avila),\nAsprilla\nSUI: Pascolo - Hottiger, Herr, Geiger, Quentin - Ohrel, Sforza, Brégy (c), Knup\n(81 Subiat) - Sutter (81 Grassi), Chapuisat\n1:0 Gaviria 44 h, 2:0 Lozano 90\nbooked: Gaviria, Valderrama, Alvarez / Knup, Brégy",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -414,7 +444,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "19.06.94  (16.35) Los Angeles, Rose Bowl\nSWE - CAM 2:2 (1:1)\n(+83000) Tejada MEX, Al-Ghattan BHR, James TRI\nSWE: Ravelli - R.Nilsson, P.Andersson, Björklund, Ljung - Schwarz,\nBlomqvist (61 Larsson), Thern (c), Ingesson (75 K.Andersson) - Brolin, Dahlin\nCAM: Bell - Tataw (c), Song, Kalla, Agbo - Mbouh, Libiih, Foe, Mfede\n(81 Maboang) - Embe (87 Mouyeme), Omam-Biyik\n1:0 Ljung 8 h, 1:1 Embe 30, 1:2 Omam-Biyik 46, 2:2 Dahlin 75\nbooked: Dahlin / M'Bouh",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -427,7 +462,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "20.06.94  (13.05) San Francisco, Stanford Stadium\nBRA - RUS 2:0 (1:0)\n(+81000) Lim Kee Chong MRS, Rharib MAR, Ramicone ITA\nBRA: Taffarel - Jorginho, Marcio Santos, Ricardo Rocha (68 Aldair),\nLeonardo - Dunga (79 Mazinho), Zinho, Mauro Silva, Rai (c) - Romário, Bebeto\nRUS: Kharine (c) - Ternavski, Gorlukovich, Kuznetsov, Tsymbalar -\nNikiforov, Khlestov, Karpine, Piatnitski - Radchenko (72 Borodiuk), Yuran\n(69 Salenko)\n1:0 Romário 27, 2:0 Rai 53 p\nbooked: Nikiforov, Khlestov, Kuznetsov",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -440,7 +480,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "24.06.94  (13.05) San Francisco, Stanford Stadium\nBRA - CAM 3:0 (1:0)\n(~85000) Brisio MEX, James TRI, Christensen-Meyer DAN\nBRA: Taffarel - Jorginho, Marcio Santos, Aldair, Leonardo - Dunga,\nZinho (74 P.Sergio), Mauro Silva, Rai (80 Müller) - Romário, Bebeto\nCAM: Bell - Tataw (c), Song, Kalla, Agbo - Mbouh, Libiih, Foe, Mfede\n(70 Maboang) - Embe (63 Milla), Omam-Biyik\n1:0 Romário 39, 2:0 Marcio Santos 62 h, 3:0 Bebeto 72\nbooked: Mauro Silva / Tataw, Kalla\nsent off: Song (84)",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -453,7 +498,12 @@
       "score": [
         1,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "24.06.94  (19.35) Detroit, Pontiac Silverdome\nSWE - RUS 3:1 (1:1)\n(~71000) Quiniou FRA, Fanaei IRN, Hassan EGY\nSWE: Ravelli - R.Nilsson, P.Andersson, Björklund (88 Erlingmark), Ljung -\nSchwarz, Thern (c), Ingesson, K.Andersson (83 Larsson) - Brolin, Dahlin\nRUS: Kharine (c) - Onopko, Gorlukovich, Kuznetsov, Popov (40 Karpine) -\nNikiforov, Khlestov, Radchenko, Borodiuk (51 Galiamine) - Mostovoi, Salenko\n0:1 Salenko 4 p, 1:1 Brolin 39 p, 2:1 Dahlin 60, 3:1 Dahlin 82 h\nbooked: K.Andersson, Schwarz, Dahlin / Gorlukovich (2), Kharine\nsent off: Gorlukovich (49)",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -466,7 +516,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "28.06.94  (16.05) Detroit, Pontiac Silverdome\nSWE - BRA 1:1 (1:0)\n(+77000) Puhl HUN, Marton HUN, Matthys BEL\nSWE: Ravelli - R.Nilsson, P.Andersson, Kåmark, Ljung - Schwarz\n(77 Mild), Thern (c), Ingesson, K.Andersson - Larsson (65 Blomqvist), Brolin\nBRA: Taffarel - Jorginho, Marcio Santos, Aldair, Leonardo, Dunga -\nZinho, Mauro Silva 46 (Mazinho), Rai (c - 81 P.Sergio) - Romário, Bebeto.\n1:0 K.Andersson 24, 1:1 Romário 47\nbooked: Mild / Aldair",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -479,7 +534,12 @@
       "score": [
         6,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "28.06.94  (13.05) San Francisco, Stanford Stadium\nRUS - CAM 6:1 (3:0)\n(-75000) Al-Sharif SYR, Dunster AUS, Dolstra HOL\nRUS: Cherchesov - Onopko (c), Ternavski, Tetradze, Karpine - Nikiforov,\nKhlestov, Korneyev (65 Radchenko) - Lediakov (78 Bestchastnykh), Tsymbalar,\nSalenko\nCAM: Songo'o - Tataw (c), N'Dip Akem, Kalla, Agbo - Kana-Biyik, Libiih,\nFoe, Mfede (46 Milla) - Embe (49 Tchami), Omam-Biyik\n1:0 Salenko 16, 2:0 Salenko 41, 3:0 Salenko 45 p, 3:1 Milla 47, 4:1 Salenko\n72, 5:1 Salenko 75, 6:1 Radchenko 82\nbooked: Karpin, Khlestov, Nikiforov / Songo'o, Kana Biyik",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -492,7 +552,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "17.06.94  (14.05) Chicago, Soldier Field\n(+63000) Brizio MEX, Brazalle AUS, Dunster AUS\nGER: Illgner - Kohler, Matthäus (c), Berthold, Brehme - Häßler (84 Strunz),\nEffenberg, Sammer, Möller - Riedle (60 Basler), Klinsmann\nBOL: Trucco - Borja (c), Quinteros, Rimba, Sandy - Cristaldo, Soria, Melgar,\nE.Sanchez - Baldivieso (66 Moreno), Ramallo (79 Etcheverry)\n1:0 Klinsmann 61\nbooked: Kohler, Möller / Borja, Baldivieso, Soria\nsent off: Etcheverry (84)",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -505,7 +570,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "17.06.94  (18.35) Dallas, Cotton Bowl\nKOR - ESP 2:2 (0:0)\n(+56000) Mikkelsen DAN, Christensen-Meyer DAN, Pearson ENG\nKOR: Choi In-young (c) - Kim Pan-keun, Park Jung-bae, Hong Myung-bo,\nShin Hong-gi - Lee Young-jin, Choi Young-il, Kim Joo-sung (59 Seo Jung-won),\nNoh Jung-yoon (73 Ha Seok-ju) - Kim Jeong-woon, Hwang Sun-hong\nESP: Cañizares - Ferrer, Alkorta, Abelardo, Nadal (c) - Sergi, Hierro, Luis\nEnrique, Goikoetxea - Julio Salinas (63 Felipe), Guerrero (40 Caminero)\n0:1 Salinas 51, 0:2 Goikoetxea 56, 1:2 Hong Myung-bo 85, 2:2 Seo Jung-woon 90\nbooked: Choi Young-il, Kim Joo-song / Luis Enrique, Caminero\nsent off: Nadal (26)",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -518,7 +588,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "21.06.94  (15.05) Chicago, Soldier Field\nGER -  ESP 1:1 (0:1)\n(+63000) Filippi URU, Taibi ARG, Zarate PAR\nGER: Illgner - Kohler, Matthäus (c), Berthold, Brehme - Häßler, Strunz,\nEffenberg, Sammer - Möller (62 Völler), Klinsmann\nESP: Zubizarreta (c) - Ferrer, Alkorta, Abelardo, Guardiola (77 Camarasa) -\nSergi, Hierro, Luis Enrique, Goikoetxea (65 Bakero) - Julio Salinas, Caminero\n0:1 Goikoetxea 14, 1:1 Klinsmann 48 h\nbooked: Effenberg / Abelardo, Hierro, Julio Salinas",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -531,7 +606,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "23.06.94  (19.35) Boston, Foxboro Stadium\nBOL - KOR 0:0\n(+53000) Motram SCO, Matthys BEL, Everstig SWE\nBOL: Trucco - Borja, Quinteros, Rimba, Sandy - Cristaldo, Soria,\nMelgar (c), E.Sanchez - Baldivieso, Ramallo (67 A.Peña)\nKOR: Choi In-young - Kim Pan-keun, Park Jung-bae, Hwang Myung-bo -\nShin Hong-gi, Lee Young-jin, Kim Joo-sung, Nah Jung-Yoon (71 Choi Young-il),\nKo Jeong-woon - Seo Jung-won (85 Ha Seok-ju), Hwang Sun-hong\nbooked: Rimba, Baldivieso, Cristaldo (2) / Shin Hong-gi, Park Jung-bae,\nKo Jeong-woon\nsent off: Cristaldo (83)",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -544,7 +624,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "27.06.94  (16.05) Dallas, Cotton Bowl\nGER - KOR 3:2 (3:0)\n(-64000) Quiniou FRA, Ivanov RUS, Hassan EGY\nGER: Illgner - Kohler, Matthäus (c - 64 Möller), Berthold, Brehme -\nHäßler, Buchwald, Effenberg (75 Helmer), Sammer - Riedle, Klinsmann\nKOR: Choi In-young (c - 46 Lee Woon-jae), Kim Pan-keun, Park Jung-bae,\nHong Myung-bo - Shin Hong-gi, Lee Young-jin (40 Chung Son-chung), Kim Joo-sung,\nChoi Young-il, Ko Jeong-woon - Cho Jin-ho (46 Seo Jung-woh), Hwang Sun-hong\n1:0 Klinsmann 12, 2:0 Riedle 20, 3:0 Klinsmann 37, 3:1 Hwang Sun-hong 51,\n3:2 Hong Myung-bo 63\nbooked: Brehme, Klinsmann, Effenberg / Choi Young-li",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -557,7 +642,12 @@
       "score": [
         1,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "27.06.94  (15.05) Chicago, Soldier Field\nESP - BOL 3:1 (1:0)\n(+63000) Badilla COS, Al-Ghattan BHR, Calix HON\nESP: Zubizarreta (c) - Ferrer, Voro, Abelardo, Guardiola (69 Bakero) -\nSergi, Felipe (46 Hierro), Goikoetxea, Guerrero - Julio Salinas, Caminero\nBOL: Trucco - Borja, Rimba, Sandy, J.Peña, Soria (63 Castillo),\nMelgar (c), Socuro, E.Sanchez - Ramos (46 Moreno), Ramallo\n1:0 Guardiola 19 p, 2:0 Caminero 65, 2:1 Sánchez 67, 3:1 Caminero 71",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -570,7 +660,12 @@
       "score": [
         4,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "21.06.94  (12.05) Boston, Foxboro Stadium\nARG - GRE 4:0 (2:0)\n(+53000) Angeles USA, Park Hang-young KOR, Dolstra HOL\nARG: Islas - Sensini, Caceres, Ruggeri, Chamot - Simeone, Redondo,\nMaradona (c - 62 Ortega), Balbo (79 Mancuso) - Caniggia, Batistuta\nGRE: Minou - Manolas, Apostolakis, Kolitsidakis, Kalitzakis - Kofidis,\nTsalouhidis, Nioplias, Tsiantakis (46 Marangos) - Saravakos (c), Machlas\n(58 Mitropoulos)\n1:0 Batistuta 2, 2:0 Batistuta 45, 3:0 Maradona 60, 4:0 Batistuta 90 p\nbooked: Caceres / Tsalouchidis, Manolas",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -583,7 +678,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "21.06.94  (18.35) Dallas, Cotton Bowl\nNGA - BUL 3:0 (2:0)\n(+44000) Badilla COS, Brazzale AUS, Dunster AUS\nNGA: Rufai (c) - Eguavon, Ochechukwu, Nwanu, Iroha - Oliseh, Siasia\n(68 Adepoju), Amokachi, Finidi (77 Ezeugo) - Yekini, Amunike\nBUL: Mihailov (c) - Kremenljev, Ivanov, Houbtchev, Tzvetanov - Yankov,\nLetchkov (58 Sirakov), Borimirov (72 Yordanov) - Balakov, Stoichkov, Kostadinov\n1:0 Yekini 21, 2:0 Amokachi 43, 3:0 Amunike 55 h\nbooked: Amunike / Letchkov",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -596,7 +696,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "25.06.94  (16.05) Boston, Foxboro Stadium\nARG - NGA 2:1 (2:1)\n(~61000) Karlsson SWE, Everstig SWE, Matthys BEL\nARG: Islas - Sensini (87 Diaz), Caceres, Ruggeri, Chamot - Simeone,\nRedondo, Maradona (c), Balbo (71 Mancuso) - Caniggia, Batistuta\nNGA: Rufai (c) - Eguavon, Ochechukwu, Nwanu, Emenalo - Oliseh (86\nOkocha), Siasia (57 Adepoju), Amokachi, Finidi - Yekini, Amunike\n0:1 Siasia 10, 1:1 Caniggia 22, 2:1 Caniggia 29\nbooked: Caniggia / Oliseh, Eguavon, Emenalo\nNOTE: Maradona expulsed from the tournament after failing anti-dope\ntesting",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -609,7 +714,12 @@
       "score": [
         0,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "26.06.94  (11.35) Chicago, Soldier Field\nBUL - GRE 4:0 (1:0)\n(+63000) Bujsaim EMI, Al-Ghattan BHR, Calix HON\nBUL: Mihailov (c) - Kremenljev, Ivanov, Houbtchev, Tzvetanov (76\nKiriakov) - Yankov, Letchkov, Sirakov, Balakov - Stoichkov, Kostadinov (81\nBorimirov)\nGRE: Atmatzidis - Karataidis, Apostolakis (c), Karagiannis, Kalitzakis -\nKofidis, Hantzidis (47 Mitropoulos), Nioplias, Marangos - Alexoudis\n(57 Dimitriadis), Machlas\n1:0 Stoichkov 5 p, 2:0 Stoichkov 55 p, 3:0 Letchkov 66, 4:0 Borimirov 90\nbooked: Houbtchev, Ivanov, Yankov, Borimirov / Alexoudis, Chantzidis,\nKaragiannis, Mitropoulos\n30.06.94  Boston, Foxboro Stadium\nNGA - GRE 2:0 (1:0)\n(~53000) Mottram SCO, Park Hae-young KOR, Alves BRA\nNGA: Rufai (c), Keshi, Ochechukwu, Nwanu, Emenalo - Oliseh, Siasia,\nAmokachi, Finidi (83 Adepoju) - Yekini (69 Okocha), Amunike\nGRE: Karkamanis - Alexiou, Karagiannis, Kalitzakis, Kofidis - Hantzidis,\nMitropoulos (c - 72 Tsiantakis), Nioplias, Tsalouhidis, Alexandris, Machlas\n(79 Dimitriadis)\n1:0 Finidi 45, 2:0 Amokachi 90\nbooked: Oliseh, Keshi / Mitropoulos, Kalitzakis\nNOTE: Together with the BUL-ARG match, the 499th (or 500th) game\nof the World Cup",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -622,7 +732,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "30.06.94  (18.35) Dallas, Cotton Bowl\nBUL - ARG 2:0 (0:0)\n(-64000) Jonini TUN, Yli-Karro FIN, Rharib MAR\nBUL: Mihailov (c) - Kremenljev, Ivanov, Houbtchev, Tzvetanov - Yankov,\nLetchkov (77 Borimirov), Sirakov, Balakov - Stoichkov, Kostadinov (74\nKiriakov)\nARG: Islas - Diaz, Caceres, Ruggeri (c), Chamot - Simeone, Redondo,\nRodriguez (67 Medina Bello), Balbo - Caniggia (26 Ortega), Batistuta\n1:0 Stoichkov 61, 2:0 Sirakov 90\nbooked: Stoichkov, Yankov, Tzvetanov (2), Ivanov, Balakov / Ruggeri,\nBatistuta, Rodriguez\nsent off: Tzvetanov (67)\nNOTE: Together with the NGA-GRE match, the 499th (or 500th) game\nof the World Cup",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -648,7 +763,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "18.06.94  (16.05) New York, Giants Stadium\nIRL - ITA 1:0 (1:0)\n(+73000) Van der Ende HOL, Dolstra HOL, Park Hae-young KOR\nIRL: Bonner - Irwin, McGrath, Babb, Phelan - Sheridan, Keane, Townsend (c),\nStaunton - Houghton (67 McAteer), Coyne (90 Aldridge)\nITA: Pagliuca - Tassotti, Costacurta, F.Baresi (c), Maldini - Albertini, D.Baggio,\nDonadoni, Evani (46 Massaro) - R.Baggio, Signori (84 Berti)\n1:0 Houghton 12\nbooked: Irwin, Phelan, Coyne",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -661,7 +781,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "19.06.94  (16.05) Washington DC, RFK Memorial Stadium\nNOR - MEX 1:0 (0:0)\n(+52000) Puhl HUN, Marton HUN, Ivanov RUS\nNOR: Thorstvedt - Håland, Bratseth (c), Berg, Bjørnebye - J.Flo,\nMykland (78 Rekdal), Leonhardsen, Bohinen - Fjørtoft, Jakobsen (46 Halle)\nMEX: Campos - Suárez, Ramirez Perales, Gutierrez (71 Bernal),\nR.Ramirez - Ambriz (c), Del Olmo, L.Garcia, Valdez (46 Galindo) - H.Sánchez,\nAlves Zague\n1:0 Rekdal 85\nbooked: Håland, Leonhardasen / Suárez",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -674,7 +799,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "23.06.94  (16.05) New York, Giants Stadium\nITA - NOR 1:0 (0:0)\n(~74000) Krug GER, Yli-Karro FIN, Pearson ENG\nITA: Pagliuca - Benarrivo, Costacurta, F.Baresi (c - 49 Apolloni) -\nMaldini, Albertini, D.Baggio, Berti - R.Baggio (22 Marchegiani), Casiraghi\n(68 Massaro), Signori\nNOR: Thorstvedt - Håland, Bratseth (c), Berg, Bjørnebye - Flo, Mykland\n(51 Rekdal), Leonhardsen, Bohinen - Fjørtoft, Rushfeldt (46 Jakobsen)\n1:0 D.Baggio 69 h\nbooked: Casiraghi / Bjørnebye, Håland\nsent off: Pagliuca (21)",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -687,7 +817,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "24.06.94  (12.35) Orlando, Citrus Bowl\nMEX - IRL 2:1 (1:0)\n(~68000) Röthlisberger SUI, Listkiewicz POL, Alves BRA\nMEX: Campos - Suarez, Ramirez Perales, Bernal, J.Rodriguez (80 Salvador) -\nAmbriz (c), Del Olmo, L.Garcia, Garcia Aspe - Hermosillo (80 Gutierrez), Alves Zague\nIRL: Bonner - Irwin, McGrath, Babb, Phelan - Sheridan, Keane, Townsend (c),\nStaunton (65 Aldridge) - Houghton, Coyne (68 McAteer)\n1:0 Luis Garcia 44, 2:0 Luis Garcia 66, 2:1 Aldridge 84 h\nbooked: del Olmo, Campos / Irwin, Phelan\nNOTE: The Irish coach banned from taking place on the bench for\none match",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -700,7 +835,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "28.06.94  (12.35) Washington DC, RFK Memorial Stadium\nITA - MEX 1:1 (0:0)\n(+53000) Lamolina ARG, Taibi ARG, Brazzale AUS\nITA: Marchegiani - Benarrivo, Costacurta, Apolloni, Maldini (c) - Albertini,\nD.Baggio (65 Donadoni), Berti - R.Baggio, Casiraghi (46 Massaro), Signori\nMEX: Campos - Suárez, Ramirez Perales, Bernal, J.Rodriguez - Ambriz (c),\nDel Olmo, L.Garcia (84 Chavez), Garcia Aspe - Hermosillo, Alves Zague\n1:0 Massaro 48, 1:1 Bernal 56\nbooked: Albertini / del Olmo, Luis Garcia, Garcia Aspe",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -713,7 +853,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "28.06.94  (12.35) New York, Giants Stadium\nIRL - NOR 0:0\n(+76000) Torres COL, Alves BRA, Park Hae-young KOR\nIRL: Bonner - G.Kelly, McGrath, Babb, Sheridan - Keane, Townsend,\n(c - 75 Whelan), Staunton, Houghton - McAteer, Aldridge (65 D.Kelly)\nNOR: Thorstvedt - Halle (34 Jakobsen), Bratseth (c), Johnsen, Berg - Bjørnebye,\nFlo, Mykland, Rekdal - Leonhardsen (68 Bohinen), Sørloth\nbooked: Keane, Houghton, G.Kelly / Sorloth, Johnsen\nNOTE: The Irish coach not present on the bench due to a ban",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -726,7 +871,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "19.06.94  (12.35) Orlando, Citrus Bowl\nBEL - MAR 1:0 (1:0)\n(+60000)\nTorres COL, Calix HON, Yli-Karro FIN\nBEL: Preud'homme - Smidts, Grun (c), de Wolf, Staelens - F.van der\nElst, Scifo, Boffin (85 Borkelmans), Degryse - Nilis (53 Emmers), Weber\nMAR: Azmi (88 Alaoui) - Nacer, El Hadrioui, Triki, Naybet - El Hadaoui\n(c - 68 Bahja), Hadji, Azzouzi, Hababi - Daoudi, Chaouch (81 Samadi)\n1:0 Degryse 11 h\nbooked: Grun, Weber / Naybet, Azzouzi, Daoudi",
+        "lang": "en"
+      }
     },
     {
       "id": "m032",
@@ -739,7 +889,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "20.06.94  (12.35) Washington DC, RFK Memorial Stadium\nHOL - ARS 2:1 (0:1)\n(+50000) Diaz ESP, Marton HUN, Ivanov RUS\nHOL: de Goey - Van Gobbel, Rijkaard, R.Koeman (c), F.de Boer - Jonk,\nBergkamp, Wouters, Overmars (58 Taument), R.de Boer - Roy (80 Van Vossen)\nARS: Al Deayea - Madani, Al Jebreen, Al Khlaiwi, Al Jawad - Al Dosari,\nAmin, Al Bishi, Owairan (89 Saleh) - Al Muwallid, Abdullah (c - 46 Falatah)\n0:1 Anim 19 h, 1:1 Jonk 50, 2:1 Taument 86 h\nbooked: Van Gobbel, F.de Boer / Al Jawad, Amin,\nAl Dosari",
+        "lang": "en"
+      }
     },
     {
       "id": "m033",
@@ -752,7 +907,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "25.06.94  (12.35) Orlando, Citrus Bowl\nBEL - HOL 1:0 (0:0)\n(+61000) Marsiglia BRA, Listkiewicz POL, Alves BRA\nBEL: Preud'homme - Albert, Grun (c), Borkelmans (50 Smidts), de Wolf,\nStaelens - Van der Elst, Scifo, Degryse - Emmers (77 Medved), Weber\nHOL: De Goey - Valckx, Rijkaard, R.Koeman (c), F.de Boer - Jonk, Bergkamp, Wouters,\nRoy - R.de Boer (46 Rob Witschge), Taument (63 Overmars)\n1:0 Albert 65\nbooked: Borkelmans / Wouters, Jonk, Witschge, Rijkaard, Bergkamp",
+        "lang": "en"
+      }
     },
     {
       "id": "m034",
@@ -765,7 +925,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "25.06.94  (12.35) New York, Giants Stadium\nARS - MAR 2:1 (2:1)\n(+72000) Don ENG, Pearson ENG, Yli-Karro FIN\nARS: Al Deayea - Madani, Al Jebreen, Al Khlaiwi, Al Anazi (29 Zebermawi) -\nAl Jawad (c), Amin, Al Bishi, Owairan - Al Muwallid, Al Jaber (79 Al Ghesheyan)\nMAR: Azmi - El Kahlej (c), El Hadrioui, Triki, Naybet (c) - Abdellah\n(56 El Ghrissi), Bahja, Azzouzi, Hababi (72 Hadji) - Daoudi, Chaouch\n1:0 Al Jaber 8 p, 1:1 Chaouch 27, 2:1 Amin 45\nbooked: Al Jebreen, Al Muwallid, Amin, Al Deayea / El Hadrioui, Naybet",
+        "lang": "en"
+      }
     },
     {
       "id": "m035",
@@ -778,7 +943,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "29.06.94  (12.35) Orlando, Citrus Bowl\nHOL - MAR 2:1 (1:0)\n(+60000) Tejada PER, Zarate PER, Everstig SWE\nHOL: De Goey - Valckx, R.Koeman (c), F.de Boer, Jonk - Bergkamp,\nWouters, Winter, Rob Witschge - Overmars (67 Taument), Van Vossen (56 Roy)\nMAR: Alaoui - El Kahlej (c), El Hadrioui, Triki, Samadi - Neqrouz, Bouyboud\n(47 Hadji), Bahja, Azzouzi (62 Daoudi) - Hababi, Nader\n1:0 Bergkamp 43, 1:1 Nader 47, 2:1 Roy 78\nbooked: Wouters, R.Koeman / Nader, El Khalej, Boyboud, Hababi, Samadi",
+        "lang": "en"
+      }
     },
     {
       "id": "m036",
@@ -804,7 +974,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "02.07.94  (12.00) Chicago, Soldier Field\nGER - BEL 3:2 (3:1)\n(+60000) Röthlisberger SUI, Listkiewicz POL, Christensen-Meyer DAN\nGER: Illgner - Matthäus (c - 46 Brehme), Kohler, Berthold, Helmer - Häßler,\nBuchwald, Sammer, Wagner - Völler, Klinsmann (88 Kuntz)\nBEL: Preud'homme - Albert, de Wolf, Grun (c), Smidts (66 Boffin) - Staelens,\nvan der Elst, Scifo, Emmers - Nilis (77 Czerniatynski), Weber\n1:0 Völler 5, 1:1 Grun 7, 2:1 Klinsmann 10, 3:1 Völler 39, 3:2 Albert 90\nbooked: Helmer, Wagner / Albert",
+        "lang": "en"
+      }
     },
     {
       "id": "m038",
@@ -817,7 +992,12 @@
       "score": [
         0,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "02.07.94  (16.35) Washington, RFK Memorial Stadium\nESP - SUI 3:0 (1:0)\n(+56000) Van der Ende HOL, Dolstra HOL, Marton HUN\nESP: Zubizarreta (c) - Nadal, Ferrer, Abelardo, Alkorta - Sergi,\nGoikoetxea (62 Begurristain), Hierro (76 Otero), Bakero - Camarasa, Luis\nEnrique\nSUI: Pascolo - Hottiger, Herr, Geiger, Quentin (58 Studer) - Ohrel (73 Subiat),\nBrégy (c), Sforza, Bickel - Knup, Chapuisat\n1:0 Hierro 15, 2:0 Luis Enrique 73, 3:0 Begurristain 86 p\nbooked: Goikoetxea, Ferrer, Camarasa, Otero / Studer, Subiat, Pascolo, Hottiger",
+        "lang": "en"
+      }
     },
     {
       "id": "m039",
@@ -830,7 +1010,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "03.07.94  (12.05) Dallas, Cotton Bowl\nSWE - ARS 3:1 (1:0)\n(+60000) Marsiglia BRA, Alves BRA, Calix HON\nSWE: Ravelli - Nilsson, P.Andersson, Björklund (55 Kåmark), Ljung - Schwarz,\nThern (c - 70 Mild), Ingesson, Brolin - Dahlin, K.Andersson\nARS: Al Deayea - Zebermawi, Madani, Al Khlaiwi, Abdel-Jawad (c - 55 Al Gheshayan) -\nAmin, Saleh, Al Bishi (63 Al Muwallid), Owairan - Al Jaber, Falatah\n1:0 Dahlin 5 h, 2:0 K.Andersson 50, 2:1 Al Gheshayan 85, 3:1 K.Andersson 87\nbooked: Ljung, Thern / Al-Muwallid",
+        "lang": "en"
+      }
     },
     {
       "id": "m040",
@@ -843,7 +1028,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "03.07.94  (16.35) Los Angeles, Rose Bowl\nROM - ARG 3:2 (2:1)\n(+90000) Pairetto ITA, Ramicone ITA, Matthys BEL\nROM: Prunea - Petrescu, Prodan, Belodedici, Lupescu - Popescu,\nMunteanu, Mihali, Selymes - Hagi (c - 84 Gâlcă), Dumitrescu (89 Papura)\nARG: Islas - Sensini (62 Medina Bello), Ruggeri (c), Caceres, Chamot -\nBasualdo, Simeone, Ortega, Redondo - Balbo, Batistuta\n1:0 Dumitrescu 9 f, 1:1 Batistuta 15 p, 2:1 Dumitrescu 17, 3:1 Hagi 57, 3:2\nBalbo 74\nbooked: Popescu, Selymes, Dumitrescu / Ruggeri, Redondo, Chamot, Caceres",
+        "lang": "en"
+      }
     },
     {
       "id": "m041",
@@ -856,7 +1046,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "04.07.94  (12.05) Orlando, Citrus Bowl\nHOL - IRL 2:0 (2:0)\n(+61000) Mikkelsen DAN, Brazzale AUS, Dunster AUS\nHOL: de Goey - R.Koeman (c), Valckx, F.de Boer, Witschge (79 Numan) - Rijkaard,\nJonk, Winter, Overmars - Bergkamp, Van Vossen (70 Roy)\nIRL: Bonner - G.Kelly, McGrath, Babb, Phelan - Houghton, Keane, Townsend (c),\nSheridan - Staunton (63 McAteer), Coyne (74 Cascarino)\n1:0 Bergkamp 11, 2:0 Jonk 41\nbooked: R.Koeman",
+        "lang": "en"
+      }
     },
     {
       "id": "m042",
@@ -869,7 +1064,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "04.07.94  (16.35) San Francisco, Stanford Stadium\nBRA - USA 1:0 (0:0)\n1:0 Bebeto 73\n(+84000) Quiniou FRA, Park Hae-young KOR, Everstig SWE\nBRA: Taffarel - Jorginho, Marcio Santos, Aldair, Leonardo - Mazinho, Zinho\n(69 Cafú), Mauro Silva, Dunga (c) - Bebeto, Romário\nUSA: Meola (c) - Clavijo, Balboa, Lalas, Caligiuri - Jones, Dooley,\nH.Perez (46 Wegerle), Sorber - Ramos (61 Wynalda), Stewart\nbooked: Mazinho, Jorginho / Clavijo (2), Dooley, Caligiuri, Ramos\nsent off: Leonardo (44) / Clavijo (87)",
+        "lang": "en"
+      }
     },
     {
       "id": "m043",
@@ -885,7 +1085,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "05.07.94  (12.05) Boston, Foxboro Stadium\nITA - NGA 2:1 (0:1, 1:1, 2:1)\n(+54000) Brizio MEX, Taibi ARG, Zarate PAR\nITA: Marchegiani - Mussi, Costacurta, Maldini (c), Benarrivo - Berti\n(46 D.Baggio), Albertini, Donadoni, Signori (63 Zola) - R.Baggio, Massaro\nNGA: Rufai (c) - Eguavon, Nwanu, Ochechukwu, Emenalo - Oliseh, Finidi,\nOkocha, Amokachi (34 Adepoju) - Yekini, Amunike (57 Oliha)\n0:1 Amunike 26, 1:1 R.Baggio 89, 2:1 R.Baggio 103 p\nbooked: Massaro, Costacurta, D.Baggio, Signori, Maldini / Emenalo, Adepoju,\nOliseh, Nwanu\nsent off: Zola (76)",
+        "lang": "en"
+      }
     },
     {
       "id": "m044",
@@ -906,7 +1111,12 @@
       "pens": [
         1,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "05.07.94  (16.35)  New York, Giants Stadium\nBUL - MEX 1:1 (1:1, 1:1, 1:1)  p 3-1\n(+71000) Al-Sharif SYR, Al-Ghattan BHR, Fanaei IRN\nBUL: Mihailov (c) - Kremenljev, Kiriakov, Houbtchev, Balakov -\nLetchkov, Sirakov (104 Guentchev), Borimirov, Yordanov - Kostadinov\n(119 Mihtarski), Stoichkov\nMEX: Campos - Suárez, Ramirez Perales, R.Ramirez - Ambriz (c), Bernal,\nGarcia Aspe, Galindo, Rodriguez - L.Garcia, Alves Zague\n1:0 Stoichkov 7, 1:1 Garcia Aspe 18 p\nPenalties: (0:0) Garcia Aspe (out), (0:0) Balakov (save Campos), (0:0) Bernal\n(save Mikhajlov), 1:0 Guentchev, (1:0) Rodriguez (save Mikhajlov), 2:0\nBorimirov, 2:1 Suárez, 3:1 Letchkov\nbooked: Kremenljev (2), Sirakov, Yordanov, Kiriakov / Garcia Aspe, L.Garcia\n(2), Suárez, R.Ramirez\nsent off: Kremenljev (50) / L.Garcia (58)",
+        "lang": "en"
+      }
     },
     {
       "id": "m045",
@@ -919,7 +1129,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "09.07.94  (12.05) Boston, Foxboro Stadium\nITA - ESP 2:1 (1:0)\n(-55000) Puhl HUN, Dunster AUS, Matthys BEL\nITA: Pagliuca - Tassotti, Costacurta, Maldini (c), Benarrivo - Conte\n(55 Berti), D.Baggio, Albertini (46 Signori), Donadoni - R.Baggio, Massaro\nESP: Zubizarreta (c) - Nadal, Ferrer, Abelardo, Alkorta - Sergi (59\nJulio Salinas), Goikoetxea, Otero, Bakero (64 Hierro) - Caminero, Luis\nEnrique\n1:0 D.Baggio 26, 1:1 Caminero 59, 2:1 R.Baggio 88\nbooked: Abelardo, Caminero, Tassotti\nNOTE: Tassotti was banned for two WC matches for fouling Luis Enrique.\nThis was decided thanks to the video record",
+        "lang": "en"
+      }
     },
     {
       "id": "m046",
@@ -932,7 +1147,12 @@
       "score": [
         2,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "09.07.94  (14.35) Dallas, Cotton Bowl\nBRA - HOL 3:2 (0:0)\n(-64000) Badilla COS, Al-Ghartan BHR, Fanaei IRN\nBRA: Taffarel - Jorginho, Marcio Santos, Aldair, Branco (89 Cafú) - Mazinho\n(81 Rai), Zinho, Mauro Silva, Dunga (c) - Bebeto, Romário\nHOL: de Goey - R.Koeman (c), Valckx, Wouters, Rob Witschge - Rijkaard\n(84 R.de Boer), Jonk, Winter, Overmars - Bergkamp, Van Vossen (53 Roy)\n1:0 Romário 52, 2:0 Bebeto 61, 2:1 Bergkamp 64, 2:2 Winter 76 h, 3:2\nBranco 81 f\nbooked: Dunga / Wouters, Winter",
+        "lang": "en"
+      }
     },
     {
       "id": "m047",
@@ -945,7 +1165,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "10.07.94  (12.05) New York, Giants Stadium\nBUL - GER 2:1 (0:0)\n(+72000) Torres COL, Zarate PAR, Marton HUN\nBUL: Mihailov (c) - Yankov, Kiriakov, Houbtchev, Balakov - Letchkov, Sirakov,\nIvanov, Tzvetanov - Kostadinov (90 Guentchev), Stoichkov (85 Yordanov)\nGER: Illgner - Matthäus (c), Kohler, Berthold, Helmer - Häßler (83 Brehme),\nBuchwald, Möller, Wagner (58 Strunz) - Völler, Klinsmann\n0:1 Matthäus 48 p, 1:1 Stoichkov 76 f, 2:1 Letchkov 78 h\nbooked: Ivanov, Stoichkov, Mihailov / Völler, Helmer, Wagner, Klinsmann, Häßler",
+        "lang": "en"
+      }
     },
     {
       "id": "m048",
@@ -966,7 +1191,12 @@
       "pens": [
         5,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "10.07.94  (16.35) San Francisco, Stanford Stadium\nSWE - ROM 2:2 (0:0, 1:1, 1:2)  p. 5-4\n(+81000) Don ENG, Pearson ENG, Park Hae-young KOR\nSWE: Ravelli - Nilsson (c), P.Andersson, Björklund (83 Kåmark), Ljung - Schwarz,\nMild, Ingesson, Brolin - Dahlin (106 H.Larsson), K.Andersson\nROM: Prunea - Petrescu, Prodan, Belodedici, Lupescu - Popescu, Munteanu\n(83 Panduru), Selymes, Hagi (c) - Dumitrescu, Răducioiu\n1:0 Brolin 78, 1:1 Răducioiu 88, 1:2 Răducioiu 100, 2:2 K.Andersson 115 h\nPenalties: (0:0) Mild (out), 0:1 Răducioiu, 1:1 K.Andersson, 1:2 Hagi, 2:2\nBrolin, 2:3 Lupescu, 3:3 Ingesson, (3:3) Petrescu (save Ravelli), 4:3\nNillson, 4:4 Dumitrescu, 5:4 Larsson, (5:4) Belodedici (save Ravelli)\nbooked: Ingesson, Schwarz (2) / Selymes, Popescu, Panduru\nsent off: Schwarz (102)",
+        "lang": "en"
+      }
     },
     {
       "id": "m049",
@@ -979,7 +1209,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "13.07.94  (16.05) New York, Giants Stadium\nITA - BUL 2:1 (2:1)\n(+77000) Quiniou FRA, Pearson ENG, Christensen-Meyer DAN\nITA: Pagliuca - Mussi, Costacurta, Maldini (c), Benarrivo - Berti, D.Baggio\n(56 Conte), Albertini, Donadoni - R.Baggio (71 Signori), Casiraghi\nBUL: Mihailov (c) - Yankov, Kiriakov, Houbtchev, Balakov - Letchkov, Sirakov,\nIvanov, Tzvetanov - Kostadinov (72 Yordanov), Stoichkov (79 Guentchev)\n1:0 R.Baggio 20, 2:0 R.Baggio 25, 2:1 Stoichkov 42 p\nbooked: Costacurta, Albertini / Letchkov, Kostadinov, Yankov",
+        "lang": "en"
+      }
     },
     {
       "id": "m050",
@@ -992,7 +1227,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "13.07.94  (16.35) Los Angeles, Rose Bowl\nBRA - SWE 1:0 (0:0)\n(~93000) Torres COL, Marton HUN, Matthys BEL\nBRA: Taffarel - Jorginho, Marcio Santos, Aldair, Branco - Mazinho (46 Rai),\nZinho, Mauro Silva, Dunga (c) - Bebeto, Romário\nSWE: Ravelli - Nilsson, P.Andersson, Björklund, Ljung - Thern (c), Mild, Ingesson,\nBrolin - Dahlin (82 Rehn), K.Andersson\n1:0 Romário 80\nbooked: Zinho / Ljung, Brolin\nsent off: Thern (64)",
+        "lang": "en"
+      }
     },
     {
       "id": "m051",
@@ -1005,7 +1245,12 @@
       "score": [
         0,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:94full",
+        "text": "16.07.94  (12.35) Los Angeles, Rose Bowl\nSWE - BUL 4:0 (4:0)\n(-84000) Bujsaim EMI, Thaibi ARG, Rharib MAR\nSWE: Ravelli - Nilsson (c), P.Andersson, Björklund, Kåmark - Schwarz,\nMild, Ingesson, Brolin - Larsson (79 Limpar), K.Andersson\nBUL: Mihailov (c - 46 Nikolov) - Yankov, Kiriakov, Houbtchev,\nBalakov - Letchkov, Sirakov (46 Yordanov), Ivanov (42 Kremenljev),\nTzvetanov - Kostadinov, Stoichkov\n1:0 Brolin 8, 2:0 Mild 30, 3:0 Larsson 37, 4:0 K.Andersson 39\nbooked: K.Andersson / Yankov",
+        "lang": "en"
+      }
     },
     {
       "id": "m052",

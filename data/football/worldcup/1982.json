@@ -480,7 +480,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "14.06.82  (17.15) Vigo, Estadio Balaidos\nITA - POL 0:0\n(~33000) Vautrot FRA, Rainea ROM, Prokop DDR\nITA: Zoff (c) - Gentile, Collovati, Scirea, Cabrini - Antognoni,\nMarini, Tardelli, Conti - Graziani, Rossi\nPOL: Młynarczyk - Janas, Jałocha, Żmuda (c), Majewski - Matysik, Iwan\n(72 Kusto), Buncol, Lato - Smolarek, Boniek\nbooked: Marini, Scirea / Boniek",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -493,7 +498,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "15.06.82  (17.15) La Coruña, Estadio Riazor\nCAM - PER 0:0\n(~11000) Wöhrer AUT, Prokop DDR, Rainea ROM\nCAM: N'Kono (c) - Kaham, Kunde, Onana, N'Djeya - M'Bom, Abega, M'Bida, Aoudou -\nN'Guea (73 Bahoken), Milla (89 Tokoto)\nPER: Quiroga - Duarte, Ruben Díaz (c), Salguero, Olaechea -  Cueto,\nVelásquez, Cubillas (57 La Rosa) - Leguía (57 Barbadillo), Oblitas, Uribe\nbooked: N'Kono",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -506,7 +516,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "18.06.82  (17.15) Vigo, Estadio Balaidos\nITA - PER 1:1 (1:0)\n(~25000) Eschweiler GER, Klein ISR, Rubio MEX\nITA: Zoff (c) - Gentile, Collovati, Scirea, Cabrini - Antognoni, Marini, Tardelli,\nConti - Graziani, Rossi (46 Causio)\nPER: Quiroga - Duarte, Ruben Díaz (c), Salguero, Olaechea - Barbadillo\n(51 Leguía), Cueto, Velásquez, Cubillas - Oblitas, Uribe (65 La Rosa)\n1:0 Conti 18, 1:1 Collovati 84o\nbooked: Tardelli / Duarte",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -519,7 +534,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "19.06.82  (17.15) La Coruña, Estadio Riazor\nCAM - POL 0:0\n(~19000) Ponnet BEL, Rubio MEX, Eschweiler GER\nCAM: N'Kono (c) - Kaham, Kunde, Onana, N'Djeya - M'Bom, Abega, M'Bida, Aoudou,\nN'Guea (46 Tokoto), Milla\nPOL: Młynarczyk - Janas, Jałocha, Żmuda (c), Majewski - Buncol, Iwan (27\nSzarmach), Pałasz (67 Kusto) - Lato, Boniek, Smolarek\nbooked: Aoudou, Milla / Pałasz",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -532,7 +552,12 @@
       "score": [
         5,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "22.06.82  (17.15) La Coruña, Estadio Riazor\n(~25000) Rubio MEX, Soriano ESP, Sánchez ESP\nPOL - PER 5:1 (0:0)\nPOL: Młynarczyk - Janas, Jałocha (26 Dziuba), Żmuda (c), Majewski - Matysik,\nBuncol, Kupcewicz, Lato - Smolarek (74 Ciołek), Boniek\nPER: Quiroga - Duarte, Ruben Díaz (c), Salguero, Olaechea - La Rosa, Cueto,\nVelásquez, Cubillas (50 Uribe) - Oblitas (50 Barbadillo), Leguía\n1:0 Smolarek 55, 2:0 Lato 58, 3:0 Boniek 61, 4:0 Buncol 69, 5:0 Ciołek 76,\n5:1 La Rosa 83\nbooked: Oleachea",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -545,7 +570,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "23.06.82  (17.15) Vigo, Estadio Balaidos\nITA - CAM 1:1 (1:0)\n(~20000) Dochev BUL, Sánchez ESP, Soriano ESP\nITA: Zoff (c) - Gentile, Collovati, Scirea, Cabrini - Antognoni, Oriali,\nTardelli, Conti - Graziani, Rossi\nCAM: N'Kono (c) - Kaham, Kunde, Onana, N'Djeya - M'Bom, Abega, M'Bida,\nAoudou, Tokoto, Milla\n1:0 Graziani 60 h, 1:1 M'Bida 61\nbooked: Antognoni / N'Djeya",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -558,7 +588,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "16.06.82  (17.15) Gijon, Estadio El Molinón\nALG - GER 2:1 (0:0)\n(~42000) Labó PER, Casarin ITA, Aristizábal COL\nALG: Cerbah - Merzekane, Kourichi, Guendouz, Dahleb - Mansouri, Fergani (c),\nBelloumi, Madjer (88 Larbes) - Zidane (64 Bensaoula), Assad\nGER: Schumacher - Kaltz, K.H.Förster, Stielike, Briegel - Dremmler, Breitner,\nMagath (83 Fischer) - Littbarski, Hrubesch, Rummenigge (c)\n1:0 Madjer 52, 1:1 Rummenige 67, 2:1 Belloumi 88\nbooked: Madjer / Hrubesch",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -571,7 +606,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "17.06.82  (17.15) Oviedo, Estadio Carlos Tartiere\nAUT - CHI 1:0 (1:0)\n(+22000) Cardellino URU, Aristizábal COL, Casarin ITA\nAUT: Koncilia - Krauss, Obermayer (c), Pezzey, Degeorgi (79 Baumeister) -\nHattenberger, Prohaska, Hintermaier, Schachner - Krankl, Weber (79 Jurtin)\nCHI: Osben - Garrido, Valenzuela, E.Figueroa (c), Bigorra - Dubó, Yanez,\nNeira (72 Rojas), Bonvallet - Caszely, Moscoso (69 Gamboa)\n1:0 Schachner 21 h (26 Caszely missed penalty)\nbooked: Degeorgi, Hettenberger / Garrido",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -584,7 +624,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "20.06.82  (17.15) Gijon, Estadio El Molinón\n(~42000) Galler SUI, Boskovic AUS, Christov CZE\nGER - CHI 4:1 (1:0)\nGER: Schumacher - Kaltz, K.H.Förster, Stielike, Briegel - Dremmler,\nBreitner (61 Matthäus), Magath - Littbarski (79 Reinders), Hrubesch,\nRummenigge (c)\nCHI: Osben - Garrido, Valenzuela, Figueroa (c), Bigorra - Dubó, Yanez,\nBonvallet, Soto (46 Letelier) - Moscoso, Gamboa (66 Neira)\n1:0 Rummenige 9, 2:0 Rummenige 57 h, 3:0 Rummenige 66, 4:0 Reinders 81,\n4:1 Moscoso 90\nbooked: Dubó, Gamboa\n21.06.82  Oviedo, Estadio Carlos Tartiere\nAUT - ALG 2:0 (0:0)\n(~22000) Boskovic AUS, Christov CZE, Al-Doy BHR\nAUT: Koncilia - Krauss, Obermayer (c), Pezzey, Degeorgi - Hattenberger,\nProhaska (80 Weber), Hintermaier, Schachner - Krankl, Baumeister (46 Welzl)\nALG: Cerbah - Merzekane, Kourichi, Guendouz, Dahleb (76 Tlemcani) - Mansouri,\nFergani (c) Belloumi (66 Bensaoula) - Madjer, Zidane, Assad\n1:0 Schachner 55, 2:0 Krankl 67\nbooked: Mansouri",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -610,7 +655,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "24.06.82  (17.15) Oviedo, Estadio Carlos Tartiere\nALG - CHI 3:2 (3:0)\n(~16000) Méndes GUA, Fredriksson SWE, Coelho BRA\nALG: Cerbah - Merzekane, Kourichi, Guendouz, Bourrebou (31 Yahi) - Mansouri\n(73 Dahleb), Fergani (c), Madjer, Larbes - Bensaoula, Assad\nCHI: Osben - Gallindo, Valenzuela, E.Figueroa (c), Bigorra - Dubó,\nYanez, Bonvallet (37 Soto), Caszely (58 Letelier) - Moscoso, Neira\n1:0 Assad 7, 2:0 Assad 31, 3:0 Benssoula 35, 3:1 Neira 59 p, 3:2 Letelier 73\nbooked: Letelier\n25.06.82  Vigo, Estadio Balaidos\nGER - AUT 1:0 (1:0)\n(~41000) Valentine SCO, Coelho BRA, Al-Doy BHR\nGER: Schumacher - Kaltz, K.H.Förster, Stielike, Briegel - Dremmler, Breitner,\nMagath - Littbarski, Hrubesch (69 Fischer), Rummenigge (c - 66 Matthäus)\nAUT: Koncilia - Krauss, Obermayer (c), Pezzey, Degeorgi - Hattenberger,\nProhaska, Hintermaier, Schachner - Krankl, Weber\n1:0 Hrubesch 10 h\nbooked: Hintermaier, Schachner",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -636,7 +686,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "13.06.82  (20.00) Barcelona, Estadio Nou Camp\nBEL - ARG 1:0 (0:0)\n(~95000) Christov CZE, Palotai HUN, Jarguz POL\nBEL: Pfaff - Gerets (c), L.Millecamps, Baecke, de Schrijver -  Coeck,\nVercauteren, Vandersmissen, van den Bergh - Czerniatynski, Ceulemans\nARG: Fillol - Olguin, Galvan, Passarella (c), Tarantini - Ardiles, Maradona,\nGallego, Bertoni - Ramon Diaz (64 Valdano), Kempes\n1:0 van den Bergh 62\nbooked: Millecamps / Bertoni\nNOTE: Match preceded by WC opening ceremony",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -649,7 +704,12 @@
       "score": [
         10,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "15.06.82  (21.00) Elche, Nuevo Estadio\nHUN - SAL 10:1 (3:0)\n(~23000) Al-Doy BHR, Corver HOL, Lund-Sørensen DAN\nHUN: Meszaros - Bálint, Martos, Garaba, J.Tóth - S.Müller (69 Szentes),\nNyilasi (c), Sallai, Fazekas - Tórócsik (56 L.Kiss), Pölöskei\nSAL: Guevara Mora - Castillo, Cruz Jovel, Rodriguez, Recinos -\nHuezo (c), Rugamas (Ramirez Zapata), Ventura, Rivas - Hernández, González\n1:0 Nyilasi 4 h, 2:0 Pölöskei 11, 3:0 Fazekas 23, 4:0 Tóth 50, 5:0 Fazekas\n54, 5:1 Ramirez 64, 6:1 Kiss 70, 7:1 Szentes 71, 8:1 Kiss 73, 9:1 Kiss 78,\n10:1 Nyilasi 83 h\nbooked: Fazekas, Nyilasi",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -662,7 +722,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "18.06.82  (21.00) Alicante, June 18th - Estadio José Rico Pérez\nARG - HUN 4:1 (2:0)\n(+32000) Lacarne ALG, Vautrot FRA, Rainea ROM\nARG: Fillol - Olguin, Galvan, Passarella (c), Tarantini (51 Barbas) -\nArdiles, Maradona, Gallego, Bertoni - Valdano (24 Calderón), Kempes\nHUN: Meszaros - Bálint, Martos (46 Fazekas), Garaba, J.Tóth - Rab,\nNyilasi (c), Sallai, Varga - L.Kiss (62 Szentes), Pölöskei\n1:0 Bertoni 26, 2:0 Maradona 28 h, 3:0 Maradona 57, 4:0 Ardiles 60, 4:1\nPölöskei 76",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -675,7 +740,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "19.06.82 (21.00) Elche, Nuevo Estadio\nBEL - SAL 1:0 (1:0)\n(~15000) Moffatt NIR, Jarguz POL, Castro CHI\nBEL: Pfaff - Gerets (c), Millecamps, Baecke, Meeuws, Coeck - Vercauteren,\nVandersmissen (46 Fç.van der Elst), van den Bergh - Czerniatynski, Ceulemans\n(79 van Moer)\nSAL: Guevara Mora - Osorto (46 Diaz Arevalo), Cruz Jovel, Rodriguez - Recinos,\nFagoaga, Ramirez Zapata, Ventura - Rivas, Huezo, Gonzalez\n1:0 Coeck 19\nbooked: Osorto, Fagoaga",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -688,7 +758,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "22.06.82  (21.00) Elche, Nuevo Estadio\nBEL - HUN 1:1 (0:1)\n(~37000) White ENG, Lecarne ALG, Eschweiler GER\nBEL: Pfaff - Gerets (c - 62 Plessers), Millecamps, Baecke, Meeuws -\nCoeck, Vercauteren, Vandersmissen (46 van Moer), van den Bergh -\nCzerniatynski, Ceulemans\nHUN: Meszaros - Kerekes, Martos, Fazekas, Garaba - S.Müller (67\nSallai), Nyilasi (c), Tórócsik, Varga - L.Kiss (70 Csongrádi), Pölöskei\n0:1 Varga 27, 1:1 Czerniatynski 76\nbooked: Pfaff, Meeuws",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -701,7 +776,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "23.06.82  (21.00) Alicante, Estadio José Rico Perez\nARG - SAL 2:0 (1:0)\n(~32000) Barrancos BOL, Lamo Castillo ESP, Lecarne ALG\nARG: Fillol - Olguin, Galvan, Passarella, Tarantini - Ardiles, Maradona,\nGallego, Bertoni (68 Ramon Diaz) - Calderon (80 Santamaria), Kempes\nSAL: Guevara Mora - Osorto (34 Diaz Arevalo), Cruz Jovel, Rodriguez, Recinos -\nRugamas, Ramirez Zapata, Ventura (79 Alfaro), Rivas - Huezo, Gonzalez\n1:0 Passarella 22 p, 2:0 Bertoni 52\nbooked: Gallego, Olguin / Ramirez, Racinez, Osorto",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -714,7 +794,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "16.06.82  (17.15) Bilbao, Estadio San Mamés\nENG - FRA 3:1 (1:1)\n(+44000) Garrido POR, Coelho BRA, Castro CHI\nENG: Shilton - Butcher, Mills (c), Sansom (90 Neal), Thompson - Coppell,\nRobson, Wilkins, Francis - Mariner, Rix\nFRA: Ettori - Battiston, Bossis, Trésor, López - Larios (73 Tigana), Girard,\nGiresse, Rocheteau (71 Six) - Platini (c), Soler\n1:0 Robson 1 (27 sec), 1:1 Soler 26, 2:1 Robson 67 h, 3:1 Mariner 83\nbooked: Butcher",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -727,7 +812,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "17.06.82  (17.15) Valladolid, Nueva Estadio José Zorilla\nCZE - KUW 1:1 (1:0)\n(~25000) Dwomoh GHA, Valentine SCO, Méndez GUA\nCZE: Hruška - Barmoš, Jurkemik, Fiala, Kukučka - Panenka, Berger, Křiž\n(62 Bičovský), Janečka (68 Petřela) - Nehoda (c), Vizek\nKUW: Al Tarabulsi - Naeem Saed, Ma'Yoof, Mubarak, Jasem - Al Buloushi,\nAl Houti (c), Ahmed Karam (57 Marzouq), Al Anbari - Yaqoub, Al Dakheel\n1:0 Panenka 21 p, 1:1 Al Dakheel 27",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -740,7 +830,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "20.06.82  (17.15) Bilbao, Estadio San Mamés\nENG - CZE 2:0 (0:0)\n(+41000) Corver HOL, Dochev BUL, Aristizábal COL\nENG: Shilton - Butcher, Mills (c), Sansom, Thompson - Coppell, Robson\n(46 Hoddle), Wilkins, Francis - Mariner, Rix\nCZE: Seman (75 Stromšik) - Barmoš, Jurkemik, Fiala, Radimec - Chaloupka,\nBerger, Vojáček, Janečka (77 Masný) - Nehoda (c), Vizek\n1:0 Francis 62, 2:0 Barmoš 66 o\nbooked: Chaloupka",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -753,7 +848,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "21.06.82  (17.15) Valladolid, Nuevo Estadio José Zorilla\nFRA - KUW 4:1 (2:0)\n(+30000) Stupar ZSR, Matovinović JUG, Fredriksson SWE\nFRA: Ettori - Amoros, Bossis, Trésor, Janvion (60 López) - Genghini,\nGiresse, Six, Platini (c - 81 Girard) - Lacombe, Soler\nKUW: Al Tarabulsi - Naeem Saed, Ma'Yoof, Mubarak, Jasem (78 Al Shemmari) -\nAl Buloushi, Al Houti (c), Ahmed Karam (46 Marzouq), Al Anbari - Yaqoub,\nAl Dakheel\n1:0 Genghini 31 f, 2:0 Platini 43, 3:0 Six 48, 3:1 Al Buloushi 75, 4:1 Bossis\n89\nbooked: Amoros / Marzouq, Al Anbari",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -766,7 +866,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "24.06.82  (17.15) Valladolid, Nuevo Estadio José Zorilla\nCZE - FRA 1:1 (0:0)\n(~25000) Casarin ITA, Palotai HUN, Dwomoh GHA\nCZE: Stromšik - Barmoš, Křiž (31 Masný), Fiala, Radimec - Stambacher,\nBičovský, Vojáček, Janečka (71 Panenka) - Nehoda (c), Vizek\nFRA: Ettori - Amoros, Bossis, Trésor, Janvion - Genghini, Giresse, Six,\nPlatini (c) - Lacombe (70 Couriol), Soler (89 Girard)\n0:1 Six 66, 1:1 Panenka 84 p\nbooked: Amoros / Panenka\nsent off: Vizek (82)",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -779,7 +884,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "25.06.82  (17.15) Bilbao, Estadio San Mamés\nENG - KUW 1:0 (1:0)\n(-40000) Aristizábal COL, Lund-Sørensen DAN, Garcia ESP\nENG: Shilton - Foster, Mills (c), Neal, Thompson - Coppell, Hoddle, Wilkins,\nFrancis - Mariner, Rix\nKUW: Al Tarabulsi - Naeem Saed, Ma'Yoof, M.Mubarak, Al Mubarak (76 Al\nShemmari) - Al Buloushi, Al Houti (c), Marzouq, Al Anbari - Al Suwaayed,\nAl Dakheel\n1:0 Francis 27\nbooked: Mariner / M.Mubarak",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -792,7 +902,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "16.06.82  (21.00) Valencia, Estadio Luis Casanova\nHON - ESP 1:1 (1:0)\n(-50000) Ithurralde ARG, Barrancos BOL, Dochev BUL\nHON: Arzu - Gutiérrez, Villegas, Costly, Bulnes - Maradiaga (c),\nYearwood, Zelaya, Norales (69 Caballero) - Betancourt, R.Figueroa\nESP: Arconada (c) - Camacho, Tendillo, Alexanco, Gordillo - Joaquin\n(46 Sánchez), M.A.Alonso, Zamora, Juanito (46 Saura) - Satrustegui, López\nUfarte\n1:0 Zelaya 7, 1:1 López Ufarte 66 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -805,7 +920,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "17.06.82  (21.00) Zaragoza, Estadio La Romereda\nNIR - JUG 0:0\n(~25000) Fredriksson SWE, Palotai HUN, Galler SUI\nNIR: Jennings - J.Nicholl, C.Nicholl, McClelland, Donaghy - McIlroy,\nM.O'Neill (c), McCreery, Armstrong - Hamilton, Whiteside\nJUG: Pantelić - Zajec, Jovanović, Stojković, Hrstić - Šljivo, Gudelj,\nŠurjak (c), Petrović - Zl.Vujović, Sušić\nbooked: Whiteside",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -818,7 +938,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "20.06.82  (21.00) Valencia, Estadio Luis Casanova\nESP - JUG 2:1 (1:1)\n(~48000) Lund-Sørensen DAN, Ithurralde ARG, Garrido POR\nESP: Arconada (c) - Camacho, Tendillo, Alexanco, Gordillo - Sánchez\n(62 Saura), Alonso, Zamora, Juanito - Satrustegui (62 Quini), López Ufarte\nJUG: Pantelić - Zajec, Jovanović (74 Halilhodžić), Stojković - Krmpotić,\nŠlijvo, Gudelj, Šurjak (c), Petrović - Zl.Vujović (83 Šestić), Sušić\n0:1 Gudelj 10 h, 1:1 Juanito 14 p, 2:1 Saura 66 (14 López Ufarte missed penalty,\nwhich was repeated)\nbooked: Zamora, Gordillo / Stojković, Silvo",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -831,7 +956,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "21.06.82  (21.00) Zaragoza, Estadio La Romereda\nHON - NIR 1:1 (0:1)\n(~15000) Chan Tam Sung HKG, Casarin ITA, Labó PER\nHON: Arzu - Gutierrez, Villegas, Costly, José Cruz - Maradiaga (c),\nYearwood, Zelaya - Norales (56 Laing), Betancourt, R.Figueroa\nNIR: Jennings - J.Nicholl, C.Nicholl, McClelland, Donaghy - McIlroy,\nM.O'Neill (c - 76 Healy), McCreery, Armstrong - Hamilton, Whiteside\n(86 Brotherston)\n0:1 Armstrong 9 h, 1:1 Laing 60 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -855,6 +985,11 @@
             "reason": "Errata de 82full (24.06.98); JUG-HON es de 1982, como confirma 82f."
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "24.06.98  (21.00) Zaragoza, Estadio La Romereda\nJUG - HON 1:0 (0:0)\n(~25000) Castro CHI, Silva COS, Ithurralde ARG\nJUG: Pantelić - Zajec, Jovanović (64 Halihodžić), Stojković - Krmpotić,\nSlijvo, Gudelj, Šurjak (c) - Petrović, Zl.Vujović (63 Šestić), Sušić\nHON: Arzu - Drummond, Villegas, Costly, José Cruz (65 Laing) -\nMaradiaga (c), Yearwood, Zelaya, Bulnes - Betancourt, R.Figueroa\n1:0 Petrović 88 p\nbooked: Krmpotić / Marandiaga\nsent off: Yearwood (87)",
+        "lang": "en"
       }
     },
     {
@@ -868,7 +1003,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "25.06.82  (21.00) Valencia, Estadio Luis Casanova\nNIR - ESP 1:0 (0:0)\n(+49500) Ortiz PAR, Labó PER, Ponnet BEL\nNIR: Jennings - J.Nicholl, C.Nicholl, McClelland, Donaghy - McIlroy\n(50 Cassidy), M.O'Neill (c), McCreery, Armstrong, Hamilton, Whiteside\n(72 Nelson).\nESP: Arconada (c) - Camacho, Tendillo, Alexanco, Gordillo, Sánchez - Alonso,\nSaura, Juanito - Satrustegui (48 Quini), López Ufarte (78 Gallego)\n1:0 Armstrong 48\nbooked: Hamilton, McIlroy / Juanito\nsent off: Donaghy (61)",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -881,7 +1021,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "14.06.82  (21.00) Seville, Estadio Sanchez Pizjuan\nBRA - ZSR 2:1 (0:1)\n(~68000) Lamo Castillo ESP, Garcia ESP, Sánchez ESP\nBRA: Valdir Perez - Leandro, Oscar, Luizinho, Junior - Socrates (c), Dirceu\n(46 Paulo Isidoro), Zico, Falção - Serginho, Eder\nZSR: Dassajev - Sulakvelidze, Chivadze (c), Baltacha, Demianenko - Bessonov,\nGavrilov (74 Susloparov), Bal, Daraselia - Shengelia (88 Andreyev), Blokhin\n0:1 Bal 34, 1:1 Socrates 75, 2:1 Eder 88",
+        "lang": "en"
+      }
     },
     {
       "id": "m032",
@@ -894,7 +1039,12 @@
       "score": [
         5,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "15.06.82  (21.00) Malaga, Estadio La Rosaleda\nSCO - NZL 5:2 (3:0)\n(~36000) Socha USA, Chan Tam Sun HKG, El-Ghoul LBA\nSCO: Rough - McGrain (c), Hansen, Evans, F.Gray - Souness, Strachan\n(83 Narey), Dalglish, Wark - Brazil (53 Archibald), Robertson\nNZL: van Hattum - Hill, Malcolmson (77 Cole), Elrick, Almond (65 Herbert) -\nSumner (c), McKay, Cresswell, Boath - Rufer, Wooddin\n1:0 Dalglish 18, 2:0 Wark 29, 3:0 Wark 32 h, 3:1 Sumner 54, 3:2 Woodin 64,\n4:2 Robertson 73 f, 5:2 Archibald 79",
+        "lang": "en"
+      }
     },
     {
       "id": "m033",
@@ -907,7 +1057,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "18.06.82  (21.00) Seville, Estadio Benito Villamarin\nBRA - SCO 4:1 (1:1)\n(+47000) Siles COS, Chan Tam Sun HKG, Prokop DDR\nBRA: Valdir Perez - Leandro, Oscar, Luizinho, Junior - Socrates (c), Cerezo,\nZico, Falção - Serginho (80 Paulo Isidoro), Eder\nSCO: Rough - Miller, Hansen, Hartford (66 McLeish), Gray - Souness (c),\nStrachan (62 Dalglish), Narey - Wark, Archibald, Robertson\n0:1 Narey 18, 1:1 Zico 33 f, 2:1 Oscar 46 h, 3:1 Eder 63, 4:1 Falção 87",
+        "lang": "en"
+      }
     },
     {
       "id": "m034",
@@ -920,7 +1075,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "19.06.82  (21.00) Malaga, Estadio La Rosaleda\nZSR - NZL 3:0 (1:0)\n(~19000) El-Ghoul LBA, White ENG, Soriano ESP\nZSR: Dassajev - Sulakvelidze, Chivadze (c), Baltacha, Demianenko - Bessonov,\nGavrilov (79 Rodionov), Bal - Daraselia (46 Oganesian), Shengelia, Blokhin\nNZL: van Hattum - Dods, Cole, Elrick, Herbert - Sumner (c), McKay, Cresswell,\nBoath - Rufer, Wooddin\n1:0 Gavrilov 24, 2:0 Blokhin 48, 3:0 Baltacha 68",
+        "lang": "en"
+      }
     },
     {
       "id": "m035",
@@ -933,7 +1093,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "22.06.82  (21.00) Malaga, Estadio La Rosaleda\nSCO - ZSR 2:2 (1:0)\n(~45000) Rainea ROM, Ponnet BEL, Jarguz POL\nSCO: Rough - Miller, Hansen, Jordan (72 Brazil), Gray - Souness (c),\nStrachan (72 McGrain), Narey, Wark - Archibald, Robertson\nZSR: Dassajev - Sulakvelidze, Chivadze (c), Baltacha, Demianenko - Bessonov,\nGavrilov, Bal, Borovsky - Shengelia (88 Andreyev), Blokhin\n1:0 Jordan 15, 1:1 Chivadze 59, 1:2 Shengelia 84, 2:2 Souness 86\nbooked: Souness",
+        "lang": "en"
+      }
     },
     {
       "id": "m036",
@@ -946,7 +1111,12 @@
       "score": [
         4,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "23.06.82  (21.00) Seville, Estadio Benito Villamarin\nBRA - NZL 4:0 (2:0)\n(~43000) Matovinović JUG, Corver HOL, Klein ISR\nBRA: Valdir Perez - Leandro, Oscar (75 Edinho), Luizinho, Junior -\nSocrates (c), Cerezo, Zico, Falção - Serginho (75 Paulo Isidoro), Eder\nNZL: van Hattum - Dods, Almond, Elrick, Herbert - Sumner (c), McKay, Cresswell\n(78 Cole), Boath - Rufer (78 B.Turner), Wooddin\n1:0 Zico 28, 2:0 Zico 31, 3:0 Falção 64, 4:0 Serginho 70",
+        "lang": "en"
+      }
     },
     {
       "id": "m037",
@@ -959,7 +1129,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "28.06.82  (21.00) Barcelona, Estadio Nou Camp\nPOL - BEL 3:0 (2:0)\n(~65000) Silos COS, Labó PER, Castro CHI\nPOL: Młynarczyk - Dziuba, Majewski, Żmuda (c), Janas - Lato, Buncol, Matysik,\nKupcewicz (82 Ciołek) - Boniek, Smolarek\nBEL: Custers - Renquin, L.Millecamps, Meeuws, Plessers (88 Baecke) - van\nMoer (c - 46 F.van der Elst), Coeck, Vercauteren, Ceulemans - Van den Bergh,\nCzerniatynski\n1:0 Boniek 3, 2:0 Boniek 25 h, 3:0 Boniek 54\nbooked: Smolarek",
+        "lang": "en"
+      }
     },
     {
       "id": "m038",
@@ -972,7 +1147,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "01.07.82  (21.00) Barcelona, Estadio Nou Camp\nZSR - BEL 1:0 (0:0)\n(~45000) Vautrot FRA, Garrido POR, Corver HOL\nZSR: Dassajev - Borovsky, Chivadze (c), Baltacha, Demianenko - Bessonov,\nBal (87 Daraselia), Gavrilov, Shengelia (89 Rodionov) - Oganesian, Blokhin\nBEL: Munaron - Renquin, L.Millecamps, Meeuws (c), de Schrijver (65\nM.Millecamps) - Verheyen, van der Smissen (58 Czerniatynski), Coeck, Vercauteren -\nCeulemans, van den Bergh\n1:0 Oganesian 46",
+        "lang": "en"
+      }
     },
     {
       "id": "m039",
@@ -985,7 +1165,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "04.07.82  (21.00) Barcelona, Estadio Nou Camp\nPOL - ZSR 0:0\n(~65000) Valentine SCO, White ENG, Lund-Sørensen DAN\nPOL: Młynarczyk - Dziuba, Majewski, Żmuda (c), Janas - Lato, Buncol, Matysik,\nKupcewicz (51 Ciołek) - Boniek, Smolarek\nZSR: Dassajev - Borovsky, Chivadze (c), Baltacha, Demianenko - Bessonov,\nSulakvelidze, Gavrilov (78 Daraselia), Shengelia (57 Andreyev) - Oganesian,\nBlokhin\nbooked: Boniek, Buncol / Chivadze, Borovsky, Baltacha",
+        "lang": "en"
+      }
     },
     {
       "id": "m040",
@@ -998,7 +1183,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "29.06.82  (21.00) Madrid, Estadio Santiago Bernabeu\nENG - GER 0:0\n(~75000) Coelho BRA, Ortiz PAR, Méndez GUA\nENG: Shilton - Butcher, Mills (c), Thompson, Sansom - Coppell, Robson,\nWilkins, Francis (78 Woodcock) - Mariner, Rix\nGER: Schumacher - Kaltz, K.-H.Förster, Stielike, Briegel - Dremmler,\nB.Förster, Breitner, H.Muller (74 Fischer) - Reinders (63 Littbarski),\nRummenigge (c)\nbooked: Stielike",
+        "lang": "en"
+      }
     },
     {
       "id": "m041",
@@ -1011,7 +1201,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "02.07.82  (21.00) Madrid, Estadio Santiago Bernabeu\nGER - ESP 2:1 (0:0)\n(+90000) Casarin ITA, Wöhrer AUT, Palotai HUN\nGER: Schumacher - Kaltz, K.H.Förster, Stielike, Briegel - Dremmler,\nB.Förster, Breitner, Fischer - Littbarski, Rummenigge (c - 46 Reinders)\nESP: Arconada (c) - Urquiaga, Tendillo, Alexanco, Gordillo - Camacho,\nAlonso, Zamora, Juanito (46 López Ufarte) - Quini (65 Sánchez), Santillana.\n1:0 Littbarski 60, 2:0 Fischer 75, 2:1 Zamora 82 h\nbooked: Fischer, Briegel / Alesanco, Sánchez, Camacho",
+        "lang": "en"
+      }
     },
     {
       "id": "m042",
@@ -1024,7 +1219,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "05.07.82  (21.00) Madrid, Estadio Santiago Bernabeu\nENG - ESP 0:0\n(~75000) Ponnet BEL, Lacarne ALG, Vautrot FRA\nENG: Shilton - Butcher, Mills (c), Thompson, Sansom - Robson, Wilkins,\nFrancis, Woodcock (64 Keegan) - Mariner, Rix (63 Brooking)\nESP: Arconada (c) - Urquiaga, Tendillo (73 Maceda), Alexanco, Gordillo - Saura\n(67 Uralde), Alonso, Zamora, Camacho - Satrustegui, Santillana\nbooked: Wilkins",
+        "lang": "en"
+      }
     },
     {
       "id": "m043",
@@ -1037,7 +1237,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "29.06.82  (17.15) Barcelona, Estadio Sarria\nITA - ARG 2:1 (0:0)\n(~43000) Rainea ROM, Galler SUI, Lacarne ALG\nITA: Zoff (c) - Gentile, Cabrini, Collovati, Scirea - Tardelli, Antognoni,\nOriali (76 Marini), Conti - Rossi (81 Altobelli), Graziani\nARG: Fillol - Olguin, Galvan, Passarella (c), Tarantini - Gallego,\nArdiles, Maradona, Bertoni - Diaz (59 Calderón), Kempes (59 Valencia)\n1:0 Tardelli 55, 2:0 Cabrini 67, 2:1 Passarella 83 f\nbooked: Rossi, Gentile / Ardiles, Kempes, Maradona\nsent off: Gallego (84)",
+        "lang": "en"
+      }
     },
     {
       "id": "m044",
@@ -1050,7 +1255,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "02.07.82  (17.15) Barcelona, Estadio Sarria\nBRA - ARG 3:1 (1:0)\n(~44000) Rubio MEX, Castro CHI, Aristizábal COL\nBRA: Valdir Perez - Leandro (82 Edevaldo), Oscar, Luizinho, Junior -\nCerezo, Zico (84 Batista), Falção, Serginho - Socrates (c), Eder\nARG: Fillol - Olguin, Galvan, Passarella (c), Tarantini - Barbas, Ardiles,\nMaradona, Bertoni (64 Santamaria) - Calderón, Kempes (46 Diaz)\n1:0 Zico 11, 2:0 Serginho 66 h, 3:0 Junior 75, 3:1 Diaz 89\nbooked: Valdir Perez, Falção / Passarella\nsent off: Maradona (82)",
+        "lang": "en"
+      }
     },
     {
       "id": "m045",
@@ -1063,7 +1273,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "05.07.82  (17.15) Barcelona, Estadio Sarria\nITA - BRA 3:2 (2:1)\n(~44000) Klein ISR, Chan Tam Sun HKG, Dochev BUL\nITA: Zoff (c) - Gentile, Cabrini, Collovati (34 Bergomi), Scirea - Tardelli\n(76 Marini), Antognoni, Oriali, Conti - Rossi, Graziani\nBRA: Valdir Perez - Leandro, Oscar, Luizinho, Junior, Cerezo - Zico, Falcão,\nSerginho (69 Paulo Isidoro) - Socrates (c), Eder\n1:0 Rossi 8 h, 1:1 Socrates 12, 2:1 Rossi 25, 2:2 Falção 68, 3:2 Rossi 74\nbooked: Gentile, Oriali",
+        "lang": "en"
+      }
     },
     {
       "id": "m046",
@@ -1076,7 +1291,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "28.06.82  (17.15) Madrid, Estadio Vicente Calderon\nFRA - AUT 1:0 (1:0)\n(~37000) Palotai HUN, Christov CZE, Matovinović JUG\nFRA: Ettori - Battiston, Janvion, Trésor (c), Bossis - Giresse, Tigana,\nGenghini (85 Girard), Soler - Lacombe (16 Rocheteau), Six\nAUT: Koncilia - Krauss, Obermayer (c), Pezzey, Degeorgi (46 Baumeister) -\nProhaska, Hintermaier, Hattenberger, Schachner - Jara (46 Welzl), Krankl\n1:0 Genghini 39 f\nbooked: Obermayer",
+        "lang": "en"
+      }
     },
     {
       "id": "m047",
@@ -1089,7 +1309,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "01.07.82  (17.15) Madrid, Estadio Vicente Calderon\nAUT - NIR 2:2 (0:1)\n(~20000) Prokop DDR, Eschweiler GER, Fredriksson SWE\nAUT: Koncilia - Krauss, Obermayer (c), Pezzey, Baumeister - Prohaska,\nPregersbauer (46 Hintermaier), Pichler - Schachner, Hagmayr (46 Welzl), Jurtin\nNIR: Platt - J.Nicholl, C.Nicholl, McIlroy, Nelson - H.O'Neill (c), McClelland,\nArmstrong, Hamilton - Whiteside (69 Brotherston), McCreery\n0:1 Hamilton 27 h, 1:1 Pezzey 50, 2:1 Hintermayer 68 f, 2:2 Hamilton 75 h\nbooked: Pichler",
+        "lang": "en"
+      }
     },
     {
       "id": "m048",
@@ -1102,7 +1327,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "04.07.82  (17.15) Madrid, Estadio Vicente Calderon\nFRA - NIR 4:1 (1:0)\n(~37000) Jarguz POL, El-Ghoul LBA, Rainea ROM\nFRA: Ettori - Amoros, Janvion, Trésor (c), Bossis - Giresse, Tigana, Genghini,\nSoler (63 Six) - Platini, Rocheteau (84 Couriol)\nNIR: Jennings - J.Nicholl, C.Nicholl, McIlroy, Donaghy - H.O'Neill (c),\nMcClelland, Armstrong, Hamilton - Whiteside, McCreery (86 J.O'Neill)\n1:0 Giresse 33, 2:0 Rocheteau 46, 3:0 Rocheteau 68, 3:1 Armstrong 75, 4:1\nGiresse 80 h\nbooked: Tigana / Hamilton",
+        "lang": "en"
+      }
     },
     {
       "id": "m049",
@@ -1115,7 +1345,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "08.07.82  (17.15) Barcelona, Estadio Nou Camp\nITA - POL 2:0 (1:0)\n(~50000) Cardellino URU, Aristázabal COL, Socha USA\nITA: Zoff (c) - Cabrini, Collovati, Bergomi, Scirea - Antognoni (26 Marini),\nConti, Oriali, Tardelli - Rossi, Graziani (70 Altobelli)\nPOL: Mlynarczyk - Dziuba, Żmuda (c), Janas, Majewski - Matysik, Kupcewicz,\nBuncol, Lato - Ciołek (46 Pałasz), Smolarek (79 Kusto)\n1:0 Rossi 22, 2:0 Rossi 73 h\nbooked: Collovati / Majewski, Smolarek, Żmuda",
+        "lang": "en"
+      }
     },
     {
       "id": "m050",
@@ -1148,7 +1383,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "10.07.82  (20.00) Alicante, Estadio José Rico Perez\nPOL - FRA 3:2 (2:1)\n(~28000) Garrido POR, Rubio MEX, Lacarne ALG\nPOL: Młynarczyk - Dziuba, Żmuda, Janas, Majewski - Matysik (46 Wójcicki),\nKupcewicz, Buncol, Lato - Boniek, Szarmach\nFRA: Castaneda - Amoros, Mahut, Trésor (c), Janvion (64 López) - Girard,\nLarios, Tigana (82 Six), Couriol - Soler, Bellone\n0:1 Girard 13, 1:1 Szarmach 41, 2:1 Majewski 44 h, 3:1 Kupcewicz 46 f, 3:2\nCouriol 73\nbooked: Buncol, Wójcicki / Soler",
+        "lang": "en"
+      }
     },
     {
       "id": "m052",
@@ -1161,7 +1401,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:82full",
+        "text": "11.07.1982  (20.00) Madrid, Estadio Bernabeu\nITA - GER 3:1 (0:0)\n(~90000) Coelho BRA, Klein ISR, Christov CZE\nITA: Zoff - Gentile, Scirea, Collovati, Bergomi - Cabrini, Oriali, Tardelli,\nConti - Graziani (8 Altobelli, 88 Causio), Rossi\nGER: Schumacher - Kaltz, Stieleke, K.-H.Förster, B.Förster - Dremmler\n(63 Hrubesch), Breitner, Rummenigge (70 H.Müller) -  Briegel, Littbarski,\nFischer\n1:0 Rossi 57, 2:0 Tardelli 69, 3:0 Altobelli 81, 3:1 Breitner 83 (25 Cabrini\nmissed penalty)\nbooked: Conti, Oriali / Dremmler, Littbarski, Stielike",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [

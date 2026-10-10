@@ -336,7 +336,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "09.06.90  (21.00) Roma, Stadio Olimpico\nITA - AUT 1:0 (0:0)\n(+72000) Wright BRA, Pérez COL, Valente POR\nITA: Zenga - F.Baresi, Bergomi (c), Ferri, Maldini - Ancelotti (46 de Agostini),\nde Napoli, Giannini - Donadoni, Carnevale (76 Schillaci), Vialli\nAUT: Lindenberger - Russ, Pecl, Aigner, Streiter - Schöttel, Linzmaier\n(81 Hörtnagl), Artner (61 Zsak), Herzog - Polster (c), Ogris\n1:0 Schillaci 78 h\nbooked: Herzog",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -349,7 +354,12 @@
       "score": [
         1,
         5
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "10.06.90  (17.00) Florence, Stadio Communale\nCZE - USA 5:1 (2:0)\n(+33000) Röthlisberger SUI, Schmidhuber GER, Van Langenhove BEL\nCZE: Stejskal - Straka, Kadlec, Kocian, Hašek (c) - Kubik, Bilek, Chovanec,\nMoravčik (83 Weiss) - Skuhravý, Knofliček (77 Luhový)\nUSA: Meola (c) - Trittschuh, Windischmann, Armstrong, Wynalda - Caligiuri, Ramos,\nHarkes, Stollmeyer (64 Balboa) - Murray (79 Sullivan), Vermes\n1:0 Skuhravý 25, 2:0 Bilek 39 p, 3:0 Hašek 50 h, 3:1 Caliguri 61, 4:1 Skuhravý\n78 h, 5:1 Luhový 90 (88 Meola saved a penalty by Bilek)\nbooked: Kubik, Kadlec / Meola, Trittschuh\nsent off: Wynalda (52)",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -362,7 +372,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "14.06.90  (21.00) Roma, Stadio Olimpico\nITA - USA 1:0 (1:0)\n(+73000) Codesal MEX, Ulloa COS, Cardellino URU\nITA: Zenga - F.Baresi, Bergomi (c), Ferri, Maldini - Berti, de Napoli, Giannini,\nDonadoni - Carnevale (52 Schillaci), Vialli\nUSA: Meola (c) - Doyle, Banks (81 Stollmeyer), Windischmann, Armstrong -\nBalboa, Caligiuri, Ramos, Harkes - Murray (83 Sullivan), Vermes\n1:0 Giannini 11 (20 Vialli missed penalty)\nbooked: Ferri / Banks",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -386,6 +401,11 @@
             "reason": "Errata de año en 90full (15.06.94); el partido se jugó el 15.06.1990 (90f)."
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "15.06.94  (17.00) Florence, Stadio Communale\nCZE - AUT 1:0 (1:0)\n(-39000) Smith SCO, Al-Sharif SYR, Lorenc AUS\nCZE: Stejskal - Kadlec, Kocian, Hašek (c), Kubik - Bilek, Chovanec (32\nBielik), Moravčik, Nemeček - Skuhravý, Knofliček (83 Weiss)\nAUT: Lindenberger - Pfeffer, Pecl, Aigner, Russ (46 Streiter) - Schöttel\n(46 Ogris), Hörtnagl, Zsak, Herzog - Rodax, Polster (c)\n1:0 Bilek 30 p\nbooked: Moravčik, Kubik / Pecl, Zsak, Streiter, Pfeiffer",
+        "lang": "en"
       }
     },
     {
@@ -399,7 +419,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "19.06.90  (21.00) Roma, Stadio Olimpico\nITA - CZE 2:0 (1:0)\n(+73000) Quiniou FRA, Van Langenhove BEL, Smith SCO\nITA: Zenga - F.Baresi, Bergomi (c), Ferri, Maldini - Berti, de Napoli\n(66 Vierchowod), Giannini, Donadoni (52 de Agostini) - R.Baggio, Schillaci\nCZE: Stejskal - Kadlec, Kinier, Hašek (c), Bilek - Chovanec, Moravčik, Nemeček\n(46 Bielik) - Skuhravý, Knofliček, Weiss (58 Griga)\n1:0 Schillaci 9 h, 2:0 R.Baggio 78\nbooked: R.Baggio, Berti / Chovanec, Skuhravý",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -412,7 +437,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "19.06.90  (21.00) Florence, Stadio Communale\nAUT - USA 2:1 (0:0)\n(-35000) Al-Sharif SYR, Lorenc AUS, Petrović JUG\nAUT: Lindenberger - Pfeffer, Pecl, Aigner, Streiter - Artner, Ogris,\nZsak, Herzog - Rodax (86 Glatzmeyer), Polster (c - 46 Reisinger)\nUSA: Meola (c) - Doyle, Banks (55 Wynalda), Windischmann, Armstrong -\nBalboa, Caligiuri (83 Bliss), Ramos, Harkes - Murray, Vermes\n1:0 Ogris 52, 2:0 Rodax 65, 2:1 Murray 85\nbooked: Zsak, Pecl, Reisinger, Lindenberger, Streiter / Caliguri, Banks,\nMurray, Windischmann\nsent off: Artner (34)",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -425,7 +455,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "08.06.90  (18.00) Milano, Stadio Giuseppe Meazza (San Siro)\nCAM - ARG 1:0 (0:0)\n(-74000) Vautrot FRA, Listkiewicz POL, Mauro USA\nCAM: N'Kono - Ebwelle, Massing, Kunde, N'Dip - Tataw (c), M'Bouh, Kana-Biyik,\nMakanaky (69 Milla) - M'Fede (70 Libiih), Omam-Biyik\nARG: Pumpido - Simon, Ruggeri (46 Caniggia), Fabbri - Sensini (70 Calderón),\nLorenzo, Batista, Burruchaga - Basualdo, Maradona (c), Balbo\n1:0 Omam Biyik 67\nbooked: Sensini / Massing, N'Dip, M'Bouh\nsent off: Kana Biyik (61), Massing (87)\nNOTE: Match preceded by WC opening ceremony",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -438,7 +473,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "09.06.90  (17.00) Bari, Stadio San Nicola\nROM - ZSR 2:0 (0:0)\n(~43000) Cardellino URU, Sordiano ESP, Silva CHI\nROM: Lung (c) - Rednic, Klein, Andone, Gh.Popescu - Rotariu, Sabău,\nD.Timofte, Lupescu - Lăcătuş (87 Dumitrescu), Răducioiu (80 Balint)\nZSR: Dassajev (c) - Bessonov, Khidiatullin, Kuznetsov, Gorlukovich -\nRats, Aleinikov, Litovchenko (64 Yaremchuk), Zavarov - Protasov, Dobrovolsky\n(72 Borodyuk)\n1:0 Lăcătuş 42, 2:0 Lăcătuş 57 p\nbooked: Lăcătuş / Khidjatullin",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -451,7 +491,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "13.06.90  (21.00) Napoli, Stadio San Paolo\nARG - ZSR 2:0 (1:0)\n(-56000) Fredriksson SWE, Wright BRA, Al-Sharif SYR\nARG: Pumpido (11 Goycoechea) - Simon, Olarticoechea, Serrizuela, Monzón\n(79 Lorenzo) - Batista, Burruchaga, Caniggia, Basualdo - Maradona (c),\nTroglio\nZSR: Uvarov - Bessonov, Khidiatullin, Kuznetsov (c), Gorlukovich -\nAleinikov, Zygmantovich, Shalimov, Zavarov (81 Liuty) - Protasov (76\nLitovchenko), Dobrovolsky\n1:0 Trioglio 27 h, 2:0 Burruchaga 79\nbooked: Batista, Serrizuela, Caniggia, Maradona, Olarticoechea / Zygmantovich\nsent off: Bessonov (46)",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -464,7 +509,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "14.06.90  (17.00) Bari, Stadio San Nicola\nCAM - ROM 2:1 (0:0)\n(-39000) Silva CHI, Valente POR, Pérez COL\nCAM: N'Kono - Ebwelle, Onana, Kunde (69 Pagal), N'Dip - Tataw (c), M'Bouh,\nMakanaky, M'Fede - Maboang (61 Milla), Omam-Biyik\nROM: Lung (c) - Rednic, Klein, Andone, Gh.Popescu - Rotariu, Sabău,\nD.Timofte, Hagi (56 Dumitrescu) - Lăcătuş, Răducioiu (64 Balint)\n1:0 Milla 76, 2:0 Milla 86, 2:1 Balint 88\nbooked: Onana, N'Kono / Klein",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -477,7 +527,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "18.06.90  (21.00) Napoli, Stadio San Paolo\nARG - ROM 1:1 (0:0)\n(-53000) Valente POR, Ulloa COS, Longhi ITA\nARG: Goycoechea - Simon, Olarticoechea, Serrizuela, Monzón - Batista,\nBurruchaga (61 Dezotti), Caniggia, Basualdo - Maradona (c), Troglio (53\nGiusti)\nROM: Lung (c) - Rednic, Klein, Andone, Gh.Popescu - Rotariu, Sabău (83\nMateuţ), Hagi, Lăcătuş - Lupescu, Balint (72 Lupu)\n1:0 Monzón 63 h, 1:1 Balint 68 h\nbooked: Serrizuela, Batista / Lăcătuş, Hagi, Lupescu",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -490,7 +545,12 @@
       "score": [
         0,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "18.06.90  (21.00) Bari, Stadio San Nicola\nZSR - CAM 4:0 (2:0)\n(+37000) Wright BRA, Röthlisberger SUI, d'Elia ITA\nZSR: Uvarov - Demianenko (c), Khidiatullin, Kuznetsov, Gorlukovich -\nAleinikov, Zygmantovich, Shalimov (46 Zavarov), Protasov - Litovchenko\n(73 Yaremchuk), Dobrovolsky\nCAM: N'Kono - Ebwelle, Onana, Kunde (35 Milla), N'Dip - Tataw (c), M'Bouh,\nMakanaky (57 Pagal), M'Fede - Kana-Biyik, Omam-Biyik\n1:0 Protasov 20, 2:0 Zygmantovich 29, 3:0 Zavarov 59, 4:0 Dobrovolski 63 h\nbooked: Khidiatullin, Prostasov / Kana Biyik, Milla",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -503,7 +563,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "10.06.90  (21.00) Turin, Stadio Delle Alpi\nBRA - SWE 2:1 (1:0)\n(+62000) Lanese ITA, Jonini TUN, Vautrot FRA\nBRA: Taffarel - Jorginho, Ricardo Gomes (c), Branco, Mozer - Mauro Galvão,\nDunga, Alemão, Valdo (88 Silas) - Careca, Müller\nSWE: Ravelli - R.Nilsson (c), Larsson, Ljung (70 Strömberg), Schwarz -\nIngesson, Limpar, J.Nilsson, Thern - Brolin, Magnusson (46 Pettersson)\n1:0 Careca 40, 2:0 Careca 63, 2:1 Brolin 79\nbooked: Mozer, Branco, Dunga / J.Nilsson",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -516,7 +581,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "11.06.90  (17.00) Genoa, Stadio Luigi Ferraris\nCOS - SCO 1:0 (0:0)\n(-31000) Loustau ARG, Jacome ECU, Mactet FRA\nCOS: Conejo - Flores (c), Gonzalez, Montero, Chavez - Chavarria, Ramirez,\nGómez, Cayasso - Marchena, C.Jara (87 Medford)\nSCO: Leighton - Gough (46 McKimmie), McLeish, McPherson, Malpas - Aitken (c),\nMcStay, Bett (74 McCoist), McCall - Johnston, McInally\n1:0 Cayasso 49",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -529,7 +599,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "16.06.90  (17.00) Turin, Stadio Delle Alpi\nBRA - COS 1:0 (1:0)\n(+58000)\nJouini TUN, Mandi BHR, Diramba GAB\nBRA: Taffarel - Jorginho, Ricardo Gomes (c), Branco, Mozer - Mauro Galvão,\nDunga, Alemão, Valdo (87 Silas) - Careca (84 Bebeto), Müller\nCOS: Conejo - Flores (c), Gonzalez, Montero, Chavez - Chavarria, Ramirez,\nGómez, Cayasso (78 Guimaráes) - Marchena, C.Jara (71 Myers)\n1:0 Müller 33\nbooked: Jorginho, Mozer / C.Jara, Gómez",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -542,7 +617,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "16.06.90  (21.00) Genoa, Stadio Luigi Ferraris\nSCO - SWE 2:1 (1:0)\n(-32000) Maciel PAR, Listkiewicz POL, Mauro USA\nSCO: Leighton - Levein, MacLeod, McLeish, McPherson - Malpas, Aitken (c),\nDurie (76 McStay), McCall - Johnston, Fleck (85 McCoist)\nSWE: Ravelli - R.Nilsson, Larsson (76 Strömberg), Hysen (c), Schwarz -\nIngesson, Limpar, J.Nilsson, Thern - Brolin, Pettersson (53 Ekström)\n1:0 McCall 10, 2:0 Johnston 80 p, 2:1 Strömberg 86\nbooked: McPherson / Thern",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -555,7 +635,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "20.06.90  (21.00) Turin, Stadio Delle Alpi\nBRA - SCO 1:0 (0:0)\n(+62000) Kohl AUT, Kirschen GER, Listkiewicz POL\nBRA: Taffarel - Jorginho, Ricardo Gomes (c), Branco, Ricardo Rocha - Mauro\nGalvão, Dunga, Alemão, Valdo - Careca, Romario (66 Müller)\nSCO: Leighton - McKimmie, MacLeod (39 Gillespie), McLeish, McPherson -\nMalpas, Aitken (c), McStay, McCall - Johnston, McCoist (79 Fleck)\n1:0 Müller 82\nbooked: Johnston, McLeod",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -581,7 +666,12 @@
       "score": [
         0,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "09.06.90  (17.00) Bologna, Stadio Renato Dall'Ara\nCOL - EMI 2:0 (0:0)\n(+30000) Courtney ENG, Snoddy NIR, Takada JAP\nCOL: Higuita - A.Herrera, Perea, Escobar, Gomez Monsalvez - Alvarez,\nGomez Jaramildo, Valderrama (c), Redin - Iguaran (78 Estrada), Rincon\nZEA: Faraj - E.M.Abdulrahman (52 Ali Sultan), I.M.Abdulrahman, Mohammed,\nK.G.Mubarak, Abdullah, N.K.Mubarak, Abbas, Jumaa - F.K.Mubarak (c - 52 Bilal),\nAl Talyani\n1:0 Redin 50 h, 2:0 Valderrama 86\nbooked: N.K.Mubarak, Mohammed, I.M.Abdulrahman",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -594,7 +684,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "10.06.90  (21.00) Milano, Stadio Giuseppe Meazza (San Siro)\nGER - JUG 4:1 (2:0)\n(~75000) Mikkelsen DAN, Listkiewicz POL, Mandi BHR\nGER: Illgner - Reuter, Brehme, Augenthaler, Buchwald - Berthold,\nHässler (75 Möller), Matthäus (c), Bein (75 Littbarski) - Völler, Klinsmann\nJUG: Ivković, Spasić, Vulić, Hadžibegić, Jozić, Sušić (56 Prosinečki),\nBaljić, Stojković, Katanec, Zl.Vujović, Savičević (56 D.Brnović)\n1:0 Matthäus 29, 2:0 Klinsmann 39 h, 2:1 Jozić 55 h, 3:1 Matthäus 65,\n4:1 Völler 71\nbooked: Brehme",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -607,7 +702,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "14.06.90  (17.00) Bologna, Stadio Renato Dall'Ara\nJUG - COL 1:0 (0:0)\n(+32000) Agnolin ITA, Diramba GAB, Jonini TUN\nJUG: Ivković - Spasić, Stanojković, Hadžibegić, Jozić - Susić,\nStojković, Šabanadžović, Katanec (46 Jarni) - Zl.Vujović (c - 55 Pančev),\nD.Brnović\nCOL: Higuita - A.Herrera, Perea, Escobar, Gómez Monsalvez - Alvarez,\nGómez Jaramillo, Valderrama (c), Redin (81 Estrada) - Iguaran, Rincón\n(70 Hernández)\n1:0 Jozić 75 (81 Higuita saved a penalty by Hadžibegić)\nbooked: Stojković",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -620,7 +720,12 @@
       "score": [
         5,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "15.06.90  (21.00) Milano, Stadio Giuseppe Meazza (San Siro)\nGER - EMI 5:1 (2:0)\n(+71000) Spirin ZSR, Pairetto ITA, Takada JAP\nGER: Illgner - Reuter, Brehme, Augenthaler, Buchwald - Berthold\n(46 Littbarski), Hässler, Matthäus (c), Bein, Völler, Klinsmann (73 Riedle)\nEMI: Faraj - E.M.Abdulrahman, I.M.Abdulrahman (84 Al Haddan), Y.H.Mohammed,\nK.G.Mubarak, Abdullah (c), N.K.Mubarak, Abbas, K.I.Mubarak (81 Hussain) -\nJumaa, Al Talyani\n1:0 Völler 35, 2:0 Klinsmann 36 h, 2:1 K.M.Mubarak 46, 3:1 Matthäus 47, 4:1\nBein 59, 5:1 Völler 75 h\nbooked: Brehme / Mohammed, Abbas",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -633,7 +738,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "19.06.90  (17.00) Milano, Stadio Giuseppe Meazza (San Siro)\nCOL - GER 1:1 (0:0)\n(+72000) Snoddy NIR, Mandi SRI, Lanese ITA\nCOL: Higuita - A.Herrera, Perea, Escobar, Gómez Monsalvez, Alvarez,\nGómez Jaramillo, Valderrama (c), Fajardo - Estrada, Rincón\nGER: Illgner - Reuter, Pflügler, Augenthaler, Buchwald - Berthold,\nHässler (88 Thon), Matthäus (c), Bein (46 Littbarski) - Völler, Klinsmann\n0:1 Littbarski 88, 1:1 Rincón 90\n+\nbooked: Herrera, Gómez Jaramillo, Alvarez / Berthold",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -646,7 +756,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "19.06.90  (17.00) Bologna, Stadio Renato Dall'Ara\nJUG - EMI 4:1 (2:1)\n(-28000) Takada JAP, Mikkelsen DAN, Vautrot FRA\nJUG: Ivković - Spasić, Stanojković, Hadžibegić, Jozić - Sušić, Stojković,\nPančev, Zl.Vujović (c - 70 Vulić) - D.Brnović, Šabanadžović (79 Prosinečki)\nEMI: Faraj - E.M.Abdulrahman, I.M.Abdulrahman, Al Haddad, K.G.Mubarak -\nN.K.Mubarak (36 Ali Sultan), Abbas, Abudllah (c) - Jumaa (46 F.K.Mubarak),\nAl Talyani, K.I.Mubarak\n1:0 Sušić 8 h, 2:0 Pančev 9, 2:1 Jumaa 23 h, 3:1 Pančev 46, 4:1 Prosinečki\n90\nbooked: D.Brnović, Šabadžanović, Pančev / K.G.Mubarak\nsent off: K.G.Mubarak (76)",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -659,7 +774,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "12.06.90  (17.00) Verona, Stadio Marc Antonio Bentegodi\nBEL - KOR 2:0 (0:0)\n(~33000) Mauro USA, Courtney ENG, Snoddy NIR\nBEL: Preud'homme - Gerets (c), Clijsters, Demol, de Wolf - Versavel,\nF.van der Elst, Scifo, Degryse - Emmers, Van der Linden (46 Ceulemans)\nKOR: Choi In-young - Hong Myung-bo, Gu Sang-bum, Choi Kang-hee, Chung\nYoung-hwang (c) - Park Kyung-joon, Noh Soo-jin (64 Lee Tae-ho), Kim Joo-sung,\nLee Young-jin (46 Cho Min-kook) - Hwang Seon-hong, Choi Soon-ho\n1:0 Degryse 53, 2:0 de Wolf 64\nbooked: Choi Soon-ho",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -672,7 +792,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "13.06.90  (17.00) Udine, Stadio Friuli\nESP - URU 0:0\n(-36000) Kohl AUT, Spirin ZSR, Kirschen DDR\nESP: Zubizarreta - Chendo, Andrinúa, Sanchis, Jimenez - Michel,\nRoberto, Villaroya (79 Rafa Paz), Vazquez - Butragueño (c), Manolo (79\nGorriz)\nURU: Alvez - J.O.Herrera, Gutiérrez, de Leon, Dominguez - Perdomo,\nPaz, Francescoli (c), Ruben Pereira (68 Correa) - Alzamendi (65 Aguilera),\nSosa\n(73 Sosa missed penalty)\nbooked: Jimenez, Villaroya / Perdomo, Francescoli",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -685,7 +810,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "17.06.90  (21.00) Verona, Stadio Marc Antonio Bentegodi\nBEL - URU 3:1 (2:0)\n(-34000) Kirschen DDR, Mikkelsen DAN, Spirin ZSR\nBEL: Preud'homme - Gerets, Grün, Clijsters (46 Emmers), Demol - de\nWolf, Versavel (68 Vervoort), F.van der Elst, Scifo - Degryse, Ceulemans (c)\nURU: Alvez - J.O.Herrera, Gutiérrez, de Leon, Dominguez - Perdomo,\nFrancescoli (c), Paz, Ostolaza (56 Bengoechea) - Alzamendi (46 Aguilera),\nSosa\n1:0 Clijsters 16 h, 2:0 Scifo 22, 3:0 Ceulemans 48, 3:1 Bengoechea 74\nbooked: Gerets / Sosa\nsent off: Gerets (41)",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -698,7 +828,12 @@
       "score": [
         1,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "17.06.90  (21.00) Udine, Stadio Friuli\nESP - KOR 3:1 (1:1)\n(-33000) Jacome ECU, Loustau ARG, Magni ITA\nESP: Zubizarreta - Chendo, Andrinúa, Sanchis, Roberto (81 Bakero) -\nVillaroya, Vázquez, Gorris - Butragueño (c - 77 Gómez), Michel, Salinas\nKOR: Choi In-young - Hong Myung-bo, Gu Sang-bum, Choi Kang-hee (70\nChung Soo-jin), Yoon Deuk-yeo, Park Kyung-joon, Chong Hae-won (53 Noh Soo-jin),\nKim Joo-sung, Hwang Bo-kwan - Byun Byung-joo, Choi Soon-ho\n1:0 Michel 22, 1:1 Hwang Bo-kwan 42, 2:1 Michel 61 f, 3:1 Michel 81\nbooked: Chung Hae-won, Yoon Deuk-yeo, Hwang Bo-kwan",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -711,7 +846,12 @@
       "score": [
         1,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "21.06.90  (17.00) Verona, Stadio Marc Antonio Bentegodi\nESP - BEL 2:1 (2:1)\n(-36000) Loustau ARG, Macial PAR, Mauro USA\nESP: Zubizarreta - Chendo, Andrinúa, Sanchis, Roberto - Villaroya,\nVázquez, Gorriz - Butragueño (c - 61 Alkorta), Michel, Salinas (89\nPardeza)\nBEL: Preud'homme - Staelens (79 Van der Linden), Albert, Emmers\n(32 Plovie), Demol - de Wolf, Vervoort, F.van der Elst, Scifo - Degryse,\nCeulemans (c)\n1:0 Michel 20 p, 1:1 Vervoort 28 f, 2:1 Gorriz 37 h (59 Scifo missed\npenalty)",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -724,7 +864,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "21.06.90 (17.00) Udine, Stadio Friuli\nURU - KOR 1:0 (0:0)\n(+29000) Lanese ITA, Diramba GAB, Jonini TUN\nURU: Alvez - J.O.Herrera, Gutiérrez, de Leon, Dominguez - Perdomo,\nFrancescoli (c), Paz, Ostolaza (46 Aguilera), Martinez, Sosa (64 Fonseca)\nKOR: Choi In-young - Hong Myung-bo, Choi Kang-hee, Yoon Deuk-yeo, Park\nKyung-joon - Lee Heung-sil, Kim Joo-sung, Chung Jong-soo, Hwang Bo-kwan (83\nChung Hae-won) - Byun Byung-joo (43 Hwang Seon-hong), Choi Soon-ho\n1:0 Fonseca 90 h\nbooked: Ostolaza, Herrera / Lee Heung-sil, Choi Kwang-heo\nsent off: Yoon Deuk-yeo (70)",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -737,7 +882,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "11.06.90  (21.00) Cagliari, Stadio Sant' Elia\nENG - IRL 1:1 (1:0)\n(+35000) Schmidhuber GER, Fredriksson SWE, Röthlisberger SUI\nENG: Shilton - G.M.Stevens, Pearce, Walker, Butcher - Robson (c), Waddle,\nGascoigne, Barnes - Lineker (84 Bull), Beardsley (70 McMahon)\nIRL: Bonner - Morris, Staunton, McCarthy (c), Moran - McGrath, Houghton,\nTownsend, Aldridge (65 McLoughlin) - Cascarino, Sheedy\n1:0 Lineker 8, 1:1 Sheedy 72\nbooked: McMahon",
+        "lang": "en"
+      }
     },
     {
       "id": "m032",
@@ -750,7 +900,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "12.06.90  (21.00) Palermo, Stadio Della Favorita\nEGY - HOL 1:1 (0:0)\n(-34000) Soriano ESP, Codesal MEX, Cardellino URU\nEGY: Shobeir - I.Hassan, Yassein, H.Ramzy, A.Ramzy (71 Tolba) - Yakan,\nYoussef, Abdelghani, H.Hassan - Abdelhamid (c - 71 Abdelrahman), El Kass\nHOL: Van Breukelen - Van Aerle, Rijkaard, R.Koeman, Van Tiggelen - Rutjes,\nWouters, E.Koeman (71 Ri.Witschge), Vanenburg (46 Kieft) - Van Basten,\nGullit (c)\n0:1 Kieft 58, 1:1 Abdelghani 83 p\nbooked: A.Ramzy / Kieft\n16.06.90  (17..00) Cagliari, Stadio Sant' Elia\nENG - HOL 0:0\n(+35000) Petrović JUG, Hensal ARG, Codesal MEX\nENG: Shilton - Parker, Pearce, Walker, Butcher - Wright, Robson (c - 71 Platt),\nWaddle (65 Bull), Gascoigne - Barnes, Lineker\nHOL: Van Breukelen - Van Aerle, Rijkaard, R.Koeman, Van Tiggelen - Wouters,\nRi.Witschge, van't Schip (81 Kieft), Gillhaus - Van Basten, Gullit (c)\n17.06.90  Palermo, Stadio Della Favorita\nEGY - IRL 0:0\n(+33000) Van Langenhove BEL, Quiniou FRA, Lo Bello ITA\nEGY: Shobeir - I.Hassan, Yassein, H.Ramzy, Tolba (61 Aboud Zeid) - Yakan,\nYoussef, Abdelghani (c), H.Hassan - Oraby, El Kass (77 Abdelhamid)\nIRL: Bonner - Morris, Staunton, McCarthy (c), Moran - McGrath, Houghton,\nTownsend, Aldridge (65 McLoughlin) - Cascarino (85 Quinn), Sheedy\nbooked: Shobeir / Morris",
+        "lang": "en"
+      }
     },
     {
       "id": "m033",
@@ -789,7 +944,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "21.06.90  (21.00) Palermo, Stadio Della Favorita\nHOL - IRL 1:1 (1:0)\n(+33000) Vautrot FRA, Hansal ALG, Lorenc AUS\nHOL: Van Breukelen - Van Aerle, Rijkaard, R.Koeman, Van Tiggelen -\nWouters, Ri.Witschge (60 Fräser), Kieft (80 Van Loen) - Gillhaus, Van Basten,\nGullit (c)\nIRL: Bonner - Morris, Staunton, McCarthy (c), Moran, McGrath - Houghton,\nTownsend, Aldridge (63 Cascarino) - Quinn, Sheedy (63 Whelan)\n1:0 Gullit 10, 1:1 Quinn 71\nbooked: Rijkaard",
+        "lang": "en"
+      }
     },
     {
       "id": "m036",
@@ -802,7 +962,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "21.06.90  (21.00) Cagliari, Stadio Sant' Elia\nENG - EGY 1:0 (0:0)\n(-35000) Röthlisberger SUI, Codesal MEX, Ulloa COS\nENG: Shilton (c) - Parker, Pearce, Walker, Wright - McMahon, Waddle,\nGascoigne, Barnes - Lineker, Bull (84 Beardsley)\nEGY: Shobeir - I.Hassan, Yassein, H.Ramzy, A.Ramzy - Yakan, Youssef,\nAbdelghani, H.Hassan - El Kass (78 Soliman), Abdelhamid (c - 78 Abdelrahman)\n1:0 Wright 59 h\nbooked: Beardsley / Abdelghani, I.Hassan",
+        "lang": "en"
+      }
     },
     {
       "id": "m037",
@@ -818,7 +983,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "23.06.90  (17.00) Napoli, Stadio San Paolo\nCAM - COL 2:1 (0:0, 0:0, 0:0)\n(+50000) Lanese ITA, Al-Sharif SYR, Ulloa COS\nCAM: N'Kono - Ebwelle, Onana, N'Dip, Tataw (c) - Kana-Biyik, M'Bouh, M'Fede\n(58 Milla), Maboang - Makanaky (71 Djonkep), Omam-Biyik\nCOL: Higuita - A.Herrera, Perea, Escobar, Gómez Monsalve - Gómez Jaramillo\n(79 Redin), Alvarez, Valderrama (c) - Rincón, Fajardo (63 Iguaran), Estrada\n1:0 Milla 106, 2:0 Milla 109, 2:1 Redin 116\nbooked: Kana Byik, N'Dip, M'Bouh, Onana / Perea, Gómez Monsalve",
+        "lang": "en"
+      }
     },
     {
       "id": "m038",
@@ -831,7 +1001,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "23.06.90  (21.00) Bari, Stadio San Nicola\nCZE - COS 4:1 (1:0)\n(-48000) Kirschen DDR, Pérez COL, d'Elia ITA\nCZE: Stejskal - Kadlec, Kocian, Chovanec, Hašek (c) - Bilek, Kubik, Moravčik,\nStraka - Skuhravý, Knofliček\nCOS: Barrantes - Flores (c), Montero, J.Obando (46 Medford), Chavez - González,\nChavarria (66 Guimaráes), Marchena, Cayasso -  Ramirez,  C.Jara\n1:0 Skuhravý 11 h, 1:1 González 55 h, 2:1 Skuhravý 62 h, 3:1 Kubik 78 f,\n4:1 Skuhravý 82 h\nbooked: Kocian, Straka, Hašek / González, Marchena",
+        "lang": "en"
+      }
     },
     {
       "id": "m039",
@@ -844,7 +1019,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "24.06.90  (17.00) Turin, Stadio Delle Alpi\nARG - BRA 1:0 (0:0)\n(+61000) Quiniou FRA, Pairetto ITA, Junini TUN\nARG: Goycoechea - Simon, Ruggeri, Monzón, Olarticoechea - Giusti, Troglio\n(63 Calderón), Caniggia - Basualdo, Burruchaga, Maradona (c)\nBRA: Taffarel - Mauro Galvão (85 Renato), Ricardo Gomes (c), Ricardo\nRocha, Jorginho - Valdo, Dunga, Alemão (85 Silas), Branco - Careca, Müller\n1:0 Caniggia 81\nbooked: Monzón, Giusti, Goycoechea / Ricardo Rocha, Mauro Galvão\nsent off: Ricardo Rocha (85)",
+        "lang": "en"
+      }
     },
     {
       "id": "m040",
@@ -857,7 +1037,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "24.06.90  (21.00) Milano, Stadio Giuseppe Meazza (San Siro)\nGER - HOL 2:1 (0:0)\n(-75000) Laustau ARG, Jacome ECU, Mauro USA\nGER: Illgner - Reuter, Brehme, Kohler, Augenthaler - Buchwald,\nBerthold, Matthäus (c), Littbarski - Völler, Klinsmann (78 Riedle)\nHOL: Van Breukelen - Van Aerle (67 Kieft), Rijkaard, R.Koeman, van\nTiggelen - Wouters, Ri.Witschge (79 Gillhaus), Winter, van't Schip - Van\nBasten, Gullit (c)\n1:0 Klinsmann 51, 2:0 Brehme 82, 2:1 R.Koeman 89 p\nbooked: Völler, Matthäus / Wouters, Van Basten, Rijkaard\nsent off: Völler (22), Rijkaard (22)",
+        "lang": "en"
+      }
     },
     {
       "id": "m041",
@@ -891,7 +1076,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "25.06.90  (21.00) Roma, Stadio Olimpico\nITA - URU 2:0 (0:0)\n(+73000) Courtney ENG, Petrović JUG, Röthlisberger SUI\nITA: Zenga - F.Baresi, Bergomi (c), De Agostini, Ferri - Maldini, Berti\n(54 Serena), de Napoli, Giannini - R.Baggio (80 Vierchowod), Schillaci\nURU: Alvez - Gutiérrez, de Leon, Dominguez, Pintos - Perdomo, Ostolaza\n(80 Alzamendi), Francescoli (c) - Ruben Pereira, Aguilera (67 Sosa), Fonseca\n1:0 Schillaci 65, 2:0 Serena 85 h\nbooked: Berti / Aguilera, Alvez, Perdomo, Gutiérrez",
+        "lang": "en"
+      }
     },
     {
       "id": "m043",
@@ -907,7 +1097,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "26.06.90  (17.00) Verona, Stadio Marc Antonio Bentegodi\nJUG - ESP 2:1 (0:0, 1:1, 2:1)\n(+35000) Schmidhuber GER, Listkiewicz POL, Snoddy NIR\nJUG: Ivković - Spasić, Hadžibegić, Jozić, D.Brnović - Sušić, Stojković,\nKatanec (80 Vulić), Šabanadžović - Pančev (57 Savićević), Vujović (c)\nESP: Zubizarreta - Chendo, Villaroya, Gorriz, Andrinúa (49 Jimenez) -\nSanchis, Roberto, Vázquez, Butragueño (c - 80 Paz) - Michel, Salinas\n1:0 Stojković 77, 1:1 Salinas 83, 2:1 Stojković 92 f\nbooked: Katanec, Vujović, Vulić / Roberto, Chendo",
+        "lang": "en"
+      }
     },
     {
       "id": "m044",
@@ -923,7 +1118,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "26.06.90  (21.00) Bologna, Stadio Renato Dall'Ara\nENG - BEL 1:0 (0:0, 0:0, 0:0)\n(+34000) Mikkelsen DAN, Kohl AUT, Takada JAP\nENG: Shilton (c) - Pearce, Walker, Butcher, Parker - Wright, Waddle, McMahon\n(73 Platt), Gascoigne - Lineker, Barnes (76 Bull)\nBEL: Preud'homme - Gerets, Clijsters, Demol, Grun -  De Wolf, F.van der\nElst, Scifo, Versavel (118 Vervoort) - Degryse (66 Claesen), Ceulemans (c)\n1:0 Platt 119\nbooked: Gascoigne",
+        "lang": "en"
+      }
     },
     {
       "id": "m045",
@@ -957,7 +1157,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "30.06.90  (21.00) Roma, Stadio Olimpico\nITA - IRL 1:0 (1:0)\n(+73000) Valente POR, Ulloa COS, Pérez COL\nITA: Zenga - F.Baresi, Bergomi (c), de Agostini, Ferri - Maldini, Donadoni,\nde Napoli, Giannini (64 Ancelotti) - R.Baggio (72 Serena), Schillaci\nIRL: Bonner - Morris, Staunton, McCarthy, Moran - McGrath, Houghton,\nTownsend, Aldridge (78 Sheridan) - Sheedy, Quinn (54 Cascarino)\n1:0 Schillaci 38\nbooked: de Agostini / Moran",
+        "lang": "en"
+      }
     },
     {
       "id": "m047",
@@ -970,7 +1175,12 @@
       "score": [
         0,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "01.07.90  (17.00) Milano, Stadio Giuseppe Meazza (San Siro)\nGER - CZE 1:0 (1:0)\n(+73000) Kohl AUT, Listkiewicz POL, Mikkelsen DAN\nGER: Illgner - Brehme, Kohler, Augenthaler, Buchwald - Berthold, Littbarski,\nBein (84 Möller), Matthäus (c) - Klinsmann, Riedle\nCZE: Stejskal - Kadlec, Kocian, Chovanec, Hašek (c) - Bilek (70 Nemeček),\nKubik (81 Griga), Moravčik, Straka - Skuhravý, Knofliček\n1:0 Matthäus 24 p\nbooked: Klinsmann / Bilek, Straka, Knofliček\nsent off: Moravčik (70)",
+        "lang": "en"
+      }
     },
     {
       "id": "m048",
@@ -986,7 +1196,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "01.07.90  (21.00) Napoli, Stadio San Paolo\nENG - CAM 3:2 (1:0, 2:2, 3:2)\n(+55000) Codesal MEX, Mandi BHR, Mauro USA\nENG: Shilton (c) - Pearce, Walker, Butcher (74 Steven), Parker - Wright, Waddle,\nPlatt, Gascoigne - Lineker, Barnes (46 Beardsley)\nCAM: N'Kono - Ebwelle, Massing, Kunde, Tataw (c) - Pagal, Libiih, M'Fede\n(63 Ekéké), Maboang (46 Milla) - Makanaky, Omam-Biyik\n1:0 Platt 25 h, 1:1 Kunde 63 p, 1:2 Ekéké 65, 2:2 Lineker 83 p, 3:2 Lineker\n105 p\nbooked: Pearce / Massing, Milla, N'Kono",
+        "lang": "en"
+      }
     },
     {
       "id": "m049",
@@ -1007,7 +1222,12 @@
       "pens": [
         4,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "03.07.90  (20.00) Napoli, Stadio San Paolo\nARG - ITA 1:1 (0:1, 1:1, 1:1)  p. 4-3\n(-60000) Vautrot FRA, Listkiewicz POL, Mikkelsen DAN\nARG: Goycoechea - Ruggeri, Simon, Olarticoechea, Serrizuela - Giusti,\nBurruchaga, Basualdo (99 Batista), Calderón (46 Troglio) - Caniggia,\nMaradona (c)\nITA: Zenga - F.Baresi, Bergomi (c), de Agostini, Ferri - Maldini, Donadoni,\nDe Napoli, Giannini (75 R.Baggio) - Vialli (71 Serena), Schillaci\n0:1 Schillaci 17, 1:1 Caniggia 67 h\nPenalties: 0:1 F.Baresi, 1:1 Serrizuela, 1:2 R.Baggio, 2:2 Burruchaga, 2:3 de\nAgostini, 3:3 Olarticoechea, (3:3) Donadoni (save Goycoechea), 4:3 Maradona,\n(4:3) Serena (save Goycoechea)\nbooked: Giannini / Batista, Olarticoechea, Caniggia, Ruggeri\nsent off: Giusti (103)",
+        "lang": "en"
+      }
     },
     {
       "id": "m050",
@@ -1052,6 +1272,11 @@
             "reason": "Errata de día/mes; el partido por el tercer puesto fue el 7 de julio de 1990 (90f y consenso)."
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "07.06.90  (20.00) Bari, Stadio San Nicola\nITA - ENG 2:1 (0:0)\n(+51000) Quiniou FRA, Hansal ARG, Röthlisberger SUI\nITA: Zenga - F.Baresi, Bergomi (c), de Agostini (68 Berti), Ferrara - Maldini,\nVierchowod, Giannini (90 Ferri), Ancelotti - R.Baggio, Schillaci\nENG: Shilton (c) - G.M.Stevens, Walker, Steven, Parker - Wright (73 Waddle),\nMcMahon (73 Webb), Platt, Dorigo - Lineker, Beardsley\n1:0 R.Baggio 70, 1:1 Platt 80, 2:1 Schillaci 85 p",
+        "lang": "en"
       }
     },
     {
@@ -1065,7 +1290,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:90full",
+        "text": "08.07.90  (20.00) Roma, Stadio Olimpico\nGER - ARG 1:0 (0:0)\n(~74000) Codesal MEX, Listkiewicz POL, Pérez COL\nGER: Illgner - Augenthaler, Berthold (75 Reuter), Kohler, Buchwald -\nBrehme, Hässler, Matthäus (c), Littbarski - Klinsmann, Völler\nARG: Goycoechea - Simon, Serrizuela, Ruggeri (46 Monzón), Troglio -\nSensini, Burruchaga (54 Calderón), Basualdo, Lorenzo - Dezotti, Maradona (c)\n1:0 Brehme 85 p\nbooked: Völler / Troglio, Maradona\nsent off: Monzón (65), Dezotti (87)",
+        "lang": "en"
+      }
     }
   ],
   "provenance": {
