@@ -17,12 +17,12 @@
     "finalMatchId": "m052"
   },
   "coverage": {
-    "matches": 52,
-    "goals": 141,
+    "matches": 551,
+    "goals": 1587,
     "scorers": 81,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "scope": "all",
+    "complete": true,
+    "scorersComplete": false
   },
   "sources": [
     {
@@ -40,6 +40,15 @@
       "name": "RSSSF — World Cup 1994 full details",
       "url": "https://www.rsssf.org/tables/94full.html",
       "retrieved": "2026-10-06",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:94q",
+      "name": "RSSSF — World Cup 1994 (qualifying)",
+      "url": "https://www.rsssf.org/tables/94q.html",
+      "retrieved": "2026-10-10",
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
@@ -320,6 +329,956 @@
           "gf": 2,
           "ga": 5,
           "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "AFRA",
+      "standings": [
+        {
+          "team": "NGA",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 10,
+          "ga": 5,
+          "pts": 5
+        },
+        {
+          "team": "CIV",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 5,
+          "ga": 6,
+          "pts": 5
+        },
+        {
+          "team": "ALG",
+          "p": 4,
+          "w": 0,
+          "d": 2,
+          "l": 2,
+          "gf": 3,
+          "ga": 7,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "AFRB",
+      "standings": [
+        {
+          "team": "MAR",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "ZAM",
+          "p": 4,
+          "w": 2,
+          "d": 1,
+          "l": 1,
+          "gf": 6,
+          "ga": 2,
+          "pts": 5
+        },
+        {
+          "team": "SEN",
+          "p": 4,
+          "w": 0,
+          "d": 1,
+          "l": 3,
+          "gf": 1,
+          "ga": 8,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "AFRC",
+      "standings": [
+        {
+          "team": "CMR",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 7,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "ZIM",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 6,
+          "pts": 4
+        },
+        {
+          "team": "GUI",
+          "p": 4,
+          "w": 1,
+          "d": 0,
+          "l": 3,
+          "gf": 4,
+          "ga": 5,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "ASIA",
+      "standings": [
+        {
+          "team": "IRQ",
+          "p": 8,
+          "w": 6,
+          "d": 1,
+          "l": 1,
+          "gf": 28,
+          "ga": 4,
+          "pts": 13
+        },
+        {
+          "team": "CHN",
+          "p": 8,
+          "w": 6,
+          "d": 0,
+          "l": 2,
+          "gf": 18,
+          "ga": 4,
+          "pts": 12
+        },
+        {
+          "team": "YEM",
+          "p": 8,
+          "w": 3,
+          "d": 2,
+          "l": 3,
+          "gf": 12,
+          "ga": 13,
+          "pts": 8
+        },
+        {
+          "team": "JOR",
+          "p": 8,
+          "w": 2,
+          "d": 3,
+          "l": 3,
+          "gf": 12,
+          "ga": 15,
+          "pts": 7
+        },
+        {
+          "team": "PAK",
+          "p": 8,
+          "w": 0,
+          "d": 0,
+          "l": 8,
+          "gf": 2,
+          "ga": 36,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "ASIC",
+      "standings": [
+        {
+          "team": "PRK",
+          "p": 8,
+          "w": 7,
+          "d": 1,
+          "l": 0,
+          "gf": 19,
+          "ga": 6,
+          "pts": 15
+        },
+        {
+          "team": "QAT",
+          "p": 8,
+          "w": 5,
+          "d": 1,
+          "l": 2,
+          "gf": 22,
+          "ga": 8,
+          "pts": 11
+        },
+        {
+          "team": "SIN",
+          "p": 8,
+          "w": 5,
+          "d": 0,
+          "l": 3,
+          "gf": 12,
+          "ga": 12,
+          "pts": 10
+        },
+        {
+          "team": "IDN",
+          "p": 8,
+          "w": 1,
+          "d": 0,
+          "l": 7,
+          "gf": 6,
+          "ga": 19,
+          "pts": 2
+        },
+        {
+          "team": "VIE",
+          "p": 8,
+          "w": 1,
+          "d": 0,
+          "l": 7,
+          "gf": 4,
+          "ga": 18,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "ASID",
+      "standings": [
+        {
+          "team": "KOR",
+          "p": 8,
+          "w": 7,
+          "d": 1,
+          "l": 0,
+          "gf": 23,
+          "ga": 1,
+          "pts": 15
+        },
+        {
+          "team": "BHR",
+          "p": 8,
+          "w": 3,
+          "d": 3,
+          "l": 2,
+          "gf": 9,
+          "ga": 6,
+          "pts": 9
+        },
+        {
+          "team": "LIB",
+          "p": 8,
+          "w": 2,
+          "d": 4,
+          "l": 2,
+          "gf": 8,
+          "ga": 9,
+          "pts": 8
+        },
+        {
+          "team": "HKG",
+          "p": 8,
+          "w": 2,
+          "d": 1,
+          "l": 5,
+          "gf": 9,
+          "ga": 19,
+          "pts": 5
+        },
+        {
+          "team": "IND",
+          "p": 8,
+          "w": 1,
+          "d": 1,
+          "l": 6,
+          "gf": 8,
+          "ga": 22,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "ASIE",
+      "standings": [
+        {
+          "team": "KSA",
+          "p": 6,
+          "w": 4,
+          "d": 2,
+          "l": 0,
+          "gf": 20,
+          "ga": 1,
+          "pts": 10
+        },
+        {
+          "team": "KUW",
+          "p": 6,
+          "w": 3,
+          "d": 2,
+          "l": 1,
+          "gf": 21,
+          "ga": 4,
+          "pts": 8
+        },
+        {
+          "team": "MAS",
+          "p": 6,
+          "w": 2,
+          "d": 2,
+          "l": 2,
+          "gf": 16,
+          "ga": 7,
+          "pts": 6
+        },
+        {
+          "team": "MAC",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 1,
+          "ga": 46,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "ASIF",
+      "standings": [
+        {
+          "team": "JPN",
+          "p": 8,
+          "w": 7,
+          "d": 1,
+          "l": 0,
+          "gf": 28,
+          "ga": 2,
+          "pts": 15
+        },
+        {
+          "team": "UAE",
+          "p": 8,
+          "w": 6,
+          "d": 1,
+          "l": 1,
+          "gf": 19,
+          "ga": 4,
+          "pts": 13
+        },
+        {
+          "team": "THA",
+          "p": 8,
+          "w": 4,
+          "d": 0,
+          "l": 4,
+          "gf": 13,
+          "ga": 7,
+          "pts": 8
+        },
+        {
+          "team": "KSA",
+          "p": 5,
+          "w": 2,
+          "d": 3,
+          "l": 0,
+          "gf": 8,
+          "ga": 6,
+          "pts": 7
+        },
+        {
+          "team": "KOR",
+          "p": 5,
+          "w": 2,
+          "d": 2,
+          "l": 1,
+          "gf": 9,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "JPN",
+          "p": 5,
+          "w": 2,
+          "d": 2,
+          "l": 1,
+          "gf": 7,
+          "ga": 4,
+          "pts": 6
+        },
+        {
+          "team": "IRQ",
+          "p": 5,
+          "w": 1,
+          "d": 3,
+          "l": 1,
+          "gf": 9,
+          "ga": 9,
+          "pts": 5
+        },
+        {
+          "team": "IRN",
+          "p": 5,
+          "w": 2,
+          "d": 0,
+          "l": 3,
+          "gf": 8,
+          "ga": 11,
+          "pts": 4
+        },
+        {
+          "team": "BAN",
+          "p": 8,
+          "w": 2,
+          "d": 0,
+          "l": 6,
+          "gf": 7,
+          "ga": 28,
+          "pts": 4
+        },
+        {
+          "team": "PRK",
+          "p": 5,
+          "w": 1,
+          "d": 0,
+          "l": 4,
+          "gf": 5,
+          "ga": 12,
+          "pts": 2
+        },
+        {
+          "team": "SRI",
+          "p": 8,
+          "w": 0,
+          "d": 0,
+          "l": 8,
+          "gf": 0,
+          "ga": 26,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR1",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 10,
+          "w": 7,
+          "d": 2,
+          "l": 1,
+          "gf": 22,
+          "ga": 7,
+          "pts": 16
+        },
+        {
+          "team": "SUI",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 23,
+          "ga": 6,
+          "pts": 15
+        },
+        {
+          "team": "POR",
+          "p": 10,
+          "w": 6,
+          "d": 2,
+          "l": 2,
+          "gf": 18,
+          "ga": 5,
+          "pts": 14
+        },
+        {
+          "team": "SCO",
+          "p": 10,
+          "w": 4,
+          "d": 3,
+          "l": 3,
+          "gf": 14,
+          "ga": 13,
+          "pts": 11
+        },
+        {
+          "team": "MLT",
+          "p": 10,
+          "w": 1,
+          "d": 1,
+          "l": 8,
+          "gf": 3,
+          "ga": 23,
+          "pts": 3
+        },
+        {
+          "team": "EST",
+          "p": 10,
+          "w": 0,
+          "d": 1,
+          "l": 9,
+          "gf": 1,
+          "ga": 27,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR2",
+      "standings": [
+        {
+          "team": "NOR",
+          "p": 10,
+          "w": 7,
+          "d": 2,
+          "l": 1,
+          "gf": 25,
+          "ga": 5,
+          "pts": 16
+        },
+        {
+          "team": "NED",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 29,
+          "ga": 9,
+          "pts": 15
+        },
+        {
+          "team": "ENG",
+          "p": 10,
+          "w": 5,
+          "d": 3,
+          "l": 2,
+          "gf": 26,
+          "ga": 9,
+          "pts": 13
+        },
+        {
+          "team": "POL",
+          "p": 10,
+          "w": 3,
+          "d": 2,
+          "l": 5,
+          "gf": 10,
+          "ga": 15,
+          "pts": 8
+        },
+        {
+          "team": "TUR",
+          "p": 10,
+          "w": 3,
+          "d": 1,
+          "l": 6,
+          "gf": 11,
+          "ga": 19,
+          "pts": 7
+        },
+        {
+          "team": "SMR",
+          "p": 10,
+          "w": 0,
+          "d": 1,
+          "l": 9,
+          "gf": 2,
+          "ga": 46,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "letter": "EUR3",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 12,
+          "w": 8,
+          "d": 3,
+          "l": 1,
+          "gf": 27,
+          "ga": 4,
+          "pts": 19
+        },
+        {
+          "team": "IRL",
+          "p": 12,
+          "w": 7,
+          "d": 4,
+          "l": 1,
+          "gf": 19,
+          "ga": 6,
+          "pts": 18
+        },
+        {
+          "team": "DEN",
+          "p": 12,
+          "w": 7,
+          "d": 4,
+          "l": 1,
+          "gf": 15,
+          "ga": 2,
+          "pts": 18
+        },
+        {
+          "team": "NIR",
+          "p": 12,
+          "w": 5,
+          "d": 3,
+          "l": 4,
+          "gf": 14,
+          "ga": 13,
+          "pts": 13
+        },
+        {
+          "team": "LTU",
+          "p": 12,
+          "w": 2,
+          "d": 3,
+          "l": 7,
+          "gf": 8,
+          "ga": 21,
+          "pts": 7
+        },
+        {
+          "team": "LAT",
+          "p": 12,
+          "w": 0,
+          "d": 5,
+          "l": 7,
+          "gf": 4,
+          "ga": 21,
+          "pts": 5
+        },
+        {
+          "team": "ALB",
+          "p": 12,
+          "w": 1,
+          "d": 2,
+          "l": 9,
+          "gf": 6,
+          "ga": 26,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "letter": "EUR4",
+      "standings": [
+        {
+          "team": "ROU",
+          "p": 10,
+          "w": 7,
+          "d": 1,
+          "l": 2,
+          "gf": 29,
+          "ga": 12,
+          "pts": 15
+        },
+        {
+          "team": "BEL",
+          "p": 10,
+          "w": 7,
+          "d": 1,
+          "l": 2,
+          "gf": 16,
+          "ga": 5,
+          "pts": 15
+        },
+        {
+          "team": "TCH",
+          "p": 10,
+          "w": 4,
+          "d": 5,
+          "l": 1,
+          "gf": 21,
+          "ga": 9,
+          "pts": 13
+        },
+        {
+          "team": "WAL",
+          "p": 10,
+          "w": 5,
+          "d": 2,
+          "l": 3,
+          "gf": 19,
+          "ga": 12,
+          "pts": 12
+        },
+        {
+          "team": "CYP",
+          "p": 10,
+          "w": 2,
+          "d": 1,
+          "l": 7,
+          "gf": 8,
+          "ga": 18,
+          "pts": 5
+        },
+        {
+          "team": "FRO",
+          "p": 10,
+          "w": 0,
+          "d": 0,
+          "l": 10,
+          "gf": 1,
+          "ga": 38,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "EUR6",
+      "standings": [
+        {
+          "team": "SWE",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 19,
+          "ga": 8,
+          "pts": 15
+        },
+        {
+          "team": "BUL",
+          "p": 10,
+          "w": 6,
+          "d": 2,
+          "l": 2,
+          "gf": 19,
+          "ga": 10,
+          "pts": 14
+        },
+        {
+          "team": "FRA",
+          "p": 10,
+          "w": 6,
+          "d": 1,
+          "l": 3,
+          "gf": 17,
+          "ga": 10,
+          "pts": 13
+        },
+        {
+          "team": "AUT",
+          "p": 10,
+          "w": 3,
+          "d": 2,
+          "l": 5,
+          "gf": 15,
+          "ga": 16,
+          "pts": 8
+        },
+        {
+          "team": "FIN",
+          "p": 10,
+          "w": 2,
+          "d": 1,
+          "l": 7,
+          "gf": 9,
+          "ga": 18,
+          "pts": 5
+        },
+        {
+          "team": "ISR",
+          "p": 10,
+          "w": 1,
+          "d": 3,
+          "l": 6,
+          "gf": 10,
+          "ga": 27,
+          "pts": 5
+        }
+      ]
+    },
+    {
+      "letter": "NCAA",
+      "standings": [
+        {
+          "team": "MEX",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 22,
+          "ga": 3,
+          "pts": 9
+        },
+        {
+          "team": "HON",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 14,
+          "ga": 6,
+          "pts": 9
+        },
+        {
+          "team": "CRC",
+          "p": 6,
+          "w": 3,
+          "d": 0,
+          "l": 3,
+          "gf": 11,
+          "ga": 9,
+          "pts": 6
+        },
+        {
+          "team": "VIN",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 0,
+          "ga": 29,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "NCAB",
+      "standings": [
+        {
+          "team": "MEX",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 17,
+          "ga": 5,
+          "pts": 10
+        },
+        {
+          "team": "SLV",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 12,
+          "ga": 6,
+          "pts": 9
+        },
+        {
+          "team": "CAN",
+          "p": 6,
+          "w": 2,
+          "d": 3,
+          "l": 1,
+          "gf": 9,
+          "ga": 7,
+          "pts": 7
+        },
+        {
+          "team": "CAN",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 10,
+          "ga": 10,
+          "pts": 7
+        },
+        {
+          "team": "JAM",
+          "p": 6,
+          "w": 1,
+          "d": 2,
+          "l": 3,
+          "gf": 6,
+          "ga": 9,
+          "pts": 4
+        },
+        {
+          "team": "BER",
+          "p": 6,
+          "w": 1,
+          "d": 2,
+          "l": 3,
+          "gf": 7,
+          "ga": 12,
+          "pts": 4
+        },
+        {
+          "team": "SLV",
+          "p": 6,
+          "w": 2,
+          "d": 0,
+          "l": 4,
+          "gf": 6,
+          "ga": 11,
+          "pts": 4
+        },
+        {
+          "team": "HON",
+          "p": 6,
+          "w": 1,
+          "d": 1,
+          "l": 4,
+          "gf": 7,
+          "ga": 14,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "letter": "SAM8",
+      "standings": [
+        {
+          "team": "BRA",
+          "p": 8,
+          "w": 5,
+          "d": 2,
+          "l": 1,
+          "gf": 20,
+          "ga": 4,
+          "pts": 12
+        },
+        {
+          "team": "BOL",
+          "p": 8,
+          "w": 5,
+          "d": 1,
+          "l": 2,
+          "gf": 22,
+          "ga": 11,
+          "pts": 11
+        },
+        {
+          "team": "URU",
+          "p": 8,
+          "w": 4,
+          "d": 2,
+          "l": 2,
+          "gf": 10,
+          "ga": 7,
+          "pts": 10
+        },
+        {
+          "team": "ECU",
+          "p": 8,
+          "w": 1,
+          "d": 3,
+          "l": 4,
+          "gf": 7,
+          "ga": 7,
+          "pts": 5
+        },
+        {
+          "team": "VEN",
+          "p": 8,
+          "w": 1,
+          "d": 0,
+          "l": 7,
+          "gf": 4,
+          "ga": 34,
+          "pts": 2
         }
       ]
     }
@@ -1287,6 +2246,8982 @@
         "text": "17.07.94  Los Angeles, Rose Bowl\nBRA - ITA 0:0 (0:0, 0:0, 0:0)  p. 3-2\n(~94000) Puhl HUN\nBRA: Taffarel - Jorginho (22 Cafú), Aldair, Marcio Santos, Branco -\nMazinho, Mauro Silva, Dunga (c), Zinho (106 Viola) - Bebeto, Romário\nITA: Pagliuca - Mussi (34 Apolloni), F.Baresi (c), Maldini, Benarrivo -\nBerti, D.Baggio (95 Evani), Albertini, Donadoni - R.Baggio, Massaro\nPenalties: (0:0) F.Baresi (out), (0:0) Marcio Santos (save Pagliuca), 0:1\nAlbertini, 1:1 Romário, 1:2 Evani, 2:2 Branco, (2:2) Massaro (save Taffarel),\n3:2 Dunga, (3:2) R.Baggio (out)\nbooked: Mazinho, Cafú / Apolloni, Albertini",
         "lang": "en"
       }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1992-08-16",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "SUI",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1992-09-09",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "SCO",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1992-10-14",
+      "city": "Cagliari",
+      "home": "ITA",
+      "away": "SUI",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1992-10-14",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "POR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "EST",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1992-11-18",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "ITA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1992-11-18",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "MLT",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1992-12-19",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "ITA",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-01-24",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-02-17",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "MLT",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-02-24",
+      "city": "Porto",
+      "home": "POR",
+      "away": "ITA",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-03-24",
+      "city": "Palermo",
+      "home": "ITA",
+      "away": "MLT",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-03-31",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "POR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-04-14",
+      "city": "Trieste",
+      "home": "ITA",
+      "away": "EST",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-04-17",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "SUI",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "SCO",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-05-01",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "ITA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-05-12",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "MLT",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-05-19",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "SCO",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-06-02",
+      "city": "Aberdeen",
+      "home": "SCO",
+      "away": "EST",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-06-19",
+      "city": "Porto",
+      "home": "POR",
+      "away": "MLT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-09-05",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "POR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-09-08",
+      "city": "Aberdeen",
+      "home": "SCO",
+      "away": "SUI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-09-22",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "ITA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-10-13",
+      "city": "Porto",
+      "home": "POR",
+      "away": "SUI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-10-13",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "SCO",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-11-10",
+      "city": "Porto",
+      "home": "POR",
+      "away": "EST",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-11-17",
+      "city": "Milano",
+      "home": "ITA",
+      "away": "POR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-11-17",
+      "city": "La Valletta",
+      "home": "MLT",
+      "away": "SCO",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR1",
+      "matchday": null,
+      "date": "1993-11-17",
+      "city": "Zürich",
+      "home": "SUI",
+      "away": "EST",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1992-09-09",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SMR",
+      "score": [
+        10,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1992-09-23",
+      "city": "Poznan",
+      "home": "POL",
+      "away": "TUR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1992-09-23",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "NED",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1992-10-07",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "NOR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1992-10-14",
+      "city": "London",
+      "home": "ENG",
+      "away": "NOR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1992-10-14",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "POL",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1992-10-28",
+      "city": "Ankara",
+      "home": "TUR",
+      "away": "SMR",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1992-11-18",
+      "city": "London",
+      "home": "ENG",
+      "away": "TUR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1992-12-16",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "NED",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-02-17",
+      "city": "London",
+      "home": "ENG",
+      "away": "SMR",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-02-24",
+      "city": "Utrecht",
+      "home": "NED",
+      "away": "TUR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-03-10",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "TUR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-03-24",
+      "city": "Utrecht",
+      "home": "NED",
+      "away": "SMR",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-03-31",
+      "city": "Izmir",
+      "home": "TUR",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "London",
+      "home": "ENG",
+      "away": "NED",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "TUR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Lódz",
+      "home": "POL",
+      "away": "SMR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-05-19",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "POL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-05-29",
+      "city": "Chorzów",
+      "home": "POL",
+      "away": "ENG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-06-02",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "ENG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-06-09",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "NOR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-09-08",
+      "city": "London",
+      "home": "ENG",
+      "away": "POL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-09-22",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "POL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-09-22",
+      "city": "Bologna",
+      "home": "SMR",
+      "away": "NED",
+      "score": [
+        0,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-10-13",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "ENG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-10-13",
+      "city": "Poznan",
+      "home": "POL",
+      "away": "NOR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-10-27",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "POL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-11-10",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "NOR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-11-17",
+      "city": "Bologna",
+      "home": "SMR",
+      "away": "ENG",
+      "score": [
+        1,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR2",
+      "matchday": null,
+      "date": "1993-11-17",
+      "city": "Poznan",
+      "home": "POL",
+      "away": "NED",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-04-22",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "ALB",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-04-28",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "LTU",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-05-26",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "ALB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-06-03",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "LTU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-08-12",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "LTU",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-08-26",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "DEN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-09-09",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "LAT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-09-09",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "ALB",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-09-23",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "DEN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-09-23",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "ESP",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-10-14",
+      "city": "København",
+      "home": "DEN",
+      "away": "IRL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-10-14",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "ESP",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-10-28",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "LAT",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-11-11",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "LAT",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-11-18",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "DEN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-11-18",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "IRL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1992-12-16",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "LAT",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-02-17",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "NIR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-02-24",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "LTU",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-03-31",
+      "city": "København",
+      "home": "DEN",
+      "away": "ESP",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-03-31",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "NIR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-04-14",
+      "city": "København",
+      "home": "DEN",
+      "away": "LAT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-04-14",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "ALB",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "NIR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-05-15",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "ALB",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-05-25",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "NIR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-05-26",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "IRL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-06-02",
+      "city": "København",
+      "home": "DEN",
+      "away": "ALB",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-06-02",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "NIR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-06-02",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "ESP",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-06-09",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "IRL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-06-16",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "IRL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m145"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-08-25",
+      "city": "København",
+      "home": "DEN",
+      "away": "LTU",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-09-08",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "DEN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-09-08",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "LTU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m148"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-09-08",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "LAT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m149"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-09-22",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "ESP",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-10-13",
+      "city": "København",
+      "home": "DEN",
+      "away": "NIR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-10-13",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "ESP",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m152"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-11-17",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "IRL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m153"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR3",
+      "matchday": null,
+      "date": "1993-11-17",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "DEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m154"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-04-22",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "CYP",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m155"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-05-06",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "FRO",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m156"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-05-20",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "WAL",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m157"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-06-03",
+      "city": "Toftir",
+      "home": "FRO",
+      "away": "BEL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m158"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-06-16",
+      "city": "Toftir",
+      "home": "FRO",
+      "away": "CYP",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m159"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-09-02",
+      "city": "Praha",
+      "home": "TCH",
+      "away": "BEL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m160"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-09-09",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "FRO",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m161"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-09-23",
+      "city": "Kosice",
+      "home": "TCH",
+      "away": "FRO",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m162"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-10-14",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "ROU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m163"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-10-14",
+      "city": "Nicosia",
+      "home": "CYP",
+      "away": "WAL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m164"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-11-14",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "TCH",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m165"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-11-18",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "WAL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m166"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1992-11-29",
+      "city": "Larnaca",
+      "home": "CYP",
+      "away": "ROU",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m167"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-02-13",
+      "city": "Nicosia",
+      "home": "CYP",
+      "away": "BEL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m168"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-03-24",
+      "city": "Limassol",
+      "home": "CYP",
+      "away": "TCH",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m169"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-03-31",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "BEL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m170"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-04-14",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "CYP",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m171"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-04-25",
+      "city": "Limassol",
+      "home": "CYP",
+      "away": "FRO",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m172"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Ostrava",
+      "home": "TCH",
+      "away": "WAL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m173"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-05-22",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "FRO",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m174"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-06-02",
+      "city": "Kosice",
+      "home": "TCH",
+      "away": "ROU",
+      "score": [
+        5,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m175"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-06-06",
+      "city": "Toftir",
+      "home": "FRO",
+      "away": "WAL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m176"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-06-16",
+      "city": "Toftir",
+      "home": "FRO",
+      "away": "TCH",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m177"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-09-08",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "TCH",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m178"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-09-08",
+      "city": "Toftir",
+      "home": "FRO",
+      "away": "ROU",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m179"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-10-13",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "BEL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m180"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-10-13",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "CYP",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m181"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-10-27",
+      "city": "Kosice",
+      "home": "TCH",
+      "away": "CYP",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m182"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-11-17",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "ROU",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m183"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "1993-11-17",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "TCH",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m184"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1992-05-13",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "ISL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m185"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1992-06-03",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "ISL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m186"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1992-09-09",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "HUN",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m187"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1992-10-07",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "GRE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m188"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1992-10-14",
+      "city": "Moskva",
+      "home": "RUS",
+      "away": "ISL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m189"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1992-10-28",
+      "city": "Moskva",
+      "home": "RUS",
+      "away": "LUX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m190"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1992-11-11",
+      "city": "Thessaloniki",
+      "home": "GRE",
+      "away": "HUN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m191"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-02-17",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "LUX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m192"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-03-31",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "GRE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m193"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-04-14",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "RUS",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m194"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Moskva",
+      "home": "RUS",
+      "away": "HUN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m195"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-05-20",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "ISL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m196"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-05-23",
+      "city": "Moskva",
+      "home": "RUS",
+      "away": "GRE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m197"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-06-02",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "RUS",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m198"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-06-16",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "HUN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m199"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-09-08",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "RUS",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m200"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-09-08",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "LUX",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m201"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-10-12",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "GRE",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m202"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-10-27",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "LUX",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m203"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR5",
+      "matchday": null,
+      "date": "1993-11-17",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "RUS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m204"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1992-05-14",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "BUL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m205"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1992-09-09",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SWE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m206"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1992-09-09",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "FRA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m207"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1992-10-07",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "BUL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m208"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1992-10-14",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "AUT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m209"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1992-10-28",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "ISR",
+      "score": [
+        5,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m210"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1992-11-11",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "SWE",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m211"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1992-11-14",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "FIN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m212"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1992-12-02",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "BUL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m213"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-02-17",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "FRA",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m214"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-03-27",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m215"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-04-14",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "BUL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m216"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "SWE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m217"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "FIN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m218"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-05-12",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "ISR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m219"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-05-13",
+      "city": "Pori",
+      "home": "FIN",
+      "away": "AUT",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m220"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-05-19",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "AUT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m221"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-06-02",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "ISR",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m222"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-06-16",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "ISR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m223"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-08-22",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "FRA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m224"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-08-25",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "FIN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m225"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-09-08",
+      "city": "Tampere",
+      "home": "FIN",
+      "away": "FRA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m226"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-09-08",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m227"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-10-13",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "AUT",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m228"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-10-13",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "ISR",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m229"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-10-13",
+      "city": "Stockholm",
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m230"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-10-27",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "AUT",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m231"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-11-10",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m232"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-11-10",
+      "city": "Ramat Gan",
+      "home": "ISR",
+      "away": "FIN",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m233"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR6",
+      "matchday": null,
+      "date": "1993-11-17",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "BUL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m234"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-08-01",
+      "city": "Barranquilla",
+      "home": "COL",
+      "away": "PAR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m235"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-08-01",
+      "city": "Lima",
+      "home": "PER",
+      "away": "ARG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m236"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-08-08",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "ARG",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m237"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-08-08",
+      "city": "Lima",
+      "home": "PER",
+      "away": "COL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m238"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-08-15",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "PER",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m239"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-08-15",
+      "city": "Barranquilla",
+      "home": "COL",
+      "away": "ARG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m240"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-08-22",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "PER",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m241"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-08-22",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "COL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m242"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-08-29",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "PAR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m243"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-08-29",
+      "city": "Barranquilla",
+      "home": "COL",
+      "away": "PER",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m244"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-09-05",
+      "city": "Lima",
+      "home": "PER",
+      "away": "PAR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m245"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-09-05",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "COL",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m246"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-10-31",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "ARG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m247"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM7",
+      "matchday": null,
+      "date": "1993-11-17",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "AUS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m248"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-07-18",
+      "city": "Guayaquil",
+      "home": "ECU",
+      "away": "BRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m249"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-07-18",
+      "city": "Puerto Ordaz",
+      "home": "VEN",
+      "away": "BOL",
+      "score": [
+        1,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m250"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-07-25",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "BRA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m251"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-07-25",
+      "city": "San Cristóbal",
+      "home": "VEN",
+      "away": "URU",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m252"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-08-01",
+      "city": "San Cristóbal",
+      "home": "VEN",
+      "away": "BRA",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m253"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-08-01",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "ECU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m254"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-08-08",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "VEN",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m255"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-08-08",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "URU",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m256"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-08-15",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "ECU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m257"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-08-15",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "BRA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m258"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-08-22",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "VEN",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m259"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-08-22",
+      "city": "São Paulo",
+      "home": "BRA",
+      "away": "ECU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m260"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-08-29",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "VEN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m261"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-06-29",
+      "city": "Recife",
+      "home": "BRA",
+      "away": "BOL",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m262"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": null,
+      "city": "Belo Horizonte",
+      "home": "BRA",
+      "away": "VEN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m263"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-09-05",
+      "city": "Guayaquil",
+      "home": "ECU",
+      "away": "URU",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m264"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-09-12",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "BOL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m265"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-09-12",
+      "city": "Ciudad Guayana",
+      "home": "VEN",
+      "away": "ECU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m266"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-09-19",
+      "city": "Guayaquil",
+      "home": "ECU",
+      "away": "BOL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m267"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "SAM8",
+      "matchday": null,
+      "date": "1993-09-19",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "URU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m268"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-03-22",
+      "city": "Castries",
+      "home": "LCA",
+      "away": "VIN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m269"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-03-29",
+      "city": "Kingstown",
+      "home": "VIN",
+      "away": "LCA",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m270"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-03-21",
+      "city": "Santo Domingo",
+      "home": "DOM",
+      "away": "PUR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m271"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-03-29",
+      "city": "San Juan",
+      "home": "PUR",
+      "away": "DOM",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m272"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-04-26",
+      "city": "Hamilton",
+      "home": "BER",
+      "away": "HAI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m273"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-05-25",
+      "city": "Port-au-Prince",
+      "home": "HAI",
+      "away": "BER",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m274"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-05-23",
+      "city": "Kingston",
+      "home": "JAM",
+      "away": "PUR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m275"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-05-30",
+      "city": "San Juan",
+      "home": "PUR",
+      "away": "JAM",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m276"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-04-19",
+      "city": "Willemstad",
+      "home": "ANT",
+      "away": "ATG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m277"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-04-26",
+      "city": "St. John's",
+      "home": "ATG",
+      "away": "ANT",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m278"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-04-26",
+      "city": "Georgetown",
+      "home": "GUY",
+      "away": "SUR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m279"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-05-25",
+      "city": "Paramaribo",
+      "home": "SUR",
+      "away": "GUY",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m280"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-04-19",
+      "city": "Bridgetown",
+      "home": "BRB",
+      "away": "TRI",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m281"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-05-31",
+      "city": "Port of Spain",
+      "home": "TRI",
+      "away": "BRB",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m282"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-07-19",
+      "city": "Cd. Guatemala",
+      "home": "GUA",
+      "away": "HON",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m283"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-07-26",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "GUA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m284"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-08-16",
+      "city": "Panama",
+      "home": "PAN",
+      "away": "CRC",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m285"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-08-23",
+      "city": "San José",
+      "home": "CRC",
+      "away": "PAN",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m286"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-07-19",
+      "city": "Managua",
+      "home": "NCA",
+      "away": "SLV",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m287"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-07-23",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "NCA",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m288"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-08-02",
+      "city": "Paramaribo",
+      "home": "SUR",
+      "away": "VIN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m289"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-08-30",
+      "city": "Kingstown",
+      "home": "VIN",
+      "away": "SUR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m290"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-06-14",
+      "city": "St. John's",
+      "home": "ATG",
+      "away": "BER",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m291"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-07-04",
+      "city": "Hamilton",
+      "home": "BER",
+      "away": "ATG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m292"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-07-05",
+      "city": "Port of Spain",
+      "home": "TRI",
+      "away": "JAM",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m293"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCA9",
+      "matchday": null,
+      "date": "1992-08-16",
+      "city": "Kingston",
+      "home": "JAM",
+      "away": "TRI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m294"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "1992-11-08",
+      "city": "Kingstown",
+      "home": "VIN",
+      "away": "MEX",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m295"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "1992-11-08",
+      "city": "San José",
+      "home": "CRC",
+      "away": "HON",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m296"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "1992-11-15",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "HON",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m297"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "1992-11-15",
+      "city": "Kingstown",
+      "home": "VIN",
+      "away": "CRC",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m298"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "1992-11-22",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "CRC",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m299"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "1992-11-22",
+      "city": "Kingstown",
+      "home": "VIN",
+      "away": "HON",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m300"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "1992-11-28",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "VIN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m301"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "1992-11-29",
+      "city": "San José",
+      "home": "CRC",
+      "away": "MEX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m302"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "1992-12-05",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "CRC",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m303"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "1992-12-06",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "VIN",
+      "score": [
+        11,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m304"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "1992-12-13",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "MEX",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m305"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "1992-12-13",
+      "city": "San José",
+      "home": "CRC",
+      "away": "VIN",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m306"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1992-10-18",
+      "city": "Kingston",
+      "home": "JAM",
+      "away": "CAN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m307"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1992-10-18",
+      "city": "Hamilton",
+      "home": "BER",
+      "away": "SLV",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m308"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "CAN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m309"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "Hamilton",
+      "home": "BER",
+      "away": "JAM",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m310"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1992-11-01",
+      "city": "Toronto",
+      "home": "CAN",
+      "away": "JAM",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m311"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1992-11-01",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "BER",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m312"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1992-11-08",
+      "city": "Vancouver",
+      "home": "CAN",
+      "away": "SLV",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m313"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1992-11-08",
+      "city": "Kingston",
+      "home": "JAM",
+      "away": "BER",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m314"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1992-11-15",
+      "city": "Burnaby",
+      "home": "CAN",
+      "away": "BER",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m315"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1992-11-22",
+      "city": "Kingston",
+      "home": "JAM",
+      "away": "SLV",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m316"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1992-12-06",
+      "city": "Hamilton",
+      "home": "BER",
+      "away": "CAN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m317"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1992-12-06",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "JAM",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m318"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1993-04-04",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "MEX",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m319"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1993-04-04",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "CAN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m320"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1993-04-11",
+      "city": "Vancouver",
+      "home": "CAN",
+      "away": "SLV",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m321"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1993-04-11",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "HON",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m322"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1993-04-18",
+      "city": "Vancouver",
+      "home": "CAN",
+      "away": "HON",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m323"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1993-04-18",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "SLV",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m324"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1993-04-25",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "SLV",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m325"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1993-04-25",
+      "city": "Cd. de Mexico",
+      "home": "MEX",
+      "away": "CAN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m326"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1993-05-02",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "CAN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m327"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1993-05-02",
+      "city": "Tegucigalpa",
+      "home": "HON",
+      "away": "MEX",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m328"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1993-05-09",
+      "city": "Toronto",
+      "home": "CAN",
+      "away": "MEX",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m329"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "1993-05-09",
+      "city": "San Salvador",
+      "home": "SLV",
+      "away": "HON",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m330"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-09",
+      "city": "Tlemcen",
+      "home": "ALG",
+      "away": "BDI",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m331"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "Bujumbura",
+      "home": "BDI",
+      "away": "GHA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m332"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-12-20",
+      "city": "Accra",
+      "home": "GHA",
+      "away": "ALG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m333"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-17",
+      "city": "Bujumbura",
+      "home": "BDI",
+      "away": "ALG",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m334"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-31",
+      "city": "Kumasi",
+      "home": "GHA",
+      "away": "BDI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m335"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-02-26",
+      "city": "Tlemcen",
+      "home": "ALG",
+      "away": "GHA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m336"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-11",
+      "city": "Kinshasa",
+      "home": "ZAI",
+      "away": "LBR",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m337"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-18",
+      "city": "Yaoundé",
+      "home": "CMR",
+      "away": "SWZ",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m338"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "Lobamba",
+      "home": "SWZ",
+      "away": "ZAI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m339"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-10",
+      "city": "Kinshasa",
+      "home": "ZAI",
+      "away": "CMR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m340"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-17",
+      "city": "Somhlolo",
+      "home": "SWZ",
+      "away": "CMR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m341"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-31",
+      "city": "Kinshasa",
+      "home": "ZAI",
+      "away": "SWZ",
+      "score": null,
+      "status": "notplayed",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m342"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-03-01",
+      "city": "Yaoundé",
+      "home": "CMR",
+      "away": "ZAI",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m343"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-09",
+      "city": "Harare",
+      "home": "ZIM",
+      "away": "TOG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m344"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-11",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "ANG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m345"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "Lomé",
+      "home": "TOG",
+      "away": "EGY",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m346"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-12-20",
+      "city": "Harare",
+      "home": "ZIM",
+      "away": "EGY",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m347"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-10",
+      "city": "Luanda",
+      "home": "ANG",
+      "away": "ZIM",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m348"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-17",
+      "city": "Lomé",
+      "home": "TOG",
+      "away": "ZIM",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m349"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-18",
+      "city": "Luanda",
+      "home": "ANG",
+      "away": "EGY",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m350"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-31",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "TOG",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m351"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-31",
+      "city": "Harare",
+      "home": "ZIM",
+      "away": "ANG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m352"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-02-14",
+      "city": "Luanda",
+      "home": "ANG",
+      "away": "TOG",
+      "score": null,
+      "status": "notplayed",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m353"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-02-28",
+      "city": "Lomé",
+      "home": "TOG",
+      "away": "ANG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m354"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-02-28",
+      "city": "Cairo",
+      "home": "EGY",
+      "away": "ZIM",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m355"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-04-15",
+      "city": "Lyon",
+      "home": "EGY",
+      "away": "ZIM",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m356"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-10",
+      "city": "Lagos",
+      "home": "NGA",
+      "away": "RSA",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m357"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "Johannesburg",
+      "home": "RSA",
+      "away": "CGO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m358"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-12-20",
+      "city": "Brazzaville",
+      "home": "CGO",
+      "away": "NGA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m359"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-16",
+      "city": "Johannesburg",
+      "home": "RSA",
+      "away": "NGA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m360"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-31",
+      "city": "Brazzaville",
+      "home": "CGO",
+      "away": "RSA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m361"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-02-27",
+      "city": "Enugu",
+      "home": "NGA",
+      "away": "CGO",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m362"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-10",
+      "city": "Abidjan",
+      "home": "CIV",
+      "away": "BOT",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m363"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "Niamey",
+      "home": "NIG",
+      "away": "CIV",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m364"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-12-20",
+      "city": "Gaborone",
+      "home": "BOT",
+      "away": "NIG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m365"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-17",
+      "city": "Gaborone",
+      "home": "BOT",
+      "away": "CIV",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m366"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-31",
+      "city": "Abidjan",
+      "home": "CIV",
+      "away": "NIG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m367"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-02-28",
+      "city": "Niamey",
+      "home": "NIG",
+      "away": "BOT",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m368"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-11",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "ETH",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m369"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-11",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "BEN",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m370"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "Addis Abeba",
+      "home": "ETH",
+      "away": "TUN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m371"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "Cotonou",
+      "home": "BEN",
+      "away": "MAR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m372"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-12-20",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "MAR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m373"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-12-20",
+      "city": "Addis Abeba",
+      "home": "ETH",
+      "away": "BEN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m374"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-17",
+      "city": "Addis Abeba",
+      "home": "ETH",
+      "away": "MAR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m375"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-17",
+      "city": "Cotonou",
+      "home": "BEN",
+      "away": "TUN",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m376"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-31",
+      "city": "Rabat",
+      "home": "MAR",
+      "away": "BEN",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m377"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-31",
+      "city": "Tunis",
+      "home": "TUN",
+      "away": "ETH",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m378"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-02-28",
+      "city": "Cotonou",
+      "home": "BEN",
+      "away": "ETH",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m379"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-02-28",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "TUN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m380"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-11",
+      "city": "Libreville",
+      "home": "GAB",
+      "away": "MOZ",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m381"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "Maputo",
+      "home": "MOZ",
+      "away": "SEN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m382"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-12-19",
+      "city": "Libreville",
+      "home": "GAB",
+      "away": "SEN",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m383"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-17",
+      "city": "Maputo",
+      "home": "MOZ",
+      "away": "GAB",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m384"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-30",
+      "city": "Dakar",
+      "home": "SEN",
+      "away": "MOZ",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m385"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-02-27",
+      "city": "Dakar",
+      "home": "SEN",
+      "away": "GAB",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m386"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-11",
+      "city": "Lusaka",
+      "home": "ZAM",
+      "away": "TAN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m387"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-11",
+      "city": "Tananarive",
+      "home": "MAD",
+      "away": "NAM",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m388"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "Mwanza",
+      "home": "TAN",
+      "away": "MAD",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m389"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-10-25",
+      "city": "Windhoek",
+      "home": "NAM",
+      "away": "ZAM",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m390"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-12-19",
+      "city": "Mwanza",
+      "home": "TAN",
+      "away": "NAM",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m391"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-12-20",
+      "city": "Tananarive",
+      "home": "MAD",
+      "away": "ZAM",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m392"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-16",
+      "city": "Mwanza",
+      "home": "TAN",
+      "away": "ZAM",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m393"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-17",
+      "city": "Windhoek",
+      "home": "NAM",
+      "away": "MAD",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m394"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-01-30",
+      "city": "Lusaka",
+      "home": "ZAM",
+      "away": "NAM",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m395"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-02-27",
+      "city": "Lusaka",
+      "home": "ZAM",
+      "away": "MAD",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m396"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1992-12-20",
+      "city": "Conakry",
+      "home": "GUI",
+      "away": "KEN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m397"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "1993-02-27",
+      "city": "Nairobi",
+      "home": "KEN",
+      "away": "GUI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m398"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRA",
+      "matchday": null,
+      "date": "1993-04-16",
+      "city": "Tlemcen",
+      "home": "ALG",
+      "away": "CIV",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m399"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRA",
+      "matchday": null,
+      "date": "1993-05-02",
+      "city": "Abidjan",
+      "home": "CIV",
+      "away": "NGA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m400"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRA",
+      "matchday": null,
+      "date": "1993-07-03",
+      "city": "Lagos",
+      "home": "NGA",
+      "away": "ALG",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m401"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRA",
+      "matchday": null,
+      "date": "1993-07-18",
+      "city": "Abidjan",
+      "home": "CIV",
+      "away": "ALG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m402"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRA",
+      "matchday": null,
+      "date": "1993-09-25",
+      "city": "Lagos",
+      "home": "NGA",
+      "away": "CIV",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m403"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRA",
+      "matchday": null,
+      "date": "1993-10-08",
+      "city": "Alger",
+      "home": "ALG",
+      "away": "NGA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m404"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRB",
+      "matchday": null,
+      "date": "1993-04-18",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "SEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m405"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRB",
+      "matchday": null,
+      "date": "1993-07-04",
+      "city": "Lusaka",
+      "home": "ZAM",
+      "away": "MAR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m406"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRB",
+      "matchday": null,
+      "date": "1993-07-17",
+      "city": "Dakar",
+      "home": "SEN",
+      "away": "MAR",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m407"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRB",
+      "matchday": null,
+      "date": "1993-08-07",
+      "city": "Dakar",
+      "home": "SEN",
+      "away": "ZAM",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m408"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRB",
+      "matchday": null,
+      "date": "1993-09-26",
+      "city": "Lusaka",
+      "home": "ZAM",
+      "away": "SEN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m409"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRB",
+      "matchday": null,
+      "date": "1993-10-10",
+      "city": "Casablanca",
+      "home": "MAR",
+      "away": "ZAM",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m410"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRC",
+      "matchday": null,
+      "date": "1993-04-18",
+      "city": "Yaoundé",
+      "home": "CMR",
+      "away": "GUI",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m411"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRC",
+      "matchday": null,
+      "date": "1993-05-02",
+      "city": "Conakry",
+      "home": "GUI",
+      "away": "ZIM",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m412"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRC",
+      "matchday": null,
+      "date": "1993-07-04",
+      "city": "Harare",
+      "home": "ZIM",
+      "away": "CMR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m413"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRC",
+      "matchday": null,
+      "date": "1993-07-18",
+      "city": "Conakry",
+      "home": "GUI",
+      "away": "CMR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m414"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRC",
+      "matchday": null,
+      "date": "1993-09-26",
+      "city": "Harare",
+      "home": "ZIM",
+      "away": "GUI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m415"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRC",
+      "matchday": null,
+      "date": "1993-10-10",
+      "city": "Yaoundé",
+      "home": "CMR",
+      "away": "ZIM",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m416"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-05-22",
+      "city": "Amman",
+      "home": "JOR",
+      "away": "YEM",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m417"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-05-22",
+      "city": "Amman",
+      "home": "PAK",
+      "away": "CHN",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m418"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-05-24",
+      "city": "Amman",
+      "home": "JOR",
+      "away": "IRQ",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m419"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-05-24",
+      "city": "Amman",
+      "home": "YEM",
+      "away": "PAK",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m420"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-05-26",
+      "city": "Amman",
+      "home": "JOR",
+      "away": "CHN",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m421"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-05-26",
+      "city": "Amman",
+      "home": "YEM",
+      "away": "IRQ",
+      "score": [
+        1,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m422"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-05-28",
+      "city": "Amman",
+      "home": "PAK",
+      "away": "IRQ",
+      "score": [
+        0,
+        8
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m423"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-05-28",
+      "city": "Amman",
+      "home": "YEM",
+      "away": "CHN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m424"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-05-30",
+      "city": "Amman",
+      "home": "JOR",
+      "away": "PAK",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m425"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-05-30",
+      "city": "Amman",
+      "home": "IRQ",
+      "away": "CHN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m426"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-06-12",
+      "city": "Chengdu",
+      "home": "YEM",
+      "away": "JOR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m427"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-06-12",
+      "city": "Chengdu",
+      "home": "CHN",
+      "away": "PAK",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m428"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-06-14",
+      "city": "Chengdu",
+      "home": "IRQ",
+      "away": "JOR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m429"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-06-14",
+      "city": "Chengdu",
+      "home": "PAK",
+      "away": "YEM",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m430"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-06-16",
+      "city": "Chengdu",
+      "home": "CHN",
+      "away": "JOR",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m431"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-06-16",
+      "city": "Chengdu",
+      "home": "IRQ",
+      "away": "YEM",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m432"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-06-18",
+      "city": "Chengdu",
+      "home": "IRQ",
+      "away": "PAK",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m433"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-06-18",
+      "city": "Chengdu",
+      "home": "CHN",
+      "away": "YEM",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m434"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-06-20",
+      "city": "Chengdu",
+      "home": "PAK",
+      "away": "JOR",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m435"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIA",
+      "matchday": null,
+      "date": "1993-06-20",
+      "city": "Chengdu",
+      "home": "CHN",
+      "away": "IRQ",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m436"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "1993-06-23",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "OMA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m437"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "1993-06-23",
+      "city": "Tehran",
+      "home": "TPE",
+      "away": "SYR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m438"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "1993-06-25",
+      "city": "Tehran",
+      "home": "OMA",
+      "away": "SYR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m439"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "1993-06-25",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "TPE",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m440"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "1993-06-27",
+      "city": "Tehran",
+      "home": "OMA",
+      "away": "TPE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m441"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "1993-06-27",
+      "city": "Tehran",
+      "home": "IRN",
+      "away": "SYR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m442"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "1993-07-02",
+      "city": "Damascus",
+      "home": "OMA",
+      "away": "IRN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m443"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "1993-07-02",
+      "city": "Damascus",
+      "home": "SYR",
+      "away": "TPE",
+      "score": [
+        8,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m444"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "1993-07-04",
+      "city": "Damascus",
+      "home": "SYR",
+      "away": "OMA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m445"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "1993-07-04",
+      "city": "Damascus",
+      "home": "TPE",
+      "away": "IRN",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m446"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "1993-07-06",
+      "city": "Damascus",
+      "home": "TPE",
+      "away": "OMA",
+      "score": [
+        1,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m447"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "1993-07-06",
+      "city": "Damascus",
+      "home": "SYR",
+      "away": "IRN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m448"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-09",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "IDN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m449"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-09",
+      "city": "Doha",
+      "home": "PRK",
+      "away": "VIE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m450"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-11",
+      "city": "Doha",
+      "home": "PRK",
+      "away": "SIN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m451"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-11",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "VIE",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m452"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-13",
+      "city": "Doha",
+      "home": "PRK",
+      "away": "IDN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m453"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-13",
+      "city": "Doha",
+      "home": "VIE",
+      "away": "SIN",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m454"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-16",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "SIN",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m455"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-16",
+      "city": "Doha",
+      "home": "VIE",
+      "away": "IDN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m456"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-18",
+      "city": "Doha",
+      "home": "IDN",
+      "away": "SIN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m457"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-18",
+      "city": "Doha",
+      "home": "QAT",
+      "away": "PRK",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m458"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-24",
+      "city": "Singapore",
+      "home": "IDN",
+      "away": "QAT",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m459"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-24",
+      "city": "Singapore",
+      "home": "VIE",
+      "away": "PRK",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m460"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-26",
+      "city": "Singapore",
+      "home": "SIN",
+      "away": "PRK",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m461"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-26",
+      "city": "Singapore",
+      "home": "VIE",
+      "away": "QAT",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m462"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Singapore",
+      "home": "IDN",
+      "away": "PRK",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m463"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Singapore",
+      "home": "SIN",
+      "away": "VIE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m464"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-30",
+      "city": "Singapore",
+      "home": "SIN",
+      "away": "QAT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m465"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-04-30",
+      "city": "Singapore",
+      "home": "IDN",
+      "away": "VIE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m466"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-05-02",
+      "city": "Singapore",
+      "home": "SIN",
+      "away": "IDN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m467"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIC",
+      "matchday": null,
+      "date": "1993-05-02",
+      "city": "Singapore",
+      "home": "PRK",
+      "away": "QAT",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m468"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-05-07",
+      "city": "Beirut",
+      "home": "LIB",
+      "away": "IND",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m469"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-05-07",
+      "city": "Beirut",
+      "home": "HKG",
+      "away": "BHR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m470"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-05-09",
+      "city": "Beirut",
+      "home": "BHR",
+      "away": "KOR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m471"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-05-09",
+      "city": "Beirut",
+      "home": "LIB",
+      "away": "HKG",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m472"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-05-11",
+      "city": "Beirut",
+      "home": "HKG",
+      "away": "IND",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m473"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-05-11",
+      "city": "Beirut",
+      "home": "LIB",
+      "away": "KOR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m474"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-05-13",
+      "city": "Beirut",
+      "home": "LIB",
+      "away": "BHR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m475"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-05-13",
+      "city": "Beirut",
+      "home": "IND",
+      "away": "KOR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m476"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-05-15",
+      "city": "Beirut",
+      "home": "HKG",
+      "away": "KOR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m477"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-05-15",
+      "city": "Beirut",
+      "home": "BHR",
+      "away": "IND",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m478"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-06-05",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "HKG",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m479"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-06-05",
+      "city": "Seoul",
+      "home": "BHR",
+      "away": "LIB",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m480"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-06-07",
+      "city": "Seoul",
+      "home": "IND",
+      "away": "BHR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m481"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-06-07",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "LIB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m482"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-06-09",
+      "city": "Seoul",
+      "home": "HKG",
+      "away": "LIB",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m483"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-06-09",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "IND",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m484"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-06-11",
+      "city": "Seoul",
+      "home": "IND",
+      "away": "LIB",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m485"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-06-11",
+      "city": "Seoul",
+      "home": "BHR",
+      "away": "HKG",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m486"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-06-13",
+      "city": "Seoul",
+      "home": "KOR",
+      "away": "BHR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m487"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASID",
+      "matchday": null,
+      "date": "1993-06-13",
+      "city": "Seoul",
+      "home": "IND",
+      "away": "HKG",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m488"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIE",
+      "matchday": null,
+      "date": "1993-05-01",
+      "city": "Kuala Lumpur",
+      "home": "MAC",
+      "away": "KSA",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m489"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIE",
+      "matchday": null,
+      "date": "1993-05-01",
+      "city": "Kuala Lumpur",
+      "home": "MAS",
+      "away": "KUW",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m490"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIE",
+      "matchday": null,
+      "date": "1993-05-03",
+      "city": "Kuala Lumpur",
+      "home": "MAC",
+      "away": "KUW",
+      "score": [
+        1,
+        10
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m491"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIE",
+      "matchday": null,
+      "date": "1993-05-03",
+      "city": "Kuala Lumpur",
+      "home": "MAS",
+      "away": "KSA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m492"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIE",
+      "matchday": null,
+      "date": "1993-05-05",
+      "city": "Kuala Lumpur",
+      "home": "KUW",
+      "away": "KSA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m493"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIE",
+      "matchday": null,
+      "date": "1993-05-05",
+      "city": "Kuala Lumpur",
+      "home": "MAS",
+      "away": "MAC",
+      "score": [
+        9,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m494"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIE",
+      "matchday": null,
+      "date": "1993-05-14",
+      "city": "Riyadh",
+      "home": "KUW",
+      "away": "MAS",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m495"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIE",
+      "matchday": null,
+      "date": "1993-05-14",
+      "city": "Riyadh",
+      "home": "KSA",
+      "away": "MAC",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m496"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIE",
+      "matchday": null,
+      "date": "1993-05-16",
+      "city": "Riyadh",
+      "home": "KUW",
+      "away": "MAC",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m497"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIE",
+      "matchday": null,
+      "date": "1993-05-16",
+      "city": "Riyadh",
+      "home": "KSA",
+      "away": "MAS",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m498"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIE",
+      "matchday": null,
+      "date": "1993-05-18",
+      "city": "Riyadh",
+      "home": "MAC",
+      "away": "MAS",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m499"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIE",
+      "matchday": null,
+      "date": "1993-05-18",
+      "city": "Riyadh",
+      "home": "KSA",
+      "away": "KUW",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m500"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-08",
+      "city": "Tokyo",
+      "home": "JPN",
+      "away": "THA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m501"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-08",
+      "city": "Tokyo",
+      "home": "SRI",
+      "away": "UAE",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m502"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-11",
+      "city": "Tokyo",
+      "home": "JPN",
+      "away": "BAN",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m503"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-11",
+      "city": "Tokyo",
+      "home": "THA",
+      "away": "SRI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m504"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-13",
+      "city": "Tokyo",
+      "home": "SRI",
+      "away": "BAN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m505"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-13",
+      "city": "Tokyo",
+      "home": "THA",
+      "away": "UAE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m506"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-15",
+      "city": "Tokyo",
+      "home": "JPN",
+      "away": "SRI",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m507"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-15",
+      "city": "Tokyo",
+      "home": "BAN",
+      "away": "UAE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m508"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-18",
+      "city": "Tokyo",
+      "home": "JPN",
+      "away": "UAE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m509"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-18",
+      "city": "Tokyo",
+      "home": "THA",
+      "away": "BAN",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m510"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Dubai",
+      "home": "THA",
+      "away": "JPN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m511"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-28",
+      "city": "Dubai",
+      "home": "UAE",
+      "away": "SRI",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m512"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-30",
+      "city": "Dubai",
+      "home": "BAN",
+      "away": "JPN",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m513"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-04-30",
+      "city": "Dubai",
+      "home": "UAE",
+      "away": "THA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m514"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-05-03",
+      "city": "Dubai",
+      "home": "UAE",
+      "away": "BAN",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m515"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-05-03",
+      "city": "Dubai",
+      "home": "SRI",
+      "away": "THA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m516"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-05-05",
+      "city": "Dubai",
+      "home": "BAN",
+      "away": "THA",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m517"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-05-05",
+      "city": "Dubai",
+      "home": "SRI",
+      "away": "JPN",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m518"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-05-07",
+      "city": "Dubai",
+      "home": "BAN",
+      "away": "SRI",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m519"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-05-07",
+      "city": "Dubai",
+      "home": "UAE",
+      "away": "JPN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m520"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-15",
+      "city": "Doha",
+      "home": "PRK",
+      "away": "IRQ",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m521"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-15",
+      "city": "Doha",
+      "home": "KSA",
+      "away": "JPN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m522"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-16",
+      "city": "Doha",
+      "home": "IRN",
+      "away": "KOR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m523"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-18",
+      "city": "Doha",
+      "home": "PRK",
+      "away": "KSA",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m524"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-18",
+      "city": "Doha",
+      "home": "JPN",
+      "away": "IRN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m525"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-19",
+      "city": "Doha",
+      "home": "IRQ",
+      "away": "KOR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m526"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-21",
+      "city": "Doha",
+      "home": "PRK",
+      "away": "JPN",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m527"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-22",
+      "city": "Doha",
+      "home": "IRN",
+      "away": "IRQ",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m528"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-22",
+      "city": "Doha",
+      "home": "KOR",
+      "away": "KSA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m529"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-24",
+      "city": "Doha",
+      "home": "IRQ",
+      "away": "KSA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m530"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-25",
+      "city": "Doha",
+      "home": "JPN",
+      "away": "KOR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m531"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-25",
+      "city": "Doha",
+      "home": "IRN",
+      "away": "PRK",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m532"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-28",
+      "city": "Doha",
+      "home": "KOR",
+      "away": "PRK",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m533"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-28",
+      "city": "Doha",
+      "home": "KSA",
+      "away": "IRN",
+      "score": [
+        4,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m534"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIF",
+      "matchday": null,
+      "date": "1993-10-28",
+      "city": "Doha",
+      "home": "IRQ",
+      "away": "JPN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m535"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1992-07-11",
+      "city": "Honiara",
+      "home": "SOL",
+      "away": "TAH",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m536"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1992-09-04",
+      "city": "Honiara",
+      "home": "SOL",
+      "away": "AUS",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m537"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1992-09-11",
+      "city": "Papeete",
+      "home": "TAH",
+      "away": "AUS",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m538"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1992-09-20",
+      "city": "Brisbane",
+      "home": "AUS",
+      "away": "TAH",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m539"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1992-09-26",
+      "city": "Newcastle",
+      "home": "AUS",
+      "away": "SOL",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m540"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1992-10-09",
+      "city": "Papeete",
+      "home": "TAH",
+      "away": "SOL",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m541"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1992-06-07",
+      "city": "Christchurch",
+      "home": "NZL",
+      "away": "FIJ",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m542"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1992-06-27",
+      "city": "Port Vila",
+      "home": "VAN",
+      "away": "NZL",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m543"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1992-07-01",
+      "city": "Auckland",
+      "home": "NZL",
+      "away": "VAN",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m544"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1992-09-12",
+      "city": "Suva",
+      "home": "FIJ",
+      "away": "VAN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m545"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1992-09-19",
+      "city": "Suva",
+      "home": "FIJ",
+      "away": "NZL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m546"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1992-09-26",
+      "city": "Port Vila",
+      "home": "VAN",
+      "away": "FIJ",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m547"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1993-05-30",
+      "city": "Auckland",
+      "home": "NZL",
+      "away": "AUS",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m548"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1993-06-06",
+      "city": "Melbourne",
+      "home": "AUS",
+      "away": "NZL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m549"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1993-07-31",
+      "city": "Edmonton",
+      "home": "CAN",
+      "away": "AUS",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m550"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCE12",
+      "matchday": null,
+      "date": "1993-08-15",
+      "city": "Sydney",
+      "home": "AUS",
+      "away": "CAN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m551"
     }
   ],
   "scorers": [

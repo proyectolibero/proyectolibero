@@ -147,7 +147,51 @@ const COUNTRY_ALIASES = {
   "north yemen": "YAR",
   "south yemen": "YMD",
   "taiwan": "TPE",
-  "fort lauderdale usa": "USA"
+  "fort lauderdale usa": "USA",
+  "bosnia-herzegovina": "BIH",
+  "bosnia-hercegovina": "BIH",
+  "bosnia-herz.": "BIH",
+  "bosnia-herz": "BIH",
+  "bosnia-h.": "BIH",
+  "bosnia-h": "BIH",
+  "czech republic": "CZE",
+  "fyr macedonia": "MKD",
+  "congo-k.": "COD",
+  "congo-kinsh": "COD",
+  "st kitts-nevis": "SKN",
+  "st. kitts/nevis": "SKN",
+  "st. kitts/n.": "SKN",
+  "st. kitts and nevis": "SKN",
+  "st.kitts": "SKN",
+  "st.kitts/n.": "SKN",
+  "st. kitts": "SKN",
+  "saint kitts-nevis": "SKN",
+  "saint kitts": "SKN",
+  "st. vincent": "VIN",
+  "st vincent": "VIN",
+  "st.vincent": "VIN",
+  "st.vincent/g.": "VIN",
+  "st. vincent/g": "VIN",
+  "st. vincent & grenadines": "VIN",
+  "saint vincent": "VIN",
+  "saint vincent and grenadines": "VIN",
+  "saint vincent & grenadines": "VIN",
+  "st lucia": "LCA",
+  "st. lucia": "LCA",
+  "ruanda": "RWA",
+  "western samoa": "SAM",
+  "swaziland": "SWZ",
+  "solomon isl": "SOL",
+  "solomon isl.": "SOL",
+  "cayman isl.": "CAY",
+  "cook isl": "COK",
+  "png": "PNG",
+  "burkina f.": "BFA",
+  "s. africa": "RSA",
+  "s. leone": "SLE",
+  "n. zealand": "NZL",
+  "g.bissau": "GNB",
+  "guinea bissau": "GNB"
 };
 
 /** Índice inverso nombre en inglés (minúsculas) → código FIFA de 3 letras. */
@@ -486,9 +530,10 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
   const parsedDate = parseDate(dateMatch[1], ctx);
   if (parsedDate.warning) warn(result, lineNo, parsedDate.warning);
   const rest = dateMatch[2];
-  // El marcador se busca fuera de los corchetes: una nota como
-  // `[abandoned at 2-3; awarded 0-2]` no debe confundirse con el resultado.
-  const masked = rest.replace(/\[[^\]]*\]/g, (block) => " ".repeat(block.length));
+  // El marcador se busca fuera de los corchetes/paréntesis: una nota como
+  // `[abandoned at 2-3; awarded 0-2]` o `(abandoned at 1-0; awarded 2-0)` no
+  // debe confundirse con el resultado del partido.
+  const masked = rest.replace(/\[[^\]]*\]|\([^)]*\)/g, (block) => " ".repeat(block.length));
   const scoreMatch = /(\bn\/p\b|\d+\s*[-:]\s*\d+)/.exec(masked);
   if (!scoreMatch) {
     warn(result, lineNo, `marcador no reconocido: ${text}`);

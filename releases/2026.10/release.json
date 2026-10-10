@@ -469,21 +469,21 @@
     },
     {
       "path": "data/football/worldcup/1990.json",
-      "sha256": "52e3bb28cd6685f18c075666d0bb7708907b8202fb9e5da11c6ac9adfb348def",
+      "sha256": "9aa4f2e3fe7cee89db425a346209d56fca5934293504a3a0bb8be2bf2ce31c27",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1990
     },
     {
       "path": "data/football/worldcup/1994.json",
-      "sha256": "ac98fa587725f5ab2cf413a320485144a18d25084bf0dcc137f5b009bea99699",
+      "sha256": "42a5f1390999497a24c21b67ad1b7c96701534f525eac010b7a4693a6a608569",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1994
     },
     {
       "path": "data/football/worldcup/1998.json",
-      "sha256": "882342aa1c6d7f1e4e0bcc5f1f6a9d375d628b6d8beb81c55d228b48bd318e48",
+      "sha256": "9719623084f572f429952009f9f0530830255de2a1ef9477b13fad8666eec4e6",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1998
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "0030d3918164e2099875547edd387b98f02cab2f6163a3926f6c9373a7d8aefe",
+  "checksum": "089864d56e130d2fe1c52d9fa656b6d31db5629a6b0cb52daa76dbee8d8a8a9c",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 3702,
+    "matches": 5158,
     "results": 0
   },
   "license": {
@@ -1039,6 +1039,12 @@
         "retrieved": "2026-10-06"
       },
       {
+        "source": "rsssf:90q",
+        "name": "RSSSF — World Cup 1990 (qualifying)",
+        "url": "https://www.rsssf.org/tables/90q.html",
+        "retrieved": "2026-10-10"
+      },
+      {
         "source": "rsssf:92e",
         "name": "RSSSF — European Championship 1992",
         "url": "https://www.rsssf.org/tables/92e.html",
@@ -1056,6 +1062,12 @@
         "name": "RSSSF — World Cup 1994 full details",
         "url": "https://www.rsssf.org/tables/94full.html",
         "retrieved": "2026-10-06"
+      },
+      {
+        "source": "rsssf:94q",
+        "name": "RSSSF — World Cup 1994 (qualifying)",
+        "url": "https://www.rsssf.org/tables/94q.html",
+        "retrieved": "2026-10-10"
       },
       {
         "source": "rsssf:96e",
@@ -1076,6 +1088,12 @@
         "url": "https://www.rsssf.org/tables/98full.html",
         "retrieved": "2026-10-06",
         "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:98q",
+        "name": "RSSSF — World Cup 1998 (qualifying)",
+        "url": "https://www.rsssf.org/tables/98q.html",
+        "retrieved": "2026-10-10"
       },
       {
         "source": "rsssf",
