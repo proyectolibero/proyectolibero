@@ -27,7 +27,7 @@ const DEFAULT_COMPETITION = "worldcup";
 const DEFAULT_LICENSE = "rsssf-attribution";
 
 /** Códigos alternativos usados por RSSSF `full` que no son el canónico del catálogo. */
-const CODE_ALIASES = { JUG: "YUG", CZE: "TCH", GER: "FRG", HOL: "NED" };
+const CODE_ALIASES = { JUG: "YUG", CZE: "TCH", GER: "FRG", HOL: "NED", ROM: "ROU", COS: "CRC", ZSR: "URS" };
 
 /** Notas del esquema v2 que puede aportar la fuente resumida. */
 const KNOWN_NOTES = new Set([
@@ -262,20 +262,23 @@ function sameCity(a, b) {
 }
 
 /**
- * Localiza el bloque de `full` que corresponde a un partido publicado. Prioriza
- * la identidad fuerte (fecha + equipos, en cualquier orientación) y cae a
- * heurísticos solo cuando son unívocos: ciudad, marcador y, por último, equipos
- * (una selección no suele repetir rival en una misma edición).
+ * Localiza el bloque de `full` que corresponde a un partido publicado por las
+ * claves fuertes (fecha + equipos en cualquier orientación, ciudad o marcador).
+ * Devuelve `null` si ninguna es unívoca; las heurísticas por fecha u orden se
+ * aplican después, en `attachSheets`, para no robar un bloque ya asignable.
  */
 function findFullBlock(match, pool) {
   const free = (predicate) => pool.filter((block) => !block.used && predicate(block));
   const unique = (candidates) => (candidates.length === 1 ? candidates[0] : null);
+  const sameDate = (block) => match.date !== null && block.date === match.date;
   const byPriority = [
-    (block) => block.date === match.date && samePair(match, block),
-    (block) => block.date === match.date && reversedPair(match, block),
-    (block) => block.date === match.date && sameCity(match.city, block.city),
-    (block) => block.date === match.date && matchScoreValue(match.score) !== null && fullScoreValue(block.score) === matchScoreValue(match.score),
-    (block) => samePair(match, block) || reversedPair(match, block)
+    (block) => sameDate(block) && samePair(match, block),
+    (block) => sameDate(block) && reversedPair(match, block),
+    (block) => sameDate(block) && sameCity(match.city, block.city),
+    (block) =>
+      sameDate(block) &&
+      matchScoreValue(match.score) !== null &&
+      fullScoreValue(block.score) === matchScoreValue(match.score)
   ];
   for (const predicate of byPriority) {
     const found = unique(free(predicate));
@@ -284,11 +287,26 @@ function findFullBlock(match, pool) {
   return null;
 }
 
+/** `true` si el partido pertenece al torneo final (no a la fase de clasificación). */
+function isFinalTournamentMatch(match) {
+  return !String((match && match.stage) || "").toLowerCase().startsWith("qualifying");
+}
+
+/** Asigna `sheet` a un partido y marca el bloque como usado. */
+function takeSheet(match, block, sourceId) {
+  block.used = true;
+  match.sheet = { source: sourceId, text: block.text, lang: "en" };
+}
+
 /**
  * Devuelve una copia de `edition` con la ficha verbatim (`sheet`) de `full`
  * añadida a los partidos emparejados. No altera ningún otro dato publicado: es
  * la vía segura para escalar la ficha a ediciones migradas que no se reproducen
  * desde las fuentes `f`/`full` (ADR-023/D33).
+ *
+ * Emparejamiento en tres pasadas: (1) claves fuertes; (2) único bloque libre de
+ * la misma fecha (salva diferencias de idioma en la ciudad o de código de país);
+ * (3) equipos ignorando la fecha (salva erratas de fecha), siempre si es unívoco.
  *
  * @param {object} edition edición publicada
  * @param {object[]} fullMatches partidos del parser `full`
@@ -308,15 +326,30 @@ function attachSheets(edition, fullMatches, sourceId) {
       text: match.rawSheet,
       used: false
     }));
-  let matched = 0;
-  for (const match of result.matches || []) {
+  const matches = (result.matches || []).filter(isFinalTournamentMatch);
+  const uniqueFree = (predicate) => {
+    const free = pool.filter((block) => !block.used && predicate(block));
+    return free.length === 1 ? free[0] : null;
+  };
+
+  for (const match of matches) {
     const block = findFullBlock(match, pool);
-    if (!block) continue;
-    block.used = true;
-    matched += 1;
-    match.sheet = { source: sourceId, text: block.text, lang: "en" };
+    if (block) takeSheet(match, block, sourceId);
   }
-  return { edition: result, matched, unmatched: (result.matches || []).length - matched };
+  for (const match of matches) {
+    if (match.sheet) continue;
+    const block = uniqueFree((candidate) => match.date !== null && candidate.date === match.date);
+    if (block) takeSheet(match, block, sourceId);
+  }
+  for (const match of matches) {
+    if (match.sheet) continue;
+    const block = uniqueFree((candidate) => samePair(match, candidate) || reversedPair(match, candidate));
+    if (block) takeSheet(match, block, sourceId);
+  }
+
+  const total = (result.matches || []).length;
+  const matched = (result.matches || []).filter((match) => match.sheet).length;
+  return { edition: result, matched, unmatched: total - matched };
 }
 
 /** Empareja cada partido de `f` con su detalle en `full`. */

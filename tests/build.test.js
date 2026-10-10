@@ -266,3 +266,42 @@ test("attachSheets empareja por marcador cuando los equipos no coinciden y omite
   assert.equal(out.matches[0].sheet.text, "bloque húngaro");
   assert.equal(out.matches[1].sheet, undefined);
 });
+
+test("attachSheets ignora la fase de clasificación aunque 'full' tenga su bloque", () => {
+  const edition = {
+    schemaVersion: 2,
+    sources: [],
+    matches: [
+      { id: "m1", date: "1938-05-01", city: "Wien", home: "AUT", away: "SWE", score: [1, 0], stage: "qualifying" },
+      { id: "m2", date: "1938-06-05", city: "Paris", home: "FRA", away: "BEL", score: [3, 1], stage: "r16" }
+    ]
+  };
+  const fullMatches = [
+    { date: "1938-05-01", city: "Wien", home: "AUT", away: "SWE", score: "1:0", rawSheet: "bloque clasificación" },
+    { date: "1938-06-05", city: "Paris", home: "FRA", away: "BEL", score: "3:1", rawSheet: "bloque octavos" }
+  ];
+
+  const { edition: out, matched } = attachSheets(edition, fullMatches, "rsssf:38full");
+
+  assert.equal(matched, 1);
+  assert.equal(out.matches[0].sheet, undefined, "la clasificación no se enriquece");
+  assert.equal(out.matches[1].sheet.text, "bloque octavos");
+});
+
+test("attachSheets empareja por la única fecha libre si difieren códigos, ciudad y marcador", () => {
+  const edition = {
+    schemaVersion: 2,
+    sources: [],
+    matches: [
+      { id: "m1", date: "1974-06-18", city: "Hamburgo", home: "ZZZ", away: "YYY", score: [3, 0], stage: "group" }
+    ]
+  };
+  const fullMatches = [
+    { date: "1974-06-18", city: "Hamburg", home: "QQQ", away: "PPP", score: "1:0", rawSheet: "bloque tercero" }
+  ];
+
+  const { edition: out, matched } = attachSheets(edition, fullMatches, "rsssf:74full");
+
+  assert.equal(matched, 1);
+  assert.equal(out.matches[0].sheet.text, "bloque tercero");
+});
