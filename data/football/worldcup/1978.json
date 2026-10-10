@@ -347,7 +347,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "02.06.78  (13.45) Mar del Plata, Estadio Mar del Plata\nITA - FRA 2:1 (1:1)\n(+42000) Rainea ROM, Lienmayr AUT, Silvagno CHI\nITA: Zoff (c) - Gentile, Bellugi, Scirea, Cabrini - Benetti, Tardelli,\nAntognoni (46 Zaccarelli), Causio - Rossi, Bettega\nFRA: Bertrand-Demanes - Janvion, Bossis, Rio, Trésor (c) - Michel, Dalger,\nGuillou, Lacombe (74 Berdoll) - Platini, Six (76 Rouyer)\n0:1 Lacombe (38 sec), 1:1 Rossi 30, 2:1 Zaccarelli 52\nbooked: Tardelli / Platini, Michel",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -360,7 +365,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "02.06.78  (19.15) Buenos Aires, Estadio Monumental\nARG - HUN 2:1 (1:1)\n(~77000) Garrido POR, Partridge ENG, N'Diaye SEN\nARG: Fillol - Olguin, Passarella (c), L.Galvan, Tarantini - Ardiles,\nGallego, Valencia (75 Alonso), Houseman (67 Bertoni) - Luqué, Kempes\nHUN: Gujdár - Törok (46 Martos), Kereki (c), Kocsis, J.Tóth - Nyilasi,\nZombori, Pintér, Csapó - Tórócsik, Nagy\n0:1 Csapó 10, 1:1 Luqué 15, 2:1 Bertoni 84\nbooked: Passarella / Tórócsik, Nyilasi\nsent off: Tórócsik (88), Nyilasi (89)",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -373,7 +383,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "06.06.78  (13.45) Mar del Plata, Estadio Mar del Plata\nITA - HUN 3:1 (2:0)\n(~32000) Barreto URU, Riwersi GER, Gordon SCO\nITA: Zoff (c) - Gentile, Bellugi, Scirea, Cabrini (79 Cuccureddu) - Benetti,\nTardelli, Antognoni, Causio - Rossi, Bettega (84 Graziani)\nHUN: Meszaros - Martos, Kereki (c), Kocsis, J.Tóth - Pusztai, Zombori,\nPintér, Csapó - Fazekas (46 Hálasz), Nagy (46 A.Tóth)\n1:0 Rossi 34, 2:0 Bettega 36, 3:0 Benetti 60, 3:1 A.Tóth 81 p\nbooked: Zombori, Martos",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -386,7 +401,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "06.06.78  (19.15) Buenos Aires, Estadio Monumental\nARG - FRA 2:1 (1:0)\n(+77000) Dubach SUI, Orozco PER, Winsemann CAN\nARG: Fillol - Olguin, Passarella (c), L.Galvan, Tarantini - Ardiles, Gallego,\nValencia (63 Alonso, 72 Ortiz), Houseman - Luqué, Kempes\nFRA: Bertrand-Demanes (58 Baratelli) - Battiston, Bossis, López, Trésor (c) -\nMichel, Rocheteau, Bathenay, Lacombe - Platini, Six\n1:0 Passarella 45 p, 1:1 Platini 60, 2:1 Luqué 73\nbooked: Six",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -399,7 +419,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "10.06.78  (14.30) Mar del Plata, Estadio Mar del Plata\nFRA - HUN 3:1 (3:1)\n(~28000) Coelho BRA, Silvagno CHI, Partridge ENG\nFRA: Dropsy - Bracci, Petit, Janvion, Berdoll - López, Trésor (c),\nRouyer, Rocheteau (75 Six) - Bathenay, Papi (46 Platini)\nHUN: Gujdár - Martos, Kereki (c), Balint, J.Tóth - Pusztai, Zombori, Pintér,\nNyilasi - Tórócsik, Nagy (73 Csapó)\n1:0 López 22, 2:0 Berdoll 37, 2:1 Zombori 41, 3:1 Rocheteau 42\nNOTE: Match delayed due to both teams wearing identical kits; the\nFrench eventually donned the kits of a local Atletico Kimbeira team.",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -412,7 +437,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "10.06.78  (19.15) Buenos Aires, Estadio Monumental\nITA - ARG 1:0 (0:0)\n(+77000) Klein ISR, Rion BEL, González MEX\nITA: Zoff (c) - Gentile, Bellugi (6 Cuccureddu), Scirea, Cabrini - Benetti,\nTardelli, Antognoni (73 Zaccarelli), Causio - Rossi, Bettega\nARG: Fillol - Olguin, Passarella (c), L.Galvan, Tarantini - Ardiles, Gallego,\nValencia, Bertoni - Ortiz (73 Houseman), Kempes\n1:0 Bettega 67\nbooked: Benetti",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -425,7 +455,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "01.06.78  (15.00) Buenos Aires, Estadio Monumental\nPOL - GER 0:0\n(~77000) Coerezza ARG, Ithurralde ARG, Comesaña ARG\nPOL: Tomaszewski - Szymanowski, Maculewicz, Gorgoń, Nawałka - Żmuda,\nDeyna (c), Lubański (79 Boniek), Lato - Masztaler (84 Kasperczak), Szarmach\nGER: Maier - Vogts (c), Rüssmann, Kaltz, Zimmermann - Bonhof, H.Müller, Flohe,\nAbramczik - Fischer, Beer\nNOTE: Match preceded by WC opening ceremony",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -438,7 +473,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "02.06.78  (16.45) Rosario, Estadio Rosario\nTUN - MEX 3:1 (0:1)\n(~25000) Gordon SCO, Gonella ITA, Dubach SUI\nTUN: Naili - Dhouieb, Jendoubi, Kaabi, Jebali - Ghommidh, Tarak,\nAgrebi - Témime (c - 88 K.Labidi), Akid, Ben Aziza (81 Karoui)\nMEX: Reyes - Martinez, Tena, Ramos, Vásquez-Ayala - Mendizábal (67  Lugo),\nde la Torre, Cuéllar, Rangel - Isiordia, Sánchez\n0:1 Vásquez-Ayala 45 p, 1:1 Kaabi 55, 2:1 Ghommidh 79, 3:1 Dhouieb 87",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -451,7 +491,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "06.06.78  (16.45) Rosario, Estadio Rosario\nPOL - TUN 1:0 (1:0)\n(~15000) Franco ESP, Pestarino ARG, Thomas WAL\nPOL: Tomaszewski - Szymanowski, Maculewicz, Gorgoń, Nawałka, Żmuda -\nDeyna (c), Lubański (76 Boniek), Lato - Kasperczak, Szarmach (80 Iwan)\nTUN: Naili - Dhouieb, Jebali, Jendoumi, Kaabi - Ghommidh, Gasmi, Karab,\nAgrebi - Témime (c), Akib\n1:0 Lato 43",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -464,7 +509,12 @@
       "score": [
         6,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "06.06.78  (16.45) Cordoba, Estadio Cordoba\n(~46000) Bouzo SYR, Rion BEL, Garrido POR\nGER - MEX 6:0 (4:0)\nGER: Maier - Vogts (c), Rüssmann, Dietz, Kaltz - Bonhof, H.Müller, Flohe,\nRummenigge - Fischer, D.Müller\nMEX: Reyes (40 Soto) - Martinez, Tena, Ramos, Vásquez-Ayala (c) - Mendizábal,\nde la Torre, Cuéllar, Rangel - Lopez-Zarza (46 Lugo), Sánchez\n1:0 D.Müller 15, 2:0 H.Müller 30, 3:0 Rummenige 38, 4:0 Flohe 40, 5:0 Rummenige\n73, 6:0 Flohe 90\nbooked: Bonhof / Vásquez-Ayala",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -477,7 +527,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "10.06.78  (16.45) Cordoba, Estadio Cordoba\nTUN - GER 0:0\n(~35000) Orozco PER, Comesaña ARG, Pestarino ARG\nTUN: Naili - Dhouieb, Jendoumi, Kaabi, Jebali - Gasmi, Ghommidh, Tarak,\nAgrebi - Akid (63 Ben Aziza), Témime (c)\nGER: Maier - Vogts (c), Rüssmann, Dietz, Kaltz - Bonhof, H.Müller, Flohe,\nRummenigge - Fischer, D.Müller\nbooked: Tarak / H.Müller",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -490,7 +545,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "10.06.78  (16.45) Rosario, Estadio Rosario\nPOL - MEX 3:1 (1:0)\n(~25000) Namdar IRN, Corver HOL, Eriksson SWE\nPOL: Tomaszewski - Szymanowski, Żmuda, Rudy (85 Maculewicz), Gorgoń -\nMasztaler, Deyna (c), Boniek, Kasperczak -  Lato, Iwan (76 Lubański)\nMEX: Soto - Gómez, Cisneros, Flóres, Vazquez-Ayala - de la Torre, Cuéllar,\nRangel - Ortega, Cardenas (46 Mendizábal), Sánchez\n1:0 Boniek 43, 1:1 Rangel 52, 2:1 Deyna 56, 3:1 Boniek 84",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -503,7 +563,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "03.06.78  (13.45) Mar del Plata, Estadio Mar del Plata\nBRA - SWE 1:1 (1:1)\n(~38000) Thomas WAL, Jarguz POL, Namdar IRN\nBRA: Leão - Amaral, Toninho, Oscar, Edinho - Cerezo (81 Dirceu), Zico,\nRivelino (c), Gil (66 Nelinho) - Reinaldo, Batista\nSWE: Hellström - Borg, R.Andersson, Nordqvist (c), Erlandsson - Tapper,\nLinderoth, L.Larsson (81 Edström), B.Larsson - Sjöberg, Wendt\n0:1 Sjöberg 38, 1:1 Reinaldo 45\nbooked: Oscar\nNOTE: BRA fielded an official protest complaining on Mr. Thomas'\npartial refereeing and his premature ending of the match; the protest\nwas rejected.",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -516,7 +581,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "03.06.78  (13.45) Buenos Aires, Estadio José Amalfitani\nAUT - ESP 2:1 (1:1)\n(+49000) Palotai HUN, Barreto URU, Ivanov ZSR\nAUT: Koncilia - Sara (c), Pezzey, Obermayer, Breitenberger - Kreuz,\nProhaska, Hickersberger (67 Weber), Schachner - Krankl (81 Pirkner), Jara\nESP: Miguel Angel - Marcelino, Migueli, Pirri (c), de la Cruz - San José,\nAsensi, Cardeñosa (41 Leal), Rexach (60 Quini) - Ruben Cano, Dani\n1:0 Schachner 10, 1:1 Dani 21, 2:1 Krankl 77",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -529,7 +599,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "07.06.78  (13.45) Buenos Aires, Estadio José Amalfitani\nAUT - SWE 1:0 (1:0)\n(~46000) Corver HOL, Maksimović JUG, Samidi TUN\nAUT: Koncilia - Sara (c), Pezzey, Obermayer, Breitenberger - Kreuz, Prohaska,\nHickersberger, Krieger (71 Weber) - Krankl, Jara\nSWE: Hellström - Borg, R.Andersson, Nordqvist (c), Erlandsson - Tapper\n(36 Torstensson), Linderoth (80 Edström), L.Larsson - B.Larsson, Sjöberg, Wendt\n1:0 Krankl 42 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -542,7 +617,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "07.06.78  (13.45) Mar del Plata, Estadio Mar del Plata\nBRA - ESP 0:0\n(~40000) Gonella ITA, Klein ISR, Ithurralde ARG\nBRA: Leão (c) - Nelinho (71 Gil), Amaral, Toninho, Oscar - Edinho, Cerezo,\nZico (83 Mendonça), Dirceu - Reinaldo, Batista\nESP: Miguel Angel - Marcelino, Migueli (51 Biosca), Uria (79 Guzmán), Olmo -\nSan José, Asensi, Cardeñosa, Leal - Juanito, Santillana\nbooked: Leal",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -555,7 +635,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "11.06.78  (13.45) Mar del Plata, Estadio Mar del Plata\nBRA - AUT 1:0 (1:0)\n(~40000) Wurtz FRA, Bouzo SYR, Tesfaye ETH\nBRA: Leão (c) - Rodriguez Neto, Amaral, Toninho, Oscar - Cerezo\n(71 Chicão), Mendonça (84 Zico), Dirceu, Roberto - Gil, Batista\nAUT: Koncilia - Sara (c), Pezzey, Obermayer, Breitenberger - Kreuz, Prohaska,\nHickersberger (61 Weber), Krieger (84 Happich) - Krankl, Jara\n1:0 Roberto 40",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -568,7 +653,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "11.06.78  (13.45) Buenos Aires, Estadio José Amalfitani\nESP - SWE 1:0 (0:0)\n(~48000) Riversi GER, Prokop DDR, Ithurralde ARG\nESP: Miguel Angel - Marcelino, Biosca, Uria, Olmo (46 Pirri) - San José,\nAsensi (c), Cardeñosa, Leal - Juanito, Santillana\nSWE: Hellström - Borg, R.Andersson, Nordqvist (c), Erlandsson - Nilsson, L.Larsson,\nNordin, B.Larsson - Sjöberg (67 Linderoth), Edström (60 Wendt)\n1:0 Asensi 78\nbooked: Borg",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -581,7 +671,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "03.06.78  (16.45) Mendoza, Estadio Mendoza\nHOL - IRN 3:0 (1:0)\n(~42000) González MEX, Wurtz FRA, Comesaña ARG\nHOL: Jongbloed - Suurbier, Krol (c), Haan, Rijsbergen - W.Van de Kerkhof,\nNeeskens, Jansen - Rep, R.Van de Kerkhof (70 Nanninga), Rensenbrink\nIRN: Hejazi - Nazari, Abdolahi, Kazerani, Eskandarian - Parvin (c),\nGhassempour, Sadeghi, Nayebagha - Djahani, Faraki (51 Rowshan)\n1:0 Rensenbrink 40 p, 2:0 Rensenbrink 62 h, 3:0 Rensenbrink 75 p\nbooked: Eskandarian",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -594,7 +689,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "03.06.78  (16.45) Cordoba, Estadio Cordoba\nPER - SCO 3:1 (1:1)\n(~42000) Eriksson SWE, Franco ESP, Tesfaye ETH\nPER: Quiroga - Duarte, Manzo, Chumpitaz (c), Diaz - Velasquez, Cueto\n(83 P.Rojas), Cubillas, Muñante - La Rosa (63 Sotil), Oblitas\nSCO: Rough - Kennedy (c), Burns, Buchan, Forsyth - Rioch (76 Gemmill), Masson\n(76 Macari), Hartford, Dalglish - Jordan, Johnston\n0:1 Jordan 14, 1:1 Cueto 43, 2:1 Cubillas 72, 3:1 Cubillas 77 f (63 Quiroga\nsaved a penalty by Masson)\nbooked: Velasquez\nNOTE: Johnston expulsed from the tournament after failed anti-dope\ntesting",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -607,7 +707,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "07.06.78  (16.45) Mendoza, Estadio Mendoza\nHOL - PER 0:0\n(~30000) Prokop DDR, Coerezza ARG, Ivanov ZSR\nHOL: Jongbloed - Suurbier, Krol (c), Poortvliet, Rijsbergen - W.Van de\nKerkhof, Neeskens (68 Nanninga), Jansen - Haan, R.Van de Kerkhof (46\nRep), Rensenbrink\nPER: Quiroga - Duarte, Manzo, Chumpitaz (c), Diaz - Velasquez, Cueto,\nCubillas, Muñante - La Rosa (63 Sotil), Oblitas\nbooked: R.Van de Kerkhof / Muñante",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -620,7 +725,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "07.06.78  (16.45) Cordoba, Estadio Cordoba\nIRN - SCO 1:1 (0:1)\n(~8000) N'Diaye SEN, Bainea ROM, Coelho BRA\nIRN: Hejazi - Nazari, Abdolahi, Kazerani, Eskandarian - Parvin (c),\nGhassempour, Sadeghi, Danaifar (89 Nayebagha) - Djahani, Faraki (83 Rowshan)\nSCO: Rough - Jardine, Burns, Buchan (56 Forsyth), Donachie - Gemmill (c),\nMacari, Hartford, Dalglish (74 Harper) - Jordan, Robertson\n0:1 Eskandarian 43 s, 1:1 Danaifar 60\nbooked: Eskandarian",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -633,7 +743,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "11.06.78  (16.45) Mendoza, Estadio Mendoza\nSCO - HOL 3:2 (1:1)\n(~40000) Lienmayr AUT, Palotai HUN, Seoudi TUN\nSCO: Rough - Kennedy (c), Buchan, Forsyth, Donachie - Gemmill, Rioch,\nHartford, Dalglish - Souness, Jordan\nHOL: Jongbloed - Suurbier, Krol (c), Rijsbergen (44 Wildschut),\nPoortvliet - W.Van de Kerkhof - Neeskens (10 Boskamp), Jansen, R.Van de\nKerkhof - Rep, Rensenbrink.\n0:1 Rensenbrink 34 p, 1:1 Dalglish 44, 2:1 Gemmill 47 p, 3:1 Gemmill 68, 3:2\nRep 72",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -646,7 +761,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "11.06.78  (16.45) Cordoba, Estadio Cordoba\nPER - IRN 4:1 (3:1)\n(+21000) Jarguz POL, Maksimović JUG, Winsemann CAN\nPER: Quiroga - Duarte, Manzo (68 Leguia), Chumpitaz, Diaz - Velasquez,\nCueto, Cubillas, Muñante - La Rosa (60 Sotil), Oblitas\nIRN: Hejazi - Nazari, Abdolahi, Kazerani, Allahvardi - Parvin (c), Ghassempour,\nSadeghi, Danaifar - Faraki (52 Djahani), Rowshan (66 Fariba).\n1:0 Velasquez 2 (111 sec), 2:0 Cubillas 36 p, 3:0 Cubillas 39 p, 3:1 Rowshan\n41, 4:1 Cubillas 79",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -659,7 +779,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "14.06.78  (13.45) Buenos Aires, Estadio Monumental\nITA - GER 0:0\n(~68000) Maksimović JUG, González MEX, Comesaña ARG\nITA: Zoff (c) - Gentile, Bellugi, Scirea, Cabrini - Benetti, Antognoni\n(46 Zaccarelli), Tardelli, Causio - Rossi, Bettega\nGER: Maier - Vogts (c), Rüssmann, Zimmermann (54 Konopka), Dietz - Kaltz,\nBonhof, Flohe (69 Beer), Rummenigge - Fischer, Hölzenbein",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -672,7 +797,12 @@
       "score": [
         5,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "14.06.78  (13.45) Cordoba, Estadio Cordoba\nHOL - AUT 5:1 (3:0)\n(~15000) Gordon SCO, Bouzo SYR, Ithurralde ARG\nHOL: Schrijvers - Poortvliet, Krol (c), Brandts (65 van Kraay), Wildschut -\nJansen, Haan, W.Van de Kerkhof, R.Van de Kerkhof (61 Schoenaker) - Rep,\nRensenbrink\nAUT: Koncilia - Sara (c), Pezzey, Obermayer, Breitenberger - Hickersberger,\nKrieger, Prohaska, Kreuz - Krankl, Jara\n1:0 Brandts 7 h, 2:0 Rensenbrink 35 p, 3:0 Rep 37, 4:0 Rep 53, 4:1 Obermayer\n70, 5:1 W.Van de Kerkhof 87",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -685,7 +815,12 @@
       "score": [
         2,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "18.06.78  (16.45) Cordoba, Estadio Cordoba\nHOL - GER 2:2 (1:1)\n(~46000) Barreto URU, Coelho BRA, Comesaña ARG\nHOL: Schrijvers - Krol (c), Poortvliet, Brandts, W.Van de Kerkhof -\nWildschut (79 Nanninga), Jansen, Haan - R.Van de Kerkhof, Rep, Rensenbrink\nGER: Maier - Vogts (c), Rüssmann, Dietz, Kaltz - Bonhof, Beer,\nRummenigge, Abramczik - Hölzenbein, D.Müller\n0:1 Abramczik 3 h, 1:1 Haan 27, 1:2 D.Müller 70 h, 2:2 R.Van de Kerkhof 87\nbooked: W.Van de Kerkhof / Maier\nsent off: Nanninga (88)\nNOTE: Together with the ITA-AUT match, the 300th (or 301th) game\nof the World Cup",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -698,7 +833,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "18.06.78  (16.45) Buenos Aires, Estadio Monumental\nITA - AUT 1:0 (1:0)\n(~50000) Rion BEL, Coerezza ARG, N'Diaye SEN\nITA: Zoff (c) - Gentile, Bellugi (46 Cuccureddu), Scirea, Cabrini -\nBenetti, Zaccarelli, Tardelli, Causio - Rossi, Bettega (71 Graziani)\nAUT: Koncilia - Sara (c), Pezzey, Obermayer, Strasser - Hickersberger,\nKrieger, Prohaska, Kreuz - Krankl, Schachner (63 Pirkner)\n1:0 Rossi 14\nNOTE: Together with the HOL-GER match, the 300th (or 301th) game\nof the World Cup",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -711,7 +851,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "21.06.78  (13.45) Buenos Aires, Estadio Monumental\nHOL - ITA 2:1 (0:1)\n(~68000) Franco ESP, Orozco PER, Pestarino ARG\nHOL: Schrijvers (21 Jongbloed) - Poortvliet, Krol (c), Brandts, W.Van\nde Kerkhof - Neeskens, Jansen, Haan, R.Van de Kerkhof - Rep (66 Van Kraay),\nRensenbrink\nITA: Zoff (c) - Gentile, Cuccureddu, Scirea, Cabrini - Benetti (79\nGraziani), Zaccarelli, Tardelli, Causio (46 C.Sala) - Rossi, Bettega\n0:1 Brandts 19 o, 1:1 Brandts 50, 2:1 Haan 75\nbooked: Rep, Haan / Benetti, Tardelli, Cabrini",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -724,7 +869,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "21.06.78  (13.45) Cordoba, Estadio Cordoba\nAUT - GER 3:2 (0:1)\n(~20000) Klein ISR, Garrido POR, Jarguz POL\nAUT: Koncilia - Sara (c), Pezzey, Obermayer, Strässer - Hickersberger,\nKrieger, Prohaska, Kreuz - Krankl, Schachner (71 Oberacher)\nGER: Maier - Vogts (c), Rüssmann, Dietz, Kaltz - Bonhof, Beer (46 H.Müller),\nRummenigge, Abramczik - Hölzenbein, D.Müller (61 Fischer)\n0:1 Rummenige 19, 1:1 Vogts 59 o, 2:1 Krankl 66, 2:2 Hölzenbein 68 h, 3:2\nKrankl 88\nbooked: Prohaska, Sara / Abramczik",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -737,7 +887,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "14.06.78  (16.45) Mendoza, Estadio Mendoza\nBRA - PER 3:0 (2:0)\n(~40000) Rainea ROM, Dubach SUI, Winsemann CAN\nBRA: Leão (c) - Toninho, Oscar, Amaral, Rodriguez Neto - Batista, Cerezo\n(76 Chicão), Dirceu, Mendonça - Gil (70 Zico), Roberto\nPER: Quiroga - Duarte, Manzo, Chumpitaz (c), Diaz (11 Navarro) - Velasquez,\nCueto, Cubillas, Munante - La Rosa, Oblitas (46 P.Rojas)\n1:0 Dirceu 15 f, 2:0 Dirceu 28, 3:0 Zico 73 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m032",
@@ -750,7 +905,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "14.06.78  (19.15) Rosario, Estadio Rosario\nARG - POL 2:0 (1:0)\n(~40000) Eriksson SWE, Namdar IRN, Tosfaye ETH\nARG: Fillol - Olguin, L.Galvan, Passarella, Tarantini - Ardiles,\nGallego, Valencia (46 Villa), Houseman (63 Ortiz) - Kempes, Bertoni\nPOL: Tomaszewski - Szymanowski, Żmuda, Kasperczak, Maculewicz -\nNawałka, Deyna (c), Boniek, Masztaler (65 Mazur) - Lato, Szarmach\n1:0 Kempes 16 h, 2:0 Kempes 71 (39 Fillol saved a penalty by Deyna)\nbooked: Gallego / Maculewicz",
+        "lang": "en"
+      }
     },
     {
       "id": "m033",
@@ -763,7 +923,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "18.06.78  (13.45) Mendoza, Estadio Mendoza\nPOL - PER 1:0 (0:0)\n(~35000) Partridge ENG, Thomas WAL, Corver HOL\nPOL: Kukla - Szymanowski, Gorgoń, Żmuda, Maculewicz - Nawałka, Deyna (c),\nBoniek (86 Lubański), Masztaler (46 Kasperczak) - Lato, Szarmach\nPER: Quiroga - Duarte, Manzo, Chumpitaz (c), Navarro - Quesada, Cueto,\nCubillas, Munante (46 R.Rojas) - La Rosa (73 Sotil), Oblitas.\n1:0 Szarmach 65 h\nbooked: Boniek, Gorgoń / Quiroga, Manzo",
+        "lang": "en"
+      }
     },
     {
       "id": "m034",
@@ -776,7 +941,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "18.06.78  (19.15) Rosario, Estadio Rosario\nARG - BRA 0:0\n(~46000) Palotai HUN, Linemayr AUT, Prokop DDR\nARG: Fillol - Olguin, L.Galvan, Passarella (c), Tarantini - Ardiles\n(46 Villa), Gallego, Luqué, Ortiz (31 Alonso) - Kempes, Bertoni\nBRA: Leão (c) - Toninho, Oscar, Amaral, Rodriguez Neto (34 Edinho) - Batista,\nChicão, Dirceu - Mendonça (67 Zico), Gil, Roberto\nbooked: Villa / Chicão, Edinho, Zico",
+        "lang": "en"
+      }
     },
     {
       "id": "m035",
@@ -789,7 +959,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "21.06.78  (16.45) Mendoza, Estadio Mendoza\nBRA - POL 3:1 (1:1)\n(~44000) Silvagno CHI, Ivanov ZSR, González MEX\nBRA: Leão (c) - Toninho, Oscar, Amaral, Nelinho - Batista, Cerezo\n(70 Rivelino), Dirceu - Zico (7 Mendonça), Gil, Roberto\nPOL: Kukla - Szymanowski, Gorgoń, Żmuda, Maculewicz - Nawałka, Deyna (c),\nBoniek, Kasperczak (65 Lubański) - Lato, Szarmach\n1:0 Nelinho 13 f, 1:1 Lato 45, 2:1 Roberto 57, 3:1 Roberto 63\nbooked: Mendonça, Cerezo",
+        "lang": "en"
+      }
     },
     {
       "id": "m036",
@@ -802,7 +977,12 @@
       "score": [
         6,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "21.06.78  (19.15) Rosario, Estadio Rosario\nARG - PER 6:0 (2:0)\n(+40000) Wurtz FRA, Riwersi GER, Gonella ITA\nARG: Fillol - Olguin, L.Galvan, Passarella (c), Tarantini - Larrosa,\nGallego (86 Oviedo), Luqué, Ortiz - Kempes, Bertoni (65 Houseman)\nPER: Quiroga - Duarte, Manzo, Chumpitaz (c), R.Rojas - Quesada, Cueto,\nVelasquez (52 Gorriti) Cubillas - Munante, Oblitas\n1:0 Kempes 21, 2:0 Tarantini 43 h, 3:0 Kempes 49, 4:0 Luqué 50 h, 5:0 Houseman\n67, 6:0 Luqué 72\nbooked: Quesada, Velasquez",
+        "lang": "en"
+      }
     },
     {
       "id": "m037",
@@ -815,7 +995,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "24.06.78  (15.00) Buenos Aires, Estadio Monumental\nBRA - ITA 2:1 (0:1)\n(+76000) Klein ISR, Palotai HUN, González MEX\nBRA: Leão (c) - Nelinho, Oscar, Amaral, Rodriguez Neto - Cerezo (64 Rivelino),\nBatista, Dirceu, Gil (46 Reinaldo) -  Roberto, Mendonça\nITA: Zoff (c) - Cuccureddu, Gentile, Scirea, Cabrini - P.Sala, Antognoni\n(79 C.Sala), Maldera, Causio - Rossi, Bettega\n0:1 Causio 38 h, 1:1 Nelinho 64, 2:1 Dirceu 72\nbooked: Nelinho, Batista / Gentile",
+        "lang": "en"
+      }
     },
     {
       "id": "m038",
@@ -831,7 +1016,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:78full",
+        "text": "25.06.78  (15.00) Buenos Aires, Estadio Monumental\nARG - HOL 3:1 (1:0, 1:1, 2:1)\n(~70000) Gonella ITA, Barreto URU, Lienmayr AUT\nARG: Fillol - Olguin, Galvan, Passarella (c), Tarantini - Ardiles (66 Larossa),\nGallego, Kempes, Bertoni - Luqué, Ortiz (75 Houseman)\nHOL: Jongbloed - Poortvliet, Krol (c), Brandts, Jansen (73 Suurbier) -\nNeeskens, Haan, W. van de Kerkhof, R. van de Kerkhof - Rep (59 Nanninga),\nRensenbrink\n1:0 Kempes 38, 1:1 Nanninga 82 h, 2:1 Kempes 105, 3:1 Bertoni 115\nbooked: Ardilles, Larossa / Krol, Poortvliet",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [

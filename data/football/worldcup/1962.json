@@ -262,7 +262,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "30.05.62  (15.00) Arica, Estadio Carlos Dittborn\nURU - COL 2:1 (0:1)\n(-8000) Dorogi HUN, Etzel Filho BRA, Galba CZE\nURU: Sosa - Troche (c), E.Alvarez, El.Alvarez, Méndez - Goncalves,\nCubilla, Rocha, Langón - Sasia, Pérez\nCOL: Sánchez - Zuluaga (c), J.Gonzalez, López, Echeverri - Silva,\nColl - Aceros, Klinger, Gamboa, Arias\n0:1 Zuluaga 19 p, 1:1 Cubilla 57, 2:1 Sasia 74",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -275,7 +280,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "31.05.62  (15.00) Arica, Estadio Carlos Dittborn\nZSR - JUG 2:0 (0:0)\n(-10000) Dusch GER, Robles CHI, Etzel Filho BRA\nZSR: Yashin - Dubinski, Ostrovski, Voronin, Maslenkin - Netto (c),\nMetreveli - Ivanov, Ponedelnik, Kanevski, Meschki\nJUG: Šoškić - Durković, Jusufi, Marković - Popović, Matuš - Mujić (c),\nŠekularac,\nJerković, Galić, Skoblar\n1:0 Ivanov 52 h, 2:0 Ponedelnik 84",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -288,7 +298,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "02.06.62  (15.00) Arica, Estadio Carlos Dittborn\nJUG - URU 3:1 (2:1)\n(-9000) Galba CZE, Dusch GER, Jonni ITA\nJUG: Šoškić - Durković, Jusufi, Radaković, Marković - Popović,\nMelić - Šekularac, Jerković, Galić (c), Skoblar\nURU: Sosa - Troche (c), E.Alvarez, El.Alvarez, Méndez - Gonsalves, Bergara -\nRocha, Cabrera, Sasia, Perez\n0:1 Cabrera 19 h, 1:1 Skoblar 26 p, 2:1 Galić 30, 3:1 Jerković 49\nsent off: Popović (71) / Cabrera (71)",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -301,7 +316,12 @@
       "score": [
         4,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "03.06.62  (18.00) Arica, Estadio Carlos Dittborn\nZSR - COL 4:4 (3:1)\n(+8000) Etzel Filho BRA, Robles CHI, Dorogi HUN\nZSR: Yashin - Tchokelli, Ostrovski, Voronin, Maslenkin - Netto (c),\nChislenko - Ivanov, Ponedelnik, Kanevski, Meschki\nCOL: Sánchez - Alzate, J.González, López, Echeverri - Serrano, Coll (c) -\nAceros, Klinger, Rada, H.González\n1:0 Ivanov 8, 2:0 Chislenko 10, 3:0 Ivanov 12, 3:1 Aceros 21, 4:1 Ponedelnik\n57, 4:2 Coll 63 c (!), 4:3 Rada 72, 4:4 Klinger 77",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -314,7 +334,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "06.06.62  (15.00) Arica, Estadio Carlos Dittborn\nZSR - URU 2:1 (1:0)\n(-10000) Jonni ITA, Dusch GER, Dorogi HUN\nZSR: Yashin - Tchokelli, Ostrovski, Voronin, Maslenkin - Netto (c),\nKhussainov - Ivanov, Ponedelnik, Chislenko, Mamikin\nURU: Sosa - Troche (c), E.Alvarez, El.Alvarez, Méndez - Gonsalves,\nCortes - Cubilla, Cabrera, Sasia, Pérez\n1:0 Mamikin 38, 1:1 Sasia 54 f, 2:1 Ivanov 89",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -327,7 +352,12 @@
       "score": [
         5,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "07.06.62  (15.00) Arica, Estadio Carlos Dittborn\nJUG - COL 5:0 (2:0)\n(+7000) Robles CHI, Galba CZE, Jonni ITA\nJUG: Šoškić - Durković, Jusufi, Radaković, Marković - Popović, Melić -\nŠekularac, Jerković, Galić (c), Anković\nCOL: Sánchez - Alzate, J.González, López, Echeverri - Serrano, Coll (c) -\nAceros, Klinger, Rada, H.González\n1:0 Galić 21, 2:0 Jerković 25, 3:0 Galić 62, 4:0 Melić 82, 5:0 Jerković 88",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -340,7 +370,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "30.05.62  (15.00) Santiago, Estadio Nacional\nCHI - SUI 3:1 (1:1)\n(~65000) Aston ENG, Blavier BEL, Yamasaki PER\nCHI: Escuti - Eyzaguirre, R.Sánchez, Contreras, Navarro (c) - Toro, Rojas -\nRamirez, Landa, Fouilloux, L.Sánchez\nSUI: Elsener - Morf, Schneiter, Tacchella, Gróbety - Weber, Allemann -\nPottier, Eschmann, Wüthrich, Antenen (c)\n0:1 Wüthrich 7, 1:1 L.Sánchez 44, 2:1 Ramirez 52, 3:1 L.Sánchez 55\nNOTE: Match preceded by WC opening ceremony",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -353,7 +388,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "31.05.62  (15.00) Santiago, Estadio Nacional\nITA - GER 0:0\n(+65000) Davidson SCO, Morgan CAN, Ventre ARG\nITA: Buffon (c) - Losi, Robotti, Salvadore, Maldini - Radice, Ferrini -\nRivera, Altafini, Sivori, Menichelli\nGER: Fahrian - Nowak, Schnellinger, Schulz, Erhardt - Szymaniak, Sturm -\nHaller, Seeler, Brülls, Schäfer (c)",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -366,7 +406,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "02.06.62  (15.00) Santiago, Estadio Nacional\nCHI - ITA 2:0 (0:0)\n(+66000) Aston ENG, Goldstein ISR, Buergo MEX\nCHI: Escuti - Eyzaguirre, R.Sánchez, Contreras, Navarro (c) - Toro, Rojas -\nRamirez, Landa, Fouilloux, L.Sánchez\nITA: Mattrel - David, Robotti, Salvadore, Janich - Tumburus, Ferrini -\nMaschio, Altafini, Mora (c), Menichelli\n1:0 Ramirez 73 h, 2:0 Toro 88\nsent off: Ferrini (8), David (41)",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -379,7 +424,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "03.06.62  (15.00) Santiago, Estadio Nacional\nGER - SUI 2:1 (1:0)\n(-65000) Horn HOL, Latichev ZSR, Ventre ARG\nGER: Fahrian - Nowak, Schnellinger, Schulz, Erhardt - Szymaniak, Koslowski -\nHaller, Seeler, Brülls, Schäfer (c)\nSUI: Elsener - Schneiter, Tacchella, Gróbety, Weber - Allemann, Vonlanthen,\nDürr, Eschmann, Wüthrich, Antenen (c)\n1:0 Brülls 45, 2:0 Seeler 60, 2:1 Schneiter 74",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -392,7 +442,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "06.06.62  (15.00) Santiago, Estadio Nacional\nGER - CHI 2:0 (1:0)\n(+67000) Davidson SCO, Horn HOL, Aston ENG\nGER: Fahrian - Nowak, Schnellinger, Schulz, Erhardt - Szymaniak, Giesemann -\nKraus, Seeler, Brülls, Schäfer (c)\nCHI: Escuti - Eyzaguirre, R.Sánchez, Contreras, Navarro (c) - Tobar, Rojas -\nRamirez, Landa, Moreno, L.Sánchez\n1:0 Szymaniak 21 p, 2:0 Seeler 80 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -405,7 +460,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "07.06.62  (15.00) Santiago, Estadio Nacional\nITA - SUI 3:0 (1:0)\n(-60000) Latichev ZSR, Davidson SCO, Rumenchev BUL\nITA: Buffon (c) - Losi, Robotti, Salvadore, Maldini - Radice, Mora - Bulgarelli,\nSormani, Sivori, Pascutti\nSUI: Elsener - Schneiter, Tacchella, Gróbety, Meier - Weber, Allemann -\nVonlanthen, Dürr, Wüthrich, Antenen (c)\n1:0 Mora 2, 2:0 Bulgarelli 65, 3:0 Bulgarelli 67",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -418,7 +478,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "30.05.62  (15.00) Vina del Mar, Estadio Sausalito\nBRA - MEX 2:0 (0:0)\n(+10000) Dienst SUI, Schwinte FRA, Steiner AUT\nBRA: Gilmar - D.Santos, Mauro (c), Zózimo, N.Santos - Zito, Garrincha - Didi,\nVavá, Pelé, Zagalo\nMEX: Carbajal (c) - del Muro, Cárdenas, Sepulveda, Villegas - Reyes, Nájera -\ndel'Aguila, H.Hernández, Jasso, Diaz\n1:0 Zagalo 56 h, 2:0 Pele 73",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -431,7 +496,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "31.05.62  (15.00) Vina del Mar, Estadio Sausalito\nCZE - ESP 1:0 (0:0)\n(-13000) Steiner AUT, Marmo URU, van Rosberg AHO\nCZE: Schrojf - Lála, Novák (c), Pluskal, Popluhar - Masopust, Štibrányi -\nScherer, Kvašňák, Adamec, Jelinek\nESP: Carmelo - Rivilla, Reija, Segarra (c), Santamaria - Garay, del Sol -\nMartinez, Puskás, Suárez, Gento\n1:0 Štibrányi 60",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -444,7 +514,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "02.06.62  (15.00) Vina del Mar, Estadio Sausalito\nBRA - CZE 0:0\n(-15000) Schwinte FRA, Dienst SUI, Massaro CHI\nBRA: Gilmar - D.Santos, Mauro (c), Zózimo, N.Santos - Zito, Garrincha -\nDidi, Vavá, Pelé, Zagalo\nCZE: Schrojf - Lála, Novák (c), Pluskal, Popluhar - Masopust, Štibrányi -\nScherer, Kvašňák, Adamec, Jelinek",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -457,7 +532,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "03.06.62  (15.00) Vina del Mar, Estadio Sausalito\nESP - MEX 1:0 (0:0)\n(-12000) Tešanić JUG, Vicuña CHI, van Rosberg AHO\nESP: Carmelo - Rodri, Gracia, Verges - Santamaria, Pachin - del Sol, Peiró,\nPuskás, Suárez, Gento (c)\nMEX: Carbajal - del Muro, Cárdenas, Sepulveda, Jauregui - Reyes, Nájera -\ndel'Aguila, H.Hernández, Jasso, Diaz\n1:0 Peiró 89",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -470,7 +550,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "06.06.62  (15.00) Vina del Mar, Estadio Sausalito\nBRA - ESP 2:1 (0:1)\n(+18000) Bustamante CHI, Marino URU, Sundhelm COL\nBRA: Gilmar - D.Santos, Mauro (c), Zózimo, N.Santos - Zito, Garrincha - Didi,\nVavá, Amarildo, Zagalo\nESP: Araguistain - Rodri, Gracia, Verges - Echevarria, Pachin - Collar (c),\nPeiró, Puskás, Adélardo, Gento\n0:1 Adélardo 35, 1:1 Amarildo 72, 2:1 Amarildo 86 h\n07.06.62  Vina del Mar, Estadio Sausalito\nMEX - CZE 3:1 (2:1)\n(-11000)\nDienst SUI, Tešanić JUG, Sundhelm COL\nMEX: Carbajal - del Muro, Cárdenas, Sepulveda, Jauregui - Reyes, Nájera -\ndel'Aguila, H.Hernández, A.Hernández, Diaz\nCZE: Schrojf - Lála, Novák (c), Pluskal, Popluhar - Masopust, Štibrányi -\nScherer, Kvašňák, Adamec, Mašek\n0:1 Mašek 1 (20 sec), 1:1 Diaz 13, 2:1 del'Aguila 29, 3:1 H.Hernández 90 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -496,7 +581,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "30.05.62  (15.00) Rancagua, Estadio Braden\nARG - BUL 1:0 (1:0)\n(+7000) Gardezábal ESP, Mogan CAN, Buergo MEX\nARG: Roma - Navarro (c), Páez, Sainz, Marzolini - Sacchi, Rossi - Facundo,\nPagani, Sanfilippo, Belen\nBUL: Naidenov - Rakarov (c), Kitov, A.Kostov, Dimitrov - Kovatchev, Diev -\nVelitchkov, Iliev, Yakimov, Kolev\n1:0 Facundo 4",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -520,6 +610,11 @@
             "reason": "62full da 31.06 (fecha inexistente); 62f fija el 31.05.1962."
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "31.06.62  (15.00) Rancagua, Estadio Braden\nHUN - ENG 2:1 (1:0)\n(-8000) Horn BOL, Blavier BEL, Goldstein ISR\nHUN: Grosics (c) - Matrái, Sárosi, Solymosi - Mészöly, Sipos - Sándor,\nRakosi, Albert, Tichy, Fenyvesi\nENG: Springett - Armfield, Wilson, Moore, Norman - Flowers, Douglas -\nGreaves, Hitchens, Haynes (c), R.Charlton\n1:0 Tichy 17, 1:1 Flowers 60 p, 2:1 Albert 71",
+        "lang": "en"
       }
     },
     {
@@ -533,7 +628,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "02.06.62  (15.00) Rancagua, Estadio Braden\nENG - ARG 3:1 (2:0)\n(-10000) Latichev ZSR, Morgan CAN, Reginato CHI\nENG: Springett - Armfield, Wilson, Moore, Norman - Flowers, Douglas -\nGreaves, Peacock, Haynes (c), R.Charlton\nARG: Roma - Navarro, Páez, Capp (c), Marzolini - Sacchi, Rattin - Oleniak,\nSosa, Sanfilippo, Belen\n1:0 Flowers 18 p, 2:0 R.Charlton 42, 3:0 Greaves 67, 3:1 Sanfilipo 81\n03.06.62  Rancagua, Estadio Braden\nHUN - BUL 6:1 (4:0)\n(+7000) Gardeazábal ESP, Silva CHI, Davidson SCO\nHUN: Ilku - Matrai, Sárosi (c), Solymosi - Mészöly, Sipos - Sándor, Göröcs,\nAlbert, Tichy, Fenyvesi\nBUL: Naidenov - Rakarov (c), Kitov, A.Kostov - Dimitrov, Kovatchev - Sokolov,\nVelitchkov, Asparoukhov, Dermendzhiev, Kolev\n1:0 Albert 1 (50 sec), 2:0 Albert 6, 3:0 Tichy 8, 4:0 Selymosi 12, 5:0\nAlbert 54, 5:1 Asparoukhov 64, 6:1 Tichy 70\nNOTE: Some sources award Asparoukhov's goal to Sokolov\n06.06.62  Rancagua, Estadio Braden\nARG - HUN 0:0\n(-8000) Yamasaki PER, Gardeazábal ESP, Bulnes CHI\nARG: Dominguez - Sainz, Delgado, Capp - Marzolini, Sacchi - Pando (c),\nOleniak, Facundo, Pagani, Gonzalez\nHUN: Grosics (c) - Matrai, Sárosi, Solymosi - Mészöly, Sipos - Kuharszki,\nGöröcs, Monostroi, Tichy, Rakosi\n07.06.62  Rancagua, June 7th - Estadio Braden\nBUL - ENG 0:0\n(-6000) Blavier BEL, Reginato CHI, Bulnes CHI\nBUL: Naidenov - Pentchev, Zechev, A.Kostov - D.Kostov, Dimitrov -\nKovatchev (c), Sokolov, Velitchkov, Dermendzhiev, Kolev\nENG: Springett - Armfield, Wilson, Moore - Norman, Flowers - Douglas,\nGreaves, Peacock, Haynes (c), R.Charlton",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -584,7 +684,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "10.06.62  (14.30) Arica, Estadio Carlos Dittborn\nCHI - ZSR 2:1 (2:1)\n(+17000) Horn HOL, Etzel Filho BRA, Galba CZE\nCHI: Escuti - Eyzaguirre, Contreras, R.Sánchez, Navarro - Toro (c), Rojas -\nRamirez, Landa, Tobar, L.Sánchez\nZSR: Yashin - Tchokelli, Ostrovski, Voronin, Maslenkin - Netto (c), Chislenko -\nIvanov, Ponedelnik, Mamikin, Meschki\n1:0 L.Sánchez 11 f, 1:1 Chislenko 26, 2:1 Rojas 27",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -596,7 +701,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "10.06.62  (14.30) Santiago, Estadio Nacional\nJUG - GER 1:0 (0:0)\n(+63000) Yamasaki PER, Silva CHI, Ventre ARG\nJUG: Šoškić - Durkovic, Jusufi, Radaković - Marković, Popović - Kovačević,\nSekularac, Jerković, Galić (c), Skoblar\nGER: Fahrian - Nowak, Schnellinger, Schulz - Erhardt, Giesemann, Brülls -\nHaller, Seeler, Szymaniak, Schäfer (c)\n1:0 Radaković 87",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -608,7 +718,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "10.06.62  (14.30) Vina del Mar, Estadio Sausalito\nBRA - ENG 3:1 (1:1)\n(~18000) Schwinte FRA, Dienst SUI, Bustamante CHI\nBRA: Gilmar - D.Santos, Mauro (c), Zózimo, N.Santos - Zito, Garrincha - Didi,\nVavá, Amarildo, Zagalo\nENG: Springett - Armfield, Wilson, Moore, Norman - Flowers, Douglas -\nGreaves, Hitchens, Haynes (c), R.Charlton\n1:0 Garrincha 30 h, 1:1 Hitchens 38, 2:1 Vavá 53 h, 3:1 Garrincha 59\n(66 Springett saved a penalty by Garrincha)",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -620,7 +735,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "10.06.62  (14.30) Rancagua, Estadio Braden\nCZE - HUN 1:0 (1:0)\n(-12000) Latischev ZSR, Rumenchev BUL, Buergo MEX\nCZE: Schrojf - Lalá, Novák (c), Pluskal, Popluhár - Masopust, Pospichal -\nScherer, Kvašňák, Kadraba, Jelinek\nHUN: Grosics (c) - Mátrai, Sarosi, Solymosi, Mészöly - Sipos, Sándor - Rákosi,\nAlbert, Tichy, Fenyvesi\n1:0 Scherer 14",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -632,7 +752,12 @@
       "score": [
         4,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "13.06.62  (14.30) Santiago, Estadio Nacional\nBRA - CHI 4:2 (2:1)\n(+75000) Yamasaki PER, Ventre ARG, Marino URU\nBRA: Gilmar - D.Santos, Mauro (c), Zózimo, N.Santos - Zito, Garrincha,\nDidi, Váva - Amarildo, Zagalo\nCHI: Escuti - Eyzaguirre, Contreras, R.Sánchez, Rodriguez - Toro (c),\nRojas, Ramirez, Landa - Tobar, L.Sánchez\n1:0 Garrincha 9, 2:0 Garrincha 31 h , 2:1 Toro 41, 3:1 Váva 48 h, 3:2 L.Sánchez\n62 p, 4:2 Váva 78 h\nsent off: Garrincha (83) / Landa (80)",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -644,7 +769,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "13.06.62  (14.30) Vina del Mar, Estadio Sausalito\nCZE - JUG 3:1 (0:0)\n(-6000) Dienst SUI, Jonni ITA, Steiner AUT\nCZE: Schrojf - Lalá, Novák (c), Pluskal, Popluhár - Masopust, Pospichal -\nScherer, Kvašňák, Kadraba, Jelinek\nJUG: Šoškić - Durković, Jusufi, Radaković, Marković - Popović, Sijaković -\nŠekularac, Jerković, Galić (c), Skoblar\n1:0 Kadraba 49 h, 1:1 Jerković 69, 2:1 Scherer 80, 3:1 Scherer 87 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -667,6 +797,11 @@
             "reason": "62full da 16.06.82 (año erróneo); 62f fija el 16.06.1962."
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "16.06.82  (14.30) Santiago, Estadio Nacional\nCHI - JUG 1:0 (0:0)\n(-67000) Gardeazábal ESP, Dusch GER, Dorogi HUN\nCHI: Godoy - Eyzaguirre, Cruz, R.Sánchez, Rodriguez - Toro (c), Rojas -\nRamirez, Campos, Tobar, L.Sánchez\nJUG: Šoškić - Durković, Svinjarević, Radaković - Marković, Popović -\nKovačević, Sekularac, Jerković, Galić (c), Skoblar\n1:0 Rojas 90",
+        "lang": "en"
       }
     },
     {
@@ -724,6 +859,11 @@
             ]
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "17.06.1962  (14.30) Santiago, Estadio Nacional\nBRA - CZE 3:1 (1:1)\n(~69000) Latichev ZSR, Davidson SCO, Horn HOL\nBRA: Gilmar - D. Santos, N. Santos, Zito - Mauro (c), Zózimo, Garrincha,\nDidi - Vavá, Amarildo, Zagalo\nCZE: Schrojf - Tichý, Novák (c), Masopust - Popluhár, Pluskal - Pospichal,\nScherer, Kadraba, Kvašňák, Jelinek\n0:1 Masopust 15, 1:1 Amarildo 17, 2:1 Zito 69 h, 3:1 Vavá 78",
+        "lang": "en"
       }
     }
   ],

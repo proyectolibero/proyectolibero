@@ -240,7 +240,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "31.05.70  (12.00) Mexico City, Estadio Azteca\nMEX - ZSR 0:0\n(+107000) Tschenscher GER, Taylor ENG, Dunstan BER\nMEX: Calderon - Vantolra, Peña (c), Guzmán, Pérez - Hernández, Pulido,\nVelarde (67 Munguia), Valdivia - Fragoso, Lopez\nZSR: Kavasashvili - Kaplichni, Lovchev, Logofet, Shesterniev (c) - Asatiani,\nMuntian, Serebrianikov (46 Pusach), Bishovets - Evriuzhikan, Nodija (67\nKhmelnitski)\nbooked: Peña / Lovchev, Logofet, Asatiani, Nodija\nNOTE: Match preceded by WC opening ceremony",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -253,7 +258,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "03.06.70  (16.00) Mexico City, Estadio Azteca\nBEL - SAL 3:0 (1:0)\n(+92000) Rădulescu ROM, Tschenscher GER, Glöckner DDR\nBEL: Piot - Heylens, Thissen, Dewalque, Dockx - Semmeling (79 Poleunis),\nvan Moer, Devrindt, van Himst (c) - Lambert, Puis\nSAL: Magaña - Rivas, Mariona (c), Osorio, Manzano (66 Cortés) -\nQuintanilla, Vásquez, Cabezas, Rodriguez (80 Sermeño) Martinez, Aparicio\n1:0 van Moer 13, 2:0 van Moer 55, 3:0 Lambert 80 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -266,7 +276,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "06.06.70  (16.00) Mexico City, Estadio Aztéca\nZSR - BEL 4:1 (1:0)\n(~59000) Scheurer SUI, Davidson SCO, Landauer USA\nZSR: Kavasashvili - Kaplichni (35 Lovchev), Afonin, Shesterniev (c),\nAsatiani - Muntian, Dzodzuashvili (73 Kiselev), Bishovets, Evriuzhikan -\nKhurtisilava, Khmelnitski\nBEL: Piot - Heylens, Thissen, Dewalque, Dockx - Semmeling, van Moer,\nJeck, van Himst (c) - Lambert, Puis\n1:0 Bischovets 14, 2:0 Asatiani 57, 3:0 Bischovets 63, 4:0 Khmelnitski 78 h,\n4:1 Lambert 86",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -279,7 +294,12 @@
       "score": [
         4,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "07.06.70  (12.00) Mexico City, Estadio Azteca\nMEX - SAL 4:0 (1:0)\n(~103000) Kandil EGY, Dunstan BER, Taylor ENG\nMEX: Calderón - Vantolra, Peña (c), Guzmán, Pérez - González, Borja\n(46 López Sagado, 76 Basaguren), Munguia, Valdivia - Fragoso, Padilla\nSAL: Magaña - Rivas, Mariona (c), Osorio, Cortés (68 Monge) -\nQuintanilla, Vásquez, Cabezas, Rodriguez - Martinez, Aparicio (59 Mendez)\n1:0 Valdivia 45, 2:0 Valdivia 46, 3:0 Fragoso 58, 4:0 Basaguren 83\nbooked: Cabezas, Mariona, Mendez, Magaña",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -292,7 +312,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "10.06.70  (16.00) Mexico City, Estadio Azteca\nZSR - SAL 2:0 (0:0)\n(~89000) Hormazábal CHI, Coerezza ARG, de Moraes BRA\nZSR: Kavasashvili - Afonin, Shesterniev (c), Serebrianikov, Muntian -\nDzodzuashvili, Kiselev (81 Asatiani), Bishovets - Pusatch (46 Evriuzhikin),\nKhurtisilava, Khmelnitski\nSAL: Magaña - Rivas, Mariona (c), Osorio, Castro - Monge, Portillo,\nVásquez, Cabezas (82 Aparicio) - Rodriguez (86 Sermeño), Mendez\n1:0 Bischovets 51, 2:0 Bischovets 74 h\nbooked: Khmelnitski",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -305,7 +330,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "11.06.70  (16.00) Mexico City, Estadio Azteca\nMEX - BEL 1:0 (1:0)\n(~105000) Coerezza ARG, Landauer USA, Hermazábal CHI\nMEX: Calderón - Vantolra, Peña (c), Guzmán, Pérez - Gonzalez, Pulido, Munguia,\nValdivia (46 Basaguren) - Fragoso, Padilla\nBEL: Piot - Heylens, Thissen, Dewalque, Dockx - Semmeling, van Moer, Jeck,\nvan Himst (c) - Poleunis (66 Devrindt), Puis\n1:0 Peña 14 p\nbooked: Peña, Valdivia / Thissen, van Himst",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -318,7 +348,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "02.06.70  (16.09) Puebla, Estadio Cuauhtemoc\nURU - ISR 2:0 (1:0)\n(~20000) Davidson SCO, Scheuer SUI, Tarekegn ETH\nURU: Mazurkiewicz - Ubiña, Mujica, Montero-Castillo, Ancheta -\nMatosas, Cubilla, Esparrago, Maneiro - Rocha (c - 13 Cortés), Losada\nISR: Vissoker - Rosen, Daniel, Talbi (Bar), Schwager - Rosenthal,\nShum, Spiegler, Spiegel (c) - Faygenbaum, Rom (46 Vollach)\n1:0 Maneiro 23, 2:0 Mujica 81",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -331,7 +366,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "03.06.70  (16.00) Toluca, Estadio La Bombonera\nITA - SWE 1:0 (1:0)\n(-14000) Taylor ENG, Scheuer SUI, Kandil EGY\nITA: Albertosi - Burgnich, Facchetti (c), Cera, Niccolai (38 Rosato) -\nBertini, Domenghini, Mazzola, Boninsegna - de Sisti, Riva\nSWE: Hellström - Nordqvist (c), Grip, Svensson, Axelsson - B.Larsson\n(79 Nicklasson), Grahn, Eriksson (56 Ejderstedt) - Kindvall, Cronqvist, Olsson.\n1:0 Domenghini 11\nbooked: Cronqvist",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -344,7 +384,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "06.06.70  (16.00) Puebla, Estadio Cuauhtemoc\nURU - ITA 0:0\n(~30000) Glöckner DDR, Tschenscher GER, Horvat JUG\nURU: Mazurkiewicz - Ubiña (c), Mujica, Montero-Castillo, Ancheta -\nMatosas, Cubilla, Esparrago, Maneiro - Cortes, Bareno (71 Zubia)\nITA: Albertosi - Burgnich, Facchetti (c), Cera, Rosato - Bertini,\nDomenghini (46 Furino), Mazzola, Boninsegna - de Sisti, Riva.",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -357,7 +402,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "07.06.70  (12.00) Toluca, Estadio, La Bombonera\nISR - SWE 1:1 (0:0)\n(~10000) Tarekegn ETH, Horvat JUG, Rădulescu ROM\nISR: Vissoker - Rosen, Primo, Bar, Schwager - Rosenthal, Shum, Spiegler (c),\nSpiegel - Faygenbaum, Vollach (51 Shuruk)\nSWE: G.Larsson - Selander, Grip, Svensson (c), Axelsson - B.Larsson, Nordahl,\nTuresson, Kindvall - Persson (78 Pálsson), Olsson\n0:1 Turesson 53, 1:1 Spiegler 56\nbooked: Bar, Primo / Persson",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -370,7 +420,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "10.06.70  (16.00) Puebla, Estadio Cuauhtemoc\nSWE - URU 1:0 (0:0)\n(~18000) Landauer USA, Taylor ENG, Rădulescu ROM\nURU: Mazurkiewicz - Ubiña (c), Mujica, Montero-Castillo, Ancheta -\nMatosas, Esparrago (62 Fontes), Maneiro, Cortes - Zubia, Losada\nSWE: G.Larsson - Selander, Grip, Svensson, Axelsson - B.Larsson, Nordqvist (c),\nEriksson, Kindvall (60 Turesson) - Persson, Nicklasson (84 Grahn)\n1:0 Grahn 90 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -383,7 +438,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "11.06.70  (16.00) Toluca, Estadio, La Bomboneras\nITA - ISR 0:0\n(~10000) de Moraes BRA, Tschechner GER, Tarekegn ETH\nITA: Albertosi - Burgnich, Facchetti (c), Cera, Rosato - Bertini, Domenghini\n(46 Rivera), Mazzola, Boninsegna - de Sisti, Riva\nISR: Vissoker - Rosen, Bello, Primo, Bar - Schwager, Rosenthal, Shum,\nSpiegler (c) - Spiegel, Faygenbaum (46 Rom)",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -396,7 +456,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "02.06.70  (16.00) Guadalajara, June 2nd - Estadio Jalisco\nENG - ROM 1:0 (0:0)\n(~50000) Loraux BEL, Măchin FRA, de Leo MEX\nENG: Banks - Newton (51 Wright), Cooper, Mullery, Labone - Moore (c), Lee\n(77 Osgood), Ball, R.Charlton - Hurst, Peters\nROM: Adamache - Sătmăreanu, Lupescu, Dinu, Mocanu - Dumitru, Nunweiller,\nDembrovschi, G.Tătaru (74 Neagu) - Dumitrache, Lucescu (c)\n1:0 Hurst 65",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -409,7 +474,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "03.06.70  (16.00) Guadalajara, Estadio Jalisco\nBRA - CZE 4:1 (1:1)\n(~52000) Barreto URU, Yamasaki MEX, Klein ISR\nBRA: Felix - Carlos Alberto (c), Piazza (88 Fontana), Brito, Everaldo -\nClodoaldo, Gérson (74 Paulo Cesar Lima), Jairzinho, Tostao - Pelé, Rivelino\nCZE: Viktor - Dobiáš, Migas, Horváth (c), Hagara - Hrdlička (46\nKvašňák), Kuna, F.Veselý (75 B.Veselý), Petráš - Adamec, Jokl\n0:1 Petráš 12, 1:1 Rivelino 24 f, 2:1 Pelé 60, 3:1 Jairzinho 64, 4:1 Jairzinho\n83\nbooked: Gérson, Tostão / Horváth",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -422,7 +492,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "06.06.70  (16.00) Guadalajara, Estadio Jalisco\nROM - CZE 2:1 (0:1)\n(~56000) de Leo MEX, Loraux BEL, Emsberger HUN\nROM: Adamache - Sătmăreanu, Lupescu, Dinu, Mocanu - Dumitru (82 Ghergheli),\nNunweiller, Dembrovschi, Neagu - Dumitrache, Lucescu (c - 70 G.Tătaru)\nCZE: Vencel - Dobiáš, Migas, Horváth (c), Zlocha - Kvašňák, Kuna - B.Veselý,\nPetráš, Jurkanin (46 Adamec), Jokl (67 F.Veselý)\n0:1 Petráš 4 h, 1:1 Neagu 53, 2:1 Dumitrache 76 p\nbooked: Nunweiller / Kvašňák",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -435,7 +510,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "07.06.70  (12.00) Guadalajara, Estadio Jalisco\nBRA - ENG 1:0 (0:0)\n(~66000) Klein ISR, Măchin FRA, Yamasaki MEX\nBRA: Felix - Carlos Alberto (c), Piazza, Brito, Everaldo - Clodoaldo,\nPaulo Cesar Lima, Jairzinho, Tostão (68 Roberto) - Pelé, Rivelino\nENG: Banks - Wright, Cooper, Mullery, Labone - Moore (c), Lee (64 Astle),\nBall, R.Charlton (64 Bell) - Hurst, Peters\n1:0 Jairzinho 60\nbooked: Lee",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -448,7 +528,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "10.06.70  (16.00) Guadalajara, Estadio Jalisco\nBRA - ROM 3:2 (2:1)\n(~50000) Marschall AUT, Barreto URU, Loraux BEL\nBRA: Felix - Carlos Alberto (c), Piazza, Brito, Everaldo (56 Marco António) -\nClodoaldo (74 Edu), Paulo Cesar Lima, Jairzinho - Tostão, Pelé, Fontana\nROM: Adamache (28 Răducanu) - Sătmăreanu, Lupescu, Dinu, Mocanu -\nDumitru, Nunweiller, Dembrovschi, Neagu - Dumitrache (72 G.Tătaru),\nLucescu (c)\n1:0 Pelé 20 f, 2:0 Jairzinho 22, 2:1 Dumitrache 33, 3:1 Pelé 66, 3:2\nDembrovschi 83 h\nbooked: Mocanu, Dimitru",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -461,7 +546,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "11.06.70  (16.00) Guadalajara, Estadio Jalisco\nENG - CZE 1:0 (0:0)\n(~49000) Mâchin FRA, Marschall AUT, Emsberger HUN\nENG: Banks - Newton, Cooper, Mullery, J.Charlton - Moore (c), Clarke, Ball,\nR.Charlton (66 Bell) - Astle (61 Osgood), Peters\nCZE: Viktor (c) - Dobiáš, Migas, Hrivňák, Hagara - Pollák, Kuna, F.Veselý,\nPetráš - Adamec, Jokl (71 Čapkovič)\n1:0 Clarke 49 p\nbooked: Dobiáš",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -474,7 +564,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "02.06.70  (16.00) León, Estadio Guanajuato\nPER - BUL 3:2 (0:1)\n(~14000) Sbardella ITA, Aguilar MEX, Maruyama JAP\nPER: Rubiños - Campos (28 J.González), de la Torre, Chumpitaz (c), Fuentes -\nMifflin, Challe - Baylón (51 Sotil), Cubillas, León, Gallardo\nBUL: Simeonov, Shalamanov, Dimitrov (c), Davidov, Aladzhov - Bonev\n(73 Asparoukhov), Penev, Yakimov - Popov (59 Maraschliev), Zhekov, Dermendzhiev\n0:1 Dermendzhiev 12 f, 0:2 Bonev 50 f, 1:2 Gallardo 51, 2:2 Chumpitaz 56,\n3:2 Cubillas 73",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -487,7 +582,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "03.06.70  (16.00) León, Estadio Guanajuato\nGER - MAR 2:1 (0:1)\n(~9000) van Ravens HOL, de Mendibil ESP, Velasquez COL\nGER: Maier - Vogts, Schulz, Fichtel, Höttges (76 Löhr) - Haller\n(46 Grabowski), Beckenbauer, Overath - Seeler (c), Müller, Held\nMAR: Kassou - Lamrani, Benkrief, Khanoussi (c), Slimani - Marroufi, Bamous\n(72 Faras), El Filali, Ghandi - Ghazouani (86 El Khyati), Houmane\n0:1 Houmane 21, 1:1 Seeler 56, 2:1 Müller 80 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -500,7 +600,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "06.06.70  (16.00) León, Estadio Guanajuato\nPER - MAR 3:0 (0:0)\n(~13500) Bachramov ZSR, Sbardella ITA, Maruyama JAP\nPER: Rubiños - P.González, de la Torre, Chumpitaz (c), Fuentes -\nMifflin (56 Cruzado), Challe - Sotil, León, Gallardo (76 Ramírez), Cubillas\nMAR: Kassou - Lamrani, Benkhrif (66 Fadili), Khanoussi (c), Slimani -\nMaaroufi, Bamous, El Filali, Said (81 Alaoui) - Ghazouani, Houmane\n1:0 Cubillas 65, 2:0 Challe 68, 3:0 Cubillas 75",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -513,7 +618,12 @@
       "score": [
         5,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "07.06.70  (12.00) León, Estadio Guanajuato\nGER - BUL 5:2 (2:1)\n(~12700) Ortiz de Mendibil ESP, Ribeiro POR, Velasquez COL\nGER: Maier - Vogts, Schnellinger, Fichtel, Höttges - Löhr (59 Grabowski),\nBeckenbauer (72 Weber), Overath, Seeler (c) - Müller, Libuda\nBUL: Simeonov - Gaidarski, Zhechev, Bonev, Penev - Gaganelov (c - 59 Shalamanov),\nNikodimov, Kolev, Dzhermendiev (46 Mitkov) - Asparoukhov, Maraschliev\n0:1 Nikodimov 12 f, 1:1 Libuda 20, 2:1 Müller 28, 3:1 Müller 52 p, 4:1 Seeler\n69, 5:1 Müller 87 h, 5:2 Kolev 88",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -526,7 +636,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "10.06.70  (16.00) León, Estadio Guanajuato\nGER - PER 3:1 (3:1)\n(~18000) Aguilar MEX, de Mendibil ESP, Sbardella ITA\nGER: Maier - Vogts, Schnellinger, Fichtel, Höttges (46 Patzke) - Löhr,\nBeckenbauer, Overath, Seeler (c) - Müller, Libuda (75 Grabowski)\nPER: Rubiños - P.González, de la Torre, Chumpitaz (c), Fuentes -\nMifflin, Challe (71 Cruzado)- Sotil, León (75 Ramírez), Gallardo, Cubillas\n1:0 Müller 20, 2:0 Müller 26, 3:0 Müller 39 h, 3:1 Cubillas 44 f",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -539,7 +654,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "11.06.70  (16.00) León, Estadio Guanajuato\nBUL - MAR 1:1 (1:0)\n(+12000) Ribeiro POR, van Ravens HOL, Bachramov ZSR\nBUL: Yordanov - Gaidarski, Zhechev, Yakimov (50 Bonev), Penev (42 Dimitrov) -\nShalamanov (c), Nikodimov, Kolev, Popov - Mitkov, Asparoukhov\nMAR: Hazzaz - Benkrief, Fadili, Khanoussi (c), Slimani - Marroufi, Bamous\n(46 Chukri), El Filali, Said - Alaoui (74 Faras), Ghazouani\n1:0 Zhechev 40 f, 1:1 Ghazouani 60",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -554,7 +674,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "14.06.70  (12.00) Mexico City, Estadio Azteca\n(~45000) van Ravens HOL, Glöckner DDR, Davidson SCO\nURU - ZSR 1:0 (0:0, 0:0, 1:0)\nURU: Mazurkiewicz - Ubiña (c), Ancheta, Matosas, Mujica - Maneiro, Cortés,\nMontero-Castillo, Cubilla - Fontes (114 Espárrago), Morales (96 Gómez)\nZSR: Kavasashvili - Afonin, Dzodzuashvili, Kaplichni, Khurtsilava (86 Logofet) -\nShesterniev (c), Asatiani (73 Kiselev), Muntian, Bishovets - Evriuzhihin\nKhmelnitski\n1:0 Espárrago 117 h\nbooked: Bischovets\nNOTE: ZSR lodged an official protest claiming that during a centre\ncross which led to the goal the ball was out of field. The protest was\nrejected.",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -566,7 +691,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "14.06.70  (12.00) Toluca, Estadio, La Bombonera\nITA - MEX 4:1 (1:1)\n(~24000) Scheurer SUI, Landauer USA, Dunstan BER\nITA: Albertosi - Burgnich, Cera, Rosato, Facchetti (c) - Bertini, Mazzola\n(46 Rivera), de Sisti, Domenghini (85 Gori) - Boninsegna, Riva\nMEX: Calderón - Vantolra, Peña (c), Guzmán, Pérez - González (68\nBorja), Pulido, Munguia, Valdivia (60 Velarde) - Fragoso, Padilla\n0:1 González 13, 1:1 Peña 26 o, 2:1 Riva 64, 3:1 Rivera 69, 3:1 Riva\n76\nbooked: Rivera",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -578,7 +708,12 @@
       "score": [
         4,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "14.06.70  (12.00) Guadalajara, Estadio Jalisco\nBRA - PER 4:2 (2:1)\n(~54000) Loraux BEL, Marschall AUT, Emsberger HUN\nBRA: Felix - Carlos Alberto (c), Brito, Piazza, Marco António - Clodoaldo,\nGerson (67 Paulo Cesar Lima) - Jairzinho (80 Roberto), Tostão, Pelé,\nRivelino\nPER: Rubinos - Campos, Fernandez, Chumpitaz (c), Fuentes - Mifflin,\nChalle - Baylón (54 Sotil), León (61 Reyes), Cubillas, Gallardo\n1:0 Rivelino 11, 2:0 Tostão 18, 2:1 Gallardo 28, 3:1 Tostão 52,\n3:2 Cubillas 69, 4:2 Jairzinho 76",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -593,7 +728,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "14.06.70  (12.00) León, Estadio Guanajuato\nGER - ENG 3:2 (0:1, 2:2, 3:2)\n(~24000) Coerezza ARG, Ortiz de Mendibil ESP, Velasquez COL\nGER: Maier - Schnellinger, Vogts, Fichtel, Höttges (46 Schulz),\nBeckenbauer - Overath, Seeler (c), Libuda (57 Grabowski) - Müller, Löhr\nENG: Bonetti - Newton, Cooper, Mullery, Labone - Moore (c), Lee, Ball -\nHurst, R.Charlton (70 Bell), Peters (81 Hunter)\n0:1 Mullery 32, 0:2 Peters 50, 1:2 Beckenbauer 69, 2:2 Seeler 82 h, 3:2\nMüller 106\nbooked: Müller / Lee",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -605,7 +745,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "17.06.70  (16.00) Guadalajara, Estadio Jalisco\nBRA - URU 3:1 (1:1)\n(~51000) Ortiz de Mendibil ESP, Marschall AUT, Bachramov ZSR\nBRA: Felix - Carlos Alberto (c), Brito, Piazza, Everaldo - Clodoaldo,\nGerson, Jairzinho, Tostão - Pelé, Rivelino\nURU: Mazurkiewicz - Ubiña, Ancheta, Matosas, Mujica - Maneiro (74\nEspárrago), Cortés, Montero-Castillo, Cubilla - Fontes, Morales\n0:1 Cubilla 19, 1:1 Clodoaldo 45, 2:1 Jairzinho 76, 3:1 Rivelino 90\nbooked: Carlos Alberto / Fontes, Maneiro, Mujica",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -620,7 +765,12 @@
       ],
       "notes": [
         "aet"
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "17.06.70  (16.00) Mexico City, Estadio Azteca\nITA - GER 4:3 (1:0, 1:1, 3:2)\n(~103000) Yamasaki MEX, Velasquez COL, Hermazábal CHI\nITA: Albertosi - Cera, Burgnich, Bertini, Rosato (94 Poletti) - Facchetti (c),\nDomenghini, Mazzola (46 Rivera), de Sisti - Boninsegna, Riva\nGER: Maier - Schnellinger, Vogts, Patzke (66 Held), Schulz - Beckenbauer,\nOverath, Seeler (c) - Grabowski, Müller, Löhr (52 Libuda)\n1:0 Boninsegna 7, 1:1 Schnellinger 90, 1:2 Müller 95, 2:2 Burgnich 98,\n3:2 Riva 104, 3:3 Müller 110, 4:3 Rivera 111\nbooked: Domenghini, de Sisti, Rosato / Müller, Overath",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -632,7 +782,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "20.06.70  (16.00) Mexico City, Estadio Azteca\nGER - URU 1:0 (1:0)\n(~104000) Sbardella ITA, Marschall AUT, Aguilar MEX\nGER: Wolter - Schnellinger (46 Lorenz), Vogts, Patzke, Fichtel - Weber, Overath,\nSeeler (c) - Held, Müller, Libuda (75 Löhr)\nURU: Mazurkiewicz - Ubiña (c), Ancheta, Matosas, Mujica - Maneiro (Sandoval),\nCortés, Montero-Castillo, Cubilla - Fontes (Espárrago), Morales\n1:0 Overath 27\nbooked: Lorenz / Ubiña",
+        "lang": "en"
+      }
     },
     {
       "id": "m032",
@@ -709,6 +864,11 @@
             "reason": "70full da 108.000; se conserva 107.000 de 70f."
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:70full",
+        "text": "21.06.70  (12.00) Mexico City, Estadio Azteca\nBRA - ITA 4:1 (1:1)\n(-108000) Glöckner DDR, Scheurer SUI, Coerezza ARG\nBRA: Félix - Carlos Alberto (c), Brito, Piazza, Everaldo - Clodoaldo,\nGérson, Jairzinho, Tostão - Pelé, Rivelino.\nITA: Albertosi - Burgnich, Cera, Bertini (75 Juliano) - Rosato, Facchetti (c),\nDomenghini, de Sisti, Mazzola - Boninsegna (84 Rivera), Riva.\n1:0 Pelé 18, 1:1 Boninsegna 37, 2:1 Gérson 66, 3:1 Jairzinho 71, 4:1 Carlos\nAlberto 87\nbooked: Rivelino / Burgnich",
+        "lang": "en"
       }
     }
   ],

@@ -250,7 +250,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "11.07.66  (19.30) London, Wembley Stadium\nENG - URU 0:0\n(+87000) Zsolt HUN, Bachramov ZSR, Rumenchev BUL\nENG: Banks - Cohen, Wilson, Stiles, J.Charlton - Moore (c), Ball, Greaves -\nR.Charlton, Hunt, Connelly\nURU: Mazurkiewicz - Troche (c), Manicera, Ubiña, Goncalves - Caetano, Cortes -\nViera, Silva, Rocha, Pérez",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -263,7 +268,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "13.07.66  (19.30) London, Wembley Stadium\nFRA - MEX 1:1 (0:0)\n(+69000) Ashkenazi ISR, Galba CZE, Campos POR\nFRA: Aubour - Djorkaeff, Budzinski, Artelesa (c), de Michéle - Bosquier,\nHerbin, Bonnel - Combin, Gondet, Hausser\nMEX: Calderon - Chaires, Peña (c), Núñes, Hernández - Diaz, Mercado, Reyes -\nBorja, Fragoso, Padilla\n0:1 Borja 40 h, 1:1 Hausser 62",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -276,7 +286,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "15.07.66  (19.30) London, White City\nURU - FRA 2:1 (2:1)\n(~45000) Galba CZE, Marques BRA, Callaghan WAL\nURU: Mazurkiewicz - Troche (c), Manicera, Ubiña, Goncalvez - Caetano,\nCortes, Viera, Sacia - Rocha, Perez\nFRA: Aubour - Djorkaeff, Budzinski, Artelesa (c), de Bourgoing - Bosquier,\nSimon, Bonnel - Herbet, Gondet, Hausser\n0:1 de Bourgoing 15 p, 1:1 Rocha 27, 2:1 Cortés 32",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -289,7 +304,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "16.07.66  (15.00) London, Wembley Stadium\nENG - MEX 2:0 (1:0)\n(+92000) Lo Bello ITA, Ashkenazi ISR, Choi Duk-ryung KLD\nENG: Banks - Cohen, Wilson, Stiles, J.Charlton - Moore (c), Paine, Greaves -\nR.Charlton, Hunt, Peters\nMEX: Calderon - Chaires, Peña (c), del Muro, Núñes - Hernández, Diaz,\nJauregui - Reyes, Borja, Padilla\n1:0 R.Charlton 38, 2:0 Hunt 75",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -302,7 +322,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "19.07.66  (16.30) London, Wembley Stadium\nURU - MEX 0:0\n(+61000) Lööw SWE, Lo Bello ITA, Vicuña CHI\nURU: Mazurkiewicz - Troche (c), Manicera, Ubiña, Goncalvez - Caetano,\nCortés, Viera - Sacia, Rocha, Pérez\nMEX: Carbajal - Chaires, Peña (c), Mercado, Núñes - Hernández,\nDiaz, Cisneros - Reyes, Borja, Padilla",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -315,7 +340,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "20.07.66 (19.30) London, Wembley Stadium\nENG - FRA 2:0 (1:0)\n(+98000) Yamasaki PER, Galba CZE, Rumenchev BUL\nENG: Banks - Cohen, Wilson, Stiles, J.Charlton - Moore (c), Callaghan, Greaves -\nR.Charlton, Hunt, Peters\nFRA: Aubour - Djorkaeff, Budzinski, Artelesa (c), Herbin - Bosquier, Simon,\nBonnel - Herbet, Gondet, Hausser\n1:0 Hunt 39 h, 2:0 Hunt 76 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -328,7 +358,12 @@
       "score": [
         5,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "12.07.66  (19.30) Sheffield, Hillsborough\nGER - SUI 5:0 (3:0)\n(+36000) Phillips SCO, Adair NIR, Lööw SWE\nGER: Tilkowski - Höttges, Schulz, Weber, Schnellinger - Beckenbauer, Haller,\nBrülls - Seeler (c), Overath, Held\nSUI: Elsener - Grobety, Schneiter (c), Tacchella, Führer - Bäni, Dürr, Odermatt -\nKünzli, Hosp, Schindelholz\n1:0 Held 16, 2:0 Haller 20, 3:0 Beckenbauer 40, 4:0 Beckenbauer 52, 5:0 Haller\n78 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -341,7 +376,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "13.07.66  (19.30) Birmingham, Villa Park\nARG - ESP 2:1 (0:0)\n(-48000) Rumanchev BUL, Yamasaki PER, Zečević JUG\nARG: Roma - Perfumo, Marzolini, Ferreiro, Rattin (c) - Albrecht, Solari, Gonzalez,\nArtime - Onega, Más\nESP: Iribar - Sanchis, Eladio, Pirri, Gallego - Zoco, Ufarte, del Sol,\nPeiro - Suarez, Gento (c)\n1:0 Artime 65, 1:1 Pirri 72, 2:1 Artime 79",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -354,7 +394,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "15.07.66  (19.30) Sheffield, Hillsborough\nESP - SUI 2:1 (0:1)\n(+32000) Bachramov ZSR, Zsolt HUN, Phillips SCO\nESP: Iribar - Sanchis, Reija - Pirri, Gallego, Zoco, Amancio - del\nSol, Peiro, Suarez, Gento (c)\nSUI: Elsener - Brodmann (c), Leimgruber, Armbruster, Führer - Bäni,\nStierli, Gottardi - Kühn, Hosp, Quentin\n0:1 Quentin 29, 1:1 Sanchis 58, 2:1 Amancio 75 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -367,7 +412,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "16.07.66  (15.00) Birmingham, Villa Park\nARG - GER 0:0\n(+51000) Zečević JUG, Campos POR, Lööw SWE\nARG: Roma - Perfumo, Marzolini, Ferreiro, Rattin (c) - Albrecht,\nSolari, Gonzalez, Artime - Onega, Más\nGER: Tilkowski - Höttges, Schulz, Weber, Schnellinger - Beckenbauer, Haller,\nOverath - Seeler (c), Held, Brülls\nsent off: Albrecht (67)",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -380,7 +430,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "19.07.66  (19.30) Sheffield, Hillsborough\nARG - SUI 2:0 (0:0)\n(~31000) Campos POR, Bachramov ZSR, Zsolt HUN\nARG: Roma - Perfumo, Marzolini, Ferreiro, Rattin (c) - Calics, Solari, Gonzalez,\nArtime - Onega, Más\nSUI: Eichmann - Brodmann (c), Künzli, Armbruster, Führer - Bäni, Stierli, Gottardi -\nKühn, Hosp, Quentin\n1:0 Artime 52, 2:0 Onega 81",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -393,7 +448,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "20.07.66  (19.30) Birmingham, Villa Park\nGER - ESP 2:1 (1:1)\n(+51000) Marques BRA, Vicuña CHI, Choi Duk-ryong KLD\nGER: Tilkowski - Höttges, Schulz, Weber, Schnellinger - Beckenbauer,\nEmmerich, Krämer, Seeler (c) - Overath, Held\nESP: Iribar - Sanchis, Reija, Glaria, Gallego - Zoco (c), Amancio, Adelardo -\nMarcelino, Fuste, Lapetra\n0:1 Fuste 24, 1:1 Emmerich 39, 2:1 Seeler 63",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -419,7 +479,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "13.07.66  (19.30) Manchester, Old Trafford\nPOR - HUN 3:1 (1:0)\n(~37000) Callaghan WAL, Clements ENG, Howley ENG\nPOR: Carvalho - Morais, Baptista, Vicente, Hilario - Graca, Coluna (c),\nAugusto - Eusebio, Torres, Simóes\nHUN: Szentmihalyi - Mátrai, Káposzta, Sovari, Mészöly - Sipos (c), Bene, Nagy -\nAlbert, Farkas, Rakosi\n1:0 Augusto 2 h, 1:1 Bene 59, 2:1 Augusto 65 h, 3:1 Torres 89",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -432,7 +497,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "15.07.66  (19.30) Liverpool, Goodison Park\nHUN - BRA 3:1 (1:1)\n(+52000) Dagnall ENG, Howley ENG, Yamasaki POR\nHUN: Gelei - Mátrai, Káposzta, Szepesi, Mészöly - Sipos (c), Bene, Mathesz -\nAlbert, Farkas, Rakosi\nBRA: Gilmar - D.Santos, Bellini (c), Altair, Paulo Henrique - Gerson, Lima,\nGarrincha - Tostão, Alcindo, Jairzinho\n1:0 Bene 2, 1:1 Tostão 14, 2:1 Farkas 64, 3:1 Mészöly 72 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -445,7 +515,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "16.07.66  (15.00) Manchester, Old Trafford\nPOR - BUL 3:0 (2:0)\n(-26000) Codesal URU, Goicoechea ARG, Tschenscher GER\nPOR: J.Pereira - Festa, Germano, Vicente, Hilario - Graca, Coluna (c), Augusto -\nEusebio, Torres, Simóes\nBUL: Naidenov - Shalamanov, Vutzov, Gaganelov (c), Penev - Zhekov, Zhechev, Yakimov -\nDermendyev, Asparoukhov, Kostov\n1:0 Vutzov 7 s, 2:0 Eusebio 38, 3:0 Torres 82 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -458,7 +533,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "19.07.66  (19.30) Liverpool, Goodison Park\nPOR - BRA 3:1 (2:0)\n(+62000) McCabe ENG, Callaghan WAL, Dagnall ENG\nPOR: J.Pereira - Morais, Baptista, Vicente, Hilario - Graca, Coluna (c), Augusto -\nEusebio, Torres, Simóes\nBRA: Manga - Fidelis, Brito, Orlando (c), Rildo - Denilson, Lima, Jairzinho -\nSilva, Pelé, Parana\n1:0 Simóes 15 h, 2:0 Eusebio 36 h, 2:1 Rildo 73, 3:1 Eusebio 85",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -471,7 +551,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "20.07.66  (19.30) Manchester, Old Trafford\nHUN - BUL 3:1 (2:1)\n(+22000) Goicoechea ARG, Gardeazabál ESP, Codesal URU\nHUN: Gelei - Mátrai, Káposzta, Szepesi, Mészöly - Sipos (c), Bene, Mathesz -\nAlbert, Farkas, Rakosi\nBUL: Simeonov - Largov, Vutzov, Gaganelov (c), Penev - Davidov, Zhechev,\nYakimov - Kotkov, Asparoukhov, Kolev\n0:1 Asparoukhov 14, 1:1 Davidov 42 o, 2:1 Mészöly 45, 3:1 Bene 54 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -484,7 +569,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "12.07.66  (19.30) Middlesbrough, Ayresome Park\nZSR - KLD 3:0 (2:0)\n(-22000) Gardeazábal ESP, Rendil EGY, Dienst SUI\nZSR: Kavasashvili - Ponomarev, Shesterniev (c), Khurtsilava, Ostrovski =\nSabo, Sichinava - Chislenko, Malafeev, Banichevski, Khusainov\nKLD: Lee Chan-myung - Park Li-sup, Shim Yung-kyoo, Lim Zoong-sun,\nKang Bong-chil - Park Seung-zin (c), Im Seung-hwi, Han Bong-zin, Park Doo-ik,\nKang Byong-woon, Kim Young-il\n1:0 Malafeev 31, 2:0 Banichevski 33, 3:0 Malafeev 88",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -497,7 +587,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "13.07.66  (19.30) Sunderland, Roker Park\nITA - CHI 2:0 (1:0)\n(~30000) Dienst SUI, Kreitlein GER, Finney ENG\nITA: Albertosi - Burgnich, Facchetti, Rosato, Salvadore (c) - Lodetti,\nPerani, Bulgarelli - Mazzola, Rivera, Barison\nCHI: Olivares - Eyzaguirre, Cruz, Figueroa, Villanueva (c) - Prieto, Marcos,\nAraya - Tobar, Fouilloux, L.Sánchez\n1:0 Mazzola 9, 2:0 Barison 86",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -510,7 +605,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "15.07.66  (19.30) Middlesbrough, Ayresome Park\nCHI - KLD 1:1 (1:0)\n(-16000) Kandil EGY, Crawford ENG, Finney ENG\nCHI: Olivares - Valentini, Cruz, Figueroa, Villanueva (c) - Prieto,\nMarcos, Araya - Landa, Fouilloux, L.Sánchez.\nKLD: Lee Chan-myung - Park Li-sup, Lee Dong-woom, Lim Zoong-sun, Oh Yoon-kyung,\nShin Young-kyo - Park Seung-zin (c), Im Seung-hwi, Han Bong-zin - Park Doo-ik,\nKim Seung-il\n1:0 Marcos 26 p, 1:1 Park Seung-zin 88",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -523,7 +623,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "16.07.66  (15.00) Sunderland, Roker Park\nZSR - ITA 1:0 (0:0)\n(-32000) Kreitlein GER, Kandil EGY, Crawford ENG\nZSR: Yashin - Ponomarev, Shesterniev (c), Khurtsilava, Voronin - Sabo,\nDanilov - Chislenko, Malafeev, Banichevski, Khusainov\nITA: Albertosi - Burgnich, Facchetti, Rosato, Salvadore (c) - Lodetti, Leoncini,\nBulgarelli - Mazzola, Meroni, Pascutti\n1:0 Chislenko 57",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -536,7 +641,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "19.07.66  (19.30) Middlesbrough, Ayresome Park\nKLD - ITA 1:0 (1:0)\n(+18000) Schwinte FRA, Adair NIR, Taylor ENG\nKLD: Lee Chan-myung - Ha Yung-won, Shin Yung-kyoo, Lee Dong-woon, Oh Yoon-kyung -\nPark Seung-zin (c), Im Seung-hwi, Han Bong-zin - Park Doo-ik, Kim Bong-hwan,\nYang Seung-kook\nITA: Albertosi - Landini, Facchetti, Guarneri, Janich - Fogli, Perani -\nBulgarelli (c), Mazzola, Rivera, Barison\n1:0 Park Doo-ik 41",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -549,7 +659,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "20.07.66  (19.30) Sunderland, Roker Park\nZSR - CHI 2:1 (1:1)\n(+22000) Adair NIR, Clements ENG, Schwinte FRA\nZSR: Kavasashvili - Getmanov, Shesterniev, Afonin, Voronin -\nMarkarov, Ostrovski - Korneyev, Metreveli, Serebrianikov, Porkuuan\nCHI: Olivares - Valentini, Cruz, Figueroa, Villanueva - Prieto,\nMarcos, Araya - Landa, Yavar, L.Sánchez\n1:0 Porkuyan 29, 1:1 Marcos 32, 2:1 Porkuyan 85",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -561,7 +676,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "23.07.66  (19.30) London, Wembley Stadium\nENG - ARG 1:0 (0:0)\n(+90000) Kreitlein GER, Dienst SUI, Zsolt HUN\nENG: Banks - Cohen, Wilson, Stiles, J.Charlton - Moore (c), Ball, Hurst -\nR.Charlton, Hunt, Peters\nARG: Roma - Ferreiro, Marzolini, Rattin (c), Perfumo - Albrecht, Onega,\nSolari, Artime - González, Más\n1:0 Hurst 79 h\nsent off: Rattin (35)",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -573,7 +693,12 @@
       "score": [
         4,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "23.07.66  (15.00) Sheffield, Hillsborough\nGER - URU 4:0 (1:0)\n(-34000) Finney ENG, Phillips SCO, Kandil ENG\nGER: Tilkowski - Höttges, Weber, Schulz, Schnellinger - Beckenbauer,\nHaller, Overath - Seeler, Held, Emmerich\nURU: Mazurkiewicz - Troche (c), Ubiña, Goncalvez, Manicera, Caetano - Salva,\nRocha, Silva - Cortés, Pérez\n1:0 Haller 10, 2:0 Beckenbauer 70, 3:0 Seeler 75, 4:0 Haller 84\nsent off: Troche (49), Silva (54)\nNOTE: Some sources award the last goal to Held",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -585,7 +710,12 @@
       "score": [
         5,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "23.07.66  (15.00) Liverpool, Goodison Park\nPOR - KLD 5:3 (2:3)\n(+40000) Ashkenazi ISR, Schwinte FRA, Galba CZE\nPOR: J.Pereira - Morais, Baptista, Vicente, Hilario - Graca, Coluna (c),\nAugusto - Eusebio, Torres, Simóes\nKLD: Lee Chan-myung - Lim Zoong-sun, Lee Dong-woon, Shin Yung-kyoo,\nHa Yung-won - Oh Yoon-kyung, Park Seung-zin (c), Im Seung-hwi - Han Bong-zin,\nPark Doo-ik, Yang Seung-kook\n0:1 Park Seung-zin 1 (55 sec), 0:2 Lee Dong-woon 22, 0:3 Yang Seung-kook 24,\n1:3 Eusebio 27, 2:3 Eusebio 42 p, 3:3 Eusebio 57, 4:3 Eusebio 59 p, 5:3\nAugusto 79 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -597,7 +727,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "23.07.66  (15.00) Sunderland, Roker Park\nZSR - HUN 2:1 (1:0)\n(-27000) Gardeazábal ESP, Campos POR, Codesal URU\nZSR: Yashin - Ponomarev, Shesterniev (c), Voronin, Danilov - Sabo, Khusainov,\nChislenko, Banichevski, Malafeev, Porkuyan\nHUN: Gelei - Matrai, Kaposzta, Meszöly (c), Sipos - Szepesi, Nagy, Albert -\nRakosi, Bene, Farkas\n1:0 Chislenko 5, 2:0 Porkuyan 49, 2:1 Bene 58",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -609,7 +744,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "25.07.66  (19.30) Liverpool, Goodison Park\nGER - ZSR 2:1 (1:0)\n(-39000) Lo Bello ITA, Gardezábal ESP, Codesal URU\nGER: Tilkowski - Lutz, Weber, Schulz, Schnellinger -  Beckenbauer,\nHaller, Overath - Seeler (c), Held, Emmerich\nZSR: Yashin - Ponomarev, Shesterniev (c), Voronin, Danilov - Sabo, Khusainov -\nChislenko, Banichevski, Malafeev, Porkujan\n1:0 Haller 44, 2:0 Beckenbauer 68, 2:1 Porkujan 88\nsent off: Chislenko (44)",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -621,7 +761,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "26.07.66  (19.30) London, Wembley Stadium\nENG - POR 2:1 (1:0)\n(-95000) Schwinte FRA, Zečević JUG, Yamasaki POR\nENG: Banks - Cohen, Wilson, Stiles, J.Charlton - Moore (c), Ball, R.Charlton -\nHurst, Hunt, Peters\nPOR: J.Pereira - Festa, Baptista, Carlos, Hilario - Graca, Coluna (c), Augusto -\nEusebio, Torres, Simóes\n1:0 R.Charlton 30, 2:0 R.Charlton 79, 2:1 Eusebio 82 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -722,6 +867,11 @@
             "reason": "66full da 94.000; se conserva 97.000 de 66f, más próximo a la cifra oficial de Wembley (96.924)."
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "30.07.66  (15.00) London, July 30, 1966.\nENG - GER 4:2 (1:1, 2:2, 3:2)\n(+94000) Dienst SUI, Bachramov ZSR, Galba CZE\nENG: Banks - Cohen, J. Charlton, Moore (c), Wilson - Stiles, R. Charlton,\nPeters - Ball, Hunt, Hurst\nGER: Tilkowski - Höttges, Schulz, Weber, Schnellinger - Beckenbauer,\nOverath, Haller - Seeler (c), Held, Emmerich\n0:1 Haller 12, 1:1 Hurst 18 h, 2:1 Peters 78, 2:2 Weber 90, 3:2 Hurst 101,\n4:2 Hurst 120\nNOTE: 200th game of the World Cup",
+        "lang": "en"
       }
     }
   ],

@@ -353,7 +353,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "14.06.74  (16.30) Berlin, Olympiastadion\nGER - CHI 1:0 (1:0)\n(~83000) Babaçan TUR, Taylor ENG, Winsemann CAN\nGER: Maier - Vogts, Breitner, Schwarzenbeck, Beckenbauer (c) -\nCullmann, Grabowski, Hoeness - Müller, Overath (75 Hölzenbein), Heyckens\nCHI: Vallejos - Garcia, Quintano, Arias, Figueroa - Rodriguez\n(84 Lara), Caszely, Valdéz (c - 79 Veliz), Reinoso - Ahumada, Paéz\n1:0 Breitner 16\nbooked: Garcia, Caszely, Rainoso\nsent-off: Caszely (67)",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -366,7 +371,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "14.06.74  (19.30) Dortmund, Westfalenstadion\nSCO - ZAI 2:0 (2:0)\n(~27000) Schulenburg GER, Weyland GER, Boskovic AUS\nSCO: Harvey - Jardine, McGrain, Bremner (c), Holton - Blackley, Dalglish\n(78 Hutchison), Hay - Lorimer, Jordan, Law\nZAI: Kazadi - Mwepu, Mukombo, Buhanga, Lobilo - Kilasu, Mayanga (65 Kembo),\nMana, N'daye - Kidumu (c - 78 Kibonge), Kakoko\n1:0 Lorimer 26, 2:0 Jordan 33 h\nbooked: Holton / Kidumu",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -379,7 +389,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "18.06.74  (16.00) Hamburg, Volksparkstadion\nGER - AUS 3:0 (2:0)\n(~53000) Kamel EGY, Gonzáles MEX, Pérez PER\nGER: Maier - Vogts, Breitner, Schwarzenbeck, Beckenbauer (c) - Cullmann\n(68 Wimmer), Grabowski, Hoeness - Müller, Overath, Heynckes (46 Hölzenbein)\nAUS: Reilly - Utjesenovic, Wilson (c), Schaefer, Curran - Richards, Rooney,\nMackay - Campbell (46 Abonyi), Alston, Buljevic (61 Ollerton)\n1:0 Overath 13, 2:0 Cullmann 35 h, 3:0 Müller 53\nbooked: Mackay",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -392,7 +407,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "18.06.74  (19.30) Berlin, Olympiastadion\nDDR - CHI 1:1 (0:0)\n(~27000) Angonese ITA, Scheurer SUI, Davidson SCO\nDDR: Croy - Kische, Bransch (c), Weise, Wätzlich - Irmscher, Seguin\n(73 Kreische), Sparwasser, Hoffmann - Streich, Vogel (30 Ducke)\nCHI: Vallejos - Garcia, Quintano, Arias, Figueroa - Socias (66 Farias),\nValdéz (c - 46 Yavár), Ahumada - Veliz, Reinoso, Paéz\n1:0 Hoffmann 55 h, 1:1 Ahumada 69\nbooked: Kische / Paéz, Velis",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -405,7 +425,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "22.06.74  (16.00)  Berlin, Olympiastadion\nAUS - CHI 0:0\n(~14000) Namdar IRN, Loraux BEL, Van Demert HOL\nAUS: Reilly - Utjesenovic, Wilson (c), Schaefer, Curran (80 Williams) -\nRichards, Rooney, Mackay, Abonyi - Alston (66 Ollerton), Buljevic\nCHI: Vallejos -  Garcia, Quintano, Arias, Figueroa -  Caszely, Valdéz\n(k - 58 Farias), Ahumada, Veliz (57 Yavar), Reinoso, Paez\nbooked: Richards\nsent-off: Richards (83)",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -418,7 +443,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "22.06.74  (19.30) Hamburg, Volksparkstadion\nDDR - GER 1:0 (0:0)\n(+60000) Baretto URU, Marquez BRA, Pestarino ARG\nDDR: Croy - Kische, Bransch (c), Weise, Wätzlich - Irmscher (66 Hamann),\nKurbjuweit, Kreische, Lauck - Sparwasser, Hoffmann\nGER: Maier - Vogts, Breitner, Schwarzenbeck (69 Höttges), Beckenbauer (c) -\nCullmann, Grabowski, Hoeness - Müller, Overath (69 Netzer), Flohe\n1:0 Sparwasser 77\nbooked: Croy, Kreische, Sparwasser",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -431,7 +461,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "13.06.74  (17.00) Frankfurt, Waldstadion\nBRA - JUG 0:0\n(~62000) Scheurer SUI, Loraux BEL, Pestarino ARG\nBRA: Leão - Nelinho, Luis Pereira, M.Marinho, F.Marinho - Piazza (c),\nRivelino, Paulo Cesar Lima, Valdomiro - Jairzinho, Leivinha\nJUG: Marić - Buljan, Katalinski, Bogićević, E.Hadžiabdić - Mužinić,\nOblak, Aćimović, Petković - Šurjak, Džajić (c)\nBooked: Aćimović, Oblak",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -457,7 +492,12 @@
       "score": [
         9,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "18.06.74  (19.30) Gelsenkirchen, Parkstadion\nJUG - ZAI 9:0 (6:0)\n(+31000) Delgado COL, Barreto URU, Liebregat VEM\nJUG: Marić - Buljan, Katalinski, Bogićević, E.Hadžiabdić - Bajević,\nOblak, Aćimović, Petković, Šurjak, Džajić (c)\nZAI: Kazadi (21 Tubilandu) - Mwepu, Mukombo, Buhanga, Lobilo - Kilasu,\nKembo, Mana, N'daye - Kidumu (c), Kakoko (46 Mayanga)\n1:0 Bajević 8, 2:0 Džajić 14, 3:0 Šurjak 18, 4:0 Katalinski 28, 5:0 Bajević\n30, 6:0 Bogićević 38, 7:0 Oblak 51 f, 8:0 Petković 65, 9:0 Bajević 81\nbooked: E.Hadžiabdić\nsent off: N'daye (23)",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -470,7 +510,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "18.06.74  (19.30) Frankfurt, Waldstadion\nBRA - SCO 0:0\n(~62000) Van Demert HOL, Linemayr AUT, Palotai HUN\nBRA: Leão - Nelinho, Luis Pereira, M.Marinho, F.Marinho - Piazza (c),\nRivelino, Paulo Cesar Lima, Mirandinha - Jairzinho, Leivinho (65 Cesar\nCarpegiani)\nSCO: Harvey - Jardine, McGrain, Bremner (c), Holton - Buchan, Dalglish,\nHay, Lorimer - Jordan, Morgan.\nbooked: Rivelino, F.Marinho, M.Marinho",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -483,7 +528,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "22.06.74  (18.00) Gelsenkirchen, Parkstadion\nBRA - ZAI 3:0 (1:0)\n(~36000) Rainea ROM, Angonese ITA, Ohmsen GER\nBRA: Leão - Nelinho, Luis Pereira, M.Marinho, F.Marinho - Piazza\n(k - 60 Mirandinha), Rivelino, Jairzinho, Leivinha (11 Valdomiro) - Cesar\nCarpegiani, Edu\nZAI: Kazadi - Mwepu, Mukombo, Buhanga, Lobilo - Kibonge, Tshinabu (63 Kembo),\nMana, N'tumba - Kidumu (k - 81 Kilasu), Mayanga\n1:0 Jairzinho 13, 2:0 Rivelino 67, 3:0 Valdomiro 78\nbooked: Mirandinha / Mwepu",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -496,7 +546,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "22.06.74  (18.00) Frankfurt, Waldstadion\nSCO - JUG 1:1 (0:0)\n(~56000) González MEX, Tschenscher GER, Glöckner DDR\nSCO: Harvey - Jardine, McGrain, Bremner (c), Holton - Buchan, Dalglish\n(66 Hutchison), Hay, Lorimer - Jordan, Morgan\nJUG: Marić - Buljan, Katalinski, Bogićević, E.Hadžiabdić - Bajević\n(72 Karasi), Oblak, Aćimović, Petković - Šurjak, Džajić (c)\n0:1 Karasi 82 h, 1:1 Jordan 89\nbooked: Jordan, Hay / Katalinski, Oblak, Bajević",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -509,7 +564,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "15.06.74  (18.00) Hannover, Niedersachsenstadion\nHOL - URU 2:0 (1:0)\n(~55000) Palotai HUN, Kazakov ZSR, Rainea ROM\nHOL: Jongbloed - Suurbier, Rijsbergen, Haan, Krol - Jansen, Neeskens,\nvan Hanegem, Rep - Cruijff (c), Rensenbrink\nURU: Mazurkiewicz - Jauregui, Masnik (c), Forlán, Pavoni - Espárrago,\nMontero-Castillo, Rocha, Cubilla (68 Milar) - Morena, Mantegazza\n1:0 Rep 8 h, 2:0 Rep 87\nbooked; Mantegazza, Forlán, Masnik\nsent off: Morena (89)",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -522,7 +582,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "15.06.74  (16.00) Düsseldorf, Rheinstadion\nBUL - SWE 0:0\n(~23000) Pérez PER, González MEX, Seppiah SIN\nBUL: Goranov - Z.Vassilev, Ivkov, Velitchkov, Kolev - Penev, Voinov\n(72 Mikhailov), Bonev (c) - Denev, Panov (75 M.Vassilev) - Nikodimov,\nSWE: Hellström - Olsson, Karlsson, Larsson (c), Andersson - Kindvall\n(72 Magnusson), Tapper, Grahn, Torstensson - Sandberg, Edström",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -535,7 +600,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "19.06.74  (19.30) Dortmund, Westfalenstadion\nHOL - SWE 0:0\n(+53000) Winsemann CAN, Tschenscher GER, Thomas WAL\nHOL: Jongbloed - Suurbier, Rijsbergen, Haan, Krol - Jansen, Neeskens,\nVan Hanegem (73 de Jong), Rep - Cruijff (c), Keizer\nSWE: Hellström - Olsson (76 Grip), Karlsson, Larsson, Andersson - Nordqvist (c),\nTapper (61 Persson), Grahn, Ejderstedt - Sandberg, Edström\nbooked: Rep / Grahn, Nordqvist, Persson, Andersson",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -548,7 +618,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "19.06.74  (19.30) Hannover, Niedersachsenstadion\nBUL - URU 1:1 (0:0)\n(+13000) Taylor ENG, Babaçan TUR, Ohmsen GER\nBUL: Goranov - Velitchkov, Kolev, Penev, Voinov - Bonev (c), Denev, Panov -\nNikodimov (65 Mikhailov), Z.Vassilev, Ivkov\nURU: Mazurkiewicz (c) - Jauregui, Milar, Forlán, Pavoni - Espárrago,\nRocha, Garisto (72 Masnik) - Morena, Mantegazza (83 Cardaccio), Corbo\n1:0 Bonev 75 h, 1:1 Pavoni 87\nbooked: Z.Vasilliev / Espárrago",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -561,7 +636,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "23.06.74  (16.00) Dortmund, Westfalenstadion\nHOL - BUL 4:1 (2:0)\n(+53000) Boskovic AUS, Eschweiler GER, Biwersi GER\nHOL: Jongbloed - Suurbier, Rijsbergen, Haan, Krol - Jansen, Neeskens\n(78 de Jong), Van Hanegem (36 Israël), Rep - Cruijff (c), Rensenbrink\nBUL: Stoykov - Velitchkov, Kolev, Penev, Voinov - Bonev (c), Denev,\nPanov (46 Borisov), Stoyanov (57 Mikhailov) - Z.Vassilev, Ivkov.\n1:0 Neeskens 8 p, 2:0 Neeskens 45 p, 3:0 Rep 71, 3:1 Krol 78 o, 4:1 de Jong 88\nbooked: Jansen, Van Hanegem, Cruijff / Denev",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -574,7 +654,12 @@
       "score": [
         3,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "23.06.74  (16.00) Düsseldorf, Rheinstadion\nSWE - URU 3:0 (0:0)\n(+28000) Linemayr AUT, Llobregat VEN, Aldinger GER\nSWE: Hellström - Grip, Karlsson, Larsson, Andersson - Nordqvist (c),\nKindvall (78 Torstensson), Grahn, Magnusson (82 Ahlström) - Sandberg, Edström\nURU: Mazurkiewicz (c) - Jauregui, Milar, Forlan, Pavoni - Esparrago,\nRocha, Garisto (46 Masnik) - Morena, Mantegazza, Corbo (43 Cubilla)\n1:0 Edström 46, 2:0 Sandberg 74, 3:0 Edström 78\nbooked: Jauregui",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -587,7 +672,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "15.06.74  (18.00) München, Olympiastadion\nITA - HAI 3:1 (0:0)\n(~53000) Llobregat VEN, Marques BRA, Namdar IRN\nITA: Zoff - Spinosi, Morini, Burgnich, Facchetti (c) - Mazzola, Capello,\nRivera, Benetti - Chinaglia (70 Anastasi), Riva\nHAI: Francillon - Bayonne, Jean-Joseph, Nazaire (c), Auguste - Antoine,\nDésir, Vorbe, François - Saint-Vil (46 Barthélemy), Sanon\n0:1 Sanon 46, 1:1 Rivera 52, 2:1 Auguste 66 o, 3:1 Anastasi 79\nbooked: Bayonne\nNOTE: antidope control tested positive for Jean-Joseph, who has been\nexpulsed from the tournament",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -600,7 +690,12 @@
       "score": [
         3,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "15.06.74  (18.00) Stuttgart, Neckarstadion\nPOL - ARG 3:2 (2:0)\n(~33000) Thomas WAL, Davidson SCO, Aldinger GER\nPOL: Tomaszewski - Gorgoń, Szymanowski, Żmuda, Musiał - Kasperczak,\nDeyna (c), Maszczyk - Lato, Szarmach (72 Domarski), Gadocha (84 Ćmikiewicz)\nARG: Carnevali - Perfumo (c), Wolff, Heredia, Sa - Bargas (59 Telch),\nBabington, Brindisi (46 Houseman) - Kempes, Ayala, Balbuena.\n1:0 Lato 7, 2:0 Szarmach 9, 2:1 Heredia 61, 3:1 Lato 63, 3:2 Babington 67\nbooked: Babington, Perfumo",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -613,7 +708,12 @@
       "score": [
         7,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "19.06.74  (19.30) München, Olympiastadion\nPOL - HAI 7:0 (5:0)\n(+25000) Seppiah SIN, Escheweiler GER, Biwerst GER\nPOL: Tomaszewski - Gorgoń, Szymanowski, Żmuda, Musiał (72 Gut) -\nKasperczak, Deyna (c), Maszczyk (64 Ćmikiewicz) - Lato, Szarmach, Gadocha\nHAI: Francillon - Bayonne, Andre (38 Barthélemy), Nazaire (c), Auguste -\nAntoine, Désir, Vorbe, François - Saint-Vil (46 Racine), Sanon\n1:0 Lato 17, 2:0 Deyna 19 h, 3:0 Szarmach 30 h, 4:0 Gorgoń 32, 5:0 Szarmach\n34, 6:0 Szarmach 50 h, 7:0 Lato 67\nbooked: Bayonne",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -626,7 +726,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "19.06.74  (19.30) Stuttgart, Neckarstadion\nARG - ITA 1:1 (1:1)\n(~70000) Kazakov ZSR, Glöckner DDR, Rainea ROM\nARG: Carnevali - Perfumo (c), Wolff (61 Glaria), Heredia, Sa - Telch,\nBabington, Houseman, Kempes - Ayala, Yazalde (78 Chazarreta)\nITA: Zoff - Spinosi, Morini (67 Wilson), Burgnich, Facchetti (c) -\nMazzola, Capello, Rivera (87 Causio) - Benetti, Anastasi, Riva\n1:0 Houseman 19, 1:1 Perfumo 36 o\nbooked: Babington / Benetti",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -639,7 +744,12 @@
       "score": [
         4,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "23.06.74  (16.00) München, Olympiastadion\nARG - HAI 4:1 (2:0)\n(~25000) Sánchez ESP, Kamel EGY, N'Diaye SEN\nARG: Carnevali - Perfumo (c), Wolff, Heredia, Sa - Telch, Babington,\nHouseman (59 Brindisi), Kempes (57 Balbuena) - Ayala, Yazalde\nHAI: Francillon - Bayonne, Ducoste, Nazaire (c - 28 M. Leandre), Antoine -\nDésir, Vorbe, Louis, Saint-Vil (54 F.Leandre) - Racine, Sanon\n1:0 Yazalde 15, 2:0 Houseman 18, 3:0 Ayala 55, 3:1 Sanon 63, 4:1 Yazalde 67\nbooked: Babington, Heredia / F.Leandre",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -652,7 +762,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "23.06.74  (16.00) Stuttgart, Neckarstadion\nPOL - ITA 2:1 (2:0)\n(+70000) Weyland GER, Schulenburg GER, Winsemann CAN\nPOL: Tomaszewski - Gorgoń, Szymanowski, Żmuda, Musiał - Kasperczak\nDeyna (c), Maszczyk - Lato, Szarmach (78 Ćmikiewicz), Gadocha\nITA: Zoff - Spinosi, Morini, Burgnich (34 Wilson), Facchetti (c) - Mazzola,\nCapello, Causio, Benetti - Anastasi, Chinaglia (46 Boninsegna)\n1:0 Szarmach 38 h, 2:0 Deyna 45, 2:1 Capello 66\nbooked: Musiał, Kasperczak / Boninsegna",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -665,7 +780,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "26.06.74  (19.30) Hannover, Niedersachsenstadion\nBRA - DDR 1:0 (0:0)\n(-60000) Thomas WAL, Babaçan TUR, Boskovic AUS\nBRA: Leão - Zé Maria, Luis Pereira, M.Marinho (c), F.Marinho - Cesar\nCarpegiani, Rivelino, Dirceu, Valdomiro - Jairzinho, Paulo Cesar Lima\nDDR: Croy - Kurbjuweit, Bransch (c), Weise, Streich - Wätzlich, Lauck (55\nLöwe), Sparwasser, Hamann (46 Irmscher) - Kische, Hoffmann\n1:0 Rivelino 61 f\nbooked: Jairzinho, Dirceu, Cesar Carpegiani / Streich, Hamann",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -678,7 +798,12 @@
       "score": [
         4,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "22.06.74  (19.30) Gelsenkirchen, Parkstadion\nHOL - ARG 4:0 (2:0)\n(~55000) Davidson SCO, Tschenscher GER, Kazakov ZSR\nHOL: Jongbloed - Suurbier (84 Israël), Haan, Rijsbergen, Krol - Jansen\nNeeskens, Van Hanegem, Rep - Cruijff (c), Rensenbrink\nARG: Carnevali - Perfumo (c), Wolff (46 Glaria), Heredia, Sa - Telch,\nSqueo, Houseman (65 Kempes), Yazalde - Ayala, Balbuena\n1:0 Cruijff 11, 2:0 Krol 25, 3:0 Rep 73 h, 4:0 Cruijff 90\nbooked: Neeskens, Suurbier / Perfumo",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -691,7 +816,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "30.06.74  (16.00) Gelsenkirchen, Parkstadion\nHOL - DDR 2:0 (1:0)\n(-70000) Scheurer SUI, Linemayr AUT, Delgado COL\nHOL: Jongbloed - Suurbier, Haan, Rijsbergen, Krol - Jansen, Neeskens,\nvan Hanegem, Rep - Cruijff (c), Rensenbrink\nDDR: Croy - Kurbjuweit, Bransch (c), Weise, Schnuphase - Pommerenke,\nLauck (81 Kreische), Sparwasser, Löwe (66 Ducke) - Kische, Hoffmann\n1:0 Neeskens 8, 2:0 Rensenbrink 59\n30.06.74  (16.00 Hannover, Niedersachsenstadion\nBRA - ARG 2:1 (1:1)\n(+39000) Loraux BEL, N'Diaye SEN, Taylor ENG\nBRA: Leão - Zé Maria, Luis Pereira, M.Marinho (c), F.Marinho - Cesar\nCarpegiani, Rivelino, Dirceu, Valdomiro - Jairzinho, Paulo Cesar Lima\nARG: Carnevali - Glaria, Heredia, Sa (46 Carrascosa), Bargas - Squeo,\nBabington, Brindisi (c) - Ayala, Balbuena, Kempes (46 Houseman)\n1:0 Rivelino 32, 1:1 Brindisi 35 f, 2:1 Jairzinho 48\nbooked: Houseman",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -704,7 +834,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "30.06.74  (18.00) Frankfurt, Waldstadion\nPOL - JUG 2:1 (1:1)\n(+53000) Glöckner DDR, Marques BRA, Winsemann CAN\nPOL: Tomaszewski - Szymanowski, Gorgoń, Żmuda, Musiał - Deyna (c -\n81 Domarski), Kasperczak, Maszczyk - Lato, Szarmach (58 Ćmikiewicz), Gadocha\nJUG: Marić - Buljan, E.Hadžiabdić, Bogićević, Katalinski - Oblak (17\nJerković),\nBajević, Aćimović (c), Šurjak - Karasi, Petković (81 V.Petrović)\n1:0 Deyna 27 p, 1:1 Karasi 43, 2:1 Lato 63 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -717,7 +852,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "03.07.74  (19.30) Dortmund, Westfalenstadion\nHOL - BRA 2:0 (0:0)\n(+53000) Tschenscher GER, Davidson SCO, Suppiah SEN\nHOL: Jongbloed - Suurbier, Haan, Rijsbergen, Krol - Jansen, Neeskens\n(84 Israël), Van Hanegem, Rep - Cruijff (c), Rensenbrink (67 de Jong)\nBRA: Leão - Zé Maria, Luis Pereira, M.Marinho (c), F.Marinho - Cesar\nCarpegiani, Rivelino, Dirceu, Valdomiro - Jairzinho, Paulo Cesar Lima\n(62 Mirandinha)\n1:0 Neeskens 50, 2:0 Cruijff 65\nbooked: Rep / Zé Maria, Pereira\nsent off: Pereira (84)",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -730,7 +870,12 @@
       "score": [
         1,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "03.07.74  (19.30) Gelsenkirchen, Parkstadion\nARG - DDR 1:1 (1:1)\n(+54000) Taylor ENG, Thomas WAL, Kamel EGY\nARG: Fillol - Wolff (c), Heredia, Carrascosa, Bargas - Telch, Kempes,\nHouseman, Babington - Brindisi, Ayala\nDDR: Croy - Kurbjuweit, Bransch (c), Weise, Schnupase - Pommerenke,\nStreich (81 Ducke), Sparwasser, Löwe (68 Vogel) - Kische, Hoffmann\n0:1 Streich 14 h, 1:1 Houseman 21",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -743,7 +888,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "26.06.74  (19.30) Stuttgart, Neckarstadion\nPOL - SWE 1:0 (1:0)\n(~45000) Barretto URU, Pestarino ARG, González MEX\nPOL: Tomaszewski - Szymanowski, Gorgoń, Żmuda, Gut - Deyna (c), Kasperczak,\nMaszczyk - Lato, Szarmach (62 Kmiecik), Gadocha\nSWE: Hellström - Karlsson, Grip, Nordqvist (c), Andersson (62 Augustsson) - Grahn,\nTapper (82 Ahlström), Larsson, Torstensson - Sandberg, Edström\n1:0 Lato 44 h (64 Tomaszewski saved a penalty by Tapper)\nbooked: Gorgoń, Szarmach",
+        "lang": "en"
+      }
     },
     {
       "id": "m032",
@@ -756,7 +906,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "26.06.74  (18.00) Düsseldorf, Rheinstadion\nGER - JUG 2:0 (1:0)\n(+67000) Marques BRA, Angonese ITA, Pérez PER\nGER: Maier - Vogts, Schwarzenbeck, Beckenbauer (c), Breitner - Bonhof,\nWimmer (74 Hoeness), Hölzenbein (79 Flohe), Overath - Müller, Herzog\nJUG: Marić - Buljan, E.Hadžiabdić, Mužinić, Katalinski - Oblak (84 - Jerkovic),\nPopivoda, Aćimović, Šurjak - Karasi, Džajić (c - 84 Petković)\n1:0 Breitner 39, 2:0 Müller 80\nbooked: Overath, Vogts / Buljan, E.Hadžiabdić",
+        "lang": "en"
+      }
     },
     {
       "id": "m033",
@@ -782,7 +937,12 @@
       "score": [
         4,
         2
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "30.06.74  (19.30) Düsseldorf, Rheinstadion\nGER - SWE 4:2 (0:1)\n(-68000) Kazakow ZSR, Rainea ROM, Sánchez ESP\nGER: Maier - Vogts, Schwarzenbeck, Beckenbauer (c), Breitner - Bonhof,\nHoeness, Hölzenbein (83 Flohe), Overath - Müller, Herzog (66 Grabowski)\nSWE: Hellström - Karlsson, Olsson, Nordqvist (c), Augustsson - Grahn,\nTapper, Larsson (31 Ejderstedt) - Torstensson, Sandberg, Edström\n0:1 Edström 25, 1:1 Overath 51, 2:1 Bonhof 52, 2:2 Sandberg 53, 3:2 Grabowski\n77, 4:2 Hoeness 89 p\nbooked: Grahn",
+        "lang": "en"
+      }
     },
     {
       "id": "m035",
@@ -795,7 +955,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "03.07.74  (19.30) Düsseldorf, Rheinstadion\nSWE - JUG 2:1 (1:1)\n(-38000) Pestarino ARG, Baretta URU, Llobregat VEN\nSWE: Hellström - Karlsson, Olsson, Nordqvist (c), Augustsson - Grahn, Tapper,\nPersson, Torstensson - Sandberg, Edström\nJUG: Marić, Buljan, E.Hadžiabdić, Bogićević, Katalinski - Pavlović\n(78 Peruzović), Džajić (c), Aćimović - Šurjak, V.Petrović (66 Karasi), Jerković\n0:1 Šurjak 27, 1:1 Edström 30, 2:1 Torstensson 85\nbooked: Katalinski, Karasi",
+        "lang": "en"
+      }
     },
     {
       "id": "m036",
@@ -808,7 +973,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "03.07.74  (16.30) Frankfurt, Waldstadion\nGER - POL 1:0 (0:0)\n(~62000) Linemayr AUT, Scheurer SUI, Palotai HUN\nGER: Maier - Vogts, Schwarzenbeck, Beckenbauer (c), Breitner - Bonhof,\nHoeness, Hölzenbein, Overath - Müller, Grabowski\nPOL: Tomaszewski - Szymanowski, Gorgoń, Żmuda, Musiał - Deyna (c), Kasperczak\n(80 Ćmikiewicz), Maszczyk (80 Kmiecik) - Lato, Domarski, Gadocha\n1:0 Müller 76 (53 Tomaszewski saved a penalty by Hoeness)\nNOTE: Match postponed half an hour due to extremely wet pitch",
+        "lang": "en"
+      }
     },
     {
       "id": "m037",
@@ -820,7 +990,12 @@
       "score": [
         1,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "6.07.74  (18.00) München, Olympiastadion\nPOL - BRA 1:0 (0:0)\n(~79000) Angonese ITA, N'Diayes SEN, Namdar IRN\nPOL: Tomaszewski - Szymanowski, Gorgoń, Żmuda, Musiał - Maszczyk,\nDeyna (c), Kasperczak (79 Ćmikiewicz) - Lato, Szarmach (73 Kapka), Gadocha\nBRA: Leão - Zé Maria, Alfredo, M.Marinho (c), F.Marinho - Cesar Carpegiani,\nRivelino, Dirceu - Ademir (56 Mirandinha), Valdomiro, Jairzinho\n1:0 Lato 77\nbooked: Kasperczak / Jairzinho",
+        "lang": "en"
+      }
     },
     {
       "id": "m038",
@@ -868,6 +1043,11 @@
             ]
           }
         ]
+      },
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "07.07.74  (16.00) Müchen, Olympiastadion\nGER - HOL 2:1 (2:1)\n(~80000) Taylor ENG, Barreto URU, González MEX\nGER: Maier - Vogts, Beckenbauer (c), Schwarzenbeck, Breitner - Hoeness,\nBonhof, Overath, Grabowski - Müller, Hölzenbein\nHOL: Jongbloed - Suurbier, Rijsbergen (69 De Jong), Haan, Krol - Jansen,\nNeeskens, Van Hanegem, Rep - Cruijff (c), Rensenbrink (46 R.van de Kerkhof)\n0:1 Neeskens 2 p, 1:1 Breitner 25 p, 2:1 Müller 43\nbooked: Vogts / Neeskens, Van Hanegem, Cruijff (during half-time)",
+        "lang": "en"
       }
     }
   ],
