@@ -553,7 +553,7 @@
       ],
       "sheet": {
         "source": "rsssf:62full",
-        "text": "06.06.62  (15.00) Vina del Mar, Estadio Sausalito\nBRA - ESP 2:1 (0:1)\n(+18000) Bustamante CHI, Marino URU, Sundhelm COL\nBRA: Gilmar - D.Santos, Mauro (c), Zózimo, N.Santos - Zito, Garrincha - Didi,\nVavá, Amarildo, Zagalo\nESP: Araguistain - Rodri, Gracia, Verges - Echevarria, Pachin - Collar (c),\nPeiró, Puskás, Adélardo, Gento\n0:1 Adélardo 35, 1:1 Amarildo 72, 2:1 Amarildo 86 h\n07.06.62  Vina del Mar, Estadio Sausalito\nMEX - CZE 3:1 (2:1)\n(-11000)\nDienst SUI, Tešanić JUG, Sundhelm COL\nMEX: Carbajal - del Muro, Cárdenas, Sepulveda, Jauregui - Reyes, Nájera -\ndel'Aguila, H.Hernández, A.Hernández, Diaz\nCZE: Schrojf - Lála, Novák (c), Pluskal, Popluhar - Masopust, Štibrányi -\nScherer, Kvašňák, Adamec, Mašek\n0:1 Mašek 1 (20 sec), 1:1 Diaz 13, 2:1 del'Aguila 29, 3:1 H.Hernández 90 p",
+        "text": "06.06.62  (15.00) Vina del Mar, Estadio Sausalito\nBRA - ESP 2:1 (0:1)\n(+18000) Bustamante CHI, Marino URU, Sundhelm COL\nBRA: Gilmar - D.Santos, Mauro (c), Zózimo, N.Santos - Zito, Garrincha - Didi,\nVavá, Amarildo, Zagalo\nESP: Araguistain - Rodri, Gracia, Verges - Echevarria, Pachin - Collar (c),\nPeiró, Puskás, Adélardo, Gento\n0:1 Adélardo 35, 1:1 Amarildo 72, 2:1 Amarildo 86 h",
         "lang": "en"
       }
     },
@@ -568,7 +568,12 @@
       "score": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "07.06.62  Vina del Mar, Estadio Sausalito\nMEX - CZE 3:1 (2:1)\n(-11000)\nDienst SUI, Tešanić JUG, Sundhelm COL\nMEX: Carbajal - del Muro, Cárdenas, Sepulveda, Jauregui - Reyes, Nájera -\ndel'Aguila, H.Hernández, A.Hernández, Diaz\nCZE: Schrojf - Lála, Novák (c), Pluskal, Popluhar - Masopust, Štibrányi -\nScherer, Kvašňák, Adamec, Mašek\n0:1 Mašek 1 (20 sec), 1:1 Diaz 13, 2:1 del'Aguila 29, 3:1 H.Hernández 90 p",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -631,7 +636,7 @@
       ],
       "sheet": {
         "source": "rsssf:62full",
-        "text": "02.06.62  (15.00) Rancagua, Estadio Braden\nENG - ARG 3:1 (2:0)\n(-10000) Latichev ZSR, Morgan CAN, Reginato CHI\nENG: Springett - Armfield, Wilson, Moore, Norman - Flowers, Douglas -\nGreaves, Peacock, Haynes (c), R.Charlton\nARG: Roma - Navarro, Páez, Capp (c), Marzolini - Sacchi, Rattin - Oleniak,\nSosa, Sanfilippo, Belen\n1:0 Flowers 18 p, 2:0 R.Charlton 42, 3:0 Greaves 67, 3:1 Sanfilipo 81\n03.06.62  Rancagua, Estadio Braden\nHUN - BUL 6:1 (4:0)\n(+7000) Gardeazábal ESP, Silva CHI, Davidson SCO\nHUN: Ilku - Matrai, Sárosi (c), Solymosi - Mészöly, Sipos - Sándor, Göröcs,\nAlbert, Tichy, Fenyvesi\nBUL: Naidenov - Rakarov (c), Kitov, A.Kostov - Dimitrov, Kovatchev - Sokolov,\nVelitchkov, Asparoukhov, Dermendzhiev, Kolev\n1:0 Albert 1 (50 sec), 2:0 Albert 6, 3:0 Tichy 8, 4:0 Selymosi 12, 5:0\nAlbert 54, 5:1 Asparoukhov 64, 6:1 Tichy 70\nNOTE: Some sources award Asparoukhov's goal to Sokolov\n06.06.62  Rancagua, Estadio Braden\nARG - HUN 0:0\n(-8000) Yamasaki PER, Gardeazábal ESP, Bulnes CHI\nARG: Dominguez - Sainz, Delgado, Capp - Marzolini, Sacchi - Pando (c),\nOleniak, Facundo, Pagani, Gonzalez\nHUN: Grosics (c) - Matrai, Sárosi, Solymosi - Mészöly, Sipos - Kuharszki,\nGöröcs, Monostroi, Tichy, Rakosi\n07.06.62  Rancagua, June 7th - Estadio Braden\nBUL - ENG 0:0\n(-6000) Blavier BEL, Reginato CHI, Bulnes CHI\nBUL: Naidenov - Pentchev, Zechev, A.Kostov - D.Kostov, Dimitrov -\nKovatchev (c), Sokolov, Velitchkov, Dermendzhiev, Kolev\nENG: Springett - Armfield, Wilson, Moore - Norman, Flowers - Douglas,\nGreaves, Peacock, Haynes (c), R.Charlton",
+        "text": "02.06.62  (15.00) Rancagua, Estadio Braden\nENG - ARG 3:1 (2:0)\n(-10000) Latichev ZSR, Morgan CAN, Reginato CHI\nENG: Springett - Armfield, Wilson, Moore, Norman - Flowers, Douglas -\nGreaves, Peacock, Haynes (c), R.Charlton\nARG: Roma - Navarro, Páez, Capp (c), Marzolini - Sacchi, Rattin - Oleniak,\nSosa, Sanfilippo, Belen\n1:0 Flowers 18 p, 2:0 R.Charlton 42, 3:0 Greaves 67, 3:1 Sanfilipo 81",
         "lang": "en"
       }
     },
@@ -646,7 +651,12 @@
       "score": [
         6,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "03.06.62  Rancagua, Estadio Braden\nHUN - BUL 6:1 (4:0)\n(+7000) Gardeazábal ESP, Silva CHI, Davidson SCO\nHUN: Ilku - Matrai, Sárosi (c), Solymosi - Mészöly, Sipos - Sándor, Göröcs,\nAlbert, Tichy, Fenyvesi\nBUL: Naidenov - Rakarov (c), Kitov, A.Kostov - Dimitrov, Kovatchev - Sokolov,\nVelitchkov, Asparoukhov, Dermendzhiev, Kolev\n1:0 Albert 1 (50 sec), 2:0 Albert 6, 3:0 Tichy 8, 4:0 Selymosi 12, 5:0\nAlbert 54, 5:1 Asparoukhov 64, 6:1 Tichy 70\nNOTE: Some sources award Asparoukhov's goal to Sokolov",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -659,7 +669,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "06.06.62  Rancagua, Estadio Braden\nARG - HUN 0:0\n(-8000) Yamasaki PER, Gardeazábal ESP, Bulnes CHI\nARG: Dominguez - Sainz, Delgado, Capp - Marzolini, Sacchi - Pando (c),\nOleniak, Facundo, Pagani, Gonzalez\nHUN: Grosics (c) - Matrai, Sárosi, Solymosi - Mészöly, Sipos - Kuharszki,\nGöröcs, Monostroi, Tichy, Rakosi",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -672,7 +687,12 @@
       "score": [
         0,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:62full",
+        "text": "07.06.62  Rancagua, June 7th - Estadio Braden\nBUL - ENG 0:0\n(-6000) Blavier BEL, Reginato CHI, Bulnes CHI\nBUL: Naidenov - Pentchev, Zechev, A.Kostov - D.Kostov, Dimitrov -\nKovatchev (c), Sokolov, Velitchkov, Dermendzhiev, Kolev\nENG: Springett - Armfield, Wilson, Moore - Norman, Flowers - Douglas,\nGreaves, Peacock, Haynes (c), R.Charlton",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",

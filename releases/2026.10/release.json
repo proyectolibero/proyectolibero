@@ -420,14 +420,14 @@
     },
     {
       "path": "data/football/worldcup/1962.json",
-      "sha256": "f19e3181de527c3e6939d06f1afdfbadbad0e1ac7d33e0234649dc8fc0b3ee03",
+      "sha256": "ef3f89ee1e7c68bf58d1ac6a06c583c1041d66d2aab4973693bc55a554265f34",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1962
     },
     {
       "path": "data/football/worldcup/1966.json",
-      "sha256": "0b73a4db035c4d801a58e7a92cc7fa0e6050adfcccb16c939312534c6615c722",
+      "sha256": "3f08461d3a4d70e053dadf62bdb883fa49186b8de5b8ecc2870a922ac8a2a13a",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1966
@@ -441,7 +441,7 @@
     },
     {
       "path": "data/football/worldcup/1974.json",
-      "sha256": "d3c9a6e065accd50000992fd3afbf6f51276635a00cb737c1212adf32f2593d7",
+      "sha256": "5e6a90a3c7523006a0868adf91aaaa038627f114ebe6145bab910f57871573f0",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1974
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "b248e69eefad2d22e4ffab430dd2fe9d9b792f47089231b450eb69cdd9efde5b",
+  "checksum": "4817835363ac77fe6f4bb67a7fca471707886a99e64b5d2e16e19c4aef3bbc58",
   "dataset": {
     "sports": 4,
     "competitions": 5,

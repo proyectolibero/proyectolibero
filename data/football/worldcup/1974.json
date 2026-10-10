@@ -819,7 +819,7 @@
       ],
       "sheet": {
         "source": "rsssf:74full",
-        "text": "30.06.74  (16.00) Gelsenkirchen, Parkstadion\nHOL - DDR 2:0 (1:0)\n(-70000) Scheurer SUI, Linemayr AUT, Delgado COL\nHOL: Jongbloed - Suurbier, Haan, Rijsbergen, Krol - Jansen, Neeskens,\nvan Hanegem, Rep - Cruijff (c), Rensenbrink\nDDR: Croy - Kurbjuweit, Bransch (c), Weise, Schnuphase - Pommerenke,\nLauck (81 Kreische), Sparwasser, Löwe (66 Ducke) - Kische, Hoffmann\n1:0 Neeskens 8, 2:0 Rensenbrink 59\n30.06.74  (16.00 Hannover, Niedersachsenstadion\nBRA - ARG 2:1 (1:1)\n(+39000) Loraux BEL, N'Diaye SEN, Taylor ENG\nBRA: Leão - Zé Maria, Luis Pereira, M.Marinho (c), F.Marinho - Cesar\nCarpegiani, Rivelino, Dirceu, Valdomiro - Jairzinho, Paulo Cesar Lima\nARG: Carnevali - Glaria, Heredia, Sa (46 Carrascosa), Bargas - Squeo,\nBabington, Brindisi (c) - Ayala, Balbuena, Kempes (46 Houseman)\n1:0 Rivelino 32, 1:1 Brindisi 35 f, 2:1 Jairzinho 48\nbooked: Houseman",
+        "text": "30.06.74  (16.00) Gelsenkirchen, Parkstadion\nHOL - DDR 2:0 (1:0)\n(-70000) Scheurer SUI, Linemayr AUT, Delgado COL\nHOL: Jongbloed - Suurbier, Haan, Rijsbergen, Krol - Jansen, Neeskens,\nvan Hanegem, Rep - Cruijff (c), Rensenbrink\nDDR: Croy - Kurbjuweit, Bransch (c), Weise, Schnuphase - Pommerenke,\nLauck (81 Kreische), Sparwasser, Löwe (66 Ducke) - Kische, Hoffmann\n1:0 Neeskens 8, 2:0 Rensenbrink 59",
         "lang": "en"
       }
     },
@@ -837,7 +837,7 @@
       ],
       "sheet": {
         "source": "rsssf:74full",
-        "text": "30.06.74  (18.00) Frankfurt, Waldstadion\nPOL - JUG 2:1 (1:1)\n(+53000) Glöckner DDR, Marques BRA, Winsemann CAN\nPOL: Tomaszewski - Szymanowski, Gorgoń, Żmuda, Musiał - Deyna (c -\n81 Domarski), Kasperczak, Maszczyk - Lato, Szarmach (58 Ćmikiewicz), Gadocha\nJUG: Marić - Buljan, E.Hadžiabdić, Bogićević, Katalinski - Oblak (17\nJerković),\nBajević, Aćimović (c), Šurjak - Karasi, Petković (81 V.Petrović)\n1:0 Deyna 27 p, 1:1 Karasi 43, 2:1 Lato 63 h",
+        "text": "30.06.74  (16.00 Hannover, Niedersachsenstadion\nBRA - ARG 2:1 (1:1)\n(+39000) Loraux BEL, N'Diaye SEN, Taylor ENG\nBRA: Leão - Zé Maria, Luis Pereira, M.Marinho (c), F.Marinho - Cesar\nCarpegiani, Rivelino, Dirceu, Valdomiro - Jairzinho, Paulo Cesar Lima\nARG: Carnevali - Glaria, Heredia, Sa (46 Carrascosa), Bargas - Squeo,\nBabington, Brindisi (c) - Ayala, Balbuena, Kempes (46 Houseman)\n1:0 Rivelino 32, 1:1 Brindisi 35 f, 2:1 Jairzinho 48\nbooked: Houseman",
         "lang": "en"
       }
     },
@@ -924,7 +924,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:74full",
+        "text": "30.06.74  (18.00) Frankfurt, Waldstadion\nPOL - JUG 2:1 (1:1)\n(+53000) Glöckner DDR, Marques BRA, Winsemann CAN\nPOL: Tomaszewski - Szymanowski, Gorgoń, Żmuda, Musiał - Deyna (c -\n81 Domarski), Kasperczak, Maszczyk - Lato, Szarmach (58 Ćmikiewicz), Gadocha\nJUG: Marić - Buljan, E.Hadžiabdić, Bogićević, Katalinski - Oblak (17\nJerković),\nBajević, Aćimović (c), Šurjak - Karasi, Petković (81 V.Petrović)\n1:0 Deyna 27 p, 1:1 Karasi 43, 2:1 Lato 63 h",
+        "lang": "en"
+      }
     },
     {
       "id": "m034",

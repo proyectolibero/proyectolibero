@@ -466,7 +466,12 @@
       "score": [
         2,
         0
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "12.07.66  Liverpool, Goodison Park\nBRA - BUL 2:0 (1:0)\n(-48000) Tschenscher GER, McCabe ENG, Taylor ENG\nBRA: Gilmar - D.Santos, Bellini (c), Altair, Henrique - Denilson, Lima,\nGarrincha - Pelé, Alcindo, Jairzinho\nBUL: Naidenov - Shalamanov, Vutzov, Gaganelov (c), Penev - Kitov, Zhechev,\nYakimov - Dermendyev, Asparoukhov, Kolev\n1:0 Pelé 14 f, 2:0 Garrincha 63 f",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -778,7 +783,12 @@
       "score": [
         2,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:66full",
+        "text": "28.07.70  (19.30) London, Wembley Stadium\nPOR - ZSR 2:1 (1:1)\n(-88000) Dagnall ENG, Howley ENG, Kandil EGY\nPOR: J.Pereira - Festa, Baptista, Carlos, Hilario - Graca, Coluna (c),\nAugusto - Eusebio, Torres, Simóes\nZSR: Yashin (c) - Ponomarev, Khurtsilava, Voronin, Danilov - Korneyev,\nSichinava, Metreveli, Banichevski - Malafeev, Serebrianikov\n1:0 Eusebio 12 p, 1:1 Malafeev 43, 2:1 Torres 88",
+        "lang": "en"
+      }
     },
     {
       "id": "m032",
