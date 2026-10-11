@@ -33,6 +33,7 @@ Ejemplo: `node scripts/ingest-batch.js --competition=football/worldcup --years=2
 - Nada de procesos de larga duración (**ADR-017/D26**): los tests usan `createServer({port:0})` + cierre.
 - Un solo commit por lote coherente; mensaje corto.
 - `git status --short` antes de commitear; nunca commitear con `validate` en rojo.
+- **`integrity` no puede empeorar**: si aparece una anomalía nueva (`node scripts/integrity.js` con más errores/avisos que la línea base), se **corrige antes de commitear**. `validate` verde no basta: no comprueba fechas, campeones ni coherencia semántica.
 
 ## 7. Sesiones y contexto
 - Una **sesión nueva por fase**; el estado se lee de `docs/ESTADO-ACTUAL.md` y `memory/`.

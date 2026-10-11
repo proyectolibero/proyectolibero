@@ -176,6 +176,19 @@ test("reconcile marca las adiciones de clasificación como info, no blocking", (
   assert.equal(differences[0].severity, "info");
 });
 
+test("parse q corrige una errata de dos cifras con el año del contexto de la página", () => {
+  const text = [
+    "Europe Group 1",
+    "23- 3-15  Oslo            Norway           1-0 Sweden",
+    "26- 3-11  Oslo            Sweden           2-6 Norway"
+  ].join("\n");
+  const result = parse("q", text, { year: "2014-18", sourceId: "rsssf:2018q" });
+
+  assert.equal(result.matches.length, 2);
+  assert.equal(result.matches[0].date, "2015-03-23");
+  assert.equal(result.matches[1].date, "2015-03-26", "la errata '11' se resuelve con el año previo (2015)");
+});
+
 test("parse q reconoce grupos con prefijo de confederación y los hace únicos", () => {
   const text = [
     "Europe Group 1 [England]",

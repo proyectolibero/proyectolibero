@@ -264,7 +264,44 @@ const COUNTRY_ALIASES = {
   "br. virgin i.": "VGB",
   "br. virgin islands": "VGB",
   "british vi": "VGB",
-  "british virgin islands": "VGB"
+  "british virgin islands": "VGB",
+  // Variantes y abreviaturas modernas (Mundiales 2018-2026).
+  "cape verde islands": "CPV",
+  "cape verde i.": "CPV",
+  "cape verde i": "CPV",
+  "centr.afr. r.": "CTA",
+  "centr.afr. r": "CTA",
+  "equatorial g.": "EQG",
+  "equatorial g": "EQG",
+  "guinea-bis.": "GNB",
+  "guinea-bis": "GNB",
+  "n. macedonia": "MKD",
+  "bosnia herz.": "BIH",
+  "bosnia herz": "BIH",
+  "bosnia herzegovina": "BIH",
+  "solomon i.": "SOL",
+  "solomon i": "SOL",
+  "papua new g.": "PNG",
+  "papua new g": "PNG",
+  "p.n. guinea": "PNG",
+  "são tomé & príncipe": "STP",
+  "turks": "TCA",
+  "icelan": "ISL",
+  "ukrain": "UKR",
+  // Ciudad pegada al equipo local (un solo espacio entre ciudad y selección).
+  "paris st.-denis france": "FRA",
+  "kraków (poland) ukraine": "UKR",
+  "b. seri begawan brunei": "BRU",
+  "essa town (bhr) pakistan": "PAK",
+  "shah alam (mal) east timor": "TLS",
+  "shah alam (ms.) iraq": "IRQ",
+  "bangkok (thai.) myanmar": "MYA",
+  "n. south (atg.) saint lucia": "LCA",
+  "san luis potosí mexico": "MEX",
+  "ciudad del este paraguay": "PAR",
+  "fort lauderdale anguilla": "AIA",
+  "santiago del e. argentina": "ARG",
+  "são lourenço m. brazil": "BRA"
 };
 
 /** Índice inverso nombre en inglés (minúsculas) → código FIFA de 3 letras. */
@@ -409,6 +446,13 @@ function inferYear(twoDigits, ctx, text) {
     const candidates = [base + twoDigits, base + twoDigits + 100, base + twoDigits - 100];
     const hit = candidates.find((year) => year >= range.start - 1 && year <= range.end + 1);
     if (hit === undefined) {
+      // Errata de la fuente (p. ej. `26- 3-11` por `26- 3-15`): si el parser de
+      // la fase de clasificación aporta el año del contexto (el último partido
+      // fechado de la página), se usa ese año en lugar de descartar la fecha.
+      const fallback = ctx && Number.isInteger(ctx.fallbackYear) ? ctx.fallbackYear : null;
+      if (fallback !== null) {
+        return { year: fallback, warning: `fecha "${text}" fuera del rango esperado; año tomado del contexto (${fallback})`, fatal: false };
+      }
       const expected = range.start === range.end ? `${range.start}` : `${range.start}-${range.end}`;
       return { year: null, warning: `fecha "${text}" fuera del año esperado ${expected}`, fatal: true };
     }
@@ -620,7 +664,7 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
   // `[abandoned at 2-3; awarded 0-2]` o `(abandoned at 1-0; awarded 2-0)` no
   // debe confundirse con el resultado del partido.
   const masked = rest.replace(/\[[^\]]*\]|\([^)]*\)/g, (block) => " ".repeat(block.length));
-  const scoreMatch = /(\bn\/p\b|\d+\s*[-:]\s*\d+)/.exec(masked);
+  const scoreMatch = /(\bn\/p\b|\bawd\b|\d+\s*[-:]\s*\d+)/.exec(masked);
   if (!scoreMatch) {
     warn(result, lineNo, `marcador no reconocido: ${text}`);
     return null;
@@ -644,9 +688,22 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
   let status = "played";
   let homeScore = null;
   let awayScore = null;
+  let scoreText = scoreMatch[0].replace(/\s+/g, "");
   const notPlayed = /n\/p/i.test(scoreMatch[0]);
+  const awarded = /\bawd\b/i.test(scoreMatch[0]);
   if (notPlayed) {
     status = "notplayed";
+  } else if (awarded) {
+    // `awd` no trae marcador en la posición del resultado: el oficial va entre
+    // corchetes (`[awarded 0-3; ...]`). Si no aparece, se conserva sin marcador.
+    status = "awarded";
+    if (!notes.includes("awarded")) notes.push("awarded");
+    const awardedScore = /awarded\s+(\d+)\s*[-:]\s*(\d+)/i.exec(rest);
+    if (awardedScore) {
+      homeScore = +awardedScore[1];
+      awayScore = +awardedScore[2];
+      scoreText = `${homeScore}-${awayScore}`;
+    }
   } else {
     const digits = /(\d+)\s*[-:]\s*(\d+)/.exec(scoreMatch[0]);
     homeScore = +digits[1];
@@ -658,7 +715,7 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
     city,
     home,
     away,
-    score: scoreMatch[0].replace(/\s+/g, ""),
+    score: scoreText,
     homeScore,
     awayScore,
     status,
@@ -768,6 +825,9 @@ function parseQualifying(text, ctx, result) {
   let region = null;
   let group = null;
   let section = null;
+  // Copia del contexto con el último año fechado de la página: sirve de respaldo
+  // para erratas de dos cifras fuera del rango (ver `inferYear`).
+  const pageCtx = { ...ctx };
 
   for (let i = 0; i < all.length; i += 1) {
     const raw = all[i];
@@ -820,11 +880,14 @@ function parseQualifying(text, ctx, result) {
     }
 
     if (standingText) parseStanding(standingText, group, result, lineNo);
-    if (matchText && parseSummaryMatch(matchText, group, section, ctx, result, lineNo)) {
+    if (matchText && parseSummaryMatch(matchText, group, section, pageCtx, result, lineNo)) {
       const match = result.matches[result.matches.length - 1];
       if (match) {
         match.stage = group ? "qualifyingGroup" : "qualifying";
         match.qualifying = true;
+        if (typeof match.date === "string" && /^\d{4}-\d{2}-\d{2}$/.test(match.date)) {
+          pageCtx.fallbackYear = Number(match.date.slice(0, 4));
+        }
       }
     }
   }
