@@ -215,8 +215,10 @@ function checkGroupSums(edition, file, out) {
     const sumGa = group.standings.reduce((sum, row) => sum + (Number.isFinite(row.ga) ? row.ga : 0), 0);
     const where = group.letter ? `grupo ${group.letter}` : "grupo";
     if (sumGf !== sumGa) out.push(anomaly("GROUP_SUMS", file, `${where}: suma GF (${sumGf}) != suma GA (${sumGa})`));
+    // D38: la misma letra puede repetirse en fases distintas (grupo A del torneo
+    // final y grupo A de la clasificación): el cruce es por (stage, letter).
     const played = matches.filter(
-      (m) => (m.stage === "group" || m.stage === "league") && m.group === group.letter && Array.isArray(m.score)
+      (m) => m.group === group.letter && (group.stage ? m.stage === group.stage : m.stage === "group" || m.stage === "league") && Array.isArray(m.score)
     );
     if (played.length === 0) continue;
     const matchGoals = played.reduce((sum, m) => sum + m.score[0] + m.score[1], 0);
