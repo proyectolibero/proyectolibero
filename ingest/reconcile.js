@@ -167,15 +167,19 @@ function compareMatches(draft, published, differences, ignore) {
   compareUnmatchedMatches(draftLeft, publishedLeft, differences, draft);
 }
 
+/** Clave (stage, letter) de una tabla de grupo (D38); "group" si falta el stage. */
+function groupKey(group) {
+  return `${group.stage || "group"}|${group.letter}`;
+}
+
 function standingsMap(groups) {
   const map = new Map();
   for (const group of groups || []) {
-    const letter = group.letter;
     const teams = new Map();
     for (const standing of group.standings || []) {
       teams.set(standing.team, standing);
     }
-    map.set(letter, teams);
+    map.set(groupKey(group), teams);
   }
   return map;
 }
@@ -188,17 +192,21 @@ function compareGroups(draft, published, differences, ignore) {
   if (isIgnored("groups", ignore)) return;
   const publishedGroups = standingsMap(published && published.groups);
   const draftGroups = standingsMap(draft && draft.groups);
-  const letters = [...new Set([...publishedGroups.keys(), ...draftGroups.keys()])].sort();
+  const keys = [...new Set([...publishedGroups.keys(), ...draftGroups.keys()])].sort();
 
-  for (const letter of letters) {
-    const pathBase = `groups.${letter}.standings`;
+  for (const key of keys) {
+    const [stage, letter] = key.split("|");
+    // La fase se mantiene fuera de la ruta cuando es la de grupo (compatibilidad
+    // con las rutas históricas `groups.<letra>.standings`); con otra fase se
+    // antepone para no colisionar (D38).
+    const pathBase = `groups.${stage === "group" ? letter : `${stage}.${letter}`}.standings`;
     if (isIgnored(pathBase, ignore)) continue;
-    const publishedTeams = publishedGroups.get(letter) || new Map();
-    const draftTeams = draftGroups.get(letter) || new Map();
+    const publishedTeams = publishedGroups.get(key) || new Map();
+    const draftTeams = draftGroups.get(key) || new Map();
     // Un grupo que no existe en lo publicado es una ampliación (p. ej. los
     // grupos de clasificación de una edición que solo tenía el torneo final),
     // no una contradicción: sus filas se señalan como info.
-    const groupIsNew = !publishedGroups.has(letter);
+    const groupIsNew = !publishedGroups.has(key);
     for (const [team, standing] of publishedTeams) {
       const draftStanding = draftTeams.get(team);
       if (!draftStanding) {

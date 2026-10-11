@@ -110,7 +110,8 @@
           "ga": 10,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "B",
@@ -155,7 +156,8 @@
           "ga": 6,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "C",
@@ -211,7 +213,8 @@
             "reason": "58full da Gales 3-3; sus partidos (1-1, 1-1, 0-0) y 58f fijan 2-2."
           }
         ]
-      }
+      },
+      "stage": "group"
     },
     {
       "letter": "D",
@@ -256,7 +259,8 @@
           "ga": 7,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "EUR1",
@@ -291,7 +295,8 @@
           "ga": 13,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR2",
@@ -326,7 +331,8 @@
           "ga": 26,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR3",
@@ -361,7 +367,8 @@
           "ga": 15,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR4",
@@ -396,7 +403,8 @@
           "ga": 12,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR5",
@@ -431,7 +439,8 @@
           "ga": 19,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR7",
@@ -466,7 +475,8 @@
           "ga": 9,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR8",
@@ -501,7 +511,8 @@
           "ga": 7,
           "pts": 3
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR9",
@@ -536,7 +547,8 @@
           "ga": 11,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "SAM11",
@@ -571,7 +583,8 @@
           "ga": 10,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "SAM12",
@@ -606,7 +619,8 @@
           "ga": 8,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     }
   ],
   "matches": [

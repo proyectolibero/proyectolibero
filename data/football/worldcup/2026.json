@@ -105,7 +105,8 @@
           "ga": 6,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "B",
@@ -150,7 +151,8 @@
           "ga": 10,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "C",
@@ -195,7 +197,8 @@
           "ga": 8,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "D",
@@ -240,7 +243,8 @@
           "ga": 5,
           "pts": 3
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "E",
@@ -285,7 +289,8 @@
           "ga": 9,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "F",
@@ -330,7 +335,8 @@
           "ga": 12,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "G",
@@ -375,7 +381,8 @@
           "ga": 10,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "H",
@@ -420,7 +427,8 @@
           "ga": 5,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "I",
@@ -465,7 +473,8 @@
           "ga": 12,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "J",
@@ -510,7 +519,8 @@
           "ga": 8,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "K",
@@ -555,7 +565,8 @@
           "ga": 11,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "L",
@@ -600,7 +611,8 @@
           "ga": 4,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     }
   ],
   "matches": [

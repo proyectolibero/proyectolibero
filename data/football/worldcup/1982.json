@@ -509,7 +509,8 @@
           "ga": 6,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR1",
@@ -564,7 +565,8 @@
           "ga": 27,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR2",
@@ -619,7 +621,8 @@
           "ga": 29,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR3",
@@ -674,7 +677,8 @@
           "ga": 22,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR4",
@@ -729,7 +733,8 @@
           "ga": 15,
           "pts": 6
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR5",
@@ -784,7 +789,8 @@
           "ga": 23,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR6",
@@ -839,7 +845,8 @@
           "ga": 10,
           "pts": 5
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR7",
@@ -874,7 +881,8 @@
           "ga": 15,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "SAM10",
@@ -909,7 +917,8 @@
           "ga": 6,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "SAM8",
@@ -944,7 +953,8 @@
           "ga": 9,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "SAM9",
@@ -979,7 +989,8 @@
           "ga": 7,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     }
   ],
   "matches": [

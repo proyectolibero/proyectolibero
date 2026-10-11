@@ -208,7 +208,7 @@ function buildGroups(standings) {
     pts: row.pts
   }));
   if (rows.length === 0) return [];
-  return [{ letter: "A", standings: rows }];
+  return [{ stage: "group", letter: "A", standings: rows }];
 }
 
 /**

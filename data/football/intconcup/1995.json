@@ -77,7 +77,8 @@
           "ga": 4,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "B",
@@ -112,7 +113,8 @@
           "ga": 8,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     }
   ],
   "matches": [

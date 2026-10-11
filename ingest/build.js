@@ -528,9 +528,9 @@ function mergeQualifying(edition, parsed, sourceId, competition) {
     .map((row) => qualifyingStanding(row, warnings, year))
     .filter(Boolean);
   const groups = buildGroups(standings, matches, warnings, year);
-  const byLetter = new Map((result.groups || []).map((group) => [group.letter, group]));
-  for (const group of groups) byLetter.set(group.letter, group);
-  result.groups = [...byLetter.values()];
+  const byKey = new Map((result.groups || []).map((group) => [`${group.stage || "group"}|${group.letter}`, group]));
+  for (const group of groups) byKey.set(`${group.stage}|${group.letter}`, group);
+  result.groups = [...byKey.values()];
 
   const goals = matches.reduce((sum, match) => sum + (Array.isArray(match.score) ? match.score[0] + match.score[1] : 0), 0);
   result.coverage = { ...(result.coverage || {}), matches: matches.length, goals };
@@ -667,7 +667,7 @@ function matchFromFull(fullEntry, fullSourceId) {
  * perdido filas o columnas no se publica (antes omitir que mentir): el
  * validador EDI007 la rechazaría y además induciría a error.
  */
-function groupIssue(letter, standings, matches) {
+function groupIssue(letter, standings, matches, stage) {
   if (!Array.isArray(standings) || standings.length === 0) return "sin filas de clasificación";
   if (standings.length < 2) return "menos de dos equipos";
   let sumGf = 0;
@@ -682,12 +682,30 @@ function groupIssue(letter, standings, matches) {
   }
   if (sumGf !== sumGa) return `suma GF ${sumGf} != suma GA ${sumGa} (faltan equipos o columnas)`;
   const list = Array.isArray(matches) ? matches : [];
+  // D38: el cruce tabla↔partidos se hace por (stage, letter); sin stage la
+  // tabla se contrasta con cualquier fase (comportamiento histórico).
   const played = list.filter(
-    (match) => (match.stage === "group" || match.stage === "qualifyingGroup") && match.group === letter && Array.isArray(match.score)
+    (match) =>
+      match.group === letter &&
+      (stage === undefined || stage === null ? true : match.stage === stage || match.phase === stage) &&
+      Array.isArray(match.score)
   );
   const matchGoals = played.reduce((sum, match) => sum + match.score[0] + match.score[1], 0);
   if (played.length > 0 && matchGoals !== sumGf) return `goles de partidos ${matchGoals} != clasificación ${sumGf}`;
   return null;
+}
+
+/** Fase mayoritaria de los partidos con una letra de grupo (D38); "group" por defecto. */
+function deriveGroupStage(letter, matches) {
+  const counts = {};
+  for (const match of matches || []) {
+    if (match.group === letter && Array.isArray(match.score)) {
+      const stage = match.stage || "group";
+      counts[stage] = (counts[stage] || 0) + 1;
+    }
+  }
+  const best = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+  return best ? best[0] : "group";
 }
 
 function buildGroups(standings, matches, warnings, year) {
@@ -705,8 +723,12 @@ function buildGroups(standings, matches, warnings, year) {
       warnings.push({ reason: `clasificación incompleta descartada en grupo ${letter} (${team}: retirado o fila perdida)` });
       continue;
     }
-    if (!groups.has(letter)) groups.set(letter, []);
-    groups.get(letter).push({
+    // D38: la misma letra puede repetirse en fases distintas (p. ej. grupo A del
+    // torneo final y grupo A de la clasificación), así que la clave es (stage, letter).
+    const stage = deriveGroupStage(letter, matches);
+    const key = `${stage}|${letter}`;
+    if (!groups.has(key)) groups.set(key, { stage, letter, rows: [] });
+    groups.get(key).rows.push({
       team,
       p: standing.p,
       w: standing.w,
@@ -717,17 +739,18 @@ function buildGroups(standings, matches, warnings, year) {
       pts: standing.pts
     });
   }
-  const built = [...groups.entries()]
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([letter, teams]) => ({
+  const built = [...groups.values()]
+    .sort((a, b) => `${a.stage}|${a.letter}`.localeCompare(`${b.stage}|${b.letter}`))
+    .map(({ stage, letter, rows }) => ({
+      stage,
       letter,
-      standings: teams.sort((a, b) => (a.pts === b.pts ? (b.gf - b.ga) - (a.gf - a.ga) : b.pts - a.pts))
+      standings: rows.sort((a, b) => (a.pts === b.pts ? (b.gf - b.ga) - (a.gf - a.ga) : b.pts - a.pts))
     }));
   const kept = [];
   for (const group of built) {
-    const issue = groupIssue(group.letter, group.standings, matches);
+    const issue = groupIssue(group.letter, group.standings, matches, group.stage);
     if (issue) {
-      warnings.push({ reason: `grupo ${group.letter} omitido: la clasificación de la fuente está incompleta o no cuadra (${issue})` });
+      warnings.push({ reason: `grupo ${group.letter} omitido: la clasificación de la fuente está incompleta o no cuadra en fase ${group.stage} (${issue})` });
       continue;
     }
     kept.push(group);

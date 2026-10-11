@@ -86,7 +86,8 @@
           "ga": 4,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "B",
@@ -131,7 +132,8 @@
           "ga": 4,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "C",
@@ -176,7 +178,8 @@
           "ga": 8,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "D",
@@ -221,7 +224,8 @@
           "ga": 5,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "2",
@@ -286,7 +290,8 @@
           "ga": 17,
           "pts": 5
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "3",
@@ -341,7 +346,8 @@
           "ga": 12,
           "pts": 5
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "5",
@@ -406,7 +412,8 @@
           "ga": 22,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "6",
@@ -471,7 +478,8 @@
           "ga": 40,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     }
   ],
   "matches": [

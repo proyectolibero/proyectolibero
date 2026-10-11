@@ -99,7 +99,8 @@
           "ga": 9,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "B",
@@ -144,7 +145,8 @@
           "ga": 3,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "C",
@@ -189,7 +191,8 @@
           "ga": 7,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "D",
@@ -234,7 +237,8 @@
           "ga": 6,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "EUR1",
@@ -279,7 +283,8 @@
           "ga": 10,
           "pts": 4
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR3",
@@ -314,7 +319,8 @@
           "ga": 10,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR4",
@@ -349,7 +355,8 @@
           "ga": 13,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR5",
@@ -384,7 +391,8 @@
           "ga": 13,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR6",
@@ -429,7 +437,8 @@
           "ga": 28,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR7",
@@ -474,7 +483,8 @@
           "ga": 35,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR8",
@@ -519,7 +529,8 @@
           "ga": 24,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "SAM11",
@@ -554,7 +565,8 @@
           "ga": 8,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "SAM9",
@@ -629,7 +641,8 @@
           "ga": 18,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     }
   ],
   "matches": [

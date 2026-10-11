@@ -109,7 +109,8 @@
           "ga": 5,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "B",
@@ -154,7 +155,8 @@
           "ga": 9,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "C",
@@ -199,7 +201,8 @@
           "ga": 8,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "D",
@@ -244,7 +247,8 @@
           "ga": 5,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "EUR2",
@@ -279,7 +283,8 @@
           "ga": 19,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR3",
@@ -324,7 +329,8 @@
           "ga": 20,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR4",
@@ -369,7 +375,8 @@
           "ga": 19,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR5",
@@ -414,7 +421,8 @@
           "ga": 12,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR6",
@@ -449,7 +457,8 @@
           "ga": 6,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR7",
@@ -494,7 +503,8 @@
           "ga": 18,
           "pts": 3
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR8",
@@ -539,7 +549,8 @@
           "ga": 20,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "NCA13",
@@ -664,7 +675,8 @@
           "ga": 19,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "SAM10",
@@ -699,7 +711,8 @@
           "ga": 15,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "SAM12",
@@ -734,7 +747,8 @@
           "ga": 9,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     }
   ],
   "matches": [

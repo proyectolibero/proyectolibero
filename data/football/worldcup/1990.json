@@ -375,7 +375,8 @@
           "ga": 4,
           "pts": 5
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "AFRC",
@@ -420,7 +421,8 @@
           "ga": 9,
           "pts": 4
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "ASI13",
@@ -705,7 +707,8 @@
           "ga": 28,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR1",
@@ -750,7 +753,8 @@
           "ga": 8,
           "pts": 3
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR2",
@@ -795,7 +799,8 @@
           "ga": 15,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR3",
@@ -850,7 +855,8 @@
           "ga": 11,
           "pts": 6
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR4",
@@ -895,7 +901,8 @@
           "ga": 8,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR5",
@@ -950,7 +957,8 @@
           "ga": 20,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR6",
@@ -1005,7 +1013,8 @@
           "ga": 18,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR7",
@@ -1060,7 +1069,8 @@
           "ga": 22,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "SAM8",
@@ -1095,7 +1105,8 @@
           "ga": 8,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     }
   ],
   "matches": [

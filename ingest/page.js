@@ -161,12 +161,14 @@ function buildGroups(standings, matches, hasFinal, warnings) {
     const sorted = rows
       .slice()
       .sort((a, b) => (a.pts === b.pts ? (b.gf - b.ga) - (a.gf - a.ga) : b.pts - a.pts));
-    const issue = groupIssue(letter, sorted, matches);
+    // D38: la tabla va identificada por (stage, letter); en páginas de edición
+    // (torneo final) la fase es siempre la primera de grupo.
+    const issue = groupIssue(letter, sorted, matches, "group");
     if (issue) {
       warnings.push({ reason: `grupo ${letter} omitido: la tabla no cuadra (${issue})` });
       continue;
     }
-    groups.push({ letter, standings: sorted });
+    groups.push({ letter, stage: "group", standings: sorted });
   }
   return groups;
 }

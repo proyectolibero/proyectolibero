@@ -153,7 +153,8 @@
           "ga": 10,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "B",
@@ -198,7 +199,8 @@
           "ga": 8,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "C",
@@ -233,7 +235,8 @@
           "ga": 4,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "D",
@@ -258,7 +261,8 @@
           "ga": 8,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "F",
@@ -303,7 +307,8 @@
           "ga": 11,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "finalGroup"
     }
   ],
   "matches": [

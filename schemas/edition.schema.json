@@ -74,7 +74,8 @@
     "asOf": { "type": "string", "format": "date" },
     "matches": { "type": "array", "items": { "$ref": "#/$defs/encounterResult" } },
     "events": { "type": "array", "items": { "$ref": "#/$defs/rankingResult" } },
-    "scorers": { "type": "array", "items": { "$ref": "#/$defs/scorer" } }
+    "scorers": { "type": "array", "items": { "$ref": "#/$defs/scorer" } },
+    "groups": { "type": "array", "items": { "$ref": "#/$defs/groupTable" } }
   },
   "allOf": [
     {
@@ -222,6 +223,36 @@
               "score": { "type": ["string", "number", "null"] },
               "points": { "type": ["number", "null"] },
               "raw": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "groupTable": {
+      "type": "object",
+      "required": ["stage", "letter", "standings"],
+      "additionalProperties": false,
+      "properties": {
+        "stage": { "type": "string" },
+        "letter": { "type": "string" },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "raw": { "type": ["string", "null"] },
+        "standings": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["team", "p", "w", "d", "l", "gf", "ga", "pts"],
+            "additionalProperties": false,
+            "properties": {
+              "team": { "type": "string" },
+              "p": { "type": "integer", "minimum": 0 },
+              "w": { "type": "integer", "minimum": 0 },
+              "d": { "type": "integer", "minimum": 0 },
+              "l": { "type": "integer", "minimum": 0 },
+              "gf": { "type": "integer", "minimum": 0 },
+              "ga": { "type": "integer", "minimum": 0 },
+              "pts": { "type": "integer", "minimum": 0 }
             }
           }
         }

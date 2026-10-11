@@ -123,6 +123,20 @@ function validateScorers(list, file, scorers, countries) {
   }
 }
 
+/** Fase con la que se contrasta una tabla: la declarada o, si falta, la mayoritaria (D38). */
+function groupMatchStage(group, matches) {
+  if (typeof group.stage === "string" && group.stage !== "") return group.stage;
+  const counts = {};
+  for (const match of matches || []) {
+    if (match.group === group.letter && Array.isArray(match.score)) {
+      const stage = match.stage || "group";
+      counts[stage] = (counts[stage] || 0) + 1;
+    }
+  }
+  const best = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+  return best ? best[0] : "group";
+}
+
 function validateGroups(list, file, groups, matches, countries) {
   for (const group of groups) {
     if (!group.letter) push(list, "EDI007", file, "grupo sin letra");
@@ -135,7 +149,8 @@ function validateGroups(list, file, groups, matches, countries) {
 }
 
 function validateStandings(list, file, group, matches, countries) {
-  const where = `grupo ${group.letter}`;
+  const stage = groupMatchStage(group, matches);
+  const where = `grupo ${stage}/${group.letter}`;
   let sumGf = 0;
   let sumGa = 0;
   for (const row of group.standings) {
@@ -148,8 +163,9 @@ function validateStandings(list, file, group, matches, countries) {
     sumGa += row.ga;
   }
   if (sumGf !== sumGa) push(list, "EDI007", file, `${where}: suma GF != suma GA`);
+  // D38: la tabla se contrasta con los partidos de su misma (stage, letter).
   const played = (matches || [])
-    .filter((m) => (m.phase === "group" || m.stage === "group") && m.group === group.letter && Array.isArray(m.score))
+    .filter((m) => (m.phase === stage || m.stage === stage) && m.group === group.letter && Array.isArray(m.score))
     .reduce((acc, m) => ({ gf: acc.gf + m.score[0] + m.score[1], n: acc.n + 1 }), { gf: 0, n: 0 });
   if (played.n > 0 && played.gf !== sumGf) push(list, "EDI007", file, `${where}: goles de partidos != clasificación`);
 }

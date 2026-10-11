@@ -112,7 +112,8 @@
           "ga": 3,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "B",
@@ -157,7 +158,8 @@
           "ga": 7,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "C",
@@ -202,7 +204,8 @@
           "ga": 9,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "D",
@@ -247,7 +250,8 @@
           "ga": 7,
           "pts": 3
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "E",
@@ -292,7 +296,8 @@
           "ga": 12,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "F",
@@ -337,7 +342,8 @@
           "ga": 3,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "G",
@@ -382,7 +388,8 @@
           "ga": 4,
           "pts": 3
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "H",
@@ -427,7 +434,8 @@
           "ga": 5,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "group"
     },
     {
       "letter": "AFR1",
@@ -482,7 +490,8 @@
           "ga": 19,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "AFR2",
@@ -537,7 +546,8 @@
           "ga": 15,
           "pts": 4
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "AFR3",
@@ -592,7 +602,8 @@
           "ga": 26,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "AFR4",
@@ -647,7 +658,8 @@
           "ga": 15,
           "pts": 5
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "ASI1",
@@ -722,7 +734,8 @@
           "ga": 35,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "ASI3",
@@ -767,7 +780,8 @@
           "ga": 10,
           "pts": 4
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "ASI4",
@@ -812,7 +826,8 @@
           "ga": 8,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "ASI5",
@@ -857,7 +872,8 @@
           "ga": 29,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "ASI6",
@@ -902,7 +918,8 @@
           "ga": 31,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "ASI7",
@@ -947,7 +964,8 @@
           "ga": 25,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "ASI8",
@@ -992,7 +1010,8 @@
           "ga": 28,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "ASI9",
@@ -1077,7 +1096,8 @@
           "ga": 22,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "ASIA",
@@ -1132,7 +1152,8 @@
           "ga": 15,
           "pts": 4
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR1",
@@ -1197,7 +1218,8 @@
           "ga": 28,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR2",
@@ -1262,7 +1284,8 @@
           "ga": 36,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR3",
@@ -1327,7 +1350,8 @@
           "ga": 24,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR4",
@@ -1392,7 +1416,8 @@
           "ga": 17,
           "pts": 5
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR5",
@@ -1457,7 +1482,8 @@
           "ga": 19,
           "pts": 5
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR6",
@@ -1512,7 +1538,8 @@
           "ga": 30,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR7",
@@ -1567,7 +1594,8 @@
           "ga": 23,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "EUR8",
@@ -1622,7 +1650,8 @@
           "ga": 20,
           "pts": 2
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "NCAA",
@@ -1657,7 +1686,8 @@
           "ga": 10,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "NCAB",
@@ -1692,7 +1722,8 @@
           "ga": 10,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "NCAC",
@@ -1737,7 +1768,8 @@
           "ga": 16,
           "pts": 1
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "NCAD",
@@ -1782,7 +1814,8 @@
           "ga": 25,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     },
     {
       "letter": "OCE1",
@@ -1837,7 +1870,8 @@
           "ga": 57,
           "pts": 0
         }
-      ]
+      ],
+      "stage": "qualifyingGroup"
     }
   ],
   "matches": [
