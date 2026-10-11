@@ -497,7 +497,7 @@
     },
     {
       "path": "data/football/worldcup/2006.json",
-      "sha256": "89fc1b08f51f0b9a860760aeec56cb1fae72063d755f98b1ecab873ce1b8a6a4",
+      "sha256": "c9be37eb7224b2f73cf538e7d444e81be9ee79a1c26ca373e0d1476c83e33fae",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2006
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "6818e5f24d7a46cdc44b530655bcfe5c82061658773a13fbbfde596186e3960d",
+  "checksum": "10bf0681ba4e46d0459df6e29ee096fde6366715d80946ed3a93524d14173eff",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 5936,
+    "matches": 6763,
     "results": 0
   },
   "license": {
@@ -614,6 +614,12 @@
         "url": "https://www.rsssf.org/tables/2006full.html",
         "retrieved": "2026-10-06",
         "author": "Karel Stokkermans"
+      },
+      {
+        "source": "rsssf:2006q",
+        "name": "RSSSF — World Cup 2006 (qualifying)",
+        "url": "https://www.rsssf.org/tables/2006q.html",
+        "retrieved": "2026-10-11"
       },
       {
         "source": "rsssf:2010f",
