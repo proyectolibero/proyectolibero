@@ -20,6 +20,17 @@ const ROOT = path.resolve(__dirname, "..");
 /** Identificadores de deporte/competición aceptados (mismo patrón que el catálogo). */
 const SAFE_ID = /^[a-z][a-z0-9-]*$/;
 
+/*
+ * Eurocopa (D31/D38): la página de edición `NNe` trae la fase de clasificación
+ * antes del torneo final. Se reencuadra como fuente `q` y se fusiona en el
+ * borrador solo para las ediciones cuya clasificación es publicable; las
+ * antiguas (1960–1984) y 1992 llevan la clasificación en una página aparte o en
+ * un formato no legible, así que se publican sin ella y con nota honesta.
+ */
+const EURO_QUALIFYING_MERGE_YEARS = new Set([1988, 2000, 2004, 2008, 2012, 2016, 2020, 2024]);
+const EURO_QUALIFYING_UNAVAILABLE = new Set([1960, 1964, 1968, 1972, 1976, 1980, 1984, 1992]);
+const EURO_NO_QUALIFYING_NOTE = "Clasificación no publicada: RSSSF no ofrece la fase de clasificación en un formato legible para esta edición.";
+
 const USAGE = [
   "Uso: node scripts/ingest.js <comando> [opciones]",
   "",
@@ -619,6 +630,25 @@ function contrastEdition(draft, entry) {
   return issues;
 }
 
+/**
+ * Reencuadra la página de una Eurocopa como fuente `q` y fusiona su fase de
+ * clasificación en el borrador del torneo final (D31/D38). El año de contexto
+ * abarca desde la edición anterior (la clasificación arranca dos años antes del
+ * torneo). Devuelve el borrador fusionado; los avisos van a `warnings`.
+ */
+function mergeEuroQualifying(draft, edition, local, competition, warnings) {
+  const qParsed = parse("q", local.text, {
+    sourceId: local.meta.id,
+    retrieved: local.meta.retrieved,
+    url: local.meta.url,
+    year: `${edition.year - 4}-${String(edition.year).slice(-2)}`
+  });
+  for (const warning of qParsed.warnings) warnings.push({ line: warning.line, reason: warning.reason });
+  const merged = mergeQualifying(draft, qParsed, local.meta.id, competition);
+  for (const warning of merged.warnings) warnings.push(warning);
+  return merged.edition;
+}
+
 function commandBuildEditions(flags) {
   const target = parseCompetitionFlag(flags.competition);
   if (!target) {
@@ -649,13 +679,18 @@ function commandBuildEditions(flags) {
       year: edition.year
     });
     const warnings = parsed.warnings.map((warning) => ({ line: warning.line, reason: warning.reason }));
-    const draft = buildEditionDraft(edition, parsed, competition, {
+    let draft = buildEditionDraft(edition, parsed, competition, {
       id: local.meta.id,
       name: `RSSSF — European Championship ${edition.year}`,
       url: local.meta.url,
       retrieved: local.meta.retrieved,
       license: "rsssf-attribution"
     }, warnings);
+    if (competition.competition === "eurochamp" && EURO_QUALIFYING_MERGE_YEARS.has(edition.year)) {
+      draft = mergeEuroQualifying(draft, edition, local, competition, warnings);
+    } else if (competition.competition === "eurochamp" && EURO_QUALIFYING_UNAVAILABLE.has(edition.year)) {
+      draft.coverage = { ...draft.coverage, note: EURO_NO_QUALIFYING_NOTE };
+    }
     const file = pageDraftPath(ROOT, target.sport, target.competition, edition.year);
     io.writeJSON(file, draft);
     const rel = path.relative(ROOT, file).split(path.sep).join("/");

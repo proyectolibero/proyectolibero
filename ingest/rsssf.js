@@ -683,7 +683,7 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
   // `[abandoned at 2-3; awarded 0-2]` o `(abandoned at 1-0; awarded 2-0)` no
   // debe confundirse con el resultado del partido.
   const masked = rest.replace(/\[[^\]]*\]|\([^)]*\)/g, (block) => " ".repeat(block.length));
-  const scoreMatch = /(\bn\/p\b|\bawd\b|\d+\s*[-:]\s*\d+)/.exec(masked);
+  const scoreMatch = /(\bn\/p\b|\bawd\b|\d+\s*[:\-–]\s*\d+)/.exec(masked);
   if (!scoreMatch) {
     warn(result, lineNo, `marcador no reconocido: ${text}`);
     return null;
@@ -717,14 +717,14 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
     // corchetes (`[awarded 0-3; ...]`). Si no aparece, se conserva sin marcador.
     status = "awarded";
     if (!notes.includes("awarded")) notes.push("awarded");
-    const awardedScore = /awarded\s+(\d+)\s*[-:]\s*(\d+)/i.exec(rest);
+    const awardedScore = /awarded\s+(\d+)\s*[:\-–]\s*(\d+)/i.exec(rest);
     if (awardedScore) {
       homeScore = +awardedScore[1];
       awayScore = +awardedScore[2];
       scoreText = `${homeScore}-${awayScore}`;
     }
   } else {
-    const digits = /(\d+)\s*[-:]\s*(\d+)/.exec(scoreMatch[0]);
+    const digits = /(\d+)\s*[:\-–]\s*(\d+)/.exec(scoreMatch[0]);
     homeScore = +digits[1];
     awayScore = +digits[2];
   }
@@ -910,11 +910,43 @@ function parseQualifying(text, ctx, result) {
     const raw = all[i];
     const lineNo = i + 1;
     const line = cleanLine(raw);
+    // ¿Es un encabezado real (H1–H6)? Las páginas de la Eurocopa ponen las
+    // cabeceras de grupo en `<h4>` FUERA de `<PRE>`, no como texto interno.
+    const isHeading = /<h[1-6](?:\s|>)/i.test(raw);
+
+    // En las páginas de edición reutilizadas como `q` (Eurocopa) el torneo final
+    // va después de la clasificación: se corta para no duplicar sus partidos.
+    if (isHeading && /^Final tournament\b/i.test(line)) break;
 
     // La cabecera de región puede estar dentro o fuera de <PRE> (H4 de 2006+).
     if (line !== "") {
       const regionHit = QUALIFYING_REGION_LINE.exec(line);
       if (regionHit && !QUALIFYING_GROUP.test(line)) region = qualifyingPrefix(regionHit[1]) || region;
+    }
+
+    // Cabeceras de grupo y de sección: dentro de <PRE> o como encabezado (H4/H3).
+    if (line !== "" && (isHeading || inPre)) {
+      const header = QUALIFYING_GROUP.exec(line);
+      if (header) {
+        const prefixCode = header[1] ? qualifyingPrefix(header[1]) : null;
+        // Un encabezado con prefijo fija la región vigente: los grupos siguientes
+        // sin prefijo (p. ej. el `Group 1` de Asia tras `Asia and Oceania Group 13`)
+        // heredan el código y no colisionan con los grupos del torneo final.
+        if (prefixCode) region = prefixCode;
+        group = qualifyingGroupKey(header[1] || region, header[2]);
+        section = group;
+        yearState.groupYear = editionYear === null ? null : editionYear - 2;
+        yearState.lastMonth = 0;
+        result.groups.push({ name: line, raw });
+        continue;
+      }
+
+      const sectionHeader = QUALIFYING_SECTION_HEADER.exec(line);
+      if (sectionHeader) {
+        group = null;
+        section = sectionHeader[0].replace(/\s*:$/, "");
+        continue;
+      }
     }
 
     if (hasPre) {
@@ -923,28 +955,6 @@ function parseQualifying(text, ctx, result) {
       if (!inPre) continue;
     }
     if (line === "") continue;
-
-    const header = QUALIFYING_GROUP.exec(line);
-    if (header) {
-      const prefixCode = header[1] ? qualifyingPrefix(header[1]) : null;
-      // Un encabezado con prefijo fija la región vigente: los grupos siguientes
-      // sin prefijo (p. ej. el `Group 1` de Asia tras `Asia and Oceania Group 13`)
-      // heredan el código y no colisionan con los grupos del torneo final.
-      if (prefixCode) region = prefixCode;
-      group = qualifyingGroupKey(header[1] || region, header[2]);
-      section = group;
-      yearState.groupYear = editionYear === null ? null : editionYear - 2;
-      yearState.lastMonth = 0;
-      result.groups.push({ name: line, raw });
-      continue;
-    }
-
-    const sectionHeader = QUALIFYING_SECTION_HEADER.exec(line);
-    if (sectionHeader) {
-      group = null;
-      section = sectionHeader[0].replace(/\s*:$/, "");
-      continue;
-    }
 
     if (/^NB:/i.test(line) || QUALIFYING_PROSE.test(line)) {
       result.notes.push({ line: lineNo, text: line });
