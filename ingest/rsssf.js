@@ -279,6 +279,13 @@ const COUNTRY_ALIASES = {
   "bosnia herz.": "BIH",
   "bosnia herz": "BIH",
   "bosnia herzegovina": "BIH",
+  "bosnia & herzeg.": "BIH",
+  "bosnia & herzeg": "BIH",
+  "bosnia & herzegovina": "BIH",
+  "bosnia and herzeg.": "BIH",
+  "bosnia and herzeg": "BIH",
+  "bosnia and herzegovina": "BIH",
+  "bosnia": "BIH",
   "solomon i.": "SOL",
   "solomon i": "SOL",
   "papua new g.": "PNG",
@@ -288,8 +295,14 @@ const COUNTRY_ALIASES = {
   "turks": "TCA",
   "icelan": "ISL",
   "ukrain": "UKR",
+  // Erratas de la fuente (RSSSF): comillas y truncados en partidos de clasificación.
+  "finland'": "FIN",
+  "czech": "CZE",
   // Ciudad pegada al equipo local (un solo espacio entre ciudad y selección).
   "paris st.-denis france": "FRA",
+  "paris st-denis france": "FRA",
+  "frankfurt/main germany": "GER",
+  "´ turkey": "TUR",
   "kraków (poland) ukraine": "UKR",
   "b. seri begawan brunei": "BRU",
   "essa town (bhr) pakistan": "PAK",
@@ -541,6 +554,9 @@ function parseStanding(fragment, group, result, line) {
     result.standings.push(entry);
     return;
   }
+  // La fuente añade notas de desempate entre corchetes («[2 1 1 0 1-0 4]»): se
+  // descartan para que no contaminen las columnas numéricas de la fila.
+  rest = rest.replace(/\[[^\]]*\]/g, " ").trim();
   const goals = /(\d+)\s*[-:]\s*(\d+)/.exec(rest);
   let numbersText = rest;
   if (goals) {
