@@ -91,49 +91,49 @@
     },
     {
       "path": "data/football/eurochamp/1960.json",
-      "sha256": "b5196115457713fd7b77ef1c680ec0b6efa2d2c98d2b69ea7cb79747bf738a17",
+      "sha256": "7b62296d3b6ac4e8be87405db00e0098ebd7b3a96a8cc0a9ebc252c492366409",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1960
     },
     {
       "path": "data/football/eurochamp/1964.json",
-      "sha256": "c6ccdb94f1733052ae5ea5425cb67dda650cabfea4dbe6618725ce3157d05412",
+      "sha256": "b28851eb1c4e31e69925a6c4fd8684b634f18e26711fc0ed26344d27b93a6429",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1964
     },
     {
       "path": "data/football/eurochamp/1968.json",
-      "sha256": "a79e8680357bcb297f1703b4b857972419a9ebbeb96628a7c18481df028641fe",
+      "sha256": "e7083c94a68a6a08998daded793009ed0f891d9eb01111b0a603d67cf8538db9",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1968
     },
     {
       "path": "data/football/eurochamp/1972.json",
-      "sha256": "2b4fefb583aa79be345187e5d9d8d6ddb780ecac689f8481eba24e180cfa3dc4",
+      "sha256": "6b68253638310e22625d450acb8a19a12757c37427720b1295c19f9613d8fae5",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1972
     },
     {
       "path": "data/football/eurochamp/1976.json",
-      "sha256": "c56f64125ce39f539deb549d46ef9584c2e9480bc94d9fbb00d2d1d885b27ce3",
+      "sha256": "efe3561bd95880c673eaa270fabeaed211ecb78297465e805eae1e731540277f",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1976
     },
     {
       "path": "data/football/eurochamp/1980.json",
-      "sha256": "6bb7ed82574631cb5fe3690ee02cf9d7b5f13ae99b30aa40d79749afcd26dabf",
+      "sha256": "8a265a5657ece7ffeca9e69fb8c0042066a65f8e0789c0fd208cfe03c213ae1c",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1980
     },
     {
       "path": "data/football/eurochamp/1984.json",
-      "sha256": "1d3219720802776712b417c3ccdee20c1cb586e1a7044e70abfe84379dcdbd43",
+      "sha256": "309697cc6b53cbfbfeee81dbba75313f4d7333fc637ee301889ce3e3c16c3f2b",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1984
@@ -147,7 +147,7 @@
     },
     {
       "path": "data/football/eurochamp/1992.json",
-      "sha256": "a767136bca468e5c39d8c3d627ebb8dfbff738e79bc99d0636da4005fcdd9532",
+      "sha256": "9e24c05bddfb3b6e531cbf2516b8f9ae71dac133b7428adcf19892fd9e1340bf",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1992
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "9d932306bf97138238979fd4aa1b0e1fcf52dcf46a92d00616b7ce97b9a03679",
+  "checksum": "8393d061baf0d6bd6c72e8a2ef6ea15dc73299a4b316545f795f6ba1f5e3b901",
   "dataset": {
     "sports": 4,
     "competitions": 5,

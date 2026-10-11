@@ -17,7 +17,7 @@
     "goals": 41,
     "scope": "final",
     "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "note": "Clasificación no publicada: RSSSF no ofrece la fase de clasificación en un formato legible para esta edición."
   },
   "sources": [
     {
@@ -37,6 +37,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "FRA",
@@ -78,11 +79,11 @@
           "ga": 10,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "ESP",
@@ -124,8 +125,7 @@
           "ga": 4,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     }
   ],
   "matches": [
@@ -229,7 +229,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:84e",
+        "text": "Denmark          3-2 Belgium\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -331,7 +336,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:84e",
+        "text": "Portugal         1-0 Romania\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -350,7 +360,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:84e",
+        "text": "France           3-2 Portugal        [aet]\n\nLyon",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -373,7 +388,12 @@
       "pens": [
         5,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:84e",
+        "text": "Spain            1-1 Denmark         [aet]\nSpain wins 5-4 on penalties\n\n(No match for third place)\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -390,7 +410,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:84e",
+        "text": "Paris, June 27, 1984\nFrance           2-0 Spain\nFrance: Bats, Battiston (Amoros), Le Roux, Bossis, Domergue, Giresse, Tigana,\nFernandez, Platini, Lacombe, Genghini (Bellone).\nSpain: Arconada, Urquiaga, Salva (Roberto), Gallego, Señor, Francisco, Victor,\nCamacho, Julio Alberto (Sarabia), Santillana, Carrasco.\n\nReferee: Christov (Czechoslovakia)\nAttendance: 47,000.\n",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [],

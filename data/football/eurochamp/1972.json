@@ -17,7 +17,7 @@
     "goals": 10,
     "scope": "final",
     "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "note": "Clasificación no publicada: RSSSF no ofrece la fase de clasificación en un formato legible para esta edición."
   },
   "sources": [
     {
@@ -51,7 +51,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:72e",
+        "text": "Antwerpen, June 14, Bosuil\nWest Germany     2-1 Belgium\n[G.Müller 24, 71; Polleunis 83]\n[ref: Mullen (Scotland); att: 56,000]\nWest Germany: Maier, Höttges, Beckenbauer, Schwarzenbeck, Breitner, U.Hoeneß\n(Grabowski 58), Wimmer, Netzer, Heynckes, G.Müller, E.Kremers\nBelgium: Piot, Heylens, Van den Daele, Thissen, Dolmans, Dockx, Verheyen,\nM.Martens (Polleunis 70), Semmeling, Van Himst, Lambert\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -68,7 +73,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:72e",
+        "text": "Brussel, June 14, Astridpark\nSoviet Union     1-0 Hungary\n[Konkov 53]  [missed penalty: Zámbö 85 (saved)]\n[ref: Glöckner (East Germany); att: 2,000]\nSoviet Union: Rudakov, Dzodzuashvili, Kaplichny, Istomin, Khurtsilava, Kolotov,\nTroshkin, Baidachni, Banishevski (70 G.Nodia), Konkov, Onishenko\nHungary: Géczi, Fábián, Páncsics, Bálint, P.Juhász, I.Juhász, Kocsis (60 Albert),\nKü, Szöke, Bene (60 A.Dunai), Zámbö\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -85,7 +95,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:72e",
+        "text": "Liège, June 17, Stade Sclessin\nBelgium          2-1 Hungary\n[Lambert 24, Van Himst 28, Kü 53pen]\n[ref: Boström (Sweden); att: 9,000]\nBelgium: Piot, Heylens, Van den Daele, Thissen, Dolmans, Dockx, Verheyen,\nPolleunis, Semmeling, Van Himst, Lambert\nHungary: Géczi, Fábián, Páncsics, Bálint, P.Juhász, I.Juhász, Kü, Abert,\nKozma, A.Dunai, Zámbö (46 Szücs)\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -102,7 +117,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:72e",
+        "text": "Bruxelles, June 18, Stade Heysel\nWest Germany     3-0 Soviet Union\n[G.Müller 27, 58, Wimmer 52]\n[ref: Marschall (Austria), att: 50,000]\nWest Germany: Maier, Höttges, Beckenbauer, Schwarzenbeck, Breitner, U.Hoeneß,\nWimmer, Netzer, Heynckes, G.Müller, E.Kremers\nSoviet Union: Rudakov, Dzodzuashvili, Kaplichny, Istomin, Khurtsilava, Kolotov,\nTroshkin, Baidachni, Banishevsky (66 Kozinkevich), Konkov (46 Dolmatov),\nOnishenko\n\n",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [],

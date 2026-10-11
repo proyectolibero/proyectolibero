@@ -17,7 +17,7 @@
     "goals": 32,
     "scope": "final",
     "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "note": "Clasificación no publicada: RSSSF no ofrece la fase de clasificación en un formato legible para esta edición."
   },
   "sources": [
     {
@@ -37,6 +37,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "SWE",
@@ -78,11 +79,11 @@
           "ga": 2,
           "pts": 2
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "NED",
@@ -124,8 +125,7 @@
           "ga": 4,
           "pts": 2
         }
-      ],
-      "stage": "group"
+      ]
     }
   ],
   "matches": [
@@ -229,7 +229,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:92e",
+        "text": "France           1-2 Denmark\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -331,7 +336,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:92e",
+        "text": "Netherlands      3-1 Germany\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -348,7 +358,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:92e",
+        "text": "Sweden           2-3 Germany\n\nGöteborg",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -371,7 +386,12 @@
       "pens": [
         4,
         5
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:92e",
+        "text": "Netherlands      2-2 Denmark         [aet]\nDenmark wins 5-4 on penalties\n\n(No match for third place)\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -388,7 +408,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:92e",
+        "text": "Göteborg, June 26, 1992\nDenmark          2-0 Germany\nDenmark: Schmeichel, Sivebaek (Christiansen), K. Nielsen, L. Olsen, Piechnik,\nChristofte, J. Jensen, Vilfort, H. Larsen, Povlsen, B. Laudrup.\nGermany: Illgner, Helmer, Reuter, Kohler, Buchwald, Brehme, Hässler,\nSammer (Doll), Effenberg (Thom), Riedle, Klinsmann.\n\nReferee: Galler (Switzerland)\nAttendance: 37,000.\n",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [],

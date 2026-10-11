@@ -17,7 +17,7 @@
     "goals": 13,
     "scope": "final",
     "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "note": "Clasificación no publicada: RSSSF no ofrece la fase de clasificación en un formato legible para esta edición."
   },
   "sources": [
     {
@@ -53,7 +53,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:64e",
+        "text": "Madrid, June 17, Santiago Bernabéu\nSpain            2-1 Hungary         [aet]\n[Pereda 35, Amancio 115; Bene 84]\n[ref: Blavier (Belgium); att: 125,000]\nSpain: Iribar, Rivilla, Calleja, Zoco, Olivella, Fusté, Amancio,\nPereda, Marcelino, Suárez, Lapetra\nHungary: Szentmihalyi, Mátrai, Mészöly, Sárosi, Nagy, Sipos, Bene,\nKomora, Albert, Tichy, Fenyvesi\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -70,7 +75,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:64e",
+        "text": "Barcelona, June 17, Nou Camp\nSoviet Union     3-0 Denmark\n[Voronin 19, Ponedelnik 40, V.Ivanov 87]\n[ref: Lo Bello (Italy); att: 38,000]\nSoviet Union: Yashin, Chustikov, Shesternev, Mudrik, Voronin, Anichkin,\nChislenko, V.Ivanov, Ponedelnik, Gusarov, Khusainov\nDenmark: L.Nielsen, J.Hansen, K.Hansen, B.Hansen I, Larsen, E.Nielsen,\nBertelsen, Sørensen, O.Madsen, Thorst, Danielsen\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -89,7 +99,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:64e",
+        "text": "Barcelona, June 20, Nou Camp\nHungary          3-1 Denmark         [aet]\n[Bene 11, Novák 107pen, 110; Bertelsen 81]\n[ref: Mellet (Switzerland); att: 4,000]\nHungary: Szentmihalyi, Novák, Mészöly, Ihász, Solymosi, Sipos, Farkas,\nVarga, Albert, Bene, Fenyvesi\nDenmark: L.Nielsen, Wolmar, K.Hansen, B.Hansen I, Larsen, E.Nielsen,\nBertelsen, Sørensen, O.Madsen, Thorst, Danielsen\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -106,7 +121,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:64e",
+        "text": "Madrid, June 21, Santiago Bernabéu\nSpain            2-1 Soviet Union\n[Pereda 6, Marcelino 84; Khusainov 8]\n[ref: Holland (England); att: 105,000]\nSpain: Iribar, Rivilla, Olivella, Calleja, Zoco, Fusté, Amancio,\nPereda, Marcelino, Suárez, Lapetra\nSoviet Union: Yashin, Chustikov, Shesternev, Mudrik, Voronin, Anichkin,\nChislenko, V.Ivanov, Ponedelnik, Korneev, Khusainov\n\n",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [],

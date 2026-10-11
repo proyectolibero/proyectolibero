@@ -16,7 +16,7 @@
     "goals": 19,
     "scope": "final",
     "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "note": "Clasificación no publicada: RSSSF no ofrece la fase de clasificación en un formato legible para esta edición."
   },
   "sources": [
     {
@@ -52,7 +52,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:76e",
+        "text": "Zagreb, June 16, Maksimir Stadion\nCzechoslovakia   3-1 Netherlands     [aet]\n[Ondrus 20, Nehoda 114, Vesely 119; Ondrus 77og]\n[ref: Thomas (Wales); att: 31,000]\n[sent off: Pollák 60, Neeskens 76, Van Hanegem 115]\nCzechoslovakia: Viktor, Pivarník, Capkovic (106 Jurkemik), Pollak, Gögh, Ondrus,\nMasny, Panenka, Móder (96 Vesely), Nehoda, Dobiás\nNetherlands: Schrijvers, Suurbier, Van Kraay, Rijsbergen (37 Van Hanegem), Krol,\nNeeskens, Jansen, W.van de Kerkhof, Rep (65 Geels), Cruijff, Rensenbrink\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -71,7 +76,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:76e",
+        "text": "Beograd, June 17, Crvena zvezda\nWest Germany     4-2 Yugoslavia      [aet]\n[Flohe 65, D.Müller 82, 115, 119; Popivoda 19, Dzajic 32]\n[ref: Delcourt (Belgium); att: 70,000]\nWest Germany: Maier, Dietz, Schwarzenbeck, Beckenbauer, Vogts, Danner (46 Flohe),\nBonhof, Beer, Wimmer (79 D.Müller), Hölzenbein, U.Hoeneß\nYugoslavia: Petrovic, Buljan, Muzinic, Oblak (106 Vladic), Katalinski, Zungul,\nJerkovic, Popivoda, Surjak, Acimovic (106 Peruzovic), Dzajic\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -90,7 +100,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:76e",
+        "text": "Zagreb, June 19, Maksimir Stadion\nNetherlands      3-2 Yugoslavia      [aet]\n[Geels 27, 107, W.van de Kerkhof 39; Katalisnki 43, Dzajic 82]\n[ref: Hungerbühler (Switzerland); att: 7,000]\nNetherlands: Schrijvers, Suurbier, Van Kraay, Krol, Jansen (46 Meutstege), Peters,\nArntz (71 Kist), W.van de Kerkhof, R.van de Kerkhof, Geels, Rensenbrink\nYugoslavia: Petrovic, Buljan, Muzinic, Oblak, Katalinski, Zungul (46 Halilhodzic),\nJerkovic, Popivoda, Surjak, Acimovic (46 Vladic), Dzajic\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -113,7 +128,12 @@
       "pens": [
         5,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:76e",
+        "text": "Beograd, June 20, Crvena zvezda\nCzechoslovakia   2-2 West Germany    [aet]\n[Svehlík 8, Dobiás 25; D.Müller 28, Hölzenbein 89]\n[ref: Gonella (Italy); att: 35,000]\nCzechoslovakia win 5-3 on penalties\n[Masny 1-0, Bonhof 1-1; Nehoda 2-1, Flohe 2-2; Ondrus 3-2, Bongarts 3-3;\nJurkemik 4-3, U.Hoeneß 4-3 (over); Panenka 5-3]\nCzechoslovakia: Viktor, Pivarník, Ondrus, Capkovic, Gögh, Dobiás (94 Vesely),\nMóder, Panenka, Masny, Svehlík (79 Jurkemik), Nehoda\nWest Germany: Maier, Vogts, Schwarzenbeck, Beckenbauer, Dietz, Wimmer (46 Flohe),\nBonhof, Beer (80 Bongartz), U.Hoeneß, D.Müller, Hölzenbein\n\n",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [],

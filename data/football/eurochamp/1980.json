@@ -17,7 +17,7 @@
     "goals": 27,
     "scope": "final",
     "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "note": "Clasificación no publicada: RSSSF no ofrece la fase de clasificación en un formato legible para esta edición."
   },
   "sources": [
     {
@@ -37,6 +37,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "FRG",
@@ -78,11 +79,11 @@
           "ga": 4,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "BEL",
@@ -124,8 +125,7 @@
           "ga": 4,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     }
   ],
   "matches": [
@@ -144,7 +144,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Roma, June 11, Stadio Olimpico\nWest Germany     1-0 Czechoslovakia\n[K.H.Rummenigge 57]\n[ref: Michelotti (Italy); att: 11,000]\nWest Germany: Schumacher, Kaltz, Cullmann, K.H.Förster, Dietz, B.Förster (60 Magath),\nStielike, Briegel, H.Müller, K.H.Rummenigge, K.Allofs\nCzechoslovakia: Netolicka, Barmos, Ondrus, Jurkemik, Gögh, Kozák, Stambachr, Panenka,\nVízek, Nehoda, Gajdusek (66 Masny)\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -161,7 +166,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Napoli, June 11, San Paolo\nNetherlands      1-0 Greece\n[Kist 65pen]\n[ref: Prokop (East Germany); att: 15,000]\nNetherlands: Schrijvers (15 Doesburg), Wijnstekers, Krol, Van de Korput, Hovenkamp,\nStevens, Haan, W.van de Kerkhof, Vreijsen (46 Nanninga), Kist,\nR.van de Kerkhof\nGreece: Konstantinou, Kirastas, Iosifidis, Foiros, Kapsis, Terzanidis, Livathinos, Kouis,\nKostikos (78 Galakos), Mavros, Ardizoglou (68 Anastopoulos)\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -178,7 +188,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Napoli, June 14, San Paolo\nWest Germany     3-2 Netherlands\n[K.Allofs 20, 60, 66; Rep 80pen, W.van de Kerkhof 86]\n[ref: Wurtz (France); att: 30,000]\nWest Germany: Schumacher, Kaltz, Stielike, Dietz (75 Matthäus), K.H.Förster, Schuster,\nH.Müller (65 Magath), Briegel, Hrubesch, K.Allofs, K.H.Rummenigge\nNetherlands: Schrijvers, Hovenkamp (46 Nanninga), Wijnstekers, Krol, Van de Korput,\nStevens, Haan, W.van de Kerkhof, Kist, R.van de Kerkhof, Rep\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -195,7 +210,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Roma, June 14, Stadio Olimpico\nCzechoslovakia   3-1 Greece\n[Panenka 6, Vízek 26, Nehoda 62; Anastopoulos 14]\n[ref: Partridge (England); att: 8,000]\nCzechoslovakia: Seman, Barmos, Ondrus, Jurkemik, Gögh, Kozák, Berger (23 Licka), Panenka,\nVízek, Nehoda (74 Gajdusek), Masny\nGreece: Konstantinou, Kirastas, Iosifidis, Foiros, Kapsis, Terzanidis (46 Galakos),\nLivathinos, Kouis, Kostikos (57 Xanthopoulos), Mavros, Anastopoulos\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -212,7 +232,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Milano, June 17, Giuseppe Meazza\nCzechoslovakia   1-1 Netherlands\n[Nehoda 16; Kist 59]\n[ref: Ok (Turkey); att: 12,000]\nCzechoslovakia: Netolicka, Barmos, Ondrus, Vojácek, Jurkemik, Gögh, Kozák, Panenka\n(89 Stambachr), Vízek, Nehoda, Masny (66 Licka)\nNetherlands: Schrijvers, Krol, Wijnstekers, Van de Korput, Hovenkamp, Poortvliet,\nThijssen, W.van de Kerkhof, R.van de Kerkhof (16 Kist), Rep (46 Nanninga),\nHaan\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -229,7 +254,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Torino, June 17, Stadio Comunale\nWest Germany     0-0 Greece\n[ref: McGinlay (Scotland); att: 14,000]\nWest Germany: Schumacher, Kaltz, Stielike, K.H.Förster, B.Förster (46 Votava), Briegel,\nCullmann, H.Müller, K.H.Rummenigge (66 Del'Haye), Hrubesch, Memering\nGreece: Poupakis, Gounaris, Xanthopoulos, Nikolaou, Ravousis, Nikoloudis (65 Koudas),\nLivathinos, Ardizoglou, Galakos, Mavros (89 Kostikos), Kouis\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -246,7 +276,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Torino, June 12, Stadio Comunale\nBelgium          1-1 England\n[Ceulemans 30; Wilkins 26]\n[ref: Aldinger (West Germany); att: 15,000]\nBelgium: Pfaff - Gerets, Renquin, Vandereycken, L.Millecamps, Meeuws, Van der Elst,\nVan Moer (88 Mommens), Vandenbergh, Cools, Ceulemans\nEngland: Clemence, Neal, Sansom, Wilkins, Watson, Thompson, Coppell (81 McDermott),\nKeegan, Johnson (70 Kennedy), Brooking, Woodcock\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -263,7 +298,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Milano, June 12, Giuseppe Meazza\nSpain            0-0 Italy\n[ref: Palotai (Hungary); att: 75,000]\nItaly: Zoff, Gentile, Tardelli, Cabrini (56 Benetti), Collovati, Scirea, Causio, Oriali,\nGraziani, Antognoni, Bettega\nSpain: Arconada, Tendillo, Gordillo, Zamora, Migueli, Alexanko, Dani (53 Juanito),\nSaura, Satrustegui, Asensi, Quini\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -280,7 +320,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Milano, June 15, Giuseppe Meazza\nSpain            1-2 Belgium\n[Quini 36; Gerets 17, Cools 65]\n[ref: Corver (Netherlands); att: 11,000]\nSpain: Arconada, Tendillo (79 Carrasco), Gordillo, Zamora, Migueli, Alexanko, Juanito,\nSaura, Satrustegui, Asensi (37 Del Bosque), Quini\nBelgium: Pfaff, Gerets, Renquin, Vandereycken, L.Millecamps, Meeuws, Van der Elst,\nVan Moer (80 Mommens), Vandenbergh (81 R.Verheyen), Cools, Ceulemans\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -297,7 +342,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Torino, June 15, Stadio Comunale\nItaly            1-0 England\n[Tardelli 79]\n[ref: Rainea (Romania); att: 60,000]\nItaly: Zoff, Gentile, Tardelli, Benetti, Collovati, Scirea, Causio (88 G.Baresi), Oriali,\nGraziani, Antognoni, Bettega\nEngland: Shilton, Neal, Sansom, Wilkins, Watson, Thompson, Coppell, Keegan, Birtles\n(75 Mariner), Woodcock, Kennedy\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -314,7 +364,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Napoli, June 18, San Paolo\nSpain            1-2 England\n[Dani 48pen; Brooking 19, Woodcock 61]  [missed penalty: Dani 52 (saved)]\n[ref: Linemayr (Austria); att: 14,000]\nSpain: Arconada, Cundi, Gordillo, Zamora, Olmo, Alexanko, Juanito (46 Carrasco), Uria,\nSaura, Santillana, Cardeñosa (46 Dani)\nEngland: Clemence, Anderson (83 Cherry), Mills, Wilkins, Watson, Thompson, Hoddle\n(76 Mariner), Keegan, Woodcock, Brooking, McDermott\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -331,7 +386,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Roma, June 18, Stadio Olimpico\nItaly            0-0 Belgium\n[ref: Garrido (Portugal); att: 55,000]\nItaly: Zoff, Gentile, Tardelli, Benetti, Collovati, Scirea, Causio, Oriali (46 Altobelli),\nGraziani, Antognoni (36 G.Baresi), Bettega\nBerlgium: Pfaff, Gerets, Renquin, Vandereycken, L.Millecamps, Meeuws, Van der Elst,\nVan Moer (49 R.Verheyen), Mommens (78 Vandenbergh), Cools, Ceulemans\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -353,7 +413,12 @@
       "pens": [
         9,
         8
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Napoli, June 21, San Paolo\nCzechoslovakia   1-1 Italy           [NB: no extra time played]\n[Jurkemik 54; Graziani 73]\n[ref: Linemayr (Austria); att: 25,000]\nCzechoslovakia wins 9-8 on penalties\n[Causio 0-1, Masny 1-1; Altobelli 1-2, Nehoda 2-2; G.Baresi 2-3, Ondrus 3-3;\nCabrini 3-4, Jurkemik 4-4; Benetti 4-5, Panenka 5-5; Graziani 5-6, Gögh 6-6;\nScirea 6-7, Gajdusek 7-7; Tardelli 7-8, Kozák 8-8; Collovati 8-8 (saved), Barmos 9-8]\nCzechoslovakia: Netolicka, Barmos, Jurkemik, Gögh, Vojácek, Ondrus, Vízek (64 Gajdusek),\nKozák, Panenka, Nehoda, Masny\nItaly: Zoff, Gentile, Cabrini, G.Baresi, Collovati, Scirea, Causio, Tardelli, Graziani,\nAltobelli, Bettega (83 Benetti)\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -370,7 +435,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:80e",
+        "text": "Roma, June 22, Stadio Olimpico\nWest Germany     2-1 Belgium\n[Hrubesch 10, 88; Vandereycken 72pen]\n[ref: Rainea (Romania); att: 48,000]\nWest Germany: Schumacher, Kaltz, K.H.Förster, Stielike, Dietz, Briegel (55 Cullmann),\nSchuster, H.Müller, K.H.Rummenigge, Hrubesch, K.Allofs.\nBelgium: Pfaff, Gerets, L.Millecamps, Meeuws, Renquin, Cools, Vandereycken,\nVan Moer, Mommens, Van der Elst, Ceulemans.\n\n",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [],
