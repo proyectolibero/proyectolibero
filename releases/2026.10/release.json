@@ -504,7 +504,7 @@
     },
     {
       "path": "data/football/worldcup/2010.json",
-      "sha256": "10a000b2648937b5341c66965be0a9c313e6e2eee2f4b7036557ae24f071e881",
+      "sha256": "cccf72bc46790b12eb771061e9d6368a1b4cd83db4e4aab784690a65bee02e4e",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2010
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "10bf0681ba4e46d0459df6e29ee096fde6366715d80946ed3a93524d14173eff",
+  "checksum": "dcf540a24f65e1919b5de5e07374fb76eeba7411338488414a05bb0fdfa7d395",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 6763,
+    "matches": 7566,
     "results": 0
   },
   "license": {
@@ -634,6 +634,12 @@
         "url": "https://www.rsssf.org/tables/2010full.html",
         "retrieved": "2026-10-06",
         "author": "Neil Morrison"
+      },
+      {
+        "source": "rsssf:2010q",
+        "name": "RSSSF — World Cup 2010 (qualifying)",
+        "url": "https://www.rsssf.org/tables/2010q.html",
+        "retrieved": "2026-10-11"
       },
       {
         "source": "rsssf:2012e",
