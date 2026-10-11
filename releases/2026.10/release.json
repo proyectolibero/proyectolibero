@@ -518,7 +518,7 @@
     },
     {
       "path": "data/football/worldcup/2018.json",
-      "sha256": "8a11beb33cccc2f9019e852ed3c0e307ffd6d2b29c2794333b0e8c8ba443aa8d",
+      "sha256": "3db997827c2b5ab422d24e1e5c825f94ab9e070d1a9bfcf754bb61c2a352573a",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2018
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "3f161f8e213abf0a955030ad6ba0d1a58718b496dff233ac5efacb1497ec05c3",
+  "checksum": "3e03933bb260a06db0f473a868c1d9b19d846dbdec0adf574169dc5d1818c8b2",
   "dataset": {
     "sports": 4,
     "competitions": 5,
