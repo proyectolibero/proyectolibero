@@ -511,7 +511,7 @@
     },
     {
       "path": "data/football/worldcup/2014.json",
-      "sha256": "f6404d5020a644aa76021db64e8428a6bfa680fae4132545a44e85cdfb5732d9",
+      "sha256": "ffaf8d78dc714906c62504599c96bb2e7e95a6909bd4c599d9b810706f36363b",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2014
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "dcf540a24f65e1919b5de5e07374fb76eeba7411338488414a05bb0fdfa7d395",
+  "checksum": "8b2f893a7f2b4cc66e32733a2d1c7b2a99a028f83805aac4fb23dce75ce03cbd",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 7566,
+    "matches": 8369,
     "results": 0
   },
   "license": {
@@ -660,6 +660,12 @@
         "url": "https://www.rsssf.org/tables/2014full.html",
         "retrieved": "2026-10-06",
         "author": "Neil Morrison"
+      },
+      {
+        "source": "rsssf:2014q",
+        "name": "RSSSF — World Cup 2014 (qualifying)",
+        "url": "https://www.rsssf.org/tables/2014q.html",
+        "retrieved": "2026-10-11"
       },
       {
         "source": "rsssf:2016e",
