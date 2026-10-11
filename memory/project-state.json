@@ -1,7 +1,7 @@
 {
   "project": "Deporte Mundial",
   "description": "Portal estático multilingüe de estadísticas deportivas (HTML+CSS+JS puro, hash routing, GitHub Pages)",
-  "updatedAt": "2026-10-07",
+  "updatedAt": "2026-10-11",
   "languages": [
     "es",
     "en",
@@ -71,6 +71,10 @@
     "ingest": {
       "status": "done",
       "notes": "Fase 3: cadena determinista completa (ingest/fetch.js, ingest/rsssf.js con parsers f/full/qf-scor, ingest/build.js, ingest/reconcile.js, scripts/ingest.js con fetch/build/reconcile/promote). 124 tests en verde y validate 0/0. Aceptacion: re-derivar 1954 da 0 diferencias bloqueantes y el borrador valida con 0 errores (promote listo, sin ejecutar: la publicacion es humana). Skill .opencode/skills/deporte-ingesta y docs alineados. Pendiente: parsers q/q-det (nivel 2) y seccion Ingesta en el panel."
+    },
+    "data.eurochamp": {
+      "status": "in-progress",
+      "notes": "Piloto 1996: clasificación integrada desde rsssf:96e-q (231 partidos, cobertura all/complete). 4/8 tablas de grupo omitidas por erratas de la fuente (EDI007); avisos persistidos en la edición. Tests 225 verdes, validate 0/0, integrity 13/43."
     }
   },
   "nextSteps": [

@@ -107,6 +107,18 @@
       "usedBy": [
         "1938.json"
       ]
+    },
+    {
+      "id": "src-10",
+      "name": "RSSSF — European Championship 1996 qualifying (Karel Stokkermans)",
+      "url": "https://www.rsssf.org/tables/96e-q.html",
+      "retrieved": "2026-10-10",
+      "publisher": "Rec.Sport.Soccer Statistics Foundation",
+      "author": "Karel Stokkermans",
+      "license": "Free to copy with proper acknowledgement to the author",
+      "usedBy": [
+        "data/football/eurochamp/1996.json"
+      ]
     }
   ]
 }
