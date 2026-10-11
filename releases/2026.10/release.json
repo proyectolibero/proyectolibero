@@ -490,7 +490,7 @@
     },
     {
       "path": "data/football/worldcup/2002.json",
-      "sha256": "5039265f6f999379f17b7576a217e6fa7d5c006e9851286d1565f4cb811e6687",
+      "sha256": "2ef3b2fc50dd67138a7e7174fc826c66800b2298be3a331eb48de53c861b6cfa",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2002
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "089864d56e130d2fe1c52d9fa656b6d31db5629a6b0cb52daa76dbee8d8a8a9c",
+  "checksum": "6818e5f24d7a46cdc44b530655bcfe5c82061658773a13fbbfde596186e3960d",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 5158,
+    "matches": 5936,
     "results": 0
   },
   "license": {
@@ -594,6 +594,12 @@
         "url": "https://www.rsssf.org/tables/2002q-scor.html",
         "retrieved": "2026-10-06",
         "author": "Jaroslaw Owsianski"
+      },
+      {
+        "source": "rsssf:2002q",
+        "name": "RSSSF — World Cup 2002 (qualifying)",
+        "url": "https://www.rsssf.org/tables/2002q.html",
+        "retrieved": "2026-10-11"
       },
       {
         "source": "rsssf:2006f",
