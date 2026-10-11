@@ -4,7 +4,7 @@ const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
-const { detectKind, parse, parseDate } = require("../ingest/rsssf.js");
+const { detectKind, parse, parseDate, parseStanding } = require("../ingest/rsssf.js");
 
 const CTX = { sourceId: "rsssf:50f", retrieved: "2026-10-07", year: 1950 };
 const FIXTURES = path.join(__dirname, "fixtures", "rsssf");
@@ -706,4 +706,30 @@ test("parse('e') atribuye la tanda al partido anterior", () => {
   assert.equal(warnings.length, 0);
   assert.deepEqual(matches[0].pens, [2, 3]);
   assert.deepEqual([...matches[0].notes].sort(), ["aet", "pen"]);
+});
+
+function blankResult() {
+  return { matches: [], standings: [], scorers: [], teamTotals: [], groups: [], notes: [], warnings: [] };
+}
+
+test("parseStanding (D39): extrae el corchete «[-N]» como deducción", () => {
+  const result = blankResult();
+  parseStanding("2.CROATIA            10  6  3  1  20- 5 20  [-1]", "H", result, 1);
+  assert.equal(result.standings.length, 1);
+  assert.equal(result.standings[0].deduction, 1);
+  assert.equal(result.standings[0].pts, 20);
+});
+
+test("parseStanding (D39): un ajuste positivo avisa y no se aplica", () => {
+  const result = blankResult();
+  parseStanding("1.SPAIN              10  8  2  0  23- 3 26  [+2]", "I", result, 1);
+  assert.equal(result.standings[0].deduction, 0);
+  assert.ok(result.warnings.some((w) => /positivo/.test(w.reason)));
+});
+
+test("parseStanding omite el ranking transversal anotado con «[group N]»", () => {
+  const result = blankResult();
+  parseStanding("1.TURKEY              8  5  1  2  12- 7 16  [group A]", "I", result, 1);
+  assert.equal(result.standings.length, 0);
+  assert.ok(result.warnings.some((w) => /transversal/.test(w.reason)));
 });

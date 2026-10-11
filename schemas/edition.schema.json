@@ -252,7 +252,14 @@
               "l": { "type": "integer", "minimum": 0 },
               "gf": { "type": "integer", "minimum": 0 },
               "ga": { "type": "integer", "minimum": 0 },
-              "pts": { "type": "integer", "minimum": 0 }
+              "pts": { "type": "integer", "minimum": 0 },
+              "deduction": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Puntos restados por sanción (D39/ADR-028). El validador exige pts = (2|3)·w + d − deduction y un motivo si deduction > 0."
+              },
+              "deductionReason": { "type": "string", "minLength": 1 },
+              "notes": { "type": "string", "minLength": 1 }
             }
           }
         }

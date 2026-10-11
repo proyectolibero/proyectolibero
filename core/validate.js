@@ -156,8 +156,13 @@ function validateStandings(list, file, group, matches, countries) {
   for (const row of group.standings) {
     checkCountry(list, file, countries, row.team, where);
     if (row.p !== row.w + row.d + row.l) push(list, "EDI007", file, `${where}: p != w+d+l (${row.team})`);
-    if (row.pts !== 2 * row.w + row.d && row.pts !== 3 * row.w + row.d) {
+    // D39/ADR-028: la fila puede llevar una deducción de puntos (entero ≥ 0).
+    const deduction = Number.isInteger(row.deduction) ? row.deduction : 0;
+    if (row.pts !== 2 * row.w + row.d - deduction && row.pts !== 3 * row.w + row.d - deduction) {
       push(list, "EDI007", file, `${where}: pts inconsistente (${row.team})`);
+    }
+    if (deduction > 0 && !row.deductionReason && !row.notes) {
+      push(list, "EDI007", file, `${where}: deducción de ${deduction} punto(s) sin motivo (${row.team})`);
     }
     sumGf += row.gf;
     sumGa += row.ga;
@@ -165,9 +170,18 @@ function validateStandings(list, file, group, matches, countries) {
   if (sumGf !== sumGa) push(list, "EDI007", file, `${where}: suma GF != suma GA`);
   // D38: la tabla se contrasta con los partidos de su misma (stage, letter).
   const played = (matches || [])
-    .filter((m) => (m.phase === stage || m.stage === stage) && m.group === group.letter && Array.isArray(m.score))
-    .reduce((acc, m) => ({ gf: acc.gf + m.score[0] + m.score[1], n: acc.n + 1 }), { gf: 0, n: 0 });
-  if (played.n > 0 && played.gf !== sumGf) push(list, "EDI007", file, `${where}: goles de partidos != clasificación`);
+    .filter((m) => (m.phase === stage || m.stage === stage) && m.group === group.letter && Array.isArray(m.score));
+  const totalGoals = played.reduce((acc, m) => ({ gf: acc.gf + m.score[0] + m.score[1], n: acc.n + 1 }), { gf: 0, n: 0 });
+  if (totalGoals.n > 0 && totalGoals.gf !== sumGf) {
+    // D39: la letra puede arrastrar amistosos «hors concours» o partidos de otra
+    // sección. Si solo con los partidos entre equipos de la tabla cuadra, se
+    // acepta (esta segunda vía solo añade tolerancia, nunca errores nuevos).
+    const members = new Set(group.standings.map((row) => row.team));
+    const owned = played
+      .filter((m) => members.has(m.home) && members.has(m.away))
+      .reduce((acc, m) => ({ gf: acc.gf + m.score[0] + m.score[1], n: acc.n + 1 }), { gf: 0, n: 0 });
+    if (!(owned.n > 0 && owned.gf === sumGf)) push(list, "EDI007", file, `${where}: goles de partidos != clasificación`);
+  }
 }
 
 function validateProvenance(list, file, provenance, sourceIds, where) {

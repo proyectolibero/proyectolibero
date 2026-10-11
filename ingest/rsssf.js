@@ -519,13 +519,39 @@ function parseDate(raw, ctx) {
   };
 }
 
+/**
+ * Ajuste de puntos de una fila (`[-1]`/`[+3]`, D39/ADR-028): `{ amount,
+ * positive }`, o `null` si la fila no lleva ese corchete. El signo distingue la
+ * deducción (negativa) de un ajuste al alza (positivo, no soportado todavía).
+ */
+function parsePointsDeduction(text) {
+  const match = /\[([+-])(\d+)\]/.exec(String(text || ""));
+  return match ? { amount: Number(match[2]), positive: match[1] === "+" } : null;
+}
+
 /** Parsea un bloque de tabla `<place>.<equipo>[^*] <números> <gf-ga> [números]`. */
-function parseStanding(fragment, group, result, line) {
+function parseStanding(fragment, group, result, line, deduction = 0) {
   const raw = fragment.trim();
+  // Las tablas de ranking transversal (p. ej. «Playoffs 3rd Placed Teams») anotan
+  // cada fila con «[group N]»: no son la clasificación del grupo vigente y no se
+  // modelan, así que se omiten (con aviso único) para no contaminar el grupo.
+  if (/\[group\s+[A-Z0-9]+\]/i.test(raw)) {
+    const reason = "clasificación transversal omitida (ranking entre grupos anotado con «[group N]»): no se modela";
+    if (!result.warnings.some((w) => w.reason === reason)) warn(result, line, reason);
+    return;
+  }
   const entry = {
     group, place: null, team: null, qualified: null,
-    p: null, w: null, d: null, l: null, gf: null, ga: null, pts: null, raw
+    p: null, w: null, d: null, l: null, gf: null, ga: null, pts: null, deduction: 0, raw
   };
+  // El ajuste de puntos puede venir incrustado en la fila («… 20 [-1]») o
+  // extraído antes de limpiar corchetes por el llamador (`editionDataLine`).
+  const bracket = parsePointsDeduction(raw);
+  if (bracket) {
+    if (bracket.positive) warn(result, line, `ajuste positivo de puntos "[+${bracket.amount}]" no soportado: ${raw}`);
+    else entry.deduction = bracket.amount;
+  }
+  if (Number.isInteger(deduction) && deduction > 0) entry.deduction = deduction;
   const placeMatch = /^([-0-9]+)\.\s*(.+)$/.exec(raw);
   if (!placeMatch) {
     warn(result, line, `clasificación no reconocida: ${raw}`);
@@ -583,7 +609,11 @@ function assignStandingColumns(entry, numbers) {
   const [a, b, c, d, e] = numbers;
   const classic = { p: a, w: b, d: c, l: d, pts: e };
   const alternate = { p: a, w: c, d: d, l: e, pts: b };
-  const coherent = (row) => row.p === row.w + row.d + row.l && (row.pts === 3 * row.w + row.d || row.pts === 2 * row.w + row.d);
+  // D39/ADR-028: una fila con deducción cuadra respecto a `pts + deduction`.
+  const deduction = entry.deduction || 0;
+  const coherent = (row) =>
+    row.p === row.w + row.d + row.l &&
+    (row.pts === 3 * row.w + row.d - deduction || row.pts === 2 * row.w + row.d - deduction);
   const chosen = coherent(alternate) && !coherent(classic) ? alternate : classic;
   entry.p = chosen.p;
   entry.w = chosen.w;
@@ -906,6 +936,9 @@ function parseQualifying(text, ctx, result) {
   let region = null;
   let group = null;
   let section = null;
+  // Índice de la nota `NB:` en curso: sus continuaciones sangradas se le añaden
+  // (p. ej. el motivo de una deducción de puntos, D39/ADR-028).
+  let pendingNote = null;
   // Copia del contexto con el último año fechado de la página: sirve de respaldo
   // para erratas de dos cifras fuera del rango (ver `inferYear`).
   const pageCtx = { ...ctx };
@@ -973,9 +1006,16 @@ function parseQualifying(text, ctx, result) {
     if (line === "") continue;
 
     if (/^NB:/i.test(line) || QUALIFYING_PROSE.test(line)) {
-      result.notes.push({ line: lineNo, text: line });
+      pendingNote = result.notes.length;
+      result.notes.push({ line: lineNo, text: line, group });
       continue;
     }
+    if (pendingNote !== null && /^[a-z(]/.test(line)) {
+      // Continuación sangrada de la nota anterior (el motivo de la deducción).
+      result.notes[pendingNote].text += ` ${line}`;
+      continue;
+    }
+    pendingNote = null;
 
     // Anotaciones entre corchetes/paréntesis (goleadores, aplazados) no son datos.
     if (/^[[(]/.test(line)) continue;
@@ -1827,8 +1867,10 @@ function editionDataLine(line, state, ctx, result, lineNo) {
   const match = matchText ? editionMatch(matchText, state, ctx) : null;
   if (!match && !standingText) return null;
   if (standingText) {
+    const bracket = parsePointsDeduction(standingText);
+    const deduction = bracket && !bracket.positive ? bracket.amount : 0;
     const fragment = editionStripBrackets(standingText).replace(/\s*\([^)]*\)\s*$/, "").trim();
-    parseStanding(fragment, state.group || null, result, lineNo);
+    parseStanding(fragment, state.group || null, result, lineNo, deduction);
   }
   if (match) result.matches.push(match);
   return { match };
@@ -1855,6 +1897,9 @@ function parseEditionPage(text, ctx, result) {
    let lastDate = null;
    let lastMatch = null;
    let replay = false;
+   // Índice de la nota `NB:` en curso (motivos de deducción, retiradas); sus
+   // continuaciones sangradas se le añaden (D39/ADR-028).
+   let pendingNote = null;
    // Ficha verbatim del partido en curso (`rawSheet`): el bloque arranca en la
    // cabecera de sede (era 1960–1996) o en la propia línea del partido (era
    // compacta 2000–…) y acumula goleadores, árbitro, alineaciones y notas hasta
@@ -1894,6 +1939,7 @@ function parseEditionPage(text, ctx, result) {
        if (header.section !== undefined) section = header.section;
        replay = Boolean(header.replay);
        pending = null;
+       pendingNote = null;
        continue;
      }
      const cityDate = editionCityDate(line, ctx);
@@ -1913,11 +1959,22 @@ function parseEditionPage(text, ctx, result) {
      };
      const data = editionDataLine(line, state, ctx, result, i + 1);
      if (!data) {
+       // Nota `NB:` (p. ej. el motivo de una deducción) y su continuación,
+       // asociadas al grupo vigente para poder cruzar la tabla (D39/ADR-028).
+       if (/^NB:/i.test(line)) {
+         pendingNote = result.notes.length;
+         result.notes.push({ line: i + 1, text: line, group });
+       } else if (pendingNote !== null && /^[a-z(]/.test(line)) {
+         result.notes[pendingNote].text += ` ${line}`;
+       } else {
+         pendingNote = null;
+       }
        // Prosa suelta dentro de una ficha (p. ej. "Italy progresses on coin toss.").
        if (current && Array.isArray(block)) block.push(sheetLine(raw));
        continue;
      }
      pending = null;
+     pendingNote = null;
      replay = false;
      if (data.match) {
        if (current) {

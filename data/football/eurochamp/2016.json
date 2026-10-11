@@ -771,6 +771,132 @@
           "pts": 2
         }
       ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "H",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 10,
+          "w": 7,
+          "d": 3,
+          "l": 0,
+          "gf": 16,
+          "ga": 7,
+          "pts": 24
+        },
+        {
+          "team": "CRO",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 20,
+          "ga": 5,
+          "pts": 20,
+          "deduction": 1,
+          "deductionReason": "NB: Croatia 1 point deducted because a swastika had been sprayed into the grass ahead of their match behind closed doors against Italy on 12- 6-15"
+        },
+        {
+          "team": "NOR",
+          "p": 10,
+          "w": 6,
+          "d": 1,
+          "l": 3,
+          "gf": 13,
+          "ga": 10,
+          "pts": 19
+        },
+        {
+          "team": "BUL",
+          "p": 10,
+          "w": 3,
+          "d": 2,
+          "l": 5,
+          "gf": 9,
+          "ga": 12,
+          "pts": 11
+        },
+        {
+          "team": "AZE",
+          "p": 10,
+          "w": 1,
+          "d": 3,
+          "l": 6,
+          "gf": 7,
+          "ga": 18,
+          "pts": 6
+        },
+        {
+          "team": "MLT",
+          "p": 10,
+          "w": 0,
+          "d": 2,
+          "l": 8,
+          "gf": 3,
+          "ga": 16,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "I",
+      "standings": [
+        {
+          "team": "POR",
+          "p": 8,
+          "w": 7,
+          "d": 0,
+          "l": 1,
+          "gf": 11,
+          "ga": 5,
+          "pts": 21
+        },
+        {
+          "team": "ALB",
+          "p": 8,
+          "w": 4,
+          "d": 2,
+          "l": 2,
+          "gf": 10,
+          "ga": 5,
+          "pts": 14
+        },
+        {
+          "team": "DEN",
+          "p": 8,
+          "w": 3,
+          "d": 3,
+          "l": 2,
+          "gf": 8,
+          "ga": 5,
+          "pts": 12
+        },
+        {
+          "team": "SRB",
+          "p": 8,
+          "w": 2,
+          "d": 1,
+          "l": 5,
+          "gf": 8,
+          "ga": 13,
+          "pts": 4,
+          "deduction": 3,
+          "deductionReason": "NB: Serbia 3 points deducted for crowd trouble in their match against Albania on 14 Oct 2014"
+        },
+        {
+          "team": "ARM",
+          "p": 8,
+          "w": 0,
+          "d": 2,
+          "l": 6,
+          "gf": 5,
+          "ga": 14,
+          "pts": 2
+        }
+      ]
     }
   ],
   "matches": [
@@ -6729,16 +6855,16 @@
       "reason": "partido no reconocido: France qualify as hosts."
     },
     {
-      "line": 376,
-      "reason": "partido no reconocido: of their match behind closed doors against Italy on 12- 6-15"
-    },
-    {
       "line": 419,
       "reason": "columnas de clasificación no reconocidas: -.France              play  hors concours  friendlies against team on bye"
     },
     {
       "line": 428,
       "reason": "partido no reconocido: Ranking:"
+    },
+    {
+      "line": 430,
+      "reason": "clasificación transversal omitida (ranking entre grupos anotado con «[group N]»): no se modela"
     },
     {
       "line": 443,
@@ -6750,12 +6876,6 @@
     },
     {
       "reason": "fila de clasificación omitida: país no resoluble (France              play  hors concours  friendlies against team on bye)"
-    },
-    {
-      "reason": "grupo H omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (CRO: pts inconsistente)"
-    },
-    {
-      "reason": "grupo I omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (SRB: pts inconsistente)"
     }
   ],
   "teamsCount": 24

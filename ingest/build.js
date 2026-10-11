@@ -527,7 +527,7 @@ function mergeQualifying(edition, parsed, sourceId, competition) {
   const standings = (parsed.standings || [])
     .map((row) => qualifyingStanding(row, warnings, year))
     .filter(Boolean);
-  const groups = buildGroups(standings, matches, warnings, year);
+  const groups = buildGroups(standings, matches, warnings, year, parsed.notes);
   const byKey = new Map((result.groups || []).map((group) => [`${group.stage || "group"}|${group.letter}`, group]));
   for (const group of groups) byKey.set(`${group.stage}|${group.letter}`, group);
   result.groups = [...byKey.values()];
@@ -676,7 +676,10 @@ function groupIssue(letter, standings, matches, stage) {
     const columns = [row.p, row.w, row.d, row.l, row.gf, row.ga, row.pts];
     if (!columns.every((value) => Number.isInteger(value))) return `columnas incompletas en ${row.team || "?"}`;
     if (row.p !== row.w + row.d + row.l) return `${row.team}: p != w+d+l`;
-    if (row.pts !== 2 * row.w + row.d && row.pts !== 3 * row.w + row.d) return `${row.team}: pts inconsistente`;
+    const deduction = Number.isInteger(row.deduction) ? row.deduction : 0;
+    if (row.pts !== 2 * row.w + row.d - deduction && row.pts !== 3 * row.w + row.d - deduction) {
+      return `${row.team}: pts inconsistente`;
+    }
     sumGf += row.gf;
     sumGa += row.ga;
   }
@@ -691,7 +694,15 @@ function groupIssue(letter, standings, matches, stage) {
       Array.isArray(match.score)
   );
   const matchGoals = played.reduce((sum, match) => sum + match.score[0] + match.score[1], 0);
-  if (played.length > 0 && matchGoals !== sumGf) return `goles de partidos ${matchGoals} != clasificación ${sumGf}`;
+  if (played.length > 0 && matchGoals !== sumGf) {
+    // D39: la letra puede arrastrar amistosos «hors concours» o partidos de otra
+    // sección. Si los partidos entre equipos de la propia tabla sí cuadran, se
+    // acepta el grupo (esta segunda vía solo añade tolerancia, nunca errores).
+    const members = new Set(standings.map((row) => row.team));
+    const owned = played.filter((match) => members.has(match.home) && members.has(match.away));
+    const ownedGoals = owned.reduce((sum, match) => sum + match.score[0] + match.score[1], 0);
+    if (!(owned.length > 0 && ownedGoals === sumGf)) return `goles de partidos ${matchGoals} != clasificación ${sumGf}`;
+  }
   return null;
 }
 
@@ -708,7 +719,25 @@ function deriveGroupStage(letter, matches) {
   return best ? best[0] : "group";
 }
 
-function buildGroups(standings, matches, warnings, year) {
+/**
+ * Motivo de una deducción de puntos (D39/ADR-028): el texto de la nota de la
+ * fuente que la explica. Se prefieren las notas del mismo grupo y las que
+ * nombran al equipo; si no hay ninguna, la fila queda sin motivo y el validador
+ * la rechazará (antes omitir que inventar).
+ */
+function deductionReasonFor(notes, letter, rawTeam) {
+  const candidates = (Array.isArray(notes) ? notes : []).filter(
+    (note) => note && typeof note.text === "string" && /deduct/i.test(note.text)
+  );
+  if (candidates.length === 0) return null;
+  const sameGroup = candidates.filter((note) => !note.group || String(note.group) === String(letter));
+  const pool = sameGroup.length > 0 ? sameGroup : candidates;
+  const team = String(rawTeam || "").toLowerCase();
+  const named = team.length >= 4 ? pool.find((note) => note.text.toLowerCase().includes(team)) : null;
+  return (named || pool[0]).text;
+}
+
+function buildGroups(standings, matches, warnings, year, notes) {
   const groups = new Map();
   for (const standing of standings) {
     const letter = groupLetter(standing.group);
@@ -728,7 +757,8 @@ function buildGroups(standings, matches, warnings, year) {
     const stage = deriveGroupStage(letter, matches);
     const key = `${stage}|${letter}`;
     if (!groups.has(key)) groups.set(key, { stage, letter, rows: [] });
-    groups.get(key).rows.push({
+    const deduction = Number.isInteger(standing.deduction) ? standing.deduction : 0;
+    const row = {
       team,
       p: standing.p,
       w: standing.w,
@@ -737,7 +767,13 @@ function buildGroups(standings, matches, warnings, year) {
       gf: standing.gf,
       ga: standing.ga,
       pts: standing.pts
-    });
+    };
+    if (deduction > 0) {
+      row.deduction = deduction;
+      const reason = deductionReasonFor(notes, letter, standing.team);
+      if (reason) row.deductionReason = reason;
+    }
+    groups.get(key).rows.push(row);
   }
   const built = [...groups.values()]
     .sort((a, b) => `${a.stage}|${a.letter}`.localeCompare(`${b.stage}|${b.letter}`))
@@ -924,7 +960,7 @@ function buildDraft(input) {
     }
   });
 
-  const groups = buildGroups(fResult.standings, entries, warnings, editionYear);
+  const groups = buildGroups(fResult.standings, entries, warnings, editionYear, fResult.notes);
   for (const diff of standingsDisagreements(fResult.standings, fullResult.standings, editionYear)) {
     rejected.push({ ref: null, source: fullSourceId, ...diff });
   }

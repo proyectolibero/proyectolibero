@@ -189,7 +189,7 @@
     },
     {
       "path": "data/football/eurochamp/2016.json",
-      "sha256": "6f3b67086cab7e54b1ab6f1388220811ef6d8ab2ccedc8afa160c626217a8054",
+      "sha256": "0bceb4c9c1383de7eacdaf336a7cfdbc784f004a56d1960cc8b7919f24cedaed",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2016
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "73a8a7e2312d235f40e53f4d6a83147ff49d4f2a881f520ac5deace8b426b04a",
+  "checksum": "bb592e400c54ec227d813c7e86e4d2ac2282f11eb6f89d2866d6be91e31e293d",
   "dataset": {
     "sports": 4,
     "competitions": 5,

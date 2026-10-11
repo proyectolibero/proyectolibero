@@ -4,7 +4,7 @@ const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
-const { buildDraft, attachSheets } = require("../ingest/build.js");
+const { buildDraft, attachSheets, groupIssue } = require("../ingest/build.js");
 const { makeContext, validateEditionObject } = require("../core/validate.js");
 
 const ROOT = path.join(__dirname, "..");
@@ -304,4 +304,35 @@ test("attachSheets empareja por la única fecha libre si difieren códigos, ciud
 
   assert.equal(matched, 1);
   assert.equal(out.matches[0].sheet.text, "bloque tercero");
+});
+
+test("groupIssue (D39): tolera amistosos «hors concours» si los partidos de la tabla cuadran", () => {
+  const standings = [
+    { team: "POR", p: 2, w: 2, d: 0, l: 0, gf: 4, ga: 1, pts: 6 },
+    { team: "SRB", p: 2, w: 0, d: 0, l: 2, gf: 1, ga: 4, pts: 0 }
+  ];
+  const matches = [
+    { group: "I", stage: "qualifyingGroup", home: "POR", away: "SRB", score: [3, 0] },
+    { group: "I", stage: "qualifyingGroup", home: "SRB", away: "POR", score: [1, 1] },
+    { group: "I", stage: "qualifyingGroup", home: "POR", away: "FRA", score: [2, 2] }
+  ];
+  assert.equal(groupIssue("I", standings, matches, "qualifyingGroup"), null);
+});
+
+test("groupIssue: un desajuste real de goles sigue siendo error", () => {
+  const standings = [
+    { team: "POR", p: 1, w: 1, d: 0, l: 0, gf: 3, ga: 0, pts: 3 },
+    { team: "SRB", p: 1, w: 0, d: 0, l: 1, gf: 0, ga: 3, pts: 0 }
+  ];
+  const matches = [{ group: "I", stage: "qualifyingGroup", home: "POR", away: "SRB", score: [5, 0] }];
+  assert.match(groupIssue("I", standings, matches, "qualifyingGroup"), /goles de partidos/);
+});
+
+test("groupIssue (D39): una deducción permite cuadrar los puntos", () => {
+  const standings = [
+    { team: "CRO", p: 1, w: 1, d: 0, l: 0, gf: 2, ga: 0, pts: 2, deduction: 1 },
+    { team: "MLT", p: 1, w: 0, d: 0, l: 1, gf: 0, ga: 2, pts: 0 }
+  ];
+  const matches = [{ group: "H", stage: "qualifyingGroup", home: "CRO", away: "MLT", score: [2, 0] }];
+  assert.equal(groupIssue("H", standings, matches, "qualifyingGroup"), null);
 });

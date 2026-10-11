@@ -200,3 +200,33 @@ test("pens[] con marcador empatado y nota pen es coherente", () => {
   edition.coverage.goals = 10;
   assert.deepEqual(validate(edition).errors, []);
 });
+
+function withGroup(standings) {
+  const edition = clone();
+  edition.groups = [{ stage: "group", letter: "A", standings }];
+  return edition;
+}
+
+test("D39/ADR-028: deducción de puntos con motivo es válida", () => {
+  const edition = withGroup([
+    { team: "CRO", p: 3, w: 2, d: 0, l: 1, gf: 5, ga: 2, pts: 5, deduction: 1, deductionReason: "Un punto deducido por sanción." },
+    { team: "SRB", p: 3, w: 1, d: 1, l: 1, gf: 2, ga: 5, pts: 4 }
+  ]);
+  assert.deepEqual(validate(edition).errors, []);
+});
+
+test("D39/ADR-028: deducción de puntos sin motivo: EDI007", () => {
+  const edition = withGroup([
+    { team: "CRO", p: 3, w: 2, d: 0, l: 1, gf: 5, ga: 2, pts: 5, deduction: 1 },
+    { team: "SRB", p: 3, w: 1, d: 1, l: 1, gf: 2, ga: 5, pts: 4 }
+  ]);
+  assert.ok(codes(validate(edition)).includes("EDI007"));
+});
+
+test("D39/ADR-028: pts debe cuadrar con la deducción aplicada: EDI007", () => {
+  const edition = withGroup([
+    { team: "CRO", p: 3, w: 2, d: 0, l: 1, gf: 5, ga: 2, pts: 6, deduction: 1, notes: "Deducción de un punto." },
+    { team: "SRB", p: 3, w: 1, d: 1, l: 1, gf: 2, ga: 5, pts: 4 }
+  ]);
+  assert.ok(codes(validate(edition)).includes("EDI007"));
+});

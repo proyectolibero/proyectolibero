@@ -223,7 +223,15 @@ function checkGroupSums(edition, file, out) {
     if (played.length === 0) continue;
     const matchGoals = played.reduce((sum, m) => sum + m.score[0] + m.score[1], 0);
     if (matchGoals !== sumGf) {
-      out.push(anomaly("GROUP_SUMS", file, `${where}: goles de partidos (${matchGoals}) != goles de la tabla (${sumGf})`));
+      // D39: la letra puede arrastrar amistosos «hors concours» o partidos de otra
+      // sección. Si solo con los partidos entre equipos de la propia tabla cuadra,
+      // se acepta (esta vía solo añade tolerancia, nunca errores nuevos).
+      const members = new Set(group.standings.map((row) => row.team));
+      const owned = played.filter((m) => members.has(m.home) && members.has(m.away));
+      const ownedGoals = owned.reduce((sum, m) => sum + m.score[0] + m.score[1], 0);
+      if (!(owned.length > 0 && ownedGoals === sumGf)) {
+        out.push(anomaly("GROUP_SUMS", file, `${where}: goles de partidos (${matchGoals}) != goles de la tabla (${sumGf})`));
+      }
     }
   }
 }
