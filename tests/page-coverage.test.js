@@ -68,3 +68,27 @@ test("edición abandonada (sin campeón) nunca se marca completa", () => {
   assert.equal(coverage.complete, false);
   assert.equal(coverage.note, "Edición abandonada");
 });
+
+test("buildDraft publica sheet verbatim cuando el partido trae rawSheet", () => {
+  const parsed = {
+    matches: [{
+      section: "Final",
+      home: "URS",
+      away: "YUG",
+      homeScore: 2,
+      awayScore: 1,
+      notes: ["aet"],
+      rawSheet: "Paris, Parc des Princes, July 10\nSoviet Union     2-1 Yugoslavia      [aet]"
+    }],
+    standings: [],
+    scorers: [],
+    groups: []
+  };
+  const entry = { year: 1960, champion: "URS", runnerUp: "YUG", note: "" };
+  const draft = buildDraft(entry, parsed, WITHOUT_QUALIFYING, SOURCE, []);
+  assert.deepEqual(draft.matches[0].sheet, {
+    source: "rsssf:24e",
+    text: "Paris, Parc des Princes, July 10\nSoviet Union     2-1 Yugoslavia      [aet]",
+    lang: "en"
+  });
+});

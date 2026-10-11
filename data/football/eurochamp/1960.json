@@ -51,7 +51,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:60e",
+        "text": "Marseille, July 6, Stade Vélodrome\nSoviet Union     3-0 Czechoslovakia\n[V.Ivanov 34, 56, Ponedelnik 65]\n[ref: Jionni (Italy); att: 28,000]\nSoviet Union: Yashin, Tchekeli, Maslenkin, Kroutikov, Voinov, Netto,\nMetreveli, V.Ivanov, Ponedelnik, Bubukin, Meskhi\nCzechoslovakia: Schroiff, Safránek, Novák, Buberník, Popluhár, Masopust,\nVojta, Moravcík, Kvasnák, Bubník, Dolínski\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -68,7 +73,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:60e",
+        "text": "Paris, July 6, Parc des Princes\nYugoslavia       5-4 France\n[Galic 11, Zanetic 55, Knez 75, Jerkovic 77, 78; Vincent 12, Heutte 43, 62,\nWiesnieski 52]\n[ref: Grandain (Belgium); att: 27,000]\nYugoslavia: Soskic, Durkovic, Jusufi, Zanetic, Zebec, Perusic, Knez,\nJerkovic, Galic, Sekularac, Kostic\nFrance: Lamia, Wendling, Rodzik, Marcel, Herbin, Ferrier, Heutte, Müller,\nWiesnieski, Stievenard, Vincent\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -85,7 +95,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:60e",
+        "text": "Marseille, July 9, Stade Vélodrome\nCzechoslovakia   2-0 France\n[Bubník 58, Pavlovic 88]\n[ref: Jionni (Italy); att: 9,400]\nCzechoslovakia: Schroiff, Safránek, Novák, Masopust, Popluhár, Buberník,\nPavlovic, Vojta, Molnár, Bubník, Dolínski\nFrance: Taillandier, Rodzik, Chorda, Marcel, Jonquin, Siatka, Heutte, Douis,\nWiesnieski, Stievenard, Vincent\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -104,7 +119,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:60e",
+        "text": "Paris, Parc des Princes, July 10\nSoviet Union     2-1 Yugoslavia      [aet]\n[Metreveli 49, Ponedelnik 114; Galic 41]\n[ref: Ellis (England); att: 18,000]\nSoviet Union: Yashin, Tchekeli, Maslenkin, Kroutikov, Voinov, Netto,\nMetreveli, V.Ivanov, Ponedelnik, Bubukin, Meskhi\nYugoslavia: Vidinic, Durkovic, Jusufi, Zanetic, Miladinovic, Perusic,\nJerkovic, Sekularac, Galic, Matus, Kostic\n\n",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [],

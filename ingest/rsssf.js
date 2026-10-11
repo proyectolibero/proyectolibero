@@ -1542,6 +1542,8 @@ const EDITION_FINAL_REPLAY = /^final replay$/i;
 const EDITION_NOISE =
   /^(?:\[|scorers?\b|topscorer|top scorer|ref\b|referee|att\b|attendance|nb:|note\b|draw\b|stadiums?\b|participants\b|qualified\b|additional\b|full details\b|full stats\b|match details\b|city ground|thanks\b|\(no match|penalty shootout|winners\b|all-?time|final tournament details\b)/i;
 const EDITION_PENS_LINE = /^(.+?)\s+wins?\s+(\d+)\s*[-:]\s*(\d+)\s+on penalties\s*$/i;
+/** Resúmenes de torneo (tras el último partido) que cierran la región de datos. */
+const EDITION_SUMMARY = /^(?:topscorers?\b|top scorer\b|scorers?\b|teams\b|all-?time)/i;
 
 function editionStripBrackets(text) {
   return String(text).replace(/\[[^\]]*\]/g, " ");
@@ -1703,52 +1705,101 @@ function editionDataLine(line, state, ctx, result, lineNo) {
  * sin clasificaciones incrustadas, tandas de penaltis y fases de grupo.
  */
 function parseEditionPage(text, ctx, result) {
-  const lines = String(text).replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n");
-  const start = editionStart(lines);
-  if (start < 0) {
-    warn(result, null, "no se localiza el encabezado 'Final Tournament'");
-    return;
-  }
-  let section = null;
-  let group = null;
-  let pending = null;
-  let lastDate = null;
-  let lastMatch = null;
-  let replay = false;
+   const lines = String(text).replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n");
+   const start = editionStart(lines);
+   if (start < 0) {
+     warn(result, null, "no se localiza el encabezado 'Final Tournament'");
+     return;
+   }
+   let section = null;
+   let group = null;
+   let pending = null;
+   let lastDate = null;
+   let lastMatch = null;
+   let replay = false;
+   // Ficha verbatim del partido en curso (`rawSheet`): el bloque arranca en la
+   // cabecera de sede (era 1960–1996) o en la propia línea del partido (era
+   // compacta 2000–…) y acumula goleadores, árbitro, alineaciones y notas hasta
+   // el siguiente partido, cabecera de fase, fila de clasificación o resumen.
+   let current = null;
+   let block = null;
+   /** Cierra el bloque en curso asignando `rawSheet` al partido que lo abrió. */
+   const finalize = () => {
+     if (current) {
+       current.rawSheet = block && block.length > 1 ? block.join("\n") : "";
+       current = null;
+     }
+     block = null;
+   };
 
-  for (let i = start; i < lines.length; i += 1) {
-    const line = cleanLine(lines[i]);
-    if (line === "" || EDITION_NOISE.test(line)) continue;
-    const pens = EDITION_PENS_LINE.exec(line);
-    if (pens) { attachEditionPens(lastMatch, pens); continue; }
-    const header = editionSection(line);
-    if (header) {
-      if (header.group) { group = header.group; result.groups.push({ name: header.group, raw: lines[i] }); }
-      else if (header.resetGroup) group = null;
-      if (header.section !== undefined) section = header.section;
-      replay = Boolean(header.replay);
-      pending = null;
-      continue;
-    }
-    const cityDate = editionCityDate(line, ctx);
-    if (cityDate) { pending = cityDate; continue; }
-    const state = {
-      date: (pending && pending.date) || lastDate,
-      city: pending && pending.city,
-      section,
-      group,
-      replay
-    };
-    const data = editionDataLine(line, state, ctx, result, i + 1);
-    if (!data) continue;
-    pending = null;
-    replay = false;
-    if (data.match) {
-      lastMatch = data.match;
-      if (data.match.date) lastDate = data.match.date;
-    }
-  }
-}
+   for (let i = start; i < lines.length; i += 1) {
+     const raw = lines[i];
+     const line = cleanLine(raw);
+     if (line === "" || EDITION_NOISE.test(line)) {
+       // Líneas que el índice salta (goleadores, árbitro, alineaciones): forman
+       // parte de la ficha del partido en curso cuando lo hay.
+       if (EDITION_SUMMARY.test(line)) finalize();
+       else if (current && Array.isArray(block)) block.push(sheetLine(raw));
+       continue;
+     }
+     const pens = EDITION_PENS_LINE.exec(line);
+     if (pens) {
+       attachEditionPens(lastMatch, pens);
+       if (current && Array.isArray(block)) block.push(sheetLine(raw));
+       continue;
+     }
+     const header = editionSection(line);
+     if (header) {
+       finalize();
+       if (header.group) { group = header.group; result.groups.push({ name: header.group, raw }); }
+       else if (header.resetGroup) group = null;
+       if (header.section !== undefined) section = header.section;
+       replay = Boolean(header.replay);
+       pending = null;
+       continue;
+     }
+     const cityDate = editionCityDate(line, ctx);
+     if (cityDate) {
+       finalize();
+       pending = cityDate;
+       // La cabecera de sede abre el bloque; el partido llega a continuación.
+       block = [sheetLine(raw)];
+       continue;
+     }
+     const state = {
+       date: (pending && pending.date) || lastDate,
+       city: pending && pending.city,
+       section,
+       group,
+       replay
+     };
+     const data = editionDataLine(line, state, ctx, result, i + 1);
+     if (!data) {
+       // Prosa suelta dentro de una ficha (p. ej. "Italy progresses on coin toss.").
+       if (current && Array.isArray(block)) block.push(sheetLine(raw));
+       continue;
+     }
+     pending = null;
+     replay = false;
+     if (data.match) {
+       if (current) {
+         current.rawSheet = block && block.length > 1 ? block.join("\n") : "";
+         current = null;
+         block = null;
+       }
+       // Formato compacto: el bloque arranca con la propia línea del partido.
+       if (!Array.isArray(block)) block = [];
+       block.push(sheetLine(raw));
+       current = data.match;
+       lastMatch = data.match;
+       if (data.match.date) lastDate = data.match.date;
+     } else if (current) {
+       // Fila de clasificación tras los partidos de un grupo: no es ficha.
+       finalize();
+     }
+   }
+   finalize();
+ }
 
 /**
  * Punto de entrada. `kind` es el de `detectKind`; `ctx` lleva `{ sourceId,

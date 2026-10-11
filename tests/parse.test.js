@@ -598,6 +598,59 @@ test("parse('e') lee el torneo final del formato antiguo y descarta la clasifica
   assert.equal(matches[1].score, "2-1");
 });
 
+test("parse('e') captura la ficha verbatim de cada partido del formato antiguo", () => {
+  const text = [
+    "<h3>Final Tournament (in France)</h3>",
+    "SEMIFINALS",
+    "Marseille, July 6, Stade Vélodrome",
+    "Soviet Union     3-0 Czechoslovakia",
+    "  [V.Ivanov 34, 56, Ponedelnik 65]",
+    "  [ref: Jionni (Italy); att: 28,000]",
+    "Soviet Union: Yashin, Tchekeli, Maslenkin, Kroutikov",
+    "Czechoslovakia: Schroiff, Safránek, Novák",
+    "FINAL",
+    "Paris, Parc des Princes, July 10",
+    "Soviet Union     2-1 Yugoslavia      [aet]",
+    "  [Metreveli 49; Galic 43]",
+    "Topscorer overall: Fontaine (France) 6 goals"
+  ].join("\n");
+  const { matches, warnings } = parse("e", text, { year: 1960 });
+  assert.equal(warnings.length, 0);
+  assert.deepEqual(matches[0].rawSheet.split("\n"), [
+    "Marseille, July 6, Stade Vélodrome",
+    "Soviet Union     3-0 Czechoslovakia",
+    "[V.Ivanov 34, 56, Ponedelnik 65]",
+    "[ref: Jionni (Italy); att: 28,000]",
+    "Soviet Union: Yashin, Tchekeli, Maslenkin, Kroutikov",
+    "Czechoslovakia: Schroiff, Safránek, Novák"
+  ]);
+  const final = matches[1].rawSheet.split("\n");
+  assert.equal(final[0], "Paris, Parc des Princes, July 10");
+  assert.ok(final.includes("[Metreveli 49; Galic 43]"));
+  assert.ok(!final.some((line) => /Topscorer/.test(line)));
+});
+
+test("parse('e') deja sin ficha el partido sin líneas extra y cierra el bloque en la tabla", () => {
+  const text = [
+    "<h3>Final Tournament (in Germany)</h3>",
+    "Group A",
+    "14- 6-24 München        Germany            5–1 Scotland",
+    "                         [Wirtz 10, Musiala 19, Fullkrug 68]",
+    "15- 6-24 Köln           Hungary            1–3 Switzerland",
+    " 1.GERMANY             3  2  1  0   8- 2   7 ",
+    "Final",
+    "14- 7-24 Berlin         Spain              2–1 England"
+  ].join("\n");
+  const { matches, warnings } = parse("e", text, { year: 2024 });
+  assert.equal(warnings.length, 0);
+  assert.equal(
+    matches[0].rawSheet,
+    "14- 6-24 München        Germany            5–1 Scotland\n[Wirtz 10, Musiala 19, Fullkrug 68]"
+  );
+  assert.equal(matches[1].rawSheet, "");
+  assert.equal(matches[2].rawSheet, "");
+});
+
 test("parse('e') lee la lista compacta con grupo, tabla y marcador con guion largo", () => {
   const text = [
     "<h3>Final Tournament (in Germany)</h3>",

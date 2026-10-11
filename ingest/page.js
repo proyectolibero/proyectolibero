@@ -16,7 +16,7 @@
 
 const { parseOverview, editionYearNumbers, headingEditionYear } = require("./overview.js");
 const { parseCompact } = require("./compact.js");
-const { normalizeTeam, stageFromSection, groupLetter, groupIssue } = require("./build.js");
+const { normalizeTeam, stageFromSection, groupLetter, groupIssue, sheetFrom } = require("./build.js");
 const { desiredCoverage } = require("../scripts/migrate-coverage.js");
 
 const DEFAULT_LICENSE = "rsssf-attribution";
@@ -75,10 +75,10 @@ function pickFinalMatchId(finalMatches, champion) {
 }
 
 /** Partido compacto → resultado `encounter` del esquema v2. */
-function toEncounterMatch(match, index, hasFinal) {
+function toEncounterMatch(match, index, hasFinal, sourceId) {
   const stage = stageFromSection(match.section) || "group";
   const group = hasFinal ? (match.group ? groupLetter(match.group) : null) : "A";
-  return {
+  const entry = {
     id: `m${String(index + 1).padStart(3, "0")}`,
     stage,
     group,
@@ -92,6 +92,9 @@ function toEncounterMatch(match, index, hasFinal) {
     notes: Array.isArray(match.notes) ? [...match.notes] : [],
     pens: Array.isArray(match.pens) ? [...match.pens] : null
   };
+  const sheet = sheetFrom(match, sourceId);
+  if (sheet) entry.sheet = sheet;
+  return entry;
 }
 
 /**
@@ -237,7 +240,7 @@ function derivePageCoverage(edition, competition, matches, results, goals, warni
 function buildDraft(edition, parsed, competition, source, warnings) {
   const asOf = toIsoDate(source.retrieved);
   const hasFinal = parsed.matches.some((match) => stageFromSection(match.section) === "final");
-  const matches = parsed.matches.map((match, index) => toEncounterMatch(match, index, hasFinal));
+  const matches = parsed.matches.map((match, index) => toEncounterMatch(match, index, hasFinal, source.id));
   const groups = buildGroups(parsed.standings, matches, hasFinal, warnings);
   const results = deriveResults(edition, parsed, matches, hasFinal, warnings);
   const goals = matches.reduce((sum, match) => sum + (match.score ? match.score[0] + match.score[1] : 0), 0);

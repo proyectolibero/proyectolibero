@@ -921,4 +921,4 @@ function buildDraft(input) {
   return draft;
 }
 
-module.exports = { buildDraft, normalizeTeam, stageFromSection, groupLetter, groupIssue, attachSheets, mergeQualifying };
+module.exports = { buildDraft, normalizeTeam, stageFromSection, groupLetter, groupIssue, attachSheets, mergeQualifying, sheetFrom };

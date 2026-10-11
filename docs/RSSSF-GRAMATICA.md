@@ -514,6 +514,27 @@ was replayed
 `sheet: { source, text, lang:"en" }`. **No** se convierte en estadísticas de
 jugadores (alineaciones, minutos, goles por jugador) ni se traduce.
 
+### 6.7 Variantes de la Eurocopa (`NNe-det` / `NNe-full`)
+
+Las ediciones de la Eurocopa enlazan dos variantes con más ficha, **solo
+documentadas**, no integradas (los goleadores con minuto, el HT y las
+alineaciones con dorsal/club no aportan datos estructurados nuevos):
+
+```
+60e-det.html   "Details Final Tournament"   alineaciones numeradas con club,
+                                            goleadores con minuto y marcador,
+                                            árbitro y asistencia por partido
+60e-full.html  "Details qualifying and final tournament"  narración en prosa
+                                            de la misma ficha
+```
+
+(URL: https://www.rsssf.org/tables/60e-det.html · https://www.rsssf.org/tables/60e-full.html)
+
+Atención: en `NNe-det` **el orden de los equipos puede estar invertido**
+respecto al índice (`CZECHOSLOVAKIA 0-3 SOVIET UNION` para el partido que el
+índice escribe `Soviet Union 3-0 Czechoslovakia`), por lo que integrar esa
+fuente sin emparejar por equipos desorientaría la orientación publicada.
+
 ---
 
 ## 7. Notas en prosa

@@ -91,7 +91,7 @@
     },
     {
       "path": "data/football/eurochamp/1960.json",
-      "sha256": "b47b4bdaee9051688876234444b73405a16c18564211c525e18da26d589c00e1",
+      "sha256": "b5196115457713fd7b77ef1c680ec0b6efa2d2c98d2b69ea7cb79747bf738a17",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1960
@@ -105,7 +105,7 @@
     },
     {
       "path": "data/football/eurochamp/1968.json",
-      "sha256": "ceb01d115f9eac77b2ccecabbb4aa3eb29af014759f4af095ca5b50de6ba7a87",
+      "sha256": "a79e8680357bcb297f1703b4b857972419a9ebbeb96628a7c18481df028641fe",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1968
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "3e03933bb260a06db0f473a868c1d9b19d846dbdec0adf574169dc5d1818c8b2",
+  "checksum": "981e2e3fe1892c54b09441949b3f2e7cb0fd9378f348b1694ae5cc225a96eac7",
   "dataset": {
     "sports": 4,
     "competitions": 5,

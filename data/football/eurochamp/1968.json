@@ -53,7 +53,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:68e",
+        "text": "Napoli, June 5, San Paolo\nItaly            0-0 Soviet Union    [aet]\n[ref: Tschenscher (West Germany); att: 69,000]\nItaly: Zoff, Burgnich, Facchetti, Bercellino, Castano, Ferrini, Domenghini,\nJuliano, Mazzola, Rivera, Prati\nSoviet Union: Psenichnikov, Afonin, Istomin, Kaplichni, Shesternev, Lenev,\nMalofeev, Byshovets, Banishevsky, Logofet, Evriuzhikin\nItaly progresses on coin toss.\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -70,7 +75,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:68e",
+        "text": "Firenze, June 5, Stadio Comunale\nYugoslavia       1-0 England\n[Dzajic 86]\n[ref: Ortiz de Mendibil (Spain); att: 22,000]\n[sent off: Mullery 90]\nYugoslavia: Pantelic, Fazlagic, Damjanovic, Pavlovic, Paunovic, Holcer,\nPetkovic, Osim, Musemic, Trivic, Dzajic\nEngland: Banks, Newton, Wilson, Mullery, Labone, Moore, Ball, Peters,\nB.Charlton, Hunt, Hunter\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -87,7 +97,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:68e",
+        "text": "Roma, June 8, Stadio Olimpico\nEngland          2-0 Soviet Union\n[B.Charlton 39, Hurst 63]\n[ref: Zsolt (Hungary); att: 18,000]\nEngland: Banks, Wright, Wilson, Stiles, Labone, Moore, Hunter, Peters,\nB.Charlton, Hurst, Hunt\nSoviet Union: Psenichnikov, Afonin, Istomin, Kaplichni, Shesternev, Lenev,\nMalofeev, Banishevsky, Byshovets, Logofet, Evriuzhikin\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -106,7 +121,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:68e",
+        "text": "Roma, June 8, Stadio Olimpico\nItaly            1-1 Yugoslavia      [aet]\n[Domenghini 80; Dzajic 39]\n[ref: Dienst (Switzerland); att: 69,000]\nItaly: Zoff, Burgnich, Facchetti, Ferrini, Guarneri, Castano, Domenghini,\nJuliano, Anastasi, Lodetti, Prati\nYugoslavia: Pantelic, Fazlagic, Damjanovic, Pavlovic, Paunovic, Holcer,\nPetkovic, Trivic, Musemic, Acimovic, Dzajic\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -125,7 +145,12 @@
       "notes": [
         "replay"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:68e",
+        "text": "Roma, June 10, Stadio Olimpico\nItaly            2-0 Yugoslavia\n[Riva 11, Anastasi 32]\n[ref: Ortiz de Mendibil (Spain); att: 50,000]\nItaly: Zoff, Burgnich, Facchetti, Salvadore, Guarneri, Rosato, Domenghini,\nMazzola, Anastasi, De Sisti, Riva\nYugoslavia: Pantelic, Fazlagic, Damjanovic, Pavlovic, Paunovic, Holcer,\nHosic, Trivic, Musemic, Acimovic, Dzajic\n\n",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [],
