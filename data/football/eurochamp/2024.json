@@ -13,11 +13,10 @@
     "finalMatchId": "m051"
   },
   "coverage": {
-    "matches": 51,
-    "goals": 117,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "matches": 290,
+    "goals": 807,
+    "scope": "all",
+    "complete": true
   },
   "sources": [
     {
@@ -37,6 +36,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "GER",
@@ -78,11 +78,11 @@
           "ga": 7,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "ESP",
@@ -124,11 +124,11 @@
           "ga": 5,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "C",
+      "stage": "group",
       "standings": [
         {
           "team": "ENG",
@@ -170,11 +170,11 @@
           "ga": 2,
           "pts": 2
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "D",
+      "stage": "group",
       "standings": [
         {
           "team": "AUT",
@@ -216,11 +216,11 @@
           "ga": 6,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "E",
+      "stage": "group",
       "standings": [
         {
           "team": "ROU",
@@ -262,11 +262,11 @@
           "ga": 4,
           "pts": 4
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "F",
+      "stage": "group",
       "standings": [
         {
           "team": "POR",
@@ -308,8 +308,597 @@
           "ga": 5,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "A",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 8,
+          "w": 7,
+          "d": 0,
+          "l": 1,
+          "gf": 25,
+          "ga": 5,
+          "pts": 21
+        },
+        {
+          "team": "SCO",
+          "p": 8,
+          "w": 5,
+          "d": 2,
+          "l": 1,
+          "gf": 17,
+          "ga": 8,
+          "pts": 17
+        },
+        {
+          "team": "NOR",
+          "p": 8,
+          "w": 3,
+          "d": 2,
+          "l": 3,
+          "gf": 14,
+          "ga": 12,
+          "pts": 11
+        },
+        {
+          "team": "GEO",
+          "p": 8,
+          "w": 2,
+          "d": 2,
+          "l": 4,
+          "gf": 12,
+          "ga": 18,
+          "pts": 8
+        },
+        {
+          "team": "CYP",
+          "p": 8,
+          "w": 0,
+          "d": 0,
+          "l": 8,
+          "gf": 3,
+          "ga": 28,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "B",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 8,
+          "w": 7,
+          "d": 1,
+          "l": 0,
+          "gf": 29,
+          "ga": 3,
+          "pts": 22
+        },
+        {
+          "team": "NED",
+          "p": 8,
+          "w": 6,
+          "d": 0,
+          "l": 2,
+          "gf": 17,
+          "ga": 7,
+          "pts": 18
+        },
+        {
+          "team": "GRE",
+          "p": 8,
+          "w": 4,
+          "d": 1,
+          "l": 3,
+          "gf": 14,
+          "ga": 8,
+          "pts": 13
+        },
+        {
+          "team": "IRL",
+          "p": 8,
+          "w": 2,
+          "d": 0,
+          "l": 6,
+          "gf": 9,
+          "ga": 10,
+          "pts": 6
+        },
+        {
+          "team": "GIB",
+          "p": 8,
+          "w": 0,
+          "d": 0,
+          "l": 8,
+          "gf": 0,
+          "ga": 41,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "C",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 8,
+          "w": 6,
+          "d": 2,
+          "l": 0,
+          "gf": 22,
+          "ga": 4,
+          "pts": 20
+        },
+        {
+          "team": "ITA",
+          "p": 8,
+          "w": 4,
+          "d": 2,
+          "l": 2,
+          "gf": 16,
+          "ga": 9,
+          "pts": 14
+        },
+        {
+          "team": "UKR",
+          "p": 8,
+          "w": 4,
+          "d": 2,
+          "l": 2,
+          "gf": 11,
+          "ga": 8,
+          "pts": 14
+        },
+        {
+          "team": "MKD",
+          "p": 8,
+          "w": 2,
+          "d": 2,
+          "l": 4,
+          "gf": 10,
+          "ga": 20,
+          "pts": 8
+        },
+        {
+          "team": "MLT",
+          "p": 8,
+          "w": 0,
+          "d": 0,
+          "l": 8,
+          "gf": 2,
+          "ga": 20,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "D",
+      "standings": [
+        {
+          "team": "TUR",
+          "p": 8,
+          "w": 5,
+          "d": 2,
+          "l": 1,
+          "gf": 14,
+          "ga": 7,
+          "pts": 17
+        },
+        {
+          "team": "CRO",
+          "p": 8,
+          "w": 5,
+          "d": 1,
+          "l": 2,
+          "gf": 13,
+          "ga": 4,
+          "pts": 16
+        },
+        {
+          "team": "WAL",
+          "p": 8,
+          "w": 3,
+          "d": 3,
+          "l": 2,
+          "gf": 10,
+          "ga": 10,
+          "pts": 12
+        },
+        {
+          "team": "ARM",
+          "p": 8,
+          "w": 2,
+          "d": 2,
+          "l": 4,
+          "gf": 9,
+          "ga": 11,
+          "pts": 8
+        },
+        {
+          "team": "LAT",
+          "p": 8,
+          "w": 1,
+          "d": 0,
+          "l": 7,
+          "gf": 5,
+          "ga": 19,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "E",
+      "standings": [
+        {
+          "team": "ALB",
+          "p": 8,
+          "w": 4,
+          "d": 3,
+          "l": 1,
+          "gf": 12,
+          "ga": 4,
+          "pts": 15
+        },
+        {
+          "team": "CZE",
+          "p": 8,
+          "w": 4,
+          "d": 3,
+          "l": 1,
+          "gf": 12,
+          "ga": 6,
+          "pts": 15
+        },
+        {
+          "team": "POL",
+          "p": 8,
+          "w": 3,
+          "d": 2,
+          "l": 3,
+          "gf": 10,
+          "ga": 10,
+          "pts": 11
+        },
+        {
+          "team": "MDA",
+          "p": 8,
+          "w": 2,
+          "d": 4,
+          "l": 2,
+          "gf": 7,
+          "ga": 10,
+          "pts": 10
+        },
+        {
+          "team": "FRO",
+          "p": 8,
+          "w": 0,
+          "d": 2,
+          "l": 6,
+          "gf": 2,
+          "ga": 13,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "F",
+      "standings": [
+        {
+          "team": "BEL",
+          "p": 8,
+          "w": 6,
+          "d": 2,
+          "l": 0,
+          "gf": 22,
+          "ga": 4,
+          "pts": 20
+        },
+        {
+          "team": "AUT",
+          "p": 8,
+          "w": 6,
+          "d": 1,
+          "l": 1,
+          "gf": 17,
+          "ga": 7,
+          "pts": 19
+        },
+        {
+          "team": "SWE",
+          "p": 8,
+          "w": 3,
+          "d": 1,
+          "l": 4,
+          "gf": 14,
+          "ga": 12,
+          "pts": 10
+        },
+        {
+          "team": "AZE",
+          "p": 8,
+          "w": 2,
+          "d": 1,
+          "l": 5,
+          "gf": 7,
+          "ga": 17,
+          "pts": 7
+        },
+        {
+          "team": "EST",
+          "p": 8,
+          "w": 0,
+          "d": 1,
+          "l": 7,
+          "gf": 2,
+          "ga": 22,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "G",
+      "standings": [
+        {
+          "team": "HUN",
+          "p": 8,
+          "w": 5,
+          "d": 3,
+          "l": 0,
+          "gf": 16,
+          "ga": 7,
+          "pts": 18
+        },
+        {
+          "team": "SRB",
+          "p": 8,
+          "w": 4,
+          "d": 2,
+          "l": 2,
+          "gf": 15,
+          "ga": 9,
+          "pts": 14
+        },
+        {
+          "team": "MNE",
+          "p": 8,
+          "w": 3,
+          "d": 2,
+          "l": 3,
+          "gf": 9,
+          "ga": 11,
+          "pts": 11
+        },
+        {
+          "team": "LTU",
+          "p": 8,
+          "w": 1,
+          "d": 3,
+          "l": 4,
+          "gf": 8,
+          "ga": 14,
+          "pts": 6
+        },
+        {
+          "team": "BUL",
+          "p": 8,
+          "w": 0,
+          "d": 4,
+          "l": 4,
+          "gf": 7,
+          "ga": 14,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "H",
+      "standings": [
+        {
+          "team": "SVN",
+          "p": 10,
+          "w": 7,
+          "d": 1,
+          "l": 2,
+          "gf": 20,
+          "ga": 9,
+          "pts": 22
+        },
+        {
+          "team": "DEN",
+          "p": 10,
+          "w": 7,
+          "d": 1,
+          "l": 2,
+          "gf": 19,
+          "ga": 10,
+          "pts": 22
+        },
+        {
+          "team": "FIN",
+          "p": 10,
+          "w": 6,
+          "d": 0,
+          "l": 4,
+          "gf": 18,
+          "ga": 10,
+          "pts": 18
+        },
+        {
+          "team": "KAZ",
+          "p": 10,
+          "w": 6,
+          "d": 0,
+          "l": 4,
+          "gf": 16,
+          "ga": 12,
+          "pts": 18
+        },
+        {
+          "team": "NIR",
+          "p": 10,
+          "w": 3,
+          "d": 0,
+          "l": 7,
+          "gf": 9,
+          "ga": 13,
+          "pts": 9
+        },
+        {
+          "team": "SMR",
+          "p": 10,
+          "w": 0,
+          "d": 0,
+          "l": 10,
+          "gf": 3,
+          "ga": 31,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "I",
+      "standings": [
+        {
+          "team": "ROU",
+          "p": 10,
+          "w": 6,
+          "d": 4,
+          "l": 0,
+          "gf": 16,
+          "ga": 5,
+          "pts": 22
+        },
+        {
+          "team": "SUI",
+          "p": 10,
+          "w": 4,
+          "d": 5,
+          "l": 1,
+          "gf": 22,
+          "ga": 11,
+          "pts": 17
+        },
+        {
+          "team": "ISR",
+          "p": 10,
+          "w": 4,
+          "d": 3,
+          "l": 3,
+          "gf": 11,
+          "ga": 11,
+          "pts": 15
+        },
+        {
+          "team": "BLR",
+          "p": 10,
+          "w": 3,
+          "d": 3,
+          "l": 4,
+          "gf": 9,
+          "ga": 14,
+          "pts": 12
+        },
+        {
+          "team": "KVX",
+          "p": 10,
+          "w": 2,
+          "d": 5,
+          "l": 3,
+          "gf": 10,
+          "ga": 10,
+          "pts": 11
+        },
+        {
+          "team": "AND",
+          "p": 10,
+          "w": 0,
+          "d": 2,
+          "l": 8,
+          "gf": 3,
+          "ga": 20,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "J",
+      "standings": [
+        {
+          "team": "POR",
+          "p": 10,
+          "w": 10,
+          "d": 0,
+          "l": 0,
+          "gf": 36,
+          "ga": 2,
+          "pts": 30
+        },
+        {
+          "team": "SVK",
+          "p": 10,
+          "w": 7,
+          "d": 1,
+          "l": 2,
+          "gf": 17,
+          "ga": 8,
+          "pts": 22
+        },
+        {
+          "team": "LUX",
+          "p": 10,
+          "w": 5,
+          "d": 2,
+          "l": 3,
+          "gf": 13,
+          "ga": 19,
+          "pts": 17
+        },
+        {
+          "team": "ISL",
+          "p": 10,
+          "w": 3,
+          "d": 1,
+          "l": 6,
+          "gf": 17,
+          "ga": 16,
+          "pts": 10
+        },
+        {
+          "team": "BIH",
+          "p": 10,
+          "w": 3,
+          "d": 0,
+          "l": 7,
+          "gf": 9,
+          "ga": 20,
+          "pts": 9
+        },
+        {
+          "team": "LIE",
+          "p": 10,
+          "w": 0,
+          "d": 0,
+          "l": 10,
+          "gf": 1,
+          "ga": 28,
+          "pts": 0
+        }
+      ]
     }
   ],
   "matches": [
@@ -328,7 +917,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "14- 6-24 München        Germany            5–1 Scotland\n[Wirtz 10, Musiala 19, Havertz 45+1pen, Fullkrug 68,\nCan 90+3; Rudiger 87og]",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -345,7 +939,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "15- 6-24 Köln           Hungary            1–3 Switzerland\n[Varga 66; Duah 12, Aebischer 45, Embolo 90+3]",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -362,7 +961,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "19- 6-24 Stuttgart      Germany            2–0 Hungary\n[Musiala 22, Gundogan 67]",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -379,7 +983,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "19- 6-24 Köln           Scotland           1–1 Switzerland\n[McTominay 13; Shaqiri 26]",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -396,7 +1005,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "23- 6-24 Frankfurt      Switzerland        1–1 Germany\n[Ndoye 28; Fullkrug 90+2]",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -413,7 +1027,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "23- 6-24 Stuttgart      Scotland           0–1 Hungary\n[Csoboth 90+10]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -430,7 +1049,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "15- 6-24 Berlin         Spain              3–0 Croatia\n[Morata 29, Fabian Ruiz 32, Dani Carvajal 45+2]",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -447,7 +1071,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "15- 6-24 Dortmund       Italy              2–1 Albania\n[Bastoni 11, Barella 16; Bajrami 1]",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -464,7 +1093,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "19- 6-24 Hamburg        Croatia            2–2 Albania\n[Kramaric 74, Gjasula 76og; Laci 11, Gjasula 90+5]",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -481,7 +1115,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "20- 6-24 Gelsenkirchen  Spain              1–0 Italy\n[Calafiori 55og]",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -498,7 +1137,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "24- 6-24 Düsseldorf     Albania            0–1 Spain\n[Ferran Torres 13]",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -515,7 +1159,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "24- 6-24 Leipzig        Croatia            1–1 Italy\n[Modric 55; Zaccagni 90+8]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -532,7 +1181,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "16- 6-24 Stuttgart      Slovenia           1–1 Denmark\n[Janza 77; Eriksen 17]",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -549,7 +1203,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "16- 6-24 Gelsenkirchen  Serbia             0–1 England\n[Bellingham 13]",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -566,7 +1225,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "20- 6-24 München        Slovenia           1–1 Serbia\n[Karnicnik 69; Jovic 90+5]",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -583,7 +1247,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "20- 6-24 Frankfurt      Denmark            1–1 England\n[Hjulmand 34; Kane 18]",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -617,7 +1286,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "25- 6-24 München        Denmark            0–0 Serbia\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -634,7 +1308,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "16- 6-24 Hamburg        Poland             1–2 Netherlands\n[Buksa 16; Gakpo 29, Weghorst 83]",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -651,7 +1330,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "17- 6-24 Düsseldorf     Austria            0–1 France\n[Wober 38og]",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -668,7 +1352,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "21- 6-24 Berlin         Poland             1–3 Austria\n[Piatek 30; Trauner 9, Baumgartner 66, Arnautovic 78pen]",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -702,7 +1391,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "25- 6-24 Berlin         Netherlands        2–3 Austria\n[Gakpo 47, Depay 75; Malen 6og, Schmid 59, Sabitzer 80]",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -719,7 +1413,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "25- 6-24 Dortmund       France             1–1 Poland\n[Mbappé 56pen; Lewandowski 79pen]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -736,7 +1435,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "17- 6-24 München        Romania            3–0 Ukraine\n[Stanciu 29, R. Marin 53, Dragus 57]",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -753,7 +1457,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "17- 6-24 Frankfurt      Belgium            0–1 Slovakia\n[Schranz 7]",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -770,7 +1479,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "21- 6-24 Düsseldorf     Slovakia           1–2 Ukraine\n[Schranz 17; Shaparenko 54, Yaremchuk 80]",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -787,7 +1501,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "22- 6-24 Köln           Belgium            2–0 Romania\n[Tielemans 2, De Bruyne 80]",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -804,7 +1523,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "26- 6-24 Frankfurt      Slovakia           1–1 Romania\n[Duda 24; R. Marin 37pen]",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -821,7 +1545,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "26- 6-24 Stuttgart      Ukraine            0–0 Belgium\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -838,7 +1567,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "18- 6-24 Dortmund       Turkey             3–1 Georgia\n[Muldur 25, Guler 65, Akturkoglu 90+7; Mikautadze 32]",
+        "lang": "en"
+      }
     },
     {
       "id": "m032",
@@ -855,7 +1589,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "18- 6-24 Leipzig        Portugal           2–1 Czech Republic\n[Hranac 69og, Conceicao 90+2; Provod 62]",
+        "lang": "en"
+      }
     },
     {
       "id": "m033",
@@ -872,7 +1611,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "22- 6-24 Hamburg        Georgia            1–1 Czech Republic\n[Mikautadze 45+4pen; Schick 59]",
+        "lang": "en"
+      }
     },
     {
       "id": "m034",
@@ -889,7 +1633,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "22- 6-24 Dortmund       Turkey             0–3 Portugal\n[B. Silva 21, Akaydin 28og, Fernandes 56]",
+        "lang": "en"
+      }
     },
     {
       "id": "m035",
@@ -906,7 +1655,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "26- 6-24 Gelsenkirchen  Georgia            2–0 Portugal\n[Kvaratskhelia 2, Mikautadze 57pen]",
+        "lang": "en"
+      }
     },
     {
       "id": "m036",
@@ -923,7 +1677,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "26- 6-24 Hamburg        Czech Republic     1–2 Turkey\n[Soucek 66; Calhanoglu 51, Tosun 90+4]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m037",
@@ -940,7 +1699,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "29- 6-24 Berlin         Switzerland        2–0 Italy\n[Freuler 37, Vargas 46]",
+        "lang": "en"
+      }
     },
     {
       "id": "m038",
@@ -957,7 +1721,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "29- 6-24 Dortmund       Germany            2–0 Denmark\n[Havertz 53pen, Musiala 68]",
+        "lang": "en"
+      }
     },
     {
       "id": "m039",
@@ -976,7 +1745,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "30- 6-24 Gelsenkirchen  England            2–1 Slovakia           [aet]\n[Bellingham 90+5, Kane 91; Schranz 25]",
+        "lang": "en"
+      }
     },
     {
       "id": "m040",
@@ -993,7 +1767,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "30- 6-24 Köln           Spain              4–1 Georgia\n[Rodri 39, Fabian Ruiz 51, Williams 75, Dani Olmo 83;\nLe Normand 18og]",
+        "lang": "en"
+      }
     },
     {
       "id": "m041",
@@ -1010,7 +1789,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "1- 7-24 Düsseldorf     France             1–0 Belgium\n[Vertonghen 85og]",
+        "lang": "en"
+      }
     },
     {
       "id": "m042",
@@ -1050,7 +1834,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "2- 7-24 München        Romania            0–3 Netherlands\n[Gakpo 20, Malen 83, 90+3]",
+        "lang": "en"
+      }
     },
     {
       "id": "m044",
@@ -1067,7 +1856,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "2- 7-24 Leipzig        Austria            1–2 Turkey\n[Gregoritsch 66; Demiral 1, 59]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m045",
@@ -1086,7 +1880,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "5- 7-24 Stuttgart      Spain              2–1 Germany            [aet]\n[Dani Olmo 51, Merino 119; Wirtz 89]",
+        "lang": "en"
+      }
     },
     {
       "id": "m046",
@@ -1132,7 +1931,12 @@
       "pens": [
         5,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "6- 7-24 Düsseldorf     England            1–1 Switzerland        [aet, 5-3 pen]\n[Saka 80; Embolo 75]",
+        "lang": "en"
+      }
     },
     {
       "id": "m048",
@@ -1149,7 +1953,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "6- 7-24 Berlin         Netherlands        2–1 Turkey\n[De Vrij 70, Muldur 76og; Akaydin 35]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m049",
@@ -1166,7 +1975,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "9- 7-24 München        Spain              2–1 France\n[Yamal 21, Dani Olmo 25; Kolo Muani 9]",
+        "lang": "en"
+      }
     },
     {
       "id": "m050",
@@ -1183,7 +1997,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "10- 7-24 Dortmund       Netherlands        1–2 England\n[Simons 7; Kane 18pen, Watkins 90]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m051",
@@ -1200,10 +2019,4590 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2024e",
+        "text": "14- 7-24 Berlin         Spain              2–1 England\n[Williams 47, Oyarzabal 86; Palmer 73]\n\n\n\n\n\nEuropean Championship Overview File\n\n2021\n\n\nAbout this document\nPrepared and maintained by Roberto Di Maggio for the\nRec.Sport.Soccer Statistics Foundation\n\nAuthor: Roberto Di Maggio\nLast updated: 28 Oct 2024\n\n(C) Copyright Roberto Di Maggio and RSSSF 2024\nYou are free to copy this document in whole or part provided that proper\nacknowledgement is given to the author. All rights reserved.\n\n",
+        "lang": "en"
+      }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-03-25",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "CYP",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-03-25",
+      "city": "Málaga",
+      "home": "ESP",
+      "away": "NOR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-03-28",
+      "city": "Batumi",
+      "home": "GEO",
+      "away": "NOR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-03-28",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "ESP",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-06-17",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SCO",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-06-17",
+      "city": "Larnaka",
+      "home": "CYP",
+      "away": "GEO",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-06-20",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "CYP",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-06-20",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "GEO",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-09-08",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "ESP",
+      "score": [
+        1,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-09-08",
+      "city": "Larnaka",
+      "home": "CYP",
+      "away": "SCO",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-09-12",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "GEO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-09-12",
+      "city": "Granada",
+      "home": "ESP",
+      "away": "CYP",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-10-12",
+      "city": "Larnaka",
+      "home": "CYP",
+      "away": "NOR",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-10-12",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "SCO",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-10-15",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "CYP",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-10-15",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-11-16",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "SCO",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-11-16",
+      "city": "Lemasos",
+      "home": "CYP",
+      "away": "ESP",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-11-19",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "NOR",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2023-11-19",
+      "city": "Valladolid",
+      "home": "ESP",
+      "away": "GEO",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-03-24",
+      "city": "Saint-Denis",
+      "home": "FRA",
+      "away": "NED",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-03-24",
+      "city": "Faro/Loulé",
+      "home": "GIB",
+      "away": "GRE",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-03-27",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "GIB",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-03-27",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-06-16",
+      "city": "Faro/Loulé",
+      "home": "GIB",
+      "away": "FRA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-06-16",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "IRL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-06-19",
+      "city": "Saint-Denis",
+      "home": "FRA",
+      "away": "GRE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-06-19",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "GIB",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-09-07",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "IRL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-09-07",
+      "city": "Eindhoven",
+      "home": "NED",
+      "away": "GRE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-09-10",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "GIB",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-09-10",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "NED",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-10-13",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "FRA",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-10-13",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "GRE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-10-16",
+      "city": "Faro/Loulé",
+      "home": "GIB",
+      "away": "IRL",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-10-16",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "NED",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-11-18",
+      "city": "Nice",
+      "home": "FRA",
+      "away": "GIB",
+      "score": [
+        14,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-11-18",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "IRL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-11-21",
+      "city": "Faro/Loulé",
+      "home": "GIB",
+      "away": "NED",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2023-11-21",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "FRA",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-03-23",
+      "city": "Napoli",
+      "home": "ITA",
+      "away": "ENG",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-03-23",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "MLT",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-03-26",
+      "city": "London",
+      "home": "ENG",
+      "away": "UKR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-03-26",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "ITA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-06-16",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "ENG",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-06-16",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "UKR",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-06-19",
+      "city": "Trnava",
+      "home": "UKR",
+      "away": "MLT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-06-19",
+      "city": "Manchester",
+      "home": "ENG",
+      "away": "MKD",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-09-09",
+      "city": "Wrocław",
+      "home": "UKR",
+      "away": "ENG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-09-09",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "ITA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-09-12",
+      "city": "Milano",
+      "home": "ITA",
+      "away": "UKR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-09-12",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "MKD",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-10-14",
+      "city": "Praha",
+      "home": "UKR",
+      "away": "MKD",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-10-14",
+      "city": "Bari",
+      "home": "ITA",
+      "away": "MLT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-10-17",
+      "city": "London",
+      "home": "ENG",
+      "away": "ITA",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-10-17",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "UKR",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-11-17",
+      "city": "London",
+      "home": "ENG",
+      "away": "MLT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-11-17",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "MKD",
+      "score": [
+        5,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-11-20",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "ENG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2023-11-20",
+      "city": "Leverkusen",
+      "home": "UKR",
+      "away": "ITA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-03-25",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "TUR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-03-25",
+      "city": "Split",
+      "home": "CRO",
+      "away": "WAL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-03-28",
+      "city": "Bursa",
+      "home": "TUR",
+      "away": "CRO",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-03-28",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "LAT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-06-16",
+      "city": "Rīga",
+      "home": "LAT",
+      "away": "TUR",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-06-16",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "ARM",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-06-19",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "LAT",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-06-19",
+      "city": "Samsun",
+      "home": "TUR",
+      "away": "WAL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-09-08",
+      "city": "Rijeka",
+      "home": "CRO",
+      "away": "LAT",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-09-08",
+      "city": "Eskişehir",
+      "home": "TUR",
+      "away": "ARM",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-09-11",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "CRO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-09-11",
+      "city": "Rīga",
+      "home": "LAT",
+      "away": "WAL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-10-12",
+      "city": "Rīga",
+      "home": "LAT",
+      "away": "ARM",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-10-12",
+      "city": "Osijek",
+      "home": "CRO",
+      "away": "TUR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-10-15",
+      "city": "Konya",
+      "home": "TUR",
+      "away": "LAT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-10-15",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "CRO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-11-18",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "WAL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-11-18",
+      "city": "Rīga",
+      "home": "LAT",
+      "away": "CRO",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-11-21",
+      "city": "Zagreb",
+      "home": "CRO",
+      "away": "ARM",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2023-11-21",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "TUR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-03-24",
+      "city": "Praha",
+      "home": "CZE",
+      "away": "POL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-03-24",
+      "city": "Chișinău",
+      "home": "MDA",
+      "away": "FRO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-03-27",
+      "city": "Chișinău",
+      "home": "MDA",
+      "away": "CZE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-03-27",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "ALB",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-06-17",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "MDA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-06-17",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "CZE",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-06-20",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "ALB",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-06-20",
+      "city": "Chișinău",
+      "home": "MDA",
+      "away": "POL",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-09-07",
+      "city": "Praha",
+      "home": "CZE",
+      "away": "ALB",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-09-07",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "FRO",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-09-10",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "MDA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-09-10",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "POL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-10-12",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "CZE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-10-12",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "POL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m145"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-10-15",
+      "city": "Plzeň",
+      "home": "CZE",
+      "away": "FRO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-10-15",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "MDA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-11-17",
+      "city": "Chișinău",
+      "home": "MDA",
+      "away": "ALB",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m148"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-11-17",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "CZE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m149"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-11-20",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "FRO",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2023-11-20",
+      "city": "Olomouc",
+      "home": "CZE",
+      "away": "MDA",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-03-24",
+      "city": "Linz",
+      "home": "AUT",
+      "away": "AZE",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m152"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-03-24",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "BEL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m153"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-03-27",
+      "city": "Linz",
+      "home": "AUT",
+      "away": "EST",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m154"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-03-27",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "AZE",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m155"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-06-17",
+      "city": "Bakı",
+      "home": "AZE",
+      "away": "EST",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m156"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-06-17",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "AUT",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m157"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-06-20",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "SWE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m158"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-06-20",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "BEL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m159"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-09-09",
+      "city": "Bakı",
+      "home": "AZE",
+      "away": "BEL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m160"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-09-09",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "SWE",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m161"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-09-12",
+      "city": "Bruxelles",
+      "home": "BEL",
+      "away": "EST",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m162"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-09-12",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "AUT",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m163"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-10-13",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "AZE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m164"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-10-13",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "BEL",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m165"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-10-16",
+      "city": "Bakı",
+      "home": "AZE",
+      "away": "AUT",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m166"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-10-16",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m167"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-11-16",
+      "city": "Bakı",
+      "home": "AZE",
+      "away": "SWE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m168"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-11-16",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "AUT",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m169"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-11-19",
+      "city": "Bruxelles",
+      "home": "BEL",
+      "away": "AZE",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m170"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2023-11-19",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "EST",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m171"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-03-24",
+      "city": "Razgrad",
+      "home": "BUL",
+      "away": "MNE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m172"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-03-24",
+      "city": "Beograd",
+      "home": "SRB",
+      "away": "LTU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m173"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-03-27",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "BUL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m174"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-03-27",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "SRB",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m175"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-06-17",
+      "city": "Kaunas",
+      "home": "LTU",
+      "away": "BUL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m176"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-06-17",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "HUN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m177"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-06-20",
+      "city": "Razgrad",
+      "home": "BUL",
+      "away": "SRB",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m178"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-06-20",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "LTU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m179"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-09-07",
+      "city": "Kaunas",
+      "home": "LTU",
+      "away": "MNE",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m180"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-09-07",
+      "city": "Beograd",
+      "home": "SRB",
+      "away": "HUN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m181"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-09-10",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "BUL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m182"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-09-10",
+      "city": "Kaunas",
+      "home": "LTU",
+      "away": "SRB",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m183"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-10-14",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "LTU",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m184"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-10-14",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "SRB",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m185"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-10-17",
+      "city": "Kaunas",
+      "home": "LTU",
+      "away": "HUN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m186"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-10-17",
+      "city": "Beograd",
+      "home": "SRB",
+      "away": "MNE",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m187"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-11-16",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "HUN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m188"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-11-16",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "LTU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m189"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-11-19",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "MNE",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m190"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2023-11-19",
+      "city": "Leskovac",
+      "home": "SRB",
+      "away": "BUL",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m191"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-03-23",
+      "city": "Astana",
+      "home": "KAZ",
+      "away": "SVN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m192"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-03-23",
+      "city": "København",
+      "home": "DEN",
+      "away": "FIN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m193"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-03-23",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "NIR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m194"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-03-26",
+      "city": "Astana",
+      "home": "KAZ",
+      "away": "DEN",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m195"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-03-26",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "SMR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m196"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-03-26",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "FIN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m197"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-06-16",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SVN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m198"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-06-16",
+      "city": "København",
+      "home": "DEN",
+      "away": "NIR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m199"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-06-16",
+      "city": "Parma",
+      "home": "SMR",
+      "away": "KAZ",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m200"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-06-19",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SMR",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m201"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-06-19",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "KAZ",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m202"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-06-19",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m203"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-09-07",
+      "city": "Astana",
+      "home": "KAZ",
+      "away": "FIN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m204"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-09-07",
+      "city": "København",
+      "home": "DEN",
+      "away": "SMR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m205"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-09-07",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "NIR",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m206"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-09-10",
+      "city": "Astana",
+      "home": "KAZ",
+      "away": "NIR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m207"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-09-10",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "DEN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m208"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-09-10",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "SVN",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m209"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-10-14",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "SMR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m210"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-10-14",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "FIN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m211"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-10-14",
+      "city": "København",
+      "home": "DEN",
+      "away": "KAZ",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m212"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-10-17",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "KAZ",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m213"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-10-17",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "SVN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m214"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-10-17",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "DEN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m215"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-11-17",
+      "city": "Astana",
+      "home": "KAZ",
+      "away": "SMR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m216"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-11-17",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "NIR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m217"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-11-17",
+      "city": "København",
+      "home": "DEN",
+      "away": "SVN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m218"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-11-20",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "DEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m219"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-11-20",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "FIN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m220"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2023-11-20",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "KAZ",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m221"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-03-25",
+      "city": "Novi Sad",
+      "home": "BLR",
+      "away": "SUI",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m222"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-03-25",
+      "city": "Tel-Aviv",
+      "home": "ISR",
+      "away": "KVX",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m223"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-03-25",
+      "city": "Andorra La V.",
+      "home": "AND",
+      "away": "ROU",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m224"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-03-28",
+      "city": "Prishtinë",
+      "home": "KVX",
+      "away": "AND",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m225"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-03-28",
+      "city": "București",
+      "home": "ROU",
+      "away": "BLR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m226"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-03-28",
+      "city": "Genève",
+      "home": "SUI",
+      "away": "ISR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m227"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-06-16",
+      "city": "Andorra La V.",
+      "home": "AND",
+      "away": "SUI",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m228"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-06-16",
+      "city": "Budapest",
+      "home": "BLR",
+      "away": "ISR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m229"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-06-16",
+      "city": "Prishtinë",
+      "home": "KVX",
+      "away": "ROU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m230"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-06-19",
+      "city": "Budapest",
+      "home": "BLR",
+      "away": "KVX",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m231"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-06-19",
+      "city": "Jerusalem",
+      "home": "ISR",
+      "away": "AND",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m232"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-06-19",
+      "city": "Luzern",
+      "home": "SUI",
+      "away": "ROU",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m233"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-09-09",
+      "city": "Andorra La V.",
+      "home": "AND",
+      "away": "BLR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m234"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-09-09",
+      "city": "Prishtinë",
+      "home": "KVX",
+      "away": "SUI",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m235"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-09-09",
+      "city": "București",
+      "home": "ROU",
+      "away": "ISR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m236"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-09-12",
+      "city": "Tel-Aviv",
+      "home": "ISR",
+      "away": "BLR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m237"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-09-12",
+      "city": "București",
+      "home": "ROU",
+      "away": "KVX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m238"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-09-12",
+      "city": "Sion",
+      "home": "SUI",
+      "away": "AND",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m239"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-10-12",
+      "city": "Andorra La V.",
+      "home": "AND",
+      "away": "KVX",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m240"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-10-12",
+      "city": "Budapest",
+      "home": "BLR",
+      "away": "ROU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m241"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-10-15",
+      "city": "Sankt Gallen",
+      "home": "SUI",
+      "away": "BLR",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m242"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-10-15",
+      "city": "București",
+      "home": "ROU",
+      "away": "AND",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m243"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-11-12",
+      "city": "Prishtinë",
+      "home": "KVX",
+      "away": "ISR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m244"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-11-15",
+      "city": "Felcsút",
+      "home": "ISR",
+      "away": "SUI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m245"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-11-18",
+      "city": "Budapest",
+      "home": "BLR",
+      "away": "AND",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m246"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-11-18",
+      "city": "Felcsút",
+      "home": "ISR",
+      "away": "ROU",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m247"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-11-18",
+      "city": "Basel",
+      "home": "SUI",
+      "away": "KVX",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m248"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-11-21",
+      "city": "Andorra La V.",
+      "home": "AND",
+      "away": "ISR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m249"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-11-21",
+      "city": "Prishtinë",
+      "home": "KVX",
+      "away": "BLR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m250"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2023-11-21",
+      "city": "București",
+      "home": "ROU",
+      "away": "SUI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m251"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-03-23",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "ISL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m252"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-03-23",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "LIE",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m253"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-03-23",
+      "city": "Trnava",
+      "home": "SVK",
+      "away": "LUX",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m254"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-03-26",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "ISL",
+      "score": [
+        0,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m255"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-03-26",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "POR",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m256"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-03-26",
+      "city": "Bratislava",
+      "home": "SVK",
+      "away": "BIH",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m257"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-06-17",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "LIE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m258"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-06-17",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "SVK",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m259"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-06-17",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "BIH",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m260"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-06-20",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "LUX",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m261"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-06-20",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m262"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-06-20",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "SVK",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m263"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-09-08",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "LIE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m264"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-09-08",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "ISL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m265"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-09-08",
+      "city": "Bratislava",
+      "home": "SVK",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m266"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-09-11",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "BIH",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m267"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-09-11",
+      "city": "Faro/Loulé",
+      "home": "POR",
+      "away": "LUX",
+      "score": [
+        9,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m268"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-09-11",
+      "city": "Bratislava",
+      "home": "SVK",
+      "away": "LIE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m269"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-10-13",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "LUX",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m270"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-10-13",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "BIH",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m271"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-10-13",
+      "city": "Porto",
+      "home": "POR",
+      "away": "SVK",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m272"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-10-16",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "POR",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m273"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-10-16",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "LIE",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m274"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-10-16",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "SVK",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m275"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-11-16",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "POR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m276"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-11-16",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "BIH",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m277"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-11-16",
+      "city": "Bratislava",
+      "home": "SVK",
+      "away": "ISL",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m278"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-11-19",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "SVK",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m279"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-11-19",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "LUX",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m280"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2023-11-19",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "ISL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m281"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2024-03-21",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "EST",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m282"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2024-03-21",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "FIN",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m283"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2024-03-26",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "POL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m284"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2024-03-21",
+      "city": "Budapest",
+      "home": "ISR",
+      "away": "ISL",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m285"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2024-03-21",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "UKR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m286"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2024-03-26",
+      "city": "Wrocław",
+      "home": "UKR",
+      "away": "ISL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m287"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2024-03-21",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "LUX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m288"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2024-03-21",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "KAZ",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m289"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2024-03-26",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "GRE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m290"
     }
   ],
   "scorers": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "line": 384,
+      "reason": "partido no reconocido: League A  Playoff Qualifiers:"
+    },
+    {
+      "line": 385,
+      "reason": "partido no reconocido: Group 1: Croatia            ( qualified directly )"
+    },
+    {
+      "line": 386,
+      "reason": "partido no reconocido: Group 2: Spain              ( qualified directly )"
+    },
+    {
+      "line": 387,
+      "reason": "partido no reconocido: Group 3: Italy              ( qualified directly )"
+    },
+    {
+      "line": 388,
+      "reason": "partido no reconocido: Group 4: Netherlands        ( qualified directly )"
+    },
+    {
+      "line": 389,
+      "reason": "partido no reconocido: Further Ranking:"
+    },
+    {
+      "line": 390,
+      "reason": "partido no reconocido: 5: Denmark            ( qualified directly )"
+    },
+    {
+      "line": 391,
+      "reason": "partido no reconocido: 6: Portugal           ( qualified directly )"
+    },
+    {
+      "line": 392,
+      "reason": "partido no reconocido: 7: Belgium            ( qualified directly )"
+    },
+    {
+      "line": 393,
+      "reason": "partido no reconocido: 8: Hungary            ( qualified directly )"
+    },
+    {
+      "line": 394,
+      "reason": "partido no reconocido: 9: Switzerland        ( qualified directly )"
+    },
+    {
+      "line": 395,
+      "reason": "partido no reconocido: 10: Germany            ( qualified directly )"
+    },
+    {
+      "line": 396,
+      "reason": "partido no reconocido: 11:  Poland"
+    },
+    {
+      "line": 397,
+      "reason": "partido no reconocido: 12: France             ( qualified directly )"
+    },
+    {
+      "line": 398,
+      "reason": "partido no reconocido: 13: Austria            ( qualified directly )"
+    },
+    {
+      "line": 399,
+      "reason": "partido no reconocido: 14: Czech Republic     ( qualified directly )"
+    },
+    {
+      "line": 400,
+      "reason": "partido no reconocido: 15: England            ( qualified directly )"
+    },
+    {
+      "line": 401,
+      "reason": "partido no reconocido: 16:  Wales"
+    },
+    {
+      "line": 403,
+      "reason": "partido no reconocido: League A Playoffs"
+    },
+    {
+      "line": 409,
+      "reason": "partido no reconocido: Final"
+    },
+    {
+      "line": 412,
+      "reason": "partido no reconocido: League B  Playoff Qualifiers:"
+    },
+    {
+      "line": 413,
+      "reason": "partido no reconocido: Group 1: Scotland           ( qualified directly )"
+    },
+    {
+      "line": 414,
+      "reason": "partido no reconocido: Group 2:  Israel"
+    },
+    {
+      "line": 415,
+      "reason": "partido no reconocido: Group 3:  Bosnia-Herzegovina"
+    },
+    {
+      "line": 416,
+      "reason": "partido no reconocido: Group 4: Serbia             ( qualified directly )"
+    },
+    {
+      "line": 417,
+      "reason": "partido no reconocido: Further Ranking:"
+    },
+    {
+      "line": 418,
+      "reason": "partido no reconocido: 5:  Finland             (to  League A Playoffs  )"
+    },
+    {
+      "line": 419,
+      "reason": "partido no reconocido: 6:  Ukraine"
+    },
+    {
+      "line": 420,
+      "reason": "partido no reconocido: 7:  Iceland"
+    },
+    {
+      "line": 421,
+      "reason": "partido no reconocido: 8: Norway"
+    },
+    {
+      "line": 422,
+      "reason": "partido no reconocido: 9: Slovenia           ( qualified directly )"
+    },
+    {
+      "line": 423,
+      "reason": "partido no reconocido: 10: Ireland"
+    },
+    {
+      "line": 424,
+      "reason": "partido no reconocido: 11: Albania            ( qualified directly )"
+    },
+    {
+      "line": 425,
+      "reason": "partido no reconocido: 12: Montenegro"
+    },
+    {
+      "line": 426,
+      "reason": "partido no reconocido: 13: Romania            ( qualified directly )"
+    },
+    {
+      "line": 427,
+      "reason": "partido no reconocido: 14: Sweden"
+    },
+    {
+      "line": 428,
+      "reason": "partido no reconocido: 15: Armenia"
+    },
+    {
+      "line": 430,
+      "reason": "partido no reconocido: League B Playoffs"
+    },
+    {
+      "line": 436,
+      "reason": "partido no reconocido: Final"
+    },
+    {
+      "line": 439,
+      "reason": "partido no reconocido: League C  Playoff Qualifiers:"
+    },
+    {
+      "line": 440,
+      "reason": "partido no reconocido: Group 1: Turkey             ( qualified directly )"
+    },
+    {
+      "line": 441,
+      "reason": "partido no reconocido: Group 2:  Greece"
+    },
+    {
+      "line": 442,
+      "reason": "partido no reconocido: Group 3:  Kazakhstan"
+    },
+    {
+      "line": 443,
+      "reason": "partido no reconocido: Group 4:  Georgia"
+    },
+    {
+      "line": 444,
+      "reason": "partido no reconocido: Further Ranking:"
+    },
+    {
+      "line": 445,
+      "reason": "partido no reconocido: 5:  Luxembourg"
+    },
+    {
+      "line": 446,
+      "reason": "partido no reconocido: 6: Azerbaijan"
+    },
+    {
+      "line": 447,
+      "reason": "partido no reconocido: 7: Kosovo"
+    },
+    {
+      "line": 448,
+      "reason": "partido no reconocido: 8: Bulgaria"
+    },
+    {
+      "line": 449,
+      "reason": "partido no reconocido: 9: Faroe Islands"
+    },
+    {
+      "line": 450,
+      "reason": "partido no reconocido: 10: North Macedonia"
+    },
+    {
+      "line": 451,
+      "reason": "partido no reconocido: 11: Slovakia           ( qualified directly )"
+    },
+    {
+      "line": 452,
+      "reason": "partido no reconocido: 12: North Ireland"
+    },
+    {
+      "line": 453,
+      "reason": "partido no reconocido: 13: Cyprus"
+    },
+    {
+      "line": 454,
+      "reason": "partido no reconocido: 14: Belarus"
+    },
+    {
+      "line": 455,
+      "reason": "partido no reconocido: 15: Lithuania"
+    },
+    {
+      "line": 456,
+      "reason": "partido no reconocido: 16: Gibraltar"
+    },
+    {
+      "line": 458,
+      "reason": "partido no reconocido: League C Playoffs"
+    },
+    {
+      "line": 464,
+      "reason": "partido no reconocido: Final"
+    },
+    {
+      "line": 467,
+      "reason": "partido no reconocido: League D  Playoff Qualifiers:"
+    },
+    {
+      "line": 468,
+      "reason": "partido no reconocido: Group 1: Latvia"
+    },
+    {
+      "line": 469,
+      "reason": "partido no reconocido: Group 2:  Estonia             (to  League A Playoffs  )"
+    },
+    {
+      "line": 470,
+      "reason": "partido no reconocido: Further Ranking:"
+    },
+    {
+      "line": 471,
+      "reason": "partido no reconocido: 3: Moldova"
+    },
+    {
+      "line": 472,
+      "reason": "partido no reconocido: 4: Malta"
+    },
+    {
+      "line": 473,
+      "reason": "partido no reconocido: 5: Andorra"
+    },
+    {
+      "line": 474,
+      "reason": "partido no reconocido: 6: San Marino"
+    },
+    {
+      "line": 475,
+      "reason": "partido no reconocido: 7: Liechtenstein"
+    }
+  ],
   "teamsCount": 24
 }

@@ -12,11 +12,11 @@
     "decidedBy": "final"
   },
   "coverage": {
-    "matches": 51,
-    "goals": 142,
-    "scope": "final",
+    "matches": 307,
+    "goals": 944,
+    "scope": "all",
     "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "note": "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar)."
   },
   "sources": [
     {
@@ -36,6 +36,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "ITA",
@@ -77,11 +78,11 @@
           "ga": 8,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "BEL",
@@ -123,11 +124,11 @@
           "ga": 7,
           "pts": 3
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "D",
+      "stage": "group",
       "standings": [
         {
           "team": "ENG",
@@ -169,11 +170,11 @@
           "ga": 5,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "E",
+      "stage": "group",
       "standings": [
         {
           "team": "SWE",
@@ -215,11 +216,11 @@
           "ga": 6,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "F",
+      "stage": "group",
       "standings": [
         {
           "team": "FRA",
@@ -261,8 +262,297 @@
           "ga": 6,
           "pts": 2
         }
-      ],
-      "stage": "group"
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "A",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 8,
+          "w": 7,
+          "d": 0,
+          "l": 1,
+          "gf": 37,
+          "ga": 6,
+          "pts": 21
+        },
+        {
+          "team": "CZE",
+          "p": 8,
+          "w": 5,
+          "d": 0,
+          "l": 3,
+          "gf": 13,
+          "ga": 11,
+          "pts": 15
+        },
+        {
+          "team": "KVX",
+          "p": 8,
+          "w": 3,
+          "d": 2,
+          "l": 3,
+          "gf": 13,
+          "ga": 16,
+          "pts": 11
+        },
+        {
+          "team": "BUL",
+          "p": 8,
+          "w": 1,
+          "d": 3,
+          "l": 4,
+          "gf": 6,
+          "ga": 17,
+          "pts": 6
+        },
+        {
+          "team": "MNE",
+          "p": 8,
+          "w": 0,
+          "d": 3,
+          "l": 5,
+          "gf": 3,
+          "ga": 22,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "B",
+      "standings": [
+        {
+          "team": "UKR",
+          "p": 8,
+          "w": 6,
+          "d": 2,
+          "l": 0,
+          "gf": 17,
+          "ga": 4,
+          "pts": 20
+        },
+        {
+          "team": "POR",
+          "p": 8,
+          "w": 5,
+          "d": 2,
+          "l": 1,
+          "gf": 22,
+          "ga": 6,
+          "pts": 17
+        },
+        {
+          "team": "SRB",
+          "p": 8,
+          "w": 4,
+          "d": 2,
+          "l": 2,
+          "gf": 17,
+          "ga": 17,
+          "pts": 14
+        },
+        {
+          "team": "LUX",
+          "p": 8,
+          "w": 1,
+          "d": 1,
+          "l": 6,
+          "gf": 7,
+          "ga": 16,
+          "pts": 4
+        },
+        {
+          "team": "LTU",
+          "p": 8,
+          "w": 0,
+          "d": 1,
+          "l": 7,
+          "gf": 5,
+          "ga": 25,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "D",
+      "standings": [
+        {
+          "team": "SUI",
+          "p": 8,
+          "w": 5,
+          "d": 2,
+          "l": 1,
+          "gf": 19,
+          "ga": 6,
+          "pts": 17
+        },
+        {
+          "team": "DEN",
+          "p": 8,
+          "w": 4,
+          "d": 4,
+          "l": 0,
+          "gf": 23,
+          "ga": 6,
+          "pts": 16
+        },
+        {
+          "team": "IRL",
+          "p": 8,
+          "w": 3,
+          "d": 4,
+          "l": 1,
+          "gf": 7,
+          "ga": 5,
+          "pts": 13
+        },
+        {
+          "team": "GEO",
+          "p": 8,
+          "w": 2,
+          "d": 2,
+          "l": 4,
+          "gf": 7,
+          "ga": 11,
+          "pts": 8
+        },
+        {
+          "team": "GIB",
+          "p": 8,
+          "w": 0,
+          "d": 0,
+          "l": 8,
+          "gf": 3,
+          "ga": 31,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "E",
+      "standings": [
+        {
+          "team": "CRO",
+          "p": 8,
+          "w": 5,
+          "d": 2,
+          "l": 1,
+          "gf": 17,
+          "ga": 7,
+          "pts": 17
+        },
+        {
+          "team": "WAL",
+          "p": 8,
+          "w": 4,
+          "d": 2,
+          "l": 2,
+          "gf": 10,
+          "ga": 6,
+          "pts": 14
+        },
+        {
+          "team": "SVK",
+          "p": 8,
+          "w": 4,
+          "d": 1,
+          "l": 3,
+          "gf": 13,
+          "ga": 11,
+          "pts": 13
+        },
+        {
+          "team": "HUN",
+          "p": 8,
+          "w": 4,
+          "d": 0,
+          "l": 4,
+          "gf": 8,
+          "ga": 11,
+          "pts": 12
+        },
+        {
+          "team": "AZE",
+          "p": 8,
+          "w": 0,
+          "d": 1,
+          "l": 7,
+          "gf": 5,
+          "ga": 18,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "J",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 10,
+          "w": 10,
+          "d": 0,
+          "l": 0,
+          "gf": 37,
+          "ga": 4,
+          "pts": 30
+        },
+        {
+          "team": "FIN",
+          "p": 10,
+          "w": 6,
+          "d": 0,
+          "l": 4,
+          "gf": 16,
+          "ga": 10,
+          "pts": 18
+        },
+        {
+          "team": "GRE",
+          "p": 10,
+          "w": 4,
+          "d": 2,
+          "l": 4,
+          "gf": 12,
+          "ga": 14,
+          "pts": 14
+        },
+        {
+          "team": "BIH",
+          "p": 10,
+          "w": 4,
+          "d": 1,
+          "l": 5,
+          "gf": 20,
+          "ga": 17,
+          "pts": 13
+        },
+        {
+          "team": "ARM",
+          "p": 10,
+          "w": 3,
+          "d": 1,
+          "l": 6,
+          "gf": 14,
+          "ga": 25,
+          "pts": 10
+        },
+        {
+          "team": "LIE",
+          "p": 10,
+          "w": 0,
+          "d": 2,
+          "l": 8,
+          "gf": 2,
+          "ga": 31,
+          "pts": 2
+        }
+      ]
     }
   ],
   "matches": [
@@ -366,7 +656,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2020e",
+        "text": "20- 6-21 Bakı           Switzerland        3-1 Turkey\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -468,7 +763,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2020e",
+        "text": "21- 6-21 København      Denmark            4-1 Russia\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -570,7 +870,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2020e",
+        "text": "21- 6-21 București      Ukraine            0-1 Austria\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -672,7 +977,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2020e",
+        "text": "22- 6-21 London         England            1-0 Czech Republic\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -774,7 +1084,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2020e",
+        "text": "23- 6-21 St. Peterburg  Sweden             3-2 Poland\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -876,7 +1191,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2020e",
+        "text": "23- 6-21 Budapest       Portugal           2-2 France\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m037",
@@ -1024,7 +1344,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2020e",
+        "text": "29- 6-21 Glasgow        Sweden             1-2 Ukraine            [aet]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m045",
@@ -1098,7 +1423,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2020e",
+        "text": "3- 7-21 Roma           Ukraine            0-4 England\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m049",
@@ -1140,7 +1470,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2020e",
+        "text": "7- 7-21 London         England            2-1 Denmark            [aet]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m051",
@@ -1163,7 +1498,4620 @@
       "pens": [
         2,
         3
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:2020e",
+        "text": "11- 7-21 London         England            1-1 Italy              [aet, 2-3 pen]\n\n\n\n\nEuropean Championship Overview File\n\n2016\n\n2021 (match details final tournament)\n\n2024\n\n\nAbout this document\nPrepared and maintained by Karel Stokkermans for the\nRec.Sport.Soccer Statistics Foundation\n\nAuthor: Karel Stokkermans\nLast updated: 29 Oct 2024\n\n(C) Copyright Karel Stokkermans and RSSSF 2019/24\nYou are free to copy this document in whole or part provided that proper\nacknowledgement is given to the author. All rights reserved.\n\n",
+        "lang": "en"
+      }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-03-22",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "MNE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-03-22",
+      "city": "London",
+      "home": "ENG",
+      "away": "CZE",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-03-25",
+      "city": "Prishtinë",
+      "home": "KVX",
+      "away": "BUL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-03-25",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "ENG",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-06-07",
+      "city": "Praha",
+      "home": "CZE",
+      "away": "BUL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-06-07",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "KVX",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-06-10",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "KVX",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-06-10",
+      "city": "Olomouc",
+      "home": "CZE",
+      "away": "MNE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-09-07",
+      "city": "Prishtinë",
+      "home": "KVX",
+      "away": "CZE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-09-07",
+      "city": "London",
+      "home": "ENG",
+      "away": "BUL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-09-10",
+      "city": "Southampton",
+      "home": "ENG",
+      "away": "KVX",
+      "score": [
+        5,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-09-10",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "CZE",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-10-11",
+      "city": "Praha",
+      "home": "CZE",
+      "away": "ENG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-10-11",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "BUL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-10-14",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "ENG",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-10-14",
+      "city": "Prishtinë",
+      "home": "KVX",
+      "away": "MNE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-11-14",
+      "city": "Plzeň",
+      "home": "CZE",
+      "away": "KVX",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-11-14",
+      "city": "London",
+      "home": "ENG",
+      "away": "MNE",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-11-17",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "CZE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2019-11-17",
+      "city": "Prishtinë",
+      "home": "KVX",
+      "away": "ENG",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-03-22",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "LTU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-03-22",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "UKR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-03-25",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "UKR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-03-25",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "SRB",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-06-07",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "LUX",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-06-07",
+      "city": "Lviv",
+      "home": "UKR",
+      "away": "SRB",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-06-10",
+      "city": "Beograd",
+      "home": "SRB",
+      "away": "LTU",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-06-10",
+      "city": "Lviv",
+      "home": "UKR",
+      "away": "LUX",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-09-07",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "UKR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-09-07",
+      "city": "Beograd",
+      "home": "SRB",
+      "away": "POR",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-09-10",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "POR",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-09-10",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "SRB",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-10-11",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "LUX",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-10-11",
+      "city": "Kharkiv",
+      "home": "UKR",
+      "away": "LTU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-10-14",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "SRB",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-10-14",
+      "city": "Kyiv",
+      "home": "UKR",
+      "away": "POR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-11-14",
+      "city": "Faro",
+      "home": "POR",
+      "away": "LTU",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-11-14",
+      "city": "Beograd",
+      "home": "SRB",
+      "away": "LUX",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-11-17",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "POR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2019-11-17",
+      "city": "Beograd",
+      "home": "SRB",
+      "away": "UKR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-03-21",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "BLR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-03-21",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "EST",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-03-24",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "GER",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-03-24",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "BLR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "NIR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Barysau",
+      "home": "BLR",
+      "away": "GER",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "Barysau",
+      "home": "BLR",
+      "away": "NIR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "Mainz",
+      "home": "GER",
+      "away": "EST",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-09-06",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "BLR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-09-06",
+      "city": "Hamburg",
+      "home": "GER",
+      "away": "NED",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-09-09",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "NED",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-09-09",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "GER",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-10-10",
+      "city": "Minsk",
+      "home": "BLR",
+      "away": "EST",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-10-10",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "NIR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-10-13",
+      "city": "Minsk",
+      "home": "BLR",
+      "away": "NED",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-10-13",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "GER",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-11-16",
+      "city": "M'gladbach",
+      "home": "GER",
+      "away": "BLR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-11-16",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "NED",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-11-19",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "EST",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-03-23",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "SUI",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-03-23",
+      "city": "Gibraltar",
+      "home": "GIB",
+      "away": "IRL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-03-26",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "GEO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-03-26",
+      "city": "Basel",
+      "home": "SUI",
+      "away": "DEN",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-06-07",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "GIB",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-06-07",
+      "city": "København",
+      "home": "DEN",
+      "away": "IRL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-06-10",
+      "city": "København",
+      "home": "DEN",
+      "away": "GEO",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-06-10",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "GIB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-09-05",
+      "city": "Gibraltar",
+      "home": "GIB",
+      "away": "DEN",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-09-05",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "SUI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-09-08",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "DEN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-09-08",
+      "city": "Sion",
+      "home": "SUI",
+      "away": "GIB",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-10-12",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "IRL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-10-12",
+      "city": "København",
+      "home": "DEN",
+      "away": "SUI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-10-15",
+      "city": "Gibraltar",
+      "home": "GIB",
+      "away": "GEO",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-10-15",
+      "city": "Genève",
+      "home": "SUI",
+      "away": "IRL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-11-15",
+      "city": "København",
+      "home": "DEN",
+      "away": "GIB",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-11-15",
+      "city": "Sankt Gallen",
+      "home": "SUI",
+      "away": "GEO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-11-18",
+      "city": "Gibraltar",
+      "home": "GIB",
+      "away": "SUI",
+      "score": [
+        1,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2019-11-18",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-03-21",
+      "city": "Zagreb",
+      "home": "CRO",
+      "away": "AZE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-03-21",
+      "city": "Trnava",
+      "home": "SVK",
+      "away": "HUN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-03-24",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "SVK",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-03-24",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "CRO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Osijek",
+      "home": "CRO",
+      "away": "WAL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Bakı",
+      "home": "AZE",
+      "away": "HUN",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "Bakı",
+      "home": "AZE",
+      "away": "SVK",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "WAL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-09-06",
+      "city": "Trnava",
+      "home": "SVK",
+      "away": "CRO",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-09-06",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "AZE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-09-09",
+      "city": "Bakı",
+      "home": "AZE",
+      "away": "CRO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-09-09",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "SVK",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-10-10",
+      "city": "Split",
+      "home": "CRO",
+      "away": "HUN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-10-10",
+      "city": "Trnava",
+      "home": "SVK",
+      "away": "WAL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-10-13",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "AZE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m145"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-10-13",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "CRO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-11-16",
+      "city": "Bakı",
+      "home": "AZE",
+      "away": "WAL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-11-16",
+      "city": "Rijeka",
+      "home": "CRO",
+      "away": "SVK",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m148"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-11-19",
+      "city": "Trnava",
+      "home": "SVK",
+      "away": "AZE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m149"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2019-11-19",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "HUN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-03-23",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "FRO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-03-23",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "ROU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m152"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-03-23",
+      "city": "Valencia",
+      "home": "ESP",
+      "away": "NOR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m153"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-03-26",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "ESP",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m154"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-03-26",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SWE",
+      "score": [
+        3,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m155"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-03-26",
+      "city": "Cluj",
+      "home": "ROU",
+      "away": "FRO",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m156"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-06-07",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "ESP",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m157"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-06-07",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "ROU",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m158"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-06-07",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "MLT",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m159"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-06-10",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "NOR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m160"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-06-10",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "ROU",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m161"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-06-10",
+      "city": "Madrid",
+      "home": "ESP",
+      "away": "SWE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m162"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-09-05",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "SWE",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m163"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-09-05",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "MLT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m164"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-09-05",
+      "city": "București",
+      "home": "ROU",
+      "away": "ESP",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m165"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-09-08",
+      "city": "Ploiești",
+      "home": "ROU",
+      "away": "MLT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m166"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-09-08",
+      "city": "Gijón",
+      "home": "ESP",
+      "away": "FRO",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m167"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-09-08",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "NOR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m168"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-10-12",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "ROU",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m169"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-10-12",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "SWE",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m170"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-10-12",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "ESP",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m171"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-10-15",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "MLT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m172"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-10-15",
+      "city": "București",
+      "home": "ROU",
+      "away": "NOR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m173"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-10-15",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "ESP",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m174"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-11-15",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "FRO",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m175"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-11-15",
+      "city": "București",
+      "home": "ROU",
+      "away": "SWE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m176"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-11-15",
+      "city": "Cádiz",
+      "home": "ESP",
+      "away": "MLT",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m177"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-11-18",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "NOR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m178"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-11-18",
+      "city": "Madrid",
+      "home": "ESP",
+      "away": "ROU",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m179"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2019-11-18",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "FRO",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m180"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-03-21",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "POL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m181"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-03-21",
+      "city": "Haifa",
+      "home": "ISR",
+      "away": "SVN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m182"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-03-21",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "LAT",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m183"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-03-24",
+      "city": "Haifa",
+      "home": "ISR",
+      "away": "AUT",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m184"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-03-24",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "LAT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m185"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-03-24",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "MKD",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m186"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-06-07",
+      "city": "Klagenfurt",
+      "home": "AUT",
+      "away": "SVN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m187"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-06-07",
+      "city": "Rīga",
+      "home": "LAT",
+      "away": "ISR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m188"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-06-07",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "POL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m189"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-06-10",
+      "city": "Rīga",
+      "home": "LAT",
+      "away": "SVN",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m190"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-06-10",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "AUT",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m191"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-06-10",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "ISR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m192"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-09-05",
+      "city": "Be'er Sheva",
+      "home": "ISR",
+      "away": "MKD",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m193"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-09-06",
+      "city": "Salzburg",
+      "home": "AUT",
+      "away": "LAT",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m194"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-09-06",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "POL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m195"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-09-09",
+      "city": "Rīga",
+      "home": "LAT",
+      "away": "MKD",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m196"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-09-09",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "AUT",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m197"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-09-09",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "ISR",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m198"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-10-10",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "ISR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m199"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-10-10",
+      "city": "Rīga",
+      "home": "LAT",
+      "away": "POL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m200"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-10-10",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "SVN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m201"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-10-13",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "MKD",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m202"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-10-13",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "AUT",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m203"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-10-15",
+      "city": "Be'er Sheva",
+      "home": "ISR",
+      "away": "LAT",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m204"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-11-16",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "LAT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m205"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-11-16",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "MKD",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m206"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-11-16",
+      "city": "Jerusalem",
+      "home": "ISR",
+      "away": "POL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m207"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-11-19",
+      "city": "Rīga",
+      "home": "LAT",
+      "away": "AUT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m208"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-11-19",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "ISR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m209"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2019-11-19",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "SVN",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m210"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-03-22",
+      "city": "Shkodër",
+      "home": "ALB",
+      "away": "TUR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m211"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-03-22",
+      "city": "Andorra la V.",
+      "home": "AND",
+      "away": "ISL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m212"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-03-22",
+      "city": "Chișinău",
+      "home": "MDA",
+      "away": "FRA",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m213"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-03-25",
+      "city": "Eskişehir",
+      "home": "TUR",
+      "away": "MDA",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m214"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-03-25",
+      "city": "Andorra la V.",
+      "home": "AND",
+      "away": "ALB",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m215"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "ALB",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m216"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Chișinău",
+      "home": "MDA",
+      "away": "AND",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m217"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Konya",
+      "home": "TUR",
+      "away": "FRA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m218"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "Elbasan",
+      "home": "ALB",
+      "away": "MDA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m219"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "Andorra la V.",
+      "home": "AND",
+      "away": "FRA",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m220"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "TUR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m221"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-09-07",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "MDA",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m222"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-09-07",
+      "city": "İstanbul",
+      "home": "TUR",
+      "away": "AND",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m223"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-09-10",
+      "city": "Elbasan",
+      "home": "ALB",
+      "away": "ISL",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m224"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-09-10",
+      "city": "Chișinău",
+      "home": "MDA",
+      "away": "TUR",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m225"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-10-11",
+      "city": "Andorra la V.",
+      "home": "AND",
+      "away": "MDA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m226"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-10-11",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m227"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-10-11",
+      "city": "İstanbul",
+      "home": "TUR",
+      "away": "ALB",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m228"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-10-14",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "AND",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m229"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-10-14",
+      "city": "Chișinău",
+      "home": "MDA",
+      "away": "ALB",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m230"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-11-14",
+      "city": "İstanbul",
+      "home": "TUR",
+      "away": "ISL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m231"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-11-14",
+      "city": "Elbasan",
+      "home": "ALB",
+      "away": "AND",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m232"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-11-17",
+      "city": "Tiranë",
+      "home": "ALB",
+      "away": "FRA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m233"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-11-17",
+      "city": "Andorra la V.",
+      "home": "AND",
+      "away": "TUR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m234"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-11-17",
+      "city": "Chișinău",
+      "home": "MDA",
+      "away": "ISL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m235"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-03-21",
+      "city": "Astana",
+      "home": "KAZ",
+      "away": "SCO",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m236"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-03-21",
+      "city": "Lefkosia",
+      "home": "CYP",
+      "away": "SMR",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m237"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-03-21",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "RUS",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m238"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-03-24",
+      "city": "Nur-Sultan",
+      "home": "KAZ",
+      "away": "RUS",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m239"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-03-24",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "SCO",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m240"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-03-24",
+      "city": "Lefkosia",
+      "home": "CYP",
+      "away": "BEL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m241"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Saransk",
+      "home": "RUS",
+      "away": "SMR",
+      "score": [
+        9,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m242"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Bruxelles",
+      "home": "BEL",
+      "away": "KAZ",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m243"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "CYP",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m244"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "Nur-Sultan",
+      "home": "KAZ",
+      "away": "SMR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m245"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "SCO",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m246"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "N. Novgorod",
+      "home": "RUS",
+      "away": "CYP",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m247"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-09-06",
+      "city": "Lefkosia",
+      "home": "CYP",
+      "away": "KAZ",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m248"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-09-06",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "BEL",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m249"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-09-06",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "RUS",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m250"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-09-09",
+      "city": "Kaliningrad",
+      "home": "RUS",
+      "away": "KAZ",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m251"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-09-09",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "CYP",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m252"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-09-09",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "BEL",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m253"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-10-10",
+      "city": "Nur-Sultan",
+      "home": "KAZ",
+      "away": "CYP",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m254"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-10-10",
+      "city": "Bruxelles",
+      "home": "BEL",
+      "away": "SMR",
+      "score": [
+        9,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m255"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-10-10",
+      "city": "Moskva",
+      "home": "RUS",
+      "away": "SCO",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m256"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-10-13",
+      "city": "Nur-Sultan",
+      "home": "KAZ",
+      "away": "BEL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m257"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-10-13",
+      "city": "Lefkosia",
+      "home": "CYP",
+      "away": "RUS",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m258"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-10-13",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "SMR",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m259"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-11-16",
+      "city": "Lefkosia",
+      "home": "CYP",
+      "away": "SCO",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m260"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-11-16",
+      "city": "St. Peterburg",
+      "home": "RUS",
+      "away": "BEL",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m261"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-11-16",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "KAZ",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m262"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-11-19",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "CYP",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m263"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-11-19",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "RUS",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m264"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2019-11-19",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "KAZ",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m265"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-03-23",
+      "city": "Sarajevo",
+      "home": "BIH",
+      "away": "ARM",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m266"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-03-23",
+      "city": "Udine",
+      "home": "ITA",
+      "away": "FIN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m267"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-03-23",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "GRE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m268"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-03-26",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "FIN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m269"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-03-26",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "GRE",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m270"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-03-26",
+      "city": "Parma",
+      "home": "ITA",
+      "away": "LIE",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m271"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "LIE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m272"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Tampere",
+      "home": "FIN",
+      "away": "BIH",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m273"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-06-08",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "ITA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m274"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "ARM",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m275"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "Torino",
+      "home": "ITA",
+      "away": "BIH",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m276"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-06-11",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "FIN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m277"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-09-05",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "ITA",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m278"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-09-05",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "LIE",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m279"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-09-05",
+      "city": "Tampere",
+      "home": "FIN",
+      "away": "GRE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m280"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-09-08",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "BIH",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m281"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-09-08",
+      "city": "Tampere",
+      "home": "FIN",
+      "away": "ITA",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m282"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-09-08",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "LIE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m283"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-10-12",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "FIN",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m284"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-10-12",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "GRE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m285"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-10-12",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "ARM",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m286"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-10-15",
+      "city": "Turku",
+      "home": "FIN",
+      "away": "ARM",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m287"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-10-15",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "BIH",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m288"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-10-15",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "ITA",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m289"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-11-15",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "GRE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m290"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-11-15",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "LIE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m291"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-11-15",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "ITA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m292"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-11-18",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "FIN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m293"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-11-18",
+      "city": "Palermo",
+      "home": "ITA",
+      "away": "ARM",
+      "score": [
+        9,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m294"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "J",
+      "matchday": null,
+      "date": "2019-11-18",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "BIH",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m295"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2020-10-08",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "ROU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m296"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2020-10-08",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "HUN",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m297"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2020-11-12",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "ISL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m298"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2020-10-08",
+      "city": "Sarajevo",
+      "home": "BIH",
+      "away": "NIR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m299"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2020-10-08",
+      "city": "Trnava",
+      "home": "SVK",
+      "away": "IRL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m300"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2020-11-12",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "SVK",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m301"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2020-10-08",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "ISR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m302"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2020-10-08",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "SRB",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m303"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2020-11-12",
+      "city": "Beograd",
+      "home": "SRB",
+      "away": "SCO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m304"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2020-10-08",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "BLR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m305"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2020-10-08",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "KVX",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m306"
+    },
+    {
+      "stage": "qualifyingRound",
+      "group": null,
+      "matchday": null,
+      "date": "2020-11-12",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "MKD",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m307"
     }
   ],
   "scorers": [],
@@ -1173,6 +6121,409 @@
     },
     {
       "reason": "final a doble vuelta sin partido con el campeón como ganador; finalMatchId omitido"
+    },
+    {
+      "line": 226,
+      "reason": "columnas de clasificación no reconocidas: 5.Faroe Islands      10  1  0  9   4-30  3  [2 1 0 1 2-2 3; 1 ag]"
+    },
+    {
+      "line": 227,
+      "reason": "columnas de clasificación no reconocidas: 6.Malta              10  1  0  9   3-27  3  [2 1 0 1 2-2 3; 0 ag]"
+    },
+    {
+      "line": 267,
+      "reason": "columnas de clasificación no reconocidas: 3.North Macedonia    10  4  2  4  12-13 14  [2 1 1 0 3-2 4]"
+    },
+    {
+      "line": 268,
+      "reason": "columnas de clasificación no reconocidas: 4.Slovenia           10  4  2  4  16-11 14  [2 0 1 1 2-3 1]"
+    },
+    {
+      "line": 354,
+      "reason": "columnas de clasificación no reconocidas: 4.Cyprus             10  3  1  6  15-20 10  [2 1 1 0 3-2 4]"
+    },
+    {
+      "line": 355,
+      "reason": "columnas de clasificación no reconocidas: 5.Kazakhstan         10  3  1  6  13-17 10  [2 0 1 1 2-3 1]"
+    },
+    {
+      "line": 407,
+      "reason": "partido no reconocido: the final tournament is contested between the four group winners;"
+    },
+    {
+      "line": 408,
+      "reason": "partido no reconocido: if group winners have already qualified directly, their place is taken by the"
+    },
+    {
+      "line": 409,
+      "reason": "partido no reconocido: next highest-ranked country in their category;"
+    },
+    {
+      "line": 410,
+      "reason": "partido no reconocido: if a \"League\" has fewer than 4 entrants (because the other members qualified"
+    },
+    {
+      "line": 411,
+      "reason": "partido no reconocido: directly), its remaining slots are allocated to the best teams from the next"
+    },
+    {
+      "line": 412,
+      "reason": "partido no reconocido: lower \"League\" according to the overall rankings; because of this, three slots"
+    },
+    {
+      "line": 413,
+      "reason": "partido no reconocido: from League A were \"inherited\" by League B; as only four countries from League"
+    },
+    {
+      "line": 414,
+      "reason": "partido no reconocido: B failed to qualify directly, all three superflous spots from League A were"
+    },
+    {
+      "line": 415,
+      "reason": "partido no reconocido: eventually taken by sides from League C: Iceland were drawn together with"
+    },
+    {
+      "line": 416,
+      "reason": "partido no reconocido: Bulgaria, Hungary and Romania, three of the four teams from League C who failed"
+    },
+    {
+      "line": 417,
+      "reason": "partido no reconocido: to win their Nations League group."
+    },
+    {
+      "line": 419,
+      "reason": "partido no reconocido: League A  Playoff Qualifiers:"
+    },
+    {
+      "line": 420,
+      "reason": "partido no reconocido: Group 1: Netherlands        ( qualified directly )"
+    },
+    {
+      "line": 421,
+      "reason": "partido no reconocido: Group 2: Switzerland        ( qualified directly )"
+    },
+    {
+      "line": 422,
+      "reason": "partido no reconocido: Group 3: Portugal           ( qualified directly )"
+    },
+    {
+      "line": 423,
+      "reason": "partido no reconocido: Group 4: England            ( qualified directly )"
+    },
+    {
+      "line": 424,
+      "reason": "partido no reconocido: Further Ranking:"
+    },
+    {
+      "line": 425,
+      "reason": "partido no reconocido: 5: Belgium            ( qualified directly )"
+    },
+    {
+      "line": 426,
+      "reason": "partido no reconocido: 6: France             ( qualified directly )"
+    },
+    {
+      "line": 427,
+      "reason": "partido no reconocido: 7: Spain              ( qualified directly )"
+    },
+    {
+      "line": 428,
+      "reason": "partido no reconocido: 8: Italy              ( qualified directly )"
+    },
+    {
+      "line": 429,
+      "reason": "partido no reconocido: 9: Croatia            ( qualified directly )"
+    },
+    {
+      "line": 430,
+      "reason": "partido no reconocido: 10: Poland             ( qualified directly )"
+    },
+    {
+      "line": 431,
+      "reason": "partido no reconocido: 11: Germany            ( qualified directly )"
+    },
+    {
+      "line": 432,
+      "reason": "partido no reconocido: 12:  Iceland"
+    },
+    {
+      "line": 434,
+      "reason": "partido no reconocido: League A Playoffs"
+    },
+    {
+      "line": 440,
+      "reason": "partido no reconocido: Final"
+    },
+    {
+      "line": 443,
+      "reason": "partido no reconocido: League B  Playoff Qualifiers:"
+    },
+    {
+      "line": 444,
+      "reason": "partido no reconocido: Group 1: Ukraine            ( qualified directly )"
+    },
+    {
+      "line": 445,
+      "reason": "partido no reconocido: Group 2: Sweden             ( qualified directly )"
+    },
+    {
+      "line": 446,
+      "reason": "partido no reconocido: Group 3:  Bosnia-Herzegovina"
+    },
+    {
+      "line": 447,
+      "reason": "partido no reconocido: Group 4: Denmark            ( qualified directly )"
+    },
+    {
+      "line": 448,
+      "reason": "partido no reconocido: Further Ranking:"
+    },
+    {
+      "line": 449,
+      "reason": "partido no reconocido: 5: Russia             ( qualified directly )"
+    },
+    {
+      "line": 450,
+      "reason": "partido no reconocido: 6: Austria            ( qualified directly )"
+    },
+    {
+      "line": 451,
+      "reason": "partido no reconocido: 7: Wales              ( qualified directly )"
+    },
+    {
+      "line": 452,
+      "reason": "partido no reconocido: 8: Czech Republic     ( qualified directly )"
+    },
+    {
+      "line": 453,
+      "reason": "partido no reconocido: 9:  Slovakia"
+    },
+    {
+      "line": 454,
+      "reason": "partido no reconocido: 10: Turkey             ( qualified directly )"
+    },
+    {
+      "line": 455,
+      "reason": "partido no reconocido: 11:  Ireland"
+    },
+    {
+      "line": 456,
+      "reason": "partido no reconocido: 12:  Northern Ireland"
+    },
+    {
+      "line": 458,
+      "reason": "partido no reconocido: League B Playoffs"
+    },
+    {
+      "line": 464,
+      "reason": "partido no reconocido: Final"
+    },
+    {
+      "line": 467,
+      "reason": "partido no reconocido: League C  Playoff Qualifiers:"
+    },
+    {
+      "line": 468,
+      "reason": "partido no reconocido: Group 1:  Scotland"
+    },
+    {
+      "line": 469,
+      "reason": "partido no reconocido: Group 2: Finland            ( qualified directly )"
+    },
+    {
+      "line": 470,
+      "reason": "partido no reconocido: Group 3:  Norway"
+    },
+    {
+      "line": 471,
+      "reason": "partido no reconocido: Group 4:  Serbia"
+    },
+    {
+      "line": 472,
+      "reason": "partido no reconocido: Further Ranking:"
+    },
+    {
+      "line": 473,
+      "reason": "partido no reconocido: 5:  Bulgaria     (to  League A Playoffs  )"
+    },
+    {
+      "line": 474,
+      "reason": "partido no reconocido: 6:  Israel"
+    },
+    {
+      "line": 475,
+      "reason": "partido no reconocido: 7:  Hungary      (to  League A Playoffs  )"
+    },
+    {
+      "line": 476,
+      "reason": "partido no reconocido: 8:  Romania      (to  League A Playoffs  )"
+    },
+    {
+      "line": 477,
+      "reason": "partido no reconocido: 9: Greece"
+    },
+    {
+      "line": 478,
+      "reason": "partido no reconocido: 10: Albania"
+    },
+    {
+      "line": 479,
+      "reason": "partido no reconocido: 11: Montenegro"
+    },
+    {
+      "line": 480,
+      "reason": "partido no reconocido: 12: Cyprus"
+    },
+    {
+      "line": 481,
+      "reason": "partido no reconocido: 13: Estonia"
+    },
+    {
+      "line": 482,
+      "reason": "partido no reconocido: 14: Slovenia"
+    },
+    {
+      "line": 483,
+      "reason": "partido no reconocido: 15: Lithuania"
+    },
+    {
+      "line": 485,
+      "reason": "partido no reconocido: League C Playoffs"
+    },
+    {
+      "line": 491,
+      "reason": "partido no reconocido: Final"
+    },
+    {
+      "line": 494,
+      "reason": "partido no reconocido: League D  Playoff Qualifiers:"
+    },
+    {
+      "line": 495,
+      "reason": "partido no reconocido: Group 1:  Georgia"
+    },
+    {
+      "line": 496,
+      "reason": "partido no reconocido: Group 2:  Belarus"
+    },
+    {
+      "line": 497,
+      "reason": "partido no reconocido: Group 3:  Kosovo"
+    },
+    {
+      "line": 498,
+      "reason": "partido no reconocido: Group 4:  North Macedonia"
+    },
+    {
+      "line": 499,
+      "reason": "partido no reconocido: Further Ranking:"
+    },
+    {
+      "line": 500,
+      "reason": "partido no reconocido: 5: Luxembourg"
+    },
+    {
+      "line": 501,
+      "reason": "partido no reconocido: 6: Armenia"
+    },
+    {
+      "line": 502,
+      "reason": "partido no reconocido: 7: Azerbaijan"
+    },
+    {
+      "line": 503,
+      "reason": "partido no reconocido: 8: Kazakhstan"
+    },
+    {
+      "line": 504,
+      "reason": "partido no reconocido: 9: Moldova"
+    },
+    {
+      "line": 505,
+      "reason": "partido no reconocido: 10: Gibraltar"
+    },
+    {
+      "line": 506,
+      "reason": "partido no reconocido: 11: Faroe Islands"
+    },
+    {
+      "line": 507,
+      "reason": "partido no reconocido: 12: Latvia"
+    },
+    {
+      "line": 508,
+      "reason": "partido no reconocido: 13: Liechtenstein"
+    },
+    {
+      "line": 509,
+      "reason": "partido no reconocido: 14: Andorra"
+    },
+    {
+      "line": 510,
+      "reason": "partido no reconocido: 15: Malta"
+    },
+    {
+      "line": 511,
+      "reason": "partido no reconocido: 16: San Marino"
+    },
+    {
+      "line": 513,
+      "reason": "partido no reconocido: League D Playoffs"
+    },
+    {
+      "line": 519,
+      "reason": "partido no reconocido: Final"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Frankfurt/Main Germany-Northern Ireland)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Paris St-Denis France-Iceland)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Paris St-Denis France-Albania)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Paris St-Denis France-Andorra)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Paris St-Denis France-Turkey)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Paris St-Denis France-Moldova)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo F (FRO: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo F (MLT: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo G (MKD: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo G (SVN: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo I (CYP: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo I (KAZ: retirado o fila perdida)"
+    },
+    {
+      "reason": "grupo C omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 62 != clasificación 69)"
+    },
+    {
+      "reason": "grupo F omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 90 != suma GA 40 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo G omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 56 != suma GA 60 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo H omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 63 != clasificación 80)"
+    },
+    {
+      "reason": "grupo I omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 90 != suma GA 81 (faltan equipos o columnas))"
     }
   ],
   "teamsCount": 24

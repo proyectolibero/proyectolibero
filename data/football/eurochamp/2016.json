@@ -13,11 +13,11 @@
     "finalMatchId": "m051"
   },
   "coverage": {
-    "matches": 51,
-    "goals": 108,
-    "scope": "final",
+    "matches": 327,
+    "goals": 824,
+    "scope": "all",
     "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "note": "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar)."
   },
   "sources": [
     {
@@ -37,6 +37,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "FRA",
@@ -78,11 +79,11 @@
           "ga": 4,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "WAL",
@@ -124,11 +125,11 @@
           "ga": 6,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "C",
+      "stage": "group",
       "standings": [
         {
           "team": "GER",
@@ -170,11 +171,11 @@
           "ga": 5,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "D",
+      "stage": "group",
       "standings": [
         {
           "team": "CRO",
@@ -216,11 +217,11 @@
           "ga": 5,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "E",
+      "stage": "group",
       "standings": [
         {
           "team": "ITA",
@@ -262,11 +263,11 @@
           "ga": 3,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "F",
+      "stage": "group",
       "standings": [
         {
           "team": "HUN",
@@ -308,8 +309,139 @@
           "ga": 4,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "B",
+      "standings": [
+        {
+          "team": "BEL",
+          "p": 10,
+          "w": 7,
+          "d": 2,
+          "l": 1,
+          "gf": 24,
+          "ga": 5,
+          "pts": 23
+        },
+        {
+          "team": "WAL",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 11,
+          "ga": 4,
+          "pts": 21
+        },
+        {
+          "team": "BIH",
+          "p": 10,
+          "w": 5,
+          "d": 2,
+          "l": 3,
+          "gf": 17,
+          "ga": 12,
+          "pts": 17
+        },
+        {
+          "team": "ISR",
+          "p": 10,
+          "w": 4,
+          "d": 1,
+          "l": 5,
+          "gf": 16,
+          "ga": 14,
+          "pts": 13
+        },
+        {
+          "team": "CYP",
+          "p": 10,
+          "w": 4,
+          "d": 0,
+          "l": 6,
+          "gf": 16,
+          "ga": 17,
+          "pts": 12
+        },
+        {
+          "team": "AND",
+          "p": 10,
+          "w": 0,
+          "d": 0,
+          "l": 10,
+          "gf": 4,
+          "ga": 36,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "G",
+      "standings": [
+        {
+          "team": "AUT",
+          "p": 10,
+          "w": 9,
+          "d": 1,
+          "l": 0,
+          "gf": 22,
+          "ga": 5,
+          "pts": 28
+        },
+        {
+          "team": "RUS",
+          "p": 10,
+          "w": 6,
+          "d": 2,
+          "l": 2,
+          "gf": 21,
+          "ga": 5,
+          "pts": 20
+        },
+        {
+          "team": "SWE",
+          "p": 10,
+          "w": 5,
+          "d": 3,
+          "l": 2,
+          "gf": 15,
+          "ga": 9,
+          "pts": 18
+        },
+        {
+          "team": "MNE",
+          "p": 10,
+          "w": 3,
+          "d": 2,
+          "l": 5,
+          "gf": 10,
+          "ga": 13,
+          "pts": 11
+        },
+        {
+          "team": "LIE",
+          "p": 10,
+          "w": 1,
+          "d": 2,
+          "l": 7,
+          "gf": 2,
+          "ga": 26,
+          "pts": 5
+        },
+        {
+          "team": "MDA",
+          "p": 10,
+          "w": 0,
+          "d": 2,
+          "l": 8,
+          "gf": 4,
+          "ga": 16,
+          "pts": 2
+        }
+      ]
     }
   ],
   "matches": [
@@ -413,7 +545,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2016e",
+        "text": "19- 6-16 Lille          France             0-0 Switzerland\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -515,7 +652,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2016e",
+        "text": "20- 6-16 Saint-Etienne  Slovakia           0-0 England\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -617,7 +759,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2016e",
+        "text": "21- 6-16 Marseille      Ukraine            0-1 Poland\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -719,7 +866,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2016e",
+        "text": "21- 6-16 Lens           Czech Republic     0-2 Turkey\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -821,7 +973,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2016e",
+        "text": "22- 6-16 Nice           Sweden             0-1 Belgium\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -923,7 +1080,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2016e",
+        "text": "22- 6-16 Paris St-Denis Iceland            2-1 Austria\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m037",
@@ -1067,7 +1229,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2016e",
+        "text": "27- 6-16 Nice           England            1-2 Iceland\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m045",
@@ -1147,7 +1314,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2016e",
+        "text": "3- 7-16 Paris St-Denis France             5-2 Iceland\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m049",
@@ -1181,7 +1353,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2016e",
+        "text": "7- 7-16 Marseille      France             2-0 Germany\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m051",
@@ -1200,10 +1377,5112 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2016e",
+        "text": "10- 7-16 Paris St-Denis France             0-1 Portugal           [aet]\n\n\n\n\nEuropean Championship Overview File\n\n2012\n\n2021\n\n2016 (match details final tournament)\n\n\nAbout this document\nThanks to Timo Toivonen for a correction\nPrepared and maintained by Karel Stokkermans for the\nRec.Sport.Soccer Statistics Foundation\n\nAuthor: Karel Stokkermans\nLast updated: 15 Oct 2020\n\n(C) Copyright Karel Stokkermans and RSSSF 2014/20\nYou are free to copy this document in whole or part provided that proper\nacknowledgement is given to the author. All rights reserved.\n\n",
+        "lang": "en"
+      }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2014-09-09",
+      "city": "Astana",
+      "home": "KAZ",
+      "away": "LAT",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2014-09-09",
+      "city": "Praha",
+      "home": "CZE",
+      "away": "NED",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2014-09-09",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "TUR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2014-10-10",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "ISL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2014-10-10",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "KAZ",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2014-10-10",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "CZE",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2014-10-13",
+      "city": "Astana",
+      "home": "KAZ",
+      "away": "CZE",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2014-10-13",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "NED",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2014-10-13",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "TUR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2014-11-16",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "LAT",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2014-11-16",
+      "city": "Plzen",
+      "home": "CZE",
+      "away": "ISL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-03-28",
+      "city": "Astana",
+      "home": "KAZ",
+      "away": "ISL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-03-28",
+      "city": "Praha",
+      "home": "CZE",
+      "away": "LAT",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-03-28",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "TUR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-06-12",
+      "city": "Almaty",
+      "home": "KAZ",
+      "away": "TUR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-06-12",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "CZE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-06-12",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "NED",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-09-03",
+      "city": "Plzen",
+      "home": "CZE",
+      "away": "KAZ",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-09-03",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "ISL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-09-03",
+      "city": "Konya",
+      "home": "TUR",
+      "away": "LAT",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-09-06",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "CZE",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-09-06",
+      "city": "Konya",
+      "home": "TUR",
+      "away": "NED",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-09-06",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "KAZ",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-10-10",
+      "city": "Reykjavík",
+      "home": "ISL",
+      "away": "LAT",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-10-10",
+      "city": "Astana",
+      "home": "KAZ",
+      "away": "NED",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-10-10",
+      "city": "Praha",
+      "home": "CZE",
+      "away": "TUR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-10-13",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "KAZ",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-10-13",
+      "city": "Amsterdam",
+      "home": "NED",
+      "away": "CZE",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "A",
+      "matchday": null,
+      "date": "2015-10-13",
+      "city": "Bursa",
+      "home": "TUR",
+      "away": "ISL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2014-09-09",
+      "city": "Andorra la V.",
+      "home": "AND",
+      "away": "WAL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2014-09-09",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "CYP",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2014-10-10",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "AND",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2014-10-10",
+      "city": "Lefkosia",
+      "home": "CYP",
+      "away": "ISR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2014-10-10",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "BIH",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2014-10-13",
+      "city": "Andorra la V.",
+      "home": "AND",
+      "away": "ISR",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2014-10-13",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "BEL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2014-10-13",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "CYP",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2014-11-16",
+      "city": "Bruxelles",
+      "home": "BEL",
+      "away": "WAL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2014-11-16",
+      "city": "Lefkosia",
+      "home": "CYP",
+      "away": "AND",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2014-11-16",
+      "city": "Haifa",
+      "home": "ISR",
+      "away": "BIH",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-03-28",
+      "city": "Haifa",
+      "home": "ISR",
+      "away": "WAL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-03-28",
+      "city": "Andorra la V.",
+      "home": "AND",
+      "away": "BIH",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-03-28",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "CYP",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-03-31",
+      "city": "Jerusalem",
+      "home": "ISR",
+      "away": "BEL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-06-12",
+      "city": "Andorra la V.",
+      "home": "AND",
+      "away": "CYP",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-06-12",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "ISR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-06-12",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "BEL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-09-03",
+      "city": "Bruxelles",
+      "home": "BEL",
+      "away": "BIH",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-09-03",
+      "city": "Lefkosia",
+      "home": "CYP",
+      "away": "WAL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-09-03",
+      "city": "Haifa",
+      "home": "ISR",
+      "away": "AND",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-09-06",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "ISR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-09-06",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "AND",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-09-06",
+      "city": "Lefkosia",
+      "home": "CYP",
+      "away": "BEL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-10-10",
+      "city": "Andorra la V.",
+      "home": "AND",
+      "away": "BEL",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-10-10",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "WAL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-10-10",
+      "city": "Jerusalem",
+      "home": "ISR",
+      "away": "CYP",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-10-13",
+      "city": "Brussel",
+      "home": "BEL",
+      "away": "ISR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-10-13",
+      "city": "Lefkosia",
+      "home": "CYP",
+      "away": "BIH",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "B",
+      "matchday": null,
+      "date": "2015-10-13",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "AND",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2014-09-08",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "BLR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2014-09-08",
+      "city": "Valencia",
+      "home": "ESP",
+      "away": "MKD",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2014-09-08",
+      "city": "Kyiv",
+      "home": "UKR",
+      "away": "SVK",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2014-10-09",
+      "city": "Barysau",
+      "home": "BLR",
+      "away": "UKR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2014-10-09",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "LUX",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2014-10-09",
+      "city": "Zilina",
+      "home": "SVK",
+      "away": "ESP",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2014-10-12",
+      "city": "Lviv",
+      "home": "UKR",
+      "away": "MKD",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2014-10-12",
+      "city": "Barysau",
+      "home": "BLR",
+      "away": "SVK",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2014-10-12",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "ESP",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2014-11-15",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "UKR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2014-11-15",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "SVK",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2014-11-15",
+      "city": "Huelva",
+      "home": "ESP",
+      "away": "BLR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-03-27",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "BLR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-03-27",
+      "city": "Zilina",
+      "home": "SVK",
+      "away": "LUX",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-03-27",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "UKR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-06-14",
+      "city": "Lviv",
+      "home": "UKR",
+      "away": "LUX",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-06-14",
+      "city": "Barysau",
+      "home": "BLR",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-06-14",
+      "city": "Zilina",
+      "home": "SVK",
+      "away": "MKD",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-09-05",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "MKD",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-09-05",
+      "city": "Lviv",
+      "home": "UKR",
+      "away": "BLR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-09-05",
+      "city": "Oviedo",
+      "home": "ESP",
+      "away": "SVK",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-09-08",
+      "city": "Barysau",
+      "home": "BLR",
+      "away": "LUX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-09-08",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-09-08",
+      "city": "Zilina",
+      "home": "SVK",
+      "away": "UKR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-10-09",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "UKR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-10-09",
+      "city": "Zilina",
+      "home": "SVK",
+      "away": "BLR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-10-09",
+      "city": "Logroño",
+      "home": "ESP",
+      "away": "LUX",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-10-12",
+      "city": "Barysau",
+      "home": "BLR",
+      "away": "MKD",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-10-12",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "SVK",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2015-10-12",
+      "city": "Kyiv",
+      "home": "UKR",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2014-09-07",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "IRL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2014-09-07",
+      "city": "Dortmund",
+      "home": "GER",
+      "away": "SCO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2014-09-07",
+      "city": "Faro",
+      "home": "GIB",
+      "away": "POL",
+      "score": [
+        0,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2014-10-11",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "GIB",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2014-10-11",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "GEO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m145"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2014-10-11",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "GER",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2014-10-14",
+      "city": "Gelsenkirchen",
+      "home": "GER",
+      "away": "IRL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2014-10-14",
+      "city": "Faro",
+      "home": "GIB",
+      "away": "GEO",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m148"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2014-10-14",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "SCO",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m149"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2014-11-14",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "POL",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2014-11-14",
+      "city": "Nürnberg",
+      "home": "GER",
+      "away": "GIB",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2014-11-14",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "IRL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m152"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-03-29",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "GER",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m153"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-03-29",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "GIB",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m154"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-03-29",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "POL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m155"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-06-13",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "GEO",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m156"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-06-13",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "SCO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m157"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-06-13",
+      "city": "Faro",
+      "home": "GIB",
+      "away": "GER",
+      "score": [
+        0,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m158"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-09-04",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "SCO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m159"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-09-04",
+      "city": "Faro",
+      "home": "GIB",
+      "away": "IRL",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m160"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-09-07",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "GIB",
+      "score": [
+        8,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m161"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-09-07",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "GEO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m162"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-09-07",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "GER",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m163"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-10-08",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "GIB",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m164"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-10-08",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "GER",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m165"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-10-08",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "POL",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m166"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-10-11",
+      "city": "Leipzig",
+      "home": "GER",
+      "away": "GEO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m167"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-10-11",
+      "city": "Faro",
+      "home": "GIB",
+      "away": "SCO",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m168"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "D",
+      "matchday": null,
+      "date": "2015-10-11",
+      "city": "Warszawa",
+      "home": "POL",
+      "away": "IRL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m169"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2014-09-08",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "SVN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m170"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2014-09-08",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "LTU",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m171"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2014-09-08",
+      "city": "Basel",
+      "home": "SUI",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m172"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2014-10-09",
+      "city": "London",
+      "home": "ENG",
+      "away": "SMR",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m173"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2014-10-09",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "EST",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m174"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2014-10-09",
+      "city": "Maribor",
+      "home": "SVN",
+      "away": "SUI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m175"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2014-10-12",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "ENG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m176"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2014-10-12",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "SVN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m177"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2014-10-14",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "SUI",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m178"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2014-11-15",
+      "city": "London",
+      "home": "ENG",
+      "away": "SVN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m179"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2014-11-15",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "EST",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m180"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2014-11-15",
+      "city": "Sankt Gallen",
+      "home": "SUI",
+      "away": "LTU",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m181"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-03-27",
+      "city": "London",
+      "home": "ENG",
+      "away": "LTU",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m182"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-03-27",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "SMR",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m183"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-03-27",
+      "city": "Luzern",
+      "home": "SUI",
+      "away": "EST",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m184"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-06-14",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "SMR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m185"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-06-14",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "ENG",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m186"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-06-14",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "SUI",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m187"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-09-05",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "LTU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m188"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-09-05",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "ENG",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m189"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-09-05",
+      "city": "Basel",
+      "home": "SUI",
+      "away": "SVN",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m190"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-09-08",
+      "city": "London",
+      "home": "ENG",
+      "away": "SUI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m191"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-09-08",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "SMR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m192"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-09-08",
+      "city": "Maribor",
+      "home": "SVN",
+      "away": "EST",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m193"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-10-09",
+      "city": "London",
+      "home": "ENG",
+      "away": "EST",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m194"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-10-09",
+      "city": "Ljubljana",
+      "home": "SVN",
+      "away": "LTU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m195"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-10-09",
+      "city": "Sankt Gallen",
+      "home": "SUI",
+      "away": "SMR",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m196"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-10-12",
+      "city": "Tallinn",
+      "home": "EST",
+      "away": "SUI",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m197"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-10-12",
+      "city": "Vilnius",
+      "home": "LTU",
+      "away": "ENG",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m198"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "E",
+      "matchday": null,
+      "date": "2015-10-12",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "SVN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m199"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2014-09-07",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "NIR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m200"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2014-09-07",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "FIN",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m201"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2014-09-07",
+      "city": "Piraeus",
+      "home": "GRE",
+      "away": "ROU",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m202"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2014-10-11",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "HUN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m203"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2014-10-11",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "GRE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m204"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2014-10-11",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "FRO",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m205"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2014-10-14",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "HUN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m206"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2014-10-14",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "ROU",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m207"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2014-10-14",
+      "city": "Piraeus",
+      "home": "GRE",
+      "away": "NIR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m208"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2014-11-14",
+      "city": "Piraeus",
+      "home": "GRE",
+      "away": "FRO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m209"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2014-11-14",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "FIN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m210"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2014-11-14",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "NIR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m211"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-03-29",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "FIN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m212"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-03-29",
+      "city": "Ploiesti",
+      "home": "ROU",
+      "away": "FRO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m213"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-03-29",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "GRE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m214"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-06-13",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "HUN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m215"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-06-13",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "GRE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m216"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-06-13",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "ROU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m217"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-09-04",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "NIR",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m218"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-09-04",
+      "city": "Piraeus",
+      "home": "GRE",
+      "away": "FIN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m219"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-09-04",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "ROU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m220"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-09-07",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "FRO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m221"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-09-07",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "HUN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m222"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-09-07",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "GRE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m223"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-10-08",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "FRO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m224"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-10-08",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "GRE",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m225"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-10-08",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "FIN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m226"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-10-11",
+      "city": "Tórshavn",
+      "home": "FRO",
+      "away": "ROU",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m227"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-10-11",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "NIR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m228"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "F",
+      "matchday": null,
+      "date": "2015-10-11",
+      "city": "Piraeus",
+      "home": "GRE",
+      "away": "HUN",
+      "score": [
+        4,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m229"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2014-09-08",
+      "city": "Khimki",
+      "home": "RUS",
+      "away": "LIE",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m230"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2014-09-08",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m231"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2014-09-08",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "MDA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m232"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2014-10-09",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "MNE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m233"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2014-10-09",
+      "city": "Chisinau",
+      "home": "MDA",
+      "away": "AUT",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m234"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2014-10-09",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "RUS",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m235"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2014-10-12",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "MNE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m236"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2014-10-12",
+      "city": "Moskva",
+      "home": "RUS",
+      "away": "MDA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m237"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2014-10-12",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "LIE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m238"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2014-11-15",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "RUS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m239"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2014-11-15",
+      "city": "Chisinau",
+      "home": "MDA",
+      "away": "LIE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m240"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2014-11-15",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m241"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-03-27",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "AUT",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m242"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-03-27",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "RUS",
+      "score": [
+        0,
+        3
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m243"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-03-27",
+      "city": "Chisinau",
+      "home": "MDA",
+      "away": "SWE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m244"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-06-14",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "MDA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m245"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-06-14",
+      "city": "Moskva",
+      "home": "RUS",
+      "away": "AUT",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m246"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-06-14",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "MNE",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m247"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-09-05",
+      "city": "Moskva",
+      "home": "RUS",
+      "away": "SWE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m248"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-09-05",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "MDA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m249"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-09-05",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "LIE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m250"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-09-08",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "RUS",
+      "score": [
+        0,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m251"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-09-08",
+      "city": "Chisinau",
+      "home": "MDA",
+      "away": "MNE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m252"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-09-08",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "AUT",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m253"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-10-09",
+      "city": "Vaduz",
+      "home": "LIE",
+      "away": "SWE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m254"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-10-09",
+      "city": "Chisinau",
+      "home": "MDA",
+      "away": "RUS",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m255"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-10-09",
+      "city": "Podgorica",
+      "home": "MNE",
+      "away": "AUT",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m256"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-10-12",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "LIE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m257"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-10-12",
+      "city": "St. Peterburg",
+      "home": "RUS",
+      "away": "MNE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m258"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "G",
+      "matchday": null,
+      "date": "2015-10-12",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "MDA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m259"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2014-09-09",
+      "city": "Baki",
+      "home": "AZE",
+      "away": "BUL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m260"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2014-09-09",
+      "city": "Zagreb",
+      "home": "CRO",
+      "away": "MLT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m261"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2014-09-09",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "ITA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m262"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2014-10-10",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "CRO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m263"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2014-10-10",
+      "city": "Palermo",
+      "home": "ITA",
+      "away": "AZE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m264"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2014-10-10",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "NOR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m265"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2014-10-13",
+      "city": "Osijek",
+      "home": "CRO",
+      "away": "AZE",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m266"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2014-10-13",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "ITA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m267"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2014-10-13",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "BUL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m268"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2014-11-16",
+      "city": "Baki",
+      "home": "AZE",
+      "away": "NOR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m269"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2014-11-16",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "MLT",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m270"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2014-11-16",
+      "city": "Milano",
+      "home": "ITA",
+      "away": "CRO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m271"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-03-28",
+      "city": "Baki",
+      "home": "AZE",
+      "away": "MLT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m272"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-03-28",
+      "city": "Zagreb",
+      "home": "CRO",
+      "away": "NOR",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m273"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-03-28",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "ITA",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m274"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-06-12",
+      "city": "Split",
+      "home": "CRO",
+      "away": "ITA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m275"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-06-12",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "BUL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m276"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-06-12",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "AZE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m277"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-09-03",
+      "city": "Baki",
+      "home": "AZE",
+      "away": "CRO",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m278"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-09-03",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "NOR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m279"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-09-03",
+      "city": "Firenze",
+      "home": "ITA",
+      "away": "MLT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m280"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-09-06",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "AZE",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m281"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-09-06",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "CRO",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m282"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-09-06",
+      "city": "Palermo",
+      "home": "ITA",
+      "away": "BUL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m283"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-10-10",
+      "city": "Baki",
+      "home": "AZE",
+      "away": "ITA",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m284"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-10-10",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "MLT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m285"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-10-10",
+      "city": "Zagreb",
+      "home": "CRO",
+      "away": "BUL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m286"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-10-13",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "AZE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m287"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-10-13",
+      "city": "Roma",
+      "home": "ITA",
+      "away": "NOR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m288"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2015-10-13",
+      "city": "Ta' Qali",
+      "home": "MLT",
+      "away": "CRO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m289"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2014-09-07",
+      "city": "København",
+      "home": "DEN",
+      "away": "ARM",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m290"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2014-09-07",
+      "city": "Aveiro",
+      "home": "POR",
+      "away": "ALB",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m291"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2014-09-07",
+      "city": "Beograd",
+      "home": "SRB",
+      "away": "FRA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m292"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2014-10-11",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "SRB",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m293"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2014-10-11",
+      "city": "Elbasan",
+      "home": "ALB",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m294"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2014-10-11",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "POR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m295"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2014-10-14",
+      "city": "København",
+      "home": "DEN",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m296"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2014-10-14",
+      "city": "Beograd",
+      "home": "SRB",
+      "away": "ALB",
+      "score": [
+        0,
+        3
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m297"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2014-10-14",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "FRA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m298"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2014-11-14",
+      "city": "Faro",
+      "home": "POR",
+      "away": "ARM",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m299"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2014-11-14",
+      "city": "Beograd",
+      "home": "SRB",
+      "away": "DEN",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m300"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2014-11-14",
+      "city": "Rennes",
+      "home": "FRA",
+      "away": "ALB",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m301"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-03-29",
+      "city": "Elbasan",
+      "home": "ALB",
+      "away": "ARM",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m302"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-03-29",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "SRB",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m303"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-03-29",
+      "city": "Saint-Etienne",
+      "home": "FRA",
+      "away": "DEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m304"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-06-13",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "POR",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m305"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-06-13",
+      "city": "København",
+      "home": "DEN",
+      "away": "SRB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m306"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-06-13",
+      "city": "Elbasan",
+      "home": "ALB",
+      "away": "FRA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m307"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-09-04",
+      "city": "København",
+      "home": "DEN",
+      "away": "ALB",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m308"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-09-04",
+      "city": "Novi Sad",
+      "home": "SRB",
+      "away": "ARM",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m309"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-09-04",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m310"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-09-07",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "DEN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m311"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-09-07",
+      "city": "Elbasan",
+      "home": "ALB",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m312"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-09-07",
+      "city": "Bordeaux",
+      "home": "FRA",
+      "away": "SRB",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m313"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-10-08",
+      "city": "Elbasan",
+      "home": "ALB",
+      "away": "SRB",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m314"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-10-08",
+      "city": "Braga",
+      "home": "POR",
+      "away": "DEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m315"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-10-08",
+      "city": "Nice",
+      "home": "FRA",
+      "away": "ARM",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m316"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-10-11",
+      "city": "Yerevan",
+      "home": "ARM",
+      "away": "ALB",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m317"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-10-11",
+      "city": "Beograd",
+      "home": "SRB",
+      "away": "POR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m318"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-10-11",
+      "city": "København",
+      "home": "DEN",
+      "away": "FRA",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m319"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-11-12",
+      "city": "Olso",
+      "home": "NOR",
+      "away": "HUN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m320"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-11-13",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "IRL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m321"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-11-14",
+      "city": "Lviv",
+      "home": "UKR",
+      "away": "SVN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m322"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-11-14",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "DEN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m323"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-11-15",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "NOR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m324"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-11-16",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "BIH",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m325"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-11-17",
+      "city": "Maribor",
+      "home": "SVN",
+      "away": "UKR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m326"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "I",
+      "matchday": null,
+      "date": "2015-11-17",
+      "city": "København",
+      "home": "DEN",
+      "away": "SWE",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m327"
     }
   ],
   "scorers": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "line": 29,
+      "reason": "partido no reconocido: France qualify as hosts."
+    },
+    {
+      "line": 72,
+      "reason": "columnas de clasificación no reconocidas: 5.Kazakhstan         10  1  2  7   7-18  5  [2 1 1 0 1-0 4]"
+    },
+    {
+      "line": 73,
+      "reason": "columnas de clasificación no reconocidas: 6.Latvia             10  0  5  5   6-19  5  [2 0 1 1 0-1 1]"
+    },
+    {
+      "line": 158,
+      "reason": "columnas de clasificación no reconocidas: 5.Luxembourg         10  1  1  8   6-27  4  [2 1 0 1 3-3 3; 2 ag]"
+    },
+    {
+      "line": 159,
+      "reason": "columnas de clasificación no reconocidas: 6.Macedonia          10  1  1  8   6-18  4  [2 1 0 1 3-3 3; 0 ag]"
+    },
+    {
+      "line": 243,
+      "reason": "columnas de clasificación no reconocidas: 4.Estonia            10  3  1  6   4- 9 10  [2 1 0 1 1-1 3]"
+    },
+    {
+      "line": 244,
+      "reason": "columnas de clasificación no reconocidas: 5.Lithuania          10  3  1  6   7-18 10  [2 1 0 1 1-1 3]"
+    },
+    {
+      "line": 287,
+      "reason": "columnas de clasificación no reconocidas: 5.Faroe Islands      10  2  0  8   6-17  6  [2 2 0 0 3-1 6]"
+    },
+    {
+      "line": 288,
+      "reason": "columnas de clasificación no reconocidas: 6.Greece             10  1  3  6   7-14  6  [2 0 0 2 1-3 0]"
+    },
+    {
+      "line": 369,
+      "reason": "columnas de clasificación no reconocidas: 2.CROATIA            10  6  3  1  20- 5 20  [-1]"
+    },
+    {
+      "line": 376,
+      "reason": "partido no reconocido: of their match behind closed doors against Italy on 12- 6-15"
+    },
+    {
+      "line": 417,
+      "reason": "columnas de clasificación no reconocidas: 4.Serbia              8  2  1  5   8-13  4  [-3]"
+    },
+    {
+      "line": 419,
+      "reason": "columnas de clasificación no reconocidas: -.France              play  hors concours  friendlies against team on bye"
+    },
+    {
+      "line": 428,
+      "reason": "partido no reconocido: Ranking:"
+    },
+    {
+      "line": 443,
+      "reason": "partido no reconocido: First Legs"
+    },
+    {
+      "line": 449,
+      "reason": "partido no reconocido: Second Legs"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (´ Turkey-Kazakhstan)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Frankfurt/Main Germany-Poland)"
+    },
+    {
+      "reason": "fila de clasificación omitida: país no resoluble (France              play  hors concours  friendlies against team on bye)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo A (KAZ: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo A (LAT: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo C (LUX: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo C (MKD: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo E (EST: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo E (LTU: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo F (FRO: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo F (GRE: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo H (CRO: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo I (SRB: retirado o fila perdida)"
+    },
+    {
+      "reason": "grupo A omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 67 != suma GA 43 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo C omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 62 != suma GA 29 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo D omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 106 != clasificación 110)"
+    },
+    {
+      "reason": "grupo E omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 74 != suma GA 58 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo F omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 47 != suma GA 29 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo H omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 48 != suma GA 63 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo I omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 121 != suma GA 99 (faltan equipos o columnas))"
+    }
+  ],
   "teamsCount": 24
 }

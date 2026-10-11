@@ -13,11 +13,11 @@
     "finalMatchId": "m031"
   },
   "coverage": {
-    "matches": 31,
-    "goals": 76,
-    "scope": "final",
+    "matches": 265,
+    "goals": 706,
+    "scope": "all",
     "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "note": "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar)."
   },
   "sources": [
     {
@@ -37,6 +37,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "CZE",
@@ -78,11 +79,11 @@
           "ga": 3,
           "pts": 2
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "GER",
@@ -124,11 +125,11 @@
           "ga": 5,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "C",
+      "stage": "group",
       "standings": [
         {
           "team": "ESP",
@@ -170,11 +171,11 @@
           "ga": 9,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "D",
+      "stage": "group",
       "standings": [
         {
           "team": "ENG",
@@ -216,8 +217,383 @@
           "ga": 4,
           "pts": 3
         }
-      ],
-      "stage": "group"
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "1",
+      "standings": [
+        {
+          "team": "GER",
+          "p": 10,
+          "w": 10,
+          "d": 0,
+          "l": 0,
+          "gf": 34,
+          "ga": 7,
+          "pts": 30
+        },
+        {
+          "team": "TUR",
+          "p": 10,
+          "w": 5,
+          "d": 2,
+          "l": 3,
+          "gf": 13,
+          "ga": 11,
+          "pts": 17
+        },
+        {
+          "team": "BEL",
+          "p": 10,
+          "w": 4,
+          "d": 3,
+          "l": 3,
+          "gf": 21,
+          "ga": 15,
+          "pts": 15
+        },
+        {
+          "team": "AUT",
+          "p": 10,
+          "w": 3,
+          "d": 3,
+          "l": 4,
+          "gf": 16,
+          "ga": 17,
+          "pts": 12
+        },
+        {
+          "team": "AZE",
+          "p": 10,
+          "w": 2,
+          "d": 1,
+          "l": 7,
+          "gf": 10,
+          "ga": 26,
+          "pts": 7
+        },
+        {
+          "team": "KAZ",
+          "p": 10,
+          "w": 1,
+          "d": 1,
+          "l": 8,
+          "gf": 6,
+          "ga": 24,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "2",
+      "standings": [
+        {
+          "team": "RUS",
+          "p": 10,
+          "w": 7,
+          "d": 2,
+          "l": 1,
+          "gf": 17,
+          "ga": 4,
+          "pts": 23
+        },
+        {
+          "team": "IRL",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 15,
+          "ga": 7,
+          "pts": 21
+        },
+        {
+          "team": "ARM",
+          "p": 10,
+          "w": 5,
+          "d": 2,
+          "l": 3,
+          "gf": 22,
+          "ga": 10,
+          "pts": 17
+        },
+        {
+          "team": "SVK",
+          "p": 10,
+          "w": 4,
+          "d": 3,
+          "l": 3,
+          "gf": 7,
+          "ga": 10,
+          "pts": 15
+        },
+        {
+          "team": "MKD",
+          "p": 10,
+          "w": 2,
+          "d": 2,
+          "l": 6,
+          "gf": 8,
+          "ga": 14,
+          "pts": 8
+        },
+        {
+          "team": "AND",
+          "p": 10,
+          "w": 0,
+          "d": 0,
+          "l": 10,
+          "gf": 1,
+          "ga": 25,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "3",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 10,
+          "w": 8,
+          "d": 2,
+          "l": 0,
+          "gf": 20,
+          "ga": 2,
+          "pts": 26
+        },
+        {
+          "team": "EST",
+          "p": 10,
+          "w": 5,
+          "d": 1,
+          "l": 4,
+          "gf": 15,
+          "ga": 14,
+          "pts": 16
+        },
+        {
+          "team": "SRB",
+          "p": 10,
+          "w": 4,
+          "d": 3,
+          "l": 3,
+          "gf": 13,
+          "ga": 12,
+          "pts": 15
+        },
+        {
+          "team": "SVN",
+          "p": 10,
+          "w": 4,
+          "d": 2,
+          "l": 4,
+          "gf": 11,
+          "ga": 7,
+          "pts": 14
+        },
+        {
+          "team": "NIR",
+          "p": 10,
+          "w": 2,
+          "d": 3,
+          "l": 5,
+          "gf": 9,
+          "ga": 13,
+          "pts": 9
+        },
+        {
+          "team": "FRO",
+          "p": 10,
+          "w": 1,
+          "d": 1,
+          "l": 8,
+          "gf": 6,
+          "ga": 26,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "6",
+      "standings": [
+        {
+          "team": "GRE",
+          "p": 10,
+          "w": 7,
+          "d": 3,
+          "l": 0,
+          "gf": 14,
+          "ga": 5,
+          "pts": 24
+        },
+        {
+          "team": "CRO",
+          "p": 10,
+          "w": 7,
+          "d": 1,
+          "l": 2,
+          "gf": 18,
+          "ga": 7,
+          "pts": 22
+        },
+        {
+          "team": "ISR",
+          "p": 10,
+          "w": 5,
+          "d": 1,
+          "l": 4,
+          "gf": 13,
+          "ga": 11,
+          "pts": 16
+        },
+        {
+          "team": "LAT",
+          "p": 10,
+          "w": 3,
+          "d": 2,
+          "l": 5,
+          "gf": 9,
+          "ga": 12,
+          "pts": 11
+        },
+        {
+          "team": "GEO",
+          "p": 10,
+          "w": 2,
+          "d": 4,
+          "l": 4,
+          "gf": 7,
+          "ga": 9,
+          "pts": 10
+        },
+        {
+          "team": "MLT",
+          "p": 10,
+          "w": 0,
+          "d": 1,
+          "l": 9,
+          "gf": 4,
+          "ga": 21,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "7",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 8,
+          "w": 5,
+          "d": 3,
+          "l": 0,
+          "gf": 17,
+          "ga": 5,
+          "pts": 18
+        },
+        {
+          "team": "MNE",
+          "p": 8,
+          "w": 3,
+          "d": 3,
+          "l": 2,
+          "gf": 7,
+          "ga": 7,
+          "pts": 12
+        },
+        {
+          "team": "SUI",
+          "p": 8,
+          "w": 3,
+          "d": 2,
+          "l": 3,
+          "gf": 12,
+          "ga": 10,
+          "pts": 11
+        },
+        {
+          "team": "WAL",
+          "p": 8,
+          "w": 3,
+          "d": 0,
+          "l": 5,
+          "gf": 6,
+          "ga": 10,
+          "pts": 9
+        },
+        {
+          "team": "BUL",
+          "p": 8,
+          "w": 1,
+          "d": 2,
+          "l": 5,
+          "gf": 3,
+          "ga": 13,
+          "pts": 5
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "8",
+      "standings": [
+        {
+          "team": "DEN",
+          "p": 8,
+          "w": 6,
+          "d": 1,
+          "l": 1,
+          "gf": 15,
+          "ga": 6,
+          "pts": 19
+        },
+        {
+          "team": "POR",
+          "p": 8,
+          "w": 5,
+          "d": 1,
+          "l": 2,
+          "gf": 21,
+          "ga": 12,
+          "pts": 16
+        },
+        {
+          "team": "NOR",
+          "p": 8,
+          "w": 5,
+          "d": 1,
+          "l": 2,
+          "gf": 10,
+          "ga": 7,
+          "pts": 16
+        },
+        {
+          "team": "ISL",
+          "p": 8,
+          "w": 1,
+          "d": 1,
+          "l": 6,
+          "gf": 6,
+          "ga": 14,
+          "pts": 4
+        },
+        {
+          "team": "CYP",
+          "p": 8,
+          "w": 0,
+          "d": 2,
+          "l": 6,
+          "gf": 7,
+          "ga": 20,
+          "pts": 2
+        }
+      ]
     }
   ],
   "matches": [
@@ -236,7 +612,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "08 Jun 2012 Poland           1-1 Greece                    [Warszawa]\n[Lewandowski 17; Salpingidis 51]",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -253,7 +634,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "08 Jun 2012 Russia           4-1 Czech Republic            [Wroclaw]\n[Dzagoev 15, 79, Shirokov 24, Pavlyuchenko 82;\nPilar 52]",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -270,7 +656,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "12 Jun 2012 Greece           1-2 Czech Republic            [Wroclaw]\n[Gekas 53; Jiracek 3, Pilar 6]",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -287,7 +678,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "12 Jun 2012 Poland           1-1 Russia                    [Warszawa]\n[Blaszczykowski 57; Dzagoev 37]",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -304,7 +700,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "16 Jun 2012 Czech Republic   1-0 Poland                    [Wroclaw]\n[Jiracek 72]",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -321,7 +722,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "16 Jun 2012 Greece           1-0 Russia                    [Warszawa]\n[Karagounis 45+2]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -338,7 +744,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "09 Jun 2012 Netherlands      0-1 Denmark                   [Kharkiv]\n[Krohn-Dehli 24]",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -355,7 +766,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "09 Jun 2012 Germany          1-0 Portugal                  [Lviv]\n[Gomez 72]",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -372,7 +788,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "13 Jun 2012 Denmark          2-3 Portugal                  [Lviv]\n[Bendtner 41, 80; Pepe 24, Postiga 36,\nVarela 87]",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -389,7 +810,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "13 Jun 2012 Netherlands      1-2 Germany                   [Kharkiv]\n[Van Persie 73; Gomez 24, 38]",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -406,7 +832,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "17 Jun 2012 Portugal         2-1 Netherlands               [Kharkiv]\n[Ronaldo 28, 74; Van der Vaart 11]",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -423,7 +854,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "17 Jun 2012 Denmark          1-2 Germany                   [Lviv]\n[Krohn-Dehli 24; Podolski 19, Bender 80]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -440,7 +876,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "10 Jun 2012 Spain            1-1 Italy                     [Gdansk]\n[Fabregas 64; Di Natale 61]",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -457,7 +898,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "10 Jun 2012 Ireland          1-3 Croatia                   [Poznan]\n[St Ledger 19; Mandzukic 3, 49, Jelavic 43]",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -474,7 +920,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "14 Jun 2012 Italy            1-1 Croatia                   [Poznan]\n[Pirlo 39; Mandzukic 72]",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -491,7 +942,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "14 Jun 2012 Spain            4-0 Ireland                   [Gdansk]\n[Torres 4, 70, Silva 49, Fabregas 83]",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -508,7 +964,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "18 Jun 2012 Croatia          0-1 Spain                     [Gdansk]\n[Navas 88]",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -525,7 +986,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "18 Jun 2012 Italy            2-0 Ireland                   [Poznan]\n[Cassano 35, Balotelli 90]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -542,7 +1008,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "11 Jun 2012 France           1-1 England                   [Donetsk]\n[Nasri 39; Lescott 30]",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -559,7 +1030,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "11 Jun 2012 Ukraine          2-1 Sweden                    [Kyiv]\n[Shevchenko 55, 62; Ibrahimovic 52]",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -576,7 +1052,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "15 Jun 2012 Ukraine          0-2 France                    [Donetsk]\n[Menez 53, Cabaye 56]",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -593,7 +1074,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "15 Jun 2012 Sweden           2-3 England                   [Kyiv]\n[Johnson 49og, Mellberg 59; Carroll 23,\nWalcott 64, Welbeck 78]",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -610,7 +1096,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "19 Jun 2012 England          1-0 Ukraine                   [Donetsk]\n[Rooney 48]",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -627,7 +1118,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "19 Jun 2012 Sweden           2-0 France                    [Kyiv]\n[Ibrahimovic 54, Larsson 90+1]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -644,7 +1140,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "21 Jun 2012 Czech Republic   0-1 Portugal                  [Warszawa]\n[Ronaldo 79]",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -661,7 +1162,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "22 Jun 2012 Germany          4-2 Greece                    [Gdansk]\n[Lahm 39, Khedira 61, Klose 68, Reus 74;\nSamaras 55, Salpingidis 89pen]",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -678,7 +1184,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "23 Jun 2012 Spain            2-0 France                    [Donetsk]\n[Alonso 19, 90+1pen]",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -695,7 +1206,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "24 Jun 2012 England          0-0 Italy      [aet, 2-4 pen] [Kyiv]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -729,7 +1245,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "28 Jun 2012 Germany          1-2 Italy                     [Warszawa]\n[Ozil 90+2pen; Balotelli 20, 36]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -746,10 +1267,4290 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:2012e",
+        "text": "01 Jul 2012 Spain            4-0 Italy                     [Kyiv]\n[Silva 14, Alba 41, Torres 84, Mata 88]\n\n\n\n\nEuropean Championship Overview File\n\n2008\n\n2012 (Details Final Tournament)\n\n2016\n\n\nAbout this document\nThanks to Eren Kocyigit for a correction\nPrepared and maintained by Roberto Di Maggio for the\nRec.Sport.Soccer Statistics Foundation\n\nAuthor: Roberto Di Maggio\n(dimrob@libero.it)\nLast updated: 20 Jun 2024\n\n(C) Copyright Roberto Di Maggio and RSSSF 2013/24\nYou are free to copy this document in whole or part provided that proper\nacknowledgement is given to the author. All rights reserved.\n\n",
+        "lang": "en"
+      }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "KAZ",
+      "away": "TUR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m032"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "BEL",
+      "away": "GER",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m033"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "TUR",
+      "away": "BEL",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m034"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "AUT",
+      "away": "KAZ",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m035"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "GER",
+      "away": "AZE",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m036"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "KAZ",
+      "away": "BEL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m037"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "AUT",
+      "away": "AZE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m038"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "GER",
+      "away": "TUR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m039"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "AZE",
+      "away": "TUR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m040"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "KAZ",
+      "away": "GER",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m041"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "BEL",
+      "away": "AUT",
+      "score": [
+        4,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m042"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-03-25",
+      "city": null,
+      "home": "AUT",
+      "away": "BEL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m043"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "GER",
+      "away": "KAZ",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m044"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-03-29",
+      "city": null,
+      "home": "TUR",
+      "away": "AUT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m045"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-03-29",
+      "city": null,
+      "home": "BEL",
+      "away": "AZE",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m046"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-06-03",
+      "city": null,
+      "home": "KAZ",
+      "away": "AZE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m047"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-06-03",
+      "city": null,
+      "home": "AUT",
+      "away": "GER",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m048"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-06-03",
+      "city": null,
+      "home": "BEL",
+      "away": "TUR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m049"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-06-07",
+      "city": null,
+      "home": "AZE",
+      "away": "GER",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m050"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "AZE",
+      "away": "BEL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m051"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "TUR",
+      "away": "KAZ",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "GER",
+      "away": "AUT",
+      "score": [
+        6,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "AZE",
+      "away": "KAZ",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "AUT",
+      "away": "TUR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "AZE",
+      "away": "AUT",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "TUR",
+      "away": "GER",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "BEL",
+      "away": "KAZ",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "KAZ",
+      "away": "AUT",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "GER",
+      "away": "BEL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "TUR",
+      "away": "AZE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "ARM",
+      "away": "IRL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "AND",
+      "away": "RUS",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "SVK",
+      "away": "MKD",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "RUS",
+      "away": "SVK",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "MKD",
+      "away": "ARM",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "IRL",
+      "away": "AND",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "ARM",
+      "away": "SVK",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "AND",
+      "away": "MKD",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "IRL",
+      "away": "RUS",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "ARM",
+      "away": "AND",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "MKD",
+      "away": "RUS",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "SVK",
+      "away": "IRL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "ARM",
+      "away": "RUS",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "AND",
+      "away": "SVK",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "IRL",
+      "away": "MKD",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-06-04",
+      "city": null,
+      "home": "RUS",
+      "away": "ARM",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-06-04",
+      "city": null,
+      "home": "SVK",
+      "away": "AND",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-06-04",
+      "city": null,
+      "home": "MKD",
+      "away": "IRL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "AND",
+      "away": "ARM",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "RUS",
+      "away": "MKD",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "IRL",
+      "away": "SVK",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "RUS",
+      "away": "IRL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "MKD",
+      "away": "AND",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "SVK",
+      "away": "ARM",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "ARM",
+      "away": "MKD",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "SVK",
+      "away": "RUS",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "AND",
+      "away": "IRL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "RUS",
+      "away": "AND",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "IRL",
+      "away": "ARM",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "MKD",
+      "away": "SVK",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2010-08-11",
+      "city": null,
+      "home": "EST",
+      "away": "FRO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "FRO",
+      "away": "SRB",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "EST",
+      "away": "ITA",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "SVN",
+      "away": "NIR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "SRB",
+      "away": "SVN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "ITA",
+      "away": "FRO",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "SRB",
+      "away": "EST",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "NIR",
+      "away": "ITA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "SVN",
+      "away": "FRO",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "FRO",
+      "away": "NIR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "EST",
+      "away": "SVN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "ITA",
+      "away": "SRB",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-03-25",
+      "city": null,
+      "home": "SRB",
+      "away": "NIR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-03-25",
+      "city": null,
+      "home": "SVN",
+      "away": "ITA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-03-29",
+      "city": null,
+      "home": "EST",
+      "away": "SRB",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-03-29",
+      "city": null,
+      "home": "NIR",
+      "away": "SVN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-06-03",
+      "city": null,
+      "home": "FRO",
+      "away": "SVN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-06-03",
+      "city": null,
+      "home": "ITA",
+      "away": "EST",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-06-07",
+      "city": null,
+      "home": "FRO",
+      "away": "EST",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-08-10",
+      "city": null,
+      "home": "NIR",
+      "away": "FRO",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "FRO",
+      "away": "ITA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "SVN",
+      "away": "EST",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "NIR",
+      "away": "SRB",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "SRB",
+      "away": "FRO",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "EST",
+      "away": "NIR",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "ITA",
+      "away": "SVN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "NIR",
+      "away": "EST",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "SRB",
+      "away": "ITA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "ITA",
+      "away": "NIR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "SVN",
+      "away": "SRB",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "ROU",
+      "away": "ALB",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "FRA",
+      "away": "BLR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "BLR",
+      "away": "ROU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "ALB",
+      "away": "LUX",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "LUX",
+      "away": "BLR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2010-10-09",
+      "city": null,
+      "home": "FRA",
+      "away": "ROU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "BLR",
+      "away": "ALB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "FRA",
+      "away": "LUX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-03-25",
+      "city": null,
+      "home": "LUX",
+      "away": "FRA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "ALB",
+      "away": "BLR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-03-29",
+      "city": null,
+      "home": "ROU",
+      "away": "LUX",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-06-03",
+      "city": null,
+      "home": "BLR",
+      "away": "FRA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-06-07",
+      "city": null,
+      "home": "BLR",
+      "away": "LUX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "LUX",
+      "away": "ROU",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "ALB",
+      "away": "FRA",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "LUX",
+      "away": "ALB",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "ROU",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "ROU",
+      "away": "BLR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "FRA",
+      "away": "ALB",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "ALB",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "MDA",
+      "away": "FIN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "SWE",
+      "away": "HUN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "SMR",
+      "away": "NED",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "SWE",
+      "away": "SMR",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m145"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "HUN",
+      "away": "MDA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "HUN",
+      "away": "SMR",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "MDA",
+      "away": "NED",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m148"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "FIN",
+      "away": "HUN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m149"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "NED",
+      "away": "SWE",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "SMR",
+      "away": "MDA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2010-11-17",
+      "city": null,
+      "home": "FIN",
+      "away": "SMR",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m152"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-03-25",
+      "city": null,
+      "home": "HUN",
+      "away": "NED",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m153"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-03-29",
+      "city": null,
+      "home": "SWE",
+      "away": "MDA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m154"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-03-29",
+      "city": null,
+      "home": "NED",
+      "away": "HUN",
+      "score": [
+        5,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m155"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-06-03",
+      "city": null,
+      "home": "SMR",
+      "away": "FIN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m156"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-06-03",
+      "city": null,
+      "home": "MDA",
+      "away": "SWE",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m157"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-06-07",
+      "city": null,
+      "home": "SWE",
+      "away": "FIN",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m158"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-06-07",
+      "city": null,
+      "home": "SMR",
+      "away": "HUN",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m159"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "FIN",
+      "away": "MDA",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m160"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "HUN",
+      "away": "SWE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m161"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "NED",
+      "away": "SMR",
+      "score": [
+        11,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m162"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "FIN",
+      "away": "NED",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m163"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "MDA",
+      "away": "HUN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m164"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "SMR",
+      "away": "SWE",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m165"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "FIN",
+      "away": "SWE",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m166"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "NED",
+      "away": "MDA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m167"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "HUN",
+      "away": "FIN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m168"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "MDA",
+      "away": "SMR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m169"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "SWE",
+      "away": "NED",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m170"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2010-09-02",
+      "city": null,
+      "home": "ISR",
+      "away": "MLT",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m171"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "LAT",
+      "away": "CRO",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m172"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "GRE",
+      "away": "GEO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m173"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "GEO",
+      "away": "ISR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m174"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "MLT",
+      "away": "LAT",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m175"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "CRO",
+      "away": "GRE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m176"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "GEO",
+      "away": "MLT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m177"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "GRE",
+      "away": "LAT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m178"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2010-10-09",
+      "city": null,
+      "home": "ISR",
+      "away": "CRO",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m179"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "LAT",
+      "away": "GEO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m180"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "GRE",
+      "away": "ISR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m181"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2010-11-17",
+      "city": null,
+      "home": "CRO",
+      "away": "MLT",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m182"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "GEO",
+      "away": "CRO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m183"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "ISR",
+      "away": "LAT",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m184"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "MLT",
+      "away": "GRE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m185"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-03-29",
+      "city": null,
+      "home": "ISR",
+      "away": "GEO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m186"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-06-03",
+      "city": null,
+      "home": "CRO",
+      "away": "GEO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m187"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-06-04",
+      "city": null,
+      "home": "LAT",
+      "away": "ISR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m188"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-06-04",
+      "city": null,
+      "home": "GRE",
+      "away": "MLT",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m189"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "ISR",
+      "away": "GRE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m190"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "GEO",
+      "away": "LAT",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m191"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "MLT",
+      "away": "CRO",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m192"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "CRO",
+      "away": "ISR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m193"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "MLT",
+      "away": "GEO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m194"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "LAT",
+      "away": "GRE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m195"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "LAT",
+      "away": "MLT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m196"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "GRE",
+      "away": "CRO",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m197"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "GEO",
+      "away": "GRE",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m198"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "MLT",
+      "away": "ISR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m199"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "CRO",
+      "away": "LAT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m200"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "MNE",
+      "away": "WAL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m201"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "ENG",
+      "away": "BUL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m202"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "BUL",
+      "away": "MNE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m203"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "SUI",
+      "away": "ENG",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m204"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "MNE",
+      "away": "SUI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m205"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "WAL",
+      "away": "BUL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m206"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "SUI",
+      "away": "WAL",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m207"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "ENG",
+      "away": "MNE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m208"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "WAL",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m209"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "BUL",
+      "away": "SUI",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m210"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-06-04",
+      "city": null,
+      "home": "ENG",
+      "away": "SUI",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m211"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-06-04",
+      "city": null,
+      "home": "MNE",
+      "away": "BUL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m212"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "BUL",
+      "away": "ENG",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m213"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "WAL",
+      "away": "MNE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m214"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "SUI",
+      "away": "BUL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m215"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "ENG",
+      "away": "WAL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m216"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "WAL",
+      "away": "SUI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m217"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "MNE",
+      "away": "ENG",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m218"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "BUL",
+      "away": "WAL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m219"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "SUI",
+      "away": "MNE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m220"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "ISL",
+      "away": "NOR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m221"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "POR",
+      "away": "CYP",
+      "score": [
+        4,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m222"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "DEN",
+      "away": "ISL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m223"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "NOR",
+      "away": "POR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m224"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "CYP",
+      "away": "NOR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m225"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "POR",
+      "away": "DEN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m226"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "DEN",
+      "away": "CYP",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m227"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "ISL",
+      "away": "POR",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m228"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "CYP",
+      "away": "ISL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m229"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "NOR",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m230"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2011-06-04",
+      "city": null,
+      "home": "ISL",
+      "away": "DEN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m231"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2011-06-04",
+      "city": null,
+      "home": "POR",
+      "away": "NOR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m232"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "NOR",
+      "away": "ISL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m233"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "CYP",
+      "away": "POR",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m234"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "DEN",
+      "away": "NOR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m235"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "ISL",
+      "away": "CYP",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m236"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "CYP",
+      "away": "DEN",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m237"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "POR",
+      "away": "ISL",
+      "score": [
+        5,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m238"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "NOR",
+      "away": "CYP",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m239"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "DEN",
+      "away": "POR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m240"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "LTU",
+      "away": "SCO",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m241"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
+      "home": "LIE",
+      "away": "ESP",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m242"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "CZE",
+      "away": "LTU",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m243"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "SCO",
+      "away": "LIE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m244"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "CZE",
+      "away": "SCO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m245"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "ESP",
+      "away": "LTU",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m246"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "SCO",
+      "away": "ESP",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m247"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2011-03-25",
+      "city": null,
+      "home": "ESP",
+      "away": "CZE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m248"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2011-03-29",
+      "city": null,
+      "home": "CZE",
+      "away": "LIE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m249"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2011-03-29",
+      "city": null,
+      "home": "LTU",
+      "away": "ESP",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m250"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2011-06-03",
+      "city": null,
+      "home": "LIE",
+      "away": "LTU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m251"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "LTU",
+      "away": "LIE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m252"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2011-09-03",
+      "city": null,
+      "home": "SCO",
+      "away": "CZE",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m253"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "SCO",
+      "away": "LTU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m254"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "ESP",
+      "away": "LIE",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m255"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "CZE",
+      "away": "ESP",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m256"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2011-10-08",
+      "city": null,
+      "home": "LIE",
+      "away": "SCO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m257"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "ESP",
+      "away": "SCO",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m258"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "LTU",
+      "away": "CZE",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m259"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2011-11-11",
+      "city": null,
+      "home": "TUR",
+      "away": "CRO",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m260"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2011-11-11",
+      "city": null,
+      "home": "CZE",
+      "away": "MNE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m261"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2011-11-11",
+      "city": null,
+      "home": "EST",
+      "away": "IRL",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m262"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2011-11-15",
+      "city": null,
+      "home": "CRO",
+      "away": "TUR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m263"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2011-11-15",
+      "city": null,
+      "home": "MNE",
+      "away": "CZE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m264"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2011-11-15",
+      "city": null,
+      "home": "IRL",
+      "away": "EST",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m265"
     }
   ],
   "scorers": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "line": 359,
+      "reason": "partido no reconocido: First Legs"
+    },
+    {
+      "line": 365,
+      "reason": "partido no reconocido: Second Legs"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Luxembourg-Bosnia & Herzeg.)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Bosnia & Herzeg.-France)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Albania-Bosnia & Herzeg.)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Bosnia & Herzeg.-Romania)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Romania-Bosnia & Herzeg.)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Bosnia & Herzeg.-Albania)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Belarus-Bosnia & Herzeg.)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Bosnia & Herzeg.-Belarus)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Bosnia & Herzeg.-Luxembourg)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (France-Bosnia & Herzeg.)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Netherlands-Finland')"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Liechtenstein-Czech)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Bosnia & Herzeg.-Portugal)"
+    },
+    {
+      "reason": "partido de clasificación omitido: país no resoluble (Portugal-Bosnia & Herzeg.)"
+    },
+    {
+      "reason": "fila de clasificación omitida: país no resoluble (Bosnia)"
+    },
+    {
+      "reason": "grupo 4 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 46 != suma GA 55 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo 5 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 115 != clasificación 118)"
+    },
+    {
+      "reason": "grupo 9 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 52 != clasificación 54)"
+    }
+  ],
   "teamsCount": 16
 }
