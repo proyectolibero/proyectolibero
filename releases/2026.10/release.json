@@ -525,7 +525,7 @@
     },
     {
       "path": "data/football/worldcup/2022.json",
-      "sha256": "d7fc9308248f8659fa78b8f738365e39c8eeb203b133edd2574b77bd6686d5fd",
+      "sha256": "40c675edf40a338bf35ba71f60a3623f1e4ad6c991ba9abc4cb5d26197bcfbda",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2022
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "eca53cc87a067d1ee92dd985b102e3b85e62f2ecfbbc3a1abaf69021083f6c2b",
+  "checksum": "3f161f8e213abf0a955030ad6ba0d1a58718b496dff233ac5efacb1497ec05c3",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 9246,
+    "matches": 10120,
     "results": 0
   },
   "license": {
@@ -705,6 +705,12 @@
         "url": "https://www.rsssf.org/tables/2022f.html",
         "retrieved": "2026-10-06",
         "author": "Roberto Di Maggio"
+      },
+      {
+        "source": "rsssf:2022q",
+        "name": "RSSSF — World Cup 2022 (qualifying)",
+        "url": "https://www.rsssf.org/tables/2022q.html",
+        "retrieved": "2026-10-11"
       },
       {
         "source": "rsssf:2024e",
