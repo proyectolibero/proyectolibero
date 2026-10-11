@@ -13,11 +13,10 @@
     "finalMatchId": "m031"
   },
   "coverage": {
-    "matches": 265,
-    "goals": 706,
+    "matches": 279,
+    "goals": 744,
     "scope": "all",
-    "complete": false,
-    "note": "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar)."
+    "complete": true
   },
   "sources": [
     {
@@ -419,6 +418,138 @@
     },
     {
       "stage": "qualifyingGroup",
+      "letter": "4",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 15,
+          "ga": 4,
+          "pts": 21
+        },
+        {
+          "team": "BIH",
+          "p": 10,
+          "w": 6,
+          "d": 2,
+          "l": 2,
+          "gf": 17,
+          "ga": 8,
+          "pts": 20
+        },
+        {
+          "team": "ROU",
+          "p": 10,
+          "w": 3,
+          "d": 5,
+          "l": 2,
+          "gf": 13,
+          "ga": 9,
+          "pts": 14
+        },
+        {
+          "team": "BLR",
+          "p": 10,
+          "w": 3,
+          "d": 4,
+          "l": 3,
+          "gf": 8,
+          "ga": 7,
+          "pts": 13
+        },
+        {
+          "team": "ALB",
+          "p": 10,
+          "w": 2,
+          "d": 3,
+          "l": 5,
+          "gf": 7,
+          "ga": 14,
+          "pts": 9
+        },
+        {
+          "team": "LUX",
+          "p": 10,
+          "w": 1,
+          "d": 1,
+          "l": 8,
+          "gf": 3,
+          "ga": 21,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "5",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 10,
+          "w": 9,
+          "d": 0,
+          "l": 1,
+          "gf": 37,
+          "ga": 8,
+          "pts": 27
+        },
+        {
+          "team": "SWE",
+          "p": 10,
+          "w": 8,
+          "d": 0,
+          "l": 2,
+          "gf": 31,
+          "ga": 11,
+          "pts": 24
+        },
+        {
+          "team": "HUN",
+          "p": 10,
+          "w": 6,
+          "d": 1,
+          "l": 3,
+          "gf": 22,
+          "ga": 14,
+          "pts": 19
+        },
+        {
+          "team": "FIN",
+          "p": 10,
+          "w": 3,
+          "d": 1,
+          "l": 6,
+          "gf": 16,
+          "ga": 16,
+          "pts": 10
+        },
+        {
+          "team": "MDA",
+          "p": 10,
+          "w": 3,
+          "d": 0,
+          "l": 7,
+          "gf": 12,
+          "ga": 16,
+          "pts": 9
+        },
+        {
+          "team": "SMR",
+          "p": 10,
+          "w": 0,
+          "d": 0,
+          "l": 10,
+          "gf": 0,
+          "ga": 53,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
       "letter": "6",
       "standings": [
         {
@@ -592,6 +723,62 @@
           "gf": 7,
           "ga": 20,
           "pts": 2
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "9",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 8,
+          "w": 8,
+          "d": 0,
+          "l": 0,
+          "gf": 26,
+          "ga": 6,
+          "pts": 24
+        },
+        {
+          "team": "CZE",
+          "p": 8,
+          "w": 4,
+          "d": 1,
+          "l": 3,
+          "gf": 12,
+          "ga": 8,
+          "pts": 13
+        },
+        {
+          "team": "SCO",
+          "p": 8,
+          "w": 3,
+          "d": 2,
+          "l": 3,
+          "gf": 9,
+          "ga": 10,
+          "pts": 11
+        },
+        {
+          "team": "LTU",
+          "p": 8,
+          "w": 1,
+          "d": 2,
+          "l": 5,
+          "gf": 4,
+          "ga": 13,
+          "pts": 5
+        },
+        {
+          "team": "LIE",
+          "p": 8,
+          "w": 1,
+          "d": 1,
+          "l": 6,
+          "gf": 3,
+          "ga": 17,
+          "pts": 4
         }
       ]
     }
@@ -2918,6 +3105,24 @@
       "matchday": null,
       "date": "2010-09-03",
       "city": null,
+      "home": "LUX",
+      "away": "BIH",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2010-09-03",
+      "city": null,
       "home": "FRA",
       "away": "BLR",
       "score": [
@@ -2928,7 +3133,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m123"
+      "id": "m124"
     },
     {
       "stage": "qualifyingGroup",
@@ -2946,7 +3151,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m124"
+      "id": "m125"
     },
     {
       "stage": "qualifyingGroup",
@@ -2964,7 +3169,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m125"
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "BIH",
+      "away": "FRA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
     },
     {
       "stage": "qualifyingGroup",
@@ -2982,7 +3205,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m126"
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "ALB",
+      "away": "BIH",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
     },
     {
       "stage": "qualifyingGroup",
@@ -3000,7 +3241,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m127"
+      "id": "m130"
     },
     {
       "stage": "qualifyingGroup",
@@ -3018,7 +3259,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m128"
+      "id": "m131"
     },
     {
       "stage": "qualifyingGroup",
@@ -3036,7 +3277,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m129"
+      "id": "m132"
     },
     {
       "stage": "qualifyingGroup",
@@ -3054,7 +3295,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m130"
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "BIH",
+      "away": "ROU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
     },
     {
       "stage": "qualifyingGroup",
@@ -3072,7 +3331,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m131"
+      "id": "m135"
     },
     {
       "stage": "qualifyingGroup",
@@ -3090,7 +3349,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m132"
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-06-03",
+      "city": null,
+      "home": "ROU",
+      "away": "BIH",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
     },
     {
       "stage": "qualifyingGroup",
@@ -3108,7 +3385,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m133"
+      "id": "m138"
     },
     {
       "stage": "qualifyingGroup",
@@ -3126,7 +3403,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m134"
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-06-07",
+      "city": null,
+      "home": "BIH",
+      "away": "ALB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
     },
     {
       "stage": "qualifyingGroup",
@@ -3144,7 +3439,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m135"
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "BLR",
+      "away": "BIH",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
     },
     {
       "stage": "qualifyingGroup",
@@ -3162,7 +3475,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m136"
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "BIH",
+      "away": "BLR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
     },
     {
       "stage": "qualifyingGroup",
@@ -3180,7 +3511,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m137"
+      "id": "m145"
     },
     {
       "stage": "qualifyingGroup",
@@ -3198,7 +3529,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m138"
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-10-07",
+      "city": null,
+      "home": "BIH",
+      "away": "LUX",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
     },
     {
       "stage": "qualifyingGroup",
@@ -3216,7 +3565,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m139"
+      "id": "m148"
     },
     {
       "stage": "qualifyingGroup",
@@ -3234,7 +3583,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m140"
+      "id": "m149"
     },
     {
       "stage": "qualifyingGroup",
@@ -3252,7 +3601,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m141"
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2011-10-11",
+      "city": null,
+      "home": "FRA",
+      "away": "BIH",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
     },
     {
       "stage": "qualifyingGroup",
@@ -3270,7 +3637,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m142"
+      "id": "m152"
     },
     {
       "stage": "qualifyingGroup",
@@ -3288,7 +3655,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m143"
+      "id": "m153"
     },
     {
       "stage": "qualifyingGroup",
@@ -3306,7 +3673,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m144"
+      "id": "m154"
     },
     {
       "stage": "qualifyingGroup",
@@ -3324,7 +3691,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m145"
+      "id": "m155"
     },
     {
       "stage": "qualifyingGroup",
@@ -3342,7 +3709,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m146"
+      "id": "m156"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2010-09-07",
+      "city": null,
+      "home": "NED",
+      "away": "FIN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m157"
     },
     {
       "stage": "qualifyingGroup",
@@ -3360,7 +3745,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m147"
+      "id": "m158"
     },
     {
       "stage": "qualifyingGroup",
@@ -3378,7 +3763,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m148"
+      "id": "m159"
     },
     {
       "stage": "qualifyingGroup",
@@ -3396,7 +3781,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m149"
+      "id": "m160"
     },
     {
       "stage": "qualifyingGroup",
@@ -3414,7 +3799,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m150"
+      "id": "m161"
     },
     {
       "stage": "qualifyingGroup",
@@ -3432,7 +3817,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m151"
+      "id": "m162"
     },
     {
       "stage": "qualifyingGroup",
@@ -3450,7 +3835,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m152"
+      "id": "m163"
     },
     {
       "stage": "qualifyingGroup",
@@ -3468,7 +3853,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m153"
+      "id": "m164"
     },
     {
       "stage": "qualifyingGroup",
@@ -3486,7 +3871,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m154"
+      "id": "m165"
     },
     {
       "stage": "qualifyingGroup",
@@ -3504,7 +3889,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m155"
+      "id": "m166"
     },
     {
       "stage": "qualifyingGroup",
@@ -3522,7 +3907,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m156"
+      "id": "m167"
     },
     {
       "stage": "qualifyingGroup",
@@ -3540,7 +3925,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m157"
+      "id": "m168"
     },
     {
       "stage": "qualifyingGroup",
@@ -3558,7 +3943,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m158"
+      "id": "m169"
     },
     {
       "stage": "qualifyingGroup",
@@ -3576,7 +3961,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m159"
+      "id": "m170"
     },
     {
       "stage": "qualifyingGroup",
@@ -3594,7 +3979,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m160"
+      "id": "m171"
     },
     {
       "stage": "qualifyingGroup",
@@ -3612,7 +3997,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m161"
+      "id": "m172"
     },
     {
       "stage": "qualifyingGroup",
@@ -3630,7 +4015,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m162"
+      "id": "m173"
     },
     {
       "stage": "qualifyingGroup",
@@ -3648,7 +4033,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m163"
+      "id": "m174"
     },
     {
       "stage": "qualifyingGroup",
@@ -3666,7 +4051,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m164"
+      "id": "m175"
     },
     {
       "stage": "qualifyingGroup",
@@ -3684,7 +4069,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m165"
+      "id": "m176"
     },
     {
       "stage": "qualifyingGroup",
@@ -3702,7 +4087,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m166"
+      "id": "m177"
     },
     {
       "stage": "qualifyingGroup",
@@ -3720,7 +4105,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m167"
+      "id": "m178"
     },
     {
       "stage": "qualifyingGroup",
@@ -3738,7 +4123,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m168"
+      "id": "m179"
     },
     {
       "stage": "qualifyingGroup",
@@ -3756,7 +4141,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m169"
+      "id": "m180"
     },
     {
       "stage": "qualifyingGroup",
@@ -3774,7 +4159,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m170"
+      "id": "m181"
     },
     {
       "stage": "qualifyingGroup",
@@ -3792,7 +4177,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m171"
+      "id": "m182"
     },
     {
       "stage": "qualifyingGroup",
@@ -3810,7 +4195,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m172"
+      "id": "m183"
     },
     {
       "stage": "qualifyingGroup",
@@ -3828,7 +4213,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m173"
+      "id": "m184"
     },
     {
       "stage": "qualifyingGroup",
@@ -3846,7 +4231,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m174"
+      "id": "m185"
     },
     {
       "stage": "qualifyingGroup",
@@ -3864,7 +4249,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m175"
+      "id": "m186"
     },
     {
       "stage": "qualifyingGroup",
@@ -3882,7 +4267,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m176"
+      "id": "m187"
     },
     {
       "stage": "qualifyingGroup",
@@ -3900,7 +4285,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m177"
+      "id": "m188"
     },
     {
       "stage": "qualifyingGroup",
@@ -3918,7 +4303,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m178"
+      "id": "m189"
     },
     {
       "stage": "qualifyingGroup",
@@ -3936,7 +4321,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m179"
+      "id": "m190"
     },
     {
       "stage": "qualifyingGroup",
@@ -3954,7 +4339,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m180"
+      "id": "m191"
     },
     {
       "stage": "qualifyingGroup",
@@ -3972,7 +4357,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m181"
+      "id": "m192"
     },
     {
       "stage": "qualifyingGroup",
@@ -3990,7 +4375,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m182"
+      "id": "m193"
     },
     {
       "stage": "qualifyingGroup",
@@ -4008,7 +4393,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m183"
+      "id": "m194"
     },
     {
       "stage": "qualifyingGroup",
@@ -4026,7 +4411,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m184"
+      "id": "m195"
     },
     {
       "stage": "qualifyingGroup",
@@ -4044,7 +4429,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m185"
+      "id": "m196"
     },
     {
       "stage": "qualifyingGroup",
@@ -4062,7 +4447,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m186"
+      "id": "m197"
     },
     {
       "stage": "qualifyingGroup",
@@ -4080,7 +4465,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m187"
+      "id": "m198"
     },
     {
       "stage": "qualifyingGroup",
@@ -4098,7 +4483,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m188"
+      "id": "m199"
     },
     {
       "stage": "qualifyingGroup",
@@ -4116,7 +4501,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m189"
+      "id": "m200"
     },
     {
       "stage": "qualifyingGroup",
@@ -4134,7 +4519,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m190"
+      "id": "m201"
     },
     {
       "stage": "qualifyingGroup",
@@ -4152,7 +4537,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m191"
+      "id": "m202"
     },
     {
       "stage": "qualifyingGroup",
@@ -4170,7 +4555,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m192"
+      "id": "m203"
     },
     {
       "stage": "qualifyingGroup",
@@ -4188,7 +4573,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m193"
+      "id": "m204"
     },
     {
       "stage": "qualifyingGroup",
@@ -4206,7 +4591,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m194"
+      "id": "m205"
     },
     {
       "stage": "qualifyingGroup",
@@ -4224,7 +4609,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m195"
+      "id": "m206"
     },
     {
       "stage": "qualifyingGroup",
@@ -4242,7 +4627,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m196"
+      "id": "m207"
     },
     {
       "stage": "qualifyingGroup",
@@ -4260,7 +4645,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m197"
+      "id": "m208"
     },
     {
       "stage": "qualifyingGroup",
@@ -4278,7 +4663,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m198"
+      "id": "m209"
     },
     {
       "stage": "qualifyingGroup",
@@ -4296,7 +4681,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m199"
+      "id": "m210"
     },
     {
       "stage": "qualifyingGroup",
@@ -4314,217 +4699,19 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m200"
-    },
-    {
-      "stage": "qualifyingGroup",
-      "group": "7",
-      "matchday": null,
-      "date": "2010-09-03",
-      "city": null,
-      "home": "MNE",
-      "away": "WAL",
-      "score": [
-        1,
-        0
-      ],
-      "status": "played",
-      "notes": [],
-      "pens": null,
-      "raw": null,
-      "id": "m201"
-    },
-    {
-      "stage": "qualifyingGroup",
-      "group": "7",
-      "matchday": null,
-      "date": "2010-09-03",
-      "city": null,
-      "home": "ENG",
-      "away": "BUL",
-      "score": [
-        4,
-        0
-      ],
-      "status": "played",
-      "notes": [],
-      "pens": null,
-      "raw": null,
-      "id": "m202"
-    },
-    {
-      "stage": "qualifyingGroup",
-      "group": "7",
-      "matchday": null,
-      "date": "2010-09-07",
-      "city": null,
-      "home": "BUL",
-      "away": "MNE",
-      "score": [
-        0,
-        1
-      ],
-      "status": "played",
-      "notes": [],
-      "pens": null,
-      "raw": null,
-      "id": "m203"
-    },
-    {
-      "stage": "qualifyingGroup",
-      "group": "7",
-      "matchday": null,
-      "date": "2010-09-07",
-      "city": null,
-      "home": "SUI",
-      "away": "ENG",
-      "score": [
-        1,
-        3
-      ],
-      "status": "played",
-      "notes": [],
-      "pens": null,
-      "raw": null,
-      "id": "m204"
-    },
-    {
-      "stage": "qualifyingGroup",
-      "group": "7",
-      "matchday": null,
-      "date": "2010-10-08",
-      "city": null,
-      "home": "MNE",
-      "away": "SUI",
-      "score": [
-        1,
-        0
-      ],
-      "status": "played",
-      "notes": [],
-      "pens": null,
-      "raw": null,
-      "id": "m205"
-    },
-    {
-      "stage": "qualifyingGroup",
-      "group": "7",
-      "matchday": null,
-      "date": "2010-10-08",
-      "city": null,
-      "home": "WAL",
-      "away": "BUL",
-      "score": [
-        0,
-        1
-      ],
-      "status": "played",
-      "notes": [],
-      "pens": null,
-      "raw": null,
-      "id": "m206"
-    },
-    {
-      "stage": "qualifyingGroup",
-      "group": "7",
-      "matchday": null,
-      "date": "2010-10-12",
-      "city": null,
-      "home": "SUI",
-      "away": "WAL",
-      "score": [
-        4,
-        1
-      ],
-      "status": "played",
-      "notes": [],
-      "pens": null,
-      "raw": null,
-      "id": "m207"
-    },
-    {
-      "stage": "qualifyingGroup",
-      "group": "7",
-      "matchday": null,
-      "date": "2010-10-12",
-      "city": null,
-      "home": "ENG",
-      "away": "MNE",
-      "score": [
-        0,
-        0
-      ],
-      "status": "played",
-      "notes": [],
-      "pens": null,
-      "raw": null,
-      "id": "m208"
-    },
-    {
-      "stage": "qualifyingGroup",
-      "group": "7",
-      "matchday": null,
-      "date": "2011-03-26",
-      "city": null,
-      "home": "WAL",
-      "away": "ENG",
-      "score": [
-        0,
-        2
-      ],
-      "status": "played",
-      "notes": [],
-      "pens": null,
-      "raw": null,
-      "id": "m209"
-    },
-    {
-      "stage": "qualifyingGroup",
-      "group": "7",
-      "matchday": null,
-      "date": "2011-03-26",
-      "city": null,
-      "home": "BUL",
-      "away": "SUI",
-      "score": [
-        0,
-        0
-      ],
-      "status": "played",
-      "notes": [],
-      "pens": null,
-      "raw": null,
-      "id": "m210"
-    },
-    {
-      "stage": "qualifyingGroup",
-      "group": "7",
-      "matchday": null,
-      "date": "2011-06-04",
-      "city": null,
-      "home": "ENG",
-      "away": "SUI",
-      "score": [
-        2,
-        2
-      ],
-      "status": "played",
-      "notes": [],
-      "pens": null,
-      "raw": null,
       "id": "m211"
     },
     {
       "stage": "qualifyingGroup",
       "group": "7",
       "matchday": null,
-      "date": "2011-06-04",
+      "date": "2010-09-03",
       "city": null,
       "home": "MNE",
-      "away": "BUL",
+      "away": "WAL",
       "score": [
         1,
-        1
+        0
       ],
       "status": "played",
       "notes": [],
@@ -4536,13 +4723,13 @@
       "stage": "qualifyingGroup",
       "group": "7",
       "matchday": null,
-      "date": "2011-09-02",
+      "date": "2010-09-03",
       "city": null,
-      "home": "BUL",
-      "away": "ENG",
+      "home": "ENG",
+      "away": "BUL",
       "score": [
-        0,
-        3
+        4,
+        0
       ],
       "status": "played",
       "notes": [],
@@ -4554,12 +4741,12 @@
       "stage": "qualifyingGroup",
       "group": "7",
       "matchday": null,
-      "date": "2011-09-02",
+      "date": "2010-09-07",
       "city": null,
-      "home": "WAL",
+      "home": "BUL",
       "away": "MNE",
       "score": [
-        2,
+        0,
         1
       ],
       "status": "played",
@@ -4572,13 +4759,13 @@
       "stage": "qualifyingGroup",
       "group": "7",
       "matchday": null,
-      "date": "2011-09-06",
+      "date": "2010-09-07",
       "city": null,
       "home": "SUI",
-      "away": "BUL",
+      "away": "ENG",
       "score": [
-        3,
-        1
+        1,
+        3
       ],
       "status": "played",
       "notes": [],
@@ -4590,10 +4777,10 @@
       "stage": "qualifyingGroup",
       "group": "7",
       "matchday": null,
-      "date": "2011-09-06",
+      "date": "2010-10-08",
       "city": null,
-      "home": "ENG",
-      "away": "WAL",
+      "home": "MNE",
+      "away": "SUI",
       "score": [
         1,
         0
@@ -4608,6 +4795,204 @@
       "stage": "qualifyingGroup",
       "group": "7",
       "matchday": null,
+      "date": "2010-10-08",
+      "city": null,
+      "home": "WAL",
+      "away": "BUL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m217"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "SUI",
+      "away": "WAL",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m218"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "ENG",
+      "away": "MNE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m219"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "WAL",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m220"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-03-26",
+      "city": null,
+      "home": "BUL",
+      "away": "SUI",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m221"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-06-04",
+      "city": null,
+      "home": "ENG",
+      "away": "SUI",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m222"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-06-04",
+      "city": null,
+      "home": "MNE",
+      "away": "BUL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m223"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "BUL",
+      "away": "ENG",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m224"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-09-02",
+      "city": null,
+      "home": "WAL",
+      "away": "MNE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m225"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "SUI",
+      "away": "BUL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m226"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2011-09-06",
+      "city": null,
+      "home": "ENG",
+      "away": "WAL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m227"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
       "date": "2011-10-07",
       "city": null,
       "home": "WAL",
@@ -4620,7 +5005,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m217"
+      "id": "m228"
     },
     {
       "stage": "qualifyingGroup",
@@ -4638,7 +5023,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m218"
+      "id": "m229"
     },
     {
       "stage": "qualifyingGroup",
@@ -4656,7 +5041,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m219"
+      "id": "m230"
     },
     {
       "stage": "qualifyingGroup",
@@ -4674,7 +5059,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m220"
+      "id": "m231"
     },
     {
       "stage": "qualifyingGroup",
@@ -4692,7 +5077,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m221"
+      "id": "m232"
     },
     {
       "stage": "qualifyingGroup",
@@ -4710,7 +5095,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m222"
+      "id": "m233"
     },
     {
       "stage": "qualifyingGroup",
@@ -4728,7 +5113,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m223"
+      "id": "m234"
     },
     {
       "stage": "qualifyingGroup",
@@ -4746,7 +5131,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m224"
+      "id": "m235"
     },
     {
       "stage": "qualifyingGroup",
@@ -4764,7 +5149,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m225"
+      "id": "m236"
     },
     {
       "stage": "qualifyingGroup",
@@ -4782,7 +5167,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m226"
+      "id": "m237"
     },
     {
       "stage": "qualifyingGroup",
@@ -4800,7 +5185,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m227"
+      "id": "m238"
     },
     {
       "stage": "qualifyingGroup",
@@ -4818,7 +5203,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m228"
+      "id": "m239"
     },
     {
       "stage": "qualifyingGroup",
@@ -4836,7 +5221,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m229"
+      "id": "m240"
     },
     {
       "stage": "qualifyingGroup",
@@ -4854,7 +5239,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m230"
+      "id": "m241"
     },
     {
       "stage": "qualifyingGroup",
@@ -4872,7 +5257,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m231"
+      "id": "m242"
     },
     {
       "stage": "qualifyingGroup",
@@ -4890,7 +5275,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m232"
+      "id": "m243"
     },
     {
       "stage": "qualifyingGroup",
@@ -4908,7 +5293,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m233"
+      "id": "m244"
     },
     {
       "stage": "qualifyingGroup",
@@ -4926,7 +5311,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m234"
+      "id": "m245"
     },
     {
       "stage": "qualifyingGroup",
@@ -4944,7 +5329,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m235"
+      "id": "m246"
     },
     {
       "stage": "qualifyingGroup",
@@ -4962,7 +5347,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m236"
+      "id": "m247"
     },
     {
       "stage": "qualifyingGroup",
@@ -4980,7 +5365,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m237"
+      "id": "m248"
     },
     {
       "stage": "qualifyingGroup",
@@ -4998,7 +5383,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m238"
+      "id": "m249"
     },
     {
       "stage": "qualifyingGroup",
@@ -5016,7 +5401,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m239"
+      "id": "m250"
     },
     {
       "stage": "qualifyingGroup",
@@ -5034,7 +5419,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m240"
+      "id": "m251"
     },
     {
       "stage": "qualifyingGroup",
@@ -5052,7 +5437,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m241"
+      "id": "m252"
     },
     {
       "stage": "qualifyingGroup",
@@ -5070,7 +5455,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m242"
+      "id": "m253"
     },
     {
       "stage": "qualifyingGroup",
@@ -5088,7 +5473,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m243"
+      "id": "m254"
     },
     {
       "stage": "qualifyingGroup",
@@ -5106,7 +5491,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m244"
+      "id": "m255"
     },
     {
       "stage": "qualifyingGroup",
@@ -5124,7 +5509,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m245"
+      "id": "m256"
     },
     {
       "stage": "qualifyingGroup",
@@ -5142,7 +5527,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m246"
+      "id": "m257"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2010-10-12",
+      "city": null,
+      "home": "LIE",
+      "away": "CZE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m258"
     },
     {
       "stage": "qualifyingGroup",
@@ -5160,7 +5563,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m247"
+      "id": "m259"
     },
     {
       "stage": "qualifyingGroup",
@@ -5178,7 +5581,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m248"
+      "id": "m260"
     },
     {
       "stage": "qualifyingGroup",
@@ -5196,7 +5599,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m249"
+      "id": "m261"
     },
     {
       "stage": "qualifyingGroup",
@@ -5214,7 +5617,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m250"
+      "id": "m262"
     },
     {
       "stage": "qualifyingGroup",
@@ -5232,7 +5635,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m251"
+      "id": "m263"
     },
     {
       "stage": "qualifyingGroup",
@@ -5250,7 +5653,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m252"
+      "id": "m264"
     },
     {
       "stage": "qualifyingGroup",
@@ -5268,7 +5671,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m253"
+      "id": "m265"
     },
     {
       "stage": "qualifyingGroup",
@@ -5286,7 +5689,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m254"
+      "id": "m266"
     },
     {
       "stage": "qualifyingGroup",
@@ -5304,7 +5707,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m255"
+      "id": "m267"
     },
     {
       "stage": "qualifyingGroup",
@@ -5322,7 +5725,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m256"
+      "id": "m268"
     },
     {
       "stage": "qualifyingGroup",
@@ -5340,7 +5743,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m257"
+      "id": "m269"
     },
     {
       "stage": "qualifyingGroup",
@@ -5358,7 +5761,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m258"
+      "id": "m270"
     },
     {
       "stage": "qualifyingGroup",
@@ -5376,7 +5779,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m259"
+      "id": "m271"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2011-11-11",
+      "city": null,
+      "home": "BIH",
+      "away": "POR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m272"
     },
     {
       "stage": "qualifyingPlayoff",
@@ -5394,7 +5815,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m260"
+      "id": "m273"
     },
     {
       "stage": "qualifyingPlayoff",
@@ -5412,7 +5833,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m261"
+      "id": "m274"
     },
     {
       "stage": "qualifyingPlayoff",
@@ -5430,7 +5851,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m262"
+      "id": "m275"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2011-11-15",
+      "city": null,
+      "home": "POR",
+      "away": "BIH",
+      "score": [
+        6,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m276"
     },
     {
       "stage": "qualifyingPlayoff",
@@ -5448,7 +5887,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m263"
+      "id": "m277"
     },
     {
       "stage": "qualifyingPlayoff",
@@ -5466,7 +5905,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m264"
+      "id": "m278"
     },
     {
       "stage": "qualifyingPlayoff",
@@ -5484,7 +5923,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m265"
+      "id": "m279"
     }
   ],
   "scorers": [],
@@ -5496,60 +5935,6 @@
     {
       "line": 365,
       "reason": "partido no reconocido: Second Legs"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Luxembourg-Bosnia & Herzeg.)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Bosnia & Herzeg.-France)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Albania-Bosnia & Herzeg.)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Bosnia & Herzeg.-Romania)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Romania-Bosnia & Herzeg.)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Bosnia & Herzeg.-Albania)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Belarus-Bosnia & Herzeg.)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Bosnia & Herzeg.-Belarus)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Bosnia & Herzeg.-Luxembourg)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (France-Bosnia & Herzeg.)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Netherlands-Finland')"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Liechtenstein-Czech)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Bosnia & Herzeg.-Portugal)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Portugal-Bosnia & Herzeg.)"
-    },
-    {
-      "reason": "fila de clasificación omitida: país no resoluble (Bosnia)"
-    },
-    {
-      "reason": "grupo 4 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 46 != suma GA 55 (faltan equipos o columnas))"
-    },
-    {
-      "reason": "grupo 5 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 115 != clasificación 118)"
-    },
-    {
-      "reason": "grupo 9 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 52 != clasificación 54)"
     }
   ],
   "teamsCount": 16

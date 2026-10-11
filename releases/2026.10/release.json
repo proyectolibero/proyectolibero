@@ -182,21 +182,21 @@
     },
     {
       "path": "data/football/eurochamp/2012.json",
-      "sha256": "895242f77bd26a786c0d28339b925768ae59d5a6139bca6129035711a59bfc0d",
+      "sha256": "76b128047355e697a97ea210bc3fc92ef7861e6d2aa4bf61e0d392055cb0b8cc",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2012
     },
     {
       "path": "data/football/eurochamp/2016.json",
-      "sha256": "479f5a4c4c1e3c8649ae1f49453e1edd18a411c03b4f6f604e9f40e0ca3bddbb",
+      "sha256": "6f3b67086cab7e54b1ab6f1388220811ef6d8ab2ccedc8afa160c626217a8054",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2016
     },
     {
       "path": "data/football/eurochamp/2020.json",
-      "sha256": "34f0ca01e1985866d7daf98673c7115cef49fab9c3d4c975394212ae0704a863",
+      "sha256": "9e79428d1c54cf3545e0f29039b432020a8d598d9d02e400b592e0541f71599a",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2020
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "8393d061baf0d6bd6c72e8a2ef6ea15dc73299a4b316545f795f6ba1f5e3b901",
+  "checksum": "73a8a7e2312d235f40e53f4d6a83147ff49d4f2a881f520ac5deace8b426b04a",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 11815,
+    "matches": 11837,
     "results": 0
   },
   "license": {

@@ -12,11 +12,10 @@
     "decidedBy": "final"
   },
   "coverage": {
-    "matches": 307,
-    "goals": 944,
+    "matches": 313,
+    "goals": 968,
     "scope": "all",
-    "complete": false,
-    "note": "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar)."
+    "complete": true
   },
   "sources": [
     {
@@ -378,6 +377,62 @@
     },
     {
       "stage": "qualifyingGroup",
+      "letter": "C",
+      "standings": [
+        {
+          "team": "GER",
+          "p": 8,
+          "w": 7,
+          "d": 0,
+          "l": 1,
+          "gf": 30,
+          "ga": 7,
+          "pts": 21
+        },
+        {
+          "team": "NED",
+          "p": 8,
+          "w": 6,
+          "d": 1,
+          "l": 1,
+          "gf": 24,
+          "ga": 7,
+          "pts": 19
+        },
+        {
+          "team": "NIR",
+          "p": 8,
+          "w": 4,
+          "d": 1,
+          "l": 3,
+          "gf": 9,
+          "ga": 13,
+          "pts": 13
+        },
+        {
+          "team": "BLR",
+          "p": 8,
+          "w": 1,
+          "d": 1,
+          "l": 6,
+          "gf": 4,
+          "ga": 16,
+          "pts": 4
+        },
+        {
+          "team": "EST",
+          "p": 8,
+          "w": 0,
+          "d": 1,
+          "l": 7,
+          "gf": 2,
+          "ga": 26,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
       "letter": "D",
       "standings": [
         {
@@ -485,6 +540,270 @@
           "gf": 5,
           "ga": 18,
           "pts": 1
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "F",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 10,
+          "w": 8,
+          "d": 2,
+          "l": 0,
+          "gf": 31,
+          "ga": 5,
+          "pts": 26
+        },
+        {
+          "team": "SWE",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 23,
+          "ga": 9,
+          "pts": 21
+        },
+        {
+          "team": "NOR",
+          "p": 10,
+          "w": 4,
+          "d": 5,
+          "l": 1,
+          "gf": 19,
+          "ga": 11,
+          "pts": 17
+        },
+        {
+          "team": "ROU",
+          "p": 10,
+          "w": 4,
+          "d": 2,
+          "l": 4,
+          "gf": 17,
+          "ga": 15,
+          "pts": 14
+        },
+        {
+          "team": "MLT",
+          "p": 10,
+          "w": 1,
+          "d": 0,
+          "l": 9,
+          "gf": 3,
+          "ga": 27,
+          "pts": 3
+        },
+        {
+          "team": "FRO",
+          "p": 10,
+          "w": 1,
+          "d": 0,
+          "l": 9,
+          "gf": 4,
+          "ga": 30,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "G",
+      "standings": [
+        {
+          "team": "POL",
+          "p": 10,
+          "w": 8,
+          "d": 1,
+          "l": 1,
+          "gf": 18,
+          "ga": 5,
+          "pts": 25
+        },
+        {
+          "team": "AUT",
+          "p": 10,
+          "w": 6,
+          "d": 1,
+          "l": 3,
+          "gf": 19,
+          "ga": 9,
+          "pts": 19
+        },
+        {
+          "team": "SVN",
+          "p": 10,
+          "w": 4,
+          "d": 2,
+          "l": 4,
+          "gf": 16,
+          "ga": 11,
+          "pts": 14
+        },
+        {
+          "team": "MKD",
+          "p": 10,
+          "w": 4,
+          "d": 2,
+          "l": 4,
+          "gf": 12,
+          "ga": 13,
+          "pts": 14
+        },
+        {
+          "team": "ISR",
+          "p": 10,
+          "w": 3,
+          "d": 2,
+          "l": 5,
+          "gf": 16,
+          "ga": 18,
+          "pts": 11
+        },
+        {
+          "team": "LAT",
+          "p": 10,
+          "w": 1,
+          "d": 0,
+          "l": 9,
+          "gf": 3,
+          "ga": 28,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "H",
+      "standings": [
+        {
+          "team": "FRA",
+          "p": 10,
+          "w": 8,
+          "d": 1,
+          "l": 1,
+          "gf": 25,
+          "ga": 6,
+          "pts": 25
+        },
+        {
+          "team": "TUR",
+          "p": 10,
+          "w": 7,
+          "d": 2,
+          "l": 1,
+          "gf": 18,
+          "ga": 3,
+          "pts": 23
+        },
+        {
+          "team": "ISL",
+          "p": 10,
+          "w": 6,
+          "d": 1,
+          "l": 3,
+          "gf": 14,
+          "ga": 11,
+          "pts": 19
+        },
+        {
+          "team": "ALB",
+          "p": 10,
+          "w": 4,
+          "d": 1,
+          "l": 5,
+          "gf": 16,
+          "ga": 14,
+          "pts": 13
+        },
+        {
+          "team": "AND",
+          "p": 10,
+          "w": 1,
+          "d": 1,
+          "l": 8,
+          "gf": 3,
+          "ga": 20,
+          "pts": 4
+        },
+        {
+          "team": "MDA",
+          "p": 10,
+          "w": 1,
+          "d": 0,
+          "l": 9,
+          "gf": 4,
+          "ga": 26,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "I",
+      "standings": [
+        {
+          "team": "BEL",
+          "p": 10,
+          "w": 10,
+          "d": 0,
+          "l": 0,
+          "gf": 40,
+          "ga": 3,
+          "pts": 30
+        },
+        {
+          "team": "RUS",
+          "p": 10,
+          "w": 8,
+          "d": 0,
+          "l": 2,
+          "gf": 33,
+          "ga": 8,
+          "pts": 24
+        },
+        {
+          "team": "SCO",
+          "p": 10,
+          "w": 5,
+          "d": 0,
+          "l": 5,
+          "gf": 16,
+          "ga": 19,
+          "pts": 15
+        },
+        {
+          "team": "KAZ",
+          "p": 10,
+          "w": 3,
+          "d": 1,
+          "l": 6,
+          "gf": 13,
+          "ga": 17,
+          "pts": 10
+        },
+        {
+          "team": "CYP",
+          "p": 10,
+          "w": 3,
+          "d": 1,
+          "l": 6,
+          "gf": 15,
+          "ga": 20,
+          "pts": 10
+        },
+        {
+          "team": "SMR",
+          "p": 10,
+          "w": 0,
+          "d": 0,
+          "l": 10,
+          "gf": 1,
+          "ga": 51,
+          "pts": 0
         }
       ]
     },
@@ -2554,6 +2873,24 @@
       "group": "C",
       "matchday": null,
       "date": "2019-11-19",
+      "city": null,
+      "home": "GER",
+      "away": "NIR",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "C",
+      "matchday": null,
+      "date": "2019-11-19",
       "city": "Amsterdam",
       "home": "NED",
       "away": "EST",
@@ -2565,7 +2902,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m110"
+      "id": "m111"
     },
     {
       "stage": "qualifyingGroup",
@@ -2583,7 +2920,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m111"
+      "id": "m112"
     },
     {
       "stage": "qualifyingGroup",
@@ -2601,7 +2938,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m112"
+      "id": "m113"
     },
     {
       "stage": "qualifyingGroup",
@@ -2619,7 +2956,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m113"
+      "id": "m114"
     },
     {
       "stage": "qualifyingGroup",
@@ -2637,7 +2974,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m114"
+      "id": "m115"
     },
     {
       "stage": "qualifyingGroup",
@@ -2655,7 +2992,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m115"
+      "id": "m116"
     },
     {
       "stage": "qualifyingGroup",
@@ -2673,7 +3010,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m116"
+      "id": "m117"
     },
     {
       "stage": "qualifyingGroup",
@@ -2691,7 +3028,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m117"
+      "id": "m118"
     },
     {
       "stage": "qualifyingGroup",
@@ -2709,7 +3046,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m118"
+      "id": "m119"
     },
     {
       "stage": "qualifyingGroup",
@@ -2727,7 +3064,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m119"
+      "id": "m120"
     },
     {
       "stage": "qualifyingGroup",
@@ -2745,7 +3082,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m120"
+      "id": "m121"
     },
     {
       "stage": "qualifyingGroup",
@@ -2763,7 +3100,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m121"
+      "id": "m122"
     },
     {
       "stage": "qualifyingGroup",
@@ -2781,7 +3118,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m122"
+      "id": "m123"
     },
     {
       "stage": "qualifyingGroup",
@@ -2799,7 +3136,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m123"
+      "id": "m124"
     },
     {
       "stage": "qualifyingGroup",
@@ -2817,7 +3154,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m124"
+      "id": "m125"
     },
     {
       "stage": "qualifyingGroup",
@@ -2835,7 +3172,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m125"
+      "id": "m126"
     },
     {
       "stage": "qualifyingGroup",
@@ -2853,7 +3190,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m126"
+      "id": "m127"
     },
     {
       "stage": "qualifyingGroup",
@@ -2871,7 +3208,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m127"
+      "id": "m128"
     },
     {
       "stage": "qualifyingGroup",
@@ -2889,7 +3226,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m128"
+      "id": "m129"
     },
     {
       "stage": "qualifyingGroup",
@@ -2907,7 +3244,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m129"
+      "id": "m130"
     },
     {
       "stage": "qualifyingGroup",
@@ -2925,7 +3262,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m130"
+      "id": "m131"
     },
     {
       "stage": "qualifyingGroup",
@@ -2943,7 +3280,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m131"
+      "id": "m132"
     },
     {
       "stage": "qualifyingGroup",
@@ -2961,7 +3298,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m132"
+      "id": "m133"
     },
     {
       "stage": "qualifyingGroup",
@@ -2979,7 +3316,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m133"
+      "id": "m134"
     },
     {
       "stage": "qualifyingGroup",
@@ -2997,7 +3334,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m134"
+      "id": "m135"
     },
     {
       "stage": "qualifyingGroup",
@@ -3015,7 +3352,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m135"
+      "id": "m136"
     },
     {
       "stage": "qualifyingGroup",
@@ -3033,7 +3370,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m136"
+      "id": "m137"
     },
     {
       "stage": "qualifyingGroup",
@@ -3051,7 +3388,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m137"
+      "id": "m138"
     },
     {
       "stage": "qualifyingGroup",
@@ -3069,7 +3406,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m138"
+      "id": "m139"
     },
     {
       "stage": "qualifyingGroup",
@@ -3087,7 +3424,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m139"
+      "id": "m140"
     },
     {
       "stage": "qualifyingGroup",
@@ -3105,7 +3442,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m140"
+      "id": "m141"
     },
     {
       "stage": "qualifyingGroup",
@@ -3123,7 +3460,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m141"
+      "id": "m142"
     },
     {
       "stage": "qualifyingGroup",
@@ -3141,7 +3478,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m142"
+      "id": "m143"
     },
     {
       "stage": "qualifyingGroup",
@@ -3159,7 +3496,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m143"
+      "id": "m144"
     },
     {
       "stage": "qualifyingGroup",
@@ -3177,7 +3514,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m144"
+      "id": "m145"
     },
     {
       "stage": "qualifyingGroup",
@@ -3195,7 +3532,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m145"
+      "id": "m146"
     },
     {
       "stage": "qualifyingGroup",
@@ -3213,7 +3550,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m146"
+      "id": "m147"
     },
     {
       "stage": "qualifyingGroup",
@@ -3231,7 +3568,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m147"
+      "id": "m148"
     },
     {
       "stage": "qualifyingGroup",
@@ -3249,7 +3586,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m148"
+      "id": "m149"
     },
     {
       "stage": "qualifyingGroup",
@@ -3267,7 +3604,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m149"
+      "id": "m150"
     },
     {
       "stage": "qualifyingGroup",
@@ -3285,7 +3622,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m150"
+      "id": "m151"
     },
     {
       "stage": "qualifyingGroup",
@@ -3303,7 +3640,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m151"
+      "id": "m152"
     },
     {
       "stage": "qualifyingGroup",
@@ -3321,7 +3658,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m152"
+      "id": "m153"
     },
     {
       "stage": "qualifyingGroup",
@@ -3339,7 +3676,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m153"
+      "id": "m154"
     },
     {
       "stage": "qualifyingGroup",
@@ -3357,7 +3694,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m154"
+      "id": "m155"
     },
     {
       "stage": "qualifyingGroup",
@@ -3375,7 +3712,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m155"
+      "id": "m156"
     },
     {
       "stage": "qualifyingGroup",
@@ -3393,7 +3730,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m156"
+      "id": "m157"
     },
     {
       "stage": "qualifyingGroup",
@@ -3411,7 +3748,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m157"
+      "id": "m158"
     },
     {
       "stage": "qualifyingGroup",
@@ -3429,7 +3766,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m158"
+      "id": "m159"
     },
     {
       "stage": "qualifyingGroup",
@@ -3447,7 +3784,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m159"
+      "id": "m160"
     },
     {
       "stage": "qualifyingGroup",
@@ -3465,7 +3802,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m160"
+      "id": "m161"
     },
     {
       "stage": "qualifyingGroup",
@@ -3483,7 +3820,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m161"
+      "id": "m162"
     },
     {
       "stage": "qualifyingGroup",
@@ -3501,7 +3838,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m162"
+      "id": "m163"
     },
     {
       "stage": "qualifyingGroup",
@@ -3519,7 +3856,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m163"
+      "id": "m164"
     },
     {
       "stage": "qualifyingGroup",
@@ -3537,7 +3874,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m164"
+      "id": "m165"
     },
     {
       "stage": "qualifyingGroup",
@@ -3555,7 +3892,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m165"
+      "id": "m166"
     },
     {
       "stage": "qualifyingGroup",
@@ -3573,7 +3910,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m166"
+      "id": "m167"
     },
     {
       "stage": "qualifyingGroup",
@@ -3591,7 +3928,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m167"
+      "id": "m168"
     },
     {
       "stage": "qualifyingGroup",
@@ -3609,7 +3946,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m168"
+      "id": "m169"
     },
     {
       "stage": "qualifyingGroup",
@@ -3627,7 +3964,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m169"
+      "id": "m170"
     },
     {
       "stage": "qualifyingGroup",
@@ -3645,7 +3982,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m170"
+      "id": "m171"
     },
     {
       "stage": "qualifyingGroup",
@@ -3663,7 +4000,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m171"
+      "id": "m172"
     },
     {
       "stage": "qualifyingGroup",
@@ -3681,7 +4018,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m172"
+      "id": "m173"
     },
     {
       "stage": "qualifyingGroup",
@@ -3699,7 +4036,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m173"
+      "id": "m174"
     },
     {
       "stage": "qualifyingGroup",
@@ -3717,7 +4054,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m174"
+      "id": "m175"
     },
     {
       "stage": "qualifyingGroup",
@@ -3735,7 +4072,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m175"
+      "id": "m176"
     },
     {
       "stage": "qualifyingGroup",
@@ -3753,7 +4090,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m176"
+      "id": "m177"
     },
     {
       "stage": "qualifyingGroup",
@@ -3771,7 +4108,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m177"
+      "id": "m178"
     },
     {
       "stage": "qualifyingGroup",
@@ -3789,7 +4126,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m178"
+      "id": "m179"
     },
     {
       "stage": "qualifyingGroup",
@@ -3807,7 +4144,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m179"
+      "id": "m180"
     },
     {
       "stage": "qualifyingGroup",
@@ -3825,7 +4162,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m180"
+      "id": "m181"
     },
     {
       "stage": "qualifyingGroup",
@@ -3843,7 +4180,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m181"
+      "id": "m182"
     },
     {
       "stage": "qualifyingGroup",
@@ -3861,7 +4198,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m182"
+      "id": "m183"
     },
     {
       "stage": "qualifyingGroup",
@@ -3879,7 +4216,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m183"
+      "id": "m184"
     },
     {
       "stage": "qualifyingGroup",
@@ -3897,7 +4234,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m184"
+      "id": "m185"
     },
     {
       "stage": "qualifyingGroup",
@@ -3915,7 +4252,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m185"
+      "id": "m186"
     },
     {
       "stage": "qualifyingGroup",
@@ -3933,7 +4270,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m186"
+      "id": "m187"
     },
     {
       "stage": "qualifyingGroup",
@@ -3951,7 +4288,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m187"
+      "id": "m188"
     },
     {
       "stage": "qualifyingGroup",
@@ -3969,7 +4306,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m188"
+      "id": "m189"
     },
     {
       "stage": "qualifyingGroup",
@@ -3987,7 +4324,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m189"
+      "id": "m190"
     },
     {
       "stage": "qualifyingGroup",
@@ -4005,7 +4342,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m190"
+      "id": "m191"
     },
     {
       "stage": "qualifyingGroup",
@@ -4023,7 +4360,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m191"
+      "id": "m192"
     },
     {
       "stage": "qualifyingGroup",
@@ -4041,7 +4378,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m192"
+      "id": "m193"
     },
     {
       "stage": "qualifyingGroup",
@@ -4059,7 +4396,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m193"
+      "id": "m194"
     },
     {
       "stage": "qualifyingGroup",
@@ -4077,7 +4414,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m194"
+      "id": "m195"
     },
     {
       "stage": "qualifyingGroup",
@@ -4095,7 +4432,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m195"
+      "id": "m196"
     },
     {
       "stage": "qualifyingGroup",
@@ -4113,7 +4450,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m196"
+      "id": "m197"
     },
     {
       "stage": "qualifyingGroup",
@@ -4131,7 +4468,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m197"
+      "id": "m198"
     },
     {
       "stage": "qualifyingGroup",
@@ -4149,7 +4486,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m198"
+      "id": "m199"
     },
     {
       "stage": "qualifyingGroup",
@@ -4167,7 +4504,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m199"
+      "id": "m200"
     },
     {
       "stage": "qualifyingGroup",
@@ -4185,7 +4522,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m200"
+      "id": "m201"
     },
     {
       "stage": "qualifyingGroup",
@@ -4203,7 +4540,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m201"
+      "id": "m202"
     },
     {
       "stage": "qualifyingGroup",
@@ -4221,7 +4558,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m202"
+      "id": "m203"
     },
     {
       "stage": "qualifyingGroup",
@@ -4239,7 +4576,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m203"
+      "id": "m204"
     },
     {
       "stage": "qualifyingGroup",
@@ -4257,7 +4594,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m204"
+      "id": "m205"
     },
     {
       "stage": "qualifyingGroup",
@@ -4275,7 +4612,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m205"
+      "id": "m206"
     },
     {
       "stage": "qualifyingGroup",
@@ -4293,7 +4630,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m206"
+      "id": "m207"
     },
     {
       "stage": "qualifyingGroup",
@@ -4311,7 +4648,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m207"
+      "id": "m208"
     },
     {
       "stage": "qualifyingGroup",
@@ -4329,7 +4666,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m208"
+      "id": "m209"
     },
     {
       "stage": "qualifyingGroup",
@@ -4347,7 +4684,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m209"
+      "id": "m210"
     },
     {
       "stage": "qualifyingGroup",
@@ -4365,7 +4702,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m210"
+      "id": "m211"
     },
     {
       "stage": "qualifyingGroup",
@@ -4383,7 +4720,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m211"
+      "id": "m212"
     },
     {
       "stage": "qualifyingGroup",
@@ -4401,7 +4738,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m212"
+      "id": "m213"
     },
     {
       "stage": "qualifyingGroup",
@@ -4419,7 +4756,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m213"
+      "id": "m214"
     },
     {
       "stage": "qualifyingGroup",
@@ -4437,7 +4774,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m214"
+      "id": "m215"
     },
     {
       "stage": "qualifyingGroup",
@@ -4455,7 +4792,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m215"
+      "id": "m216"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-03-25",
+      "city": null,
+      "home": "FRA",
+      "away": "ISL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m217"
     },
     {
       "stage": "qualifyingGroup",
@@ -4473,7 +4828,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m216"
+      "id": "m218"
     },
     {
       "stage": "qualifyingGroup",
@@ -4491,7 +4846,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m217"
+      "id": "m219"
     },
     {
       "stage": "qualifyingGroup",
@@ -4509,7 +4864,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m218"
+      "id": "m220"
     },
     {
       "stage": "qualifyingGroup",
@@ -4527,7 +4882,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m219"
+      "id": "m221"
     },
     {
       "stage": "qualifyingGroup",
@@ -4545,7 +4900,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m220"
+      "id": "m222"
     },
     {
       "stage": "qualifyingGroup",
@@ -4563,7 +4918,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m221"
+      "id": "m223"
     },
     {
       "stage": "qualifyingGroup",
@@ -4581,7 +4936,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m222"
+      "id": "m224"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-09-07",
+      "city": null,
+      "home": "FRA",
+      "away": "ALB",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m225"
     },
     {
       "stage": "qualifyingGroup",
@@ -4599,7 +4972,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m223"
+      "id": "m226"
     },
     {
       "stage": "qualifyingGroup",
@@ -4617,7 +4990,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m224"
+      "id": "m227"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-09-10",
+      "city": null,
+      "home": "FRA",
+      "away": "AND",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m228"
     },
     {
       "stage": "qualifyingGroup",
@@ -4635,7 +5026,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m225"
+      "id": "m229"
     },
     {
       "stage": "qualifyingGroup",
@@ -4653,7 +5044,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m226"
+      "id": "m230"
     },
     {
       "stage": "qualifyingGroup",
@@ -4671,7 +5062,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m227"
+      "id": "m231"
     },
     {
       "stage": "qualifyingGroup",
@@ -4689,7 +5080,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m228"
+      "id": "m232"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-10-14",
+      "city": null,
+      "home": "FRA",
+      "away": "TUR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m233"
     },
     {
       "stage": "qualifyingGroup",
@@ -4707,7 +5116,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m229"
+      "id": "m234"
     },
     {
       "stage": "qualifyingGroup",
@@ -4725,7 +5134,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m230"
+      "id": "m235"
     },
     {
       "stage": "qualifyingGroup",
@@ -4743,7 +5152,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m231"
+      "id": "m236"
     },
     {
       "stage": "qualifyingGroup",
@@ -4761,7 +5170,25 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m232"
+      "id": "m237"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "H",
+      "matchday": null,
+      "date": "2019-11-14",
+      "city": null,
+      "home": "FRA",
+      "away": "MDA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m238"
     },
     {
       "stage": "qualifyingGroup",
@@ -4779,7 +5206,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m233"
+      "id": "m239"
     },
     {
       "stage": "qualifyingGroup",
@@ -4797,7 +5224,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m234"
+      "id": "m240"
     },
     {
       "stage": "qualifyingGroup",
@@ -4815,7 +5242,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m235"
+      "id": "m241"
     },
     {
       "stage": "qualifyingGroup",
@@ -4833,7 +5260,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m236"
+      "id": "m242"
     },
     {
       "stage": "qualifyingGroup",
@@ -4851,7 +5278,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m237"
+      "id": "m243"
     },
     {
       "stage": "qualifyingGroup",
@@ -4869,7 +5296,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m238"
+      "id": "m244"
     },
     {
       "stage": "qualifyingGroup",
@@ -4887,7 +5314,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m239"
+      "id": "m245"
     },
     {
       "stage": "qualifyingGroup",
@@ -4905,7 +5332,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m240"
+      "id": "m246"
     },
     {
       "stage": "qualifyingGroup",
@@ -4923,7 +5350,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m241"
+      "id": "m247"
     },
     {
       "stage": "qualifyingGroup",
@@ -4941,7 +5368,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m242"
+      "id": "m248"
     },
     {
       "stage": "qualifyingGroup",
@@ -4959,7 +5386,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m243"
+      "id": "m249"
     },
     {
       "stage": "qualifyingGroup",
@@ -4977,7 +5404,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m244"
+      "id": "m250"
     },
     {
       "stage": "qualifyingGroup",
@@ -4995,7 +5422,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m245"
+      "id": "m251"
     },
     {
       "stage": "qualifyingGroup",
@@ -5013,7 +5440,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m246"
+      "id": "m252"
     },
     {
       "stage": "qualifyingGroup",
@@ -5031,7 +5458,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m247"
+      "id": "m253"
     },
     {
       "stage": "qualifyingGroup",
@@ -5049,7 +5476,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m248"
+      "id": "m254"
     },
     {
       "stage": "qualifyingGroup",
@@ -5067,7 +5494,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m249"
+      "id": "m255"
     },
     {
       "stage": "qualifyingGroup",
@@ -5085,7 +5512,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m250"
+      "id": "m256"
     },
     {
       "stage": "qualifyingGroup",
@@ -5103,7 +5530,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m251"
+      "id": "m257"
     },
     {
       "stage": "qualifyingGroup",
@@ -5121,7 +5548,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m252"
+      "id": "m258"
     },
     {
       "stage": "qualifyingGroup",
@@ -5139,7 +5566,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m253"
+      "id": "m259"
     },
     {
       "stage": "qualifyingGroup",
@@ -5157,7 +5584,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m254"
+      "id": "m260"
     },
     {
       "stage": "qualifyingGroup",
@@ -5175,7 +5602,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m255"
+      "id": "m261"
     },
     {
       "stage": "qualifyingGroup",
@@ -5193,7 +5620,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m256"
+      "id": "m262"
     },
     {
       "stage": "qualifyingGroup",
@@ -5211,7 +5638,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m257"
+      "id": "m263"
     },
     {
       "stage": "qualifyingGroup",
@@ -5229,7 +5656,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m258"
+      "id": "m264"
     },
     {
       "stage": "qualifyingGroup",
@@ -5247,7 +5674,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m259"
+      "id": "m265"
     },
     {
       "stage": "qualifyingGroup",
@@ -5265,7 +5692,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m260"
+      "id": "m266"
     },
     {
       "stage": "qualifyingGroup",
@@ -5283,7 +5710,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m261"
+      "id": "m267"
     },
     {
       "stage": "qualifyingGroup",
@@ -5301,7 +5728,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m262"
+      "id": "m268"
     },
     {
       "stage": "qualifyingGroup",
@@ -5319,7 +5746,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m263"
+      "id": "m269"
     },
     {
       "stage": "qualifyingGroup",
@@ -5337,7 +5764,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m264"
+      "id": "m270"
     },
     {
       "stage": "qualifyingGroup",
@@ -5355,7 +5782,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m265"
+      "id": "m271"
     },
     {
       "stage": "qualifyingGroup",
@@ -5373,7 +5800,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m266"
+      "id": "m272"
     },
     {
       "stage": "qualifyingGroup",
@@ -5391,7 +5818,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m267"
+      "id": "m273"
     },
     {
       "stage": "qualifyingGroup",
@@ -5409,7 +5836,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m268"
+      "id": "m274"
     },
     {
       "stage": "qualifyingGroup",
@@ -5427,7 +5854,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m269"
+      "id": "m275"
     },
     {
       "stage": "qualifyingGroup",
@@ -5445,7 +5872,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m270"
+      "id": "m276"
     },
     {
       "stage": "qualifyingGroup",
@@ -5463,7 +5890,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m271"
+      "id": "m277"
     },
     {
       "stage": "qualifyingGroup",
@@ -5481,7 +5908,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m272"
+      "id": "m278"
     },
     {
       "stage": "qualifyingGroup",
@@ -5499,7 +5926,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m273"
+      "id": "m279"
     },
     {
       "stage": "qualifyingGroup",
@@ -5517,7 +5944,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m274"
+      "id": "m280"
     },
     {
       "stage": "qualifyingGroup",
@@ -5535,7 +5962,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m275"
+      "id": "m281"
     },
     {
       "stage": "qualifyingGroup",
@@ -5553,7 +5980,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m276"
+      "id": "m282"
     },
     {
       "stage": "qualifyingGroup",
@@ -5571,7 +5998,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m277"
+      "id": "m283"
     },
     {
       "stage": "qualifyingGroup",
@@ -5589,7 +6016,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m278"
+      "id": "m284"
     },
     {
       "stage": "qualifyingGroup",
@@ -5607,7 +6034,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m279"
+      "id": "m285"
     },
     {
       "stage": "qualifyingGroup",
@@ -5625,7 +6052,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m280"
+      "id": "m286"
     },
     {
       "stage": "qualifyingGroup",
@@ -5643,7 +6070,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m281"
+      "id": "m287"
     },
     {
       "stage": "qualifyingGroup",
@@ -5661,7 +6088,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m282"
+      "id": "m288"
     },
     {
       "stage": "qualifyingGroup",
@@ -5679,7 +6106,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m283"
+      "id": "m289"
     },
     {
       "stage": "qualifyingGroup",
@@ -5697,7 +6124,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m284"
+      "id": "m290"
     },
     {
       "stage": "qualifyingGroup",
@@ -5715,7 +6142,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m285"
+      "id": "m291"
     },
     {
       "stage": "qualifyingGroup",
@@ -5733,7 +6160,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m286"
+      "id": "m292"
     },
     {
       "stage": "qualifyingGroup",
@@ -5751,7 +6178,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m287"
+      "id": "m293"
     },
     {
       "stage": "qualifyingGroup",
@@ -5769,7 +6196,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m288"
+      "id": "m294"
     },
     {
       "stage": "qualifyingGroup",
@@ -5787,7 +6214,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m289"
+      "id": "m295"
     },
     {
       "stage": "qualifyingGroup",
@@ -5805,7 +6232,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m290"
+      "id": "m296"
     },
     {
       "stage": "qualifyingGroup",
@@ -5823,7 +6250,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m291"
+      "id": "m297"
     },
     {
       "stage": "qualifyingGroup",
@@ -5841,7 +6268,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m292"
+      "id": "m298"
     },
     {
       "stage": "qualifyingGroup",
@@ -5859,7 +6286,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m293"
+      "id": "m299"
     },
     {
       "stage": "qualifyingGroup",
@@ -5877,7 +6304,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m294"
+      "id": "m300"
     },
     {
       "stage": "qualifyingGroup",
@@ -5895,7 +6322,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m295"
+      "id": "m301"
     },
     {
       "stage": "qualifyingRound",
@@ -5913,7 +6340,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m296"
+      "id": "m302"
     },
     {
       "stage": "qualifyingRound",
@@ -5931,7 +6358,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m297"
+      "id": "m303"
     },
     {
       "stage": "qualifyingRound",
@@ -5949,7 +6376,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m298"
+      "id": "m304"
     },
     {
       "stage": "qualifyingRound",
@@ -5967,7 +6394,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m299"
+      "id": "m305"
     },
     {
       "stage": "qualifyingRound",
@@ -5985,7 +6412,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m300"
+      "id": "m306"
     },
     {
       "stage": "qualifyingRound",
@@ -6003,7 +6430,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m301"
+      "id": "m307"
     },
     {
       "stage": "qualifyingRound",
@@ -6021,7 +6448,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m302"
+      "id": "m308"
     },
     {
       "stage": "qualifyingRound",
@@ -6039,7 +6466,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m303"
+      "id": "m309"
     },
     {
       "stage": "qualifyingRound",
@@ -6057,7 +6484,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m304"
+      "id": "m310"
     },
     {
       "stage": "qualifyingRound",
@@ -6075,7 +6502,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m305"
+      "id": "m311"
     },
     {
       "stage": "qualifyingRound",
@@ -6093,7 +6520,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m306"
+      "id": "m312"
     },
     {
       "stage": "qualifyingRound",
@@ -6111,7 +6538,7 @@
       "notes": [],
       "pens": null,
       "raw": null,
-      "id": "m307"
+      "id": "m313"
     }
   ],
   "scorers": [],
@@ -6121,30 +6548,6 @@
     },
     {
       "reason": "final a doble vuelta sin partido con el campeón como ganador; finalMatchId omitido"
-    },
-    {
-      "line": 226,
-      "reason": "columnas de clasificación no reconocidas: 5.Faroe Islands      10  1  0  9   4-30  3  [2 1 0 1 2-2 3; 1 ag]"
-    },
-    {
-      "line": 227,
-      "reason": "columnas de clasificación no reconocidas: 6.Malta              10  1  0  9   3-27  3  [2 1 0 1 2-2 3; 0 ag]"
-    },
-    {
-      "line": 267,
-      "reason": "columnas de clasificación no reconocidas: 3.North Macedonia    10  4  2  4  12-13 14  [2 1 1 0 3-2 4]"
-    },
-    {
-      "line": 268,
-      "reason": "columnas de clasificación no reconocidas: 4.Slovenia           10  4  2  4  16-11 14  [2 0 1 1 2-3 1]"
-    },
-    {
-      "line": 354,
-      "reason": "columnas de clasificación no reconocidas: 4.Cyprus             10  3  1  6  15-20 10  [2 1 1 0 3-2 4]"
-    },
-    {
-      "line": 355,
-      "reason": "columnas de clasificación no reconocidas: 5.Kazakhstan         10  3  1  6  13-17 10  [2 0 1 1 2-3 1]"
     },
     {
       "line": 407,
@@ -6473,57 +6876,6 @@
     {
       "line": 519,
       "reason": "partido no reconocido: Final"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Frankfurt/Main Germany-Northern Ireland)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Paris St-Denis France-Iceland)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Paris St-Denis France-Albania)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Paris St-Denis France-Andorra)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Paris St-Denis France-Turkey)"
-    },
-    {
-      "reason": "partido de clasificación omitido: país no resoluble (Paris St-Denis France-Moldova)"
-    },
-    {
-      "reason": "clasificación incompleta descartada en grupo F (FRO: retirado o fila perdida)"
-    },
-    {
-      "reason": "clasificación incompleta descartada en grupo F (MLT: retirado o fila perdida)"
-    },
-    {
-      "reason": "clasificación incompleta descartada en grupo G (MKD: retirado o fila perdida)"
-    },
-    {
-      "reason": "clasificación incompleta descartada en grupo G (SVN: retirado o fila perdida)"
-    },
-    {
-      "reason": "clasificación incompleta descartada en grupo I (CYP: retirado o fila perdida)"
-    },
-    {
-      "reason": "clasificación incompleta descartada en grupo I (KAZ: retirado o fila perdida)"
-    },
-    {
-      "reason": "grupo C omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 62 != clasificación 69)"
-    },
-    {
-      "reason": "grupo F omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 90 != suma GA 40 (faltan equipos o columnas))"
-    },
-    {
-      "reason": "grupo G omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 56 != suma GA 60 (faltan equipos o columnas))"
-    },
-    {
-      "reason": "grupo H omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 63 != clasificación 80)"
-    },
-    {
-      "reason": "grupo I omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 90 != suma GA 81 (faltan equipos o columnas))"
     }
   ],
   "teamsCount": 24
