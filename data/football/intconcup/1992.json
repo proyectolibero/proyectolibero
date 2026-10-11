@@ -60,7 +60,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup92",
+        "text": "October, 16 1992 Att: 15,000 Ref: Jamal Sharif (SYR)\nArgentina 4-0 (2-0) Ivory Coast\n1-0  2' Batistuta\n2-0 10' Batistuta\n3-0 67' Altamirano\n4-0 81' Acosta\nDominique sent off, 15' min.\nArgentina: Goycochea - Vazquez, Altamirano, Basualdo, Ruggeri,Redondo,\nVillareal (75' Cagna), Simeone, Rodriguez (67' Acosta),\nCaniggia, Batistuta\nIvory Coast: Alian - Kouame, Sekana, Dominique*, Lassina, Gadji, Kassy,\n(56' Nagueu), Maguy, Sie, Ben Salah (84' Beugre), Traore",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -77,7 +82,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup92",
+        "text": "October, 15 1992 Att: 70,000 Ref: Ulisses da Silva (BRA)\nSaudi Arabia 3-0 (0-0) United States\n1-0 48' Al-Bishi\n2-0 74' Al-Thunyan\n3-0 84' Al-Muwalid\nQuinn sent off, 18 min.\nSaudi Arabia: Al-Otaibi - A. Al-Dosari, Al-Roomi, Al-Wi, Amin, Al-Bishi,\nAl-Muwalid, Al-Thunyan, Al-Jaber (72' Mehalel),\nOwairan, Ah. Al-Dosari\nUnited States: Meola - Clavijo, Balboa, Lapper, Harkes, Quinn*,\nHenderson (62' Harbor), Murray (46' Caliguri), Ramos,\nPerez, Wegerle",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -94,7 +104,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup92",
+        "text": "October, 19 1992 Att: 9,500 Ref: Rodrigo Segueira (CR)\nUnited States 5-2 (2-1) Ivory Coast\n1-0 12' Balboa\n1-1 16' Traore\n2-1 31' Jones\n3-1 56' Wynalda\n4-1 67' Murray\n4-2 76' Sie\n5-2 83' Murray\nUnited States: Meola - Clavijo, Balboa, Lapper, Caliguri, Michalik,\nHenderson (27' Jones), Murray, Perez, Wynalda, Vermes (73' Kinnear)\nIvory Coast: Alian - Kouame, Brahima, Rufin, Sekana, Ben Salah,\nTraore, Nagueu, Beugre (63' Kassy), Sie, Lassina (46' Gadji)",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -111,7 +126,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup92",
+        "text": "October, 20 1992 Att: 75,000 Ref: Lim Kee Chong (Mauritius)\nArgentina 3-1 (2-0) Saudi Arabia\n1-0 18' Rodriguez\n2-0 24' Caniggia\n3-0 64' Simeone\n3-1 65' Owairan\nArgentina : Goycochea - Vazquez, Altamirano, Basualdo, Ruggeri, Redondo,\nVillareal (81' Cagna), Simeone, Rodriguez (73' Acosta),\nCaniggia, Batistuta\nSaudi Arabia: Al-Otaibi - A. Al-Dosari, Al-Wi, Al-Roomi, Amin, Al-Khwali,\nAl-Bishi (67' Alrzqan), Al-Muwalid, Ah. Al Dosari, Owairan,\nAl-Jaber (65' Mehalel)",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [],

@@ -210,14 +210,14 @@
     },
     {
       "path": "data/football/intconcup/1992.json",
-      "sha256": "496bc4e081be85c6797531faf29f8c0e6651d3a92e40a2cd4877f4b3390c648c",
+      "sha256": "fd1ac1f36f4b1c43c86940e1cc216f1301c5b104c7d604067351510ff4c5c36b",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1992
     },
     {
       "path": "data/football/intconcup/1995.json",
-      "sha256": "2526b83ae4bcaab373d64def73010fdf2069c5bdf0ecf7ef3f7672239dc7484e",
+      "sha256": "28cb3e880821548a352eeb85b0311a6c603e9cc613742ea2d70e1a8785384514",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1995
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "bb592e400c54ec227d813c7e86e4d2ac2282f11eb6f89d2866d6be91e31e293d",
+  "checksum": "6adc132c27ea5f5d5e7fd398d92f5f1dbfc984f26c5d0650e1fd3fe50b4466d8",
   "dataset": {
     "sports": 4,
     "competitions": 5,

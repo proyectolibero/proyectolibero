@@ -102,9 +102,11 @@ function toEncounterMatch(match, index, hasFinal, sourceId) {
  * fecha a los partidos que el índice compacto deja sin ella y completa `pens[]`
  * y las notas (`pen`/`aet`) de las tandas. El emparejamiento es por pareja de
  * equipos, admitiendo local/visitante invertidos: la orientación publicada (la
- * del índice) se conserva. Devuelve cuántos partidos se enriquecieron.
+ * del índice) se conserva. Cuando la fuente de detalle trae ficha verbatim
+ * (`rawSheet`) y el borrador aún no la tiene, se copia tal cual. Devuelve
+ * cuántos partidos se enriquecieron.
  */
-function mergeEditionDetail(draft, detail, warnings) {
+function mergeEditionDetail(draft, detail, warnings, sourceId) {
   let merged = 0;
   for (const source of detail.matches || []) {
     const home = normalizeTeam(source.home);
@@ -126,6 +128,10 @@ function mergeEditionDetail(draft, detail, warnings) {
     }
     if (!target.pens && Array.isArray(source.pens)) {
       target.pens = reversed ? [source.pens[1], source.pens[0]] : source.pens;
+    }
+    if (!target.sheet) {
+      const sheet = sheetFrom(source, sourceId);
+      if (sheet) target.sheet = sheet;
     }
     merged += 1;
   }
@@ -327,7 +333,7 @@ function buildCompetitionDrafts(input) {
     const draft = buildDraft(edition, parsed, competition, source, editionWarnings);
     const detail = detailList.find((item) => canonicalYear(item.year) === target);
     if (detail && detail.result) {
-      const merged = mergeEditionDetail(draft, detail.result, editionWarnings);
+      const merged = mergeEditionDetail(draft, detail.result, editionWarnings, detail.source && detail.source.id);
       if (merged > 0 && detail.source) {
         draft.sources.push({
           id: detail.source.id,

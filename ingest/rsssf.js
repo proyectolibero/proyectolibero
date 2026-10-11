@@ -1416,6 +1416,10 @@ const ED_NUMERIC_DATE = new RegExp(`^(${DATE_TOKEN})(.*)$`);
 const ED_SECTION =
   /^(?:group\s+[A-Z0-9]+|quarter-?finals?|semi-?finals?|third(?:\s+place)?(?:\s+match)?|3\/4(?:\s+place)?(?:\s+match)?|match\s+for\s+(?:the\s+)?third\s+place|final|first\s+round|second\s+round|play-?offs?)\b/i;
 
+/** Cierra la región de fichas de un detalle: resúmenes finales y convocados. */
+const ED_DETAIL_END =
+  /^(?:squad\s+lists?\b|top\s?scorers?\b|top\s+scorer\b|player\s+of\s+tournament\b|about\s+this\s+document\b)/i;
+
 /** Anotación entre corchetes al final de una línea (`[aet, 5-6 pen]`). */
 const ED_TRAILING_BRACKET = /\[([^\]]*)\]\s*$/;
 
@@ -1462,9 +1466,11 @@ function applyPenaltyBracket(match, content) {
  * Parsea el formato `ed`: páginas de detalle por edición (p. ej.
  * `intconcup92.html`/`intconcup95.html`). La fecha va en su propia línea y el
  * partido (local, marcador y visitante) en la siguiente; las líneas de
- * goleadores y alineaciones se ignoran. Si aparece `PENALTY SHOOTOUT:`, se lee
- * la tanda y se registra `pens[]` en el partido anterior: la última cifra
- * acumulada `a-b` es el resultado del tandeo, en orden local-visitante.
+ * goleadores y alineaciones se ignoran para el índice, pero se conservan como
+ * ficha verbatim (`rawSheet`) del partido en curso. Si aparece
+ * `PENALTY SHOOTOUT:`, se lee la tanda y se registra `pens[]` en el partido
+ * anterior: la última cifra acumulada `a-b` es el resultado del tandeo, en orden
+ * local-visitante.
  */
 function parseEditionDetail(text, ctx, result) {
   const lines = text.split("\n");
@@ -1472,13 +1478,35 @@ function parseEditionDetail(text, ctx, result) {
   let pending = null;
   let last = null;
   let inShootout = false;
+  // Ficha verbatim del partido en curso (`rawSheet`): el bloque arranca en su
+  // línea de fecha y acumula marcador, goleadores, alineaciones, tarjetas y la
+  // tanda hasta el siguiente partido, cabecera de fase o resumen final (mismo
+  // criterio que `parseEditionPage`).
+  let block = null;
+  /** Cierra la ficha en curso y la cuelga del partido que abrió el bloque. */
+  const finalize = () => {
+    if (last) last.rawSheet = block && block.length > 1 ? block.join("\n") : "";
+    last = null;
+    block = null;
+  };
+  const keep = (raw) => {
+    if (Array.isArray(block)) block.push(sheetLine(raw));
+  };
 
   for (let i = 0; i < lines.length; i += 1) {
-    const line = cleanLine(lines[i]);
+    const raw = lines[i];
+    const line = cleanLine(raw);
     if (line === "") continue;
+
+    if (ED_DETAIL_END.test(line)) {
+      finalize();
+      pending = null;
+      continue;
+    }
 
     if (/^PENALTY SHOOTOUT\b/i.test(line)) {
       inShootout = true;
+      keep(raw);
       continue;
     }
     if (inShootout) {
@@ -1488,6 +1516,7 @@ function parseEditionDetail(text, ctx, result) {
           last.pens = [Number(cumulative[1]), Number(cumulative[2])];
           last.notes = [...new Set([...(last.notes || []), "pen"])];
         }
+        keep(raw);
         continue;
       }
       inShootout = false;
@@ -1495,21 +1524,29 @@ function parseEditionDetail(text, ctx, result) {
 
     const date = editionDate(line, ctx);
     if (date) {
+      finalize();
       pending = { date: date.iso, city: editionCity(date.rest) };
-      last = null;
+      block = [sheetLine(raw)];
       continue;
     }
 
     const header = ED_SECTION.exec(line);
     if (header) {
+      finalize();
       section = header[0].trim();
       pending = null;
       continue;
     }
 
-    if (!pending) continue;
+    if (!pending) {
+      keep(raw);
+      continue;
+    }
     const score = /(\d+)\s*[-:]\s*(\d+)/.exec(line);
-    if (!score) continue;
+    if (!score) {
+      keep(raw);
+      continue;
+    }
     const before = line.slice(0, score.index).trim();
     const awayRaw = line.slice(score.index + score[0].length).trim().replace(/^\s*\([^)]*\)\s*/, "");
     const home = trailingCountry(before);
@@ -1534,8 +1571,10 @@ function parseEditionDetail(text, ctx, result) {
     const bracket = ED_TRAILING_BRACKET.exec(awayRaw);
     if (bracket) applyPenaltyBracket(last, bracket[1]);
     result.matches.push(last);
+    keep(raw);
     pending = null;
   }
+  finalize();
 }
 
 const SCORER_NUMBER = /^(\d+)\s*[-–—]\s*(.*)$/;

@@ -563,6 +563,58 @@ test("parse('ed') lee la fecha numérica y la tanda PENALTY SHOOTOUT (formato 19
   assert.deepEqual(matches[1].notes, ["pen"]);
 });
 
+test("parse('ed') captura la ficha verbatim y la cierra en el resumen final", () => {
+  const text = [
+    "Semifinals",
+    "",
+    "October, 15 1992 Att: 70,000 Ref: Ulisses da Silva (BRA)",
+    "Saudi Arabia 3-0 (0-0) United States",
+    "1-0 48' Al-Bishi",
+    "Saudi Arabia: Al-Otaibi - A. Al-Dosari, Al-Roomi",
+    "",
+    "Player of tournament: Redondo (ARG)",
+    "",
+    "Topscorers:",
+    "Batistuta (ARG) 2 goals"
+  ].join("\n");
+  const { matches, warnings } = parse("ed", text, { year: 1992 });
+  assert.equal(warnings.length, 0);
+  assert.equal(matches.length, 1);
+  assert.deepEqual(matches[0].rawSheet.split("\n"), [
+    "October, 15 1992 Att: 70,000 Ref: Ulisses da Silva (BRA)",
+    "Saudi Arabia 3-0 (0-0) United States",
+    "1-0 48' Al-Bishi",
+    "Saudi Arabia: Al-Otaibi - A. Al-Dosari, Al-Roomi"
+  ]);
+  assert.ok(!matches[0].rawSheet.includes("Player of tournament"));
+  assert.ok(!matches[0].rawSheet.includes("Batistuta"));
+});
+
+test("parse('ed') mantiene la tanda en la ficha y no la filtra al siguiente partido", () => {
+  const text = [
+    "10/01/1995, Riyadh, King Fahd Stadium, 20.000 [18.15]",
+    "DENMARK                1-1           MEXICO [HT 0-1]",
+    "PENALTY SHOOTOUT:",
+    "                                     Claudio SUÁREZ          [SCORED] 0-1",
+    "Michael SCHJONBERG      [SCORED] 1-1 Joaquín DEL OLMO        [SCORED] 1-2",
+    "Marc RIEPER             [SCORED] 4-2",
+    "",
+    "GROUP B [ARGENTINA, JAPAN, NIGERIA]",
+    "",
+    "06/01/1995, Riyadh, King Fahd Stadium, 25.000 [20.00]",
+    "JAPAN                  0-3           NIGERIA [HT 0-1]"
+  ].join("\n");
+  const { matches, warnings } = parse("ed", text, { year: 1995 });
+  assert.equal(warnings.length, 0);
+  assert.equal(matches.length, 2);
+  assert.ok(matches[0].rawSheet.includes("PENALTY SHOOTOUT:"));
+  assert.ok(matches[0].rawSheet.includes("[SCORED] 4-2"));
+  assert.ok(!matches[0].rawSheet.includes("GROUP B"));
+  assert.ok(matches[1].rawSheet.startsWith("06/01/1995, Riyadh"));
+  assert.ok(!matches[1].rawSheet.includes("PENALTY"));
+  assert.deepEqual(matches[0].pens, [4, 2]);
+});
+
 test("detectKind reconoce las páginas de edición (kind 'e')", () => {
   assert.equal(detectKind("https://www.rsssf.org/tables/60e.html"), "e");
   assert.equal(detectKind("https://www.rsssf.org/tables/2024e.html"), "e");

@@ -46,6 +46,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "DEN",
@@ -77,11 +78,11 @@
           "ga": 4,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "ARG",
@@ -113,8 +114,7 @@
           "ga": 8,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
     }
   ],
   "matches": [
@@ -133,7 +133,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup95",
+        "text": "06/01/1995, Riyadh, King Fahd Stadium, 25.000 [18.15]\nSAUDI ARABIA           0-2           MEXICO [HT 0-0]\nScorers:\nLuis GARCÍA 65'\nLuis GARCÍA 82'\nSaudi Arabia:                        Mexico:\n19-Hussein AL-SADIG                   1-Jorge CAMPOS\n12-Ahmed EESA                         2-Claudio SUÁREZ\n3-Mohammed AL-KHILAIWI               4-Marcos AMBRÍZ\n4-Abdullah SOULIMAN                  5-Jesús Ramón RAMÍREZ\n5-Ahmed JAMEEL                       6-Marcelino BERNAL\n6-Fuad AMIN                          7-Carlos HERMOSILLO\n8-Saleh AL-SALEH                     8-Alberto GARCÍA ASPÉ\n9-Sami AL-JABER                      9-Jorge RODRÍGUEZ\n10-Saeed OWAIRAN                     11-Luis Roberto ALVES 'ZAGUE'\n14-Khalid AL-MUWALLID                14-Joaquín DEL OLMO\n15-Saleh AL-DAWOD                    21-Raúl GUTIÉRREZ\nSubs Used:\n20-Hamzah SALEH  [<15] 60'           10-Luis GARCÍA    [<7] 46'\n11-Fahad MEHALEL [<6]  68'           16-Alberto COYOTE [<5] 87'\nCoaches:\nMohamed AL-KARASHI                   Miguel MEJÍA\nCards:\nAbdullah SOULIMAN [Y 20']            Claudio SUÁREZ [Y 81']\nMarcos AMBRÍZ  [Y 89']\nReferee:      Salvador IMPERATORE MARCONE [CHILE]\nAssistants:   Carlos VELÁZQUEZ            [URUGUAY]\nMohamed MANSRI              [TUNISIA]",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -150,7 +155,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup95",
+        "text": "08/01/1995, Riyadh, King Fahd Stadium, 10.000 [18.15]\nSAUDI ARABIA           0-2           DENMARK [HT 0-1]\nScorers:\nBrian LAUDRUP    43'\nMorten WIEGHORST 90'\nSaudi Arabia:                        Denmark:\n19-Hussein AL-SADIG                  16-Lars HOGH\n12-Ahmed EESA                         3-Marc RIEPER\n3-Mohammed AL-KHILAIWI               4-Jes HOGH\n4-Abdullah SOULIMAN                  5-Jens RISAGER\n5-Ahmed JAMEEL                       6-Michael SCHJONBERG\n6-Fuad AMIN                          7-Brian Steen NIELSEN\n7-Fahad AL-GHESHEYAN                 9-Mark STRUDAL\n8-Saleh AL-SALEH                    11-Brian LAUDRUP\n9-Sami AL-JABER                     12-Jacob LAURSEN\n10-Saeed OWAIRAN                     13-Jesper KRISTENSEN\n11-Fahad MEHALEL                     17-Peter RASMUSSEN\nSubs Used:\n16-Hussain KORSHI  [<11] 46'         18-Bo HANSEN        [<9]  46'\n17-Obaid AL-DOSARI [<9]  87'         14-Morten WIEGHORST [<17] 78'\nCoaches:\nMohamed AL-KARASHI                   Richard Moller NIELSEN\nCards:\nFahad AL-GHESHEYAN [Y 59']           Marc RIEPER [Y 89']\nReferee:      An-Yan LIM KEE CHONG [MAURITIUS]\nAssistants:   Mohamed MANSRI       [TUNISIA]\nCarlos VELÁZQUEZ     [URUGUAY]",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -172,7 +182,12 @@
       "pens": [
         2,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:intconcup95",
+        "text": "10/01/1995, Riyadh, King Fahd Stadium, 20.000 [18.15]\nDENMARK                1-1           MEXICO [HT 0-1]\nScorers:\nPeter RASMUSSEN 48'                  Luis GARCÍA 25'\nDenmark:                             Mexico:\n16-Lars HOGH                          1-Jorge CAMPOS\n2-Jacob FRIIS HANSEN                 2-Claudio SUÁREZ\n3-Marc RIEPER                        4-Marcos AMBRÍZ\n4-Jes HOGH                           5-Jesús Ramón RAMÍREZ\n5-Jens RISAGER                       6-Marcelino BERNAL\n7-Brian Steen NIELSEN                8-Alberto GARCÍA ASPÉ\n10-Michael LAUDRUP                    9-Jorge RODRÍGUEZ\n11-Brian LAUDRUP                     10-Luis GARCÍA\n13-Jesper KRISTENSEN                 11-Luis Roberto ALVES 'ZAGUE'\n15-Carsten HEMMINGSEN                14-Joaquín DEL OLMO\n17-Peter RASMUSSEN                   21-Raúl GUTIÉRREZ\nSubs Used:\n20-Mogens KROGH  [<16] 28'           16-Alberto COYOTE [<11] 70'\n12-Jacob LAURSEN [<15] 46'\nCoaches:\nRichard Moller NIELSEN               Miguel MEJÍA\nCards:\nJes HOGH           [Y 3']            Marcelino BERNAL    [Y 11']\nJacob FRIIS HANSEN [Y 39']           Alberto GARCÍA ASPÉ [Y 47']\nJoaquín DEL OLMO    [Y 72']\nReferee:      Salvador IMPERATORE MARCONE [CHILE]\nAssistants:   Carlos VELÁZQUEZ            [URUGUAY]\nMohamed MANSRI              [TUNISIA]\nPENALTY SHOOTOUT:\nClaudio SUÁREZ          [SCORED] 0-1\nMichael SCHJONBERG      [SCORED] 1-1 Joaquín DEL OLMO        [SCORED] 1-2\nMichael LAUDRUP         [SCORED] 2-2 Luis GARCÍA             [MISSED] 2-2\nJes HOGH                [SCORED] 3-2 Marcelino BERNAL        [MISSED] 3-2\nMarc RIEPER             [SCORED] 4-2",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -189,7 +204,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup95",
+        "text": "06/01/1995, Riyadh, King Fahd Stadium, 25.000 [20.00]\nJAPAN                  0-3           NIGERIA [HT 0-1]\nScorers:\nEmmanuel AMUNIKE  4'\nMutiu ADEPOJU    55'\nDaniel AMOKACHI  65'\nJapan:                               Nigeria:\n1-Shigetatsu MATSUNAGA               1-Peter RUFAI\n2-Yoshihiro NATSUKA                  2-Augustine EGUAVOEN\n3-Satoshi TSUNAMI                    3-Ben IROHA\n4-Masami IHARA                       5-Uche OKECHUKWU\n5-Tetsuji HASHIRADANI                8-Mutiu ADEPOJU\n7-Takumi HORIIKE                    11-Emmanuel AMUNIKE\n8-Tsuyoshi KITAZAWA                 12-Samson SIASIA\n9-Satoshi YAMAGUCHI                 13-Sunday OLISEH\n10-Ruy RAMOS                         14-Daniel AMOKACHI\n11-Kazuyoshi MIURA                   18-Efan EKOKU\n15-Motohiro YAMAGUCHI                20-Uche OKAFOR\nSubs Used:\n14-Hiromitsu ISOGAI [<10] 46'        10-Augustin 'Jay Jay' OKOCHA [<18] 62'\n16-Masahira FUKUDA  [<8]  73'         6-Momodu MUTARI             [<12] 83'\nCoaches:\nShu KAMO                             Shaibu AMADU\nCards:\nSatoshi TSUNAMI   [Y]                Augustin 'Jay Jay' OKOCHA [Y]\nSatoshi YAMAGUCHI [Y]\nReferee:      Ion CRACIUNESCU [ROMANIA]\nAssistants:   Ilie COTE       [ROMANIA]\nOwen POWELL     [JAMAICA]",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -206,7 +226,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup95",
+        "text": "08/01/1995, Riyadh, King Fahd Stadium, 10.000 [20.00]\nJAPAN                  1-5           ARGENTINA [HT 0-2]\nScorers:\nKazuyoshi MIURA 57'                  Pascual RAMBERT   31'\nAriel ORTEGA      45'\nGabriel BATISTUTA 47'\nJosé CHAMOT       54'\nGabriel BATISTUTA 86'pen\nJapan:                               Argentina:\n1-Shigetatsu MATSUNAGA               1-Carlos BOSSIO\n2-Yoshihiro NATSUKA                  2-Roberto AYALA\n3-Satoshi TSUNAMI                    3-José CHAMOT\n4-Masami IHARA                       4-Javier ZANETTI\n5-Tetsuji HASHIRADANI                5-Hugo PÉREZ\n7-Takumi HORIIKE                     6-Néstor FABBRI\n9-Satoshi YAMAGUCHI                  7-Ariel ORTEGA\n11-Kazuyoshi MIURA                    8-Alejandro ESCUDERO\n14-Hiromitsu ISOGAI                   9-Gabriel BATISTUTA\n15-Motohiro YAMAGUCHI                11-Pascual RAMBERT\n16-Masahira FUKUDA                   20-Christian BASSEDAS\nSubs Used:\n8-Tsuyoshi KITAZAWA    [<9]  51'    18-Gustavo LÓPEZ    [<8] 55'\n18-Hiroshige YANAGIMOTO [<7]  62'    17-Marcelo GALLARDO [<7] 67'\nCoaches:\nShu KAMO                             Daniel PASSARELLA\nCards:\nSatoshi TSUNAMI [Y 10']              Pascual RAMBERT    [Y 26']\nAlejandro ESCUDERO [Y 35']\nReferee:      Rodrigo BADILLA SEQUEIRA [COSTA RICA]\nAssistants:   Owen POWELL              [JAMAICA]\nIlie COTE                [ROMANIA]",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -223,7 +248,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup95",
+        "text": "10/01/1995, Riyadh, King Fahd Stadium, 20.000 [20.00]\nNIGERIA                0-0           ARGENTINA [HT 0-0]\nNigeria:                             Argentina:\n1-Peter RUFAI                        1-Carlos BOSSIO\n2-Augustine EGUAVOEN                 2-Roberto AYALA\n3-Ben IROHA                          3-José CHAMOT\n5-Uche OKECHUKWU                     4-Javier ZANETTI\n8-Mutiu ADEPOJU                      5-Hugo PÉREZ\n10-Augustin 'Jay Jay' OKOCHA          6-Néstor FABBRI\n11-Emmanuel AMUNIKE                   7-Ariel ORTEGA\n12-Samson SIASIA                      8-Alejandro ESCUDERO\n14-Daniel AMOKACHI                    9-Gabriel BATISTUTA\n18-Efan EKOKU                        11-Pascual RAMBERT\n20-Uche OKAFOR                       20-Christian BASSEDAS\nSubs Used:\n17-Sam PAM       [<10] 51'\n6-Momodu MUTARI [<18] 76'\nCoaches:\nShaibu AMADU                         Daniel PASSARELLA\nCards:\nEmmanuel AMUNIKE [Y 77']             Hugo PÉREZ    [Y 30']\nBen IROHA        [Y 80']             Roberto AYALA [Y 64']\nReferee:      Mohamed Ali BUJSAIM [UAE]\nAssistants:   Mohammad FANAEI     [IRAN]\nIlie COTE           [ROMANIA]",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -245,7 +275,12 @@
       "pens": [
         5,
         4
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:intconcup95",
+        "text": "13/01/1995, Riyadh, King Fahd Stadium, 20.000 [18.00]\nMEXICO                 1-1           NIGERIA [HT 1-1][FT 1-1]\nScorers:\nJesús Ramón RAMÍREZ 20'pen           Daniel AMOKACHI 31'\nMexico:                              Nigeria:\n1-Jorge CAMPOS                       1-Peter RUFAI\n2-Claudio SUÁREZ                     2-Augustine EGUAVOEN\n4-Marcos AMBRÍZ                      3-Ben IROHA\n5-Jesús Ramón RAMÍREZ                5-Uche OKECHUKWU\n6-Marcelino BERNAL                   8-Mutiu ADEPOJU\n7-Carlos HERMOSILLO                  9-Dominic IORFA\n8-Alberto GARCÍA ASPÉ               10-Augustin 'Jay Jay' OKOCHA\n9-Jorge RODRÍGUEZ                   11-Emmanuel AMUNIKE\n10-Luis GARCÍA                       12-Samson SIASIA\n14-Joaquín DEL OLMO                  14-Daniel AMOKACHI\n21-Raúl GUTIÉRREZ                    20-Uche OKAFOR\nSubs Used:\n17-Benjamin GALINDO [<4]  89'         7-Barnabas IMENGER [<9]  73'\nCoaches:\nCards:\nAlberto GARCÍA ASPÉ [Y 15']          Augustine EGUAVOEN [Y 22']\nJoaquín DEL OLMO    [Y 23']          Ben IROHA          [Y 47']\nLuis GARCÍA         [Y 52']          Barnabas IMENGER   [Y 80']\nJorge CAMPOS        [Y 79']\nMarcelino BERNAL    [Y 83']\nReferee:      Ion CRACIUNESCU  [ROMANIA]\nAssistants:   Ilie COTE        [ROMANIA]\nCarlos VELÁZQUEZ [URUGUAY]\nPENALTY SHOOTOUT:\nAugustine OKOCHA        [SCORED] 0-1\nAlberto GARCÍA ASPÉ     [SCORED] 1-1 Mutiu ADEPOJU           [SCORED] 1-2\nLuis GARCÍA             [SCORED] 2-2 Augustine EGUAVOEN      [SCORED] 2-3\nBenjamin GALINDO        [SCORED] 3-3 Ben IROHA               [SCORED] 3-4\nCarlos HERMOSILLO       [SCORED] 4-4 Emmanuel AMUNIKE        [MISSED] 4-4\nClaudio SUÁREZ          [SCORED] 5-4",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -262,7 +297,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup95",
+        "text": "13/01/1995, Riyadh, King Fahd Stadium, 35.000 [20.15]\nDENMARK                2-0           ARGENTINA [HT 1-0]\nScorers:\nMichael LAUDRUP  8'pen\nPeter RASMUSSEN 75'\nDenmark:                             Argentina:\n20-Mogens KROGH                       1-Carlos BOSSIO\n2-Jacob FRIIS HANSEN                 2-Roberto AYALA\n3-Marc RIEPER                        3-José CHAMOT\n4-Jes HOGH                           4-Javier ZANETTI\n6-Michael SCHJONBERG                 6-Néstor FABBRI\n7-Brian Steen NIELSEN                7-Ariel ORTEGA\n10-Michael LAUDRUP                    8-Alejandro ESCUDERO\n11-Brian LAUDRUP                      9-Gabriel BATISTUTA\n12-Jacob LAURSEN                     11-Pascual RAMBERT\n13-Jesper KRISTENSEN                 16-Rubén JIMÉNEZ\n17-Peter RASMUSSEN                   20-Christian BASSEDAS\nSubs Used:\n14-Morten WIEGHORST [<10] 26'        18-Gustavo LÓPEZ [<16] 65'\n5-Jens RISAGER     [<12] 61'        10-Fabian ESPINA [<11] 75'\nCoaches:\nRichard Moller NIELSEN               Daniel PASSARELLA\nCards:\nJesper KRISTENSEN [Y 41']            Javier ZANETTI [Y 30']\nJes HOGH          [Y 75']            José CHAMOT    [Y 35'][R 88']\nNéstor FABBRI  [Y 60']\nReferee:    Mohamed Ali BUJSAIM [UAE]\nAssistants: Mohammad FANAEI     [IRAN]\nMohamed MANSRI      [TUNISIA]",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [],
