@@ -518,7 +518,7 @@
     },
     {
       "path": "data/football/worldcup/2018.json",
-      "sha256": "1fd0d6a00cbc3ba58ea5349691483142bcf0e0dd8f2d6d5b2f5ce42dfb0b5289",
+      "sha256": "8a11beb33cccc2f9019e852ed3c0e307ffd6d2b29c2794333b0e8c8ba443aa8d",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2018
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "dbe147632bb7ce10893c868acbe81350b40ca4cb915a32952e7cf0fb2c94d3cc",
+  "checksum": "eca53cc87a067d1ee92dd985b102e3b85e62f2ecfbbc3a1abaf69021083f6c2b",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 8370,
+    "matches": 9246,
     "results": 0
   },
   "license": {
@@ -686,6 +686,12 @@
         "url": "https://www.rsssf.org/tables/2018full.html",
         "retrieved": "2026-10-06",
         "author": "Neil Morrison"
+      },
+      {
+        "source": "rsssf:2018q",
+        "name": "RSSSF — World Cup 2018 (qualifying)",
+        "url": "https://www.rsssf.org/tables/2018q.html",
+        "retrieved": "2026-10-11"
       },
       {
         "source": "rsssf:2020e",
