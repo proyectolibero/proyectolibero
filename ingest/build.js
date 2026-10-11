@@ -27,8 +27,33 @@ const DEFAULT_SPORT = "football";
 const DEFAULT_COMPETITION = "worldcup";
 const DEFAULT_LICENSE = "rsssf-attribution";
 
-/** Códigos alternativos usados por RSSSF `full` que no son el canónico del catálogo. */
-const CODE_ALIASES = { JUG: "YUG", CZE: "TCH", GER: "FRG", HOL: "NED", ROM: "ROU", COS: "CRC", ZSR: "URS" };
+/** Códigos alternativos usados por RSSSF que no son el canónico del catálogo. */
+const CODE_ALIASES = {
+  JUG: "YUG",
+  CZE: "TCH",
+  GER: "FRG",
+  HOL: "NED",
+  ROM: "ROU",
+  COS: "CRC",
+  ZSR: "URS",
+  BIA: "BLR",
+  DAN: "DEN",
+  FAR: "FRO",
+  LIT: "LTU",
+  LOT: "LAT",
+  MCA: "MKD",
+  MOL: "MDA",
+  SLA: "SVN",
+  SLK: "SVK",
+  SMA: "SMR"
+};
+
+/**
+ * Primer año en que `GER` y `CZE` designan ya a Alemania reunificada y a la
+ * República Checa (antes, a la RFA y a Checoslovaquia). Solo se aplica cuando la
+ * fusión conoce el año de la edición; sin año se conserva el alias histórico.
+ */
+const CODE_ALIAS_YEAR = { GER: 1991, CZE: 1993 };
 
 /** Notas del esquema v2 que puede aportar la fuente resumida. */
 const KNOWN_NOTES = new Set([
@@ -71,17 +96,34 @@ const NAME_TO_CODE = (() => {
   return map;
 })();
 
-function normalizeTeam(raw) {
+function normalizeTeam(raw, year) {
   if (typeof raw !== "string") return null;
   const text = raw.trim().replace(/[.,;]+$/, "");
   if (text === "") return null;
   const named = NAME_TO_CODE[text.toLowerCase()] || resolveCountryName(text);
   if (named) return named;
   if (/^[A-Za-z]{2,4}$/.test(text)) {
-    const upper = text.toUpperCase();
-    return CODE_ALIASES[upper] || upper;
+    return canonicalCode(text.toUpperCase(), year);
   }
   return text;
+}
+
+/** Código canónico de un código RSSSF, aplicando el alias y el año de la edición. */
+function canonicalCode(code, year) {
+  const alias = CODE_ALIASES[code];
+  if (!alias) return code;
+  const from = CODE_ALIAS_YEAR[code];
+  if (from && Number.isInteger(year) && year >= from) return code;
+  return alias;
+}
+
+/** Etapa de clasificación del catálogo para una sección sin grupo (play-off…). */
+function qualifyingStageFor(section, competition) {
+  const has = (stage) => (competition && competition.stages ? competition.stages : []).some((item) => item && item.id === stage);
+  if (/play-?off/i.test(String(section || "")) && has("qualifyingPlayoff")) return "qualifyingPlayoff";
+  if (has("qualifying")) return "qualifying";
+  if (has("qualifyingRound")) return "qualifyingRound";
+  return "qualifying";
 }
 
 function stageFromSection(section) {
@@ -111,7 +153,7 @@ function groupLetter(section) {
 
 /** Deriva el `kind` de una parte a partir del sufijo de su `sourceId` (`rsssf:54full`). */
 function kindFromSourceId(sourceId) {
-  const match = /(?:^|:)(\d{2,4})(f|full|q|q-det|qf-scor)$/i.exec(String(sourceId || ""));
+  const match = /(?:^|:)(\d{2,4})e?-?(full|qf-scor|q-det|q|f)$/i.exec(String(sourceId || ""));
   return match ? match[2].toLowerCase() : null;
 }
 
@@ -192,12 +234,12 @@ function extraFromFull(match, fallback) {
 }
 
 /** Prepara un partido parseado para la fusión, normalizando equipos y fase. */
-function prepare(match) {
+function prepare(match, year) {
   return {
     date: match.date || null,
     city: match.city || null,
-    home: normalizeTeam(match.home),
-    away: normalizeTeam(match.away),
+    home: normalizeTeam(match.home, year),
+    away: normalizeTeam(match.away, year),
     score:
       typeof match.homeScore === "number" && typeof match.awayScore === "number"
         ? [match.homeScore, match.awayScore]
@@ -374,12 +416,12 @@ function attachSheets(edition, fullMatches, sourceId) {
  * resuelven a un código de `i18n/countries.json` (p. ej. `Saar`) se omiten con
  * aviso: antes omitir que inventar un código (D29).
  */
-function qualifyingEntries(parsed, warnings) {
+function qualifyingEntries(parsed, warnings, competition, year) {
   const entries = [];
   let dropped = 0;
   for (const match of parsed.matches || []) {
-    const home = normalizeTeam(match.home);
-    const away = normalizeTeam(match.away);
+    const home = normalizeTeam(match.home, year);
+    const away = normalizeTeam(match.away, year);
     if (!isKnownCountry(home) || !isKnownCountry(away)) {
       warnings.push({ reason: `partido de clasificación omitido: país no resoluble (${match.home}-${match.away})` });
       dropped += 1;
@@ -387,7 +429,7 @@ function qualifyingEntries(parsed, warnings) {
     }
     const letter = groupLetter(match.section);
     entries.push({
-      stage: letter ? "qualifyingGroup" : "qualifying",
+      stage: letter ? "qualifyingGroup" : qualifyingStageFor(match.section, competition),
       group: letter,
       matchday: null,
       date: match.date || null,
@@ -405,8 +447,8 @@ function qualifyingEntries(parsed, warnings) {
 }
 
 /** Fila de clasificación con país resoluble; `null` (y aviso) si no lo es. */
-function qualifyingStanding(row, warnings) {
-  const team = normalizeTeam(row.team);
+function qualifyingStanding(row, warnings, year) {
+  const team = normalizeTeam(row.team, year);
   if (!isKnownCountry(team)) {
     warnings.push({ reason: `fila de clasificación omitida: país no resoluble (${row.team})` });
     return null;
@@ -450,7 +492,8 @@ function refreshQualifyingMatch(target, entry) {
 function mergeQualifying(edition, parsed, sourceId, competition) {
   const result = JSON.parse(JSON.stringify(edition));
   const warnings = [];
-  const { entries, dropped } = qualifyingEntries(parsed, warnings);
+  const year = Number.isInteger(result.edition) ? result.edition : Number(result.year) || null;
+  const { entries, dropped } = qualifyingEntries(parsed, warnings, competition, year);
   const matches = Array.isArray(result.matches) ? result.matches : [];
   const identity = (match) =>
     `${match.stage}|${match.home}|${match.away}|${Array.isArray(match.score) ? match.score.join("-") : ""}`;
@@ -482,9 +525,9 @@ function mergeQualifying(edition, parsed, sourceId, competition) {
   result.matches = matches;
 
   const standings = (parsed.standings || [])
-    .map((row) => qualifyingStanding(row, warnings))
+    .map((row) => qualifyingStanding(row, warnings, year))
     .filter(Boolean);
-  const groups = buildGroups(standings, matches, warnings);
+  const groups = buildGroups(standings, matches, warnings, year);
   const byLetter = new Map((result.groups || []).map((group) => [group.letter, group]));
   for (const group of groups) byLetter.set(group.letter, group);
   result.groups = [...byLetter.values()];
@@ -499,11 +542,12 @@ function mergeQualifying(edition, parsed, sourceId, competition) {
     const note = "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar).";
     result.coverage = { ...result.coverage, complete: false, note };
   }
-  // Al añadir la clasificación, los goleadores (que cubren solo el torneo final)
-  // dejan de sumar todos los goles: se documenta la discrepancia (ADR-015).
   if (Array.isArray(result.scorers) && result.scorers.length > 0) {
     const scorerGoals = result.scorers.reduce((sum, scorer) => sum + (scorer.goals || 0), 0);
     result.coverage = { ...result.coverage, scorersComplete: scorerGoals === goals };
+  }
+  if (warnings.length > 0) {
+    result.warnings = [...(result.warnings || []), ...warnings];
   }
 
   return { edition: result, matches: added, refreshed, groups: groups.length, dropped, warnings };
@@ -646,7 +690,7 @@ function groupIssue(letter, standings, matches) {
   return null;
 }
 
-function buildGroups(standings, matches, warnings) {
+function buildGroups(standings, matches, warnings, year) {
   const groups = new Map();
   for (const standing of standings) {
     const letter = groupLetter(standing.group);
@@ -654,7 +698,7 @@ function buildGroups(standings, matches, warnings) {
       warnings.push({ reason: `clasificación sin grupo reconocible: ${standing.raw}` });
       continue;
     }
-    const team = normalizeTeam(standing.team);
+    const team = normalizeTeam(standing.team, year);
     if (!team) continue;
     const columns = [standing.p, standing.w, standing.d, standing.l, standing.gf, standing.ga, standing.pts];
     if (!columns.every((value) => Number.isInteger(value))) {
@@ -691,17 +735,17 @@ function buildGroups(standings, matches, warnings) {
   return kept;
 }
 
-function standingsDisagreements(fStandings, fullStandings) {
+function standingsDisagreements(fStandings, fullStandings, year) {
   const fullIndex = new Map();
   for (const standing of fullStandings) {
     const letter = groupLetter(standing.group);
-    const team = normalizeTeam(standing.team);
+    const team = normalizeTeam(standing.team, year);
     if (letter && team) fullIndex.set(`${letter}|${team}`, standing);
   }
   const rejected = [];
   for (const standing of fStandings) {
     const letter = groupLetter(standing.group);
-    const team = normalizeTeam(standing.team);
+    const team = normalizeTeam(standing.team, year);
     if (!letter || !team) continue;
     const other = fullIndex.get(`${letter}|${team}`);
     if (!other) continue;
@@ -721,7 +765,7 @@ function extractHosts(parts, year) {
   if (!fPart) return null;
   const match = new RegExp(`World Cup\\s+${year}\\s*\\(([^,)]+)`, "i").exec(fPart.text || "");
   if (!match) return null;
-  const code = normalizeTeam(match[1].trim());
+  const code = normalizeTeam(match[1].trim(), year);
   return code && code.length === 3 ? [code] : null;
 }
 
@@ -770,11 +814,11 @@ function deriveResults(matches, groups, warnings) {
   return results;
 }
 
-function buildScorers(results, warnings) {
+function buildScorers(results, warnings, year) {
   const scorers = [];
   for (const scorer of results.scorers || []) {
     if (!scorer || !scorer.player || typeof scorer.goals !== "number") continue;
-    const country = normalizeTeam(scorer.country) || scorer.country;
+    const country = normalizeTeam(scorer.country, year) || scorer.country;
     if (!country) {
       warnings.push({ reason: `goleador ${scorer.player} sin país resoluble (${scorer.country || "?"}); descartado` });
       continue;
@@ -828,8 +872,9 @@ function buildDraft(input) {
     }
   }
 
-  const fMatches = fResult.matches.map(prepare);
-  const fullMatches = fullResult.matches.map(prepare);
+  const editionYear = Number(year);
+  const fMatches = fResult.matches.map((match) => prepare(match, editionYear));
+  const fullMatches = fullResult.matches.map((match) => prepare(match, editionYear));
   const fullOnly = pairMatches(fMatches, fullMatches);
   const fullSourceId = fullPart ? fullPart.sourceId : null;
 
@@ -856,12 +901,12 @@ function buildDraft(input) {
     }
   });
 
-  const groups = buildGroups(fResult.standings, entries, warnings);
-  for (const diff of standingsDisagreements(fResult.standings, fullResult.standings)) {
+  const groups = buildGroups(fResult.standings, entries, warnings, editionYear);
+  for (const diff of standingsDisagreements(fResult.standings, fullResult.standings, editionYear)) {
     rejected.push({ ref: null, source: fullSourceId, ...diff });
   }
 
-  const scorers = buildScorers(scorerResult, warnings);
+  const scorers = buildScorers(scorerResult, warnings, editionYear);
   const results = deriveResults(entries, groups, warnings);
   const goals = entries.reduce(
     (sum, entry) => sum + (entry.score ? entry.score[0] + entry.score[1] : 0),

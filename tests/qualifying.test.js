@@ -12,7 +12,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { FIXTURES } = require("./helpers.js");
 const { parse } = require("../ingest/rsssf.js");
-const { mergeQualifying } = require("../ingest/build.js");
+const { mergeQualifying, normalizeTeam } = require("../ingest/build.js");
 const { reconcile } = require("../ingest/reconcile.js");
 
 const CTX = { sourceId: "rsssf:54q", retrieved: "2026-10-10", year: 1954 };
@@ -222,5 +222,66 @@ test("parse q toma la región de una cabecera suelta para los grupos sin prefijo
 
   assert.deepEqual(result.groups.map((g) => g.name), ["Group 1", "Group 1"]);
   assert.deepEqual(result.standings.map((row) => row.group), ["EUR1", "EUR1", "SAM1", "SAM1"]);
+});
+
+test("normalizeTeam es sensible al año para GER/CZE y añade los alias de la Eurocopa", () => {
+  assert.equal(normalizeTeam("GER"), "FRG", "sin año se conserva el alias histórico");
+  assert.equal(normalizeTeam("GER", 1990), "FRG");
+  assert.equal(normalizeTeam("GER", 1994), "GER", "Alemania reunificada desde 1991");
+  assert.equal(normalizeTeam("CZE"), "TCH");
+  assert.equal(normalizeTeam("CZE", 1992), "TCH");
+  assert.equal(normalizeTeam("CZE", 1996), "CZE", "República Checa desde 1993");
+  assert.equal(normalizeTeam("SMA"), "SMR");
+  assert.equal(normalizeTeam("FAR"), "FRO");
+  assert.equal(normalizeTeam("BIA"), "BLR");
+});
+
+test("mergeQualifying elige la fase del catálogo cuando no existe 'qualifying' (Eurocopa)", () => {
+  const edition = publishedEdition();
+  edition.competition = "eurochamp";
+  edition.edition = 1996;
+  const parsed = {
+    matches: [
+      {
+        home: "HOL",
+        away: "IRL",
+        homeScore: 2,
+        awayScore: 0,
+        date: "1995-12-13",
+        city: "Liverpool",
+        status: "played",
+        notes: [],
+        section: "Playoff game"
+      },
+      {
+        home: "GER",
+        away: "CZE",
+        homeScore: 1,
+        awayScore: 1,
+        date: "1995-11-15",
+        city: "Berlin",
+        status: "played",
+        notes: [],
+        section: "Group 1"
+      }
+    ],
+    standings: []
+  };
+  const COMPETITION_EURO = {
+    id: "football/eurochamp",
+    stages: [
+      { id: "qualifyingRound", kind: "qualifying" },
+      { id: "qualifyingGroup", kind: "qualifying" },
+      { id: "qualifyingPlayoff", kind: "qualifying" },
+      { id: "final", kind: "knockout" }
+    ]
+  };
+
+  const { edition: merged, matches } = mergeQualifying(edition, parsed, "rsssf:96e-q", COMPETITION_EURO);
+
+  assert.equal(matches, 2);
+  assert.equal(merged.matches.find((match) => match.home === "NED").stage, "qualifyingPlayoff");
+  assert.equal(merged.matches.find((match) => match.home === "GER").stage, "qualifyingGroup");
+  assert.equal(merged.matches.find((match) => match.home === "GER").home, "GER", "1996 usa el código unificado GER");
 });
 

@@ -84,10 +84,10 @@ function toPositiveInt(value, fallback) {
   return Math.floor(number);
 }
 
-/** `rsssf:<aa|aaaa><sufijo>` → `https://www.rsssf.org/tables/<aa|aaaa><sufijo>.html`. */
+/** `rsssf:<aa|aaaa|[aa|aaaa]e>-<sufijo>` → `https://www.rsssf.org/tables/<id>.html`. */
 function resolveRsssfUrl(id) {
-  const match = /^rsssf:(\d{2,4})(f|full|q|q-det|qf-scor)$/.exec(id);
-  return match ? `https://www.rsssf.org/tables/${match[1]}${match[2]}.html` : null;
+  const match = /^rsssf:(\d{2,4}(?:e)?-?(?:f|full|q|q-det|qf-scor))$/i.exec(String(id || ""));
+  return match ? `https://www.rsssf.org/tables/${match[1]}.html` : null;
 }
 
 function deriveSourceId(url) {
@@ -174,7 +174,7 @@ function readInboxPart(dirName) {
     console.error(`[skip] ${dirName}: no hay fichero .txt`);
     return null;
   }
-  const kindMatch = /(?:^|:)(\d{2,4})(f|full|q|q-det|qf-scor)$/i.exec(String(meta.id || ""));
+  const kindMatch = /(?:^|:)(\d{2,4})e?-?(f|full|q|q-det|qf-scor)$/i.exec(String(meta.id || ""));
   return {
     kind: kindMatch ? kindMatch[2].toLowerCase() : null,
     sourceId: meta.id,
@@ -194,7 +194,7 @@ function collectParts(year) {
   for (const entry of fs.readdirSync(inboxDir, { withFileTypes: true })) {
     if (!entry.isDirectory()) continue;
     if (!fs.existsSync(path.join(inboxDir, entry.name, "meta.json"))) continue;
-    const match = /^rsssf:(\d{2,4})(f|full|q|q-det|qf-scor)$/i.exec(
+    const match = /^rsssf:(\d{2,4})(?:e)?-?(f|full|q|q-det|qf-scor)$/i.exec(
       (() => {
         try {
           return io.readJSON(path.join(inboxDir, entry.name, "meta.json")).id;
@@ -211,12 +211,12 @@ function collectParts(year) {
   return parts.sort((a, b) => (order[a.kind] ?? 9) - (order[b.kind] ?? 9));
 }
 
-function draftPath(year) {
-  return path.join(ROOT, "drafts", "football", "worldcup", `${year}.json`);
+function draftPath(year, sport = "football", competition = "worldcup") {
+  return path.join(ROOT, "drafts", sport, competition, `${year}.json`);
 }
 
-function publishedPath(year) {
-  return path.join(ROOT, "data", "football", "worldcup", `${year}.json`);
+function publishedPath(year, sport = "football", competition = "worldcup") {
+  return path.join(ROOT, "data", sport, competition, `${year}.json`);
 }
 
 function requireYear(flags) {
@@ -225,10 +225,21 @@ function requireYear(flags) {
   return year;
 }
 
+/** `--competition=<sport>/<comp>` o el valor por defecto `football/worldcup`. */
+function buildTarget(flags) {
+  if (flags.competition === undefined) return { sport: "football", competition: "worldcup" };
+  return parseCompetitionFlag(flags.competition);
+}
+
 function commandBuild(flags) {
   const year = requireYear(flags);
   if (year === null) {
     console.error("build: --year=<año> es obligatorio y debe ser un entero positivo.");
+    return 1;
+  }
+  const target = buildTarget(flags);
+  if (!target) {
+    console.error("build: --competition=<sport>/<competicion> inválido.");
     return 1;
   }
   const parts = collectParts(year);
@@ -237,20 +248,20 @@ function commandBuild(flags) {
     return 1;
   }
 
-  if (flags.base === "published") return commandBuildEnriched(year, parts);
+  if (flags.base === "published") return commandBuildEnriched(year, parts, target);
 
   let draft;
   try {
-    draft = buildDraft({ year, parts, ctx: { sport: "football", competition: "worldcup" } });
+    draft = buildDraft({ year, parts, ctx: { sport: target.sport, competition: target.competition } });
   } catch (err) {
     console.error(`build: ${err.message}`);
     return 1;
   }
 
-  const target = draftPath(year);
-  io.writeJSON(target, draft);
+  const dest = draftPath(year, target.sport, target.competition);
+  io.writeJSON(dest, draft);
 
-  console.log(`build ${year}: ${parts.length} fuentes → ${path.relative(ROOT, target)}`);
+  console.log(`build ${year}: ${parts.length} fuentes → ${path.relative(ROOT, dest)}`);
   for (const part of parts) console.log(`  fuente ${part.kind.padEnd(6)} ${part.sourceId}`);
   console.log(
     `  partidos=${draft.matches.length} goles=${draft.coverage.goals} grupos=${draft.groups
@@ -262,11 +273,11 @@ function commandBuild(flags) {
 }
 
 /** Fuente v2 para la página `full` (atribución RSSSF) a partir de su parte de inbox. */
-function fullSourceEntry(part, year) {
+function fullSourceEntry(part, year, label) {
   const retrieved = typeof part.retrieved === "string" ? part.retrieved.slice(0, 10) : null;
   return {
     id: part.sourceId,
-    name: `RSSSF — World Cup ${year} (full details)`,
+    name: `RSSSF — ${label} ${year} (full details)`,
     url: part.url || null,
     retrieved,
     publisher: "RSSSF",
@@ -276,17 +287,22 @@ function fullSourceEntry(part, year) {
 }
 
 /** Fuente v2 para la fase de clasificación (atribución RSSSF). */
-function qualifyingSourceEntry(part, year) {
+function qualifyingSourceEntry(part, year, label) {
   const retrieved = typeof part.retrieved === "string" ? part.retrieved.slice(0, 10) : null;
   return {
     id: part.sourceId,
-    name: `RSSSF — World Cup ${year} (qualifying)`,
+    name: `RSSSF — ${label} ${year} (qualifying)`,
     url: part.url || null,
     retrieved,
     publisher: "RSSSF",
     license: "rsssf-attribution",
     redistribute: true
   };
+}
+
+/** Nombre legible de la competición en el catálogo (p. ej. «World Cup»). */
+function competitionLabel(competition) {
+  return (competition && competition.name) || "World Cup";
 }
 
 /** Añade una fuente al bloque `sources[]` si no estaba ya. */
@@ -305,12 +321,18 @@ function addSource(edition, entry) {
  *     clasificación y las tablas de sus grupos (ADR-022/D32).
  * La cobertura se re-deriva con la regla D37 tras la fusión.
  */
-function commandBuildEnriched(year, parts) {
-  const published = publishedPath(year);
+function commandBuildEnriched(year, parts, target) {
+  const published = publishedPath(year, target.sport, target.competition);
   if (!fs.existsSync(published)) {
     console.error(`build --base=published: no existe la edición publicada ${path.relative(ROOT, published)}.`);
     return 1;
   }
+  const competition = loadCatalog(ROOT).competitions[`${target.sport}/${target.competition}`];
+  if (!competition) {
+    console.error(`build --base=published: no existe ${target.sport}/${target.competition} en el catálogo.`);
+    return 1;
+  }
+  const label = competitionLabel(competition);
   const fullPart = parts.find((part) => (part.kind || "") === "full");
   const qPart = parts.find((part) => (part.kind || "") === "q" || (part.kind || "") === "q-det");
   if (!fullPart && !qPart) {
@@ -333,7 +355,7 @@ function commandBuildEnriched(year, parts) {
     edition = enriched.edition;
     matched = enriched.matched;
     unmatched = enriched.unmatched;
-    if (matched > 0) addSource(edition, fullSourceEntry(fullPart, year));
+    if (matched > 0) addSource(edition, fullSourceEntry(fullPart, year, label));
     console.log(`  fuente full  ${fullPart.sourceId} (${parsed.matches.length} bloques, ${parsed.warnings.length} avisos)`);
   }
 
@@ -346,19 +368,18 @@ function commandBuildEnriched(year, parts) {
       // da un rango de 4 años para que las fechas de dos cifras no se descarten.
       year: `${year - 4}-${String(year).slice(-2)}`
     });
-    const competition = loadCatalog(ROOT).competitions["football/worldcup"];
     const merged = mergeQualifying(edition, parsed, qPart.sourceId, competition);
     edition = merged.edition;
-    if (merged.matches > 0) addSource(edition, qualifyingSourceEntry(qPart, year));
+    if (merged.matches > 0) addSource(edition, qualifyingSourceEntry(qPart, year, label));
     console.log(`  fuente q     ${qPart.sourceId} (${parsed.matches.length} partidos, ${parsed.standings.length} filas de tabla, ${parsed.warnings.length} avisos)`);
     console.log(`  clasificación añadida: ${merged.matches} partidos (${merged.refreshed} actualizados), ${merged.groups} grupos, ${merged.dropped} omitidos por país no resoluble`);
     for (const warning of merged.warnings) console.log(`    [warn] ${warning.reason}`);
   }
 
-  const target = draftPath(year);
-  io.writeJSON(target, edition);
+  const dest = draftPath(year, target.sport, target.competition);
+  io.writeJSON(dest, edition);
   const withSheet = (edition.matches || []).filter((match) => match.sheet && match.sheet.text).length;
-  console.log(`build ${year} --base=published: ${path.relative(ROOT, target)}`);
+  console.log(`build ${year} --base=published: ${path.relative(ROOT, dest)}`);
   console.log(
     `  partidos=${(edition.matches || []).length} conSheet=${withSheet} emparejados=${matched} sinFicha=${unmatched} ` +
     `cobertura=${edition.coverage.scope}/${edition.coverage.complete}`
@@ -775,8 +796,13 @@ function commandReconcile(flags) {
     console.error("reconcile: --year=<año> es obligatorio y debe ser un entero positivo.");
     return 1;
   }
-  const draftFile = draftPath(year);
-  const publishedFile = publishedPath(year);
+  const target = buildTarget(flags);
+  if (!target) {
+    console.error("reconcile: --competition=<sport>/<competicion> inválido.");
+    return 1;
+  }
+  const draftFile = draftPath(year, target.sport, target.competition);
+  const publishedFile = publishedPath(year, target.sport, target.competition);
   if (!fs.existsSync(draftFile)) {
     console.error(`reconcile: no existe el borrador ${path.relative(ROOT, draftFile)}. Ejecuta antes 'build'.`);
     return 1;

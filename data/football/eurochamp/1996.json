@@ -13,11 +13,10 @@
     "finalMatchId": "m031"
   },
   "coverage": {
-    "matches": 31,
-    "goals": 64,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "matches": 262,
+    "goals": 744,
+    "scope": "all",
+    "complete": true
   },
   "sources": [
     {
@@ -25,6 +24,15 @@
       "name": "RSSSF — European Championship 1996",
       "url": "https://www.rsssf.org/tables/96e.html",
       "retrieved": "2026-10-09",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
+    },
+    {
+      "id": "rsssf:96e-q",
+      "name": "RSSSF — UEFA European Championship 1996 (qualifying)",
+      "url": "https://www.rsssf.org/tables/96e-q.html",
+      "retrieved": "2026-10-11",
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
@@ -212,6 +220,256 @@
           "gf": 0,
           "ga": 5,
           "pts": 0
+        }
+      ]
+    },
+    {
+      "letter": "2",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 10,
+          "w": 8,
+          "d": 2,
+          "l": 0,
+          "gf": 25,
+          "ga": 4,
+          "pts": 26
+        },
+        {
+          "team": "DEN",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 19,
+          "ga": 9,
+          "pts": 21
+        },
+        {
+          "team": "BEL",
+          "p": 10,
+          "w": 4,
+          "d": 3,
+          "l": 3,
+          "gf": 17,
+          "ga": 13,
+          "pts": 15
+        },
+        {
+          "team": "MAC",
+          "p": 10,
+          "w": 1,
+          "d": 4,
+          "l": 5,
+          "gf": 9,
+          "ga": 18,
+          "pts": 7
+        },
+        {
+          "team": "CYP",
+          "p": 10,
+          "w": 1,
+          "d": 4,
+          "l": 5,
+          "gf": 5,
+          "ga": 20,
+          "pts": 7
+        },
+        {
+          "team": "ARM",
+          "p": 10,
+          "w": 1,
+          "d": 2,
+          "l": 7,
+          "gf": 6,
+          "ga": 17,
+          "pts": 5
+        }
+      ]
+    },
+    {
+      "letter": "3",
+      "standings": [
+        {
+          "team": "SUI",
+          "p": 8,
+          "w": 5,
+          "d": 2,
+          "l": 1,
+          "gf": 15,
+          "ga": 7,
+          "pts": 17
+        },
+        {
+          "team": "TUR",
+          "p": 8,
+          "w": 4,
+          "d": 3,
+          "l": 1,
+          "gf": 16,
+          "ga": 8,
+          "pts": 15
+        },
+        {
+          "team": "SWE",
+          "p": 8,
+          "w": 2,
+          "d": 3,
+          "l": 3,
+          "gf": 9,
+          "ga": 10,
+          "pts": 9
+        },
+        {
+          "team": "HUN",
+          "p": 8,
+          "w": 2,
+          "d": 2,
+          "l": 4,
+          "gf": 7,
+          "ga": 13,
+          "pts": 8
+        },
+        {
+          "team": "ISL",
+          "p": 8,
+          "w": 1,
+          "d": 2,
+          "l": 5,
+          "gf": 3,
+          "ga": 12,
+          "pts": 5
+        }
+      ]
+    },
+    {
+      "letter": "5",
+      "standings": [
+        {
+          "team": "CZE",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 21,
+          "ga": 6,
+          "pts": 21
+        },
+        {
+          "team": "NED",
+          "p": 10,
+          "w": 6,
+          "d": 2,
+          "l": 2,
+          "gf": 23,
+          "ga": 5,
+          "pts": 20
+        },
+        {
+          "team": "NOR",
+          "p": 10,
+          "w": 6,
+          "d": 2,
+          "l": 2,
+          "gf": 17,
+          "ga": 7,
+          "pts": 20
+        },
+        {
+          "team": "BLR",
+          "p": 10,
+          "w": 3,
+          "d": 2,
+          "l": 5,
+          "gf": 8,
+          "ga": 13,
+          "pts": 11
+        },
+        {
+          "team": "LUX",
+          "p": 10,
+          "w": 3,
+          "d": 1,
+          "l": 6,
+          "gf": 3,
+          "ga": 21,
+          "pts": 10
+        },
+        {
+          "team": "MLT",
+          "p": 10,
+          "w": 0,
+          "d": 2,
+          "l": 8,
+          "gf": 2,
+          "ga": 22,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "letter": "6",
+      "standings": [
+        {
+          "team": "POR",
+          "p": 10,
+          "w": 7,
+          "d": 2,
+          "l": 1,
+          "gf": 29,
+          "ga": 7,
+          "pts": 23
+        },
+        {
+          "team": "IRL",
+          "p": 10,
+          "w": 5,
+          "d": 2,
+          "l": 3,
+          "gf": 17,
+          "ga": 11,
+          "pts": 17
+        },
+        {
+          "team": "NIR",
+          "p": 10,
+          "w": 5,
+          "d": 2,
+          "l": 3,
+          "gf": 20,
+          "ga": 15,
+          "pts": 17
+        },
+        {
+          "team": "AUT",
+          "p": 10,
+          "w": 5,
+          "d": 1,
+          "l": 4,
+          "gf": 29,
+          "ga": 14,
+          "pts": 16
+        },
+        {
+          "team": "LAT",
+          "p": 10,
+          "w": 4,
+          "d": 0,
+          "l": 6,
+          "gf": 11,
+          "ga": 20,
+          "pts": 12
+        },
+        {
+          "team": "LIE",
+          "p": 10,
+          "w": 0,
+          "d": 1,
+          "l": 9,
+          "gf": 1,
+          "ga": 40,
+          "pts": 1
         }
       ]
     }
@@ -769,9 +1027,4183 @@
         "aet"
       ],
       "pens": null
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1994-09-04",
+      "city": "Tel Aviv",
+      "home": "ISR",
+      "away": "POL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m032"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Bratislava",
+      "home": "SVK",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m033"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "AZE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m034"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1994-10-08",
+      "city": "St.Etienne",
+      "home": "FRA",
+      "away": "ROU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m035"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Tel Aviv",
+      "home": "ISR",
+      "away": "SVK",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m036"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Mielec",
+      "home": "POL",
+      "away": "AZE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m037"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1994-11-12",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "SVK",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m038"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Trabzon",
+      "home": "AZE",
+      "away": "ISR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m039"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Zabrze",
+      "home": "POL",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m040"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1994-12-13",
+      "city": "Trabzon",
+      "home": "AZE",
+      "away": "FRA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m041"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1994-12-14",
+      "city": "Tel Aviv",
+      "home": "ISR",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m042"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Košice",
+      "home": "SVK",
+      "away": "AZE",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m043"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Tel Aviv",
+      "home": "ISR",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m044"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "POL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m045"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-04-25",
+      "city": "Zabrze",
+      "home": "POL",
+      "away": "ISR",
+      "score": [
+        4,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m046"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Trabzon",
+      "home": "AZE",
+      "away": "ROU",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m047"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Nantes",
+      "home": "FRA",
+      "away": "SVK",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m048"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Zabrze",
+      "home": "POL",
+      "away": "SVK",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m049"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "ISR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m050"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-08-16",
+      "city": "Trabzon",
+      "home": "AZE",
+      "away": "SVK",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m051"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-08-16",
+      "city": "Paris",
+      "home": "FRA",
+      "away": "POL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Košice",
+      "home": "SVK",
+      "away": "ISR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Zabrze",
+      "home": "POL",
+      "away": "ROU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Auxerre",
+      "home": "FRA",
+      "away": "AZE",
+      "score": [
+        10,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Bratislava",
+      "home": "SVK",
+      "away": "POL",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Tel-Aviv",
+      "home": "ISR",
+      "away": "AZE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Bucuresti",
+      "home": "ROU",
+      "away": "FRA",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Trabzon",
+      "home": "AZE",
+      "away": "POL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Caen",
+      "home": "FRA",
+      "away": "ISR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Košice",
+      "home": "SVK",
+      "away": "ROU",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Brussels",
+      "home": "BEL",
+      "away": "ARM",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Limassol",
+      "home": "CYP",
+      "away": "ESP",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Skopje",
+      "home": "MAC",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1994-10-08",
+      "city": "Erevan",
+      "home": "ARM",
+      "away": "CYP",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "København",
+      "home": "DEN",
+      "away": "BEL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Skopje",
+      "home": "MAC",
+      "away": "ESP",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Brussels",
+      "home": "BEL",
+      "away": "MAC",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Limassol",
+      "home": "CYP",
+      "away": "ARM",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "DEN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1994-12-17",
+      "city": "Brussels",
+      "home": "BEL",
+      "away": "ESP",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1994-12-17",
+      "city": "Skopje",
+      "home": "MAC",
+      "away": "CYP",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Limassol",
+      "home": "CYP",
+      "away": "DEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Sevilla",
+      "home": "ESP",
+      "away": "BEL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Erevan",
+      "home": "ARM",
+      "away": "ESP",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Brussels",
+      "home": "BEL",
+      "away": "CYP",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "København",
+      "home": "DEN",
+      "away": "MAC",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-05-10",
+      "city": "Erevan",
+      "home": "ARM",
+      "away": "MAC",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "København",
+      "home": "DEN",
+      "away": "CYP",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Skopje",
+      "home": "MAC",
+      "away": "BEL",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Seville",
+      "home": "ESP",
+      "away": "ARM",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-08-16",
+      "city": "Erevan",
+      "home": "ARM",
+      "away": "DEN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Brussels",
+      "home": "BEL",
+      "away": "DEN",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Skopje",
+      "home": "MKD",
+      "away": "ARM",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Granada",
+      "home": "ESP",
+      "away": "CYP",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-10-07",
+      "city": "Erevan",
+      "home": "ARM",
+      "away": "BEL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Limmasol",
+      "home": "CYP",
+      "away": "MKD",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "København",
+      "home": "DEN",
+      "away": "ESP",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Limassol",
+      "home": "CYP",
+      "away": "BEL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "København",
+      "home": "DEN",
+      "away": "ARM",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Elche",
+      "home": "ESP",
+      "away": "MAC",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "SWE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "TUR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Instanbul",
+      "home": "TUR",
+      "away": "ISL",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "SWE",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Lausanne",
+      "home": "SUI",
+      "away": "ISL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "HUN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1994-12-14",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "SUI",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Istanbul",
+      "home": "TUR",
+      "away": "SWE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "SUI",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "SWE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Bern",
+      "home": "SUI",
+      "away": "TUR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-06-01",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "ISL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-06-11",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "HUN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-08-16",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "SUI",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Stambul",
+      "home": "TUR",
+      "away": "HUN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Göteborg",
+      "home": "SWE",
+      "away": "SUI",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Reykjavik",
+      "home": "ISL",
+      "away": "TUR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Zürich",
+      "home": "SUI",
+      "away": "HUN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-11-11",
+      "city": "Budapest",
+      "home": "HUN",
+      "away": "ISL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Solna",
+      "home": "SWE",
+      "away": "TUR",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1994-09-04",
+      "city": "Tallin",
+      "home": "EST",
+      "away": "CRO",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Maribor",
+      "home": "SVN",
+      "away": "ITA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Kiev",
+      "home": "UKR",
+      "away": "LTU",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1994-10-08",
+      "city": "Tallin",
+      "home": "EST",
+      "away": "ITA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1994-10-09",
+      "city": "Zagreb",
+      "home": "CRO",
+      "away": "LTU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Kiev",
+      "home": "UKR",
+      "away": "SVN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1994-11-13",
+      "city": "Kiev",
+      "home": "UKR",
+      "away": "EST",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Palermo",
+      "home": "ITA",
+      "away": "CRO",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Maribor",
+      "home": "SVN",
+      "away": "LTU",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-03-25",
+      "city": "Zagreb",
+      "home": "CRO",
+      "away": "UKR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-03-25",
+      "city": "Salerno",
+      "home": "ITA",
+      "away": "EST",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Vilnus",
+      "home": "LTU",
+      "away": "CRO",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Maribor",
+      "home": "SVN",
+      "away": "EST",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Kiev",
+      "home": "UKR",
+      "away": "ITA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Zagreb",
+      "home": "CRO",
+      "away": "SVN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Tallin",
+      "home": "EST",
+      "away": "UKR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Vlinus",
+      "home": "LTU",
+      "away": "ITA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Vilnus",
+      "home": "LTU",
+      "away": "SVN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-06-11",
+      "city": "Tallin",
+      "home": "EST",
+      "away": "SVN",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-06-11",
+      "city": "Kiev",
+      "home": "UKR",
+      "away": "CRO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-08-16",
+      "city": "Tallin",
+      "home": "EST",
+      "away": "LTU",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-09-03",
+      "city": "Zagreb",
+      "home": "CRO",
+      "away": "EST",
+      "score": [
+        7,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Udine",
+      "home": "ITA",
+      "away": "SVN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Vilnus",
+      "home": "LTU",
+      "away": "UKR",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-10-08",
+      "city": "Split",
+      "home": "CRO",
+      "away": "ITA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Vilnus",
+      "home": "LTU",
+      "away": "EST",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Lubljana",
+      "home": "SVN",
+      "away": "UKR",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-11-11",
+      "city": "Bari",
+      "home": "ITA",
+      "away": "UKR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "R Emillia",
+      "home": "ITA",
+      "away": "LTU",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Lubljana",
+      "home": "SVN",
+      "away": "CRO",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1994-09-06",
+      "city": "Ostrava",
+      "home": "CZE",
+      "away": "MLT",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "NED",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "BLR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Minsk",
+      "home": "BLR",
+      "away": "LUX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m145"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "La Valetta",
+      "home": "MLT",
+      "away": "CZE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "NED",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Minsk",
+      "home": "BLR",
+      "away": "NOR",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m148"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "CZE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m149"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1994-12-14",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "LUX",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1994-12-14",
+      "city": "La Valetta",
+      "home": "MLT",
+      "away": "NOR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-02-22",
+      "city": "La Valetta",
+      "home": "MLT",
+      "away": "LUX",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m152"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Ostrava",
+      "home": "CZE",
+      "away": "BLR",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m153"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "MLT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m154"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "NOR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m155"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Minsk",
+      "home": "BLR",
+      "away": "MLT",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m156"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Praha",
+      "home": "CZE",
+      "away": "NED",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m157"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "LUX",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m158"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Minsk",
+      "home": "BLR",
+      "away": "NED",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m159"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "CZE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m160"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "MLT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m161"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-08-16",
+      "city": "Oslo",
+      "home": "NOR",
+      "away": "CZE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m162"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Praha",
+      "home": "CZE",
+      "away": "NOR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m163"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "BLR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m164"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "MLT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m165"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-10-07",
+      "city": "Minsk",
+      "home": "BLR",
+      "away": "CZE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m166"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Luxembourg",
+      "home": "LUX",
+      "away": "BLR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m167"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "La Valetta",
+      "home": "MLT",
+      "away": "NED",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m168"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-11-12",
+      "city": "La Valetta",
+      "home": "MLT",
+      "away": "BLR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m169"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Praha",
+      "home": "CZE",
+      "away": "LUX",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m170"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Rotterdam",
+      "home": "NED",
+      "away": "NOR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m171"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1994-04-20",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "LIE",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m172"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "IRL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m173"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Eschen",
+      "home": "LIE",
+      "away": "AUT",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m174"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "POR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m175"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1994-10-09",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "POR",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m176"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "NIR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m177"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "LIE",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m178"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1994-11-13",
+      "city": "Lisabon",
+      "home": "POR",
+      "away": "AUT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m179"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1994-11-15",
+      "city": "Eschen",
+      "home": "LIE",
+      "away": "LAT",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m180"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "IRL",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m181"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1994-12-18",
+      "city": "Lisabon",
+      "home": "POR",
+      "away": "LIE",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m182"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Salzburg",
+      "home": "AUT",
+      "away": "LAT",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m183"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "NIR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m184"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Salzburg",
+      "home": "AUT",
+      "away": "LIE",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m185"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "POR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m186"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "NIR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m187"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-06-03",
+      "city": "Eschen",
+      "home": "LIE",
+      "away": "IRL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m188"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-06-03",
+      "city": "Pórto",
+      "home": "POR",
+      "away": "LAT",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m189"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "LAT",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m190"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-06-11",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "AUT",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m191"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-08-15",
+      "city": "Eschen",
+      "home": "LIE",
+      "away": "POR",
+      "score": [
+        0,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m192"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-08-16",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "AUT",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m193"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-09-03",
+      "city": "Lisabon",
+      "home": "POR",
+      "away": "NIR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m194"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "IRL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m195"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Riga",
+      "home": "LAT",
+      "away": "LIE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m196"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Wien",
+      "home": "AUT",
+      "away": "POR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m197"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "LAT",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m198"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Eschen",
+      "home": "LIE",
+      "away": "NIR",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m199"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Belfast",
+      "home": "NIR",
+      "away": "AUT",
+      "score": [
+        5,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m200"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Lisabon",
+      "home": "POR",
+      "away": "IRL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m201"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "MDA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m202"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "ALB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m203"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "GEO",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m204"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Kishinev",
+      "home": "MDA",
+      "away": "WAL",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m205"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Tirana",
+      "home": "ALB",
+      "away": "GER",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m206"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "MDA",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m207"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "WAL",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m208"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1994-12-14",
+      "city": "Tirana",
+      "home": "ALB",
+      "away": "GEO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m209"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1994-12-14",
+      "city": "Kishinev",
+      "home": "MDA",
+      "away": "GER",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m210"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1994-12-14",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "BUL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m211"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1994-12-18",
+      "city": "Kaisersl.",
+      "home": "GER",
+      "away": "ALB",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m212"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Tirana",
+      "home": "ALB",
+      "away": "MDA",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m213"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "WAL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m214"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "GER",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m215"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "ALB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m216"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Düsseldorf",
+      "home": "GER",
+      "away": "WAL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m217"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Kishinev",
+      "home": "MDA",
+      "away": "BUL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m218"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "GER",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m219"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Kishinev",
+      "home": "MDA",
+      "away": "ALB",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m220"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "GEO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m221"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Tirana",
+      "home": "ALB",
+      "away": "BUL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m222"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Nürnberg",
+      "home": "GER",
+      "away": "GEO",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m223"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "MDA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m224"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-10-07",
+      "city": "Sofia",
+      "home": "BUL",
+      "away": "ALB",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m225"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-10-08",
+      "city": "Leverkusen",
+      "home": "GER",
+      "away": "MDA",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m226"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Tbilisi",
+      "home": "GEO",
+      "away": "BUL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m227"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Cardiff",
+      "home": "WAL",
+      "away": "GER",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m228"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Tirana",
+      "home": "ALB",
+      "away": "WAL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m229"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Berlin",
+      "home": "GER",
+      "away": "BUL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m230"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Kishinev",
+      "home": "MDA",
+      "away": "GEO",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m231"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Toftir",
+      "home": "FRO",
+      "away": "GRE",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m232"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1994-09-07",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SCO",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m233"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "FRO",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m234"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Athens",
+      "home": "GRE",
+      "away": "FIN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m235"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1994-10-12",
+      "city": "Moscow",
+      "home": "RUS",
+      "away": "SMR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m236"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SMR",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m237"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "RUS",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m238"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1994-11-16",
+      "city": "Athens",
+      "home": "GRE",
+      "away": "SMR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m239"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1994-12-14",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "SMR",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m240"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1994-12-18",
+      "city": "Athens",
+      "home": "GRE",
+      "away": "SCO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m241"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "FIN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m242"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-03-29",
+      "city": "Moscow",
+      "home": "RUS",
+      "away": "SCO",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m243"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "SCO",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m244"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Toftir",
+      "home": "FRO",
+      "away": "FIN",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m245"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-04-26",
+      "city": "Saloniki",
+      "home": "GRE",
+      "away": "RUS",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m246"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-05-06",
+      "city": "Moscow",
+      "home": "RUS",
+      "away": "FRO",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m247"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-05-25",
+      "city": "Toftir",
+      "home": "FRO",
+      "away": "SMR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m248"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "RUS",
+      "score": [
+        0,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m249"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-06-07",
+      "city": "Toftir",
+      "home": "FRO",
+      "away": "SCO",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m250"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-06-11",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "GRE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m251"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-08-16",
+      "city": "Helsinki",
+      "home": "FIN",
+      "away": "RUS",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m252"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-08-16",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "GRE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m253"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "GRE",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m254"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Toftir",
+      "home": "FRO",
+      "away": "RUS",
+      "score": [
+        2,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m255"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-09-06",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "FIN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m256"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Serravalle",
+      "home": "SMR",
+      "away": "FRO",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m257"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-10-11",
+      "city": "Moscow",
+      "home": "RUS",
+      "away": "GRE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m258"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Glasgow",
+      "home": "SCO",
+      "away": "SMR",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m259"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Iraklion",
+      "home": "GRE",
+      "away": "FRO",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m260"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1995-11-15",
+      "city": "Moscow",
+      "home": "RUS",
+      "away": "FIN",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m261"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "1995-12-13",
+      "city": "Liverpool",
+      "home": "NED",
+      "away": "IRL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m262"
     }
   ],
   "scorers": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "reason": "fila de clasificación omitida: país no resoluble (S.Arveladze)"
+    },
+    {
+      "reason": "grupo 1 omitido: la clasificación de la fuente está incompleta o no cuadra (suma GF 83 != suma GA 81 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo 4 omitido: la clasificación de la fuente está incompleta o no cuadra (suma GF 82 != suma GA 81 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo 7 omitido: la clasificación de la fuente está incompleta o no cuadra (MDA: p != w+d+l)"
+    },
+    {
+      "reason": "grupo 8 omitido: la clasificación de la fuente está incompleta o no cuadra (SMR: p != w+d+l)"
+    }
+  ],
   "teamsCount": 16
 }

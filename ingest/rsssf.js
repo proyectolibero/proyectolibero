@@ -550,11 +550,30 @@ function parseStanding(fragment, group, result, line) {
   }
   const numbers = numbersText.match(/\d+/g);
   if (goals && numbers && numbers.length === 5) {
-    [entry.p, entry.w, entry.d, entry.l, entry.pts] = numbers.map(Number);
+    assignStandingColumns(entry, numbers.map(Number));
   } else {
     warn(result, line, `columnas de clasificación no reconocidas: ${raw}`);
   }
   result.standings.push(entry);
+}
+
+/**
+ * Asigna las cinco columnas de una tabla de clasificación a sus campos. RSSSF
+ * usa dos órdenes: el clásico `P W D L GF-GA PTS` y el alterno `P PTS W D L
+ * GF-GA` (p. ej. la clasificación de la Eurocopa). Se elige el que cuadra con
+ * `P = W+D+L` y `PTS = 3W+D` (o `2W+D`); ante empate se conserva el clásico.
+ */
+function assignStandingColumns(entry, numbers) {
+  const [a, b, c, d, e] = numbers;
+  const classic = { p: a, w: b, d: c, l: d, pts: e };
+  const alternate = { p: a, w: c, d: d, l: e, pts: b };
+  const coherent = (row) => row.p === row.w + row.d + row.l && (row.pts === 3 * row.w + row.d || row.pts === 2 * row.w + row.d);
+  const chosen = coherent(alternate) && !coherent(classic) ? alternate : classic;
+  entry.p = chosen.p;
+  entry.w = chosen.w;
+  entry.d = chosen.d;
+  entry.l = chosen.l;
+  entry.pts = chosen.pts;
 }
 
 /** Extrae de una línea los eventos de gol `1:0 Jugador 31[, 2:0 Otro 65 h…]`. */
@@ -728,6 +747,44 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
 }
 
 /* -------------------------------------------------------------------------- */
+/* Partido de clasificación con fecha sin año y equipos por código             */
+/* (p. ej. `04.09. Tel Aviv   ISR-POL 2:1 (1:0)`, Eurocopa 1996).              */
+/* -------------------------------------------------------------------------- */
+
+const QUALIFYING_DATED_CODE = /^(\d{1,2})\.(\d{1,2})\.?\s+(.+)$/;
+const QUALIFYING_CODE_SCORE = /([A-Za-z]{2,4})\s*[-–]\s*([A-Za-z]{2,4})\s*(\d+)\s*[-:]\s*(\d+)/;
+
+/**
+ * Reconoce un partido de clasificación cuya fecha omite el año (`04.09.`) y
+ * cuyos equipos van como códigos separados por guion (`ISR-POL`). Los códigos se
+ * devuelven tal cual (sin resolver): el mapeo a código FIFA es responsabilidad de
+ * `ingest/build.js`, que conoce los alias y el año de la edición. El año se
+ * deduce fuera, con un cursor por grupo. Devuelve `null` si la línea no encaja.
+ */
+function parseQualifyingCodeMatch(text, section, group) {
+  const dated = QUALIFYING_DATED_CODE.exec(text);
+  if (!dated) return null;
+  const day = Number(dated[1]);
+  const month = Number(dated[2]);
+  if (month < 1 || month > 12 || day < 1 || day > 31) return null;
+  const body = dated[3];
+  const score = QUALIFYING_CODE_SCORE.exec(body);
+  if (!score) return null;
+  const city = body.slice(0, score.index).replace(/\s+/g, " ").trim() || null;
+  return {
+    day,
+    month,
+    city,
+    home: score[1].toUpperCase(),
+    away: score[2].toUpperCase(),
+    homeScore: Number(score[3]),
+    awayScore: Number(score[4]),
+    section,
+    group
+  };
+}
+
+/* -------------------------------------------------------------------------- */
 /* Formato `q` / `q-det`: fase de clasificación (grupos + tablas + prosa)      */
 /* -------------------------------------------------------------------------- */
 
@@ -743,9 +800,17 @@ const QUALIFYING_GROUP_PREFIX =
   + "North America|Central America|Africa|Asia and Africa|Asia and Oceania|Asia|Oceania|"
   + "Subgroups?|Semi-?finals?|Play-?offs?)";
 const QUALIFYING_GROUP = new RegExp(
-  `^(?:${QUALIFYING_GROUP_PREFIX}(?:\\s+and\\s+[A-Za-z][A-Za-z.'-]*)*\\s+)?Group\\s+([A-Z0-9]+)\\s*(?:\\[[^\\]]*\\])?\\s*:?\\s*$`,
+  `^(?:${QUALIFYING_GROUP_PREFIX}(?:\\s+and\\s+[A-Za-z][A-Za-z.'-]*)*\\s+)?Group\\s+([A-Z0-9]+)\\s*`
+  + `(?:\\[[^\\]]*\\])?\\s*(?:[-–]\\s*[A-Z][A-Z0-9 .]*)?:?\\s*$`,
   "i"
 );
+
+/**
+ * Cabecera de sección de clasificación sin grupo (eliminatorias/desempates):
+ * `Play-off game:`, `Semi-finals`, `Deciding match`. Cierra el grupo vigente para
+ * que los partidos que siguen no hereden su etiqueta.
+ */
+const QUALIFYING_SECTION_HEADER = /^(Play-?offs?(?:\s+game)?|Semi-?finals?|Deciding match|Test match)\s*:?\s*$/i;
 
 /** Códigos cortos de las confederaciones que prefijan los grupos. */
 const QUALIFYING_REGION_CODES = [
@@ -828,6 +893,18 @@ function parseQualifying(text, ctx, result) {
   // Copia del contexto con el último año fechado de la página: sirve de respaldo
   // para erratas de dos cifras fuera del rango (ver `inferYear`).
   const pageCtx = { ...ctx };
+  // Año de la edición (fin del rango de `ctx.year`) y cursor de año para las
+  // páginas cuya fecha omite el año (`04.09.`): arranca dos años antes del torneo
+  // y avanza al envolver el mes dentro de cada grupo.
+  const expected = expectedYearRange(ctx && ctx.year);
+  const editionYear = expected
+    ? expected.end
+    : Number.isInteger(Number(ctx && ctx.year))
+      ? Number(ctx.year)
+      : null;
+  const yearState = { groupYear: editionYear === null ? null : editionYear - 2, lastMonth: 0 };
+  const isoDate = (year, month, day) =>
+    `${String(year).padStart(4, "0")}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 
   for (let i = 0; i < all.length; i += 1) {
     const raw = all[i];
@@ -856,7 +933,16 @@ function parseQualifying(text, ctx, result) {
       if (prefixCode) region = prefixCode;
       group = qualifyingGroupKey(header[1] || region, header[2]);
       section = group;
+      yearState.groupYear = editionYear === null ? null : editionYear - 2;
+      yearState.lastMonth = 0;
       result.groups.push({ name: line, raw });
+      continue;
+    }
+
+    const sectionHeader = QUALIFYING_SECTION_HEADER.exec(line);
+    if (sectionHeader) {
+      group = null;
+      section = sectionHeader[0].replace(/\s*:$/, "");
       continue;
     }
 
@@ -880,14 +966,40 @@ function parseQualifying(text, ctx, result) {
     }
 
     if (standingText) parseStanding(standingText, group, result, lineNo);
-    if (matchText && parseSummaryMatch(matchText, group, section, pageCtx, result, lineNo)) {
+    if (!matchText) continue;
+
+    const before = result.matches.length;
+    const simplified = DATE_PREFIX.test(matchText) ? null : parseQualifyingCodeMatch(matchText, section, group);
+    if (simplified) {
+      let year = yearState.groupYear;
+      if (year === null) year = editionYear === null ? null : editionYear - 2;
+      if (year !== null) {
+        if (yearState.lastMonth && simplified.month < yearState.lastMonth) year += 1;
+        yearState.groupYear = year;
+        yearState.lastMonth = simplified.month;
+      }
+      result.matches.push({
+        home: simplified.home,
+        away: simplified.away,
+        city: simplified.city,
+        date: year === null ? null : isoDate(year, simplified.month, simplified.day),
+        section,
+        group,
+        homeScore: simplified.homeScore,
+        awayScore: simplified.awayScore,
+        status: "played",
+        notes: [],
+        extra: null
+      });
+    } else {
+      parseSummaryMatch(matchText, group, section, pageCtx, result, lineNo);
+    }
+    if (result.matches.length > before) {
       const match = result.matches[result.matches.length - 1];
-      if (match) {
-        match.stage = group ? "qualifyingGroup" : "qualifying";
-        match.qualifying = true;
-        if (typeof match.date === "string" && /^\d{4}-\d{2}-\d{2}$/.test(match.date)) {
-          pageCtx.fallbackYear = Number(match.date.slice(0, 4));
-        }
+      match.stage = group ? "qualifyingGroup" : "qualifying";
+      match.qualifying = true;
+      if (typeof match.date === "string" && /^\d{4}-\d{2}-\d{2}$/.test(match.date)) {
+        pageCtx.fallbackYear = Number(match.date.slice(0, 4));
       }
     }
   }

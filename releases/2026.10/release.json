@@ -154,7 +154,7 @@
     },
     {
       "path": "data/football/eurochamp/1996.json",
-      "sha256": "1ededc770fe15bd72fcfef4c88d8eb05f17635bf1010cd69c1c8b2a8c1541c98",
+      "sha256": "0dbe7b5810493739fd5e73c0f2bc55893b34379033a64e8cb52b0759835f5df9",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1996
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "981e2e3fe1892c54b09441949b3f2e7cb0fd9378f348b1694ae5cc225a96eac7",
+  "checksum": "fd73bba16895503b1114e0cf39832d3361ce45c09bee660ab7af1cffe758c3f6",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 10120,
+    "matches": 10351,
     "results": 0
   },
   "license": {
@@ -1104,6 +1104,12 @@
         "name": "RSSSF — World Cup 1994 (qualifying)",
         "url": "https://www.rsssf.org/tables/94q.html",
         "retrieved": "2026-10-10"
+      },
+      {
+        "source": "rsssf:96e-q",
+        "name": "RSSSF — UEFA European Championship 1996 (qualifying)",
+        "url": "https://www.rsssf.org/tables/96e-q.html",
+        "retrieved": "2026-10-11"
       },
       {
         "source": "rsssf:96e",
