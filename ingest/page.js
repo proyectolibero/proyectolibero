@@ -17,6 +17,7 @@
 const { parseOverview, editionYearNumbers, headingEditionYear } = require("./overview.js");
 const { parseCompact } = require("./compact.js");
 const { normalizeTeam, stageFromSection, groupLetter, groupIssue } = require("./build.js");
+const { desiredCoverage } = require("../scripts/migrate-coverage.js");
 
 const DEFAULT_LICENSE = "rsssf-attribution";
 const ABANDONED_RE = /abandon|no finaliz|not finished|sin terminar/i;
@@ -208,6 +209,31 @@ function deriveResults(edition, parsed, matches, hasFinal, warnings) {
   return { champion, runnerUp, decidedBy: "standings" };
 }
 
+/**
+ * Cobertura del borrador derivada del catálogo y del contenido (ADR-022/D37):
+ * una competición con fase `qualifying*` cuyo torneo final no trae partidos de
+ * clasificación queda `scope:"final"` + `complete:false` con nota; sin
+ * clasificación declarada queda `scope:"all"` + `complete:true`. Se reutiliza
+ * `desiredCoverage` para no duplicar la regla. Una edición abandonada (sin
+ * campeón) nunca se marca completa.
+ */
+function derivePageCoverage(edition, competition, matches, results, goals, warnings) {
+  const base = { matches: matches.length, goals };
+  const derived = desiredCoverage(
+    competition,
+    { coverage: base, matches, edition: edition.year, results },
+    {}
+  );
+  const coverage = derived || { ...base, scope: "final", complete: false };
+  if (ABANDONED_RE.test(String(edition.note || "")) || !results.champion) {
+    coverage.scope = "final";
+    coverage.complete = false;
+    coverage.note = edition.note || "Edición incompleta: no se documenta un campeón.";
+    warnings.push({ reason: `cobertura incompleta: ${coverage.note}` });
+  }
+  return coverage;
+}
+
 function buildDraft(edition, parsed, competition, source, warnings) {
   const asOf = toIsoDate(source.retrieved);
   const hasFinal = parsed.matches.some((match) => stageFromSection(match.section) === "final");
@@ -215,17 +241,7 @@ function buildDraft(edition, parsed, competition, source, warnings) {
   const groups = buildGroups(parsed.standings, matches, hasFinal, warnings);
   const results = deriveResults(edition, parsed, matches, hasFinal, warnings);
   const goals = matches.reduce((sum, match) => sum + (match.score ? match.score[0] + match.score[1] : 0), 0);
-  const abandoned = ABANDONED_RE.test(String(edition.note || ""));
-  const coverage = {
-    matches: matches.length,
-    goals,
-    scope: "final",
-    complete: !abandoned && Boolean(results.champion)
-  };
-  if (abandoned || !results.champion) {
-    coverage.note = edition.note || "Edición incompleta: no se documenta un campeón.";
-    warnings.push({ reason: `cobertura incompleta: ${coverage.note}` });
-  }
+  const coverage = derivePageCoverage(edition, competition, matches, results, goals, warnings);
 
   const teams = new Set();
   for (const match of matches) {
