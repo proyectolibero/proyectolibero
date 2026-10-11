@@ -13,11 +13,10 @@
     "finalMatchId": "m031"
   },
   "coverage": {
-    "matches": 31,
-    "goals": 77,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "matches": 142,
+    "goals": 353,
+    "scope": "all",
+    "complete": true
   },
   "sources": [
     {
@@ -37,6 +36,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "POR",
@@ -78,11 +78,11 @@
           "ga": 4,
           "pts": 3
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "FRA",
@@ -124,11 +124,11 @@
           "ga": 6,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "C",
+      "stage": "group",
       "standings": [
         {
           "team": "SWE",
@@ -170,11 +170,11 @@
           "ga": 9,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "D",
+      "stage": "group",
       "standings": [
         {
           "team": "CZE",
@@ -216,8 +216,7 @@
           "ga": 5,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     }
   ],
   "matches": [
@@ -236,7 +235,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "12- 6-04 Portugal           1-2 Greece\n[Cristiano Ronaldo 90+3; Giorgos Karagounis 7,\nAngelos Basinas 51pen]",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -253,7 +257,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "Spain              1-0 Russia\n[Juan Carlos Valerón 60]",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -270,7 +279,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "16- 6-04 Greece             1-1 Spain\n[Angelos Charisteas 66; Fernando Morientes 28]",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -287,7 +301,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "Russia             0-2 Portugal\n[Maniche Ribeiro 7, Manuel Rui Costa 89]",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -304,7 +323,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "20- 6-04 Spain              0-1 Portugal\n[Nuno Gomes 57]",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -321,7 +345,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "Russia             2-1 Greece\n[Dmitry Kirichenko 2, Dmitry Bulykin 17; Zisis Vryzas 43]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -355,7 +384,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "France             2-1 England\n[Zinedine Zidane 90+1, 90+3pen; Frank Lampard 38]",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -372,7 +406,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "17- 6-04 England            3-0 Switzerland\n[Wayne Rooney 23, 75, Steven Gerrard 82]",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -389,7 +428,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "Croatia            2-2 France\n[Milan Rapaic 48pen, Dado Prso 52; Igor Tudor 22og,\nDavid Trezeguet 64]",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -406,7 +450,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "21- 6-04 Croatia            2-4 England\n[Niko Kovac 5, Igor Tudor 73; Paul Scholes 40,\nWayne Rooney 45+1, 68, Frank Lampard 79]",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -423,7 +472,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "Switzerland        1-3 France\n[Johann Vonlanthen 26; Zinedine Zidane 20, Thierry Henry 76, 84]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -457,7 +511,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "Sweden             5-0 Bulgaria\n[Fredrik Ljungberg 32, Henrik Larsson 57, 58,\nZlatan Ibrahimovic 78pen, Marcus Allbäck 90+1]",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -474,7 +533,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "18- 6-04 Bulgaria           0-2 Denmark\n[Jon Dahl Tomasson 44, Jesper Grønkjær 90+2]",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -491,7 +555,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "Italy              1-1 Sweden\n[Antonio Cassano 37; Zlatan Ibrahimovic 85]",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -508,7 +577,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "22- 6-04 Italy              2-1 Bulgaria\n[Simone Perrotta 48, Antonio Cassano 90+4; Martin Petrov 45pen]",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -525,7 +599,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "Denmark            2-2 Sweden\n[Jon Dahl Tomasson 28, 66; Henrik Larsson 47pen, Mattias Jonson 89]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -542,7 +621,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "15- 6-04 Germany            1-1 Netherlands\n[Torsten Frings 30; Ruud van Nistelrooy 81]",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -559,7 +643,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "Czech Republic     2-1 Latvia\n[Milan Baros 73, Marek Heinz 85; Maris Verpakovskis 45+1]",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -593,7 +682,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "Netherlands        2-3 Czech Republic\n[Wilfred Bouma 4, Ruud van Nistelrooy 19; Jan Koller 23,\nMilan Baros 71, Vladimir Smicer 88]",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -610,7 +704,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "23- 6-04 Netherlands        3-0 Latvia\n[Ruud van Nistelrooy 27pen, 35, Roy Makaay 84]",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -627,7 +726,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "Germany            1-2 Czech Republic\n[Michael Ballack 21; Marek Heinz 30, Milan Baros 77]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -649,7 +753,12 @@
       "pens": [
         6,
         5
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "24- 6-04 Portugal           2-2 England                 [a2het, 6-5 pen]\n[Helder Postiga 83, Manuel Rui Costa 110; Michael Owen 3,\nFrank Lampard 115]",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -666,7 +775,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "25- 6-04 France             0-1 Greece\n[Angelos Charisteas 65]",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -705,7 +819,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "27- 6-04 Czech Republic     3-0 Denmark\n[Jan Koller 49, Milan Baros 63, 65]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -722,7 +841,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "30- 6-04 Portugal           2-1 Netherlands\n[Cristiano Ronaldo 26, Maniche Ribeiro 58; Jorge Andrade 62og]",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -739,7 +863,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "1- 7-04 Greece             1-0 Czech Republic          [a1het]\n[Traianos Dellas 105+1]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -756,10 +885,2511 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:04e",
+        "text": "4- 7-04 Portugal           0-1 Greece\n[Angelos Charisteas 57]\n\nAdditional details (line-ups etc.)\n\n\n\n\nEuropean Championship Overview File\n\n2000\n\n2004 goal scorers\n\n2004 additional details (line-ups etc.)\n\n2008\n\n\nAbout this document\nWith thanks to Lars Aarhus, Dale Arnett and Sébastien Duret\nPrepared and maintained by Sturmius Burkert and Erdinç Sivritepe for the\n\nRec.Sport.Soccer Statistics Foundation\n\nAuthors:\nSturmius Burkert\n(sturmius_burkert@gmx.de)\nand Erdinç Sivritepe\n(turkish_soccer@hotmail.com)\n\nLast updated: 7 Jul 2004\n\n(C) Copyright Sturmius Burkert, Erdinç Sivritepe and RSSSF 2001/04\nYou are free to copy this document in whole or part provided that proper\nacknowledgement is given to the authors. All rights reserved.\n\n",
+        "lang": "en"
+      }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2002-09-07",
+      "city": null,
+      "home": "SVN",
+      "away": "MLT",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m032"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2002-10-12",
+      "city": null,
+      "home": "FRA",
+      "away": "SVN",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m033"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2002-11-20",
+      "city": null,
+      "home": "CYP",
+      "away": "MLT",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m034"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2003-03-29",
+      "city": null,
+      "home": "CYP",
+      "away": "ISR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m035"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2003-04-02",
+      "city": null,
+      "home": "SVN",
+      "away": "CYP",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m036"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2003-04-30",
+      "city": null,
+      "home": "MLT",
+      "away": "SVN",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m037"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2003-06-07",
+      "city": null,
+      "home": "ISR",
+      "away": "SVN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m038"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2003-09-06",
+      "city": null,
+      "home": "FRA",
+      "away": "CYP",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m039"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2003-09-10",
+      "city": null,
+      "home": "ISR",
+      "away": "MLT",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m040"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "2003-10-10",
+      "city": null,
+      "home": "CYP",
+      "away": "SVN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m041"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2002-09-07",
+      "city": null,
+      "home": "NOR",
+      "away": "DEN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m042"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2002-10-12",
+      "city": null,
+      "home": "DEN",
+      "away": "LUX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m043"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2002-10-16",
+      "city": null,
+      "home": "NOR",
+      "away": "BIH",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m044"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2003-03-29",
+      "city": null,
+      "home": "BIH",
+      "away": "LUX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m045"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2003-04-02",
+      "city": null,
+      "home": "LUX",
+      "away": "NOR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m046"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2003-06-07",
+      "city": null,
+      "home": "DEN",
+      "away": "NOR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m047"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2003-06-11",
+      "city": null,
+      "home": "LUX",
+      "away": "DEN",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m048"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2003-09-06",
+      "city": null,
+      "home": "BIH",
+      "away": "NOR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m049"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2003-09-10",
+      "city": null,
+      "home": "LUX",
+      "away": "BIH",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m050"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "2003-10-11",
+      "city": null,
+      "home": "NOR",
+      "away": "LUX",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m051"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2002-09-07",
+      "city": null,
+      "home": "AUT",
+      "away": "MDA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2002-10-12",
+      "city": null,
+      "home": "MDA",
+      "away": "CZE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2002-10-16",
+      "city": null,
+      "home": "AUT",
+      "away": "NED",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2003-03-29",
+      "city": null,
+      "home": "NED",
+      "away": "CZE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2003-04-02",
+      "city": null,
+      "home": "CZE",
+      "away": "AUT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2003-06-07",
+      "city": null,
+      "home": "MDA",
+      "away": "AUT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2003-06-11",
+      "city": null,
+      "home": "CZE",
+      "away": "MDA",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2003-09-06",
+      "city": null,
+      "home": "NED",
+      "away": "AUT",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2003-09-10",
+      "city": null,
+      "home": "CZE",
+      "away": "NED",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "2003-10-11",
+      "city": null,
+      "home": "AUT",
+      "away": "CZE",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2002-09-07",
+      "city": null,
+      "home": "SMR",
+      "away": "POL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2002-10-12",
+      "city": null,
+      "home": "SWE",
+      "away": "HUN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2002-10-16",
+      "city": null,
+      "home": "HUN",
+      "away": "SMR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2002-11-20",
+      "city": null,
+      "home": "SMR",
+      "away": "LAT",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2003-03-29",
+      "city": null,
+      "home": "POL",
+      "away": "HUN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2003-04-02",
+      "city": null,
+      "home": "POL",
+      "away": "SMR",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2003-04-30",
+      "city": null,
+      "home": "LAT",
+      "away": "SMR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2003-06-07",
+      "city": null,
+      "home": "HUN",
+      "away": "LAT",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2003-06-11",
+      "city": null,
+      "home": "SWE",
+      "away": "POL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2003-09-06",
+      "city": null,
+      "home": "LAT",
+      "away": "POL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2003-09-10",
+      "city": null,
+      "home": "POL",
+      "away": "SWE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "2003-10-11",
+      "city": null,
+      "home": "SWE",
+      "away": "LAT",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2002-09-07",
+      "city": null,
+      "home": "FRO",
+      "away": "SCO",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2002-10-12",
+      "city": null,
+      "home": "ISL",
+      "away": "SCO",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2002-10-16",
+      "city": null,
+      "home": "GER",
+      "away": "FRO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2003-03-29",
+      "city": null,
+      "home": "SCO",
+      "away": "ISL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2003-04-02",
+      "city": null,
+      "home": "LTU",
+      "away": "SCO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2003-06-07",
+      "city": null,
+      "home": "SCO",
+      "away": "GER",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2003-06-11",
+      "city": null,
+      "home": "FRO",
+      "away": "GER",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2003-08-20",
+      "city": null,
+      "home": "FRO",
+      "away": "ISL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2003-09-06",
+      "city": null,
+      "home": "SCO",
+      "away": "FRO",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2003-09-10",
+      "city": null,
+      "home": "FRO",
+      "away": "LTU",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "2003-10-11",
+      "city": null,
+      "home": "SCO",
+      "away": "LTU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2002-09-07",
+      "city": null,
+      "home": "GRE",
+      "away": "ESP",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2002-10-12",
+      "city": null,
+      "home": "ESP",
+      "away": "NIR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2002-10-16",
+      "city": null,
+      "home": "GRE",
+      "away": "ARM",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2003-03-29",
+      "city": null,
+      "home": "ARM",
+      "away": "NIR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2003-04-02",
+      "city": null,
+      "home": "NIR",
+      "away": "GRE",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2003-06-07",
+      "city": null,
+      "home": "ESP",
+      "away": "GRE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2003-06-11",
+      "city": null,
+      "home": "NIR",
+      "away": "ESP",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2003-09-06",
+      "city": null,
+      "home": "ARM",
+      "away": "GRE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2003-09-10",
+      "city": null,
+      "home": "NIR",
+      "away": "ARM",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "2003-10-11",
+      "city": null,
+      "home": "GRE",
+      "away": "NIR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2002-09-07",
+      "city": null,
+      "home": "TUR",
+      "away": "SVK",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2002-09-08",
+      "city": null,
+      "home": "LIE",
+      "away": "MKD",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2002-10-12",
+      "city": null,
+      "home": "SVK",
+      "away": "ENG",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2002-10-16",
+      "city": null,
+      "home": "TUR",
+      "away": "LIE",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2003-03-29",
+      "city": null,
+      "home": "LIE",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2003-04-02",
+      "city": null,
+      "home": "ENG",
+      "away": "TUR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2003-06-07",
+      "city": null,
+      "home": "SVK",
+      "away": "TUR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2003-06-11",
+      "city": null,
+      "home": "ENG",
+      "away": "SVK",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2003-09-06",
+      "city": null,
+      "home": "LIE",
+      "away": "TUR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2003-09-10",
+      "city": null,
+      "home": "ENG",
+      "away": "LIE",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "2003-10-11",
+      "city": null,
+      "home": "TUR",
+      "away": "ENG",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2002-09-07",
+      "city": null,
+      "home": "BEL",
+      "away": "BUL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2002-10-12",
+      "city": null,
+      "home": "AND",
+      "away": "BEL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2002-10-16",
+      "city": null,
+      "home": "EST",
+      "away": "BEL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2003-03-29",
+      "city": null,
+      "home": "CRO",
+      "away": "BEL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2003-04-02",
+      "city": null,
+      "home": "EST",
+      "away": "BUL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2003-04-30",
+      "city": null,
+      "home": "AND",
+      "away": "EST",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2003-06-07",
+      "city": null,
+      "home": "BUL",
+      "away": "BEL",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2003-06-11",
+      "city": null,
+      "home": "EST",
+      "away": "CRO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2003-09-06",
+      "city": null,
+      "home": "BUL",
+      "away": "EST",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2003-09-10",
+      "city": null,
+      "home": "BEL",
+      "away": "CRO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "2003-10-11",
+      "city": null,
+      "home": "CRO",
+      "away": "BUL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2002-09-07",
+      "city": null,
+      "home": "AZE",
+      "away": "ITA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2002-10-12",
+      "city": null,
+      "home": "FIN",
+      "away": "AZE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2002-10-16",
+      "city": null,
+      "home": "WAL",
+      "away": "ITA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2002-11-20",
+      "city": null,
+      "home": "AZE",
+      "away": "WAL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2003-02-12",
+      "city": null,
+      "home": "SCG",
+      "away": "AZE",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2003-03-29",
+      "city": null,
+      "home": "ITA",
+      "away": "FIN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2003-06-07",
+      "city": null,
+      "home": "FIN",
+      "away": "SCG",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2003-06-11",
+      "city": null,
+      "home": "FIN",
+      "away": "ITA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2003-08-20",
+      "city": null,
+      "home": "SCG",
+      "away": "WAL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2003-09-06",
+      "city": null,
+      "home": "AZE",
+      "away": "FIN",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2003-09-10",
+      "city": null,
+      "home": "WAL",
+      "away": "FIN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "2003-10-11",
+      "city": null,
+      "home": "ITA",
+      "away": "AZE",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "2002-09-07",
+      "city": null,
+      "home": "RUS",
+      "away": "IRL",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "2002-09-08",
+      "city": null,
+      "home": "SUI",
+      "away": "GEO",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "2002-10-12",
+      "city": null,
+      "home": "ALB",
+      "away": "SUI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "2002-10-16",
+      "city": null,
+      "home": "IRL",
+      "away": "SUI",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "2003-03-29",
+      "city": null,
+      "home": "ALB",
+      "away": "RUS",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "2003-04-02",
+      "city": null,
+      "home": "ALB",
+      "away": "IRL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "2003-04-30",
+      "city": null,
+      "home": "GEO",
+      "away": "RUS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "2003-06-07",
+      "city": null,
+      "home": "IRL",
+      "away": "ALB",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "2003-06-11",
+      "city": null,
+      "home": "IRL",
+      "away": "GEO",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "2003-09-06",
+      "city": null,
+      "home": "GEO",
+      "away": "ALB",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "2003-09-10",
+      "city": null,
+      "home": "ALB",
+      "away": "GEO",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "10",
+      "matchday": null,
+      "date": "2003-10-11",
+      "city": null,
+      "home": "RUS",
+      "away": "GEO",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2003-11-15",
+      "city": null,
+      "home": "LAT",
+      "away": "TUR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2003-11-19",
+      "city": null,
+      "home": "TUR",
+      "away": "LAT",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
     }
   ],
   "scorers": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "line": 47,
+      "reason": "partido no reconocido: Cyprus             1-2 France"
+    },
+    {
+      "line": 51,
+      "reason": "partido no reconocido: Malta              0-2 Israel"
+    },
+    {
+      "line": 53,
+      "reason": "marcador no reconocido: 16-10-02 Israel             ppd Cyprus"
+    },
+    {
+      "line": 54,
+      "reason": "partido no reconocido: Malta              0-4 France"
+    },
+    {
+      "line": 60,
+      "reason": "partido no reconocido: France             6-0 Malta"
+    },
+    {
+      "line": 64,
+      "reason": "partido no reconocido: Israel             1-2 France               [in Palermo]"
+    },
+    {
+      "line": 68,
+      "reason": "partido no reconocido: Israel             2-0 Cyprus               [in Palermo]"
+    },
+    {
+      "line": 71,
+      "reason": "partido no reconocido: Malta              1-2 Cyprus"
+    },
+    {
+      "line": 75,
+      "reason": "partido no reconocido: Slovenia           3-1 Israel"
+    },
+    {
+      "line": 79,
+      "reason": "partido no reconocido: Slovenia           0-2 France"
+    },
+    {
+      "line": 83,
+      "reason": "partido no reconocido: France             3-0 Israel"
+    },
+    {
+      "line": 89,
+      "reason": "columnas de clasificación no reconocidas: 2.Norway           8  4  2  2   9- 5 14  [2 1 1 0 2-1 4]"
+    },
+    {
+      "line": 90,
+      "reason": "columnas de clasificación no reconocidas: 3.Romania          8  4  2  2  21- 9 14  [2 0 1 1 1-2 1]"
+    },
+    {
+      "line": 96,
+      "reason": "partido no reconocido: Bosnia-Herzegovina 0-3 Romania"
+    },
+    {
+      "line": 100,
+      "reason": "partido no reconocido: Romania            0-1 Norway"
+    },
+    {
+      "line": 104,
+      "reason": "partido no reconocido: Luxembourg         0-7 Romania"
+    },
+    {
+      "line": 108,
+      "reason": "partido no reconocido: Romania            2-5 Denmark"
+    },
+    {
+      "line": 110,
+      "reason": "partido no reconocido: Tomasson 71, Contra 73og]"
+    },
+    {
+      "line": 113,
+      "reason": "partido no reconocido: Denmark            0-2 Bosnia-Herzegovina"
+    },
+    {
+      "line": 117,
+      "reason": "partido no reconocido: Romania            2-0 Bosnia-Herzegovina"
+    },
+    {
+      "line": 121,
+      "reason": "partido no reconocido: Norway             1-1 Romania"
+    },
+    {
+      "line": 125,
+      "reason": "partido no reconocido: Romania            4-0 Luxembourg"
+    },
+    {
+      "line": 129,
+      "reason": "partido no reconocido: Denmark            2-2 Romania"
+    },
+    {
+      "line": 133,
+      "reason": "partido no reconocido: Bosnia-Herzegovina 1-1 Denmark"
+    },
+    {
+      "line": 146,
+      "reason": "partido no reconocido: Netherlands        3-0 Belarus"
+    },
+    {
+      "line": 150,
+      "reason": "partido no reconocido: Belarus            0-2 Austria"
+    },
+    {
+      "line": 154,
+      "reason": "partido no reconocido: Czech Republic     2-0 Belarus"
+    },
+    {
+      "line": 158,
+      "reason": "partido no reconocido: Belarus            2-1 Moldova"
+    },
+    {
+      "line": 162,
+      "reason": "partido no reconocido: Moldova            1-2 Netherlands"
+    },
+    {
+      "line": 166,
+      "reason": "partido no reconocido: Belarus            0-2 Netherlands"
+    },
+    {
+      "line": 170,
+      "reason": "partido no reconocido: Austria            5-0 Belarus"
+    },
+    {
+      "line": 174,
+      "reason": "partido no reconocido: Belarus            1-3 Czech Republic"
+    },
+    {
+      "line": 178,
+      "reason": "partido no reconocido: Moldova            2-1 Belarus"
+    },
+    {
+      "line": 182,
+      "reason": "partido no reconocido: Netherlands        5-0 Moldova"
+    },
+    {
+      "line": 184,
+      "reason": "partido no reconocido: Robben 89]"
+    },
+    {
+      "line": 196,
+      "reason": "partido no reconocido: Latvia             0-0 Sweden"
+    },
+    {
+      "line": 199,
+      "reason": "partido no reconocido: Poland             0-1 Latvia"
+    },
+    {
+      "line": 208,
+      "reason": "partido no reconocido: Hungary            1-2 Sweden"
+    },
+    {
+      "line": 214,
+      "reason": "partido no reconocido: San Marino         0-6 Sweden"
+    },
+    {
+      "line": 218,
+      "reason": "partido no reconocido: San Marino         0-5 Hungary"
+    },
+    {
+      "line": 222,
+      "reason": "partido no reconocido: Sweden             5-0 San Marino"
+    },
+    {
+      "line": 224,
+      "reason": "partido no reconocido: Källström 68pen]"
+    },
+    {
+      "line": 227,
+      "reason": "partido no reconocido: Latvia             3-1 Hungary"
+    },
+    {
+      "line": 231,
+      "reason": "partido no reconocido: Hungary            1-2 Poland"
+    },
+    {
+      "line": 244,
+      "reason": "partido no reconocido: Lithuania          0-2 Germany"
+    },
+    {
+      "line": 248,
+      "reason": "partido no reconocido: Lithuania          2-0 Faroe Islands"
+    },
+    {
+      "line": 252,
+      "reason": "partido no reconocido: Iceland            3-0 Lithuania"
+    },
+    {
+      "line": 256,
+      "reason": "partido no reconocido: Germany            1-1 Lithuania"
+    },
+    {
+      "line": 262,
+      "reason": "partido no reconocido: Iceland            2-1 Faroe Islands"
+    },
+    {
+      "line": 266,
+      "reason": "partido no reconocido: Lithuania          0-3 Iceland"
+    },
+    {
+      "line": 272,
+      "reason": "partido no reconocido: Iceland            0-0 Germany"
+    },
+    {
+      "line": 275,
+      "reason": "partido no reconocido: Germany            2-1 Scotland"
+    },
+    {
+      "line": 279,
+      "reason": "partido no reconocido: Germany            3-0 Iceland"
+    },
+    {
+      "line": 292,
+      "reason": "partido no reconocido: Armenia            2-2 Ukraine"
+    },
+    {
+      "line": 296,
+      "reason": "partido no reconocido: Ukraine            2-0 Greece"
+    },
+    {
+      "line": 300,
+      "reason": "partido no reconocido: Northern Ireland   0-0 Ukraine"
+    },
+    {
+      "line": 303,
+      "reason": "partido no reconocido: Ukraine            2-2 Spain"
+    },
+    {
+      "line": 307,
+      "reason": "partido no reconocido: Spain              3-0 Armenia"
+    },
+    {
+      "line": 311,
+      "reason": "partido no reconocido: Ukraine            4-3 Armenia"
+    },
+    {
+      "line": 313,
+      "reason": "partido no reconocido: Sarkisian 14pen, 52, Petrosian 74]"
+    },
+    {
+      "line": 315,
+      "reason": "partido no reconocido: Greece             1-0 Ukraine"
+    },
+    {
+      "line": 319,
+      "reason": "partido no reconocido: Ukraine            0-0 Northern Ireland"
+    },
+    {
+      "line": 322,
+      "reason": "partido no reconocido: Spain              2-1 Ukraine"
+    },
+    {
+      "line": 326,
+      "reason": "partido no reconocido: Armenia            0-4 Spain"
+    },
+    {
+      "line": 343,
+      "reason": "partido no reconocido: Macedonia          1-2 Turkey"
+    },
+    {
+      "line": 347,
+      "reason": "partido no reconocido: England            2-2 Macedonia"
+    },
+    {
+      "line": 351,
+      "reason": "partido no reconocido: Macedonia          0-2 Slovakia"
+    },
+    {
+      "line": 355,
+      "reason": "partido no reconocido: Slovakia           4-0 Liechtenstein        [behind closed doors]"
+    },
+    {
+      "line": 359,
+      "reason": "partido no reconocido: Macedonia          3-1 Liechtenstein"
+    },
+    {
+      "line": 363,
+      "reason": "partido no reconocido: Turkey             3-2 Macedonia"
+    },
+    {
+      "line": 367,
+      "reason": "partido no reconocido: Macedonia          1-2 England"
+    },
+    {
+      "line": 371,
+      "reason": "partido no reconocido: Slovakia           1-1 Macedonia"
+    },
+    {
+      "line": 374,
+      "reason": "partido no reconocido: Liechtenstein      0-2 Slovakia"
+    },
+    {
+      "line": 380,
+      "reason": "columnas de clasificación no reconocidas: 2.Croatia          8  5  1  2  12- 4 16  [2 1 0 1 5-2 3]"
+    },
+    {
+      "line": 381,
+      "reason": "columnas de clasificación no reconocidas: 3.Belgium          8  5  1  2  11- 9 16  [2 1 0 1 2-5 3]"
+    },
+    {
+      "line": 387,
+      "reason": "partido no reconocido: Croatia            0-0 Estonia"
+    },
+    {
+      "line": 390,
+      "reason": "partido no reconocido: Bulgaria           2-0 Croatia"
+    },
+    {
+      "line": 394,
+      "reason": "partido no reconocido: Bulgaria           2-1 Andorra"
+    },
+    {
+      "line": 399,
+      "reason": "partido no reconocido: Croatia            2-0 Andorra"
+    },
+    {
+      "line": 405,
+      "reason": "partido no reconocido: Estonia            2-0 Andorra"
+    },
+    {
+      "line": 409,
+      "reason": "partido no reconocido: Belgium            3-0 Andorra"
+    },
+    {
+      "line": 413,
+      "reason": "partido no reconocido: Andorra            0-3 Croatia"
+    },
+    {
+      "line": 417,
+      "reason": "partido no reconocido: Andorra            0-3 Bulgaria"
+    },
+    {
+      "line": 421,
+      "reason": "partido no reconocido: Belgium            2-0 Estonia"
+    },
+    {
+      "line": 436,
+      "reason": "partido no reconocido: Finland            0-2 Wales"
+    },
+    {
+      "line": 440,
+      "reason": "partido no reconocido: Italy              1-1 Yugoslavia"
+    },
+    {
+      "line": 444,
+      "reason": "partido no reconocido: Yugoslavia         2-0 Finland"
+    },
+    {
+      "line": 452,
+      "reason": "partido no reconocido: Wales              4-0 Azerbaijan"
+    },
+    {
+      "line": 458,
+      "reason": "partido no reconocido: Azerbaijan         2-1 Serbia/Montenegro"
+    },
+    {
+      "line": 464,
+      "reason": "partido no reconocido: Italy              4-0 Wales"
+    },
+    {
+      "line": 468,
+      "reason": "partido no reconocido: Serbia/Montenegro  1-1 Italy"
+    },
+    {
+      "line": 472,
+      "reason": "partido no reconocido: Wales              2-3 Serbia/Montenegro"
+    },
+    {
+      "line": 485,
+      "reason": "partido no reconocido: Docherty 68, Morrison 75]"
+    },
+    {
+      "line": 490,
+      "reason": "partido no reconocido: Georgia            abd Russia"
+    },
+    {
+      "line": 494,
+      "reason": "partido no reconocido: Russia             4-1 Albania"
+    },
+    {
+      "line": 498,
+      "reason": "partido no reconocido: Georgia            1-2 Ireland"
+    },
+    {
+      "line": 501,
+      "reason": "partido no reconocido: Georgia            0-0 Switzerland"
+    },
+    {
+      "line": 506,
+      "reason": "partido no reconocido: Switzerland        2-2 Russia"
+    },
+    {
+      "line": 510,
+      "reason": "partido no reconocido: Switzerland        3-2 Albania"
+    },
+    {
+      "line": 514,
+      "reason": "partido no reconocido: Ireland            1-1 Russia"
+    },
+    {
+      "line": 518,
+      "reason": "partido no reconocido: Russia             4-1 Switzerland"
+    },
+    {
+      "line": 522,
+      "reason": "partido no reconocido: Switzerland        2-0 Ireland"
+    },
+    {
+      "line": 529,
+      "reason": "partido no reconocido: First Legs"
+    },
+    {
+      "line": 532,
+      "reason": "partido no reconocido: Scotland           1-0 Netherlands"
+    },
+    {
+      "line": 534,
+      "reason": "partido no reconocido: Croatia            1-1 Slovenia"
+    },
+    {
+      "line": 536,
+      "reason": "partido no reconocido: Russia             0-0 Wales"
+    },
+    {
+      "line": 537,
+      "reason": "partido no reconocido: Spain              2-1 Norway"
+    },
+    {
+      "line": 540,
+      "reason": "partido no reconocido: Second Legs"
+    },
+    {
+      "line": 543,
+      "reason": "partido no reconocido: Netherlands        6-0 Scotland"
+    },
+    {
+      "line": 545,
+      "reason": "partido no reconocido: F.de Boer 65]"
+    },
+    {
+      "line": 546,
+      "reason": "partido no reconocido: Slovenia           0-1 Croatia"
+    },
+    {
+      "line": 548,
+      "reason": "partido no reconocido: Wales              0-1 Russia"
+    },
+    {
+      "line": 550,
+      "reason": "partido no reconocido: Norway             0-3 Spain"
+    },
+    {
+      "reason": "fila de clasificación omitida: país no resoluble (Bosnia-Herzeg.)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 2 (NOR: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 2 (ROU: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 8 (CRO: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 8 (BEL: retirado o fila perdida)"
+    },
+    {
+      "reason": "grupo 1 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 35 != clasificación 67)"
+    },
+    {
+      "reason": "grupo 10 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 37 != clasificación 63)"
+    },
+    {
+      "reason": "grupo 2 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 15 != suma GA 30 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo 3 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 32 != clasificación 64)"
+    },
+    {
+      "reason": "grupo 4 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 28 != clasificación 55)"
+    },
+    {
+      "reason": "grupo 5 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 29 != clasificación 50)"
+    },
+    {
+      "reason": "grupo 6 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (ARM: p != w+d+l)"
+    },
+    {
+      "reason": "grupo 7 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 26 != clasificación 55)"
+    },
+    {
+      "reason": "grupo 8 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 18 != suma GA 28 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo 9 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 31 != clasificación 55)"
+    }
+  ],
   "teamsCount": 16
 }

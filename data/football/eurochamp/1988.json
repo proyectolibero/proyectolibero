@@ -13,11 +13,10 @@
     "finalMatchId": "m015"
   },
   "coverage": {
-    "matches": 15,
-    "goals": 34,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "matches": 132,
+    "goals": 321,
+    "scope": "all",
+    "complete": true
   },
   "sources": [
     {
@@ -37,6 +36,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "FRG",
@@ -78,11 +78,11 @@
           "ga": 7,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "URS",
@@ -124,8 +124,313 @@
           "ga": 7,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "1",
+      "standings": [
+        {
+          "team": "ESP",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 14,
+          "ga": 6,
+          "pts": 10
+        },
+        {
+          "team": "ROU",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 13,
+          "ga": 3,
+          "pts": 9
+        },
+        {
+          "team": "AUT",
+          "p": 6,
+          "w": 2,
+          "d": 1,
+          "l": 3,
+          "gf": 6,
+          "ga": 9,
+          "pts": 5
+        },
+        {
+          "team": "ALB",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 2,
+          "ga": 17,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "2",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 8,
+          "w": 6,
+          "d": 1,
+          "l": 1,
+          "gf": 16,
+          "ga": 4,
+          "pts": 13
+        },
+        {
+          "team": "SWE",
+          "p": 8,
+          "w": 4,
+          "d": 2,
+          "l": 2,
+          "gf": 12,
+          "ga": 5,
+          "pts": 10
+        },
+        {
+          "team": "POR",
+          "p": 8,
+          "w": 2,
+          "d": 4,
+          "l": 2,
+          "gf": 6,
+          "ga": 8,
+          "pts": 8
+        },
+        {
+          "team": "SUI",
+          "p": 8,
+          "w": 1,
+          "d": 5,
+          "l": 2,
+          "gf": 9,
+          "ga": 9,
+          "pts": 7
+        },
+        {
+          "team": "MLT",
+          "p": 8,
+          "w": 0,
+          "d": 2,
+          "l": 6,
+          "gf": 4,
+          "ga": 21,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "3",
+      "standings": [
+        {
+          "team": "URS",
+          "p": 8,
+          "w": 5,
+          "d": 3,
+          "l": 0,
+          "gf": 14,
+          "ga": 3,
+          "pts": 13
+        },
+        {
+          "team": "GDR",
+          "p": 8,
+          "w": 4,
+          "d": 3,
+          "l": 1,
+          "gf": 13,
+          "ga": 4,
+          "pts": 11
+        },
+        {
+          "team": "FRA",
+          "p": 8,
+          "w": 1,
+          "d": 4,
+          "l": 3,
+          "gf": 4,
+          "ga": 7,
+          "pts": 6
+        },
+        {
+          "team": "ISL",
+          "p": 8,
+          "w": 2,
+          "d": 2,
+          "l": 4,
+          "gf": 4,
+          "ga": 14,
+          "pts": 6
+        },
+        {
+          "team": "NOR",
+          "p": 8,
+          "w": 1,
+          "d": 2,
+          "l": 5,
+          "gf": 5,
+          "ga": 12,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "4",
+      "standings": [
+        {
+          "team": "ENG",
+          "p": 6,
+          "w": 5,
+          "d": 1,
+          "l": 0,
+          "gf": 19,
+          "ga": 1,
+          "pts": 11
+        },
+        {
+          "team": "YUG",
+          "p": 6,
+          "w": 4,
+          "d": 0,
+          "l": 2,
+          "gf": 13,
+          "ga": 9,
+          "pts": 8
+        },
+        {
+          "team": "NIR",
+          "p": 6,
+          "w": 1,
+          "d": 1,
+          "l": 4,
+          "gf": 2,
+          "ga": 10,
+          "pts": 3
+        },
+        {
+          "team": "TUR",
+          "p": 6,
+          "w": 0,
+          "d": 2,
+          "l": 4,
+          "gf": 2,
+          "ga": 16,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "6",
+      "standings": [
+        {
+          "team": "DEN",
+          "p": 6,
+          "w": 3,
+          "d": 2,
+          "l": 1,
+          "gf": 4,
+          "ga": 2,
+          "pts": 8
+        },
+        {
+          "team": "TCH",
+          "p": 6,
+          "w": 2,
+          "d": 3,
+          "l": 1,
+          "gf": 7,
+          "ga": 5,
+          "pts": 7
+        },
+        {
+          "team": "WAL",
+          "p": 6,
+          "w": 2,
+          "d": 2,
+          "l": 2,
+          "gf": 7,
+          "ga": 5,
+          "pts": 6
+        },
+        {
+          "team": "FIN",
+          "p": 6,
+          "w": 1,
+          "d": 1,
+          "l": 4,
+          "gf": 4,
+          "ga": 10,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "7",
+      "standings": [
+        {
+          "team": "IRL",
+          "p": 8,
+          "w": 4,
+          "d": 3,
+          "l": 1,
+          "gf": 10,
+          "ga": 5,
+          "pts": 11
+        },
+        {
+          "team": "BUL",
+          "p": 8,
+          "w": 4,
+          "d": 2,
+          "l": 2,
+          "gf": 12,
+          "ga": 6,
+          "pts": 10
+        },
+        {
+          "team": "BEL",
+          "p": 8,
+          "w": 3,
+          "d": 3,
+          "l": 2,
+          "gf": 16,
+          "ga": 8,
+          "pts": 9
+        },
+        {
+          "team": "SCO",
+          "p": 8,
+          "w": 3,
+          "d": 3,
+          "l": 2,
+          "gf": 7,
+          "ga": 5,
+          "pts": 9
+        },
+        {
+          "team": "LUX",
+          "p": 8,
+          "w": 0,
+          "d": 1,
+          "l": 7,
+          "gf": 2,
+          "ga": 23,
+          "pts": 1
+        }
+      ]
     }
   ],
   "matches": [
@@ -144,7 +449,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "10- 6-88 Düsseldorf    West Germany     1-1 Italy\n[56' Brehme - 53' Mancini]",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -161,7 +471,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "11- 6-88 Hannover      Denmark          2-3 Spain\n[26' M.Laudrup, 84' Povlsen - 6' Michel, 53' Butragueño,\n68' Gordillo]",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -178,7 +493,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "14- 6-88 Gelsenkirchen West Germany     2-0 Denmark\n[10' Klinsmann, 87' Thon]",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -195,7 +515,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "14- 6-88 Frankfurt     Italy            1-0 Spain\n[74' Vialli]",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -212,7 +537,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "17- 6-88 München       West Germany     2-0 Spain\n[30' and 51' Völler]",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -229,7 +559,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "17- 6-88 Köln          Italy            2-0 Denmark\n[66' Altobelli, 87' De Agostini]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -246,7 +581,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "12- 6-88 Stuttgart     England          0-1 Ireland\n[6' Houghton]",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -263,7 +603,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "12- 6-88 Köln          Netherlands      0-1 Soviet Union\n[54' Rats]",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -280,7 +625,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "15- 6-88 Düsseldorf    England          1-3 Netherlands\n[54' Robson - 44', 72' and 76' Van Basten]",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -297,7 +647,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "15- 6-88 Hannover      Ireland          1-1 Soviet Union\n[39' Whelan - 75' Protasov]",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -314,7 +669,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "18- 6-88 Frankfurt     England          1-3 Soviet Union\n[15' Adams - 3' Aleinikov, 28' Mikhailichenko,\n72' Pasulko]",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -331,7 +691,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "18- 6-88 Gelsenkirchen Ireland          0-1 Netherlands\n[82' Kieft]",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -348,7 +713,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "21- 6-88 Hamburg       West Germany     1-2 Netherlands\n[55' (pen) Matthäus - 74' (pen) R.Koeman, 89' Van Basten]",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -365,7 +735,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "22- 6-88 Stuttgart     Soviet Union     2-0 Italy\n[60' Litovchenko, 62' Protasov]\n\n(No match for third place)\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -382,10 +757,2133 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:88e",
+        "text": "25- 6-88 München       Netherlands      2-0 Soviet Union\n[33' Gullit, 54' Van Basten]\n[ref: Vautrot (France); att: 72,000]\nNetherlands: Van Breukelen, Van Aerle, Rijkaard, R.Koeman, Van Tiggelen,\nVanenburg, Wouters, A.Mühren, E.Koeman, Gullit, Van Basten\nSoviet Union: Dasaev, Khidiatulin, Demianenko, Litovchenko, Aleinikov,\nZavarov, Gotsmanov (69' Baltacha), Mikhailichenko, Rats,\nProtasov (72' Pasulko), Belanov\n\n",
+        "lang": "en"
+      }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1986-09-10",
+      "city": null,
+      "home": "ROU",
+      "away": "AUT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m016"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1986-10-15",
+      "city": null,
+      "home": "AUT",
+      "away": "ALB",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m017"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1986-11-12",
+      "city": null,
+      "home": "ESP",
+      "away": "ROU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m018"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1986-12-03",
+      "city": null,
+      "home": "ALB",
+      "away": "ESP",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m019"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1987-03-25",
+      "city": null,
+      "home": "ROU",
+      "away": "ALB",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m020"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1987-04-01",
+      "city": null,
+      "home": "AUT",
+      "away": "ESP",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m021"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1987-04-29",
+      "city": null,
+      "home": "ALB",
+      "away": "AUT",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m022"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1987-04-29",
+      "city": null,
+      "home": "ROU",
+      "away": "ESP",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m023"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1987-10-14",
+      "city": null,
+      "home": "ESP",
+      "away": "AUT",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m024"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1987-10-28",
+      "city": null,
+      "home": "ALB",
+      "away": "ROU",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m025"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1987-11-18",
+      "city": null,
+      "home": "ESP",
+      "away": "ALB",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m026"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1987-11-18",
+      "city": null,
+      "home": "AUT",
+      "away": "ROU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m027"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1986-09-24",
+      "city": null,
+      "home": "SWE",
+      "away": "SUI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m028"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1986-10-12",
+      "city": null,
+      "home": "POR",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m029"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1986-10-29",
+      "city": null,
+      "home": "SUI",
+      "away": "POR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m030"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1986-11-15",
+      "city": null,
+      "home": "ITA",
+      "away": "SUI",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m031"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1986-11-16",
+      "city": null,
+      "home": "MLT",
+      "away": "SWE",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m032"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1986-12-06",
+      "city": null,
+      "home": "MLT",
+      "away": "ITA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m033"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-01-24",
+      "city": null,
+      "home": "ITA",
+      "away": "MLT",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m034"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-02-14",
+      "city": null,
+      "home": "POR",
+      "away": "ITA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m035"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-03-29",
+      "city": null,
+      "home": "POR",
+      "away": "MLT",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m036"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-04-15",
+      "city": null,
+      "home": "SUI",
+      "away": "MLT",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m037"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-05-24",
+      "city": null,
+      "home": "SWE",
+      "away": "MLT",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m038"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-06-03",
+      "city": null,
+      "home": "SWE",
+      "away": "ITA",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m039"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-06-17",
+      "city": null,
+      "home": "SUI",
+      "away": "SWE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m040"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-09-23",
+      "city": null,
+      "home": "SWE",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m041"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-10-17",
+      "city": null,
+      "home": "SUI",
+      "away": "ITA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m042"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-11-11",
+      "city": null,
+      "home": "POR",
+      "away": "SUI",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m043"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-11-14",
+      "city": null,
+      "home": "ITA",
+      "away": "SWE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m044"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-11-15",
+      "city": null,
+      "home": "MLT",
+      "away": "SUI",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m045"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-12-05",
+      "city": null,
+      "home": "ITA",
+      "away": "POR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m046"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1987-12-20",
+      "city": null,
+      "home": "MLT",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m047"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1986-09-10",
+      "city": null,
+      "home": "ISL",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m048"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1986-09-24",
+      "city": null,
+      "home": "ISL",
+      "away": "URS",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m049"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1986-09-24",
+      "city": null,
+      "home": "NOR",
+      "away": "GDR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m050"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1986-10-11",
+      "city": null,
+      "home": "FRA",
+      "away": "URS",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m051"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1986-10-29",
+      "city": null,
+      "home": "URS",
+      "away": "NOR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1986-10-29",
+      "city": null,
+      "home": "GDR",
+      "away": "ISL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1986-11-19",
+      "city": null,
+      "home": "GDR",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-04-29",
+      "city": null,
+      "home": "FRA",
+      "away": "ISL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-04-29",
+      "city": null,
+      "home": "URS",
+      "away": "GDR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-06-03",
+      "city": null,
+      "home": "NOR",
+      "away": "URS",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-06-03",
+      "city": null,
+      "home": "ISL",
+      "away": "GDR",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-06-16",
+      "city": null,
+      "home": "NOR",
+      "away": "FRA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-09-09",
+      "city": null,
+      "home": "URS",
+      "away": "FRA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-09-09",
+      "city": null,
+      "home": "ISL",
+      "away": "NOR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-09-23",
+      "city": null,
+      "home": "NOR",
+      "away": "ISL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-10-10",
+      "city": null,
+      "home": "GDR",
+      "away": "URS",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-10-14",
+      "city": null,
+      "home": "FRA",
+      "away": "NOR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-10-28",
+      "city": null,
+      "home": "URS",
+      "away": "ISL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-10-28",
+      "city": null,
+      "home": "GDR",
+      "away": "NOR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1987-11-18",
+      "city": null,
+      "home": "FRA",
+      "away": "GDR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1986-10-15",
+      "city": null,
+      "home": "ENG",
+      "away": "NIR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1986-10-29",
+      "city": null,
+      "home": "YUG",
+      "away": "TUR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1986-11-12",
+      "city": null,
+      "home": "ENG",
+      "away": "YUG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1986-11-12",
+      "city": null,
+      "home": "TUR",
+      "away": "NIR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1987-04-01",
+      "city": null,
+      "home": "NIR",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1987-04-29",
+      "city": null,
+      "home": "NIR",
+      "away": "YUG",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1987-04-29",
+      "city": null,
+      "home": "TUR",
+      "away": "ENG",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1987-10-14",
+      "city": null,
+      "home": "YUG",
+      "away": "NIR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1987-10-14",
+      "city": null,
+      "home": "ENG",
+      "away": "TUR",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1987-11-11",
+      "city": null,
+      "home": "YUG",
+      "away": "ENG",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1987-11-11",
+      "city": null,
+      "home": "NIR",
+      "away": "TUR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1987-12-16",
+      "city": null,
+      "home": "TUR",
+      "away": "YUG",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1986-10-15",
+      "city": null,
+      "home": "HUN",
+      "away": "NED",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1986-10-15",
+      "city": null,
+      "home": "POL",
+      "away": "GRE",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1986-11-12",
+      "city": null,
+      "home": "GRE",
+      "away": "HUN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1986-11-19",
+      "city": null,
+      "home": "NED",
+      "away": "POL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1986-12-03",
+      "city": null,
+      "home": "CYP",
+      "away": "GRE",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1986-12-21",
+      "city": null,
+      "home": "CYP",
+      "away": "NED",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-01-14",
+      "city": null,
+      "home": "GRE",
+      "away": "CYP",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-02-08",
+      "city": null,
+      "home": "CYP",
+      "away": "HUN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-03-25",
+      "city": null,
+      "home": "NED",
+      "away": "GRE",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-04-12",
+      "city": null,
+      "home": "POL",
+      "away": "CYP",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-04-29",
+      "city": null,
+      "home": "GRE",
+      "away": "POL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-04-29",
+      "city": null,
+      "home": "NED",
+      "away": "HUN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-05-17",
+      "city": null,
+      "home": "HUN",
+      "away": "POL",
+      "score": [
+        5,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-09-23",
+      "city": null,
+      "home": "POL",
+      "away": "HUN",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-10-14",
+      "city": null,
+      "home": "HUN",
+      "away": "GRE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-10-14",
+      "city": null,
+      "home": "POL",
+      "away": "NED",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-10-28",
+      "city": null,
+      "home": "NED",
+      "away": "CYP",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-11-11",
+      "city": null,
+      "home": "CYP",
+      "away": "POL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-12-02",
+      "city": null,
+      "home": "HUN",
+      "away": "CYP",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-12-09",
+      "city": null,
+      "home": "NED",
+      "away": "CYP",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1987-12-16",
+      "city": null,
+      "home": "GRE",
+      "away": "NED",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1986-09-10",
+      "city": null,
+      "home": "FIN",
+      "away": "WAL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1986-10-15",
+      "city": null,
+      "home": "TCH",
+      "away": "FIN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1986-10-29",
+      "city": null,
+      "home": "DEN",
+      "away": "FIN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1986-11-12",
+      "city": null,
+      "home": "TCH",
+      "away": "DEN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1987-04-01",
+      "city": null,
+      "home": "WAL",
+      "away": "FIN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1987-04-29",
+      "city": null,
+      "home": "FIN",
+      "away": "DEN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1987-04-29",
+      "city": null,
+      "home": "WAL",
+      "away": "TCH",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1987-06-03",
+      "city": null,
+      "home": "DEN",
+      "away": "TCH",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1987-09-09",
+      "city": null,
+      "home": "WAL",
+      "away": "DEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1987-09-09",
+      "city": null,
+      "home": "FIN",
+      "away": "TCH",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1987-10-14",
+      "city": null,
+      "home": "DEN",
+      "away": "WAL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1987-11-11",
+      "city": null,
+      "home": "TCH",
+      "away": "WAL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1986-09-10",
+      "city": null,
+      "home": "SCO",
+      "away": "BUL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1986-09-10",
+      "city": null,
+      "home": "BEL",
+      "away": "IRL",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1986-10-14",
+      "city": null,
+      "home": "LUX",
+      "away": "BEL",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1986-10-15",
+      "city": null,
+      "home": "IRL",
+      "away": "SCO",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1986-11-12",
+      "city": null,
+      "home": "SCO",
+      "away": "LUX",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1986-11-19",
+      "city": null,
+      "home": "BEL",
+      "away": "BUL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-02-18",
+      "city": null,
+      "home": "SCO",
+      "away": "IRL",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-04-01",
+      "city": null,
+      "home": "BUL",
+      "away": "IRL",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-04-01",
+      "city": null,
+      "home": "BEL",
+      "away": "SCO",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-04-29",
+      "city": null,
+      "home": "IRL",
+      "away": "BEL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-04-30",
+      "city": null,
+      "home": "LUX",
+      "away": "BUL",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-05-20",
+      "city": null,
+      "home": "BUL",
+      "away": "LUX",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-05-28",
+      "city": null,
+      "home": "LUX",
+      "away": "IRL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-09-09",
+      "city": null,
+      "home": "IRL",
+      "away": "LUX",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-09-23",
+      "city": null,
+      "home": "BUL",
+      "away": "BEL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-10-14",
+      "city": null,
+      "home": "SCO",
+      "away": "BEL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-10-14",
+      "city": null,
+      "home": "IRL",
+      "away": "BUL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-11-11",
+      "city": null,
+      "home": "BEL",
+      "away": "LUX",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-11-11",
+      "city": null,
+      "home": "BUL",
+      "away": "SCO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1987-12-02",
+      "city": null,
+      "home": "LUX",
+      "away": "SCO",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
     }
   ],
   "scorers": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "line": 26,
+      "reason": "partido no reconocido: West Germany qualify as hosts."
+    },
+    {
+      "line": 28,
+      "reason": "partido no reconocido: 1988 European Championship Qualifying Details"
+    },
+    {
+      "reason": "grupo 5 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 60 != clasificación 52)"
+    }
+  ],
   "teamsCount": 8
 }

@@ -13,11 +13,10 @@
     "finalMatchId": "m031"
   },
   "coverage": {
-    "matches": 31,
-    "goals": 85,
-    "scope": "final",
-    "complete": false,
-    "note": "Publicada la fase final; pendiente la clasificación."
+    "matches": 152,
+    "goals": 437,
+    "scope": "all",
+    "complete": true
   },
   "sources": [
     {
@@ -37,6 +36,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "POR",
@@ -78,11 +78,11 @@
           "ga": 5,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "ITA",
@@ -124,11 +124,11 @@
           "ga": 4,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "C",
+      "stage": "group",
       "standings": [
         {
           "team": "ESP",
@@ -170,11 +170,11 @@
           "ga": 5,
           "pts": 2
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "D",
+      "stage": "group",
       "standings": [
         {
           "team": "NED",
@@ -216,8 +216,7 @@
           "ga": 8,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
     }
   ],
   "matches": [
@@ -236,7 +235,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "12- 6-2000 Liège     18.00  Germany            1-1 Romania\n[Scholl 28; Moldovan 5]",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -253,7 +257,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "Eindhoven 20.45  Portugal           3-2 England\n[Figo 22, João Pinto 37, Nuno Gomes 59; Scholes 3,\nMcManaman 18]",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -270,7 +279,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "17- 6-2000 Arnhem    18.00  Romania            0-1 Portugal\n[Costinha 90]",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -287,7 +301,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "Charleroi 20.45  England            1-0 Germany\n[Shearer 53]",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -304,7 +323,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "20- 6-2000 Charleroi 20.45  England            2-3 Romania\n[Shearer 40pen, Owen 45; Chivu 22, Munteanu 48, Ganea 88pen]",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -321,7 +345,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "Rotterdam 20.45  Portugal           3-0 Germany\n[Conceição 35, 54, 71]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -338,7 +367,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "10- 6-2000 Brussel   20.45  Belgium            2-1 Sweden\n[Goor 43, E.Mpenza 46; Mjällby 53]",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -355,7 +389,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "11- 6-2000 Arnhem    14.30  Turkey             1-2 Italy\n[Okan Buruk 61; Conte 52, F.Inzaghi 70pen]",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -372,7 +411,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "14- 6-2000 Bruxelles 20.45  Italy              2-0 Belgium\n[Totti 6, Fiore 66]",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -406,7 +450,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "19- 6-2000 Brussel   20.45  Turkey             2-0 Belgium\n[Hakan Sükür 45, 70]",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -423,7 +472,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "Eindhoven 20.45  Italy              2-1 Sweden\n[Di Biagio 39, Del Piero 88; Larsson 77]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -440,7 +494,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "13- 6-2000 Rotterdam 18.00  Spain              0-1 Norway\n[Iversen 66]",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -457,7 +516,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "Charleroi 20.45  Yugoslavia         3-3 Slovenia\n[Milosevic 67, 73, Drulovic 70; Zahovic 23, 57, Pavlin 52]",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -474,7 +538,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "18- 6-2000 Amsterdam 18.00  Slovenia           1-2 Spain\n[Zahovic 58; Raúl 4, Etxebarría 60]",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -491,7 +560,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "Liège     20.45  Norway             0-1 Yugoslavia\n[Milosevic 8]",
+        "lang": "en"
+      }
     },
     {
       "id": "m017",
@@ -508,7 +582,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "21- 6-2000 Brugge    18.00  Yugoslavia         3-4 Spain\n[Milosevic 30, Govedarica 51, Komljenovic 75; Alfonso 39, 90,\nMunitis 52, Mendieta 90pen]",
+        "lang": "en"
+      }
     },
     {
       "id": "m018",
@@ -525,7 +604,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "Arnhem    18.00  Slovenia           0-0 Norway\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m019",
@@ -542,7 +626,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "11- 6-2000 Brugge    18.00  France             3-0 Denmark\n[Blanc 16, Henry 64, Wiltord 90]",
+        "lang": "en"
+      }
     },
     {
       "id": "m020",
@@ -559,7 +648,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "Amsterdam 20.45  Netherlands        1-0 Czech Republic\n[F.de Boer 89pen]",
+        "lang": "en"
+      }
     },
     {
       "id": "m021",
@@ -576,7 +670,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "16- 6-2000 Brugge    18.00  Czech Republic     1-2 France\n[Poborsky 35pen; Henry 7, Djorkaeff 60]",
+        "lang": "en"
+      }
     },
     {
       "id": "m022",
@@ -593,7 +692,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "Rotterdam 20.45  Denmark            0-3 Netherlands\n[Kluivert 57, R.de Boer 66, Zenden 77]",
+        "lang": "en"
+      }
     },
     {
       "id": "m023",
@@ -610,7 +714,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "21- 6-2000 Amsterdam 20.45  France             2-3 Netherlands\n[Dugarry 8, Trezeguet 31; Kluivert 14, F.de Boer 51, Zenden 59]",
+        "lang": "en"
+      }
     },
     {
       "id": "m024",
@@ -627,7 +736,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "Liège     20.45  Denmark            0-2 Czech Republic\n[Smicer 64, 67]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m025",
@@ -644,7 +758,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "24- 6-2000 Amsterdam 18.00  Portugal           2-0 Turkey\n[Nuno Gomes 44, 56]",
+        "lang": "en"
+      }
     },
     {
       "id": "m026",
@@ -661,7 +780,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "Bruxelles 20.45  Italy              2-0 Romania\n[Totti 33, Inzaghi 42]",
+        "lang": "en"
+      }
     },
     {
       "id": "m027",
@@ -678,7 +802,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "25- 6-2000 Rotterdam 18.00  Netherlands        6-1 Yugoslavia\n[Kluivert 24, 38, 54, Govedarica 51og, Overmars 78, 90 -\nMilosevic 90]",
+        "lang": "en"
+      }
     },
     {
       "id": "m028",
@@ -695,7 +824,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "Brugge    20.45  France             2-1 Spain\n[Zidane 33, Djorkaeff 44 - Mendieta 38pen]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m029",
@@ -714,7 +848,12 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "28- 6-2000 Brussel   20.45  Portugal           1-2 France                  [asdet]\n[Nuno Gomes 19 - Henry 51, Zidane 117pen]",
+        "lang": "en"
+      }
     },
     {
       "id": "m030",
@@ -737,7 +876,12 @@
       "pens": [
         3,
         1
-      ]
+      ],
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "29- 6-2000 Amsterdam 18.00  Italy              0-0 Netherlands             [asdet, 3-1 pen]\n",
+        "lang": "en"
+      }
     },
     {
       "id": "m031",
@@ -756,10 +900,2794 @@
       "notes": [
         "aet"
       ],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:00e",
+        "text": "2- 7-2000 Rotterdam 20.00  France             2-1 Italy                   [asdet]\n[Wiltord 90, Trezeguet 103 - Delvecchio 55]\n\n\n\n\nEuropean Championship Overview File\n\n1996\n\n2000 Additional Details\n\n2000 Full Details Final Tournament\n\n2004\n\n\nAbout this document\nPrepared and maintained by John Beuker and Karel Stokkermans for the\n\nRec.Sport.Soccer Statistics Foundation\n\nAuthors:\nJohn Beuker\nand Karel Stokkermans\n\nLast updated: 17 Jan 2004\n\n(C) Copyright John Beuker, Karel Stokkermans and RSSSF 1998/2004\nYou are free to copy this document in whole or part provided that proper\nacknowledgement is given to the authors. All rights reserved.\n\n",
+        "lang": "en"
+      }
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1998-09-05",
+      "city": null,
+      "home": "WAL",
+      "away": "ITA",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m032"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1998-10-10",
+      "city": null,
+      "home": "ITA",
+      "away": "SUI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m033"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1998-10-14",
+      "city": null,
+      "home": "WAL",
+      "away": "BLR",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m034"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1999-03-27",
+      "city": null,
+      "home": "BLR",
+      "away": "SUI",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m035"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1999-03-31",
+      "city": null,
+      "home": "SUI",
+      "away": "WAL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m036"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1999-06-05",
+      "city": null,
+      "home": "ITA",
+      "away": "WAL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m037"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1999-06-09",
+      "city": null,
+      "home": "SUI",
+      "away": "ITA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m038"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1999-09-04",
+      "city": null,
+      "home": "BLR",
+      "away": "WAL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m039"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1999-09-08",
+      "city": null,
+      "home": "SUI",
+      "away": "BLR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m040"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "1",
+      "matchday": null,
+      "date": "1999-10-09",
+      "city": null,
+      "home": "WAL",
+      "away": "SUI",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m041"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1998-09-05",
+      "city": null,
+      "home": "GEO",
+      "away": "ALB",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m042"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1998-09-06",
+      "city": null,
+      "home": "GRE",
+      "away": "SVN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m043"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1998-10-10",
+      "city": null,
+      "home": "SVN",
+      "away": "NOR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m044"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1998-10-14",
+      "city": null,
+      "home": "NOR",
+      "away": "ALB",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m045"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1998-11-18",
+      "city": null,
+      "home": "ALB",
+      "away": "GRE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m046"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1999-03-27",
+      "city": null,
+      "home": "GRE",
+      "away": "NOR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m047"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1999-03-31",
+      "city": null,
+      "home": "LAT",
+      "away": "GRE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m048"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1999-04-28",
+      "city": null,
+      "home": "LAT",
+      "away": "ALB",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m049"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1999-05-30",
+      "city": null,
+      "home": "NOR",
+      "away": "GEO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m050"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1999-06-05",
+      "city": null,
+      "home": "ALB",
+      "away": "NOR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m051"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1999-06-09",
+      "city": null,
+      "home": "ALB",
+      "away": "SVN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m052"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1999-08-18",
+      "city": null,
+      "home": "SVN",
+      "away": "ALB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m053"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1999-09-04",
+      "city": null,
+      "home": "NOR",
+      "away": "GRE",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m054"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1999-09-08",
+      "city": null,
+      "home": "NOR",
+      "away": "SVN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m055"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1999-10-06",
+      "city": null,
+      "home": "GRE",
+      "away": "ALB",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m056"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "2",
+      "matchday": null,
+      "date": "1999-10-09",
+      "city": null,
+      "home": "ALB",
+      "away": "GEO",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m057"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1998-09-05",
+      "city": null,
+      "home": "FIN",
+      "away": "MDA",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m058"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1998-10-10",
+      "city": null,
+      "home": "TUR",
+      "away": "GER",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m059"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1998-10-14",
+      "city": null,
+      "home": "MDA",
+      "away": "GER",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m060"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1998-11-18",
+      "city": null,
+      "home": "NIR",
+      "away": "MDA",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m061"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1999-03-27",
+      "city": null,
+      "home": "NIR",
+      "away": "GER",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m062"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1999-03-31",
+      "city": null,
+      "home": "GER",
+      "away": "FIN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m063"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1999-06-04",
+      "city": null,
+      "home": "GER",
+      "away": "MDA",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m064"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1999-06-05",
+      "city": null,
+      "home": "FIN",
+      "away": "TUR",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m065"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1999-06-09",
+      "city": null,
+      "home": "MDA",
+      "away": "FIN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m066"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1999-09-04",
+      "city": null,
+      "home": "FIN",
+      "away": "GER",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m067"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1999-09-08",
+      "city": null,
+      "home": "GER",
+      "away": "NIR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m068"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "3",
+      "matchday": null,
+      "date": "1999-10-09",
+      "city": null,
+      "home": "GER",
+      "away": "TUR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m069"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1998-09-05",
+      "city": null,
+      "home": "ARM",
+      "away": "AND",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m070"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1998-10-10",
+      "city": null,
+      "home": "AND",
+      "away": "UKR",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m071"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1998-10-14",
+      "city": null,
+      "home": "UKR",
+      "away": "ARM",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m072"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1999-03-27",
+      "city": null,
+      "home": "AND",
+      "away": "ISL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m073"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1999-03-31",
+      "city": null,
+      "home": "UKR",
+      "away": "ISL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m074"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1999-06-05",
+      "city": null,
+      "home": "UKR",
+      "away": "AND",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m075"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1999-06-09",
+      "city": null,
+      "home": "AND",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m076"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1999-09-04",
+      "city": null,
+      "home": "UKR",
+      "away": "FRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m077"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1999-09-08",
+      "city": null,
+      "home": "AND",
+      "away": "RUS",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m078"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "4",
+      "matchday": null,
+      "date": "1999-10-09",
+      "city": null,
+      "home": "FRA",
+      "away": "ISL",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m079"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1998-09-05",
+      "city": null,
+      "home": "SWE",
+      "away": "ENG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m080"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1998-09-06",
+      "city": null,
+      "home": "BUL",
+      "away": "POL",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m081"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1998-10-10",
+      "city": null,
+      "home": "POL",
+      "away": "LUX",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m082"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1998-10-14",
+      "city": null,
+      "home": "BUL",
+      "away": "SWE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m083"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1999-03-27",
+      "city": null,
+      "home": "SWE",
+      "away": "LUX",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m084"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1999-03-31",
+      "city": null,
+      "home": "LUX",
+      "away": "BUL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m085"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1999-06-04",
+      "city": null,
+      "home": "POL",
+      "away": "BUL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m086"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1999-06-05",
+      "city": null,
+      "home": "ENG",
+      "away": "SWE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m087"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1999-06-09",
+      "city": null,
+      "home": "LUX",
+      "away": "POL",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m088"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1999-09-04",
+      "city": null,
+      "home": "SWE",
+      "away": "BUL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m089"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1999-09-08",
+      "city": null,
+      "home": "LUX",
+      "away": "SWE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m090"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1999-10-09",
+      "city": null,
+      "home": "SWE",
+      "away": "POL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m091"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "5",
+      "matchday": null,
+      "date": "1999-10-10",
+      "city": null,
+      "home": "BUL",
+      "away": "LUX",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m092"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1998-09-05",
+      "city": null,
+      "home": "AUT",
+      "away": "ISR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m093"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1998-10-10",
+      "city": null,
+      "home": "CYP",
+      "away": "AUT",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m094"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1998-10-14",
+      "city": null,
+      "home": "SMR",
+      "away": "AUT",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m095"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1998-11-18",
+      "city": null,
+      "home": "SMR",
+      "away": "CYP",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m096"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1999-02-10",
+      "city": null,
+      "home": "CYP",
+      "away": "SMR",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m097"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1999-03-27",
+      "city": null,
+      "home": "ESP",
+      "away": "AUT",
+      "score": [
+        9,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m098"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1999-03-28",
+      "city": null,
+      "home": "ISR",
+      "away": "CYP",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m099"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1999-03-31",
+      "city": null,
+      "home": "SMR",
+      "away": "ESP",
+      "score": [
+        0,
+        6
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m100"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1999-04-28",
+      "city": null,
+      "home": "AUT",
+      "away": "SMR",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m101"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1999-06-05",
+      "city": null,
+      "home": "ESP",
+      "away": "SMR",
+      "score": [
+        9,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m102"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1999-06-06",
+      "city": null,
+      "home": "ISR",
+      "away": "AUT",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m103"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1999-09-04",
+      "city": null,
+      "home": "AUT",
+      "away": "ESP",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m104"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1999-09-05",
+      "city": null,
+      "home": "CYP",
+      "away": "ISR",
+      "score": [
+        3,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m105"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1999-09-08",
+      "city": null,
+      "home": "ISR",
+      "away": "SMR",
+      "score": [
+        8,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m106"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "6",
+      "matchday": null,
+      "date": "1999-10-10",
+      "city": null,
+      "home": "AUT",
+      "away": "CYP",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m107"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1998-09-02",
+      "city": null,
+      "home": "ROU",
+      "away": "LIE",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m108"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1998-09-05",
+      "city": null,
+      "home": "SVK",
+      "away": "AZE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m109"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1998-09-06",
+      "city": null,
+      "home": "HUN",
+      "away": "POR",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m110"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1998-10-10",
+      "city": null,
+      "home": "POR",
+      "away": "ROU",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m111"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1998-10-14",
+      "city": null,
+      "home": "HUN",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m112"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1999-03-26",
+      "city": null,
+      "home": "POR",
+      "away": "AZE",
+      "score": [
+        7,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m113"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1999-03-27",
+      "city": null,
+      "home": "ROU",
+      "away": "SVK",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m114"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1999-03-31",
+      "city": null,
+      "home": "SVK",
+      "away": "HUN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m115"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1999-06-05",
+      "city": null,
+      "home": "POR",
+      "away": "SVK",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m116"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1999-06-09",
+      "city": null,
+      "home": "HUN",
+      "away": "SVK",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m117"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1999-09-04",
+      "city": null,
+      "home": "SVK",
+      "away": "ROU",
+      "score": [
+        1,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m118"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1999-09-08",
+      "city": null,
+      "home": "ROU",
+      "away": "POR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m119"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "7",
+      "matchday": null,
+      "date": "1999-10-09",
+      "city": null,
+      "home": "LIE",
+      "away": "ROU",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m120"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1998-09-05",
+      "city": null,
+      "home": "IRL",
+      "away": "CRO",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m121"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1998-09-06",
+      "city": null,
+      "home": "MKD",
+      "away": "MLT",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m122"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1998-10-10",
+      "city": null,
+      "home": "MLT",
+      "away": "CRO",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m123"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1998-10-14",
+      "city": null,
+      "home": "IRL",
+      "away": "MLT",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m124"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1998-11-18",
+      "city": null,
+      "home": "MLT",
+      "away": "MKD",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m125"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1999-02-10",
+      "city": null,
+      "home": "MLT",
+      "away": "YUG",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m126"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1999-06-05",
+      "city": null,
+      "home": "MKD",
+      "away": "CRO",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m127"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1999-06-08",
+      "city": null,
+      "home": "YUG",
+      "away": "MLT",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m128"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1999-06-09",
+      "city": null,
+      "home": "IRL",
+      "away": "MKD",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m129"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1999-08-18",
+      "city": null,
+      "home": "YUG",
+      "away": "CRO",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m130"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1999-08-21",
+      "city": null,
+      "home": "CRO",
+      "away": "MLT",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m131"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1999-09-01",
+      "city": null,
+      "home": "IRL",
+      "away": "YUG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m132"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1999-09-04",
+      "city": null,
+      "home": "CRO",
+      "away": "IRL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m133"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1999-09-05",
+      "city": null,
+      "home": "YUG",
+      "away": "MKD",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m134"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1999-09-08",
+      "city": null,
+      "home": "MLT",
+      "away": "IRL",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m135"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "8",
+      "matchday": null,
+      "date": "1999-10-10",
+      "city": null,
+      "home": "CRO",
+      "away": "YUG",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m136"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1998-06-04",
+      "city": null,
+      "home": "EST",
+      "away": "FRO",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m137"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1998-08-19",
+      "city": null,
+      "home": "BIH",
+      "away": "FRO",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m138"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1998-09-05",
+      "city": null,
+      "home": "BIH",
+      "away": "EST",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m139"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1998-09-06",
+      "city": null,
+      "home": "FRO",
+      "away": "CZE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m140"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1998-10-10",
+      "city": null,
+      "home": "BIH",
+      "away": "CZE",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m141"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1998-10-14",
+      "city": null,
+      "home": "LTU",
+      "away": "BIH",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m142"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1999-03-27",
+      "city": null,
+      "home": "CZE",
+      "away": "LTU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m143"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1999-03-31",
+      "city": null,
+      "home": "LTU",
+      "away": "EST",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m144"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1999-06-05",
+      "city": null,
+      "home": "BIH",
+      "away": "LTU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m145"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1999-06-09",
+      "city": null,
+      "home": "EST",
+      "away": "LTU",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m146"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1999-09-04",
+      "city": null,
+      "home": "BIH",
+      "away": "SCO",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m147"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1999-09-08",
+      "city": null,
+      "home": "CZE",
+      "away": "BIH",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m148"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1999-10-05",
+      "city": null,
+      "home": "SCO",
+      "away": "BIH",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m149"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "9",
+      "matchday": null,
+      "date": "1999-10-09",
+      "city": null,
+      "home": "EST",
+      "away": "BIH",
+      "score": [
+        1,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m150"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "1999-11-13",
+      "city": null,
+      "home": "SCO",
+      "away": "ENG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m151"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "1999-11-17",
+      "city": null,
+      "home": "ENG",
+      "away": "SCO",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m152"
     }
   ],
   "scorers": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "line": 40,
+      "reason": "columnas de clasificación no reconocidas: 2.Denmark          8  4  2  2  11- 8 14  [2 1 1 0 3-2 4]"
+    },
+    {
+      "line": 41,
+      "reason": "columnas de clasificación no reconocidas: 3.Switzerland      8  4  2  2   9- 5 14  [2 0 1 1 2-3 1]"
+    },
+    {
+      "line": 46,
+      "reason": "partido no reconocido: Belarus            0-0 Denmark"
+    },
+    {
+      "line": 48,
+      "reason": "partido no reconocido: Denmark            1-2 Wales"
+    },
+    {
+      "line": 50,
+      "reason": "partido no reconocido: Switzerland        1-1 Denmark"
+    },
+    {
+      "line": 52,
+      "reason": "partido no reconocido: Denmark            1-2 Italy"
+    },
+    {
+      "line": 54,
+      "reason": "partido no reconocido: Italy              1-1 Belarus"
+    },
+    {
+      "line": 56,
+      "reason": "partido no reconocido: Denmark            1-0 Belarus"
+    },
+    {
+      "line": 58,
+      "reason": "partido no reconocido: Wales              0-2 Denmark          (in Liverpool)"
+    },
+    {
+      "line": 60,
+      "reason": "partido no reconocido: Denmark            2-1 Switzerland"
+    },
+    {
+      "line": 62,
+      "reason": "partido no reconocido: Italy              2-3 Denmark"
+    },
+    {
+      "line": 64,
+      "reason": "partido no reconocido: Belarus            0-0 Italy"
+    },
+    {
+      "line": 79,
+      "reason": "partido no reconocido: Norway             1-3 Latvia"
+    },
+    {
+      "line": 81,
+      "reason": "partido no reconocido: Latvia             1-0 Georgia"
+    },
+    {
+      "line": 83,
+      "reason": "partido no reconocido: Greece             3-0 Georgia"
+    },
+    {
+      "line": 84,
+      "reason": "partido no reconocido: Slovenia           1-0 Latvia"
+    },
+    {
+      "line": 87,
+      "reason": "partido no reconocido: Georgia            1-1 Slovenia"
+    },
+    {
+      "line": 90,
+      "reason": "partido no reconocido: Georgia            1-4 Norway"
+    },
+    {
+      "line": 93,
+      "reason": "partido no reconocido: Georgia            1-2 Greece"
+    },
+    {
+      "line": 94,
+      "reason": "partido no reconocido: Latvia             1-2 Slovenia"
+    },
+    {
+      "line": 96,
+      "reason": "partido no reconocido: Greece             1-2 Latvia"
+    },
+    {
+      "line": 99,
+      "reason": "partido no reconocido: Albania            3-3 Latvia"
+    },
+    {
+      "line": 100,
+      "reason": "partido no reconocido: Slovenia           2-1 Georgia"
+    },
+    {
+      "line": 102,
+      "reason": "partido no reconocido: Georgia            2-2 Latvia"
+    },
+    {
+      "line": 105,
+      "reason": "partido no reconocido: Slovenia           0-3 Greece"
+    },
+    {
+      "line": 106,
+      "reason": "partido no reconocido: Latvia             1-2 Norway"
+    },
+    {
+      "line": 119,
+      "reason": "partido no reconocido: Turkey             3-0 Northern Ireland"
+    },
+    {
+      "line": 121,
+      "reason": "partido no reconocido: Northern Ireland   1-0 Finland"
+    },
+    {
+      "line": 123,
+      "reason": "partido no reconocido: Turkey             1-3 Finland"
+    },
+    {
+      "line": 126,
+      "reason": "partido no reconocido: Turkey             2-0 Moldova"
+    },
+    {
+      "line": 128,
+      "reason": "partido no reconocido: Moldova            0-0 Northern Ireland"
+    },
+    {
+      "line": 133,
+      "reason": "partido no reconocido: Northern Ireland   0-3 Turkey"
+    },
+    {
+      "line": 135,
+      "reason": "partido no reconocido: Moldova            1-1 Turkey"
+    },
+    {
+      "line": 137,
+      "reason": "partido no reconocido: Finland            4-1 Northern Ireland"
+    },
+    {
+      "line": 151,
+      "reason": "partido no reconocido: Ukraine            3-2 Russia"
+    },
+    {
+      "line": 152,
+      "reason": "partido no reconocido: Iceland            1-1 France"
+    },
+    {
+      "line": 154,
+      "reason": "partido no reconocido: Russia             2-3 France"
+    },
+    {
+      "line": 155,
+      "reason": "partido no reconocido: Armenia            0-0 Iceland"
+    },
+    {
+      "line": 157,
+      "reason": "partido no reconocido: France             2-0 Andorra"
+    },
+    {
+      "line": 158,
+      "reason": "partido no reconocido: Iceland            1-0 Russia"
+    },
+    {
+      "line": 160,
+      "reason": "partido no reconocido: France             0-0 Ukraine"
+    },
+    {
+      "line": 161,
+      "reason": "partido no reconocido: Armenia            0-3 Russia"
+    },
+    {
+      "line": 163,
+      "reason": "partido no reconocido: Russia             6-1 Andorra"
+    },
+    {
+      "line": 164,
+      "reason": "partido no reconocido: France             2-0 Armenia"
+    },
+    {
+      "line": 166,
+      "reason": "partido no reconocido: France             2-3 Russia"
+    },
+    {
+      "line": 167,
+      "reason": "partido no reconocido: Iceland            2-0 Armenia"
+    },
+    {
+      "line": 169,
+      "reason": "partido no reconocido: Russia             1-0 Iceland"
+    },
+    {
+      "line": 170,
+      "reason": "partido no reconocido: Armenia            0-0 Ukraine"
+    },
+    {
+      "line": 172,
+      "reason": "partido no reconocido: Iceland            3-0 Andorra"
+    },
+    {
+      "line": 173,
+      "reason": "partido no reconocido: Russia             2-0 Armenia"
+    },
+    {
+      "line": 175,
+      "reason": "partido no reconocido: Iceland            0-1 Ukraine"
+    },
+    {
+      "line": 176,
+      "reason": "partido no reconocido: Armenia            2-3 France"
+    },
+    {
+      "line": 178,
+      "reason": "partido no reconocido: Russia             1-1 Ukraine"
+    },
+    {
+      "line": 179,
+      "reason": "partido no reconocido: Andorra            0-3 Armenia"
+    },
+    {
+      "line": 186,
+      "reason": "columnas de clasificación no reconocidas: 2.England          8  3  4  1  14- 4 13  [2 1 1 0 3-1 4]"
+    },
+    {
+      "line": 187,
+      "reason": "columnas de clasificación no reconocidas: 3.Poland           8  4  1  3  12- 8 13  [2 0 1 1 1-3 1]"
+    },
+    {
+      "line": 194,
+      "reason": "partido no reconocido: England            0-0 Bulgaria"
+    },
+    {
+      "line": 196,
+      "reason": "partido no reconocido: Luxembourg         0-3 England"
+    },
+    {
+      "line": 198,
+      "reason": "partido no reconocido: England            3-1 Poland"
+    },
+    {
+      "line": 200,
+      "reason": "partido no reconocido: Poland             0-1 Sweden"
+    },
+    {
+      "line": 204,
+      "reason": "partido no reconocido: Bulgaria           1-1 England"
+    },
+    {
+      "line": 206,
+      "reason": "partido no reconocido: England            6-0 Luxembourg"
+    },
+    {
+      "line": 208,
+      "reason": "partido no reconocido: Poland             0-0 England"
+    },
+    {
+      "line": 217,
+      "reason": "columnas de clasificación no reconocidas: 2.Israel           8  4  1  3  25- 9 13  [2 1 1 0 6-1 4]"
+    },
+    {
+      "line": 218,
+      "reason": "columnas de clasificación no reconocidas: 3.Austria          8  4  1  3  19-20 13  [2 0 1 1 1-6 1]"
+    },
+    {
+      "line": 223,
+      "reason": "partido no reconocido: Cyprus             3-2 Spain"
+    },
+    {
+      "line": 225,
+      "reason": "partido no reconocido: San Marino         0-5 Israel"
+    },
+    {
+      "line": 227,
+      "reason": "partido no reconocido: Israel             1-2 Spain"
+    },
+    {
+      "line": 239,
+      "reason": "partido no reconocido: Spain              8-0 Cyprus"
+    },
+    {
+      "line": 241,
+      "reason": "partido no reconocido: Spain              3-0 Israel"
+    },
+    {
+      "line": 258,
+      "reason": "partido no reconocido: Liechtenstein      0-4 Slovakia"
+    },
+    {
+      "line": 259,
+      "reason": "partido no reconocido: Azerbaijan         0-4 Hungary"
+    },
+    {
+      "line": 261,
+      "reason": "partido no reconocido: Slovakia           0-3 Portugal"
+    },
+    {
+      "line": 262,
+      "reason": "partido no reconocido: Liechtenstein      2-1 Azerbaijan"
+    },
+    {
+      "line": 265,
+      "reason": "partido no reconocido: Hungary            5-0 Liechtenstein"
+    },
+    {
+      "line": 267,
+      "reason": "partido no reconocido: Azerbaijan         0-1 Romania"
+    },
+    {
+      "line": 268,
+      "reason": "partido no reconocido: Liechtenstein      0-5 Portugal"
+    },
+    {
+      "line": 270,
+      "reason": "partido no reconocido: Romania            2-0 Hungary"
+    },
+    {
+      "line": 271,
+      "reason": "partido no reconocido: Azerbaijan         4-0 Liechtenstein"
+    },
+    {
+      "line": 273,
+      "reason": "partido no reconocido: Portugal           8-0 Liechtenstein"
+    },
+    {
+      "line": 274,
+      "reason": "partido no reconocido: Romania            4-0 Azerbaijan"
+    },
+    {
+      "line": 276,
+      "reason": "partido no reconocido: Azerbaijan         1-1 Portugal"
+    },
+    {
+      "line": 277,
+      "reason": "partido no reconocido: Liechtenstein      0-0 Hungary"
+    },
+    {
+      "line": 279,
+      "reason": "partido no reconocido: Slovakia           2-0 Liechtenstein"
+    },
+    {
+      "line": 280,
+      "reason": "partido no reconocido: Hungary            3-0 Azerbaijan"
+    },
+    {
+      "line": 282,
+      "reason": "partido no reconocido: Azerbaijan         0-1 Slovakia"
+    },
+    {
+      "line": 283,
+      "reason": "partido no reconocido: Portugal           3-0 Hungary"
+    },
+    {
+      "line": 299,
+      "reason": "partido no reconocido: Croatia            3-2 Macedonia"
+    },
+    {
+      "line": 301,
+      "reason": "partido no reconocido: Yugoslavia         1-0 Ireland"
+    },
+    {
+      "line": 312,
+      "reason": "partido no reconocido: Macedonia          2-4 Yugoslavia"
+    },
+    {
+      "line": 314,
+      "reason": "partido no reconocido: Macedonia          1-1 Ireland"
+    },
+    {
+      "line": 322,
+      "reason": "columnas de clasificación no reconocidas: 3.Bosnia-Herzegov.10  3  2  5  14-17 11  [4 2 1 1 9-6 7]"
+    },
+    {
+      "line": 323,
+      "reason": "columnas de clasificación no reconocidas: 4.Lithuania       10  3  2  5   8-16 11  [4 2 0 2 7-7 6]"
+    },
+    {
+      "line": 324,
+      "reason": "columnas de clasificación no reconocidas: 5.Estonia         10  3  2  5  15-17 11  [4 1 1 2 5-8 4]"
+    },
+    {
+      "line": 330,
+      "reason": "partido no reconocido: Lithuania          0-0 Scotland"
+    },
+    {
+      "line": 333,
+      "reason": "partido no reconocido: Lithuania          0-0 Faroe Islands"
+    },
+    {
+      "line": 334,
+      "reason": "partido no reconocido: Scotland           3-2 Estonia"
+    },
+    {
+      "line": 336,
+      "reason": "partido no reconocido: Scotland           2-1 Faroe Islands"
+    },
+    {
+      "line": 337,
+      "reason": "partido no reconocido: Czech Republic     4-1 Estonia"
+    },
+    {
+      "line": 340,
+      "reason": "partido no reconocido: Scotland           1-2 Czech Republic"
+    },
+    {
+      "line": 342,
+      "reason": "partido no reconocido: Estonia            0-2 Czech Republic"
+    },
+    {
+      "line": 343,
+      "reason": "partido no reconocido: Faroe Islands      1-1 Scotland"
+    },
+    {
+      "line": 345,
+      "reason": "partido no reconocido: Faroe Islands      2-2 Bosnia-Herzegovina"
+    },
+    {
+      "line": 346,
+      "reason": "partido no reconocido: Czech Republic     3-2 Scotland"
+    },
+    {
+      "line": 348,
+      "reason": "partido no reconocido: Faroe Islands      0-2 Estonia"
+    },
+    {
+      "line": 349,
+      "reason": "partido no reconocido: Lithuania          0-4 Czech Republic"
+    },
+    {
+      "line": 351,
+      "reason": "partido no reconocido: Faroe Islands      0-1 Lithuania"
+    },
+    {
+      "line": 352,
+      "reason": "partido no reconocido: Estonia            0-0 Scotland"
+    },
+    {
+      "line": 355,
+      "reason": "partido no reconocido: Czech Republic     2-0 Faroe Islands"
+    },
+    {
+      "line": 356,
+      "reason": "partido no reconocido: Scotland           3-0 Lithuania"
+    },
+    {
+      "line": 364,
+      "reason": "partido no reconocido: Tie-breaker rules for the EC2000 qualifying groups to be"
+    },
+    {
+      "line": 365,
+      "reason": "partido no reconocido: applied when two (or more) teams finish equal on points:"
+    },
+    {
+      "line": 366,
+      "reason": "partido no reconocido: ========================================================"
+    },
+    {
+      "line": 367,
+      "reason": "partido no reconocido: 1) Points in mutual encounters between those teams."
+    },
+    {
+      "line": 368,
+      "reason": "partido no reconocido: 2) Goal difference in mutual encounters between those teams."
+    },
+    {
+      "line": 369,
+      "reason": "partido no reconocido: 3) Away goals in mutual encounters between those teams."
+    },
+    {
+      "line": 370,
+      "reason": "partido no reconocido: 4) Total goal difference (against all other teams)"
+    },
+    {
+      "line": 371,
+      "reason": "partido no reconocido: 5) Total goals scored (against all other teams)"
+    },
+    {
+      "line": 372,
+      "reason": "partido no reconocido: 6) Total away goals scored (against all other teams)"
+    },
+    {
+      "line": 373,
+      "reason": "partido no reconocido: 7) Fair play"
+    },
+    {
+      "line": 380,
+      "reason": "partido no reconocido: The best second place finisher (computed by records against teams"
+    },
+    {
+      "line": 381,
+      "reason": "partido no reconocido: finishing first, third and fourth) qualifies automatically; the"
+    },
+    {
+      "line": 382,
+      "reason": "partido no reconocido: other eight enter a random draw for two-legged playoff matches from"
+    },
+    {
+      "line": 383,
+      "reason": "partido no reconocido: which four more countries qualify."
+    },
+    {
+      "line": 385,
+      "reason": "partido no reconocido: Runners-up classification:"
+    },
+    {
+      "line": 391,
+      "reason": "columnas de clasificación no reconocidas: 5.Ukraine          6  2  4  0   6- 4 10  [2 away goals]"
+    },
+    {
+      "line": 392,
+      "reason": "columnas de clasificación no reconocidas: 6.Ireland          6  3  1  2   6- 4 10  [1 away goal]"
+    },
+    {
+      "line": 399,
+      "reason": "partido no reconocido: First Legs"
+    },
+    {
+      "line": 401,
+      "reason": "partido no reconocido: Israel             0-5 Denmark"
+    },
+    {
+      "line": 402,
+      "reason": "partido no reconocido: Slovenia           2-1 Ukraine"
+    },
+    {
+      "line": 403,
+      "reason": "partido no reconocido: Ireland            1-1 Turkey"
+    },
+    {
+      "line": 405,
+      "reason": "partido no reconocido: Second Legs"
+    },
+    {
+      "line": 407,
+      "reason": "partido no reconocido: Denmark            3-0 Israel"
+    },
+    {
+      "line": 408,
+      "reason": "partido no reconocido: Ukraine            1-1 Slovenia"
+    },
+    {
+      "line": 409,
+      "reason": "partido no reconocido: Turkey             0-0 Ireland"
+    },
+    {
+      "reason": "fila de clasificación omitida: país no resoluble (Bosnia-Herzegov.)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 1 (DEN: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 1 (SUI: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 5 (ENG: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 5 (POL: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 6 (ISR: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 6 (AUT: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 9 (LTU: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 9 (EST: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 9 (UKR: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo 9 (IRL: retirado o fila perdida)"
+    },
+    {
+      "reason": "grupo 1 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 24 != suma GA 31 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo 2 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 31 != clasificación 75)"
+    },
+    {
+      "reason": "grupo 3 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 39 != clasificación 59)"
+    },
+    {
+      "reason": "grupo 4 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 25 != clasificación 76)"
+    },
+    {
+      "reason": "grupo 5 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 18 != suma GA 32 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo 6 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 55 != suma GA 70 (faltan equipos o columnas))"
+    },
+    {
+      "reason": "grupo 7 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 37 != clasificación 91)"
+    },
+    {
+      "reason": "grupo 8 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 50 != clasificación 64)"
+    },
+    {
+      "reason": "grupo 9 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (suma GF 110 != suma GA 79 (faltan equipos o columnas))"
+    }
+  ],
   "teamsCount": 16
 }

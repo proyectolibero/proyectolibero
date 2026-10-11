@@ -140,7 +140,7 @@
     },
     {
       "path": "data/football/eurochamp/1988.json",
-      "sha256": "c7edbb2e8c804b6f14dca474e4669819076a26415373ad011138072f4e0ccfcd",
+      "sha256": "c41f66ddc41d64ed2a0470e37b8de471c7812a4d0068ff0d2e6d5a720a56ce2f",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1988
@@ -161,21 +161,21 @@
     },
     {
       "path": "data/football/eurochamp/2000.json",
-      "sha256": "60cf0c0086d1d4b9361173a3c7ddd4ad0d27fe8a6f9485a6d796453557410875",
+      "sha256": "c3ee8e110f07676d61b7a30dc1d5df63df4695df495b6817c9ba4625bacb407d",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2000
     },
     {
       "path": "data/football/eurochamp/2004.json",
-      "sha256": "798281bddd99e8b681bd48102a2ff8915fda80c65000400530692873718384ad",
+      "sha256": "c0e72195831658b112c15143050f8fb44c6f25c3a2a40fad785ab9954a71890a",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2004
     },
     {
       "path": "data/football/eurochamp/2008.json",
-      "sha256": "ec2c47708cf6942253057e22fc9bb4a6bccb68e08d28418b73bbfecc3260cec0",
+      "sha256": "f28b96dc7347d2bc5b492806e3e734f422d59f6797ac1b3fc84ef507a316873e",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2008
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "097de2b72489d3082b54bd7b5420ed222087f0627f3984d7d283a25ff7406d18",
+  "checksum": "db79466e853f259eaa2cdcc781865b321ea838aa7499a34fb23e6230eac1ecfe",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 10351,
+    "matches": 10810,
     "results": 0
   },
   "license": {
