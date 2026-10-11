@@ -415,36 +415,65 @@ function qualifyingStanding(row, warnings) {
 }
 
 /**
+ * Actualiza un partido de clasificación ya publicado con los datos reingeridos.
+ * Conserva `id` y cualquier ficha; solo refresca lo que el parser `q` vuelve a
+ * aportar (fecha, ciudad, estado, grupo, notas y tanda).
+ */
+function refreshQualifyingMatch(target, entry) {
+  if (entry.date) target.date = entry.date;
+  if (entry.city) target.city = entry.city;
+  if (entry.status) target.status = entry.status;
+  if (entry.group) target.group = entry.group;
+  if (Array.isArray(entry.notes)) target.notes = [...entry.notes];
+  if (Array.isArray(entry.pens)) target.pens = [...entry.pens];
+}
+
+/**
  * Fusiona la fase de clasificación en una edición publicada sin perder nada de
  * lo ya publicado (fichas `sheet` incluidas): añade los partidos del parser `q`
  * con su `stage`, las tablas de sus grupos y deriva la cobertura con la regla
  * D37 (`desiredCoverage`). Si algún equipo no se pudo resolver (y por tanto se
  * omitió) la cobertura pasa a `complete:false` con una nota honesta.
  *
+ * La reingesta es idempotente: un partido ya publicado con la misma identidad
+ * (fase, equipos y marcador) se actualiza en lugar de duplicarse, de modo que
+ * una corrección del parser (p. ej. una fecha mal inferida) se propaga al
+ * archivo. Las repeticiones legítimas (ida y vuelta con el mismo marcador) se
+ * emparejan en orden.
+ *
  * @param {object} edition edición publicada (torneo final)
  * @param {object} parsed resultado de `parse("q", …)`
  * @param {string} sourceId id de la fuente `q`
  * @param {object} [competition] ficha del catálogo (para derivar la cobertura)
- * @returns {{ edition: object, matches: number, groups: number, dropped: number, warnings: object[] }}
+ * @returns {{ edition: object, matches: number, refreshed: number, groups: number, dropped: number, warnings: object[] }}
  */
 function mergeQualifying(edition, parsed, sourceId, competition) {
   const result = JSON.parse(JSON.stringify(edition));
   const warnings = [];
   const { entries, dropped } = qualifyingEntries(parsed, warnings);
   const matches = Array.isArray(result.matches) ? result.matches : [];
-  const signature = (match) =>
-    `${match.stage}|${match.date || ""}|${match.home}|${match.away}|${Array.isArray(match.score) ? match.score.join("-") : ""}`;
-  const seen = new Set(matches.map(signature));
+  const identity = (match) =>
+    `${match.stage}|${match.home}|${match.away}|${Array.isArray(match.score) ? match.score.join("-") : ""}`;
+  const byIdentity = new Map();
+  for (const match of matches) {
+    const key = identity(match);
+    if (!byIdentity.has(key)) byIdentity.set(key, []);
+    byIdentity.get(key).push({ match, refreshed: false });
+  }
   let next = matches.reduce((max, match) => {
     const matchId = /^m(\d+)$/.exec(String((match && match.id) || ""));
     return matchId ? Math.max(max, Number(matchId[1])) : max;
   }, 0);
   let added = 0;
+  let refreshed = 0;
   for (const entry of entries) {
-    // Idempotencia: una reejecución sobre una edición que ya trae la
-    // clasificación no vuelve a añadir el mismo partido.
-    if (seen.has(signature(entry))) continue;
-    seen.add(signature(entry));
+    const slot = (byIdentity.get(identity(entry)) || []).find((item) => !item.refreshed);
+    if (slot) {
+      slot.refreshed = true;
+      refreshQualifyingMatch(slot.match, entry);
+      refreshed += 1;
+      continue;
+    }
     next += 1;
     entry.id = `m${String(next).padStart(3, "0")}`;
     matches.push(entry);
@@ -477,7 +506,7 @@ function mergeQualifying(edition, parsed, sourceId, competition) {
     result.coverage = { ...result.coverage, scorersComplete: scorerGoals === goals };
   }
 
-  return { edition: result, matches: added, groups: groups.length, dropped, warnings };
+  return { edition: result, matches: added, refreshed, groups: groups.length, dropped, warnings };
 }
 
 /** Empareja cada partido de `f` con su detalle en `full`. */

@@ -351,7 +351,7 @@ function commandBuildEnriched(year, parts) {
     edition = merged.edition;
     if (merged.matches > 0) addSource(edition, qualifyingSourceEntry(qPart, year));
     console.log(`  fuente q     ${qPart.sourceId} (${parsed.matches.length} partidos, ${parsed.standings.length} filas de tabla, ${parsed.warnings.length} avisos)`);
-    console.log(`  clasificación añadida: ${merged.matches} partidos, ${merged.groups} grupos, ${merged.dropped} omitidos por país no resoluble`);
+    console.log(`  clasificación añadida: ${merged.matches} partidos (${merged.refreshed} actualizados), ${merged.groups} grupos, ${merged.dropped} omitidos por país no resoluble`);
     for (const warning of merged.warnings) console.log(`    [warn] ${warning.reason}`);
   }
 

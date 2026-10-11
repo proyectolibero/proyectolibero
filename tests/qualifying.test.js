@@ -109,6 +109,51 @@ test("mergeQualifying añade la clasificación y conserva las fichas del torneo 
   assert.deepEqual(edition.groups.map((group) => group.letter).sort(), ["1", "10", "11", "12", "2", "3", "4", "8"]);
 });
 
+test("mergeQualifying actualiza la fecha de un partido publicado en vez de duplicarlo", () => {
+  const base = publishedEdition();
+  base.matches.push({
+    id: "m002",
+    stage: "qualifyingGroup",
+    group: "1",
+    date: "1901-06-24",
+    city: null,
+    home: "NOR",
+    away: "SWE",
+    score: [2, 3],
+    status: "played",
+    notes: [],
+    pens: null
+  });
+  const parsed = {
+    matches: [
+      {
+        home: "Norway",
+        away: "Sweden",
+        homeScore: 2,
+        awayScore: 3,
+        date: "1953-06-24",
+        city: "Oslo",
+        status: "played",
+        notes: [],
+        section: "Group 1"
+      }
+    ],
+    standings: [],
+    groups: [],
+    notes: [],
+    warnings: []
+  };
+
+  const { edition: merged, matches, refreshed } = mergeQualifying(base, parsed, "rsssf:54q", COMPETITION);
+
+  assert.equal(refreshed, 1, "el partido ya publicado se refresca");
+  assert.equal(matches, 0, "no se añade un duplicado");
+  assert.equal(merged.matches.length, 2, "no se pierde ningún partido");
+  const updated = merged.matches.find((match) => match.id === "m002");
+  assert.equal(updated.date, "1953-06-24");
+  assert.equal(updated.city, "Oslo");
+});
+
 test("reconcile marca las adiciones de clasificación como info, no blocking", () => {
   const published = {
     results: { champion: "FRG", runnerUp: "HUN" },

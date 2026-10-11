@@ -464,6 +464,18 @@ test("parseDate acepta años de dos cifras dentro de un rango de edición", () =
   assert.equal(parseDate("6-10-1930", { year: "1929-31" }).iso, "1930-10-06");
 });
 
+test("parseDate resuelve el siglo de dos cifras en ediciones modernas (nunca 19xx)", () => {
+  // Rango de clasificación que cruza el cambio de siglo: "1998-02" es 1998-2002.
+  assert.equal(parseDate("2- 9-00", { year: "1998-02" }).iso, "2000-09-02");
+  assert.equal(parseDate("24- 3-01", { year: "1998-02" }).iso, "2001-03-24");
+  // Edición moderna: una cifra de dos dígitos se resuelve a 20xx.
+  assert.equal(parseDate("24.03.01", { year: 2002 }).iso, "2001-03-24");
+  // Una cifra que se aleja más de un año avisa y no inventa (nunca 1901).
+  const outside = parseDate("15.06.99", { year: 2002 });
+  assert.equal(outside.iso, null);
+  assert.match(outside.warning, /fuera del año esperado 2002/);
+});
+
 test("parseDate avisa y no inventa ante una fecha dudosa", () => {
   const outside = parseDate("26.01.99", { year: 1884 });
   assert.equal(outside.iso, null);

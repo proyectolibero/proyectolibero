@@ -371,9 +371,16 @@ function expectedYearRange(value) {
     const range = /^(\d{4})\s*[/–—-]\s*(\d{2}|\d{4})$/.exec(text);
     if (range) {
       const start = Number(range[1]);
-      const end = range[2].length === 2
-        ? Math.floor(start / 100) * 100 + Number(range[2])
-        : Number(range[2]);
+      let end;
+      if (range[2].length === 2) {
+        // El siglo del fin de dos cifras se deduce del inicio, pero si queda por
+        // detrás del inicio el rango cruza el cambio de siglo: se avanza 100
+        // años (p. ej. "1998-02" es 1998-2002, no 1902-1998).
+        end = Math.floor(start / 100) * 100 + Number(range[2]);
+        if (end < start) end += 100;
+      } else {
+        end = Number(range[2]);
+      }
       return { start: Math.min(start, end), end: Math.max(start, end) };
     }
     const single = /^(\d{4})$/.exec(text);
@@ -392,7 +399,13 @@ function expectedYearRange(value) {
 function inferYear(twoDigits, ctx, text) {
   const range = expectedYearRange(ctx && ctx.year);
   if (range) {
-    const base = Math.floor(range.start / 100) * 100;
+    // En ediciones modernas (siglo XXI) la cifra de dos dígitos es siempre 20xx:
+    // el siglo base se fija en 2000 y así nunca se cuela un 19xx espurio (1901).
+    // En ediciones antiguas se parte del siglo del inicio del rango. Los
+    // candidatos ±100 solo se aceptan si caen dentro del año/rango esperado
+    // (±1), de modo que una fecha fuera de rango avisa y queda sin año.
+    const modern = range.end >= 2000;
+    const base = modern ? 2000 : Math.floor(range.start / 100) * 100;
     const candidates = [base + twoDigits, base + twoDigits + 100, base + twoDigits - 100];
     const hit = candidates.find((year) => year >= range.start - 1 && year <= range.end + 1);
     if (hit === undefined) {

@@ -490,7 +490,7 @@
     },
     {
       "path": "data/football/worldcup/2002.json",
-      "sha256": "2ef3b2fc50dd67138a7e7174fc826c66800b2298be3a331eb48de53c861b6cfa",
+      "sha256": "c7403520d20e02acfb143452fcfc8d47cd1ca6119b291dc15d646fcceb9ec01d",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2002
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "8b2f893a7f2b4cc66e32733a2d1c7b2a99a028f83805aac4fb23dce75ce03cbd",
+  "checksum": "dbe147632bb7ce10893c868acbe81350b40ca4cb915a32952e7cf0fb2c94d3cc",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 8369,
+    "matches": 8370,
     "results": 0
   },
   "license": {
