@@ -7,14 +7,14 @@
   "contents": [
     {
       "path": "data/football/balkancup/1929-31.json",
-      "sha256": "09ecd679f823bc4ac2e89569fb09386c84196cea576ca1ae7bdeaa1b85bd1665",
+      "sha256": "64d51cc9da2fe1ea6acbb8987bb9cb623b8825115f2629445808cfd1a54341ee",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "1929-31"
     },
     {
       "path": "data/football/balkancup/1931.json",
-      "sha256": "d5400c328331a8235b5ef821b2e2e372ac0294822f72e4a644d1e0f2b9d99893",
+      "sha256": "55887b347f93dfceafcb54e57b6ebc94e9174dee20bb5536b15a3626401a031d",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1931
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "a7979696ec42939582f17aa20adc50d32015f0f6c50ef03ee16dd7c059c1b511",
+  "checksum": "36303ef8b0c4a87af662803d80f04cacd10808dd037d925fdd68b3d795dea02c",
   "dataset": {
     "sports": 4,
     "competitions": 5,
@@ -1142,6 +1142,18 @@
         "name": "RSSSF — Balkan Cup (for Nations) (Guy De Dekker, Karel Stokkermans)",
         "url": "https://www.rsssf.org/tablesb/balkancup.html",
         "retrieved": "2026-10-07"
+      },
+      {
+        "source": "rsssf:balkancup29",
+        "name": "RSSSF — balkancup29",
+        "url": "https://www.rsssf.org/tablesb/balkancup29.html",
+        "retrieved": "2026-10-11"
+      },
+      {
+        "source": "rsssf:balkancup31",
+        "name": "RSSSF — balkancup31",
+        "url": "https://www.rsssf.org/tablesb/balkancup31.html",
+        "retrieved": "2026-10-11"
       },
       {
         "source": "rsssf:intconcup92",

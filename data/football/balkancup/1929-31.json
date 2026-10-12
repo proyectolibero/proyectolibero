@@ -27,6 +27,15 @@
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
+    },
+    {
+      "id": "rsssf:balkancup29",
+      "name": "RSSSF — balkancup29",
+      "url": "https://www.rsssf.org/tablesb/balkancup29.html",
+      "retrieved": "2026-10-11",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
     }
   ],
   "asOf": "2026-10-07",
@@ -36,6 +45,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "ROU",
@@ -77,8 +87,7 @@
           "ga": 19,
           "pts": 4
         }
-      ],
-      "stage": "group"
+      ]
     }
   ],
   "matches": [
@@ -97,7 +106,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:balkancup29",
+        "text": "October 6, 1929   Bucuresti, Romania\nRomania 2-1 Yugoslavia\nScorers: Gratian Sepi 35', Gheorge Ciolac 40', Blagoje\nMarjanovic 71'\nRomania: Stefan Czinczer, Rudolf Burger, Ladislau Raffinsky,\nEmeric Vogl, Adalbert Steiner, Constandin Stanciu, Emanoil\nDumitrescu, Adalbert Desu, Gheorge Ciolac, Gratian Sepi,\nNicolae Kovacs - Coach: Costel Radulescu\nYugoslavia:  Maksimilijan Mihelcic, Milutin Ivkovic, Branko\nPetrovic, Milorad Arsenijevic, Mirko Kriz, Ljubisa\nDjordjevic, Aleksandar Tirnanic, Blagoje Marjanovic,\nVladimir Lajnert , Djordje Vujadinovic, Branislav Hrnjicek -\nCoach: Ante Pandakovic\nReferee: Grigorov (Bulgaria)",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -114,7 +128,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:balkancup29",
+        "text": "March 15, 1931    Beograd, Yugoslavia\nYugoslavia 4-1 Greece\nScorers: Aleksandar Tomasevic 38', 83', Ivan Hitrec 35',\nBlagoje Marjanovic 75',  Miyakis 52'\nYugoslavia: Jovan Spasic, Milutin Ivkovic, Dragutin Babic,\nMija Jovanovic, Danijel Premerl, Momcilo Djokic, Aleksandar\nTirnanic, Blagoje Marjanovic, Ivan Hitrec, Aleksandar\nTomasevic, Dragutin Viric - Coach: Bosko Simonovic\nGreece: Gramatikopulos, Filipos Kurantis, Roberto Malios,\nSpiros Ipofandis, Kostas Baltasis, Vogas, Antonis Miyakis,\nAggelos Mesaris, Theodoros Simeonidis, Vasilis\nAndrianopulos, Leonidas Andrianopulos - Coach: EPO (Greek\nSoccer Federation)\nReferee: Radulescu (Romania)",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -131,7 +150,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:balkancup29",
+        "text": "November 29, 1931   Athens, Greece\nGreece 2-4 Romania\nScorers: Iuliu Bodola 13', 18', 84', Gratian Sepi 51', Nikos\nAggelakis 34', 39'\nGreece: Iorgos Giamalis, Roberto Malios, Kostas Vikelidis,\nNikiforos Vikelidis, Kostas Baltasis, Lalis Lekkos, Antonis\nMigiakis, Nikos Aggelakis, Antonis Tsolinas, Dimitris\nBaltasis, Tzanis Arguriadis - Coach: EPO (Greek Soccer\nFederation)\nRomania: Samuel Zauber, Lazar Sfera, Gheorghe Albu, Vasile\nChiroiu, Petre Steinbach, Iosif Morawetz, Andrei Glanzmann,\nNikolae Kovacs, Gratian Sepi, Iuliu Bodola, Elemer Kocsic -\nCoach: Costel Radulescu\nReferee: Ernest Fabris (Yugoslavia)\nOverview File\n1931",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -148,7 +172,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:balkancup29",
+        "text": "May 10, 1931    Bucuresti, Romania\nRomania 5-2 Bulgaria\nScorers: Sepi 25', Bodola 50', 66', Stanciu 68', 81';\nLozanov 51', Pancev 89'\nRomania: Aleksandru Szatmary, Nichita Rusen, Gheorghe Albu,\nRadu Niculescu, Petre Steinbach, Gheorghe Muresanu, Andrei\nGlanzmann, Constandin Stanciu, Gratian Sepi, Iuliu Bodola,\nElemer Kocsic - Coach: Costel Radulescu\nBulgaria: Todor Dermonski, Aleksandar Hristov, Todor\nMishtalov, Konstandin Efremov, Penko Rafailov, Borislav\nKamenski, Ljubomir Anghelov, Mihail Lozanov, Georgi Kostov,\nAsen Peshev, Asen Pancev - Coach: O. Faist\nReferee: Ernest Fabris (Yugoslavia)",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -165,7 +194,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:balkancup29",
+        "text": "November 16, 1930   Sofia, Bulgaria\nBulgaria 0-3 Yugoslavia\nScorers: Leo Lemesic, Blagoje Marjanovic, Boris Praunsberger\nBulgaria: Vladimir Vatev, Nikolai Nikolov, Mintchev, Nikolai\nDimitrov, Efremov, Asen Dimitrov, V. Popov, Velcio Stojanov,\nVasil Vasilev, Aseen Peschev, Asen Panchev\nYugoslavia: Maksimiljan Mihelcic, Milutin Ivkovic, Marko\nMikacic, Milorad Arsenijevic, Daniel Premerl, Andjelko\nMarusic, Aleksandar Tirnanic, Blagoje Marjanovic, Leo\nLemesic, Ivan Pavelic, Boris Praunsberger - Coach: Bosko\nSimonovic\nReferee: Nikolaidis (Grecee)",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -182,7 +216,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:balkancup29",
+        "text": "October 25, 1931    Sofia, Bulgaria\nBulgaria 2-1 Greece\nScorers: Kitsos 10', Peshev 20', Baikushev 83'\nBulgaria: Maznikov, Gordzev, Mistalov, Gabrovski, Baikushev,\nEfremov, Aggelov, Stoianov, Lozanov, Peshev, Panchev\nGreece: Giorgos Giamalis, Roberto Malios, Kostas Vikelidis,\nNikiforos Vikelidis, Kostas Baltasis, Lalis Lekkos, Leonidas\nAndrianopulos, Vasilis Andrianopulos, Nikos Kitsos, Nikos\nAggelakis, Antonis Miyiakis - Coach: (Group Coaches\nincluding ; Marcelos, Panurgias, Volanakis)\nReferee: Razic (Yugoslavia)",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",

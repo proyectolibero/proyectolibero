@@ -6,6 +6,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const crypto = require("node:crypto");
 const { detectCharset, decode, fetchSource, fetchMany } = require("../ingest/fetch.js");
+const { parseDetailSpecs } = require("../scripts/ingest.js");
 const { tmpRoot } = require("./helpers.js");
 
 function sha256(buffer) {
@@ -206,4 +207,24 @@ test("fetchMany aplica la pausa entre peticiones", async () => {
   );
   assert.equal(started.length, 2);
   assert.ok(started[1] - started[0] >= 50, "debe esperar al menos el delay entre peticiones");
+});
+
+test("parseDetailSpecs acepta un año entero", () => {
+  const { specs, error } = parseDetailSpecs("1997:rsssf_intconcup97");
+  assert.equal(error, undefined);
+  assert.deepEqual(specs, [{ year: 1997, dir: "rsssf_intconcup97" }]);
+});
+
+test("parseDetailSpecs acepta un rango de edición (1929-31)", () => {
+  const { specs, error } = parseDetailSpecs("1929-31:rsssf_balkancup29,1931:rsssf_balkancup31");
+  assert.equal(error, undefined);
+  assert.deepEqual(specs, [
+    { year: "1929-31", dir: "rsssf_balkancup29" },
+    { year: 1931, dir: "rsssf_balkancup31" }
+  ]);
+});
+
+test("parseDetailSpecs rechaza un año inválido", () => {
+  assert.ok(parseDetailSpecs("abc:rsssf_x").error);
+  assert.ok(parseDetailSpecs("0:rsssf_x").error);
 });

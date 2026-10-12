@@ -439,17 +439,22 @@ function pageDraftPath(root, sport, competition, year) {
 /** Nombre de directorio de `inbox/` seguro (sin rutas ni travesía). */
 const INBOX_DIR = /^[a-z0-9._-]+$/i;
 
+/** Año de edición admitido en `--details`: entero (`1997`) o rango (`1929-31`, `1929/31`). */
+function isDetailYear(value) {
+  if (/^\d{4}$/.test(value)) return Number(value) > 0;
+  return /^\d{4}[-/]\d{2,4}$/.test(value);
+}
+
 /** `--details=<año>:<dirInbox>,…` → `[{ year, dir }]` validados. */
 function parseDetailSpecs(value) {
   if (typeof value !== "string" || value.trim() === "") return { specs: [] };
   const specs = [];
   for (const item of value.split(",").map((entry) => entry.trim()).filter(Boolean)) {
     const [yearText, dir] = item.split(":");
-    const year = Number(yearText);
-    if (!Number.isInteger(year) || year <= 0 || !dir || !INBOX_DIR.test(dir)) {
+    if (!isDetailYear(yearText) || !dir || !INBOX_DIR.test(dir)) {
       return { error: `--details inválido: "${item}" (se espera <año>:<dirInbox>)` };
     }
-    specs.push({ year, dir });
+    specs.push({ year: /^\d{4}$/.test(yearText) ? Number(yearText) : yearText, dir });
   }
   return { specs };
 }
@@ -1399,4 +1404,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { commandPromote, parseFlags };
+module.exports = { commandPromote, parseFlags, parseDetailSpecs };

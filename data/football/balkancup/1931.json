@@ -27,6 +27,15 @@
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
+    },
+    {
+      "id": "rsssf:balkancup31",
+      "name": "RSSSF — balkancup31",
+      "url": "https://www.rsssf.org/tablesb/balkancup31.html",
+      "retrieved": "2026-10-11",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
     }
   ],
   "asOf": "2026-10-07",
@@ -36,6 +45,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "BUL",
@@ -67,8 +77,7 @@
           "ga": 5,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
     }
   ],
   "matches": [
@@ -87,7 +96,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:balkancup31",
+        "text": "September 30, 1931          Sofia, Bulgaria\nBulgaria 5-1 Turkey\nScorers: Mihail Lozanov 4', Arsen Panchev (2), Velcio Stoianov 56',\nArsen Peshev (B); Hakki Yeten 31' (T)\nBulgaria: Todor Dermonski, Gorchev, Todor Michtalov,\nGabrovski, Dimitar Baikutchev, Ljubomir Anghelov, Velcio\nStoianov, Mihail Lozanov, Arsen Peshev, Arsen Panchev\nTurkey: Avni Kurgan, Burhan Atak, Hüsnü Savman, Sami\nAçiköney, Nihat Bekdik, Mithat Ertug, Niyazi Sel, Mustafa\nÇizer, Hakki Yeten, Fikret Arican, Rebbi Erkal\nReferee: Ivancsics (Hungary)",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -104,7 +118,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:balkancup31",
+        "text": "October 2, 1931      Sofia, Bulgaria\nTurkey 2-0 Yugoslavia\nScorers: Rebii Erkal 7', Fikret Arycan 25\nTurkey: Hüsamettin Böke-VF, Burhan Atak-GS, Hüsnü Savman-BJK,\nSami Açiköney-VF, Nihat Bekdik-GS, Mithat Ertug-GS, Niyazi Sel-FB,\nSelahattin Almay-YS, Fikret Arican-FB, E_ref Bilgiç-BJK,\nRebii Erkal-GS\nYugoslavia: Maksimiljan Mihelcic, Milutin Ivkovic, Marko\nRajkovic, Andjelko Marusic, Danijel Premerl, Ljubisha\nDjordjevic, Aleksander Tirnanic, Blagoje Marjanovic, Kuzman\nSotirovic, Djordje Vujadinovic, Mirko Kokotovic - Coach:\nBosko Simonovic\nReferee: Ivancsics (Hungary)",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -121,7 +140,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:balkancup31",
+        "text": "October 4, 1931      Sofia, Bulgaria\nBulgaria 3-2 Yugoslavia\nScorers: Mihail Lozanov, Ljubomir Angelov, Arsen Panchev (B),\nAleksander Tirnanic, Gorchev (og) (Y)\nBulgaria: Todor Dermonski, Gorchev, Todor Michtalov,\nGabrovski, Dimitar Baikutchev, Konstandin Efremov, Ljubomir\nAngelov, Velcio Stoianov, Mihail Lozanov, Arsen Peshev,\nArsen Panchev\nYugoslavia: Maksimiljan Mihelcic, Milutin Ivkovic, Dragan\nTosic, Mija Jovanovic, Danijel Premerl, Andjelko Marusic,\nAleksander Tirnanic, Blagoje Marjanovic, Kuzman Sotirovic,\nAleksander Tomasevic, Mirko Kokotovic - Coach: Bosko\nSimonovic\nReferee: Ivancsics (Hungary)\nOverview File\n1929-1931",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [],
