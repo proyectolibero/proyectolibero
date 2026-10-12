@@ -1,6 +1,6 @@
 "use strict";
 
-const { buildSite, ORIGIN } = require("./build.js");
+const { buildSite, ORIGIN, fullEditionList, resolveEditions, parseArgs } = require("./build.js");
 const { buildModel } = require("./model.js");
 const { buildNav } = require("./nav.js");
 const { planSite, urlFor, alternates } = require("./routes.js");
@@ -9,6 +9,9 @@ const { planSite, urlFor, alternates } = require("./routes.js");
 module.exports = {
   buildSite,
   ORIGIN,
+  fullEditionList,
+  resolveEditions,
+  parseArgs,
   buildModel,
   buildNav,
   planSite,

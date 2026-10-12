@@ -890,16 +890,22 @@ function matchesContent(ctx, page) {
   const comp = catalog.competitions[page.compId];
   const edition = editions[`${page.compId}/${page.year}`];
   const title = `${t(lang, "edition.facsimile")} \u00b7 ${t(lang, "edition.title", { year: page.year })}`;
-  const numbers = numberMatches(finalMatches(edition), comp);
-  const sheets = finalMatches(edition)
-    .filter((match) => match.sheet && match.sheet.text)
+  const finals = finalMatches(edition);
+  const numbers = numberMatches(finals, comp);
+  const withSheets = finals.filter((match) => match.sheet && match.sheet.text);
+  const sheets = withSheets
     .map((match) => facsimileSheet(ctx, lang, match, numbers))
     .join("\n");
+  const numberingNote =
+    withSheets.length > 0 && withSheets.length < finals.length
+      ? `      <p class="lb-label">${escapeHtml(t(lang, "matches.numbering"))}</p>\n\n`
+      : "";
   const base = `/${lang}/${sport.slug}/${comp.slug}/${page.year}`;
   const body =
     `    <header class="lb-edition-head">\n` +
     `      <h1 class="lb-section__title">${escapeHtml(title)}</h1>\n` +
     `    </header>\n\n` +
+    numberingNote +
     sectionNumbered(
       "01",
       t(lang, "edition.facsimile"),

@@ -78,7 +78,7 @@ const COLOR_LITERAL = /#[0-9a-fA-F]{3,8}\b|\brgba?\(|\bhsla?\(/;
 function buildSiteTemp() {
   const root = fixtureProject();
   fs.cpSync(path.join(ROOT, "design"), path.join(root, "design"), { recursive: true });
-  const result = buildSite(root, { write: true, outDir: "site", editions: [EDITION] });
+  const result = buildSite(root, { write: true, outDir: "site", editions: [EDITION], warn: () => {} });
   assert.ok(result.written.length > 0, "el build escribe ficheros en el dir temporal");
   return path.join(root, "site");
 }

@@ -23,9 +23,11 @@ const { collectEditionSeries } = require("./series.js");
  * Generador del escaparate (SSG). Escribe HTML estático determinista bajo
  * `site/` (5 idiomas) más `sitemap.xml` y `robots.txt`. Sin dependencias.
  *
- * Reutiliza el catálogo y el manifiesto de release; no inventa datos. La
- * escritura se puede desactivar (`write:false`) para tests: entonces devuelve
- * las páginas en memoria.
+ * Reutiliza el catálogo y el manifiesto de release; no inventa datos. Sin
+ * argumentos construye TODAS las ediciones publicadas (build completo); lo
+ * parcial es siempre explícito (`--competition`, `--years`) y, al escribir en
+ * disco, emite un aviso claro. La escritura se puede desactivar
+ * (`write:false`) para tests: entonces devuelve las páginas en memoria.
  */
 
 const ORIGIN = "https://proyectolibero.org";
@@ -98,18 +100,65 @@ function buildRobots() {
 }
 
 /**
+ * Todas las ediciones publicadas del catálogo (celebradas y con datos), en
+ * orden de catálogo. Es el conjunto que define un build COMPLETO.
+ */
+function fullEditionList(catalog) {
+  const out = [];
+  for (const comp of Object.values(catalog.competitions)) {
+    for (const entry of comp.editions || []) {
+      if (entry.held && entry.data) out.push({ competitionId: comp.id, year: entry.year });
+    }
+  }
+  return out;
+}
+
+/**
+ * Resuelve las ediciones a construir. Sin `--competition` ni `--years` el
+ * build es COMPLETO (todas las publicadas); lo parcial siempre es explícito:
+ * `--competition` acota a esa competición y `--years` a años concretos.
+ */
+function resolveEditions(catalog, options) {
+  if (options.editions !== undefined) return options.editions;
+  if (!options.competition) return fullEditionList(catalog);
+  const comp = catalog.competitions[options.competition];
+  if (!comp) throw new Error(`competición desconocida: ${options.competition}`);
+  const available = (comp.editions || []).filter((entry) => entry.held && entry.data);
+  if (!options.years || options.years === "all") {
+    return available.map((entry) => ({ competitionId: options.competition, year: entry.year }));
+  }
+  return options.years
+    .split(",")
+    .map((year) => year.trim())
+    .filter(Boolean)
+    .map((year) => ({ competitionId: options.competition, year }));
+}
+
+/**
  * Construye el escaparate. Devuelve `{ pages, sitemap, robots, written }`.
- * Con `write:false` no toca el disco (tests).
+ * Con `write:false` no toca el disco (tests). Si el conjunto solicitado es un
+ * subconjunto de lo publicado (`partial`), al escribir en disco emite un
+ * aviso claro por `warn` (stderr por defecto).
  */
 function buildSite(root, options = {}) {
   const outDir = options.outDir || "site";
   const releaseId = options.releaseId || "2026.10";
-  const requested = options.editions || [{ competitionId: "football/worldcup", year: 1930 }];
 
   const catalog = loadCatalog(root);
   if (catalog.errors.length > 0) {
     throw new Error(`catálogo inválido: ${catalog.errors.map((e) => e.message).join("; ")}`);
   }
+  const requested = resolveEditions(catalog, options);
+  const published = fullEditionList(catalog);
+  const partial = requested.length < published.length;
+  const warn = options.warn || ((message) => process.stderr.write(message));
+  if (partial && options.write !== false) {
+    warn(
+      `AVISO: build parcial: ${requested.length} de ${published.length} ediciones publicadas; ` +
+        `'${outDir}/' quedará incompleto. Para un build completo, omite --competition y --years.\n`
+    );
+  }
+
   const model = buildModel(catalog);
   const nav = buildNav(model);
   const dicts = loadDictionaries(root);
@@ -174,10 +223,10 @@ function buildSite(root, options = {}) {
     }
   }
 
-  return { pages, sitemap, robots, written, langs: LANGS };
+  return { pages, sitemap, robots, written, langs: LANGS, partial, publishedEditions: published.length };
 }
 
-module.exports = { buildSite, ORIGIN };
+module.exports = { buildSite, ORIGIN, fullEditionList, resolveEditions, parseArgs };
 
 function parseArgs(argv) {
   const opts = {};
@@ -186,20 +235,8 @@ function parseArgs(argv) {
     else if (arg.startsWith("--years=")) opts.years = arg.slice("--years=".length);
     else if (arg.startsWith("--release=")) opts.releaseId = arg.slice("--release=".length);
   }
-  if (opts.competition) {
-    const yearsArg = opts.years || "1930";
-    if (yearsArg === "all") {
-      const catalog = loadCatalog(path.resolve(__dirname, "..", ".."));
-      const comp = catalog.competitions[opts.competition];
-      if (!comp) throw new Error(`competición desconocida: ${opts.competition}`);
-      const years = (comp.editions || [])
-        .filter((e) => e.held && e.data)
-        .map((e) => String(e.year));
-      opts.editions = years.map((year) => ({ competitionId: opts.competition, year }));
-    } else {
-      const years = yearsArg.split(",").map((y) => y.trim()).filter(Boolean);
-      opts.editions = years.map((year) => ({ competitionId: opts.competition, year }));
-    }
+  if (opts.years && opts.years !== "all" && !opts.competition) {
+    throw new Error("--years requiere --competition; sin argumentos el build ya es completo");
   }
   return opts;
 }
@@ -207,5 +244,8 @@ function parseArgs(argv) {
 if (require.main === module) {
   const root = path.resolve(__dirname, "..", "..");
   const result = buildSite(root, parseArgs(process.argv.slice(2)));
-  process.stdout.write(`Escaparate: ${result.pages.length} páginas + sitemap.xml + robots.txt\n`);
+  process.stdout.write(
+    `Escaparate: ${result.pages.length} páginas + sitemap.xml + robots.txt ` +
+      `(${result.partial ? "build PARCIAL" : "build completo"})\n`
+  );
 }
