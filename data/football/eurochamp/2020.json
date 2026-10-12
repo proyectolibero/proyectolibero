@@ -9,7 +9,8 @@
   "results": {
     "champion": "ITA",
     "runnerUp": "ENG",
-    "decidedBy": "final"
+    "decidedBy": "final",
+    "finalMatchId": "m051"
   },
   "coverage": {
     "matches": 313,
@@ -6545,37 +6546,6 @@
   "warnings": [
     {
       "reason": "grupo C omitido: la tabla no cuadra (suma GF 17 != suma GA 18 (faltan equipos o columnas))"
-    },
-    {
-      "reason": "final a doble vuelta sin partido con el campeón como ganador; finalMatchId omitido"
-    },
-    {
-      "line": 407,
-      "reason": "partido no reconocido: the final tournament is contested between the four group winners;"
-    },
-    {
-      "line": 408,
-      "reason": "partido no reconocido: if group winners have already qualified directly, their place is taken by the"
-    },
-    {
-      "line": 409,
-      "reason": "partido no reconocido: next highest-ranked country in their category;"
-    },
-    {
-      "line": 410,
-      "reason": "partido no reconocido: if a \"League\" has fewer than 4 entrants (because the other members qualified"
-    },
-    {
-      "line": 411,
-      "reason": "partido no reconocido: directly), its remaining slots are allocated to the best teams from the next"
-    },
-    {
-      "line": 412,
-      "reason": "partido no reconocido: lower \"League\" according to the overall rankings; because of this, three slots"
-    },
-    {
-      "line": 413,
-      "reason": "partido no reconocido: from League A were \"inherited\" by League B; as only four countries from League"
     },
     {
       "line": 414,

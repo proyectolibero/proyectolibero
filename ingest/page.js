@@ -34,10 +34,13 @@ function toIsoDate(value) {
   return new Date().toISOString().slice(0, 10);
 }
 
-/** Ganador de un partido por marcador (o penaltis); `null` si no se decide. */
+/** Ganador de un partido por marcador o, si empató, por tanda; `null` si no se decide. */
 function matchWinner(match) {
   if (Array.isArray(match.score) && match.score[0] !== match.score[1]) {
     return match.score[0] > match.score[1] ? match.home : match.away;
+  }
+  if (Array.isArray(match.pens) && match.pens[0] !== match.pens[1]) {
+    return match.pens[0] > match.pens[1] ? match.home : match.away;
   }
   return null;
 }

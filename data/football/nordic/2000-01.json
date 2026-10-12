@@ -35,6 +35,7 @@
   },
   "groups": [
     {
+      "stage": "group",
       "letter": "A",
       "standings": [
         {
@@ -97,8 +98,7 @@
           "ga": 6,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     }
   ],
   "matches": [
@@ -346,7 +346,7 @@
       "group": null,
       "matchday": null,
       "date": null,
-      "city": "indoor",
+      "city": null,
       "home": "NOR",
       "away": "FRO",
       "score": null,

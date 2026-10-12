@@ -119,7 +119,7 @@
     },
     {
       "path": "data/football/eurochamp/1976.json",
-      "sha256": "efe3561bd95880c673eaa270fabeaed211ecb78297465e805eae1e731540277f",
+      "sha256": "a4fa4a6ccbe273abaa07c5e72be9f61a350739073d3b807f9cabe28fc110357a",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1976
@@ -196,7 +196,7 @@
     },
     {
       "path": "data/football/eurochamp/2020.json",
-      "sha256": "9e79428d1c54cf3545e0f29039b432020a8d598d9d02e400b592e0541f71599a",
+      "sha256": "8812275e17de874a68fee4e6a4bef846102b9b1fb57c33b1070810e3c97af866",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2020
@@ -371,7 +371,7 @@
     },
     {
       "path": "data/football/nordic/2000-01.json",
-      "sha256": "ac65ef0b4f5302491ea83d44a688a1933ca5b15f41b60726f9bd04f47a3eb589",
+      "sha256": "bd51969942c3582dbeb44ef29d5307a33590eefe5cd4dedd8d5f60444540f531",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": "2000-01"
@@ -455,14 +455,14 @@
     },
     {
       "path": "data/football/worldcup/1982.json",
-      "sha256": "e144cecf58201fd43a7e7d1dce469fd42434d3716af6a0f1d6b1b0c0174ada1f",
+      "sha256": "16b98d8c4924d2efa35c79e59087275fa89399fa0d4aed4d81cebc3db556ca63",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1982
     },
     {
       "path": "data/football/worldcup/1986.json",
-      "sha256": "3b7ff394b8542ae563270ce7ddee6aa170e57141fca2fac4c2334475dbf8660f",
+      "sha256": "27a7baf612ee6f52d49a4be1d2d18426e3245a439d27d9416dc6ab52f1ccfa3d",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1986
@@ -483,14 +483,14 @@
     },
     {
       "path": "data/football/worldcup/1998.json",
-      "sha256": "42b3bc3e5594efe5b8b090dfdc855ef142a033f163a8b775a99b34b268c2d94c",
+      "sha256": "254389a6d97ef61b4a2b487a8fb5efe6ec3a8ccf472c92d942a980a971e9ecc1",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1998
     },
     {
       "path": "data/football/worldcup/2002.json",
-      "sha256": "d89e264dcc7e9dc7a6560f9199ad75d8943c82afa0f846e7e0180ce8f2297979",
+      "sha256": "8057667f365d92bcda7dd13e49a2158246069b6954645ea4a9d027c05529e605",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2002
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "36303ef8b0c4a87af662803d80f04cacd10808dd037d925fdd68b3d795dea02c",
+  "checksum": "3c0633e0571aeecb05b2a12736e28f6a4a0ad39471f5daadcdc5d5a99855990b",
   "dataset": {
     "sports": 4,
     "competitions": 5,

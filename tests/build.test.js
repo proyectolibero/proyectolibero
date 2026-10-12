@@ -4,7 +4,7 @@ const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
-const { buildDraft, attachSheets, groupIssue } = require("../ingest/build.js");
+const { buildDraft, attachSheets, groupIssue, normalizePenaltyNotes } = require("../ingest/build.js");
 const { makeContext, validateEditionObject } = require("../core/validate.js");
 
 const ROOT = path.join(__dirname, "..");
@@ -335,4 +335,29 @@ test("groupIssue (D39): una deducción permite cuadrar los puntos", () => {
   ];
   const matches = [{ group: "H", stage: "qualifyingGroup", home: "CRO", away: "MLT", score: [2, 0] }];
   assert.equal(groupIssue("H", standings, matches, "qualifyingGroup"), null);
+});
+
+test("normalizePenaltyNotes añade la nota 'pen' cuando hay tanda", () => {
+  const edition = {
+    matches: [
+      { id: "m1", notes: ["aet"], pens: [5, 4] },
+      { id: "m2", notes: [], pens: null }
+    ]
+  };
+  assert.equal(normalizePenaltyNotes(edition), 1);
+  assert.deepEqual(edition.matches[0].notes.sort(), ["aet", "pen"]);
+  assert.deepEqual(edition.matches[1].notes, []);
+});
+
+test("normalizePenaltyNotes quita la nota 'pen' huérfana y es idempotente", () => {
+  const edition = { matches: [{ id: "m1", notes: ["pen"], pens: null }] };
+  assert.equal(normalizePenaltyNotes(edition), 1);
+  assert.deepEqual(edition.matches[0].notes, []);
+  assert.equal(normalizePenaltyNotes(edition), 0);
+});
+
+test("normalizePenaltyNotes ignora partidos sin notas y ediciones vacías", () => {
+  assert.equal(normalizePenaltyNotes({ matches: [{ id: "m1", pens: [1, 0] }] }), 0);
+  assert.equal(normalizePenaltyNotes({}), 0);
+  assert.equal(normalizePenaltyNotes(undefined), 0);
 });

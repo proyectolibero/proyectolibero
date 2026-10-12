@@ -8,7 +8,7 @@ const { loadCatalog } = require("../core/catalog.js");
 const { makeContext, validateEditionObject, validateProject } = require("../core/validate.js");
 const { buildRelease, writeRelease, checksumOfContents } = require("../core/release.js");
 const { fetchMany } = require("../ingest/fetch.js");
-const { buildDraft, attachSheets, mergeQualifying } = require("../ingest/build.js");
+const { buildDraft, attachSheets, mergeQualifying, normalizePenaltyNotes } = require("../ingest/build.js");
 const { parse } = require("../ingest/rsssf.js");
 const { buildCompetitionDrafts, buildDraft: buildEditionDraft } = require("../ingest/page.js");
 const { parseOverview } = require("../ingest/overview.js");
@@ -388,6 +388,7 @@ function commandBuildEnriched(year, parts, target) {
   }
 
   const dest = draftPath(year, target.sport, target.competition);
+  const penNotes = normalizePenaltyNotes(edition);
   io.writeJSON(dest, edition);
   const withSheet = (edition.matches || []).filter((match) => match.sheet && match.sheet.text).length;
   console.log(`build ${year} --base=published: ${path.relative(ROOT, dest)}`);
@@ -395,6 +396,7 @@ function commandBuildEnriched(year, parts, target) {
     `  partidos=${(edition.matches || []).length} conSheet=${withSheet} emparejados=${matched} sinFicha=${unmatched} ` +
     `cobertura=${edition.coverage.scope}/${edition.coverage.complete}`
   );
+  if (penNotes > 0) console.log(`  nota 'pen' sincronizada con pens[] en ${penNotes} partido(s)`);
   return 0;
 }
 

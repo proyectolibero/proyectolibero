@@ -19,6 +19,7 @@
 
 const { cleanLine, parseDate, resolveCountry } = require("./rsssf.js");
 const { normalizeTeam } = require("./build.js");
+const { desiredCoverage } = require("../scripts/migrate-coverage.js");
 
 const DEFAULT_LICENSE = "rsssf-attribution";
 const ABANDONED_RE = /abandon|no finaliz|not finished|sin terminar/i;
@@ -33,6 +34,20 @@ const SCORE_TAIL_RE = /(\d+)\s*[-:]\s*(\d+)\s*(?:\(([^)]*)\))?\s*$/;
 
 function emptyResult() {
   return { matches: [], standings: [], scorers: [], teamTotals: [], groups: [], notes: [], warnings: [] };
+}
+
+/**
+ * Anotaciones de sede que la fuente intercala donde va la ciudad (p. ej. la
+ * línea `indoor Norway Faroes n/p`): no son topónimos y no se publican como
+ * ciudad (antes omitir que mentir). La ciudad solo se acepta si tiene letras.
+ */
+const NON_CITY = new Set(["indoor", "outdoor", "neutral", "unknown", "tbd", "tba", "n/a", "na", "-"]);
+
+/** Ciudad publicable a partir del texto previo a los equipos; `null` si no es topónimo. */
+function cityFrom(text) {
+  const value = String(text || "").trim();
+  if (value === "" || NON_CITY.has(value.toLowerCase())) return null;
+  return /\p{L}/u.test(value) ? value : null;
 }
 
 /** Separa `<ciudad> <local> <visitante>` en sus tres partes; `null` si no cuadra. */
@@ -51,7 +66,7 @@ function splitCityTeams(text) {
     if (resolveCountry(suffix)) home = { name: suffix, before: head.slice(0, head.length - size).join(" ") };
   }
   if (!home) return null;
-  return { city: home.before.trim() || null, home: home.name, away: away.name };
+  return { city: cityFrom(home.before), home: home.name, away: away.name };
 }
 
 /** Parsea una línea de partido (jugado o no); `null` si no es reconocible. */
@@ -255,7 +270,14 @@ function buildNordicDraft(edition, parsed, competition, source, warnings) {
   const goals = matches.reduce((sum, match) => sum + (match.score ? match.score[0] + match.score[1] : 0), 0);
   const results = { champion, runnerUp, decidedBy: "standings" };
   if (Array.isArray(edition.coChampions) && edition.coChampions.length > 1) results.coChampions = [...edition.coChampions];
-  const coverage = { matches: matches.length, goals, scope: "final", complete: !abandoned && Boolean(champion) };
+  const coverageBase = { matches: matches.length, goals };
+  let coverage =
+    desiredCoverage(competition, { coverage: coverageBase, matches, edition: edition.year, results }, {}) || {
+      ...coverageBase,
+      scope: "final",
+      complete: false
+    };
+  if (abandoned && coverage.complete) coverage = { ...coverageBase, scope: "final", complete: false };
   if (!coverage.complete) {
     coverage.note = edition.note || "Edición incompleta: no se documenta un campeón.";
     warnings.push({ reason: `cobertura incompleta: ${coverage.note}` });

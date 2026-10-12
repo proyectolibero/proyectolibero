@@ -63,6 +63,7 @@ test("parseNordic lee la tabla de 2000-01 y registra el partido no jugado", () =
   const notPlayed = parsed.matches.filter((match) => match.status === "notplayed");
   assert.equal(notPlayed.length, 1);
   assert.equal(notPlayed[0].score, null);
+  assert.equal(notPlayed[0].city, null, "la anotación 'indoor' no es un topónimo publicable");
 
   const played = parsed.matches.filter((match) => match.status === "played");
   const goals = played.reduce((sum, match) => sum + match.homeScore + match.awayScore, 0);
@@ -107,6 +108,7 @@ test("buildNordicDraft declara liguilla sin final y conserva el campeón del cat
   assert.equal(draft.results.runnerUp, "SWE");
   assert.equal(draft.results.decidedBy, "standings");
   assert.equal("finalMatchId" in draft.results, false);
+  assert.equal(draft.coverage.scope, "all");
   assert.equal(draft.coverage.complete, true);
   assert.equal(draft.groups.length, 1);
   assert.equal(draft.groups[0].letter, "A");

@@ -9,7 +9,8 @@
   "results": {
     "champion": "TCH",
     "runnerUp": "FRG",
-    "decidedBy": "final"
+    "decidedBy": "final",
+    "finalMatchId": "m004"
   },
   "coverage": {
     "matches": 4,
@@ -140,9 +141,6 @@
   "warnings": [
     {
       "reason": "campeón derivado de la final (FRG) != catálogo (TCH); se conserva el catálogo"
-    },
-    {
-      "reason": "final a doble vuelta sin partido con el campeón como ganador; finalMatchId omitido"
     }
   ],
   "teamsCount": 4

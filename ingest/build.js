@@ -352,6 +352,28 @@ function takeSheet(match, block, sourceId) {
 }
 
 /**
+ * Sincroniza la nota `pen` con la tanda de penaltis (`pens[]`): la gramática del
+ * proyecto exige que toda tanda lleve la nota `pen` y que la nota no aparezca sin
+ * tanda (lo comprueba `scripts/integrity.js`, código PENS). Corrige ediciones
+ * publicadas antes de que el parser registrara la nota, sin tocar el resto de
+ * campos (fechas, fichas, clasificación). Devuelve cuántos partidos cambió.
+ */
+function normalizePenaltyNotes(edition) {
+  let changed = 0;
+  for (const match of (edition && edition.matches) || []) {
+    if (!match || !Array.isArray(match.notes)) continue;
+    const hasPens = Array.isArray(match.pens) && match.pens.length > 0;
+    const notes = new Set(match.notes);
+    if (hasPens === notes.has("pen")) continue;
+    if (hasPens) notes.add("pen");
+    else notes.delete("pen");
+    match.notes = [...notes];
+    changed += 1;
+  }
+  return changed;
+}
+
+/**
  * Devuelve una copia de `edition` con la ficha verbatim (`sheet`) de `full`
  * añadida a los partidos emparejados. No altera ningún otro dato publicado: es
  * la vía segura para escalar la ficha a ediciones migradas que no se reproducen
@@ -1025,4 +1047,4 @@ function buildDraft(input) {
   return draft;
 }
 
-module.exports = { buildDraft, normalizeTeam, stageFromSection, groupLetter, groupIssue, attachSheets, mergeQualifying, sheetFrom };
+module.exports = { buildDraft, normalizeTeam, stageFromSection, groupLetter, groupIssue, attachSheets, mergeQualifying, sheetFrom, normalizePenaltyNotes };
