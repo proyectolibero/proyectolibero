@@ -264,3 +264,35 @@ Formato: `## YYYY-MM-DD — D<n> — Título` con secciones Contexto / Decisión
 - **Contexto**: La clasificación de la Eurocopa 2016 incluye grupos con **deducción de puntos** (Croacia −1, Serbia −3) y otros torneos las tienen. El validador exige `pts = 3w+d` (o `2w+d`), así que las tablas con deducción se descartaban.
 - **Decisión**: Las tablas de clasificación admiten un campo opcional `deduction` (entero ≥ 0) en cada fila: el validador comprueba `pts = (2|3)·w + d − deduction` y exige que `deduction` sea 0 o esté acompañada de un motivo (`deductionReason` o `notes`). Con eso se publican las tablas completas sin falsear puntos. Se aplica retroactivamente a las ediciones afectadas (2016 y las que aparezcan).
 - **Alternativas descartadas**: (a) Omitir las tablas con deducción: pierde clasificaciones reales y completas (lo que ha pasado en 2016). (b) Ajustar los puntos a mano: falsea el dato. (c) Relajar el validador sin registrar el motivo: permite tablas incoherentes sin trazabilidad.
+
+
+## 2026-10-12 — D40 — ADR-029 — Modelo gratuito + contador de tokens como criterio de cambio
+
+- **Contexto**: Una tarea se detuvo a media ejecución por agotar el tier gratuito del modelo, sin aviso previo y sin forma de saber cuánto se había gastado. El proyecto debe seguir siendo de coste 0, pero necesita una señal objetiva para decidir cuándo conviene cambiar de modelo.
+- **Decisión**: Los agentes de trabajo siguen en modelo gratuito (`opencode/big-pickle`) y el gasto se mide con un contador propio: el plugin `.opencode/plugins/usage-counter.js` (sin dependencias) acumula los tokens de cada mensaje del asistente (`input`, `output`, `reasoning`, `cache.read/write`) y el coste, por día, modelo y agente, en `.opencode/usage.json` (local, ignorado por git; persiste los últimos mensajes vistos para no contar doble al reiniciar). Se consulta con `node scripts/usage.js` (exit 1 si el día supera el umbral de `.opencode/usage.config.json`, por defecto 4.000.000 tokens) y avisa con un toast al superarlo. La política, las alternativas de modelo y el procedimiento de cambio están en `docs/MODELOS.md`: **no se cambia de modelo a ciegas**. El cierre de tarea lo siguen decidiendo los gates deterministas (validate/integrity/tests), no el modelo (ADR-018).
+- **Alternativas descartadas**: (a) Pasar directamente a un modelo de pago: resuelve la parada pero gasta dinero sin saber cuánto hacía falta. (b) Medir con los paneles del proveedor: no da el gasto por agente ni por día de trabajo, y depende de cada proveedor. (c) Estimar a mano: ya se demostró inútil (el tier se agotó sin aviso). (d) Ignorar el problema y reintentar: deja el trabajo a merced de la cuota.
+
+## 2026-10-12 — D41 — Cerrar DECIDED: una final empatada se decide por la tanda
+
+- **Contexto**: `scripts/integrity.js` marcaba DECIDED en las finales de la Eurocopa 1976 y 2020: partidos con `score` empatado y `pens[]` (TCH-FRG 2-2 [5-3]; ENG-ITA 1-1 [2,3]). El ganador del partido se calculaba solo con el marcador (`matchWinner` en `ingest/page.js`), así que en finales empatadas no había ganador y `results.finalMatchId` quedaba sin fijar.
+- **Decisión**: `matchWinner` considera la tanda de penaltis cuando el marcador empata (gana quien anotó más en `pens[]`); así `pickFinalMatchId` fija `results.finalMatchId` en finales decididas por penaltis. Afecta a `ingest/page.js` (builder de páginas de edición) y a las ediciones 1976 y 2020 de la Eurocopa, republicadas.
+- **Alternativas descartadas**: (a) Omitir `finalMatchId` y relajar la comprobación DECIDED: ocultaría una carencia real del dato. (b) Marcar `decidedBy:"standings"`: falso, no fue por clasificación. (c) Emparejar la final por fecha sin ganador: deja `finalMatchId` mal definido.
+
+## 2026-10-12 — D42 — Cerrar CITY_ODD y cobertura nórdica: la sede no-topónimo se omite
+
+- **Contexto**: `nordic/2000-01` publicaba el partido Noruega–Feroe (no jugado) con `city:"indoor"`, una anotación de la fuente sobre el lugar, no una ciudad (integridad: CITY_ODD). Además, el generador nórdico fijaba `coverage.scope:"final"` en vez de derivarla, lo que rompía la validación EDI017 al republicar.
+- **Decisión**: En `ingest/nordic.js`, un helper `cityFrom` solo publica la ciudad si es un topónimo (tiene letras y no es una anotación conocida como `indoor`/`outdoor`/`neutral`…); en caso contrario `city:null` (antes omitir que mentir). La cobertura del borrador se deriva con `desiredCoverage` (misma regla que el resto del archivo: sin fase de clasificación → `scope:"all"`, `complete:true`), conservando el caso abandonado como incompleto.
+- **Alternativas descartadas**: (a) Publicar `indoor` como ciudad: miente. (b) Omitir el partido no jugado: pierde un dato real de la fuente. (c) Mantener `scope:"final"` a mano: contradice ADR-022 y bloquea la validación.
+
+## 2026-10-12 — D43 — Cerrar PENS: la nota `pen` se sincroniza con `pens[]`
+
+- **Contexto**: Nueve partidos publicados (Mundial 1982/1986/1998/2002) traían `pens[]` sin la nota `pen`, que la gramática exige (integridad: PENS). La tanda llegó a los datos por una vía que no registraba la nota.
+- **Decisión**: Se añade `normalizePenaltyNotes(edition)` en `ingest/build.js` (idempotente: añade `pen` si hay tanda, la quita si no) y se invoca en el build enriquecido (`build --base=published`). Para republicar sin arrastrar cambios ajenos se generó el borrador **desde la edición publicada aplicando solo esa normalización** (el build enriquecido completo añadía 176 partidos de clasificación y dejaba 2002 incompleta, en contra de «conservar fichas y clasificación intactas»). `reconcile` ignora `notes`, así que el cierre es limpio (blocking=0).
+- **Alternativas descartadas**: (a) `build --base=published` completo: scope creep (176 partidos) y degrada la cobertura de 2002. (b) Editar `data/**` a mano: prohibido. (c) Derivar la nota en el validador: `validate` ya no la exige; el hueco era de integridad/datos.
+
+## 2026-10-12 — D44 — Excepciones auditables de integridad (Balkan Cup 1935)
+
+- **Contexto**: `balkancup/1935` declara campeón a Bulgaria, pero la tabla de la liguilla la encabeza Yugoslavia por goal average (integridad: DECIDED). RSSSF documenta que Yugoslavia fue declarada vencedora al final, Bulgaria protestó, el comité resolvió un desempate, Yugoslavia se negó y devolvió el trofeo en 1936; la *Final Ranking* oficial lista a Bulgaria 1ª. El dato publicado es correcto; la comprobación mecánica no aplica.
+- **Decisión**: `scripts/integrity.exceptions.json` permite excepciones auditables con `{file, code, reason}`. El verificador las aplica por pareja `file`+`code`, exige un motivo no vacío y avisa de las que no surten efecto (para que no se acumulen en silencio). Primera excepción: `balkancup/1935` código `DECIDED`.
+- **Alternativas descartadas**: (a) Cambiar `champion` a YUG: falso (el título oficial es BUL). (b) Quitar la comprobación DECIDED: perdería cobertura real en el resto del archivo. (c) Editar la tabla para que cuadre: falsea el dato de la fuente.
+

@@ -17,15 +17,14 @@ Archivo abierto de resultados deportivos (HTML estático + JSON con esquemas pro
 - **5 competiciones / 76 ediciones / 5.158 partidos**: Mundial 23, Balkan Cup 12, Confederaciones 10, Eurocopa 17, Nordic 14.
 - **Fichas de partido** (`match.sheet`, verbatim): **900 partidos** del Mundial (1930–2018). 2022/2026 no tienen ficha: RSSSF no publica `NNfull` (404).
 - **Clasificación**: Mundial **1954–1998** publicada (15 ediciones con `coverage:"all"`). **Pendientes 2002–2026**, Eurocopa, y competiciones sin clasificación (Balkan/Confederaciones/Nordic → no existe).
-- **Calidad**: `node scripts/validate.js` → 0 errores/0 avisos. `node --test tests/` → 216 verdes. `node scripts/integrity.js` → **13 errores / 43 avisos conocidos**.
+- **Calidad**: `node scripts/validate.js` → 0 errores/0 avisos. `node --test tests/` → 255 verdes. `node scripts/integrity.js` → **0 errores / 43 avisos conocidos** (1 excepción auditable: Balkan 1935).
 
 ## Pendiente (orden acordado)
 1. Cerrar el Mundial: **clasificación 2002–2026** (faltan ~60 entidades nacionales y limpiar artefactos del formato moderno).
 2. **Eurocopa**: fichas + clasificación (17 ediciones; la clasificación viene embebida).
 3. **Agentes especializados RSSSF** (ADR-024): skills por familia de formato.
-4. **13 errores de integridad** conocidos (notas `pen`, finales sin `finalMatchId`, ciudad `"indoor"`, Balkan 1935).
-5. **R3**: las 8 competiciones internacionales restantes.
-6. **Fase 4**: web pública (SSG, URLs por ruta, SEO). El panel no muestra partidos ni fichas.
+4. **R3**: las 8 competiciones internacionales restantes.
+5. **Fase 4**: web pública (SSG, URLs por ruta, SEO). El panel no muestra partidos ni fichas.
 
 ## Comandos útiles
 ```bash
