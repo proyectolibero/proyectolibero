@@ -11,3 +11,4 @@ panel-*.png
 preview-*.png
 preview/
 *.tmp-*
+.opencode/usage.json

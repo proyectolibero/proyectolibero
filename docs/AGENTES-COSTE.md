@@ -40,6 +40,11 @@ Ejemplo: `node scripts/ingest-batch.js --competition=football/worldcup --years=2
 - Prefijo estable (system + docs fijas) y lo variable al final: ayuda si hay caché de prompt.
 - El historial de conversación es el mayor coste: **cuanto más corta la sesión, más barato**.
 
-## 8. Qué NO usar
+## 8. Medir el gasto antes de cambiar de modelo
+- El plugin `.opencode/plugins/usage-counter.js` cuenta los tokens por día, modelo y agente.
+- Consulta rápida: `node scripts/usage.js` (exit 1 si hoy se pasa del umbral de `.opencode/usage.config.json`).
+- Política, umbrales y alternativas de modelo: `docs/MODELOS.md`. **No cambiar de modelo a ciegas.**
+
+## 9. Qué NO usar
 - No instalar dependencias ni herramientas de terceros para "ahorrar contexto" sin justificarlo: `grep` + scripts propios bastan.
 - No ampliar documentos por gusto: cada KB de `docs/` se paga cada vez que alguien lo lee.

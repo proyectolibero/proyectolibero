@@ -31,3 +31,4 @@ require("./qualifying.test.js");
 require("./reconcile.test.js");
 require("./promote.test.js");
 require("./integrity.test.js");
+require("./usage-counter.test.js");
