@@ -1,5 +1,5 @@
 {
-  "dailyWarnTokens": 4000000,
+  "dailyWarnTokens": 40000000,
   "keepDays": 60,
   "debounceMs": 1500,
   "maxSeenMessages": 2000

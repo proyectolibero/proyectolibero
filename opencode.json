@@ -1,11 +1,16 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "instructions": ["README.md", "docs/AGENTES-COSTE.md"],
-  "small_model": "opencode/big-pickle",
+  "small_model": "nvidia/z-ai/glm-5.3",
   "tool_output": { "max_lines": 150, "max_bytes": 6000 },
   "compaction": { "auto": true, "tail_turns": 15 },
   "agent": {
-    "general": { "model": "opencode/big-pickle" }
+    "general": { "model": "nvidia/z-ai/glm-5.3" },
+    "explore": { "model": "nvidia/z-ai/glm-5.3" },
+    "test-generator": { "model": "nvidia/z-ai/glm-5.3" },
+    "code-reviewer": { "model": "nvidia/z-ai/glm-5.3" },
+    "security-reviewer": { "model": "nvidia/z-ai/glm-5.3" },
+    "performance-analyzer": { "model": "nvidia/z-ai/glm-5.3" }
   },
   "mcp": {
     "deporte-memoria": {
