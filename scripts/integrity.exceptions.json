@@ -1,0 +1,9 @@
+{
+  "exceptions": [
+    {
+      "file": "data/football/balkancup/1935.json",
+      "code": "DECIDED",
+      "reason": "Balkan Cup 1935: la liguilla la encabeza Yugoslavia por goal average (11-4 vs 12-5), pero el título oficial es de Bulgaria. RSSSF documenta que Yugoslavia fue declarada vencedora al final del torneo, Bulgaria protestó, el comité resolvió jugar un desempate y Yugoslavia se negó y devolvió el trofeo en mayo de 1936; la Final Ranking oficial del torneo lista a Bulgaria 1ª. Se conserva results.champion=BUL (corrector) y se exceptúa la comprobación mecánica líder-de-tabla=campeón. Fuente: inbox/www.rsssf.org-balkancup.html (1935, nota NB y Final Ranking)."
+    }
+  ]
+}

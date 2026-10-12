@@ -5,7 +5,7 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 const { ROOT, fixtureProject, writeJson } = require("./helpers.js");
-const { analyzeEdition, checkProject, editionBounds } = require("../scripts/integrity.js");
+const { analyzeEdition, checkProject, editionBounds, loadExceptions } = require("../scripts/integrity.js");
 
 const COUNTRIES = JSON.parse(fs.readFileSync(path.join(ROOT, "i18n", "countries.json"), "utf8"));
 const COMPETITION = { id: "football/worldcup", teamMode: "country", sources: [{ id: "rsssf" }] };
@@ -108,4 +108,36 @@ test("integridad checkProject: recorre el archivo sobre una copia temporal", () 
   assert.ok(
     result.anomalies.some((item) => item.code === "DATE_RANGE" && item.file.endsWith("intconcup/1992.json"))
   );
+});
+
+test("integridad: una excepción auditable silencia la anomalía por file+code", () => {
+  const root = fixtureProject();
+  const relative = path.join("data", "football", "intconcup", "1992.json");
+  const file = path.join(root, relative);
+  const edition = JSON.parse(fs.readFileSync(file, "utf8"));
+  edition.matches[0].date = "1892-10-16";
+  writeJson(file, edition);
+  writeJson(path.join(root, "scripts", "integrity.exceptions.json"), {
+    exceptions: [{ file: "data/football/intconcup/1992.json", code: "DATE_RANGE", reason: "prueba" }]
+  });
+
+  const result = checkProject(root);
+  assert.ok(
+    !result.anomalies.some((item) => item.code === "DATE_RANGE" && item.file.endsWith("intconcup/1992.json"))
+  );
+  assert.equal(result.usedExceptions.size, 1);
+});
+
+test("integridad: loadExceptions descarta entradas sin motivo y ficheros ausentes", () => {
+  const root = fixtureProject();
+  writeJson(path.join(root, "scripts", "integrity.exceptions.json"), {
+    exceptions: [
+      { file: "a.json", code: "X" },
+      { file: "b.json", code: "Y", reason: "ok" }
+    ]
+  });
+  const list = loadExceptions(root);
+  assert.equal(list.length, 1);
+  assert.equal(list[0].file, "b.json");
+  assert.deepEqual(loadExceptions(path.join(root, "no-existe")), []);
 });

@@ -40,6 +40,36 @@ const SEVERITY = {
 
 const ODD_CITIES = new Set(["-", "indoor", "n/a", "na", "unknown", "tbd", "tba", "?", "none", "null", "undefined"]);
 
+/**
+ * Lista de excepciones auditables (`scripts/integrity.exceptions.json`).
+ * Cada entrada es `{ file, code, reason }`: un caso documentado en que la
+ * comprobación mecánica no aplica (p. ej. un título oficial que no coincide con
+ * el líder de la tabla). El motivo queda por escrito en el propio fichero.
+ */
+function loadExceptions(root) {
+  const file = path.join(root, "scripts", "integrity.exceptions.json");
+  let raw;
+  try {
+    raw = readJSON(file);
+  } catch (err) {
+    return [];
+  }
+  const list = Array.isArray(raw) ? raw : raw && Array.isArray(raw.exceptions) ? raw.exceptions : [];
+  return list.filter(
+    (item) =>
+      item &&
+      typeof item.file === "string" &&
+      typeof item.code === "string" &&
+      typeof item.reason === "string" &&
+      item.reason.trim() !== ""
+  );
+}
+
+/** ¿La anomalía (`file`, `code`) está exceptuada? */
+function isExcepted(item, exceptions) {
+  return exceptions.some((entry) => entry.file === item.file && entry.code === item.code);
+}
+
 function anomaly(code, file, message, extra) {
   return { code, severity: SEVERITY[code], file, message, ...(extra || {}) };
 }
@@ -361,6 +391,8 @@ function checkProject(root, options) {
   }
 
   const competitions = selectCompetitions(catalog, opts.competition);
+  const exceptions = loadExceptions(root);
+  const usedExceptions = new Set();
   const anomalies = [];
   const summary = [];
 
@@ -385,6 +417,10 @@ function checkProject(root, options) {
       reviewed += 1;
       const found = analyzeEdition(edition, competition, { file: relative, countries });
       for (const item of found) {
+        if (isExcepted(item, exceptions)) {
+          usedExceptions.add(`${item.file}|${item.code}`);
+          continue;
+        }
         item.competition = competition.id;
         item.edition = entry.year;
         anomalies.push(item);
@@ -395,7 +431,7 @@ function checkProject(root, options) {
     summary.push({ id: competition.id, editions: reviewed, errors, warnings });
   }
 
-  return { competitions, anomalies, summary };
+  return { competitions, anomalies, summary, exceptions, usedExceptions };
 }
 
 /* -------------------------------------------------------------------------- */
@@ -412,7 +448,7 @@ function parseFlags(list) {
 }
 
 function printReport(result, verbose) {
-  const { anomalies, summary } = result;
+  const { anomalies, summary, exceptions = [], usedExceptions = new Set() } = result;
   const totalErrors = anomalies.filter((a) => a.severity === "error").length;
   const totalWarnings = anomalies.filter((a) => a.severity === "warn").length;
 
@@ -440,6 +476,15 @@ function printReport(result, verbose) {
   if (anomalies.length === 0) console.log("(ninguna)");
 
   console.log(`\n${totalErrors} error(es), ${totalWarnings} aviso(s)`);
+
+  if (exceptions.length > 0) {
+    const applied = usedExceptions.size;
+    console.log(`Excepciones auditables: ${applied}/${exceptions.length} aplicadas`);
+    for (const entry of exceptions) {
+      const key = `${entry.file}|${entry.code}`;
+      if (!usedExceptions.has(key)) console.log(`  [aviso] excepción sin efecto: ${key} — ${entry.reason}`);
+    }
+  }
 }
 
 function main() {
@@ -462,6 +507,8 @@ module.exports = {
   analyzeEdition,
   checkProject,
   editionBounds,
+  isExcepted,
+  loadExceptions,
   matchWinner,
   SEVERITY
 };
