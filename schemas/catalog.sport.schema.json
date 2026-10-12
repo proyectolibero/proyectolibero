@@ -14,10 +14,11 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["id", "name", "i18nKey", "resultArchetypes", "status", "competitions"],
+        "required": ["id", "slug", "name", "i18nKey", "resultArchetypes", "status", "competitions"],
         "additionalProperties": false,
         "properties": {
           "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+          "slug": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
           "name": { "type": "string", "minLength": 1 },
           "i18nKey": { "type": "string", "pattern": "^[a-z][a-zA-Z0-9.]*$" },
           "resultArchetypes": {

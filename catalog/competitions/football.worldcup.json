@@ -3,6 +3,7 @@
   "id": "football/worldcup",
   "sport": "football",
   "competition": "worldcup",
+  "slug": "copa-del-mundo",
   "name": "FIFA World Cup",
   "i18nKey": "comp.worldcup.name",
   "organizer": "FIFA",

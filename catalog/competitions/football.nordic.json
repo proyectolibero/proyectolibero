@@ -3,6 +3,7 @@
   "id": "football/nordic",
   "sport": "football",
   "competition": "nordic",
+  "slug": "campeonato-nordico",
   "name": "Nordic Championships",
   "i18nKey": "comp.nordic.name",
   "organizer": "—",

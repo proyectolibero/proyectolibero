@@ -1,8 +1,8 @@
 /*
  * Libero · Sistema de diseño (S0) — comportamiento
  * Mejora progresiva: sin JS todos los datos son legibles. Este fichero
- * solo revela controles opcionales (desplegables, filtro de texto y
- * scrubber temporal) y nunca es requisito para leer el contenido.
+ * solo revela controles opcionales (desplegables, filtro de texto, paginación
+ * de listas largas y scrubber temporal) y nunca es requisito para leer el contenido.
  * Sin dependencias.
  */
 (function () {
@@ -84,6 +84,29 @@
     });
   }
 
+  /* --- Paginación (lista larga) -------------------------------------- */
+  function initPagination() {
+    queryAll("[data-lb-pagination]").forEach(function (button) {
+      var scope = document.querySelector(button.getAttribute("data-lb-pagination-target"));
+      if (!scope) return;
+      var step = Number(button.getAttribute("data-lb-pagination-step")) || 60;
+      var items = queryAll("[data-lb-page-item]", scope);
+      var status = document.querySelector(button.getAttribute("data-lb-pagination-status") || "");
+      var shown = step;
+      function render() {
+        var count = Math.min(shown, items.length);
+        items.forEach(function (item, i) { item.hidden = i >= count; });
+        if (status) status.textContent = count + " de " + items.length;
+        button.hidden = count >= items.length;
+      }
+      button.addEventListener("click", function () {
+        shown += step;
+        render();
+      });
+      render();
+    });
+  }
+
   /* --- Tema manual (anula prefers-color-scheme) ---------------------- */
   function initTheme() {
     queryAll("[data-lb-theme]").forEach(function (button) {
@@ -98,6 +121,7 @@
     initDisclosures();
     initFilters();
     initScrubbers();
+    initPagination();
   }
 
   if (document.readyState === "loading") {

@@ -1,8 +1,8 @@
 "use strict";
 
 /*
- * Contratos del sistema de diseno (S0), sin red:
- *   (a) toda clase .lb-* usada en la galeria esta definida en components.css;
+ * Contratos del sistema de diseno (S0/S1), sin red:
+ *   (a) toda clase .lb-* usada en la galeria o en site/ esta en components.css;
  *   (b) ningun literal de color (#hex, rgb(), hsl()) fuera de tokens.css;
  *   (c) accesibilidad basica: lang, tablas semanticas, foco visible y
  *       respeto a prefers-reduced-motion.
@@ -17,10 +17,22 @@ const { ROOT } = require("./helpers.js");
 const TOKENS = path.join(ROOT, "design", "tokens.css");
 const COMPONENTS = path.join(ROOT, "design", "components.css");
 const BEHAVIOUR = path.join(ROOT, "design", "behaviour.js");
-const GALLERY = path.join(ROOT, "site", "_galeria", "index.html");
+const GALLERY = path.join(ROOT, "design", "galeria", "index.html");
+const SITE = path.join(ROOT, "site");
 
 function read(file) {
   return fs.readFileSync(file, "utf8");
+}
+
+function collectHtmlFiles(dir) {
+  if (!fs.existsSync(dir)) return [];
+  const out = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...collectHtmlFiles(full));
+    else if (entry.name.endsWith(".html")) out.push(full);
+  }
+  return out;
 }
 
 function collectClassAttributeNames(css) {
@@ -46,16 +58,19 @@ function collectClassesUsedInHtml(html) {
 
 const COLOR_LITERAL = /#[0-9a-fA-F]{3,8}\b|\brgba?\(|\bhsla?\(/;
 
-test("design (a): toda clase .lb-* de la galeria esta definida en components.css", () => {
+test("design (a): toda clase .lb-* de la galeria y site/ esta definida en components.css", () => {
   const defined = collectClassAttributeNames(read(COMPONENTS));
-  const used = collectClassesUsedInHtml(read(GALLERY));
-  assert.ok(used.size > 0, "la galeria deberia usar al menos una clase .lb-*");
+  const used = new Set([
+    ...collectClassesUsedInHtml(read(GALLERY)),
+    ...collectHtmlFiles(SITE).flatMap((file) => [...collectClassesUsedInHtml(read(file))]),
+  ]);
+  assert.ok(used.size > 0, "deberia usarse al menos una clase .lb-*");
   const missing = [...used].filter((name) => !defined.has(name));
   assert.deepEqual(missing, [], `clases usadas y no definidas: ${missing.join(", ")}`);
 });
 
 test("design (b): sin literales de color fuera de tokens.css", () => {
-  const files = [COMPONENTS, BEHAVIOUR, GALLERY];
+  const files = [COMPONENTS, BEHAVIOUR, GALLERY, ...collectHtmlFiles(SITE)];
   for (const file of files) {
     const content = read(file);
     const found = content.match(COLOR_LITERAL);

@@ -48,10 +48,11 @@ design/components.css   componentes (prefijo .lb-)
 design/behaviour.js     mejora progresiva (sin JS todo el dato es legible)
 ```
 
-La galería de desarrollo (`site/_galeria/index.html`, se regenera con
-`node scripts/build-gallery.js`) muestra cada componente y sus casos límite
-(ficha verbatim de 40 líneas, tabla de 12 filas con ajuste/motivo, lista de
-843 partidos, textos largos zh/hi) a 390 px y 1440 px, claro y oscuro.
+La galería de desarrollo (`design/galeria/index.html`, se regenera con
+`node scripts/build-gallery.js`) vive **fuera** del artefacto publicado y muestra
+cada componente y sus casos límite (ficha verbatim de 40 líneas, tabla de 12
+filas con ajuste/motivo, lista larga de partidos con paginación, textos largos
+zh/hi) a 390 px y 1440 px, claro y oscuro.
 
 Modo oscuro automático (`prefers-color-scheme`) y anulable con
 `[data-theme="light"|"dark"]`. Los controles se ocultan sin JS
@@ -68,7 +69,7 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 |---|---|
 | Base | `.lb-visually-hidden`, `.lb-needs-js` |
 | Galería (dev) | `.lb-gallery`, `.lb-gallery__header`, `.lb-gallery__title`, `.lb-gallery__lead`, `.lb-gallery__nav`, `.lb-gallery__item`, `.lb-gallery__label`, `.lb-gallery__note`, `.lb-gallery__grid` |
-| `EditionTimeline` | `.lb-timeline`, `.lb-timeline__item`, `.lb-timeline__item--gap`, `.lb-timeline__link`, `.lb-timeline__year`, `.lb-timeline__note` |
+| `EditionTimeline` | `.lb-timeline`, `.lb-timeline__item`, `.lb-timeline__item--gap`, `.lb-timeline__item--pending`, `.lb-timeline__link`, `.lb-timeline__year`, `.lb-timeline__note` |
 | `StandingsTable` | `.lb-standings`, `.lb-table`, `.lb-table--stack`, `.lb-table__caption`, `.lb-table__num`, `.lb-table__medal`, `.lb-medal--gold`, `.lb-medal--silver`, `.lb-medal--bronze` |
 | `ScorerList` | `.lb-scorers`, `.lb-scorers__item`, `.lb-scorers__rank`, `.lb-scorers__name`, `.lb-scorers__meta`, `.lb-scorers__count` |
 | `ResultCard` | `.lb-result`, `.lb-result__meta`, `.lb-result__teams`, `.lb-result__team`, `.lb-result__team--away`, `.lb-result__team--winner`, `.lb-result__score`, `.lb-result__note` |
@@ -79,7 +80,8 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 | `FacsimileSheet` | `.lb-facsimile`, `.lb-facsimile__caption`, `.lb-facsimile__paper`, `.lb-facsimile__pre` |
 | `CitationBlock` | `.lb-citation`, `.lb-citation__label`, `.lb-citation__text`, `.lb-citation__code` |
 | `SourceList` | `.lb-sources`, `.lb-sources__item`, `.lb-sources__name`, `.lb-sources__meta`, `.lb-sources__link`, `.lb-sources__retrieved` |
-| Progresivo | `.lb-filter`, `.lb-filter__input`, `.lb-filter__count`, `.lb-scrubber`, `.lb-scrubber__label`, `.lb-scrubber__input`, `.lb-scrubber__value`, `.lb-toggle`, `.lb-toggle__button`, `.lb-toggle__panel`, `.lb-empty` |
+| Progresivo | `.lb-filter`, `.lb-filter__input`, `.lb-filter__count`, `.lb-pagination`, `.lb-pagination__button`, `.lb-pagination__status`, `.lb-scrubber`, `.lb-scrubber__label`, `.lb-scrubber__input`, `.lb-scrubber__value`, `.lb-toggle`, `.lb-toggle__button`, `.lb-toggle__panel`, `.lb-empty` |
+| Escaparate (S1) | `.lb-page`, `.lb-masthead`, `.lb-brand`, `.lb-nav`, `.lb-nav__list`, `.lb-nav__item`, `.lb-nav__link`, `.lb-nav__sub`, `.lb-breadcrumb`, `.lb-breadcrumb__list`, `.lb-breadcrumb__item`, `.lb-breadcrumb__link`, `.lb-breadcrumb__sep`, `.lb-breadcrumb__current`, `.lb-main`, `.lb-section`, `.lb-section__num`, `.lb-section__title`, `.lb-intro`, `.lb-label`, `.lb-list`, `.lb-list--nested`, `.lb-entry`, `.lb-entry__link`, `.lb-entry__meta`, `.lb-record`, `.lb-record__term`, `.lb-record__value`, `.lb-card`, `.lb-card__title`, `.lb-footer`, `.lb-footer__rights`, `.lb-footer__asof` |
 
 ## Pantallas clave
 

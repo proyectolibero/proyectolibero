@@ -3,6 +3,7 @@
   "id": "football/eurochamp",
   "sport": "football",
   "competition": "eurochamp",
+  "slug": "eurocopa",
   "name": "UEFA European Championship",
   "i18nKey": "comp.eurochamp.name",
   "organizer": "UEFA",

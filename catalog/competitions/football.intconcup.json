@@ -3,6 +3,7 @@
   "id": "football/intconcup",
   "sport": "football",
   "competition": "intconcup",
+  "slug": "copa-confederaciones",
   "name": "Intercontinental Championship / FIFA Confederations Cup",
   "i18nKey": "comp.intconcup.name",
   "organizer": "FIFA",

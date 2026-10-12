@@ -1,6 +1,6 @@
 # Estado actual — tarjeta de traspaso
 
-> Para empezar una **sesión nueva** sin releer el historial. Última actualización: 2026-10-10.
+> Para empezar una **sesión nueva** sin releer el historial. Última actualización: 2026-10-12.
 
 ## Qué es el proyecto
 Archivo abierto de resultados deportivos (HTML estático + JSON con esquemas propios). Dominio `proyectolibero.org`. Información libre; nunca se venden datos. Solo **ediciones cerradas**. Ver `README.md`, `docs/ESTRUCTURA.md`, `docs/ESQUEMA-DATOS-v2.md`.
@@ -17,14 +17,15 @@ Archivo abierto de resultados deportivos (HTML estático + JSON con esquemas pro
 - **5 competiciones / 76 ediciones / 5.158 partidos**: Mundial 23, Balkan Cup 12, Confederaciones 10, Eurocopa 17, Nordic 14.
 - **Fichas de partido** (`match.sheet`, verbatim): **900 partidos** del Mundial (1930–2018). 2022/2026 no tienen ficha: RSSSF no publica `NNfull` (404).
 - **Clasificación**: Mundial **1954–1998** publicada (15 ediciones con `coverage:"all"`). **Pendientes 2002–2026**, Eurocopa, y competiciones sin clasificación (Balkan/Confederaciones/Nordic → no existe).
-- **Calidad**: `node scripts/validate.js` → 0 errores/0 avisos. `node --test tests/` → 255 verdes. `node scripts/integrity.js` → **0 errores / 43 avisos conocidos** (1 excepción auditable: Balkan 1935).
+- **Calidad**: `node scripts/validate.js` → 0 errores/0 avisos. `node --test tests/` → 267 verdes. `node scripts/integrity.js` → **0 errores / 43 avisos conocidos** (1 excepción auditable: Balkan 1935).
+- **Escaparate (S1)**: SSG sin dependencias en `core/site/` (D45). Genera `site/` en 5 idiomas + sitemap/robots desde catálogo y release; slugs canónicos en español (`slug` required). Edición publicada: Mundial 1930. Capturas en `preview/`.
 
 ## Pendiente (orden acordado)
 1. Cerrar el Mundial: **clasificación 2002–2026** (faltan ~60 entidades nacionales y limpiar artefactos del formato moderno).
 2. **Eurocopa**: fichas + clasificación (17 ediciones; la clasificación viene embebida).
 3. **Agentes especializados RSSSF** (ADR-024): skills por familia de formato.
 4. **R3**: las 8 competiciones internacionales restantes.
-5. **Fase 4**: web pública (SSG, URLs por ruta, SEO). El panel no muestra partidos ni fichas.
+5. **Fase 4**: web pública (SSG, URLs por ruta, SEO). S1 escaparate avanzado (D45): SSG + Mundial 1930 en `site/`; falta sellar en releases y servir desde la web. El panel no muestra partidos ni fichas.
 
 ## Comandos útiles
 ```bash

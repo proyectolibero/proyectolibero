@@ -296,3 +296,10 @@ Formato: `## YYYY-MM-DD — D<n> — Título` con secciones Contexto / Decisión
 - **Decisión**: `scripts/integrity.exceptions.json` permite excepciones auditables con `{file, code, reason}`. El verificador las aplica por pareja `file`+`code`, exige un motivo no vacío y avisa de las que no surten efecto (para que no se acumulen en silencio). Primera excepción: `balkancup/1935` código `DECIDED`.
 - **Alternativas descartadas**: (a) Cambiar `champion` a YUG: falso (el título oficial es BUL). (b) Quitar la comprobación DECIDED: perdería cobertura real en el resto del archivo. (c) Editar la tabla para que cuadre: falsea el dato de la fuente.
 
+
+
+## 2026-10-12 — D45 — S1 escaparate: SSG sin dependencias + slugs canónicos en español
+
+- **Contexto**: Fase S1 (escaparate) necesita páginas estáticas multilingües desde el catálogo y el release, sin build ni dependencias, con rutas SEO (`/{lang}/{sport}/{comp}/{year}`). Antes no existía URL generada ni menú derivado de datos; el catálogo solo tenía ids internos (sport+competition) sin slug público.
+- **Decisión**: Crear `core/site/` (SSG CommonJS sin dependencias: model, nav, routes, layout, templates, build) que genera `site/` en 5 idiomas + sitemap.xml + robots.txt. Navegación = función pura del catálogo (deportes→competiciones), sin listas a mano; añadir una competición cambia menú y sitemap de todo el sitio. Slugs canónicos en español (`slug` required en sports.json y fichas de competición) compartidos por los 5 idiomas; la web pública se sirve de releases/. Solo 1930 como página de edición (flags --competition/--years); el resto de ediciones se muestran pendientes. Clases nuevas en design/components.css con contrato verificado por tests/design.test.js.
+- **Alternativas descartadas**: Generar las páginas en runtime con JS/hash routing (v1): se descarta por SEO. Slugs por idioma: se descarta; la referencia es el español y requiere canonical/hreflang estables. Frameworks SSG (Astro/11ty): se descartan por la regla de cero dependencias y build en la web pública.

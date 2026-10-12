@@ -3,6 +3,7 @@
   "id": "football/balkancup",
   "sport": "football",
   "competition": "balkancup",
+  "slug": "copa-de-los-balcanes",
   "name": "Balkan Cup",
   "i18nKey": "comp.balkancup.name",
   "organizer": "—",

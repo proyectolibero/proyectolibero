@@ -4,7 +4,7 @@
   "title": "Ficha de competición del catálogo",
   "type": "object",
   "required": [
-    "schemaVersion", "id", "sport", "competition", "name", "i18nKey",
+    "schemaVersion", "id", "sport", "competition", "slug", "name", "i18nKey",
     "organizer", "kind", "scope", "teamMode", "resultArchetype", "cadence", "status",
     "firstEdition", "editions", "stages", "updatePolicy", "license", "sources"
   ],
@@ -14,6 +14,7 @@
     "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*/[a-z][a-z0-9-]*$" },
     "sport": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
     "competition": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "slug": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
     "name": { "type": "string", "minLength": 1 },
     "i18nKey": { "type": "string" },
     "organizer": { "type": "string" },

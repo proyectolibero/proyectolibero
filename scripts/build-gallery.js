@@ -3,19 +3,21 @@
 /*
  * Genera la galeria de desarrollo del sistema de diseno (S0).
  *   node scripts/build-gallery.js
- * Salida: site/_galeria/index.html
+ * Salida: design/galeria/index.html
  *
- * La galeria es estatica (sin build en produccion): los casos limite
- * repetitivos (ficha de 40 lineas, tabla de 12 filas, lista de 843
- * partidos) se generan aqui para no escribirlos a mano. El HTML
- * resultante se versiona y se lee sin JS.
+ * La galeria es estatica (sin build en produccion) y vive fuera del
+ * artefacto publicado (site/): no forma parte del escaparate. Los casos
+ * limite repetitivos (ficha de 40 lineas, tabla de 12 filas, lista larga
+ * de partidos) se generan aqui para no escribirlos a mano. La lista de
+ * partidos usa paginacion (60 por pagina) como patron de densidad. El
+ * HTML resultante se versiona y se lee sin JS.
  */
 
 const fs = require("node:fs");
 const path = require("node:path");
 
 const ROOT = path.resolve(__dirname, "..");
-const OUT = path.join(ROOT, "site", "_galeria", "index.html");
+const OUT = path.join(ROOT, "design", "galeria", "index.html");
 
 function esc(text) {
   return String(text)
@@ -174,9 +176,10 @@ ${rows}
       </ol>`;
 }
 
-/* ---------------------- Lista larga: 843 partidos ------------------------- */
+/* ---------------------- Lista larga: 150 partidos ------------------------- */
 
-const MATCH_COUNT = 843;
+const MATCH_COUNT = 150;
+const MATCH_PAGE = 60;
 
 function matches() {
   const rows = [];
@@ -184,23 +187,24 @@ function matches() {
     const year = 1930 + ((i - 1) % 25) * 4;
     const home = `Seleccion ${(i % 32) + 1}`;
     const away = `Seleccion ${((i + 7) % 32) + 1}`;
-    rows.push(`        <li class="lb-scorers__item" data-lb-filter-item>
+    rows.push(`        <li class="lb-scorers__item" data-lb-page-item>
           <span class="lb-scorers__rank">${i}</span>
           <span class="lb-scorers__name">${esc(home)} vs ${esc(away)}</span>
           <span class="lb-scorers__meta">${year}</span>
           <span class="lb-scorers__count">${i % 6}-${(i + 2) % 5}</span>
         </li>`);
   }
-  return `      <div class="lb-filter lb-needs-js">
-        <input class="lb-filter__input" type="search" placeholder="Filtrar partidos"
-          aria-label="Filtrar partidos" data-lb-filter data-lb-filter-target="#matches-list"
-          data-lb-filter-count="#matches-count">
-        <span class="lb-filter__count"><span id="matches-count">${MATCH_COUNT}</span> de ${MATCH_COUNT}</span>
-      </div>
-      <p class="lb-empty" hidden id="matches-empty">Sin partidos que coincidan.</p>
-      <ol class="lb-scorers" id="matches-list">
+  return `      <ol class="lb-scorers" id="matches-list">
 ${rows.join("\n")}
-      </ol>`;
+      </ol>
+      <div class="lb-pagination lb-needs-js">
+        <button class="lb-pagination__button" type="button"
+          data-lb-pagination data-lb-pagination-target="#matches-list"
+          data-lb-pagination-step="${MATCH_PAGE}"
+          data-lb-pagination-status="#matches-status"
+          data-lb-pagination-more="Cargar m\u00e1s" data-lb-pagination-end="No hay m\u00e1s">Cargar m\u00e1s</button>
+        <span class="lb-pagination__status" id="matches-status" aria-live="polite">${MATCH_PAGE} de ${MATCH_COUNT}</span>
+      </div>`;
 }
 
 /* ------------------------------ ResultCard -------------------------------- */
@@ -392,9 +396,9 @@ function page() {
   <title>Galeria del sistema de diseno \u00b7 Libero</title>
   <meta name="description" content="Galeria de desarrollo del sistema de diseno de Libero. No se publica.">
   <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="../../design/tokens.css">
-  <link rel="stylesheet" href="../../design/components.css">
-  <script defer src="../../design/behaviour.js"></script>
+  <link rel="stylesheet" href="../tokens.css">
+  <link rel="stylesheet" href="../components.css">
+  <script defer src="../behaviour.js"></script>
 </head>
 <body class="lb-gallery">
   <header class="lb-gallery__header">
@@ -405,7 +409,7 @@ function page() {
       <a href="#timeline">EditionTimeline</a>
       <a href="#standings">StandingsTable</a>
       <a href="#scorers">ScorerList</a>
-      <a href="#matches">843 partidos</a>
+      <a href="#matches">150 partidos (paginado)</a>
       <a href="#results">ResultCard</a>
       <a href="#medals">MedalCounter</a>
       <a href="#provenance">ProvenanceBadge</a>
@@ -448,7 +452,7 @@ ${scorers()}
 
     <section class="lb-gallery__item" id="matches">
       <h2 class="lb-gallery__label">ScorerList \u00b7 caso limite</h2>
-      <p class="lb-gallery__note">Lista de 843 partidos (densidad y rendimiento). Sin JS se lee completa.</p>
+      <p class="lb-gallery__note">Lista larga de ${MATCH_COUNT} partidos con paginacion (${MATCH_PAGE} por pagina, mejora progresiva). Sin JS se lee completa.</p>
 ${matches()}
     </section>
 
