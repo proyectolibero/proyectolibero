@@ -28,6 +28,15 @@
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
+    },
+    {
+      "id": "rsssf:intconcup99",
+      "name": "RSSSF — intconcup99",
+      "url": "https://www.rsssf.org/tablesi/intconcup99.html",
+      "retrieved": "2026-10-11",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
     }
   ],
   "asOf": "2026-10-07",
@@ -37,6 +46,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "MEX",
@@ -78,11 +88,11 @@
           "ga": 9,
           "pts": 2
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "BRA",
@@ -124,8 +134,7 @@
           "ga": 6,
           "pts": 0
         }
-      ],
-      "stage": "group"
+      ]
     }
   ],
   "matches": [
@@ -144,7 +153,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "25/07/1999, Ciudad de México, Estadio Azteca, 85.000 [14.30]\nMEXICO                 5-1           SAUDI ARABIA [HT 3-0]\nScorers:\nCuauhtémoc BLANCO   12'              Nawaf AL-TEMYAT 62'pen\nCuauhtémoc BLANCO   19'\nJosé Manuel ABUNDIS 21'\nCuauhtémoc BLANCO   68'\nCuauhtémoc BLANCO   77'\nMexico:                              Saudi Arabia:\n1-Jorge CAMPOS                       1-Mohammed AL-DEAYEA [c]\n2-Claudio SUÁREZ                     2-Mohammed AL-JAHANI\n4-Rafael MÁRQUEZ                     3-Mohammed AL-KHILAIWI\n6-Germán VILLA                       5-Saleh AL-DAWOD\n8-Alberto GARCÍA ASPE [c]            6-Ibrahim AL-HARBI\n9-José Manuel ABUNDIS                7-Ibrahim AL-SHAHRANI\n10-Cuauhtémoc BLANCO                 13-Hussein SULIMANI\n13-Pavel PARDO                       15-Fahad AL-SUBAIE\n17-Juan Francisco PALENCIA           18-Nawaf AL-TEMYAT\n18-Salvador CARMONA                  19-Hamzah FLATAH\n19-Miguel ZEPEDA                     20-Mohsin HARTHI\nSubs Used:\n14-Isaac TERRAZAS [<17] 80'          14-Abdullah BIN SHEHAN          [<18] 84'\n16-Jesús ARELLANO [<19] 46'          17-Abdullah Alwaked AL-SHAHRANI [<7]  84'\n20-Rafael GARCÍA  [<8]  65'\nCoaches:\nManuel LAPUENTE                      Milan MACALA\nCards:\nReferee:      Oscar RUÍZ Acosta  [COLOMBIA]\nAssistants:   Bomer FIERRO       [ECUADOR]\nManuel NEIRA CHANG [PERU]",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -161,7 +175,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "25/07/1999, Ciudad de México, Estadio Azteca, 85.000 [12.00]\nBOLIVIA                2-2           EGYPT [HT 2-1]\nScorers:\nLimberg GUTIÉRREZ 21'                Abdel Sattar SABRY    8'\nReny RIBERA       40'                Yasser RADWAN        63'\nBolivia:                             Egypt:\n1-José FERNÁNDEZ                    16-Essam EL-HADRY\n2-Juan Manuel PEÑA                   2-Ibrahim HASSAN\n3-Ronald ARANA                       4-Hany RAMZY\n7-Limberg GUTIÉRREZ                  6-Medhat ABDEL HADY\n8-Ruben TUFIÑO                       7-Mohamed YOUSSEF\n11-Gonzalo GALINDO                    8-Yasser RADWAN\n13-Joaquín BOTERO                     9-Hossam HASSAN [c]\n14-Erwin SÁNCHEZ [c]                 10-Abdel SABRY\n17-Raúl JUSTINIANO                   14-Hazem EMAM\n19-Iván CASTILLO                     15-Abdel EL-SAQQA\n20-Reny RIBERA                       17-Ahmed HASSAN\nSubs Used:\n10-Marco ETCHEVERRY [<7]  71'        12-Hady KHASHABA       [<14] 84'\n16-Vladimir SORÍA   [<11] 60'        13-Abdelhamed BASYOUNY [<9]  61'\n15-Martin MENACHO   [<13] 46'        19-Khaled AL-AMIN      [<10] 75'\nCoaches:\nHéctor VEIRA                         Mahmoud EL-GOHARY\nCards:\nReferee:      Anders FRISK            [SWEDEN]\nAssistants:   Fernando Tresaco GARCÍA [SPAIN]\nAwni HASSOUNEH          [JORDAN]",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -178,7 +197,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "27/07/1999, Ciudad de México, Estadio Azteca, 65.000 [18.00]\nBOLIVIA                0-0           SAUDI ARABIA [HT 0-0]\nBolivia:                             Saudi Arabia:\n1-José FERNÁNDEZ                     1-Mohammed AL-DEAYEA [c]\n3-Ronald ARANA                       2-Mohammed AL-JAHANI\n4-Lorgio ALVÁREZ                     3-Mohammed AL-KHILAIWI\n5-Oscar SÁNCHEZ                      5-Saleh AL-DAWOD\n8-Ruben TUFIÑO                       6-Ibrahim AL-HARBI\n9-Jaime MORENO                       7-Ibrahim AL-SHAHRANI\n10-Marco ETCHEVERRY                  13-Hussein SULIMANI\n14-Erwin SÁNCHEZ [c]                 15-Fahad AL-SUBAIE\n15-Martin MENACHO                    18-Nawaf AL-TEMYAT\n16-Vladimir SORÍA                    19-Hamzah FALATAH\n20-Reny RIBERA                       20-Mohsin HARTHI\nSubs Used:\n7-Limberg GUTIÉRREZ [<14] 46'        9-Marzouq AL-OTAIBI            [<19] 46'\n11-Gonzalo GALINDO   [<10] 53'       14-Abdullah BIN SHEEHAN         [<18] 79'\n13-Joaquín BOTERO    [<9]  73'       17-Abdullah Alwaked AL-SHAHRANI [<2]  66'\nCoaches:\nMilan MACALA                         Héctor VEIRA\nCards:\nMarco ETCHEVERRY  [Y 19']            Fahad AL-SUBAIE              [Y 52']\nRuben TUFIÑO      [Y 22']            Saleh AL-DAWOD               [Y 57']\nLimberg GUTIÉRREZ [Y 70']            Abdullah Alwaked AL-SHAHRANI [Y 71']\nReferee:      Brian HALL              [USA]\nAssistants:   Suresh BEHARI           [FIJI]\nFernando Tresaco GARCÍA [SPAIN]",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -195,7 +219,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "27/07/1999, Ciudad de México, Estadio Azteca, 65.000 [20.30]\nMEXICO                 2-2           EGYPT [HT 2-0]\nScorers:\nPavel PARDO         15'              Ahmed HASSAN  79'\nJosé Manuel ABUNDIS 26'              Samir IBRAHIM 85'\nMexico:                              Egypt:\n1-Jorge CAMPOS                      16-Essam EL-HADRY\n2-Claudio SUÁREZ [c]                 2-Ibrahim HASSAN [c]\n4-Rafael MÁRQUEZ                     4-Hany RAMZY\n6-Germán VILLA                       5-Samir IBRAHIM\n7-Ramón RAMÍREZ                      6-Medhat ABDEL HADY\n9-José Manuel ABUNDIS                7-Mohamed YOUSSEF\n10-Cuauhtémoc BLANCO                  8-Yasser RADWAN\n13-Pavel PARDO                       10-Abdel Sattar SABRY\n17-Juan Francisco PALENCIA           14-Hazem EMAM\n18-Salvador CARMONA                  15-Abdel EL-SAQQA\n20-Rafael GARCÍA                     17-Ahmed HASSAN\nSubs Used:\n8-Alberto GARCÍA ASPE [<9]  55'\nCoaches:\nManuel LAPUENTE                      Mahmoud EL-GOHARY\nCards:\nAlberto GARCÍA ASPE [Y 77']          Yasser RADWAN [Y 30'][YR 64']\nAhmed HASSAN  [Y 89']\nReferee:      YOUNG-JOO Kim      [SOUTH KOREA]\nAssistants:   Manuel NEIRA CHANG [PERU]\nBomer FIERRO       [ECUADOR]",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -212,7 +241,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "29/07/1999, Ciudad de México, Estadio Azteca, 15.000 [18.00]\nSAUDI ARABIA           5-1           EGYPT [HT 2-0]\nScorers:\nMarzouq AL-OTAIBI    8'              Samir IBRAHIM 70'pen\nMarzouq AL-OTAIBI   34'\nIbrahim AL-SHAHRANI 64'\nMarzouq AL-OTAIBI   78'\nMarzouq AL-OTAIBI   85'\nSaudi Arabia:                        Egypt:\n1-Mohammed AL-DEAYEA [c]            16-Essam EL-HADRY\n2-Mohammed AL-JAHANI                 2-Ibrahim HASSAN [c]\n4-Abdullah Sulaiman ZUBROMAWI        4-Hany RAMZY\n5-Saleh AL-DAWOD                     5-Samir IBRAHIM\n6-Ibrahim AL-HARBI                   6-Medhat ABDEL HADY\n7-Ibrahim AL-SHAHRANI                7-Mohamed YOUSSEF\n9-Marzouq AL-OTAIBI                 10-Abdel Sattar SABRY\n13-Hussein SULIMANI                  11-Yasser RAYYAN\n15-Fahad AL-SUBAIE                   14-Hazem EMAM\n18-Nawaf AL-TEMYAT                   15-Abdel EL-SAQQA\n20-Mohsin HARTHI                     17-Ahmed HASSAN\nSubs Used:\n10-Khaled GAHWJI        [<2]  83'    13-Abdelhamid BASYOUNY [<15] 43'\n14-Abdullah BIN SHEHAN  [<18] 46'    19-Khaled AL-AMIN      [<17] 55'\n17-Abdullah AL-SHAHRANI [<6]  65'    20-Salah El Din WALID  [<11] 65'\nCoaches:\nMilan MACALA                         Mahmoud EL-GOHARY\nCards:\nNawaf AL-TEMYAT      [Y 12']         Abdel Sattar SABRY [R 28']\nAbdullah AL-SHAHRANI [Y 90']         Hazem EMAM         [Y 36'][YR 37']\nSamir IBRAHIM      [Y 80']\nSalah El Din WALID [Y 84']\nReferee:      Ubaldo AQUINO      [PARAGUAY]\nAssistants:   Bomer FIERRO       [ECUADOR]\nManuel NEIRA CHANG [PERU]",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -229,7 +263,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "29/07/1999, Ciudad de México, Estadio Azteca, 55.000 [20.30]\nMEXICO                 1-0           BOLIVIA [HT 0-0]\nScorer:\nJuan Francisco PALENCIA 52'\nMexico:                              Bolivia:\n1-Jorge CAMPOS                       1-José FERNÁNDEZ\n2-Claudio SUÁREZ [c]                 3-Ronald ARANA\n4-Rafael MÁRQUEZ                     5-Oscar SÁNCHEZ\n6-Germán VILLA                       6-Luis CRISTALDO\n7-Ramón RAMÍREZ                      8-Rubén TUFIÑO\n10-Cuauhtémoc BLANCO                  9-Jaime MORENO\n13-Pavel PARDO                       14-Erwin SÁNCHEZ [c]\n15-Luis HERNÁNDEZ                    15-Martin MENACHO\n17-Juan Francisco PALENCIA           16-Vladimir SORÍA\n18-Salvador CARMONA                  19-Iván CASTILLO\n19-Miguel ZEPEDA                     20-Reny RIBERA\nSubs Used:\n9-José Manuel ABUNDIS [<15] 22'      7-Limberg GUTIÉRREZ [<16] 46'\n16-Jesús ARELLANO      [<6]  65'     15-Marco ETCHEVERRY  [<15] 66'\n13-Joaquín BOTERO    [<9]  78'\nCoaches:\nManuel LAPUENTE                      Héctor VEIRA\nCards:\nGermán VILLA        [Y 58']          Martin MENACHO [Y 41']\nMiguel ZEPEDA       [Y 68']          Erwin SÁNCHEZ  [Y 60']\nJosé Manuel ABUNDIS [Y 80']          Ruben TUFIÑO   [Y 80']\nReferee:      Oscar RUÍZ Acosta       [COLOMBIA]\nAssistants:   Fernando Tresaco GARCÍA [SPAIN]\nSuresh BEHARI           [FIJI]",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -246,7 +285,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "24/07/1999, Guadalajara, Estadio Jalisco, 60.000 [12.00]\nBRAZIL                 4-0           GERMANY [HT 0-0]\nScorers:\nZÉ ROBERTO 62'\nRONALDINHO 72'pen\nALEX       86'\nALEX       87'\nBrazil:                              Germany:\n1-DIDA                               1-Jens LEHMANN\n2-EVANILSON                          2-Christian WORNS\n3-ODVAN                              3-Jorg HEINRICH\n4-JOAO CARLOS                        4-Thomas LINKE\n5-FLAVIO CONCEICAO                   7-Mehmet SCHOLL\n6-SERGINHO                           8-Dariusz WOSZ\n7-RONALDINHO                        10-Lothar MATTHAUS [c]\n8-EMERSON [c]                       11-Michael PREETZ\n9-CHRISTIAN                         13-Oliver NEUVILLE\n11-ZÉ ROBERT                         15-Michael BALLACK\n20-VAMPETA                           18-Lars RICKEN\nSubs Used:\n10-ALEX   [<9]  62'                   6-Ronald MAUL    [<3]  73'\n17-BETO   [<11] 82'                   9-Olaf MARSCHALL [<11] 70'\n19-WARLEY [<5]  62'                  17-Heiko GERBER   [<13] 78'\nCoaches:\nWanderley LUXEMBURGO                 Erich RIBBECK\nCards:\nEMERSON [Y 12']                      Mehmet SCHOLL [Y 9']\nVAMPETA [Y 17']\nReferee:      Gilberto ALCALA   [MEXICO]\nAssistants:   Vladimir BERTIAGA [PANAMA]\nPeter KELLY       [TRINIDAD/TOBAGO]",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -263,7 +307,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "24/07/1999, Guadalajara, Estadio Jalisco, 65.000 [14.30]\nNEW ZEALAND            1-2           USA [HT 0-1]\nScorers:\nChris ZORICICH 90+3'                 Brian MCBRIDE  25'\nJovan KIROVSKI 58'\nNew Zealand:                         USA:\n1-Jason BATTY                       18-Kasey KELLER [c]\n2-Chris ZORICICH [c]                 4-Robin FRASER\n3-Sean DOUGLAS                      12-Jeff AGOOS\n6-Gavin WILKINSON                   15-Richard WILLIAMS\n7-Mark BURTON                       16-Carlos LLAMOSA\n8-Aaran LINES                        6-John HARKES\n10-Chris JACKSON                      7-Eddie LEWIS\n12-Mark ATKINSON                      8-Earnie STEWART\n13-Chris BOUCKENOOGHE                13-Cobi JONES\n15-Ivan VICELICH                     10-Jovan KIROVSKI\n16-Vaughan COVENY                    20-Brian MCBRIDE\nSubs Used:\n14-Ryan NELSON [<12] 57'              2-Frankie HEJDUK [<7]  77'\n17-Mark ELRICH [<16] 63'              9-Joe-Max MOORE  [<13] 82'\n18-Scott SMITH [<3]  73'             19-Ben OLSEN      [<8]  73'\nCoaches:\nKen DUGDALE                          Bruce ARENA\nCards:\nVaughan COVENY [Y 32']\nReferee:      Ubaldo AQUINO      [PARAGUAY]\nAssistants:   Suresh BEHARI      [FIJI]\nDomingos PIQUENINO [MOZAMBIQUE]",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -280,7 +329,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "28/07/1999, Guadalajara, Estadio Jalisco, 42.000 [18.00]\nGERMANY                2-0           NEW ZEALAND [HT 2-0]\nScorers:\nMichael PREETZ   6'\nLothar MATTHAUS 33'\nGermany:                             New Zealand:\n1-Jens LEHMANN                       1-Jason BATTY\n2-Christian WORNS                    2-Chris ZORICICH [c]\n3-Jorg HEINRICH                      3-Sean DOUGLAS\n4-Thomas LINKE                       6-Gavin WILKINSON\n16-Bernd SCHNEIDER                    7-Mark BURTON\n7-Mehmet SCHOLL                      8-Aaran LINES\n10-Lothar MATTHAUS [c]               10-Chris JACKSON\n18-Lars RICKEN                       12-Mark ATKINSON\n9-Olaf MARSCHALL                    13-Chris BOUCKENOOGHE\n11-Michael PREETZ                    14-Ryan NELSON\n13-Oliver NEUVILLE                   15-Ivan VICELICH\nSubs Used:\n8-Dariusz WOSZ    [<7]  46'          5-Jonathan PERRY  [<2]  78'\n15-Michael BALLACK [<10] 70'         16-Vaughan CONVENY [<10] 62'\n20-Paulo RINK      [<9]  64'         17-Mark ELRICK     [<7]  78'\nCoaches:\nErich RIBBECK                        Ken DUGDALE\nCards:\nOlaf MARSCHALL  [Y 19']\nLothar MATTHAUS [Y 47']\nReferee:      Coffi CODJA       [BENIN]\nAssistants:   Peter KELLY       [TRINIDAD/TOBAGO]\nVladimir BERTIAGA [PANAMA]",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -297,7 +351,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "28/07/1999, Guadalajara, Estadio Jalisco, 54.000 [20.30]\nBRAZIL                 1-0           USA [HT 1-0]\nScorer:\nRONALDINHO 13'\nBrazil:                              USA:\n1-DIDA                              18-Kasey KELLER [c]\n2-EVANILSON                          2-Frankie HEJDUK\n3-ODVAN                              3-Gregg BERHALTER\n4-JOAO CARLOS                        4-Robin FRASER\n5-FLAVIO CONCEICAO                  12-Jeff AGOOS\n6-SERGINHO                          16-Carlos LLAMOSA\n7-RONALDINHO                         6-John HARKES\n8-EMERSON [c]                        8-Earnie STEWART\n9-CHRISTIAN                         13-Cobi JONES\n11-ZÉ ROBERTO                        10-Jovan KIROVSKI\n20-VAMPETA                           20-Brian MCBRIDE\nSubs Used:\n10-ALEX   [<5]  78'                   7-Eddie LEWIS   [<16] 78'\n17-BETO   [<7]  80'                   9-Joe-Max MOORE [<6]  58'\n19-WARLEY [<9]  46'\nCoaches:\nWanderley LUXEMBURGO                 Bruce ARENA\nCards:\nEMERSON [Y 90+2']                    Gregg BERHALTER [Y 6']\nCarlos LLAMOSA  [Y 35']\nRobin FRASER    [Y 61']\nReferee:      Anders FRISK       [SWEDEN]\nAssistants:   Domingos PIQUENINO [MOZAMBIQUE]\nAwni HASSOUNEH     [JORDAN]",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -314,7 +373,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "30/07/1999, Guadalajara, Estadio Jalisco, 53.000 [18.00]\nUSA                    2-0           GERMANY [HT 1-0]\nScorers:\nBen OLSEN     23'\nJoe-Max MOORE 50'\nUSA:                                 Germany:\n1-Brad FRIEDEL [c]                   1-Jens LEHMANN\n2-Frankie HEJDUK                     2-Christian WORNS\n5-CJ BROWN                           3-Jorg HEINRICH\n12-Jeff AGOOS                         4-Thomas LINKE\n17-Marcelo BALBOA                    16-Bernd SCHNEIDER\n7-Eddie LEWIS                        8-Darius WOSZ\n11-Paul BRAVO                        10-Lothar MATTHAUS [c]\n14-Matt MCKEON                       17-Heiko GERBER\n15-Richard WILLIAMS                  19-Horst HELDT\n19-Ben OLSEN                         11-Michael PREETZ\n9-Joe-Max MOORE                     13-Oliver NEUVILLE\nSubs Used:\n8-Earnie STEWART [<19] 65'           5-Mustafa DOGAN [<3]  41'\n10-Jovan KIROVSKI [<9]  82'           6-Ronald MAUL   [<17] 76'\n20-Brian MCBRIDE  [<11] 77'          20-Paulo RINK    [<19] 60'\nCoaches:\nBruce ARENA                          Erich RIBBECK\nCards:\nBen OLSEN      [Y 33']               Heiko GERBER    [Y 60']\nFrankie HEJDUK [Y 39']               Christian WORNS [Y 75']\nJeff AGOOS     [Y 45+2']             Lothar MATTHAUS [Y 81']\nPaulo RINK      [Y 90+2']\nReferee:      Gilberto ALCALA    [MEXICO]\nAssistants:   Awni HASSOUNEH     [JORDAN]\nDomingos PIQUENINO [MOZAMBIQUE]",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -331,7 +395,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "30/07/1999, Guadalajara, Estadio Jalisco, 53.000 [20.30]\nNEW ZEALAND            0-2           BRAZIL [HT 0-1]\nScorers:\nMARCOS PAULO 45+2'\nRONALDINHO   88'\nNew Zealand:                         Brazil:\n1-Jason BATTY                        1-DIDA\n2-Chris ZORICICH [c]                 2-EVANILSON\n3-Sean DOUGLAS                       5-FLAVIO CONCEICAO [c]\n4-Che BUNCE                         13-CÉSAR BELLI\n7-Mark BURTON                       14-LUIZ ALBERTO\n8-Aaran LINES                       15-MARCOS PAULO\n10-Chris JACKSON                     16-ATHIRSON\n11-Harry NGATA                       17-BETO\n12-Mark ATKINSON                     19-WARLEY\n13-Chris BOUCKENOOGHE                 9-CHRISTIAN\n14-Ryan NELSEN                       10-ALEX\nSubs Used:\n5-Jonathan PERRY [<10] 85'           7-RONALDINHO [<9]  64'\n15-Ivan VICELICH  [<4]  82'          18-RONI       [<15] 56'\n16-Vaughan COVENY [<11] 66'\nCoaches:\nKen DUGDALE                          Wanderley LUXEMBURGO\nCards:\nChris JACKSON [Y 27']\nRyan NELSEN   [Y 81']\nReferee:      YOUNG-JOO Kim     [SOUTH KOREA]\nAssistants:   Vladimir BERTIAGA [PANAMA]\nPeter KELLY       [TRINIDAD/TOBAGO]\nSEMI FINALS",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -348,7 +417,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "01/08/1999, Guadalajara, Estadio Jalisco, 48.000 [15.00]\nBRAZIL                 8-2           SAUDI ARABIA [HT 4-2]\nScorers:\nJOAO CARLOS  8'                      Marzouq AL-OTAIBI 22'\nRONALDINHO  11'                      Marzouq AL-OTAIBI 31'\nZÉ ROBERTO  33'\nALEX        36'\nRONI        62'\nRONALDINHO  65'\nALEX        86'\nRONALDINHO  90+2'\nBrazil:                              Saudi Arabia:\n1-DIDA                               1-Mohammed AL-DEAYEA [c]\n2-EVANILSON                          3-Mohammed AL-KHILAIWI\n3-ODVAN                              4-Abdullah Sulaiman ZUBROMAWI\n4-JOAO CARLOS                        5-Saleh AL-DAWOD\n6-SERGINHO                           6-Ibrahim AL-HARBI\n7-RONALDINHO                         7-Ibrahim AL-SHAHRANI\n8-EMERSON [c]                        9-Marzouq AL-OTAIBI\n9-CHRISTIAN                         13-Hussein SULIMANI\n10-ALEX                              15-Fahad AL-SUBAIE\n11-ZÉ ROBERTO                        18-Nawaf AL-TEMYAT\n20-VAMPETA                           20-Mohsin HARTHI\nSubs Used:\n5-Flavio CONCEICAO [<2]  16'         2-Mohammed AL-JAHANI [<7]  43'\n17-BETO             [<8]  72'         8-Mohammed NOOR      [<4]  64'\n18-RONI             [<9]  46'\nCoaches:\nWanderley LUXEMBURGO                 Milan MACALA\nCards:\nVAMPETA [Y 37']                      Ibrahim AL-SHAHRANI [Y 39']\nRONI    [Y 68']                      Marzouq AL-OTAIBI   [Y 55']\nMohammed NOOR       [Y 69']\nFahad AL-SUBAIE     [Y 81']\nReferee:      Oscar RUÍZ Acosta  [COLOMBIA]\nAssistants:   Domingos PIQUENINO [MOZAMBIQUE]\nSuresh BEHARI      [FIJI]",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -365,7 +439,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "01/08/1999, Ciudad de México, Estadio Azteca, 82.000 [12.00]\nMEXICO                 1-0           USA [HT 0-0][FT 0-0] ASDET\nScorer:\nCuauhtémoc BLANCO 97'\nMexico:                              USA:\n1-Jorge CAMPOS                      18-Kasey KELLER [c]\n2-Claudio SUÁREZ [c]                 2-Frankie HEJDUK\n4-Rafael MÁRQUEZ                     3-Gregg BERHALTER\n5-Gerardo TORRADO                    4-Robin FRASER\n18-Salvador CARMONA                  12-Jeff AGOOS\n6-Germán VILLA                       6-John HARKES\n7-Ramón RAMÍREZ                      8-Earnie STEWART\n13-Pavel PARDO                       13-Cobi JONES\n14-Isaac TERRAZAS                    15-Richard WILLIAMS\n9-José Manuel ABUNDIS               10-Jovan KIROVSKI\n10-Cuauhtemoc BLANCO                 20-Brian MCBRIDE\nSubs Used:\n16-Jesús ARELLANO          [<7]  72'  7-Eddie LEWIS [<20]  78'\n17-Juan Francisco PALENCIA [<14] 46'\n19-Miguel ZEPEDA           [<5]  78'\nCoaches:\nManuel LAPUENTE                      Bruce ARENA\nCards:\nCuauhtémoc BLANCO [Y 57']            John HARKES  [Y 41']\nRobin FRASER [Y 60']\nReferee:      YOUNG-JOO Kim     [SOUTH KOREA]\nAssistants:   Vladimir BERTIAGA [PANAMA]\nBomer FIERRO      [ECUADOR]",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
@@ -382,7 +461,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "03/08/1999, Guadalajara, Estadio Jalisco, 38.000 [21.00]\nUSA                    2-0           SAUDI ARABIA [HT 1-0]\nScorers:\nPaul BRAVO    27'\nBrian MCBRIDE 78'\nUSA:                                 Saudi Arabia:\n1-Brad FRIEDEL [c]                   1-Mohammed AL-DEAYEA [c]\n2-Frankie HEJDUK                     2-Mohammed AL-JAHANI\n3-Gregg BERHALTER                    3-Mohammed AL-KHILAIWI\n5-CJ BROWN                           4-Abdullah Sulaiman ZUBROMAWI\n17-Marcelo BALBOA                     6-Ibrahim AL-HARBI\n14-Matt MCKEON                       13-Hussein SULIMANI\n7-Eddie LEWIS                       14-Abdullah BIN SHEHAN\n11-Paul BRAVO                        17-Abdullah Alwaked AL-SHAHRANI\n19-Ben OLSEN                         18-Nawaf AL-TEMYAT\n10-Jovan KIROVSKI                    20-Mohsin HARTHI\n20-Brian MCBRIDE                      9-Marzouq AL-OTAIBI\nSubs Used:\n4-Robin FRASER     [<3]  74'        10-Khaled GAHWJI   [<6]  68'\n13-Cobi JONES       [<11] 55'        15-Fahad AL-SUBAUE [<2]  58'\n15-Richard WILLIAMS [<10] 67'\nCoaches:\nBruce ARENA                          Milan MACALA\nCards:\nPaul BRAVO     [Y 8']                Abdullah BIN SHEHAN [Y 24']\nCJ BROWN       [Y 25']               Nawaf AL-TEMYAT     [Y 25']\nFrankie HEJDUK [Y 42']\nMatt MCKEON    [Y 55'][YR 63']\nReferee:      Ubaldo AQUINO      [PARAGUAY]\nAssistants:   Manuel NEIRA CHANG [PERU]\nPeter KELLY        [TRINIDAD/TOBAGO]",
+        "lang": "en"
+      }
     },
     {
       "id": "m016",
@@ -399,7 +483,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup99",
+        "text": "04/08/1999, Ciudad de México, Estadio Azteca, 110.000 [21.00]\nMEXICO                 4-3           BRAZIL [HT 2-1]\nScorers:\nMiguel ZEPEDA       13'              SERGINHO   43'pen\nJosé Manuel ABUNDIS 28'              RONI       47'\nMiguel ZEPEDA       51'              ZÉ ROBERTO 63'\nCuauhtémoc BLANCO   62'\nMexico:                              Brazil:\n1-Jorge CAMPOS                       1-DIDA\n2-Claudio SUÁREZ [c]                 3-ODVAN\n4-Rafael MÁRQUEZ                     4-JOAO CARLOS\n13-Pavel PARDO                        5-FLAVIO CONCEICAO\n18-Salvador CARMONA                  17-BETO\n6-Germán VILLA                       6-SERGINHO\n7-Ramón RAMIREZ                      7-RONALDINHO\n19-Miguel ZEPEDA                      8-EMERSON [c]\n9-José Manuel ABUNDIS               10-ALEX\n10-Cuauhtémoc BLANCO                 11-ZÉ ROBERTO\n17-Juan Francisco PALENCIA           20-VAMPETA\nSubs Used:\n14-Isaac TERRAZAS [<17] 70'          18-RONI   [<17] 46'\n16-Jesús ARELLANO [<19] 83'          19-WARLEY [<11] 82'\nCoaches:\nManuel LAPUENTE                      Wanderley LUXEMBURGO\nCards:\nJosé Manuel ABUNDIS [Y 11']          ZÉ ROBERTO  [Y 5']\nRafael MÁRQUEZ      [Y 21']          JOAO CARLOS [Y 46'][YR 90+2']\nCuauhtémoc BLANCO   [Y 50']\nClaudio SUÁREZ      [Y 74']\nReferee:    Anders FRISK            [SWEDEN]\nAssistants: Fernando Tresaco GARCÍA [SPAIN]\nAwni HASSOUNEH          [JORDAN]",
+        "lang": "en"
+      }
     }
   ],
   "scorers": [],

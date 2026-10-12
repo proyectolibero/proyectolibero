@@ -224,14 +224,14 @@
     },
     {
       "path": "data/football/intconcup/1997.json",
-      "sha256": "ac93fffcd2e3300376a941495c50cd3d4b52e360e8d5a6d4d650a62c41d46ebe",
+      "sha256": "4eb5370bb562f75119861f4e6dffc984be39bf3d1457932412b2f1e29153670f",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1997
     },
     {
       "path": "data/football/intconcup/1999.json",
-      "sha256": "948ba0e4a97534ed161def1cebe1e0983a9c56ceba9fd0d5df7703dacfa24948",
+      "sha256": "7b535a4b796c233bf434f1fa686fdfce66a7cc37b89c003724e47c994217178a",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 1999
@@ -538,7 +538,7 @@
       "edition": 2026
     }
   ],
-  "checksum": "6adc132c27ea5f5d5e7fd398d92f5f1dbfc984f26c5d0650e1fd3fe50b4466d8",
+  "checksum": "a7979696ec42939582f17aa20adc50d32015f0f6c50ef03ee16dd7c059c1b511",
   "dataset": {
     "sports": 4,
     "competitions": 5,
@@ -1154,6 +1154,18 @@
         "name": "RSSSF — intconcup95",
         "url": "https://www.rsssf.org/tablesi/intconcup95.html",
         "retrieved": "2026-10-07"
+      },
+      {
+        "source": "rsssf:intconcup97",
+        "name": "RSSSF — intconcup97",
+        "url": "https://www.rsssf.org/tablesi/intconcup97.html",
+        "retrieved": "2026-10-11"
+      },
+      {
+        "source": "rsssf:intconcup99",
+        "name": "RSSSF — intconcup99",
+        "url": "https://www.rsssf.org/tablesi/intconcup99.html",
+        "retrieved": "2026-10-11"
       },
       {
         "source": "rsssf:nord2001",

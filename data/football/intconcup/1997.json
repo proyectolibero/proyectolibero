@@ -28,6 +28,15 @@
       "publisher": "RSSSF",
       "license": "rsssf-attribution",
       "redistribute": true
+    },
+    {
+      "id": "rsssf:intconcup97",
+      "name": "RSSSF — intconcup97",
+      "url": "https://www.rsssf.org/tablesi/intconcup97.html",
+      "retrieved": "2026-10-11",
+      "publisher": "RSSSF",
+      "license": "rsssf-attribution",
+      "redistribute": true
     }
   ],
   "asOf": "2026-10-07",
@@ -37,6 +46,7 @@
   "groups": [
     {
       "letter": "A",
+      "stage": "group",
       "standings": [
         {
           "team": "BRA",
@@ -78,11 +88,11 @@
           "ga": 8,
           "pts": 3
         }
-      ],
-      "stage": "group"
+      ]
     },
     {
       "letter": "B",
+      "stage": "group",
       "standings": [
         {
           "team": "URU",
@@ -124,8 +134,7 @@
           "ga": 7,
           "pts": 1
         }
-      ],
-      "stage": "group"
+      ]
     }
   ],
   "matches": [
@@ -144,7 +153,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "12/12/1997, Riyadh, King Fadh Stadium, 45.000 [16.15]\nBRAZIL                 3-0           SAUDI ARABIA [HT 0-0]\nScorers:\nCESAR SAMPAIO 65'\nROMARIO       73'\nROMARIO       80'\nBrazil:                              Saudi Arabia:\n1-DIDA                               1-Mohammed AL-DEAYEA\n2-CAFU                               2-Mohammed AL-JAHANI\n3-ALDAIR                             3-Mohammed AL-KHILAIWI\n4-JUNIOR BAIANO                      4-Abdullah Sulaiman ZUBROMAWI\n16-CESAR SAMPAIO                      6-Ibrahim AL-HARBI\n8-FLAVIO CONCEICAO                  13-Hussein SULIMANI\n10-LEONARDO [c]                      14-Khalid AL-MUWALLID [c]\n15-ZÉ ROBERTO                        16-Khamis Alowairan AL-DOSSARI\n18-DENILSON                           9-Sami AL-JABER\n9-RONALDO                           10-Saeed OWAIRAN\n11-ROMARIO                           11-Fahad MEHALEL\nSubs Used:\n19-JUNINHO PAULISTA [<10] 72'         8-Khalid AL-TEMAWI    [<10] 44'\n20-RIVALDO          [<18] 73'         7-Ibrahim AL-SHAHRANI [<11] 63'\n13-ZÉ MARIA         [<2]  75'\nCoaches:\nMario ZAGALLO                        Otto PFISTER\nCards:\nCAFU [Y 72']                         Abdullah Sulaiman ZUBROMAWI [Y 28'][R 64']\nReferee:      Nikolai LEVNIKOV   [RUSSIA]\nAssistants:   Jacques POUDEVIGNE [FRANCE]\nLencie FRED        [VANUATU]",
+        "lang": "en"
+      }
     },
     {
       "id": "m002",
@@ -161,7 +175,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "12/12/1997, Riyadh, King Fahd Stadium, 15.000 [19.00]\nAUSTRALIA              3-1           MEXICO [HT 1-0]\nScorers:\nMark VIDUKA 45'                      Luis HERNANDEZ 80'pen\nJohn ALOISI 59'\nDamian MORI 90'\nAustralia:                           Mexico:\n20-Zeljko KALAC                       1-Oswaldo SÁNCHEZ\n2-Steve HORVAT                       2-Claudio SUÁREZ [c]\n3-Stan LAZARIDIS                     3-José Francisco GABRIEL\n5-Alex TOBIN [c]                     6-Raúl Rodrigo LARA\n6-Ned ZELIC                          8-Braulio LUNA\n7-Robbie SLATER                      7-Jesús Ramón RAMÍREZ\n8-Craig FOSTER                      13-Pavel PARDO\n9-Mark VIDUKA                       14-Isaac TERRAZAS\n10-Aurelio VIDMAR                    20-José Manuel ABUNDIS\n14-Tony VIDMAR                        9-Paulo César CHÁVEZ\n18-John ALOISI                       11-Cuauhtemoc BLANCO\nSubs Used:\n13-Robert HOOKER [<10] 46'           10-Luis GARCÍA      [<9]  46'\n17-Damian MORI   [<9]  73'           15-Luis HERNÁNDEZ   [<3]  63'\n19-Ernest TAPAI  [<7]  78'           18-Salvador CARMONA [<14] 66'\nCoaches:\nTerry VENABLES                       Manuel LAPUENTE\nCards:\nNed ZELIC     [Y 64']\nRobbie SLATER [Y 77']\nZeljko KALAC  [Y 80']\nReferee:      Pirom UN-PRASERT     [THAILAND]\nAssistants:   Mohamed AL-MUSAWI    [OMAN]\nKomaleeswaran SANKAR [INDIA]",
+        "lang": "en"
+      }
     },
     {
       "id": "m003",
@@ -178,7 +197,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "14/12/1997, Riyadh, King Fahd Stadium, 15.000 [17.50]\nSAUDI ARABIA           0-5           MEXICO [HT 0-1]\nScorers:\nJuan Francisco PALENCIA 20'\nJuan Francisco PALENCIA 62'\nCuauhtemoc BLANCO       68'\nBraulio LUNA            75'\nCuauhtemoc BLANCO       76'\nSaudi Arabia:                        Mexico:\n1-Mohammed AL-DEAYEA                 1-Oswaldo SÁNCHEZ\n2-Mohammed AL-JAHANI                 2-Claudio SUÁREZ [c]\n3-Mohammed AL-KHILAIWI               4-Germán VILLA\n13-Hussein SULIMANI                   5-Duilio DAVINO\n17-Mohammad AL-SAHAFI                 6-Raúl Rodrigo LARA\n6-Ibrahim AL-HARBI                   8-Braulio LUNA\n14-Khalid AL-MUWALLID [c]            13-Pavel PARDO\n16-Khamis Alowairan AL-DOSSARI       17-Juan Francisco PALENCIA\n9-Sami AL-JABER                     18-Salvador CARMONA\n10-Saeed OWAIRAN                      9-Paulo César CHAVEZ\n11-Fahad MEHALEL                     11-Cuauhtemoc BLANCO\nSubs Used:\n8-Khalid AL-TEMAWI [<10] 65'        15-Luis HERNÁNDEZ [<8]  46'\n16-Markus LÓPEZ   [<6]  56'\nCoaches:\nOtto PFISTER                         Manuel LAPUENTE\nCards:\nKhamis Alowairan AL-DOSSARI [Y 48']  Germán VILLA  [Y 79']\nKhalid AL-MUWALLID          [Y 51']  Duilio DAVINO [Y 88']\nReferee:      Ian McLEOD  [SOUTH AFRICA]\nAssistants:   Lencie FRED [VANUATU]\nPaul SMITH  [NEW ZEALAND]",
+        "lang": "en"
+      }
     },
     {
       "id": "m004",
@@ -195,7 +219,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "14/12/1997, Riyadh, King Fahd Stadium, 15.000 [20.00]\nAUSTRALIA              0-0           BRAZIL [HT 0-0]\nAustralia:                           Brazil:\n1-Mark BOSNICH                       1-DIDA\n2-Steve HORVAT                       3-ALDAIR\n3-Stan LAZARIDIS                     4-JUNIOR BAIANO\n4-Milan IVANOVIC                     6-ROBERTO CARLOS\n5-Alex TOBIN [c]                    16-CESAR SAMPAIO\n6-Ned ZELIC                          8-FLAVIO CONCEICAO\n8-Craig FOSTER                      10-LEONARDO [c]\n9-Mark VIDUKA                       13-ZÉ MARIA\n10-Aurelio VIDMAR                    20-RIVALDO\n14-Tony VIDMAR                        7-BEBETO\n18-John ALOISI                        9-RONALDO\nSubs Used:\n19-Ernest TAPAI    [<10] 60'         18-DENILSON [<20] 64'\n17-Damian MORI     [<18] 70'         17-DORIVA   [<16] 88'\n12-Matthew BINGLEY [<9]  90'\nCoaches:\nTerry VENABLES                       Mario ZAGALLO\nCards:\nSteve HORVAT [Y 45']                 BEBETO  [Y 27']\nDamian MORI  [Y 77']                 RIVALDO [Y 38']\nReferee:      Lucien BOUCHARDEAU [NIGER]\nAssistants:   Vladimir FERNÁNDEZ [EL SALVADOR]\nJacques POUDEVIGNE [FRANCE]",
+        "lang": "en"
+      }
     },
     {
       "id": "m005",
@@ -212,7 +241,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "16/12/1997, Riyadh, King Fahd Stadium, 20.000 [17.50]\nSAUDI ARABIA           1-0           AUSTRALIA [HT 1-0]\nScorer:\nMohammed AL-KHILAIWI 40'\nSaudi Arabia:                        Australia:\n1-Mohammed AL-DEAYEA                 1-Mark BOSNICH\n3-Mohammed AL-KHILAIWI               2-Steve HORVAT\n4-Abdullah Sulaiman ZUBROMAWI        3-Stan LAZARIDIS\n12-Ahmed Dukhi AL-DOSARI              4-Milan IVANOVIC\n13-Hussein SULIMANI                   5-Alex TOBIN [c]\n6-Ibrahim AL-HARBI                   6-Ned ZELIC\n14-Khalid AL-MUWALLID [c]             7-Robbie SLATER\n16-Khamis Alowairan AL-DOSSARI        8-Craig FOSTER\n9-Sami AL-JABER                     15-Josip SKOKO\n10-Saeed OWAIRAN                     17-Damian MORI\n11-Fahad MEHALEL                     18-John ALOISI\nSubs Used:\n19-Obaid AL-DOSARI   [<11] 67'        9-Mark VIDUKA    [<18] 66'\n8-Khalid AL-TEMAWI  [<14] 77'       11-Harry KEWELL   [<17] 66'\n18-Khamis AL-ZAHRANI [<10] 90'       10-Aurelio VIDMAR [<15] 74'\nCoaches:\nOtto PFISTER                         Terry VENABLES\nCards:\nMohammed AL-KHILAIWI [Y 50']         Steve HORVAT   [Y 42']\nMilan IVANOVIC [Y 85']\nReferee:      Javier CASTRILLI   [ARGENTINA]\nAssistants:   Alberto BARRIENTOS [ARGENTINA]\nOscar SORIA        [BOLIVIA]",
+        "lang": "en"
+      }
     },
     {
       "id": "m006",
@@ -229,7 +263,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "16/12/1997, Riyadh, King Fahd Stadium, 20.000 [20.00]\nBRAZIL                 3-2           MEXICO [HT 1-0]\nScorers:\nROMARIO       41'pen                 Cuauhtemoc BLANCO   51'\nDENILSON      61'                    Jesús Ramón RAMÍREZ 90'\nJUNIOR BAIANO 66'\nBrazil:                              Mexico:\n1-DIDA                              12-Oscar PÉREZ\n3-ALDAIR                             2-Claudio SUÁREZ [c]\n4-JUNIOR BAIANO                      3-José Francisco GABRIEL\n5-DUNGA [c]                          5-Duilio DAVINO\n6-ROBERTO CARLOS                     6-Raúl Rodrigo LARA\n13-ZÉ MARIA                           8-Braulio LUNA\n19-JUNINHO PAULISTA                  13-Pavel PARDO\n8-FLAVIO CONCEICAO                  17-Juan Francisco PALENCIA\n9-RONALDO                           18-Salvador CARMONA\n11-ROMARIO                           11-Cuauhtemoc BLANCO\n18-DENILSON                          15-Luis HERNÁNDEZ\nSubs Used:\n7-BEBETO       [<9]  46'             7-Jesús Ramón RAMÍREZ [<8]  46'\n12-ROGERIO CENI [<1]  82'            10-Luis GARCÍA         [<3]  61'\nCoaches:\nMario ZAGALLO                        Manuel LAPUENTE\nCards:\nDUNGA [Y 45']                        Cuauhtemoc BLANCO [Y 41']\nReferee:      Ian McLEOD         [SOUTH AFRICA]\nPirom UN-PRASERT   [THAILAND] [<46']\nAssistants:   Jacques POUDEVIGNE [FRANCE]\nMohamed AL-MUSAWI  [OMAN]",
+        "lang": "en"
+      }
     },
     {
       "id": "m007",
@@ -246,7 +285,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "13/12/1997, Riyadh, King Fahd Stadium, 13.000 [17.50]\nUNITED ARAB EMIRATES   0-2           URUGUAY [HT 0-0]\nScorers:\nNicolas OLIVERA 47'\nAntonio PACHECO 90+2'\nUnited Arab Emirates:                Uruguay:\n17-Mushin Musabbeh FARAJ [c]         12-Claudio FLORES\n5-Hassan Suhail MUBARAK              2-Diego LÓPEZ\n6-Ismail Rashid ISMAIL MARZOOQ       3-Paolo MONTERO [c]\n13-Abdulsalam Juma AL-JANOUBI         4-Gustavo MÉNDEZ\n15-Mohamed Ali KASLA                  5-Gonzalo DE LOS SANTOS\n7-Saad Bakheet MUBARAK               6-Edgardo ADINOLFI\n8-Mohamed Ahmed ADEL                 7-Pablo GARCÍA\n11-Yaser Salem ALI                    8-Liber VESPA\n16-Ahmed Hassan SAEED                 9-Marcelo ZALAYETA\n19-Ali Hassan GHOLAM                 10-Nicolas OLIVERA\n20-Mohamed Obaid AL-ZAHIRI           20-Alvaro RECOBA\nSubs Used:\n10-Adnan AL-TALYANI     [<15] 73'    11-Dario SILVA     [<20] 54'\n14-Khamees Saad MUBARAK [<11] 73'    19-Antonio PACHECO [<10] 75'\n3-Abdulla MUNTHER      [<13] 84'    13-Pablo HERNÁNDEZ [<8]  89'\nCoaches:\nMilan MACALA                         Víctor PUA\nCards:\nMohamed Ahmed ADEL [Y 28']\nReferee:      Ramesh RAMDHAN     [TRINIDAD/TOBAGO]\nAssistants:   Vladimir FERNÁNDEZ [EL SALVADOR]\nPaul SMITH         [NEW ZEALAND]",
+        "lang": "en"
+      }
     },
     {
       "id": "m008",
@@ -263,7 +307,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "13/12/1997, Riyadh, King Fahd Stadium, 7.500 [20.00]\nSOUTH AFRICA           2-2           CZECH REPUBLIC [HT 1-2]\nScorers:\nBrendan AUGUSTINE 39'                Vladimir SMICER 19'\nHelman MKHALELE   86'                Vladimir SMICER 40'\nSouth Africa:                        Czech Republic:\n1-Andre ARENDSE                      1-Pavel SRNICEK\n2-Sizwe MOTAUNG [c]                  5-Michal HORNAK\n4-Willem JACKSON                     6-Zdenek SVOBODA\n5-Mark FISH                         12-Karel RADA\n15-Doctor KHUMALO                    15-Edvard LASOTA\n10-John MOSHOEU                      13-Petr VLCEK\n11-Helman MKHALELE                    4-Pavel NEDVED\n12-Brendan AUGUSTINE                  7-Jiri NEMEC [c]\n18-John MOETI                         9-Pavel KUKA\n6-Phil MASINGA                      11-Radek BEJBL\n9-Neil TOVEY                        17-Vladimir SMICER\nSubs Used:\n8-Dumisa NGOBE  [<15] 37'            8-Karel POBORSKY [<17] 83'\n14-Mark WILLIAMS [<12] 74'           14-Radek SLONCIK  [<9]  90'\nCoaches:\nClive BARKER                         Dusan UHRIN\nCards:\nPhil MASINGA [Y 45']                 Petr VLCEK [Y 9']\nJiri NEMEC [Y 75'][R 82']\nReferee:      Javier CASTRILLI   [ARGENTINA]\nAssistants:   Alberto BARRIENTOS [ARGENTINA]\nOscar SORIA        [BOLIVIA]",
+        "lang": "en"
+      }
     },
     {
       "id": "m009",
@@ -280,7 +329,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "15/12/1997, Riyadh, King Fahd Stadium, 11.000 [17.50]\nUNITED ARAB EMIRATES   1-0           SOUTH AFRICA [HT 1-0]\nScorer:\nHassan MUBARAK 5'\nUnited Arab Emirates:                South Africa:\n1-Mushin Musabbeh FARAJ              1-Andre ARENDSE\n5-Hassan Suhail MUBARAK              2-Sizwe MOTAUNG [c]\n6-Ismail Rashid ISMAIL MARZOOQ       4-Willem JACKSON\n7-Saad Bakheet MUBARAK               5-Mark FISH\n8-Mohamed Ahmed ADEL                 6-Phil MASINGA\n10-Adnan AL-TALYANI [c]               8-Dumisa NGOBE\n11-Yaser Salem ALI                    9-Neil TOVEY\n15-Mohamed Ali KASLA                 10-John MOSHOEU\n16-Ahmed Hassan SAEED                11-Helman MKHALELE\n19-Ali Hassan GHOLAM                 12-Brendan AUGUSTINE\n20-Mohamed Obaid AL-ZAHIRI           18-John MOETI\nSubs Used:\n14-Khamees Saad MUBARAK  [<10] 70'    3-David NYATHI   [<4]  46'\n13-Abdulsalam AL-JANOUBI [<15] 70'   14-Mark WILLIAMS  [<12] 75'\n3-Abdulla MUNTHER       [<19] 81'   13-Pollen NDLANYA [<18] 82'\nCoaches:\nMilan MACALA                         Clive BARKER\nCards:\nMohamed Obaid AL-ZAHIRI [Y 44']\nMushin Musabbeh FARAJ   [Y 81'\nReferee:      René ORTUBÉ        [BOLIVIA]\nAssistants:   Oscar SORIA        [BOLIVIA]\nAlberto BARRIENTOS [ARGENTINA]",
+        "lang": "en"
+      }
     },
     {
       "id": "m010",
@@ -297,7 +351,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "15/12/1997, Riyadh, King Fahd Stadium, 9.000 [20.00]\nCZECH REPUBLIC         1-2           URUGUAY [HT 0-1]\nScorers:\nHorst SIEGL 89'                      Nicolas OLIVERA  26'\nMarcelo ZALAYETA 88'\nCzech Republic:                      Uruguay:\n1-Pavel SRNICEK                     12-Claudio FLORES\n4-Pavel NEDVED                       2-Diego LÓPEZ\n5-Michal HORNAK                      3-Paolo MONTERO [c]\n6-Zdenek SVOBODA                     4-Gustavo MENDEZ\n8-Karel POBORSKY                     5-Gonzalo DE LOS SANTOS\n9-Pavel KUKA [c]                     6-Edgardo ADINOLFI\n11-Radek BEJBL                        7-Pablo GARCÍA\n12-Karel RADA                         8-Liber VESPA\n13-Petr VLCEK                         9-Marcelo ZALAYETA\n15-Edvard LASOTA                     10-Nicolas OLIVERA\n17-Vladimir SMICER                   11-Dario SILVA\nSubs Used:\n19-Martin FRYDEK [<15] 46'           20-Alvaro RECOBA      [<10] 65'\n10-Horst SIEGL   [<9]  60'           14-Christian CALLEJAS [<11] 77'\n3-Lubos KOZEL   [<5]  70'           13-Pablo HERNÁNDEZ    [<8]  87'\nCoaches:\nDusan UHRIN                          Víctor PUA\nCards:\nMichal HORNAK  [Y 19']               Paolo MONTERO         [Y 22']\nKarel POBORSKY [R 40']               Gustavo MENDEZ        [Y 45']\nKarel RADA     [Y 43']               Gonzalo DE LOS SANTOS [Y 49']\nZdenek SVOBODA [Y 72']               Edgardo ADINOLFI      [Y 54']\nPavel NEDVED   [Y 88']               Marcelo ZALAYETA      [Y 69']\nDario SILVA           [Y 69']\nReferee:      Saad Kamel MANE      [KUWAIT]\nAssistants:   Komaleeswaran SANKAR [INDIA]\nMohamed AL-MUSAWI    [OMAN]",
+        "lang": "en"
+      }
     },
     {
       "id": "m011",
@@ -314,7 +373,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "17/12/1997, Riyadh, King Fahd Stadium, 8.000 [17.50]\nCZECH REPUBLIC         6-1           UNITED ARAB EMIRATES [HT 4-0]\nScorers:\nMohamed Obaid AL-ZAHIRI 11'OG        Adnan AL-TALYANI 78'\nPavel NEDVED            22'\nPavel NEDVED            31'\nVladimir SMICER         42'\nVladimir SMICER         68'\nVladimir SMICER         71'\nCzech Republic:                      United Arab Emirates:\n1-Pavel SRNICEK                     17-Mushin Musabbeh FARAJ\n4-Pavel NEDVED                       5-Hassan Suhail MUBARAK\n5-Michal HORNAK                      6-Ismail Rashid ISMAIL MARZOOQ\n6-Zdenek SVOBODA                     7-Saad Bakheet MUBARAK\n7-Jiri NEMEC [c]                     8-Mohamed Ahmed ADEL\n9-Pavel KUKA                        10-Adnan AL-TALYANI [c]\n10-Horst SIEGL                       11-Yaser Salem ALI\n11-Radek BEJBL                       15-Mohamed Ali KASLA\n12-Karel RADA                        16-Ahmed Hassan SAEED\n13-Petr VLCEK                        19-Ali Hassan GHOLAM\n17-Vladimir SMICER                   20-Mohamed Obaid AL-ZAHIRI\nSubs Used:\n15-Edvard LASOTA     [<5]  65'       13-Abdulsalam Jumaa AL-JANOUBI [<20] 46'\n2-Ivo ULICH         [<17] 75'       14-Khamees Saad MUBARAK        [<11] 46'\n16-Vratislav LOKVENC [<10] 82'        3-Abdulla MUNTHER             [<8]  58'\nCoaches:\nDusan UHRIN                          Milan MACALA\nCards:\nJiri NEMEC [Y 21']                   Mohamed Ahmed ADEL           [Y 8']\nIsmail Rashid ISMAIL MARZOOQ [Y 23']\nAbdulla MUNTHER              [Y 84']\nReferee:      René ORTUBÉ        [BOLIVIA]\nAssistants:   Paul SMITH         [NEW ZEALAND]\nVladimir FERNÁNDEZ [EL SALVADOR]",
+        "lang": "en"
+      }
     },
     {
       "id": "m012",
@@ -331,7 +395,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "17/12/1997, Riyadh, King Fahd Stadium, 8.000 [20.00]\nURUGUAY                4-3           SOUTH AFRICA [HT 2-1]\nScorers:\nDario SILVA        12'               Lucas RADEBE    11'\nAlvaro RECOBA      42'               Helman MKHALELE 69'\nDario SILVA        66'               Pollen NDLANYA  77'\nChristian CALLEJAS 90'\nUruguay:                             South Africa:\n1-Carlos NICOLA                     16-Brian BALOYI\n2-Diego LÓPEZ                        2-Sizwe MOTAUNG\n13-Pablo HERNÁNDEZ                    3-David NYATHI\n15-Carlos DÍAZ                        5-Mark FISH\n16-César PELLEGRIN                    6-Phil MASINGA\n17-Fabian COELHO                     10-John MOSHOEU\n14-Christian CALLEJAS                11-Helman MKHALELE\n18-Martin RIVAS                      14-Mark WILLIAMS\n19-Antonio PACHECO                   18-John MOETI\n20-Alvaro RECOBA [c]                 19-Lucas RADEBE [c]\n11-Dario SILVA                       20-Eric TINKLER\nSubs Used:\n5-Gonzalo DE LOS SANTOS [<2]  69'    4-Willem JACKSON  [<2]  46'\n7-Pablo GARCÍA          [<19] 79'   13-Pollen NDLANYA  [<14] 70'\n8-Liber VESPA           [<17] 79'   17-Jabulani MNGUNI [<10] 77'\nCoaches:\nVíctor PUA                           Clive BARKER\nCards:\nJohn MOETI   [Y 20']\nEric TINKLER [Y 54']\nReferee:      Ramesh RAMDHAN       [TRINIDAD/TOBAGO]\nAssistants:   Lencie FRED          [VANUATU]\nKomaleeswaran SANKAR [INDIA]\nSEMI FINALS",
+        "lang": "en"
+      }
     },
     {
       "id": "m013",
@@ -348,7 +417,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "19/12/1997, Riyadh, King Fahd Stadium, 28.000 [15.15]\nBRAZIL                 2-0           CZECH REPUBLIC [HT 0-0]\nScorers:\nROMARIO 54'\nRONALDO 83'\nBrazil:                              Czech Republic:\n1-DIDA                               1-Pavel SRNICEK\n2-CAFU                               4-Pavel NEDVED\n3-ALDAIR                             5-Michal HORNAK\n4-JUNIOR BAIANO                      6-Zdenek SVOBODA\n5-DUNGA [c]                          7-Jiri NEMEC [c]\n6-ROBERTO CARLOS                     9-Pavel KUKA\n8-FLAVIO CONCEICAO                  11-Radek BEJBL\n9-RONALDO                           12-Karel RADA\n10-LEONARDO                          13-Petr VLCEK\n11-ROMARIO                           15-Edvard LASOTA\n19-JUNINHO PAULISTA                  17-Vladimir SMICER\nSubs Used:\n18-DENILSON      [<10] 46'            2-Ivo ULICH      [<4]  73'\n14-GONCALVES     [<4]  70'            8-Karel POBORSKY [<5]  82'\n16-CESAR SAMPAIO [<8]  87'            3-Lubos KOZEL    [<11] 89'\nCoaches:\nMario ZAGALLO                        Dusan UHRIN\nCards:\nJUNIOR BAIANO [Y 20']                Pavel NEDVED [Y 7']\nCAFU          [Y 24']                Petr VLCEK   [Y 64']\nALDAIR        [Y 35']                Jiri NEMEC   [Y 68']\nDUNGA         [Y 77']\nReferee:      Lucien BOUCHARDEAU [NIGER]\nAssistants:   Paul SMITH         [NEW ZEALAND]\nVladimir FERNANDEZ [EL SALVADOR]",
+        "lang": "en"
+      }
     },
     {
       "id": "m014",
@@ -365,7 +439,12 @@
       ],
       "status": "played",
       "notes": [],
-      "pens": null
+      "pens": null,
+      "sheet": {
+        "source": "rsssf:intconcup97",
+        "text": "19/12/1997, Riyadh, King Fahd Stadium, 22.000 [19.00]\nAUSTRALIA              1-0           URUGUAY [HT 0-0][FT 0-0]\nScorer:\nHarry KEWELL 92'\nAustralia:                           Uruguay:\n1-Mark BOSNICH                      12-Claudio FLORES\n21-Kevin MUSCAT                       2-Diego LÓPEZ\n3-Stan LAZARIDIS                     3-Paolo MONTERO [c]\n4-Milan IVANOVIC                     4-Gustavo MENDEZ\n5-Alex TOBIN [c]                     5-Gonzalo DE LOS SANTOS\n6-Ned ZELIC                          6-Edgardo ADINOLFI\n8-Craig FOSTER                       7-Pablo GARCÍA\n9-Mark VIDUKA                        8-Liber VESPA\n10-Aurelio VIDMAR                     9-Marcelo ZALAYETA\n11-Harry KEWELL                      10-Nicolas OLIVERA\n14-Tony VIDMAR                       20-Alvaro RECOBA\nSubs Used:\n15-Josip SKOKO [<10] 80'             11-Dario SILVA [<20] 81'\nCoaches:\nVíctor PUA                           Terry VENABLES\nCards:\nMarcelo ZALAYETA [Y 4']              Kevin MUSCAT [Y 28']\nGustavo MENDEZ   [Y 5']\nReferee:      Nikolai LEVNIKOV   [RUSSIA]\nAssistants:   Jacques POUDEVIGNE [FRANCE]\nMohamed AL-MUSAWI  [OMAN]",
+        "lang": "en"
+      }
     },
     {
       "id": "m015",
