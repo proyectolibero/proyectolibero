@@ -84,6 +84,22 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 | Progresivo | `.lb-filter`, `.lb-filter__input`, `.lb-filter__count`, `.lb-pagination`, `.lb-pagination__button`, `.lb-pagination__status`, `.lb-scrubber`, `.lb-scrubber__label`, `.lb-scrubber__input`, `.lb-scrubber__value`, `.lb-toggle`, `.lb-toggle__button`, `.lb-toggle__panel`, `.lb-empty` |
 | Escaparate (S1) | `.lb-page`, `.lb-masthead`, `.lb-brand`, `.lb-nav`, `.lb-nav__list`, `.lb-nav__item`, `.lb-nav__link`, `.lb-nav__sub`, `.lb-breadcrumb`, `.lb-breadcrumb__list`, `.lb-breadcrumb__item`, `.lb-breadcrumb__link`, `.lb-breadcrumb__sep`, `.lb-breadcrumb__current`, `.lb-main`, `.lb-section`, `.lb-section__num`, `.lb-section__title`, `.lb-intro`, `.lb-label`, `.lb-list`, `.lb-list--nested`, `.lb-entry`, `.lb-entry__link`, `.lb-entry__meta`, `.lb-record`, `.lb-record__term`, `.lb-record__value`, `.lb-card`, `.lb-card__title`, `.lb-footer`, `.lb-footer__rights`, `.lb-footer__asof` |
 
+### Paginación en cliente: disponible, no usada por el SSG
+
+`lb-pagination` (`.lb-pagination`, control `[data-lb-pagination]`) sigue en el
+catálogo — reglas en `components.css`, mejora progresiva en `behaviour.js` y
+demo de lista larga en la galería —, pero **ninguna página del escaparate la
+usa**: desde S2c (ADR-034/D50) el SSG sirve cada página **completa**, la
+clasificación vive en su propia URL (`/{year}/clasificacion/…`) y el
+**presupuesto de peso** (300 kB, `scripts/site-weight.js`) es la guarda. La
+paginación en cliente quedó retirada como apaño al peso de las ediciones
+densas (2002: 921 kB → 153 kB); reintroducirla añadiría JS obligatorio y
+rompería la lectura sin JS y el archivado. El contrato lo vigila
+`tests/site-completeness.test.js`: ninguna página generada con
+`data-lb-pagination` y presupuesto respetado. Se conserva porque es mejora
+progresiva inocua (sin JS no se pinta) y la galería la documenta como caso
+límite; eliminarla no ahorra nada observable y perdería la pieza del catálogo.
+
 ## Pantallas clave
 
 | Pantalla | Objetivo |
