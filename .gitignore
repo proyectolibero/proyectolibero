@@ -10,5 +10,6 @@ drafts/
 panel-*.png
 preview-*.png
 preview/
+site/
 *.tmp-*
 .opencode/usage.json
