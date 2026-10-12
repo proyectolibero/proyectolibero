@@ -14,6 +14,8 @@
  *   delta (con los negativos acotados a cero).
  * - Escritura atómica (temporal + rename) y con retardo, para no escribir en
  *   cada token.
+ * - El último valor visto de cada mensaje se persiste (`recent`), para que un
+ *   reinicio de opencode no cuente dos veces el mismo mensaje.
  *
  * Política y umbrales: `docs/MODELOS.md` y `.opencode/usage.config.json`.
  */
@@ -44,6 +46,7 @@ function emptyStore() {
     byDay: {},
     byModel: {},
     byAgent: {},
+    recent: {},
   };
 }
 
@@ -99,7 +102,10 @@ export const UsageCounter = async ({ client, directory }) => {
 
   const settings = { ...DEFAULTS, ...(readJson(path.join(baseDir, CONFIG_FILE)) || {}) };
   let store = readJson(usagePath) || emptyStore();
-  const seen = new Map();
+  if (!store.recent) store.recent = {};
+  // `recent` viaja en el fichero: al reiniciar, un `message.updated` ya visto
+  // (mismo id, mismos tokens) no vuelve a sumarse.
+  const seen = new Map(Object.entries(store.recent));
   let warnedDay = store.lastWarnedDay || null;
   let timer = null;
 
@@ -162,9 +168,16 @@ export const UsageCounter = async ({ client, directory }) => {
     schedulePersist();
   };
 
+  const pruneRecent = () => {
+    const ids = Object.keys(store.recent);
+    while (ids.length > settings.maxSeenMessages) delete store.recent[ids.shift()];
+  };
+
   const remember = (id, usage) => {
     seen.set(id, usage);
+    store.recent[id] = usage;
     if (seen.size > settings.maxSeenMessages) seen.delete(seen.keys().next().value);
+    pruneRecent();
   };
 
   const onMessage = (info) => {

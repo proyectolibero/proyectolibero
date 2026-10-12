@@ -71,6 +71,8 @@ Señales, por orden de gravedad:
 
 - **Un cambio de modelo degrada los informes**: mitigado porque el cierre de tarea lo
   determinan `validate`/`integrity`/tests, no la opinión del agente.
+- **Doble conteo al reiniciar**: mitigado persistiendo el último valor visto por mensaje
+  (`recent` en el fichero). Coste: el fichero local crece un poco (gitignored, no se versiona).
 - **El contador puede quedarse corto** si opencode cambia la forma de `info.tokens`:
   mitigado leyendo con valores por defecto y avisando por log; si un día aparece a cero,
   revisar el plugin contra `@opencode-ai/sdk` (tipos `AssistantMessage`).

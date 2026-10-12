@@ -142,6 +142,23 @@ test("usage-counter ignora mensajes sin tokens y eventos incompletos", async () 
   assert.equal(readStore(directory).totals.messages, 0);
 });
 
+test("usage-counter no cuenta doble tras reiniciar (mensajes ya vistos persistidos)", async () => {
+  const directory = sandbox();
+
+  const first = await loadCounter(directory);
+  await first.hooks.event({ event: assistantMessage("m1", tokensOf(100)) });
+  await first.hooks.event({ event: { type: "session.idle" } });
+
+  // Simula el reinicio: instancia nueva sobre el mismo directorio.
+  const second = await loadCounter(directory);
+  await second.hooks.event({ event: assistantMessage("m1", tokensOf(100)) });
+  await second.hooks.event({ event: { type: "session.idle" } });
+
+  const store = readStore(directory);
+  assert.equal(store.totals.input, 100);
+  assert.equal(store.totals.messages, 1);
+});
+
 test("scripts/usage.js resume el contador y marca el exceso de umbral", () => {
   const directory = sandbox();
   const file = path.join(directory, "usage.json");
