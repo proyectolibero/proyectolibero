@@ -1,0 +1,108 @@
+/*
+ * Libero · Sistema de diseño (S0) — comportamiento
+ * Mejora progresiva: sin JS todos los datos son legibles. Este fichero
+ * solo revela controles opcionales (desplegables, filtro de texto y
+ * scrubber temporal) y nunca es requisito para leer el contenido.
+ * Sin dependencias.
+ */
+(function () {
+  "use strict";
+
+  var root = document.documentElement;
+  root.classList.add("lb-js");
+
+  function normalize(value) {
+    return String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+  }
+
+  function queryAll(selector, scope) {
+    return Array.prototype.slice.call((scope || document).querySelectorAll(selector));
+  }
+
+  /* --- Desplegables: se colapsan solo si hay JS ----------------------- */
+  function initDisclosures() {
+    queryAll("[data-lb-toggle]").forEach(function (button) {
+      var panel = document.querySelector(button.getAttribute("aria-controls"));
+      if (!panel) return;
+      var open = panel.hasAttribute("data-lb-open");
+      button.setAttribute("aria-expanded", String(open));
+      if (!open) panel.hidden = true;
+      button.addEventListener("click", function () {
+        var next = button.getAttribute("aria-expanded") !== "true";
+        button.setAttribute("aria-expanded", String(next));
+        panel.hidden = !next;
+      });
+    });
+  }
+
+  /* --- Filtro de texto ----------------------------------------------- */
+  function filterItems(items, term) {
+    var needle = normalize(term);
+    var visible = 0;
+    items.forEach(function (item) {
+      var match = !needle || normalize(item.textContent).indexOf(needle) !== -1;
+      item.hidden = !match;
+      if (match) visible += 1;
+    });
+    return visible;
+  }
+
+  function initFilters() {
+    queryAll("[data-lb-filter]").forEach(function (input) {
+      var scope = document.querySelector(input.getAttribute("data-lb-filter-target"));
+      if (!scope) return;
+      var items = queryAll("[data-lb-filter-item]", scope);
+      var counter = document.querySelector(input.getAttribute("data-lb-filter-count") || "");
+      var onInput = function () {
+        var visible = filterItems(items, input.value);
+        if (counter) counter.textContent = String(visible);
+      };
+      input.addEventListener("input", onInput);
+      onInput();
+    });
+  }
+
+  /* --- Scrubber temporal --------------------------------------------- */
+  function initScrubbers() {
+    queryAll("[data-lb-scrubber]").forEach(function (input) {
+      var scope = document.querySelector(input.getAttribute("data-lb-scrubber-target"));
+      if (!scope) return;
+      var items = queryAll("[data-lb-year]", scope);
+      var output = document.querySelector(input.getAttribute("data-lb-scrubber-value") || "");
+      var onInput = function () {
+        var max = Number(input.value);
+        items.forEach(function (item) {
+          item.hidden = Number(item.getAttribute("data-lb-year")) > max;
+        });
+        if (output) output.textContent = String(max);
+      };
+      input.addEventListener("input", onInput);
+      onInput();
+    });
+  }
+
+  /* --- Tema manual (anula prefers-color-scheme) ---------------------- */
+  function initTheme() {
+    queryAll("[data-lb-theme]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        root.dataset.theme = button.getAttribute("data-lb-theme");
+      });
+    });
+  }
+
+  function init() {
+    initTheme();
+    initDisclosures();
+    initFilters();
+    initScrubbers();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();

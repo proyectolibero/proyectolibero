@@ -38,6 +38,49 @@ componentes/
 `ProvenanceBadge` es el **diferenciador visual del proyecto**: ningún portal
 deportivo muestra de dónde sale cada dato y qué alternativas se descartaron.
 
+## Módulo de diseño (S0)
+
+Sin dependencias ni build. Tres ficheros servidos tal cual:
+
+```
+design/tokens.css       color · tipografía · espaciado · radios · sombras · movimiento
+design/components.css   componentes (prefijo .lb-)
+design/behaviour.js     mejora progresiva (sin JS todo el dato es legible)
+```
+
+La galería de desarrollo (`site/_galeria/index.html`, se regenera con
+`node scripts/build-gallery.js`) muestra cada componente y sus casos límite
+(ficha verbatim de 40 líneas, tabla de 12 filas con ajuste/motivo, lista de
+843 partidos, textos largos zh/hi) a 390 px y 1440 px, claro y oscuro.
+
+Modo oscuro automático (`prefers-color-scheme`) y anulable con
+`[data-theme="light"|"dark"]`. Los controles se ocultan sin JS
+(`.lb-needs-js` → `html.lb-js`). Contraste AA verificado en ambos temas.
+
+### Contrato de clases
+
+**Regla: las plantillas solo usan clases declaradas aquí.** Toda clase `.lb-*`
+presente en una plantilla debe estar definida en `design/components.css`; los
+tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
+`design/tokens.css` (ningún literal `#hex`, `rgb()`, `hsl()` fuera de él).
+
+| Componente | Clases |
+|---|---|
+| Base | `.lb-visually-hidden`, `.lb-needs-js` |
+| Galería (dev) | `.lb-gallery`, `.lb-gallery__header`, `.lb-gallery__title`, `.lb-gallery__lead`, `.lb-gallery__nav`, `.lb-gallery__item`, `.lb-gallery__label`, `.lb-gallery__note`, `.lb-gallery__grid` |
+| `EditionTimeline` | `.lb-timeline`, `.lb-timeline__item`, `.lb-timeline__item--gap`, `.lb-timeline__link`, `.lb-timeline__year`, `.lb-timeline__note` |
+| `StandingsTable` | `.lb-standings`, `.lb-table`, `.lb-table--stack`, `.lb-table__caption`, `.lb-table__num`, `.lb-table__medal`, `.lb-medal--gold`, `.lb-medal--silver`, `.lb-medal--bronze` |
+| `ScorerList` | `.lb-scorers`, `.lb-scorers__item`, `.lb-scorers__rank`, `.lb-scorers__name`, `.lb-scorers__meta`, `.lb-scorers__count` |
+| `ResultCard` | `.lb-result`, `.lb-result__meta`, `.lb-result__teams`, `.lb-result__team`, `.lb-result__team--away`, `.lb-result__team--winner`, `.lb-result__score`, `.lb-result__note` |
+| `MedalCounter` | `.lb-medals`, `.lb-medals__row`, `.lb-medals__pos`, `.lb-medals__country`, `.lb-medals__count`, `.lb-medals__count--gold`, `.lb-medals__count--silver`, `.lb-medals__count--bronze` |
+| `KpiCard` | `.lb-kpis`, `.lb-kpi`, `.lb-kpi__value`, `.lb-kpi__label`, `.lb-kpi__hint` |
+| `ProvenanceBadge` | `.lb-provenance`, `.lb-provenance__summary`, `.lb-provenance__star`, `.lb-provenance__source`, `.lb-provenance__detail`, `.lb-provenance__rejected-label`, `.lb-provenance__rejected-list`, `.lb-provenance__rejected-item` |
+| `CoverageBar` | `.lb-coverage`, `.lb-coverage__head`, `.lb-coverage__label`, `.lb-coverage__count`, `.lb-coverage__track`, `.lb-coverage__fill`, `.lb-coverage__legend`, `.lb-coverage__legend-item`, `.lb-coverage__swatch`, `.lb-coverage__swatch--done`, `.lb-coverage__swatch--gap` |
+| `FacsimileSheet` | `.lb-facsimile`, `.lb-facsimile__caption`, `.lb-facsimile__paper`, `.lb-facsimile__pre` |
+| `CitationBlock` | `.lb-citation`, `.lb-citation__label`, `.lb-citation__text`, `.lb-citation__code` |
+| `SourceList` | `.lb-sources`, `.lb-sources__item`, `.lb-sources__name`, `.lb-sources__meta`, `.lb-sources__link`, `.lb-sources__retrieved` |
+| Progresivo | `.lb-filter`, `.lb-filter__input`, `.lb-filter__count`, `.lb-scrubber`, `.lb-scrubber__label`, `.lb-scrubber__input`, `.lb-scrubber__value`, `.lb-toggle`, `.lb-toggle__button`, `.lb-toggle__panel`, `.lb-empty` |
+
 ## Pantallas clave
 
 | Pantalla | Objetivo |
