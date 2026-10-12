@@ -6,34 +6,21 @@
  * `node --test tests/` resuelve el directorio a este fichero y ejecuta aquí la
  * suite completa. `node --test` sin argumentos descubre los `*.test.js`
  * directamente y no carga este fichero (no casa con los patrones de test).
+ *
+ * La lista de tests NO se escribe a mano: se descubren los `*.test.js` del
+ * directorio, ordenados, para que el resultado sea determinista. Escribirla a
+ * mano ya falló tres veces (ficheros de test creados que nunca se ejecutaron);
+ * un test que no corre es peor que un test que falla, porque miente en verde.
  */
-require("./io.test.js");
-require("./reindex.test.js");
-require("./validate.test.js");
-require("./i18n-gate.test.js");
-require("./security.test.js");
-require("./validate-cli.test.js");
-require("./migrate.test.js");
-require("./migrate-coverage.test.js");
-require("./viewmodel.test.js");
-require("./viewmodel.parity.test.js");
-require("./site-golden.test.js");
-require("./site-load.test.js");
-require("./site-nav.test.js");
-require("./release.test.js");
-require("./scorers-coverage.test.js");
-require("./ingest.test.js");
-require("./parse.test.js");
-require("./overview.test.js");
-require("./compact.test.js");
-require("./nordic.test.js");
-require("./build.test.js");
-require("./page-coverage.test.js");
-require("./qualifying.test.js");
-require("./reconcile.test.js");
-require("./promote.test.js");
-require("./integrity.test.js");
-require("./usage-counter.test.js");
-require("./design.test.js");
-require("./flags.test.js");
-require("./site-budget.test.js");
+
+const fs = require("node:fs");
+const path = require("node:path");
+
+const testFiles = fs
+  .readdirSync(__dirname)
+  .filter((file) => file.endsWith(".test.js"))
+  .sort();
+
+for (const file of testFiles) {
+  require(path.join(__dirname, file));
+}
