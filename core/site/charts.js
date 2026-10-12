@@ -11,6 +11,10 @@ const { escapeHtml } = require("./html.js");
  * significado lleva una descripción accesible (`aria-label`) con sus valores;
  * el que solo repite contenido ya legible (podio, goleadores) es decorativo
  * (`aria-hidden`).
+ *
+ * Regla gráfica: cada figura lleva `figcaption` con título y unidad; sin pie
+ * no es información. Si el dato tiene unidad (goles, títulos, posición), el
+ * pie la declara y la descripción accesible la repite en cada valor.
  */
 
 const ROW = 22;
@@ -23,13 +27,19 @@ function maxOf(items) {
   return Math.max(...items.map((item) => Number(item.value) || 0), 1);
 }
 
-/** Resumen textual de la serie: "1930: 70; 1934: 70". */
-function summarize(items) {
-  return items.map((item) => `${item.label}: ${item.value}`).join("; ");
+/** Pie de figura: título + unidad. */
+function withUnit(caption, unit) {
+  return unit ? `${caption} (${unit})` : String(caption);
+}
+
+/** Resumen textual de la serie con unidad: "1930: 70 goles; 1934: 70 goles". */
+function summarize(items, unit) {
+  const suffix = unit ? ` ${unit}` : "";
+  return items.map((item) => `${item.label}: ${item.value}${suffix}`).join("; ");
 }
 
 /** Barras verticales: valor por categoría (p. ej. goles por edición). */
-function barChart({ items, caption, ariaLabel }) {
+function barChart({ items, caption, unit, ariaLabel }) {
   if (!items || !items.length) return "";
   const width = 640;
   const height = 158;
@@ -41,7 +51,8 @@ function barChart({ items, caption, ariaLabel }) {
   const step = plotWidth / items.length;
   const barWidth = Math.max(2, Math.min(step * 0.6, 22));
   const showValues = items.length <= 14;
-  const label = ariaLabel || summarize(items);
+  const suffix = unit ? ` ${unit}` : "";
+  const label = ariaLabel || `${caption} \u2014 ${summarize(items, unit)}`;
 
   const bars = items
     .map((item, index) => {
@@ -59,7 +70,7 @@ function barChart({ items, caption, ariaLabel }) {
       return (
         `        <g>\n` +
         `          <rect class="lb-chart__bar" x="${round(x)}" y="${round(y)}" width="${round(barWidth)}" height="${round(barHeight)}" rx="1.5">` +
-        `<title>${escapeHtml(`${item.label}: ${item.value}`)}</title></rect>\n` +
+        `<title>${escapeHtml(`${item.label}: ${value}${suffix}`)}</title></rect>\n` +
         valueText +
         yearText +
         `        </g>`
@@ -73,13 +84,13 @@ function barChart({ items, caption, ariaLabel }) {
     `          <line class="lb-chart__axis" x1="${pad}" y1="${baseline}" x2="${width - pad}" y2="${baseline}" />\n` +
     `${bars}\n` +
     `        </svg>\n` +
-    (caption ? `        <figcaption class="lb-chart__caption">${escapeHtml(caption)}</figcaption>\n` : "") +
+    (caption ? `        <figcaption class="lb-chart__caption">${escapeHtml(withUnit(caption, unit))}</figcaption>\n` : "") +
     `      </figure>`
   );
 }
 
 /** Podio: tres columnas oro/plata/bronce con el código de país. Decorativo. */
-function podiumChart(places, caption) {
+function podiumChart(places, caption, unit) {
   const present = (places || []).filter((place) => place && place.code);
   if (present.length < 2) return "";
   const byMedal = {};
@@ -110,13 +121,13 @@ function podiumChart(places, caption) {
     `          <line class="lb-chart__axis" x1="4" y1="${baseline}" x2="224" y2="${baseline}" />\n` +
     `${columns}\n` +
     `        </svg>\n` +
-    (caption ? `        <figcaption class="lb-chart__caption">${escapeHtml(caption)}</figcaption>\n` : "") +
+    (caption ? `        <figcaption class="lb-chart__caption">${escapeHtml(withUnit(caption, unit))}</figcaption>\n` : "") +
     `      </figure>`
   );
 }
 
 /** Barras horizontales: listas ordenadas (p. ej. máximos goleadores). Decorativo. */
-function hbarChart({ items, caption }) {
+function hbarChart({ items, caption, unit }) {
   if (!items || !items.length) return "";
   const rowHeight = ROW;
   const width = 320;
@@ -124,6 +135,7 @@ function hbarChart({ items, caption }) {
   const barMaxWidth = 136;
   const height = items.length * rowHeight + 4;
   const max = maxOf(items);
+  const suffix = unit ? ` ${unit}` : "";
 
   const rows = items
     .map((item, index) => {
@@ -135,7 +147,7 @@ function hbarChart({ items, caption }) {
       return (
         `          <text class="lb-chart__label" x="0" y="${y + 12}">${escapeHtml(short)}</text>\n` +
         `          <rect class="lb-chart__bar" x="${barX}" y="${y}" width="${round(barWidth)}" height="14" rx="1.5">` +
-        `<title>${escapeHtml(`${item.label}: ${value}`)}</title></rect>\n` +
+        `<title>${escapeHtml(`${item.label}: ${value}${suffix}`)}</title></rect>\n` +
         `          <text class="lb-chart__value" x="${round(barX + barWidth + 4)}" y="${y + 12}">${escapeHtml(value)}</text>`
       );
     })
@@ -146,7 +158,7 @@ function hbarChart({ items, caption }) {
     `        <svg class="lb-chart__svg" viewBox="0 0 ${width} ${height}" focusable="false">\n` +
     `${rows}\n` +
     `        </svg>\n` +
-    (caption ? `        <figcaption class="lb-chart__caption">${escapeHtml(caption)}</figcaption>\n` : "") +
+    (caption ? `        <figcaption class="lb-chart__caption">${escapeHtml(withUnit(caption, unit))}</figcaption>\n` : "") +
     `      </figure>`
   );
 }

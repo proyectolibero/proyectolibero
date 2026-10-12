@@ -40,6 +40,26 @@ const ALIASES = {
   TAH: "pf"
 };
 
+/*
+ * Códigos excluidos de la descarga: el mapeo del dataset es incorrecto para
+ * este archivo (Netherlands Antilles ↔ Bonaire) y la web los resuelve con
+ * ficha neutra.
+ */
+const EXCLUDED = new Set(["ANT"]);
+
+/*
+ * Selecciones de las que no existe bandera en `hampusborgos/country-flags`
+ * (solo ISO 3166-1): sus SVG se mantienen en `design/flags/` como fuentes de
+ * origen propio (diseño inspirado en Wikimedia) y se registran aquí para que
+ * el build las use sin depender del repositorio remoto.
+ */
+const SUBNATIONAL = {
+  ENG: "gb-eng",
+  NIR: "gb-nir",
+  SCO: "gb-sct",
+  WAL: "gb-wls"
+};
+
 function parseCsv(text) {
   const rows = [];
   let row = [];
@@ -91,7 +111,11 @@ async function resolveCodes(root) {
   const resolved = {};
   const missing = [];
   for (const code of codes) {
-    const iso2 = ALIASES[code] || map[code];
+    if (EXCLUDED.has(code)) {
+      missing.push(code);
+      continue;
+    }
+    const iso2 = SUBNATIONAL[code] || ALIASES[code] || map[code];
     if (iso2) resolved[code] = iso2;
     else missing.push(code);
   }
@@ -119,17 +143,32 @@ function renderAttribution(manifest) {
   const lines = [
     "# Atribución de las banderas",
     "",
-    `- **Fuente:** ${SOURCE_NAME} — ${SOURCE_URL}`,
+    `- **Fuente principal:** ${SOURCE_NAME} — ${SOURCE_URL}`,
     "- **Licencia:** dominio público (banderas de Wikimedia Commons).",
     `- **Fecha de consulta:** ${RETRIEVED}.`,
     "- **Nombres de fichero:** código de país del proyecto (3 letras) → ISO 3166-1 alpha-2 de origen.",
     "- **Cobertura:** solo los códigos presentes en `data/**` que disponen de bandera estándar.",
     "  El resto (selecciones sin ISO 3166-1 o entidades históricas) se resuelve con una ficha neutra.",
     "",
-    "| Código | ISO 3166-1 alpha-2 |",
-    "|---|---|"
+    "### Banderas subnacionales (origen propio)",
+    "",
+    "England, Northern Ireland, Scotland y Wales no tienen código ISO 3166-1;",
+    "sus SVG en este directorio son diseños propios del proyecto (inspirados en las",
+    "versiones de Wikimedia Commons) y no proceden del repositorio principal.",
+    "",
+    "| Código | Motivo |",
+    "|---|---|",
   ];
+  for (const code of Object.keys(SUBNATIONAL).sort()) {
+    lines.push(`| ${code} | ${SUBNATIONAL[code]} (bandera subnacional, origen propio) |`);
+  }
+  lines.push("");
+  lines.push("### Banderas nacionales (hampusborgos/country-flags)");
+  lines.push("");
+  lines.push("| Código | ISO 3166-1 alpha-2 |");
+  lines.push("|---|---|");
   for (const code of Object.keys(manifest.flags).sort()) {
+    if (SUBNATIONAL[code]) continue;
     lines.push(`| ${code} | ${manifest.flags[code]} |`);
   }
   lines.push("");
@@ -149,6 +188,7 @@ async function main() {
     const iso2 = resolved[code];
     const file = path.join(FLAGS_DIR, `${code}.svg`);
     manifest.flags[code] = iso2;
+    if (SUBNATIONAL[code]) continue;
     if (!force && fs.existsSync(file) && fs.statSync(file).size > 0) continue;
     if (dry) { written.push(code); continue; }
     const data = await download(`${RAW_BASE}/${iso2}.svg`);

@@ -186,8 +186,19 @@ function parseArgs(argv) {
     else if (arg.startsWith("--release=")) opts.releaseId = arg.slice("--release=".length);
   }
   if (opts.competition) {
-    const years = (opts.years || "1930").split(",").map((y) => y.trim()).filter(Boolean);
-    opts.editions = years.map((year) => ({ competitionId: opts.competition, year }));
+    const yearsArg = opts.years || "1930";
+    if (yearsArg === "all") {
+      const catalog = loadCatalog(path.resolve(__dirname, "..", ".."));
+      const comp = catalog.competitions[opts.competition];
+      if (!comp) throw new Error(`competición desconocida: ${opts.competition}`);
+      const years = (comp.editions || [])
+        .filter((e) => e.held && e.data)
+        .map((e) => String(e.year));
+      opts.editions = years.map((year) => ({ competitionId: opts.competition, year }));
+    } else {
+      const years = yearsArg.split(",").map((y) => y.trim()).filter(Boolean);
+      opts.editions = years.map((year) => ({ competitionId: opts.competition, year }));
+    }
   }
   return opts;
 }

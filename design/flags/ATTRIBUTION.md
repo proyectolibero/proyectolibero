@@ -1,11 +1,26 @@
 # Atribución de las banderas
 
-- **Fuente:** hampusborgos/country-flags — https://github.com/hampusborgos/country-flags
+- **Fuente principal:** hampusborgos/country-flags — https://github.com/hampusborgos/country-flags
 - **Licencia:** dominio público (banderas de Wikimedia Commons).
 - **Fecha de consulta:** 2026-10-12.
 - **Nombres de fichero:** código de país del proyecto (3 letras) → ISO 3166-1 alpha-2 de origen.
 - **Cobertura:** solo los códigos presentes en `data/**` que disponen de bandera estándar.
   El resto (selecciones sin ISO 3166-1 o entidades históricas) se resuelve con una ficha neutra.
+
+### Banderas subnacionales (origen propio)
+
+England, Northern Ireland, Scotland y Wales no tienen código ISO 3166-1;
+sus SVG en este directorio son diseños propios del proyecto (inspirados en las
+versiones de Wikimedia Commons) y no proceden del repositorio principal.
+
+| Código | Motivo |
+|---|---|
+| ENG | gb-eng (bandera subnacional, origen propio) |
+| NIR | gb-nir (bandera subnacional, origen propio) |
+| SCO | gb-sct (bandera subnacional, origen propio) |
+| WAL | gb-wls (bandera subnacional, origen propio) |
+
+### Banderas nacionales (hampusborgos/country-flags)
 
 | Código | ISO 3166-1 alpha-2 |
 |---|---|
@@ -15,7 +30,6 @@
 | ALG | dz |
 | AND | ad |
 | ANG | ao |
-| ANT | bq |
 | ARG | ar |
 | ARM | am |
 | ARU | aw |

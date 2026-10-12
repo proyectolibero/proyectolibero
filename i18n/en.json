@@ -135,5 +135,11 @@
   "coverage.incomplete": "Partial coverage declared by the source.",
   "chart.title": "Charts",
   "chart.goalsByEdition": "Goals per edition",
-  "chart.podium": "Podium"
+  "chart.podium": "Podium",
+  "chart.titlesByCountry": "Titles by national team",
+  "chart.unit.goals": "goals",
+  "chart.unit.position": "position",
+  "chart.unit.titles": "titles",
+  "pagination.more": "Show more matches",
+  "pagination.status": "Showing {shown} of {total} matches"
 }

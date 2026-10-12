@@ -135,5 +135,11 @@
   "coverage.incomplete": "स्रोत द्वारा आंशिक कवरेज घोषित।",
   "chart.title": "चार्ट",
   "chart.goalsByEdition": "प्रति संस्करण गोल",
-  "chart.podium": "पोडियम"
+  "chart.podium": "पोडियम",
+  "chart.titlesByCountry": "राष्ट्रीय टीमों के खिताब",
+  "chart.unit.goals": "गोल",
+  "chart.unit.position": "स्थान",
+  "chart.unit.titles": "खिताब",
+  "pagination.more": "और मैच दिखाएँ",
+  "pagination.status": "कुल {total} मैचों में से {shown} दिखाए गए"
 }

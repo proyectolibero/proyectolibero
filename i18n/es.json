@@ -135,5 +135,11 @@
   "coverage.incomplete": "Cobertura parcial declarada por la fuente.",
   "chart.title": "Gráficos",
   "chart.goalsByEdition": "Goles por edición",
-  "chart.podium": "Podio"
+  "chart.podium": "Podio",
+  "chart.titlesByCountry": "Títulos por selección",
+  "chart.unit.goals": "goles",
+  "chart.unit.position": "puesto",
+  "chart.unit.titles": "títulos",
+  "pagination.more": "Mostrar más partidos",
+  "pagination.status": "Mostrando {shown} de {total} partidos"
 }

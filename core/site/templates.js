@@ -178,9 +178,23 @@ function competitionContent(ctx, page) {
           `      ${barChart({
             items: goalSeries.map((row) => ({ label: row.year, value: row.goals })),
             caption: t(lang, "chart.goalsByEdition"),
-            ariaLabel: `${t(lang, "chart.goalsByEdition")}: ${goalSeries
-              .map((row) => `${row.year}, ${row.goals}`)
-              .join("; ")}`
+            unit: t(lang, "chart.unit.goals")
+          })}`
+        )
+      : "";
+
+  const titleSeries = championTitles(comp)
+    .map((row) => ({ label: ctx.countryName(row.code, lang), value: row.titles }));
+  const titlesChart =
+    titleSeries.length >= 2
+      ? "\n" +
+        sectionNumbered(
+          "03",
+          t(lang, "chart.titlesByCountry"),
+          `      ${barChart({
+            items: titleSeries,
+            caption: t(lang, "chart.titlesByCountry"),
+            unit: t(lang, "chart.unit.titles")
           })}`
         )
       : "";
@@ -188,7 +202,8 @@ function competitionContent(ctx, page) {
     pageTitle(name) +
     "\n" +
     sectionNumbered("01", t(lang, "index.editions"), `      <ul class="lb-timeline" data-lb-timeline>\n${items}\n      </ul>`) +
-    goalsChart;
+    goalsChart +
+    titlesChart;
   return {
     title: `${name} \u00b7 ${t(lang, "site.name")}`,
     description: t(lang, "index.stats", {
@@ -203,10 +218,16 @@ function competitionContent(ctx, page) {
 
 /* ------------------------------- Edition -------------------------------- */
 
-/** Bandera propia si existe; si no, ficha neutra con el código (nunca inventada). */
-function flagTile(ctx, code) {
+/**
+ * Bandera propia si existe; si no, ficha neutra con el código (nunca inventada).
+ * El `alt=""` solo es válido cuando el nombre del país está adyacente en texto
+ * (`.lb-flag-name`); como identificador independiente (barras, tablas) la
+ * bandera debe declarar su nombre accesible (`decorative:false`).
+ */
+function flagTile(ctx, code, lang, decorative = true) {
   if (ctx.flags && ctx.flags.has(code)) {
-    return `<img class="lb-flag" src="/assets/design/flags/${escapeHtml(code)}.svg" alt="" width="24" height="16" loading="lazy" decoding="async">`;
+    const alt = decorative ? "" : ctx.countryName(code, lang);
+    return `<img class="lb-flag" src="/assets/design/flags/${escapeHtml(code)}.svg" alt="${escapeHtml(alt)}" width="24" height="16" loading="lazy" decoding="async">`;
   }
   return `<span class="lb-flag lb-flag--ficha" aria-hidden="true">${escapeHtml(code)}</span>`;
 }
@@ -261,7 +282,7 @@ function numberedMatches(edition, comp) {
   return numbers;
 }
 
-function resultCard(ctx, lang, match, numbers, anchor) {
+function resultCard(ctx, lang, match, numbers, anchor, pageItem) {
   const { t } = ctx;
   const winner = matchWinner(match);
   const homeClass = `lb-result__team${winner === "home" ? " lb-result__team--winner" : ""}`;
@@ -271,8 +292,9 @@ function resultCard(ctx, lang, match, numbers, anchor) {
   const meta = join([match.date, match.city], " \u00b7 ");
   const entry = `#${pad3(numbers[match.id] || 0)}`;
   const idAttr = anchor ? ` id="${escapeHtml(match.id)}"` : "";
+  const pageAttr = pageItem ? ` data-lb-page-item` : "";
   return (
-    `      <article class="lb-result"${idAttr}>\n` +
+    `      <article class="lb-result"${idAttr}${pageAttr}>\n` +
     `        <div class="lb-result__meta"><a class="lb-result__num" href="#${escapeHtml(match.id)}">${escapeHtml(entry)}</a> ${escapeHtml(meta)}</div>\n` +
     `        <div class="lb-result__teams">\n` +
     `          <span class="${homeClass}">${flagName(ctx, match.home, lang)}</span>\n` +
@@ -331,6 +353,37 @@ function phaseOrder(comp) {
   return order;
 }
 
+const PAGINATE_MIN = 60;
+const PAGINATE_STEP = 60;
+
+/** Títulos por selección desde el catálogo (solo ediciones celebradas). */
+function championTitles(comp) {
+  const counts = {};
+  for (const entry of comp.editions || []) {
+    if (entry.held && entry.champion) counts[entry.champion] = (counts[entry.champion] || 0) + 1;
+  }
+  return Object.entries(counts)
+    .map(([code, titles]) => ({ code, titles }))
+    .sort((a, b) => b.titles - a.titles || a.code.localeCompare(b.code));
+}
+
+/** Control de paginación (mejora progresiva): sin JS se ven todas las fichas. */
+function paginationControl(ctx, lang, scopeId, total) {
+  const { t } = ctx;
+  const shown = Math.min(PAGINATE_STEP, total);
+  return (
+    `      <div class="lb-pagination lb-needs-js">\n` +
+    `        <button class="lb-pagination__button" type="button" data-lb-pagination ` +
+    `data-lb-pagination-target="#${escapeHtml(scopeId)}" data-lb-pagination-step="${PAGINATE_STEP}" ` +
+    `data-lb-pagination-status="#${escapeHtml(scopeId)}-status" ` +
+    `data-lb-pagination-format="${escapeHtml(t(lang, "pagination.status"))}">` +
+    `${escapeHtml(t(lang, "pagination.more"))}</button>\n` +
+    `        <span class="lb-pagination__status" id="${escapeHtml(scopeId)}-status" aria-live="polite">` +
+    `${escapeHtml(t(lang, "pagination.status", { shown, total }))}</span>\n` +
+    `      </div>`
+  );
+}
+
 function phasesSection(ctx, page, edition, comp, numbers) {
   const lang = page.lang;
   const order = phaseOrder(comp);
@@ -340,6 +393,8 @@ function phasesSection(ctx, page, edition, comp, numbers) {
     .filter((stage) => stage !== "final")
     .sort((a, b) => (order[a] || 0) - (order[b] || 0));
   if (!stages.length) return "";
+  const phaseCount = stages.reduce((sum, stage) => sum + (byStage[stage] || []).length, 0);
+  const paginate = phaseCount >= PAGINATE_MIN;
   const blocks = stages
     .map((stage) => {
       const stageDef = (comp.stages || []).find((s) => s.id === stage);
@@ -347,12 +402,17 @@ function phasesSection(ctx, page, edition, comp, numbers) {
       const matches = byStage[stage]
         .slice()
         .sort((a, b) => (`${a.date}${a.id}` < `${b.date}${b.id}` ? -1 : 1))
-        .map((match) => resultCard(ctx, lang, match, numbers, true))
+        .map((match) => resultCard(ctx, lang, match, numbers, true, paginate))
         .join("\n");
       return `      <h3 class="lb-label">${escapeHtml(label)}</h3>\n${matches}`;
     })
     .join("\n");
-  return sectionNumbered("02", ctx.t(lang, "edition.phases"), blocks);
+  const scopeId = `phases-${page.year}`;
+  const body =
+    paginate
+      ? `      <div id="${escapeHtml(scopeId)}">\n${blocks}\n      </div>\n${paginationControl(ctx, lang, scopeId, phaseCount)}`
+      : blocks;
+  return sectionNumbered("02", ctx.t(lang, "edition.phases"), body);
 }
 
 function decisiveSection(ctx, page, edition, comp, numbers) {
@@ -608,11 +668,13 @@ function editionContent(ctx, page) {
       { code: results.runnerUp, medal: "silver" },
       { code: results.third, medal: "bronze" }
     ],
-    t(lang, "chart.podium")
+    t(lang, "chart.podium"),
+    t(lang, "chart.unit.position")
   );
   const scorersFig = hbarChart({
     items: (edition.scorers || []).slice(0, 10).map((scorer) => ({ label: scorer.player, value: scorer.goals })),
-    caption: t(lang, "edition.scorers")
+    caption: t(lang, "edition.scorers"),
+    unit: t(lang, "chart.unit.goals")
   });
   const charts =
     podiumFig || scorersFig

@@ -135,5 +135,11 @@
   "coverage.incomplete": "来源声明覆盖不完整。",
   "chart.title": "图表",
   "chart.goalsByEdition": "各届进球数",
-  "chart.podium": "领奖台"
+  "chart.podium": "领奖台",
+  "chart.titlesByCountry": "各国家队冠军数",
+  "chart.unit.goals": "球",
+  "chart.unit.position": "名次",
+  "chart.unit.titles": "冠",
+  "pagination.more": "显示更多比赛",
+  "pagination.status": "显示共 {total} 场比赛中的 {shown}"
 }

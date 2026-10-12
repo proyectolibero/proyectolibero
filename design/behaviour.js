@@ -92,11 +92,12 @@
       var step = Number(button.getAttribute("data-lb-pagination-step")) || 60;
       var items = queryAll("[data-lb-page-item]", scope);
       var status = document.querySelector(button.getAttribute("data-lb-pagination-status") || "");
+      var format = button.getAttribute("data-lb-pagination-format") || "{shown} de {total}";
       var shown = step;
       function render() {
         var count = Math.min(shown, items.length);
         items.forEach(function (item, i) { item.hidden = i >= count; });
-        if (status) status.textContent = count + " de " + items.length;
+        if (status) status.textContent = format.replace("{shown}", count).replace("{total}", items.length);
         button.hidden = count >= items.length;
       }
       button.addEventListener("click", function () {
