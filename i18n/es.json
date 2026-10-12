@@ -119,5 +119,18 @@
   "notes.ownGoal": "Gol propio",
   "table.year": "Año",
   "match.referee": "Árbitro",
-  "match.attendance": "Asistencia"
+  "match.attendance": "Asistencia",
+  "edition.nav": "Ediciones",
+  "edition.prev": "Anterior",
+  "edition.next": "Siguiente",
+  "edition.warning": "Aviso",
+  "provenance.title": "Procedencia",
+  "provenance.primary": "Fuente principal",
+  "provenance.rejected": "Descartado",
+  "provenance.none": "Sin fuentes alternativas registradas.",
+  "coverage.title": "Cobertura",
+  "coverage.sheets": "Fichas de partido",
+  "coverage.done": "Con ficha",
+  "coverage.gap": "Sin ficha",
+  "coverage.incomplete": "Cobertura parcial declarada por la fuente."
 }

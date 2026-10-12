@@ -71,15 +71,16 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 | Galería (dev) | `.lb-gallery`, `.lb-gallery__header`, `.lb-gallery__title`, `.lb-gallery__lead`, `.lb-gallery__nav`, `.lb-gallery__item`, `.lb-gallery__label`, `.lb-gallery__note`, `.lb-gallery__grid` |
 | `EditionTimeline` | `.lb-timeline`, `.lb-timeline__item`, `.lb-timeline__item--gap`, `.lb-timeline__item--pending`, `.lb-timeline__link`, `.lb-timeline__year`, `.lb-timeline__note` |
 | `StandingsTable` | `.lb-standings`, `.lb-table`, `.lb-table--stack`, `.lb-table__caption`, `.lb-table__num`, `.lb-table__medal`, `.lb-medal--gold`, `.lb-medal--silver`, `.lb-medal--bronze` |
-| `ScorerList` | `.lb-scorers`, `.lb-scorers__item`, `.lb-scorers__rank`, `.lb-scorers__name`, `.lb-scorers__meta`, `.lb-scorers__count` |
-| `ResultCard` | `.lb-result`, `.lb-result__meta`, `.lb-result__teams`, `.lb-result__team`, `.lb-result__team--away`, `.lb-result__team--winner`, `.lb-result__score`, `.lb-result__note` |
+| `ScorerList` | `.lb-scorers`, `.lb-scorers__item`, `.lb-scorers__item--leader`, `.lb-scorers__rank`, `.lb-scorers__name`, `.lb-scorers__meta`, `.lb-scorers__count` |
+| `ResultCard` | `.lb-result`, `.lb-result__meta`, `.lb-result__num`, `.lb-result__teams`, `.lb-result__team`, `.lb-result__team--away`, `.lb-result__team--winner`, `.lb-result__score`, `.lb-result__note` |
 | `MedalCounter` | `.lb-medals`, `.lb-medals__row`, `.lb-medals__pos`, `.lb-medals__country`, `.lb-medals__count`, `.lb-medals__count--gold`, `.lb-medals__count--silver`, `.lb-medals__count--bronze` |
 | `KpiCard` | `.lb-kpis`, `.lb-kpi`, `.lb-kpi__value`, `.lb-kpi__label`, `.lb-kpi__hint` |
-| `ProvenanceBadge` | `.lb-provenance`, `.lb-provenance__summary`, `.lb-provenance__star`, `.lb-provenance__source`, `.lb-provenance__detail`, `.lb-provenance__rejected-label`, `.lb-provenance__rejected-list`, `.lb-provenance__rejected-item` |
+| `ProvenanceBadge` | `.lb-provenance`, `.lb-provenance__summary`, `.lb-provenance__star`, `.lb-provenance__label`, `.lb-provenance__source`, `.lb-provenance__detail`, `.lb-provenance__primary`, `.lb-provenance__rejected-label`, `.lb-provenance__rejected-list`, `.lb-provenance__rejected-item`, `.lb-provenance__rejected-empty` |
 | `CoverageBar` | `.lb-coverage`, `.lb-coverage__head`, `.lb-coverage__label`, `.lb-coverage__count`, `.lb-coverage__track`, `.lb-coverage__fill`, `.lb-coverage__legend`, `.lb-coverage__legend-item`, `.lb-coverage__swatch`, `.lb-coverage__swatch--done`, `.lb-coverage__swatch--gap` |
 | `FacsimileSheet` | `.lb-facsimile`, `.lb-facsimile__caption`, `.lb-facsimile__paper`, `.lb-facsimile__pre` |
 | `CitationBlock` | `.lb-citation`, `.lb-citation__label`, `.lb-citation__text`, `.lb-citation__code` |
 | `SourceList` | `.lb-sources`, `.lb-sources__item`, `.lb-sources__name`, `.lb-sources__meta`, `.lb-sources__link`, `.lb-sources__retrieved` |
+| `EditionLedger` (S1) | `.lb-ledger`, `.lb-ledger__intro`, `.lb-ledger__notes`, `.lb-ledger__body`, `.lb-edition-head`, `.lb-edition-nav`, `.lb-edition-nav__link`, `.lb-edition-nav__link--prev`, `.lb-edition-nav__link--next`, `.lb-edition-nav__dir`, `.lb-edition-nav__label`, `.lb-edition-nav__year`, `.lb-podium`, `.lb-podium__place`, `.lb-podium__place--gold`, `.lb-podium__place--silver`, `.lb-podium__place--bronze`, `.lb-podium__medal`, `.lb-podium__label`, `.lb-podium__name`, `.lb-warn`, `.lb-warn__label`, `.lb-warn__text` |
 | Progresivo | `.lb-filter`, `.lb-filter__input`, `.lb-filter__count`, `.lb-pagination`, `.lb-pagination__button`, `.lb-pagination__status`, `.lb-scrubber`, `.lb-scrubber__label`, `.lb-scrubber__input`, `.lb-scrubber__value`, `.lb-toggle`, `.lb-toggle__button`, `.lb-toggle__panel`, `.lb-empty` |
 | Escaparate (S1) | `.lb-page`, `.lb-masthead`, `.lb-brand`, `.lb-nav`, `.lb-nav__list`, `.lb-nav__item`, `.lb-nav__link`, `.lb-nav__sub`, `.lb-breadcrumb`, `.lb-breadcrumb__list`, `.lb-breadcrumb__item`, `.lb-breadcrumb__link`, `.lb-breadcrumb__sep`, `.lb-breadcrumb__current`, `.lb-main`, `.lb-section`, `.lb-section__num`, `.lb-section__title`, `.lb-intro`, `.lb-label`, `.lb-list`, `.lb-list--nested`, `.lb-entry`, `.lb-entry__link`, `.lb-entry__meta`, `.lb-record`, `.lb-record__term`, `.lb-record__value`, `.lb-card`, `.lb-card__title`, `.lb-footer`, `.lb-footer__rights`, `.lb-footer__asof` |
 
@@ -89,7 +90,7 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 |---|---|
 | Portada | Descubrir: deportes, competiciones destacadas, releases recientes |
 | Hub de competición | Línea temporal de ediciones + cobertura (publicadas vs faltantes) |
-| Edición | Meta, fases, grupos, goleadores/marcas, partido decisivo, fuentes |
+| Edición | "Libro de registro" en dos lecturas: móvil una columna (cabecera de edición pegajosa con navegación entre ediciones); ≥960px libro a dos columnas (datos izquierda, notas al margen derecha) |
 | Resultado | Detalle de un partido o prueba, con procedencia |
 | Palmarés | Títulos y finales por país |
 | Metodología | Cómo se construye el archivo y cómo se resuelven conflictos |

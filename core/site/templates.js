@@ -202,7 +202,33 @@ function matchWinner(match) {
   return "";
 }
 
-function resultCard(ctx, lang, match) {
+function pad3(value) {
+  return String(value).padStart(3, "0");
+}
+
+/**
+ * Numera los partidos como entradas de archivo (#001, #002...). El orden es
+ * determinista (fase, fecha, id) y no depende de en qué sección se pinten, de
+ * modo que cada partido tiene siempre el mismo número y el ancla `#mNNN`.
+ */
+function numberedMatches(edition, comp) {
+  const order = phaseOrder(comp);
+  const rank = (stage) => (order[stage] === undefined ? Number.MAX_SAFE_INTEGER : order[stage]);
+  const sorted = (edition.matches || []).slice().sort((a, b) => {
+    const byStage = rank(a.stage) - rank(b.stage);
+    if (byStage !== 0) return byStage;
+    const left = `${a.date} ${a.id}`;
+    const right = `${b.date} ${b.id}`;
+    return left < right ? -1 : left > right ? 1 : 0;
+  });
+  const numbers = {};
+  sorted.forEach((match, index) => {
+    numbers[match.id] = index + 1;
+  });
+  return numbers;
+}
+
+function resultCard(ctx, lang, match, numbers, anchor) {
   const { t, countryName } = ctx;
   const winner = matchWinner(match);
   const homeClass = `lb-result__team${winner === "home" ? " lb-result__team--winner" : ""}`;
@@ -210,9 +236,11 @@ function resultCard(ctx, lang, match) {
   const score = Array.isArray(match.score) ? `${match.score[0]}\u2013${match.score[1]}` : "\u2013";
   const notes = matchNotes(t, lang, match);
   const meta = join([match.date, match.city], " \u00b7 ");
+  const entry = `#${pad3(numbers[match.id] || 0)}`;
+  const idAttr = anchor ? ` id="${escapeHtml(match.id)}"` : "";
   return (
-    `      <article class="lb-result">\n` +
-    `        <div class="lb-result__meta">${escapeHtml(meta)}</div>\n` +
+    `      <article class="lb-result"${idAttr}>\n` +
+    `        <div class="lb-result__meta"><a class="lb-result__num" href="#${escapeHtml(match.id)}">${escapeHtml(entry)}</a> ${escapeHtml(meta)}</div>\n` +
     `        <div class="lb-result__teams">\n` +
     `          <span class="${homeClass}">${team(match.home, lang, countryName)}</span>\n` +
     `          <span class="lb-result__score">${escapeHtml(score)}${notes ? `<span class="lb-result__note">${escapeHtml(notes)}</span>` : ""}</span>\n` +
@@ -270,7 +298,7 @@ function phaseOrder(comp) {
   return order;
 }
 
-function phasesSection(ctx, page, edition, comp) {
+function phasesSection(ctx, page, edition, comp, numbers) {
   const lang = page.lang;
   const order = phaseOrder(comp);
   const byStage = {};
@@ -286,7 +314,7 @@ function phasesSection(ctx, page, edition, comp) {
       const matches = byStage[stage]
         .slice()
         .sort((a, b) => (`${a.date}${a.id}` < `${b.date}${b.id}` ? -1 : 1))
-        .map((match) => resultCard(ctx, lang, match))
+        .map((match) => resultCard(ctx, lang, match, numbers, true))
         .join("\n");
       return `      <h3 class="lb-label">${escapeHtml(label)}</h3>\n${matches}`;
     })
@@ -294,7 +322,7 @@ function phasesSection(ctx, page, edition, comp) {
   return sectionNumbered("02", ctx.t(lang, "edition.phases"), blocks);
 }
 
-function decisiveSection(ctx, page, edition, comp) {
+function decisiveSection(ctx, page, edition, comp, numbers) {
   const lang = page.lang;
   const results = edition.results || {};
   const match = (edition.matches || []).find((m) => m.id === results.finalMatchId);
@@ -310,10 +338,11 @@ function decisiveSection(ctx, page, edition, comp) {
     .map((event) => `${event.minute}' ${escapeHtml(event.player)} (${escapeHtml(ctx.countryName(event.team, lang))})`)
     .join(", ");
   if (events) rows.push(recordRow(ctx.t(lang, "table.goals"), events));
+  const anchor = match.stage === "final";
   return sectionNumbered(
     "03",
     ctx.t(lang, "edition.decisiveMatch"),
-    `${resultCard(ctx, lang, match)}\n      <dl class="lb-record">\n${rows.join("\n")}\n      </dl>`
+    `${resultCard(ctx, lang, match, numbers, anchor)}\n      <dl class="lb-record">\n${rows.join("\n")}\n      </dl>`
   );
 }
 
@@ -329,16 +358,19 @@ function scorersSection(ctx, page, edition) {
   const scorers = edition.scorers || [];
   if (!scorers.length) return "";
   const scope = (edition.coverage && edition.coverage.scope) || "final";
+  const top = Math.max(...scorers.map((scorer) => scorer.goals));
   const rows = scorers
-    .map(
-      (scorer, index) =>
-        `        <li class="lb-scorers__item">\n` +
+    .map((scorer, index) => {
+      const leader = scorer.goals === top ? " lb-scorers__item--leader" : "";
+      return (
+        `        <li class="lb-scorers__item${leader}">\n` +
         `          <span class="lb-scorers__rank">${index + 1}</span>\n` +
         `          <span class="lb-scorers__name">${escapeHtml(scorer.player)}</span>\n` +
         `          <span class="lb-scorers__meta">${escapeHtml(ctx.countryName(scorer.country, lang))}</span>\n` +
         `          <span class="lb-scorers__count">${scorer.goals}</span>\n` +
         `        </li>`
-    )
+      );
+    })
     .join("\n");
   return sectionNumbered(
     "04",
@@ -365,24 +397,147 @@ function sourcesSection(ctx, page, edition) {
   return sectionNumbered("05", ctx.t(lang, "edition.sources"), `      <ul class="lb-sources">\n${rows}\n      </ul>`);
 }
 
+function podium(ctx, lang, results) {
+  const places = [
+    { key: "edition.champion", code: results.champion, medal: "gold" },
+    { key: "edition.runnerUp", code: results.runnerUp, medal: "silver" },
+    { key: "edition.third", code: results.third, medal: "bronze" }
+  ].filter((place) => place.code);
+  if (!places.length) return "";
+  const items = places
+    .map(
+      (place, index) =>
+        `        <div class="lb-podium__place lb-podium__place--${place.medal}">\n` +
+        `          <span class="lb-podium__medal lb-medal--${place.medal}" aria-hidden="true">${index + 1}</span>\n` +
+        `          <span class="lb-podium__label">${escapeHtml(ctx.t(lang, place.key))}</span>\n` +
+        `          <span class="lb-podium__name">${escapeHtml(ctx.countryName(place.code, lang))}</span>\n` +
+        `        </div>`
+    )
+    .join("\n");
+  return `      <div class="lb-podium">\n${items}\n      </div>`;
+}
+
+function sourceName(sources, id) {
+  const found = (sources || []).find((source) => source.id === id);
+  return found ? found.name : id;
+}
+
+/** Fuente principal declarada; si no hay `provenance`, la que firma las fichas. */
+function primarySourceId(edition) {
+  const provenance = edition.provenance || {};
+  if (provenance.primary) return provenance.primary;
+  const sheets = (edition.matches || []).map((match) => match.sheet && match.sheet.source).filter(Boolean);
+  if (sheets.length) return sheets[0];
+  const first = (edition.sources || [])[0];
+  return first ? first.id : "";
+}
+
+function provenanceBadge(ctx, page, edition) {
+  const lang = page.lang;
+  const { t } = ctx;
+  const sources = edition.sources || [];
+  const provenance = edition.provenance || {};
+  const rejected = provenance.rejected || [];
+  const primary = primarySourceId(edition);
+  const primaryLabel = primary ? sourceName(sources, primary) : "";
+  const rejectedBlock = rejected.length
+    ? `          <span class="lb-provenance__rejected-label">${escapeHtml(t(lang, "provenance.rejected"))}</span>\n` +
+      `          <ul class="lb-provenance__rejected-list">\n${rejected
+        .map(
+          (entry) =>
+            `            <li class="lb-provenance__rejected-item">${escapeHtml(
+              join([sourceName(sources, entry.source), entry.field, entry.value === undefined ? "" : String(entry.value)], " \u00b7 ") +
+                (entry.reason ? ` \u2014 ${entry.reason}` : "")
+            )}</li>`
+        )
+        .join("\n")}\n          </ul>`
+    : `          <p class="lb-provenance__rejected-empty">${escapeHtml(t(lang, "provenance.none"))}</p>`;
+  return (
+    `      <details class="lb-provenance">\n` +
+    `        <summary class="lb-provenance__summary">\n` +
+    `          <span class="lb-provenance__star" aria-hidden="true">\u2605</span>\n` +
+    `          <span class="lb-provenance__label">${escapeHtml(t(lang, "provenance.title"))}</span>\n` +
+    `          <span class="lb-provenance__source">${escapeHtml(primaryLabel)}</span>\n` +
+    `        </summary>\n` +
+    `        <div class="lb-provenance__detail">\n` +
+    `          <p class="lb-provenance__primary">${escapeHtml(t(lang, "provenance.primary"))}: ${escapeHtml(primaryLabel)}</p>\n` +
+    `${rejectedBlock}\n` +
+    `        </div>\n` +
+    `      </details>`
+  );
+}
+
+function coverageBar(ctx, page, edition) {
+  const lang = page.lang;
+  const { t } = ctx;
+  const matches = edition.matches || [];
+  if (!matches.length) return "";
+  const total = matches.length;
+  const done = matches.filter((match) => match.sheet && match.sheet.text).length;
+  const pct = Math.round((done / total) * 100);
+  const gap = total - done;
+  return (
+    `      <div class="lb-coverage">\n` +
+    `        <div class="lb-coverage__head">\n` +
+    `          <span class="lb-coverage__label">${escapeHtml(t(lang, "coverage.sheets"))}</span>\n` +
+    `          <span class="lb-coverage__count">${done} / ${total} (${pct}%)</span>\n` +
+    `        </div>\n` +
+    `        <div class="lb-coverage__track"><div class="lb-coverage__fill" style="width: ${pct}%"></div></div>\n` +
+    `        <ul class="lb-coverage__legend">\n` +
+    `          <li class="lb-coverage__legend-item"><span class="lb-coverage__swatch lb-coverage__swatch--done"></span>${escapeHtml(t(lang, "coverage.done"))} (${done})</li>\n` +
+    `          <li class="lb-coverage__legend-item"><span class="lb-coverage__swatch lb-coverage__swatch--gap"></span>${escapeHtml(t(lang, "coverage.gap"))} (${gap})</li>\n` +
+    `        </ul>\n` +
+    `      </div>`
+  );
+}
+
+function warningsNote(ctx, page, edition) {
+  const lang = page.lang;
+  const coverage = edition.coverage || {};
+  const messages = [];
+  if (coverage.note) messages.push(coverage.note);
+  else if (coverage.complete === false) messages.push(ctx.t(lang, "coverage.incomplete"));
+  if (coverage.scorersComplete === false) messages.push(ctx.t(lang, "coverage.incomplete"));
+  if (!messages.length) return "";
+  return (
+    `      <div class="lb-warn">\n` +
+    `        <span class="lb-warn__label">${escapeHtml(ctx.t(lang, "edition.warning"))}</span>\n` +
+    `        <p class="lb-warn__text">${escapeHtml(messages.join(" "))}</p>\n` +
+    `      </div>`
+  );
+}
+
+function editionNav(ctx, page, comp, sport) {
+  const lang = page.lang;
+  const { t } = ctx;
+  const published = (comp.editions || [])
+    .filter((entry) => entry.held && entry.data)
+    .sort((a, b) => (String(a.year) < String(b.year) ? -1 : 1));
+  const index = published.findIndex((entry) => String(entry.year) === String(page.year));
+  if (index < 0 || published.length < 2) return "";
+  const link = (entry, dir, key) =>
+    entry
+      ? `        <a class="lb-edition-nav__link lb-edition-nav__link--${dir}" href="/${lang}/${sport.slug}/${comp.slug}/${entry.year}/" rel="${dir}"><span class="lb-edition-nav__dir" aria-hidden="true">${dir === "prev" ? "\u2190" : "\u2192"}</span><span class="lb-edition-nav__label">${escapeHtml(t(lang, key))}</span><span class="lb-edition-nav__year">${escapeHtml(String(entry.year))}</span></a>`
+      : "";
+  return (
+    `      <nav class="lb-edition-nav" aria-label="${escapeHtml(t(lang, "edition.nav"))}">\n` +
+    `${link(published[index - 1], "prev", "edition.prev")}\n` +
+    `${link(published[index + 1], "next", "edition.next")}\n` +
+    `      </nav>`
+  );
+}
+
 function editionRecord(ctx, page, edition) {
   const { t, countryName } = ctx;
   const lang = page.lang;
-  const results = edition.results || {};
   const coverage = edition.coverage || {};
   const rows = [];
   rows.push(recordRow(t(lang, "edition.host"), (edition.hosts || []).map((c) => escapeHtml(countryName(c, lang))).join(", ")));
-  if (results.champion) rows.push(recordRow(t(lang, "edition.champion"), escapeHtml(countryName(results.champion, lang))));
-  if (results.runnerUp) rows.push(recordRow(t(lang, "edition.runnerUp"), escapeHtml(countryName(results.runnerUp, lang))));
-  if (results.third) rows.push(recordRow(t(lang, "edition.third"), escapeHtml(countryName(results.third, lang))));
   rows.push(recordRow(t(lang, "edition.teams"), String(edition.teamsCount)));
   rows.push(recordRow(t(lang, "edition.matchesCount"), String(coverage.matches)));
   rows.push(recordRow(t(lang, "edition.goals"), String(coverage.goals)));
   rows.push(recordRow(t(lang, "edition.scorers"), String(coverage.scorers)));
-  const note = coverage.note
-    ? `\n      <p class="lb-label">${escapeHtml(t(lang, "edition.note"))}: ${escapeHtml(coverage.note)}</p>`
-    : "";
-  return `      <dl class="lb-record">\n${rows.join("\n")}\n      </dl>${note}`;
+  return `        <dl class="lb-record">\n${rows.join("\n")}\n        </dl>`;
 }
 
 function editionContent(ctx, page) {
@@ -393,16 +548,49 @@ function editionContent(ctx, page) {
   const edition = editions[`${page.compId}/${page.year}`];
   const title = t(lang, "edition.title", { year: page.year });
   const results = edition.results || {};
+  const numbers = numberedMatches(edition, comp);
 
-  const blocks = [
-    `    <section class="lb-section">\n${editionRecord(ctx, page, edition)}\n    </section>`,
+  const head =
+    `    <header class="lb-edition-head">\n` +
+    `      <h1 class="lb-section__title">${escapeHtml(title)}</h1>\n` +
+    `${editionNav(ctx, page, comp, sport)}\n` +
+    `    </header>`;
+
+  const medals = podium(ctx, lang, results);
+  const intro =
+    `    <div class="lb-ledger__intro">\n` +
+    `      <section class="lb-section">\n` +
+    `${medals ? `${medals}\n` : ""}` +
+    `${editionRecord(ctx, page, edition)}\n` +
+    `      </section>\n` +
+    `    </div>`;
+
+  const warnings = warningsNote(ctx, page, edition);
+  const notes =
+    `    <aside class="lb-ledger__notes" aria-label="${escapeHtml(t(lang, "coverage.title"))}">\n` +
+    `      <p class="lb-label">${escapeHtml(t(lang, "coverage.title"))}</p>\n` +
+    `${coverageBar(ctx, page, edition)}\n` +
+    `${provenanceBadge(ctx, page, edition)}\n` +
+    `${warnings ? `${warnings}\n` : ""}` +
+    `    </aside>`;
+
+  const body = [
     standingsSection(ctx, page, edition),
-    phasesSection(ctx, page, edition, comp),
-    decisiveSection(ctx, page, edition, comp),
+    phasesSection(ctx, page, edition, comp, numbers),
+    decisiveSection(ctx, page, edition, comp, numbers),
     scorersSection(ctx, page, edition),
     sourcesSection(ctx, page, edition),
-    `    <section class="lb-section">\n      <a class="lb-entry__link" href="/${lang}/${sport.slug}/${comp.slug}/">\u2190 ${escapeHtml(t(lang, "edition.back"))}</a>\n    </section>`
-  ].filter(Boolean);
+    `      <section class="lb-section">\n        <a class="lb-entry__link" href="/${lang}/${sport.slug}/${comp.slug}/">\u2190 ${escapeHtml(t(lang, "edition.back"))}</a>\n      </section>`
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  const ledger =
+    `    <div class="lb-ledger">\n` +
+    `${intro}\n` +
+    `${notes}\n` +
+    `      <div class="lb-ledger__body">\n${body}\n      </div>\n` +
+    `    </div>`;
 
   const breadcrumb = [
     { name: t(lang, "home.title"), url: `/${lang}/` },
@@ -415,7 +603,7 @@ function editionContent(ctx, page) {
     title: `${title} \u00b7 ${t(lang, "site.name")}`,
     description: `${title}: ${t(lang, "edition.champion")} ${champion}. ${t(lang, "site.name")}.`,
     breadcrumb,
-    body: `${pageTitle(title)}\n${blocks.join("\n")}`,
+    body: `${head}\n${ledger}`,
     jsonld: [breadcrumbJsonLd(ctx, page, breadcrumb), datasetJsonLd(ctx, page, title, champion)]
   };
 }

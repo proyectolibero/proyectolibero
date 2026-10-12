@@ -2,8 +2,12 @@
 
 /*
  * Contratos del sistema de diseno (S0/S1), sin red:
- *   (a) toda clase .lb-* usada en la galeria o en site/ esta en components.css;
+ *   (a) toda clase .lb-* usada en la galeria o en el escaparate esta en
+ *       components.css; el escaparate se CONSTRUYE en un directorio temporal,
+ *       no se escanea site/ en disco;
  *   (b) ningun literal de color (#hex, rgb(), hsl()) fuera de tokens.css;
+ *       en HTML solo se comprueban los contextos CSS (<style> y style="..."),
+ *       de modo que etiquetas de evento como "#001" no dan falsos positivos;
  *   (c) accesibilidad basica: lang, tablas semanticas, foco visible y
  *       respeto a prefers-reduced-motion.
  */
@@ -12,13 +16,14 @@ const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
-const { ROOT } = require("./helpers.js");
+const { ROOT, fixtureProject } = require("./helpers.js");
+const { buildSite } = require("../core/site/index.js");
 
 const TOKENS = path.join(ROOT, "design", "tokens.css");
 const COMPONENTS = path.join(ROOT, "design", "components.css");
 const BEHAVIOUR = path.join(ROOT, "design", "behaviour.js");
 const GALLERY = path.join(ROOT, "design", "galeria", "index.html");
-const SITE = path.join(ROOT, "site");
+const EDITION = { competitionId: "football/worldcup", year: 1930 };
 
 function read(file) {
   return fs.readFileSync(file, "utf8");
@@ -56,13 +61,40 @@ function collectClassesUsedInHtml(html) {
   return names;
 }
 
+/** Extrae el CSS contenido en <style>...</style> y en atributos style="...". */
+function cssContexts(html) {
+  const chunks = [];
+  let re = /<style[^>]*>([\s\S]*?)<\/style>/gi;
+  let match;
+  while ((match = re.exec(html)) !== null) chunks.push(match[1]);
+  re = /\sstyle="([^"]*)"/gi;
+  while ((match = re.exec(html)) !== null) chunks.push(match[1]);
+  return chunks.join("\n");
+}
+
 const COLOR_LITERAL = /#[0-9a-fA-F]{3,8}\b|\brgba?\(|\bhsla?\(/;
 
-test("design (a): toda clase .lb-* de la galeria y site/ esta definida en components.css", () => {
+/** Construye el escaparate (mundial 1930, 5 idiomas) en un dir temporal. */
+function buildSiteTemp() {
+  const root = fixtureProject();
+  fs.cpSync(path.join(ROOT, "design"), path.join(root, "design"), { recursive: true });
+  const result = buildSite(root, { write: true, outDir: "site", editions: [EDITION] });
+  assert.ok(result.written.length > 0, "el build escribe ficheros en el dir temporal");
+  return path.join(root, "site");
+}
+
+function builtHtmlFiles() {
+  const site = buildSiteTemp();
+  const files = collectHtmlFiles(site);
+  assert.ok(files.length >= 5, `se construyen páginas para los idiomas (encontradas: ${files.length})`);
+  return files;
+}
+
+test("design (a): toda clase .lb-* de la galeria y del escaparate construido esta en components.css", () => {
   const defined = collectClassAttributeNames(read(COMPONENTS));
   const used = new Set([
     ...collectClassesUsedInHtml(read(GALLERY)),
-    ...collectHtmlFiles(SITE).flatMap((file) => [...collectClassesUsedInHtml(read(file))]),
+    ...builtHtmlFiles().flatMap((file) => [...collectClassesUsedInHtml(read(file))]),
   ]);
   assert.ok(used.size > 0, "deberia usarse al menos una clase .lb-*");
   const missing = [...used].filter((name) => !defined.has(name));
@@ -70,11 +102,15 @@ test("design (a): toda clase .lb-* de la galeria y site/ esta definida en compon
 });
 
 test("design (b): sin literales de color fuera de tokens.css", () => {
-  const files = [COMPONENTS, BEHAVIOUR, GALLERY, ...collectHtmlFiles(SITE)];
-  for (const file of files) {
-    const content = read(file);
-    const found = content.match(COLOR_LITERAL);
+  const cssAndJs = [COMPONENTS, BEHAVIOUR];
+  for (const file of cssAndJs) {
+    const found = read(file).match(COLOR_LITERAL);
     assert.equal(found, null, `${path.relative(ROOT, file)} contiene color literal: ${found}`);
+  }
+  const htmlFiles = [GALLERY, ...builtHtmlFiles()];
+  for (const file of htmlFiles) {
+    const found = cssContexts(read(file)).match(COLOR_LITERAL);
+    assert.equal(found, null, `${path.relative(ROOT, file)} contiene color literal en CSS: ${found}`);
   }
 });
 

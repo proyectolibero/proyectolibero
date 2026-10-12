@@ -119,5 +119,18 @@
   "notes.ownGoal": "Gol contra",
   "table.year": "Ano",
   "match.referee": "Árbitro",
-  "match.attendance": "Público"
+  "match.attendance": "Público",
+  "edition.nav": "Edições",
+  "edition.prev": "Anterior",
+  "edition.next": "Próxima",
+  "edition.warning": "Aviso",
+  "provenance.title": "Procedência",
+  "provenance.primary": "Fonte principal",
+  "provenance.rejected": "Descartado",
+  "provenance.none": "Nenhuma fonte alternativa registrada.",
+  "coverage.title": "Cobertura",
+  "coverage.sheets": "Fichas de partida",
+  "coverage.done": "Com ficha",
+  "coverage.gap": "Sem ficha",
+  "coverage.incomplete": "Cobertura parcial declarada pela fonte."
 }

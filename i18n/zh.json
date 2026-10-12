@@ -119,5 +119,18 @@
   "notes.ownGoal": "乌龙球",
   "table.year": "年份",
   "match.referee": "裁判",
-  "match.attendance": "观众人数"
+  "match.attendance": "观众人数",
+  "edition.nav": "届次",
+  "edition.prev": "上一届",
+  "edition.next": "下一届",
+  "edition.warning": "提示",
+  "provenance.title": "来源",
+  "provenance.primary": "主要来源",
+  "provenance.rejected": "已舍去",
+  "provenance.none": "未记录其他来源。",
+  "coverage.title": "覆盖度",
+  "coverage.sheets": "比赛记录卡",
+  "coverage.done": "有记录卡",
+  "coverage.gap": "无记录卡",
+  "coverage.incomplete": "来源声明覆盖不完整。"
 }

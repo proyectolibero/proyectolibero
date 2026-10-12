@@ -119,5 +119,18 @@
   "notes.ownGoal": "आत्मगोल",
   "table.year": "वर्ष",
   "match.referee": "रेफ़री",
-  "match.attendance": "उपस्थिति"
+  "match.attendance": "उपस्थिति",
+  "edition.nav": "संस्करण",
+  "edition.prev": "पिछला",
+  "edition.next": "अगला",
+  "edition.warning": "सूचना",
+  "provenance.title": "स्रोत-प्रमाण",
+  "provenance.primary": "मुख्य स्रोत",
+  "provenance.rejected": "अस्वीकृत",
+  "provenance.none": "कोई वैकल्पिक स्रोत दर्ज नहीं।",
+  "coverage.title": "कवरेज",
+  "coverage.sheets": "मैच शीट",
+  "coverage.done": "शीट सहित",
+  "coverage.gap": "शीट रहित",
+  "coverage.incomplete": "स्रोत द्वारा आंशिक कवरेज घोषित।"
 }

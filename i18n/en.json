@@ -119,5 +119,18 @@
   "notes.ownGoal": "Own goal",
   "table.year": "Year",
   "match.referee": "Referee",
-  "match.attendance": "Attendance"
+  "match.attendance": "Attendance",
+  "edition.nav": "Editions",
+  "edition.prev": "Previous",
+  "edition.next": "Next",
+  "edition.warning": "Notice",
+  "provenance.title": "Provenance",
+  "provenance.primary": "Primary source",
+  "provenance.rejected": "Discarded",
+  "provenance.none": "No alternative sources recorded.",
+  "coverage.title": "Coverage",
+  "coverage.sheets": "Match sheets",
+  "coverage.done": "With sheet",
+  "coverage.gap": "Without sheet",
+  "coverage.incomplete": "Partial coverage declared by the source."
 }
