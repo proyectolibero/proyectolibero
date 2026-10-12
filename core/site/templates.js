@@ -1,6 +1,7 @@
 "use strict";
 
 const { escapeHtml } = require("./html.js");
+const { barChart, podiumChart, hbarChart, medalGlyph } = require("./charts.js");
 
 /*
  * Cuerpos de página (sin cabecera ni pie; eso lo pone layout.js). Todas las
@@ -166,10 +167,28 @@ function competitionContent(ctx, page) {
     { name: t(lang, sport.nameKey), url: `/${lang}/${sport.slug}/` },
     { name }
   ];
+  const series = (ctx.seriesByComp && ctx.seriesByComp[page.compId]) || [];
+  const goalSeries = series.filter((row) => row.goals > 0);
+  const goalsChart =
+    goalSeries.length >= 2
+      ? "\n" +
+        sectionNumbered(
+          "02",
+          t(lang, "chart.goalsByEdition"),
+          `      ${barChart({
+            items: goalSeries.map((row) => ({ label: row.year, value: row.goals })),
+            caption: t(lang, "chart.goalsByEdition"),
+            ariaLabel: `${t(lang, "chart.goalsByEdition")}: ${goalSeries
+              .map((row) => `${row.year}, ${row.goals}`)
+              .join("; ")}`
+          })}`
+        )
+      : "";
   const body =
     pageTitle(name) +
     "\n" +
-    sectionNumbered("01", t(lang, "index.editions"), `      <ul class="lb-timeline" data-lb-timeline>\n${items}\n      </ul>`);
+    sectionNumbered("01", t(lang, "index.editions"), `      <ul class="lb-timeline" data-lb-timeline>\n${items}\n      </ul>`) +
+    goalsChart;
   return {
     title: `${name} \u00b7 ${t(lang, "site.name")}`,
     description: t(lang, "index.stats", {
@@ -184,8 +203,22 @@ function competitionContent(ctx, page) {
 
 /* ------------------------------- Edition -------------------------------- */
 
-function team(code, lang, countryName) {
-  return escapeHtml(countryName(code, lang));
+/** Bandera propia si existe; si no, ficha neutra con el código (nunca inventada). */
+function flagTile(ctx, code) {
+  if (ctx.flags && ctx.flags.has(code)) {
+    return `<img class="lb-flag" src="/assets/design/flags/${escapeHtml(code)}.svg" alt="" width="24" height="16" loading="lazy" decoding="async">`;
+  }
+  return `<span class="lb-flag lb-flag--ficha" aria-hidden="true">${escapeHtml(code)}</span>`;
+}
+
+/** Bandera + nombre localizado del país o equipo. */
+function flagName(ctx, code, lang) {
+  return (
+    `<span class="lb-flag-name">` +
+    `${flagTile(ctx, code)}` +
+    `<span class="lb-flag-name__text">${escapeHtml(ctx.countryName(code, lang))}</span>` +
+    `</span>`
+  );
 }
 
 function matchNotes(t, lang, match) {
@@ -229,7 +262,7 @@ function numberedMatches(edition, comp) {
 }
 
 function resultCard(ctx, lang, match, numbers, anchor) {
-  const { t, countryName } = ctx;
+  const { t } = ctx;
   const winner = matchWinner(match);
   const homeClass = `lb-result__team${winner === "home" ? " lb-result__team--winner" : ""}`;
   const awayClass = `lb-result__team lb-result__team--away${winner === "away" ? " lb-result__team--winner" : ""}`;
@@ -242,22 +275,22 @@ function resultCard(ctx, lang, match, numbers, anchor) {
     `      <article class="lb-result"${idAttr}>\n` +
     `        <div class="lb-result__meta"><a class="lb-result__num" href="#${escapeHtml(match.id)}">${escapeHtml(entry)}</a> ${escapeHtml(meta)}</div>\n` +
     `        <div class="lb-result__teams">\n` +
-    `          <span class="${homeClass}">${team(match.home, lang, countryName)}</span>\n` +
+    `          <span class="${homeClass}">${flagName(ctx, match.home, lang)}</span>\n` +
     `          <span class="lb-result__score">${escapeHtml(score)}${notes ? `<span class="lb-result__note">${escapeHtml(notes)}</span>` : ""}</span>\n` +
-    `          <span class="${awayClass}">${team(match.away, lang, countryName)}</span>\n` +
+    `          <span class="${awayClass}">${flagName(ctx, match.away, lang)}</span>\n` +
     `        </div>\n` +
     `      </article>`
   );
 }
 
 function standingsTable(ctx, lang, group) {
-  const { t, countryName } = ctx;
+  const { t } = ctx;
   const rows = (group.standings || [])
     .map(
       (row, index) =>
         `          <tr>\n` +
         `            <td class="lb-table__num" data-label="${escapeHtml(t(lang, "table.pos"))}">${index + 1}</td>\n` +
-        `            <td data-label="${escapeHtml(t(lang, "table.team"))}">${escapeHtml(countryName(row.team, lang))}</td>\n` +
+        `            <td data-label="${escapeHtml(t(lang, "table.team"))}">${flagName(ctx, row.team, lang)}</td>\n` +
         `            <td class="lb-table__num" data-label="${escapeHtml(t(lang, "table.p"))}">${row.p}</td>\n` +
         `            <td class="lb-table__num" data-label="${escapeHtml(t(lang, "table.w"))}">${row.w}</td>\n` +
         `            <td class="lb-table__num" data-label="${escapeHtml(t(lang, "table.d"))}">${row.d}</td>\n` +
@@ -366,7 +399,7 @@ function scorersSection(ctx, page, edition) {
         `        <li class="lb-scorers__item${leader}">\n` +
         `          <span class="lb-scorers__rank">${index + 1}</span>\n` +
         `          <span class="lb-scorers__name">${escapeHtml(scorer.player)}</span>\n` +
-        `          <span class="lb-scorers__meta">${escapeHtml(ctx.countryName(scorer.country, lang))}</span>\n` +
+        `          <span class="lb-scorers__meta">${flagName(ctx, scorer.country, lang)}</span>\n` +
         `          <span class="lb-scorers__count">${scorer.goals}</span>\n` +
         `        </li>`
       );
@@ -406,11 +439,11 @@ function podium(ctx, lang, results) {
   if (!places.length) return "";
   const items = places
     .map(
-      (place, index) =>
+      (place) =>
         `        <div class="lb-podium__place lb-podium__place--${place.medal}">\n` +
-        `          <span class="lb-podium__medal lb-medal--${place.medal}" aria-hidden="true">${index + 1}</span>\n` +
+        `          <span class="lb-podium__medal lb-medal--${place.medal}" aria-hidden="true">${medalGlyph(place.medal)}</span>\n` +
         `          <span class="lb-podium__label">${escapeHtml(ctx.t(lang, place.key))}</span>\n` +
-        `          <span class="lb-podium__name">${escapeHtml(ctx.countryName(place.code, lang))}</span>\n` +
+        `          <span class="lb-podium__name">${flagName(ctx, place.code, lang)}</span>\n` +
         `        </div>`
     )
     .join("\n");
@@ -482,7 +515,10 @@ function coverageBar(ctx, page, edition) {
     `          <span class="lb-coverage__label">${escapeHtml(t(lang, "coverage.sheets"))}</span>\n` +
     `          <span class="lb-coverage__count">${done} / ${total} (${pct}%)</span>\n` +
     `        </div>\n` +
-    `        <div class="lb-coverage__track"><div class="lb-coverage__fill" style="width: ${pct}%"></div></div>\n` +
+    `        <svg class="lb-coverage__chart" viewBox="0 0 100 6" preserveAspectRatio="none" role="img" aria-label="${escapeHtml(`${t(lang, "coverage.sheets")}: ${done} / ${total} (${pct}%)`)}" focusable="false">\n` +
+    `          <rect class="lb-coverage__bg" x="0" y="0" width="100" height="6" />\n` +
+    `          <rect class="lb-coverage__fill" x="0" y="0" width="${pct}" height="6" />\n` +
+    `        </svg>\n` +
     `        <ul class="lb-coverage__legend">\n` +
     `          <li class="lb-coverage__legend-item"><span class="lb-coverage__swatch lb-coverage__swatch--done"></span>${escapeHtml(t(lang, "coverage.done"))} (${done})</li>\n` +
     `          <li class="lb-coverage__legend-item"><span class="lb-coverage__swatch lb-coverage__swatch--gap"></span>${escapeHtml(t(lang, "coverage.gap"))} (${gap})</li>\n` +
@@ -566,10 +602,29 @@ function editionContent(ctx, page) {
     `    </div>`;
 
   const warnings = warningsNote(ctx, page, edition);
+  const podiumFig = podiumChart(
+    [
+      { code: results.champion, medal: "gold" },
+      { code: results.runnerUp, medal: "silver" },
+      { code: results.third, medal: "bronze" }
+    ],
+    t(lang, "chart.podium")
+  );
+  const scorersFig = hbarChart({
+    items: (edition.scorers || []).slice(0, 10).map((scorer) => ({ label: scorer.player, value: scorer.goals })),
+    caption: t(lang, "edition.scorers")
+  });
+  const charts =
+    podiumFig || scorersFig
+      ? `      <p class="lb-label">${escapeHtml(t(lang, "chart.title"))}</p>\n` +
+        `${podiumFig ? `${podiumFig}\n` : ""}` +
+        `${scorersFig ? `${scorersFig}\n` : ""}`
+      : "";
   const notes =
     `    <aside class="lb-ledger__notes" aria-label="${escapeHtml(t(lang, "coverage.title"))}">\n` +
     `      <p class="lb-label">${escapeHtml(t(lang, "coverage.title"))}</p>\n` +
     `${coverageBar(ctx, page, edition)}\n` +
+    `${charts}` +
     `${provenanceBadge(ctx, page, edition)}\n` +
     `${warnings ? `${warnings}\n` : ""}` +
     `    </aside>`;

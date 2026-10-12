@@ -16,6 +16,8 @@ const {
 } = require("./text.js");
 const { renderDocument } = require("./layout.js");
 const { renderContent } = require("./templates.js");
+const { loadFlagManifest, flagCodes, FLAGS_DIR } = require("./flags.js");
+const { collectEditionSeries } = require("./series.js");
 
 /*
  * Generador del escaparate (SSG). Escribe HTML estático determinista bajo
@@ -114,6 +116,12 @@ function buildSite(root, options = {}) {
   const release = readJSON(path.join(root, "releases", releaseId, "release.json"));
   const { map: editionsMap, planned } = loadEditions(root, catalog, requested);
 
+  const flags = flagCodes(loadFlagManifest(root));
+  const seriesByComp = {};
+  for (const comp of Object.values(catalog.competitions)) {
+    seriesByComp[comp.id] = collectEditionSeries(root, comp);
+  }
+
   const ctx = {
     model,
     catalog,
@@ -122,7 +130,9 @@ function buildSite(root, options = {}) {
     countryName: makeCountryName(countries),
     origin: ORIGIN,
     release,
-    editions: editionsMap
+    editions: editionsMap,
+    flags,
+    seriesByComp
   };
 
   const pagePlan = planSite(model, planned);
@@ -149,6 +159,17 @@ function buildSite(root, options = {}) {
       fs.mkdirSync(path.dirname(to), { recursive: true });
       fs.copyFileSync(from, to);
       written.push(to);
+    }
+    const flagsFrom = path.join(root, FLAGS_DIR);
+    if (fs.existsSync(flagsFrom)) {
+      const flagsTo = path.join(root, outDir, "assets", "design", "flags");
+      fs.mkdirSync(flagsTo, { recursive: true });
+      for (const name of fs.readdirSync(flagsFrom)) {
+        if (!name.endsWith(".svg")) continue;
+        const to = path.join(flagsTo, name);
+        fs.copyFileSync(path.join(flagsFrom, name), to);
+        written.push(to);
+      }
     }
   }
 

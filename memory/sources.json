@@ -119,6 +119,32 @@
       "usedBy": [
         "data/football/eurochamp/1996.json"
       ]
+    },
+    {
+      "id": "src-11",
+      "name": "hampusborgos/country-flags",
+      "url": "https://github.com/hampusborgos/country-flags",
+      "retrieved": "2026-10-12",
+      "publisher": "GitHub (hampusborgos)",
+      "author": "hampusborgos",
+      "license": "Public Domain (banderas de Wikimedia Commons; uso de cada bandera sujeto a restricciones ajenas al proyecto)",
+      "usedBy": [
+        "design/flags/manifest.json",
+        "design/flags/ATTRIBUTION.md",
+        "core/site/flags.js",
+        "scripts/vendor-flags.js"
+      ]
+    },
+    {
+      "id": "src-12",
+      "name": "datasets/country-codes",
+      "url": "https://github.com/datasets/country-codes",
+      "retrieved": "2026-10-12",
+      "publisher": "Open Knowledge Foundation — Datasets",
+      "license": "PDDL (Public Domain Dedication and License)",
+      "usedBy": [
+        "scripts/vendor-flags.js"
+      ]
     }
   ]
 }

@@ -35,3 +35,4 @@ require("./promote.test.js");
 require("./integrity.test.js");
 require("./usage-counter.test.js");
 require("./design.test.js");
+require("./flags.test.js");

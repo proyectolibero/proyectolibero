@@ -132,5 +132,8 @@
   "coverage.sheets": "比赛记录卡",
   "coverage.done": "有记录卡",
   "coverage.gap": "无记录卡",
-  "coverage.incomplete": "来源声明覆盖不完整。"
+  "coverage.incomplete": "来源声明覆盖不完整。",
+  "chart.title": "图表",
+  "chart.goalsByEdition": "各届进球数",
+  "chart.podium": "领奖台"
 }

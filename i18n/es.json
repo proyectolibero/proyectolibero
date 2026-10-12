@@ -132,5 +132,8 @@
   "coverage.sheets": "Fichas de partido",
   "coverage.done": "Con ficha",
   "coverage.gap": "Sin ficha",
-  "coverage.incomplete": "Cobertura parcial declarada por la fuente."
+  "coverage.incomplete": "Cobertura parcial declarada por la fuente.",
+  "chart.title": "Gráficos",
+  "chart.goalsByEdition": "Goles por edición",
+  "chart.podium": "Podio"
 }

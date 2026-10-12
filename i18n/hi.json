@@ -132,5 +132,8 @@
   "coverage.sheets": "मैच शीट",
   "coverage.done": "शीट सहित",
   "coverage.gap": "शीट रहित",
-  "coverage.incomplete": "स्रोत द्वारा आंशिक कवरेज घोषित।"
+  "coverage.incomplete": "स्रोत द्वारा आंशिक कवरेज घोषित।",
+  "chart.title": "चार्ट",
+  "chart.goalsByEdition": "प्रति संस्करण गोल",
+  "chart.podium": "पोडियम"
 }

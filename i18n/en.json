@@ -132,5 +132,8 @@
   "coverage.sheets": "Match sheets",
   "coverage.done": "With sheet",
   "coverage.gap": "Without sheet",
-  "coverage.incomplete": "Partial coverage declared by the source."
+  "coverage.incomplete": "Partial coverage declared by the source.",
+  "chart.title": "Charts",
+  "chart.goalsByEdition": "Goals per edition",
+  "chart.podium": "Podium"
 }

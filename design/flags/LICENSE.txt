@@ -1,0 +1,11 @@
+Banderas — licencia
+
+Los ficheros .svg de este directorio proceden del repositorio público
+«hampusborgos/country-flags» (https://github.com/hampusborgos/country-flags), que reúne reproducciones vectoriales de las
+banderas tomadas de Wikimedia Commons.
+
+Las banderas no están sujetas a derechos de autor: son de dominio público
+(pueden existir, no obstante, otras restricciones legales al uso de cada
+bandera, ajenas a este proyecto).
+
+Consulta del conjunto: 2026-10-12.
