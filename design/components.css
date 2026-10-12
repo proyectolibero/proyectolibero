@@ -576,6 +576,14 @@ html.lb-js .lb-needs-js { display: block; }
   color: var(--lb-text);
 }
 
+.lb-facsimile-list {
+  display: grid;
+  gap: var(--lb-space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* ------------------------------------------------------------------ */
 /* CitationBlock — "como citar este release"                           */
 /* ------------------------------------------------------------------ */

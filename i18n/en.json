@@ -49,6 +49,15 @@
   "edition.phases": "Phases",
   "edition.decisiveMatch": "Decisive match",
   "edition.note": "Note",
+  "edition.qualification": "Qualifying stage",
+  "edition.facsimile": "Match sheets",
+  "edition.subviews": "Other views of the edition",
+  "qualification.groups": "Qualifying groups",
+  "qualification.viewGroup": "View group matches",
+  "qualification.groupMatches": "{n} matches",
+  "qualification.noGroup": "Stage without a group",
+  "qualification.none": "This edition has no published qualifying.",
+  "matches.none": "This edition has no match sheets.",
   "phase.qualifying": "Qualifying",
   "phase.qualifyingRound": "Qualifying round",
   "phase.qualifyingGroup": "Qualifying group",
@@ -139,7 +148,5 @@
   "chart.titlesByCountry": "Titles by national team",
   "chart.unit.goals": "goals",
   "chart.unit.position": "position",
-  "chart.unit.titles": "titles",
-  "pagination.more": "Show more matches",
-  "pagination.status": "Showing {shown} of {total} matches"
+  "chart.unit.titles": "titles"
 }

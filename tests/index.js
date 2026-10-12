@@ -36,3 +36,4 @@ require("./integrity.test.js");
 require("./usage-counter.test.js");
 require("./design.test.js");
 require("./flags.test.js");
+require("./site-budget.test.js");

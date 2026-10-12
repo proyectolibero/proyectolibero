@@ -49,6 +49,15 @@
   "edition.phases": "Fases",
   "edition.decisiveMatch": "Partida decisiva",
   "edition.note": "Nota",
+  "edition.qualification": "Fase de qualificação",
+  "edition.facsimile": "Fichas de partida",
+  "edition.subviews": "Outras vistas da edição",
+  "qualification.groups": "Grupos de qualificação",
+  "qualification.viewGroup": "Ver jogos do grupo",
+  "qualification.groupMatches": "{n} jogos",
+  "qualification.noGroup": "Fase sem grupo",
+  "qualification.none": "Esta edição não tem eliminatórias publicadas.",
+  "matches.none": "Esta edição não tem fichas de partida.",
   "phase.qualifying": "Eliminatórias",
   "phase.qualifyingRound": "Ronda preliminar",
   "phase.qualifyingGroup": "Grupo de qualificação",
@@ -139,7 +148,5 @@
   "chart.titlesByCountry": "Títulos por seleção",
   "chart.unit.goals": "gols",
   "chart.unit.position": "posição",
-  "chart.unit.titles": "títulos",
-  "pagination.more": "Mostrar mais jogos",
-  "pagination.status": "Exibindo {shown} de {total} jogos"
+  "chart.unit.titles": "títulos"
 }

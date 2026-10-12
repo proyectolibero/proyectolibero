@@ -49,6 +49,15 @@
   "edition.phases": "चरण",
   "edition.decisiveMatch": "निर्णायक मैच",
   "edition.note": "टिप्पणी",
+  "edition.qualification": "क्वालीफायर चरण",
+  "edition.facsimile": "मैच शीट",
+  "edition.subviews": "संस्करण के अन्य दृश्य",
+  "qualification.groups": "क्वालीफायर समूह",
+  "qualification.viewGroup": "समूह के मैच देखें",
+  "qualification.groupMatches": "{n} मैच",
+  "qualification.noGroup": "बिना समूह वाला चरण",
+  "qualification.none": "इस संस्करण के लिए क्वालीफायर प्रकाशित नहीं है।",
+  "matches.none": "इस संस्करण के लिए कोई मैच शीट नहीं है।",
   "phase.qualifying": "क्वालीफायर",
   "phase.qualifyingRound": "प्रारंभिक दौर",
   "phase.qualifyingGroup": "क्वालीफायर समूह",
@@ -139,7 +148,5 @@
   "chart.titlesByCountry": "राष्ट्रीय टीमों के खिताब",
   "chart.unit.goals": "गोल",
   "chart.unit.position": "स्थान",
-  "chart.unit.titles": "खिताब",
-  "pagination.more": "और मैच दिखाएँ",
-  "pagination.status": "कुल {total} मैचों में से {shown} दिखाए गए"
+  "chart.unit.titles": "खिताब"
 }

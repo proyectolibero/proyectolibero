@@ -49,6 +49,15 @@
   "edition.phases": "阶段",
   "edition.decisiveMatch": "决胜比赛",
   "edition.note": "备注",
+  "edition.qualification": "预选赛阶段",
+  "edition.facsimile": "比赛记录卡",
+  "edition.subviews": "版次的其他视图",
+  "qualification.groups": "预选赛小组",
+  "qualification.viewGroup": "查看小组比赛",
+  "qualification.groupMatches": "{n} 场比赛",
+  "qualification.noGroup": "未分组阶段",
+  "qualification.none": "此版次未发布预选赛。",
+  "matches.none": "此版次没有比赛记录卡。",
   "phase.qualifying": "预选赛",
   "phase.qualifyingRound": "预选赛轮",
   "phase.qualifyingGroup": "预选赛小组",
@@ -139,7 +148,5 @@
   "chart.titlesByCountry": "各国家队冠军数",
   "chart.unit.goals": "球",
   "chart.unit.position": "名次",
-  "chart.unit.titles": "冠",
-  "pagination.more": "显示更多比赛",
-  "pagination.status": "显示共 {total} 场比赛中的 {shown}"
+  "chart.unit.titles": "冠"
 }

@@ -56,8 +56,9 @@ function loadEditions(root, catalog, requested) {
     const entry = (comp.editions || []).find((e) => String(e.year) === String(item.year));
     if (!entry || !entry.data) throw new Error(`edición sin datos: ${item.competitionId} ${item.year}`);
     const file = path.join(root, "data", comp.sport, comp.competition, entry.data);
-    map[`${comp.sport}/${comp.competition}/${item.year}`] = readJSON(file);
-    planned.push({ sportId: comp.sport, compId: item.competitionId, year: item.year });
+    const edition = readJSON(file);
+    map[`${comp.sport}/${comp.competition}/${item.year}`] = edition;
+    planned.push({ sportId: comp.sport, compId: item.competitionId, year: item.year, edition });
   }
   return { map, planned };
 }
