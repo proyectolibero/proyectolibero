@@ -51,8 +51,23 @@ test("EDI013: aviso (no error) cuando la suma de goleadores no cuadra y no está
 
 test("coverage.complete:true con scorersComplete:false es válido (sin error ni aviso)", () => {
   const edition = mismatched();
+  edition.matches.push({
+    id: "m010",
+    stage: "qualifying",
+    date: "1938-05-01",
+    city: "Milan",
+    home: "ITA",
+    away: "NOR",
+    score: [2, 1],
+    status: "played",
+    notes: [],
+    pens: null
+  });
+  edition.coverage.matches = 3;
+  edition.coverage.goals = 15;
   edition.coverage.scope = "all";
   edition.coverage.complete = true;
+  edition.coverage.missingPhases = [];
   edition.coverage.scorersComplete = false;
   const result = validate(edition);
   assert.deepEqual(result.errors, []);

@@ -1,7 +1,7 @@
 {
   "project": "Deporte Mundial",
   "description": "Portal estático multilingüe de estadísticas deportivas (HTML+CSS+JS puro, hash routing, GitHub Pages)",
-  "updatedAt": "2026-10-11",
+  "updatedAt": "2026-10-13",
   "languages": [
     "es",
     "en",
@@ -75,6 +75,10 @@
     "data.eurochamp": {
       "status": "in-progress",
       "notes": "Piloto 1996: clasificación integrada desde rsssf:96e-q (231 partidos, cobertura all/complete). 4/8 tablas de grupo omitidas por erratas de la fuente (EDI007); avisos persistidos en la edición. Tests 225 verdes, validate 0/0, integrity 13/43."
+    },
+    "taxonomy": {
+      "status": "done",
+      "notes": "P1 hecho: catalog/facets.json (vocabulario con i18n 5 idiomas y deprecated), 5 competiciones etiquetadas (obligatorias + ageBand/frequency/sanctioningBody), editorialStatus derivado de data/, declaredPhases por clase con excepciones por edicion, conclusion derivada (core/phases.js + scripts/derive-phases.js; 76 ediciones, 0 banderas cambian, 9 con clasificacion ausente), validador FAC001-FAC007/CAT006/EDI020/EDI021, arbol e indices por faceta como datos (core/site/tree.js, site/indexes/), tests taxonomy.test.js y phases.test.js. D52 registra el diseno."
     }
   },
   "nextSteps": [

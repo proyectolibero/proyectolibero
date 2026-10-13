@@ -22,7 +22,8 @@
     "scorers": 37,
     "complete": true,
     "scope": "all",
-    "note": "Sin fase de clasificación en esta edición."
+    "note": "Sin fase de clasificación en esta edición.",
+    "missingPhases": []
   },
   "sources": [
     {

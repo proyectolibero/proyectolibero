@@ -16,6 +16,18 @@
     "type": "interval"
   },
   "status": "discontinued",
+  "facets": {
+    "sport": "football",
+    "entityType": "national-team",
+    "gender": "men",
+    "geography": "subregional",
+    "category": "championship",
+    "status": "defunct",
+    "ageBand": "senior",
+    "frequency": "annual"
+  },
+  "editorialStatus": "published",
+  "declaredPhases": ["group"],
   "firstEdition": 1924,
   "lastEditionHeld": 2001,
   "nextEditionExpected": null,

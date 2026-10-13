@@ -23,7 +23,11 @@
     "scope": "all",
     "complete": false,
     "note": "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar).",
-    "scorersComplete": false
+    "scorersComplete": false,
+    "partialPhases": [
+      "qualifying"
+    ],
+    "missingPhases": []
   },
   "sources": [
     {

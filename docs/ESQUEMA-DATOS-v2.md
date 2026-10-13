@@ -67,6 +67,9 @@ Ejemplo:
 | `organizer`, `kind` | Federación y tipo de competición (`international` \| `domestic`) |
 | `scope` | Ámbito (`international`, `continental`, `national`, `regional`) |
 | `teamMode` | `country` \| `club` \| `individual` |
+| `facets` | **Taxonomía (ADR-031)**: facetas obligatorias (`sport`, `entityType`, `gender`, `geography`, `category`, `status`) + opcionales, con valores del vocabulario `catalog/facets.json` (validador: `FAC001`–`FAC005`) |
+| `editorialStatus` | `published` \| `in-progress` \| `planned` \| `sourced-only`; `published` ⟺ hay ediciones con datos (`FAC006`/`FAC007`) |
+| `declaredPhases` | **Fases que comprende la competición** (ADR-035), por *clase*: `qualifying` \| `group` \| `knockout` \| `ranking` \| `heat`; excepción por edición en `editions[].phases` (1930 sin clasificación; 1934 con ella) (`CAT006`) |
 | `resultArchetype` | Arquetipo único de la competición |
 | `gender` | `men` \| `women` \| `mixed` |
 | `cadence` | `{ type: interval\|annual\|once, years? }` |
@@ -122,18 +125,24 @@ Ruta: `data/<sport>/<competition>/<edition>.json`. Campos comunes:
 | `goals` | int | Suma de los goles de los partidos (cifra garantizada por el validador) |
 | `scorers` | int | Nº de entradas de `scorers[]` |
 | `scope` | `"final"` \| `"all"` | **Obligatorio**: solo torneo final, o clasificación + torneo final (ADR-022) |
-| `complete` | bool | `true` **solo** si `scope:"all"` y no falta ninguna fase (ADR-022) |
+| `complete` | bool | **Derivado (ADR-035)**: `true` solo si `scope:"all"`, no falta ninguna fase declarada, no hay fases parciales y hay campeón. El validador exige que coincida con la derivación (`EDI020`/`EDI021`); no se escribe a mano |
+| `missingPhases[]` | fases declaradas ausentes | Derivado de comparar `declaredPhases` del catálogo (con excepción por edición) con las fases presentes; se materializa con `scripts/derive-phases.js` |
+| `partialPhases[]` | fases publicadas parcialmente | Declaración estructurada de un defecto documentado (p. ej. clasificación con partidos omitidos por países no resueltos); bloquea `complete` como `scorersComplete` (ADR-016) |
 | `scorersComplete` | bool (opcional) | `false` si la lista de goleadores es parcial/añadido (ADR-015/D24) |
 | `matchsheets` | `{ complete: bool }` (opcional) | Grado de cobertura de las fichas de partido (ADR-023) |
 | `note` | string (opcional) | Motivo de una cobertura incompleta o parcial |
 
-**La clasificación es parte de la edición (ADR-022/D32).** La edición solo está
-completa cuando incluye la fase de clasificación (cuando existe):
-`coverage.scope:"all"` **y** `coverage.complete:true`. Si solo se publica el
-torneo final, es `scope:"final"` y `complete:false`, con una `note` que lo
-declare ("Publicada la fase final; pendiente la clasificación."). `complete:true`
-con `scope` distinto de `"all"` es una contradicción (**`EDI017`**). El campo
-`scope` es obligatorio en el esquema v2.1.
+**La clasificación es parte de la edición (ADR-022/D32) y la conclusión se
+deriva (ADR-035/D51).** El catálogo declara las fases de cada competición
+(`declaredPhases`, con excepción por edición); una edición está concluida
+si y solo si están presentes todas las fases declaradas y no media ningún
+bloqueo documentado (`scope:"all"`, fases parciales, campeón nulo). Si falta
+una fase declarada, la edición no puede figurar como concluida (**`EDI020`**);
+un `coverage.complete` que contradiga la derivación es **`EDI021`**. Las
+ediciones solo con torneo final son `scope:"final"` y `complete:false`, con
+una `note` que lo declare. `complete:true` con `scope` distinto de `"all"`
+sigue siendo contradicción (**`EDI017`**). El campo `scope` es obligatorio
+en el esquema v2.1.
 
 **El resultado manda (ADR-016/D24).** `coverage.complete:true` con
 `scorersComplete:false` es válido: la edición publica todos los partidos con
@@ -331,6 +340,12 @@ salvo como referencia interna marcada. El validador lo comprueba.
 10. Release: cada `sha256` de `contents[]` coincide con el fichero real.
 11. i18n: las claves `phase.*`/`notes.*` usadas existen en los 5 idiomas; paridad.
 12. Sin ficheros de datos huérfanos (no referenciados por catálogo ni release).
+13. Facetas (ADR-031): obligatorias presentes, valores dentro del vocabulario
+    de `catalog/facets.json`, sin contradicción con el catálogo, estado editorial
+    coherente con los datos (`FAC001`–`FAC007`).
+14. Fases declaradas (ADR-035): `declaredPhases` respaldadas por `stages[]`
+    (`CAT006`); la conclusión de cada edición se deriva y el validador exige que
+    lo publicado coincida (`EDI020`/`EDI021`).
 
 ## 7. Migración v1 → v2
 

@@ -17,6 +17,22 @@
     "years": 2
   },
   "status": "discontinued",
+  "facets": {
+    "sport": "football",
+    "entityType": "national-team",
+    "gender": "men",
+    "geography": "world",
+    "category": "championship",
+    "status": "defunct",
+    "ageBand": "senior",
+    "frequency": "quadrennial",
+    "sanctioningBody": "fifa"
+  },
+  "editorialStatus": "published",
+  "declaredPhases": [
+    "group",
+    "knockout"
+  ],
   "firstEdition": 1992,
   "lastEditionHeld": 2017,
   "nextEditionExpected": null,
@@ -42,7 +58,10 @@
         ]
       },
       "note": "Disputada como 'King Fahd Cup'; no oficial en su momento, reconocida después por FIFA.",
-      "data": "1992.json"
+      "data": "1992.json",
+      "phases": [
+        "knockout"
+      ]
     },
     {
       "year": 1995,

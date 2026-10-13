@@ -6,6 +6,7 @@ const { readJSON } = require("../io.js");
 const { loadCatalog } = require("../catalog.js");
 const { buildModel } = require("./model.js");
 const { buildNav } = require("./nav.js");
+const { buildTree, buildFacetIndexes } = require("./tree.js");
 const { planSite } = require("./routes.js");
 const {
   LANGS,
@@ -198,8 +199,17 @@ function buildSite(root, options = {}) {
   const sitemap = buildSitemap(root, pagePlan, release.asOf);
   const robots = buildRobots();
 
+  /* Árbol e índices por faceta: dato derivado del catálogo, no páginas. */
+  const tree = buildTree(model);
+  const facetIndexes = buildFacetIndexes(model);
+  const indexes = { tree, facets: facetIndexes };
+
   const written = [];
   if (options.write !== false) {
+    written.push(writeText(path.join(root, outDir, "indexes", "tree.json"), `${JSON.stringify(tree, null, 2)}\n`));
+    written.push(
+      writeText(path.join(root, outDir, "indexes", "facets.json"), `${JSON.stringify(facetIndexes, null, 2)}\n`)
+    );
     for (const page of pages) written.push(writeText(page.file, page.html));
     written.push(writeText(path.join(root, outDir, "sitemap.xml"), sitemap));
     written.push(writeText(path.join(root, outDir, "robots.txt"), robots));
@@ -223,7 +233,7 @@ function buildSite(root, options = {}) {
     }
   }
 
-  return { pages, sitemap, robots, written, langs: LANGS, partial, publishedEditions: published.length };
+  return { pages, sitemap, robots, written, langs: LANGS, partial, publishedEditions: published.length, indexes };
 }
 
 module.exports = { buildSite, ORIGIN, fullEditionList, resolveEditions, parseArgs };

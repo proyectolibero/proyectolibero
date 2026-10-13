@@ -11,12 +11,25 @@
   "scope": "international",
   "teamMode": "country",
   "resultArchetype": "encounter",
-  "gender": "mixed",
+  "gender": "men",
   "cadence": {
     "type": "interval",
     "years": 4
   },
   "status": "active",
+  "facets": {
+    "sport": "football",
+    "entityType": "national-team",
+    "gender": "men",
+    "geography": "world",
+    "category": "championship",
+    "status": "active",
+    "ageBand": "senior",
+    "frequency": "quadrennial",
+    "sanctioningBody": "fifa"
+  },
+  "editorialStatus": "published",
+  "declaredPhases": ["qualifying", "group", "knockout"],
   "firstEdition": 1930,
   "lastEditionHeld": 2026,
   "nextEditionExpected": 2030,
@@ -34,6 +47,7 @@
     {
       "year": 1930,
       "held": true,
+      "phases": ["group", "knockout"],
       "hosts": [
         "URU"
       ],
@@ -50,6 +64,7 @@
     {
       "year": 1934,
       "held": true,
+      "phases": ["qualifying", "knockout"],
       "hosts": [
         "ITA"
       ],
@@ -69,6 +84,7 @@
     {
       "year": 1938,
       "held": true,
+      "phases": ["qualifying", "knockout"],
       "hosts": [
         "FRA"
       ],
@@ -93,6 +109,7 @@
     {
       "year": 1950,
       "held": true,
+      "phases": ["qualifying", "group"],
       "hosts": [
         "BRA"
       ],

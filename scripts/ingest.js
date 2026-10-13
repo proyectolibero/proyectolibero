@@ -1241,6 +1241,9 @@ function promoteConfirmed(targets, loaded, flags) {
 
   edition.data = `${year}.json`;
   recalcPublishedCoverage(catalogDoc);
+  if (catalogDoc.editorialStatus === "planned" || catalogDoc.editorialStatus === "sourced-only") {
+    catalogDoc.editorialStatus = "published";
+  }
 
   const rollbackAll = () => {
     rollbackFile(destFile, previousDest);

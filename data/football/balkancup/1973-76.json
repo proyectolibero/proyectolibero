@@ -17,7 +17,8 @@
     "goals": 25,
     "scope": "all",
     "complete": true,
-    "note": "Sin fase de clasificación en esta competición."
+    "note": "Sin fase de clasificación en esta competición.",
+    "missingPhases": []
   },
   "sources": [
     {

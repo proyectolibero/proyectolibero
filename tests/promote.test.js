@@ -36,9 +36,22 @@ function competitionCatalog() {
     scope: "international",
     teamMode: "country",
     resultArchetype: "encounter",
-    gender: "mixed",
+    gender: "men",
     cadence: { type: "interval", years: 4 },
     status: "active",
+    facets: {
+      sport: "football",
+      entityType: "national-team",
+      gender: "men",
+      geography: "world",
+      category: "championship",
+      status: "active",
+      ageBand: "senior",
+      frequency: "quadrennial",
+      sanctioningBody: "fifa"
+    },
+    editorialStatus: "published",
+    declaredPhases: ["knockout"],
     firstEdition: 1954,
     lastEditionHeld: 1954,
     editions: [
@@ -122,6 +135,7 @@ function makeRepo() {
   fs.cpSync(path.join(ROOT, "i18n"), path.join(root, "i18n"), { recursive: true });
   fs.mkdirSync(path.join(root, "catalog", "competitions"), { recursive: true });
   fs.copyFileSync(path.join(ROOT, "catalog", "sports.json"), path.join(root, "catalog", "sports.json"));
+  fs.copyFileSync(path.join(ROOT, "catalog", "facets.json"), path.join(root, "catalog", "facets.json"));
   writeJSON(path.join(root, "catalog", "competitions", "football.worldcup.json"), competitionCatalog());
   fs.mkdirSync(path.join(root, "data", "football", "worldcup"), { recursive: true });
   fs.mkdirSync(path.join(root, "drafts", "football", "worldcup"), { recursive: true });
@@ -330,6 +344,18 @@ function balkanCatalog({ published = false } = {}) {
     gender: "men",
     cadence: { type: "interval", years: 4 },
     status: "historical",
+    facets: {
+      sport: "football",
+      entityType: "national-team",
+      gender: "men",
+      geography: "subregional",
+      category: "championship",
+      status: "defunct",
+      ageBand: "senior",
+      frequency: "irregular"
+    },
+    editorialStatus: "planned",
+    declaredPhases: ["knockout"],
     firstEdition: 1929,
     lastEditionHeld: 1980,
     coverage: { held: 1, published: 0, missing: 1 },
@@ -406,6 +432,7 @@ function makeRangeRepo({ published = false } = {}) {
   fs.cpSync(path.join(ROOT, "i18n"), path.join(root, "i18n"), { recursive: true });
   fs.mkdirSync(path.join(root, "catalog", "competitions"), { recursive: true });
   fs.copyFileSync(path.join(ROOT, "catalog", "sports.json"), path.join(root, "catalog", "sports.json"));
+  fs.copyFileSync(path.join(ROOT, "catalog", "facets.json"), path.join(root, "catalog", "facets.json"));
   writeJSON(path.join(root, RANGE_CATALOG_REL), balkanCatalog({ published }));
   fs.mkdirSync(path.join(root, "data", "football", "balkancup"), { recursive: true });
   fs.mkdirSync(path.join(root, "drafts", "football", "balkancup"), { recursive: true });

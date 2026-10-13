@@ -6,7 +6,8 @@
   "required": [
     "schemaVersion", "id", "sport", "competition", "slug", "name", "i18nKey",
     "organizer", "kind", "scope", "teamMode", "resultArchetype", "cadence", "status",
-    "firstEdition", "editions", "stages", "updatePolicy", "license", "sources"
+    "firstEdition", "editions", "stages", "facets", "editorialStatus", "declaredPhases",
+    "updatePolicy", "license", "sources"
   ],
   "additionalProperties": false,
   "properties": {
@@ -33,6 +34,16 @@
       }
     },
     "status": { "enum": ["active", "historical", "dormant", "discontinued"] },
+    "facets": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" }
+    },
+    "editorialStatus": { "enum": ["published", "in-progress", "planned", "sourced-only"] },
+    "declaredPhases": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "enum": ["qualifying", "group", "knockout", "ranking", "heat"] }
+    },
     "firstEdition": { "type": "integer" },
     "lastEditionHeld": { "type": "integer" },
     "nextEditionExpected": { "type": ["integer", "null"] },
@@ -59,6 +70,11 @@
           "year": { "type": ["integer", "string"] },
           "held": { "type": "boolean" },
           "hosts": { "type": "array", "items": { "type": "string" } },
+          "phases": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "enum": ["qualifying", "group", "knockout", "ranking", "heat"] }
+          },
           "champion": { "type": "string" },
           "coChampions": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
           "runnerUp": { "type": "string" },

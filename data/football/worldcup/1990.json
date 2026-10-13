@@ -22,7 +22,8 @@
     "scorers": 74,
     "scope": "all",
     "complete": true,
-    "scorersComplete": false
+    "scorersComplete": false,
+    "missingPhases": []
   },
   "sources": [
     {

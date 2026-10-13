@@ -9,6 +9,7 @@ const {
   validateAgainstSchema
 } = require("./catalog.js");
 const { checksumOfContents } = require("./release.js");
+const { isPhaseKind, derivePhaseCoverage } = require("./phases.js");
 
 const LANGS = ["es", "en", "pt", "zh", "hi"];
 const V1_PHASES = new Set(["qualifying", "group", "r16", "qf", "sf", "third", "final"]);
@@ -57,6 +58,7 @@ function makeContext(root) {
     root,
     catalog: loadCatalog(root),
     countries: load("i18n/countries.json"),
+    facets: load("catalog/facets.json"),
     i18n,
     editionSchema: load("schemas/edition.schema.json"),
     releaseSchema: load("schemas/release.schema.json"),
@@ -513,6 +515,7 @@ function validateEditionV2(ctx, file, edition, competition, entry) {
   const declaredIds = validateSourcesV2(errors, file, edition.sources);
   const sourceIds = new Set([...declaredIds, ...(competition.sources || []).map((s) => s.id)]);
   checkStages(errors, file, edition, competition);
+  checkPhaseCoverage(errors, file, edition, competition, entry);
   checkArchetypeFields(errors, file, edition);
   checkFinalMatchId(errors, file, edition);
   checkChampionCoverage(errors, file, edition);
@@ -621,6 +624,147 @@ function validateCatalogI18n(ctx, errors) {
   }
 }
 
+/* -------------------------------------------------------------------------- */
+/* Facetas (ADR-031/D47) y fases declaradas (ADR-035/D51)                       */
+/* -------------------------------------------------------------------------- */
+
+/*
+ * Vocabulario de facetas estricto: un valor fuera del vocabulario es error
+ * (FAC003), una faceta obligatoria ausente es error (FAC001) y un valor
+ * deprecado se acepta con aviso (FAC004) para no romper datos publicados.
+ * `facets.sport`/`facets.gender` no pueden contradecir al catálogo (FAC005) y
+ * el estado editorial distingue publicado de planeado (FAC006/FAC007).
+ */
+function validateFacets(ctx, errors, warnings) {
+  const doc = ctx.facets;
+  if (!doc || !Array.isArray(doc.facets)) return;
+  const byCode = new Map(doc.facets.map((facet) => [facet.code, facet]));
+
+  for (const facet of doc.facets) {
+    checkKeyInLangs(errors, ctx, facet.i18nKey);
+    for (const value of facet.values || []) checkKeyInLangs(errors, ctx, value.i18nKey);
+  }
+  for (const kind of doc.phaseKinds || []) checkKeyInLangs(errors, ctx, kind.i18nKey);
+
+  for (const competition of Object.values(ctx.catalog.competitions)) {
+    const file = `catalog/competitions/${competition.sport}.${competition.competition}.json`;
+    const facets = competition.facets;
+    if (!facets || typeof facets !== "object" || Array.isArray(facets)) {
+      push(errors, "FAC001", file, "sin facetas: toda competición del catálogo debe etiquetarse (ADR-031)");
+      continue;
+    }
+    for (const facet of doc.facets) {
+      if (facet.catalogField) continue;
+      if (facet.required && !Object.prototype.hasOwnProperty.call(facets, facet.code)) {
+        push(errors, "FAC001", file, `falta la faceta obligatoria ${facet.code}`);
+      }
+    }
+    for (const [code, value] of Object.entries(facets)) {
+      const facet = byCode.get(code);
+      if (!facet) {
+        push(errors, "FAC002", file, `faceta fuera del vocabulario: ${code}`);
+        continue;
+      }
+      if (facet.open) continue;
+      const entry = (facet.values || []).find((option) => option.code === value);
+      if (!entry) push(errors, "FAC003", file, `valor fuera del vocabulario: ${code}=${value}`);
+      else if (entry.deprecated) push(warnings, "FAC004", file, `valor deprecado en uso: ${code}=${value}`);
+    }
+    if (facets.sport !== undefined && facets.sport !== competition.sport) {
+      push(errors, "FAC005", file, `facetas.sport (${facets.sport}) != sport del catálogo (${competition.sport})`);
+    }
+    if (
+      facets.gender !== undefined &&
+      ["men", "women", "mixed"].includes(facets.gender) &&
+      facets.gender !== competition.gender
+    ) {
+      push(errors, "FAC005", file, `facetas.gender (${facets.gender}) != gender del catálogo (${competition.gender})`);
+    }
+
+    const hasData = (competition.editions || []).some((entry) => entry && entry.held && entry.data);
+    const editorial = competition.editorialStatus;
+    const editorialFacet = byCode.get("editorialStatus");
+    const validEditorial = editorialFacet
+      ? (editorialFacet.values || []).some((option) => option.code === editorial)
+      : false;
+    if (!validEditorial) {
+      push(errors, "FAC006", file, `editorialStatus ausente o fuera del vocabulario: ${JSON.stringify(editorial)}`);
+    } else if (hasData && editorial !== "published") {
+      push(errors, "FAC007", file, `editorialStatus "${editorial}" con ediciones publicadas; debe ser "published"`);
+    } else if (!hasData && editorial === "published") {
+      push(errors, "FAC007", file, 'editorialStatus "published" sin ninguna edición con datos; debe ser "planned" o "sourced-only"');
+    }
+  }
+}
+
+/*
+ * El catálogo declara las fases que comprende cada competición (ADR-035).
+ * Toda clase declarada (por competición o como excepción de edición) debe ser
+ * una clase válida y estar respaldada por el vocabulario `stages[]` de esa
+ * competición; si no, la derivación de la conclusión no tendría suelo.
+ */
+function checkDeclaredPhases(ctx, errors) {
+  for (const competition of Object.values(ctx.catalog.competitions)) {
+    const file = `catalog/competitions/${competition.sport}.${competition.competition}.json`;
+    const kindInVocab = new Set((competition.stages || []).map((stage) => stage.kind));
+    const checkKind = (kind, where) => {
+      if (!isPhaseKind(kind)) {
+        push(errors, "CAT006", file, `${where}: clase de fase desconocida: ${kind}`);
+      } else if (!kindInVocab.has(kind)) {
+        push(errors, "CAT006", file, `${where}: declara la clase ${kind} sin ninguna fase de esa clase en stages[]`);
+      }
+    };
+    for (const kind of competition.declaredPhases || []) checkKind(kind, "declaredPhases");
+    for (const entry of competition.editions || []) {
+      if (!Array.isArray(entry.phases)) continue;
+      for (const kind of entry.phases) checkKind(kind, `edición ${entry.year} (phases)`);
+    }
+  }
+}
+
+/*
+ * ADR-035: la conclusión se deriva, no se escribe. Una edición con una fase
+ * declarada ausente no puede figurar como concluida (EDI020) y el indicador
+ * `coverage.complete` tiene que coincidir con la conclusión derivada (EDI021),
+ * igual que `coverage.missingPhases` cuando la edición lo publica.
+ */
+function checkPhaseCoverage(list, file, edition, competition, entry) {
+  const derived = derivePhaseCoverage(competition, entry, edition);
+  if (!derived) return;
+  const coverage = edition.coverage || {};
+  if (coverage.complete === true && derived.missingPhases.length > 0) {
+    push(
+      list,
+      "EDI020",
+      file,
+      `no puede figurar como concluida: faltan las fases declaradas [${derived.missingPhases.join(", ")}] (ADR-035)`
+    );
+  } else if (coverage.complete !== undefined && coverage.complete !== derived.complete) {
+    push(
+      list,
+      "EDI021",
+      file,
+      `coverage.complete (${coverage.complete}) no coincide con la conclusión derivada (${derived.complete}); el indicador se deriva de las fases declaradas (ADR-035)`
+    );
+  }
+  if (
+    coverage.missingPhases !== undefined &&
+    JSON.stringify(coverage.missingPhases) !== JSON.stringify(derived.missingPhases)
+  ) {
+    push(
+      list,
+      "EDI021",
+      file,
+      `coverage.missingPhases (${JSON.stringify(coverage.missingPhases)}) != fases ausentes derivadas (${JSON.stringify(derived.missingPhases)}) (ADR-035)`
+    );
+  }
+  for (const kind of coverage.partialPhases || []) {
+    if (!derived.declared.includes(kind)) {
+      push(list, "EDI021", file, `coverage.partialPhases incluye "${kind}", no declarada para esta edición (ADR-035)`);
+    }
+  }
+}
+
 function checkOrphans(ctx, warnings, releaseReferenced) {
   const released = releaseReferenced instanceof Set ? releaseReferenced : new Set();
   for (const competition of Object.values(ctx.catalog.competitions)) {
@@ -712,6 +856,8 @@ function validateProject(root) {
   validateCountries(ctx, errors);
   validateCatalogI18n(ctx, errors);
   validateSourceI18nKeys(ctx, errors);
+  validateFacets(ctx, errors, warnings);
+  checkDeclaredPhases(ctx, errors);
   for (const competition of Object.values(ctx.catalog.competitions)) {
     for (const source of competition.sources || []) {
       if (source.redistribute === false) nonRedistributable.add(source.id);

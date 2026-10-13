@@ -22,7 +22,13 @@ function buildModel(catalog) {
       competitions: Object.values(catalog.competitions || {})
         .filter((comp) => comp.sport === sport.id)
         .sort(byId)
-        .map((comp) => ({ id: comp.id, slug: comp.slug, nameKey: comp.i18nKey }))
+        .map((comp) => ({
+          id: comp.id,
+          slug: comp.slug,
+          nameKey: comp.i18nKey,
+          facets: comp.facets || {},
+          editorialStatus: comp.editorialStatus || null
+        }))
     }));
 
   const sportById = {};

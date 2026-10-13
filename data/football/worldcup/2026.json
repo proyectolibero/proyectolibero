@@ -25,7 +25,10 @@
     "scope": "final",
     "complete": false,
     "scorersComplete": false,
-    "note": "RSSSF 2026f documenta el torneo final completo (104 partidos con fecha y ciudad, y las 12 clasificaciones): el resultado está completo (Nivel 1, coverage.complete:true). NO publica la lista completa de goleadores (no existen 2026full ni 2026f-scor): solo consta el máximo goleador (Mbappé, 10), por lo que coverage.scorersComplete es false (ADR-016/D24). Publicada la fase final; pendiente la clasificación."
+    "note": "RSSSF 2026f documenta el torneo final completo (104 partidos con fecha y ciudad, y las 12 clasificaciones): el resultado está completo (Nivel 1, coverage.complete:true). NO publica la lista completa de goleadores (no existen 2026full ni 2026f-scor): solo consta el máximo goleador (Mbappé, 10), por lo que coverage.scorersComplete es false (ADR-016/D24). Publicada la fase final; pendiente la clasificación.",
+    "missingPhases": [
+      "qualifying"
+    ]
   },
   "sources": [
     {

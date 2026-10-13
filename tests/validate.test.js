@@ -167,10 +167,11 @@ test("EDI017: coverage.complete true con scope final es contradicción (ADR-022)
   assert.ok(codes(validate(edition)).includes("EDI017"));
 });
 
-test("EDI017: coverage.complete true con scope all es válido", () => {
+test("ADR-035: complete true con scope all pero sin la fase de clasificación declarada: EDI020", () => {
   const edition = clone();
   edition.coverage.scope = "all";
   edition.coverage.complete = true;
+  assert.ok(codes(validate(edition)).includes("EDI020"));
   assert.ok(!codes(validate(edition)).includes("EDI017"));
 });
 

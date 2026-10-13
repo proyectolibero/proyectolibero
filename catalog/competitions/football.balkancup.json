@@ -17,6 +17,20 @@
     "years": 1
   },
   "status": "discontinued",
+  "facets": {
+    "sport": "football",
+    "entityType": "national-team",
+    "gender": "men",
+    "geography": "subregional",
+    "category": "championship",
+    "status": "defunct",
+    "ageBand": "senior",
+    "frequency": "irregular"
+  },
+  "editorialStatus": "published",
+  "declaredPhases": [
+    "group"
+  ],
   "firstEdition": 1929,
   "lastEditionHeld": 1980,
   "nextEditionExpected": null,
@@ -103,14 +117,21 @@
       "held": true,
       "champion": "BUL",
       "runnerUp": "ROU",
-      "data": "1973-76.json"
+      "data": "1973-76.json",
+      "phases": [
+        "knockout"
+      ]
     },
     {
       "year": "1977-80",
       "held": true,
       "champion": "ROU",
       "runnerUp": "YUG",
-      "data": "1977-80.json"
+      "data": "1977-80.json",
+      "phases": [
+        "group",
+        "knockout"
+      ]
     }
   ],
   "stages": [

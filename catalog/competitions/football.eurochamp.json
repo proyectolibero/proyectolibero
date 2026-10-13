@@ -17,6 +17,23 @@
     "years": 4
   },
   "status": "active",
+  "facets": {
+    "sport": "football",
+    "entityType": "national-team",
+    "gender": "men",
+    "geography": "continental",
+    "category": "championship",
+    "status": "active",
+    "ageBand": "senior",
+    "frequency": "quadrennial",
+    "sanctioningBody": "uefa"
+  },
+  "editorialStatus": "published",
+  "declaredPhases": [
+    "qualifying",
+    "group",
+    "knockout"
+  ],
   "firstEdition": 1960,
   "lastEditionHeld": 2024,
   "nextEditionExpected": 2028,
@@ -44,7 +61,11 @@
           "aet"
         ]
       },
-      "data": "1960.json"
+      "data": "1960.json",
+      "phases": [
+        "qualifying",
+        "knockout"
+      ]
     },
     {
       "year": 1964,
@@ -60,7 +81,11 @@
           1
         ]
       },
-      "data": "1964.json"
+      "data": "1964.json",
+      "phases": [
+        "qualifying",
+        "knockout"
+      ]
     },
     {
       "year": 1968,
@@ -80,7 +105,11 @@
         ]
       },
       "note": "La final terminó 1-1 tras prórroga; Italia ganó el partido de desempate 2-0.",
-      "data": "1968.json"
+      "data": "1968.json",
+      "phases": [
+        "qualifying",
+        "knockout"
+      ]
     },
     {
       "year": 1972,
@@ -96,7 +125,11 @@
           0
         ]
       },
-      "data": "1972.json"
+      "data": "1972.json",
+      "phases": [
+        "qualifying",
+        "knockout"
+      ]
     },
     {
       "year": 1976,
@@ -120,7 +153,11 @@
           "pen"
         ]
       },
-      "data": "1976.json"
+      "data": "1976.json",
+      "phases": [
+        "qualifying",
+        "knockout"
+      ]
     },
     {
       "year": 1980,

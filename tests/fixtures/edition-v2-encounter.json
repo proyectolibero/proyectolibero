@@ -18,7 +18,8 @@
     "matches": 2,
     "goals": 12,
     "scope": "final",
-    "complete": false
+    "complete": false,
+    "missingPhases": ["qualifying"]
   },
   "sources": [
     {

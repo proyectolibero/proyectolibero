@@ -39,6 +39,14 @@
         "goals": { "type": "integer", "minimum": 0 },
         "scope": { "enum": ["all", "final"] },
         "complete": { "type": "boolean" },
+        "missingPhases": {
+          "type": "array",
+          "items": { "enum": ["qualifying", "group", "knockout", "ranking", "heat"] }
+        },
+        "partialPhases": {
+          "type": "array",
+          "items": { "enum": ["qualifying", "group", "knockout", "ranking", "heat"] }
+        },
         "scorersComplete": { "type": "boolean" },
         "matchsheets": {
           "type": "object",

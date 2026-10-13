@@ -1,7 +1,11 @@
-# Taxonomía y clasificación (propuesta para revisión)
+# Taxonomía y clasificación
 
-> **Estado: propuesta.** No se etiqueta ninguna competición hasta que apruebes el vocabulario.
-> Base: **ADR-031 / D47** (clasificación por facetas con vocabulario controlado; el árbol se deriva).
+> **Estado: aprobada e implementada (P1).** El vocabulario vive en
+> `catalog/facets.json` (códigos estables, etiqueta i18n, `deprecated`) y las
+> competiciones del catálogo ya están etiquetadas; el validador lo exige
+> (`FAC001`…`FAC007`) y el árbol se deriva en `core/site/tree.js`.
+> Base: **ADR-031 / D47** (clasificación por facetas con vocabulario controlado;
+> el árbol se deriva). Fases declaradas y conclusión derivada: **ADR-035/D51**.
 > Complementa `docs/ESQUEMA-DATOS-v2.md` (dónde vive el dato) y `docs/SEO.md` (URLs).
 
 ## Por qué facetas y no un árbol
@@ -92,10 +96,13 @@ que el menú, ya implementada).
 
 ## Siguiente paso técnico (tras tu aprobación)
 
-1. `catalog/facets.json` — vocabulario con códigos, etiquetas i18n y `deprecated`.
-2. Validador: facetas obligatorias, valores fuera de vocabulario, avisos de refinamiento.
-3. Etiquetar las 5 competiciones publicadas + las 8 planeadas de R3 (la hoja de ruta real).
-4. Derivar árbol e índices en `core/site/` (reutilizando el patrón de `nav.js`).
+1. ✅ `catalog/facets.json` — vocabulario con códigos, etiquetas i18n y `deprecated`.
+2. ✅ Validador: facetas obligatorias (`FAC001`), valores fuera de vocabulario
+   (`FAC003`), avisos de valores deprecados (`FAC004`), estado editorial
+   (`FAC006`/`FAC007`) y fases declaradas (`CAT006`/`EDI020`/`EDI021`).
+3. ✅ Etiquetadas las 5 competiciones del catálogo (todas con datos publicados).
+4. ✅ Árbol e índices por faceta derivados en `core/site/tree.js`, publicados
+   como dato en `site/indexes/{tree,facets}.json` (no como páginas).
 
 ## Lo que NO hace este sistema
 

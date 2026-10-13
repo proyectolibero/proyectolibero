@@ -562,7 +562,7 @@ function mergeQualifying(edition, parsed, sourceId, competition) {
   }
   if (dropped > 0) {
     const note = "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar).";
-    result.coverage = { ...result.coverage, complete: false, note };
+    result.coverage = { ...result.coverage, complete: false, partialPhases: ["qualifying"], note };
   }
   if (Array.isArray(result.scorers) && result.scorers.length > 0) {
     const scorerGoals = result.scorers.reduce((sum, scorer) => sum + (scorer.goals || 0), 0);

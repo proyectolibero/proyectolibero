@@ -21,7 +21,8 @@
     "goals": 209,
     "scorers": 106,
     "complete": true,
-    "scope": "all"
+    "scope": "all",
+    "missingPhases": []
   },
   "sources": [
     {

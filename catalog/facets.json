@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-12",
+  "description": "Vocabulario de facetas (ADR-031/D47). Codigos ASCII estables: nunca se renombran; si un criterio cambia, se anade un valor nuevo y el viejo se marca deprecated. El arbol, los filtros y los indices se derivan de aqui y del catalogo. El estado editorial es del catalogo (hoja de ruta), no de la naturaleza deportiva.",
+  "facets": [
+    {
+      "code": "sport",
+      "label": "Deporte",
+      "i18nKey": "facet.sport",
+      "required": true,
+      "values": [
+        { "code": "football", "label": "Fútbol", "i18nKey": "sport.football", "deprecated": false },
+        { "code": "aquatics", "label": "Deportes acuáticos", "i18nKey": "sport.aquatics", "deprecated": false },
+        { "code": "archery", "label": "Tiro con arco", "i18nKey": "sport.archery", "deprecated": false },
+        { "code": "athletics", "label": "Atletismo", "i18nKey": "sport.athletics", "deprecated": false },
+        { "code": "basketball", "label": "Baloncesto", "i18nKey": "sport.basketball", "deprecated": false },
+        { "code": "handball", "label": "Balonmano", "i18nKey": "sport.handball", "deprecated": false },
+        { "code": "volleyball", "label": "Voleibol", "i18nKey": "sport.volleyball", "deprecated": false },
+        { "code": "rugby", "label": "Rugby", "i18nKey": "sport.rugby", "deprecated": false },
+        { "code": "cycling", "label": "Ciclismo", "i18nKey": "sport.cycling", "deprecated": false },
+        { "code": "tennis", "label": "Tenis", "i18nKey": "sport.tennis", "deprecated": false },
+        { "code": "boxing", "label": "Boxeo", "i18nKey": "sport.boxing", "deprecated": false },
+        { "code": "judo", "label": "Judo", "i18nKey": "sport.judo", "deprecated": false },
+        { "code": "hockey", "label": "Hockey", "i18nKey": "sport.hockey", "deprecated": false },
+        { "code": "baseball", "label": "Béisbol", "i18nKey": "sport.baseball", "deprecated": false },
+        { "code": "water-polo", "label": "Waterpolo", "i18nKey": "sport.water-polo", "deprecated": false }
+      ]
+    },
+    {
+      "code": "entityType",
+      "label": "Quién compite",
+      "i18nKey": "facet.entityType",
+      "required": true,
+      "values": [
+        { "code": "national-team", "label": "Selección nacional", "i18nKey": "facet.entityType.national-team", "deprecated": false },
+        { "code": "club", "label": "Club", "i18nKey": "facet.entityType.club", "deprecated": false },
+        { "code": "franchise", "label": "Franquicia", "i18nKey": "facet.entityType.franchise", "deprecated": false },
+        { "code": "university", "label": "Universidad", "i18nKey": "facet.entityType.university", "deprecated": false },
+        { "code": "school", "label": "Escuela", "i18nKey": "facet.entityType.school", "deprecated": false },
+        { "code": "region", "label": "Región", "i18nKey": "facet.entityType.region", "deprecated": false },
+        { "code": "city", "label": "Ciudad", "i18nKey": "facet.entityType.city", "deprecated": false },
+        { "code": "military", "label": "Equipo militar", "i18nKey": "facet.entityType.military", "deprecated": false },
+        { "code": "invitation-selection", "label": "Selección por invitación", "i18nKey": "facet.entityType.invitation-selection", "deprecated": false },
+        { "code": "individual-athlete", "label": "Atleta individual", "i18nKey": "facet.entityType.individual-athlete", "deprecated": false }
+      ]
+    },
+    {
+      "code": "gender",
+      "label": "Género",
+      "i18nKey": "facet.gender",
+      "required": true,
+      "values": [
+        { "code": "men", "label": "Masculino", "i18nKey": "facet.gender.men", "deprecated": false },
+        { "code": "women", "label": "Femenino", "i18nKey": "facet.gender.women", "deprecated": false },
+        { "code": "mixed", "label": "Mixto", "i18nKey": "facet.gender.mixed", "deprecated": false },
+        { "code": "open", "label": "Abierto", "i18nKey": "facet.gender.open", "deprecated": false }
+      ]
+    },
+    {
+      "code": "geography",
+      "label": "Alcance territorial",
+      "i18nKey": "facet.geography",
+      "required": true,
+      "values": [
+        { "code": "world", "label": "Mundial", "i18nKey": "facet.geography.world", "deprecated": false },
+        { "code": "continental", "label": "Continental", "i18nKey": "facet.geography.continental", "deprecated": false },
+        { "code": "subregional", "label": "Subregional", "i18nKey": "facet.geography.subregional", "deprecated": false },
+        { "code": "national", "label": "Nacional", "i18nKey": "facet.geography.national", "deprecated": false },
+        { "code": "subnational", "label": "Subnacional", "i18nKey": "facet.geography.subnational", "deprecated": false },
+        { "code": "local", "label": "Local", "i18nKey": "facet.geography.local", "deprecated": false },
+        { "code": "cross-border", "label": "Transfronterizo", "i18nKey": "facet.geography.cross-border", "deprecated": false }
+      ]
+    },
+    {
+      "code": "category",
+      "label": "Naturaleza",
+      "i18nKey": "facet.category",
+      "required": true,
+      "values": [
+        { "code": "championship", "label": "Campeonato", "i18nKey": "facet.category.championship", "deprecated": false },
+        { "code": "league", "label": "Liga", "i18nKey": "facet.category.league", "deprecated": false },
+        { "code": "cup", "label": "Copa", "i18nKey": "facet.category.cup", "deprecated": false },
+        { "code": "supercup", "label": "Supercopa", "i18nKey": "facet.category.supercup", "deprecated": false },
+        { "code": "qualifier", "label": "Torneo clasificatorio", "i18nKey": "facet.category.qualifier", "deprecated": false },
+        { "code": "friendly", "label": "Amistoso", "i18nKey": "facet.category.friendly", "deprecated": false },
+        { "code": "invitational", "label": "Por invitación", "i18nKey": "facet.category.invitational", "deprecated": false },
+        { "code": "exhibition", "label": "Exhibición", "i18nKey": "facet.category.exhibition", "deprecated": false },
+        { "code": "games", "label": "Juegos multideportivos", "i18nKey": "facet.category.games", "deprecated": false }
+      ]
+    },
+    {
+      "code": "status",
+      "label": "Vigencia",
+      "i18nKey": "facet.status",
+      "required": true,
+      "values": [
+        { "code": "active", "label": "Vigente", "i18nKey": "facet.status.active", "deprecated": false },
+        { "code": "defunct", "label": "Desaparecida", "i18nKey": "facet.status.defunct", "deprecated": false },
+        { "code": "suspended", "label": "Suspendida", "i18nKey": "facet.status.suspended", "deprecated": false },
+        { "code": "merged", "label": "Fusionada", "i18nKey": "facet.status.merged", "deprecated": false },
+        { "code": "successor", "label": "Sucesora", "i18nKey": "facet.status.successor", "deprecated": false }
+      ]
+    },
+    {
+      "code": "discipline",
+      "label": "Disciplina",
+      "i18nKey": "facet.discipline",
+      "required": false,
+      "values": [
+        { "code": "freestyle", "label": "Libre", "i18nKey": "facet.discipline.freestyle", "deprecated": false },
+        { "code": "backstroke", "label": "Espalda", "i18nKey": "facet.discipline.backstroke", "deprecated": false },
+        { "code": "breaststroke", "label": "Braza", "i18nKey": "facet.discipline.breaststroke", "deprecated": false },
+        { "code": "butterfly", "label": "Mariposa", "i18nKey": "facet.discipline.butterfly", "deprecated": false },
+        { "code": "medley", "label": "Estilos", "i18nKey": "facet.discipline.medley", "deprecated": false },
+        { "code": "relay", "label": "Relevos", "i18nKey": "facet.discipline.relay", "deprecated": false },
+        { "code": "track", "label": "Pista", "i18nKey": "facet.discipline.track", "deprecated": false },
+        { "code": "field", "label": "Campo", "i18nKey": "facet.discipline.field", "deprecated": false },
+        { "code": "road", "label": "Ruta", "i18nKey": "facet.discipline.road", "deprecated": false },
+        { "code": "cross-country", "label": "Campo a través", "i18nKey": "facet.discipline.cross-country", "deprecated": false },
+        { "code": "recurve", "label": "Recurvo", "i18nKey": "facet.discipline.recurve", "deprecated": false },
+        { "code": "compound", "label": "Compound", "i18nKey": "facet.discipline.compound", "deprecated": false },
+        { "code": "barebow", "label": "Arco desnudo", "i18nKey": "facet.discipline.barebow", "deprecated": false },
+        { "code": "w1", "label": "W1", "i18nKey": "facet.discipline.w1", "deprecated": false }
+      ]
+    },
+    {
+      "code": "ageBand",
+      "label": "Edad",
+      "i18nKey": "facet.ageBand",
+      "required": false,
+      "values": [
+        { "code": "senior", "label": "Absoluta", "i18nKey": "facet.ageBand.senior", "deprecated": false },
+        { "code": "u23", "label": "Sub-23", "i18nKey": "facet.ageBand.u23", "deprecated": false },
+        { "code": "u21", "label": "Sub-21", "i18nKey": "facet.ageBand.u21", "deprecated": false },
+        { "code": "u20", "label": "Sub-20", "i18nKey": "facet.ageBand.u20", "deprecated": false },
+        { "code": "u19", "label": "Sub-19", "i18nKey": "facet.ageBand.u19", "deprecated": false },
+        { "code": "u18", "label": "Sub-18", "i18nKey": "facet.ageBand.u18", "deprecated": false },
+        { "code": "u17", "label": "Sub-17", "i18nKey": "facet.ageBand.u17", "deprecated": false },
+        { "code": "u16", "label": "Sub-16", "i18nKey": "facet.ageBand.u16", "deprecated": false },
+        { "code": "u15", "label": "Sub-15", "i18nKey": "facet.ageBand.u15", "deprecated": false },
+        { "code": "youth", "label": "Juvenil", "i18nKey": "facet.ageBand.youth", "deprecated": false },
+        { "code": "junior", "label": "Júnior", "i18nKey": "facet.ageBand.junior", "deprecated": false },
+        { "code": "veterans", "label": "Veteranos", "i18nKey": "facet.ageBand.veterans", "deprecated": false },
+        { "code": "masters", "label": "Másters", "i18nKey": "facet.ageBand.masters", "deprecated": false },
+        { "code": "all-ages", "label": "Todas las edades", "i18nKey": "facet.ageBand.all-ages", "deprecated": false }
+      ]
+    },
+    {
+      "code": "level",
+      "label": "Nivel",
+      "i18nKey": "facet.level",
+      "required": false,
+      "values": [
+        { "code": "elite", "label": "Élite", "i18nKey": "facet.level.elite", "deprecated": false },
+        { "code": "professional", "label": "Profesional", "i18nKey": "facet.level.professional", "deprecated": false },
+        { "code": "semi-professional", "label": "Semiprofesional", "i18nKey": "facet.level.semi-professional", "deprecated": false },
+        { "code": "amateur", "label": "Aficionado", "i18nKey": "facet.level.amateur", "deprecated": false },
+        { "code": "youth-development", "label": "Formación juvenil", "i18nKey": "facet.level.youth-development", "deprecated": false },
+        { "code": "grassroots", "label": "Base", "i18nKey": "facet.level.grassroots", "deprecated": false }
+      ]
+    },
+    {
+      "code": "contestUnit",
+      "label": "Unidad de competición",
+      "i18nKey": "facet.contestUnit",
+      "required": false,
+      "values": [
+        { "code": "individual", "label": "Individual", "i18nKey": "facet.contestUnit.individual", "deprecated": false },
+        { "code": "pair", "label": "Pareja", "i18nKey": "facet.contestUnit.pair", "deprecated": false },
+        { "code": "team", "label": "Equipo", "i18nKey": "facet.contestUnit.team", "deprecated": false },
+        { "code": "relay", "label": "Relevo", "i18nKey": "facet.contestUnit.relay", "deprecated": false },
+        { "code": "squad", "label": "Conjunto", "i18nKey": "facet.contestUnit.squad", "deprecated": false }
+      ]
+    },
+    {
+      "code": "format",
+      "label": "Formato",
+      "i18nKey": "facet.format",
+      "required": false,
+      "values": [
+        { "code": "league", "label": "Liga", "i18nKey": "facet.format.league", "deprecated": false },
+        { "code": "round-robin", "label": "Todos contra todos", "i18nKey": "facet.format.round-robin", "deprecated": false },
+        { "code": "knockout", "label": "Eliminatoria", "i18nKey": "facet.format.knockout", "deprecated": false },
+        { "code": "group-then-knockout", "label": "Grupos y eliminatoria", "i18nKey": "facet.format.group-then-knockout", "deprecated": false },
+        { "code": "final-four", "label": "Final a cuatro", "i18nKey": "facet.format.final-four", "deprecated": false },
+        { "code": "series", "label": "Serie", "i18nKey": "facet.format.series", "deprecated": false },
+        { "code": "heats-and-final", "label": "Series y final", "i18nKey": "facet.format.heats-and-final", "deprecated": false },
+        { "code": "time-trial", "label": "Contrarreloj", "i18nKey": "facet.format.time-trial", "deprecated": false },
+        { "code": "multi-sport-games", "label": "Juegos multideportivos", "i18nKey": "facet.format.multi-sport-games", "deprecated": false }
+      ]
+    },
+    {
+      "code": "frequency",
+      "label": "Periodicidad",
+      "i18nKey": "facet.frequency",
+      "required": false,
+      "values": [
+        { "code": "annual", "label": "Anual", "i18nKey": "facet.frequency.annual", "deprecated": false },
+        { "code": "biennial", "label": "Bienal", "i18nKey": "facet.frequency.biennial", "deprecated": false },
+        { "code": "triennial", "label": "Trienal", "i18nKey": "facet.frequency.triennial", "deprecated": false },
+        { "code": "quadrennial", "label": "Cuatrienal", "i18nKey": "facet.frequency.quadrennial", "deprecated": false },
+        { "code": "one-off", "label": "Edición única", "i18nKey": "facet.frequency.one-off", "deprecated": false },
+        { "code": "irregular", "label": "Irregular", "i18nKey": "facet.frequency.irregular", "deprecated": false }
+      ]
+    },
+    {
+      "code": "environment",
+      "label": "Entorno",
+      "i18nKey": "facet.environment",
+      "required": false,
+      "values": [
+        { "code": "outdoor", "label": "Aire libre", "i18nKey": "facet.environment.outdoor", "deprecated": false },
+        { "code": "indoor", "label": "Interior", "i18nKey": "facet.environment.indoor", "deprecated": false },
+        { "code": "beach", "label": "Playa", "i18nKey": "facet.environment.beach", "deprecated": false },
+        { "code": "water", "label": "Agua", "i18nKey": "facet.environment.water", "deprecated": false },
+        { "code": "snow", "label": "Nieve", "i18nKey": "facet.environment.snow", "deprecated": false },
+        { "code": "ice", "label": "Hielo", "i18nKey": "facet.environment.ice", "deprecated": false },
+        { "code": "road", "label": "Carretera", "i18nKey": "facet.environment.road", "deprecated": false },
+        { "code": "track", "label": "Pista", "i18nKey": "facet.environment.track", "deprecated": false }
+      ]
+    },
+    {
+      "code": "adapted",
+      "label": "Deporte adaptado",
+      "i18nKey": "facet.adapted",
+      "required": false,
+      "values": [
+        { "code": "able-bodied", "label": "Convencional", "i18nKey": "facet.adapted.able-bodied", "deprecated": false },
+        { "code": "para", "label": "Paralímpico", "i18nKey": "facet.adapted.para", "deprecated": false },
+        { "code": "deaf", "label": "Para sordos", "i18nKey": "facet.adapted.deaf", "deprecated": false },
+        { "code": "intellectual-disability", "label": "Discapacidad intelectual", "i18nKey": "facet.adapted.intellectual-disability", "deprecated": false },
+        { "code": "special-olympics", "label": "Olimpiadas Especiales", "i18nKey": "facet.adapted.special-olympics", "deprecated": false }
+      ]
+    },
+    {
+      "code": "weightClass",
+      "label": "Categoría de peso",
+      "i18nKey": "facet.weightClass",
+      "required": false,
+      "open": true,
+      "values": []
+    },
+    {
+      "code": "seasonSpan",
+      "label": "Tramo de temporada",
+      "i18nKey": "facet.seasonSpan",
+      "required": false,
+      "values": [
+        { "code": "calendar-year", "label": "Año natural", "i18nKey": "facet.seasonSpan.calendar-year", "deprecated": false },
+        { "code": "cross-year", "label": "Entre años", "i18nKey": "facet.seasonSpan.cross-year", "deprecated": false }
+      ]
+    },
+    {
+      "code": "sanctioningBody",
+      "label": "Organismo",
+      "i18nKey": "facet.sanctioningBody",
+      "required": false,
+      "values": [
+        { "code": "fifa", "label": "FIFA", "i18nKey": "facet.sanctioningBody.fifa", "deprecated": false },
+        { "code": "uefa", "label": "UEFA", "i18nKey": "facet.sanctioningBody.uefa", "deprecated": false },
+        { "code": "ioc", "label": "COI", "i18nKey": "facet.sanctioningBody.ioc", "deprecated": false },
+        { "code": "world-aquatics", "label": "World Aquatics", "i18nKey": "facet.sanctioningBody.world-aquatics", "deprecated": false },
+        { "code": "world-archery", "label": "World Archery", "i18nKey": "facet.sanctioningBody.world-archery", "deprecated": false },
+        { "code": "fiba", "label": "FIBA", "i18nKey": "facet.sanctioningBody.fiba", "deprecated": false }
+      ]
+    },
+    {
+      "code": "editorialStatus",
+      "label": "Estado editorial",
+      "i18nKey": "facet.editorialStatus",
+      "required": true,
+      "catalogField": true,
+      "values": [
+        { "code": "published", "label": "Publicada", "i18nKey": "facet.editorialStatus.published", "deprecated": false },
+        { "code": "in-progress", "label": "En curso", "i18nKey": "facet.editorialStatus.in-progress", "deprecated": false },
+        { "code": "planned", "label": "Prevista", "i18nKey": "facet.editorialStatus.planned", "deprecated": false },
+        { "code": "sourced-only", "label": "Solo fuente", "i18nKey": "facet.editorialStatus.sourced-only", "deprecated": false }
+      ]
+    }
+  ],
+  "phaseKinds": [
+    { "code": "qualifying", "label": "Clasificación", "i18nKey": "phase.kind.qualifying" },
+    { "code": "group", "label": "Fase de grupos", "i18nKey": "phase.kind.group" },
+    { "code": "knockout", "label": "Eliminatoria", "i18nKey": "phase.kind.knockout" },
+    { "code": "ranking", "label": "Ranking", "i18nKey": "phase.kind.ranking" },
+    { "code": "heat", "label": "Series", "i18nKey": "phase.kind.heat" }
+  ]
+}
