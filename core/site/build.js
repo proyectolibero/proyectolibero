@@ -7,7 +7,7 @@ const { loadCatalog } = require("../catalog.js");
 const { buildModel } = require("./model.js");
 const { buildNav } = require("./nav.js");
 const { buildTree, buildFacetIndexes } = require("./tree.js");
-const { planSite } = require("./routes.js");
+const { planSite, urlFor } = require("./routes.js");
 const {
   LANGS,
   loadDictionaries,
@@ -98,6 +98,59 @@ function buildSitemap(root, pages, lastmod) {
 
 function buildRobots() {
   return `User-agent: *\nAllow: /\nSitemap: ${ORIGIN}/sitemap.xml\n`;
+}
+
+/**
+ * Índice raíz máquina-legible (`site/index.json`): deportes → competiciones →
+ * ediciones con su URL canónica (es), ruta del JSON publicado y cobertura. Se
+ * deriva del catálogo y de los ficheros de edición; nunca se escribe a mano.
+ */
+function buildRootIndex(root, catalog, release, model) {
+  const sports = model.sports.map((sport) => ({
+    id: sport.id,
+    slug: sport.slug,
+    nameKey: sport.nameKey,
+    url: urlFor("es", sport.slug),
+    competitions: sport.competitions.map((comp) => {
+      const full = catalog.competitions[comp.id] || {};
+      const editions = [];
+      for (const entry of full.editions || []) {
+        if (!entry.held) continue;
+        let coverage = null;
+        let json = null;
+        if (entry.data) {
+          json = `/data/${full.sport}/${full.competition}/${entry.data}`;
+          try {
+            coverage = readJSON(path.join(root, "data", full.sport, full.competition, entry.data)).coverage || null;
+          } catch (err) {
+            coverage = null;
+          }
+        }
+        editions.push({
+          year: entry.year,
+          data: entry.data || null,
+          json,
+          url: urlFor("es", `${sport.slug}/${comp.slug}/${entry.year}`),
+          coverage
+        });
+      }
+      return {
+        id: comp.id,
+        slug: comp.slug,
+        nameKey: comp.nameKey,
+        editorialStatus: comp.editorialStatus,
+        url: urlFor("es", `${sport.slug}/${comp.slug}`),
+        editions
+      };
+    })
+  }));
+  return {
+    origin: ORIGIN,
+    release: release.releaseId,
+    asOf: release.asOf,
+    languages: LANGS,
+    sports
+  };
 }
 
 /**
@@ -203,6 +256,7 @@ function buildSite(root, options = {}) {
   const tree = buildTree(model);
   const facetIndexes = buildFacetIndexes(model);
   const indexes = { tree, facets: facetIndexes };
+  const index = buildRootIndex(root, catalog, release, model);
 
   const written = [];
   if (options.write !== false) {
@@ -211,6 +265,7 @@ function buildSite(root, options = {}) {
       writeText(path.join(root, outDir, "indexes", "facets.json"), `${JSON.stringify(facetIndexes, null, 2)}\n`)
     );
     for (const page of pages) written.push(writeText(page.file, page.html));
+    written.push(writeText(path.join(root, outDir, "index.json"), `${JSON.stringify(index, null, 2)}\n`));
     written.push(writeText(path.join(root, outDir, "sitemap.xml"), sitemap));
     written.push(writeText(path.join(root, outDir, "robots.txt"), robots));
     for (const name of ASSETS) {
@@ -233,7 +288,7 @@ function buildSite(root, options = {}) {
     }
   }
 
-  return { pages, sitemap, robots, written, langs: LANGS, partial, publishedEditions: published.length, indexes };
+  return { pages, sitemap, robots, index, written, langs: LANGS, partial, publishedEditions: published.length, indexes };
 }
 
 module.exports = { buildSite, ORIGIN, fullEditionList, resolveEditions, parseArgs };
