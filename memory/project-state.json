@@ -1,6 +1,6 @@
 {
-  "project": "Deporte Mundial",
-  "description": "Portal estático multilingüe de estadísticas deportivas (HTML+CSS+JS puro, hash routing, GitHub Pages)",
+  "project": "Deporte Mundial (Proyecto Libero)",
+  "description": "Archivo abierto de resultados deportivos — proyectolibero.org. HTML estático + JSON con esquema v2, 5 idiomas (es/en/pt/zh/hi), SSG sin dependencias y URLs por ruta generadas estáticamente. Solo ediciones cerradas; nunca se venden datos.",
   "updatedAt": "2026-10-13",
   "languages": [
     "es",
@@ -10,80 +10,90 @@
     "hi"
   ],
   "areas": {
-    "frontend": {
+    "site": {
       "status": "done",
-      "notes": "Shell index.html + CSS mobile-first + hash router + menú lateral auto-generado"
+      "notes": "SSG sin dependencias (core/site/build.js): 3.335 páginas + sitemap.xml + robots.txt (por idioma: 1 home, 4 deportes, 5 competiciones, 76 ediciones, 30 clasificaciones, 508 grupos, 43 páginas de partidos). URLs por ruta generadas estáticamente, slugs canónicos en es. site/ no se versiona (salida generada)."
     },
     "i18n": {
       "status": "done",
-      "notes": "5 idiomas en i18n/*.json + diccionario de países i18n/countries.json (códigos FIFA + históricos)"
+      "notes": "5 idiomas en i18n/*.json con paridad verificada. Diccionario de países i18n/countries.json (códigos FIFA + históricos TCH/URS/FRG/YUG/GDR; Saar pendiente, bloquea clasificación Mundial 2002-2014)."
     },
-    "data.worldcup": {
+    "data": {
       "status": "done",
-      "editions": {
-        "1930": "done",
-        "1934": "done",
-        "1938": "done",
-        "1950": "done"
-      },
-      "notes": "Las 23 ediciones celebradas (1930–2026; 1942/1946 no celebradas) migradas al esquema v2 y registradas en el catálogo: 1162 partidos y 3384 goles. Nivel 2 (clasificación completa) solo en 1938 y 1950 (coverage.scope \"all\"); el resto nivel 1 (scope \"final\"). Release 2026.10 con 23 ficheros. Gate y MCP en 0 errores/0 avisos; 69 tests en verde."
-    },
-    "validation": {
-      "status": "done",
-      "notes": "scripts/validate.js — esquema, i18n, códigos de país, fuentes, coherencia índice/edición"
-    },
-    "mcp": {
-      "status": "done",
-      "notes": "Servidor en mcp/ con memoria en memory/ — estado, decisiones, fuentes, validación, docs"
-    },
-    "skills": {
-      "status": "done",
-      "notes": "deporte-nueva-edicion, deporte-scrape-fuente, deporte-i18n-sync en .opencode/skills/"
-    },
-    "docs": {
-      "status": "done",
-      "notes": "Fase 0: ESQUEMA-DATOS-v2, SOSTENIBILIDAD (sustituye MONETIZACION), CONTRIBUCION, AGENTES, DISENO, SEO, adr/README (índice ADR-001..014), ESTRUCTURA y README actualizados."
-    },
-    "monetization": {
-      "status": "done",
-      "notes": "Fase 1: botón donaciones cableado (DONATE_URL vacío en config.js hasta configurar cuenta); docs/MONETIZACION.md"
-    },
-    "ci": {
-      "status": "done",
-      "notes": "GitHub Action validate.yml + .gitignore; primer commit ccf376c"
-    },
-    "verification": {
-      "status": "done",
-      "notes": "validate.js 0 errores; servidor local + Playwright: 6 vistas, 5 idiomas, móvil 375px (hamburguesa on/off-canvas) y escritorio, buscador multi-idioma, consola sin errores (solo favicon 404 corregido con SVG inline)"
+      "notes": "5 competiciones / 76 ediciones / 11.837 partidos (1.982 fase final + 9.855 clasificación): Mundial 23/23, Eurocopa 17, Nordic 14, Balkan 12, Confederaciones 10. Fichas verbatim: 1.172 (Mundial 900).", 
+      "competitions": {
+        "football.worldcup": { "editions": 23, "published": 23, "note": "Clasificación completa 1934-1998 y 2018-2022; parcial 2002-2014; 2026 solo fase final; 1930 no tuvo." },
+        "football.eurochamp": { "editions": 17, "published": 17, "note": "Clasificación completa 1988 y 1996-2024; 1960-1984 y 1992 sin publicar (RSSSF no la ofrece legible)." },
+        "football.nordic": { "editions": 14, "published": 14, "note": "Sin clasificación (no existe)." },
+        "football.balkan": { "editions": 12, "published": 12, "note": "Sin clasificación." },
+        "football.confederations": { "editions": 10, "published": 10, "note": "Sin clasificación." }
+      }
     },
     "catalog": {
       "status": "done",
-      "notes": "catalog/sports.json (4 deportes; football activo) + catalog/competitions/football.worldcup.json (cobertura 23 celebradas/3 publicadas/20 pendientes, vocabulario de fases con finalGroup para 1950, licencias y flag redistribute, política de actualización manual)."
-    },
-    "schema.v2": {
-      "status": "done",
-      "notes": "core/ (io atómico, catálogo, validador por arquetipo, reindex, view-model, release, CLI), 11 fases en el catálogo, procedencia determinista, gate i18n restaurado (I18N001/002, CAT005, EDI012/013), migración v1→v2 y adaptador web v2→v1. Pendiente fase 2 (panel admin) y fase 4 (SSG/SEO)."
-    },
-    "admin.panel": {
-      "status": "done",
-      "notes": "Fase 2 verificada end-to-end en navegador (servidor del agente colgado, puerto 8787): las 6 secciones OK. Estado (23 publicadas/1162 partidos/3384 goles/release 2026.10/validacion 0-0), Catalogo (23/23, 0 pendientes), Detalle de competicion (25 ediciones + formulario de edicion vigilada), Edicion 1938 con visor de Procedencia (primary + rechazos con motivo), Releases con dry-run (no escribe) y Auditoria (registra release.build). Unico error de consola: favicon 404. Nits: el favicon y que el release asOf sale con la fecha de hoy en vez de la del dato."
-    },
-    "ingest": {
-      "status": "done",
-      "notes": "Fase 3: cadena determinista completa (ingest/fetch.js, ingest/rsssf.js con parsers f/full/qf-scor, ingest/build.js, ingest/reconcile.js, scripts/ingest.js con fetch/build/reconcile/promote). 124 tests en verde y validate 0/0. Aceptacion: re-derivar 1954 da 0 diferencias bloqueantes y el borrador valida con 0 errores (promote listo, sin ejecutar: la publicacion es humana). Skill .opencode/skills/deporte-ingesta y docs alineados. Pendiente: parsers q/q-det (nivel 2) y seccion Ingesta en el panel."
-    },
-    "data.eurochamp": {
-      "status": "in-progress",
-      "notes": "Piloto 1996: clasificación integrada desde rsssf:96e-q (231 partidos, cobertura all/complete). 4/8 tablas de grupo omitidas por erratas de la fuente (EDI007); avisos persistidos en la edición. Tests 225 verdes, validate 0/0, integrity 13/43."
+      "notes": "catalog/sports.json + catalog/competitions/ (5 competiciones de fútbol). editorialStatus en todas (published). Declara facets y declaredPhases; vocabulario de fases con finalGroup para 1950."
     },
     "taxonomy": {
       "status": "done",
-      "notes": "P1 hecho: catalog/facets.json (vocabulario con i18n 5 idiomas y deprecated), 5 competiciones etiquetadas (obligatorias + ageBand/frequency/sanctioningBody), editorialStatus derivado de data/, declaredPhases por clase con excepciones por edicion, conclusion derivada (core/phases.js + scripts/derive-phases.js; 76 ediciones, 0 banderas cambian, 9 con clasificacion ausente), validador FAC001-FAC007/CAT006/EDI020/EDI021, arbol e indices por faceta como datos (core/site/tree.js, site/indexes/), tests taxonomy.test.js y phases.test.js. D52 registra el diseno."
+      "notes": "P1: catalog/facets.json (vocabulario con i18n 5 idiomas y deprecated), 5 competiciones etiquetadas (obligatorias + ageBand/frequency/sanctioningBody), declaredPhases por clase con excepciones por edición, conclusión derivada (core/phases.js + scripts/derive-phases.js; 76 ediciones, 0 banderas cambian, 9 con clasificación ausente). Validador FAC001-FAC007/CAT006/EDI020/EDI021; árbol e índices por faceta (core/site/tree.js, site/indexes/); tests taxonomy.test.js y phases.test.js. D51-52."
+    },
+    "core.schema": {
+      "status": "done",
+      "notes": "core/ (io atómico, catálogo, validador por arquetipo, reindex, view-model, release, CLI). Esquema v2, procedencia determinista, gate i18n (I18N001/002, CAT005, EDI012/013), migración v1->v2 y adaptador web v2->v1. Releases 2026.10."
+    },
+    "ingest": {
+      "status": "done",
+      "notes": "Cadena determinista completa (ingest/fetch.js, ingest/rsssf.js con parsers f/full/qf-scor, ingest/build.js, ingest/reconcile.js, scripts/ingest.js fetch/build/reconcile/promote). Publicación solo por promote --confirm. Pendiente: parsers q/q-det (nivel 2) y sección Ingesta en el panel."
+    },
+    "admin.panel": {
+      "status": "done",
+      "notes": "Panel local 127.0.0.1:8787 (no se publica), 6 secciones verificadas end-to-end: Estado, Catálogo, Detalle de competición, Edición con Visor de Procedencia, Releases con dry-run y Auditoría. Nits: favicon 404; asOf del release usa la fecha de hoy en vez de la del dato."
+    },
+    "validation": {
+      "status": "done",
+      "notes": "Gates: node --test tests/ = 313 verdes; scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos (línea base, no puede empeorar); scripts/site-weight.js = 0 páginas sobre 300 kB (peor: Mundial 2018 [hi] 171,9 kB). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
+    },
+    "mcp": {
+      "status": "done",
+      "notes": "Servidor en mcp/ con memoria en memory/ (project-state.json, sources.json, decisions.md) — estado/progreso, decisiones, fuentes, validación y docs. Registrado en opencode.json como deporte-memoria."
+    },
+    "skills": {
+      "status": "done",
+      "notes": "deporte-nueva-edicion, deporte-scrape-fuente, deporte-i18n-sync, deporte-ingesta en .opencode/skills/."
+    },
+    "docs": {
+      "status": "done",
+      "notes": "ESQUEMA-DATOS-v2, SOSTENIBILIDAD (sustituye MONETIZACION), CONTRIBUCION, AGENTES, AGENTES-COSTE, MODELOS, DISENO, SEO, ESTRUCTURA, ESTADO-ACTUAL, adr/ (índice hasta ADR-018; canónico en memory/decisions.md, D1..D53)."
+    },
+    "monetization": {
+      "status": "done",
+      "notes": "Fase 1: botón de donaciones cableado (DONATE_URL vacío en config.js hasta configurar cuenta)."
+    },
+    "ci": {
+      "status": "done",
+      "notes": "GitHub Action validate.yml (bloquea push si validate en rojo) + .gitignore."
+    },
+    "deployment": {
+      "status": "pending",
+      "notes": "site/ no se versiona ni está desplegado. Dominio proyectolibero.org (Cloudflare) sin publicación activa. Riesgo estratégico: 3.335 páginas sin público. Bloqueante para SEO y capa IA."
     }
   },
+  "roadmap": [
+    { "id": "P1", "title": "Taxonomía de facetas", "status": "done" },
+    { "id": "P2", "title": "Catálogo como hoja de ruta (editorialStatus)", "status": "done" },
+    { "id": "P3", "title": "Identidad de entidades auditable (ADR-032/D48)", "status": "pending" },
+    { "id": "P4", "title": "Portada «qué es Proyecto Libero» + metodología", "status": "pending" },
+    { "id": "P5", "title": "Donaciones: host fiscal Open Source Europe + dossier", "status": "pending" },
+    { "id": "P6", "title": "Capa IA: llms.txt, ai/index.json, NDJSON, esquemas", "status": "pending" },
+    { "id": "P7", "title": "Escalar competiciones (R3: 8 internacionales) + SEO fino + despliegue", "status": "pending" }
+  ],
   "nextSteps": [
-    "Migrar ediciones siguientes (1938, 1950, ...)",
-    "Configurar DONATE_URL cuando haya cuenta de donaciones",
-    "Publicar en GitHub Pages cuando exista remoto"
+    "P3 — Identidad de entidades auditable (ADR-032/D48): desbloquea la clasificación del Mundial 2002-2014 (Saar, TCH/URS/FRG)",
+    "P4 — Portada «qué es Proyecto Libero» + metodología",
+    "Desplegar site/ en proyectolibero.org (hoy nada publicado)",
+    "P5 — Donaciones: host fiscal Open Source Europe + dossier de registro",
+    "P6 — Capa IA: llms.txt, ai/index.json, NDJSON, esquemas",
+    "P7 — Escalar 8 competiciones R3 + SEO fino",
+    "Mantener memory/project-state.json en espejo de docs/ESTADO-ACTUAL.md tras cada fase (evitar deriva)"
   ]
 }

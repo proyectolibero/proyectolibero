@@ -9,7 +9,7 @@ Archivo abierto de resultados deportivos: `proyectolibero.org`, HTML estático +
 - **Contenido**: `catalog/` (deportes y competiciones) · `data/<sport>/<comp>/<año>.json` · `releases/` (sello atómico).
 - **Núcleo**: `core/` (io, catálogo, validador, reindex, release, view-model, CLI) + **`core/site/` = generador SSG** sin dependencias (5 idiomas, slugs canónicos en es, sitemap/robots).
 - **Identidad e ingesta**: `design/` (tokens, componentes, banderas SVG, medallas) · `ingest/` (fetch · parsers RSSSF por familia · build · reconcile) · `inbox/` y `drafts/` (ignorados).
-- **Control y conocimiento**: `admin/` (panel local 127.0.0.1:8787, no se publica) · `memory/` (decisiones D1..D50, fuentes, estado) vía MCP `deporte-memoria`.
+- **Control y conocimiento**: `admin/` (panel local 127.0.0.1:8787, no se publica) · `memory/` (decisiones D1..D53, fuentes, estado) vía MCP `deporte-memoria`.
 - **Verdad**: ficheros + git. La BD del panel es índice reconstruible; `site/` es salida generada, **no versionada**.
 
 ## Estado de datos y web
@@ -63,3 +63,4 @@ python -m http.server 8080               # web local (+ /preview/)
 - La ficha se publica **verbatim**, sin estadísticas de jugadores (**ADR-023/D33**). Sin inventar: si la fuente no lo da, se omite y se avisa (`provenance`).
 - Ninguna edición se presenta como concluida si le falta una fase declarada o tiene una parcial (**ADR-035/D51**): la conclusión se deriva, no se escribe a mano.
 - Nunca commitear con `validate` en rojo ni con `integrity` empeorado; economía de tokens en `docs/AGENTES-COSTE.md`.
+- `memory/project-state.json` es el espejo máquina de esta tarjeta: sus fechas deben coincidir (guarda `MEM001`/`MEM002` en `validate`; ADR-036/D53).

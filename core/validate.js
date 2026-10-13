@@ -16,6 +16,8 @@ const V1_PHASES = new Set(["qualifying", "group", "r16", "qf", "sf", "third", "f
 const NOTES = new Set(["aet", "pen", "replay", "awarded", "walkover", "notplayed", "withdrawn", "singleMatch"]);
 const STATUSES = new Set(["played", "notplayed", "awarded", "walkover"]);
 const SCOPES = new Set(["final", "all"]);
+const MEMORY_STATE_FILE = "memory/project-state.json";
+const TRANSFER_CARD_FILE = "docs/ESTADO-ACTUAL.md";
 
 /*
  * Claves i18n *usadas por el código*: llamadas literales `t("clave")` y
@@ -856,6 +858,44 @@ function validateReleases(ctx, errors, warnings, nonRedistributable) {
   return releaseReferenced;
 }
 
+/*
+ * ADR-036/D53: `memory/project-state.json` es el espejo máquina de la tarjeta
+ * de traspaso `docs/ESTADO-ACTUAL.md`. La guarda impide que las dos fuentes de
+ * verdad divergan: si la memoria existe y su `updatedAt` no coincide con la
+ * fecha que declara la tarjeta ("Actualizado YYYY-MM-DD"), o si la memoria
+ * existe pero falta la tarjeta (o su fecha), es un error. Si no hay memoria, la
+ * guarda no aplica (raíces de test y consumidores sin memoria): así no obliga a
+ * copiar `memory/` en cada fixture.
+ */
+function checkMemorySync(list, root) {
+  if (!existsSync(path.join(root, MEMORY_STATE_FILE))) return;
+  const cardPath = path.join(root, TRANSFER_CARD_FILE);
+  if (!existsSync(cardPath)) {
+    push(list, "MEM002", TRANSFER_CARD_FILE, `existe ${MEMORY_STATE_FILE} pero falta la tarjeta de traspaso`);
+    return;
+  }
+  let updatedAt;
+  try {
+    updatedAt = readJSON(path.join(root, MEMORY_STATE_FILE)).updatedAt;
+  } catch (err) {
+    push(list, "MEM001", MEMORY_STATE_FILE, `JSON inválido: ${err.message}`);
+    return;
+  }
+  const match = readFileSync(cardPath, "utf8").match(/Actualizado\s+(\d{4}-\d{2}-\d{2})/);
+  if (!match) {
+    push(list, "MEM002", TRANSFER_CARD_FILE, "no se encontró la fecha 'Actualizado YYYY-MM-DD' en la tarjeta de traspaso");
+    return;
+  }
+  if (updatedAt !== match[1]) {
+    push(
+      list,
+      "MEM001",
+      MEMORY_STATE_FILE,
+      `updatedAt (${updatedAt}) != fecha de la tarjeta de traspaso (${match[1]}); sincroniza la memoria con docs/ESTADO-ACTUAL.md (ADR-036/D53)`
+    );
+  }
+}
+
 function validateProject(root) {
   const ctx = makeContext(root);
   const errors = [...ctx.catalog.errors, ...ctx.loadErrors];
@@ -891,6 +931,7 @@ function validateProject(root) {
   }
   const releaseReferenced = validateReleases(ctx, errors, warnings, nonRedistributable);
   checkOrphans(ctx, warnings, releaseReferenced);
+  checkMemorySync(errors, root);
   return { errors, warnings };
 }
 

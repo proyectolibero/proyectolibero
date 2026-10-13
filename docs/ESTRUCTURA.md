@@ -74,7 +74,7 @@ Deporte/
 │   └── node_modules/           # (ignorado por git)
 │
 ├── memory/                     # Memoria versionable del proyecto
-│   ├── project-state.json      # Estado por área + próximos pasos
+│   ├── project-state.json      # Espejo de docs/ESTADO-ACTUAL.md (fecha vigilada)
 │   ├── sources.json            # Registro central de fuentes
 │   └── decisions.md            # Log de decisiones D1, D2...
 │
