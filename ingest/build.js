@@ -21,39 +21,21 @@
 const { parse, detectKind, resolveCountryName } = require("./rsssf.js");
 const { desiredCoverage } = require("../scripts/migrate-coverage.js");
 
+const path = require("node:path");
 const COUNTRIES = require("../i18n/countries.json");
+const { loadIdentity, buildAliasIndex, canonicalCode: identityCanonicalCode } = require("../core/identity.js");
 
 const DEFAULT_SPORT = "football";
 const DEFAULT_COMPETITION = "worldcup";
 const DEFAULT_LICENSE = "rsssf-attribution";
 
-/** Códigos alternativos usados por RSSSF que no son el canónico del catálogo. */
-const CODE_ALIASES = {
-  JUG: "YUG",
-  CZE: "TCH",
-  GER: "FRG",
-  HOL: "NED",
-  ROM: "ROU",
-  COS: "CRC",
-  ZSR: "URS",
-  BIA: "BLR",
-  DAN: "DEN",
-  FAR: "FRO",
-  LIT: "LTU",
-  LOT: "LAT",
-  MCA: "MKD",
-  MOL: "MDA",
-  SLA: "SVN",
-  SLK: "SVK",
-  SMA: "SMR"
-};
-
 /**
- * Primer año en que `GER` y `CZE` designan ya a Alemania reunificada y a la
- * República Checa (antes, a la RFA y a Checoslovaquia). Solo se aplica cuando la
- * fusión conoce el año de la edición; sin año se conserva el alias histórico.
+ * Capa de identidad auditable (ADR-032/D48): los alias (códigos legados de RSSSF
+ * y entidades históricas con `untilYear`) viven como dato en
+ * `catalog/identity.json`, no en el código.
  */
-const CODE_ALIAS_YEAR = { GER: 1991, CZE: 1993 };
+const IDENTITY = loadIdentity(path.join(__dirname, ".."));
+const ALIAS_INDEX = buildAliasIndex(IDENTITY);
 
 /** Notas del esquema v2 que puede aportar la fuente resumida. */
 const KNOWN_NOTES = new Set([
@@ -108,13 +90,9 @@ function normalizeTeam(raw, year) {
   return text;
 }
 
-/** Código canónico de un código RSSSF, aplicando el alias y el año de la edición. */
+/** Código canónico de un código RSSSF, según la capa de identidad y el año. */
 function canonicalCode(code, year) {
-  const alias = CODE_ALIASES[code];
-  if (!alias) return code;
-  const from = CODE_ALIAS_YEAR[code];
-  if (from && Number.isInteger(year) && year >= from) return code;
-  return alias;
+  return identityCanonicalCode(ALIAS_INDEX, code, year);
 }
 
 /** Etapa de clasificación del catálogo para una sección sin grupo (play-off…). */
@@ -272,8 +250,9 @@ function sheetFrom(entry, sourceId) {
 
 /**
  * Formas canónicas de un equipo para el emparejamiento: su código (resolviendo
- * el nombre) más el alias histórico (`GER`→`FRG`). Se comparan por intersección
- * para tolerar que la fuente use el nombre, un código moderno o su alias.
+ * el nombre) más las entidades de sus alias en la capa de identidad
+ * (`GER`→`FRG`). Se comparan por intersección para tolerar que la fuente use
+ * el nombre, un código moderno o su alias.
  */
 function teamForms(raw) {
   const text = typeof raw === "string" ? raw.trim() : "";
@@ -281,7 +260,7 @@ function teamForms(raw) {
   const resolved = NAME_TO_CODE[text.toLowerCase()] || (text.length <= 4 ? text.toUpperCase() : null);
   if (!resolved) return [text.toUpperCase()];
   const forms = new Set([resolved]);
-  if (CODE_ALIASES[resolved]) forms.add(CODE_ALIASES[resolved]);
+  for (const alias of ALIAS_INDEX.get(resolved) || []) forms.add(alias.entity);
   return [...forms];
 }
 

@@ -10,6 +10,7 @@ const {
 } = require("./catalog.js");
 const { checksumOfContents } = require("./release.js");
 const { isPhaseKind, derivePhaseCoverage } = require("./phases.js");
+const { CONFIDENCES } = require("./identity.js");
 
 const LANGS = ["es", "en", "pt", "zh", "hi"];
 const V1_PHASES = new Set(["qualifying", "group", "r16", "qf", "sf", "third", "final"]);
@@ -61,6 +62,7 @@ function makeContext(root) {
     catalog: loadCatalog(root),
     countries: load("i18n/countries.json"),
     facets: load("catalog/facets.json"),
+    identity: load("catalog/identity.json"),
     i18n,
     editionSchema: load("schemas/edition.schema.json"),
     releaseSchema: load("schemas/release.schema.json"),
@@ -859,6 +861,45 @@ function validateReleases(ctx, errors, warnings, nonRedistributable) {
 }
 
 /*
+ * ADR-032/D48: la capa de identidad (`catalog/identity.json`) agrupa formas del
+ * dato crudo en entidades canónicas. El validador exige que la entidad destino
+ * exista (`ENT002`), que la confianza sea válida (`ENT003`), que `untilYear` sea
+ * entero (`ENT004`) y que no haya dos alias permanentes del mismo `raw` a
+ * entidades distintas (`ENT001`). Un alias hacia sí mismo es ruido (`ENT005`).
+ */
+function validateIdentity(ctx, errors) {
+  const doc = ctx.identity;
+  if (!doc) return;
+  const file = "catalog/identity.json";
+  const known = new Set(Object.keys(ctx.countries || {}));
+  const permanent = new Map();
+  for (const alias of doc.aliases || []) {
+    if (!alias || typeof alias.raw !== "string" || typeof alias.entity !== "string") {
+      push(errors, "ENT002", file, `alias incompleto: ${JSON.stringify(alias)}`);
+      continue;
+    }
+    if (!known.has(alias.entity)) {
+      push(errors, "ENT002", file, `alias ${alias.raw}: entidad ${alias.entity} no está en i18n/countries.json`);
+    }
+    if (!CONFIDENCES.includes(alias.confidence)) {
+      push(errors, "ENT003", file, `alias ${alias.raw}: confidence inválida ${JSON.stringify(alias.confidence)}`);
+    }
+    if (alias.untilYear !== undefined && !Number.isInteger(alias.untilYear)) {
+      push(errors, "ENT004", file, `alias ${alias.raw}: untilYear no entero ${JSON.stringify(alias.untilYear)}`);
+    }
+    if (alias.entity === alias.raw && alias.untilYear === undefined) {
+      push(errors, "ENT005", file, `alias ${alias.raw} apunta a sí mismo`);
+    }
+    if (alias.untilYear === undefined) {
+      if (permanent.has(alias.raw) && permanent.get(alias.raw) !== alias.entity) {
+        push(errors, "ENT001", file, `alias ${alias.raw} ambiguo: ${permanent.get(alias.raw)} y ${alias.entity}`);
+      }
+      permanent.set(alias.raw, alias.entity);
+    }
+  }
+}
+
+/*
  * ADR-036/D53: `memory/project-state.json` es el espejo máquina de la tarjeta
  * de traspaso `docs/ESTADO-ACTUAL.md`. La guarda impide que las dos fuentes de
  * verdad divergan: si la memoria existe y su `updatedAt` no coincide con la
@@ -907,6 +948,7 @@ function validateProject(root) {
   validateSourceI18nKeys(ctx, errors);
   validateFacets(ctx, errors, warnings);
   checkDeclaredPhases(ctx, errors);
+  validateIdentity(ctx, errors);
   for (const competition of Object.values(ctx.catalog.competitions)) {
     for (const source of competition.sources || []) {
       if (source.redistribute === false) nonRedistributable.add(source.id);

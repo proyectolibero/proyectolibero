@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "note": "Capa de identidad auditable (ADR-032/D48). El dato crudo de la fuente nunca se reescribe: aquí se registra a qué entidad canónica se agrupa cada forma, con la regla, el autor y la confianza. Los alias con `untilYear` solo aplican antes de ese año (entidades históricas).",
+  "aliases": [
+    { "raw": "JUG", "entity": "YUG", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "HOL", "entity": "NED", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "ROM", "entity": "ROU", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "COS", "entity": "CRC", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "ZSR", "entity": "URS", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "BIA", "entity": "BLR", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "DAN", "entity": "DEN", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "FAR", "entity": "FRO", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "LIT", "entity": "LTU", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "LOT", "entity": "LAT", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "MCA", "entity": "MKD", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "MOL", "entity": "MDA", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "SLA", "entity": "SVN", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "SLK", "entity": "SVK", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    { "raw": "SMA", "entity": "SMR", "rule": "legacy-code", "by": "human", "confidence": "high" },
+    {
+      "raw": "CZE",
+      "entity": "TCH",
+      "untilYear": 1993,
+      "rule": "historical-split",
+      "by": "human",
+      "confidence": "high",
+      "note": "Checoslovaquia antes de 1993; desde 1993, República Checa."
+    },
+    {
+      "raw": "GER",
+      "entity": "FRG",
+      "untilYear": 1991,
+      "rule": "historical-split",
+      "by": "human",
+      "confidence": "high",
+      "note": "RFA antes de 1991; desde 1991, Alemania reunificada."
+    }
+  ],
+  "unresolved": []
+}
