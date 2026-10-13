@@ -17,12 +17,12 @@
     "finalMatchId": "m064"
   },
   "coverage": {
-    "matches": 867,
-    "goals": 2292,
+    "matches": 999,
+    "goals": 2625,
     "scorers": 98,
     "scope": "all",
     "complete": false,
-    "note": "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar).",
+    "note": "Clasificación parcial: 6 tabla(s) de grupo descartada(s), 24 fila(s) de clasificación descartada(s) por incompletitud o erratas de la fuente.",
     "scorersComplete": false,
     "partialPhases": [
       "qualifying"
@@ -454,6 +454,7 @@
       "stage": "group"
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR1",
       "standings": [
         {
@@ -496,10 +497,10 @@
           "ga": 17,
           "pts": 1
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR10",
       "standings": [
         {
@@ -542,10 +543,10 @@
           "ga": 11,
           "pts": 6
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR11",
       "standings": [
         {
@@ -578,10 +579,10 @@
           "ga": 8,
           "pts": 4
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR12",
       "standings": [
         {
@@ -624,10 +625,10 @@
           "ga": 30,
           "pts": 0
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR2",
       "standings": [
         {
@@ -670,10 +671,10 @@
           "ga": 12,
           "pts": 6
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR3",
       "standings": [
         {
@@ -716,10 +717,10 @@
           "ga": 11,
           "pts": 3
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR4",
       "standings": [
         {
@@ -762,10 +763,10 @@
           "ga": 10,
           "pts": 3
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR5",
       "standings": [
         {
@@ -808,10 +809,10 @@
           "ga": 16,
           "pts": 0
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR6",
       "standings": [
         {
@@ -854,10 +855,10 @@
           "ga": 12,
           "pts": 3
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR7",
       "standings": [
         {
@@ -900,10 +901,10 @@
           "ga": 8,
           "pts": 5
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR9",
       "standings": [
         {
@@ -946,10 +947,10 @@
           "ga": 17,
           "pts": 0
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "ASI1",
       "standings": [
         {
@@ -1042,10 +1043,10 @@
           "ga": 10,
           "pts": 4
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "ASI3",
       "standings": [
         {
@@ -1088,10 +1089,10 @@
           "ga": 12,
           "pts": 1
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "ASI5",
       "standings": [
         {
@@ -1134,10 +1135,10 @@
           "ga": 12,
           "pts": 4
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "EUR1",
       "standings": [
         {
@@ -1200,10 +1201,10 @@
           "ga": 26,
           "pts": 1
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "EUR2",
       "standings": [
         {
@@ -1266,10 +1267,10 @@
           "ga": 18,
           "pts": 3
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "EUR3",
       "standings": [
         {
@@ -1332,10 +1333,10 @@
           "ga": 47,
           "pts": 0
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "EUR5",
       "standings": [
         {
@@ -1398,10 +1399,10 @@
           "ga": 22,
           "pts": 4
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "EUR6",
       "standings": [
         {
@@ -1464,8 +1465,581 @@
           "ga": 39,
           "pts": 0
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "AFR8",
+      "standings": [
+        {
+          "team": "MAR",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 11,
+          "ga": 5,
+          "pts": 9
+        },
+        {
+          "team": "RWA",
+          "p": 4,
+          "w": 3,
+          "d": 0,
+          "l": 1,
+          "gf": 7,
+          "ga": 3,
+          "pts": 9
+        },
+        {
+          "team": "MTN",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 2,
+          "ga": 12,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "ASI4",
+      "standings": [
+        {
+          "team": "UZB",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 17,
+          "ga": 7,
+          "pts": 15
+        },
+        {
+          "team": "KSA",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 15,
+          "ga": 5,
+          "pts": 15
+        },
+        {
+          "team": "SIN",
+          "p": 6,
+          "w": 2,
+          "d": 0,
+          "l": 4,
+          "gf": 7,
+          "ga": 16,
+          "pts": 6
+        },
+        {
+          "team": "LIB",
+          "p": 6,
+          "w": 0,
+          "d": 0,
+          "l": 6,
+          "gf": 3,
+          "ga": 14,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "EUR4",
+      "standings": [
+        {
+          "team": "GER",
+          "p": 10,
+          "w": 8,
+          "d": 2,
+          "l": 0,
+          "gf": 26,
+          "ga": 5,
+          "pts": 26
+        },
+        {
+          "team": "RUS",
+          "p": 10,
+          "w": 7,
+          "d": 1,
+          "l": 2,
+          "gf": 19,
+          "ga": 6,
+          "pts": 22
+        },
+        {
+          "team": "FIN",
+          "p": 10,
+          "w": 5,
+          "d": 3,
+          "l": 2,
+          "gf": 14,
+          "ga": 14,
+          "pts": 18
+        },
+        {
+          "team": "WAL",
+          "p": 10,
+          "w": 4,
+          "d": 0,
+          "l": 6,
+          "gf": 9,
+          "ga": 12,
+          "pts": 12
+        },
+        {
+          "team": "AZE",
+          "p": 10,
+          "w": 1,
+          "d": 2,
+          "l": 7,
+          "gf": 4,
+          "ga": 14,
+          "pts": 5
+        },
+        {
+          "team": "LIE",
+          "p": 10,
+          "w": 0,
+          "d": 2,
+          "l": 8,
+          "gf": 2,
+          "ga": 23,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "EUR7",
+      "standings": [
+        {
+          "team": "SRB",
+          "p": 10,
+          "w": 7,
+          "d": 1,
+          "l": 2,
+          "gf": 22,
+          "ga": 8,
+          "pts": 22
+        },
+        {
+          "team": "FRA",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 18,
+          "ga": 9,
+          "pts": 21
+        },
+        {
+          "team": "AUT",
+          "p": 10,
+          "w": 4,
+          "d": 2,
+          "l": 4,
+          "gf": 14,
+          "ga": 15,
+          "pts": 14
+        },
+        {
+          "team": "LTU",
+          "p": 10,
+          "w": 4,
+          "d": 0,
+          "l": 6,
+          "gf": 10,
+          "ga": 11,
+          "pts": 12
+        },
+        {
+          "team": "ROU",
+          "p": 10,
+          "w": 3,
+          "d": 3,
+          "l": 4,
+          "gf": 12,
+          "ga": 18,
+          "pts": 12
+        },
+        {
+          "team": "FRO",
+          "p": 10,
+          "w": 1,
+          "d": 1,
+          "l": 8,
+          "gf": 5,
+          "ga": 20,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "EUR8",
+      "standings": [
+        {
+          "team": "ITA",
+          "p": 10,
+          "w": 7,
+          "d": 3,
+          "l": 0,
+          "gf": 18,
+          "ga": 7,
+          "pts": 24
+        },
+        {
+          "team": "IRL",
+          "p": 10,
+          "w": 4,
+          "d": 6,
+          "l": 0,
+          "gf": 12,
+          "ga": 8,
+          "pts": 18
+        },
+        {
+          "team": "BUL",
+          "p": 10,
+          "w": 3,
+          "d": 5,
+          "l": 2,
+          "gf": 17,
+          "ga": 13,
+          "pts": 14
+        },
+        {
+          "team": "CYP",
+          "p": 10,
+          "w": 2,
+          "d": 3,
+          "l": 5,
+          "gf": 14,
+          "ga": 16,
+          "pts": 9
+        },
+        {
+          "team": "MNE",
+          "p": 10,
+          "w": 1,
+          "d": 6,
+          "l": 3,
+          "gf": 9,
+          "ga": 14,
+          "pts": 9
+        },
+        {
+          "team": "GEO",
+          "p": 10,
+          "w": 0,
+          "d": 3,
+          "l": 7,
+          "gf": 7,
+          "ga": 19,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "EUR9",
+      "standings": [
+        {
+          "team": "NED",
+          "p": 8,
+          "w": 8,
+          "d": 0,
+          "l": 0,
+          "gf": 17,
+          "ga": 2,
+          "pts": 24
+        },
+        {
+          "team": "NOR",
+          "p": 8,
+          "w": 2,
+          "d": 4,
+          "l": 2,
+          "gf": 9,
+          "ga": 7,
+          "pts": 10
+        },
+        {
+          "team": "SCO",
+          "p": 8,
+          "w": 3,
+          "d": 1,
+          "l": 4,
+          "gf": 6,
+          "ga": 11,
+          "pts": 10
+        },
+        {
+          "team": "MKD",
+          "p": 8,
+          "w": 2,
+          "d": 1,
+          "l": 5,
+          "gf": 5,
+          "ga": 11,
+          "pts": 7
+        },
+        {
+          "team": "ISL",
+          "p": 8,
+          "w": 1,
+          "d": 2,
+          "l": 5,
+          "gf": 7,
+          "ga": 13,
+          "pts": 5
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "NCAA",
+      "standings": [
+        {
+          "team": "USA",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 14,
+          "ga": 3,
+          "pts": 15
+        },
+        {
+          "team": "TRI",
+          "p": 6,
+          "w": 3,
+          "d": 2,
+          "l": 1,
+          "gf": 9,
+          "ga": 6,
+          "pts": 11
+        },
+        {
+          "team": "GUA",
+          "p": 6,
+          "w": 1,
+          "d": 2,
+          "l": 3,
+          "gf": 6,
+          "ga": 7,
+          "pts": 5
+        },
+        {
+          "team": "CUB",
+          "p": 6,
+          "w": 1,
+          "d": 0,
+          "l": 5,
+          "gf": 5,
+          "ga": 18,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "NCAB",
+      "standings": [
+        {
+          "team": "HON",
+          "p": 6,
+          "w": 4,
+          "d": 0,
+          "l": 2,
+          "gf": 9,
+          "ga": 5,
+          "pts": 12
+        },
+        {
+          "team": "MEX",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 9,
+          "ga": 6,
+          "pts": 10
+        },
+        {
+          "team": "JAM",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 6,
+          "ga": 6,
+          "pts": 10
+        },
+        {
+          "team": "CAN",
+          "p": 6,
+          "w": 0,
+          "d": 2,
+          "l": 4,
+          "gf": 6,
+          "ga": 13,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "NCAC",
+      "standings": [
+        {
+          "team": "USA",
+          "p": 10,
+          "w": 6,
+          "d": 2,
+          "l": 2,
+          "gf": 19,
+          "ga": 13,
+          "pts": 20
+        },
+        {
+          "team": "MEX",
+          "p": 10,
+          "w": 6,
+          "d": 1,
+          "l": 3,
+          "gf": 18,
+          "ga": 12,
+          "pts": 19
+        },
+        {
+          "team": "CRC",
+          "p": 6,
+          "w": 6,
+          "d": 0,
+          "l": 0,
+          "gf": 20,
+          "ga": 3,
+          "pts": 18
+        },
+        {
+          "team": "HON",
+          "p": 10,
+          "w": 5,
+          "d": 1,
+          "l": 4,
+          "gf": 17,
+          "ga": 11,
+          "pts": 16
+        },
+        {
+          "team": "CRC",
+          "p": 10,
+          "w": 5,
+          "d": 1,
+          "l": 4,
+          "gf": 15,
+          "ga": 15,
+          "pts": 16
+        },
+        {
+          "team": "NZL",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 14,
+          "ga": 5,
+          "pts": 15
+        },
+        {
+          "team": "SLV",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 11,
+          "ga": 4,
+          "pts": 10
+        },
+        {
+          "team": "NCL",
+          "p": 6,
+          "w": 2,
+          "d": 2,
+          "l": 2,
+          "gf": 12,
+          "ga": 10,
+          "pts": 8
+        },
+        {
+          "team": "SLV",
+          "p": 10,
+          "w": 2,
+          "d": 2,
+          "l": 6,
+          "gf": 9,
+          "ga": 15,
+          "pts": 8
+        },
+        {
+          "team": "FIJ",
+          "p": 6,
+          "w": 2,
+          "d": 1,
+          "l": 3,
+          "gf": 8,
+          "ga": 11,
+          "pts": 7
+        },
+        {
+          "team": "TRI",
+          "p": 10,
+          "w": 1,
+          "d": 3,
+          "l": 6,
+          "gf": 10,
+          "ga": 22,
+          "pts": 6
+        },
+        {
+          "team": "VAN",
+          "p": 6,
+          "w": 1,
+          "d": 1,
+          "l": 4,
+          "gf": 5,
+          "ga": 13,
+          "pts": 4
+        },
+        {
+          "team": "HAI",
+          "p": 6,
+          "w": 0,
+          "d": 3,
+          "l": 3,
+          "gf": 4,
+          "ga": 13,
+          "pts": 3
+        },
+        {
+          "team": "SUR",
+          "p": 6,
+          "w": 0,
+          "d": 2,
+          "l": 4,
+          "gf": 4,
+          "ga": 19,
+          "pts": 2
+        }
+      ]
     }
   ],
   "matches": [
@@ -8963,7 +9537,7 @@
     },
     {
       "stage": "qualifyingGroup",
-      "group": "EUR9",
+      "group": "NCAC",
       "matchday": null,
       "date": "2009-11-14",
       "city": "San José",
@@ -8981,7 +9555,7 @@
     },
     {
       "stage": "qualifyingGroup",
-      "group": "EUR9",
+      "group": "NCAC",
       "matchday": null,
       "date": "2009-11-18",
       "city": "Montevideo",
@@ -11534,7 +12108,7 @@
       "group": "AFRA",
       "matchday": null,
       "date": "2009-03-28",
-      "city": "Accra (Ghana)",
+      "city": "Accra",
       "home": "TOG",
       "away": "CMR",
       "score": [
@@ -12560,7 +13134,7 @@
       "group": "AFRE",
       "matchday": null,
       "date": "2009-10-11",
-      "city": "Accra (Ghana)",
+      "city": "Accra",
       "home": "GUI",
       "away": "BFA",
       "score": [
@@ -12776,7 +13350,7 @@
       "group": "AFRE",
       "matchday": null,
       "date": "2007-10-08",
-      "city": "Doha (Qatar)",
+      "city": "Doha",
       "home": "PAL",
       "away": "SIN",
       "score": [
@@ -15275,7 +15849,7 @@
       "group": "ASI2",
       "matchday": null,
       "date": "2008-03-26",
-      "city": "Macoya (Trin.)",
+      "city": "Macoya",
       "home": "MSR",
       "away": "SUR",
       "score": [
@@ -17087,6 +17661,2386 @@
       "pens": null,
       "raw": null,
       "id": "m867"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "2008-10-15",
+      "city": "Mönchengladbach",
+      "home": "GER",
+      "away": "WAL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m868"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR4",
+      "matchday": null,
+      "date": "2009-09-05",
+      "city": "Sankt Peterburg",
+      "home": "RUS",
+      "away": "LIE",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m869"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "2008-09-10",
+      "city": null,
+      "home": "FRA",
+      "away": "SRB",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m870"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "2009-04-01",
+      "city": null,
+      "home": "FRA",
+      "away": "LTU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m871"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR7",
+      "matchday": null,
+      "date": "2009-09-05",
+      "city": null,
+      "home": "FRA",
+      "away": "ROU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m872"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EUR8",
+      "matchday": null,
+      "date": "2008-09-06",
+      "city": "Mainz",
+      "home": "GEO",
+      "away": "IRL",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m873"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-11-14",
+      "city": "Dublin",
+      "home": "IRL",
+      "away": "FRA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m874"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-11-14",
+      "city": "Lisboa",
+      "home": "POR",
+      "away": "BIH",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m875"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-11-14",
+      "city": "Athinai",
+      "home": "GRE",
+      "away": "UKR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m876"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-11-14",
+      "city": "Moskva",
+      "home": "RUS",
+      "away": "SVN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m877"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-11-18",
+      "city": null,
+      "home": "FRA",
+      "away": "IRL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m878"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-11-18",
+      "city": "Zenica",
+      "home": "BIH",
+      "away": "POR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m879"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-11-18",
+      "city": "Donetsk",
+      "home": "UKR",
+      "away": "GRE",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m880"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-11-18",
+      "city": "Maribor",
+      "home": "SVN",
+      "away": "RUS",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m881"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-10-13",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "BOL",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m882"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-10-13",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "CHI",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m883"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-10-13",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "VEN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m884"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-10-13",
+      "city": "Lima",
+      "home": "PER",
+      "away": "PAR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m885"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-10-14",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "BRA",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m886"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-10-16",
+      "city": "Maracaibo",
+      "home": "VEN",
+      "away": "ARG",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m887"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-10-17",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "COL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m888"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-10-18",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "PER",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m889"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-10-18",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "URU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m890"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-10-17",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "ECU",
+      "score": [
+        5,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m891"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-17",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "BOL",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m892"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-17",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "VEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m893"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-17",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "ECU",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m894"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-18",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "CHI",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m895"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-18",
+      "city": "Lima",
+      "home": "PER",
+      "away": "BRA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m896"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-20",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "ARG",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m897"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-21",
+      "city": "San Cristóbal",
+      "home": "VEN",
+      "away": "BOL",
+      "score": [
+        5,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m898"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-21",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "PER",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m899"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-21",
+      "city": "São Paulo",
+      "home": "BRA",
+      "away": "URU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m900"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-21",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "PAR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m901"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-14",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "VEN",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m902"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-14",
+      "city": "Lima",
+      "home": "PER",
+      "away": "COL",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m903"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-15",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "BRA",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m904"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-15",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "ECU",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m905"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-15",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "CHI",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m906"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-18",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "PER",
+      "score": [
+        6,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m907"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-18",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "PAR",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m908"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-18",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "COL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m909"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-18",
+      "city": "Belo Horizonte",
+      "home": "BRA",
+      "away": "ARG",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m910"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-06-19",
+      "city": "Puerto La Cruz",
+      "home": "VEN",
+      "away": "CHI",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m911"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-09-06",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "PAR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m912"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-09-06",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "URU",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m913"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-09-06",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "BOL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m914"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-09-06",
+      "city": "Lima",
+      "home": "PER",
+      "away": "VEN",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m915"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-09-07",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "BRA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m916"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-09-09",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "VEN",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m917"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-09-10",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "BOL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m918"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-09-10",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "COL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m919"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-09-10",
+      "city": "Lima",
+      "home": "PER",
+      "away": "ARG",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m920"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-09-10",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "ECU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m921"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-10-11",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "URU",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m922"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-10-11",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "PER",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m923"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-10-11",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "PAR",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m924"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-10-12",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "CHI",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m925"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-10-12",
+      "city": "San Cristóbal",
+      "home": "VEN",
+      "away": "BRA",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m926"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-10-14",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "URU",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m927"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-10-15",
+      "city": "Rio de Janeiro",
+      "home": "BRA",
+      "away": "COL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m928"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-10-15",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "ARG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m929"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-10-15",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "PER",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m930"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2008-10-15",
+      "city": "Puerto La Cruz",
+      "home": "VEN",
+      "away": "ECU",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m931"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-03-28",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "VEN",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m932"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-03-28",
+      "city": "Bogotá",
+      "home": "COL",
+      "away": "BOL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m933"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-03-28",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "PAR",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m934"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-03-29",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "BRA",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m935"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-03-29",
+      "city": "Lima",
+      "home": "PER",
+      "away": "CHI",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m936"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-03-31",
+      "city": "Puerto Ordaz",
+      "home": "VEN",
+      "away": "COL",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m937"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-04-01",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "ARG",
+      "score": [
+        6,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m938"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-04-01",
+      "city": "Porto Alegre",
+      "home": "BRA",
+      "away": "PER",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m939"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-04-01",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "URU",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m940"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-04-01",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "PAR",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m941"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-06-06",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "COL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m942"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-06-06",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "VEN",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m943"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-06-06",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "CHI",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m944"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-06-06",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "BRA",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m945"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-06-07",
+      "city": "Lima",
+      "home": "PER",
+      "away": "ECU",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m946"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-06-10",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "ARG",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m947"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-06-10",
+      "city": "Recife",
+      "home": "BRA",
+      "away": "PAR",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m948"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-06-10",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "BOL",
+      "score": [
+        4,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m949"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-06-10",
+      "city": "Medellín",
+      "home": "COL",
+      "away": "PER",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m950"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-06-10",
+      "city": "Puerto Ordaz",
+      "home": "VEN",
+      "away": "URU",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m951"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-09-05",
+      "city": "Rosario",
+      "home": "ARG",
+      "away": "BRA",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m952"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-09-05",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "VEN",
+      "score": [
+        2,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m953"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-09-05",
+      "city": "Medellín",
+      "home": "COL",
+      "away": "ECU",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m954"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-09-05",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "BOL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m955"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-09-05",
+      "city": "Lima",
+      "home": "PER",
+      "away": "URU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m956"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-09-09",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "ECU",
+      "score": [
+        1,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m957"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-09-09",
+      "city": "Salvador",
+      "home": "BRA",
+      "away": "CHI",
+      "score": [
+        4,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m958"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-09-09",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "ARG",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m959"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-09-09",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "COL",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m960"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-09-09",
+      "city": "Puerto La Cruz",
+      "home": "VEN",
+      "away": "PER",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m961"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-10-10",
+      "city": "Buenos Aires",
+      "home": "ARG",
+      "away": "PER",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m962"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-10-10",
+      "city": "Medellín",
+      "home": "COL",
+      "away": "CHI",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m963"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-10-10",
+      "city": "Quito",
+      "home": "ECU",
+      "away": "URU",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m964"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-10-10",
+      "city": "Puerto Ordaz",
+      "home": "VEN",
+      "away": "PAR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m965"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-10-11",
+      "city": "La Paz",
+      "home": "BOL",
+      "away": "BRA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m966"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-10-14",
+      "city": "Campo Grande",
+      "home": "BRA",
+      "away": "VEN",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m967"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-10-14",
+      "city": "Santiago",
+      "home": "CHI",
+      "away": "ECU",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m968"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-10-14",
+      "city": "Asunción",
+      "home": "PAR",
+      "away": "COL",
+      "score": [
+        0,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m969"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-10-14",
+      "city": "Lima",
+      "home": "PER",
+      "away": "BOL",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m970"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-10-14",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "ARG",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m971"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-11-14",
+      "city": "San José",
+      "home": "CRC",
+      "away": "URU",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m972"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-11-18",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "CRC",
+      "score": [
+        1,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m973"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-10-14",
+      "city": "Antananarivo",
+      "home": "MAD",
+      "away": "COM",
+      "score": [
+        6,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m974"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-10-17",
+      "city": "Freetown",
+      "home": "SLE",
+      "away": "GNB",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m975"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-16",
+      "city": "Djibouti",
+      "home": "DJI",
+      "away": "SOM",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m976"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-17",
+      "city": "Moroni",
+      "home": "COM",
+      "away": "MAD",
+      "score": [
+        0,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m977"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2007-11-17",
+      "city": "Bissau",
+      "home": "GNB",
+      "away": "SLE",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m978"
+    },
+    {
+      "stage": "qualifyingPlayoff",
+      "group": null,
+      "matchday": null,
+      "date": "2009-11-18",
+      "city": "Omdurman",
+      "home": "ALG",
+      "away": "EGY",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m979"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRE",
+      "matchday": null,
+      "date": "2007-10-26",
+      "city": "Dushanbe",
+      "home": "AFG",
+      "away": "SYR",
+      "score": [
+        1,
+        2
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m980"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRE",
+      "matchday": null,
+      "date": "2007-10-13",
+      "city": "Tashkent",
+      "home": "UZB",
+      "away": "TPE",
+      "score": [
+        9,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m981"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRE",
+      "matchday": null,
+      "date": "2007-10-21",
+      "city": "Gianyar",
+      "home": "TLS",
+      "away": "HKG",
+      "score": [
+        2,
+        3
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m982"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRE",
+      "matchday": null,
+      "date": "2007-10-22",
+      "city": "Lahore",
+      "home": "PAK",
+      "away": "IRQ",
+      "score": [
+        0,
+        7
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m983"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFRE",
+      "matchday": null,
+      "date": "2007-10-28",
+      "city": "Damascus",
+      "home": "IRQ",
+      "away": "PAK",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m984"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI4",
+      "matchday": null,
+      "date": "2008-06-07",
+      "city": "Tashkent",
+      "home": "UZB",
+      "away": "SIN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m985"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASI4",
+      "matchday": null,
+      "date": "2008-06-14",
+      "city": "Singapore",
+      "home": "SIN",
+      "away": "KSA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m986"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "2008-08-20",
+      "city": "Cdad. Guatemala",
+      "home": "GUA",
+      "away": "USA",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m987"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "2008-09-10",
+      "city": "Cdad. Guatemala",
+      "home": "GUA",
+      "away": "CUB",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m988"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAA",
+      "matchday": null,
+      "date": "2008-10-11",
+      "city": "Cadd. Guatemala",
+      "home": "GUA",
+      "away": "TRI",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m989"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "2008-08-20",
+      "city": "Cdad. de México",
+      "home": "MEX",
+      "away": "HON",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m990"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "2008-09-06",
+      "city": "Cdad. de México",
+      "home": "MEX",
+      "away": "JAM",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m991"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAB",
+      "matchday": null,
+      "date": "2008-09-10",
+      "city": "Tuxtla Gutiérr.",
+      "home": "MEX",
+      "away": "CAN",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m992"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAC",
+      "matchday": null,
+      "date": "2009-03-28",
+      "city": "Cdad. de México",
+      "home": "MEX",
+      "away": "CRC",
+      "score": [
+        2,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m993"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAC",
+      "matchday": null,
+      "date": "2009-06-10",
+      "city": "Cdad. de México",
+      "home": "MEX",
+      "away": "TRI",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m994"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAC",
+      "matchday": null,
+      "date": "2009-08-12",
+      "city": "Cdad. de México",
+      "home": "MEX",
+      "away": "USA",
+      "score": [
+        2,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m995"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAC",
+      "matchday": null,
+      "date": "2009-09-09",
+      "city": "Cdad. de México",
+      "home": "MEX",
+      "away": "HON",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m996"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAC",
+      "matchday": null,
+      "date": "2009-10-10",
+      "city": "Cdad. de México",
+      "home": "MEX",
+      "away": "SLV",
+      "score": [
+        4,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m997"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAC",
+      "matchday": null,
+      "date": "2009-10-10",
+      "city": "Manama",
+      "home": "BHR",
+      "away": "NZL",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m998"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "NCAC",
+      "matchday": null,
+      "date": "2009-11-14",
+      "city": "Wellington",
+      "home": "NZL",
+      "away": "BHR",
+      "score": [
+        1,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m999"
     }
   ],
   "scorers": [
@@ -17680,6 +20634,98 @@
       "country": "USA",
       "goals": 1,
       "scope": "final"
+    }
+  ],
+  "warnings": [
+    {
+      "reason": "clasificación sin grupo reconocible: 1.BRAZIL       18  9  7  2 33-11 34"
+    },
+    {
+      "reason": "clasificación sin grupo reconocible: 2.CHILE        18 10  3  5 32-22 33"
+    },
+    {
+      "reason": "clasificación sin grupo reconocible: 3.PARAGUAY     18 10  3  5 24-16 33"
+    },
+    {
+      "reason": "clasificación sin grupo reconocible: 4.ARGENTINA    18  8  4  6 23-20 28"
+    },
+    {
+      "reason": "clasificación sin grupo reconocible: 5.Uruguay      18  6  6  6 28-20 24"
+    },
+    {
+      "reason": "clasificación sin grupo reconocible: 6.Ecuador      18  6  5  7 22-26 23"
+    },
+    {
+      "reason": "clasificación sin grupo reconocible: 7.Colombia     18  6  5  7 14-18 23"
+    },
+    {
+      "reason": "clasificación sin grupo reconocible: 8.Venezuela    18  6  4  8 23-29 22"
+    },
+    {
+      "reason": "clasificación sin grupo reconocible: 9.Bolivia      18  4  3 11 22-36 15"
+    },
+    {
+      "reason": "clasificación sin grupo reconocible: 10.Peru         18  3  4 11 11-34 13"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRA (CMR: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRA (GAB: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRA (TOG: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRB (NGA: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRB (TUN: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRB (MOZ: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRC (ALG: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRC (ZAM: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRD (GHA: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRD (BEN: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRD (MLI: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRE (CIV: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRE (BFA: retirado o fila perdida)"
+    },
+    {
+      "reason": "clasificación incompleta descartada en grupo AFRE (MWI: retirado o fila perdida)"
+    },
+    {
+      "reason": "grupo AFRA omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (menos de dos equipos)"
+    },
+    {
+      "reason": "grupo AFRB omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (menos de dos equipos)"
+    },
+    {
+      "reason": "grupo AFRC omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (menos de dos equipos)"
+    },
+    {
+      "reason": "grupo AFRD omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (menos de dos equipos)"
+    },
+    {
+      "reason": "grupo AFRE omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (menos de dos equipos)"
+    },
+    {
+      "reason": "grupo ASI2 omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 233 != clasificación 70)"
     }
   ]
 }

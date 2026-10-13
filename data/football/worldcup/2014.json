@@ -17,12 +17,12 @@
     "finalMatchId": "m064"
   },
   "coverage": {
-    "matches": 867,
-    "goals": 2469,
+    "matches": 888,
+    "goals": 2538,
     "scorers": 122,
     "scope": "all",
     "complete": false,
-    "note": "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar).",
+    "note": "Clasificación parcial: 2 tabla(s) de grupo descartada(s) por incompletitud o erratas de la fuente.",
     "scorersComplete": false,
     "partialPhases": [
       "qualifying"
@@ -484,6 +484,7 @@
       "stage": "group"
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR3",
       "standings": [
         {
@@ -526,10 +527,10 @@
           "ga": 11,
           "pts": 4
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR6",
       "standings": [
         {
@@ -572,10 +573,10 @@
           "ga": 4,
           "pts": 5
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR7",
       "standings": [
         {
@@ -618,10 +619,10 @@
           "ga": 9,
           "pts": 2
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "AFR8",
       "standings": [
         {
@@ -664,10 +665,10 @@
           "ga": 11,
           "pts": 2
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "ASI1",
       "standings": [
         {
@@ -710,10 +711,10 @@
           "ga": 20,
           "pts": 0
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "ASI2",
       "standings": [
         {
@@ -756,10 +757,10 @@
           "ga": 14,
           "pts": 3
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "ASI3",
       "standings": [
         {
@@ -802,10 +803,10 @@
           "ga": 18,
           "pts": 1
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "ASI4",
       "standings": [
         {
@@ -848,10 +849,10 @@
           "ga": 8,
           "pts": 4
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "ASI5",
       "standings": [
         {
@@ -894,10 +895,10 @@
           "ga": 26,
           "pts": 0
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "ASIA",
       "standings": [
         {
@@ -950,10 +951,10 @@
           "ga": 12,
           "pts": 5
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "EURA",
       "standings": [
         {
@@ -1016,10 +1017,10 @@
           "ga": 16,
           "pts": 7
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "EURC",
       "standings": [
         {
@@ -1082,10 +1083,10 @@
           "ga": 29,
           "pts": 1
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "EURD",
       "standings": [
         {
@@ -1148,10 +1149,10 @@
           "ga": 30,
           "pts": 0
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "EURE",
       "standings": [
         {
@@ -1214,10 +1215,10 @@
           "ga": 15,
           "pts": 5
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "EURG",
       "standings": [
         {
@@ -1280,10 +1281,10 @@
           "ga": 25,
           "pts": 2
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "EURH",
       "standings": [
         {
@@ -1346,10 +1347,10 @@
           "ga": 54,
           "pts": 0
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "NCAA",
       "standings": [
         {
@@ -1432,10 +1433,10 @@
           "ga": 15,
           "pts": 1
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "NCAB",
       "standings": [
         {
@@ -1518,10 +1519,10 @@
           "ga": 14,
           "pts": 0
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "NCAD",
       "standings": [
         {
@@ -1564,10 +1565,10 @@
           "ga": 23,
           "pts": 1
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "NCAE",
       "standings": [
         {
@@ -1610,10 +1611,10 @@
           "ga": 14,
           "pts": 4
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "NCAF",
       "standings": [
         {
@@ -1656,10 +1657,10 @@
           "ga": 40,
           "pts": 0
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
     },
     {
+      "stage": "qualifyingGroup",
       "letter": "OCEA",
       "standings": [
         {
@@ -1702,8 +1703,727 @@
           "ga": 24,
           "pts": 0
         }
-      ],
-      "stage": "qualifyingGroup"
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "AFR1",
+      "standings": [
+        {
+          "team": "ETH",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 8,
+          "ga": 6,
+          "pts": 13
+        },
+        {
+          "team": "RSA",
+          "p": 6,
+          "w": 3,
+          "d": 2,
+          "l": 1,
+          "gf": 12,
+          "ga": 5,
+          "pts": 11
+        },
+        {
+          "team": "BOT",
+          "p": 6,
+          "w": 2,
+          "d": 1,
+          "l": 3,
+          "gf": 8,
+          "ga": 10,
+          "pts": 7
+        },
+        {
+          "team": "CTA",
+          "p": 6,
+          "w": 1,
+          "d": 0,
+          "l": 5,
+          "gf": 5,
+          "ga": 12,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "AFR10",
+      "standings": [
+        {
+          "team": "SEN",
+          "p": 6,
+          "w": 3,
+          "d": 3,
+          "l": 0,
+          "gf": 9,
+          "ga": 4,
+          "pts": 12
+        },
+        {
+          "team": "UGA",
+          "p": 6,
+          "w": 2,
+          "d": 2,
+          "l": 2,
+          "gf": 5,
+          "ga": 6,
+          "pts": 8
+        },
+        {
+          "team": "ANG",
+          "p": 6,
+          "w": 1,
+          "d": 4,
+          "l": 1,
+          "gf": 8,
+          "ga": 6,
+          "pts": 7
+        },
+        {
+          "team": "LBR",
+          "p": 6,
+          "w": 1,
+          "d": 1,
+          "l": 4,
+          "gf": 4,
+          "ga": 10,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "AFR2",
+      "standings": [
+        {
+          "team": "TUN",
+          "p": 6,
+          "w": 4,
+          "d": 2,
+          "l": 0,
+          "gf": 13,
+          "ga": 6,
+          "pts": 14
+        },
+        {
+          "team": "CPV",
+          "p": 6,
+          "w": 3,
+          "d": 0,
+          "l": 3,
+          "gf": 9,
+          "ga": 7,
+          "pts": 9
+        },
+        {
+          "team": "SLE",
+          "p": 6,
+          "w": 2,
+          "d": 2,
+          "l": 2,
+          "gf": 10,
+          "ga": 10,
+          "pts": 8
+        },
+        {
+          "team": "EQG",
+          "p": 6,
+          "w": 0,
+          "d": 2,
+          "l": 4,
+          "gf": 6,
+          "ga": 15,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "AFR4",
+      "standings": [
+        {
+          "team": "GHA",
+          "p": 6,
+          "w": 5,
+          "d": 0,
+          "l": 1,
+          "gf": 18,
+          "ga": 3,
+          "pts": 15
+        },
+        {
+          "team": "ZAM",
+          "p": 6,
+          "w": 3,
+          "d": 2,
+          "l": 1,
+          "gf": 11,
+          "ga": 4,
+          "pts": 11
+        },
+        {
+          "team": "LES",
+          "p": 6,
+          "w": 1,
+          "d": 2,
+          "l": 3,
+          "gf": 4,
+          "ga": 16,
+          "pts": 5
+        },
+        {
+          "team": "SDN",
+          "p": 6,
+          "w": 0,
+          "d": 2,
+          "l": 4,
+          "gf": 4,
+          "ga": 14,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "AFR5",
+      "standings": [
+        {
+          "team": "BFA",
+          "p": 6,
+          "w": 4,
+          "d": 0,
+          "l": 2,
+          "gf": 7,
+          "ga": 4,
+          "pts": 12
+        },
+        {
+          "team": "CGO",
+          "p": 6,
+          "w": 3,
+          "d": 2,
+          "l": 1,
+          "gf": 7,
+          "ga": 3,
+          "pts": 11
+        },
+        {
+          "team": "GAB",
+          "p": 6,
+          "w": 2,
+          "d": 1,
+          "l": 3,
+          "gf": 5,
+          "ga": 6,
+          "pts": 7
+        },
+        {
+          "team": "NIG",
+          "p": 6,
+          "w": 1,
+          "d": 1,
+          "l": 4,
+          "gf": 6,
+          "ga": 12,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "AFR9",
+      "standings": [
+        {
+          "team": "CMR",
+          "p": 6,
+          "w": 4,
+          "d": 1,
+          "l": 1,
+          "gf": 8,
+          "ga": 3,
+          "pts": 13
+        },
+        {
+          "team": "LBY",
+          "p": 6,
+          "w": 2,
+          "d": 3,
+          "l": 1,
+          "gf": 5,
+          "ga": 3,
+          "pts": 9
+        },
+        {
+          "team": "COD",
+          "p": 6,
+          "w": 1,
+          "d": 3,
+          "l": 2,
+          "gf": 3,
+          "ga": 3,
+          "pts": 6
+        },
+        {
+          "team": "TOG",
+          "p": 6,
+          "w": 1,
+          "d": 1,
+          "l": 4,
+          "gf": 4,
+          "ga": 11,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "ASIB",
+      "standings": [
+        {
+          "team": "JPN",
+          "p": 8,
+          "w": 5,
+          "d": 2,
+          "l": 1,
+          "gf": 16,
+          "ga": 5,
+          "pts": 17
+        },
+        {
+          "team": "AUS",
+          "p": 8,
+          "w": 3,
+          "d": 4,
+          "l": 1,
+          "gf": 12,
+          "ga": 7,
+          "pts": 13
+        },
+        {
+          "team": "JOR",
+          "p": 8,
+          "w": 3,
+          "d": 1,
+          "l": 4,
+          "gf": 7,
+          "ga": 16,
+          "pts": 10
+        },
+        {
+          "team": "OMA",
+          "p": 8,
+          "w": 2,
+          "d": 3,
+          "l": 3,
+          "gf": 7,
+          "ga": 10,
+          "pts": 9
+        },
+        {
+          "team": "IRQ",
+          "p": 8,
+          "w": 1,
+          "d": 2,
+          "l": 5,
+          "gf": 4,
+          "ga": 8,
+          "pts": 5
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "EURF",
+      "standings": [
+        {
+          "team": "RUS",
+          "p": 10,
+          "w": 7,
+          "d": 1,
+          "l": 2,
+          "gf": 20,
+          "ga": 5,
+          "pts": 22
+        },
+        {
+          "team": "POR",
+          "p": 10,
+          "w": 6,
+          "d": 3,
+          "l": 1,
+          "gf": 20,
+          "ga": 9,
+          "pts": 21
+        },
+        {
+          "team": "ISR",
+          "p": 10,
+          "w": 3,
+          "d": 5,
+          "l": 2,
+          "gf": 19,
+          "ga": 14,
+          "pts": 14
+        },
+        {
+          "team": "AZE",
+          "p": 10,
+          "w": 1,
+          "d": 6,
+          "l": 3,
+          "gf": 7,
+          "ga": 11,
+          "pts": 9
+        },
+        {
+          "team": "NIR",
+          "p": 10,
+          "w": 1,
+          "d": 4,
+          "l": 5,
+          "gf": 9,
+          "ga": 17,
+          "pts": 7
+        },
+        {
+          "team": "LUX",
+          "p": 10,
+          "w": 1,
+          "d": 3,
+          "l": 6,
+          "gf": 7,
+          "ga": 26,
+          "pts": 6
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "EURI",
+      "standings": [
+        {
+          "team": "ARG",
+          "p": 16,
+          "w": 9,
+          "d": 5,
+          "l": 2,
+          "gf": 35,
+          "ga": 15,
+          "pts": 32
+        },
+        {
+          "team": "COL",
+          "p": 16,
+          "w": 9,
+          "d": 3,
+          "l": 4,
+          "gf": 27,
+          "ga": 13,
+          "pts": 30
+        },
+        {
+          "team": "CHI",
+          "p": 16,
+          "w": 9,
+          "d": 1,
+          "l": 6,
+          "gf": 29,
+          "ga": 25,
+          "pts": 28
+        },
+        {
+          "team": "ECU",
+          "p": 16,
+          "w": 7,
+          "d": 4,
+          "l": 5,
+          "gf": 20,
+          "ga": 16,
+          "pts": 25
+        },
+        {
+          "team": "URU",
+          "p": 16,
+          "w": 7,
+          "d": 4,
+          "l": 5,
+          "gf": 25,
+          "ga": 25,
+          "pts": 25
+        },
+        {
+          "team": "ESP",
+          "p": 8,
+          "w": 6,
+          "d": 2,
+          "l": 0,
+          "gf": 14,
+          "ga": 3,
+          "pts": 20
+        },
+        {
+          "team": "VEN",
+          "p": 16,
+          "w": 5,
+          "d": 5,
+          "l": 6,
+          "gf": 14,
+          "ga": 20,
+          "pts": 20
+        },
+        {
+          "team": "FRA",
+          "p": 8,
+          "w": 5,
+          "d": 2,
+          "l": 1,
+          "gf": 15,
+          "ga": 6,
+          "pts": 17
+        },
+        {
+          "team": "PER",
+          "p": 16,
+          "w": 4,
+          "d": 3,
+          "l": 9,
+          "gf": 17,
+          "ga": 26,
+          "pts": 15
+        },
+        {
+          "team": "BOL",
+          "p": 16,
+          "w": 2,
+          "d": 6,
+          "l": 8,
+          "gf": 17,
+          "ga": 30,
+          "pts": 12
+        },
+        {
+          "team": "PAR",
+          "p": 16,
+          "w": 3,
+          "d": 3,
+          "l": 10,
+          "gf": 17,
+          "ga": 31,
+          "pts": 12
+        },
+        {
+          "team": "FIN",
+          "p": 8,
+          "w": 2,
+          "d": 3,
+          "l": 3,
+          "gf": 5,
+          "ga": 9,
+          "pts": 9
+        },
+        {
+          "team": "GEO",
+          "p": 8,
+          "w": 1,
+          "d": 2,
+          "l": 5,
+          "gf": 3,
+          "ga": 10,
+          "pts": 5
+        },
+        {
+          "team": "BLR",
+          "p": 8,
+          "w": 1,
+          "d": 1,
+          "l": 6,
+          "gf": 7,
+          "ga": 16,
+          "pts": 4
+        }
+      ]
+    },
+    {
+      "stage": "qualifyingGroup",
+      "letter": "NCAC",
+      "standings": [
+        {
+          "team": "USA",
+          "p": 10,
+          "w": 7,
+          "d": 1,
+          "l": 2,
+          "gf": 15,
+          "ga": 8,
+          "pts": 22
+        },
+        {
+          "team": "CRC",
+          "p": 10,
+          "w": 5,
+          "d": 3,
+          "l": 2,
+          "gf": 13,
+          "ga": 7,
+          "pts": 18
+        },
+        {
+          "team": "HON",
+          "p": 10,
+          "w": 4,
+          "d": 3,
+          "l": 3,
+          "gf": 13,
+          "ga": 12,
+          "pts": 15
+        },
+        {
+          "team": "PAN",
+          "p": 4,
+          "w": 4,
+          "d": 0,
+          "l": 0,
+          "gf": 15,
+          "ga": 2,
+          "pts": 12
+        },
+        {
+          "team": "HON",
+          "p": 6,
+          "w": 3,
+          "d": 2,
+          "l": 1,
+          "gf": 12,
+          "ga": 3,
+          "pts": 11
+        },
+        {
+          "team": "PAN",
+          "p": 6,
+          "w": 3,
+          "d": 2,
+          "l": 1,
+          "gf": 6,
+          "ga": 2,
+          "pts": 11
+        },
+        {
+          "team": "MEX",
+          "p": 10,
+          "w": 2,
+          "d": 5,
+          "l": 3,
+          "gf": 7,
+          "ga": 9,
+          "pts": 11
+        },
+        {
+          "team": "CAN",
+          "p": 6,
+          "w": 3,
+          "d": 1,
+          "l": 2,
+          "gf": 6,
+          "ga": 10,
+          "pts": 10
+        },
+        {
+          "team": "PAN",
+          "p": 10,
+          "w": 1,
+          "d": 5,
+          "l": 4,
+          "gf": 10,
+          "ga": 14,
+          "pts": 8
+        },
+        {
+          "team": "SAM",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 3,
+          "pts": 7
+        },
+        {
+          "team": "NCA",
+          "p": 4,
+          "w": 2,
+          "d": 0,
+          "l": 2,
+          "gf": 5,
+          "ga": 7,
+          "pts": 6
+        },
+        {
+          "team": "JAM",
+          "p": 10,
+          "w": 0,
+          "d": 5,
+          "l": 5,
+          "gf": 5,
+          "ga": 13,
+          "pts": 5
+        },
+        {
+          "team": "TGA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 4,
+          "pts": 4
+        },
+        {
+          "team": "ASA",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "pts": 4
+        },
+        {
+          "team": "COK",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 4,
+          "ga": 6,
+          "pts": 1
+        },
+        {
+          "team": "CUB",
+          "p": 6,
+          "w": 0,
+          "d": 1,
+          "l": 5,
+          "gf": 1,
+          "ga": 10,
+          "pts": 1
+        },
+        {
+          "team": "DMA",
+          "p": 4,
+          "w": 0,
+          "d": 0,
+          "l": 4,
+          "gf": 0,
+          "ga": 11,
+          "pts": 0
+        }
+      ]
     }
   ],
   "matches": [
@@ -17548,6 +18268,406 @@
       "pens": null,
       "raw": null,
       "id": "m867"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EURF",
+      "matchday": null,
+      "date": "2013-09-10",
+      "city": "Sankt Peterburg",
+      "home": "RUS",
+      "away": "ISR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m868"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EURI",
+      "matchday": null,
+      "date": "2012-09-11",
+      "city": null,
+      "home": "FRA",
+      "away": "BLR",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m869"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EURI",
+      "matchday": null,
+      "date": "2013-03-22",
+      "city": null,
+      "home": "FRA",
+      "away": "GEO",
+      "score": [
+        3,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m870"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EURI",
+      "matchday": null,
+      "date": "2013-03-26",
+      "city": null,
+      "home": "FRA",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m871"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EURI",
+      "matchday": null,
+      "date": "2013-10-15",
+      "city": null,
+      "home": "FRA",
+      "away": "FIN",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m872"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "EURI",
+      "matchday": null,
+      "date": "2013-11-19",
+      "city": null,
+      "home": "FRA",
+      "away": "UKR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m873"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR1",
+      "matchday": null,
+      "date": "2013-06-08",
+      "city": "Lobatse",
+      "home": "BOT",
+      "away": "ETH",
+      "score": [
+        3,
+        0
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m874"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR2",
+      "matchday": null,
+      "date": "2013-03-24",
+      "city": "Malabo",
+      "home": "EQG",
+      "away": "CPV",
+      "score": [
+        0,
+        3
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m875"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR2",
+      "matchday": null,
+      "date": "2013-06-08",
+      "city": "Praia",
+      "home": "CPV",
+      "away": "EQG",
+      "score": [
+        3,
+        0
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m876"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR2",
+      "matchday": null,
+      "date": "2013-09-07",
+      "city": "Radès",
+      "home": "TUN",
+      "away": "CPV",
+      "score": [
+        3,
+        0
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m877"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR4",
+      "matchday": null,
+      "date": "2012-06-02",
+      "city": "Khartoum",
+      "home": "SDN",
+      "away": "ZAM",
+      "score": [
+        0,
+        3
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m878"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR5",
+      "matchday": null,
+      "date": "2012-06-02",
+      "city": "Ouagadougou",
+      "home": "BFA",
+      "away": "CGO",
+      "score": [
+        0,
+        3
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m879"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR5",
+      "matchday": null,
+      "date": "2012-06-03",
+      "city": "Niamey",
+      "home": "NIG",
+      "away": "GAB",
+      "score": [
+        3,
+        0
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m880"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR9",
+      "matchday": null,
+      "date": "2013-06-09",
+      "city": "Lomé",
+      "home": "TOG",
+      "away": "CMR",
+      "score": [
+        0,
+        3
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m881"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "2011-07-23",
+      "city": "Amman",
+      "home": "SYR",
+      "away": "TJK",
+      "score": [
+        0,
+        3
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m882"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "2011-07-28",
+      "city": "Yangon",
+      "home": "MYA",
+      "away": "OMA",
+      "score": [
+        0,
+        3
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m883"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "AFR10",
+      "matchday": null,
+      "date": "2011-07-28",
+      "city": "Tursunzade",
+      "home": "TJK",
+      "away": "SYR",
+      "score": [
+        3,
+        0
+      ],
+      "status": "awarded",
+      "notes": [
+        "awarded"
+      ],
+      "pens": null,
+      "raw": null,
+      "id": "m884"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "2013-11-13",
+      "city": "Amman",
+      "home": "JOR",
+      "away": "URU",
+      "score": [
+        0,
+        5
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m885"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "ASIB",
+      "matchday": null,
+      "date": "2013-11-20",
+      "city": "Montevideo",
+      "home": "URU",
+      "away": "JOR",
+      "score": [
+        0,
+        0
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m886"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCEB",
+      "matchday": null,
+      "date": "2013-11-13",
+      "city": "Cd. de México",
+      "home": "MEX",
+      "away": "NZL",
+      "score": [
+        5,
+        1
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m887"
+    },
+    {
+      "stage": "qualifyingGroup",
+      "group": "OCEB",
+      "matchday": null,
+      "date": "2013-11-20",
+      "city": "Wellington",
+      "home": "NZL",
+      "away": "MEX",
+      "score": [
+        2,
+        4
+      ],
+      "status": "played",
+      "notes": [],
+      "pens": null,
+      "raw": null,
+      "id": "m888"
     }
   ],
   "scorers": [
@@ -18288,6 +19408,14 @@
       "country": "GRE",
       "goals": 1,
       "scope": "final"
+    }
+  ],
+  "warnings": [
+    {
+      "reason": "grupo EURB omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (ITA: pts inconsistente)"
+    },
+    {
+      "reason": "grupo OCEB omitido: la clasificación de la fuente está incompleta o no cuadra en fase qualifyingGroup (goles de partidos 73 != clasificación 50)"
     }
   ]
 }

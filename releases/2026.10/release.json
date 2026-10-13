@@ -490,28 +490,28 @@
     },
     {
       "path": "data/football/worldcup/2002.json",
-      "sha256": "13441aca8db0dc654f29512dfdcfbf2c13f43de9eb6b15bf1709294e333e9a99",
+      "sha256": "58d16465e0a21a07fe8e4861d3ecc4ff9c76c8defad9152ad59076fc9a355256",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2002
     },
     {
       "path": "data/football/worldcup/2006.json",
-      "sha256": "9647efacf3a321dd0f5bba7981d81b610374a6be40726f9b3f809f2db65c4773",
+      "sha256": "88347e82c7175d521409ef49ac9c00c67e7d1272ff21bbe8dac8598922490cb0",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2006
     },
     {
       "path": "data/football/worldcup/2010.json",
-      "sha256": "22722253e641bc8e2b93e57e84493622474f7ca2c0ba2dc67a547b180d53536c",
+      "sha256": "9fb452873b5e2cbbd992122a6f1898842e0c7961caf3cb4f3185060aab4d018c",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2010
     },
     {
       "path": "data/football/worldcup/2014.json",
-      "sha256": "64213a8db21bc1516b2a9b39c1e9270fdc6d3d180cace30403c1b52559f9c134",
+      "sha256": "08e2c32b64e3d3e97d3d80cbefb11ab79bc7ced4a0cc886910afaa5acb56f986",
       "schemaVersion": 2,
       "archetype": "encounter",
       "edition": 2014
@@ -538,12 +538,12 @@
       "edition": 2026
     }
   ],
-  "checksum": "4b1aeef6ccc8e593414e026dfce4ec78eadae7c61108374845f699f45d8d78a0",
+  "checksum": "f4cec645227cae5d9cba35d04a522fd2cd6ca0536bb1330343e59227efb93775",
   "dataset": {
     "sports": 4,
     "competitions": 5,
     "editions": 76,
-    "matches": 11837,
+    "matches": 12173,
     "results": 0
   },
   "license": {
