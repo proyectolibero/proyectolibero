@@ -431,22 +431,29 @@ function attachSheets(edition, fullMatches, sourceId) {
 /* Fase de clasificación: fusión de los partidos y tablas del parser `q`        */
 /* -------------------------------------------------------------------------- */
 
+/** Texto legible de una línea omitida: descarta corchete/paréntesis colgado y colapsa espacios. */
+function cleanOmittedLines(raw) {
+  const text = String(raw == null ? "" : raw).replace(/[\[(][\s\S]*$/, "").replace(/\s+/g, " ").trim();
+  return text || null;
+}
+
 /**
  * Convierte los partidos de la fase de clasificación (parser `q`) en entradas
  * del esquema `encounter`. Fase genérica `qualifyingGroup` (con `group`) cuando
- * el partido está en un grupo; `qualifying` cuando no. Los países que no
- * resuelven a un código de `i18n/countries.json` (p. ej. `Saar`) se omiten con
- * aviso: antes omitir que inventar un código (D29).
+ * el partido está en un grupo; `qualifying` cuando no. Los partidos cuyos países
+ * no resuelven a un código de `i18n/countries.json` se omiten y se acumulan en
+ * `omitted[]` para poder documentar la causa real: antes omitir que inventar un
+ * código (D29).
  */
 function qualifyingEntries(parsed, warnings, competition, year) {
   const entries = [];
-  let dropped = 0;
+  const omitted = [];
   for (const match of parsed.matches || []) {
     const home = normalizeTeam(match.home, year);
     const away = normalizeTeam(match.away, year);
     if (!isKnownCountry(home) || !isKnownCountry(away)) {
       warnings.push({ reason: `partido de clasificación omitido: país no resoluble (${match.home}-${match.away})` });
-      dropped += 1;
+      omitted.push(match.raw || `${match.home}-${match.away}`);
       continue;
     }
     const letter = groupLetter(match.section);
@@ -465,7 +472,7 @@ function qualifyingEntries(parsed, warnings, competition, year) {
       raw: null
     });
   }
-  return { entries, dropped };
+  return { entries, dropped: omitted.length, omitted };
 }
 
 /** Fila de clasificación con país resoluble; `null` (y aviso) si no lo es. */
@@ -515,7 +522,7 @@ function mergeQualifying(edition, parsed, sourceId, competition) {
   const result = JSON.parse(JSON.stringify(edition));
   const warnings = [];
   const year = Number.isInteger(result.edition) ? result.edition : Number(result.year) || null;
-  const { entries, dropped } = qualifyingEntries(parsed, warnings, competition, year);
+  const { entries, dropped, omitted } = qualifyingEntries(parsed, warnings, competition, year);
   const matches = Array.isArray(result.matches) ? result.matches : [];
   const identity = (match) =>
     `${match.stage}|${match.home}|${match.away}|${Array.isArray(match.score) ? match.score.join("-") : ""}`;
@@ -550,6 +557,12 @@ function mergeQualifying(edition, parsed, sourceId, competition) {
     .map((row) => qualifyingStanding(row, warnings, year))
     .filter(Boolean);
   const groups = buildGroups(standings, matches, warnings, year, parsed.notes);
+  // Tablas y filas de clasificación descartadas por la propia fuente (no cuadran
+  // o están incompletas): también hacen que la fase de clasificación sea parcial.
+  const droppedGroups = warnings.filter((item) => /^grupo\s.*\bomitido/i.test(item.reason)).length;
+  const droppedRows = warnings.filter((item) =>
+    /^(?:clasificaci[oó]n\s(?:incompleta|sin grupo)|fila de clasificaci[oó]n omitida)/i.test(item.reason)
+  ).length;
   const byKey = new Map((result.groups || []).map((group) => [`${group.stage || "group"}|${group.letter}`, group]));
   for (const group of groups) byKey.set(`${group.stage}|${group.letter}`, group);
   result.groups = [...byKey.values()];
@@ -560,9 +573,28 @@ function mergeQualifying(edition, parsed, sourceId, competition) {
     const derived = desiredCoverage(competition, result, {});
     if (derived) result.coverage = derived;
   }
-  if (dropped > 0) {
-    const note = "Clasificación parcial: se omitieron partidos o tablas con países no resueltos en i18n/countries.json (p. ej. Saar).";
-    result.coverage = { ...result.coverage, complete: false, partialPhases: ["qualifying"], note };
+  const partialCauses = [];
+  if (dropped > 0) partialCauses.push(`${dropped} partido(s) no incorporados`);
+  if (droppedGroups > 0) partialCauses.push(`${droppedGroups} tabla(s) de grupo descartada(s)`);
+  if (droppedRows > 0) partialCauses.push(`${droppedRows} fila(s) de clasificación descartada(s)`);
+  if (partialCauses.length > 0) {
+    const example = omitted.map(cleanOmittedLines).find(Boolean);
+    const note =
+      `Clasificación parcial: ${partialCauses.join(", ")} por incompletitud o erratas de la fuente`
+      + (dropped > 0 && example ? ` (p. ej. «${example}»)` : "")
+      + ".";
+    const partialPhases = [...new Set([...(result.coverage.partialPhases || []), "qualifying"])];
+    result.coverage = { ...result.coverage, complete: false, partialPhases, note };
+  } else {
+    // Sin omisiones: se limpia el estado parcial de clasificación heredado del
+    // base (una re-derivación no puede arrastrar una parcialidad/nota viejas).
+    const partialPhases = (result.coverage.partialPhases || []).filter((kind) => kind !== "qualifying");
+    result.coverage = { ...result.coverage };
+    if (partialPhases.length > 0) result.coverage.partialPhases = partialPhases;
+    else delete result.coverage.partialPhases;
+    if (typeof result.coverage.note === "string" && /clasificaci[oó]n (?:parcial|pendiente)/i.test(result.coverage.note)) {
+      delete result.coverage.note;
+    }
   }
   if (Array.isArray(result.scorers) && result.scorers.length > 0) {
     const scorerGoals = result.scorers.reduce((sum, scorer) => sum + (scorer.goals || 0), 0);

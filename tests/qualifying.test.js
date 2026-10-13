@@ -285,3 +285,78 @@ test("mergeQualifying elige la fase del catálogo cuando no existe 'qualifying' 
   assert.equal(merged.matches.find((match) => match.home === "GER").home, "GER", "1996 usa el código unificado GER");
 });
 
+test("mergeQualifying documenta la clasificación parcial con la causa real, sin ejemplos fijos", () => {
+  const parsed = {
+    matches: [
+      {
+        home: "Thailand abd Bahrain [abd in 24' at",
+        away: "due to",
+        homeScore: 0,
+        awayScore: 1,
+        date: "2001-10-13",
+        city: null,
+        status: "played",
+        notes: [],
+        section: "Group 1"
+      }
+    ],
+    standings: [],
+    groups: [],
+    notes: [],
+    warnings: []
+  };
+
+  const { dropped, edition: merged } = mergeQualifying(publishedEdition(), parsed, "rsssf:2002q", COMPETITION);
+
+  assert.equal(dropped, 1);
+  assert.equal(merged.coverage.complete, false);
+  assert.deepEqual(merged.coverage.partialPhases, ["qualifying"]);
+  assert.match(merged.coverage.note, /1 partido/);
+  assert.match(merged.coverage.note, /Thailand abd Bahrain/);
+  assert.doesNotMatch(merged.coverage.note, /Saar/);
+});
+
+test("mergeQualifying limpia el estado parcial de clasificación heredado cuando no hay omisiones", () => {
+  const base = publishedEdition();
+  base.coverage = {
+    ...base.coverage,
+    scope: "all",
+    complete: true,
+    partialPhases: ["qualifying"],
+    note: "Clasificación parcial: se omitieron partidos o tablas con países no resueltos (p. ej. Saar)."
+  };
+  const parsed = {
+    matches: [
+      { home: "Norway", away: "Sweden", homeScore: 2, awayScore: 3, date: "1953-06-24", city: "Oslo", status: "played", notes: [], section: "Group 1" }
+    ],
+    standings: [], groups: [], notes: [], warnings: []
+  };
+
+  const { dropped, edition: merged } = mergeQualifying(base, parsed, "rsssf:54q", COMPETITION);
+
+  assert.equal(dropped, 0);
+  assert.equal(merged.coverage.complete, true);
+  assert.equal(merged.coverage.partialPhases, undefined, "no arrastra la parcialidad vieja");
+  assert.equal(merged.coverage.note, undefined, "no arrastra la nota vieja de la fuente");
+});
+
+test("mergeQualifying marca la clasificación como parcial cuando se descarta una tabla", () => {
+  const parsed = {
+    matches: [
+      { home: "Norway", away: "Sweden", homeScore: 5, awayScore: 1, date: "1953-06-24", city: "Oslo", status: "played", notes: [], section: "Group 1" }
+    ],
+    standings: [
+      { team: "Norway", p: 1, w: 1, d: 0, l: 0, gf: 5, ga: 1, pts: 3, group: "Group 1", raw: "1.NORWAY 1 1 0 0 5-1 3" },
+      { team: "Sweden", p: 1, w: 0, d: 0, l: 1, gf: 0, ga: 1, pts: 0, group: "Group 1", raw: "2.SWEDEN 1 0 0 1 0-1 0" }
+    ],
+    groups: [], notes: [], warnings: []
+  };
+
+  const { dropped, edition: merged } = mergeQualifying(publishedEdition(), parsed, "rsssf:54q", COMPETITION);
+
+  assert.equal(dropped, 0, "no se omite ningún partido: es la tabla la que no cuadra");
+  assert.equal(merged.coverage.complete, false);
+  assert.deepEqual(merged.coverage.partialPhases, ["qualifying"]);
+  assert.match(merged.coverage.note, /tabla/);
+});
+

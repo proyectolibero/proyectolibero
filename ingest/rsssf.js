@@ -716,6 +716,21 @@ function parseSummary(text, ctx, result) {
   }
 }
 
+/**
+ * Ciudad de una línea de partido resumida: colapsa espacios y descarta restos
+ * entre corchetes/paréntesis colgados al final (p. ej. `Blantyre [-]`,
+ * `Mainz (Germany)`) que la fuente arrastra del relleno de columnas.
+ */
+function cleanSummaryCity(text) {
+  if (!text) return null;
+  const cleaned = String(text)
+    .replace(/\s*\[[^\]]*\]\s*$/, "")
+    .replace(/\s*\([^)]*\)\s*$/, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  return cleaned || null;
+}
+
 function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
   const dateMatch = DATE_PREFIX.exec(text);
   if (!dateMatch) {
@@ -736,9 +751,16 @@ function parseSummaryMatch(text, group, section, ctx, result, lineNo) {
   }
   const before = rest.slice(0, scoreMatch.index).trim();
   const after = rest.slice(scoreMatch.index + scoreMatch[0].length).trim();
+  // La ciudad y el equipo local pueden ir separados por uno o más espacios (la
+  // fuente a veces colapsa el relleno de columnas, p. ej. `Andorra l.Vella
+  // Andorra`): el equipo local se localiza por el último topónimo resoluble,
+  // como en `editionMatch`; el resto es la ciudad. Si no se reconoce país al
+  // final, se cae al corte por 2+ espacios (comportamiento previo, para no
+  // alterar líneas ya válidas).
+  const local = trailingCountry(before);
   const between = before.split(/\s{2,}/).filter(Boolean);
-  const city = between.length > 1 ? between[0] : null;
-  const home = between.length > 1 ? between.slice(1).join(" ") : between[0] || null;
+  const city = cleanSummaryCity(local ? local.before : between.length > 1 ? between[0] : null);
+  const home = local ? local.name : between.length > 1 ? between.slice(1).join(" ") : between[0] || null;
   const awayRaw = after.split(/\s{2,}/)[0] || null;
   const notes = [];
   let away = awayRaw;

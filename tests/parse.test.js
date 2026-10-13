@@ -277,6 +277,28 @@ test("parse sobre los fixtures recortados de 1950 (sin red)", () => {
   assert.equal(detailed.warnings.length, 0);
 });
 
+test("parse('q') separa ciudad y equipo local aunque el relleno colapse a un espacio", () => {
+  const ctx = { ...CTX, sourceId: "rsssf:2010q", year: 2010 };
+  const text = [
+    "10- 9-08 Sankt Peterburg Russia     3-1 Israel",
+    "15-10-08 Mönchengladbach Germany    1-0 Wales",
+    "6- 9-08 Mainz (Germany) Georgia     1-2 Ireland",
+    "2- 9-01 Blantyre   [-]  Malawi      1-2 South Africa",
+    "25.03.07  Madrid  Spain             2-0 Denmark"
+  ].join("\n");
+  const { matches } = parse("q", text, ctx);
+  assert.deepEqual(
+    matches.map((match) => [match.city, match.home, match.away]),
+    [
+      ["Sankt Peterburg", "Russia", "Israel"],
+      ["Mönchengladbach", "Germany", "Wales"],
+      ["Mainz", "Georgia", "Ireland"],
+      ["Blantyre", "Malawi", "South Africa"],
+      ["Madrid", "Spain", "Denmark"]
+    ]
+  );
+});
+
 test("parse('f') expone 'section' con el último encabezado de fase", () => {
   const text = [
     "FIRST PHASE",
