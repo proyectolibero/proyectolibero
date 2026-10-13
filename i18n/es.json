@@ -32,7 +32,7 @@
   "comp.balkancup.name": "Copa de los Balcanes",
   "comp.eurochamp.name": "Eurocopa (Campeonato de Europa de la UEFA)",
   "comp.nordic.name": "Campeonato Nórdico",
-  "edition.title": "Mundial de {year}",
+  "edition.title": "{name} {year}",
   "edition.pending": "Edición en preparación. Los datos se publicarán próximamente.",
   "edition.host": "País anfitrión",
   "edition.champion": "Campeón",

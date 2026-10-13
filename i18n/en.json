@@ -32,7 +32,7 @@
   "comp.balkancup.name": "Balkan Cup",
   "comp.eurochamp.name": "UEFA European Championship",
   "comp.nordic.name": "Nordic Championships",
-  "edition.title": "{year} World Cup",
+  "edition.title": "{name} {year}",
   "edition.pending": "Edition in preparation. Data will be published soon.",
   "edition.host": "Host country",
   "edition.champion": "Champion",

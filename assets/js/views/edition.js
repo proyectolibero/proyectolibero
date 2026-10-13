@@ -123,12 +123,12 @@ export async function renderEdition(container, year, lang) {
   }
   if (!entry.data) {
     container.innerHTML = `
-      <h1>${esc(t("edition.title", { year }))}</h1>${back}${pendingBox()}`;
+      <h1>${esc(t("edition.title", { name: t("comp.worldcup.name"), year }))}</h1>${back}${pendingBox()}`;
     return;
   }
   const ed = await loadEdition(entry.data);
   container.innerHTML = `
-    <h1>${esc(t("edition.title", { year: ed.edition }))}</h1>
+    <h1>${esc(t("edition.title", { name: t("comp.worldcup.name"), year: ed.edition }))}</h1>
     ${back}
     ${metaBox(ed)}
     ${phaseSections(ed, lang)}

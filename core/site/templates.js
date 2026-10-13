@@ -754,6 +754,11 @@ function subviewLinks(ctx, page, sport, comp, edition) {
   );
 }
 
+/** Título de una edición: nombre de SU competición (catálogo, traducido) + año. */
+function editionTitle(ctx, lang, comp, year) {
+  return ctx.t(lang, "edition.title", { name: ctx.t(lang, comp.i18nKey), year: String(year) });
+}
+
 function editionContent(ctx, page) {
   const { t, model, catalog, editions } = ctx;
   const lang = page.lang;
@@ -761,7 +766,7 @@ function editionContent(ctx, page) {
   const comp = catalog.competitions[page.compId];
   const edition = editions[`${page.compId}/${page.year}`];
   const entry = (comp.editions || []).find((e) => String(e.year) === String(page.year)) || null;
-  const title = t(lang, "edition.title", { year: page.year });
+  const title = editionTitle(ctx, lang, comp, page.year);
   const results = edition.results || {};
   const finals = finalMatches(edition);
   const numbers = numberMatches(finals, comp);
@@ -862,7 +867,7 @@ function qualificationContent(ctx, page) {
   const sport = model.sportById[page.sportId];
   const comp = catalog.competitions[page.compId];
   const edition = editions[`${page.compId}/${page.year}`];
-  const title = `${t(lang, "phase.qualifying")} \u00b7 ${t(lang, "edition.title", { year: page.year })}`;
+  const title = `${t(lang, "phase.qualifying")} \u00b7 ${editionTitle(ctx, lang, comp, page.year)}`;
   const groups = page.groups || [];
   const base = `/${lang}/${sport.slug}/${comp.slug}/${page.year}`;
 
@@ -917,7 +922,7 @@ function qualificationGroupContent(ctx, page) {
   const comp = catalog.competitions[page.compId];
   const edition = editions[`${page.compId}/${page.year}`];
   const group = page.group;
-  const title = `${groupLabel(ctx, lang, group)} \u00b7 ${t(lang, "edition.title", { year: page.year })}`;
+  const title = `${groupLabel(ctx, lang, group)} \u00b7 ${editionTitle(ctx, lang, comp, page.year)}`;
   const declared = (edition.groups || []).find((g) => g.stage === group.stage && g.letter === group.letter);
   const table = declared && (declared.standings || []).length ? standingsTable(ctx, lang, declared) : "";
   const matches = qualifyingMatches(edition).filter((m) => groupKey(m) === groupKey({ stage: group.stage, group: group.letter }));
@@ -969,7 +974,7 @@ function matchesContent(ctx, page) {
   const sport = model.sportById[page.sportId];
   const comp = catalog.competitions[page.compId];
   const edition = editions[`${page.compId}/${page.year}`];
-  const title = `${t(lang, "edition.facsimile")} \u00b7 ${t(lang, "edition.title", { year: page.year })}`;
+  const title = `${t(lang, "edition.facsimile")} \u00b7 ${editionTitle(ctx, lang, comp, page.year)}`;
   const finals = finalMatches(edition);
   const numbers = numberMatches(finals, comp);
   const withSheets = finals.filter((match) => match.sheet && match.sheet.text);
