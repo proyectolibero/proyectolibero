@@ -46,7 +46,6 @@ function competitionFixture(idparts, name, slug, competitionName) {
       category: "championship",
       status: "active",
       ageBand: "senior",
-      frequency: "quadrennial",
       sanctioningBody: "fifa"
     },
     editorialStatus: "planned",

@@ -632,8 +632,13 @@ function validateCatalogI18n(ctx, errors) {
  * Vocabulario de facetas estricto: un valor fuera del vocabulario es error
  * (FAC003), una faceta obligatoria ausente es error (FAC001) y un valor
  * deprecado se acepta con aviso (FAC004) para no romper datos publicados.
- * `facets.sport`/`facets.gender` no pueden contradecir al catálogo (FAC005) y
- * el estado editorial distingue publicado de planeado (FAC006/FAC007).
+ * Una faceta OPCIONAL ausente no genera aviso: la granularidad fina es
+ * opcional justamente porque no todo dato la tiene, y avisar de cada ausencia
+ * ahogaría los avisos reales (docs/TAXONOMIA.md). Las facetas marcadas
+ * `derived` (p. ej. `frequency`) no se etiquetan a mano: se derivan del
+ * catálogo y etiquetarlas es error (FAC008). `facets.sport`/`facets.gender`
+ * no pueden contradecir al catálogo (FAC005) y el estado editorial
+ * distingue publicado de planeado (FAC006/FAC007).
  */
 function validateFacets(ctx, errors, warnings) {
   const doc = ctx.facets;
@@ -663,6 +668,10 @@ function validateFacets(ctx, errors, warnings) {
       const facet = byCode.get(code);
       if (!facet) {
         push(errors, "FAC002", file, `faceta fuera del vocabulario: ${code}`);
+        continue;
+      }
+      if (facet.derived) {
+        push(errors, "FAC008", file, `la faceta derivada ${code} no se etiqueta a mano: se deriva del catálogo (docs/TAXONOMIA.md)`);
         continue;
       }
       if (facet.open) continue;

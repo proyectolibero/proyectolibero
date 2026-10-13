@@ -47,7 +47,6 @@ function competitionCatalog() {
       category: "championship",
       status: "active",
       ageBand: "senior",
-      frequency: "quadrennial",
       sanctioningBody: "fifa"
     },
     editorialStatus: "published",
@@ -351,8 +350,7 @@ function balkanCatalog({ published = false } = {}) {
       geography: "subregional",
       category: "championship",
       status: "defunct",
-      ageBand: "senior",
-      frequency: "irregular"
+      ageBand: "senior"
     },
     editorialStatus: "planned",
     declaredPhases: ["knockout"],

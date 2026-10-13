@@ -3,6 +3,7 @@
 const { escapeHtml } = require("./html.js");
 const { barChart, podiumChart, hbarChart, medalGlyph } = require("./charts.js");
 const { isQualifying, classifyGroups } = require("./routes.js");
+const { declaredPhasesFor } = require("../phases.js");
 
 /*
  * Cuerpos de página (sin cabecera ni pie; eso lo pone layout.js). Todas las
@@ -15,9 +16,10 @@ function join(list, separator) {
   return list.filter((value) => value !== undefined && value !== null && value !== "").join(separator);
 }
 
-function sectionNumbered(num, title, inner) {
+function sectionNumbered(num, title, inner, id) {
+  const idAttr = id ? ` id="${escapeHtml(id)}"` : "";
   return (
-    `    <section class="lb-section">\n` +
+    `    <section class="lb-section"${idAttr}>\n` +
     `      <h2 class="lb-section__title"><span class="lb-section__num">${escapeHtml(num)}</span>${escapeHtml(title)}</h2>\n` +
     `${inner}\n` +
     `    </section>`
@@ -149,10 +151,15 @@ function competitionContent(ctx, page) {
       }
       const champion = entry.champion ? ctx.countryName(entry.champion, lang) : "";
       if (rendered) {
+        /* Estado de conclusión derivado (ADR-035), leído del coverage publicado. */
+        const complete = (rendered.coverage || {}).complete === true;
+        const stateKey = complete ? "phases.state.complete" : "phases.state.incomplete";
+        const stateMod = complete ? "complete" : "incomplete";
         return (
           `        <li class="lb-timeline__item" data-lb-year="${escapeHtml(year)}">` +
           `<a class="lb-timeline__link" href="/${lang}/${sport.slug}/${comp.slug}/${year}/">${escapeHtml(year)}</a>` +
-          `${champion ? `<span class="lb-timeline__note">${escapeHtml(champion)}</span>` : ""}</li>`
+          `${champion ? `<span class="lb-timeline__note">${escapeHtml(champion)}</span>` : ""}` +
+          `<span class="lb-timeline__state lb-timeline__state--${stateMod}">${escapeHtml(t(lang, stateKey))}</span></li>`
         );
       }
       return (
@@ -392,7 +399,12 @@ function standingsSection(ctx, page, edition) {
   const groups = (edition.groups || []).filter((group) => !isQualifying(group.stage));
   if (!groups.length) return "";
   const tables = groups.map((group) => standingsTable(ctx, lang, group)).join("\n");
-  return sectionNumbered("01", ctx.t(lang, "edition.standings"), `      <div class="lb-standings">\n${tables}\n      </div>`);
+  return sectionNumbered(
+    "01",
+    ctx.t(lang, "edition.standings"),
+    `      <div class="lb-standings">\n${tables}\n      </div>`,
+    "fase-grupo"
+  );
 }
 
 function phaseOrder(comp) {
@@ -434,7 +446,7 @@ function phasesSection(ctx, page, edition, comp, sport, numbers) {
       return `      <h3 class="lb-label">${escapeHtml(label)}</h3>\n${matches}`;
     })
     .join("\n");
-  return sectionNumbered("02", ctx.t(lang, "edition.phases"), blocks);
+  return sectionNumbered("02", ctx.t(lang, "edition.phases"), blocks, "fase-eliminatoria");
 }
 
 function decisiveSection(ctx, page, edition, comp, sport, numbers) {
@@ -457,7 +469,8 @@ function decisiveSection(ctx, page, edition, comp, sport, numbers) {
   return sectionNumbered(
     "03",
     ctx.t(lang, "edition.decisiveMatch"),
-    `${card}\n      <dl class="lb-record">\n${rows.join("\n")}\n      </dl>`
+    `${card}\n      <dl class="lb-record">\n${rows.join("\n")}\n      </dl>`,
+    "fase-final"
   );
 }
 
@@ -625,6 +638,65 @@ function warningsNote(ctx, page, edition) {
   );
 }
 
+/**
+ * URL de una fase presente: la clasificación tiene página propia; el resto
+ * vive en la propia página de la edición (anclas estables de las secciones).
+ */
+function phaseHref(page, sport, comp, edition, kind, targets) {
+  const base = `/${page.lang}/${sport.slug}/${comp.slug}/${page.year}`;
+  if (kind === "qualifying") return classifyGroups(edition).length ? `${base}/clasificacion/` : "";
+  if (kind === "group") return targets.standings ? "#fase-grupo" : "";
+  if (kind === "knockout") {
+    if (targets.phaseList) return "#fase-eliminatoria";
+    return targets.final ? "#fase-final" : "";
+  }
+  return "";
+}
+
+/**
+ * Estado de las fases declaradas de la edición (ADR-035): una fila por clase
+ * declarada por el catálogo con su estado — publicada (con enlace a su URL),
+ * parcial o falta — y la conclusión derivada de la edición, sin ambigüedad.
+ * No recalcula nada: lee `coverage.complete`, `coverage.missingPhases` y
+ * `coverage.partialPhases` tal como están publicados.
+ */
+function phasesStatusBlock(ctx, page, edition, comp, entry, targets) {
+  const lang = page.lang;
+  const declared = declaredPhasesFor(comp, entry);
+  if (!declared || !declared.length) return "";
+  const coverage = edition.coverage || {};
+  const missing = Array.isArray(coverage.missingPhases) ? coverage.missingPhases : [];
+  const partial = Array.isArray(coverage.partialPhases) ? coverage.partialPhases : [];
+  const complete = coverage.complete === true;
+  const sport = ctx.model.sportById[page.sportId];
+
+  const items = declared
+    .map((kind) => {
+      const state = missing.includes(kind) ? "missing" : partial.includes(kind) ? "partial" : "present";
+      const href = state === "missing" ? "" : phaseHref(page, sport, comp, edition, kind, targets);
+      const name = ctx.t(lang, `phase.kind.${kind}`);
+      const nameHtml = href
+        ? `<a class="lb-phases__name" href="${escapeHtml(href)}">${escapeHtml(name)}</a>`
+        : `<span class="lb-phases__name">${escapeHtml(name)}</span>`;
+      return (
+        `        <li class="lb-phases__item lb-phases__item--${state}">${nameHtml}` +
+        `<span class="lb-phases__status">${escapeHtml(ctx.t(lang, `phases.${state}`))}</span></li>`
+      );
+    })
+    .join("\n");
+
+  return (
+    `    <section class="lb-phases" aria-label="${escapeHtml(ctx.t(lang, "phases.title"))}">\n` +
+    `      <div class="lb-phases__head">\n` +
+    `        <span class="lb-phases__label">${escapeHtml(ctx.t(lang, "phases.title"))}</span>\n` +
+    `        <span class="lb-phases__state lb-phases__state--${complete ? "complete" : "incomplete"}">` +
+    `${escapeHtml(ctx.t(lang, complete ? "phases.edition.complete" : "phases.edition.incomplete"))}</span>\n` +
+    `      </div>\n` +
+    `      <ul class="lb-phases__list">\n${items}\n      </ul>\n` +
+    `    </section>`
+  );
+}
+
 function editionNav(ctx, page, comp, sport) {
   const lang = page.lang;
   const { t } = ctx;
@@ -688,10 +760,18 @@ function editionContent(ctx, page) {
   const sport = model.sportById[page.sportId];
   const comp = catalog.competitions[page.compId];
   const edition = editions[`${page.compId}/${page.year}`];
+  const entry = (comp.editions || []).find((e) => String(e.year) === String(page.year)) || null;
   const title = t(lang, "edition.title", { year: page.year });
   const results = edition.results || {};
-  const numbers = numberMatches(finalMatches(edition), comp);
+  const finals = finalMatches(edition);
+  const numbers = numberMatches(finals, comp);
   const subviews = subviewLinks(ctx, page, sport, comp, edition);
+  const targets = {
+    standings: (edition.groups || []).some((group) => !isQualifying(group.stage)),
+    phaseList: finals.some((match) => match.stage !== "final"),
+    final: Boolean(results.finalMatchId)
+  };
+  const phasesBlock = phasesStatusBlock(ctx, page, edition, comp, entry, targets);
 
   const head =
     `    <header class="lb-edition-head">\n` +
@@ -768,7 +848,7 @@ function editionContent(ctx, page) {
     title: `${title} \u00b7 ${t(lang, "site.name")}`,
     description: `${title}: ${t(lang, "edition.champion")} ${champion}. ${t(lang, "site.name")}.`,
     breadcrumb,
-    body: `${head}\n${ledger}`,
+    body: `${head}\n${phasesBlock ? `${phasesBlock}\n` : ""}${ledger}`,
     jsonld: [breadcrumbJsonLd(ctx, page, breadcrumb), datasetJsonLd(ctx, page, title, champion)]
   };
 }

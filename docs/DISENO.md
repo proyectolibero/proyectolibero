@@ -69,7 +69,7 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 |---|---|
 | Base | `.lb-visually-hidden`, `.lb-needs-js` |
 | Galería (dev) | `.lb-gallery`, `.lb-gallery__header`, `.lb-gallery__title`, `.lb-gallery__lead`, `.lb-gallery__nav`, `.lb-gallery__item`, `.lb-gallery__label`, `.lb-gallery__note`, `.lb-gallery__grid` |
-| `EditionTimeline` | `.lb-timeline`, `.lb-timeline__item`, `.lb-timeline__item--gap`, `.lb-timeline__item--pending`, `.lb-timeline__link`, `.lb-timeline__year`, `.lb-timeline__note` |
+| `EditionTimeline` | `.lb-timeline`, `.lb-timeline__item`, `.lb-timeline__item--gap`, `.lb-timeline__item--pending`, `.lb-timeline__link`, `.lb-timeline__year`, `.lb-timeline__note`, `.lb-timeline__state`, `.lb-timeline__state--complete`, `.lb-timeline__state--incomplete` |
 | `StandingsTable` | `.lb-standings`, `.lb-table`, `.lb-table--stack`, `.lb-table__caption`, `.lb-table__num`, `.lb-table__medal`, `.lb-medal--gold`, `.lb-medal--silver`, `.lb-medal--bronze` |
 | `ScorerList` | `.lb-scorers`, `.lb-scorers__item`, `.lb-scorers__item--leader`, `.lb-scorers__rank`, `.lb-scorers__name`, `.lb-scorers__meta`, `.lb-scorers__count` |
 | `ResultCard` | `.lb-result`, `.lb-result__meta`, `.lb-result__num`, `.lb-result__teams`, `.lb-result__team`, `.lb-result__team--away`, `.lb-result__team--winner`, `.lb-result__score`, `.lb-result__note` |
@@ -77,6 +77,7 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 | `KpiCard` | `.lb-kpis`, `.lb-kpi`, `.lb-kpi__value`, `.lb-kpi__label`, `.lb-kpi__hint` |
 | `ProvenanceBadge` | `.lb-provenance`, `.lb-provenance__summary`, `.lb-provenance__star`, `.lb-provenance__label`, `.lb-provenance__source`, `.lb-provenance__detail`, `.lb-provenance__primary`, `.lb-provenance__rejected-label`, `.lb-provenance__rejected-list`, `.lb-provenance__rejected-item`, `.lb-provenance__rejected-empty` |
 | `CoverageBar` | `.lb-coverage`, `.lb-coverage__head`, `.lb-coverage__label`, `.lb-coverage__count`, `.lb-coverage__track`, `.lb-coverage__fill`, `.lb-coverage__legend`, `.lb-coverage__legend-item`, `.lb-coverage__swatch`, `.lb-coverage__swatch--done`, `.lb-coverage__swatch--gap` |
+| `PhaseStatus` | `.lb-phases`, `.lb-phases__head`, `.lb-phases__label`, `.lb-phases__state`, `.lb-phases__state--complete`, `.lb-phases__state--incomplete`, `.lb-phases__list`, `.lb-phases__item`, `.lb-phases__item--present`, `.lb-phases__item--partial`, `.lb-phases__item--missing`, `.lb-phases__name`, `.lb-phases__status` |
 | `FacsimileSheet` | `.lb-facsimile`, `.lb-facsimile__caption`, `.lb-facsimile__paper`, `.lb-facsimile__pre` |
 | `CitationBlock` | `.lb-citation`, `.lb-citation__label`, `.lb-citation__text`, `.lb-citation__code` |
 | `SourceList` | `.lb-sources`, `.lb-sources__item`, `.lb-sources__name`, `.lb-sources__meta`, `.lb-sources__link`, `.lb-sources__retrieved` |
@@ -105,8 +106,8 @@ límite; eliminarla no ahorra nada observable y perdería la pieza del catálogo
 | Pantalla | Objetivo |
 |---|---|
 | Portada | Descubrir: deportes, competiciones destacadas, releases recientes |
-| Hub de competición | Línea temporal de ediciones + cobertura (publicadas vs faltantes) |
-| Edición | "Libro de registro" en dos lecturas: móvil una columna (cabecera de edición pegajosa con navegación entre ediciones); ≥960px libro a dos columnas (datos izquierda, notas al margen derecha) |
+| Hub de competición | Línea temporal de ediciones + cobertura (publicadas vs faltantes) + estado de conclusión por edición (ADR-035) |
+| Edición | "Libro de registro" en dos lecturas: móvil una columna (cabecera de edición pegajosa con navegación entre ediciones); ≥960px libro a dos columnas (datos izquierda, notas al margen derecha). Bloque de fases declaradas con su estado y conclusión derivada bajo la cabecera (ADR-035) |
 | Resultado | Detalle de un partido o prueba, con procedencia |
 | Palmarés | Títulos y finales por país |
 | Metodología | Cómo se construye el archivo y cómo se resuelven conflictos |

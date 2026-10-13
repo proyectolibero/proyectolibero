@@ -307,10 +307,30 @@ function getEditionEntry(competition, year) {
   return competition.editions.find((e) => e.year === year) || null;
 }
 
+/**
+ * Periodicidad (`facet.frequency`) derivada de `cadence` del catálogo
+ * (docs/TAXONOMIA.md): no se etiqueta a mano. `interval` con `years` 1-4
+ * mapea al código del vocabulario; `interval` sin `years` es irregular
+ * (la propia cadencia no es constante); `once` es edición única; `annual`
+ * es anual. Cadencias no expresables en el vocabulario devuelven `null`
+ * (faceta ausente: antes omitir que mentir).
+ */
+function deriveFrequency(cadence) {
+  if (!cadence || typeof cadence !== "object") return null;
+  if (cadence.type === "once") return "one-off";
+  if (cadence.type === "annual") return "annual";
+  if (cadence.type === "interval") {
+    if (!Number.isInteger(cadence.years)) return "irregular";
+    return { 1: "annual", 2: "biennial", 3: "triennial", 4: "quadrennial" }[cadence.years] || null;
+  }
+  return null;
+}
+
 module.exports = {
   validateAgainstSchema,
   deepEqual,
   loadCatalog,
   findCompetitionByEditionFile,
-  getEditionEntry
+  getEditionEntry,
+  deriveFrequency
 };

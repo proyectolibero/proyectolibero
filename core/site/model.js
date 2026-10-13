@@ -1,5 +1,7 @@
 "use strict";
 
+const { deriveFrequency } = require("../catalog.js");
+
 /*
  * Modelo del escaparate: deportes con sus competiciones anidadas y búsquedas
  * por identificador. Función pura del catálogo (sin disco, sin red), para que
@@ -8,6 +10,18 @@
 
 function byId(a, b) {
   return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
+}
+
+/**
+ * Facetas de una competición con la periodicidad derivada de `cadence`
+ * (docs/TAXONOMIA.md): `frequency` no se etiqueta a mano; si la cadencia no
+ * es expresable, la faceta queda ausente.
+ */
+function facetsWithDerivedFrequency(comp) {
+  const facets = Object.assign({}, comp.facets);
+  const frequency = deriveFrequency(comp.cadence);
+  if (frequency) facets.frequency = frequency;
+  return facets;
 }
 
 function buildModel(catalog) {
@@ -26,7 +40,7 @@ function buildModel(catalog) {
           id: comp.id,
           slug: comp.slug,
           nameKey: comp.i18nKey,
-          facets: comp.facets || {},
+          facets: facetsWithDerivedFrequency(comp),
           editorialStatus: comp.editorialStatus || null
         }))
     }));

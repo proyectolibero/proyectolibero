@@ -18,6 +18,7 @@ module.exports = {
   resolveWithin: io.resolveWithin,
   loadCatalog: catalog.loadCatalog,
   validateAgainstSchema: catalog.validateAgainstSchema,
+  deriveFrequency: catalog.deriveFrequency,
   validateProject: validate.validateProject,
   validateEditionFile: validate.validateEditionFile,
   validateEditionObject: validate.validateEditionObject,

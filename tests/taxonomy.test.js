@@ -66,9 +66,48 @@ test("taxonomia_a: la referencia del dueño — Mundial etiquetado según docs/T
     category: "championship",
     status: "active",
     ageBand: "senior",
-    frequency: "quadrennial",
     sanctioningBody: "fifa"
   });
+});
+
+test("taxonomia_a: frequency se deriva de cadence, no se etiqueta a mano (FAC008)", () => {
+  const { deriveFrequency } = require("../core/catalog.js");
+  assert.equal(deriveFrequency({ type: "interval", years: 4 }), "quadrennial");
+  assert.equal(deriveFrequency({ type: "interval", years: 2 }), "biennial");
+  assert.equal(deriveFrequency({ type: "interval", years: 1 }), "annual");
+  assert.equal(deriveFrequency({ type: "interval" }), "irregular");
+  assert.equal(deriveFrequency({ type: "once" }), "one-off");
+  assert.equal(deriveFrequency({ type: "annual" }), "annual");
+  assert.equal(deriveFrequency({ type: "interval", years: 7 }), null, "cadencia no expresable: faceta ausente");
+  assert.equal(deriveFrequency(undefined), null);
+
+  const root = fixtureProject();
+  const file = path.join(root, "catalog", "competitions", "football.worldcup.json");
+  const comp = JSON.parse(fs.readFileSync(file, "utf8"));
+  comp.facets.frequency = "quadrennial";
+  writeJson(file, comp);
+  const { errors } = core.validateProject(root);
+  assert.ok(errors.some((e) => e.code === "FAC008" && /frequency/.test(e.message)), JSON.stringify(errors));
+});
+
+test("taxonomia_a: una faceta opcional ausente no genera aviso", () => {
+  const root = fixtureProject();
+  const file = path.join(root, "catalog", "competitions", "football.worldcup.json");
+  const comp = JSON.parse(fs.readFileSync(file, "utf8"));
+  delete comp.facets.ageBand;
+  delete comp.facets.sanctioningBody;
+  writeJson(file, comp);
+  const { errors, warnings } = core.validateProject(root);
+  assert.deepEqual(
+    warnings.filter((e) => e.code.startsWith("FAC")),
+    [],
+    "ningún aviso de facetas por ausencia de opcionales"
+  );
+  assert.deepEqual(
+    errors.filter((e) => e.code.startsWith("FAC")),
+    [],
+    "sin errores de facetas: lo obligatorio sigue presente"
+  );
 });
 
 /* ---------------------------------- (b) ---------------------------------- */
@@ -195,6 +234,31 @@ test("taxonomia_c: los índices por faceta cubren las competiciones publicadas",
   assert.equal(indexes["status"].active.length, 2, "Mundial y Eurocopa siguen vigentes");
 });
 
+test("taxonomia_c: la periodicidad del índice es la derivada de cadence (corrige contradicciones)", () => {
+  const indexes = buildFacetIndexes(buildModel(realCatalog()));
+  assert.deepEqual(
+    indexes["frequency"].quadrennial.map((entry) => entry.id).sort(),
+    ["football/eurochamp", "football/worldcup"],
+    "Mundial y Eurocopa declaran cadencia cuatrienal"
+  );
+  assert.deepEqual(
+    indexes["frequency"].biennial.map((entry) => entry.id),
+    ["football/intconcup"],
+    "Confederaciones: cadencia bienal, no la cuatrienal escrita a mano"
+  );
+  assert.deepEqual(
+    indexes["frequency"].irregular.map((entry) => entry.id).sort(),
+    ["football/nordic"],
+    "Nórdico: cadencia irregular, no la anual escrita a mano"
+  );
+  assert.deepEqual(
+    indexes["frequency"].annual.map((entry) => entry.id),
+    ["football/balkancup"],
+    "Balcánica: cadencia anual"
+  );
+  assert.equal(indexes["frequency"]["one-off"], undefined, "nadie es edición única");
+});
+
 test("taxonomia_d: una competición sintética se propaga al árbol y a los índices", () => {
   const root = fixtureProject();
   const file = path.join(root, "catalog", "competitions", "football.womenscup.json");
@@ -222,7 +286,6 @@ test("taxonomia_d: una competición sintética se propaga al árbol y a los índ
       category: "championship",
       status: "active",
       ageBand: "senior",
-      frequency: "quadrennial",
       sanctioningBody: "fifa"
     },
     editorialStatus: "planned",

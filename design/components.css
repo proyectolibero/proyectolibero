@@ -144,6 +144,25 @@ html.lb-js .lb-needs-js { display: block; }
   color: var(--lb-text-muted);
 }
 
+.lb-timeline__state {
+  font-size: var(--lb-fs-xs);
+  padding: 0 var(--lb-space-2);
+  border-radius: var(--lb-radius-pill);
+  border: 1px solid var(--lb-border);
+  color: var(--lb-text-muted);
+}
+
+.lb-timeline__state--complete {
+  color: var(--lb-accent);
+  border-color: var(--lb-accent);
+}
+
+.lb-timeline__state--incomplete {
+  color: var(--lb-warn-text);
+  border-color: var(--lb-warn-border);
+  background: var(--lb-warn-bg);
+}
+
 /* ------------------------------------------------------------------ */
 /* Tablas (StandingsTable y afines) — colapsan a tarjetas en movil     */
 /* ------------------------------------------------------------------ */
@@ -535,6 +554,107 @@ html.lb-js .lb-needs-js { display: block; }
   border: 1px solid var(--lb-border-strong);
 }
 
+/* ------------------------------------------------------------------ */
+/* PhaseStatus - fases declaradas y conclusion derivada (ADR-035)      */
+/* ------------------------------------------------------------------ */
+
+.lb-phases {
+  margin: var(--lb-space-4) 0;
+  padding: var(--lb-space-3) var(--lb-space-4);
+  border: 1px solid var(--lb-border);
+  border-radius: var(--lb-radius);
+  background: var(--lb-surface);
+}
+
+.lb-phases__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--lb-space-2) var(--lb-space-3);
+  margin-bottom: var(--lb-space-2);
+}
+
+.lb-phases__label {
+  font-size: var(--lb-fs-xs);
+  font-weight: var(--lb-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--lb-text-muted);
+}
+
+.lb-phases__state {
+  font-size: var(--lb-fs-xs);
+  font-weight: var(--lb-weight-medium);
+  padding: var(--lb-space-1) var(--lb-space-2);
+  border-radius: var(--lb-radius-pill);
+  border: 1px solid var(--lb-border);
+}
+
+.lb-phases__state--complete {
+  color: var(--lb-accent);
+  border-color: var(--lb-accent);
+}
+
+.lb-phases__state--incomplete {
+  color: var(--lb-warn-text);
+  border-color: var(--lb-warn-border);
+  background: var(--lb-warn-bg);
+}
+
+.lb-phases__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--lb-space-2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lb-phases__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--lb-space-2);
+  border: 1px solid var(--lb-border);
+  border-radius: var(--lb-radius);
+  padding: var(--lb-space-1) var(--lb-space-3);
+  font-size: var(--lb-fs-sm);
+}
+
+.lb-phases__item--present {
+  background: var(--lb-surface);
+}
+
+.lb-phases__item--partial {
+  border-color: var(--lb-warn-border);
+}
+
+.lb-phases__item--missing {
+  border-style: dashed;
+  border-color: var(--lb-warn-border);
+  background: var(--lb-warn-bg);
+}
+
+.lb-phases__name { font-weight: var(--lb-weight-medium); }
+
+a.lb-phases__name { color: var(--lb-accent); text-decoration: none; }
+
+a.lb-phases__name:hover { text-decoration: underline; }
+
+.lb-phases__status {
+  font-size: var(--lb-fs-xs);
+  color: var(--lb-text-muted);
+}
+
+.lb-phases__item--partial .lb-phases__status { color: var(--lb-warn-text); }
+
+.lb-phases__item--missing .lb-phases__status {
+  color: var(--lb-warn-text);
+  font-weight: var(--lb-weight-medium);
+}
+
+/* ------------------------------------------------------------------ */
+/* FacsimileSheet - ficha verbatim como documento impreso              */
 /* ------------------------------------------------------------------ */
 /* FacsimileSheet — ficha verbatim como documento impreso              */
 /* ------------------------------------------------------------------ */

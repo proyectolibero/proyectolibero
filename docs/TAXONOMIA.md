@@ -29,8 +29,11 @@ automáticos.
    `deprecated` (sigue resolviendo para no romper datos publicados).
 2. **Etiqueta traducible a los 5 idiomas**; el código es la verdad, la etiqueta es presentación.
 3. **Crecer es añadir valores**, nunca reestructurar.
-4. **Validador estricto**: un valor fuera del vocabulario es error; una faceta obligatoria
-   ausente, error; una faceta opcional ausente, aviso.
+4. **Validador estricto**: un valor fuera del vocabulario es error; una faceta
+   obligatoria ausente, error; una faceta opcional ausente **no genera aviso**
+   (la granularidad fina es opcional justamente porque no todo dato la tiene;
+   avisar de cada ausencia ahogaría los avisos reales). Una faceta **derivada**
+   etiquetada a mano es error (FAC008).
 5. **Núcleo obligatorio + refinamiento opcional** (ver abajo): obliga a lo mínimo que permite
    navegar y filtrar, y deja la granularidad fina para quien la tenga.
 
@@ -54,7 +57,6 @@ automáticos.
 | Nivel | `level` | `elite`, `professional`, `semi-professional`, `amateur`, `youth-development`, `grassroots` |
 | Unidad de competición | `contestUnit` | `individual`, `pair`, `team`, `relay`, `squad` |
 | Formato | `format` | `league`, `round-robin`, `knockout`, `group-then-knockout`, `final-four`, `series`, `heats-and-final`, `time-trial`, `multi-sport-games` |
-| Periodicidad | `frequency` | `annual`, `biennial`, `triennial`, `quadrennial`, `one-off`, `irregular` |
 | Entorno | `environment` | `outdoor`, `indoor`, `beach`, `water`, `snow`, `ice`, `road`, `track` |
 | Deporte adaptado | `adapted` | `able-bodied`, `para`, `deaf`, `intellectual-disability`, `special-olympics` |
 | Categoría de peso | `weightClass` | lista abierta por deporte (combate) |
@@ -72,11 +74,19 @@ Fuera de las facetas deportivas queda el **estado editorial**, que pertenece al 
 
 | Competición | sport | entityType | gender | geography | category | status | Otras |
 |---|---|---|---|---|---|---|---|
-| Copa del Mundo (FIFA) | football | national-team | men | world | championship | active | frequency: quadrennial |
-| Eurocopa (UEFA) | football | national-team | men | continental | championship | active | frequency: quadrennial; sanctioningBody: uefa |
-| Copa de los Balcanes | football | national-team | men | subregional | championship | defunct | frequency: irregular |
-| Copa FIFA Confederaciones | football | national-team | men | world | championship | defunct | frequency: quadrennial |
-| Campeonato Nórdico | football | national-team | men | subregional | championship | defunct | frequency: annual |
+| Copa del Mundo (FIFA) | football | national-team | men | world | championship | active | sanctioningBody: fifa |
+| Eurocopa (UEFA) | football | national-team | men | continental | championship | active | sanctioningBody: uefa |
+| Copa de los Balcanes | football | national-team | men | subregional | championship | defunct | — |
+| Copa FIFA Confederaciones | football | national-team | men | world | championship | defunct | sanctioningBody: fifa |
+| Campeonato Nórdico | football | national-team | men | subregional | championship | defunct | — |
+
+La **periodicidad** (`frequency`) no aparece en la columna «Otras» porque no se
+etiqueta a mano: se **deriva** de la `cadence` que el catálogo ya declara
+(ver «Lo que se deriva»). Esto corrige las contradicciones detectadas al
+etiquetar a mano: Confederaciones figuraba *cuatrienal* pese a declarar
+`cadence {type: interval, years: 2}` (→ **bienal**), y el Campeonato Nórdico
+figuraba *anual* pese a declarar `cadence {type: interval}` sin años, cadencia
+genuinamente irregular (→ **irregular**).
 
 Prueba de que el modelo aguanta lo que viene: *Eurocopa sub‑21* → `ageBand: u21`; *Champions
 femenina de clubs* → `entityType: club`, `gender: women`; *Juegos Paralímpicos* → `adapted: para`,
@@ -86,6 +96,11 @@ femenina de clubs* → `entityType: club`, `gender: women`; *Juegos Paralímpico
 
 - **Árbol de navegación**: deporte → ámbito (`entityType`) → competición. Acotado y estable.
 - **Índices y filtros**: por género, edad, ámbito, territorio, naturaleza, vigencia.
+- **Periodicidad (`frequency`)**: se deriva de la `cadence` del catálogo, no se
+  etiqueta a mano. `interval` con `years` 1–4 → `annual`/`biennial`/`triennial`/
+  `quadrennial`; `interval` sin `years` → `irregular`; `once` → `one-off`;
+  `annual` → `annual`. Una cadencia no expresable en el vocabulario deja la
+  faceta ausente (antes omitir que mentir).
 - **La hoja de ruta**: `editorialStatus` distingue publicado de planeado en la misma vista.
 - **El índice para IA**: el catálogo facetado es lo que una máquina puede leer de un golpe
   (fase P6) sin descargar los datos.
@@ -99,7 +114,9 @@ que el menú, ya implementada).
 1. ✅ `catalog/facets.json` — vocabulario con códigos, etiquetas i18n y `deprecated`.
 2. ✅ Validador: facetas obligatorias (`FAC001`), valores fuera de vocabulario
    (`FAC003`), avisos de valores deprecados (`FAC004`), estado editorial
-   (`FAC006`/`FAC007`) y fases declaradas (`CAT006`/`EDI020`/`EDI021`).
+   (`FAC006`/`FAC007`), facetas derivadas etiquetadas a mano (`FAC008`) y
+   fases declaradas (`CAT006`/`EDI020`/`EDI021`). Las opcionales ausentes no
+   generan aviso.
 3. ✅ Etiquetadas las 5 competiciones del catálogo (todas con datos publicados).
 4. ✅ Árbol e índices por faceta derivados en `core/site/tree.js`, publicados
    como dato en `site/indexes/{tree,facets}.json` (no como páginas).

@@ -23,8 +23,7 @@
     "geography": "subregional",
     "category": "championship",
     "status": "defunct",
-    "ageBand": "senior",
-    "frequency": "annual"
+    "ageBand": "senior"
   },
   "editorialStatus": "published",
   "declaredPhases": ["group"],

@@ -194,6 +194,7 @@
       "label": "Periodicidad",
       "i18nKey": "facet.frequency",
       "required": false,
+      "derived": true,
       "values": [
         { "code": "annual", "label": "Anual", "i18nKey": "facet.frequency.annual", "deprecated": false },
         { "code": "biennial", "label": "Bienal", "i18nKey": "facet.frequency.biennial", "deprecated": false },
