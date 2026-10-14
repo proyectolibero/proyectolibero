@@ -60,8 +60,16 @@ En `.opencode/skills/`:
 
 ## Datos actuales
 
-Fútbol — Copa del Mundo (`catalog/competitions/football.worldcup.json`): **23 ediciones celebradas** (1930–2026; 1942 y 1946 no se celebraron), **3 publicadas** (1930, 1934, 1938) y **20 pendientes** de migración al esquema v2. Fuentes: RSSSF (Karel Stokkermans, Sergio Henrique Jarreta, Barrie Courtney, Jaroslaw Owsianski), consultadas el 2026-10-06. Deportes previstos (arquetipo Ranking/Timed): natación y arquería.
+Fútbol — **5 competiciones / 76 ediciones / 11.837 partidos**: Copa del Mundo **23/23** (1930–2026; 1942 y 1946 no se celebraron), Eurocopa 17, Nordic 14, Balkan 12, Confederaciones 10. Fuentes principales: RSSSF (Karel Stokkermans, Sergio Henrique Jarreta, Barrie Courtney, Jaroslaw Owsianski), consultadas el 2026-10-06. Índice máquina-legible del contenido: `site/index.json` (generado).
 
 ## Publicación
 
 Dominio propio `proyectolibero.org` (Cloudflare). La web pública se genera estáticamente desde los `releases/`. Mientras dura la reconstrucción, el sitio v1 puede seguir sirviéndose por rutas relativas. La Action `validate.yml` bloquea el push si hay errores de validación.
+
+## Licencia
+
+- **Código**: GNU Affero General Public License v3.0 (AGPL-3.0) — ver [`LICENSE`](LICENSE).
+- **Datos y compilación** (`catalog/`, `data/`, `releases/`): Creative Commons Attribution 4.0 (CC BY 4.0).
+- **Fichas verbatim** (`sheet.text`): proceden de las fuentes citadas y se reproducen con su atribución; no se relicencian. Ver [`NOTICE`](NOTICE).
+
+La información es libre y gratuita; **nunca vendemos datos**.

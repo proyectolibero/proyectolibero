@@ -1,0 +1,28 @@
+Proyecto Libero — https://proyectolibero.org
+Copyright (C) 2026 Proyecto Libero contributors
+
+LICENCIAS POR CAPA
+==================
+
+1. CÓDIGO
+   Todo el código fuente (core/, ingest/, scripts/, admin/, mcp/, assets/,
+   design/, index.html y tests) se publica bajo la GNU Affero General Public
+   License, versión 3 (AGPL-3.0). Texto completo en LICENSE.
+
+2. DATOS Y COMPILACIÓN
+   El catálogo, los datos y los releases (catalog/, data/, releases/), así como
+   la compilación, el esquema, la normalización y la procedencia, se publican
+   bajo Creative Commons Attribution 4.0 International (CC BY 4.0):
+   https://creativecommons.org/licenses/by/4.0/
+
+3. FICHAS VERBATIM (sheet.text)
+   Los bloques de texto verbatim de cada partido proceden de las fuentes
+   citadas y se reproducen tal cual con su atribución; NO se relicencian. La
+   fuente principal es RSSSF (https://www.rsssf.org), con reconocimiento a sus
+   autores. No se redistribuyen las fuentes marcadas con `redistribute:false`
+   (p. ej. FIFA, usada solo para contraste).
+
+POLÍTICA DEL PROYECTO
+   La información es libre y gratuita; el proyecto nunca vende datos. Las
+   donaciones y las entidades colaboradoras (docs/SOSTENIBILIDAD.md) sostienen
+   el trabajo, no la venta de datos.
