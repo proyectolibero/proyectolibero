@@ -16,3 +16,5 @@ jobs:
         run: node scripts/validate.js
       - name: Validate project (core, explícito)
         run: node core/cli.js validate
+      - name: Run test suite
+        run: node --test --test-concurrency=2 tests/
