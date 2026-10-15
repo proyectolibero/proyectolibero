@@ -3,7 +3,7 @@
 const { escapeHtml } = require("./html.js");
 const { barChart, podiumChart, hbarChart, medalGlyph } = require("./charts.js");
 const { isQualifying, classifyGroups } = require("./routes.js");
-const { LANGS } = require("./text.js");
+const { LANGS, formatNumber } = require("./text.js");
 const { declaredPhasesFor } = require("../phases.js");
 
 /*
@@ -80,32 +80,48 @@ function datasetCounts(ctx) {
   };
 }
 
+/** Lista de textos (sin enlaces) como tarjeta llana dentro de un grid. */
+function plainList(t, lang, keys, indent) {
+  const rows = keys
+    .map((key) => `${indent}  <li class="lb-entry">${escapeHtml(t(lang, key))}</li>`)
+    .join("\n");
+  return `${indent}<ul class="lb-list lb-list--plain">\n${rows}\n${indent}</ul>`;
+}
+
 function homeContent(ctx, page) {
   const { t, model } = ctx;
   const lang = page.lang;
   const counts = datasetCounts(ctx);
 
   const kpis = [
-    kpiCard(counts.sports, t(lang, "home.kpi.sports")),
-    kpiCard(counts.competitions, t(lang, "home.kpi.competitions")),
-    kpiCard(counts.editions, t(lang, "home.kpi.editions")),
-    kpiCard(counts.matches, t(lang, "home.kpi.matches")),
-    kpiCard(counts.languages, t(lang, "home.kpi.languages"))
+    kpiCard(formatNumber(lang, counts.sports), t(lang, "home.kpi.sports")),
+    kpiCard(formatNumber(lang, counts.competitions), t(lang, "home.kpi.competitions")),
+    kpiCard(formatNumber(lang, counts.editions), t(lang, "home.kpi.editions")),
+    kpiCard(formatNumber(lang, counts.matches), t(lang, "home.kpi.matches")),
+    kpiCard(formatNumber(lang, counts.languages), t(lang, "home.kpi.languages"))
   ].join("\n");
 
   const what =
-    `      <p class="lb-label">${escapeHtml(t(lang, "home.what.is"))}</p>\n` +
-    `      <ul class="lb-list">\n${entries(t, lang, HOME_IS_KEYS)}\n      </ul>\n` +
-    `      <p class="lb-label">${escapeHtml(t(lang, "home.what.isNot"))}</p>\n` +
-    `      <ul class="lb-list">\n${entries(t, lang, HOME_ISNOT_KEYS)}\n      </ul>`;
+    `      <div class="lb-grid">\n` +
+    `        <div class="lb-card">\n` +
+    `          <h3 class="lb-card__title">${escapeHtml(t(lang, "home.what.is"))}</h3>\n` +
+    `${plainList(t, lang, HOME_IS_KEYS, "          ")}\n` +
+    `        </div>\n` +
+    `        <div class="lb-card">\n` +
+    `          <h3 class="lb-card__title">${escapeHtml(t(lang, "home.what.isNot"))}</h3>\n` +
+    `${plainList(t, lang, HOME_ISNOT_KEYS, "          ")}\n` +
+    `        </div>\n` +
+    `      </div>`;
 
   const steps = HOME_BUILD_KEYS.map(
     (key) =>
-      `          <li class="lb-entry"><strong>${escapeHtml(t(lang, key))}</strong>` +
-      `<span class="lb-entry__meta">${escapeHtml(t(lang, `${key}.text`))}</span></li>`
+      `        <div class="lb-card">\n` +
+      `          <h3 class="lb-card__title">${escapeHtml(t(lang, key))}</h3>\n` +
+      `          <p class="lb-card__text">${escapeHtml(t(lang, `${key}.text`))}</p>\n` +
+      `        </div>`
   ).join("\n");
   const build =
-    `      <ul class="lb-list">\n${steps}\n      </ul>\n` +
+    `      <div class="lb-grid">\n${steps}\n      </div>\n` +
     `      <p class="lb-intro"><a class="lb-entry__link" href="/${lang}/metodologia/">` +
     `${escapeHtml(t(lang, "home.build.link"))}</a></p>`;
 
@@ -114,32 +130,32 @@ function homeContent(ctx, page) {
       const comps = sport.competitions
         .map(
           (comp) =>
-            `        <li class="lb-entry"><a class="lb-entry__link" href="/${lang}/${sport.slug}/${comp.slug}/">` +
+            `              <li class="lb-entry"><a class="lb-entry__link" href="/${lang}/${sport.slug}/${comp.slug}/">` +
             `${escapeHtml(t(lang, comp.nameKey))}</a></li>`
         )
         .join("\n");
       const sub = comps
-        ? `            <ul class="lb-list lb-list--nested">\n${comps
-            .split("\n")
-            .map((line) => `  ${line}`)
-            .join("\n")}\n            </ul>`
+        ? `          <ul class="lb-list lb-list--plain">\n${comps}\n          </ul>\n`
         : "";
       return (
-        `      <li class="lb-entry"><a class="lb-entry__link" href="/${lang}/${sport.slug}/">` +
-        `${escapeHtml(t(lang, sport.nameKey))}</a>` +
-        `<span class="lb-entry__meta">${sport.competitions.length} \u00b7 ${escapeHtml(t(lang, "home.competitions"))}</span>` +
-        `${sub ? `\n${sub}` : ""}</li>`
+        `        <div class="lb-card">\n` +
+        `          <h3 class="lb-card__title"><a class="lb-entry__link" href="/${lang}/${sport.slug}/">` +
+        `${escapeHtml(t(lang, sport.nameKey))}</a></h3>\n` +
+        `          <p class="lb-card__text">${escapeHtml(formatNumber(lang, sport.competitions.length))} \u00b7 ` +
+        `${escapeHtml(t(lang, "home.competitions"))}</p>\n` +
+        `${sub}` +
+        `        </div>`
       );
     })
     .join("\n");
-  const explore = `      <ul class="lb-list">\n${sports}\n      </ul>`;
+  const explore = `      <div class="lb-grid">\n${sports}\n      </div>`;
 
   const record =
     `      <dl class="lb-record">\n` +
     `        <dt class="lb-record__term">${escapeHtml(t(lang, "home.release"))}</dt><dd class="lb-record__value">${escapeHtml(ctx.release.releaseId)}</dd>\n` +
     `        <dt class="lb-record__term">${escapeHtml(t(lang, "table.date"))}</dt><dd class="lb-record__value">${escapeHtml(ctx.release.asOf)}</dd>\n` +
-    `        <dt class="lb-record__term">${escapeHtml(t(lang, "index.editions"))}</dt><dd class="lb-record__value">${escapeHtml(String(counts.editions))}</dd>\n` +
-    `        <dt class="lb-record__term">${escapeHtml(t(lang, "edition.matchesCount"))}</dt><dd class="lb-record__value">${escapeHtml(String(counts.matches))}</dd>\n` +
+    `        <dt class="lb-record__term">${escapeHtml(t(lang, "index.editions"))}</dt><dd class="lb-record__value">${escapeHtml(formatNumber(lang, counts.editions))}</dd>\n` +
+    `        <dt class="lb-record__term">${escapeHtml(t(lang, "edition.matchesCount"))}</dt><dd class="lb-record__value">${escapeHtml(formatNumber(lang, counts.matches))}</dd>\n` +
     `      </dl>`;
   const citation = t(lang, "home.cite.code", {
     release: ctx.release.releaseId,
@@ -156,17 +172,23 @@ function homeContent(ctx, page) {
 
   const links = ABOUT_LINKS.map(
     ([rel, key]) =>
-      `          <li class="lb-entry"><a class="lb-entry__link" href="/${lang}/${rel}/">${escapeHtml(t(lang, key))}</a></li>`
+      `        <div class="lb-card"><a class="lb-entry__link" href="/${lang}/${rel}/">${escapeHtml(t(lang, key))}</a></div>`
   ).join("\n");
 
+  const hero =
+    `    <section class="lb-hero">\n` +
+    `      <h1 class="lb-hero__title">${escapeHtml(t(lang, "home.title"))}</h1>\n` +
+    `      <p class="lb-hero__lede">${escapeHtml(t(lang, "home.lede"))}</p>\n` +
+    `      <div class="lb-kpis">\n${kpis}\n      </div>\n` +
+    `    </section>`;
+
   const body = [
-    `    <section class="lb-section">\n      <h1 class="lb-section__title">${escapeHtml(t(lang, "home.title"))}</h1>\n      <p class="lb-intro">${escapeHtml(t(lang, "home.lede"))}</p>\n    </section>`,
-    `    <section class="lb-section">\n      <div class="lb-kpis">\n${kpis}\n      </div>\n    </section>`,
+    hero,
     sectionNumbered("01", t(lang, "home.what.title"), what),
     sectionNumbered("02", t(lang, "home.build.title"), build),
     sectionNumbered("03", t(lang, "home.explore.title"), explore),
     sectionNumbered("04", t(lang, "home.publish.title"), publish),
-    sectionNumbered("05", t(lang, "home.links.title"), `      <ul class="lb-list">\n${links}\n      </ul>`)
+    sectionNumbered("05", t(lang, "home.links.title"), `      <div class="lb-grid">\n${links}\n      </div>`)
   ].join("\n");
 
   return {
@@ -223,12 +245,18 @@ function licenseContent(ctx, page) {
   const lang = page.lang;
   const t = (key) => ctx.t(lang, key);
   const text = (key) => `      <p class="lb-intro">${escapeHtml(t(key))}</p>`;
-  const bullet = (keys) => `      <ul class="lb-list">\n${entries(ctx.t, lang, keys)}\n      </ul>`;
+  const bullet = (keys) => `        <ul class="lb-list lb-list--plain">\n${entries(ctx.t, lang, keys)}\n        </ul>`;
   const rights =
-    `      <p class="lb-label">${escapeHtml(t("license.rights.can"))}</p>\n` +
+    `      <div class="lb-grid">\n` +
+    `        <div class="lb-card">\n` +
+    `          <h3 class="lb-card__title">${escapeHtml(t("license.rights.can"))}</h3>\n` +
     `${bullet(["license.rights.can.1", "license.rights.can.2", "license.rights.can.3", "license.rights.can.4"])}\n` +
-    `      <p class="lb-label">${escapeHtml(t("license.rights.cannot"))}</p>\n` +
-    `${bullet(["license.rights.cannot.1"])}`;
+    `        </div>\n` +
+    `        <div class="lb-card">\n` +
+    `          <h3 class="lb-card__title">${escapeHtml(t("license.rights.cannot"))}</h3>\n` +
+    `${bullet(["license.rights.cannot.1"])}\n` +
+    `        </div>\n` +
+    `      </div>`;
   const sections = [
     ["01", "license.code.title", text("license.code.text")],
     ["02", "license.data.title", text("license.data.text")],
@@ -244,7 +272,7 @@ function contributeContent(ctx, page) {
   const lang = page.lang;
   const t = (key) => ctx.t(lang, key);
   const text = (key) => `      <p class="lb-intro">${escapeHtml(t(key))}</p>`;
-  const offer = `      <ul class="lb-list">\n${entries(ctx.t, lang, [
+  const offer = `      <ul class="lb-list lb-list--plain">\n${entries(ctx.t, lang, [
     "contribute.offer.1",
     "contribute.offer.2",
     "contribute.offer.3",
@@ -276,15 +304,16 @@ function sportContent(ctx, page) {
         const full = catalog.competitions[comp.id] || {};
         const held = (full.coverage && full.coverage.held) || (full.editions || []).length;
         return (
-          `      <li class="lb-card">\n` +
-          `        <h3 class="lb-card__title"><a class="lb-entry__link" href="/${lang}/${sport.slug}/${comp.slug}/">` +
+          `        <div class="lb-card">\n` +
+          `          <h3 class="lb-card__title"><a class="lb-entry__link" href="/${lang}/${sport.slug}/${comp.slug}/">` +
           `${escapeHtml(t(lang, comp.nameKey))}</a></h3>\n` +
-          `        <p class="lb-entry__meta">${held} \u00b7 ${escapeHtml(t(lang, "index.editions"))}</p>\n` +
-          `      </li>`
+          `          <p class="lb-card__text">${escapeHtml(formatNumber(lang, held))} \u00b7 ` +
+          `${escapeHtml(t(lang, "index.editions"))}</p>\n` +
+          `        </div>`
         );
       })
       .join("\n");
-    inner = sectionNumbered("01", t(lang, "home.competitions"), `      <ul class="lb-list">\n${cards}\n      </ul>`);
+    inner = sectionNumbered("01", t(lang, "home.competitions"), `      <div class="lb-grid">\n${cards}\n      </div>`);
   } else {
     inner = `    <p class="lb-empty">${escapeHtml(t(lang, "sport.noCompetitions"))}</p>`;
   }
@@ -990,9 +1019,10 @@ function editionNav(ctx, page, comp, sport) {
 }
 
 /** Fila del libro de registro: solo si hay dato (nunca imprimir "undefined"). */
-function recordRowIfDefined(rows, term, value) {
+function recordRowIfDefined(rows, lang, term, value) {
   if (value === undefined || value === null || value === "") return;
-  rows.push(recordRow(term, String(value)));
+  const text = typeof value === "number" ? formatNumber(lang, value) : String(value);
+  rows.push(recordRow(term, text));
 }
 
 function editionRecord(ctx, page, edition) {
@@ -1000,11 +1030,11 @@ function editionRecord(ctx, page, edition) {
   const lang = page.lang;
   const coverage = edition.coverage || {};
   const rows = [];
-  recordRowIfDefined(rows, t(lang, "edition.host"), (edition.hosts || []).map((c) => escapeHtml(countryName(c, lang))).join(", "));
-  recordRowIfDefined(rows, t(lang, "edition.teams"), edition.teamsCount);
-  recordRowIfDefined(rows, t(lang, "edition.matchesCount"), coverage.matches);
-  recordRowIfDefined(rows, t(lang, "edition.goals"), coverage.goals);
-  recordRowIfDefined(rows, t(lang, "edition.scorers"), coverage.scorers);
+  recordRowIfDefined(rows, lang, t(lang, "edition.host"), (edition.hosts || []).map((c) => escapeHtml(countryName(c, lang))).join(", "));
+  recordRowIfDefined(rows, lang, t(lang, "edition.teams"), edition.teamsCount);
+  recordRowIfDefined(rows, lang, t(lang, "edition.matchesCount"), coverage.matches);
+  recordRowIfDefined(rows, lang, t(lang, "edition.goals"), coverage.goals);
+  recordRowIfDefined(rows, lang, t(lang, "edition.scorers"), coverage.scorers);
   if (!rows.length) return "";
   return `        <dl class="lb-record">\n${rows.join("\n")}\n        </dl>`;
 }

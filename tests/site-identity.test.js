@@ -13,7 +13,7 @@ const assert = require("node:assert/strict");
 const path = require("node:path");
 const { ROOT } = require("./helpers.js");
 const { buildSite } = require("../core/site/index.js");
-const { loadDictionaries, LANGS } = require("../core/site/text.js");
+const { loadDictionaries, LANGS, formatNumber } = require("../core/site/text.js");
 const { readJSON } = require("../core/io.js");
 
 const IDENTITY = [
@@ -50,11 +50,11 @@ test("site-identity: la portada deja el texto genérico antiguo y muestra KPIs r
     assert.ok(!home.html.includes(OLD_INTRO), `home [${lang}] sin el intro genérico antiguo`);
     assert.match(home.html, /class="lb-kpis"/, `home [${lang}] usa el contrato de KPIs`);
     assert.ok(
-      home.html.includes(String(release.dataset.editions)),
+      home.html.includes(formatNumber(lang, release.dataset.editions)),
       `home [${lang}] incluye las ediciones del release (${release.dataset.editions})`
     );
     assert.ok(
-      home.html.includes(String(release.dataset.matches)),
+      home.html.includes(formatNumber(lang, release.dataset.matches)),
       `home [${lang}] incluye los partidos del release (${release.dataset.matches})`
     );
   }

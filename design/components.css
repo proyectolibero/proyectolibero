@@ -895,7 +895,6 @@ html.lb-js .lb-pagination.lb-needs-js { display: flex; }
 @media (min-width: 720px) {
   .lb-gallery { padding: var(--lb-space-6); }
   .lb-gallery__grid { grid-template-columns: 1fr 1fr; }
-  .lb-kpis { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (min-width: 960px) {
@@ -1560,5 +1559,450 @@ html.lb-js .lb-pagination.lb-needs-js { display: flex; }
   .lb-result { padding: var(--lb-space-2) var(--lb-space-3); }
   .lb-scorers__item { padding: var(--lb-space-1) var(--lb-space-3); }
   .lb-chart--bar .lb-chart__svg { max-width: 44rem; }
+}
+
+/* ------------------------------------------------------------------ */
+/* Armazon visual (S3) — contenedor, cabecera, portada, pie             */
+/* ------------------------------------------------------------------ */
+/* Reviste la capa visual sobre los tokens existentes: columna central   */
+/* legible, cabecera con menus plegables, hero, tarjetas y pie en grid.  */
+
+/* Base del documento (el contenedor .lb-page ya no es el <body>).      */
+body {
+  margin: 0;
+  font-family: var(--lb-font-sans);
+  line-height: var(--lb-lh);
+  color: var(--lb-text);
+  background: var(--lb-bg);
+}
+
+/* Columna central: ancho maximo y margenes laterales con el gutter.    */
+.lb-page {
+  max-width: var(--lb-container);
+  margin: 0 auto;
+  padding: 0 var(--lb-gutter) var(--lb-space-12);
+}
+
+/* Cabecera pegajosa: marca a la izquierda, menu a la derecha.          */
+.lb-masthead {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--lb-space-2) var(--lb-space-4);
+  padding: var(--lb-space-3) 0;
+  background: var(--lb-surface);
+  border-bottom: 1px solid var(--lb-border-strong);
+}
+
+.lb-brand {
+  font-size: var(--lb-fs-lg);
+  font-weight: var(--lb-weight-bold);
+  letter-spacing: 0.01em;
+  color: var(--lb-text);
+  text-decoration: none;
+}
+
+/* Menu: <details> con mejora progresiva (sin JS queda desplegado).     */
+.lb-nav { margin-left: auto; }
+
+.lb-nav__summary {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--lb-space-2);
+  min-height: var(--lb-tap);
+  padding: 0 var(--lb-space-3);
+  cursor: pointer;
+  list-style: none;
+  border: 1px solid var(--lb-border-strong);
+  border-radius: var(--lb-radius);
+  color: var(--lb-text);
+}
+
+.lb-nav__summary::-webkit-details-marker { display: none; }
+.lb-nav__summary::marker { content: ""; }
+
+.lb-nav__burger {
+  width: 1.25rem;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--lb-text);
+  box-shadow: 0 -6px 0 var(--lb-text), 0 6px 0 var(--lb-text);
+}
+
+.lb-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lb-space-1);
+  list-style: none;
+  margin: 0;
+  padding: var(--lb-space-3) 0 0;
+}
+
+.lb-nav__item {
+  position: relative;
+  margin: 0;
+}
+
+.lb-nav__link,
+.lb-nav__label {
+  display: inline-block;
+  padding: var(--lb-space-1) 0;
+  font-size: var(--lb-fs-sm);
+}
+
+.lb-nav__link {
+  color: var(--lb-accent);
+  text-decoration: none;
+}
+
+.lb-nav__link:hover { text-decoration: underline; }
+
+.lb-nav__link[aria-current="page"] {
+  color: var(--lb-text);
+  font-weight: var(--lb-weight-medium);
+  text-decoration: underline;
+}
+
+.lb-nav__label {
+  color: var(--lb-text-muted);
+  font-weight: var(--lb-weight-medium);
+}
+
+.lb-nav__item--has-sub > .lb-nav__link::after,
+.lb-nav__item--has-sub > .lb-nav__label::after {
+  content: "\25be";
+  margin-left: var(--lb-space-1);
+  font-size: 0.7em;
+  color: var(--lb-text-muted);
+}
+
+.lb-nav__sub {
+  list-style: none;
+  margin: 0;
+  padding-left: var(--lb-space-4);
+  border-left: 1px solid var(--lb-border);
+}
+
+/* En movil el menu abierto ocupa su propia fila, a lo ancho.           */
+@media (max-width: 960px) {
+  .lb-nav[open] { flex-basis: 100%; }
+}
+
+/* Escritorio: menu horizontal con submenus desplegables al pasar/foco. */
+@media (min-width: 961px) {
+  .lb-nav { margin-left: 0; }
+  .lb-nav__summary { display: none; }
+
+  .lb-nav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--lb-space-1) var(--lb-space-5);
+    padding: 0;
+  }
+
+  .lb-nav__link,
+  .lb-nav__label { padding: var(--lb-space-2) 0; }
+
+  .lb-nav__sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 40;
+    min-width: 14rem;
+    padding: var(--lb-space-2) var(--lb-space-3);
+    border: 1px solid var(--lb-border);
+    border-radius: var(--lb-radius);
+    background: var(--lb-surface);
+    box-shadow: var(--lb-shadow-2);
+    display: none;
+  }
+
+  .lb-nav__item:hover > .lb-nav__sub,
+  .lb-nav__item:focus-within > .lb-nav__sub { display: block; }
+
+  .lb-nav__sub .lb-nav__item { margin: var(--lb-space-1) 0; }
+}
+
+/* Hero de portada: titular display y entradilla medida.                */
+.lb-hero {
+  padding: var(--lb-space-10) 0 var(--lb-space-6);
+}
+
+.lb-hero__title {
+  max-width: 24ch;
+  margin: 0 0 var(--lb-space-4);
+  font-size: var(--lb-fs-2xl);
+  line-height: var(--lb-lh-display);
+  letter-spacing: -0.01em;
+}
+
+.lb-hero__lede {
+  max-width: var(--lb-measure);
+  margin: 0 0 var(--lb-space-6);
+  font-size: var(--lb-fs-lg);
+  color: var(--lb-text-muted);
+}
+
+/* KPIs: rejilla fluida, valor y etiqueta en lineas distintas.          */
+.lb-kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: var(--lb-space-3);
+}
+
+.lb-kpi {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lb-space-1);
+  padding: var(--lb-space-4) var(--lb-space-5);
+  border: 1px solid var(--lb-border);
+  border-radius: var(--lb-radius-lg);
+  background: var(--lb-surface);
+  box-shadow: var(--lb-shadow-1);
+}
+
+.lb-kpi__value {
+  display: block;
+  font-size: var(--lb-fs-xl);
+  line-height: var(--lb-lh-tight);
+  font-variant-numeric: tabular-nums;
+  color: var(--lb-accent);
+  white-space: nowrap;
+}
+
+.lb-kpi__label {
+  display: block;
+  font-size: var(--lb-fs-sm);
+  color: var(--lb-text-muted);
+}
+
+/* Ritmo vertical de la pagina y badge numerado de seccion.             */
+.lb-main {
+  display: grid;
+  gap: var(--lb-space-10);
+  max-width: none;
+  margin: 0;
+  padding: var(--lb-space-6) 0 0;
+}
+
+.lb-section { margin: 0; }
+
+.lb-section__title {
+  display: flex;
+  align-items: center;
+  gap: var(--lb-space-3);
+  margin: 0 0 var(--lb-space-4);
+  padding-bottom: var(--lb-space-2);
+  border-bottom: 1px solid var(--lb-border);
+  font-size: var(--lb-fs-xl);
+  line-height: var(--lb-lh-tight);
+}
+
+.lb-section__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.25rem;
+  padding: var(--lb-space-1) var(--lb-space-2);
+  font-family: var(--lb-font-mono);
+  font-size: var(--lb-fs-xs);
+  font-variant-numeric: tabular-nums;
+  color: var(--lb-accent);
+  background: var(--lb-accent-soft);
+  border-radius: var(--lb-radius-pill);
+}
+
+/* El H1 de una edicion respira mas que un titulo de seccion.           */
+.lb-edition-head .lb-section__title {
+  font-size: var(--lb-fs-2xl);
+  line-height: var(--lb-lh-display);
+  letter-spacing: -0.01em;
+}
+
+/* Listas: cada entrada es una ficha con aire, no una fila a lo ancho.  */
+.lb-list {
+  display: grid;
+  gap: var(--lb-space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lb-entry {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--lb-space-1) var(--lb-space-3);
+  padding: var(--lb-space-3) var(--lb-space-4);
+  border: 1px solid var(--lb-border);
+  border-radius: var(--lb-radius);
+  background: var(--lb-surface);
+}
+
+.lb-entry:hover {
+  border-color: var(--lb-border-strong);
+  box-shadow: var(--lb-shadow-1);
+}
+
+/* Variante llana: listas dentro de tarjetas, sin doble marco.          */
+.lb-list--plain { gap: var(--lb-space-1); }
+
+.lb-list--plain .lb-entry {
+  padding: var(--lb-space-1) 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.lb-list--plain .lb-entry:hover {
+  box-shadow: none;
+}
+
+/* Rejillas de tarjetas (que es / como se construye / explora).         */
+.lb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--lb-space-4);
+}
+
+.lb-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lb-space-2);
+  padding: var(--lb-space-5);
+  border: 1px solid var(--lb-border);
+  border-radius: var(--lb-radius-lg);
+  background: var(--lb-surface);
+  box-shadow: var(--lb-shadow-1);
+}
+
+.lb-card__title {
+  margin: 0;
+  font-size: var(--lb-fs-lg);
+  line-height: var(--lb-lh-tight);
+}
+
+.lb-card__text {
+  margin: 0;
+  color: var(--lb-text-muted);
+}
+
+/* Tablas: cabecera pegajosa, cebra suave y podio con color de medalla. */
+/* `overflow: clip` (no `hidden`) mantiene el recorte redondeado sin crear
+ * contenedor de scroll, de modo que la cabecera sigue pegandose arriba. */
+.lb-standings { overflow: clip; }
+
+.lb-table thead th {
+  position: sticky;
+  top: 4.65rem;
+  z-index: 6;
+}
+
+.lb-table tbody tr:nth-child(even) { background: var(--lb-surface-2); }
+
+.lb-table tbody tr:nth-child(1) > td:first-child {
+  color: var(--lb-gold);
+  font-weight: var(--lb-weight-bold);
+}
+
+.lb-table tbody tr:nth-child(2) > td:first-child {
+  color: var(--lb-silver);
+  font-weight: var(--lb-weight-bold);
+}
+
+.lb-table tbody tr:nth-child(3) > td:first-child {
+  color: var(--lb-bronze);
+  font-weight: var(--lb-weight-bold);
+}
+
+/* Pie: tres columnas (proyecto · acerca de · licencia) y meta abajo.   */
+.lb-footer {
+  display: block;
+  margin-top: var(--lb-space-12);
+  padding: var(--lb-space-8) 0 var(--lb-space-6);
+  border-top: 1px solid var(--lb-border-strong);
+  font-size: var(--lb-fs-sm);
+  color: var(--lb-text-muted);
+}
+
+.lb-footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--lb-space-6);
+}
+
+.lb-footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lb-space-2);
+}
+
+.lb-footer__brand {
+  margin: 0;
+  font-size: var(--lb-fs-lg);
+  font-weight: var(--lb-weight-bold);
+  color: var(--lb-text);
+}
+
+.lb-footer__desc {
+  margin: 0;
+  max-width: 34ch;
+  font-size: var(--lb-fs-sm);
+}
+
+.lb-footer__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--lb-space-4);
+}
+
+.lb-footer__heading {
+  margin: 0;
+  font-size: var(--lb-fs-xs);
+  font-weight: var(--lb-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--lb-text-muted);
+}
+
+a.lb-footer__heading {
+  text-decoration: none;
+  text-transform: none;
+  font-size: var(--lb-fs-sm);
+  color: var(--lb-accent);
+  letter-spacing: 0;
+}
+
+a.lb-footer__heading:hover { text-decoration: underline; }
+
+.lb-footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--lb-space-1);
+}
+
+.lb-footer__meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--lb-space-2) var(--lb-space-4);
+  margin-top: var(--lb-space-6);
+  padding-top: var(--lb-space-4);
+  border-top: 1px solid var(--lb-border);
+}
+
+.lb-footer__rights,
+.lb-footer__asof { margin: 0; }
+
+@media (min-width: 720px) {
+  .lb-footer__grid { grid-template-columns: 1.4fr 2fr; }
 }
 

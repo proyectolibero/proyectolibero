@@ -39,6 +39,17 @@ function makeTranslator(dicts) {
   };
 }
 
+/**
+ * Cifra formateada según el idioma (separador de millares local, sin
+ * dependencias): 12173 → «12.173» en es, «12,173» en en. Un valor no
+ * numérico se devuelve tal cual (p. ej. un rango de años «2000-01»).
+ */
+function formatNumber(lang, value) {
+  const number = typeof value === "number" ? value : Number(value);
+  if (!Number.isFinite(number)) return String(value);
+  return new Intl.NumberFormat(lang).format(number);
+}
+
 /** Nombre de país por código NOC/FIFA; cae al propio código si no se conoce. */
 function makeCountryName(countries) {
   return function countryName(code, lang) {
@@ -55,6 +66,7 @@ module.exports = {
   loadDictionaries,
   loadCountries,
   format,
+  formatNumber,
   makeTranslator,
   makeCountryName
 };

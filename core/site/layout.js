@@ -21,14 +21,21 @@ function navItemHref(lang, item) {
   return `/${lang}/${item.sportSlug}/${item.slug}/`;
 }
 
+/*
+ * Menú: `<details>`/`<summary>` para el desplegable móvil (sin JS queda
+ * desplegado, legible) y submenús desplegables en escritorio por CSS
+ * (`:hover` / `:focus-within`). El `data-lb-nav` solo permite que la mejora
+ * progresiva lo pliegue en móvil; nunca es requisito para navegar.
+ */
 function renderNav(ctx, page) {
   const { t, nav } = ctx;
   const items = nav
     .map((group) => {
+      const hasSub = group.items.length > 0;
       const heading = group.slug
         ? navLink(t, page.lang, `/${page.lang}/${group.slug}/`, group.nameKey, page.path)
         : `<span class="lb-nav__label">${escapeHtml(t(page.lang, group.nameKey))}</span>`;
-      const subs = group.items.length
+      const subs = hasSub
         ? `\n            <ul class="lb-nav__sub">\n${group.items
             .map((item) => {
               const href = navItemHref(page.lang, item);
@@ -40,16 +47,22 @@ function renderNav(ctx, page) {
             })
             .join("\n")}\n            </ul>`
         : "";
-      return `          <li class="lb-nav__item">${heading}${subs}</li>`;
+      const cls = `lb-nav__item${hasSub ? " lb-nav__item--has-sub" : ""}`;
+      return `          <li class="${cls}">${heading}${subs}</li>`;
     })
     .join("\n");
   return (
-    `      <nav class="lb-nav" aria-label="${escapeHtml(t(page.lang, "a11y.nav"))}">\n` +
-    `        <ul class="lb-nav__list">\n` +
-    `          <li class="lb-nav__item">${navLink(t, page.lang, `/${page.lang}/`, "menu.home", page.path)}</li>\n` +
+    `      <details class="lb-nav" data-lb-nav open>\n` +
+    `        <summary class="lb-nav__summary">` +
+    `<span class="lb-visually-hidden">${escapeHtml(t(page.lang, "menu.open"))}</span>` +
+    `<span class="lb-nav__burger" aria-hidden="true"></span></summary>\n` +
+    `        <nav aria-label="${escapeHtml(t(page.lang, "a11y.nav"))}">\n` +
+    `          <ul class="lb-nav__list">\n` +
+    `            <li class="lb-nav__item">${navLink(t, page.lang, `/${page.lang}/`, "menu.home", page.path)}</li>\n` +
     `${items}\n` +
-    `        </ul>\n` +
-    `      </nav>`
+    `          </ul>\n` +
+    `        </nav>\n` +
+    `      </details>`
   );
 }
 
@@ -97,25 +110,36 @@ function renderFooter(ctx, page) {
   const { t } = ctx;
   const lang = page.lang;
   const year = String(ctx.release.asOf).slice(0, 4);
-  const links = [
-    ["metodologia", "menu.methodology"],
-    ["licencia", "menu.license"],
-    ["colaborar", "menu.contribute"]
-  ]
-    .map(
-      ([rel, key]) =>
-        `          <li><a class="lb-footer__link" href="/${lang}/${rel}/">${escapeHtml(t(lang, key))}</a></li>`
-    )
-    .join("\n");
+  const link = (rel, key) =>
+    `              <li><a class="lb-footer__link" href="/${lang}/${rel}/">${escapeHtml(t(lang, key))}</a></li>`;
   return (
     `    <footer class="lb-footer">\n` +
-    `      <nav class="lb-footer__nav" aria-label="${escapeHtml(t(lang, "menu.about"))}">\n` +
-    `        <ul class="lb-footer__list">\n${links}\n        </ul>\n` +
-    `      </nav>\n` +
-    `      <p class="lb-footer__rights">${escapeHtml(t(lang, "footer.rights", { year }))}</p>\n` +
-    `      <p class="lb-footer__asof lb-label">${escapeHtml(
+    `      <div class="lb-footer__grid">\n` +
+    `        <div class="lb-footer__col">\n` +
+    `          <p class="lb-footer__brand">${escapeHtml(t(lang, "site.name"))}</p>\n` +
+    `          <p class="lb-footer__desc">${escapeHtml(t(lang, "site.description"))}</p>\n` +
+    `        </div>\n` +
+    `        <nav class="lb-footer__nav" aria-label="${escapeHtml(t(lang, "menu.about"))}">\n` +
+    `          <div class="lb-footer__col">\n` +
+    `            <p class="lb-footer__heading">${escapeHtml(t(lang, "menu.about"))}</p>\n` +
+    `            <ul class="lb-footer__list">\n` +
+    `${link("metodologia", "menu.methodology")}\n` +
+    `${link("colaborar", "menu.contribute")}\n` +
+    `            </ul>\n` +
+    `          </div>\n` +
+    `          <div class="lb-footer__col">\n` +
+    `            <a class="lb-footer__heading lb-footer__link" href="/${lang}/licencia/">${escapeHtml(
+      t(lang, "menu.license")
+    )}</a>\n` +
+    `          </div>\n` +
+    `        </nav>\n` +
+    `      </div>\n` +
+    `      <div class="lb-footer__meta">\n` +
+    `        <p class="lb-footer__rights">${escapeHtml(t(lang, "footer.rights", { year }))}</p>\n` +
+    `        <p class="lb-footer__asof lb-label">${escapeHtml(
       t(lang, "home.asOf", { date: ctx.release.asOf })
     )}</p>\n` +
+    `      </div>\n` +
     `    </footer>`
   );
 }
@@ -128,16 +152,18 @@ function renderDocument(ctx, page, content) {
 <head>
 ${renderHead(ctx, page, content)}
 </head>
-<body class="lb-page">
-  <header class="lb-masthead">
-    <a class="lb-brand" href="/${escapeHtml(page.lang)}/">${escapeHtml(ctx.t(page.lang, "site.name"))}</a>
+<body>
+  <div class="lb-page">
+    <header class="lb-masthead">
+      <a class="lb-brand" href="/${escapeHtml(page.lang)}/">${escapeHtml(ctx.t(page.lang, "site.name"))}</a>
 ${renderNav(ctx, page)}
-  </header>
+    </header>
 ${renderBreadcrumb(ctx, page, content.breadcrumb)}
-  <main class="lb-main">
+    <main class="lb-main">
 ${content.body}
-  </main>
+    </main>
 ${renderFooter(ctx, page)}
+  </div>
 </body>
 </html>
 `;

@@ -117,8 +117,23 @@
     });
   }
 
+  /* --- Menu movil: sin JS queda desplegado; con JS se pliega en movil. */
+  function initNav() {
+    var mq = window.matchMedia("(max-width: 960px)");
+    queryAll("[data-lb-nav]").forEach(function (details) {
+      var sync = function () {
+        if (mq.matches) details.removeAttribute("open");
+        else details.setAttribute("open", "");
+      };
+      if (typeof mq.addEventListener === "function") mq.addEventListener("change", sync);
+      else if (typeof mq.addListener === "function") mq.addListener(sync);
+      sync();
+    });
+  }
+
   function init() {
     initTheme();
+    initNav();
     initDisclosures();
     initFilters();
     initScrubbers();
