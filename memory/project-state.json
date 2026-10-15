@@ -1,7 +1,7 @@
 {
   "project": "Deporte Mundial (Proyecto Libero)",
   "description": "Archivo abierto de resultados deportivos — proyectolibero.org. HTML estático + JSON con esquema v2, 5 idiomas (es/en/pt/zh/hi), SSG sin dependencias y URLs por ruta generadas estáticamente. Solo ediciones cerradas; nunca se venden datos.",
-  "updatedAt": "2026-10-13",
+  "updatedAt": "2026-10-15",
   "languages": [
     "es",
     "en",
@@ -12,7 +12,7 @@
   "areas": {
     "site": {
       "status": "done",
-      "notes": "SSG sin dependencias (core/site/build.js): 3.335 páginas + sitemap.xml + robots.txt (por idioma: 1 home, 4 deportes, 5 competiciones, 76 ediciones, 30 clasificaciones, 508 grupos, 43 páginas de partidos). URLs por ruta generadas estáticamente, slugs canónicos en es. site/ no se versiona (salida generada)."
+      "notes": "SSG sin dependencias (core/site/build.js): 3.345 páginas + sitemap.xml + robots.txt (por idioma: 1 home, 4 deportes, 5 competiciones, 76 ediciones, 30 clasificaciones, 508 grupos, 43 páginas de partidos). Generación en streaming (visit/collect), no materializa todas las páginas a la vez. URLs por ruta generadas estáticamente, slugs canónicos en es. site/ no se versiona (salida generada)."
     },
     "i18n": {
       "status": "done",
@@ -51,7 +51,7 @@
     },
     "validation": {
       "status": "done",
-      "notes": "Gates: node --test tests/ = 313 verdes; scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos (línea base, no puede empeorar); scripts/site-weight.js = 0 páginas sobre 300 kB (peor: Mundial 2018 [hi] 171,9 kB). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
+      "notes": "Gates: node --test tests/ = 340 tests (335 pass, 5 rojos preexistentes en tests/promote.test.js: 171, 254, 279, 440, 483; esperan validación 0 y obtienen 1, confirmados preexistentes vía git stash, pendientes de arreglo); scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos (línea base, no puede empeorar); scripts/site-weight.js = 0 páginas sobre 300 kB (peor: Mundial 2018 [hi] 171,9 kB). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
     },
     "mcp": {
       "status": "done",
@@ -63,7 +63,7 @@
     },
     "docs": {
       "status": "done",
-      "notes": "ESQUEMA-DATOS-v2, SOSTENIBILIDAD (sustituye MONETIZACION), CONTRIBUCION, AGENTES, AGENTES-COSTE, MODELOS, DISENO, SEO, ESTRUCTURA, ESTADO-ACTUAL, adr/ (índice hasta ADR-018; canónico en memory/decisions.md, D1..D53)."
+      "notes": "ESQUEMA-DATOS-v2, SOSTENIBILIDAD (sustituye MONETIZACION), CONTRIBUCION, AGENTES, AGENTES-COSTE, MODELOS, DISENO, SEO, DESPLIEGUE, ESTRUCTURA, ESTADO-ACTUAL, adr/ (índice hasta ADR-018; canónico en memory/decisions.md, D1..D60)."
     },
     "monetization": {
       "status": "done",
@@ -74,8 +74,8 @@
       "notes": "GitHub Action validate.yml (bloquea push si validate en rojo) + .gitignore."
     },
     "deployment": {
-      "status": "pending",
-      "notes": "site/ no se versiona ni está desplegado. Dominio proyectolibero.org (Cloudflare) sin publicación activa. Riesgo estratégico: 3.335 páginas sin público. Bloqueante para SEO y capa IA."
+      "status": "done",
+      "notes": "Sitio ACTIVO en Cloudflare Pages: proyecto proyectolibero (rama de producción master), https://proyectolibero.pages.dev (/ → 301 a /es/, /es/ → 200). Deploy SIEMPRE con `wrangler pages deploy site --project-name=proyectolibero`; nunca assets.directory:\".\" (D60: un wrangler.jsonc sirvió el repo entero, Worker borrado). Verificación post-deploy: /README.md y /.git/config deben dar 404. Dominio propio proyectolibero.org dado de alta como custom domain, PENDIENTE de dos CNAME proxied (@ y www → proyectolibero.pages.dev) porque el token no tiene Zone→DNS→Edit. Vía preferida a futuro: integración Git nativa."
     }
   },
   "roadmap": [
@@ -85,12 +85,12 @@
     { "id": "P4", "title": "Portada «qué es Proyecto Libero» + metodología", "status": "pending" },
     { "id": "P5", "title": "Donaciones: host fiscal Open Source Europe + dossier", "status": "pending" },
     { "id": "P6", "title": "Capa IA: llms.txt, ai/index.json, NDJSON, esquemas", "status": "pending" },
-    { "id": "P7", "title": "Escalar competiciones (R3: 8 internacionales) + SEO fino + despliegue", "status": "pending" }
+    { "id": "P7", "title": "Escalar competiciones (R3: 8 internacionales) + SEO fino", "status": "pending" }
   ],
   "nextSteps": [
     "P3 — Identidad de entidades auditable (ADR-032/D48): desbloquea la clasificación del Mundial 2002-2014 (Saar, TCH/URS/FRG)",
     "P4 — Portada «qué es Proyecto Libero» + metodología",
-    "Desplegar site/ en proyectolibero.org (hoy nada publicado)",
+    "Completar el dominio propio: crear los dos CNAME proxied (@ y www → proyectolibero.pages.dev) para proyectolibero.org, o dar Zone→DNS→Edit al token",
     "P5 — Donaciones: host fiscal Open Source Europe + dossier de registro",
     "P6 — Capa IA: llms.txt, ai/index.json, NDJSON, esquemas",
     "P7 — Escalar 8 competiciones R3 + SEO fino",

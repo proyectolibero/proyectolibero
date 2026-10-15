@@ -388,9 +388,20 @@ Formato: `## YYYY-MM-DD — D<n> — Título` con secciones Contexto / Decisión
 - **Decisión**: `core/site/build.js` emite `site/index.json`: `{ origin, release, asOf, languages, sports[] → competitions[] → editions[] }` donde cada edición lleva `year`, `data`, `json` (ruta del JSON publicado), `url` canónica (es) y `coverage`. Se deriva del catálogo y de los ficheros de edición (nunca a mano) y se devuelve en el resultado de `buildSite` como `index`. Test `tests/site-index.test.js`. Es la base para `llms.txt`/`ai/index.json` (P6) y para la capa de descubrimiento.
 - **Alternativas descartadas**: (a) Usar `tree.json`: descartado — no incluye ediciones, URLs ni cobertura. (b) Derivarlo del manifiesto de release: descartado — sin jerarquía de deportes/competiciones ni URL canónica. (c) Mantener una lista escrita a mano: descartado — viola «nada de listas a mano» (ADR-031).
 
-
 ## 2026-10-15 — D58 — Motor único para la flota de agentes: opencode-go/deepseek-v4.1-flash
 
 - **Contexto**: Hasta el 2026-10-15 los subagentes corrían en NVIDIA NIM (`nvidia/z-ai/glm-5.3`, gratuito) y solo la sesión del arquitecto en `opencode-go/deepseek-v4.1-flash`. Para la fase de publicación se busca máxima velocidad y coherencia entre quien decide y quien ejecuta.
 - **Decisión**: Todos los agentes (session del arquitecto y subagentes general, explore, architect, test-generator, code-reviewer, security-reviewer, performance-analyzer, rsssf, cloudflare, opencollective) y `small_model` usan `opencode-go/deepseek-v4.1-flash`. Configurado en `opencode.json` y el campo `model` de `.opencode/agent/{cloudflare,opencollective,rsssf}.md`; documentado en `docs/MODELOS.md`. Requiere reiniciar opencode.
 - **Alternativas descartadas**: Mantener NVIDIA gratuito para subagentes (coste 0 pero calidad/cuota variable y cambio de motor entre decisión y ejecución); `nvidia/moonshotai/kimi-k3` o `nvidia/qwen/qwen3-coder-480b-a35b-instruct` (gratuitos, mismo perfil); `opencode/big-pickle` (se agotó antes). Los relevos gratuitos siguen documentados en docs/MODELOS.md por si hay que revertir por coste.
+
+## 2026-10-15 — D59 — Publicación del sitio en Cloudflare Pages (proyectolibero.pages.dev)
+
+- **Contexto**: La web (3.345 páginas) no estaba publicada: `site/` es generado y no se versiona, y el dominio estaba sin publicar. La fase actual es de publicación.
+- **Decisión**: Publicado el sitio en Cloudflare Pages, proyecto `proyectolibero` (rama de producción `master`), subdominio `proyectolibero.pages.dev`. El build canónico es `node core/site/build.js` → `site/`. El DNS (`_headers`/`_redirects` los emite el SSG) funciona: `/` → 301 a `/es/` y `/es/` → 200. El dominio propio `proyectolibero.org` está dado de alta como custom domain pero PENDIENTE: el token no tiene permiso DNS, así que hay que crear a mano dos CNAME proxied (`@` y `www` → `proyectolibero.pages.dev`) o dar `Zone→DNS→Edit` al token.
+- **Alternativas descartadas**: Integración Git nativa de Pages (preferida a largo plazo, cero secretos, pero requiere configurar el proyecto en el dashboard); `wrangler-action` en GitHub Actions (necesita los secrets de repo). Se usó `wrangler pages deploy` directo para publicar ya, con el token del entorno.
+
+## 2026-10-15 — D60 — Nunca exponer la raíz del repo: `assets.directory` debe ser `site/`, no `.`
+
+- **Contexto**: Al desplegar en Pages, wrangler generó un `wrangler.jsonc` sin seguimiento con `assets.directory: "."` y publicó un Worker `proyectolibero` en `proyectolibero.proyectolibero.workers.dev` que servía TODO el repositorio (incluido `.git/config`). El Worker se detectó y se borró; el fichero también. El Pages no se vio afectado.
+- **Decisión**: Nunca usar `assets.directory: "."` ni desplegar Workers con la raíz del repo como assets. El sitio se publica SIEMPRE con `wrangler pages deploy site --project-name=proyectolibero` (solo el directorio generado). `wrangler.jsonc`/`wrangler.toml` quedan en `.gitignore` para que un `wrangler` no vuelva a colar la raíz. Verificación obligatoria tras cualquier deploy: `/README.md` y `/.git/config` deben dar 404.
+- **Alternativas descartadas**: Confiar en que wrangler no genere config (falso: lo hizo). Documentar solo (insuficiente: la fuga ya ocurrió una vez).

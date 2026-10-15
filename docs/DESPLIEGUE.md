@@ -80,3 +80,33 @@ node core/site/build.js      # SSG: N páginas + sitemap + robots + _headers + _
 
 `validate.yml` ya bloquea el push si la validación falla, así que Pages nunca
 construye desde un árbol en rojo.
+
+## Verificación post-deploy (obligatoria)
+
+Tras **cada** deploy, comprueba que el sitio publicado **solo** sirve `site/` y
+nunca la raíz del repo (D60):
+
+- `https://proyectolibero.pages.dev/README.md` → **404**
+- `https://proyectolibero.pages.dev/.git/config` → **404**
+
+El deploy es **SIEMPRE** con el directorio generado explícito:
+
+```bash
+node core/site/build.js
+npx wrangler pages deploy site --project-name=proyectolibero
+```
+
+**Nunca** un `wrangler.jsonc`/`wrangler.toml` con `assets.directory: "."`: eso
+publica un Worker que sirve todo el repositorio (incluido `.git/`). Esos ficheros
+están en `.gitignore` por ese motivo.
+
+## Estado del despliegue
+
+- **Activo**: proyecto Pages `proyectolibero` (rama de producción `master`),
+  `https://proyectolibero.pages.dev`; `/` → **301** a `/es/`, `/es/` → **200**.
+- **Pendiente**: `proyectolibero.org` dado de alta como custom domain; falta crear
+  los **dos CNAME proxied** (`@` y `www` → `proyectolibero.pages.dev`) porque el
+  token actual no tiene `Zone → DNS → Edit`.
+- **Vía preferida a futuro**: la **integración Git nativa** de Pages (build en
+  Cloudflare, sin token ni deploy manual desde el portátil). La sección
+  «Configuración» de arriba lo describe.

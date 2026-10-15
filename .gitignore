@@ -13,3 +13,12 @@ preview/
 /site/
 *.tmp-*
 .opencode/usage.json
+
+# wrangler files
+.wrangler
+wrangler.jsonc
+wrangler.toml
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
