@@ -268,6 +268,105 @@ function licenseContent(ctx, page) {
   return aboutPage(ctx, page, { titleKey: "license.title", ledeKey: "license.lede", sections });
 }
 
+/*
+ * Colaboración (C1): puerta de entrada sin backend. El formulario compone una
+ * URL a GitHub; sin JS el enlace directo a la plantilla siempre está visible y
+ * con JS `behaviour.js` rellena título y cuerpo y abre la incidencia. Las
+ * «issue forms» de GitHub ignoran el `body` por URL, por eso la ruta
+ * pre-rellenada es la de incidencia en blanco (`/issues/new`), no la plantilla.
+ */
+const CONTRIBUTE_REPO = "https://github.com/proyectolibero/proyectolibero";
+const CONTRIBUTE_TEMPLATE_URL = `${CONTRIBUTE_REPO}/issues/new?template=aporte-datos.yml`;
+const CONTRIBUTE_NEW_URL = `${CONTRIBUTE_REPO}/issues/new`;
+
+const CONTRIBUTE_TYPES = [
+  "contribute.type.correction",
+  "contribute.type.missing",
+  "contribute.type.translation",
+  "contribute.type.source",
+  "contribute.type.code",
+  "contribute.type.other"
+];
+
+/** Línea de estados del aporte: recibido → triaje → validado → publicado (o rechazado). */
+function contributeFlow(t, lang) {
+  const steps = ["received", "triage", "validated", "published"]
+    .map(
+      (state) =>
+        `          <li class="lb-flow__item"><span class="lb-flow__state">${escapeHtml(
+          t(lang, `contribute.flow.${state}`)
+        )}</span></li>`
+    )
+    .join("\n");
+  const rejected =
+    `          <li class="lb-flow__item lb-flow__item--alt">` +
+    `<span class="lb-flow__or">${escapeHtml(t(lang, "contribute.flow.or"))}</span> ` +
+    `<span class="lb-flow__state">${escapeHtml(t(lang, "contribute.flow.rejected"))}</span></li>`;
+  return (
+    `      <ol class="lb-flow">\n${steps}\n${rejected}\n      </ol>\n` +
+    `      <p class="lb-label">${escapeHtml(t(lang, "contribute.flow.note"))}</p>`
+  );
+}
+
+function contributeField(lang, t, id, labelKey, control) {
+  return (
+    `        <div class="lb-field">\n` +
+    `          <label class="lb-field__label" for="${escapeHtml(id)}">${escapeHtml(t(labelKey))}</label>\n` +
+    `          ${control}\n` +
+    `        </div>`
+  );
+}
+
+/** Formulario estático (sin backend): la acción real la resuelve GitHub por URL. */
+function contributeForm(ctx, page) {
+  const lang = page.lang;
+  const t = (key) => ctx.t(lang, key);
+  const competitionOptions = Object.values(ctx.catalog.competitions)
+    .map((comp) => `            <option value="${escapeHtml(t(comp.i18nKey))}">${escapeHtml(t(comp.i18nKey))}</option>`)
+    .concat([`            <option value="${escapeHtml(t("contribute.form.other"))}">${escapeHtml(t("contribute.form.other"))}</option>`])
+    .join("\n");
+  const typeOptions = CONTRIBUTE_TYPES.map(
+    (key) => `            <option value="${escapeHtml(t(key))}">${escapeHtml(t(key))}</option>`
+  ).join("\n");
+  const select = (id, name, options) =>
+    `<select class="lb-field__input" id="${escapeHtml(id)}" name="${escapeHtml(name)}">\n${options}\n          </select>`;
+  const input = (id, name, placeholder) =>
+    `<input class="lb-field__input" id="${escapeHtml(id)}" name="${escapeHtml(name)}" type="text"` +
+    `${placeholder ? ` placeholder="${escapeHtml(placeholder)}"` : ""}>`;
+  const textarea =
+    `<textarea class="lb-field__input" id="lb-aporte-descripcion" name="descripcion" rows="5"></textarea>`;
+  const confirm =
+    `        <div class="lb-field lb-field--check">\n` +
+    `          <label class="lb-check"><input type="checkbox" name="confirm"> ` +
+    `<span>${escapeHtml(t("contribute.form.confirm"))}</span></label>\n` +
+    `        </div>`;
+  return (
+    `      <p class="lb-intro">${escapeHtml(t("contribute.form.lede"))}</p>\n` +
+    `      <form class="lb-form" data-lb-contribute data-lb-contribute-action="${escapeHtml(CONTRIBUTE_NEW_URL)}" data-lb-contribute-invalid="${escapeHtml(t("contribute.form.invalid"))}">\n` +
+    `${contributeField(lang, t, "lb-aporte-competicion", "contribute.form.competicion", select("lb-aporte-competicion", "competicion", competitionOptions))}\n` +
+    `${contributeField(lang, t, "lb-aporte-edicion", "contribute.form.edicion", input("lb-aporte-edicion", "edicion", "1938"))}\n` +
+    `${contributeField(lang, t, "lb-aporte-tipo", "contribute.form.tipo", select("lb-aporte-tipo", "tipo", typeOptions))}\n` +
+    `${contributeField(lang, t, "lb-aporte-descripcion", "contribute.form.descripcion", textarea)}\n` +
+    `${contributeField(lang, t, "lb-aporte-fuente", "contribute.form.fuente", input("lb-aporte-fuente", "fuente", ""))}\n` +
+    `${contributeField(lang, t, "lb-aporte-fecha", "contribute.form.fecha", input("lb-aporte-fecha", "fecha", "2026-10-15"))}\n` +
+    `${contributeField(lang, t, "lb-aporte-autoria", "contribute.form.autoria", input("lb-aporte-autoria", "autoria", ""))}\n` +
+    `${confirm}\n` +
+    `        <div class="lb-form__actions">\n` +
+    `          <button class="lb-button lb-needs-js" type="submit">${escapeHtml(t("contribute.form.submit"))}</button>\n` +
+    `          <span class="lb-form__status" data-lb-contribute-status role="status" aria-live="polite"></span>\n` +
+    `        </div>\n` +
+    `      </form>\n` +
+    `      <div class="lb-fallback">\n` +
+    `        <p class="lb-fallback__text">${escapeHtml(t("contribute.form.nojs"))}</p>\n` +
+    `        <p><a class="lb-entry__link" href="${escapeHtml(CONTRIBUTE_TEMPLATE_URL)}">` +
+    `${escapeHtml(t("contribute.form.nojs.link"))}</a></p>\n` +
+    `      </div>\n` +
+    `      <p class="lb-label">${escapeHtml(t("contribute.form.options"))}</p>\n` +
+    `      <p class="lb-form__note">${escapeHtml(t("contribute.form.option.a"))}</p>\n` +
+    `      <p class="lb-form__note">${escapeHtml(t("contribute.form.option.b"))}</p>`
+  );
+}
+
 function contributeContent(ctx, page) {
   const lang = page.lang;
   const t = (key) => ctx.t(lang, key);
@@ -278,13 +377,21 @@ function contributeContent(ctx, page) {
     "contribute.offer.3",
     "contribute.offer.4"
   ])}\n      </ul>`;
-  const links = `${text("contribute.links.text")}\n${text("contribute.form.pending")}`;
+  const docs =
+    text("contribute.links.text") +
+    `\n      <ul class="lb-list lb-list--plain">\n` +
+    `        <li class="lb-entry"><a class="lb-entry__link" href="${CONTRIBUTE_REPO}/blob/master/docs/COLABORACION.md">` +
+    `${escapeHtml(t("contribute.docs.colaboracion"))}</a></li>\n` +
+    `        <li class="lb-entry"><a class="lb-entry__link" href="${CONTRIBUTE_REPO}/blob/master/CONTRIBUTING.md">` +
+    `${escapeHtml(t("contribute.docs.contributing"))}</a></li>\n` +
+    `      </ul>`;
   const sections = [
     ["01", "contribute.offer.title", offer],
     ["02", "contribute.propose.title", text("contribute.propose.text")],
-    ["03", "contribute.after.title", text("contribute.after.text")],
-    ["04", "contribute.trust.title", text("contribute.trust.text")],
-    ["05", "contribute.links.title", links]
+    ["03", "contribute.form.title", contributeForm(ctx, page)],
+    ["04", "contribute.after.title", contributeFlow(ctx.t, lang)],
+    ["05", "contribute.trust.title", text("contribute.trust.text")],
+    ["06", "contribute.links.title", docs]
   ];
   return aboutPage(ctx, page, { titleKey: "contribute.title", ledeKey: "contribute.lede", sections });
 }

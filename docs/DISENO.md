@@ -87,6 +87,7 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 | Armazón (S3) | `.lb-nav__summary`, `.lb-nav__burger`, `.lb-nav__item--has-sub`, `.lb-hero`, `.lb-hero__title`, `.lb-hero__lede`, `.lb-grid`, `.lb-list--plain`, `.lb-card__text`, `.lb-footer__grid`, `.lb-footer__col`, `.lb-footer__brand`, `.lb-footer__desc`, `.lb-footer__heading`, `.lb-footer__meta` |
 | Pestañas de competición (S4) | `.lb-tabs`, `.lb-tabs__list`, `.lb-tabs__item`, `.lb-tabs__link` |
 | Selector de edición (S4) | `.lb-edition-select`, `.lb-edition-select__summary`, `.lb-edition-select__label`, `.lb-edition-select__current`, `.lb-edition-select__list`, `.lb-edition-select__item`, `.lb-edition-select__link` |
+| Colaboración (C1) | `.lb-flow`, `.lb-flow__item`, `.lb-flow__item--alt`, `.lb-flow__state`, `.lb-flow__or`, `.lb-form`, `.lb-field`, `.lb-field__label`, `.lb-field__input`, `.lb-field--check`, `.lb-check`, `.lb-form__actions`, `.lb-button`, `.lb-form__status`, `.lb-form__note`, `.lb-fallback`, `.lb-fallback__text` |
 
 ### Paginación en cliente: disponible, no usada por el SSG
 

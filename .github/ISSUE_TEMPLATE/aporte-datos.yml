@@ -1,0 +1,77 @@
+name: Aporte de datos
+description: Propón una corrección, resultados que faltan, una traducción, una fuente nueva o código.
+title: "[aporte] "
+labels:
+  - aporte
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por aportar. Lee antes `docs/CONTRIBUCION.md` y el proceso en
+        `docs/COLABORACION.md`: toda afirmación necesita una fuente citable.
+  - type: dropdown
+    id: competicion
+    attributes:
+      label: Competición
+      description: ¿A qué competición del catálogo se refiere el aporte?
+      options:
+        - Copa Mundial de la FIFA (football/worldcup)
+        - Eurocopa (Campeonato de Europa de la UEFA) (football/eurochamp)
+        - Campeonato Nórdico (football/nordic)
+        - Copa de los Balcanes (football/balkancup)
+        - Copa FIFA Confederaciones (football/intconcup)
+        - Otra
+    validations:
+      required: true
+  - type: input
+    id: edicion
+    attributes:
+      label: Edición
+      description: Año de la edición (p. ej. 1938). Si no aplica, indícalo.
+      placeholder: "1938"
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de aporte
+      options:
+        - Corrección de un dato
+        - Resultados que faltan
+        - Traducción
+        - Fuente nueva
+        - Código
+        - Otro
+    validations:
+      required: true
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción
+      description: Explica con precisión qué cambia y por qué.
+    validations:
+      required: true
+  - type: input
+    id: fuente
+    attributes:
+      label: Fuente
+      description: URL o cita bibliográfica completa. Obligatoria.
+    validations:
+      required: true
+  - type: input
+    id: fecha
+    attributes:
+      label: Fecha de consulta
+      placeholder: "2026-10-15"
+  - type: input
+    id: autoria
+    attributes:
+      label: Autoría/licencia de la fuente
+      description: Quién firma la fuente y bajo qué licencia. Las fichas verbatim no se relicencian.
+  - type: checkboxes
+    id: confirmacion
+    attributes:
+      label: Confirmación
+      options:
+        - label: Confirmo que la fuente es citable y que puedo compartir esta información
+          required: true

@@ -131,6 +131,46 @@
     });
   }
 
+  /* --- Formulario de aporte: compone la URL de GitHub (opcional) ------ */
+  function initContribute() {
+    var names = ["competicion", "edicion", "tipo", "descripcion", "fuente", "fecha", "autoria"];
+    queryAll("[data-lb-contribute]").forEach(function (form) {
+      var endpoint = form.getAttribute("data-lb-contribute-action");
+      if (!endpoint) return;
+      var status = form.querySelector("[data-lb-contribute-status]");
+      var invalid = form.getAttribute("data-lb-contribute-invalid") || "";
+      function entries() {
+        return names
+          .map(function (name) {
+            var el = form.querySelector('[name="' + name + '"]');
+            if (!el) return null;
+            var label = el.id ? form.querySelector('label[for="' + el.id + '"]') : null;
+            var heading = label ? label.textContent.trim() : name;
+            return { name: name, heading: heading, value: String(el.value || "").trim() };
+          })
+          .filter(Boolean);
+      }
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var rows = entries();
+        var byName = {};
+        rows.forEach(function (row) { byName[row.name] = row.value; });
+        var confirm = form.querySelector('[name="confirm"]');
+        if (!byName.descripcion || !byName.fuente || (confirm && !confirm.checked)) {
+          if (status) status.textContent = invalid;
+          return;
+        }
+        if (status) status.textContent = "";
+        var title = "[aporte] " + [byName.tipo, byName.competicion, byName.edicion].filter(Boolean).join(" \u00b7 ");
+        var body = rows
+          .map(function (row) { return "### " + row.heading + "\n" + (row.value || "\u2014"); })
+          .join("\n\n");
+        var url = endpoint + "?labels=aporte&title=" + encodeURIComponent(title) + "&body=" + encodeURIComponent(body);
+        window.open(url, "_blank", "noopener,noreferrer");
+      });
+    });
+  }
+
   function init() {
     initTheme();
     initNav();
@@ -138,6 +178,7 @@
     initFilters();
     initScrubbers();
     initPagination();
+    initContribute();
   }
 
   if (document.readyState === "loading") {
