@@ -47,6 +47,64 @@ recibido ─▶ triaje ─▶ validado ─▶ publicado
 Cuando un dato se descarta, **no se borra**: se mueve a `provenance.rejected`
 con su motivo ([ADR-023/D33](../memory/decisions.md)).
 
+### Etiquetas de GitHub ↔ estados de la cola
+
+Las etiquetas de la issue son la **vista pública** del estado; `inbox/<id>/status.json`
+es la **fuente de verdad** de la cola.
+
+| Etiqueta de la issue | Estado de la cola |
+|---|---|
+| `aporte` | `recibido` |
+| `triaje` | `triaje` |
+| `validado` | `validado` |
+| `publicado` | `publicado` |
+| `rechazado` | `rechazado` |
+
+La etiqueta `aporte` la pone la propia plantilla al abrir la issue. El resto las
+aplica quien mueve el estado, en GitHub y en la cola a la vez.
+
+## CLI de la cola (`scripts/inbox.js`)
+
+Sin dependencias y **sin llamar a la API de GitHub** (nada de tokens). Cada
+aporte vive en `inbox/<id>/` (`id = i<issue>`): `aporte.md` (texto crudo),
+`meta.json` (autoría, fuente, competición…), `status.json` (estado + historial)
+y, opcionalmente, `draft.json` (borrador listo para `reconcile`/`promote`).
+
+```bash
+# Crear la entrada copiando el cuerpo de la issue (id = i42) en estado 'recibido'.
+# El crudo se pasa por --raw o, si no, se pega a mano en aporte.md.
+node scripts/inbox.js add --from-issue=42 --author="Ana P." --date=2026-10-15 \
+  --competition=football/worldcup --year=1938 --type="Corrección de un dato" \
+  --source-url="https://www.rsssf.org/tables/38f.html" --raw=issue42.md
+
+# Ver la cola (o filtrar por estado; --json es máquina-legible).
+node scripts/inbox.js list
+node scripts/inbox.js list --state=triaje --json
+
+# Aplicar una transición (rechaza las inválidas con exit ≠ 0).
+node scripts/inbox.js set i42 triaje --by=mantenedor --note="falta fuente"
+node scripts/inbox.js set i42 validado
+node scripts/inbox.js set i42 publicado --confirm   # último paso, exige --confirm
+
+# Ver meta y estado de un aporte.
+node scripts/inbox.js show i42
+```
+
+Transiciones válidas (`publicado` y `rechazado` son terminales):
+
+```
+recibido → {triaje, rechazado}
+triaje   → {validado, rechazado, recibido}
+validado → {publicado, rechazado, triaje}
+publicado → ∅        rechazado → ∅
+```
+
+`set … publicado` exige `--confirm`: registra el último paso, pero la
+publicación **real** de los datos la sigue haciendo
+`node scripts/ingest.js promote --confirm`, siempre con aprobación humana.
+Si no se pasa `--date`, la cola **no inventa** la fecha del aporte; solo usa la
+del sistema para la entrada del historial.
+
 ## Niveles de confianza
 
 Se reutilizan los de [`CONTRIBUCION.md`](CONTRIBUCION.md):
@@ -69,6 +127,11 @@ Los agentes **proponen y comprueban**; la decisión de publicar es humana.
 | **Verificador** | Borrador + fuente | Contraste, conflictos y `provenance.rejected` | No publica |
 | **Publicador** | Borrador verificado | `promote --confirm` (valida, escribe atómico, regenera release) | No decide el contenido |
 
+Cada rol mueve el aporte con el CLI de la cola (`scripts/inbox.js`): Triaje
+`recibido→triaje`; Parser y Verificador `triaje→validado`; Publicador
+`validado→publicado --confirm`. El estado de la cola refleja el avance, pero el
+paso `publicado` **solo lo firma una persona** tras `promote --confirm`.
+
 Reglas que no se rompen:
 
 1. **`promote --confirm` es siempre el último paso** y exige aprobación humana.
@@ -82,4 +145,5 @@ Reglas que no se rompen:
 - [`CONTRIBUCION.md`](CONTRIBUCION.md) — flujo Git-first, confianza, licencias.
 - [`CONTRIBUTING.md`](../CONTRIBUTING.md) — resumen para contribuir.
 - [`FLUJO-EDICIONES.md`](FLUJO-EDICIONES.md) — cómo entra una edición nueva.
+- `scripts/inbox.js` — CLI de la cola de aportes (`list` · `add` · `set` · `show`).
 - `.github/ISSUE_TEMPLATE/aporte-datos.yml` — plantilla de aporte.

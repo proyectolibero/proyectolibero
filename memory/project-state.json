@@ -51,7 +51,7 @@
     },
     "validation": {
       "status": "done",
-      "notes": "Gates: node --test --test-concurrency=2 tests/ = 347 tests, 0 fallos; scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos (línea base, no puede empeorar); scripts/site-weight.js = 0 páginas sobre 300 kB de 2.575 medidas (peor: Mundial 2014 [hi] 190,7 kB). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
+      "notes": "Gates: node --test --test-concurrency=2 tests/ = 361 tests, 0 fallos; scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos (línea base, no puede empeorar); scripts/site-weight.js = 0 páginas sobre 300 kB de 2.575 medidas (peor: Mundial 2014 [hi] 190,7 kB). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
     },
     "mcp": {
       "status": "done",
@@ -76,6 +76,10 @@
     "deployment": {
       "status": "done",
       "notes": "Sitio ACTIVO en Cloudflare Pages: proyecto proyectolibero (rama de producción master), https://proyectolibero.pages.dev (/ → 301 a /es/, /es/ → 200). Deploy SIEMPRE con `wrangler pages deploy site --project-name=proyectolibero`; nunca assets.directory:\".\" (D60: un wrangler.jsonc sirvió el repo entero, Worker borrado). Verificación post-deploy: /README.md y /.git/config deben dar 404. Dominio propio proyectolibero.org dado de alta como custom domain, PENDIENTE de dos CNAME proxied (@ y www → proyectolibero.pages.dev) porque el token no tiene Zone→DNS→Edit. Vía preferida a futuro: integración Git nativa."
+    },
+    "colaboracion": {
+      "status": "in-progress",
+      "notes": "C1 (2026-10-15): /colaborar/ estático sin backend (enlace a la plantilla sin JS; con JS abre la issue pre-rellenada) y plantilla .github/ISSUE_TEMPLATE/aporte-datos.yml. C2a (2026-10-15): scripts/inbox.js — cola inbox/<id>/ (i<issue>) con aporte.md, meta.json y status.json; máquina recibido→triaje→validado→publicado (+rechazado terminal desde cualquier estado no terminal), transiciones validadas con mensaje claro, 'publicado' exige --confirm, --root inyectable, JSON corrupto = error claro; tests/inbox.test.js; etiquetas GitHub↔estados y roles de agentes en docs/COLABORACION.md. Pendiente C2b: panel de agentes."
     }
   },
   "roadmap": [
@@ -88,13 +92,13 @@
     { "id": "P7", "title": "Escalar competiciones (R3: 8 internacionales) + SEO fino", "status": "pending" },
     { "id": "N1", "title": "Rediseño de navegación (pestañas y páginas por competición)", "status": "done" },
     { "id": "N2", "title": "Ficha de partido en modal + buscador estático", "status": "pending" },
-    { "id": "C1", "title": "Colaboración", "status": "pending" },
-    { "id": "C2", "title": "Colaboración", "status": "pending" },
+    { "id": "C1", "title": "Colaboración: formulario→issue y plantilla", "status": "done" },
+    { "id": "C2", "title": "Colaboración: cola de aportes (C2a) y panel de agentes (C2b)", "status": "in-progress" },
     { "id": "F3", "title": "Build incremental", "status": "pending" }
   ],
   "nextSteps": [
     "N2 — Ficha de partido en modal + buscador estático",
-    "C1/C2 — Colaboración: formulario→issue, cola de aportes, panel de agentes",
+    "C2 — Colaboración: cola de aportes (C2a ✅, scripts/inbox.js) y panel de agentes pendiente",
     "F3 — Build incremental",
     "P3 — Identidad de entidades auditable (ADR-032/D48): desbloquea la clasificación del Mundial 2002-2014 (Saar, TCH/URS/FRG)",
     "Completar el dominio propio: crear los dos CNAME proxied (@ y www → proyectolibero.pages.dev) para proyectolibero.org, o dar Zone→DNS→Edit al token",

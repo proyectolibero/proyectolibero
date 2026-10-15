@@ -18,14 +18,14 @@ Archivo abierto de resultados deportivos: `proyectolibero.org`, HTML estático +
 - **Clasificación Mundial**: completa 1934–1998 y 2018–2022; **parcial 2002–2014** (entidades sin resolver en `i18n/countries.json`, p. ej. Saar); **2026 pendiente** (solo fase final, 104 partidos); 1930 no tuvo.
 - **Clasificación Eurocopa**: completa 1988 y 1996–2024; **1960–1984 y 1992 sin publicar** (RSSSF no la ofrece legible). Balkan/Confederaciones/Nordic: no existe.
 - **Fases y conclusión (ADR-035/D51-52)**: el catálogo declara `declaredPhases` por **clase** (`qualifying|group|knockout|ranking|heat`) y la conclusión **se deriva** (scope all + sin fases ausentes ni parciales + campeón; `coverage.complete` ya no se escribe a mano). Hoy: **9 ediciones con fase ausente** (Eurocopa 1960–1984 y 1992; Mundial 2026) y **4 Mundiales con clasificación parcial** (2002–2014, `partialPhases`). La ficha de edición muestra el bloque «Fases declaradas» con lo presente y lo que falta; el hub de competición muestra el estado de cada edición (Concluida / No concluida / No celebrado). **Presentación por fases (D61)**: cada fase agrupa su clasificación y sus resultados en la misma sección, con un índice de fases anclado bajo el H1 y anclas `fase-grupo`/`fase-eliminatoria`/`fase-final`. Capturas: `preview/eurocopa-1960-fases-{1440,390}.png`, `preview/hub-mundial-conclusion-1440.png`.
-- **Identidad pública (D62)**: portada de presentación (H1 + lede + KPIs reales + «qué es y qué no es» + «cómo se construye» + «explora el archivo» + «publicación») y tres páginas por idioma: **Metodología** (`/metodologia/`), **Licencia y uso** (`/licencia/`) y **Cómo colaborar** (`/colaborar/`); menú «Acerca de» y pie enlazado. El KPI **«Deportes publicados»** cuenta solo los deportes con al menos una competición (hoy **1**), no el total del catálogo (4). **Colaboración (C1, 2026-10-15)**: `/colaborar/` incorpora la línea de estados del aporte, un formulario estático sin backend (enlace directo a la plantilla sin JS; con JS abre la incidencia pre-rellenada) y el proceso documentado en [`docs/COLABORACION.md`](COLABORACION.md); plantilla de aporte en `.github/ISSUE_TEMPLATE/aporte-datos.yml`.
+- **Identidad pública (D62)**: portada de presentación (H1 + lede + KPIs reales + «qué es y qué no es» + «cómo se construye» + «explora el archivo» + «publicación») y tres páginas por idioma: **Metodología** (`/metodologia/`), **Licencia y uso** (`/licencia/`) y **Cómo colaborar** (`/colaborar/`); menú «Acerca de» y pie enlazado. El KPI **«Deportes publicados»** cuenta solo los deportes con al menos una competición (hoy **1**), no el total del catálogo (4). **Colaboración (C1, 2026-10-15)**: `/colaborar/` incorpora la línea de estados del aporte, un formulario estático sin backend (enlace directo a la plantilla sin JS; con JS abre la incidencia pre-rellenada) y el proceso documentado en [`docs/COLABORACION.md`](COLABORACION.md); plantilla de aporte en `.github/ISSUE_TEMPLATE/aporte-datos.yml`. **Cola de aportes (C2a, 2026-10-15)**: `scripts/inbox.js` + `tests/inbox.test.js`; estados `recibido→triaje→validado→publicado` (y `rechazado` terminal), etiquetas↔estados, transiciones validadas y `publicado` con `--confirm`; documentado en [`docs/COLABORACION.md`](COLABORACION.md).
 - **Armazón visual (D63-D64)**: rediseño del chasis (contenedor, cabecera con menús desplegables y hamburguesa, hero, tarjetas, tablas, **números por idioma**). Los assets de diseño (`tokens.css`, `components.css`, `behaviour.js`) se publican con **huella de contenido** en el nombre (`components.6733eacf.css`, sha256 primeros 8 hex del contenido) y cache inmutable `public, max-age=31536000` (D64); el HTML referencia siempre la ruta con huella (arregla el CSS viejo tras un rediseño). Las banderas (SVG por código) mantienen nombre y cache de 1 día.
 - **Navegación de competición (N1/D63)**: el hub gana la barra de pestañas `Resumen · Ganadores · Goleadores · Calendario` (una pestaña solo se enlaza si tiene datos); 3 páginas nuevas por competición e idioma: `…/ganadores/` (campeón/subcampeón/tercero por edición + títulos por selección), `…/goleadores/` (**por edición**, tope 10 y enlace a la edición; nunca agregados entre ediciones) y `…/calendario/` (fechas mín–máx, sedes, nº de partidos y resultado de la final). La página de edición gana un selector de edición sin JS (`<details>`). 75 páginas nuevas (3 × 5 competiciones × 5 idiomas).
 - **Web**: `node core/site/build.js` → **3.420 páginas** + sitemap.xml + robots.txt + `_headers`/`_redirects` (por idioma: 1 home, **1 deporte publicado**, 5 competiciones + 15 de pestañas, 76 ediciones, 30 clasificaciones, 510 grupos, 43 páginas de partidos, 3 de identidad). SSG en **streaming** (`visit`+`collect`), no materializa todas las páginas a la vez (los tests de sitio ya no agotan el heap). `site/` no se versiona; capturas en `preview/`.
 - **Despliegue (D59/D60)**: sitio **activo** en Cloudflare Pages, proyecto `proyectolibero` (rama de producción `master`), `https://proyectolibero.pages.dev` (`/`→301 a `/es/`, `/es/`→200). Deploy SIEMPRE con `wrangler pages deploy site --project-name=proyectolibero`; nunca `assets.directory:"."`. `proyectolibero.org` dado de alta como custom domain pero **pendiente de los dos CNAME** proxied (`@` y `www` → `proyectolibero.pages.dev`); vía preferida a futuro: integración Git nativa. Ver `docs/DESPLIEGUE.md`.
 
 ## Calidad (verificada hoy)
-- `node --test --test-concurrency=2 tests/` → **347 tests, 0 fallos**. `node scripts/validate.js` → **0 errores / 0 avisos**; `node --test tests/memory-sync.test.js` → 6/6; `node --test tests/site-identity.test.js` → 3/3.
+- `node --test --test-concurrency=2 tests/` → **361 tests, 0 fallos**. `node scripts/validate.js` → **0 errores / 0 avisos**; `node --test tests/memory-sync.test.js` → 6/6; `node --test tests/site-identity.test.js` → 3/3.
 - `node scripts/integrity.js` → **0 errores / 43 avisos = línea base** (1 excepción auditable: Balkan 1935). No puede empeorar.
 - `node scripts/site-weight.js` → presupuesto **300 kB/página**, 2.575 páginas medidas (Mundial por defecto), **0 por encima**; peor: Mundial 2014 [hi] 190,7 kB. Fila de partido ~845 B.
 
@@ -43,12 +43,12 @@ Archivo abierto de resultados deportivos: `proyectolibero.org`, HTML estático +
 5. **P5 — Donaciones**: host fiscal Open Source Europe + dossier de registro.
 6. **P6 — Capa IA**: `llms.txt`, `ai/index.json`, NDJSON, esquemas.
 7. **P7 — Escalar competiciones** (R3: 8 internacionales restantes) + SEO fino (despliegue ✅ activo en `proyectolibero.pages.dev`; falta el dominio propio, pendiente de DNS).
-- **Próximos pasos acordados (2026-10-15)**: **N2 — Ficha de partido en modal + buscador estático**, **C1/C2 — Colaboración** (formulario→issue, cola de aportes, panel de agentes), **F3 — Build incremental**; además crear los dos CNAME de `proyectolibero.org` y **hacer push de los commits locales** (N1 cerrada en local, sin push).
+- **Próximos pasos acordados (2026-10-15)**: **N2 — Ficha de partido en modal + buscador estático**, **C1 ✅ / C2 en curso — Colaboración** (formulario→issue ✅, cola de aportes ✅ C2a, panel de agentes pendiente), **F3 — Build incremental**; además crear los dos CNAME de `proyectolibero.org` y **hacer push de los commits locales** (N1 cerrada en local, sin push).
 
 ## Comandos útiles
 ```bash
 node scripts/validate.js                 # gate (CI/MCP)
-node --test --test-concurrency=2 tests/ # suite (347 tests, 0 fallos)
+node --test --test-concurrency=2 tests/ # suite (361 tests, 0 fallos)
 node scripts/integrity.js                # anomalías semánticas (línea base 43 avisos)
 node scripts/site-weight.js              # presupuesto de peso del SSG
 node scripts/usage.js                    # tokens por día/modelo/agente
@@ -58,6 +58,11 @@ node scripts/ingest.js fetch --sources=rsssf:54f,rsssf:54full,rsssf:54q
 node scripts/ingest.js build --year=1954 --base=published
 node scripts/ingest.js reconcile --year=1954
 node scripts/ingest.js promote --sport=football --competition=worldcup --year=1954 --confirm
+node scripts/inbox.js add --from-issue=42 --author="Ana P." --raw=issue42.md
+node scripts/inbox.js list [--state=triaje] [--json]
+node scripts/inbox.js set i42 triaje --by=mantenedor
+node scripts/inbox.js set i42 publicado --confirm   # último paso (aprobación humana)
+node scripts/inbox.js show i42
 node admin/server.js                     # panel (127.0.0.1:8787)
 python -m http.server 8080               # web local (+ /preview/)
 ```
