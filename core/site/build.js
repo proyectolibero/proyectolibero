@@ -21,6 +21,7 @@ const { renderContent } = require("./templates.js");
 const { loadSiteConfig } = require("./siteconfig.js");
 const { loadFlagManifest, flagCodes, FLAGS_DIR } = require("./flags.js");
 const { collectEditionSeries } = require("./series.js");
+const { planPublicFiles, collectPublished } = require("./publish.js");
 
 /*
  * Generador del escaparate (SSG). Escribe HTML estático determinista bajo
@@ -254,6 +255,21 @@ function buildHeaders() {
     "",
     "/assets/design/flags/*",
     "  Cache-Control: public, max-age=86400",
+    "",
+    "/data/*",
+    "  Cache-Control: public, max-age=86400",
+    "",
+    "/schemas/*",
+    "  Cache-Control: public, max-age=86400",
+    "",
+    "/releases/*",
+    "  Cache-Control: public, max-age=86400",
+    "",
+    "/ai/*",
+    "  Cache-Control: public, max-age=86400",
+    "",
+    "/llms.txt",
+    "  Cache-Control: public, max-age=86400",
     ""
   ].join("\n");
 }
@@ -376,12 +392,12 @@ function buildSite(root, options = {}) {
     throw new Error(`catálogo inválido: ${catalog.errors.map((e) => e.message).join("; ")}`);
   }
   const requested = resolveEditions(catalog, options);
-  const published = fullEditionList(catalog);
-  const partial = requested.length < published.length;
+  const publishedList = fullEditionList(catalog);
+  const partial = requested.length < publishedList.length;
   const warn = options.warn || ((message) => process.stderr.write(message));
   if (partial && options.write !== false) {
     warn(
-      `AVISO: build parcial: ${requested.length} de ${published.length} ediciones publicadas; ` +
+      `AVISO: build parcial: ${requested.length} de ${publishedList.length} ediciones publicadas; ` +
         `'${outDir}/' quedará incompleto. Para un build completo, omite --competition y --years.\n`
     );
   }
@@ -402,6 +418,13 @@ function buildSite(root, options = {}) {
 
   const assetPlan = planAssets(root);
 
+  /*
+   * Vista publicada del catálogo (todas las ediciones con datos, no solo las
+   * planificadas): alimenta la página `/datos/` y la capa para máquinas. Se
+   * deriva del catálogo y de los JSON; nunca se inventa.
+   */
+  const published = collectPublished(root, catalog, model);
+
   const ctx = {
     model,
     catalog,
@@ -414,7 +437,8 @@ function buildSite(root, options = {}) {
     editions: editionsMap,
     flags,
     assets: assetPlan.urls,
-    seriesByComp
+    seriesByComp,
+    published
   };
 
   const pagePlan = planSite(model, planned);
@@ -477,6 +501,10 @@ function buildSite(root, options = {}) {
   const indexes = { tree, facets: facetIndexes };
   const index = buildRootIndex(root, catalog, release, model);
 
+  /* Publicación abierta: ficheros estáticos derivados del catálogo. */
+  const publicFiles = planPublicFiles(root, releaseId);
+  const staticUrls = publicFiles.map((file) => `/${file.to}`);
+
   if (shouldWrite) {
     pushWritten(writeText(path.join(root, outDir, "indexes", "tree.json"), `${JSON.stringify(tree, null, 2)}\n`));
     pushWritten(
@@ -498,6 +526,14 @@ function buildSite(root, options = {}) {
         pushWritten(copyIfChanged(path.join(flagsFrom, name), path.join(flagsTo, name)));
       }
     }
+    /*
+     * Publicación abierta: `data/**`, `schemas/**` y `releases/<id>/**` se
+     * copian SIEMPRE (idempotente), no dependen del manifiesto incremental; las
+     * páginas siguen siendo incrementales.
+     */
+    for (const file of publicFiles) {
+      pushWritten(copyIfChanged(file.from, path.join(root, outDir, file.to)));
+    }
     /* El manifiesto se escribe al final: refleja exactamente lo que queda en disco. */
     pushWritten(writeText(manifestFile(root), `${JSON.stringify(nextManifest, null, 2)}\n`));
   }
@@ -516,8 +552,10 @@ function buildSite(root, options = {}) {
     assets: assetPlan.urls,
     langs: LANGS,
     partial,
-    publishedEditions: published.length,
-    indexes
+    publishedEditions: publishedList.length,
+    indexes,
+    published,
+    staticFiles: staticUrls
   };
 }
 

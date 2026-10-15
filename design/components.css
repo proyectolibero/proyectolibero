@@ -2436,6 +2436,36 @@ a.lb-footer__heading:hover { text-decoration: underline; }
   font-size: var(--lb-fs-sm);
 }
 
+/* ------------------------------------------------------------------ */
+/* Datos (publicación abierta): rutas de descarga y capa para máquinas */
+/* ------------------------------------------------------------------ */
+
+.lb-data {
+  display: grid;
+  gap: var(--lb-space-2);
+  margin: 0 0 var(--lb-space-3);
+  padding: 0;
+  list-style: none;
+}
+
+.lb-data__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--lb-space-2);
+}
+
+.lb-data__label {
+  color: var(--lb-text-muted);
+  font-size: var(--lb-fs-sm);
+}
+
+.lb-data__url {
+  font-family: var(--lb-font-mono);
+  font-size: var(--lb-fs-xs);
+  overflow-wrap: anywhere;
+}
+
 @media (min-width: 720px) {
   .lb-search__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }

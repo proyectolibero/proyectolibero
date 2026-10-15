@@ -3,9 +3,9 @@
 /*
  * Sostenibilidad: la página `/apoyar/` (kind `support`) existe en los 5
  * idiomas y la vía de donaciones es pública y configurable en
- * `config/site.json`. Con la URL vacía no se publica ningún enlace de
- * donación (ni botón ni pie); con URL definida aparece el enlace externo con
- * `rel`/`target` seguros.
+ * `config/site.json`. El enlace INTERNO a `/apoyar/` está siempre en el pie
+ * (nunca muerto); el botón EXTERNO de donación solo aparece con URL definida y
+ * con `rel`/`target` seguros.
  */
 
 const { test } = require("node:test");
@@ -42,7 +42,7 @@ test("site-support: config/site.json viene vacío por defecto", () => {
   assert.equal(config.donateUrl, "", "la URL de donación no se inventa: vacía hasta que el humano la ponga");
 });
 
-test("site-support: con donateUrl vacío no hay enlaces de donación ni pie roto", () => {
+test("site-support: con donateUrl vacío no hay botón externo pero el pie sí enlaza /apoyar/", () => {
   const result = build(ROOT);
   for (const lang of LANGS) {
     const html = pageOf(result, lang).html;
@@ -51,8 +51,11 @@ test("site-support: con donateUrl vacío no hay enlaces de donación ni pie roto
     assert.ok(!html.includes("github.com/sponsors"), `/${lang}/apoyar/ sin enlace de patrocinio`);
     assert.ok(!html.includes('rel="noopener noreferrer"'), `/${lang}/apoyar/ sin enlace externo de donación`);
   }
-  const home = result.pages.find((page) => page.lang === "es" && page.kind === "home");
-  assert.ok(!home.html.includes('href="/es/apoyar/"'), "el pie no enlaza /apoyar/ sin URL de donación");
+  for (const lang of LANGS) {
+    const home = result.pages.find((page) => page.lang === lang && page.kind === "home");
+    assert.ok(home.html.includes(`href="/${lang}/apoyar/"`), `el pie enlaza /${lang}/apoyar/ siempre`);
+    assert.ok(!home.html.includes('target="_blank"'), "el pie no abre enlaces externos de donación sin URL");
+  }
 });
 
 test("site-support: con donateUrl definido aparece el enlace con rel/target correctos", () => {

@@ -91,6 +91,7 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 | Colaboración (C1) | `.lb-flow`, `.lb-flow__item`, `.lb-flow__item--alt`, `.lb-flow__state`, `.lb-flow__or`, `.lb-form`, `.lb-field`, `.lb-field__label`, `.lb-field__input`, `.lb-field--check`, `.lb-check`, `.lb-form__actions`, `.lb-button`, `.lb-form__status`, `.lb-form__note`, `.lb-fallback`, `.lb-fallback__text` |
 | Buscador (N2b) | `.lb-search`, `.lb-search__controls`, `.lb-search__field`, `.lb-search__label`, `.lb-search__input`, `.lb-search__select`, `.lb-search__count`, `.lb-search__empty`, `.lb-search__directory`, `.lb-search__group`, `.lb-search__group-title`, `.lb-search__list`, `.lb-search__item`, `.lb-search__link`, `.lb-search__meta` |
 | Apoyo (sostenibilidad) | `.lb-support`, `.lb-support__cta` |
+| Datos (publicación abierta) | `.lb-data`, `.lb-data__item`, `.lb-data__label`, `.lb-data__url` |
 
 ### Paginación en cliente: disponible, no usada por el SSG
 

@@ -459,6 +459,84 @@ function supportContent(ctx, page) {
   return aboutPage(ctx, page, { titleKey: "support.title", ledeKey: "support.lede", sections });
 }
 
+/* ------------------------- Publicación de datos ------------------------- */
+
+/** Cita sugerida (release + fecha). Misma cadena que `citeFor` de la capa IA. */
+function dataCitation(ctx) {
+  return `Proyecto Libero (release ${ctx.release.releaseId}, ${ctx.release.asOf}). ${ctx.origin}`;
+}
+
+/** Ruta de descarga con su etiqueta: `<li>` del componente `.lb-data`. */
+function dataRoute(label, href) {
+  return (
+    `        <li class="lb-data__item">` +
+    `<span class="lb-data__label">${escapeHtml(label)}</span> ` +
+    `<a class="lb-entry__link lb-data__url" href="${escapeHtml(href)}">${escapeHtml(href)}</a></li>`
+  );
+}
+
+/**
+ * Página `/datos/` (kind `data`): qué se publica, en qué formato, con rutas
+ * REALES (el JSON de una edición, el índice raíz, los esquemas, `llms.txt`,
+ * `ai/index.json` y el NDJSON de cada competición), licencia, cita y descarga.
+ * Las rutas se derivan de `ctx.published`; nunca se inventan.
+ */
+function dataContent(ctx, page) {
+  const lang = page.lang;
+  const t = (key) => ctx.t(lang, key);
+  const text = (key) => `      <p class="lb-intro">${escapeHtml(t(key))}</p>`;
+
+  const firstComp = ctx.published.competitions[0];
+  const firstEdition = firstComp && firstComp.editions[0];
+  const exampleJson = firstEdition ? firstEdition.json : "/data/";
+
+  const examples =
+    text("data.examples.text") +
+    `\n      <ul class="lb-data">\n` +
+    [
+      dataRoute(t("data.example.index"), "/index.json"),
+      dataRoute(t("data.example.edition"), exampleJson),
+      dataRoute(t("data.example.schema"), "/schemas/edition.schema.json")
+    ].join("\n") +
+    `\n      </ul>`;
+
+  const citation =
+    `      <div class="lb-citation">\n` +
+    `        <span class="lb-citation__label">${escapeHtml(t("data.cite.label"))}</span>\n` +
+    `        <p class="lb-citation__text">${escapeHtml(t("data.cite.text"))}</p>\n` +
+    `        <code class="lb-citation__code">${escapeHtml(dataCitation(ctx))}</code>\n` +
+    `      </div>`;
+
+  const download =
+    text("data.download.text") +
+    `\n      <code class="lb-citation__code">git clone https://github.com/proyectolibero/proyectolibero</code>\n` +
+    `      <p class="lb-form__note">${escapeHtml(t("data.download.free"))}</p>`;
+
+  const links =
+    `      <ul class="lb-list lb-list--plain">\n` +
+    `        <li class="lb-entry"><a class="lb-entry__link" href="/${lang}/licencia/">${escapeHtml(
+      t("menu.license")
+    )}</a></li>\n` +
+    `        <li class="lb-entry"><a class="lb-entry__link" href="/${lang}/metodologia/">${escapeHtml(
+      t("menu.methodology")
+    )}</a></li>\n` +
+    `        <li class="lb-entry"><a class="lb-entry__link" href="/${lang}/colaborar/">${escapeHtml(
+      t("menu.contribute")
+    )}</a></li>\n` +
+    `      </ul>`;
+
+  const sections = [
+    ["01", "data.what.title", text("data.what.text")],
+    ["02", "data.format.title", text("data.format.text")],
+    ["03", "data.examples.title", examples],
+    ["04", "data.license.title", text("data.license.text")],
+    ["05", "data.cite.title", citation],
+    ["06", "data.download.title", download],
+    ["07", "data.links.title", links]
+  ];
+  return aboutPage(ctx, page, { titleKey: "data.title", ledeKey: "data.lede", sections });
+}
+
 /* -------------------------------- Sport --------------------------------- */
 
 function sportContent(ctx, page) {
@@ -2063,6 +2141,8 @@ function renderContent(ctx, page) {
       return contributeContent(ctx, page);
     case "support":
       return supportContent(ctx, page);
+    case "data":
+      return dataContent(ctx, page);
     case "sport":
       return sportContent(ctx, page);
     case "competition":

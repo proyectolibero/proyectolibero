@@ -106,7 +106,11 @@ test("incremental: tocar el dato de una edición solo reconstruye sus páginas",
 
     const after = mtimes(siteDir(root));
     for (const [rel, mtime] of Object.entries(after)) {
-      if (mtime !== before[rel]) assert.match(rel, /\/1930\//, `solo cambia la edición 1930 (¿${rel}?)`);
+      /* Solo la edición tocada y sus derivados: su copia en data/ y el NDJSON
+       * de su competición (que agrega todas las ediciones). */
+      if (mtime !== before[rel]) {
+        assert.ok(rel.includes("/1930") || rel.startsWith("ai/"), `solo cambia la edición 1930 (¿${rel}?)`);
+      }
     }
 
     const page = fs.readFileSync(path.join(siteDir(root), "es/futbol/copa-del-mundo/1930/index.html"), "utf8");

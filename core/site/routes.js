@@ -139,6 +139,8 @@ function planSite(model, editions = []) {
     pages.push(page("license", lang, "licencia"));
     pages.push(page("contribute", lang, "colaborar"));
     pages.push(page("support", lang, "apoyar"));
+    /* Publicación abierta: qué se publica, formatos, licencia, cita y capa IA. */
+    pages.push(page("data", lang, "datos"));
     for (const sport of model.sports) {
       pages.push(page("sport", lang, sport.slug, { sportId: sport.id }));
       for (const comp of sport.competitions) {

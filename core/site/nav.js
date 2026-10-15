@@ -12,6 +12,7 @@ const ABOUT_ITEMS = [
   { id: "about.what", nameKey: "menu.about.what", rel: "" },
   { id: "about.methodology", nameKey: "menu.methodology", rel: "metodologia" },
   { id: "about.license", nameKey: "menu.license", rel: "licencia" },
+  { id: "about.data", nameKey: "menu.data", rel: "datos" },
   { id: "about.contribute", nameKey: "menu.contribute", rel: "colaborar" }
 ];
 

@@ -54,16 +54,22 @@ function scanSite() {
       }
     }
   });
-  scan = { pagePaths, linkOrigin, flagRefs, junk, assets: result.assets };
+  scan = { pagePaths, linkOrigin, flagRefs, junk, assets: result.assets, statics: result.staticFiles };
   return scan;
 }
 
-/** URLs locales válidas: las páginas del plan + los assets que el SSG copia. */
+/**
+ * URLs locales válidas: las páginas del plan, los assets que el SSG copia y
+ * los ficheros de datos públicos (data/**, schemas/**, releases/**, capa IA).
+ */
 function validUrls() {
   const urls = new Set(Object.values(scanSite().assets));
   const manifest = loadFlagManifest(ROOT);
   for (const code of Object.keys(manifest.flags || {})) urls.add(`/assets/design/flags/${code}.svg`);
   for (const pagePath of scanSite().pagePaths) urls.add(pagePath);
+  for (const staticUrl of scanSite().statics) urls.add(staticUrl);
+  /* Artefactos generados en la raíz del sitio (no son páginas ni assets). */
+  for (const root of ["/index.json", "/sitemap.xml", "/robots.txt"]) urls.add(root);
   return urls;
 }
 
