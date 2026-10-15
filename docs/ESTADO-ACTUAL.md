@@ -9,7 +9,7 @@ Archivo abierto de resultados deportivos: `proyectolibero.org`, HTML estático +
 - **Contenido**: `catalog/` (deportes y competiciones) · `data/<sport>/<comp>/<año>.json` · `releases/` (sello atómico).
 - **Núcleo**: `core/` (io, catálogo, validador, reindex, release, view-model, CLI) + **`core/site/` = generador SSG** sin dependencias (5 idiomas, slugs canónicos en es, sitemap/robots).
 - **Identidad e ingesta**: `design/` (tokens, componentes, banderas SVG, medallas) · `ingest/` (fetch · parsers RSSSF por familia · build · reconcile) · `inbox/` y `drafts/` (ignorados).
-- **Control y conocimiento**: `admin/` (panel local 127.0.0.1:8787, no se publica) · `memory/` (decisiones D1..D62, fuentes, estado) vía MCP `deporte-memoria`.
+- **Control y conocimiento**: `admin/` (panel local 127.0.0.1:8787, no se publica) · `memory/` (decisiones D1..D64, fuentes, estado) vía MCP `deporte-memoria`.
 - **Verdad**: ficheros + git. La BD del panel es índice reconstruible; `site/` es salida generada, **no versionada**.
 
 ## Estado de datos y web
@@ -19,13 +19,15 @@ Archivo abierto de resultados deportivos: `proyectolibero.org`, HTML estático +
 - **Clasificación Eurocopa**: completa 1988 y 1996–2024; **1960–1984 y 1992 sin publicar** (RSSSF no la ofrece legible). Balkan/Confederaciones/Nordic: no existe.
 - **Fases y conclusión (ADR-035/D51-52)**: el catálogo declara `declaredPhases` por **clase** (`qualifying|group|knockout|ranking|heat`) y la conclusión **se deriva** (scope all + sin fases ausentes ni parciales + campeón; `coverage.complete` ya no se escribe a mano). Hoy: **9 ediciones con fase ausente** (Eurocopa 1960–1984 y 1992; Mundial 2026) y **4 Mundiales con clasificación parcial** (2002–2014, `partialPhases`). La ficha de edición muestra el bloque «Fases declaradas» con lo presente y lo que falta; el hub de competición muestra el estado de cada edición (Concluida / No concluida / No celebrado). **Presentación por fases (D61)**: cada fase agrupa su clasificación y sus resultados en la misma sección, con un índice de fases anclado bajo el H1 y anclas `fase-grupo`/`fase-eliminatoria`/`fase-final`. Capturas: `preview/eurocopa-1960-fases-{1440,390}.png`, `preview/hub-mundial-conclusion-1440.png`.
 - **Identidad pública (D62)**: portada de presentación (H1 + lede + KPIs reales + «qué es y qué no es» + «cómo se construye» + «explora el archivo» + «publicación») y tres páginas por idioma: **Metodología** (`/metodologia/`), **Licencia y uso** (`/licencia/`) y **Cómo colaborar** (`/colaborar/`); menú «Acerca de» y pie enlazado. El KPI **«Deportes publicados»** cuenta solo los deportes con al menos una competición (hoy **1**), no el total del catálogo (4).
-- **Web**: `node core/site/build.js` → **3.345 páginas** + sitemap.xml + robots.txt + `_headers`/`_redirects` (por idioma: 1 home, **1 deporte publicado**, 5 competiciones, 76 ediciones, 30 clasificaciones, 510 grupos, 43 páginas de partidos, 3 de identidad). SSG en **streaming** (`visit`+`collect`), no materializa todas las páginas a la vez (los tests de sitio ya no agotan el heap). `site/` no se versiona; capturas en `preview/`.
+- **Armazón visual (D63-D64)**: rediseño del chasis (contenedor, cabecera con menús desplegables y hamburguesa, hero, tarjetas, tablas, **números por idioma**). Los assets de diseño (`tokens.css`, `components.css`, `behaviour.js`) se publican con **huella de contenido** en el nombre (`components.6733eacf.css`, sha256 primeros 8 hex del contenido) y cache inmutable `public, max-age=31536000` (D64); el HTML referencia siempre la ruta con huella (arregla el CSS viejo tras un rediseño). Las banderas (SVG por código) mantienen nombre y cache de 1 día.
+- **Navegación de competición (N1/D63)**: el hub gana la barra de pestañas `Resumen · Ganadores · Goleadores · Calendario` (una pestaña solo se enlaza si tiene datos); 3 páginas nuevas por competición e idioma: `…/ganadores/` (campeón/subcampeón/tercero por edición + títulos por selección), `…/goleadores/` (**por edición**, tope 10 y enlace a la edición; nunca agregados entre ediciones) y `…/calendario/` (fechas mín–máx, sedes, nº de partidos y resultado de la final). La página de edición gana un selector de edición sin JS (`<details>`). 75 páginas nuevas (3 × 5 competiciones × 5 idiomas).
+- **Web**: `node core/site/build.js` → **3.420 páginas** + sitemap.xml + robots.txt + `_headers`/`_redirects` (por idioma: 1 home, **1 deporte publicado**, 5 competiciones + 15 de pestañas, 76 ediciones, 30 clasificaciones, 510 grupos, 43 páginas de partidos, 3 de identidad). SSG en **streaming** (`visit`+`collect`), no materializa todas las páginas a la vez (los tests de sitio ya no agotan el heap). `site/` no se versiona; capturas en `preview/`.
 - **Despliegue (D59/D60)**: sitio **activo** en Cloudflare Pages, proyecto `proyectolibero` (rama de producción `master`), `https://proyectolibero.pages.dev` (`/`→301 a `/es/`, `/es/`→200). Deploy SIEMPRE con `wrangler pages deploy site --project-name=proyectolibero`; nunca `assets.directory:"."`. `proyectolibero.org` dado de alta como custom domain pero **pendiente de los dos CNAME** proxied (`@` y `www` → `proyectolibero.pages.dev`); vía preferida a futuro: integración Git nativa. Ver `docs/DESPLIEGUE.md`.
 
 ## Calidad (verificada hoy)
-- `node --test --test-concurrency=2 tests/` → **344 tests, 0 fallos** (los 5 rojos preexistentes de `tests/promote.test.js` ya están arreglados). `node scripts/validate.js` → **0 errores / 0 avisos**.
+- `node --test --test-concurrency=2 tests/` → **347 tests, 0 fallos**. `node scripts/validate.js` → **0 errores / 0 avisos**; `node --test tests/memory-sync.test.js` → 6/6; `node --test tests/site-identity.test.js` → 3/3.
 - `node scripts/integrity.js` → **0 errores / 43 avisos = línea base** (1 excepción auditable: Balkan 1935). No puede empeorar.
-- `node scripts/site-weight.js` → presupuesto **300 kB/página**, 2.500 páginas medidas (Mundial por defecto), **0 por encima**; peor: Mundial 2014 [hi] 190,7 kB. Fila de partido ~845 B.
+- `node scripts/site-weight.js` → presupuesto **300 kB/página**, 2.575 páginas medidas (Mundial por defecto), **0 por encima**; peor: Mundial 2014 [hi] 190,7 kB. Fila de partido ~845 B.
 
 ## Modelos y coste (`docs/MODELOS.md`)
 - **Toda la flota en `opencode-go/deepseek-v4.1-flash`** (2026-10-15, fase de publicación; **D58**): sesión del arquitecto y subagentes (`general`, `rsssf`, `explore`, `architect`, `test-generator`, `code-reviewer`, `security-reviewer`, `performance-analyzer`, `cloudflare`, `opencollective`) y `small_model`; un solo motor, mismo razonamiento que decide y ejecuta. Config en `opencode.json` y `.opencode/agent/*.md`; **reiniciar opencode**. Los relevos gratuitos NVIDIA siguen en la tabla de `docs/MODELOS.md` por si hay que revertir por coste.
@@ -41,12 +43,12 @@ Archivo abierto de resultados deportivos: `proyectolibero.org`, HTML estático +
 5. **P5 — Donaciones**: host fiscal Open Source Europe + dossier de registro.
 6. **P6 — Capa IA**: `llms.txt`, `ai/index.json`, NDJSON, esquemas.
 7. **P7 — Escalar competiciones** (R3: 8 internacionales restantes) + SEO fino (despliegue ✅ activo en `proyectolibero.pages.dev`; falta el dominio propio, pendiente de DNS).
-- **Próximos pasos acordados (2026-10-15)**: **N1 — Rediseño de navegación**, **C1/C2 — Colaboración**, **F3 — Build incremental**.
+- **Próximos pasos acordados (2026-10-15)**: **N2 — Ficha de partido en modal + buscador estático**, **C1/C2 — Colaboración** (formulario→issue, cola de aportes, panel de agentes), **F3 — Build incremental**; además crear los dos CNAME de `proyectolibero.org` y **hacer push de los commits locales** (N1 cerrada en local, sin push).
 
 ## Comandos útiles
 ```bash
 node scripts/validate.js                 # gate (CI/MCP)
-node --test --test-concurrency=2 tests/ # suite (344 tests, 0 fallos)
+node --test --test-concurrency=2 tests/ # suite (347 tests, 0 fallos)
 node scripts/integrity.js                # anomalías semánticas (línea base 43 avisos)
 node scripts/site-weight.js              # presupuesto de peso del SSG
 node scripts/usage.js                    # tokens por día/modelo/agente
