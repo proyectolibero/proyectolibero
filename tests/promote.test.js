@@ -135,6 +135,7 @@ function makeRepo() {
   fs.mkdirSync(path.join(root, "catalog", "competitions"), { recursive: true });
   fs.copyFileSync(path.join(ROOT, "catalog", "sports.json"), path.join(root, "catalog", "sports.json"));
   fs.copyFileSync(path.join(ROOT, "catalog", "facets.json"), path.join(root, "catalog", "facets.json"));
+  fs.copyFileSync(path.join(ROOT, "catalog", "identity.json"), path.join(root, "catalog", "identity.json"));
   writeJSON(path.join(root, "catalog", "competitions", "football.worldcup.json"), competitionCatalog());
   fs.mkdirSync(path.join(root, "data", "football", "worldcup"), { recursive: true });
   fs.mkdirSync(path.join(root, "drafts", "football", "worldcup"), { recursive: true });
@@ -431,6 +432,7 @@ function makeRangeRepo({ published = false } = {}) {
   fs.mkdirSync(path.join(root, "catalog", "competitions"), { recursive: true });
   fs.copyFileSync(path.join(ROOT, "catalog", "sports.json"), path.join(root, "catalog", "sports.json"));
   fs.copyFileSync(path.join(ROOT, "catalog", "facets.json"), path.join(root, "catalog", "facets.json"));
+  fs.copyFileSync(path.join(ROOT, "catalog", "identity.json"), path.join(root, "catalog", "identity.json"));
   writeJSON(path.join(root, RANGE_CATALOG_REL), balkanCatalog({ published }));
   fs.mkdirSync(path.join(root, "data", "football", "balkancup"), { recursive: true });
   fs.mkdirSync(path.join(root, "drafts", "football", "balkancup"), { recursive: true });
