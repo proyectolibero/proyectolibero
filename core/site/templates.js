@@ -68,7 +68,7 @@ function homeContent(ctx, page) {
     `      <dl class="lb-record">\n` +
     `        <dt class="lb-record__term">${escapeHtml(t(lang, "home.release"))}</dt><dd class="lb-record__value">${escapeHtml(ctx.release.releaseId)}</dd>\n` +
     `        <dt class="lb-record__term">${escapeHtml(t(lang, "edition.matchesCount"))}</dt><dd class="lb-record__value">${escapeHtml(stats)}</dd>\n` +
-    `        <dt class="lb-record__term">${escapeHtml(t(lang, "home.asOf"))}</dt><dd class="lb-record__value">${escapeHtml(ctx.release.asOf)}</dd>\n` +
+    `        <dt class="lb-record__term">${escapeHtml(t(lang, "home.asOf", { date: ctx.release.asOf }))}</dt><dd class="lb-record__value">${escapeHtml(ctx.release.asOf)}</dd>\n` +
     `      </dl>`;
 
   const body = [
@@ -394,16 +394,95 @@ function groupLabel(ctx, lang, group) {
     : ctx.t(lang, "qualification.noGroup");
 }
 
-function standingsSection(ctx, page, edition) {
+/** Definiciones de fase del catálogo indexadas por su id (título y orden). */
+function stageDefs(comp) {
+  const defs = {};
+  for (const stage of comp.stages || []) defs[stage.id] = stage;
+  return defs;
+}
+
+/** Ancla estable y sin acentos del id de una fase: «finalGroup» → «fase-final-group». */
+function phaseAnchor(stageId) {
+  const slug = String(stageId || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/([a-z0-9])([A-Z])/g, "$1-$2")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return `fase-${slug || "fase"}`;
+}
+
+/** Título localizado de una fase: clave del catálogo, o su id si no la declara. */
+function phaseTitle(ctx, lang, ref) {
+  return ref.def ? ctx.t(lang, ref.def.key) : ref.id;
+}
+
+/** Orden determinista de partidos dentro de una fase: fecha y id. */
+function byDateId(a, b) {
+  const left = `${a.date}${a.id}`;
+  const right = `${b.date}${b.id}`;
+  return left < right ? -1 : left > right ? 1 : 0;
+}
+
+/**
+ * Fases presentes en la edición listas para su presentación: las de tipo
+ * «group» (con sus tablas y partidos, incluidas group2/finalGroup), las
+ * «knockout» sin la final, y la final aparte; todas ordenadas por el `order`
+ * del catálogo. Una fase no declarada se clasifica por presencia (tabla ⇒
+ * grupo; si no, eliminatoria).
+ */
+function editionPhases(comp, edition) {
+  const defs = stageDefs(comp);
+  const results = edition.results || {};
+  const groupRows = (edition.groups || []).filter((group) => !isQualifying(group.stage));
+  const matches = finalMatches(edition);
+  const finalMatch = (edition.matches || []).find((match) => match.id === results.finalMatchId) || null;
+  const finalStage = finalMatch ? finalMatch.stage : "final";
+  const kindOf = (stage) =>
+    defs[stage] ? defs[stage].kind : groupRows.some((group) => group.stage === stage) ? "group" : "knockout";
+  const orderOf = (stage) =>
+    defs[stage] && defs[stage].order !== undefined ? defs[stage].order : Number.MAX_SAFE_INTEGER;
+  const byOrder = (a, b) => orderOf(a.id) - orderOf(b.id) || (a.id < b.id ? -1 : 1);
+  const collect = (list) => {
+    const map = {};
+    for (const item of list) (map[item.stage] = map[item.stage] || []).push(item);
+    return map;
+  };
+  const groupsByStage = collect(groupRows);
+  const matchesByStage = collect(matches);
+  const stages = new Set([...Object.keys(groupsByStage), ...Object.keys(matchesByStage)]);
+  const refs = (kind) =>
+    [...stages]
+      .filter((stage) => kindOf(stage) === kind && (kind !== "knockout" || stage !== finalStage))
+      .map((stage) => ({
+        id: stage,
+        def: defs[stage] || null,
+        groups: groupsByStage[stage] || [],
+        matches: matchesByStage[stage] || []
+      }))
+      .sort(byOrder);
+  const groups = refs("group");
+  const knockout = refs("knockout");
+  const final = finalMatch ? { id: finalStage, def: defs[finalStage] || { key: "phase.final" }, final: true } : null;
+  const ordered = groups.concat(knockout).concat(final ? [final] : []).sort(byOrder);
+  return { groups, knockout, final, finalMatch, ordered };
+}
+
+/** Índice de fases: enlaces ancla a cada fase presente, en orden de catálogo. */
+function phaseIndexNav(ctx, page, phases) {
   const lang = page.lang;
-  const groups = (edition.groups || []).filter((group) => !isQualifying(group.stage));
-  if (!groups.length) return "";
-  const tables = groups.map((group) => standingsTable(ctx, lang, group)).join("\n");
-  return sectionNumbered(
-    "01",
-    ctx.t(lang, "edition.standings"),
-    `      <div class="lb-standings">\n${tables}\n      </div>`,
-    "fase-grupo"
+  if (!phases.ordered.length) return "";
+  const items = phases.ordered
+    .map((ref) => {
+      const href = ref.final ? "#fase-final" : `#${phaseAnchor(ref.id)}`;
+      return `        <li class="lb-entry"><a class="lb-entry__link" href="${escapeHtml(href)}">${escapeHtml(phaseTitle(ctx, lang, ref))}</a></li>`;
+    })
+    .join("\n");
+  return (
+    `      <nav aria-label="${escapeHtml(ctx.t(lang, "edition.phases"))}">\n` +
+    `        <ul class="lb-list">\n${items}\n        </ul>\n` +
+    `      </nav>`
   );
 }
 
@@ -424,36 +503,53 @@ function championTitles(comp) {
     .sort((a, b) => b.titles - a.titles || a.code.localeCompare(b.code));
 }
 
-function phasesSection(ctx, page, edition, comp, sport, numbers) {
+/** Sección de fases de grupos: por cada fase, sus tablas y luego sus partidos. */
+function groupPhasesSection(ctx, page, comp, phases, numbers, num) {
   const lang = page.lang;
-  const order = phaseOrder(comp);
-  const byStage = {};
-  for (const match of finalMatches(edition)) {
-    if (match.stage === "final") continue;
-    (byStage[match.stage] = byStage[match.stage] || []).push(match);
-  }
-  const stages = Object.keys(byStage).sort((a, b) => (order[a] || 0) - (order[b] || 0));
-  if (!stages.length) return "";
-  const blocks = stages
-    .map((stage) => {
-      const stageDef = (comp.stages || []).find((s) => s.id === stage);
-      const label = stageDef ? ctx.t(lang, stageDef.key) : stage;
-      const matches = byStage[stage]
+  if (!phases.groups.length) return "";
+  const sport = ctx.model.sportById[page.sportId];
+  const blocks = phases.groups
+    .map((ref) => {
+      const tables = ref.groups.map((group) => standingsTable(ctx, lang, group)).join("\n");
+      const cards = ref.matches
         .slice()
-        .sort((a, b) => (`${a.date}${a.id}` < `${b.date}${b.id}` ? -1 : 1))
+        .sort(byDateId)
         .map((match) => resultCard(ctx, lang, match, numbers, { href: facsimileHref(sport, comp, lang, page.year, match) }))
         .join("\n");
-      return `      <h3 class="lb-label">${escapeHtml(label)}</h3>\n${matches}`;
+      return (
+        `      <h3 class="lb-label" id="${escapeHtml(phaseAnchor(ref.id))}">${escapeHtml(phaseTitle(ctx, lang, ref))}</h3>\n` +
+        (tables ? `      <div class="lb-standings">\n${tables}\n      </div>\n` : "") +
+        cards
+      );
     })
     .join("\n");
-  return sectionNumbered("02", ctx.t(lang, "edition.phases"), blocks, "fase-eliminatoria");
+  return sectionNumbered(num, ctx.t(lang, "phase.kind.group"), blocks, "fase-grupo");
 }
 
-function decisiveSection(ctx, page, edition, comp, sport, numbers) {
+/** Sección de eliminatorias (sin la final): un bloque por fase con sus partidos. */
+function knockoutPhasesSection(ctx, page, comp, phases, numbers, num) {
   const lang = page.lang;
-  const results = edition.results || {};
-  const match = (edition.matches || []).find((m) => m.id === results.finalMatchId);
+  if (!phases.knockout.length) return "";
+  const sport = ctx.model.sportById[page.sportId];
+  const blocks = phases.knockout
+    .map((ref) => {
+      const cards = ref.matches
+        .slice()
+        .sort(byDateId)
+        .map((match) => resultCard(ctx, lang, match, numbers, { href: facsimileHref(sport, comp, lang, page.year, match) }))
+        .join("\n");
+      return `      <h3 class="lb-label" id="${escapeHtml(phaseAnchor(ref.id))}">${escapeHtml(phaseTitle(ctx, lang, ref))}</h3>\n${cards}`;
+    })
+    .join("\n");
+  return sectionNumbered(num, ctx.t(lang, "phase.kind.knockout"), blocks, "fase-eliminatoria");
+}
+
+/** La final: su ficha más los extras (árbitro, asistencia, goles). */
+function finalSection(ctx, page, comp, phases, numbers, num) {
+  const lang = page.lang;
+  const match = phases.finalMatch;
   if (!match) return "";
+  const sport = ctx.model.sportById[page.sportId];
   const extra = match.extra || {};
   const rows = [];
   if (extra.referee) {
@@ -466,9 +562,10 @@ function decisiveSection(ctx, page, edition, comp, sport, numbers) {
     .join(", ");
   if (events) rows.push(recordRow(ctx.t(lang, "table.goals"), events));
   const card = resultCard(ctx, lang, match, numbers, { href: facsimileHref(sport, comp, lang, page.year, match) });
+  const title = phases.final ? phaseTitle(ctx, lang, phases.final) : ctx.t(lang, "phase.final");
   return sectionNumbered(
-    "03",
-    ctx.t(lang, "edition.decisiveMatch"),
+    num,
+    title,
     `${card}\n      <dl class="lb-record">\n${rows.join("\n")}\n      </dl>`,
     "fase-final"
   );
@@ -481,7 +578,7 @@ function recordRow(term, value) {
   );
 }
 
-function scorersSection(ctx, page, edition) {
+function scorersSection(ctx, page, edition, num) {
   const lang = page.lang;
   const scorers = edition.scorers || [];
   if (!scorers.length) return "";
@@ -501,14 +598,14 @@ function scorersSection(ctx, page, edition) {
     })
     .join("\n");
   return sectionNumbered(
-    "04",
+    num,
     ctx.t(lang, "edition.scorers"),
     `      <p class="lb-label">${escapeHtml(ctx.t(lang, `scorers.scope.${scope}`))}</p>\n` +
       `      <ol class="lb-scorers">\n${rows}\n      </ol>`
   );
 }
 
-function sourcesSection(ctx, page, edition) {
+function sourcesSection(ctx, page, edition, num) {
   const lang = page.lang;
   const sources = edition.sources || [];
   if (!sources.length) return "";
@@ -522,7 +619,7 @@ function sourcesSection(ctx, page, edition) {
         `        </li>`
     )
     .join("\n");
-  return sectionNumbered("05", ctx.t(lang, "edition.sources"), `      <ul class="lb-sources">\n${rows}\n      </ul>`);
+  return sectionNumbered(num, ctx.t(lang, "edition.sources"), `      <ul class="lb-sources">\n${rows}\n      </ul>`);
 }
 
 function podium(ctx, lang, results) {
@@ -778,12 +875,14 @@ function editionContent(ctx, page) {
   const finals = finalMatches(edition);
   const numbers = numberMatches(finals, comp);
   const subviews = subviewLinks(ctx, page, sport, comp, edition);
+  const phases = editionPhases(comp, edition);
   const targets = {
-    standings: (edition.groups || []).some((group) => !isQualifying(group.stage)),
-    phaseList: finals.some((match) => match.stage !== "final"),
-    final: Boolean(results.finalMatchId)
+    standings: phases.groups.length > 0,
+    phaseList: phases.knockout.length > 0,
+    final: Boolean(phases.finalMatch)
   };
   const phasesBlock = phasesStatusBlock(ctx, page, edition, comp, entry, targets);
+  const phaseIndex = phaseIndexNav(ctx, page, phases);
 
   const head =
     `    <header class="lb-edition-head">\n` +
@@ -831,22 +930,25 @@ function editionContent(ctx, page) {
     `${warnings ? `${warnings}\n` : ""}` +
     `    </aside>`;
 
-  const body = [
-    standingsSection(ctx, page, edition),
-    phasesSection(ctx, page, edition, comp, sport, numbers),
-    decisiveSection(ctx, page, edition, comp, sport, numbers),
-    scorersSection(ctx, page, edition),
-    sourcesSection(ctx, page, edition),
+  /* Numeración dinámica: solo cuentan las secciones que se pintan de verdad. */
+  let sectionNo = 0;
+  const nextNum = () => String(++sectionNo).padStart(2, "0");
+  const body = [];
+  if (phases.groups.length) body.push(groupPhasesSection(ctx, page, comp, phases, numbers, nextNum()));
+  if (phases.knockout.length) body.push(knockoutPhasesSection(ctx, page, comp, phases, numbers, nextNum()));
+  if (phases.finalMatch) body.push(finalSection(ctx, page, comp, phases, numbers, nextNum()));
+  if ((edition.scorers || []).length) body.push(scorersSection(ctx, page, edition, nextNum()));
+  if ((edition.sources || []).length) body.push(sourcesSection(ctx, page, edition, nextNum()));
+  body.push(
     `      <section class="lb-section">\n        <a class="lb-entry__link" href="/${lang}/${sport.slug}/${comp.slug}/">\u2190 ${escapeHtml(t(lang, "edition.back"))}</a>\n      </section>`
-  ]
-    .filter(Boolean)
-    .join("\n");
+  );
+  const bodyHtml = body.filter(Boolean).join("\n");
 
   const ledger =
     `    <div class="lb-ledger">\n` +
     `${intro}\n` +
     `${notes}\n` +
-    `      <div class="lb-ledger__body">\n${body}\n      </div>\n` +
+    `      <div class="lb-ledger__body">\n${bodyHtml}\n      </div>\n` +
     `    </div>`;
 
   const breadcrumb = [
@@ -860,7 +962,7 @@ function editionContent(ctx, page) {
     title: `${title} \u00b7 ${t(lang, "site.name")}`,
     description: `${title}: ${t(lang, "edition.champion")} ${champion}. ${t(lang, "site.name")}.`,
     breadcrumb,
-    body: `${head}\n${phasesBlock ? `${phasesBlock}\n` : ""}${ledger}`,
+    body: `${head}\n${phaseIndex ? `${phaseIndex}\n` : ""}${phasesBlock ? `${phasesBlock}\n` : ""}${ledger}`,
     jsonld: [breadcrumbJsonLd(ctx, page, breadcrumb), datasetJsonLd(ctx, page, title, champion)]
   };
 }

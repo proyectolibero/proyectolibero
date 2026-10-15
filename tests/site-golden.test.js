@@ -30,8 +30,13 @@ test("site-golden_a: la edición 1930 en es cumple los invariantes del libro de 
   assert.match(html, /hreflang="zh-Hans"/, "hreflang del chino simplificado");
   assert.match(html, /hreflang="x-default"/, "x-default apunta al idioma de referencia");
 
-  for (const slug of ["deportes-acuaticos", "futbol", "tiro-con-arco", "atletismo"]) {
-    assert.match(html, new RegExp(`href="/es/${slug}/"`), `menú con el deporte ${slug}`);
+  assert.match(html, /href="\/es\/futbol\/"/, "menú con el deporte futbol");
+  for (const slug of ["deportes-acuaticos", "tiro-con-arco", "atletismo"]) {
+    assert.doesNotMatch(
+      html,
+      new RegExp(`href="/es/${slug}/"`),
+      `un deporte sin competiciones no genera hub ni entra en el menú (${slug})`
+    );
   }
 
   assert.match(html, /Uruguay/, "campeón localizado");

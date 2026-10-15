@@ -95,3 +95,19 @@ test("site-phases: el hub marca cada edición publicada con su conclusión (Euro
   assert.match(item(2024), /lb-timeline__state--complete">Concluida</, "2024 concluida en el hub");
   assert.match(item(1980), /lb-timeline__state--incomplete">No concluida</, "1980 no concluida en el hub");
 });
+
+test("site-phases: la edición agrupa clasificación y resultados por fase (Mundial 2002)", () => {
+  const html = editionPage(
+    build({ editions: [{ competitionId: "football/worldcup", year: 2002 }] }),
+    "es",
+    "futbol/copa-del-mundo/2002"
+  );
+  assert.match(
+    html,
+    /<nav aria-label="Fases">[\s\S]*href="#fase-group"[\s\S]*href="#fase-r16"[\s\S]*href="#fase-final"/,
+    "índice de fases con las anclas en orden de catálogo"
+  );
+  assert.match(html, /<h3 class="lb-label" id="fase-group">Fase de grupos<\/h3>/, "ancla estable de la fase de grupos");
+  assert.match(html, /<h3 class="lb-label" id="fase-third">Tercer puesto<\/h3>/, "ancla estable del tercer puesto");
+  assert.equal((html.match(/id="fase-final"/g) || []).length, 1, "la final se renderiza UNA sola vez");
+});

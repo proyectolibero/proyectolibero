@@ -43,7 +43,11 @@ function buildModel(catalog) {
           facets: facetsWithDerivedFrequency(comp),
           editorialStatus: comp.editorialStatus || null
         }))
-    }));
+    }))
+    /* Solo los deportes con al menos una competición entran en portada,
+     * navegación y hubs: un deporte planificado (0 competiciones) no genera
+     * ruido ni páginas vacías. */
+    .filter((sport) => sport.competitions.length > 0);
 
   const sportById = {};
   const competitionById = {};
