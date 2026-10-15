@@ -1794,6 +1794,166 @@ function matchesContent(ctx, page) {
   };
 }
 
+/* -------------------------------- Search -------------------------------- */
+
+/** Códigos de país/selección presentes en una edición publicada, sin duplicados. */
+function editionEntities(edition) {
+  const codes = new Set();
+  const add = (code) => {
+    if (typeof code === "string" && code) codes.add(code);
+  };
+  for (const match of edition.matches || []) {
+    add(match.home);
+    add(match.away);
+  }
+  for (const group of edition.groups || []) {
+    for (const row of group.standings || []) add(row.team);
+  }
+  for (const host of edition.hosts || []) add(host);
+  for (const scorer of edition.scorers || []) add(scorer.country);
+  const results = edition.results || {};
+  for (const key of ["champion", "runnerUp", "third"]) add(results[key]);
+  return [...codes];
+}
+
+/** Entrada del directorio: enlace real + tipo (`data-lb-filter-type`) para el filtro. */
+function searchItem(type, href, label, meta) {
+  const metaHtml = meta ? ` <span class="lb-search__meta">${escapeHtml(meta)}</span>` : "";
+  return (
+    `          <li class="lb-search__item" data-lb-filter-item data-lb-filter-type="${escapeHtml(type)}">` +
+    `<a class="lb-search__link" href="${escapeHtml(href)}">${escapeHtml(label)}</a>${metaHtml}</li>`
+  );
+}
+
+/** Sección del directorio por tipo; una lista vacía no se pinta (nunca un título huérfano). */
+function searchGroup(title, items) {
+  if (!items.length) return "";
+  return (
+    `      <section class="lb-search__group" data-lb-filter-group>\n` +
+    `        <h2 class="lb-search__group-title">${escapeHtml(title)}</h2>\n` +
+    `        <ul class="lb-search__list">\n${items.join("\n")}\n        </ul>\n` +
+    `      </section>`
+  );
+}
+
+/** Etiqueta de una final («ARG 3–3 FRA») desde el partido decisivo publicado. */
+function searchFinalLabel(ctx, lang, match) {
+  const score = Array.isArray(match.score)
+    ? `${formatNumber(lang, match.score[0])}\u2013${formatNumber(lang, match.score[1])}`
+    : "";
+  return join([ctx.countryName(match.home, lang), score, ctx.countryName(match.away, lang)], " ");
+}
+
+/**
+ * Buscador: DIRECTORIO de enlaces ya renderizado (el HTML *es* el índice; no hay
+ * fichero que descargar ni `fetch`). Sin JS es una lista navegable agrupada por
+ * tipo; con JS (`design/behaviour.js`) un campo la filtra en cliente por texto y
+ * tipo. Incluye deportes, competiciones, ediciones, selecciones y partidos
+ * decisivos; excluye jugadores (sin identidad fiable) y los ~12.000 partidos (peso).
+ */
+function searchContent(ctx, page) {
+  const { t, model, editions } = ctx;
+  const lang = page.lang;
+
+  const sports = model.sports.map((sport) =>
+    searchItem("sport", `/${lang}/${sport.slug}/`, t(lang, sport.nameKey), "")
+  );
+  const competitions = [];
+  const editionEntries = [];
+  const teams = [];
+  const finals = [];
+
+  for (const sport of model.sports) {
+    for (const comp of sport.competitions) {
+      const compName = t(lang, comp.nameKey);
+      const compHref = `/${lang}/${sport.slug}/${comp.slug}/`;
+      competitions.push(searchItem("competition", compHref, compName, t(lang, sport.nameKey)));
+
+      const series = (ctx.seriesByComp && ctx.seriesByComp[comp.id]) || [];
+      const seen = new Set();
+      for (const row of series) {
+        const year = row.year;
+        const base = `/${lang}/${sport.slug}/${comp.slug}/${year}`;
+        const champion = row.champion ? ctx.countryName(row.champion, lang) : "";
+        editionEntries.push(searchItem("edition", `${base}/`, `${compName} ${year}`, champion));
+
+        const edition = editions[`${comp.id}/${year}`];
+        if (!edition) continue;
+        for (const code of editionEntities(edition)) {
+          if (seen.has(code)) continue;
+          seen.add(code);
+          teams.push(searchItem("team", compHref, `${ctx.countryName(code, lang)} \u00b7 ${compName}`, ""));
+        }
+        const results = edition.results || {};
+        const finalMatch = (edition.matches || []).find((match) => match.id === results.finalMatchId);
+        if (finalMatch) {
+          const href = facsimileHref(sport, comp, lang, year, finalMatch) || `${base}/#fase-final`;
+          finals.push(searchItem("final", href, `${compName} ${year}`, searchFinalLabel(ctx, lang, finalMatch)));
+        }
+      }
+    }
+  }
+
+  const groups = [
+    searchGroup(t(lang, "home.sports"), sports),
+    searchGroup(t(lang, "home.competitions"), competitions),
+    searchGroup(t(lang, "search.sectionEditions"), editionEntries),
+    searchGroup(t(lang, "search.sectionTeams"), teams),
+    searchGroup(t(lang, "search.sectionFinals"), finals)
+  ].filter(Boolean);
+  const total = sports.length + competitions.length + editionEntries.length + teams.length + finals.length;
+  const countFormat = t(lang, "search.results", { n: "{n}" });
+  const countText = t(lang, "search.results", { n: formatNumber(lang, total) });
+
+  const controls =
+    `    <div class="lb-search" role="search">\n` +
+    `      <div class="lb-search__controls">\n` +
+    `        <div class="lb-search__field">\n` +
+    `          <label class="lb-search__label" for="lb-search-input">${escapeHtml(t(lang, "search.title"))}</label>\n` +
+    `          <input class="lb-search__input" id="lb-search-input" type="search" name="q" placeholder="${escapeHtml(
+      t(lang, "search.placeholder")
+    )}" data-lb-filter data-lb-filter-target="#lb-search-directory" data-lb-filter-count="#lb-search-count" data-lb-filter-empty="#lb-search-empty" data-lb-filter-type="#lb-search-type">\n` +
+    `        </div>\n` +
+    `        <div class="lb-search__field">\n` +
+    `          <label class="lb-search__label" for="lb-search-type">${escapeHtml(t(lang, "search.filterLabel"))}</label>\n` +
+    `          <select class="lb-search__select" id="lb-search-type">\n` +
+    `            <option value="all">${escapeHtml(t(lang, "search.filterAll"))}</option>\n` +
+    `            <option value="sport">${escapeHtml(t(lang, "home.sports"))}</option>\n` +
+    `            <option value="competition">${escapeHtml(t(lang, "home.competitions"))}</option>\n` +
+    `            <option value="edition">${escapeHtml(t(lang, "search.sectionEditions"))}</option>\n` +
+    `            <option value="team">${escapeHtml(t(lang, "search.sectionTeams"))}</option>\n` +
+    `            <option value="final">${escapeHtml(t(lang, "search.sectionFinals"))}</option>\n` +
+    `          </select>\n` +
+    `        </div>\n` +
+    `      </div>\n` +
+    `      <p class="lb-search__count" id="lb-search-count" aria-live="polite" data-lb-filter-format="${escapeHtml(
+      countFormat
+    )}">${escapeHtml(countText)}</p>\n` +
+    `      <p class="lb-empty lb-search__empty" id="lb-search-empty" hidden>${escapeHtml(t(lang, "search.noResults"))}</p>\n` +
+    `    </div>`;
+
+  const directory =
+    `    <div class="lb-search__directory" id="lb-search-directory">\n` +
+    `${groups.join("\n")}\n` +
+    `    </div>`;
+
+  const breadcrumb = [
+    { name: t(lang, "home.title"), url: `/${lang}/` },
+    { name: t(lang, "search.title") }
+  ];
+  return {
+    title: `${t(lang, "search.title")} \u00b7 ${t(lang, "site.name")}`,
+    description: `${t(lang, "search.title")}: ${t(lang, "search.lede")}`,
+    breadcrumb,
+    body:
+      `${pageTitle(t(lang, "search.title"))}\n` +
+      `    <section class="lb-section"><p class="lb-intro">${escapeHtml(t(lang, "search.lede"))}</p></section>\n` +
+      `${controls}\n` +
+      `${directory}`,
+    jsonld: [breadcrumbJsonLd(ctx, page, breadcrumb)]
+  };
+}
+
 /* ------------------------------- JSON-LD -------------------------------- */
 
 function breadcrumbJsonLd(ctx, page, breadcrumb) {
@@ -1830,6 +1990,8 @@ function renderContent(ctx, page) {
   switch (page.kind) {
     case "home":
       return homeContent(ctx, page);
+    case "search":
+      return searchContent(ctx, page);
     case "methodology":
       return methodologyContent(ctx, page);
     case "license":

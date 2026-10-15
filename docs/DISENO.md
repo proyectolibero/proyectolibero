@@ -89,6 +89,7 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 | Pestañas de competición (S4) | `.lb-tabs`, `.lb-tabs__list`, `.lb-tabs__item`, `.lb-tabs__link` |
 | Selector de edición (S4) | `.lb-edition-select`, `.lb-edition-select__summary`, `.lb-edition-select__label`, `.lb-edition-select__current`, `.lb-edition-select__list`, `.lb-edition-select__item`, `.lb-edition-select__link` |
 | Colaboración (C1) | `.lb-flow`, `.lb-flow__item`, `.lb-flow__item--alt`, `.lb-flow__state`, `.lb-flow__or`, `.lb-form`, `.lb-field`, `.lb-field__label`, `.lb-field__input`, `.lb-field--check`, `.lb-check`, `.lb-form__actions`, `.lb-button`, `.lb-form__status`, `.lb-form__note`, `.lb-fallback`, `.lb-fallback__text` |
+| Buscador (N2b) | `.lb-search`, `.lb-search__controls`, `.lb-search__field`, `.lb-search__label`, `.lb-search__input`, `.lb-search__select`, `.lb-search__count`, `.lb-search__empty`, `.lb-search__directory`, `.lb-search__group`, `.lb-search__group-title`, `.lb-search__list`, `.lb-search__item`, `.lb-search__link`, `.lb-search__meta` |
 
 ### Paginación en cliente: disponible, no usada por el SSG
 
@@ -115,6 +116,7 @@ límite; eliminarla no ahorra nada observable y perdería la pieza del catálogo
 | Edición | "Libro de registro" en dos lecturas: móvil una columna (cabecera de edición pegajosa con navegación entre ediciones); ≥960px libro a dos columnas (datos izquierda, notas al margen derecha). Bloque de fases declaradas con su estado y conclusión derivada bajo la cabecera (ADR-035) |
 | Resultado | Detalle de un partido o prueba, con procedencia |
 | Palmarés | Títulos y finales por país |
+| Buscador | Directorio de deportes, competiciones, ediciones, selecciones y finales; filtrable en cliente, sin backend ni fichero índice (sin JS: lista navegable) |
 | Metodología | Cómo se construye el archivo y cómo se resuelven conflictos |
 | Contribuir | Cómo aportar datos y código |
 | Release | Manifiesto, checksum, licencia y descarga |

@@ -39,11 +39,14 @@
   }
 
   /* --- Filtro de texto ----------------------------------------------- */
-  function filterItems(items, term) {
+  function filterItems(items, term, type) {
     var needle = normalize(term);
     var visible = 0;
     items.forEach(function (item) {
-      var match = !needle || normalize(item.textContent).indexOf(needle) !== -1;
+      var matchText = !needle || normalize(item.textContent).indexOf(needle) !== -1;
+      var itemType = item.getAttribute("data-lb-filter-type") || "";
+      var matchType = !type || type === "all" || itemType === type;
+      var match = matchText && matchType;
       item.hidden = !match;
       if (match) visible += 1;
     });
@@ -55,12 +58,23 @@
       var scope = document.querySelector(input.getAttribute("data-lb-filter-target"));
       if (!scope) return;
       var items = queryAll("[data-lb-filter-item]", scope);
+      var groups = queryAll("[data-lb-filter-group]", scope);
       var counter = document.querySelector(input.getAttribute("data-lb-filter-count") || "");
+      var empty = document.querySelector(input.getAttribute("data-lb-filter-empty") || "");
+      var typeControl = document.querySelector(input.getAttribute("data-lb-filter-type") || "");
+      var format = counter && counter.getAttribute("data-lb-filter-format");
       var onInput = function () {
-        var visible = filterItems(items, input.value);
-        if (counter) counter.textContent = String(visible);
+        var visible = filterItems(items, input.value, typeControl ? typeControl.value : "");
+        if (counter) counter.textContent = format ? format.replace("{n}", visible) : String(visible);
+        if (empty) empty.hidden = visible !== 0;
+        groups.forEach(function (group) {
+          group.hidden = !items.some(function (item) {
+            return !item.hidden && group.contains(item);
+          });
+        });
       };
       input.addEventListener("input", onInput);
+      if (typeControl) typeControl.addEventListener("change", onInput);
       onInput();
     });
   }

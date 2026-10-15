@@ -7,6 +7,7 @@ const { LANGS, HTML_LANG } = require("./text.js");
  * release; nunca se escriben a mano. Esquema (SEO, docs/SEO.md):
  *
  *   /{lang}/                                      portada
+ *   /{lang}/buscar/                               directorio buscable (filtro en cliente)
  *   /{lang}/metodologia/                          identidad: metodología
  *   /{lang}/licencia/                             identidad: licencia y uso
  *   /{lang}/colaborar/                            identidad: cómo colaborar
@@ -130,6 +131,8 @@ function planSite(model, editions = []) {
   const pages = [];
   for (const lang of LANGS) {
     pages.push(page("home", lang, ""));
+    /* Buscador: directorio navegable sin JS, filtrado en cliente con JS. */
+    pages.push(page("search", lang, "buscar"));
     /* Páginas de identidad del proyecto: misma ruta canónica en los 5 idiomas. */
     pages.push(page("methodology", lang, "metodologia"));
     pages.push(page("license", lang, "licencia"));

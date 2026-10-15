@@ -57,6 +57,7 @@ function renderNav(ctx, page) {
     `        <nav aria-label="${escapeHtml(t(page.lang, "a11y.nav"))}">\n` +
     `          <ul class="lb-nav__list">\n` +
     `            <li class="lb-nav__item">${navLink(t, page.lang, `/${page.lang}/`, "menu.home", page.path)}</li>\n` +
+    `            <li class="lb-nav__item">${navLink(t, page.lang, `/${page.lang}/buscar/`, "menu.search", page.path)}</li>\n` +
     `${items}\n` +
     `          </ul>\n` +
     `        </nav>\n` +
