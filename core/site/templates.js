@@ -489,6 +489,7 @@ function dataContent(ctx, page) {
   const firstComp = ctx.published.competitions[0];
   const firstEdition = firstComp && firstComp.editions[0];
   const exampleJson = firstEdition ? firstEdition.json : "/data/";
+  const exampleNdjson = firstComp ? firstComp.ndjson : "/ai/";
 
   const examples =
     text("data.examples.text") +
@@ -496,7 +497,10 @@ function dataContent(ctx, page) {
     [
       dataRoute(t("data.example.index"), "/index.json"),
       dataRoute(t("data.example.edition"), exampleJson),
-      dataRoute(t("data.example.schema"), "/schemas/edition.schema.json")
+      dataRoute(t("data.example.schema"), "/schemas/edition.schema.json"),
+      dataRoute(t("data.example.ai"), "/ai/index.json"),
+      dataRoute(t("data.example.ndjson"), exampleNdjson),
+      dataRoute(t("data.example.llms"), "/llms.txt")
     ].join("\n") +
     `\n      </ul>`;
 
@@ -511,6 +515,14 @@ function dataContent(ctx, page) {
     text("data.download.text") +
     `\n      <code class="lb-citation__code">git clone https://github.com/proyectolibero/proyectolibero</code>\n` +
     `      <p class="lb-form__note">${escapeHtml(t("data.download.free"))}</p>`;
+
+  const aiLines = [
+    dataRoute(t("data.example.ai"), "/ai/index.json"),
+    dataRoute(t("data.example.llms"), "/llms.txt")
+  ]
+    .concat(ctx.published.competitions.map((comp) => dataRoute(comp.name, comp.ndjson)))
+    .join("\n");
+  const ai = text("data.ai.text") + `\n      <ul class="lb-data">\n${aiLines}\n      </ul>`;
 
   const links =
     `      <ul class="lb-list lb-list--plain">\n` +
@@ -532,7 +544,8 @@ function dataContent(ctx, page) {
     ["04", "data.license.title", text("data.license.text")],
     ["05", "data.cite.title", citation],
     ["06", "data.download.title", download],
-    ["07", "data.links.title", links]
+    ["07", "data.ai.title", ai],
+    ["08", "data.links.title", links]
   ];
   return aboutPage(ctx, page, { titleKey: "data.title", ledeKey: "data.lede", sections });
 }

@@ -21,7 +21,13 @@ const { renderContent } = require("./templates.js");
 const { loadSiteConfig } = require("./siteconfig.js");
 const { loadFlagManifest, flagCodes, FLAGS_DIR } = require("./flags.js");
 const { collectEditionSeries } = require("./series.js");
-const { planPublicFiles, collectPublished } = require("./publish.js");
+const {
+  planPublicFiles,
+  collectPublished,
+  buildNdjson,
+  buildAiIndex,
+  buildLlmsTxt
+} = require("./publish.js");
 
 /*
  * Generador del escaparate (SSG). Escribe HTML estático determinista bajo
@@ -501,9 +507,14 @@ function buildSite(root, options = {}) {
   const indexes = { tree, facets: facetIndexes };
   const index = buildRootIndex(root, catalog, release, model);
 
-  /* Publicación abierta: ficheros estáticos derivados del catálogo. */
+  /* Capa de publicación abierta: ficheros estáticos + capa IA (derivada). */
   const publicFiles = planPublicFiles(root, releaseId);
-  const staticUrls = publicFiles.map((file) => `/${file.to}`);
+  const ndjsonFiles = buildNdjson(published);
+  const llmsTxt = buildLlmsTxt(published, release, ORIGIN);
+  const aiIndex = buildAiIndex(root, published, release, ORIGIN);
+  const staticUrls = publicFiles
+    .map((file) => `/${file.to}`)
+    .concat(ndjsonFiles.map((file) => file.url), ["/llms.txt", "/ai/index.json"]);
 
   if (shouldWrite) {
     pushWritten(writeText(path.join(root, outDir, "indexes", "tree.json"), `${JSON.stringify(tree, null, 2)}\n`));
@@ -529,10 +540,16 @@ function buildSite(root, options = {}) {
     /*
      * Publicación abierta: `data/**`, `schemas/**` y `releases/<id>/**` se
      * copian SIEMPRE (idempotente), no dependen del manifiesto incremental; las
-     * páginas siguen siendo incrementales.
+     * páginas siguen siendo incrementales. La capa IA se reescribe solo si
+     * cambió (`writeText` devuelve null si el contenido es idéntico).
      */
     for (const file of publicFiles) {
       pushWritten(copyIfChanged(file.from, path.join(root, outDir, file.to)));
+    }
+    pushWritten(writeText(path.join(root, outDir, "llms.txt"), llmsTxt));
+    pushWritten(writeText(path.join(root, outDir, "ai", "index.json"), `${JSON.stringify(aiIndex, null, 2)}\n`));
+    for (const file of ndjsonFiles) {
+      pushWritten(writeText(path.join(root, outDir, "ai", path.basename(file.url)), file.text));
     }
     /* El manifiesto se escribe al final: refleja exactamente lo que queda en disco. */
     pushWritten(writeText(manifestFile(root), `${JSON.stringify(nextManifest, null, 2)}\n`));
@@ -555,7 +572,10 @@ function buildSite(root, options = {}) {
     publishedEditions: publishedList.length,
     indexes,
     published,
-    staticFiles: staticUrls
+    staticFiles: staticUrls,
+    ndjson: ndjsonFiles.map((file) => file.url),
+    llms: "/llms.txt",
+    aiIndex: "/ai/index.json"
   };
 }
 
