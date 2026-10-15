@@ -7,6 +7,9 @@ const { LANGS, HTML_LANG } = require("./text.js");
  * release; nunca se escriben a mano. Esquema (SEO, docs/SEO.md):
  *
  *   /{lang}/                                      portada
+ *   /{lang}/metodologia/                          identidad: metodología
+ *   /{lang}/licencia/                             identidad: licencia y uso
+ *   /{lang}/colaborar/                            identidad: cómo colaborar
  *   /{lang}/{sportSlug}/                          hub de deporte
  *   /{lang}/{sportSlug}/{compSlug}/               hub de competición
  *   /{lang}/{sportSlug}/{compSlug}/{year}/        edición (solo torneo final)
@@ -124,6 +127,10 @@ function planSite(model, editions = []) {
   const pages = [];
   for (const lang of LANGS) {
     pages.push(page("home", lang, ""));
+    /* Páginas de identidad del proyecto: misma ruta canónica en los 5 idiomas. */
+    pages.push(page("methodology", lang, "metodologia"));
+    pages.push(page("license", lang, "licencia"));
+    pages.push(page("contribute", lang, "colaborar"));
     for (const sport of model.sports) {
       pages.push(page("sport", lang, sport.slug, { sportId: sport.id }));
       for (const comp of sport.competitions) {

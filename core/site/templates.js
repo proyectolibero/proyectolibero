@@ -3,6 +3,7 @@
 const { escapeHtml } = require("./html.js");
 const { barChart, podiumChart, hbarChart, medalGlyph } = require("./charts.js");
 const { isQualifying, classifyGroups } = require("./routes.js");
+const { LANGS } = require("./text.js");
 const { declaredPhasesFor } = require("../phases.js");
 
 /*
@@ -36,9 +37,76 @@ function pageTitle(title) {
 
 /* -------------------------------- Home ---------------------------------- */
 
+const HOME_IS_KEYS = [
+  "home.what.is.1",
+  "home.what.is.2",
+  "home.what.is.3",
+  "home.what.is.4",
+  "home.what.is.5"
+];
+const HOME_ISNOT_KEYS = ["home.what.isNot.1", "home.what.isNot.2", "home.what.isNot.3"];
+const HOME_BUILD_KEYS = ["home.build.step1", "home.build.step2", "home.build.step3"];
+const ABOUT_LINKS = [
+  ["metodologia", "menu.methodology"],
+  ["licencia", "menu.license"],
+  ["colaborar", "menu.contribute"]
+];
+
+function kpiCard(value, label) {
+  return (
+    `        <div class="lb-kpi">\n` +
+    `          <span class="lb-kpi__value">${escapeHtml(String(value))}</span>\n` +
+    `          <span class="lb-kpi__label">${escapeHtml(label)}</span>\n` +
+    `        </div>`
+  );
+}
+
+function entries(t, lang, keys) {
+  return keys.map((key) => `          <li class="lb-entry">${escapeHtml(t(lang, key))}</li>`).join("\n");
+}
+
+/** Cifras reales del release/catálogo; nunca `undefined` (0 si el release no las trae). */
+function datasetCounts(ctx) {
+  const ds = (ctx.release && ctx.release.dataset) || {};
+  return {
+    sports: ds.sports != null ? ds.sports : (ctx.catalog.sports || []).length,
+    competitions:
+      ds.competitions != null ? ds.competitions : Object.keys(ctx.catalog.competitions || {}).length,
+    editions: ds.editions != null ? ds.editions : 0,
+    matches: ds.matches != null ? ds.matches : 0,
+    languages: LANGS.length
+  };
+}
+
 function homeContent(ctx, page) {
   const { t, model } = ctx;
   const lang = page.lang;
+  const counts = datasetCounts(ctx);
+
+  const kpis = [
+    kpiCard(counts.sports, t(lang, "home.kpi.sports")),
+    kpiCard(counts.competitions, t(lang, "home.kpi.competitions")),
+    kpiCard(counts.editions, t(lang, "home.kpi.editions")),
+    kpiCard(counts.matches, t(lang, "home.kpi.matches")),
+    kpiCard(counts.languages, t(lang, "home.kpi.languages"))
+  ].join("\n");
+
+  const what =
+    `      <p class="lb-label">${escapeHtml(t(lang, "home.what.is"))}</p>\n` +
+    `      <ul class="lb-list">\n${entries(t, lang, HOME_IS_KEYS)}\n      </ul>\n` +
+    `      <p class="lb-label">${escapeHtml(t(lang, "home.what.isNot"))}</p>\n` +
+    `      <ul class="lb-list">\n${entries(t, lang, HOME_ISNOT_KEYS)}\n      </ul>`;
+
+  const steps = HOME_BUILD_KEYS.map(
+    (key) =>
+      `          <li class="lb-entry"><strong>${escapeHtml(t(lang, key))}</strong>` +
+      `<span class="lb-entry__meta">${escapeHtml(t(lang, `${key}.text`))}</span></li>`
+  ).join("\n");
+  const build =
+    `      <ul class="lb-list">\n${steps}\n      </ul>\n` +
+    `      <p class="lb-intro"><a class="lb-entry__link" href="/${lang}/metodologia/">` +
+    `${escapeHtml(t(lang, "home.build.link"))}</a></p>`;
+
   const sports = model.sports
     .map((sport) => {
       const comps = sport.competitions
@@ -62,19 +130,41 @@ function homeContent(ctx, page) {
       );
     })
     .join("\n");
+  const explore = `      <ul class="lb-list">\n${sports}\n      </ul>`;
 
-  const stats = t(lang, "index.stats", { n: ctx.release.dataset.editions, m: ctx.release.dataset.matches });
   const record =
     `      <dl class="lb-record">\n` +
     `        <dt class="lb-record__term">${escapeHtml(t(lang, "home.release"))}</dt><dd class="lb-record__value">${escapeHtml(ctx.release.releaseId)}</dd>\n` +
-    `        <dt class="lb-record__term">${escapeHtml(t(lang, "edition.matchesCount"))}</dt><dd class="lb-record__value">${escapeHtml(stats)}</dd>\n` +
-    `        <dt class="lb-record__term">${escapeHtml(t(lang, "home.asOf", { date: ctx.release.asOf }))}</dt><dd class="lb-record__value">${escapeHtml(ctx.release.asOf)}</dd>\n` +
+    `        <dt class="lb-record__term">${escapeHtml(t(lang, "table.date"))}</dt><dd class="lb-record__value">${escapeHtml(ctx.release.asOf)}</dd>\n` +
+    `        <dt class="lb-record__term">${escapeHtml(t(lang, "index.editions"))}</dt><dd class="lb-record__value">${escapeHtml(String(counts.editions))}</dd>\n` +
+    `        <dt class="lb-record__term">${escapeHtml(t(lang, "edition.matchesCount"))}</dt><dd class="lb-record__value">${escapeHtml(String(counts.matches))}</dd>\n` +
     `      </dl>`;
+  const citation = t(lang, "home.cite.code", {
+    release: ctx.release.releaseId,
+    date: ctx.release.asOf,
+    url: ctx.origin
+  });
+  const publish =
+    `${record}\n` +
+    `      <div class="lb-citation">\n` +
+    `        <span class="lb-citation__label">${escapeHtml(t(lang, "home.cite.label"))}</span>\n` +
+    `        <p class="lb-citation__text">${escapeHtml(t(lang, "home.cite.text"))}</p>\n` +
+    `        <code class="lb-citation__code">${escapeHtml(citation)}</code>\n` +
+    `      </div>`;
+
+  const links = ABOUT_LINKS.map(
+    ([rel, key]) =>
+      `          <li class="lb-entry"><a class="lb-entry__link" href="/${lang}/${rel}/">${escapeHtml(t(lang, key))}</a></li>`
+  ).join("\n");
 
   const body = [
-    `    <section class="lb-section">\n      <p class="lb-intro">${escapeHtml(t(lang, "home.intro"))}</p>\n    </section>`,
-    sectionNumbered("01", t(lang, "home.sports"), `      <ul class="lb-list">\n${sports}\n      </ul>`),
-    sectionNumbered("02", t(lang, "home.release"), record)
+    `    <section class="lb-section">\n      <h1 class="lb-section__title">${escapeHtml(t(lang, "home.title"))}</h1>\n      <p class="lb-intro">${escapeHtml(t(lang, "home.lede"))}</p>\n    </section>`,
+    `    <section class="lb-section">\n      <div class="lb-kpis">\n${kpis}\n      </div>\n    </section>`,
+    sectionNumbered("01", t(lang, "home.what.title"), what),
+    sectionNumbered("02", t(lang, "home.build.title"), build),
+    sectionNumbered("03", t(lang, "home.explore.title"), explore),
+    sectionNumbered("04", t(lang, "home.publish.title"), publish),
+    sectionNumbered("05", t(lang, "home.links.title"), `      <ul class="lb-list">\n${links}\n      </ul>`)
   ].join("\n");
 
   return {
@@ -84,6 +174,89 @@ function homeContent(ctx, page) {
     body,
     jsonld: [breadcrumbJsonLd(ctx, page, [{ name: t(lang, "home.title") }])]
   };
+}
+
+/* ------------------------- Identidad del proyecto ----------------------- */
+
+/** Documento de identidad: H1, entradilla y secciones numeradas declarativas. */
+function aboutPage(ctx, page, spec) {
+  const { t } = ctx;
+  const lang = page.lang;
+  const sections = spec.sections.map(([num, titleKey, inner]) =>
+    sectionNumbered(num, t(lang, titleKey), inner)
+  );
+  const body = [
+    `    <section class="lb-section">\n      <h1 class="lb-section__title">${escapeHtml(t(lang, spec.titleKey))}</h1>\n      <p class="lb-intro">${escapeHtml(t(lang, spec.ledeKey))}</p>\n    </section>`,
+    ...sections
+  ].join("\n");
+  const breadcrumb = [
+    { name: t(lang, "home.title"), url: `/${lang}/` },
+    { name: t(lang, spec.titleKey) }
+  ];
+  return {
+    title: `${t(lang, spec.titleKey)} \u00b7 ${t(lang, "site.name")}`,
+    description: t(lang, spec.ledeKey),
+    breadcrumb,
+    body,
+    jsonld: [breadcrumbJsonLd(ctx, page, breadcrumb)]
+  };
+}
+
+function methodologyContent(ctx, page) {
+  const lang = page.lang;
+  const t = (key) => ctx.t(lang, key);
+  const text = (key) => `      <p class="lb-intro">${escapeHtml(t(key))}</p>`;
+  const sections = [
+    ["01", "methodology.sources.title", text("methodology.sources.text")],
+    ["02", "methodology.provenance.title", text("methodology.provenance.text")],
+    ["03", "methodology.validation.title", text("methodology.validation.text")],
+    ["04", "methodology.coverage.title", text("methodology.coverage.text")],
+    ["05", "methodology.phases.title", text("methodology.phases.text")],
+    ["06", "methodology.cite.title", text("methodology.cite.text")]
+  ];
+  return aboutPage(ctx, page, { titleKey: "methodology.title", ledeKey: "methodology.lede", sections });
+}
+
+function licenseContent(ctx, page) {
+  const lang = page.lang;
+  const t = (key) => ctx.t(lang, key);
+  const text = (key) => `      <p class="lb-intro">${escapeHtml(t(key))}</p>`;
+  const bullet = (keys) => `      <ul class="lb-list">\n${entries(ctx.t, lang, keys)}\n      </ul>`;
+  const rights =
+    `      <p class="lb-label">${escapeHtml(t("license.rights.can"))}</p>\n` +
+    `${bullet(["license.rights.can.1", "license.rights.can.2", "license.rights.can.3", "license.rights.can.4"])}\n` +
+    `      <p class="lb-label">${escapeHtml(t("license.rights.cannot"))}</p>\n` +
+    `${bullet(["license.rights.cannot.1"])}`;
+  const sections = [
+    ["01", "license.code.title", text("license.code.text")],
+    ["02", "license.data.title", text("license.data.text")],
+    ["03", "license.verbatim.title", text("license.verbatim.text")],
+    ["04", "license.rights.title", rights],
+    ["05", "license.download.title", text("license.download.text")],
+    ["06", "license.never.title", text("license.never.text")]
+  ];
+  return aboutPage(ctx, page, { titleKey: "license.title", ledeKey: "license.lede", sections });
+}
+
+function contributeContent(ctx, page) {
+  const lang = page.lang;
+  const t = (key) => ctx.t(lang, key);
+  const text = (key) => `      <p class="lb-intro">${escapeHtml(t(key))}</p>`;
+  const offer = `      <ul class="lb-list">\n${entries(ctx.t, lang, [
+    "contribute.offer.1",
+    "contribute.offer.2",
+    "contribute.offer.3",
+    "contribute.offer.4"
+  ])}\n      </ul>`;
+  const links = `${text("contribute.links.text")}\n${text("contribute.form.pending")}`;
+  const sections = [
+    ["01", "contribute.offer.title", offer],
+    ["02", "contribute.propose.title", text("contribute.propose.text")],
+    ["03", "contribute.after.title", text("contribute.after.text")],
+    ["04", "contribute.trust.title", text("contribute.trust.text")],
+    ["05", "contribute.links.title", links]
+  ];
+  return aboutPage(ctx, page, { titleKey: "contribute.title", ledeKey: "contribute.lede", sections });
 }
 
 /* -------------------------------- Sport --------------------------------- */
@@ -1161,6 +1334,12 @@ function renderContent(ctx, page) {
   switch (page.kind) {
     case "home":
       return homeContent(ctx, page);
+    case "methodology":
+      return methodologyContent(ctx, page);
+    case "license":
+      return licenseContent(ctx, page);
+    case "contribute":
+      return contributeContent(ctx, page);
     case "sport":
       return sportContent(ctx, page);
     case "competition":

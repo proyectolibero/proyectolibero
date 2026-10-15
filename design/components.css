@@ -965,6 +965,12 @@ html.lb-js .lb-pagination.lb-needs-js { display: flex; }
   text-decoration: underline;
 }
 
+/* Cabecera de grupo sin página propia (p. ej. «Acerca de»): etiqueta, no enlace. */
+.lb-nav__label {
+  font-weight: var(--lb-weight-medium);
+  color: var(--lb-text-muted);
+}
+
 .lb-breadcrumb {
   padding: var(--lb-space-2) var(--lb-space-4);
   border-bottom: 1px solid var(--lb-border);
@@ -1128,6 +1134,24 @@ html.lb-js .lb-pagination.lb-needs-js { display: flex; }
 
 .lb-footer__rights,
 .lb-footer__asof { margin: 0; }
+
+.lb-footer__nav { margin: 0; }
+
+.lb-footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--lb-space-2) var(--lb-space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lb-footer__link {
+  color: var(--lb-accent);
+  text-decoration: none;
+}
+
+.lb-footer__link:hover { text-decoration: underline; }
 
 /* ------------------------------------------------------------------ */
 /* Ledger de edición (S1) — "libro de registro"                        */

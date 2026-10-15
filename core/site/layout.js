@@ -15,22 +15,32 @@ function navLink(t, lang, href, nameKey, currentPath) {
   return `<a class="lb-nav__link" href="${escapeHtml(href)}"${current}>${escapeHtml(t(lang, nameKey))}</a>`;
 }
 
+/** URL de un ítem de menú: páginas de identidad (`rel`) o competición (`slug`). */
+function navItemHref(lang, item) {
+  if (item.rel !== undefined) return item.rel ? `/${lang}/${item.rel}/` : `/${lang}/`;
+  return `/${lang}/${item.sportSlug}/${item.slug}/`;
+}
+
 function renderNav(ctx, page) {
   const { t, nav } = ctx;
   const items = nav
-    .map((sport) => {
-      const sportHref = `/${page.lang}/${sport.slug}/`;
-      const subs = sport.items.length
-        ? `\n            <ul class="lb-nav__sub">\n${sport.items
-            .map(
-              (comp) =>
-                `              <li class="lb-nav__item"><a class="lb-nav__link" href="/${page.lang}/${comp.sportSlug}/${comp.slug}/"` +
-                `${comp.sportSlug + "/" + comp.slug === page.rel ? attrs({ "aria-current": "page" }) : ""}>` +
-                `${escapeHtml(t(page.lang, comp.nameKey))}</a></li>`
-            )
+    .map((group) => {
+      const heading = group.slug
+        ? navLink(t, page.lang, `/${page.lang}/${group.slug}/`, group.nameKey, page.path)
+        : `<span class="lb-nav__label">${escapeHtml(t(page.lang, group.nameKey))}</span>`;
+      const subs = group.items.length
+        ? `\n            <ul class="lb-nav__sub">\n${group.items
+            .map((item) => {
+              const href = navItemHref(page.lang, item);
+              const current = href === page.path ? attrs({ "aria-current": "page" }) : "";
+              return (
+                `              <li class="lb-nav__item"><a class="lb-nav__link" href="${escapeHtml(href)}"` +
+                `${current}>${escapeHtml(t(page.lang, item.nameKey))}</a></li>`
+              );
+            })
             .join("\n")}\n            </ul>`
         : "";
-      return `          <li class="lb-nav__item">${navLink(t, page.lang, sportHref, sport.nameKey, page.path)}${subs}</li>`;
+      return `          <li class="lb-nav__item">${heading}${subs}</li>`;
     })
     .join("\n");
   return (
@@ -85,12 +95,26 @@ ${jsonld}`;
 
 function renderFooter(ctx, page) {
   const { t } = ctx;
+  const lang = page.lang;
   const year = String(ctx.release.asOf).slice(0, 4);
+  const links = [
+    ["metodologia", "menu.methodology"],
+    ["licencia", "menu.license"],
+    ["colaborar", "menu.contribute"]
+  ]
+    .map(
+      ([rel, key]) =>
+        `          <li><a class="lb-footer__link" href="/${lang}/${rel}/">${escapeHtml(t(lang, key))}</a></li>`
+    )
+    .join("\n");
   return (
     `    <footer class="lb-footer">\n` +
-    `      <p class="lb-footer__rights">${escapeHtml(t(page.lang, "footer.rights", { year }))}</p>\n` +
+    `      <nav class="lb-footer__nav" aria-label="${escapeHtml(t(lang, "menu.about"))}">\n` +
+    `        <ul class="lb-footer__list">\n${links}\n        </ul>\n` +
+    `      </nav>\n` +
+    `      <p class="lb-footer__rights">${escapeHtml(t(lang, "footer.rights", { year }))}</p>\n` +
     `      <p class="lb-footer__asof lb-label">${escapeHtml(
-      t(page.lang, "home.asOf", { date: ctx.release.asOf })
+      t(lang, "home.asOf", { date: ctx.release.asOf })
     )}</p>\n` +
     `    </footer>`
   );
