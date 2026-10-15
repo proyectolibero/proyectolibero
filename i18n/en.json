@@ -391,5 +391,22 @@
   "contribute.trust.text": "Provenance distinguishes primary, cross-checked and discarded sources; a datum is only published when its confidence level is justified.",
   "contribute.links.title": "Links",
   "contribute.links.text": "See the repository's contribution guides: CONTRIBUTING.md and docs/CONTRIBUCION.md.",
-  "contribute.form.pending": "The submission form will be enabled later."
+  "contribute.form.pending": "The submission form will be enabled later.",
+  "comp.tabs": "Competition sections",
+  "comp.tab.overview": "Overview",
+  "comp.tab.winners": "Winners",
+  "comp.tab.calendar": "Calendar",
+  "winners.lede": "Champion, runner-up and third place for each edition, plus the title history by national team.",
+  "winners.byEdition": "Champions by edition",
+  "winners.none": "No editions published yet.",
+  "scorers.lede": "Top scorers of each edition. Every edition is shown separately: goals are never added up across editions.",
+  "scorers.perEdition": "Top scorers of this edition (up to 10). The full list is on the edition page.",
+  "scorers.none": "No top scorers published for this competition yet.",
+  "calendar.lede": "Dates, hosts, number of matches and final result for each edition of the final tournament.",
+  "calendar.byEdition": "Calendar by edition",
+  "calendar.dates": "Dates",
+  "calendar.hosts": "Host(s)",
+  "calendar.final": "Final",
+  "calendar.none": "No matches published yet.",
+  "edition.select": "Choose edition"
 }

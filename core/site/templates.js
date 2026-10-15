@@ -413,6 +413,8 @@ function competitionContent(ctx, page) {
   const body =
     pageTitle(name) +
     "\n" +
+    competitionTabs(ctx, page, sport, comp, "competition") +
+    "\n" +
     sectionNumbered("01", t(lang, "index.editions"), `      <ul class="lb-timeline" data-lb-timeline>\n${items}\n      </ul>`) +
     goalsChart +
     titlesChart;
@@ -424,6 +426,305 @@ function competitionContent(ctx, page) {
     }),
     breadcrumb,
     body,
+    jsonld: [breadcrumbJsonLd(ctx, page, breadcrumb)]
+  };
+}
+
+/* -------------------- Competition subpages (nav zerozero) --------------- */
+
+/** Filas resumen por edición de una competición (serie.js): una por edición. */
+function competitionRows(ctx, compId) {
+  return (ctx.seriesByComp && ctx.seriesByComp[compId]) || [];
+}
+
+/** Ediciones de la serie ordenadas de la más reciente a la más antigua. */
+function rowsByRecency(ctx, compId) {
+  return competitionRows(ctx, compId)
+    .slice()
+    .sort((a, b) => Number(b.year) - Number(a.year));
+}
+
+/**
+ * Pestañas del hub: Resumen · Ganadores · Goleadores · Calendario. Solo se
+ * enlaza la pestaña con datos (sin campeón no hay ganadores, sin goleadores
+ * publicados no hay lista, sin partidos no hay calendario): nunca un enlace
+ * muerto. La pestaña activa se marca con aria-current.
+ */
+function competitionTabs(ctx, page, sport, comp, activeKind) {
+  const lang = page.lang;
+  const { t } = ctx;
+  const rows = competitionRows(ctx, comp.id);
+  const base = `/${lang}/${sport.slug}/${comp.slug}`;
+  const tabs = [
+    { kind: "competition", href: `${base}/`, key: "comp.tab.overview", has: true },
+    {
+      kind: "competitionWinners",
+      href: `${base}/ganadores/`,
+      key: "comp.tab.winners",
+      has: rows.some((row) => row.champion)
+    },
+    {
+      kind: "competitionScorers",
+      href: `${base}/goleadores/`,
+      key: "edition.scorers",
+      has: rows.some((row) => (row.scorers || []).length > 0)
+    },
+    {
+      kind: "competitionCalendar",
+      href: `${base}/calendario/`,
+      key: "comp.tab.calendar",
+      has: rows.some((row) => row.finalMatches > 0)
+    }
+  ];
+  const items = tabs
+    .filter((tab) => tab.has)
+    .map((tab) => {
+      const current = tab.kind === activeKind ? ' aria-current="page"' : "";
+      return (
+        `          <li class="lb-tabs__item"><a class="lb-tabs__link" href="${escapeHtml(tab.href)}"${current}>` +
+        `${escapeHtml(t(lang, tab.key))}</a></li>`
+      );
+    })
+    .join("\n");
+  return (
+    `      <nav class="lb-tabs" aria-label="${escapeHtml(t(lang, "comp.tabs"))}">\n` +
+    `        <ul class="lb-tabs__list">\n${items}\n        </ul>\n` +
+    `      </nav>`
+  );
+}
+
+/** Tabla semántica genérica: columnas con etiqueta y celdas ya escapadas. */
+function dataTable(lang, t, columns, rows, emptyKey) {
+  if (!rows.length) return `      <p class="lb-empty">${escapeHtml(t(lang, emptyKey))}</p>`;
+  const head = columns
+    .map((col) => `            <th scope="col"${col.numeric ? ' class="lb-table__num"' : ""}>${escapeHtml(col.label)}</th>`)
+    .join("\n");
+  const body = rows
+    .map(
+      (row) =>
+        `          <tr>\n` +
+        row
+          .map((cell, index) => {
+            const col = columns[index];
+            return `            <td${col.numeric ? ' class="lb-table__num"' : ""} data-label="${escapeHtml(col.label)}">${cell}</td>`;
+          })
+          .join("\n") +
+        `\n          </tr>`
+    )
+    .join("\n");
+  return (
+    `      <table class="lb-table lb-table--stack">\n` +
+    `        <thead>\n          <tr>\n${head}\n          </tr>\n        </thead>\n` +
+    `        <tbody>\n${body}\n        </tbody>\n      </table>`
+  );
+}
+
+/** Enlace a una edición con su año como texto (nunca formateado como cifra). */
+function editionLink(lang, sport, comp, year) {
+  const href = `/${lang}/${sport.slug}/${comp.slug}/${year}/`;
+  return `<a class="lb-entry__link" href="${escapeHtml(href)}">${escapeHtml(year)}</a>`;
+}
+
+/** Rango de fechas del torneo final de una edición («1930-07-13 – 1930-07-30»). */
+function dateRange(row) {
+  if (!row.firstDate) return "";
+  if (!row.lastDate || row.lastDate === row.firstDate) return escapeHtml(row.firstDate);
+  return `${escapeHtml(row.firstDate)} \u2013 ${escapeHtml(row.lastDate)}`;
+}
+
+/** Resultado de la final en una línea («ARG 3–3 FRA (pen., prórroga)») o vacío. */
+function finalResult(ctx, lang, row) {
+  const { t } = ctx;
+  if (!row.champion || !row.runnerUp) return "";
+  const teams = `${escapeHtml(ctx.countryName(row.champion, lang))} \u00b7 ${escapeHtml(ctx.countryName(row.runnerUp, lang))}`;
+  const final = row.final || {};
+  if (!Array.isArray(final.score) || final.score.length < 2) return teams;
+  const notes = (final.notes || []).map((note) => t(lang, `notes.${note}`)).join(", ");
+  const pens =
+    Array.isArray(final.pens) && final.pens.length >= 2
+      ? ` (${formatNumber(lang, final.pens[0])}-${formatNumber(lang, final.pens[1])} ${escapeHtml(t(lang, "notes.pen"))})`
+      : "";
+  const suffix = notes ? ` <span class="lb-label">${escapeHtml(notes)}</span>` : "";
+  return `${teams} ${formatNumber(lang, final.score[0])}\u2013${formatNumber(lang, final.score[1])}${pens}${suffix}`;
+}
+
+/** Migas de pan compartidas por las tres páginas hermanas del hub. */
+function subpageBreadcrumb(ctx, lang, sport, comp, sectionKey) {
+  const { t } = ctx;
+  const name = t(lang, comp.i18nKey);
+  return [
+    { name: t(lang, "home.title"), url: `/${lang}/` },
+    { name: t(lang, sport.nameKey), url: `/${lang}/${sport.slug}/` },
+    { name, url: `/${lang}/${sport.slug}/${comp.slug}/` },
+    { name: t(lang, sectionKey) }
+  ];
+}
+
+function competitionWinnersContent(ctx, page) {
+  const { t, model, catalog } = ctx;
+  const lang = page.lang;
+  const sport = model.sportById[page.sportId];
+  const comp = catalog.competitions[page.compId];
+  const name = t(lang, comp.i18nKey);
+
+  const editionRows = rowsByRecency(ctx, comp.id).map((row) => [
+    editionLink(lang, sport, comp, row.year),
+    row.champion ? flagName(ctx, row.champion, lang) : "",
+    row.runnerUp ? flagName(ctx, row.runnerUp, lang) : "",
+    row.third ? flagName(ctx, row.third, lang) : ""
+  ]);
+  const byEdition = dataTable(
+    lang,
+    t,
+    [
+      { label: t(lang, "table.year") },
+      { label: t(lang, "edition.champion") },
+      { label: t(lang, "edition.runnerUp") },
+      { label: t(lang, "edition.third") }
+    ],
+    editionRows,
+    "winners.none"
+  );
+
+  const titleRows = championTitles(comp).map((row) => [
+    flagName(ctx, row.code, lang),
+    escapeHtml(formatNumber(lang, row.titles))
+  ]);
+  const titles = dataTable(
+    lang,
+    t,
+    [{ label: t(lang, "table.country") }, { label: t(lang, "palmares.titles"), numeric: true }],
+    titleRows,
+    "winners.none"
+  );
+
+  const heading = t(lang, "comp.tab.winners");
+  const breadcrumb = subpageBreadcrumb(ctx, lang, sport, comp, "comp.tab.winners");
+  return {
+    title: `${heading} \u00b7 ${name} \u00b7 ${t(lang, "site.name")}`,
+    description: `${name}: ${t(lang, "winners.lede")} ${t(lang, "site.name")}.`,
+    breadcrumb,
+    body:
+      `${pageTitle(heading)}\n` +
+      `${competitionTabs(ctx, page, sport, comp, "competitionWinners")}\n` +
+      `${sectionNumbered("01", t(lang, "winners.byEdition"), byEdition)}\n` +
+      `${sectionNumbered("02", t(lang, "chart.titlesByCountry"), titles)}`,
+    jsonld: [breadcrumbJsonLd(ctx, page, breadcrumb)]
+  };
+}
+
+/** Ítem de la lista de goleadores de una edición (mismo patrón que la edición). */
+function scorerRow(ctx, lang, scorer, index, top) {
+  const leader = scorer.goals === top ? " lb-scorers__item--leader" : "";
+  return (
+    `          <li class="lb-scorers__item${leader}">\n` +
+    `            <span class="lb-scorers__rank">${index + 1}</span>\n` +
+    `            <span class="lb-scorers__name">${escapeHtml(scorer.player)}</span>\n` +
+    `            <span class="lb-scorers__meta">${scorer.country ? flagName(ctx, scorer.country, lang) : ""}</span>\n` +
+    `            <span class="lb-scorers__count">${escapeHtml(formatNumber(lang, scorer.goals))}</span>\n` +
+    `          </li>`
+  );
+}
+
+/** Cap de la lista por edición: el histórico completo vive en la edición. */
+const SCORERS_PER_EDITION = 10;
+
+/**
+ * Bloque de goleadores de UNA edición. Nunca agrega entre ediciones: cada
+ * sección lleva el atributo `data-lb-scorers-edition` con su año y solo
+ * contiene los goleadores de esa edición.
+ */
+function editionScorersBlock(ctx, page, sport, comp, row) {
+  const lang = page.lang;
+  const { t } = ctx;
+  const scorers = (row.scorers || [])
+    .slice()
+    .sort((a, b) => b.goals - a.goals || String(a.player).localeCompare(String(b.player)));
+  if (!scorers.length) return "";
+  const top = scorers[0].goals;
+  const items = scorers
+    .slice(0, SCORERS_PER_EDITION)
+    .map((scorer, index) => scorerRow(ctx, lang, scorer, index, top))
+    .join("\n");
+  const href = `/${lang}/${sport.slug}/${comp.slug}/${row.year}/`;
+  return (
+    `    <section class="lb-section" data-lb-scorers-edition="${escapeHtml(row.year)}">\n` +
+    `      <h2 class="lb-section__title"><a class="lb-entry__link" href="${escapeHtml(href)}">${escapeHtml(row.year)}</a></h2>\n` +
+    `      <ol class="lb-scorers">\n${items}\n      </ol>\n` +
+    `      <p class="lb-label">${escapeHtml(t(lang, "scorers.perEdition"))}</p>\n` +
+    `      <p><a class="lb-entry__link" href="${escapeHtml(href)}">${escapeHtml(t(lang, "index.view"))}</a></p>\n` +
+    `    </section>`
+  );
+}
+
+function competitionScorersContent(ctx, page) {
+  const { t, model, catalog } = ctx;
+  const lang = page.lang;
+  const sport = model.sportById[page.sportId];
+  const comp = catalog.competitions[page.compId];
+  const name = t(lang, comp.i18nKey);
+
+  const blocks = rowsByRecency(ctx, comp.id)
+    .map((row) => editionScorersBlock(ctx, page, sport, comp, row))
+    .filter(Boolean);
+  const inner = blocks.length
+    ? blocks.join("\n")
+    : `      <p class="lb-empty">${escapeHtml(t(lang, "scorers.none"))}</p>`;
+
+  const heading = t(lang, "edition.scorers");
+  const breadcrumb = subpageBreadcrumb(ctx, lang, sport, comp, "edition.scorers");
+  return {
+    title: `${heading} \u00b7 ${name} \u00b7 ${t(lang, "site.name")}`,
+    description: `${name}: ${t(lang, "scorers.lede")} ${t(lang, "site.name")}.`,
+    breadcrumb,
+    body:
+      `${pageTitle(heading)}\n` +
+      `${competitionTabs(ctx, page, sport, comp, "competitionScorers")}\n` +
+      `    <section class="lb-section">\n      <p class="lb-intro">${escapeHtml(t(lang, "scorers.lede"))}</p>\n    </section>\n` +
+      `${inner}`,
+    jsonld: [breadcrumbJsonLd(ctx, page, breadcrumb)]
+  };
+}
+
+function competitionCalendarContent(ctx, page) {
+  const { t, model, catalog } = ctx;
+  const lang = page.lang;
+  const sport = model.sportById[page.sportId];
+  const comp = catalog.competitions[page.compId];
+  const name = t(lang, comp.i18nKey);
+
+  const tableRows = rowsByRecency(ctx, comp.id).map((row) => [
+    editionLink(lang, sport, comp, row.year),
+    dateRange(row),
+    (row.hosts || []).map((code) => escapeHtml(ctx.countryName(code, lang))).join(", "),
+    escapeHtml(formatNumber(lang, row.finalMatches)),
+    finalResult(ctx, lang, row)
+  ]);
+  const table = dataTable(
+    lang,
+    t,
+    [
+      { label: t(lang, "table.year") },
+      { label: t(lang, "calendar.dates") },
+      { label: t(lang, "calendar.hosts") },
+      { label: t(lang, "edition.matchesCount"), numeric: true },
+      { label: t(lang, "calendar.final") }
+    ],
+    tableRows,
+    "calendar.none"
+  );
+
+  const heading = t(lang, "comp.tab.calendar");
+  const breadcrumb = subpageBreadcrumb(ctx, lang, sport, comp, "comp.tab.calendar");
+  return {
+    title: `${heading} \u00b7 ${name} \u00b7 ${t(lang, "site.name")}`,
+    description: `${name}: ${t(lang, "calendar.lede")} ${t(lang, "site.name")}.`,
+    breadcrumb,
+    body:
+      `${pageTitle(heading)}\n` +
+      `${competitionTabs(ctx, page, sport, comp, "competitionCalendar")}\n` +
+      `    <section class="lb-section">\n      <p class="lb-intro">${escapeHtml(t(lang, "calendar.lede"))}</p>\n    </section>\n` +
+      `${sectionNumbered("01", t(lang, "calendar.byEdition"), table)}`,
     jsonld: [breadcrumbJsonLd(ctx, page, breadcrumb)]
   };
 }
@@ -1018,6 +1319,37 @@ function editionNav(ctx, page, comp, sport) {
   );
 }
 
+/**
+ * Selector de edición sin JS: `<details>`/`<summary>` con TODAS las ediciones
+ * publicadas de la competición y la actual marcada (`aria-current`). Usable en
+ * móvil; el detalle se despliega con el propio navegador.
+ */
+function editionSelect(ctx, page, comp, sport) {
+  const lang = page.lang;
+  const { t } = ctx;
+  const published = (comp.editions || [])
+    .filter((entry) => entry.held && entry.data)
+    .sort((a, b) => Number(b.year) - Number(a.year));
+  if (published.length < 2) return "";
+  const current = String(page.year);
+  const items = published
+    .map((entry) => {
+      const year = String(entry.year);
+      const url = `/${lang}/${sport.slug}/${comp.slug}/${year}/`;
+      const aria = year === current ? ' aria-current="page"' : "";
+      return `            <li class="lb-edition-select__item"><a class="lb-edition-select__link" href="${escapeHtml(url)}"${aria}>${escapeHtml(year)}</a></li>`;
+    })
+    .join("\n");
+  return (
+    `      <details class="lb-edition-select">\n` +
+    `        <summary class="lb-edition-select__summary">` +
+    `<span class="lb-edition-select__label">${escapeHtml(t(lang, "edition.select"))}</span>` +
+    `<span class="lb-edition-select__current">${escapeHtml(current)}</span></summary>\n` +
+    `        <ul class="lb-edition-select__list">\n${items}\n        </ul>\n` +
+    `      </details>`
+  );
+}
+
 /** Fila del libro de registro: solo si hay dato (nunca imprimir "undefined"). */
 function recordRowIfDefined(rows, lang, term, value) {
   if (value === undefined || value === null || value === "") return;
@@ -1089,10 +1421,12 @@ function editionContent(ctx, page) {
   const phasesBlock = phasesStatusBlock(ctx, page, edition, comp, entry, targets);
   const phaseIndex = phaseIndexNav(ctx, page, phases);
 
+  const editionSelector = editionSelect(ctx, page, comp, sport);
   const head =
     `    <header class="lb-edition-head">\n` +
     `      <h1 class="lb-section__title">${escapeHtml(title)}</h1>\n` +
     `${editionNav(ctx, page, comp, sport)}\n` +
+    `${editionSelector ? `${editionSelector}\n` : ""}` +
     `${subviews ? `${subviews}\n` : ""}` +
     `    </header>`;
 
@@ -1376,6 +1710,12 @@ function renderContent(ctx, page) {
       return sportContent(ctx, page);
     case "competition":
       return competitionContent(ctx, page);
+    case "competitionWinners":
+      return competitionWinnersContent(ctx, page);
+    case "competitionScorers":
+      return competitionScorersContent(ctx, page);
+    case "competitionCalendar":
+      return competitionCalendarContent(ctx, page);
     case "edition":
       return editionContent(ctx, page);
     case "qualification":

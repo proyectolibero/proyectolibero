@@ -12,6 +12,9 @@ const { LANGS, HTML_LANG } = require("./text.js");
  *   /{lang}/colaborar/                            identidad: cómo colaborar
  *   /{lang}/{sportSlug}/                          hub de deporte
  *   /{lang}/{sportSlug}/{compSlug}/               hub de competición
+ *   /{lang}/{sportSlug}/{compSlug}/ganadores/     palmarés por edición + títulos
+ *   /{lang}/{sportSlug}/{compSlug}/goleadores/    goleadores por edición
+ *   /{lang}/{sportSlug}/{compSlug}/calendario/    calendario por edición
  *   /{lang}/{sportSlug}/{compSlug}/{year}/        edición (solo torneo final)
  *   /{lang}/{sportSlug}/{compSlug}/{year}/clasificacion/         índice de grupos
  *   /{lang}/{sportSlug}/{compSlug}/{year}/clasificacion/{grupo}/ un grupo
@@ -134,11 +137,16 @@ function planSite(model, editions = []) {
     for (const sport of model.sports) {
       pages.push(page("sport", lang, sport.slug, { sportId: sport.id }));
       for (const comp of sport.competitions) {
+        const ids = { sportId: sport.id, compId: comp.id };
+        pages.push(page("competition", lang, `${sport.slug}/${comp.slug}`, Object.assign({}, ids)));
         pages.push(
-          page("competition", lang, `${sport.slug}/${comp.slug}`, {
-            sportId: sport.id,
-            compId: comp.id
-          })
+          page("competitionWinners", lang, `${sport.slug}/${comp.slug}/ganadores`, Object.assign({}, ids))
+        );
+        pages.push(
+          page("competitionScorers", lang, `${sport.slug}/${comp.slug}/goleadores`, Object.assign({}, ids))
+        );
+        pages.push(
+          page("competitionCalendar", lang, `${sport.slug}/${comp.slug}/calendario`, Object.assign({}, ids))
         );
       }
     }

@@ -85,6 +85,8 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 | Progresivo | `.lb-filter`, `.lb-filter__input`, `.lb-filter__count`, `.lb-pagination`, `.lb-pagination__button`, `.lb-pagination__status`, `.lb-scrubber`, `.lb-scrubber__label`, `.lb-scrubber__input`, `.lb-scrubber__value`, `.lb-toggle`, `.lb-toggle__button`, `.lb-toggle__panel`, `.lb-empty` |
 | Escaparate (S1) | `.lb-page`, `.lb-masthead`, `.lb-brand`, `.lb-nav`, `.lb-nav__list`, `.lb-nav__item`, `.lb-nav__link`, `.lb-nav__sub`, `.lb-nav__label`, `.lb-breadcrumb`, `.lb-breadcrumb__list`, `.lb-breadcrumb__item`, `.lb-breadcrumb__link`, `.lb-breadcrumb__sep`, `.lb-breadcrumb__current`, `.lb-main`, `.lb-section`, `.lb-section__num`, `.lb-section__title`, `.lb-intro`, `.lb-label`, `.lb-list`, `.lb-list--nested`, `.lb-entry`, `.lb-entry__link`, `.lb-entry__meta`, `.lb-record`, `.lb-record__term`, `.lb-record__value`, `.lb-card`, `.lb-card__title`, `.lb-footer`, `.lb-footer__nav`, `.lb-footer__list`, `.lb-footer__link`, `.lb-footer__rights`, `.lb-footer__asof` |
 | Armazón (S3) | `.lb-nav__summary`, `.lb-nav__burger`, `.lb-nav__item--has-sub`, `.lb-hero`, `.lb-hero__title`, `.lb-hero__lede`, `.lb-grid`, `.lb-list--plain`, `.lb-card__text`, `.lb-footer__grid`, `.lb-footer__col`, `.lb-footer__brand`, `.lb-footer__desc`, `.lb-footer__heading`, `.lb-footer__meta` |
+| Pestañas de competición (S4) | `.lb-tabs`, `.lb-tabs__list`, `.lb-tabs__item`, `.lb-tabs__link` |
+| Selector de edición (S4) | `.lb-edition-select`, `.lb-edition-select__summary`, `.lb-edition-select__label`, `.lb-edition-select__current`, `.lb-edition-select__list`, `.lb-edition-select__item`, `.lb-edition-select__link` |
 
 ### Paginación en cliente: disponible, no usada por el SSG
 

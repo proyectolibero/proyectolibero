@@ -2006,3 +2006,109 @@ a.lb-footer__heading:hover { text-decoration: underline; }
   .lb-footer__grid { grid-template-columns: 1.4fr 2fr; }
 }
 
+/* ------------------------------------------------------------------ */
+/* Pestañas de competición (hub + páginas hermanas)                     */
+/* ------------------------------------------------------------------ */
+
+.lb-tabs {
+  margin: var(--lb-space-4) 0 0;
+}
+
+.lb-tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--lb-space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--lb-border);
+}
+
+.lb-tabs__item { margin: 0; }
+
+.lb-tabs__link {
+  display: inline-block;
+  padding: var(--lb-space-2) var(--lb-space-3);
+  border-bottom: 2px solid transparent;
+  color: var(--lb-text-muted);
+  text-decoration: none;
+  font-size: var(--lb-fs-sm);
+  font-weight: var(--lb-weight-medium);
+}
+
+.lb-tabs__link:hover {
+  color: var(--lb-text);
+  border-bottom-color: var(--lb-border-strong);
+}
+
+.lb-tabs__link[aria-current="page"] {
+  color: var(--lb-accent);
+  border-bottom-color: var(--lb-accent);
+}
+
+/* Selector de edición sin JS (`<details>`), desplegable y usable en móvil. */
+.lb-edition-select {
+  margin-top: var(--lb-space-3);
+  border: 1px solid var(--lb-border);
+  border-radius: var(--lb-radius);
+  background: var(--lb-surface);
+}
+
+.lb-edition-select__summary {
+  display: flex;
+  align-items: baseline;
+  gap: var(--lb-space-2);
+  padding: var(--lb-space-2) var(--lb-space-3);
+  cursor: pointer;
+}
+
+.lb-edition-select__summary::-webkit-details-marker { display: none; }
+.lb-edition-select__summary::marker { content: ""; }
+
+.lb-edition-select__label {
+  font-size: var(--lb-fs-xs);
+  font-weight: var(--lb-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--lb-text-muted);
+}
+
+.lb-edition-select__current {
+  margin-left: auto;
+  font-weight: var(--lb-weight-medium);
+}
+
+.lb-edition-select__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--lb-space-1);
+  margin: 0;
+  padding: var(--lb-space-2) var(--lb-space-3) var(--lb-space-3);
+  border-top: 1px solid var(--lb-border);
+  list-style: none;
+  max-height: 14rem;
+  overflow-y: auto;
+}
+
+.lb-edition-select__item { margin: 0; }
+
+.lb-edition-select__link {
+  display: inline-block;
+  padding: var(--lb-space-1) var(--lb-space-2);
+  border-radius: var(--lb-radius-sm);
+  color: var(--lb-text-muted);
+  text-decoration: none;
+  font-size: var(--lb-fs-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.lb-edition-select__link:hover {
+  background: var(--lb-surface-2);
+  color: var(--lb-text);
+}
+
+.lb-edition-select__link[aria-current="page"] {
+  color: var(--lb-accent);
+  font-weight: var(--lb-weight-bold);
+}
+

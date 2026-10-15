@@ -391,5 +391,22 @@
   "contribute.trust.text": "La procedencia distingue fuentes primarias, contrastadas y descartadas; un dato solo se publica cuando su nivel de confianza está justificado.",
   "contribute.links.title": "Enlaces",
   "contribute.links.text": "Consulta las guías de contribución del repositorio: CONTRIBUTING.md y docs/CONTRIBUCION.md.",
-  "contribute.form.pending": "El formulario de envío se activará más adelante."
+  "contribute.form.pending": "El formulario de envío se activará más adelante.",
+  "comp.tabs": "Secciones de la competición",
+  "comp.tab.overview": "Resumen",
+  "comp.tab.winners": "Ganadores",
+  "comp.tab.calendar": "Calendario",
+  "winners.lede": "Campeón, subcampeón y tercer puesto de cada edición, y el historial de títulos por selección.",
+  "winners.byEdition": "Campeones por edición",
+  "winners.none": "Aún no hay ediciones publicadas.",
+  "scorers.lede": "Máximos goleadores de cada edición. Cada edición se muestra por separado: nunca se suman goles entre ediciones.",
+  "scorers.perEdition": "Máximos goleadores de esta edición (hasta 10). La lista completa está en la edición.",
+  "scorers.none": "Aún no hay goleadores publicados para esta competición.",
+  "calendar.lede": "Fechas, sedes, número de partidos y resultado de la final de cada edición del torneo final.",
+  "calendar.byEdition": "Calendario por edición",
+  "calendar.dates": "Fechas",
+  "calendar.hosts": "Sede(s)",
+  "calendar.final": "Final",
+  "calendar.none": "Aún no hay partidos publicados.",
+  "edition.select": "Elegir edición"
 }

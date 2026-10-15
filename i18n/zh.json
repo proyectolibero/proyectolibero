@@ -391,5 +391,22 @@
   "contribute.trust.text": "出处区分主要来源、经比对来源与已舍弃来源；只有当数据的可信级别有据可依时才会发布。",
   "contribute.links.title": "链接",
   "contribute.links.text": "参见仓库的贡献指南：CONTRIBUTING.md 与 docs/CONTRIBUCION.md。",
-  "contribute.form.pending": "提交表单将在日后启用。"
+  "contribute.form.pending": "提交表单将在日后启用。",
+  "comp.tabs": "赛事栏目",
+  "comp.tab.overview": "概览",
+  "comp.tab.winners": "冠军",
+  "comp.tab.calendar": "赛程",
+  "winners.lede": "每届赛事的冠军、亚军和季军，以及各队的夺冠次数。",
+  "winners.byEdition": "历届冠军",
+  "winners.none": "尚无已发布的届次。",
+  "scorers.lede": "每届赛事的最佳射手。各届分别列出：绝不跨届累计进球。",
+  "scorers.perEdition": "本届赛事的最佳射手（最多 10 人）。完整名单见该届页面。",
+  "scorers.none": "该赛事尚无已发布的射手数据。",
+  "calendar.lede": "决赛阶段每届赛事的日期、主办地、比赛场数和决赛结果。",
+  "calendar.byEdition": "历届赛程",
+  "calendar.dates": "日期",
+  "calendar.hosts": "主办地",
+  "calendar.final": "决赛",
+  "calendar.none": "尚无已发布的比赛。",
+  "edition.select": "选择届次"
 }
