@@ -1,34 +1,76 @@
 # Despliegue en Cloudflare Pages
 
-> Decisión: **integración Git nativa** (el camino más simple y sin credenciales
-> en el repo). Dominio: `proyectolibero.org` (ADR-014/D20). `site/` es salida
-> generada por `node core/site/build.js` y **no se versiona ni se edita a mano**
-> (ADR-038/D55): Pages lo construye en cada push.
+**Publicar es un acto deliberado.** Nada publica desde ramas de trabajo y nunca
+se publica en un pull request: el despliegue automático solo ocurre en `master`.
+Cualquier cambio llega a producción por merge a `master`, no por push directo a
+una rama de trabajo.
 
-## Por qué integración Git (y no wrangler en CI)
+`site/` es salida generada por `node core/site/build.js` y **no se versiona ni se
+edita a mano** (ADR-038/D55). Dominio: `proyectolibero.org` (ADR-014/D20).
 
-- **Cero secretos** para el flujo automático: Pages se conecta al repo con su
-  propia OAuth; no hay token en GitHub ni en ficheros.
-- **Reproducible**: el build corre en un contenedor limpio con `NODE_VERSION=24`;
-  el SSG no tiene dependencias (`npm install` innecesario).
-- **Rollback** a cualquier deploy anterior desde el dashboard.
-- El workflow con `wrangler` queda como **camino manual opcional** (más abajo).
+## Dos caminos y cuál elegir
 
-## Configuración (una vez, en el dashboard)
+Hay dos formas de que un push a `master` publique. **Usa una sola**: si las dos
+están activas, cada push despliega dos veces.
+
+| Camino | Cuándo elegirlo | Secretos |
+|---|---|---|
+| **A. Integración Git nativa de Pages** (recomendado) | Siempre que puedas configurar el proyecto en el dashboard. Cero credenciales en GitHub. | Ninguno |
+| **B. GitHub Actions + `wrangler-action`** | Si no quieres que Cloudflare construya desde su integración, o necesitas controlar el deploy desde Actions. | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` |
+
+En ambos caminos, antes del deploy: `node scripts/validate.js` (gate 0/0) y el
+build canónico `node core/site/build.js` (salida en `site/`). El deploy publica
+**siempre** el directorio `site/` explícito y **nunca** la raíz del repo
+(`assets.directory: "."` está prohibido, D60). El build es incremental (F3) y
+funciona igual en ambos caminos.
+
+### Cómo desactivar el camino que no uses
+
+- **Si eliges A (Git nativo)**: desactiva el workflow. En GitHub → **Actions** →
+  **deploy** → **⋯** → **Disable workflow**; o elimina el trigger `push:` de
+  `.github/workflows/deploy.yml` (queda solo `workflow_dispatch` para deploy
+  manual puntual). Así Pages construye en su integración y Actions no publica.
+- **Si eliges B (Actions)**: en el dashboard de Cloudflare, proyecto
+  `proyectolibero` → **Settings** → **Builds & deployments**, desconecta el
+  repositorio (o **Disconnect Git**) para que Pages no construya en cada push.
+  Ojo: **A y B nunca a la vez**; si ambos lo están, cada push produce dos deploys.
+
+## Pasos exactos para el humano
+
+### Camino A — Integración Git nativa (una vez, en el dashboard)
 
 1. Entra en <https://dash.cloudflare.com> → **Workers & Pages** → **Create** →
    **Pages** → **Connect to Git**.
 2. Autoriza el acceso al repositorio de Proyecto Libero y selecciónalo.
 3. En **Set up builds and deployments**:
    - **Project name**: `proyectolibero` (determina `*.pages.dev`).
-   - **Production branch**: la rama que publica (p. ej. `main`).
+   - **Production branch**: `master`.
    - **Build command**: `node core/site/build.js`
    - **Build output directory**: `site`
    - **Environment variables**: `NODE_VERSION` = `24`.
 4. **Save and Deploy**. Primer deploy: espera «Success» en
    `https://proyectolibero.pages.dev`.
-5. Cada push a la rama de producción publica; cada PR recibe su preview
+5. Cada push a `master` publica; cada PR recibe su preview
    (`<hash>.proyectolibero.pages.dev`).
+6. Desactiva el workflow de Actions (ver arriba) para no desplegar dos veces.
+
+### Camino B — GitHub Actions + wrangler (una vez, por el humano)
+
+1. Crea los dos **secrets del repositorio** en GitHub → **Settings** →
+   **Secrets and variables** → **Actions** → **New repository secret**:
+
+   | Secret | Valor |
+   |---|---|
+   | `CLOUDFLARE_API_TOKEN` | Token con permiso **Account → Cloudflare Pages → Edit** (dash.cloudflare.com → My Profile → API Tokens). |
+   | `CLOUDFLARE_ACCOUNT_ID` | ID de la cuenta (visible en el lateral del dashboard). |
+
+   **Nunca** pongas el valor en el repo, el YAML ni estos docs: solo se
+   referencian como `${{ secrets.… }}`.
+2. Desconecta la integración Git de Pages en el dashboard (ver arriba).
+3. Comprueba que el workflow **deploy** está habilitado en GitHub → **Actions**.
+4. A partir de ahí, cada push a `master` valida, construye y publica. Si falta
+   alguno de los dos secrets, el job **falla** con un mensaje que dice cuál falta
+   y dónde se añade, y no publica.
 
 ## Dominio propio: proyectolibero.org
 
@@ -59,18 +101,6 @@ Cloudflare Pages lee `_headers` y `_redirects` de la raíz del output en cada
 deploy; no requieren configuración adicional. Guardados por
 `tests/site-headers.test.js`.
 
-## Camino manual opcional: wrangler-action
-
-`.github/workflows/deploy.yml` usa `cloudflare/wrangler-action` y se dispara
-**solo** con `workflow_dispatch` (para no duplicar el deploy automático de
-Pages). Requiere dos **secrets de GitHub** (Settings → Secrets and variables →
-Actions), nunca valores en el repo:
-
-| Secret | Valor |
-|---|---|
-| `CLOUDFLARE_API_TOKEN` | Token con permiso **Account → Cloudflare Pages → Edit** (dash.cloudflare.com → My Profile → API Tokens). |
-| `CLOUDFLARE_ACCOUNT_ID` | ID de la cuenta (visible en el lateral del dashboard). |
-
 ## Verificación previa (obligatoria)
 
 ```bash
@@ -80,16 +110,16 @@ node core/site/build.js       # 2ª vez: 0 reconstruidas (nada cambió)
 node core/site/build.js --force   # reconstrucción total (ignora el manifiesto)
 ```
 
-`validate.yml` ya bloquea el push si la validación falla, así que Pages nunca
-construye desde un árbol en rojo.
+El comando canónico es **`node core/site/build.js`** (salida en `site/`) y
+`validate` corre **antes** (en A lo bloquea la Action `validate`; en B lo ejecuta
+el propio workflow de deploy). Así nunca se publica desde un árbol en rojo.
 
 El build es **incremental de dos capas** (F3): la clave de cada página es un
 hash del CONTENIDO de sus entradas (globales + JSON de su edición), nunca de
 sus mtimes. El manifiesto vive en `.cache/site-manifest.json` — fuera de
-`site/` y gitignored —, así que **nunca se despliega**. En Cloudflare Pages el
-build corre en un contenedor limpio (sin `.cache/`), por lo que el primer build
-de cada deploy es completo; el incremental acelera las reconstrucciones locales.
-Detalle en [`ESTRUCTURA.md`](ESTRUCTURA.md).
+`site/` y gitignored —, así que **nunca se despliega**. En un contenedor limpio
+(sin `.cache/`) el primer build es completo; el incremental acelera las
+reconstrucciones locales. Detalle en [`ESTRUCTURA.md`](ESTRUCTURA.md).
 
 ## Verificación post-deploy (obligatoria)
 
@@ -117,6 +147,6 @@ están en `.gitignore` por ese motivo.
 - **Pendiente**: `proyectolibero.org` dado de alta como custom domain; falta crear
   los **dos CNAME proxied** (`@` y `www` → `proyectolibero.pages.dev`) porque el
   token actual no tiene `Zone → DNS → Edit`.
-- **Vía preferida a futuro**: la **integración Git nativa** de Pages (build en
-  Cloudflare, sin token ni deploy manual desde el portátil). La sección
-  «Configuración» de arriba lo describe.
+- **Automatización**: el push a `master` publica. Hoy se publica a mano con
+  `wrangler pages deploy` (D59); el objetivo es eliminar ese punto único de fallo
+  eligiendo **A** (Git nativo, cero secretos) o **B** (Actions, dos secrets).
