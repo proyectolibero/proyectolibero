@@ -18,6 +18,7 @@ const {
 } = require("./text.js");
 const { renderDocument } = require("./layout.js");
 const { renderContent } = require("./templates.js");
+const { loadSiteConfig } = require("./siteconfig.js");
 const { loadFlagManifest, flagCodes, FLAGS_DIR } = require("./flags.js");
 const { collectEditionSeries } = require("./series.js");
 
@@ -92,6 +93,7 @@ function signatureOf(root, entries) {
 function globalEntries(root, releaseId) {
   return [
     path.join("core", "site"),
+    "config",
     "i18n",
     "catalog",
     "design",
@@ -389,6 +391,7 @@ function buildSite(root, options = {}) {
   const dicts = loadDictionaries(root);
   const countries = loadCountries(root);
   const release = readJSON(path.join(root, "releases", releaseId, "release.json"));
+  const siteConfig = loadSiteConfig(root);
   const { map: editionsMap, planned, dataHashes } = loadEditions(root, catalog, requested);
 
   const flags = flagCodes(loadFlagManifest(root));
@@ -407,6 +410,7 @@ function buildSite(root, options = {}) {
     countryName: makeCountryName(countries),
     origin: ORIGIN,
     release,
+    donateUrl: siteConfig.donateUrl,
     editions: editionsMap,
     flags,
     assets: assetPlan.urls,

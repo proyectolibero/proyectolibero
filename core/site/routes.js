@@ -11,6 +11,7 @@ const { LANGS, HTML_LANG } = require("./text.js");
  *   /{lang}/metodologia/                          identidad: metodología
  *   /{lang}/licencia/                             identidad: licencia y uso
  *   /{lang}/colaborar/                            identidad: cómo colaborar
+ *   /{lang}/apoyar/                               identidad: apoyo al proyecto (donaciones)
  *   /{lang}/{sportSlug}/                          hub de deporte
  *   /{lang}/{sportSlug}/{compSlug}/               hub de competición
  *   /{lang}/{sportSlug}/{compSlug}/ganadores/     palmarés por edición + títulos
@@ -137,6 +138,7 @@ function planSite(model, editions = []) {
     pages.push(page("methodology", lang, "metodologia"));
     pages.push(page("license", lang, "licencia"));
     pages.push(page("contribute", lang, "colaborar"));
+    pages.push(page("support", lang, "apoyar"));
     for (const sport of model.sports) {
       pages.push(page("sport", lang, sport.slug, { sportId: sport.id }));
       for (const comp of sport.competitions) {

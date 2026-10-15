@@ -112,6 +112,10 @@ function renderFooter(ctx, page) {
   const year = String(ctx.release.asOf).slice(0, 4);
   const link = (rel, key) =>
     `              <li><a class="lb-footer__link" href="/${lang}/${rel}/">${escapeHtml(t(lang, key))}</a></li>`;
+  /* La vía de donaciones solo se enlaza cuando hay URL: si no, la página
+   * `/apoyar/` existe (con su aviso de «vía en preparación») pero no se
+   * publica ningún enlace muerto ni en el pie. */
+  const supportLink = ctx.donateUrl ? `\n${link("apoyar", "menu.support")}` : "";
   return (
     `    <footer class="lb-footer">\n` +
     `      <div class="lb-footer__grid">\n` +
@@ -124,7 +128,7 @@ function renderFooter(ctx, page) {
     `            <p class="lb-footer__heading">${escapeHtml(t(lang, "menu.about"))}</p>\n` +
     `            <ul class="lb-footer__list">\n` +
     `${link("metodologia", "menu.methodology")}\n` +
-    `${link("colaborar", "menu.contribute")}\n` +
+    `${link("colaborar", "menu.contribute")}${supportLink}\n` +
     `            </ul>\n` +
     `          </div>\n` +
     `          <div class="lb-footer__col">\n` +

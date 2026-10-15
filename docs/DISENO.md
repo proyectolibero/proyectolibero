@@ -90,6 +90,7 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 | Selector de edición (S4) | `.lb-edition-select`, `.lb-edition-select__summary`, `.lb-edition-select__label`, `.lb-edition-select__current`, `.lb-edition-select__list`, `.lb-edition-select__item`, `.lb-edition-select__link` |
 | Colaboración (C1) | `.lb-flow`, `.lb-flow__item`, `.lb-flow__item--alt`, `.lb-flow__state`, `.lb-flow__or`, `.lb-form`, `.lb-field`, `.lb-field__label`, `.lb-field__input`, `.lb-field--check`, `.lb-check`, `.lb-form__actions`, `.lb-button`, `.lb-form__status`, `.lb-form__note`, `.lb-fallback`, `.lb-fallback__text` |
 | Buscador (N2b) | `.lb-search`, `.lb-search__controls`, `.lb-search__field`, `.lb-search__label`, `.lb-search__input`, `.lb-search__select`, `.lb-search__count`, `.lb-search__empty`, `.lb-search__directory`, `.lb-search__group`, `.lb-search__group-title`, `.lb-search__list`, `.lb-search__item`, `.lb-search__link`, `.lb-search__meta` |
+| Apoyo (sostenibilidad) | `.lb-support`, `.lb-support__cta` |
 
 ### Paginación en cliente: disponible, no usada por el SSG
 

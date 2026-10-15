@@ -2309,6 +2309,20 @@ a.lb-footer__heading:hover { text-decoration: underline; }
 
 .lb-button:hover { background: var(--lb-accent-strong); }
 
+/* Apoyo al proyecto (sostenibilidad): botón de donación externo. */
+.lb-support {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--lb-space-3);
+}
+
+.lb-support__cta {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .lb-form__status {
   color: var(--lb-warn-text);
   font-size: var(--lb-fs-sm);

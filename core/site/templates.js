@@ -396,6 +396,69 @@ function contributeContent(ctx, page) {
   return aboutPage(ctx, page, { titleKey: "contribute.title", ledeKey: "contribute.lede", sections });
 }
 
+/* ------------------------------ Apoyo ----------------------------------- */
+
+const SUPPORT_REPO = "https://github.com/proyectolibero/proyectolibero";
+const SUPPORT_DOCS_URL = `${SUPPORT_REPO}/blob/master/docs/SOSTENIBILIDAD.md`;
+
+/** Donación: botón externo si hay URL; aviso de «vía en preparación» si no. */
+function supportAction(ctx, page) {
+  const lang = page.lang;
+  const t = (key) => ctx.t(lang, key);
+  if (!ctx.donateUrl) {
+    return `      <p class="lb-intro">${escapeHtml(t("support.pending"))}</p>`;
+  }
+  const label = escapeHtml(t("support.donate.label"));
+  return (
+    `      <p class="lb-intro">${escapeHtml(t("support.action.text"))}</p>\n` +
+    `      <div class="lb-support">\n` +
+    `        <a class="lb-button lb-support__cta" href="${escapeHtml(ctx.donateUrl)}" target="_blank" rel="noopener noreferrer" aria-label="${label}">${label}</a>\n` +
+    `        <p class="lb-label">${escapeHtml(t("support.donate.note"))}</p>\n` +
+    `      </div>`
+  );
+}
+
+function supportContent(ctx, page) {
+  const lang = page.lang;
+  const t = (key) => ctx.t(lang, key);
+  const text = (key) => `      <p class="lb-intro">${escapeHtml(t(key))}</p>`;
+  const costs = plainList(
+    ctx.t,
+    lang,
+    ["support.costs.1", "support.costs.2", "support.costs.3", "support.costs.4"],
+    "      "
+  );
+  const notbuy = plainList(
+    ctx.t,
+    lang,
+    ["support.notbuy.1", "support.notbuy.2", "support.notbuy.3", "support.notbuy.4"],
+    "      "
+  );
+  const transparency =
+    text("support.transparency.text") +
+    `\n      <ul class="lb-list lb-list--plain">\n` +
+    `        <li class="lb-entry"><a class="lb-entry__link" href="/${lang}/metodologia/">${escapeHtml(
+      t("menu.methodology")
+    )}</a></li>\n` +
+    `        <li class="lb-entry"><a class="lb-entry__link" href="${SUPPORT_DOCS_URL}">${escapeHtml(
+      t("support.report.link")
+    )}</a></li>\n` +
+    `      </ul>`;
+  const status =
+    text("support.status.text") +
+    `\n      <p class="lb-intro">${escapeHtml(t("support.institution.text"))} ` +
+    `<a class="lb-entry__link" href="/${lang}/colaborar/">${escapeHtml(t("support.institution.link"))}</a></p>`;
+  const sections = [
+    ["01", "support.why.title", text("support.why.text")],
+    ["02", "support.costs.title", costs],
+    ["03", "support.notbuy.title", notbuy],
+    ["04", "support.transparency.title", transparency],
+    ["05", "support.status.title", status],
+    ["06", "support.action.title", supportAction(ctx, page)]
+  ];
+  return aboutPage(ctx, page, { titleKey: "support.title", ledeKey: "support.lede", sections });
+}
+
 /* -------------------------------- Sport --------------------------------- */
 
 function sportContent(ctx, page) {
@@ -1998,6 +2061,8 @@ function renderContent(ctx, page) {
       return licenseContent(ctx, page);
     case "contribute":
       return contributeContent(ctx, page);
+    case "support":
+      return supportContent(ctx, page);
     case "sport":
       return sportContent(ctx, page);
     case "competition":
