@@ -16,7 +16,8 @@ test("buildSite deriva un índice raíz del catálogo", () => {
   const root = fixtureProject();
   fs.cpSync(path.join(ROOT, "design"), path.join(root, "design"), { recursive: true });
 
-  const result = buildSite(root, { write: false, releaseId: "2026.10" });
+  /* `collect:false`: este test solo necesita el índice, no las ~3.335 páginas. */
+  const result = buildSite(root, { write: false, releaseId: "2026.10", collect: false });
 
   assert.ok(result.index, "devuelve el índice");
   assert.equal(result.index.origin, "https://proyectolibero.org");

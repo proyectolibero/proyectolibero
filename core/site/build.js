@@ -100,6 +100,35 @@ function buildRobots() {
   return `User-agent: *\nAllow: /\nSitemap: ${ORIGIN}/sitemap.xml\n`;
 }
 
+/*
+ * `_headers` (Cloudflare Pages): seguridad mínima para un sitio 100 %
+ * estático — sin formularios, sin recursos externos, sin inline — y caché
+ * de los assets de diseño. Los assets no llevan huella en el nombre, así
+ * que NO se usa `immutable`: el navegador los revalida al cabo de 7 días.
+ */
+function buildHeaders() {
+  return [
+    "/*",
+    "  X-Content-Type-Options: nosniff",
+    "  X-Frame-Options: DENY",
+    "  Referrer-Policy: strict-origin-when-cross-origin",
+    "  Content-Security-Policy: default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'",
+    "",
+    "/assets/design/*",
+    "  Cache-Control: public, max-age=604800",
+    ""
+  ].join("\n");
+}
+
+/*
+ * `_redirects` (Cloudflare Pages): la portada canónica vive en `/es/`
+ * (español de referencia, ADR-013/D19); la raíz redirige 301. El resto
+ * de rutas ya existen como páginas estáticas generadas.
+ */
+function buildRedirects() {
+  return "/  /es/  301\n";
+}
+
 /**
  * Índice raíz máquina-legible (`site/index.json`): deportes → competiciones →
  * ediciones con su URL canónica (es), ruta del JSON publicado y cobertura. Se
@@ -189,10 +218,16 @@ function resolveEditions(catalog, options) {
 }
 
 /**
- * Construye el escaparate. Devuelve `{ pages, sitemap, robots, written }`.
- * Con `write:false` no toca el disco (tests). Si el conjunto solicitado es un
- * subconjunto de lo publicado (`partial`), al escribir en disco emite un
- * aviso claro por `warn` (stderr por defecto).
+ * Construye el escaparate. Devuelve `{ pages, sitemap, robots, headers,
+ * redirects, written }`. Con `write:false` no toca el disco (tests). Si el
+ * conjunto solicitado es un subconjunto de lo publicado (`partial`), al
+ * escribir en disco emite un aviso claro por `warn` (stderr por defecto).
+ *
+ * Las páginas se generan de UNA en UNA. `collect` (por defecto `true`) retiene
+ * el array completo para quien necesite el sitio entero en memoria; `visit`
+ * recibe cada página al vuelo. Los tests que solo inspeccionan pasan
+ * `collect:false` + `visit` y su memoria queda acotada a una página (retener
+ * las ~3.335 páginas a la vez agotaba el heap y tumbaba el proceso).
  */
 function buildSite(root, options = {}) {
   const outDir = options.outDir || "site";
@@ -240,17 +275,30 @@ function buildSite(root, options = {}) {
   };
 
   const pagePlan = planSite(model, planned);
-  const pages = pagePlan.map((page) => ({
-    kind: page.kind,
-    lang: page.lang,
-    rel: page.rel,
-    url: page.path,
-    file: pageFile(root, outDir, page),
-    html: renderDocument(ctx, page, renderContent(ctx, page))
-  }));
+  const visit = options.visit;
+  const collect = options.collect !== false;
+  const shouldWrite = options.write !== false;
+
+  const pages = [];
+  const written = [];
+  for (const page of pagePlan) {
+    const built = {
+      kind: page.kind,
+      lang: page.lang,
+      rel: page.rel,
+      url: page.path,
+      file: pageFile(root, outDir, page),
+      html: renderDocument(ctx, page, renderContent(ctx, page))
+    };
+    if (shouldWrite) written.push(writeText(built.file, built.html));
+    if (visit) visit(built);
+    if (collect) pages.push(built);
+  }
 
   const sitemap = buildSitemap(root, pagePlan, release.asOf);
   const robots = buildRobots();
+  const headers = buildHeaders();
+  const redirects = buildRedirects();
 
   /* Árbol e índices por faceta: dato derivado del catálogo, no páginas. */
   const tree = buildTree(model);
@@ -258,16 +306,16 @@ function buildSite(root, options = {}) {
   const indexes = { tree, facets: facetIndexes };
   const index = buildRootIndex(root, catalog, release, model);
 
-  const written = [];
-  if (options.write !== false) {
+  if (shouldWrite) {
     written.push(writeText(path.join(root, outDir, "indexes", "tree.json"), `${JSON.stringify(tree, null, 2)}\n`));
     written.push(
       writeText(path.join(root, outDir, "indexes", "facets.json"), `${JSON.stringify(facetIndexes, null, 2)}\n`)
     );
-    for (const page of pages) written.push(writeText(page.file, page.html));
     written.push(writeText(path.join(root, outDir, "index.json"), `${JSON.stringify(index, null, 2)}\n`));
     written.push(writeText(path.join(root, outDir, "sitemap.xml"), sitemap));
     written.push(writeText(path.join(root, outDir, "robots.txt"), robots));
+    written.push(writeText(path.join(root, outDir, "_headers"), headers));
+    written.push(writeText(path.join(root, outDir, "_redirects"), redirects));
     for (const name of ASSETS) {
       const from = path.join(root, "design", name);
       const to = path.join(root, outDir, "assets", "design", name);
@@ -288,7 +336,7 @@ function buildSite(root, options = {}) {
     }
   }
 
-  return { pages, sitemap, robots, index, written, langs: LANGS, partial, publishedEditions: published.length, indexes };
+  return { pages, sitemap, robots, headers, redirects, index, written, langs: LANGS, partial, publishedEditions: published.length, indexes };
 }
 
 module.exports = { buildSite, ORIGIN, fullEditionList, resolveEditions, parseArgs };
@@ -310,7 +358,7 @@ if (require.main === module) {
   const root = path.resolve(__dirname, "..", "..");
   const result = buildSite(root, parseArgs(process.argv.slice(2)));
   process.stdout.write(
-    `Escaparate: ${result.pages.length} páginas + sitemap.xml + robots.txt ` +
+    `Escaparate: ${result.pages.length} páginas + sitemap.xml + robots.txt + _headers + _redirects ` +
       `(${result.partial ? "build PARCIAL" : "build completo"})\n`
   );
 }

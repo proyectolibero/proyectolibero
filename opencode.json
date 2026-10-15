@@ -1,16 +1,17 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "instructions": ["README.md", "docs/AGENTES-COSTE.md"],
-  "small_model": "nvidia/z-ai/glm-5.3",
+  "small_model": "opencode-go/deepseek-v4.1-flash",
   "tool_output": { "max_lines": 150, "max_bytes": 6000 },
   "compaction": { "auto": true, "tail_turns": 15 },
   "agent": {
-    "general": { "model": "nvidia/z-ai/glm-5.3" },
-    "explore": { "model": "nvidia/z-ai/glm-5.3" },
-    "test-generator": { "model": "nvidia/z-ai/glm-5.3" },
-    "code-reviewer": { "model": "nvidia/z-ai/glm-5.3" },
-    "security-reviewer": { "model": "nvidia/z-ai/glm-5.3" },
-    "performance-analyzer": { "model": "nvidia/z-ai/glm-5.3" }
+    "architect": { "model": "opencode-go/deepseek-v4.1-flash" },
+    "general": { "model": "opencode-go/deepseek-v4.1-flash" },
+    "explore": { "model": "opencode-go/deepseek-v4.1-flash" },
+    "test-generator": { "model": "opencode-go/deepseek-v4.1-flash" },
+    "code-reviewer": { "model": "opencode-go/deepseek-v4.1-flash" },
+    "security-reviewer": { "model": "opencode-go/deepseek-v4.1-flash" },
+    "performance-analyzer": { "model": "opencode-go/deepseek-v4.1-flash" }
   },
   "mcp": {
     "deporte-memoria": {

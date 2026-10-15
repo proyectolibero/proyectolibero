@@ -1,7 +1,7 @@
 ---
 description: Redacta y mantiene la página de Open Collective de Proyecto Libero (descripción, tiers, uso de fondos) de forma atractiva y honesta.
 mode: all
-model: nvidia/z-ai/glm-5.3
+model: opencode-go/deepseek-v4.1-flash
 temperature: 0.4
 permission:
   edit: allow

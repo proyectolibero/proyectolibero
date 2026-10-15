@@ -717,16 +717,23 @@ function editionNav(ctx, page, comp, sport) {
   );
 }
 
+/** Fila del libro de registro: solo si hay dato (nunca imprimir "undefined"). */
+function recordRowIfDefined(rows, term, value) {
+  if (value === undefined || value === null || value === "") return;
+  rows.push(recordRow(term, String(value)));
+}
+
 function editionRecord(ctx, page, edition) {
   const { t, countryName } = ctx;
   const lang = page.lang;
   const coverage = edition.coverage || {};
   const rows = [];
-  rows.push(recordRow(t(lang, "edition.host"), (edition.hosts || []).map((c) => escapeHtml(countryName(c, lang))).join(", ")));
-  rows.push(recordRow(t(lang, "edition.teams"), String(edition.teamsCount)));
-  rows.push(recordRow(t(lang, "edition.matchesCount"), String(coverage.matches)));
-  rows.push(recordRow(t(lang, "edition.goals"), String(coverage.goals)));
-  rows.push(recordRow(t(lang, "edition.scorers"), String(coverage.scorers)));
+  recordRowIfDefined(rows, t(lang, "edition.host"), (edition.hosts || []).map((c) => escapeHtml(countryName(c, lang))).join(", "));
+  recordRowIfDefined(rows, t(lang, "edition.teams"), edition.teamsCount);
+  recordRowIfDefined(rows, t(lang, "edition.matchesCount"), coverage.matches);
+  recordRowIfDefined(rows, t(lang, "edition.goals"), coverage.goals);
+  recordRowIfDefined(rows, t(lang, "edition.scorers"), coverage.scorers);
+  if (!rows.length) return "";
   return `        <dl class="lb-record">\n${rows.join("\n")}\n        </dl>`;
 }
 

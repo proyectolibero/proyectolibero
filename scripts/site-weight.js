@@ -102,17 +102,15 @@ function analyzeMatchRows(html) {
   };
 }
 
+/** Fila de presupuesto de UNA página (permite medir en streaming, sin retener todo). */
+function budgetRow(page) {
+  const bytes = byteLength(page.html);
+  return { lang: page.lang, kind: page.kind, rel: page.rel, bytes, over: bytes > BUDGET_BYTES };
+}
+
 /** Convierte el resultado del SSG en un informe ordenado por peso. */
 function budget(pages) {
-  return pages
-    .map((page) => ({
-      lang: page.lang,
-      kind: page.kind,
-      rel: page.rel,
-      bytes: byteLength(page.html),
-      over: byteLength(page.html) > BUDGET_BYTES
-    }))
-    .sort((a, b) => b.bytes - a.bytes);
+  return pages.map(budgetRow).sort((a, b) => b.bytes - a.bytes);
 }
 
 function parseArgs(argv) {
@@ -168,6 +166,6 @@ function main() {
   }
 }
 
-module.exports = { analyzeHtml, analyzeMatchRows, budget, BUDGET_BYTES };
+module.exports = { analyzeHtml, analyzeMatchRows, budget, budgetRow, BUDGET_BYTES };
 
 if (require.main === module) main();

@@ -5,27 +5,26 @@
 
 ## Decisión vigente
 
-Los **agentes de trabajo** corren en **NVIDIA NIM (Nemotron 3.5 Lightning 30B-A3B)**, gratuito
-vía `build.nvidia.com`. La **sesión del arquitecto** se queda en un modelo más fuerte (hoy
-`opencode-go/deepseek-v4.1-flash`, de pago por uso con coste testimonial: $0,07 en un día
-intenso) porque es la que decide, diseña y redacta.
+**Toda la flota (subagentes y sesión del arquitecto) corre en `opencode-go/deepseek-v4.1-flash`**
+(decisión de 2026-10-15, fase de publicación): un único motor, de pago por uso con coste
+testimonial, para ir más rápido sin cambiar de comportamiento entre quien decide y quien ejecuta.
 
 | Agente | Modelo | Por qué |
 |---|---|---|
-| `general`, `rsssf`, `explore`, `test-generator`, `code-reviewer`, `security-reviewer`, `performance-analyzer` | `nvidia/z-ai/glm-5.3` | Coste 0 (1 M de contexto, herramientas y razonamiento); el trabajo está guiado por scripts y gates deterministas |
+| `architect`, `general`, `rsssf`, `explore`, `test-generator`, `code-reviewer`, `security-reviewer`, `performance-analyzer`, `cloudflare`, `opencollective` | `opencode-go/deepseek-v4.1-flash` | Un solo motor para todos: mismo razonamiento que la sesión que decide, sin saltos de calidad entre subagente y arquitecto |
 | Sesión del arquitecto | `opencode-go/deepseek-v4.1-flash` | Decide y redacta; es donde el juicio importa |
 
 **Por qué ahí**: el 2026-10-12 el contador mostró dónde está el volumen real — **944 mensajes
 y 77,6 M de tokens de los subagentes** (75,2 M de caché leída) frente a 34 mensajes del
-arquitecto. El tier gratuito de `opencode/big-pickle` se agotó por los subagentes, no por el
-trabajo del archivo: moverlos a NVIDIA quita la dependencia crítica sin degradar la parte
-que decide.
+arquitecto. Con el tier gratuito como cuello de botella, se prioriza **velocidad y coherencia**
+en la fase de publicación: el mismo motor en toda la flota. Es reversible: los relevos gratuitos
+siguen en la tabla de alternativas de abajo.
 
 Config: `opencode.json` (`small_model`, `agent.<nombre>.model`) y `.opencode/agent/*.md`
 (campo `model` por agente). **Los cambios requieren reiniciar opencode.**
-La clave **nunca** va en el fichero: la lee el proveedor del catálogo desde `NVIDIA_API_KEY`.
+La clave **nunca** va en el fichero: la resuelve el proveedor `opencode-go` del catálogo.
 
-> **Cómo se escribe el identificador (nos costó tres intentos).** En el catálogo, la clave del
+> **Cómo se escribe el identificador (nos costó tres intentos; nota histórica del relevo NVIDIA).** En el catálogo, la clave del
 > modelo **puede incluir el prefijo del fabricante**, y opencode compone `proveedor` + `/` +
 > `clave`. Ejemplos reales del proveedor `nvidia`:
 > `z-ai/glm-5.3` → **`nvidia/z-ai/glm-5.3`**; `nvidia/nemotron-3.5-lightning-30b-a3b` →
@@ -78,7 +77,8 @@ Señales, por orden de gravedad:
 
 | Opción | Coste | Cuándo |
 |---|---|---|
-| **`nvidia/z-ai/glm-5.3`** (actual) | 0 € | Modelo por defecto de los subagentes (1 M de contexto, herramientas y razonamiento) |
+| **`opencode-go/deepseek-v4.1-flash`** (actual) | €/token (testimonial) | Motor único de toda la flota: sesión y subagentes |
+| `nvidia/z-ai/glm-5.3` | 0 € | Relevo gratuito de la flota (1 M de contexto, herramientas y razonamiento) |
 | `nvidia/moonshotai/kimi-k3` | 0 € | Relevo directo; mismo perfil (1 M, herramientas y razonamiento) |
 | `nvidia/qwen/qwen3.5-397b-a17b` · `nvidia/qwen/qwen3-coder-480b-a35b-instruct` | 0 € | Si GLM/Kimi limitan; el segundo es específico de código |
 | `nvidia/deepseek-ai/deepseek-v4-pro-0813` | 0 € | Alternativa fuerte (1 M) |

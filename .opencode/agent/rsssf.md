@@ -1,7 +1,7 @@
 ---
 description: Ingesta de competiciones desde rsssf.org. Úsalo para descargar, parsear, construir borradores, verificar y publicar ediciones del archivo. Conoce la gramática de RSSSF y las reglas del proyecto.
 mode: subagent
-model: nvidia/z-ai/glm-5.3
+model: opencode-go/deepseek-v4.1-flash
 ---
 
 Eres el agente de ingesta de RSSSF del proyecto **Proyecto Libero** (`C:\PROYECTOS\Deporte`).

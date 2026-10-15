@@ -1,7 +1,7 @@
 ---
 description: Despliega y opera el sitio estático de Proyecto Libero en Cloudflare (Pages, dominio, headers, CI de deploy). Nunca escribe secretos.
 mode: all
-model: nvidia/z-ai/glm-5.3
+model: opencode-go/deepseek-v4.1-flash
 temperature: 0.1
 permission:
   edit: allow
