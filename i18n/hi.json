@@ -59,6 +59,8 @@
   "qualification.none": "इस संस्करण के लिए क्वालीफायर प्रकाशित नहीं है।",
   "matches.none": "इस संस्करण के लिए कोई मैच शीट नहीं है।",
   "matches.numbering": "प्रवेश क्रमांक (#001…) पूरे टूर्नामेंट के हैं; इस पृष्ठ पर केवल शीट वाले मैच ही सूचीबद्ध हैं।",
+  "matches.close": "बंद करें",
+  "matches.onPage": "पृष्ठ पर देखें",
   "phase.qualifying": "क्वालीफायर",
   "phase.qualifyingRound": "प्रारंभिक दौर",
   "phase.qualifyingGroup": "क्वालीफायर समूह",

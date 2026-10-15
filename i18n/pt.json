@@ -59,6 +59,8 @@
   "qualification.none": "Esta edição não tem eliminatórias publicadas.",
   "matches.none": "Esta edição não tem fichas de partida.",
   "matches.numbering": "A numeração de entradas (#001…) é a do torneio completo; nesta página só se listam as partidas com ficha.",
+  "matches.close": "Fechar",
+  "matches.onPage": "Ver na página",
   "phase.qualifying": "Eliminatórias",
   "phase.qualifyingRound": "Ronda preliminar",
   "phase.qualifyingGroup": "Grupo de qualificação",

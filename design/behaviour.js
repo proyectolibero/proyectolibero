@@ -171,6 +171,108 @@
     });
   }
 
+  /* --- Ficha de partido en modal --------------------------------------
+   * Mejora progresiva: sin JS las fichas siguen inline en /partidos/ y el
+   * ancla funciona. Con JS, un enlace a #<id> o un #<id> en la URL abre la
+   * ficha en el <dialog> nativo. La ficha se MUEVE al modal al abrir y se
+   * DEVUELVE a su sitio al cerrar: nunca se duplica en el DOM. */
+  function initFacsimileModal() {
+    var dialog = document.querySelector("[data-lb-modal]");
+    if (!dialog || typeof dialog.showModal !== "function") return;
+    var body = dialog.querySelector("[data-lb-modal-body]");
+    if (!body) return;
+    var title = dialog.querySelector("[data-lb-modal-title]");
+    var closeButton = dialog.querySelector("[data-lb-modal-close]");
+    var onPageLink = dialog.querySelector("[data-lb-modal-onpage]");
+
+    var current = null;
+    var marker = null;
+    var origin = null;
+    var jumpTo = null;
+
+    function isFacsimile(id) {
+      var figure = id ? document.getElementById(id) : null;
+      return figure && figure.classList.contains("lb-facsimile") ? figure : null;
+    }
+
+    function open(id, trigger) {
+      var figure = isFacsimile(id);
+      if (!figure || dialog.open) return;
+      origin = trigger || null;
+      marker = document.createComment(" lb-facsimile ");
+      figure.parentNode.insertBefore(marker, figure);
+      body.appendChild(figure);
+      current = figure;
+      if (title) {
+        var caption = figure.querySelector(".lb-facsimile__caption");
+        title.textContent = caption ? caption.textContent : "";
+      }
+      dialog.showModal();
+      if (closeButton) closeButton.focus();
+    }
+
+    dialog.addEventListener("close", function () {
+      if (current && marker && marker.parentNode) {
+        marker.parentNode.insertBefore(current, marker);
+        marker.parentNode.removeChild(marker);
+      }
+      current = null;
+      marker = null;
+      if (jumpTo) {
+        var hash = jumpTo;
+        jumpTo = null;
+        origin = null;
+        var figure = isFacsimile(hash);
+        if (figure) {
+          if (typeof figure.scrollIntoView === "function") figure.scrollIntoView({ block: "start" });
+          if (window.history && window.history.replaceState) window.history.replaceState(null, "", "#" + hash);
+        }
+        return;
+      }
+      if (origin && document.contains(origin) && typeof origin.focus === "function") origin.focus();
+      origin = null;
+    });
+
+    if (closeButton) closeButton.addEventListener("click", function () { dialog.close(); });
+
+    dialog.addEventListener("click", function (event) {
+      if (event.target === dialog) dialog.close();
+    });
+
+    document.addEventListener("click", function (event) {
+      if (event.defaultPrevented || event.button !== 0) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      var node = event.target;
+      var link = node && node.closest ? node.closest('a[href^="#"]') : null;
+      if (!link) return;
+      var id = String(link.getAttribute("href") || "").slice(1);
+      if (!id || !isFacsimile(id)) return;
+      event.preventDefault();
+      open(id, link);
+    });
+
+    if (onPageLink) {
+      onPageLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        if (!current) return;
+        jumpTo = current.id;
+        dialog.close();
+      });
+    }
+
+    function fromHash() {
+      return String(window.location.hash || "").slice(1);
+    }
+
+    window.addEventListener("hashchange", function () {
+      var id = fromHash();
+      if (id && !dialog.open) open(id, null);
+      else if (!id && dialog.open) dialog.close();
+    });
+
+    if (fromHash()) open(fromHash(), null);
+  }
+
   function init() {
     initTheme();
     initNav();
@@ -179,6 +281,7 @@
     initScrubbers();
     initPagination();
     initContribute();
+    initFacsimileModal();
   }
 
   if (document.readyState === "loading") {

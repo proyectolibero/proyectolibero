@@ -48,6 +48,9 @@
   --lb-shadow-1: 0 1px 2px var(--lb-shadow-color);
   --lb-shadow-2: 0 6px 18px var(--lb-shadow-color);
 
+  /* --- Velo del modal (fondo tras el dialogo) --- */
+  --lb-scrim: rgba(15, 23, 42, 0.55);
+
   /* --- Tipografia: stacks del sistema con cobertura zh / hi (sin webfonts) --- */
   --lb-font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     "Noto Sans", "Noto Sans SC", "Noto Sans TC", "Noto Sans Devanagari",
@@ -128,6 +131,7 @@
 
     --lb-focus-ring: #3fc493;
     --lb-shadow-color: rgba(0, 0, 0, 0.4);
+    --lb-scrim: rgba(0, 0, 0, 0.65);
   }
 }
 
@@ -159,6 +163,7 @@
 
   --lb-focus-ring: #3fc493;
   --lb-shadow-color: rgba(0, 0, 0, 0.4);
+  --lb-scrim: rgba(0, 0, 0, 0.65);
 }
 
 /* Respeto a prefers-reduced-motion: sin transiciones. */

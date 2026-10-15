@@ -59,6 +59,8 @@
   "qualification.none": "Esta edición no tiene clasificación publicada.",
   "matches.none": "No hay fichas de partido para esta edición.",
   "matches.numbering": "La numeración de entradas (#001…) es la del torneo completo; en esta página solo se listan los partidos con ficha.",
+  "matches.close": "Cerrar",
+  "matches.onPage": "Ver en la página",
   "phase.qualifying": "Clasificación",
   "phase.qualifyingRound": "Ronda preliminar",
   "phase.qualifyingGroup": "Grupo de clasificación",

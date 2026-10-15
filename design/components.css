@@ -705,6 +705,90 @@ a.lb-phases__name:hover { text-decoration: underline; }
 }
 
 /* ------------------------------------------------------------------ */
+/* FichaModal - ficha de partido en modal (mejora progresiva)          */
+/* ------------------------------------------------------------------ */
+/* Sin JS el <dialog> queda oculto por el estilo del UA y la ficha      */
+/* sigue inline en la lista; el modal solo lo revela behaviour.js.      */
+
+.lb-modal {
+  width: min(calc(100% - 2 * var(--lb-space-4)), 48rem);
+  max-height: min(88vh, 88dvh);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--lb-border);
+  border-radius: var(--lb-radius-lg);
+  background: var(--lb-surface);
+  color: var(--lb-text);
+  box-shadow: var(--lb-shadow-2);
+  overflow: hidden;
+}
+
+.lb-modal[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.lb-modal::backdrop {
+  background: var(--lb-scrim);
+}
+
+.lb-modal__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--lb-space-3);
+  padding: var(--lb-space-3) var(--lb-space-4);
+  border-bottom: 1px solid var(--lb-border);
+  background: var(--lb-surface-2);
+}
+
+.lb-modal__title {
+  margin: 0;
+  font-size: var(--lb-fs-xs);
+  font-weight: var(--lb-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--lb-text-muted);
+}
+
+.lb-modal__close {
+  flex: none;
+  min-height: var(--lb-tap);
+  padding: var(--lb-space-2) var(--lb-space-4);
+  font: inherit;
+  font-size: var(--lb-fs-sm);
+  font-weight: var(--lb-weight-medium);
+  color: var(--lb-text);
+  background: var(--lb-surface);
+  border: 1px solid var(--lb-border-strong);
+  border-radius: var(--lb-radius);
+  cursor: pointer;
+}
+
+.lb-modal__close:hover {
+  border-color: var(--lb-accent);
+  color: var(--lb-accent);
+}
+
+.lb-modal__body {
+  min-height: 0;
+  overflow-y: auto;
+  padding: var(--lb-space-4);
+}
+
+.lb-modal__foot {
+  padding: var(--lb-space-3) var(--lb-space-4);
+  border-top: 1px solid var(--lb-border);
+  background: var(--lb-surface-2);
+}
+
+.lb-modal__onpage {
+  font-size: var(--lb-fs-sm);
+  font-weight: var(--lb-weight-medium);
+  color: var(--lb-accent);
+}
+
+/* ------------------------------------------------------------------ */
 /* CitationBlock — "como citar este release"                           */
 /* ------------------------------------------------------------------ */
 

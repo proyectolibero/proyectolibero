@@ -59,6 +59,8 @@
   "qualification.none": "This edition has no published qualifying.",
   "matches.none": "This edition has no match sheets.",
   "matches.numbering": "Entry numbers (#001…) are those of the complete tournament; only matches with a sheet are listed on this page.",
+  "matches.close": "Close",
+  "matches.onPage": "View on the page",
   "phase.qualifying": "Qualifying",
   "phase.qualifyingRound": "Qualifying round",
   "phase.qualifyingGroup": "Qualifying group",

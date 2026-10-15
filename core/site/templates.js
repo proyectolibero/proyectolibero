@@ -965,6 +965,27 @@ function facsimileSheet(ctx, lang, match, numbers) {
   );
 }
 
+/**
+ * Diálogo nativo que, con JS, presenta una ficha en modal (mejora progresiva).
+ * Sin JS queda oculto (el UA no pinta un `<dialog>` sin `open`) y las fichas
+ * siguen inline en la lista; `design/behaviour.js` mueve la ficha y lo abre.
+ */
+function facsimileModal(ctx, lang) {
+  const { t } = ctx;
+  return (
+    `    <dialog class="lb-modal" data-lb-modal aria-labelledby="lb-modal-title">\n` +
+    `      <div class="lb-modal__head">\n` +
+    `        <p class="lb-modal__title" id="lb-modal-title" data-lb-modal-title></p>\n` +
+    `        <button type="button" class="lb-modal__close" data-lb-modal-close>${escapeHtml(t(lang, "matches.close"))}</button>\n` +
+    `      </div>\n` +
+    `      <div class="lb-modal__body" data-lb-modal-body></div>\n` +
+    `      <div class="lb-modal__foot">\n` +
+    `        <a class="lb-modal__onpage" data-lb-modal-onpage href="#">${escapeHtml(t(lang, "matches.onPage"))}</a>\n` +
+    `      </div>\n` +
+    `    </dialog>`
+  );
+}
+
 function standingsTable(ctx, lang, group) {
   const { t } = ctx;
   const rows = (group.standings || [])
@@ -1741,6 +1762,7 @@ function matchesContent(ctx, page) {
       ? `      <p class="lb-label">${escapeHtml(t(lang, "matches.numbering"))}</p>\n\n`
       : "";
   const base = `/${lang}/${sport.slug}/${comp.slug}/${page.year}`;
+  const modal = sheets ? `\n\n${facsimileModal(ctx, lang)}` : "";
   const body =
     `    <header class="lb-edition-head">\n` +
     `      <h1 class="lb-section__title">${escapeHtml(title)}</h1>\n` +
@@ -1751,6 +1773,7 @@ function matchesContent(ctx, page) {
       t(lang, "edition.facsimile"),
       sheets ? `      <div class="lb-facsimile-list">\n${sheets}\n      </div>` : `      <p class="lb-label">${escapeHtml(t(lang, "matches.none"))}</p>`
     ) +
+    modal +
     `\n\n    <section class="lb-section">\n` +
     `      <a class="lb-entry__link" href="${base}/">\u2190 ${escapeHtml(t(lang, "edition.back"))}</a>\n` +
     `    </section>`;
