@@ -12,7 +12,7 @@
   "areas": {
     "site": {
       "status": "done",
-      "notes": "SSG sin dependencias (core/site/build.js): 3.345 páginas + sitemap.xml + robots.txt (por idioma: 1 home, 4 deportes, 5 competiciones, 76 ediciones, 30 clasificaciones, 508 grupos, 43 páginas de partidos). Generación en streaming (visit/collect), no materializa todas las páginas a la vez. URLs por ruta generadas estáticamente, slugs canónicos en es. site/ no se versiona (salida generada)."
+      "notes": "SSG sin dependencias (core/site/build.js): 3.345 páginas + sitemap.xml + robots.txt + _headers/_redirects (por idioma: 1 home, 1 deporte publicado, 5 competiciones, 76 ediciones, 30 clasificaciones, 510 grupos, 43 páginas de partidos, 3 de identidad). Generación en streaming (visit/collect), no materializa todas las páginas a la vez (los tests de sitio ya no agotan el heap). El KPI «Deportes publicados» cuenta solo los deportes con competiciones (hoy 1), no el total del catálogo (4). Presentación de edición por fases (D61) y páginas de identidad (D62: metodología, licencia, colaborar). URLs por ruta generadas estáticamente, slugs canónicos en es. site/ no se versiona (salida generada)."
     },
     "i18n": {
       "status": "done",
@@ -51,7 +51,7 @@
     },
     "validation": {
       "status": "done",
-      "notes": "Gates: node --test tests/ = 340 tests (335 pass, 5 rojos preexistentes en tests/promote.test.js: 171, 254, 279, 440, 483; esperan validación 0 y obtienen 1, confirmados preexistentes vía git stash, pendientes de arreglo); scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos (línea base, no puede empeorar); scripts/site-weight.js = 0 páginas sobre 300 kB (peor: Mundial 2018 [hi] 171,9 kB). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
+      "notes": "Gates: node --test --test-concurrency=2 tests/ = 344 tests, 0 fallos; scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos (línea base, no puede empeorar); scripts/site-weight.js = 0 páginas sobre 300 kB de 2.500 medidas (peor: Mundial 2014 [hi] 190,7 kB). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
     },
     "mcp": {
       "status": "done",
@@ -63,7 +63,7 @@
     },
     "docs": {
       "status": "done",
-      "notes": "ESQUEMA-DATOS-v2, SOSTENIBILIDAD (sustituye MONETIZACION), CONTRIBUCION, AGENTES, AGENTES-COSTE, MODELOS, DISENO, SEO, DESPLIEGUE, ESTRUCTURA, ESTADO-ACTUAL, adr/ (índice hasta ADR-018; canónico en memory/decisions.md, D1..D60)."
+      "notes": "ESQUEMA-DATOS-v2, SOSTENIBILIDAD (sustituye MONETIZACION), CONTRIBUCION, AGENTES, AGENTES-COSTE, MODELOS, DISENO, SEO, DESPLIEGUE, ESTRUCTURA, ESTADO-ACTUAL, adr/ (índice hasta ADR-018; canónico en memory/decisions.md, D1..D62)."
     },
     "monetization": {
       "status": "done",
@@ -82,14 +82,20 @@
     { "id": "P1", "title": "Taxonomía de facetas", "status": "done" },
     { "id": "P2", "title": "Catálogo como hoja de ruta (editorialStatus)", "status": "done" },
     { "id": "P3", "title": "Identidad de entidades auditable (ADR-032/D48)", "status": "pending" },
-    { "id": "P4", "title": "Portada «qué es Proyecto Libero» + metodología", "status": "pending" },
+    { "id": "P4", "title": "Portada «qué es Proyecto Libero» + metodología (D62)", "status": "done" },
     { "id": "P5", "title": "Donaciones: host fiscal Open Source Europe + dossier", "status": "pending" },
     { "id": "P6", "title": "Capa IA: llms.txt, ai/index.json, NDJSON, esquemas", "status": "pending" },
-    { "id": "P7", "title": "Escalar competiciones (R3: 8 internacionales) + SEO fino", "status": "pending" }
+    { "id": "P7", "title": "Escalar competiciones (R3: 8 internacionales) + SEO fino", "status": "pending" },
+    { "id": "N1", "title": "Rediseño de navegación", "status": "pending" },
+    { "id": "C1", "title": "Colaboración", "status": "pending" },
+    { "id": "C2", "title": "Colaboración", "status": "pending" },
+    { "id": "F3", "title": "Build incremental", "status": "pending" }
   ],
   "nextSteps": [
+    "N1 — Rediseño de navegación",
+    "C1/C2 — Colaboración",
+    "F3 — Build incremental",
     "P3 — Identidad de entidades auditable (ADR-032/D48): desbloquea la clasificación del Mundial 2002-2014 (Saar, TCH/URS/FRG)",
-    "P4 — Portada «qué es Proyecto Libero» + metodología",
     "Completar el dominio propio: crear los dos CNAME proxied (@ y www → proyectolibero.pages.dev) para proyectolibero.org, o dar Zone→DNS→Edit al token",
     "P5 — Donaciones: host fiscal Open Source Europe + dossier de registro",
     "P6 — Capa IA: llms.txt, ai/index.json, NDJSON, esquemas",

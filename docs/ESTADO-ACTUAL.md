@@ -9,7 +9,7 @@ Archivo abierto de resultados deportivos: `proyectolibero.org`, HTML estático +
 - **Contenido**: `catalog/` (deportes y competiciones) · `data/<sport>/<comp>/<año>.json` · `releases/` (sello atómico).
 - **Núcleo**: `core/` (io, catálogo, validador, reindex, release, view-model, CLI) + **`core/site/` = generador SSG** sin dependencias (5 idiomas, slugs canónicos en es, sitemap/robots).
 - **Identidad e ingesta**: `design/` (tokens, componentes, banderas SVG, medallas) · `ingest/` (fetch · parsers RSSSF por familia · build · reconcile) · `inbox/` y `drafts/` (ignorados).
-- **Control y conocimiento**: `admin/` (panel local 127.0.0.1:8787, no se publica) · `memory/` (decisiones D1..D60, fuentes, estado) vía MCP `deporte-memoria`.
+- **Control y conocimiento**: `admin/` (panel local 127.0.0.1:8787, no se publica) · `memory/` (decisiones D1..D62, fuentes, estado) vía MCP `deporte-memoria`.
 - **Verdad**: ficheros + git. La BD del panel es índice reconstruible; `site/` es salida generada, **no versionada**.
 
 ## Estado de datos y web
@@ -17,17 +17,18 @@ Archivo abierto de resultados deportivos: `proyectolibero.org`, HTML estático +
 - **Fichas verbatim**: 1.172 (Mundial 900 → 1930–2018; Eurocopa 221; Confederaciones 42; Balkan 9; Nordic 0). Mundial 2022/2026 sin ficha: RSSSF no publica `NNfull`.
 - **Clasificación Mundial**: completa 1934–1998 y 2018–2022; **parcial 2002–2014** (entidades sin resolver en `i18n/countries.json`, p. ej. Saar); **2026 pendiente** (solo fase final, 104 partidos); 1930 no tuvo.
 - **Clasificación Eurocopa**: completa 1988 y 1996–2024; **1960–1984 y 1992 sin publicar** (RSSSF no la ofrece legible). Balkan/Confederaciones/Nordic: no existe.
-- **Fases y conclusión (ADR-035/D51-52)**: el catálogo declara `declaredPhases` por **clase** (`qualifying|group|knockout|ranking|heat`) y la conclusión **se deriva** (scope all + sin fases ausentes ni parciales + campeón; `coverage.complete` ya no se escribe a mano). Hoy: **9 ediciones con fase ausente** (Eurocopa 1960–1984 y 1992; Mundial 2026) y **4 Mundiales con clasificación parcial** (2002–2014, `partialPhases`). La ficha de edición muestra el bloque «Fases declaradas» con lo presente y lo que falta; el hub de competición muestra el estado de cada edición (Concluida / No concluida / No celebrado). Capturas: `preview/eurocopa-1960-fases-{1440,390}.png`, `preview/hub-mundial-conclusion-1440.png`.
-- **Web**: `node core/site/build.js` → **3.345 páginas** + sitemap.xml + robots.txt (por idioma: 1 home, 4 deportes, 5 competiciones, 76 ediciones, 30 clasificaciones, 508 grupos, 43 páginas de partidos). SSG en **streaming** (`visit`+`collect`), no materializa todas las páginas a la vez. `site/` no se versiona; capturas en `preview/`.
+- **Fases y conclusión (ADR-035/D51-52)**: el catálogo declara `declaredPhases` por **clase** (`qualifying|group|knockout|ranking|heat`) y la conclusión **se deriva** (scope all + sin fases ausentes ni parciales + campeón; `coverage.complete` ya no se escribe a mano). Hoy: **9 ediciones con fase ausente** (Eurocopa 1960–1984 y 1992; Mundial 2026) y **4 Mundiales con clasificación parcial** (2002–2014, `partialPhases`). La ficha de edición muestra el bloque «Fases declaradas» con lo presente y lo que falta; el hub de competición muestra el estado de cada edición (Concluida / No concluida / No celebrado). **Presentación por fases (D61)**: cada fase agrupa su clasificación y sus resultados en la misma sección, con un índice de fases anclado bajo el H1 y anclas `fase-grupo`/`fase-eliminatoria`/`fase-final`. Capturas: `preview/eurocopa-1960-fases-{1440,390}.png`, `preview/hub-mundial-conclusion-1440.png`.
+- **Identidad pública (D62)**: portada de presentación (H1 + lede + KPIs reales + «qué es y qué no es» + «cómo se construye» + «explora el archivo» + «publicación») y tres páginas por idioma: **Metodología** (`/metodologia/`), **Licencia y uso** (`/licencia/`) y **Cómo colaborar** (`/colaborar/`); menú «Acerca de» y pie enlazado. El KPI **«Deportes publicados»** cuenta solo los deportes con al menos una competición (hoy **1**), no el total del catálogo (4).
+- **Web**: `node core/site/build.js` → **3.345 páginas** + sitemap.xml + robots.txt + `_headers`/`_redirects` (por idioma: 1 home, **1 deporte publicado**, 5 competiciones, 76 ediciones, 30 clasificaciones, 510 grupos, 43 páginas de partidos, 3 de identidad). SSG en **streaming** (`visit`+`collect`), no materializa todas las páginas a la vez (los tests de sitio ya no agotan el heap). `site/` no se versiona; capturas en `preview/`.
 - **Despliegue (D59/D60)**: sitio **activo** en Cloudflare Pages, proyecto `proyectolibero` (rama de producción `master`), `https://proyectolibero.pages.dev` (`/`→301 a `/es/`, `/es/`→200). Deploy SIEMPRE con `wrangler pages deploy site --project-name=proyectolibero`; nunca `assets.directory:"."`. `proyectolibero.org` dado de alta como custom domain pero **pendiente de los dos CNAME** proxied (`@` y `www` → `proyectolibero.pages.dev`); vía preferida a futuro: integración Git nativa. Ver `docs/DESPLIEGUE.md`.
 
 ## Calidad (verificada hoy)
-- `node --test tests/` → **340 tests, 335 pass, 5 rojos preexistentes** en `tests/promote.test.js` (líneas 171, 254, 279, 440, 483; esperan validación 0 y obtienen 1). Confirmados preexistentes vía `git stash`; pendientes de arreglo, no bloquean el gate. `node scripts/validate.js` → **0 errores / 0 avisos**.
+- `node --test --test-concurrency=2 tests/` → **344 tests, 0 fallos** (los 5 rojos preexistentes de `tests/promote.test.js` ya están arreglados). `node scripts/validate.js` → **0 errores / 0 avisos**.
 - `node scripts/integrity.js` → **0 errores / 43 avisos = línea base** (1 excepción auditable: Balkan 1935). No puede empeorar.
-- `node scripts/site-weight.js` → presupuesto **300 kB/página**, 2.490 páginas medidas (Mundial por defecto), **0 por encima**; peor: Mundial 2018 [hi] 171,9 kB. Fila de partido ~845 B.
+- `node scripts/site-weight.js` → presupuesto **300 kB/página**, 2.500 páginas medidas (Mundial por defecto), **0 por encima**; peor: Mundial 2014 [hi] 190,7 kB. Fila de partido ~845 B.
 
 ## Modelos y coste (`docs/MODELOS.md`)
-- **Toda la flota en `opencode-go/deepseek-v4.1-flash`** (2026-10-15, fase de publicación): sesión del arquitecto y subagentes (`general`, `rsssf`, `explore`, `architect`, `test-generator`, `code-reviewer`, `security-reviewer`, `performance-analyzer`, `cloudflare`, `opencollective`) y `small_model`; un solo motor, mismo razonamiento que decide y ejecuta. Config en `opencode.json` y `.opencode/agent/*.md`; **reiniciar opencode**. Los relevos gratuitos NVIDIA siguen en la tabla de `docs/MODELOS.md` por si hay que revertir por coste.
+- **Toda la flota en `opencode-go/deepseek-v4.1-flash`** (2026-10-15, fase de publicación; **D58**): sesión del arquitecto y subagentes (`general`, `rsssf`, `explore`, `architect`, `test-generator`, `code-reviewer`, `security-reviewer`, `performance-analyzer`, `cloudflare`, `opencollective`) y `small_model`; un solo motor, mismo razonamiento que decide y ejecuta. Config en `opencode.json` y `.opencode/agent/*.md`; **reiniciar opencode**. Los relevos gratuitos NVIDIA siguen en la tabla de `docs/MODELOS.md` por si hay que revertir por coste.
 - **Regla del identificador**: opencode compone proveedor + clave; con el proveedor `nvidia` el prefijo puede ir dos veces (`nvidia/nvidia/nemotron…`). El mensaje de error sugiere la clave, no el id completo. La clave **nunca** va en ficheros (la resuelve el proveedor).
 - Contador: `node scripts/usage.js` (umbral 40 M tokens/día en `.opencode/usage.config.json`, exit 1 al superarlo).
 - **Señales de que un modelo no sirve** (evidencia, no impresiones): nemotron descartado por informes que no cuadraban (fichero suelto en vez de mensaje, cifras contradictorias, test no registrado). Un informe que no cuadra con gates y ficheros invalida el modelo.
@@ -36,15 +37,16 @@ Archivo abierto de resultados deportivos: `proyectolibero.org`, HTML estático +
 1. **P1 — Taxonomía de facetas**: ✅ hecha (2026-10-13): `catalog/facets.json` + validador (CAT006) + las 5 publicadas etiquetadas (`facets` y `declaredPhases`, ADR-035/D51-52); las 8 planeadas de R3 se etiquetan al añadirlas al catálogo.
 2. **P2 — Catálogo como hoja de ruta**: ✅ hecha: `editorialStatus` existe en el catálogo (`"published"` en las 5); `promote` lo activa al publicar la primera edición.
 3. **P3 — Identidad de entidades auditable** (ADR-032/D48): dato crudo intacto + agrupación auditable (Saar, TCH/URS/FRG…).
-4. **P4 — Portada** «qué es Proyecto Libero» + metodología.
+4. **P4 — Portada** «qué es Proyecto Libero» + metodología: ✅ hecha (2026-10-15, D62): portada de identidad + Metodología, Licencia y uso y Cómo colaborar en los 5 idiomas.
 5. **P5 — Donaciones**: host fiscal Open Source Europe + dossier de registro.
 6. **P6 — Capa IA**: `llms.txt`, `ai/index.json`, NDJSON, esquemas.
 7. **P7 — Escalar competiciones** (R3: 8 internacionales restantes) + SEO fino (despliegue ✅ activo en `proyectolibero.pages.dev`; falta el dominio propio, pendiente de DNS).
+- **Próximos pasos acordados (2026-10-15)**: **N1 — Rediseño de navegación**, **C1/C2 — Colaboración**, **F3 — Build incremental**.
 
 ## Comandos útiles
 ```bash
 node scripts/validate.js                 # gate (CI/MCP)
-node --test tests/                       # suite (335 pass / 5 rojos preexistentes en promote)
+node --test --test-concurrency=2 tests/ # suite (344 tests, 0 fallos)
 node scripts/integrity.js                # anomalías semánticas (línea base 43 avisos)
 node scripts/site-weight.js              # presupuesto de peso del SSG
 node scripts/usage.js                    # tokens por día/modelo/agente

@@ -69,7 +69,9 @@ function entries(t, lang, keys) {
 function datasetCounts(ctx) {
   const ds = (ctx.release && ctx.release.dataset) || {};
   return {
-    sports: ds.sports != null ? ds.sports : (ctx.catalog.sports || []).length,
+    /* Deportes con al menos una competición (los publicados), no el total del
+     * catálogo: un deporte planificado no genera hub ni aparece (F0.2/D62). */
+    sports: ctx.model.sports.length,
     competitions:
       ds.competitions != null ? ds.competitions : Object.keys(ctx.catalog.competitions || {}).length,
     editions: ds.editions != null ? ds.editions : 0,
