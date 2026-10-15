@@ -79,6 +79,7 @@ function baseRepo() {
   const root = tmpRoot();
   fs.cpSync(path.join(ROOT, "schemas"), path.join(root, "schemas"), { recursive: true });
   fs.cpSync(path.join(ROOT, "i18n"), path.join(root, "i18n"), { recursive: true });
+  fs.cpSync(path.join(ROOT, "design"), path.join(root, "design"), { recursive: true });
   fs.mkdirSync(path.join(root, "catalog", "competitions"), { recursive: true });
   writeJson(path.join(root, "releases", "2026.10", "release.json"), releaseFixture());
   writeJson(path.join(root, "catalog", "competitions", "football.worldcup.json"), competitionFixture("football/worldcup", "FIFA World Cup", "copa-del-mundo", "worldcup"));

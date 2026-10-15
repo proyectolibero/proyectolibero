@@ -22,7 +22,6 @@ const { ROOT } = require("./helpers.js");
 const { buildSite } = require("../core/site/index.js");
 const { loadFlagManifest } = require("../core/site/flags.js");
 
-const ASSETS = ["/assets/design/tokens.css", "/assets/design/components.css", "/assets/design/behaviour.js"];
 const JUNK = ["undefined", "NaN", "[object Object]"];
 
 /** href/src con ruta local (raíz del site); externos y anclas no aplican. */
@@ -41,7 +40,7 @@ function scanSite() {
   const linkOrigin = new Map(); // enlace único → primera página que lo usa
   const flagRefs = new Map(); // bandera única → primera página que la usa
   const junk = [];
-  buildSite(ROOT, {
+  const result = buildSite(ROOT, {
     write: false,
     collect: false,
     visit(page) {
@@ -55,13 +54,13 @@ function scanSite() {
       }
     }
   });
-  scan = { pagePaths, linkOrigin, flagRefs, junk };
+  scan = { pagePaths, linkOrigin, flagRefs, junk, assets: result.assets };
   return scan;
 }
 
 /** URLs locales válidas: las páginas del plan + los assets que el SSG copia. */
 function validUrls() {
-  const urls = new Set(ASSETS);
+  const urls = new Set(Object.values(scanSite().assets));
   const manifest = loadFlagManifest(ROOT);
   for (const code of Object.keys(manifest.flags || {})) urls.add(`/assets/design/flags/${code}.svg`);
   for (const pagePath of scanSite().pagePaths) urls.add(pagePath);

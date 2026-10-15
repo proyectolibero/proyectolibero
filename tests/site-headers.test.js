@@ -16,16 +16,28 @@ const { buildSite } = require("../core/site/index.js");
 
 const ONE_EDITION = [{ competitionId: "football/worldcup", year: 1930 }];
 
-test("site-headers: el build expone _headers con seguridad mínima y caché de assets", () => {
+test("site-headers: el build expone _headers con seguridad mínima y caché inmutable de assets", () => {
   const result = buildSite(ROOT, { write: false, editions: ONE_EDITION });
   assert.match(result.headers, /X-Content-Type-Options: nosniff/);
   assert.match(result.headers, /X-Frame-Options: DENY/);
   assert.match(result.headers, /Referrer-Policy: strict-origin-when-cross-origin/);
   assert.match(result.headers, /Content-Security-Policy: default-src 'self'/);
   assert.match(result.headers, /frame-ancestors 'none'/);
-  assert.match(result.headers, /\/assets\/design\/\*/);
-  assert.match(result.headers, /Cache-Control: public, max-age=604800/);
-  assert.doesNotMatch(result.headers, /immutable/, "assets sin huella: no se cachea como inmutable");
+  assert.match(result.headers, /\/assets\/design\/\*\.css/);
+  assert.match(result.headers, /\/assets\/design\/\*\.js/);
+  assert.match(
+    result.headers,
+    /\/assets\/design\/\*\.css\n {2}Cache-Control: public, max-age=31536000, immutable/,
+    "el CSS con huella se cachea como inmutable un año"
+  );
+  assert.match(
+    result.headers,
+    /\/assets\/design\/\*\.js\n {2}Cache-Control: public, max-age=31536000, immutable/,
+    "el JS con huella se cachea como inmutable un año"
+  );
+  assert.match(result.headers, /\/assets\/design\/flags\/\*/);
+  assert.match(result.headers, /Cache-Control: public, max-age=86400/, "las banderas revalidan cada día");
+  assert.doesNotMatch(result.headers, /max-age=604800/, "ya no hay caché de 7 días");
 });
 
 test("site-headers: el build expone _redirects con la raíz hacia /es/ (301)", () => {

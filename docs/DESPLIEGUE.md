@@ -51,7 +51,7 @@ El build emite en la raíz de `site/`:
 
 | Fichero | Contenido |
 |---|---|
-| `_headers` | Seguridad (`X-Content-Type-Options`, `X-Frame-Options: DENY`, `Referrer-Policy`, CSP `default-src 'self'` sin inline ni externos) y caché de `/assets/design/*` a 7 días (sin `immutable`: los assets no llevan huella en el nombre). |
+| `_headers` | Seguridad (`X-Content-Type-Options`, `X-Frame-Options: DENY`, `Referrer-Policy`, CSP `default-src 'self'` sin inline ni externos); CSS/JS de diseño con huella de contenido en el nombre → `max-age=31536000, immutable`; banderas (sin huella, referenciadas por código de país) → 1 día. |
 | `_redirects` | `/ → /es/` con **301** (portada canónica en español, ADR-013/D19). |
 | `sitemap.xml`, `robots.txt` | Descubrimiento; ya los generaba el SSG. |
 

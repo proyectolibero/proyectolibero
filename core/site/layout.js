@@ -3,8 +3,6 @@
 const { escapeHtml, attrs } = require("./html.js");
 const { HTML_LANG } = require("./text.js");
 
-const ASSET_BASE = "/assets/design";
-
 function jsonLdScript(value) {
   const json = JSON.stringify(value).replace(/</g, "\\u003c");
   return `  <script type="application/ld+json">${json}</script>`;
@@ -94,15 +92,16 @@ function renderHead(ctx, page, content) {
     )
     .join("\n");
   const jsonld = (content.jsonld || []).map(jsonLdScript).join("\n");
+  const assets = ctx.assets;
   return `  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(content.title)}</title>
   <meta name="description" content="${escapeHtml(content.description)}">
   <link rel="canonical" href="${escapeHtml(canonical)}">
 ${alternates}
-  <link rel="stylesheet" href="${ASSET_BASE}/tokens.css">
-  <link rel="stylesheet" href="${ASSET_BASE}/components.css">
-  <script defer src="${ASSET_BASE}/behaviour.js"></script>
+  <link rel="stylesheet" href="${escapeHtml(assets.tokens)}">
+  <link rel="stylesheet" href="${escapeHtml(assets.components)}">
+  <script defer src="${escapeHtml(assets.behaviour)}"></script>
 ${jsonld}`;
 }
 

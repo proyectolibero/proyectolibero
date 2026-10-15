@@ -2,6 +2,7 @@
 
 const fs = require("node:fs");
 const path = require("node:path");
+const crypto = require("node:crypto");
 const { readJSON } = require("../io.js");
 const { loadCatalog } = require("../catalog.js");
 const { buildModel } = require("./model.js");
@@ -32,7 +33,38 @@ const { collectEditionSeries } = require("./series.js");
  */
 
 const ORIGIN = "https://proyectolibero.org";
+const ASSET_BASE = "/assets/design";
 const ASSETS = ["tokens.css", "components.css", "behaviour.js"];
+const HASH_LENGTH = 8;
+
+/** Huella de contenido (sha256, primeros 8 hex). Sin fecha ni azar: determinista. */
+function contentHash(buffer) {
+  return crypto.createHash("sha256").update(buffer).digest("hex").slice(0, HASH_LENGTH);
+}
+
+/** `components.css` + `9f3a1c2d` → `components.9f3a1c2d.css`. */
+function stampedName(name, hash) {
+  const ext = path.extname(name);
+  return `${path.basename(name, ext)}.${hash}${ext}`;
+}
+
+/**
+ * Plan de los assets de diseño referenciados por el HTML: huella de contenido
+ * en el nombre (cache inmutable) y mapa lógico → URL pública. Solo lee `design/`;
+ * no escribe. Las banderas NO pasan por aquí (se referencian por código de país).
+ */
+function planAssets(root) {
+  const urls = {};
+  const files = [];
+  for (const name of ASSETS) {
+    const from = path.join(root, "design", name);
+    const stamped = stampedName(name, contentHash(fs.readFileSync(from)));
+    const key = path.basename(name, path.extname(name));
+    urls[key] = `${ASSET_BASE}/${stamped}`;
+    files.push({ from, to: path.join("assets", "design", stamped) });
+  }
+  return { urls, files };
+}
 
 function writeText(file, text) {
   const normalized = text.replace(/\r\n/g, "\n");
@@ -103,8 +135,10 @@ function buildRobots() {
 /*
  * `_headers` (Cloudflare Pages): seguridad mínima para un sitio 100 %
  * estático — sin formularios, sin recursos externos, sin inline — y caché
- * de los assets de diseño. Los assets no llevan huella en el nombre, así
- * que NO se usa `immutable`: el navegador los revalida al cabo de 7 días.
+ * de los assets de diseño. CSS y JS llevan huella de contenido en el nombre:
+ * se cachean como `immutable` durante un año. Las banderas se referencian por
+ * código de país (sin huella), así que se cachean solo un día para permitir
+ * su revalidación.
  */
 function buildHeaders() {
   return [
@@ -114,8 +148,14 @@ function buildHeaders() {
     "  Referrer-Policy: strict-origin-when-cross-origin",
     "  Content-Security-Policy: default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'",
     "",
-    "/assets/design/*",
-    "  Cache-Control: public, max-age=604800",
+    "/assets/design/*.css",
+    "  Cache-Control: public, max-age=31536000, immutable",
+    "",
+    "/assets/design/*.js",
+    "  Cache-Control: public, max-age=31536000, immutable",
+    "",
+    "/assets/design/flags/*",
+    "  Cache-Control: public, max-age=86400",
     ""
   ].join("\n");
 }
@@ -261,6 +301,8 @@ function buildSite(root, options = {}) {
     seriesByComp[comp.id] = collectEditionSeries(root, comp);
   }
 
+  const assetPlan = planAssets(root);
+
   const ctx = {
     model,
     catalog,
@@ -271,6 +313,7 @@ function buildSite(root, options = {}) {
     release,
     editions: editionsMap,
     flags,
+    assets: assetPlan.urls,
     seriesByComp
   };
 
@@ -316,11 +359,10 @@ function buildSite(root, options = {}) {
     written.push(writeText(path.join(root, outDir, "robots.txt"), robots));
     written.push(writeText(path.join(root, outDir, "_headers"), headers));
     written.push(writeText(path.join(root, outDir, "_redirects"), redirects));
-    for (const name of ASSETS) {
-      const from = path.join(root, "design", name);
-      const to = path.join(root, outDir, "assets", "design", name);
+    for (const asset of assetPlan.files) {
+      const to = path.join(root, outDir, asset.to);
       fs.mkdirSync(path.dirname(to), { recursive: true });
-      fs.copyFileSync(from, to);
+      fs.copyFileSync(asset.from, to);
       written.push(to);
     }
     const flagsFrom = path.join(root, FLAGS_DIR);
@@ -336,7 +378,7 @@ function buildSite(root, options = {}) {
     }
   }
 
-  return { pages, sitemap, robots, headers, redirects, index, written, langs: LANGS, partial, publishedEditions: published.length, indexes };
+  return { pages, sitemap, robots, headers, redirects, index, written, assets: assetPlan.urls, langs: LANGS, partial, publishedEditions: published.length, indexes };
 }
 
 module.exports = { buildSite, ORIGIN, fullEditionList, resolveEditions, parseArgs };
