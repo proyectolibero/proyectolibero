@@ -11,6 +11,7 @@ panel-*.png
 preview-*.png
 preview/
 /site/
+/.cache/
 *.tmp-*
 .opencode/usage.json
 

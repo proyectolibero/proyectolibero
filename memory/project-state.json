@@ -12,7 +12,7 @@
   "areas": {
     "site": {
       "status": "done",
-      "notes": "SSG sin dependencias (core/site/build.js): 3.425 páginas + sitemap.xml + robots.txt + _headers/_redirects (por idioma: 1 home, 1 deporte publicado, 5 competiciones + 15 de pestañas, 76 ediciones, 30 clasificaciones, 510 grupos, 43 páginas de partidos, 1 buscador, 3 de identidad). N2 (2026-10-15): N2a ficha de partido en <dialog> nativo con mejora progresiva (sin JS las 64 fichas siguen inline y el ancla funciona; el <figure> se mueve al modal y se devuelve al cerrar, sin duplicar contenido; tests/site-facsimile-modal.test.js); N2b buscador estático en /{lang}/buscar/ (el HTML es el índice, sin fetch ni JSON; filtro en cliente que ignora mayúsculas y acentos con NFD, contador aria-live, estado vacío y filtro por tipo; sin JS es un directorio navegable; incluye Deportes, Competiciones, Ediciones, Selecciones y Finales, fuera jugadores y los ~12.000 partidos por peso; 106 kB). N1/D63: barra de pestañas Resumen·Ganadores·Goleadores·Calendario en el hub + 3 páginas nuevas por competición e idioma (ganadores, goleadores POR EDICIÓN sin agregados, calendario) y selector de edición sin JS en la página de edición (75 páginas nuevas). D63-D64: armazón visual (contenedor, cabecera con menús desplegables y hamburguesa, hero, tarjetas, tablas, números por idioma) y assets de diseño con huella de contenido y cache inmutable. Generación en streaming (visit/collect). El KPI «Deportes publicados» cuenta solo los deportes con competiciones (hoy 1), no el total del catálogo (4). Presentación de edición por fases (D61) y páginas de identidad (D62). URLs por ruta generadas estáticamente, slugs canónicos en es. site/ no se versiona (salida generada)."
+      "notes": "SSG sin dependencias (core/site/build.js): 3.425 páginas + sitemap.xml + robots.txt + _headers/_redirects (por idioma: 1 home, 1 deporte publicado, 5 competiciones + 15 de pestañas, 76 ediciones, 30 clasificaciones, 510 grupos, 43 páginas de partidos, 1 buscador, 3 de identidad). N2 (2026-10-15): N2a ficha de partido en <dialog> nativo con mejora progresiva (sin JS las 64 fichas siguen inline y el ancla funciona; el <figure> se mueve al modal y se devuelve al cerrar, sin duplicar contenido; tests/site-facsimile-modal.test.js); N2b buscador estático en /{lang}/buscar/ (el HTML es el índice, sin fetch ni JSON; filtro en cliente que ignora mayúsculas y acentos con NFD, contador aria-live, estado vacío y filtro por tipo; sin JS es un directorio navegable; incluye Deportes, Competiciones, Ediciones, Selecciones y Finales, fuera jugadores y los ~12.000 partidos por peso; 106 kB). N1/D63: barra de pestañas Resumen·Ganadores·Goleadores·Calendario en el hub + 3 páginas nuevas por competición e idioma (ganadores, goleadores POR EDICIÓN sin agregados, calendario) y selector de edición sin JS en la página de edición (75 páginas nuevas). D63-D64: armazón visual (contenedor, cabecera con menús desplegables y hamburguesa, hero, tarjetas, tablas, números por idioma) y assets de diseño con huella de contenido y cache inmutable. Generación en streaming (visit/collect). El KPI «Deportes publicados» cuenta solo los deportes con competiciones (hoy 1), no el total del catálogo (4). Presentación de edición por fases (D61) y páginas de identidad (D62). URLs por ruta generadas estáticamente, slugs canónicos en es. site/ no se versiona (salida generada). F3 (2026-10-15): build incremental de dos capas; la clave de cada página es un hash del CONTENIDO de sus entradas (globales core/site/*.js + i18n + catálogo + diseño + release, y el JSON de su edición), nunca de mtimes; manifiesto en .cache/site-manifest.json (gitignored, nunca servido); --force reconstruye todo y write:false no toca el manifiesto; invariante --force ≡ incremental (mismos ficheros y bytes). Tiempos locales: completo ~14,5 s, incremental sin cambios ~1,1 s. Test tests/site-incremental.test.js."
     },
     "i18n": {
       "status": "done",
@@ -51,7 +51,7 @@
     },
     "validation": {
       "status": "done",
-      "notes": "Gates: node --test --test-concurrency=2 tests/ = 377 tests, 0 fallos; scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos (línea base, no puede empeorar); scripts/site-weight.js = 0 páginas sobre 300 kB de 2.580 medidas (peor: Mundial 2014 [hi] 191,7 kB). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
+      "notes": "Gates: node --test --test-concurrency=2 tests/ = 384 tests, 0 fallos; scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos (línea base, no puede empeorar); scripts/site-weight.js = 0 páginas sobre 300 kB de 2.580 medidas (peor: Mundial 2014 [hi] 191,7 kB). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
     },
     "mcp": {
       "status": "done",
@@ -94,12 +94,12 @@
     { "id": "N2", "title": "Ficha de partido en modal + buscador estático", "status": "done" },
     { "id": "C1", "title": "Colaboración: formulario→issue y plantilla", "status": "done" },
     { "id": "C2", "title": "Colaboración: cola de aportes (C2a) y panel de agentes (C2b)", "status": "done" },
-    { "id": "F3", "title": "Build incremental", "status": "pending" }
+    { "id": "F3", "title": "Build incremental de dos capas", "status": "done" }
   ],
   "nextSteps": [
     "N2 ✅ — Ficha de partido en modal + buscador estático (N2a modal, N2b buscador)",
     "C2 ✅ — Colaboración: cola de aportes (C2a) y panel de aportes + agente curador (C2b) cerrados",
-    "F3 — Build incremental de dos capas + pulido fino",
+    "F3 ✅ — Build incremental de dos capas (manifiesto por contenido en .cache/, --force, invariante force≡incremental; tests/site-incremental.test.js)",
     "P3 — Identidad de entidades auditable (ADR-032/D48): desbloquea la clasificación del Mundial 2002-2014 (Saar, TCH/URS/FRG)",
     "Completar el dominio propio: crear los dos CNAME proxied (@ y www → proyectolibero.pages.dev) para proyectolibero.org, o dar Zone→DNS→Edit al token",
     "Hacer push de los commits locales (N1/N2/C2 cerradas en local, sin push)",

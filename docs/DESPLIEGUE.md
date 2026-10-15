@@ -75,11 +75,21 @@ Actions), nunca valores en el repo:
 
 ```bash
 node scripts/validate.js      # gate: 0 errores / 0 avisos
-node core/site/build.js      # SSG: N páginas + sitemap + robots + _headers + _redirects
+node core/site/build.js       # SSG incremental: N páginas + sitemap + robots + _headers + _redirects
+node core/site/build.js       # 2ª vez: 0 reconstruidas (nada cambió)
+node core/site/build.js --force   # reconstrucción total (ignora el manifiesto)
 ```
 
 `validate.yml` ya bloquea el push si la validación falla, así que Pages nunca
 construye desde un árbol en rojo.
+
+El build es **incremental de dos capas** (F3): la clave de cada página es un
+hash del CONTENIDO de sus entradas (globales + JSON de su edición), nunca de
+sus mtimes. El manifiesto vive en `.cache/site-manifest.json` — fuera de
+`site/` y gitignored —, así que **nunca se despliega**. En Cloudflare Pages el
+build corre en un contenedor limpio (sin `.cache/`), por lo que el primer build
+de cada deploy es completo; el incremental acelera las reconstrucciones locales.
+Detalle en [`ESTRUCTURA.md`](ESTRUCTURA.md).
 
 ## Verificación post-deploy (obligatoria)
 

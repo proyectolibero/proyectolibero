@@ -121,6 +121,35 @@ Fases de construcción (ADR-014 / D20):
 | 5 · Sostenibilidad | pendiente | Contribución, DOI, entidades colaboradoras |
 | 6 · Segundo deporte | pendiente | Arquetipo Ranking/Timed (arquería/natación) |
 
+## Build del escaparate: incremental de dos capas (F3)
+
+`node core/site/build.js` genera el escaparate estático bajo `site/`. Un archivo
+histórico no cambia: una edición publicada es inmutable, así que el build solo
+reconstruye lo necesario.
+
+- **Contenido inmutable** — páginas de edición, fases, clasificación/grupos,
+  fichas y partidos. Dependen de los datos de su edición, del código de
+  plantillas y de i18n.
+- **Navegación** — portada, hubs, identidad, buscador, ganadores/goleadores/
+  calendario, índices, `sitemap.xml`, `robots.txt` y `site/index.json`.
+  Derivan del catálogo completo.
+
+Cómo funciona:
+
+- **Clave por contenido** (sha256 hex corto), nunca por mtime. Globales:
+  `core/site/*.js`, `i18n/`, `catalog/`, `design/` y el release; específicas:
+  el JSON de la edición que la página renderiza. Cambiar un global invalida
+  todo (`templates.js`, un i18n…); cambiar el dato de una edición invalida solo
+  sus páginas.
+- **Manifiesto** `.cache/site-manifest.json` (fuera de `site/`, gitignored,
+  nunca servido): `url → { clave, sha256 }`. Si la clave coincide y el fichero
+  sigue en disco, no se renderiza ni se escribe.
+- **`--force`** ignora el manifiesto y reconstruye todo. `write:false` (tests)
+  desactiva el incremental y no toca el manifiesto.
+- **Invariante**: `build --force` produce exactamente el mismo `site/` que un
+  build incremental (mismos ficheros y bytes); una página obsoleta es el peor
+  fallo posible. Guardado por `tests/site-incremental.test.js`.
+
 ## Reglas de ubicación
 
 - **Dato de competición** → `data/<deporte>/<competicion>/<fichero>.json` (nunca en JS ni HTML).

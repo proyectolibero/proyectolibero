@@ -3,7 +3,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const crypto = require("node:crypto");
-const { readJSON } = require("../io.js");
+const { readJSON, sha256File, sha256Text, listFiles } = require("../io.js");
 const { loadCatalog } = require("../catalog.js");
 const { buildModel } = require("./model.js");
 const { buildNav } = require("./nav.js");
@@ -36,10 +36,89 @@ const ORIGIN = "https://proyectolibero.org";
 const ASSET_BASE = "/assets/design";
 const ASSETS = ["tokens.css", "components.css", "behaviour.js"];
 const HASH_LENGTH = 8;
+const KEY_LENGTH = 16;
+const MANIFEST_DIR = ".cache";
+const MANIFEST_NAME = "site-manifest.json";
 
 /** Huella de contenido (sha256, primeros 8 hex). Sin fecha ni azar: determinista. */
 function contentHash(buffer) {
   return crypto.createHash("sha256").update(buffer).digest("hex").slice(0, HASH_LENGTH);
+}
+
+/*
+ * Build incremental de dos capas (F3). La clave de cada página deriva del
+ * CONTENIDO de sus entradas reales, nunca de mtimes:
+ *   - globales (código del SSG, i18n, catálogo, diseño y release) + su URL;
+ *   - en las páginas de contenido, además, el JSON de la edición que renderiza.
+ * Cambiar un global (p. ej. `templates.js` o un i18n) invalida todo: es
+ * correcto y esperado. Cambiar el dato de UNA edición solo invalida sus
+ * páginas. El manifiesto vive en `.cache/site-manifest.json` — fuera de
+ * `site/`, gitignored y nunca servido — y guarda `url → { clave, sha256 }`.
+ */
+
+/** Clave corta (sha256 hex) de una tupla de entradas; determinista. */
+function keyOf(...parts) {
+  const hash = crypto.createHash("sha256");
+  for (const part of parts) hash.update(String(part)).update("\0");
+  return hash.digest("hex").slice(0, KEY_LENGTH);
+}
+
+/** Ruta del manifiesto del build incremental (fuera de `site/`). */
+function manifestFile(root) {
+  return path.join(root, MANIFEST_DIR, MANIFEST_NAME);
+}
+
+/** Firma de contenido (recursiva, ordenada) de ficheros y directorios. */
+function signatureOf(root, entries) {
+  const files = [];
+  for (const entry of entries) {
+    const full = path.join(root, entry);
+    if (!fs.existsSync(full)) continue;
+    if (fs.statSync(full).isDirectory()) files.push(...listFiles(full, "**"));
+    else files.push(full);
+  }
+  files.sort();
+  const hash = crypto.createHash("sha256");
+  for (const file of files) {
+    hash.update(path.relative(root, file).split(path.sep).join("/"));
+    hash.update("\0");
+    hash.update(sha256File(file));
+    hash.update("\0");
+  }
+  return hash.digest("hex");
+}
+
+/** Entradas globales: si cambia cualquiera, se invalida todo el escaparate. */
+function globalEntries(root, releaseId) {
+  return [
+    path.join("core", "site"),
+    "i18n",
+    "catalog",
+    "design",
+    path.join("releases", releaseId, "release.json")
+  ];
+}
+
+/** Tipos de página cuya salida depende solo de su edición (contenido inmutable). */
+const EDITION_KINDS = new Set(["edition", "qualification", "qualificationGroup", "matches"]);
+
+/** Clave de una página: global (+ dato de su edición si es de contenido). */
+function pageKey(globalSig, dataHashes, page) {
+  if (EDITION_KINDS.has(page.kind)) {
+    const dataKey = `${page.compId}/${page.year}`;
+    return keyOf(globalSig, "edition", dataKey, dataHashes[dataKey] || "", page.url);
+  }
+  return keyOf(globalSig, "nav", page.url);
+}
+
+/** Manifiesto previo (o `{}` si no existe o está corrupto: se reconstruye). */
+function loadManifest(root) {
+  try {
+    const raw = readJSON(manifestFile(root));
+    return raw && typeof raw === "object" && !Array.isArray(raw) ? raw : {};
+  } catch (err) {
+    return {};
+  }
 }
 
 /** `components.css` + `9f3a1c2d` → `components.9f3a1c2d.css`. */
@@ -66,8 +145,10 @@ function planAssets(root) {
   return { urls, files };
 }
 
+/** Escribe si el contenido cambió; devuelve la ruta escrita o `null` si era igual. */
 function writeText(file, text) {
   const normalized = text.replace(/\r\n/g, "\n");
+  if (fs.existsSync(file) && fs.readFileSync(file, "utf8") === normalized) return null;
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, normalized, "utf8");
   if (fs.readFileSync(file, "utf8") !== normalized) {
@@ -76,15 +157,29 @@ function writeText(file, text) {
   return file;
 }
 
+/** Copia si el contenido difiere; devuelve el destino copiado o `null` si era igual. */
+function copyIfChanged(from, to) {
+  const source = fs.readFileSync(from);
+  if (fs.existsSync(to) && Buffer.compare(source, fs.readFileSync(to)) === 0) return null;
+  fs.mkdirSync(path.dirname(to), { recursive: true });
+  fs.copyFileSync(from, to);
+  return to;
+}
+
 function pageFile(root, outDir, page) {
   const rel = page.path.replace(/^\//, "").replace(/\/$/, "");
   return path.join(root, outDir, rel, "index.html");
 }
 
-/** Carga las ediciones a renderizar y las deja indexadas por sport/comp/year. */
+/**
+ * Carga las ediciones a renderizar (indexadas por sport/comp/year) y la huella
+ * de contenido de cada JSON de edición, que alimenta la clave del build
+ * incremental.
+ */
 function loadEditions(root, catalog, requested) {
   const map = {};
   const planned = [];
+  const dataHashes = {};
   for (const item of requested) {
     const comp = catalog.competitions[item.competitionId];
     if (!comp) throw new Error(`competición desconocida: ${item.competitionId}`);
@@ -93,9 +188,10 @@ function loadEditions(root, catalog, requested) {
     const file = path.join(root, "data", comp.sport, comp.competition, entry.data);
     const edition = readJSON(file);
     map[`${comp.sport}/${comp.competition}/${item.year}`] = edition;
+    dataHashes[`${comp.id}/${item.year}`] = sha256File(file);
     planned.push({ sportId: comp.sport, compId: item.competitionId, year: item.year, edition });
   }
-  return { map, planned };
+  return { map, planned, dataHashes };
 }
 
 function esc(value) {
@@ -293,7 +389,7 @@ function buildSite(root, options = {}) {
   const dicts = loadDictionaries(root);
   const countries = loadCountries(root);
   const release = readJSON(path.join(root, "releases", releaseId, "release.json"));
-  const { map: editionsMap, planned } = loadEditions(root, catalog, requested);
+  const { map: editionsMap, planned, dataHashes } = loadEditions(root, catalog, requested);
 
   const flags = flagCodes(loadFlagManifest(root));
   const seriesByComp = {};
@@ -321,19 +417,47 @@ function buildSite(root, options = {}) {
   const visit = options.visit;
   const collect = options.collect !== false;
   const shouldWrite = options.write !== false;
+  const force = options.force === true;
+
+  /*
+   * Build incremental (F3): con `write:false` no aplica (los tests necesitan
+   * todas las páginas en memoria). Con `--force` se ignora el manifiesto y se
+   * reconstruye todo. Una página se salta solo si su clave coincide Y el
+   * fichero sigue en disco: una página obsoleta es el peor fallo posible.
+   */
+  const globalSig = signatureOf(root, globalEntries(root, releaseId));
+  const manifest = shouldWrite && !force ? loadManifest(root) : {};
+  const nextManifest = {};
 
   const pages = [];
   const written = [];
+  const pushWritten = (file) => {
+    if (file) written.push(file);
+  };
+  let rebuilt = 0;
+  let unchanged = 0;
+
   for (const page of pagePlan) {
-    const built = {
-      kind: page.kind,
-      lang: page.lang,
-      rel: page.rel,
-      url: page.path,
-      file: pageFile(root, outDir, page),
-      html: renderDocument(ctx, page, renderContent(ctx, page))
-    };
-    if (shouldWrite) written.push(writeText(built.file, built.html));
+    const url = page.path;
+    const file = pageFile(root, outDir, page);
+    const key = pageKey(globalSig, dataHashes, page);
+    const previous = manifest[url];
+    if (shouldWrite && !force && previous && previous.clave === key && fs.existsSync(file)) {
+      unchanged += 1;
+      nextManifest[url] = previous;
+      if (visit || collect) {
+        const built = { kind: page.kind, lang: page.lang, rel: page.rel, url, file, html: fs.readFileSync(file, "utf8") };
+        if (visit) visit(built);
+        if (collect) pages.push(built);
+      }
+      continue;
+    }
+
+    const html = renderDocument(ctx, page, renderContent(ctx, page));
+    rebuilt += 1;
+    nextManifest[url] = { clave: key, sha256: sha256Text(html) };
+    if (shouldWrite) pushWritten(writeText(file, html));
+    const built = { kind: page.kind, lang: page.lang, rel: page.rel, url, file, html };
     if (visit) visit(built);
     if (collect) pages.push(built);
   }
@@ -350,35 +474,47 @@ function buildSite(root, options = {}) {
   const index = buildRootIndex(root, catalog, release, model);
 
   if (shouldWrite) {
-    written.push(writeText(path.join(root, outDir, "indexes", "tree.json"), `${JSON.stringify(tree, null, 2)}\n`));
-    written.push(
+    pushWritten(writeText(path.join(root, outDir, "indexes", "tree.json"), `${JSON.stringify(tree, null, 2)}\n`));
+    pushWritten(
       writeText(path.join(root, outDir, "indexes", "facets.json"), `${JSON.stringify(facetIndexes, null, 2)}\n`)
     );
-    written.push(writeText(path.join(root, outDir, "index.json"), `${JSON.stringify(index, null, 2)}\n`));
-    written.push(writeText(path.join(root, outDir, "sitemap.xml"), sitemap));
-    written.push(writeText(path.join(root, outDir, "robots.txt"), robots));
-    written.push(writeText(path.join(root, outDir, "_headers"), headers));
-    written.push(writeText(path.join(root, outDir, "_redirects"), redirects));
+    pushWritten(writeText(path.join(root, outDir, "index.json"), `${JSON.stringify(index, null, 2)}\n`));
+    pushWritten(writeText(path.join(root, outDir, "sitemap.xml"), sitemap));
+    pushWritten(writeText(path.join(root, outDir, "robots.txt"), robots));
+    pushWritten(writeText(path.join(root, outDir, "_headers"), headers));
+    pushWritten(writeText(path.join(root, outDir, "_redirects"), redirects));
     for (const asset of assetPlan.files) {
-      const to = path.join(root, outDir, asset.to);
-      fs.mkdirSync(path.dirname(to), { recursive: true });
-      fs.copyFileSync(asset.from, to);
-      written.push(to);
+      pushWritten(copyIfChanged(asset.from, path.join(root, outDir, asset.to)));
     }
     const flagsFrom = path.join(root, FLAGS_DIR);
     if (fs.existsSync(flagsFrom)) {
       const flagsTo = path.join(root, outDir, "assets", "design", "flags");
-      fs.mkdirSync(flagsTo, { recursive: true });
       for (const name of fs.readdirSync(flagsFrom)) {
         if (!name.endsWith(".svg")) continue;
-        const to = path.join(flagsTo, name);
-        fs.copyFileSync(path.join(flagsFrom, name), to);
-        written.push(to);
+        pushWritten(copyIfChanged(path.join(flagsFrom, name), path.join(flagsTo, name)));
       }
     }
+    /* El manifiesto se escribe al final: refleja exactamente lo que queda en disco. */
+    pushWritten(writeText(manifestFile(root), `${JSON.stringify(nextManifest, null, 2)}\n`));
   }
 
-  return { pages, sitemap, robots, headers, redirects, index, written, assets: assetPlan.urls, langs: LANGS, partial, publishedEditions: published.length, indexes };
+  return {
+    pages,
+    sitemap,
+    robots,
+    headers,
+    redirects,
+    index,
+    written,
+    rebuilt,
+    unchanged,
+    total: rebuilt + unchanged,
+    assets: assetPlan.urls,
+    langs: LANGS,
+    partial,
+    publishedEditions: published.length,
+    indexes
+  };
 }
 
 module.exports = { buildSite, ORIGIN, fullEditionList, resolveEditions, parseArgs };
@@ -389,6 +525,7 @@ function parseArgs(argv) {
     if (arg.startsWith("--competition=")) opts.competition = arg.slice("--competition=".length);
     else if (arg.startsWith("--years=")) opts.years = arg.slice("--years=".length);
     else if (arg.startsWith("--release=")) opts.releaseId = arg.slice("--release=".length);
+    else if (arg === "--force") opts.force = true;
   }
   if (opts.years && opts.years !== "all" && !opts.competition) {
     throw new Error("--years requiere --competition; sin argumentos el build ya es completo");
@@ -398,9 +535,10 @@ function parseArgs(argv) {
 
 if (require.main === module) {
   const root = path.resolve(__dirname, "..", "..");
-  const result = buildSite(root, parseArgs(process.argv.slice(2)));
+  const result = buildSite(root, Object.assign({ collect: false }, parseArgs(process.argv.slice(2))));
   process.stdout.write(
-    `Escaparate: ${result.pages.length} páginas + sitemap.xml + robots.txt + _headers + _redirects ` +
+    `Escaparate: ${result.total} páginas (${result.rebuilt} reconstruidas, ${result.unchanged} sin cambios) ` +
+      `+ sitemap.xml + robots.txt + _headers + _redirects ` +
       `(${result.partial ? "build PARCIAL" : "build completo"})\n`
   );
 }
