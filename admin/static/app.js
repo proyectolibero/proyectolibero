@@ -1014,6 +1014,185 @@
     return loadAudit(panel, 50).then(function () { return section; });
   }
 
+  function inboxStatePill(state) {
+    if (!state) return h('span', { text: '—' });
+    var variant = state === 'rechazado' ? 'error' : (state === 'publicado' || state === 'validado' ? 'ok' : 'warn');
+    return pill(String(state), variant);
+  }
+
+  function loadInbox(panel, state) {
+    panel.replaceChildren(spinner('Cargando aportes…'));
+    var query = state ? '?state=' + encodeURIComponent(state) : '';
+    return api('/api/inbox' + query).then(function (data) {
+      var entries = Array.isArray(data) ? data : asArray(data && data.entries);
+      if (!entries.length) {
+        panel.replaceChildren(emptyBox(state ? 'No hay aportes en ese estado.' : 'La cola de aportes está vacía.'));
+        return;
+      }
+      panel.replaceChildren(dataTable([
+        { label: 'Id', render: function (e) { return h('a', { href: '#/inbox/' + encodeURIComponent(e.id), class: 'link-strong', text: fmt(e.id) }); } },
+        { label: 'Estado', render: function (e) { return inboxStatePill(e.state); } },
+        { label: 'Competición', render: function (e) { return fmt(e.competition); } },
+        { label: 'Edición', render: function (e) { return fmt(e.year); } },
+        { label: 'Tipo', render: function (e) { return fmt(e.type); } },
+        { label: 'Autor', render: function (e) { return fmt(e.author); } },
+        { label: 'Antigüedad', numeric: true, render: function (e) { return e.ageDays === null || e.ageDays === undefined ? '—' : e.ageDays + ' d'; } },
+        { label: 'Historial', numeric: true, render: function (e) { return fmt(e.historyCount); } }
+      ], entries));
+    }).catch(function (error) {
+      panel.replaceChildren(errorBox(error));
+    });
+  }
+
+  function renderInbox(parts) {
+    if (parts && parts.length) return renderInboxDetail(parts[0]);
+    var states = ['', 'recibido', 'triaje', 'validado', 'publicado', 'rechazado'];
+    var stateSelect = h('select', { id: 'inbox-state' }, states.map(function (value) {
+      return h('option', { value: value, text: value || '— todos —' });
+    }));
+    var panel = h('div', {});
+    var section = h('section', { class: 'section' });
+    section.appendChild(sectionHead('Aportes', 'Cola de aportes (inbox/): clasificación, avance de estado y texto original. Nada se publica desde aquí sin confirmación humana.'));
+    section.appendChild(h('div', { class: 'toolbar' }, [h('label', { class: 'inline-label', for: 'inbox-state', text: 'Estado' }), stateSelect]));
+    section.appendChild(panel);
+    stateSelect.addEventListener('change', function () { loadInbox(panel, stateSelect.value); });
+    return loadInbox(panel, '').then(function () { return section; });
+  }
+
+  function inboxMetaPanel(entry) {
+    var meta = entry.meta || {};
+    var rows = [
+      ['Identificador', entry.id],
+      ['Estado', entry.state],
+      ['Competición', meta.competition],
+      ['Edición', meta.year],
+      ['Tipo', meta.type],
+      ['Autor', meta.author],
+      ['Fecha del aporte', meta.submittedAt],
+      ['Antigüedad', entry.ageDays === null || entry.ageDays === undefined ? undefined : entry.ageDays + ' d'],
+      ['Origen', meta.source],
+      ['Issue', meta.url],
+      ['Fuente', meta.sourceUrl],
+      ['Consultada', meta.sourceRetrieved],
+      ['Licencia', meta.license]
+    ].filter(function (row) { return row[1] !== undefined && row[1] !== null && row[1] !== ''; });
+    return h('section', { class: 'panel' }, [
+      h('h2', { text: 'Metadatos (meta.json)' }),
+      h('dl', { class: 'deflist' }, rows.map(function (row) { return def(row[0], row[1]); }))
+    ]);
+  }
+
+  function inboxTextPanel(text) {
+    var panel = h('section', { class: 'panel' }, [h('h2', { text: 'Aporte (aporte.md)' })]);
+    if (!text) {
+      panel.appendChild(emptyBox('El aporte no tiene texto.'));
+      return panel;
+    }
+    panel.appendChild(h('pre', { class: 'aporte-text', text: text }));
+    return panel;
+  }
+
+  function inboxHistoryPanel(history) {
+    var items = asArray(history);
+    var panel = h('section', { class: 'panel' }, [h('h2', { text: 'Historial' })]);
+    if (!items.length) {
+      panel.appendChild(emptyBox('Sin entradas de historial.'));
+      return panel;
+    }
+    panel.appendChild(dataTable([
+      { label: 'Fecha', render: function (item) { return fmt(item.at); } },
+      { label: 'Estado', render: function (item) { return inboxStatePill(item.state); } },
+      { label: 'Por', render: function (item) { return fmt(item.by); } },
+      { label: 'Nota', render: function (item) { return fmt(item.note); } }
+    ], items));
+    return panel;
+  }
+
+  function inboxDraftPanel(draft) {
+    var text;
+    try { text = JSON.stringify(draft, null, 2); } catch (error) { text = fmt(draft); }
+    return h('section', { class: 'panel' }, [
+      h('h2', { text: 'Borrador (draft.json)' }),
+      h('pre', { class: 'aporte-text', text: text })
+    ]);
+  }
+
+  function inboxTransitionError(error) {
+    var box = errorBox(error);
+    if (error && error.status === 409) {
+      var note = error.code === 'CONFIRM_REQUIRED'
+        ? "'publicado' exige confirmación explícita: marca la casilla. La publicación real la hace 'ingest.js promote' con aprobación humana."
+        : 'La transición no es válida desde el estado actual. Actualiza la vista y usa una de las transiciones permitidas.';
+      box.appendChild(h('p', { class: 'error-note', text: note }));
+    }
+    return box;
+  }
+
+  function submitInboxTransition(entry, fields, button, result) {
+    var body = { state: fields.select.value, confirm: fields.confirm.checked === true };
+    if (fields.note.value.trim()) body.note = fields.note.value.trim();
+    if (fields.by.value.trim()) body.by = fields.by.value.trim();
+    var original = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Aplicando…';
+    result.replaceChildren(spinner('Aplicando transición…'));
+    api('/api/inbox/' + encodeURIComponent(entry.id) + '/transition', { method: 'POST', body: body }).then(function () {
+      announce('Transición aplicada');
+      renderRoute();
+    }).catch(function (error) {
+      result.replaceChildren(inboxTransitionError(error));
+      button.disabled = false;
+      button.textContent = original;
+    });
+  }
+
+  function inboxTransitionPanel(entry) {
+    var allowed = asArray(entry.transitions);
+    var panel = h('section', { class: 'panel' }, [h('h2', { text: 'Avanzar estado' })]);
+    if (!allowed.length) {
+      panel.appendChild(emptyBox('Estado terminal: no admite más transiciones.'));
+      return panel;
+    }
+    var select = h('select', { id: 'inbox-transition' }, allowed.map(function (state) {
+      return h('option', { value: state, text: state });
+    }));
+    var note = h('input', { id: 'inbox-note', type: 'text', placeholder: 'nota (opcional)' });
+    var by = h('input', { id: 'inbox-by', type: 'text', placeholder: 'quién mueve el estado (opcional)' });
+    var confirm = h('input', { id: 'inbox-confirm', type: 'checkbox' });
+    var confirmBox = h('label', { class: 'checkbox', for: 'inbox-confirm' }, [confirm, ' confirmo que la publicación real la hará promote --confirm con aprobación humana']);
+    var result = h('div', { class: 'panel-inner' });
+    var button = h('button', { type: 'button', class: 'btn btn-primary', text: 'Aplicar transición' });
+    var fields = { select: select, note: note, by: by, confirm: confirm };
+    function syncConfirm() { confirmBox.hidden = select.value !== 'publicado'; }
+    select.addEventListener('change', syncConfirm);
+    syncConfirm();
+    button.addEventListener('click', function () { submitInboxTransition(entry, fields, button, result); });
+    panel.appendChild(h('form', { class: 'form' }, [
+      h('p', { class: 'lead', text: 'Desde ' + entry.state + ' solo son válidas: ' + allowed.join(', ') + '.' }),
+      field('Nuevo estado', select),
+      field('Nota', note),
+      field('Por', by),
+      confirmBox,
+      h('div', { class: 'toolbar' }, button)
+    ]));
+    panel.appendChild(result);
+    return panel;
+  }
+
+  function renderInboxDetail(id) {
+    return api('/api/inbox/' + encodeURIComponent(id)).then(function (entry) {
+      var section = h('section', { class: 'section' });
+      section.appendChild(breadcrumb('Aportes', '#/inbox'));
+      section.appendChild(sectionHead('Aporte ' + (entry.id || id), 'Metadatos, texto original, historial y avance de estado.'));
+      section.appendChild(inboxMetaPanel(entry));
+      section.appendChild(inboxTextPanel(entry.aporte));
+      section.appendChild(inboxHistoryPanel(entry.history));
+      if (entry.draft) section.appendChild(inboxDraftPanel(entry.draft));
+      section.appendChild(inboxTransitionPanel(entry));
+      return section;
+    });
+  }
+
   function parseHash() {
     var raw = location.hash.replace(/^#\/?/, '');
     var parts = raw.split('/').filter(function (part) { return part !== ''; }).map(decodeURIComponent);
@@ -1026,6 +1205,7 @@
     if (route.name === 'edition') return renderEdition(route.parts);
     if (route.name === 'releases') return renderReleases();
     if (route.name === 'audit') return renderAudit();
+    if (route.name === 'inbox') return renderInbox(route.parts);
     return renderStatus();
   }
 

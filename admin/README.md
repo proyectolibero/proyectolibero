@@ -47,6 +47,9 @@ de `admin/static/` se sirve en `/` y recibe el token inyectado en el
 | GET | `/api/releases` | Manifiestos de release (descendente) |
 | POST | `/api/releases` | Construye un release (`{releaseId?, asOf?, created?, dryRun?}`) |
 | GET | `/api/audit?limit=50` | Últimas entradas de auditoría (más recientes primero) |
+| GET | `/api/inbox?state=<estado>` | Cola de aportes (`inbox/`), filtro opcional por estado |
+| GET | `/api/inbox/:id` | Detalle de un aporte: meta, texto, historial, borrador y transiciones |
+| POST | `/api/inbox/:id/transition` | Aplica una transición (`{state, note?, by?, confirm?}`) |
 
 ### Lista blanca de `PATCH /api/competitions/:id`
 
@@ -60,6 +63,23 @@ como la forma con punto (`{ "updatePolicy.checkEveryDays": 45 }`). Un campo
 fuera de la lista o con tipo inválido → `400`; un valor que rompa la
 revalidación del proyecto → `409` y el fichero se restaura.
 
+## Sección «Aportes»
+
+La cola de aportes (`inbox/<id>/`) tiene su propia sección en la UI (`#/inbox`):
+lista con filtro por estado (id, chip de estado, competición/edición, tipo, autor,
+antigüedad y nº de entradas de historial) y detalle (`#/inbox/<id>`) con los
+metadatos, el texto de `aporte.md`, el historial completo fechado, el
+`draft.json` si lo hay y un formulario para **avanzar de estado**.
+
+La lógica de la cola **no se duplica**: vive en `core/inbox.js` (módulo
+compartido) y la consumen tanto `scripts/inbox.js` (CLI) como este panel, en
+proceso. Las transiciones permitidas se obtienen del servidor, no se reimplementan
+en el cliente: el panel ofrece solo las válidas y una transición rechazada
+(p. ej. `publicado` sin confirmación) devuelve `409` con un mensaje claro en la UI.
+**El panel nunca publica**: `publicado` exige confirmación explícita y la
+publicación real de los datos la sigue haciendo `ingest.js promote --confirm` con
+aprobación humana.
+
 ## Fábrica para tests
 
 ```js
@@ -71,4 +91,5 @@ const { server, url, token } = createServer({ root, port: 0 });
 ## Auditoría
 
 `admin/audit.js` escribe líneas JSONL `{ ts, action, target, result, detail }`.
-Acciones registradas: `release.build`, `catalog.patch`, `validate.run`.
+Acciones registradas: `release.build`, `catalog.patch`, `validate.run`,
+`inbox.transition`.

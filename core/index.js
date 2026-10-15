@@ -6,6 +6,7 @@ const validate = require("./validate.js");
 const reindex = require("./reindex.js");
 const viewmodel = require("./viewmodel.js");
 const release = require("./release.js");
+const inbox = require("./inbox.js");
 
 /**
  * API pública del núcleo `core/`. Sin dependencias externas; CommonJS.
@@ -27,5 +28,6 @@ module.exports = {
   toEditionViewModel: viewmodel.toEditionViewModel,
   toIndexViewModel: viewmodel.toIndexViewModel,
   buildRelease: release.buildRelease,
-  writeRelease: release.writeRelease
+  writeRelease: release.writeRelease,
+  inbox
 };

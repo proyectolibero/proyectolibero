@@ -365,6 +365,73 @@ function getAudit(ctx, query) {
 }
 
 /* -------------------------------------------------------------------------- */
+/* Cola de aportes (inbox)                                                     */
+/* -------------------------------------------------------------------------- */
+
+/** Traduce un `InboxError` del módulo compartido a un error HTTP con su estado. */
+function inboxHttpError(err) {
+  if (!(err instanceof core.inbox.InboxError)) return err;
+  const status = {
+    INVALID_ID: 404,
+    NOT_FOUND: 404,
+    INVALID_STATE: 400,
+    VALIDATION: 400,
+    CONFLICT: 409,
+    INVALID_TRANSITION: 409,
+    CONFIRM_REQUIRED: 409
+  }[err.code] || 500;
+  return new HttpError(status, err.code, err.message);
+}
+
+function getInbox(ctx, query) {
+  const state = query.get("state") || undefined;
+  try {
+    return { entries: core.inbox.list(ctx.root, { state }) };
+  } catch (err) {
+    throw inboxHttpError(err);
+  }
+}
+
+function getInboxEntry(ctx, id) {
+  try {
+    return core.inbox.get(ctx.root, id);
+  } catch (err) {
+    throw inboxHttpError(err);
+  }
+}
+
+async function postInboxTransition(ctx, id, body) {
+  if (!body || typeof body !== "object" || Array.isArray(body)) {
+    throw new HttpError(400, "BAD_REQUEST", "el cuerpo debe ser un objeto");
+  }
+  try {
+    const result = core.inbox.set(ctx.root, id, body.state, {
+      note: body.note,
+      by: body.by,
+      confirm: body.confirm === true
+    });
+    audit.append(ctx.root, {
+      action: "inbox.transition",
+      target: result.id,
+      result: "ok",
+      detail: `${result.from} → ${result.to}`
+    }, ctx.onError);
+    return { ok: true, id: result.id, from: result.from, to: result.to, entry: getInboxEntry(ctx, result.id) };
+  } catch (err) {
+    if (err instanceof core.inbox.InboxError) {
+      audit.append(ctx.root, {
+        action: "inbox.transition",
+        target: String(id),
+        result: "rejected",
+        detail: err.message
+      }, ctx.onError);
+      throw inboxHttpError(err);
+    }
+    throw err;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
 /* PATCH de competición (escritura vigilada)                                   */
 /* -------------------------------------------------------------------------- */
 
@@ -538,6 +605,8 @@ function dispatchApi(ctx, req, pathname, query) {
     throw new HttpError(405, "METHOD_NOT_ALLOWED", `método no permitido: ${method}`);
   }
   if (pathname === "/api/audit") return only(method, "GET", () => getAudit(ctx, query));
+  if (pathname === "/api/inbox") return only(method, "GET", () => getInbox(ctx, query));
+  if (pathname.startsWith("/api/inbox/")) return routeInbox(ctx, req, pathname);
   if (pathname.startsWith("/api/competitions/")) return routeCompetition(ctx, req, pathname);
   if (pathname.startsWith("/api/editions/")) return routeEdition(ctx, pathname);
   throw new HttpError(404, "NOT_FOUND", "ruta desconocida");
@@ -554,6 +623,20 @@ function routeCompetition(ctx, req, pathname) {
   if (req.method === "GET") return getCompetition(ctx, id);
   if (req.method === "PATCH") return readJsonBody(req).then((body) => patchCompetition(ctx, id, body));
   throw new HttpError(405, "METHOD_NOT_ALLOWED", `método no permitido: ${req.method}`);
+}
+
+function routeInbox(ctx, req, pathname) {
+  const rest = pathname.slice("/api/inbox/".length);
+  const parts = rest.split("/");
+  if (parts.length === 1 && parts[0]) {
+    if (req.method === "GET") return getInboxEntry(ctx, parts[0]);
+    throw new HttpError(405, "METHOD_NOT_ALLOWED", `método no permitido: ${req.method}`);
+  }
+  if (parts.length === 2 && parts[0] && parts[1] === "transition") {
+    if (req.method === "POST") return readJsonBody(req).then((body) => postInboxTransition(ctx, parts[0], body));
+    throw new HttpError(405, "METHOD_NOT_ALLOWED", `método no permitido: ${req.method}`);
+  }
+  throw new HttpError(404, "NOT_FOUND", "ruta de aporte inválida");
 }
 
 function routeEdition(ctx, pathname) {

@@ -65,6 +65,10 @@ aplica quien mueve el estado, en GitHub y en la cola a la vez.
 
 ## CLI de la cola (`scripts/inbox.js`)
 
+La lógica de la cola vive en un único módulo compartido, **`core/inbox.js`**
+(estados, transiciones y validaciones), que consumen **el CLI y el panel**. Ni el
+uno ni el otro la reimplementan.
+
 Sin dependencias y **sin llamar a la API de GitHub** (nada de tokens). Cada
 aporte vive en `inbox/<id>/` (`id = i<issue>`): `aporte.md` (texto crudo),
 `meta.json` (autoría, fuente, competición…), `status.json` (estado + historial)
@@ -104,6 +108,26 @@ publicación **real** de los datos la sigue haciendo
 `node scripts/ingest.js promote --confirm`, siempre con aprobación humana.
 Si no se pasa `--date`, la cola **no inventa** la fecha del aporte; solo usa la
 del sistema para la entrada del historial.
+
+## La cola en el panel (`admin/`, sección «Aportes»)
+
+El panel local (`node admin/server.js`, `127.0.0.1:8787`, **nunca se publica**)
+tiene la sección **Aportes** (`#/inbox`), que muestra la misma cola sobre
+`core/inbox.js`:
+
+- **Lista** (`GET /api/inbox`) con filtro por estado, competición/edición, tipo,
+  autor, antigüedad y nº de entradas de historial.
+- **Detalle** (`GET /api/inbox/:id`) con `meta.json`, el texto de `aporte.md`, el
+  historial completo fechado y el `draft.json` si lo hay.
+- **Avanzar estado** (`POST /api/inbox/:id/transition`) aplicando una transición
+  con nota. El panel ofrece **solo las transiciones válidas** que devuelve el
+  servidor; una transición inválida o `publicado` sin confirmación falla con un
+  mensaje claro (`409`), nunca en silencio.
+
+El panel **no despliega ni ejecuta `promote`**: `publicado` exige confirmación
+explícita en la UI y la publicación real de los datos la sigue firmando una
+persona con `ingest.js promote --confirm`. El agente de triaje (`.opencode/agent/
+curador.md`) propone movimientos con el CLI y **nunca** publica.
 
 ## Niveles de confianza
 
@@ -145,5 +169,8 @@ Reglas que no se rompen:
 - [`CONTRIBUCION.md`](CONTRIBUCION.md) — flujo Git-first, confianza, licencias.
 - [`CONTRIBUTING.md`](../CONTRIBUTING.md) — resumen para contribuir.
 - [`FLUJO-EDICIONES.md`](FLUJO-EDICIONES.md) — cómo entra una edición nueva.
+- `core/inbox.js` — lógica compartida de la cola (estados y transiciones).
 - `scripts/inbox.js` — CLI de la cola de aportes (`list` · `add` · `set` · `show`).
+- `admin/README.md` — sección «Aportes» del panel (API y UI).
+- `.opencode/agent/curador.md` — agente de triaje (propone, nunca publica).
 - `.github/ISSUE_TEMPLATE/aporte-datos.yml` — plantilla de aporte.

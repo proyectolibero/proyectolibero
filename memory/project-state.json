@@ -47,11 +47,11 @@
     },
     "admin.panel": {
       "status": "done",
-      "notes": "Panel local 127.0.0.1:8787 (no se publica), 6 secciones verificadas end-to-end: Estado, Catálogo, Detalle de competición, Edición con Visor de Procedencia, Releases con dry-run y Auditoría. Nits: favicon 404; asOf del release usa la fecha de hoy en vez de la del dato."
+      "notes": "Panel local 127.0.0.1:8787 (no se publica), 7 secciones: Estado, Catálogo, Detalle de competición, Edición con Visor de Procedencia, Releases con dry-run, Auditoría y Aportes (C2b: cola inbox/ sobre core/inbox.js, lista con filtro, detalle con meta/aporte/historial/draft y avance de estado; publicado exige confirmación; el panel nunca ejecuta promote). Nits: favicon 404; asOf del release usa la fecha de hoy en vez de la del dato."
     },
     "validation": {
       "status": "done",
-      "notes": "Gates: node --test --test-concurrency=2 tests/ = 361 tests, 0 fallos; scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos (línea base, no puede empeorar); scripts/site-weight.js = 0 páginas sobre 300 kB de 2.575 medidas (peor: Mundial 2014 [hi] 190,7 kB). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
+      "notes": "Gates: node --test --test-concurrency=2 tests/ = 369 tests, 0 fallos; scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos (línea base, no puede empeorar); scripts/site-weight.js = 0 páginas sobre 300 kB de 2.575 medidas (peor: Mundial 2014 [hi] 190,7 kB). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
     },
     "mcp": {
       "status": "done",
@@ -78,8 +78,8 @@
       "notes": "Sitio ACTIVO en Cloudflare Pages: proyecto proyectolibero (rama de producción master), https://proyectolibero.pages.dev (/ → 301 a /es/, /es/ → 200). Deploy SIEMPRE con `wrangler pages deploy site --project-name=proyectolibero`; nunca assets.directory:\".\" (D60: un wrangler.jsonc sirvió el repo entero, Worker borrado). Verificación post-deploy: /README.md y /.git/config deben dar 404. Dominio propio proyectolibero.org dado de alta como custom domain, PENDIENTE de dos CNAME proxied (@ y www → proyectolibero.pages.dev) porque el token no tiene Zone→DNS→Edit. Vía preferida a futuro: integración Git nativa."
     },
     "colaboracion": {
-      "status": "in-progress",
-      "notes": "C1 (2026-10-15): /colaborar/ estático sin backend (enlace a la plantilla sin JS; con JS abre la issue pre-rellenada) y plantilla .github/ISSUE_TEMPLATE/aporte-datos.yml. C2a (2026-10-15): scripts/inbox.js — cola inbox/<id>/ (i<issue>) con aporte.md, meta.json y status.json; máquina recibido→triaje→validado→publicado (+rechazado terminal desde cualquier estado no terminal), transiciones validadas con mensaje claro, 'publicado' exige --confirm, --root inyectable, JSON corrupto = error claro; tests/inbox.test.js; etiquetas GitHub↔estados y roles de agentes en docs/COLABORACION.md. Pendiente C2b: panel de agentes."
+      "status": "done",
+      "notes": "C1 (2026-10-15): /colaborar/ estático sin backend (enlace a la plantilla sin JS; con JS abre la issue pre-rellenada) y plantilla .github/ISSUE_TEMPLATE/aporte-datos.yml. C2a (2026-10-15): scripts/inbox.js — cola inbox/<id>/ (i<issue>) con aporte.md, meta.json y status.json; máquina recibido→triaje→validado→publicado (+rechazado terminal desde cualquier estado no terminal), transiciones validadas con mensaje claro, 'publicado' exige --confirm, --root inyectable, JSON corrupto = error claro; tests/inbox.test.js; etiquetas GitHub↔estados y roles de agentes en docs/COLABORACION.md. C2b (2026-10-15): lógica de la cola extraída a core/inbox.js (compartida por CLI y panel); sección «Aportes» (7.ª) del panel (GET /api/inbox[?state], GET /api/inbox/:id, POST /api/inbox/:id/transition) con lista/estado/detalle/historial/draft y avance de estado con nota; publicado exige confirmación explícita y el panel nunca ejecuta promote; agente de triaje .opencode/agent/curador.md; tests/admin-aportes.test.js."
     }
   },
   "roadmap": [
@@ -93,12 +93,12 @@
     { "id": "N1", "title": "Rediseño de navegación (pestañas y páginas por competición)", "status": "done" },
     { "id": "N2", "title": "Ficha de partido en modal + buscador estático", "status": "pending" },
     { "id": "C1", "title": "Colaboración: formulario→issue y plantilla", "status": "done" },
-    { "id": "C2", "title": "Colaboración: cola de aportes (C2a) y panel de agentes (C2b)", "status": "in-progress" },
+    { "id": "C2", "title": "Colaboración: cola de aportes (C2a) y panel de agentes (C2b)", "status": "done" },
     { "id": "F3", "title": "Build incremental", "status": "pending" }
   ],
   "nextSteps": [
     "N2 — Ficha de partido en modal + buscador estático",
-    "C2 — Colaboración: cola de aportes (C2a ✅, scripts/inbox.js) y panel de agentes pendiente",
+    "C2 — Colaboración: cola de aportes (C2a ✅) y panel de aportes + agente curador (C2b ✅) cerrados",
     "F3 — Build incremental",
     "P3 — Identidad de entidades auditable (ADR-032/D48): desbloquea la clasificación del Mundial 2002-2014 (Saar, TCH/URS/FRG)",
     "Completar el dominio propio: crear los dos CNAME proxied (@ y www → proyectolibero.pages.dev) para proyectolibero.org, o dar Zone→DNS→Edit al token",
