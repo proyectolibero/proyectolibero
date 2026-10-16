@@ -12,11 +12,19 @@
  *
  * Uso:
  *   node scripts/integrity.js [--competition=<id>] [--verbose]
+ *   node scripts/integrity.js [--baseline=<ruta>] [--no-baseline]
  *
  * Salida: resumen por competición (ediciones revisadas y anomalías por
  * severidad) y lista de anomalías (`código · severidad · fichero · detalle`).
- * `--verbose` añade la auditoría edición a edición. Exit 1 si hay errores, 0 si
- * solo hay avisos.
+ * `--verbose` añade la auditoría edición a edición.
+ *
+ * LÍNEA BASE (`memory/integrity-baseline.json`, versionada y auditable): un
+ * tope explícito de avisos y errores más el nº de excepciones auditables
+ * aplicadas. Sin `--competition`, el script falla con exit 1 si el archivo
+ * supera esa línea base («integrity no puede empeorar»). Subirla es un acto
+ * deliberado y documentado: nunca lo hace la CI ni el script (ver
+ * `docs/OPERACION.md`). Con `--competition` (build filtrado) o `--no-baseline`
+ * solo se exige que no haya errores, como antes.
  */
 "use strict";
 
@@ -68,6 +76,62 @@ function loadExceptions(root) {
 /** ¿La anomalía (`file`, `code`) está exceptuada? */
 function isExcepted(item, exceptions) {
   return exceptions.some((entry) => entry.file === item.file && entry.code === item.code);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Línea base auditable (ADR-017/D26; «integrity no puede empeorar»)           */
+/* -------------------------------------------------------------------------- */
+
+const BASELINE_FILE = path.join("memory", "integrity-baseline.json");
+
+/**
+ * Lee la línea base (`memory/integrity-baseline.json` o `--baseline=<ruta>`).
+ * Es un acto deliberado y versionado: `warnings` (tope de avisos), `errors`
+ * (tope de errores, 0) y `exceptions` (nº de excepciones auditables aplicadas).
+ * Lanza si falta o está mal formada: sin base no hay red de seguridad.
+ */
+function loadBaseline(root, explicit) {
+  const file = explicit ? path.resolve(root, explicit) : path.join(root, BASELINE_FILE);
+  const raw = readJSON(file);
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
+    throw new Error(`línea base inválida: ${file}`);
+  }
+  const number = (value, name) => {
+    if (!Number.isInteger(value) || value < 0) throw new Error(`línea base sin '${name}' entero ≥ 0: ${file}`);
+    return value;
+  };
+  return {
+    file,
+    version: Number.isInteger(raw.version) ? raw.version : 1,
+    updated: typeof raw.updated === "string" ? raw.updated : "",
+    reason: typeof raw.reason === "string" ? raw.reason : "",
+    warnings: number(raw.warnings, "warnings"),
+    errors: number(raw.errors, "errors"),
+    exceptions: Number.isInteger(raw.exceptions) && raw.exceptions >= 0 ? raw.exceptions : 0
+  };
+}
+
+/**
+ * ¿El estado actual está dentro de la línea base? Falla si hay más errores,
+ * más avisos, o un número distinto de excepciones auditables que las
+ * declaradas (añadir o retirar una excepción exige tocar la base). Función
+ * pura: testeable sin disco.
+ */
+function evaluateBaseline(counts, baseline) {
+  const failures = [];
+  if (counts.errors > baseline.errors) {
+    failures.push(`errores ${counts.errors} > línea base ${baseline.errors}`);
+  }
+  if (counts.warnings > baseline.warnings) {
+    failures.push(`avisos ${counts.warnings} > línea base ${baseline.warnings}`);
+  }
+  if (counts.exceptions !== baseline.exceptions) {
+    failures.push(
+      `excepciones auditables aplicadas ${counts.exceptions} != línea base ${baseline.exceptions} ` +
+        "(añadir o retirar una excepción exige actualizar la línea base)"
+    );
+  }
+  return { ok: failures.length === 0, failures };
 }
 
 function anomaly(code, file, message, extra) {
@@ -494,7 +558,44 @@ function main() {
   try {
     const result = checkProject(root, { competition });
     printReport(result, Boolean(flags.verbose));
-    return result.anomalies.some((a) => a.severity === "error") ? 1 : 0;
+
+    const counts = {
+      errors: result.anomalies.filter((a) => a.severity === "error").length,
+      warnings: result.anomalies.filter((a) => a.severity === "warn").length,
+      exceptions: result.usedExceptions.size
+    };
+
+    // Un build filtrado no representa el archivo entero: la línea base no aplica.
+    if (competition || flags["no-baseline"] === true) {
+      if (competition) console.log("\n(build filtrado: no se aplica la línea base de integridad)");
+      return counts.errors > 0 ? 1 : 0;
+    }
+
+    let baseline;
+    try {
+      baseline = loadBaseline(root, typeof flags.baseline === "string" ? flags.baseline : undefined);
+    } catch (err) {
+      console.error(`ERROR integridad: no se pudo leer la línea base: ${err.message}`);
+      console.error("  Crea memory/integrity-baseline.json, o pasa --baseline=<ruta> o --no-baseline.");
+      return 1;
+    }
+
+    const verdict = evaluateBaseline(counts, baseline);
+    if (!verdict.ok) {
+      for (const failure of verdict.failures) {
+        console.error(`INTEGRIDAD FUERA DE LA LÍNEA BASE: ${failure}`);
+      }
+      console.error(
+        "  Subir la línea base es un acto deliberado: edita memory/integrity-baseline.json, " +
+          "justifica el porqué en 'reason' y documéntalo en docs/OPERACION.md. La CI nunca la sube."
+      );
+      return 1;
+    }
+    console.log(
+      `\nDentro de la línea base: ${counts.errors} error(es) ≤ ${baseline.errors}, ` +
+        `${counts.warnings} aviso(s) ≤ ${baseline.warnings}, ${counts.exceptions} excepción(es) auditable(s).`
+    );
+    return 0;
   } catch (err) {
     console.error(`ERROR integridad: ${err.message}`);
     return 1;
@@ -507,7 +608,9 @@ module.exports = {
   analyzeEdition,
   checkProject,
   editionBounds,
+  evaluateBaseline,
   isExcepted,
+  loadBaseline,
   loadExceptions,
   matchWinner,
   SEVERITY

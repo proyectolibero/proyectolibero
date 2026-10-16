@@ -55,7 +55,7 @@
     },
     "validation": {
       "status": "done",
-      "notes": "Gates: node --test --test-concurrency=2 tests/ = 384 tests, 0 fallos; scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos (línea base, no puede empeorar); scripts/site-weight.js = 0 páginas sobre 300 kB de 2.580 medidas (peor: Mundial 2014 [hi] 191,7 kB). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
+      "notes": "Gates: node --test --test-concurrency=2 tests/ = 384 tests, 0 fallos; scripts/validate.js = 0 errores / 0 avisos; scripts/integrity.js = 0 errores / 43 avisos, línea base fijada en memory/integrity-baseline.json (exit 1 si se supera; tests/integrity-baseline.test.js); scripts/site-weight.js = 0 páginas sobre 300 kB de 3.435 medidas (sitio completo en streaming; peor: Mundial 2014 [hi] 192,0 kB; exit 1 si alguna lo supera). Guarda de sincronía memoria↔tarjeta MEM001/MEM002 (ADR-036/D53, tests/memory-sync.test.js)."
     },
     "mcp": {
       "status": "done",
@@ -75,7 +75,7 @@
     },
     "ci": {
       "status": "done",
-      "notes": "GitHub Action validate.yml (bloquea push si validate en rojo) + .gitignore."
+      "notes": "GitHub Action validate.yml (bloquea push si validate en rojo; añade integrity contra la línea base y site-weight 300 kB/página) + .gitignore."
     },
     "deployment": {
       "status": "done",

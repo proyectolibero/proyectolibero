@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "updated": "2026-10-15",
+  "errors": 0,
+  "warnings": 43,
+  "exceptions": 1,
+  "reason": "Línea base inicial de integridad semántica. 43 avisos DATE_MISSING heredados (partidos de clasificación sin fecha en Mundial 1950 y 1994) y 1 excepción auditable (Balkan 1935: campeón oficial Bulgaria, ver scripts/integrity.exceptions.json). Subirla es un acto deliberado y documentado; ver docs/OPERACION.md."
+}

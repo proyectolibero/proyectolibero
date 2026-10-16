@@ -16,5 +16,9 @@ jobs:
         run: node scripts/validate.js
       - name: Validate project (core, explícito)
         run: node core/cli.js validate
+      - name: Integrity (semántica, contra la línea base)
+        run: node scripts/integrity.js
+      - name: Site weight budget (300 kB/página)
+        run: node scripts/site-weight.js
       - name: Run test suite
         run: node --test --test-concurrency=2 tests/

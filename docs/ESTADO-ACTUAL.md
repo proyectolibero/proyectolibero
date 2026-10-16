@@ -28,8 +28,8 @@ Archivo abierto de resultados deportivos: `proyectolibero.org`, HTML estático +
 
 ## Calidad (verificada hoy)
 - `node --test --test-concurrency=2 tests/` → **394 tests, 0 fallos**. `node scripts/validate.js` → **0 errores / 0 avisos**; `node --test tests/memory-sync.test.js` → 6/6; `node --test tests/site-identity.test.js` → 3/3.
-- `node scripts/integrity.js` → **0 errores / 43 avisos = línea base** (1 excepción auditable: Balkan 1935). No puede empeorar.
-- `node scripts/site-weight.js` → presupuesto **300 kB/página**, 2.580 páginas medidas (Mundial por defecto), **0 por encima**; peor: Mundial 2014 [hi] 191,7 kB. Fila de partido ~845 B.
+- `node scripts/integrity.js` → **0 errores / 43 avisos = línea base** (1 excepción auditable: Balkan 1935), fijada en `memory/integrity-baseline.json`. No puede empeorar: el script falla con exit 1 si se supera. Subirla es un acto deliberado y documentado (`docs/OPERACION.md`).
+- `node scripts/site-weight.js` → presupuesto **300 kB/página**, **3.435 páginas medidas (sitio completo, en streaming)**, **0 por encima**; peor: Mundial 2014 [hi] 192,0 kB. Fila de partido ~845 B. Falla con exit 1 si alguna página lo supera.
 
 ## Modelos y coste (`docs/MODELOS.md`)
 - **Toda la flota en `opencode-go/deepseek-v4.1-flash`** (2026-10-15, fase de publicación; **D58**): sesión del arquitecto y subagentes (`general`, `rsssf`, `explore`, `architect`, `test-generator`, `code-reviewer`, `security-reviewer`, `performance-analyzer`, `cloudflare`, `opencollective`) y `small_model`; un solo motor, mismo razonamiento que decide y ejecuta. Config en `opencode.json` y `.opencode/agent/*.md`; **reiniciar opencode**. Los relevos gratuitos NVIDIA siguen en la tabla de `docs/MODELOS.md` por si hay que revertir por coste.
@@ -51,8 +51,9 @@ Archivo abierto de resultados deportivos: `proyectolibero.org`, HTML estático +
 ```bash
 node scripts/validate.js                 # gate (CI/MCP)
 node --test --test-concurrency=2 tests/ # suite (394 tests, 0 fallos)
-node scripts/integrity.js                # anomalías semánticas (línea base 43 avisos)
-node scripts/site-weight.js              # presupuesto de peso del SSG
+node scripts/integrity.js                # anomalías semánticas (línea base 43 avisos, falla si sube)
+node scripts/site-weight.js              # peso del SSG completo (falla si >300 kB/página)
+node scripts/verify-published.js         # sitio vivo: guardas D60, cabeceras, caché, datos
 node scripts/usage.js                    # tokens por día/modelo/agente
 node core/site/build.js                  # SSG: site/ (5 idiomas + sitemap + robots)
 node core/cli.js validate|reindex|release --id=2026.10 --created=2026-10-06T00:00:00Z

@@ -9,10 +9,12 @@
  * frente al presupuesto (300 kB). Sirve para medir ANTES de optimizar.
  *
  * Uso:
- *   node scripts/site-weight.js --competition=football/worldcup --years=all
+ *   node scripts/site-weight.js [--competition=<id>] [--years=<lista|all>]
  *   node scripts/site-weight.js --json
  *
- * El test `tests/site-budget.test.js` reutiliza `analyzeHtml`/`budget` de aquí.
+ * Sin `--competition` mide TODO el escaparate (streaming, sin retener las
+ * páginas en memoria). Falla con exit 1 si alguna página supera 300 kB. El test
+ * `tests/site-budget.test.js` reutiliza `analyzeHtml`/`budget` de aquí.
  */
 
 const path = require("node:path");
@@ -114,7 +116,7 @@ function budget(pages) {
 }
 
 function parseArgs(argv) {
-  const opts = { competition: "football/worldcup", years: "all" };
+  const opts = { years: "all" };
   for (const arg of argv) {
     if (arg.startsWith("--competition=")) opts.competition = arg.slice("--competition=".length);
     else if (arg.startsWith("--years=")) opts.years = arg.slice("--years=".length);
@@ -136,27 +138,41 @@ function editionList(root, competition, years) {
 
 function main() {
   const opts = parseArgs(process.argv.slice(2));
-  const editions = editionList(ROOT, opts.competition, opts.years);
-  const result = buildSite(ROOT, { write: false, editions });
-  const rows = budget(result.pages);
+  /*
+   * Streaming: `collect:false` + `visit` mide cada página al vuelo sin retener
+   * el escaparate entero en memoria (retener las ~3.400 páginas agotaba el
+   * heap). Sin `--competition` el ámbito es TODO el sitio.
+   */
+  const rows = [];
+  let sample = null;
+  const options = {
+    write: false,
+    collect: false,
+    visit: (page) => {
+      rows.push(budgetRow(page));
+      if (page.lang === "es" && page.kind === "edition" && page.rel.endsWith("/2002")) sample = page;
+    }
+  };
+  if (opts.competition) options.editions = editionList(ROOT, opts.competition, opts.years);
+  buildSite(ROOT, options);
+  rows.sort((a, b) => b.bytes - a.bytes);
+
+  const over = rows.filter((row) => row.over);
 
   if (opts.json) {
-    process.stdout.write(`${JSON.stringify({ budget: BUDGET_BYTES, pages: rows }, null, 2)}\n`);
-    return;
+    process.stdout.write(`${JSON.stringify({ budget: BUDGET_BYTES, pages: rows, over: over.length }, null, 2)}\n`);
+    return over.length > 0 ? 1 : 0;
   }
 
   const worst = rows[0];
   process.stdout.write(`Presupuesto: ${BUDGET_BYTES} B por página · ${rows.length} páginas\n`);
-  process.stdout.write(`Peor página: ${worst.rel} [${worst.lang}] ${worst.bytes} B\n`);
-  const editionPages = rows.filter((p) => p.kind === "edition" && p.lang === "es");
-  process.stdout.write("Ediciones (es):\n");
-  for (const page of editionPages) {
-    process.stdout.write(`  ${page.rel.split("/").slice(-1)[0]}  ${page.bytes} B${page.over ? "  OVER" : ""}\n`);
+  if (worst) process.stdout.write(`Peor página: ${worst.rel} [${worst.lang}] ${worst.bytes} B\n`);
+  for (const page of over.slice(0, 20)) {
+    process.stdout.write(`  OVER: ${page.rel} [${page.lang}] ${page.bytes} B\n`);
   }
-  const over = rows.filter((p) => p.over);
+  if (over.length > 20) process.stdout.write(`  … y ${over.length - 20} más\n`);
   process.stdout.write(`Páginas por encima del presupuesto: ${over.length}\n`);
 
-  const sample = result.pages.find((p) => p.lang === "es" && p.kind === "edition" && p.rel.endsWith("/2002"));
   if (sample) {
     const a = analyzeHtml(sample.html);
     process.stdout.write(`\nDesglose de ${sample.rel} (es): ${a.bytes} B\n`);
@@ -164,8 +180,9 @@ function main() {
     const r = analyzeMatchRows(sample.html);
     process.stdout.write(`  filas de partido: ${r.count} · ${r.perRow} B/fila (banderas ${r.flagsPerRow}, atributos ${r.attributesPerRow}, texto ${r.textPerRow})\n`);
   }
+  return over.length > 0 ? 1 : 0;
 }
 
 module.exports = { analyzeHtml, analyzeMatchRows, budget, budgetRow, BUDGET_BYTES };
 
-if (require.main === module) main();
+if (require.main === module) process.exit(main());
