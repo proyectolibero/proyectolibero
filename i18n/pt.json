@@ -502,5 +502,7 @@
   "data.download.free": "Sem registo, sem paywall: os mesmos ficheiros que a web pública usa.",
   "data.ai.title": "Para IA / uso programático",
   "data.ai.text": "Além do JSON por edição, publicamos uma camada para leitura automática: um mapa em texto simples, um índice máquina-legível e um ficheiro NDJSON por competição, com um jogo por linha.",
-  "data.links.title": "Mais informação"
+  "data.links.title": "Mais informação",
+  "offline.title": "Sem conexão",
+  "offline.lede": "Não há ligação à internet. Tente novamente ou vá ao início; quando recuperar a ligação poderá continuar a navegar pelo arquivo."
 }

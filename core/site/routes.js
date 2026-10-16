@@ -141,6 +141,8 @@ function planSite(model, editions = []) {
     pages.push(page("support", lang, "apoyar"));
     /* Publicación abierta: qué se publica, formatos, licencia, cita y capa IA. */
     pages.push(page("data", lang, "datos"));
+    /* Página sin conexión (PWA): fallback del service worker, fuera del sitemap. */
+    pages.push(page("offline", lang, "sin-conexion"));
     for (const sport of model.sports) {
       pages.push(page("sport", lang, sport.slug, { sportId: sport.id }));
       for (const comp of sport.competitions) {

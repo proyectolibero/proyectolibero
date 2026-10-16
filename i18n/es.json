@@ -502,5 +502,7 @@
   "data.download.free": "Sin registro ni cerco de pago: los mismos ficheros que usa la web pública.",
   "data.ai.title": "Para IA / uso programático",
   "data.ai.text": "Además del JSON por edición, publicamos una capa para lectura automática: un mapa en texto plano, un índice máquina-legible y un fichero NDJSON por competición, con un partido por línea.",
-  "data.links.title": "Más información"
+  "data.links.title": "Más información",
+  "offline.title": "Sin conexión",
+  "offline.lede": "No hay conexión a internet. Vuelve a intentarlo o ve a la portada; cuando recuperes la conexión podrás seguir navegando por el archivo."
 }

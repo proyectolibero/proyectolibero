@@ -134,6 +134,35 @@ rompería la lectura sin JS y el archivado. El contrato lo vigila
 progresiva inocua (sin JS no se pinta) y la galería la documenta como caso
 límite; eliminarla no ahorra nada observable y perdería la pieza del catálogo.
 
+## PWA: instalable y legible sin conexión (tanda 3)
+
+El escaparate es también una **aplicación instalable** en móvil y de **lectura
+sin conexión**, sin comprometer la frescura del dato.
+
+- **Manifest** (`/manifest.webmanifest`): `name`, `short_name`, `start_url
+  /es/`, `scope /`, `display standalone`, `theme_color` (verde de acento) y
+  `background_color`. Iconos 192, 512 y **maskable**.
+- **Iconos** generados por nosotros (`scripts/build-icons.js`, solo Node
+  nativos) a partir de la identidad del favicon y versionados en
+  `design/icons/`. El SSG los copia con **huella de contenido** y el manifest
+  apunta a las rutas con huella; `layout.js` añade `apple-touch-icon` y
+  `theme-color`.
+- **Service worker** en la raíz (`/sw.js`, scope `/`): **red primero** para
+  HTML y datos (`/data/**`, `/ai/**`, `*.json`, `*.ndjson`), **caché primero**
+  para assets con huella, fallback a la página **sin conexión**. Nada de
+  respuestas no-`GET` ni con error se cachea.
+- **Página sin conexión** en los 5 idiomas (`/{lang}/sin-conexion/`), con el
+  estilo del sitio y enlace a la portada; fuera del sitemap.
+- **Mejora progresiva**: el registro vive en `design/behaviour.js`, solo si hay
+  soporte y tras `load`, y **nunca** rompe la página si falla. Sin JS todo
+  funciona igual.
+- **Cuadro a ancho completo**: en ediciones con eliminatorias, a partir de
+  1200 px el cuadro ocupa todo el ancho del contenedor y las notas caen debajo
+  (`.lb-ledger:has(.lb-bracket)`); el resto del layout no cambia.
+
+El ciclo de vida y el «botón de pánico» para invalidar la PWA se documentan en
+[`DESPLIEGUE.md`](DESPLIEGUE.md).
+
 ## Pantallas clave
 
 | Pantalla | Objetivo |

@@ -551,6 +551,37 @@ function dataContent(ctx, page) {
   return aboutPage(ctx, page, { titleKey: "data.title", ledeKey: "data.lede", sections });
 }
 
+/* --------------------------- Sin conexión (PWA) ------------------------- */
+
+/**
+ * Página `/{lang}/sin-conexion/` (kind `offline`): fallback que sirve el
+ * service worker cuando la red falla. Con el estilo del sitio y un enlace a la
+ * portada; sin JS funciona igual. No se anuncia en el sitemap y pide no ser
+ * indexada (es una pantalla de error, no contenido).
+ */
+function offlineContent(ctx, page) {
+  const { t } = ctx;
+  const lang = page.lang;
+  const breadcrumb = [
+    { name: t(lang, "home.title"), url: `/${lang}/` },
+    { name: t(lang, "offline.title") }
+  ];
+  const body =
+    `    <section class="lb-section">\n` +
+    `      <h1 class="lb-section__title">${escapeHtml(t(lang, "offline.title"))}</h1>\n` +
+    `      <p class="lb-intro">${escapeHtml(t(lang, "offline.lede"))}</p>\n` +
+    `      <p><a class="lb-entry__link" href="/${escapeHtml(lang)}/">${escapeHtml(t(lang, "menu.home"))}</a></p>\n` +
+    `    </section>`;
+  return {
+    title: `${t(lang, "offline.title")} \u00b7 ${t(lang, "site.name")}`,
+    description: t(lang, "offline.lede"),
+    robots: "noindex",
+    breadcrumb,
+    body,
+    jsonld: [breadcrumbJsonLd(ctx, page, breadcrumb)]
+  };
+}
+
 /* -------------------------------- Sport --------------------------------- */
 
 function sportContent(ctx, page) {
@@ -2206,6 +2237,8 @@ function renderContent(ctx, page) {
       return supportContent(ctx, page);
     case "data":
       return dataContent(ctx, page);
+    case "offline":
+      return offlineContent(ctx, page);
     case "sport":
       return sportContent(ctx, page);
     case "competition":

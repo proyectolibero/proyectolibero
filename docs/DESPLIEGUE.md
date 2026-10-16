@@ -93,13 +93,62 @@ El build emite en la raíz de `site/`:
 
 | Fichero | Contenido |
 |---|---|
-| `_headers` | Seguridad (`X-Content-Type-Options`, `X-Frame-Options: DENY`, `Referrer-Policy`, CSP `default-src 'self'` sin inline ni externos); CSS/JS de diseño con huella de contenido en el nombre → `max-age=31536000, immutable`; banderas (sin huella, referenciadas por código de país) → 1 día. |
+| `_headers` | Seguridad (`X-Content-Type-Options`, `X-Frame-Options: DENY`, `Referrer-Policy`, CSP `default-src 'self'` sin inline ni externos); CSS/JS de diseño con huella de contenido en el nombre → `max-age=31536000, immutable`; iconos PWA (`.png`) con huella → `immutable`; banderas (sin huella, referenciadas por código de país) → 1 día. `sw.js` y `manifest.webmanifest` se sirven con `Cache-Control: no-cache` (nunca cacheados). |
 | `_redirects` | `/ → /es/` con **301** (portada canónica en español, ADR-013/D19). |
-| `sitemap.xml`, `robots.txt` | Descubrimiento; ya los generaba el SSG. |
+| `sitemap.xml`, `robots.txt` | Descubrimiento; ya los generaba el SSG. La página sin conexión **no** entra en el sitemap. |
+| `manifest.webmanifest` | Manifest de instalación (PWA): `start_url /es/`, `scope /`, `display standalone`, iconos 192/512 y maskable, referenciados con huella. |
+| `sw.js` | Service worker (scope `/`) con estrategia red-primero para HTML y datos y caché-primero para assets con huella. |
 
 Cloudflare Pages lee `_headers` y `_redirects` de la raíz del output en cada
 deploy; no requieren configuración adicional. Guardados por
 `tests/site-headers.test.js`.
+
+## PWA: instalación y lectura sin conexión
+
+El sitio es un archivo estático y, además, una **PWA instalable** que se puede
+leer sin conexión sin riesgo de servir contenido viejo.
+
+- **Manifest** (`/manifest.webmanifest`) e **iconos** (`design/icons/*.png`,
+  generados por `scripts/build-icons.js` con Node puro y versionados como
+  activos de diseño). El SSG los copia con huella de contenido (D64) y el
+  manifest apunta a las rutas con huella. `layout.js` añade
+  `apple-touch-icon` y `theme-color`.
+- **Service worker** (`/sw.js`, scope `/`) con estrategia SEGURA:
+  - **HTML**: red primero; si falla, caché y, si no, la página
+    `/{lang}/sin-conexion/`.
+  - **Assets con huella** (`/assets/design/<nombre>.<hash>.<ext>`): caché
+    primero (inmutables por diseño).
+  - **Datos** (`/data/**`, `/ai/**`, `*.json`, `*.ndjson`): red primero y
+    **nunca** en el precache (pueden corregirse).
+  - Solo se cachean respuestas `GET` correctas (`response.ok`); nunca errores.
+- **Precache mínimo**: el shell de diseño (CSS, JS, favicon, iconos) y las
+  páginas sin conexión de los 5 idiomas.
+- **Registro** en `design/behaviour.js`: solo si `'serviceWorker' in navigator`,
+  tras `load` y sin romper la página si falla. **Sin JS todo funciona igual**:
+  la PWA es una mejora, no un requisito.
+
+### Ciclo de vida y "botón de pánico"
+
+El service worker se **versiona con la firma del build** (`globalSig`, derivada
+del contenido de `core/site`, `design`, `i18n`, `catalog`, `config` y el
+release). Al **instalarse** precachea el shell; al **activarse** borra todas las
+cachés que no sean la actual y toma el control (`clients.claim`). El navegador
+comprueba si `sw.js` cambió al recargar (por eso se sirve `no-cache`).
+
+Si algo se queda viejo en un dispositivo (una edición cacheada que ya no
+corresponde):
+
+1. **Sube la versión del SW**: basta con cambiar cualquier entrada global del
+   build (una línea en una plantilla, un asset de `design/`, un i18n o el
+   release). `globalSig` cambia, el nombre de caché cambia y al activarse se
+   limpian las antiguas. No hay que tocar el número a mano.
+2. Reconstruye y despliega: `node core/site/build.js` y publica `site/`.
+3. El usuario recibe el nuevo `sw.js` en la siguiente carga, se activa y purga
+   lo viejo. Como red de seguridad, en el peor caso basta recargar dos veces o
+   borrar los datos del sitio en el navegador.
+
+La página sin conexión vive en los 5 idiomas y **no** aparece en `sitemap.xml`
+(no es contenido, es una pantalla de error).
 
 ## Verificación previa (obligatoria)
 

@@ -28,6 +28,12 @@ const {
   buildAiIndex,
   buildLlmsTxt
 } = require("./publish.js");
+const {
+  buildManifest,
+  buildServiceWorker,
+  MANIFEST_FILE,
+  SW_FILE
+} = require("./pwa.js");
 
 /*
  * Generador del escaparate (SSG). Escribe HTML estático determinista bajo
@@ -43,6 +49,15 @@ const {
 const ORIGIN = "https://proyectolibero.org";
 const ASSET_BASE = "/assets/design";
 const ASSETS = ["tokens.css", "components.css", "behaviour.js", "favicon.svg"];
+/* Iconos PWA: activos de diseño en `design/icons/` (generados por
+ * `scripts/build-icons.js`), copiados con huella de contenido como el resto. */
+const ICONS_DIR = path.join("design", "icons");
+const ICONS = [
+  { file: "icon-192.png", key: "icon192" },
+  { file: "icon-512.png", key: "icon512" },
+  { file: "icon-maskable-512.png", key: "iconMaskable" },
+  { file: "apple-touch-icon.png", key: "appleIcon" }
+];
 const HASH_LENGTH = 8;
 const KEY_LENGTH = 16;
 const MANIFEST_DIR = ".cache";
@@ -151,6 +166,15 @@ function planAssets(root) {
     urls[key] = `${ASSET_BASE}/${stamped}`;
     files.push({ from, to: path.join("assets", "design", stamped) });
   }
+  for (const icon of ICONS) {
+    const from = path.join(root, ICONS_DIR, icon.file);
+    if (!fs.existsSync(from)) {
+      throw new Error(`icono PWA ausente: ${from} (genera con: node scripts/build-icons.js)`);
+    }
+    const stamped = stampedName(icon.file, contentHash(fs.readFileSync(from)));
+    urls[icon.key] = `${ASSET_BASE}/${stamped}`;
+    files.push({ from, to: path.join("assets", "design", stamped) });
+  }
   return { urls, files };
 }
 
@@ -243,7 +267,8 @@ function buildRobots() {
  * de los assets de diseño. CSS y JS llevan huella de contenido en el nombre:
  * se cachean como `immutable` durante un año. Las banderas se referencian por
  * código de país (sin huella), así que se cachean solo un día para permitir
- * su revalidación.
+ * su revalidación. `sw.js` y `manifest.webmanifest` NUNCA se cachean (sin
+ * revalidación el service worker o el manifest podrían quedarse viejos).
  */
 function buildHeaders() {
   return [
@@ -264,6 +289,17 @@ function buildHeaders() {
     "",
     "/assets/design/flags/*",
     "  Cache-Control: public, max-age=86400",
+    "",
+    "/assets/design/*.png",
+    "  Cache-Control: public, max-age=31536000, immutable",
+    "",
+    "/sw.js",
+    "  Cache-Control: no-cache",
+    "  Content-Type: text/javascript",
+    "",
+    "/manifest.webmanifest",
+    "  Cache-Control: no-cache",
+    "  Content-Type: application/manifest+json",
     "",
     "/data/*",
     "  Cache-Control: public, max-age=86400",
@@ -466,6 +502,21 @@ function buildSite(root, options = {}) {
   const manifest = shouldWrite && !force ? loadManifest(root) : {};
   const nextManifest = {};
 
+  /*
+   * PWA: manifest y service worker se derivan de los assets con huella y de la
+   * firma global del build. El service worker se versiona con esa firma, así
+   * que cambiar cualquier asset, i18n o plantilla estrena caché y limpia la
+   * antigua al activarse. El precache es MÍNIMO: el shell de diseño y las
+   * páginas sin conexión; los datos (`/data/**`, `/ai/**`) nunca se precachean.
+   */
+  const offlineUrls = {};
+  for (const lang of LANGS) offlineUrls[lang] = urlFor(lang, "sin-conexion");
+  const manifestObject = buildManifest(assetPlan.urls);
+  const manifestJson = `${JSON.stringify(manifestObject, null, 2)}\n`;
+  const swVersion = globalSig.slice(0, 16);
+  const precache = Object.values(assetPlan.urls).concat(Object.values(offlineUrls));
+  const serviceWorker = buildServiceWorker({ version: swVersion, precache, offline: offlineUrls });
+
   const pages = [];
   const written = [];
   const pushWritten = (file) => {
@@ -499,7 +550,8 @@ function buildSite(root, options = {}) {
     if (collect) pages.push(built);
   }
 
-  const sitemap = buildSitemap(root, pagePlan, release.asOf);
+  /* La página sin conexión existe y se sirve, pero NO se anuncia en el sitemap. */
+  const sitemap = buildSitemap(root, pagePlan.filter((page) => page.kind !== "offline"), release.asOf);
   const robots = buildRobots();
   const headers = buildHeaders();
   const redirects = buildRedirects();
@@ -517,7 +569,12 @@ function buildSite(root, options = {}) {
   const aiIndex = buildAiIndex(root, published, release, ORIGIN);
   const staticUrls = publicFiles
     .map((file) => `/${file.to}`)
-    .concat(ndjsonFiles.map((file) => file.url), ["/llms.txt", "/ai/index.json"]);
+    .concat(ndjsonFiles.map((file) => file.url), [
+      "/llms.txt",
+      "/ai/index.json",
+      `/${MANIFEST_FILE}`,
+      `/${SW_FILE}`
+    ]);
 
   if (shouldWrite) {
     pushWritten(writeText(path.join(root, outDir, "indexes", "tree.json"), `${JSON.stringify(tree, null, 2)}\n`));
@@ -554,6 +611,9 @@ function buildSite(root, options = {}) {
     for (const file of ndjsonFiles) {
       pushWritten(writeText(path.join(root, outDir, "ai", path.basename(file.url)), file.text));
     }
+    /* PWA: manifest y service worker en la raíz del sitio (scope `/`). */
+    pushWritten(writeText(path.join(root, outDir, MANIFEST_FILE), manifestJson));
+    pushWritten(writeText(path.join(root, outDir, SW_FILE), serviceWorker));
     /* El manifiesto se escribe al final: refleja exactamente lo que queda en disco. */
     pushWritten(writeText(manifestFile(root), `${JSON.stringify(nextManifest, null, 2)}\n`));
   }
@@ -578,7 +638,11 @@ function buildSite(root, options = {}) {
     staticFiles: staticUrls,
     ndjson: ndjsonFiles.map((file) => file.url),
     llms: "/llms.txt",
-    aiIndex: "/ai/index.json"
+    aiIndex: "/ai/index.json",
+    manifest: manifestObject,
+    manifestJson,
+    serviceWorker,
+    swVersion
   };
 }
 

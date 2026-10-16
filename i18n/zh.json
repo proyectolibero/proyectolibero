@@ -502,5 +502,7 @@
   "data.download.free": "无需注册、无付费墙：与公开网站使用的是同一批文件。",
   "data.ai.title": "面向 AI / 程序化使用",
   "data.ai.text": "除了按届次的 JSON，我们还发布供自动读取的层：纯文本地图、机器可读索引，以及每项赛事一个 NDJSON 文件，每行一条比赛。",
-  "data.links.title": "更多信息"
+  "data.links.title": "更多信息",
+  "offline.title": "离线",
+  "offline.lede": "当前没有网络连接。请重试，或前往首页；恢复连接后可继续浏览档案。"
 }

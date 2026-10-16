@@ -1798,6 +1798,31 @@ html.lb-js .lb-pagination.lb-needs-js { display: flex; }
 }
 
 /* ------------------------------------------------------------------ */
+/* Cuadro a ancho completo (>=1200 px)                                 */
+/* ------------------------------------------------------------------ */
+/*
+ * En anchos grandes el "libro a dos columnas" deja el cuadro de eliminatorias
+ * estrecho en la columna de datos. Cuando la edición trae cuadro (`:has`),
+ * a partir de 1200 px se pasa a una sola columna: el cuadro ocupa el ancho
+ * completo del contenedor y las notas al margen caen debajo. Las ediciones sin
+ * cuadro conservan el libro a dos columnas tal cual. No hay scroll horizontal
+ * porque las columnas del cuadro son `minmax(0, 1fr)`.
+ */
+@media (min-width: 1200px) {
+  .lb-ledger:has(.lb-bracket) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "intro"
+      "body"
+      "notes";
+  }
+
+  .lb-ledger:has(.lb-bracket) .lb-ledger__notes {
+    position: static;
+  }
+}
+
+/* ------------------------------------------------------------------ */
 /* Armazon visual (S3) — contenedor, cabecera, portada, pie             */
 /* ------------------------------------------------------------------ */
 /* Reviste la capa visual sobre los tokens existentes: columna central   */

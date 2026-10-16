@@ -287,6 +287,23 @@
     if (fromHash()) open(fromHash(), null);
   }
 
+  /* --- PWA: registro del service worker (mejora progresiva) -----------
+   * Solo si el navegador lo soporta, tras `load` y sin romper la página si
+   * falla: la PWA es una mejora, no un requisito. Sin JS todo funciona igual
+   * (el registro es lo único que no ocurre). */
+  function initServiceWorker() {
+    if (!("serviceWorker" in navigator)) return;
+    window.addEventListener("load", function () {
+      try {
+        navigator.serviceWorker.register("/sw.js").catch(function () {
+          /* Registro no disponible: la página sigue funcionando igual. */
+        });
+      } catch (err) {
+        /* Navegador sin soporte real de registro: se ignora. */
+      }
+    });
+  }
+
   function init() {
     initTheme();
     initNav();
@@ -296,6 +313,7 @@
     initPagination();
     initContribute();
     initFacsimileModal();
+    initServiceWorker();
   }
 
   if (document.readyState === "loading") {

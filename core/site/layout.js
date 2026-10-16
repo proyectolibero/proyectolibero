@@ -98,9 +98,12 @@ function renderHead(ctx, page, content) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(content.title)}</title>
   <meta name="description" content="${escapeHtml(content.description)}">
-  <link rel="canonical" href="${escapeHtml(canonical)}">
+${content.robots ? `  <meta name="robots" content="${escapeHtml(content.robots)}">\n` : ""}  <link rel="canonical" href="${escapeHtml(canonical)}">
 ${alternates}
   <link rel="icon" type="image/svg+xml" href="${escapeHtml(assets.favicon)}">
+  <link rel="apple-touch-icon" href="${escapeHtml(assets.appleIcon)}">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0b6e4f">
   <link rel="stylesheet" href="${escapeHtml(assets.tokens)}">
   <link rel="stylesheet" href="${escapeHtml(assets.components)}">
   <script defer src="${escapeHtml(assets.behaviour)}"></script>

@@ -502,5 +502,7 @@
   "data.download.free": "No sign-up, no paywall: the same files the public website uses.",
   "data.ai.title": "For AI / programmatic use",
   "data.ai.text": "Besides the per-edition JSON, we publish a layer for automatic reading: a plain-text map, a machine-readable index and one NDJSON file per competition, with one match per line.",
-  "data.links.title": "More information"
+  "data.links.title": "More information",
+  "offline.title": "Offline",
+  "offline.lede": "There is no internet connection. Try again, or go to the home page; once you are back online you can keep browsing the archive."
 }
