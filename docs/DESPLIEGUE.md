@@ -124,8 +124,19 @@ leer sin conexión sin riesgo de servir contenido viejo.
 - **Precache mínimo**: el shell de diseño (CSS, JS, favicon, iconos) y las
   páginas sin conexión de los 5 idiomas.
 - **Registro** en `design/behaviour.js`: solo si `'serviceWorker' in navigator`,
-  tras `load` y sin romper la página si falla. **Sin JS todo funciona igual**:
-  la PWA es una mejora, no un requisito.
+  tras `load` y sin romper la página si falla. Se hace con
+  **`{ updateViaCache: 'none' }`**, de modo que el navegador **no usa la caché
+  HTTP** al buscar actualizaciones del propio `sw.js`: es la garantía que **no
+  depende del dashboard** (el CDN del dominio propio puede reescribir el
+  `Cache-Control: no-cache` de `_headers`). **Sin JS todo funciona igual**: la
+  PWA es una mejora, no un requisito.
+
+  **Refuerzo opcional en el dashboard** (por si se quiere cachear todo lo demás
+  de forma agresiva): en Cloudflare → proyecto `proyectolibero` → **Caching** →
+  **Cache Rules**, crea una regla para `proyectolibero.org/sw.js` con
+  **«Bypass cache»** (o **«Respect existing headers»**), de modo que el CDN no
+  sobreescriba el `no-cache` que ya manda `_headers`. No es imprescindible:
+  `updateViaCache: 'none'` ya impide que el navegador sirva un `sw.js` viejo.
 
 ### Ciclo de vida y "botón de pánico"
 
@@ -133,7 +144,9 @@ El service worker se **versiona con la firma del build** (`globalSig`, derivada
 del contenido de `core/site`, `design`, `i18n`, `catalog`, `config` y el
 release). Al **instalarse** precachea el shell; al **activarse** borra todas las
 cachés que no sean la actual y toma el control (`clients.claim`). El navegador
-comprueba si `sw.js` cambió al recargar (por eso se sirve `no-cache`).
+comprueba si `sw.js` cambió al recargar (se sirve `no-cache` y, sobre todo, el
+registro usa `updateViaCache: 'none'`, así que no reutiliza la caché HTTP del
+propio service worker).
 
 Si algo se queda viejo en un dispositivo (una edición cacheada que ya no
 corresponde):

@@ -174,7 +174,12 @@ test("pwa: el registro del service worker es progresivo y sin JS todo funciona i
   const behaviour = read(BEHAVIOUR);
   assert.match(behaviour, /"serviceWorker" in navigator/, "solo si hay soporte");
   assert.match(behaviour, /addEventListener\("load"/, "se registra tras `load`");
-  assert.match(behaviour, /register\("\/sw\.js"\)/, "registra el service worker");
+  assert.match(behaviour, /register\("\/sw\.js"/, "registra el service worker");
+  assert.match(
+    behaviour,
+    /register\("\/sw\.js",\s*\{\s*updateViaCache:\s*"none"\s*\}\)/,
+    "no usa la caché HTTP al buscar actualizaciones del propio sw.js"
+  );
   assert.match(behaviour, /\.catch\(/, "un fallo de registro no rompe la página");
   assert.match(behaviour, /try \{/, "el registro está protegido");
 });

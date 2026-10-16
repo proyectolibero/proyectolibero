@@ -7,8 +7,9 @@
  * Comprueba lo que los tests locales NO ven porque ocurre en el borde del
  * despliegue: redirección de portada, cabeceras de seguridad, caché de assets
  * con huella, que NO se exponga el repositorio (guarda de regresión de D60),
- * que los datos y el índice para máquinas respondan, y que el HTML servido no
- * supere el presupuesto de 300 kB.
+ * que los datos y el índice para máquinas respondan, que el HTML servido no
+ * supere el presupuesto de 300 kB, y la PWA (manifest, service worker, icono y
+ * página sin conexión, que además no se anuncia en el sitemap).
  *
  * Es la alerta de monitor.yml (cron diario) y el smoke test post-deploy. La
  * función `verifyPublished` se exporta y se prueba sin red con un servidor de
@@ -255,6 +256,77 @@ async function verifyPublished(options = {}) {
         `status=${res.status} bytes=${bytes}`
       );
     }
+
+    /* 8. PWA: manifest, service worker, icono y página sin conexión. */
+    const manifestRes = await get("/manifest.webmanifest");
+    const manifestType = (manifestRes.headers.get("content-type") || "").toLowerCase();
+    let manifest = null;
+    if (manifestRes.status !== 200) {
+      await drain(manifestRes);
+      record("GET /manifest.webmanifest → 200", false, `status=${manifestRes.status}`);
+    } else {
+      record("GET /manifest.webmanifest → 200", true, "status=200");
+      record(
+        "manifest: content-type de manifest",
+        /manifest\+json/.test(manifestType),
+        `content-type=${manifestType || "—"}`
+      );
+      try {
+        manifest = JSON.parse(await manifestRes.text());
+      } catch (err) {
+        record("manifest es JSON válido", false, err.message);
+      }
+    }
+    if (manifest) {
+      const hasIcons = Array.isArray(manifest.icons) && manifest.icons.length > 0;
+      const missing = ["name", "start_url"].filter((field) => !manifest[field]);
+      record(
+        "manifest: name, start_url e icons",
+        missing.length === 0 && hasIcons,
+        missing.length || !hasIcons ? `falta ${missing.concat(hasIcons ? [] : ["icons"]).join(", ")}` : "ok"
+      );
+      const icon = hasIcons
+        ? manifest.icons.find(
+            (entry) => entry && entry.src && (/\.png$/i.test(entry.src) || /image\/png/i.test(entry.type || ""))
+          )
+        : null;
+      if (icon) {
+        const iconPath = /^https?:/i.test(icon.src) ? icon.src : `/${String(icon.src).replace(/^\/+/, "")}`;
+        const iconRes = await request(iconPath.startsWith("http") ? iconPath : `${base}${iconPath}`, requestOptions);
+        const iconType = (iconRes.headers.get("content-type") || "").toLowerCase();
+        await drain(iconRes);
+        record(
+          `icono PNG ${iconPath} → 200 image/png`,
+          iconRes.status === 200 && /image\/png/.test(iconType),
+          `status=${iconRes.status} content-type=${iconType || "—"}`
+        );
+      } else {
+        record("manifest: icono PNG declarado", false, "ningún icono .png ni image/png");
+      }
+    }
+
+    const swRes = await get("/sw.js");
+    const swType = (swRes.headers.get("content-type") || "").toLowerCase();
+    await drain(swRes);
+    record("GET /sw.js → 200", swRes.status === 200, `status=${swRes.status}`);
+    record("sw.js: content-type JavaScript", /javascript/.test(swType), `content-type=${swType || "—"}`);
+
+    const offlineRes = await get("/es/sin-conexion/");
+    await drain(offlineRes);
+    record("GET /es/sin-conexion/ → 200", offlineRes.status === 200, `status=${offlineRes.status}`);
+
+    const sitemapRes = await get("/sitemap.xml");
+    const sitemapText = sitemapRes.status === 200 ? await sitemapRes.text() : "";
+    const sitemapHasOffline = /sin-conexion/.test(sitemapText);
+    record(
+      "sitemap.xml no anuncia /sin-conexion/",
+      sitemapRes.status === 200 && !sitemapHasOffline,
+      sitemapRes.status !== 200
+        ? `status=${sitemapRes.status}`
+        : sitemapHasOffline
+          ? "anuncia la página sin conexión"
+          : "ok"
+    );
   } catch (err) {
     record(`conexión a ${base}`, false, err.message);
   }

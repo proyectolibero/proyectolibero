@@ -295,9 +295,17 @@
     if (!("serviceWorker" in navigator)) return;
     window.addEventListener("load", function () {
       try {
-        navigator.serviceWorker.register("/sw.js").catch(function () {
-          /* Registro no disponible: la página sigue funcionando igual. */
-        });
+        /*
+         * `updateViaCache: "none"`: el navegador NO usa la caché HTTP al
+         * buscar actualizaciones del propio `sw.js`. Es la garantía que no
+         * depende del dashboard de Cloudflare (el CDN del dominio propio
+         * puede reescribir el `Cache-Control: no-cache` de `_headers`).
+         */
+        navigator.serviceWorker
+          .register("/sw.js", { updateViaCache: "none" })
+          .catch(function () {
+            /* Registro no disponible: la página sigue funcionando igual. */
+          });
       } catch (err) {
         /* Navegador sin soporte real de registro: se ignora. */
       }

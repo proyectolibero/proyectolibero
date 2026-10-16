@@ -5,8 +5,10 @@
  *
  * Se comprueba que DETECTA: un fallo de cabeceras de seguridad, un fichero
  * privado servido (200 donde se espera 404, guarda de D60), un asset con
- * huella sin caché inmutable, una página pasada de 300 kB y una ruta `json`
- * rota; y que PASA cuando todo está bien. El servidor se arranca con
+ * huella sin caché inmutable, una página pasada de 300 kB, una ruta `json`
+ * rota y los fallos de PWA (manifest, `sw.js`, icono, página sin conexión o
+ * página sin conexión anunciada en el sitemap); y que PASA cuando todo está
+ * bien. El servidor se arranca con
  * `http.createServer()` + `port:0` y se cierra al terminar (ADR-017/D26).
  */
 
@@ -17,6 +19,18 @@ const { once } = require("node:events");
 const { verifyPublished, collectJsonRoutes, BUDGET_BYTES } = require("../scripts/verify-published.js");
 
 const HASHED_ASSET = "/assets/design/tokens.3fb26790.css";
+const OFFLINE_ICON = "/assets/design/icon-192.deadbeef.png";
+const PNG_BYTES = Buffer.from("89504e470d0a1a0a0000000d49484452", "hex");
+
+/** Manifest de prueba con un icono PNG. */
+function fixtureManifest() {
+  return {
+    name: "Proyecto Libero",
+    short_name: "Libero",
+    start_url: "/es/",
+    icons: [{ src: OFFLINE_ICON, sizes: "192x192", type: "image/png" }]
+  };
+}
 
 /** Índice de prueba con 12 ediciones (≥10 rutas `json`). */
 function fixtureIndex() {
@@ -78,8 +92,33 @@ function startServer(options = {}) {
       return send(200, { "content-type": "text/css", "cache-control": cache }, "body{}");
     }
 
-    if (["/sitemap.xml", "/robots.txt", "/llms.txt", "/ai/index.json"].includes(url)) {
+    if (url === "/sitemap.xml") {
+      const body = options.sitemapOffline
+        ? "<urlset><url><loc>https://x/es/sin-conexion/</loc></url></urlset>"
+        : "<urlset></urlset>";
+      return send(200, { "content-type": "application/xml" }, body);
+    }
+    if (["/robots.txt", "/llms.txt", "/ai/index.json"].includes(url)) {
       return send(200, { "content-type": "application/json" }, "{}");
+    }
+
+    if (url === "/manifest.webmanifest") {
+      if (options.manifestBroken) {
+        return send(200, { "content-type": "text/plain" }, "no soy un manifest");
+      }
+      return send(200, { "content-type": "application/manifest+json" }, JSON.stringify(fixtureManifest()));
+    }
+    if (url === OFFLINE_ICON) {
+      if (options.iconMissing) return send(404, {}, "not found");
+      return send(200, { "content-type": "image/png" }, PNG_BYTES);
+    }
+    if (url === "/sw.js") {
+      if (options.swMissing) return send(404, {}, "not found");
+      return send(200, { "content-type": "text/javascript; charset=utf-8" }, "self.addEventListener('install', function () {});");
+    }
+    if (url === "/es/sin-conexion/") {
+      if (options.offlineMissing) return send(404, {}, "not found");
+      return send(200, {}, "<html><body>sin conexión</body></html>");
     }
 
     if (url === "/index.json") {
@@ -181,6 +220,82 @@ test("verify-published: detecta una ruta json rota", async () => {
     assert.equal(result.ok, false);
     assert.ok(
       result.failures.some((f) => f.name === "json /data/football/worldcup/1930.json → 200"),
+      JSON.stringify(result.failures)
+    );
+  });
+});
+
+test("verify-published: comprueba la PWA publicada (manifest, sw, icono y offline)", async () => {
+  await withServer({}, async (base) => {
+    const result = await verify(base);
+    assert.deepEqual(result.failures, [], JSON.stringify(result.failures));
+    const names = result.checks.map((check) => check.name);
+    for (const expected of [
+      "GET /manifest.webmanifest → 200",
+      "manifest: content-type de manifest",
+      "manifest: name, start_url e icons",
+      `icono PNG ${OFFLINE_ICON} → 200 image/png`,
+      "GET /sw.js → 200",
+      "sw.js: content-type JavaScript",
+      "GET /es/sin-conexion/ → 200",
+      "sitemap.xml no anuncia /sin-conexion/"
+    ]) {
+      assert.ok(names.includes(expected), `comprobación presente: ${expected}\n${names.join("\n")}`);
+    }
+  });
+});
+
+test("verify-published: detecta un manifest roto", async () => {
+  await withServer({ manifestBroken: true }, async (base) => {
+    const result = await verify(base);
+    assert.equal(result.ok, false);
+    assert.ok(
+      result.failures.some((f) => f.name === "manifest: content-type de manifest"),
+      JSON.stringify(result.failures)
+    );
+    assert.ok(
+      result.failures.some((f) => f.name === "manifest es JSON válido"),
+      JSON.stringify(result.failures)
+    );
+  });
+});
+
+test("verify-published: detecta el service worker ausente", async () => {
+  await withServer({ swMissing: true }, async (base) => {
+    const result = await verify(base);
+    assert.equal(result.ok, false);
+    assert.ok(result.failures.some((f) => f.name === "GET /sw.js → 200"), JSON.stringify(result.failures));
+  });
+});
+
+test("verify-published: detecta un icono del manifest ausente", async () => {
+  await withServer({ iconMissing: true }, async (base) => {
+    const result = await verify(base);
+    assert.equal(result.ok, false);
+    assert.ok(
+      result.failures.some((f) => f.name.startsWith("icono PNG ")),
+      JSON.stringify(result.failures)
+    );
+  });
+});
+
+test("verify-published: detecta la página sin conexión ausente", async () => {
+  await withServer({ offlineMissing: true }, async (base) => {
+    const result = await verify(base);
+    assert.equal(result.ok, false);
+    assert.ok(
+      result.failures.some((f) => f.name === "GET /es/sin-conexion/ → 200"),
+      JSON.stringify(result.failures)
+    );
+  });
+});
+
+test("verify-published: detecta la página sin conexión anunciada en el sitemap", async () => {
+  await withServer({ sitemapOffline: true }, async (base) => {
+    const result = await verify(base);
+    assert.equal(result.ok, false);
+    assert.ok(
+      result.failures.some((f) => f.name === "sitemap.xml no anuncia /sin-conexion/"),
       JSON.stringify(result.failures)
     );
   });
