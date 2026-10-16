@@ -21,8 +21,9 @@ jerarquía de datos.
 ```
 tokens/            color · tipografía · espaciado · radios · sombras
   ├─ color: base neutra + acento + medalla (gold/silver/bronze)
-  ├─ tipografía: escala 5 pasos; stack con cobertura para zh/hi
-  └─ espaciado: escala de 4 px
+  ├─ tipografía: escala fluida (clamp) de 7 pasos; stack con cobertura zh/hi
+  ├─ superficies: borde sutil + elevación 1/2 + separadores suaves
+  └─ espaciado: escala de 4 px + ritmo vertical fluido (flow/section-gap)
 componentes/
   ├─ EditionTimeline      línea temporal de ediciones de una competición
   ├─ StandingsTable       tabla de clasificación (colapsable en móvil)
@@ -56,7 +57,28 @@ zh/hi) a 390 px y 1440 px, claro y oscuro.
 
 Modo oscuro automático (`prefers-color-scheme`) y anulable con
 `[data-theme="light"|"dark"]`. Los controles se ocultan sin JS
-(`.lb-needs-js` → `html.lb-js`). Contraste AA verificado en ambos temas.
+(`.lb-needs-js` → `html.lb-js`). El contraste AA **se mide**: `tests/design-contrast.test.js`
+lee los pares de tokens de `tokens.css` en claro y oscuro y falla por debajo de 4.5:1.
+
+### Sistema visual (tanda 1): tipografía, superficies y navegación móvil
+
+- **Tipografía fluida**: toda la escala usa `clamp()` (`--lb-fs-xs…3xl`) con
+  interlineados (`--lb-lh-display/tight/lh/loose`) y pesos coherentes. La
+  jerarquía se lee en 6 niveles: display (`3xl`) · título de sección (`xl`,
+  `2xl` en edición) · subtítulo (`lg`) · cuerpo (`md`) · secundario (`sm`) ·
+  micro (`xs`). Las utilidades `.lb-fs-*` (galería) emparejan 1:1 con los tokens.
+- **Ritmo vertical**: `--lb-flow` (flujo entre bloques) y `--lb-section-gap`
+  (respiro entre secciones) dan el mismo compás a **todas** las páginas; el
+  gutter es fluido. Nada de márgenes a ojo por tipo de página.
+- **Superficies**: tarjetas y bloques usan fondo + `--lb-border-subtle` +
+  `--lb-elev-1/2` (sombra suave) en vez de bordes duros por todas partes; las
+  listas densas (tablas, fichas, entradas) usan separadores de bajo contraste.
+- **Cabecera compacta** y **barra inferior móvil** (≤960 px) con 4 destinos
+  —Inicio · Competiciones · Buscar · Apoyar— como `<nav>` de enlaces: funciona
+  **sin JS**, objetivos táctiles ≥44 px, `aria-current` en el destino activo y
+  oculta en escritorio. Reserva su altura con `--lb-tabbar-h` para no tapar el pie.
+- **Modo oscuro como tema propio** (no inversión) y **microinteracciones**
+  coherentes, anuladas con `prefers-reduced-motion`.
 
 ### Contrato de clases
 
@@ -68,6 +90,8 @@ tests (`tests/design.test.js`) lo verifican. Los colores solo se declaran en
 | Componente | Clases |
 |---|---|
 | Base | `.lb-visually-hidden`, `.lb-needs-js` |
+| Tipografía (utilidades) | `.lb-fs-xs`, `.lb-fs-sm`, `.lb-fs-md`, `.lb-fs-lg`, `.lb-fs-xl`, `.lb-fs-2xl`, `.lb-fs-3xl` |
+| Barra inferior móvil | `.lb-tabbar`, `.lb-tabbar__link`, `.lb-tabbar__icon`, `.lb-tabbar__label`, `.lb-tabbar--static` |
 | Galería (dev) | `.lb-gallery`, `.lb-gallery__header`, `.lb-gallery__title`, `.lb-gallery__lead`, `.lb-gallery__nav`, `.lb-gallery__item`, `.lb-gallery__label`, `.lb-gallery__note`, `.lb-gallery__grid` |
 | `EditionTimeline` | `.lb-timeline`, `.lb-timeline__item`, `.lb-timeline__item--gap`, `.lb-timeline__item--pending`, `.lb-timeline__link`, `.lb-timeline__year`, `.lb-timeline__note`, `.lb-timeline__state`, `.lb-timeline__state--complete`, `.lb-timeline__state--incomplete` |
 | `StandingsTable` | `.lb-standings`, `.lb-table`, `.lb-table--stack`, `.lb-table__caption`, `.lb-table__num`, `.lb-table__medal`, `.lb-medal--gold`, `.lb-medal--silver`, `.lb-medal--bronze` |

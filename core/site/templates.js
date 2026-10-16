@@ -186,7 +186,7 @@ function homeContent(ctx, page) {
     hero,
     sectionNumbered("01", t(lang, "home.what.title"), what),
     sectionNumbered("02", t(lang, "home.build.title"), build),
-    sectionNumbered("03", t(lang, "home.explore.title"), explore),
+    sectionNumbered("03", t(lang, "home.explore.title"), explore, "competiciones"),
     sectionNumbered("04", t(lang, "home.publish.title"), publish),
     sectionNumbered("05", t(lang, "home.links.title"), `      <div class="lb-grid">\n${links}\n      </div>`)
   ].join("\n");

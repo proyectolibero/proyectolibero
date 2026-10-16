@@ -106,6 +106,68 @@ ${alternates}
 ${jsonld}`;
 }
 
+/*
+ * Barra inferior movil: cuatro destinos fijos como `<nav>` de enlaces, sin JS.
+ * Los iconos son SVG decorativos (aria-hidden) y la etiqueta visible sale de
+ * i18n; el destino activo se marca con `aria-current`. En escritorio se oculta
+ * por CSS (≥961 px) y en movil reserva su altura con `--lb-tabbar-h`.
+ */
+const TAB_ICONS = {
+  home: '<path d="M4 11.5 12 4l8 7.5"/><path d="M6.5 10v9h11v-9"/>',
+  competitions: '<path d="M5 19V9"/><path d="M12 19V5"/><path d="M19 19v-6"/>',
+  search: '<circle cx="11" cy="11" r="6"/><path d="m20 20-3.6-3.6"/>',
+  support: '<path d="M12 19c-4.6-2.9-6.5-5.6-6.5-8.2A3.3 3.3 0 0 1 12 8.6a3.3 3.3 0 0 1 6.5 2.2c0 2.6-1.9 5.3-6.5 8.2Z"/>'
+};
+
+const COMPETITION_KINDS = new Set([
+  "sport",
+  "competition",
+  "competitionWinners",
+  "competitionScorers",
+  "competitionCalendar",
+  "edition",
+  "qualification",
+  "qualificationGroup",
+  "matches"
+]);
+
+function tabIcon(name) {
+  return (
+    `<svg class="lb-tabbar__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">` +
+    `${TAB_ICONS[name]}</svg>`
+  );
+}
+
+function renderTabbar(ctx, page) {
+  const lang = page.lang;
+  const home = `/${lang}/`;
+  const search = `/${lang}/buscar/`;
+  const supportPath = `/${lang}/apoyar/`;
+  const active = {
+    home: page.path === home,
+    competitions: COMPETITION_KINDS.has(page.kind),
+    search: page.path === search,
+    support: page.path === supportPath
+  };
+  const tabs = [
+    { name: "home", href: home, key: "menu.home" },
+    { name: "competitions", href: `${home}#competiciones`, key: "home.competitions" },
+    { name: "search", href: search, key: "menu.search" },
+    { name: "support", href: supportPath, key: "tab.support" }
+  ];
+  const links = tabs
+    .map((tab) => {
+      const current = active[tab.name] ? attrs({ "aria-current": "page" }) : "";
+      return (
+        `      <a class="lb-tabbar__link" href="${escapeHtml(tab.href)}"${current}>` +
+        `${tabIcon(tab.name)}` +
+        `<span class="lb-tabbar__label">${escapeHtml(ctx.t(lang, tab.key))}</span></a>`
+      );
+    })
+    .join("\n");
+  return `  <nav class="lb-tabbar" aria-label="${escapeHtml(ctx.t(lang, "a11y.tabbar"))}">\n${links}\n  </nav>`;
+}
+
 function renderFooter(ctx, page) {
   const { t } = ctx;
   const lang = page.lang;
@@ -172,6 +234,7 @@ ${content.body}
     </main>
 ${renderFooter(ctx, page)}
   </div>
+${renderTabbar(ctx, page)}
 </body>
 </html>
 `;

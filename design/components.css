@@ -21,9 +21,66 @@
 .lb-needs-js { display: none; }
 html.lb-js .lb-needs-js { display: block; }
 
+/*
+ * Escala tipografica: utilidades de tamano (1:1 con los tokens --lb-fs-*).
+ * La usa la galeria para demostrar la jerarquia; las plantillas componen con
+ * las clases semanticas (hero, section, card...), no con estas utilidades.
+ */
+.lb-fs-xs { font-size: var(--lb-fs-xs); }
+.lb-fs-sm { font-size: var(--lb-fs-sm); }
+.lb-fs-md { font-size: var(--lb-fs-md); }
+.lb-fs-lg { font-size: var(--lb-fs-lg); line-height: var(--lb-lh-tight); }
+.lb-fs-xl { font-size: var(--lb-fs-xl); line-height: var(--lb-lh-tight); }
+.lb-fs-2xl { font-size: var(--lb-fs-2xl); line-height: var(--lb-lh-display); }
+.lb-fs-3xl { font-size: var(--lb-fs-3xl); line-height: var(--lb-lh-display); }
+
 :focus-visible {
   outline: var(--lb-focus-width) solid var(--lb-focus-ring);
   outline-offset: var(--lb-focus-offset);
+}
+
+/*
+ * Microinteracciones: un unico grupo de transiciones coherentes para enlaces,
+ * botones y superficies interactivas. `prefers-reduced-motion` las anula
+ * poniendo las duraciones a 0 (design/tokens.css), sin reglas duplicadas.
+ */
+.lb-nav__link,
+.lb-breadcrumb__link,
+.lb-entry__link,
+.lb-entry,
+.lb-timeline__link,
+.lb-tabs__link,
+.lb-footer__link,
+.lb-sources__link,
+.lb-search__link,
+.lb-edition-select__link,
+.lb-button,
+.lb-toggle__button,
+.lb-pagination__button,
+.lb-modal__close,
+.lb-tabbar__link {
+  transition: color var(--lb-dur-1) var(--lb-ease),
+    background-color var(--lb-dur-1) var(--lb-ease),
+    border-color var(--lb-dur-1) var(--lb-ease),
+    box-shadow var(--lb-dur-2) var(--lb-ease);
+}
+
+/* Entrada suave de la columna de contenido, solo si el sistema lo permite. */
+@keyframes lb-rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .lb-main {
+    animation: lb-rise var(--lb-dur-2) var(--lb-ease) both;
+  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -114,7 +171,7 @@ html.lb-js .lb-needs-js { display: block; }
   display: inline-flex;
   align-items: center;
   gap: var(--lb-space-1);
-  border: 1px solid var(--lb-border);
+  border: 1px solid var(--lb-border-subtle);
   border-radius: var(--lb-radius);
   background: var(--lb-surface);
   padding: var(--lb-space-1) var(--lb-space-3);
@@ -186,7 +243,7 @@ html.lb-js .lb-needs-js { display: block; }
 .lb-table td {
   padding: var(--lb-space-2) var(--lb-space-3);
   text-align: left;
-  border-bottom: 1px solid var(--lb-border);
+  border-bottom: 1px solid var(--lb-border-subtle);
   vertical-align: top;
 }
 
@@ -212,8 +269,10 @@ html.lb-js .lb-needs-js { display: block; }
 .lb-medal--bronze { color: var(--lb-bronze); }
 
 .lb-standings {
-  border: 1px solid var(--lb-border);
-  border-radius: var(--lb-radius);
+  border: 1px solid var(--lb-border-subtle);
+  border-radius: var(--lb-radius-lg);
+  background: var(--lb-surface);
+  box-shadow: var(--lb-elev-1);
   overflow: hidden;
 }
 
@@ -263,8 +322,8 @@ html.lb-js .lb-needs-js { display: block; }
   list-style: none;
   margin: 0;
   padding: 0;
-  border: 1px solid var(--lb-border);
-  border-radius: var(--lb-radius);
+  border: 1px solid var(--lb-border-subtle);
+  border-radius: var(--lb-radius-lg);
   background: var(--lb-surface);
 }
 
@@ -273,7 +332,7 @@ html.lb-js .lb-needs-js { display: block; }
   align-items: baseline;
   gap: var(--lb-space-3);
   padding: var(--lb-space-2) var(--lb-space-3);
-  border-bottom: 1px solid var(--lb-border);
+  border-bottom: 1px solid var(--lb-border-subtle);
 }
 
 .lb-scorers__item:last-child { border-bottom: 0; }
@@ -307,9 +366,10 @@ html.lb-js .lb-needs-js { display: block; }
 /* ------------------------------------------------------------------ */
 
 .lb-result {
-  border: 1px solid var(--lb-border);
-  border-radius: var(--lb-radius);
+  border: 1px solid var(--lb-border-subtle);
+  border-radius: var(--lb-radius-lg);
   background: var(--lb-surface);
+  box-shadow: var(--lb-elev-1);
   padding: var(--lb-space-3) var(--lb-space-4);
 }
 
@@ -369,7 +429,7 @@ html.lb-js .lb-needs-js { display: block; }
   align-items: center;
   gap: var(--lb-space-3);
   padding: var(--lb-space-2) var(--lb-space-3);
-  border: 1px solid var(--lb-border);
+  border: 1px solid var(--lb-border-subtle);
   border-radius: var(--lb-radius);
   background: var(--lb-surface);
 }
@@ -489,9 +549,10 @@ html.lb-js .lb-needs-js { display: block; }
 /* ------------------------------------------------------------------ */
 
 .lb-coverage {
-  border: 1px solid var(--lb-border);
-  border-radius: var(--lb-radius);
+  border: 1px solid var(--lb-border-subtle);
+  border-radius: var(--lb-radius-lg);
   background: var(--lb-surface);
+  box-shadow: var(--lb-elev-1);
   padding: var(--lb-space-3) var(--lb-space-4);
 }
 
@@ -561,9 +622,10 @@ html.lb-js .lb-needs-js { display: block; }
 .lb-phases {
   margin: var(--lb-space-4) 0;
   padding: var(--lb-space-3) var(--lb-space-4);
-  border: 1px solid var(--lb-border);
-  border-radius: var(--lb-radius);
+  border: 1px solid var(--lb-border-subtle);
+  border-radius: var(--lb-radius-lg);
   background: var(--lb-surface);
+  box-shadow: var(--lb-elev-1);
 }
 
 .lb-phases__head {
@@ -660,9 +722,10 @@ a.lb-phases__name:hover { text-decoration: underline; }
 /* ------------------------------------------------------------------ */
 
 .lb-facsimile {
-  border: 1px solid var(--lb-border);
-  border-radius: var(--lb-radius);
+  border: 1px solid var(--lb-border-subtle);
+  border-radius: var(--lb-radius-lg);
   background: var(--lb-surface);
+  box-shadow: var(--lb-elev-1);
   overflow: hidden;
 }
 
@@ -793,10 +856,11 @@ a.lb-phases__name:hover { text-decoration: underline; }
 /* ------------------------------------------------------------------ */
 
 .lb-citation {
-  border: 1px solid var(--lb-border);
+  border: 1px solid var(--lb-border-subtle);
   border-left: var(--lb-space-1) solid var(--lb-accent);
-  border-radius: var(--lb-radius);
+  border-radius: var(--lb-radius-lg);
   background: var(--lb-surface);
+  box-shadow: var(--lb-elev-1);
   padding: var(--lb-space-3) var(--lb-space-4);
 }
 
@@ -839,9 +903,10 @@ a.lb-phases__name:hover { text-decoration: underline; }
 }
 
 .lb-sources__item {
-  border: 1px solid var(--lb-border);
-  border-radius: var(--lb-radius);
+  border: 1px solid var(--lb-border-subtle);
+  border-radius: var(--lb-radius-lg);
   background: var(--lb-surface);
+  box-shadow: var(--lb-elev-1);
   padding: var(--lb-space-3);
 }
 
@@ -1415,9 +1480,10 @@ html.lb-js .lb-pagination.lb-needs-js { display: flex; }
 
 .lb-provenance {
   margin-top: var(--lb-space-4);
-  border: 1px solid var(--lb-border);
-  border-radius: var(--lb-radius);
+  border: 1px solid var(--lb-border-subtle);
+  border-radius: var(--lb-radius-lg);
   background: var(--lb-surface);
+  box-shadow: var(--lb-elev-1);
 }
 
 .lb-provenance__summary {
@@ -1667,7 +1733,14 @@ body {
   padding: 0 var(--lb-gutter) var(--lb-space-12);
 }
 
-/* Cabecera pegajosa: marca a la izquierda, menu a la derecha.          */
+/* En movil la barra inferior fija reserva su altura: no tapa el pie.    */
+@media (max-width: 960px) {
+  .lb-page {
+    padding-bottom: calc(var(--lb-tabbar-h) + var(--lb-space-8));
+  }
+}
+
+/* Cabecera compacta y pegajosa: marca a la izquierda, menu a la derecha. */
 .lb-masthead {
   position: sticky;
   top: 0;
@@ -1676,10 +1749,11 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: var(--lb-space-2) var(--lb-space-4);
-  padding: var(--lb-space-3) 0;
+  gap: var(--lb-space-1) var(--lb-space-4);
+  min-height: var(--lb-tap);
+  padding: var(--lb-space-2) 0;
   background: var(--lb-surface);
-  border-bottom: 1px solid var(--lb-border-strong);
+  border-bottom: 1px solid var(--lb-border-subtle);
 }
 
 .lb-brand {
@@ -1820,10 +1894,10 @@ body {
 
 .lb-hero__title {
   max-width: 24ch;
-  margin: 0 0 var(--lb-space-4);
-  font-size: var(--lb-fs-2xl);
+  margin: 0 0 var(--lb-flow);
+  font-size: var(--lb-fs-3xl);
   line-height: var(--lb-lh-display);
-  letter-spacing: -0.01em;
+  letter-spacing: var(--lb-tracking-tight);
 }
 
 .lb-hero__lede {
@@ -1845,10 +1919,10 @@ body {
   flex-direction: column;
   gap: var(--lb-space-1);
   padding: var(--lb-space-4) var(--lb-space-5);
-  border: 1px solid var(--lb-border);
+  border: 1px solid var(--lb-border-subtle);
   border-radius: var(--lb-radius-lg);
   background: var(--lb-surface);
-  box-shadow: var(--lb-shadow-1);
+  box-shadow: var(--lb-elev-1);
 }
 
 .lb-kpi__value {
@@ -1869,23 +1943,28 @@ body {
 /* Ritmo vertical de la pagina y badge numerado de seccion.             */
 .lb-main {
   display: grid;
-  gap: var(--lb-space-10);
+  gap: var(--lb-section-gap);
   max-width: none;
   margin: 0;
-  padding: var(--lb-space-6) 0 0;
+  padding: var(--lb-section-gap) 0 0;
 }
 
-.lb-section { margin: 0; }
+/* `scroll-margin-top` evita que la cabecera pegajosa tape el ancla.     */
+.lb-section {
+  margin: 0;
+  scroll-margin-top: calc(var(--lb-tap) + var(--lb-space-4));
+}
 
 .lb-section__title {
   display: flex;
   align-items: center;
   gap: var(--lb-space-3);
-  margin: 0 0 var(--lb-space-4);
+  margin: 0 0 var(--lb-flow);
   padding-bottom: var(--lb-space-2);
-  border-bottom: 1px solid var(--lb-border);
+  border-bottom: 1px solid var(--lb-border-subtle);
   font-size: var(--lb-fs-xl);
   line-height: var(--lb-lh-tight);
+  letter-spacing: var(--lb-tracking-tight);
 }
 
 .lb-section__num {
@@ -1906,7 +1985,7 @@ body {
 .lb-edition-head .lb-section__title {
   font-size: var(--lb-fs-2xl);
   line-height: var(--lb-lh-display);
-  letter-spacing: -0.01em;
+  letter-spacing: var(--lb-tracking-tight);
 }
 
 /* Listas: cada entrada es una ficha con aire, no una fila a lo ancho.  */
@@ -1924,14 +2003,14 @@ body {
   align-items: baseline;
   gap: var(--lb-space-1) var(--lb-space-3);
   padding: var(--lb-space-3) var(--lb-space-4);
-  border: 1px solid var(--lb-border);
+  border: 1px solid var(--lb-border-subtle);
   border-radius: var(--lb-radius);
   background: var(--lb-surface);
 }
 
 .lb-entry:hover {
   border-color: var(--lb-border-strong);
-  box-shadow: var(--lb-shadow-1);
+  box-shadow: var(--lb-elev-2);
 }
 
 /* Variante llana: listas dentro de tarjetas, sin doble marco.          */
@@ -1958,12 +2037,12 @@ body {
 .lb-card {
   display: flex;
   flex-direction: column;
-  gap: var(--lb-space-2);
+  gap: var(--lb-flow);
   padding: var(--lb-space-5);
-  border: 1px solid var(--lb-border);
+  border: 1px solid var(--lb-border-subtle);
   border-radius: var(--lb-radius-lg);
   background: var(--lb-surface);
-  box-shadow: var(--lb-shadow-1);
+  box-shadow: var(--lb-elev-1);
 }
 
 .lb-card__title {
@@ -2105,7 +2184,7 @@ a.lb-footer__heading:hover { text-decoration: underline; }
   margin: 0;
   padding: 0;
   list-style: none;
-  border-bottom: 1px solid var(--lb-border);
+  border-bottom: 1px solid var(--lb-border-subtle);
 }
 
 .lb-tabs__item { margin: 0; }
@@ -2133,9 +2212,10 @@ a.lb-footer__heading:hover { text-decoration: underline; }
 /* Selector de edición sin JS (`<details>`), desplegable y usable en móvil. */
 .lb-edition-select {
   margin-top: var(--lb-space-3);
-  border: 1px solid var(--lb-border);
-  border-radius: var(--lb-radius);
+  border: 1px solid var(--lb-border-subtle);
+  border-radius: var(--lb-radius-lg);
   background: var(--lb-surface);
+  box-shadow: var(--lb-elev-1);
 }
 
 .lb-edition-select__summary {
@@ -2468,5 +2548,80 @@ a.lb-footer__heading:hover { text-decoration: underline; }
 
 @media (min-width: 720px) {
   .lb-search__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ------------------------------------------------------------------ */
+/* Barra inferior movil (≤960 px): 4 destinos de app, navegable sin JS. */
+/* ------------------------------------------------------------------ */
+/* Es un <nav> de enlaces: sin JS ningun destino depende del script. Se  */
+/* oculta en escritorio y en movil reserva su altura via --lb-tabbar-h. */
+
+.lb-tabbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: var(--lb-space-1);
+  min-height: var(--lb-tabbar-h);
+  padding: var(--lb-space-1) var(--lb-space-2)
+    calc(var(--lb-space-1) + env(safe-area-inset-bottom, 0px));
+  background: var(--lb-surface);
+  border-top: 1px solid var(--lb-border-subtle);
+  box-shadow: var(--lb-elev-2);
+}
+
+@media (min-width: 961px) {
+  .lb-tabbar:not(.lb-tabbar--static) { display: none; }
+}
+
+.lb-tabbar__link {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--lb-space-1);
+  min-width: var(--lb-tap);
+  min-height: var(--lb-tap);
+  padding: var(--lb-space-1);
+  border-radius: var(--lb-radius);
+  color: var(--lb-text-muted);
+  text-decoration: none;
+  font-size: var(--lb-fs-xs);
+  font-weight: var(--lb-weight-medium);
+}
+
+.lb-tabbar__link:hover {
+  color: var(--lb-text);
+  background: var(--lb-surface-2);
+}
+
+.lb-tabbar__link[aria-current="page"] { color: var(--lb-accent); }
+
+.lb-tabbar__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.lb-tabbar__label {
+  line-height: var(--lb-lh-tight);
+  text-align: center;
+}
+
+/* Demo de la galeria: la barra en linea, visible a cualquier ancho. */
+.lb-tabbar--static {
+  position: static;
+  box-shadow: none;
+  border: 1px solid var(--lb-border-subtle);
+  border-radius: var(--lb-radius-lg);
 }
 

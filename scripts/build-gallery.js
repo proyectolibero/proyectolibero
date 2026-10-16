@@ -296,9 +296,10 @@ function coverage(label, done, total, gapNote) {
           <span class="lb-coverage__label">${esc(label)}</span>
           <span class="lb-coverage__count">${done} / ${total} (${pct}%)</span>
         </div>
-        <div class="lb-coverage__track">
-          <div class="lb-coverage__fill" style="width: ${pct}%"></div>
-        </div>
+        <svg class="lb-coverage__chart" viewBox="0 0 100 6" preserveAspectRatio="none" role="img" aria-label="${esc(label)}: ${done} / ${total} (${pct}%)" focusable="false">
+          <rect class="lb-coverage__bg" x="0" y="0" width="100" height="6" />
+          <rect class="lb-coverage__fill" x="0" y="0" width="${pct}" height="6" />
+        </svg>
         <ul class="lb-coverage__legend">
           <li class="lb-coverage__legend-item"><span class="lb-coverage__swatch lb-coverage__swatch--done"></span>Publicado (${done})</li>
           <li class="lb-coverage__legend-item"><span class="lb-coverage__swatch lb-coverage__swatch--gap"></span>${esc(gapNote)} (${total - done})</li>
@@ -385,6 +386,80 @@ function resultCardZh(meta, home, score, away, note, winner) {
       </article>`;
 }
 
+/* ------------------------------ Tipografia -------------------------------- */
+
+const TYPE_STEPS = [
+  ["3xl", "Display", "Titular de portada · clamp(2.1rem \u2192 3.6rem)"],
+  ["2xl", "Titulo de edicion", "H1 de edicion · clamp(1.7rem \u2192 2.6rem)"],
+  ["xl", "Titulo de seccion", "H2 numerado · clamp(1.35rem \u2192 1.75rem)"],
+  ["lg", "Subtitulo", "Entradilla · clamp(1.1rem \u2192 1.32rem)"],
+  ["md", "Cuerpo", "Texto base · clamp(0.95rem \u2192 1.06rem)"],
+  ["sm", "Secundario", "Etiquetas y notas · clamp(0.84rem \u2192 0.95rem)"],
+  ["xs", "Micro", "Micro-mayusculas · clamp(0.75rem \u2192 0.82rem)"]
+];
+
+function typography() {
+  const rows = TYPE_STEPS.map(
+    ([size, name, note]) => `        <div>
+          <p class="lb-gallery__label">${esc(name)} \u00b7 --lb-fs-${size}</p>
+          <p class="lb-fs-${size}">Archivo abierto de resultados</p>
+          <p class="lb-gallery__note">${esc(note)}</p>
+        </div>`
+  ).join("\n");
+  return `      <div class="lb-gallery__grid">\n${rows}\n      </div>`;
+}
+
+/* ------------------------------ Superficies ------------------------------- */
+
+function surfaces() {
+  return `      <div class="lb-gallery__grid">
+        <div class="lb-card">
+          <h3 class="lb-card__title">Tarjeta</h3>
+          <p class="lb-card__text">Fondo, borde sutil y sombra suave (elevacion 1). Sin bordes duros por todas partes.</p>
+        </div>
+        <div class="lb-kpi">
+          <span class="lb-kpi__value">843</span>
+          <span class="lb-kpi__label">Superficie destacada</span>
+          <span class="lb-kpi__hint">Elevacion 1 sobre el fondo</span>
+        </div>
+      </div>
+      <ul class="lb-list">
+        <li class="lb-entry"><span class="lb-entry__link">Entrada de lista</span><span class="lb-entry__meta">1930</span></li>
+        <li class="lb-entry"><span class="lb-entry__link">Otra entrada</span><span class="lb-entry__meta">1934</span></li>
+        <li class="lb-entry"><span class="lb-entry__link">Separadores suaves</span><span class="lb-entry__meta">1938</span></li>
+      </ul>`;
+}
+
+/* ------------------------------ Barra inferior ---------------------------- */
+
+const TAB_ICONS = {
+  home: '<path d="M4 11.5 12 4l8 7.5"/><path d="M6.5 10v9h11v-9"/>',
+  competitions: '<path d="M5 19V9"/><path d="M12 19V5"/><path d="M19 19v-6"/>',
+  search: '<circle cx="11" cy="11" r="6"/><path d="m20 20-3.6-3.6"/>',
+  support: '<path d="M12 19c-4.6-2.9-6.5-5.6-6.5-8.2A3.3 3.3 0 0 1 12 8.6a3.3 3.3 0 0 1 6.5 2.2c0 2.6-1.9 5.3-6.5 8.2Z"/>'
+};
+
+function tabIcon(name) {
+  return `<svg class="lb-tabbar__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">${TAB_ICONS[name]}</svg>`;
+}
+
+function tabbar() {
+  const tabs = [
+    ["home", "Inicio"],
+    ["competitions", "Competiciones"],
+    ["search", "Buscar"],
+    ["support", "Apoyar"]
+  ];
+  const links = tabs
+    .map(
+      ([name, label]) =>
+        `        <a class="lb-tabbar__link" href="#">${tabIcon(name)}` +
+        `<span class="lb-tabbar__label">${esc(label)}</span></a>`
+    )
+    .join("\n");
+  return `      <nav class="lb-tabbar lb-tabbar--static" aria-label="Navegacion rapida">\n${links}\n      </nav>`;
+}
+
 /* ------------------------------ Ensamblado -------------------------------- */
 
 function page() {
@@ -405,6 +480,8 @@ function page() {
     <h1 class="lb-gallery__title">Galeria del sistema de diseno</h1>
     <p class="lb-gallery__lead">Cada componente aislado y sus casos limite. El modo claro u oscuro sigue la preferencia del sistema; sin JS, todos los datos siguen siendo legibles.</p>
     <nav class="lb-gallery__nav" aria-label="Indice de componentes">
+      <a href="#tipografia">Tipografia</a>
+      <a href="#superficies">Superficies</a>
       <a href="#kpi">KpiCard</a>
       <a href="#timeline">EditionTimeline</a>
       <a href="#standings">StandingsTable</a>
@@ -417,6 +494,7 @@ function page() {
       <a href="#facsimile">FacsimileSheet</a>
       <a href="#citation">CitationBlock</a>
       <a href="#sources">SourceList</a>
+      <a href="#tabbar">Barra inferior</a>
       <a href="#langs">zh / hi</a>
     </nav>
     <div class="lb-filter lb-needs-js">
@@ -426,6 +504,18 @@ function page() {
   </header>
 
   <main>
+    <section class="lb-gallery__item" id="tipografia">
+      <h2 class="lb-gallery__label">Tipografia fluida</h2>
+      <p class="lb-gallery__note">Escala de 7 pasos con clamp(): display, titulo de edicion, titulo de seccion, subtitulo, cuerpo, secundario y micro. La jerarquia se nota; el tamano acompana al ancho.</p>
+${typography()}
+    </section>
+
+    <section class="lb-gallery__item" id="superficies">
+      <h2 class="lb-gallery__label">Superficies y ritmo</h2>
+      <p class="lb-gallery__note">Tarjetas y bloques con fondo, borde sutil y sombra suave; listas densas con separadores de bajo contraste. Mismo ritmo vertical en todas las paginas.</p>
+${surfaces()}
+    </section>
+
     <section class="lb-gallery__item" id="kpi">
       <h2 class="lb-gallery__label">KpiCard</h2>
       <p class="lb-gallery__note">Metrica destacada. Valor con cifras tabulares y acento unico.</p>
@@ -503,6 +593,12 @@ ${citation()}
       <h2 class="lb-gallery__label">SourceList</h2>
       <p class="lb-gallery__note">Atribuciones, licencias y fecha de consulta.</p>
 ${sources()}
+    </section>
+
+    <section class="lb-gallery__item" id="tabbar">
+      <h2 class="lb-gallery__label">Barra inferior movil</h2>
+      <p class="lb-gallery__note">Cuatro destinos de app (Inicio · Competiciones · Buscar · Apoyar) como &lt;nav&gt; de enlaces: funciona sin JS, objetivos tactiles de 44 px, aria-current en el destino activo y oculta en escritorio. Aqui se muestra en linea (<code>--static</code>); en el escaparate es fija en pantallas de 960 px o menos.</p>
+${tabbar()}
     </section>
 
     <section class="lb-gallery__item" id="langs">

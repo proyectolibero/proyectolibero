@@ -121,6 +121,35 @@ test("design (b2): tokens.css concentra el color y define el tema oscuro", () =>
   assert.match(tokens, /\[data-theme="dark"\]/, "modo oscuro anulable con atributo");
 });
 
+test("design (d): barra inferior movil como <nav> de enlaces, usable sin JS", () => {
+  const components = read(COMPONENTS);
+  const gallery = read(GALLERY);
+
+  assert.match(components, /\.lb-tabbar\s*\{/, "la barra inferior esta definida en components.css");
+  assert.match(
+    components,
+    /@media \(min-width: 961px\)\s*\{\s*\.lb-tabbar:not\(\.lb-tabbar--static\)\s*\{\s*display:\s*none/,
+    "la barra se oculta en escritorio"
+  );
+  assert.match(
+    components,
+    /\.lb-tabbar__link\s*\{[\s\S]*?min-height:\s*var\(--lb-tap\)/,
+    "cada destino es un objetivo tactil de 44 px"
+  );
+  assert.match(gallery, /class="lb-tabbar lb-tabbar--static"/, "la galeria demuestra la barra");
+
+  const pages = builtHtmlFiles()
+    .map(read)
+    .filter((html) => html.includes('class="lb-tabbar"'));
+  assert.ok(pages.length >= 5, `todas las paginas traen la barra (${pages.length})`);
+  assert.match(pages[0], /<nav class="lb-tabbar" aria-label="[^"]+"/, "la barra es un <nav> con aria-label");
+  assert.equal((pages[0].match(/class="lb-tabbar__link"/g) || []).length, 4, "cuatro destinos");
+  assert.ok(
+    pages.some((html) => /class="lb-tabbar__link"[^>]*aria-current="page"/.test(html)),
+    "el destino activo lleva aria-current"
+  );
+});
+
 test("design (c): accesibilidad basica en la galeria y el sistema", () => {
   const gallery = read(GALLERY);
   const components = read(COMPONENTS);

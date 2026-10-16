@@ -15,6 +15,7 @@
   --lb-text: #1b1f24;
   --lb-text-muted: #5c6570;
   --lb-border: #dfe3e8;
+  --lb-border-subtle: #e7eaee;
   --lb-border-strong: #c3cad2;
 
   /* --- Color: acento unico (verde archivo) --- */
@@ -43,10 +44,14 @@
   --lb-focus-width: 2px;
   --lb-focus-offset: 2px;
 
-  /* --- Sombras (color como token: unico literal) --- */
+  /* --- Sombras y elevacion (color como token: unico literal) --- */
   --lb-shadow-color: rgba(15, 23, 42, 0.12);
+  --lb-shadow-soft: rgba(15, 23, 42, 0.07);
   --lb-shadow-1: 0 1px 2px var(--lb-shadow-color);
   --lb-shadow-2: 0 6px 18px var(--lb-shadow-color);
+  /* Elevacion 1/2: superficies en reposo y en flotacion (submenus, modal). */
+  --lb-elev-1: 0 1px 2px var(--lb-shadow-soft), 0 1px 3px var(--lb-shadow-soft);
+  --lb-elev-2: 0 10px 30px var(--lb-shadow-soft), 0 2px 6px var(--lb-shadow-soft);
 
   /* --- Velo del modal (fondo tras el dialogo) --- */
   --lb-scrim: rgba(15, 23, 42, 0.55);
@@ -59,18 +64,26 @@
     Menlo, Consolas, "Liberation Mono", "Noto Sans Mono", "Noto Sans Mono CJK SC",
     monospace;
 
-  /* --- Tipografia: escala de 5 pasos --- */
-  --lb-fs-xs: 0.78rem;
-  --lb-fs-sm: 0.9rem;
-  --lb-fs-md: 1rem;
-  --lb-fs-lg: 1.3rem;
-  --lb-fs-xl: 1.75rem;
-  --lb-fs-2xl: clamp(2rem, 1.35rem + 2.6vw, 3.1rem);
+  /* --- Tipografia: escala fluida (cada paso con clamp) ---
+   * micro · secundario · cuerpo · subtitulo · titulo · display:
+   *   micro=xs · secundario=sm · cuerpo=md · subtitulo=lg · titulo=xl/2xl
+   *   · display=3xl. El interlineado y el peso acompanan al tamano. */
+  --lb-fs-xs: clamp(0.75rem, 0.72rem + 0.12vw, 0.82rem);
+  --lb-fs-sm: clamp(0.84rem, 0.8rem + 0.2vw, 0.95rem);
+  --lb-fs-md: clamp(0.95rem, 0.9rem + 0.25vw, 1.06rem);
+  --lb-fs-lg: clamp(1.1rem, 1.02rem + 0.45vw, 1.32rem);
+  --lb-fs-xl: clamp(1.35rem, 1.15rem + 0.9vw, 1.75rem);
+  --lb-fs-2xl: clamp(1.7rem, 1.3rem + 1.9vw, 2.6rem);
+  --lb-fs-3xl: clamp(2.1rem, 1.5rem + 3vw, 3.6rem);
+  --lb-lh-display: 1.08;
   --lb-lh-tight: 1.25;
-  --lb-lh-display: 1.12;
-  --lb-lh: 1.5;
+  --lb-lh: 1.55;
+  --lb-lh-loose: 1.7;
+  --lb-tracking-tight: -0.01em;
+  --lb-tracking-wide: 0.06em;
   --lb-weight-regular: 400;
   --lb-weight-medium: 500;
+  --lb-weight-semibold: 600;
   --lb-weight-bold: 700;
 
   /* --- Espaciado: base 4 px --- */
@@ -83,6 +96,9 @@
   --lb-space-8: 2rem;
   --lb-space-10: 2.5rem;
   --lb-space-12: 3rem;
+  /* Ritmo vertical fluido: flujo entre bloques y respiro entre secciones. */
+  --lb-flow: clamp(0.75rem, 0.55rem + 0.7vw, 1.05rem);
+  --lb-section-gap: clamp(2.5rem, 1.7rem + 3.2vw, 4.25rem);
 
   /* --- Radios --- */
   --lb-radius-sm: 4px;
@@ -94,7 +110,9 @@
   --lb-measure: 68ch;
   --lb-tap: 44px;
   --lb-container: 70rem;
-  --lb-gutter: clamp(1rem, 2.5vw, 2rem);
+  --lb-gutter: clamp(1rem, 0.6rem + 2.2vw, 2rem);
+  /* Altura de la barra inferior movil (reserva de relleno, no la tapa). */
+  --lb-tabbar-h: 3.5rem;
 
   /* --- Movimiento --- */
   --lb-dur-1: 120ms;
@@ -105,13 +123,14 @@
 /* Modo oscuro automatico, anulable con [data-theme="light"]. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --lb-bg: #14181d;
-    --lb-surface: #1d232b;
-    --lb-surface-2: #252d37;
-    --lb-text: #e8eaed;
-    --lb-text-muted: #9aa4b0;
-    --lb-border: #313a45;
-    --lb-border-strong: #47535f;
+    --lb-bg: #12161b;
+    --lb-surface: #1b2129;
+    --lb-surface-2: #232b35;
+    --lb-text: #e9ecef;
+    --lb-text-muted: #9aa5b1;
+    --lb-border: #303945;
+    --lb-border-subtle: #262e38;
+    --lb-border-strong: #48535f;
 
     --lb-accent: #2ea87a;
     --lb-accent-strong: #3fc493;
@@ -130,20 +149,22 @@
     --lb-warn-border: #5c2f2b;
 
     --lb-focus-ring: #3fc493;
-    --lb-shadow-color: rgba(0, 0, 0, 0.4);
+    --lb-shadow-color: rgba(0, 0, 0, 0.45);
+    --lb-shadow-soft: rgba(0, 0, 0, 0.35);
     --lb-scrim: rgba(0, 0, 0, 0.65);
   }
 }
 
 /* Modo oscuro forzado con atributo (gana a la preferencia del sistema). */
 :root[data-theme="dark"] {
-  --lb-bg: #14181d;
-  --lb-surface: #1d232b;
-  --lb-surface-2: #252d37;
-  --lb-text: #e8eaed;
-  --lb-text-muted: #9aa4b0;
-  --lb-border: #313a45;
-  --lb-border-strong: #47535f;
+  --lb-bg: #12161b;
+  --lb-surface: #1b2129;
+  --lb-surface-2: #232b35;
+  --lb-text: #e9ecef;
+  --lb-text-muted: #9aa5b1;
+  --lb-border: #303945;
+  --lb-border-subtle: #262e38;
+  --lb-border-strong: #48535f;
 
   --lb-accent: #2ea87a;
   --lb-accent-strong: #3fc493;
@@ -162,7 +183,8 @@
   --lb-warn-border: #5c2f2b;
 
   --lb-focus-ring: #3fc493;
-  --lb-shadow-color: rgba(0, 0, 0, 0.4);
+  --lb-shadow-color: rgba(0, 0, 0, 0.45);
+  --lb-shadow-soft: rgba(0, 0, 0, 0.35);
   --lb-scrim: rgba(0, 0, 0, 0.65);
 }
 
