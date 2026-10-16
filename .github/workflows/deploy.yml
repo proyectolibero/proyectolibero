@@ -58,3 +58,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy site --project-name=proyectolibero
+      # Smoke test post-deploy: un deploy roto (cabeceras, caché, repo expuesto
+      # o peso) se detecta en el acto. Usa el sitio canónico vivo.
+      - name: Smoke test post-deploy (sitio vivo)
+        run: node scripts/verify-published.js --base=https://proyectolibero.org

@@ -1,0 +1,26 @@
+name: monitor
+
+# Alerta de producción. Comprueba el sitio VIVO (proyectolibero.org) a diario y
+# a mano: guardas de D60 (el repo no se sirve), cabeceras de seguridad, caché de
+# assets con huella, datos/índice para máquinas, rutas json y peso real del HTML.
+# No publica nada ni necesita secretos. Ver scripts/verify-published.js y
+# docs/OPERACION.md.
+on:
+  schedule:
+    # Todos los días a las 06:17 UTC (hora valle; el minuto evita la hora en punto).
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-published:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Verify published site
+        run: node scripts/verify-published.js --base=https://proyectolibero.org

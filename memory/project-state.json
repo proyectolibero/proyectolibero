@@ -75,7 +75,7 @@
     },
     "ci": {
       "status": "done",
-      "notes": "GitHub Action validate.yml (bloquea push si validate en rojo; añade integrity contra la línea base y site-weight 300 kB/página) + .gitignore."
+      "notes": "GitHub Action validate.yml (bloquea push si validate en rojo; añade integrity contra la línea base y site-weight 300 kB/página) + .gitignore. workflows/monitor.yml (cron diario + manual) ejecuta scripts/verify-published.js sobre producción (guardas D60, cabeceras, caché, datos, peso); deploy.yml lo corre como smoke test post-deploy. Ver docs/OPERACION.md."
     },
     "deployment": {
       "status": "done",
