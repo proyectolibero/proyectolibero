@@ -1316,6 +1316,13 @@ html.lb-js .lb-pagination.lb-needs-js { display: flex; }
   border-bottom: 1px solid var(--lb-border-strong);
 }
 
+/* Portada de la edición: cabecera + selector + fases como un solo bloque,
+ * con el ritmo de flujo (no el gran respiro entre secciones). */
+.lb-edition-top {
+  display: grid;
+  gap: var(--lb-flow);
+}
+
 .lb-edition-nav {
   display: flex;
   justify-content: space-between;
@@ -1709,6 +1716,85 @@ html.lb-js .lb-pagination.lb-needs-js { display: flex; }
   .lb-result { padding: var(--lb-space-2) var(--lb-space-3); }
   .lb-scorers__item { padding: var(--lb-space-1) var(--lb-space-3); }
   .lb-chart--bar .lb-chart__svg { max-width: 44rem; }
+}
+
+/* ------------------------------------------------------------------ */
+/* Bracket — cuadro de eliminatorias                                   */
+/* ------------------------------------------------------------------ */
+/*
+ * Los partidos de las fases eliminatorias se presentan como cuadro: una
+ * lista por ronda (encabezado + partidos) que en móvil se apila y en
+ * escritorio se distribuye en columnas. Las guías de avance solo se pintan
+ * donde el modelo ha deducido el conector (ganador determinable): sin dato,
+ * no hay línea. El cuadro es la presentación de los partidos, no se duplica.
+ */
+
+.lb-bracket {
+  display: grid;
+  gap: var(--lb-space-3);
+}
+
+.lb-bracket__round {
+  display: grid;
+  gap: var(--lb-space-2);
+}
+
+.lb-bracket__list {
+  display: grid;
+  gap: var(--lb-space-2);
+  align-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lb-bracket__match { position: relative; }
+
+/* En el cuadro la ficha se apila (equipo · marcador · equipo): legible en
+ * columnas estrechas sin partir los nombres de selección. */
+.lb-bracket .lb-result__teams {
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--lb-space-1);
+}
+.lb-bracket .lb-result__team--away { text-align: left; }
+.lb-bracket .lb-result__score { text-align: left; }
+.lb-bracket .lb-result__meta { margin-bottom: var(--lb-space-1); }
+
+@media (min-width: 960px) {
+  .lb-bracket {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+    gap: var(--lb-space-5);
+    align-items: stretch;
+  }
+
+  .lb-bracket__round { grid-template-rows: auto minmax(0, 1fr); }
+
+  /* El ganador avanza: guía horizontal hacia la columna siguiente. */
+  .lb-bracket__match--advances::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(-2.5 * var(--lb-space-2));
+    width: calc(2.5 * var(--lb-space-2));
+    height: 2px;
+    background: var(--lb-border-strong);
+  }
+
+  /* Recibe ganadores de la ronda anterior: corchete de empalme a la izquierda. */
+  .lb-bracket__match--feeds::before {
+    content: "";
+    position: absolute;
+    top: 22%;
+    bottom: 22%;
+    left: calc(-2.5 * var(--lb-space-2));
+    width: calc(1.25 * var(--lb-space-2));
+    border-left: 2px solid var(--lb-border-strong);
+    border-top: 2px solid var(--lb-border-strong);
+    border-bottom: 2px solid var(--lb-border-strong);
+    border-top-left-radius: var(--lb-radius-sm);
+    border-bottom-left-radius: var(--lb-radius-sm);
+  }
 }
 
 /* ------------------------------------------------------------------ */

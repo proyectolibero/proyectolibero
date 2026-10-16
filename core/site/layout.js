@@ -100,6 +100,7 @@ function renderHead(ctx, page, content) {
   <meta name="description" content="${escapeHtml(content.description)}">
   <link rel="canonical" href="${escapeHtml(canonical)}">
 ${alternates}
+  <link rel="icon" type="image/svg+xml" href="${escapeHtml(assets.favicon)}">
   <link rel="stylesheet" href="${escapeHtml(assets.tokens)}">
   <link rel="stylesheet" href="${escapeHtml(assets.components)}">
   <script defer src="${escapeHtml(assets.behaviour)}"></script>

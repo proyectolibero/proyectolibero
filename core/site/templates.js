@@ -5,6 +5,7 @@ const { barChart, podiumChart, hbarChart, medalGlyph } = require("./charts.js");
 const { isQualifying, classifyGroups } = require("./routes.js");
 const { LANGS, formatNumber } = require("./text.js");
 const { declaredPhasesFor } = require("../phases.js");
+const { buildBracket } = require("./bracket.js");
 
 /*
  * Cuerpos de página (sin cabecera ni pie; eso lo pone layout.js). Todas las
@@ -1313,22 +1314,65 @@ function groupPhasesSection(ctx, page, comp, phases, numbers, num) {
   return sectionNumbered(num, ctx.t(lang, "phase.kind.group"), blocks, "fase-grupo");
 }
 
-/** Sección de eliminatorias (sin la final): un bloque por fase con sus partidos. */
+/**
+ * Nodo del cuadro: la misma ficha de partido (`resultCard`, que conserva la
+ * numeración y el enlace a la ficha) envuelta en el `<li>` del cuadro, con las
+ * marcas de conector derivadas del modelo: `--feeds` si recibe ganadores de la
+ * ronda anterior y `--advances` si su ganador avanza. Las marcas solo se pintan
+ * cuando el modelo las ha deducido; sin datos no hay conector (nunca falso).
+ */
+function bracketNode(ctx, lang, sport, comp, page, entry, numbers) {
+  const classes = ["lb-bracket__match"];
+  if (entry.feeds.length) classes.push("lb-bracket__match--feeds");
+  if (entry.advances.length) classes.push("lb-bracket__match--advances");
+  const feeds = entry.feeds.length ? ` data-lb-feeds="${entry.feeds.length}"` : "";
+  const card = resultCard(ctx, lang, entry.match, numbers, {
+    href: facsimileHref(sport, comp, lang, page.year, entry.match)
+  });
+  return (
+    `          <li class="${classes.join(" ")}" data-lb-match="${escapeHtml(entry.match.id)}"${feeds}>\n` +
+    `${card}\n` +
+    `          </li>`
+  );
+}
+
+/**
+ * Sección de eliminatorias (sin la final) como cuadro por rondas: cada ronda
+ * mantiene su encabezado (`h3`, con su ancla estable) y su lista de partidos;
+ * el cuadro es la presentación de esos partidos, no una capa extra. En móvil
+ * las rondas se apilan; en escritorio, columnas con guías de avance.
+ */
 function knockoutPhasesSection(ctx, page, comp, phases, numbers, num) {
   const lang = page.lang;
   if (!phases.knockout.length) return "";
   const sport = ctx.model.sportById[page.sportId];
-  const blocks = phases.knockout
-    .map((ref) => {
-      const cards = ref.matches
-        .slice()
-        .sort(byDateId)
-        .map((match) => resultCard(ctx, lang, match, numbers, { href: facsimileHref(sport, comp, lang, page.year, match) }))
+  const rounds = phases.knockout.map((ref) => ({
+    id: ref.id,
+    ref,
+    matches: ref.matches.slice().sort(byDateId)
+  }));
+  const bracket = buildBracket(rounds);
+  const columns = bracket.rounds
+    .map((round, index) => {
+      const ref = rounds[index].ref;
+      const anchor = phaseAnchor(ref.id);
+      const nodes = round.matches
+        .map((entry) => bracketNode(ctx, lang, sport, comp, page, entry, numbers))
         .join("\n");
-      return `      <h3 class="lb-label" id="${escapeHtml(phaseAnchor(ref.id))}">${escapeHtml(phaseTitle(ctx, lang, ref))}</h3>\n${cards}`;
+      return (
+        `      <div class="lb-bracket__round">\n` +
+        `        <h3 class="lb-label" id="${escapeHtml(anchor)}">${escapeHtml(phaseTitle(ctx, lang, ref))}</h3>\n` +
+        `        <ol class="lb-bracket__list" aria-labelledby="${escapeHtml(anchor)}">\n${nodes}\n        </ol>\n` +
+        `      </div>`
+      );
     })
     .join("\n");
-  return sectionNumbered(num, ctx.t(lang, "phase.kind.knockout"), blocks, "fase-eliminatoria");
+  return sectionNumbered(
+    num,
+    ctx.t(lang, "phase.kind.knockout"),
+    `      <div class="lb-bracket">\n${columns}\n      </div>`,
+    "fase-eliminatoria"
+  );
 }
 
 /** La final: su ficha más los extras (árbitro, asistencia, goles). */
@@ -1779,11 +1823,17 @@ function editionContent(ctx, page) {
     { name: String(page.year) }
   ];
   const champion = results.champion ? ctx.countryName(results.champion, lang) : "";
+  /*
+   * Cabecera de edición + selector + índice y estado de fases forman un mismo
+   * bloque ("portada" de la edición): se agrupan para que el ritmo interno sea
+   * el de flujo (`--lb-flow`) y no el gran respiro entre secciones.
+   */
+  const top = [head, phaseIndex, phasesBlock].filter(Boolean).join("\n");
   return {
     title: `${title} \u00b7 ${t(lang, "site.name")}`,
     description: `${title}: ${t(lang, "edition.champion")} ${champion}. ${t(lang, "site.name")}.`,
     breadcrumb,
-    body: `${head}\n${phaseIndex ? `${phaseIndex}\n` : ""}${phasesBlock ? `${phasesBlock}\n` : ""}${ledger}`,
+    body: `    <div class="lb-edition-top">\n${top}\n    </div>\n${ledger}`,
     jsonld: [breadcrumbJsonLd(ctx, page, breadcrumb), datasetJsonLd(ctx, page, title, champion)]
   };
 }

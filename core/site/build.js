@@ -42,7 +42,7 @@ const {
 
 const ORIGIN = "https://proyectolibero.org";
 const ASSET_BASE = "/assets/design";
-const ASSETS = ["tokens.css", "components.css", "behaviour.js"];
+const ASSETS = ["tokens.css", "components.css", "behaviour.js", "favicon.svg"];
 const HASH_LENGTH = 8;
 const KEY_LENGTH = 16;
 const MANIFEST_DIR = ".cache";
@@ -252,6 +252,9 @@ function buildHeaders() {
     "  X-Frame-Options: DENY",
     "  Referrer-Policy: strict-origin-when-cross-origin",
     "  Content-Security-Policy: default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'",
+    "",
+    "/assets/design/favicon.*.svg",
+    "  Cache-Control: public, max-age=31536000, immutable",
     "",
     "/assets/design/*.css",
     "  Cache-Control: public, max-age=31536000, immutable",
